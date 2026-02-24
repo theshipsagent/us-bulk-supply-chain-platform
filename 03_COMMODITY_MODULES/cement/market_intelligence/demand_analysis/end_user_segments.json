@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "title": "US Cement Demand by End-Use Segment",
+    "description": "Breakdown of cement consumption by end-use application, growth drivers, and cement type requirements",
+    "data_sources": ["PCA Market Intelligence", "USGS Mineral Commodity Summaries 2025", "ACI Market Report", "NRMCA Industry Data"],
+    "last_updated": "2026-02-14",
+    "base_year": 2024,
+    "total_us_cement_consumption_mt": 98.0,
+    "notes": "Segment shares based on PCA estimates and USGS data. Growth rates are compound annual (2024-2029 forecast)."
+  },
+  "total_market": {
+    "consumption_2024_mt": 98.0,
+    "production_2024_mt": 93.0,
+    "imports_2024_mt": 12.5,
+    "exports_2024_mt": 1.5,
+    "apparent_consumption_mt": 104.0,
+    "inventory_change_mt": -6.0,
+    "avg_price_per_ton_2024": 150,
+    "market_value_usd_billions": 14.7,
+    "growth_rate_2024_2029_pct": 2.8
+  },
+  "segments": [
+    {
+      "segment": "Ready-Mix Concrete",
+      "share_pct": 70.0,
+      "volume_mt": 68.6,
+      "growth_rate_cagr_pct": 3.0,
+      "cement_types_primary": ["Type I/II", "Type IL", "Type IP"],
+      "cement_types_secondary": ["Type III", "Type V", "Type IS"],
+      "avg_cement_content_lbs_per_cy": 560,
+      "typical_cement_content_range_lbs_per_cy": "450-700",
+      "key_drivers": [
+        "Residential construction starts",
+        "Commercial building activity",
+        "Infrastructure Investment and Jobs Act (IIJA) spending",
+        "Population growth in Sunbelt states",
+        "Urbanization and vertical construction trends"
+      ],
+      "sub_segments": [
+        {
+          "name": "Residential foundations and slabs",
+          "share_of_segment_pct": 35,
+          "typical_strength_psi": 3000,
+          "cement_type": "Type I/II or Type IL",
+          "notes": "Single-family and multifamily housing"
+        },
+        {
+          "name": "Commercial/industrial floors and structures",
+          "share_of_segment_pct": 25,
+          "typical_strength_psi": 4000,
+          "cement_type": "Type I/II",
+          "notes": "Warehouses, retail, office buildings"
+        },
+        {
+          "name": "Infrastructure (roads, bridges, utilities)",
+          "share_of_segment_pct": 25,
+          "typical_strength_psi": 4500,
+          "cement_type": "Type I/II, Type III, Type V",
+          "notes": "DOT-specified, often requiring specific SCM blends"
+        },
+        {
+          "name": "Paving and flatwork",
+          "share_of_segment_pct": 15,
+          "typical_strength_psi": 3500,
+          "cement_type": "Type I/II or Type IL",
+          "notes": "Parking lots, sidewalks, driveways"
+        }
+      ],
+      "facility_count_us": 11977,
+      "top_producers": ["U.S. Concrete/Adbri", "Vulcan Materials", "Martin Marietta", "Summit Materials/Argos", "CEMEX USA", "Holcim US"],
+      "scm_usage": {
+        "fly_ash_typical_replacement_pct": "15-25",
+        "slag_typical_replacement_pct": "25-50",
+        "type_il_limestone_replacement_pct": "5-15",
+        "trend": "Increasing SCM usage driven by sustainability goals, DOT specifications, and cement cost reduction"
+      }
+    },
+    {
+      "segment": "Precast / Prestressed Concrete",
+      "share_pct": 10.0,
+      "volume_mt": 9.8,
+      "growth_rate_cagr_pct": 3.5,
+      "cement_types_primary": ["Type III", "Type I/II"],
+      "cement_types_secondary": ["Type IL", "White Cement"],
+      "avg_cement_content_lbs_per_cy": 650,
+      "typical_cement_content_range_lbs_per_cy": "550-800",
+      "key_drivers": [
+        "Modular/prefabricated construction growth",
+        "Bridge replacement programs (IIJA)",
+        "Parking structure construction",
+        "Data center construction boom",
+        "Utility infrastructure (vaults, manholes)"
+      ],
+      "sub_segments": [
+        {
+          "name": "Structural precast (beams, columns, walls)",
+          "share_of_segment_pct": 40,
+          "typical_strength_psi": 6000,
+          "cement_type": "Type III",
+          "notes": "High early strength required for form cycling"
+        },
+        {
+          "name": "Prestressed members (bridge girders, double-tees)",
+          "share_of_segment_pct": 30,
+          "typical_strength_psi": 8000,
+          "cement_type": "Type III",
+          "notes": "Very high strength, tight quality control"
+        },
+        {
+          "name": "Architectural precast",
+          "share_of_segment_pct": 15,
+          "typical_strength_psi": 5000,
+          "cement_type": "White Cement / Type I",
+          "notes": "Appearance-critical, white or colored cement"
+        },
+        {
+          "name": "Utility/infrastructure precast",
+          "share_of_segment_pct": 15,
+          "typical_strength_psi": 4500,
+          "cement_type": "Type I/II",
+          "notes": "Manholes, vaults, septic tanks, retaining walls"
+        }
+      ],
+      "facility_count_us": 1321,
+      "top_producers": ["Oldcastle/CRH", "Forterra", "Knife River/MDU", "Coreslab Structures", "Tindall Corp"],
+      "scm_usage": {
+        "fly_ash_typical_replacement_pct": "10-20",
+        "slag_typical_replacement_pct": "20-40",
+        "silica_fume_typical_pct": "5-10",
+        "trend": "Silica fume and slag common in high-strength applications"
+      }
+    },
+    {
+      "segment": "Concrete Products (Block, Brick, Pavers)",
+      "share_pct": 8.0,
+      "volume_mt": 7.8,
+      "growth_rate_cagr_pct": 2.0,
+      "cement_types_primary": ["Type I/II", "Masonry Cement"],
+      "cement_types_secondary": ["Type III"],
+      "avg_cement_content_lbs_per_unit_8in_block": 12,
+      "key_drivers": [
+        "Residential and commercial masonry construction",
+        "Retaining wall systems",
+        "Paver installation for hardscaping",
+        "Hurricane-resistant building codes (Florida, Gulf Coast)",
+        "Sound wall and barrier construction"
+      ],
+      "sub_segments": [
+        {
+          "name": "Concrete masonry units (CMU/block)",
+          "share_of_segment_pct": 55,
+          "cement_type": "Type I/II",
+          "notes": "Standard and lightweight block"
+        },
+        {
+          "name": "Concrete pavers and segmental retaining walls",
+          "share_of_segment_pct": 25,
+          "cement_type": "Type I/II or Type III",
+          "notes": "Appearance and durability requirements"
+        },
+        {
+          "name": "Concrete brick and architectural masonry",
+          "share_of_segment_pct": 20,
+          "cement_type": "Type I/II, White Cement",
+          "notes": "Colored and textured products"
+        }
+      ],
+      "facility_count_us": 1139,
+      "top_producers": ["Oldcastle APG/CRH", "Pavestone", "Belgard/Quikrete", "Adams Products"],
+      "scm_usage": {
+        "fly_ash_typical_replacement_pct": "10-30",
+        "trend": "Fly ash commonly used as filler and cementitious in block production"
+      }
+    },
+    {
+      "segment": "Highway and Bridge Construction (Direct)",
+      "share_pct": 5.0,
+      "volume_mt": 4.9,
+      "growth_rate_cagr_pct": 4.5,
+      "cement_types_primary": ["Type I/II", "Type IP", "Type IL"],
+      "cement_types_secondary": ["Type III", "Type V", "Type IS"],
+      "key_drivers": [
+        "IIJA $110B highway/bridge allocation",
+        "State DOT capital programs",
+        "Bridge replacement/rehabilitation backlog (45,000+ structurally deficient)",
+        "Concrete pavement rehabilitation (whitetopping, overlay)",
+        "Interstate reconstruction"
+      ],
+      "sub_segments": [
+        {
+          "name": "Concrete pavement (new and reconstruction)",
+          "share_of_segment_pct": 45,
+          "typical_strength_psi": 4500,
+          "cement_type": "Type I/II with SCMs per DOT spec",
+          "notes": "Continuously reinforced and jointed plain"
+        },
+        {
+          "name": "Bridge decks and substructure",
+          "share_of_segment_pct": 30,
+          "typical_strength_psi": 5000,
+          "cement_type": "Type I/II, Type IP, Type V (coastal)",
+          "notes": "High durability requirements, low permeability"
+        },
+        {
+          "name": "Soil cement / cement-treated base",
+          "share_of_segment_pct": 15,
+          "typical_strength_psi": null,
+          "cement_type": "Type I/II",
+          "notes": "Subgrade stabilization under pavement"
+        },
+        {
+          "name": "Barrier walls, sound walls, drainage structures",
+          "share_of_segment_pct": 10,
+          "typical_strength_psi": 4000,
+          "cement_type": "Type I/II",
+          "notes": "Ancillary highway structures"
+        }
+      ],
+      "specifications_note": "State DOT specifications typically mandate specific SCM usage, cement alkalinity limits, and performance-based requirements. Approved producer lists maintained by each state.",
+      "scm_usage": {
+        "fly_ash_typical_replacement_pct": "15-25",
+        "slag_typical_replacement_pct": "25-50",
+        "type_il_adoption": "Expanding rapidly as DOTs approve",
+        "trend": "DOTs increasingly specifying performance-based mix designs allowing broader SCM use"
+      }
+    },
+    {
+      "segment": "Oil Well Cementing",
+      "share_pct": 3.0,
+      "volume_mt": 2.9,
+      "growth_rate_cagr_pct": 2.0,
+      "cement_types_primary": ["API Class A", "API Class C", "API Class G", "API Class H"],
+      "key_drivers": [
+        "US oil and gas drilling activity (rig count)",
+        "Permian Basin development",
+        "Gulf of Mexico deepwater drilling",
+        "Carbon capture and sequestration (CCS) well completions",
+        "Geothermal well development"
+      ],
+      "sub_segments": [
+        {
+          "name": "Surface casing cement",
+          "share_of_segment_pct": 30,
+          "cement_type": "API Class A or H",
+          "notes": "Shallow zone, moderate requirements"
+        },
+        {
+          "name": "Intermediate/production casing",
+          "share_of_segment_pct": 40,
+          "cement_type": "API Class G or H",
+          "notes": "High temperature/pressure resistance required"
+        },
+        {
+          "name": "Remedial cementing (squeeze, plug)",
+          "share_of_segment_pct": 20,
+          "cement_type": "API Class G with additives",
+          "notes": "Specialized applications"
+        },
+        {
+          "name": "Deepwater/HPHT applications",
+          "share_of_segment_pct": 10,
+          "cement_type": "API Class G/H with specialty additives",
+          "notes": "Extreme conditions, premium pricing"
+        }
+      ],
+      "key_customers": ["Halliburton", "SLB (Schlumberger)", "Baker Hughes", "Nine Energy Service", "Milestone Environmental Services"],
+      "geographic_concentration": ["Texas (Permian, Eagle Ford)", "Oklahoma (SCOOP/STACK)", "North Dakota (Bakken)", "Colorado (DJ Basin)", "Gulf of Mexico"],
+      "pricing_premium": "Oil well cement commands 30-60% premium over construction-grade cement",
+      "scm_usage": {
+        "fly_ash_typical_pct": "0-15",
+        "trend": "Minimal SCM usage; strict API specification compliance required"
+      }
+    },
+    {
+      "segment": "Soil Stabilization / Cement-Treated Base",
+      "share_pct": 2.0,
+      "volume_mt": 2.0,
+      "growth_rate_cagr_pct": 3.0,
+      "cement_types_primary": ["Type I/II"],
+      "cement_types_secondary": ["Type IL"],
+      "key_drivers": [
+        "Road base stabilization for highway construction",
+        "Airport runway subgrade improvement",
+        "Industrial pad site preparation",
+        "Soft soil treatment in coastal/Gulf areas",
+        "Beneficial reuse of marginal soils"
+      ],
+      "typical_application_rate_pct_by_weight": "4-10",
+      "geographic_concentration": ["Texas", "Florida", "Louisiana", "Georgia", "Carolinas"],
+      "notes": "Growing segment as cement-treated base replaces more expensive aggregate base courses, especially where good aggregates are scarce.",
+      "scm_usage": {
+        "fly_ash_as_alternative": true,
+        "trend": "Fly ash and slag can substitute for cement in some stabilization applications"
+      }
+    },
+    {
+      "segment": "Other (Miscellaneous Applications)",
+      "share_pct": 2.0,
+      "volume_mt": 2.0,
+      "growth_rate_cagr_pct": 1.5,
+      "cement_types_primary": ["Type I/II", "Masonry Cement"],
+      "key_drivers": [
+        "Stucco and plaster applications",
+        "Mortar for brick and stone masonry",
+        "Grouting and anchoring",
+        "Shotcrete/gunite (pool construction, slope stabilization)",
+        "Flowable fill / controlled low-strength material (CLSM)"
+      ],
+      "sub_segments": [
+        {
+          "name": "Masonry mortar and stucco",
+          "share_of_segment_pct": 40,
+          "cement_type": "Masonry Cement, Type S/N mortar"
+        },
+        {
+          "name": "Shotcrete/gunite",
+          "share_of_segment_pct": 25,
+          "cement_type": "Type I/II, Type III"
+        },
+        {
+          "name": "Flowable fill (CLSM)",
+          "share_of_segment_pct": 20,
+          "cement_type": "Type I/II (low dosage)"
+        },
+        {
+          "name": "Specialty grouting",
+          "share_of_segment_pct": 15,
+          "cement_type": "Type I/II, Type III, Microfine"
+        }
+      ],
+      "scm_usage": {
+        "trend": "Fly ash is primary cementitious in CLSM (flowable fill); mortar uses minimal SCMs"
+      }
+    }
+  ],
+  "cement_type_demand_summary": {
+    "type_i_ii_opc": {
+      "share_of_total_pct": 55,
+      "volume_mt": 53.9,
+      "trend": "Declining as Type IL gains adoption",
+      "standard": "ASTM C150"
+    },
+    "type_il_pls": {
+      "share_of_total_pct": 20,
+      "volume_mt": 19.6,
+      "trend": "Fastest growing segment; 15-20% annual growth",
+      "standard": "ASTM C595",
+      "notes": "Portland-limestone cement with 5-15% limestone; most producers now offering"
+    },
+    "type_ip_blended": {
+      "share_of_total_pct": 5,
+      "volume_mt": 4.9,
+      "trend": "Growing with natural pozzolan and calcined clay availability",
+      "standard": "ASTM C595"
+    },
+    "type_is_slag": {
+      "share_of_total_pct": 3,
+      "volume_mt": 2.9,
+      "trend": "Stable; limited by blast furnace slag supply",
+      "standard": "ASTM C595"
+    },
+    "type_iii_high_early": {
+      "share_of_total_pct": 5,
+      "volume_mt": 4.9,
+      "trend": "Stable; precast and cold-weather applications",
+      "standard": "ASTM C150"
+    },
+    "type_v_sr": {
+      "share_of_total_pct": 3,
+      "volume_mt": 2.9,
+      "trend": "Stable; coastal and sulfate-exposure applications",
+      "standard": "ASTM C150"
+    },
+    "masonry_cement": {
+      "share_of_total_pct": 4,
+      "volume_mt": 3.9,
+      "trend": "Slowly declining as masonry market matures",
+      "standard": "ASTM C91"
+    },
+    "oil_well_cement": {
+      "share_of_total_pct": 3,
+      "volume_mt": 2.9,
+      "trend": "Cyclical with drilling activity",
+      "standard": "API Spec 10A"
+    },
+    "white_cement": {
+      "share_of_total_pct": 1,
+      "volume_mt": 1.0,
+      "trend": "Stable niche; mostly imported",
+      "standard": "ASTM C150"
+    },
+    "other_specialty": {
+      "share_of_total_pct": 1,
+      "volume_mt": 1.0,
+      "trend": "Includes rapid-set, expansive, and regulated-set cements",
+      "standard": "Various"
+    }
+  },
+  "seasonality": {
+    "description": "Cement demand is highly seasonal due to weather-dependent construction activity",
+    "monthly_demand_index": {
+      "january": 55,
+      "february": 60,
+      "march": 80,
+      "april": 100,
+      "may": 115,
+      "june": 120,
+      "july": 120,
+      "august": 115,
+      "september": 110,
+      "october": 100,
+      "november": 75,
+      "december": 50
+    },
+    "peak_months": ["May", "June", "July", "August"],
+    "trough_months": ["December", "January", "February"],
+    "regional_variation": "Sunbelt states (FL, TX, CA, AZ) have flatter seasonality; Northern states (MI, MN, WI) have extreme peaks"
+  }
+}

@@ -1,0 +1,90 @@
+project:
+  name: "US Bulk Supply Chain Reporting Platform"
+  version: "1.0.0"
+  root: "G:/My Drive/LLM/project_master_reporting"
+
+data_sources:
+  # Federal Waterway
+  usace_ndc:
+    url: "https://ndc.ops.usace.army.mil/ords/f?p=108:1"
+    type: "web_query"
+    refresh: "monthly"
+  usace_wcsc:
+    url: "https://www.iwr.usace.army.mil/About/Technical-Centers/WCSC-Waterborne-Commerce-Statistics-Center/"
+    type: "download"
+    refresh: "annual"
+  usace_wcsc_vessel_chars:
+    url: "https://www.iwr.usace.army.mil/About/Technical-Centers/WCSC-Waterborne-Commerce-Statistics-Center/WCSC-Vessel-Characteristics/"
+    type: "download"
+    refresh: "annual"
+
+  # Federal Rail
+  stb_economic:
+    url: "https://www.stb.gov/reports-data/economic-data/"
+    type: "download"
+    refresh: "annual"
+  stb_urcs:
+    url: "https://www.stb.gov/reports-data/uniform-rail-costing-system/"
+    type: "download"
+    refresh: "annual"
+  ntad_rail:
+    url: "https://data-usdot.opendata.arcgis.com/datasets/north-american-rail-network-nodes"
+    type: "arcgis_rest"
+    refresh: "annual"
+
+  # EPA
+  epa_frs:
+    url: "https://www.epa.gov/frs/epa-state-combined-csv-download-files"
+    type: "download"
+    format: "csv_zip"
+    size: "~732MB"
+    refresh: "quarterly"
+  epa_echo:
+    url: "https://echo.epa.gov/tools/web-services"
+    type: "rest_api"
+    refresh: "daily"
+  epa_envirofacts:
+    url: "https://data.epa.gov/efservice/"
+    type: "rest_api"
+    refresh: "weekly"
+
+  # Market Data
+  usda_gtr:
+    url: "https://www.ams.usda.gov/services/transportation-analysis/gtr"
+    type: "download"
+    format: "excel"
+    refresh: "weekly"
+  usgs_minerals:
+    url: "https://www.usgs.gov/centers/national-minerals-information-center"
+    type: "download"
+    refresh: "annual"
+
+  # Trade Data
+  panjiva:
+    type: "bulk_csv"
+    format: "csv"
+    record_count: "800000+"
+    notes: "Pre-downloaded, manual refresh"
+
+  # Geospatial
+  noaa_enc:
+    url: "https://www.charts.noaa.gov/InteractiveCatalog/nrnc.shtml"
+    type: "download"
+    notes: "ENC Direct to GIS - wrecks, obstructions, aids to navigation"
+
+databases:
+  epa_frs:
+    engine: "duckdb"
+    path: "02_TOOLSETS/facility_registry/data/frs.duckdb"
+  master_analytics:
+    engine: "duckdb"
+    path: "data/analytics.duckdb"
+
+commodity_modules:
+  active:
+    - cement
+  planned:
+    - grain
+    - fertilizer
+    - petroleum
+    - metals

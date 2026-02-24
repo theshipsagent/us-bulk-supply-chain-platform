@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "title": "Cement Landed Cost Models by Origin Country",
+    "description": "CIF + tariff + handling + distribution landed cost estimates for imported cement at major US ports",
+    "currency": "USD, Q1 2026 estimates",
+    "basis": "Supramax vessel (30,000 DWT cargo), pneumatic discharge"
+  },
+  "landed_cost_models": [
+    {
+      "origin": "Turkey",
+      "product": "Gray Portland cement (OPC 42.5)",
+      "fob_price_per_ton": 55,
+      "ocean_freight_per_ton": 28,
+      "insurance_per_ton": 1.5,
+      "cif_price_per_ton": 84.5,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 10,
+      "duty_per_ton": 8.45,
+      "port_costs": {
+        "pilotage_per_ton": 0.85,
+        "towage_per_ton": 1.23,
+        "port_charges_per_ton": 2.26,
+        "stevedoring_per_ton": 3.50,
+        "ancillary_per_ton": 0.26,
+        "total_port_per_ton": 8.10
+      },
+      "terminal_handling_per_ton": 4.50,
+      "total_landed_cost_per_ton": 105.55,
+      "section_301_surcharge": {
+        "applies": true,
+        "estimated_pct_chinese_built": 40,
+        "weighted_surcharge_per_ton": 8.00,
+        "notes": "40% of Turkish fleet is Chinese-built; weighted average impact"
+      },
+      "total_with_301_per_ton": 113.55,
+      "delivery_to_houston_metro_per_ton": 10.00,
+      "total_delivered_houston": 123.55,
+      "ports_of_entry": ["Houston", "Tampa", "Norfolk"]
+    },
+    {
+      "origin": "Egypt",
+      "product": "White Portland cement (ASTM C150 Type I)",
+      "fob_price_per_ton": 65,
+      "ocean_freight_per_ton": 32,
+      "insurance_per_ton": 1.8,
+      "cif_price_per_ton": 98.8,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 10,
+      "duty_per_ton": 9.88,
+      "port_costs": {
+        "pilotage_per_ton": 0.85,
+        "towage_per_ton": 1.23,
+        "port_charges_per_ton": 2.26,
+        "stevedoring_per_ton": 3.50,
+        "ancillary_per_ton": 0.26,
+        "total_port_per_ton": 8.10
+      },
+      "terminal_handling_per_ton": 5.00,
+      "total_landed_cost_per_ton": 121.78,
+      "section_301_surcharge": {
+        "applies": true,
+        "estimated_pct_chinese_built": 35,
+        "weighted_surcharge_per_ton": 7.00,
+        "notes": "35% of Egyptian export fleet is Chinese-built"
+      },
+      "total_with_301_per_ton": 128.78,
+      "delivery_to_houston_metro_per_ton": 10.00,
+      "total_delivered_houston": 138.78,
+      "premium_over_gray_pct": 25,
+      "ports_of_entry": ["Houston"],
+      "notes": "White cement commands 20-30% premium; SESCO primary product"
+    },
+    {
+      "origin": "Greece",
+      "product": "Gray Portland cement",
+      "fob_price_per_ton": 52,
+      "ocean_freight_per_ton": 30,
+      "insurance_per_ton": 1.5,
+      "cif_price_per_ton": 83.5,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 0,
+      "duty_per_ton": 0,
+      "port_costs": {
+        "total_port_per_ton": 8.10
+      },
+      "terminal_handling_per_ton": 4.50,
+      "total_landed_cost_per_ton": 96.10,
+      "section_301_surcharge": {
+        "applies": true,
+        "estimated_pct_chinese_built": 50,
+        "weighted_surcharge_per_ton": 10.00,
+        "notes": "Greek-controlled bulk fleet has significant Chinese-built exposure"
+      },
+      "total_with_301_per_ton": 106.10,
+      "ports_of_entry": ["Tampa", "New Orleans", "Norfolk"]
+    },
+    {
+      "origin": "Vietnam",
+      "product": "Gray Portland cement",
+      "fob_price_per_ton": 42,
+      "ocean_freight_per_ton": 38,
+      "insurance_per_ton": 2.0,
+      "cif_price_per_ton": 82.0,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 46,
+      "duty_per_ton": 37.72,
+      "port_costs": {
+        "total_port_per_ton": 8.10
+      },
+      "terminal_handling_per_ton": 4.50,
+      "total_landed_cost_per_ton": 132.32,
+      "section_301_surcharge": {
+        "applies": true,
+        "estimated_pct_chinese_built": 70,
+        "weighted_surcharge_per_ton": 14.00,
+        "notes": "High Chinese-built share in Vietnam-US trade lane"
+      },
+      "total_with_301_per_ton": 146.32,
+      "ports_of_entry": ["Long Beach", "Houston"],
+      "notes": "Effectively priced out of most US markets due to combined tariff + Section 301"
+    },
+    {
+      "origin": "China",
+      "product": "Gray Portland cement",
+      "fob_price_per_ton": 38,
+      "ocean_freight_per_ton": 35,
+      "insurance_per_ton": 1.8,
+      "cif_price_per_ton": 74.8,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 25,
+      "duty_per_ton": 18.70,
+      "port_costs": {
+        "total_port_per_ton": 8.10
+      },
+      "terminal_handling_per_ton": 4.50,
+      "total_landed_cost_per_ton": 106.10,
+      "section_301_surcharge": {
+        "applies": true,
+        "estimated_pct_chinese_built": 95,
+        "weighted_surcharge_per_ton": 19.00,
+        "notes": "Nearly all Chinese exports on Chinese-built vessels"
+      },
+      "total_with_301_per_ton": 125.10,
+      "ports_of_entry": ["Long Beach", "Norfolk"],
+      "notes": "Section 301 tariffs + maritime fees make Chinese cement uncompetitive"
+    },
+    {
+      "origin": "Canada",
+      "product": "Gray Portland cement",
+      "fob_price_per_ton": 75,
+      "ocean_freight_per_ton": 0,
+      "insurance_per_ton": 0.5,
+      "cif_price_per_ton": 75.5,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 0,
+      "duty_per_ton": 0,
+      "transport_mode": "truck/rail (cross-border)",
+      "transport_cost_per_ton": 15,
+      "total_landed_cost_per_ton": 90.50,
+      "section_301_surcharge": {
+        "applies": false,
+        "notes": "Land-based transport, no vessel exposure"
+      },
+      "total_with_301_per_ton": 90.50,
+      "ports_of_entry": ["Detroit (truck/rail)", "Buffalo (truck/rail)", "Blaine WA (truck/rail)"],
+      "notes": "Cross-border via truck and rail; USMCA duty-free; no Section 301 exposure"
+    },
+    {
+      "origin": "Colombia",
+      "product": "Gray Portland cement",
+      "fob_price_per_ton": 48,
+      "ocean_freight_per_ton": 22,
+      "insurance_per_ton": 1.2,
+      "cif_price_per_ton": 71.2,
+      "duty_rate_pct": 0,
+      "additional_tariff_pct": 0,
+      "duty_per_ton": 0,
+      "port_costs": {
+        "total_port_per_ton": 8.10
+      },
+      "terminal_handling_per_ton": 4.50,
+      "total_landed_cost_per_ton": 83.80,
+      "section_301_surcharge": {
+        "applies": true,
+        "estimated_pct_chinese_built": 25,
+        "weighted_surcharge_per_ton": 5.00
+      },
+      "total_with_301_per_ton": 88.80,
+      "ports_of_entry": ["Tampa", "Jacksonville", "Houston"],
+      "notes": "US-Colombia FTA eliminates duty; short voyage = low freight; Argos primary shipper"
+    }
+  ],
+  "domestic_comparison": {
+    "avg_ex_plant_price_per_ton": 150,
+    "avg_truck_delivery_100mi_per_ton": 12,
+    "avg_delivered_price_per_ton": 162,
+    "import_discount_range_pct": [15, 35],
+    "notes": "Imports are competitive primarily due to lower production costs; Section 301 narrows advantage for Chinese-built vessel routes"
+  }
+}

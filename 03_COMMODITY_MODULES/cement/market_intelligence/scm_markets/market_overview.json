@@ -1,0 +1,440 @@
+{
+  "metadata": {
+    "title": "Supplementary Cementitious Materials (SCM) Market Overview",
+    "description": "Comprehensive overview of the US and global SCM market including fly ash, slag cement, natural pozzolans, calcined clay, silica fume, and emerging alternatives",
+    "data_sources": ["USGS Mineral Commodity Summaries", "ACAA Coal Combustion Products Survey", "Slag Cement Association", "PCA SCM Report", "World Cement Association", "ACI 233R, ACI 234R"],
+    "last_updated": "2026-02-14",
+    "notes": "SCMs are materials that, when combined with Portland cement, contribute to concrete properties through hydraulic or pozzolanic activity. SCM usage reduces cement content, lowers cost, improves durability, and reduces carbon footprint."
+  },
+  "global_market": {
+    "global_market_size_usd": "28B",
+    "global_volume_mt": 800,
+    "growth_rate_cagr_pct": 6.5,
+    "forecast_period": "2024-2030",
+    "key_growth_drivers": [
+      "Carbon emission reduction mandates (cement sector responsible for ~8% of global CO2)",
+      "Green building certification requirements (LEED, BREEAM)",
+      "Infrastructure spending globally",
+      "Declining fresh fly ash availability driving alternative SCM development",
+      "LC3 (limestone-calcined clay) technology commercialization"
+    ]
+  },
+  "us_market": {
+    "us_market_size_usd": "4.5B",
+    "us_scm_consumption_mt": 25.0,
+    "us_scm_as_pct_of_cementitious": 20,
+    "target_scm_pct_by_2030": 30,
+    "growth_rate_cagr_pct": 4.0,
+    "market_structure": "Fragmented with mix of utility byproduct marketers, cement companies, and specialty suppliers"
+  },
+  "segments": [
+    {
+      "name": "fly_ash",
+      "full_name": "Coal Fly Ash (Class C and Class F)",
+      "astm_standard": "ASTM C618 - Coal Fly Ash and Raw or Calcined Natural Pozzolan for Use in Concrete",
+      "volume_mtpa": 13.5,
+      "us_market_share_pct": 54,
+      "price_range_per_ton": "$40-$75",
+      "avg_price_per_ton": 52,
+      "supply_trend": "DECLINING",
+      "supply_trend_detail": "Fresh fly ash production declining 5-8% annually as coal plants retire. Harvested/reclaimed ash from ponds partially offsetting but quality can be variable.",
+      "price_trend": "RISING - 8-12% annual price increases as supply tightens",
+      "key_players": [
+        {"company": "Eco Material Technologies (EMT)", "market_share_pct": 35, "role": "Harvesting and marketing"},
+        {"company": "Charah Solutions", "market_share_pct": 18, "role": "Utility services and ash marketing"},
+        {"company": "Boral Industries", "market_share_pct": 15, "role": "Ash marketing and processing"},
+        {"company": "Salt River Materials Group", "market_share_pct": 8, "role": "Western US ash and pozzolan"},
+        {"company": "Various utility direct sales", "market_share_pct": 24, "role": "Direct-to-market"}
+      ],
+      "classes": [
+        {
+          "class": "Class F",
+          "source": "Bituminite/anthracite coal combustion",
+          "sio2_al2o3_fe2o3_min_pct": 70,
+          "cao_typical_pct": "1-12",
+          "reactivity": "Pozzolanic (requires Ca(OH)2 to react)",
+          "applications": ["General concrete", "Mass concrete (low heat)", "High-durability concrete", "DOT bridge decks"],
+          "geographic_concentration": "Eastern US (Appalachian coal belt)"
+        },
+        {
+          "class": "Class C",
+          "source": "Sub-bituminous/lignite coal combustion",
+          "sio2_al2o3_fe2o3_min_pct": 50,
+          "cao_typical_pct": "15-40",
+          "reactivity": "Self-cementing (hydraulic) and pozzolanic",
+          "applications": ["General concrete", "Soil stabilization", "Controlled low-strength material"],
+          "geographic_concentration": "Central/Western US (PRB coal belt - WY, MT, TX lignite)"
+        }
+      ],
+      "typical_replacement_rates": {
+        "general_concrete_pct": "15-25",
+        "mass_concrete_pct": "25-40",
+        "high_performance_pct": "20-35",
+        "soil_stabilization_pct": "10-20"
+      },
+      "quality_concerns": [
+        "Harvested/reclaimed ash may have higher LOI (loss on ignition) and carbon content",
+        "Variability between fresh and harvested sources",
+        "Moisture content of harvested ash",
+        "Potential contamination from pond storage",
+        "Ammonia content from SCR-equipped plants"
+      ]
+    },
+    {
+      "name": "slag_cement",
+      "full_name": "Ground Granulated Blast Furnace Slag (GGBFS)",
+      "astm_standard": "ASTM C989 - Slag Cement for Use in Concrete and Mortars",
+      "volume_mtpa": 5.0,
+      "us_market_share_pct": 20,
+      "price_range_per_ton": "$65-$100",
+      "avg_price_per_ton": 80,
+      "supply_trend": "DECLINING",
+      "supply_trend_detail": "US blast furnace capacity declining as EAF steelmaking grows. Cleveland-Cliffs and USS shifting toward DRI/EAF. Import dependence increasing.",
+      "price_trend": "RISING - 5-8% annual increases",
+      "key_players": [
+        {"company": "Holcim US (Amrize/Holcim Slag Cement)", "market_share_pct": 35, "role": "Largest US slag cement grinder/marketer"},
+        {"company": "Buzzi Unicem USA", "market_share_pct": 15, "role": "Grinding and blending"},
+        {"company": "Lehigh Hanson / Heidelberg Materials", "market_share_pct": 15, "role": "Grinding at cement plants"},
+        {"company": "St. Marys / Votorantim", "market_share_pct": 12, "role": "Great Lakes grinding and import"},
+        {"company": "Argos / Summit Materials", "market_share_pct": 8, "role": "Southeast grinding"},
+        {"company": "Others (Skyway Cement, etc.)", "market_share_pct": 15, "role": "Various regional"}
+      ],
+      "grades": [
+        {"grade": "Grade 80", "activity_index_min_pct": 75, "use": "Mass concrete, lower reactivity applications"},
+        {"grade": "Grade 100", "activity_index_min_pct": 95, "use": "General purpose, most common grade"},
+        {"grade": "Grade 120", "activity_index_min_pct": 115, "use": "High performance, faster strength gain"}
+      ],
+      "typical_replacement_rates": {
+        "general_concrete_pct": "25-50",
+        "mass_concrete_pct": "50-80",
+        "high_durability_pct": "35-65",
+        "sulfate_resistance_pct": "50-70"
+      },
+      "advantages": [
+        "Excellent sulfate resistance",
+        "Low heat of hydration (mass concrete)",
+        "Reduced permeability and chloride ingress",
+        "Light color (beneficial for architectural concrete)",
+        "Higher long-term strength"
+      ]
+    },
+    {
+      "name": "natural_pozzolans",
+      "full_name": "Natural Pozzolans (Volcanic Ash, Pumice, Diatomaceous Earth, Calcined Shale)",
+      "astm_standard": "ASTM C618 Class N - Raw or Calcined Natural Pozzolan",
+      "volume_mtpa": 2.5,
+      "us_market_share_pct": 10,
+      "price_range_per_ton": "$30-$60",
+      "avg_price_per_ton": 45,
+      "supply_trend": "GROWING",
+      "supply_trend_detail": "Increasing interest as fly ash substitute. Volcanic deposits in Western US (OR, CA, AZ, NM, ID) being developed. Supply is geologically abundant but processing/logistics costs limit distribution.",
+      "price_trend": "STABLE to slightly rising",
+      "key_players": [
+        {"company": "CR Minerals (Imerys)", "market_share_pct": 25, "role": "Pumice/pozzolan mining and processing (NM)"},
+        {"company": "Hess Pumice Products", "market_share_pct": 15, "role": "Pumice processing (ID)"},
+        {"company": "Salt River Materials Group", "market_share_pct": 12, "role": "Natural pozzolan sourcing (AZ)"},
+        {"company": "Various quarry operators", "market_share_pct": 48, "role": "Regional suppliers"}
+      ],
+      "sources": [
+        {"type": "Volcanic ash/tuff", "locations": "OR, CA, AZ, NM, ID", "quality": "Variable, requires testing"},
+        {"type": "Pumice", "locations": "ID, NM, OR", "quality": "Consistent, well-characterized"},
+        {"type": "Diatomaceous earth (calcined)", "locations": "CA, NV, OR", "quality": "High silica, good pozzolanic activity"},
+        {"type": "Calcined shale/clay (metakaolin precursors)", "locations": "Various", "quality": "Requires calcination processing"}
+      ],
+      "typical_replacement_rates": {
+        "general_concrete_pct": "15-25",
+        "notes": "Similar replacement levels to Class F fly ash. Performance varies by source."
+      },
+      "advantages": [
+        "Geologically abundant and renewable",
+        "Not dependent on fossil fuel industry",
+        "Consistent chemistry (geological deposits)",
+        "Available in Western US where fly ash is scarce"
+      ],
+      "challenges": [
+        "High transportation costs from remote deposits",
+        "Variable quality between sources",
+        "Limited DOT/specification approval in some states",
+        "Processing costs (drying, grinding, calcination)",
+        "Contractor unfamiliarity"
+      ]
+    },
+    {
+      "name": "calcined_clay",
+      "full_name": "Calcined Clay / Metakaolin (LC3 Technology)",
+      "astm_standard": "ASTM C618 Class N (natural pozzolan); ASTM C1697 (blended cement with calcined clay)",
+      "volume_mtpa": 0.5,
+      "us_market_share_pct": 2,
+      "price_range_per_ton": "$100-$250",
+      "avg_price_per_ton": 160,
+      "supply_trend": "EMERGING / GROWING",
+      "supply_trend_detail": "LC3 (Limestone Calcined Clay Cement) technology being commercialized globally. US production in early stages. Significant investment by Holcim, Heidelberg, and others.",
+      "price_trend": "Expected to decline as scale increases",
+      "key_players": [
+        {"company": "Holcim (ECOPlanet LC3 initiative)", "market_share_pct": 30, "role": "LC3 commercialization leader"},
+        {"company": "Heidelberg Materials", "market_share_pct": 20, "role": "Calcined clay trials"},
+        {"company": "BASF/Advanced Mineral Processing", "market_share_pct": 15, "role": "Metakaolin production"},
+        {"company": "Burgess Pigment Company", "market_share_pct": 15, "role": "Calcined kaolin/metakaolin (GA)"},
+        {"company": "Others", "market_share_pct": 20, "role": "Emerging producers"}
+      ],
+      "lc3_technology": {
+        "description": "Limestone Calcined Clay Cement - combines clinker (50%), calcined clay (30%), limestone (15%), and gypsum (5%)",
+        "co2_reduction_pct": "40",
+        "raw_material": "Kaolinitic clay (requires 40%+ kaolinite content)",
+        "calcination_temperature_c": "700-850",
+        "energy_requirement": "Lower than clinker production (no limestone decarbonation)",
+        "global_status": "Commercial in India, Colombia, Cuba; pilot in US, Europe",
+        "us_status": "Pilot/demonstration phase. Holcim conducting trials at multiple US plants.",
+        "commercial_timeline": "US commercial production expected 2027-2030"
+      },
+      "typical_replacement_rates": {
+        "as_metakaolin_pct": "5-15",
+        "as_lc3_system_pct": "30-50 (replacing clinker in cement production)"
+      },
+      "advantages": [
+        "Globally abundant raw material (clay)",
+        "40% CO2 reduction vs OPC",
+        "Not dependent on industrial byproducts",
+        "Improved durability properties",
+        "Lower calcination temperature than clinker"
+      ],
+      "challenges": [
+        "High current cost (metakaolin)",
+        "Limited US production infrastructure",
+        "Clay quality variability (kaolinite content)",
+        "Specification/code acceptance still evolving",
+        "Contractor and engineer unfamiliarity",
+        "Competing with established fly ash and slag"
+      ]
+    },
+    {
+      "name": "silica_fume",
+      "full_name": "Silica Fume (Condensed Silica Fume / Microsilica)",
+      "astm_standard": "ASTM C1240 - Silica Fume Used in Cementitious Mixtures",
+      "volume_mtpa": 0.15,
+      "us_market_share_pct": 0.6,
+      "price_range_per_ton": "$400-$800",
+      "avg_price_per_ton": 550,
+      "supply_trend": "STABLE",
+      "supply_trend_detail": "Byproduct of silicon/ferrosilicon production. Limited growth in US production. Imports supplement.",
+      "price_trend": "STABLE - premium product with stable niche",
+      "key_players": [
+        {"company": "Elkem (Bluestar)", "market_share_pct": 40, "role": "Global leader, US distribution"},
+        {"company": "Globe Specialty Metals (Ferroglobe)", "market_share_pct": 25, "role": "US ferrosilicon producer"},
+        {"company": "Norchem/GCP Applied Technologies", "market_share_pct": 15, "role": "Distribution and densification"},
+        {"company": "Others", "market_share_pct": 20, "role": "Various importers/distributors"}
+      ],
+      "typical_replacement_rates": {
+        "high_strength_concrete_pct": "5-10",
+        "high_performance_concrete_pct": "5-12",
+        "shotcrete_pct": "5-8"
+      },
+      "applications": [
+        "Ultra-high-performance concrete (UHPC)",
+        "High-rise building columns (10,000+ psi)",
+        "Bridge deck overlays",
+        "Parking garage rehabilitation",
+        "Offshore structures",
+        "Shotcrete (tunnel lining, slope stabilization)"
+      ],
+      "advantages": [
+        "Extreme strength enhancement",
+        "Very low permeability",
+        "High abrasion resistance",
+        "Excellent chemical resistance"
+      ],
+      "challenges": [
+        "Very high cost ($400-800/ton)",
+        "Difficult to handle (extremely fine, 0.1 micron)",
+        "Increases water demand (requires superplasticizer)",
+        "Limited supply (byproduct only)",
+        "Health concerns (silicosis) require handling precautions"
+      ]
+    },
+    {
+      "name": "ground_glass_pozzolan",
+      "full_name": "Ground Glass Pozzolan (GGP / Finely Ground Recycled Glass)",
+      "astm_standard": "ASTM C1866 - Ground Glass Pozzolan for Use in Concrete",
+      "volume_mtpa": 0.3,
+      "us_market_share_pct": 1.2,
+      "price_range_per_ton": "$50-$90",
+      "avg_price_per_ton": 70,
+      "supply_trend": "GROWING",
+      "supply_trend_detail": "Emerging SCM from recycled container glass. New ASTM C1866 standard (2020) enabling specification acceptance. Multiple processing facilities starting up.",
+      "price_trend": "Declining as scale increases",
+      "key_players": [
+        {"company": "Urban Mining Industries", "market_share_pct": 35, "role": "Glass pozzolan processing (multiple US locations)"},
+        {"company": "Vitro Minerals", "market_share_pct": 25, "role": "Glass pozzolan processing"},
+        {"company": "Pozzotive", "market_share_pct": 15, "role": "Glass pozzolan startup"},
+        {"company": "Various municipal recycling processors", "market_share_pct": 25, "role": "Emerging"}
+      ],
+      "typical_replacement_rates": {
+        "general_concrete_pct": "15-25",
+        "notes": "Performance similar to Class F fly ash"
+      },
+      "advantages": [
+        "Recycled waste material (sustainability narrative)",
+        "Consistent amorphous silica chemistry",
+        "Not dependent on industrial byproducts",
+        "Available in urban areas (near demand)",
+        "Reduces landfill glass waste",
+        "White color (beneficial for light-colored concrete)"
+      ],
+      "challenges": [
+        "Processing cost (fine grinding required)",
+        "Contamination control from mixed glass streams",
+        "Limited track record vs fly ash/slag",
+        "Specification acceptance still expanding across DOTs",
+        "Competing with low-cost fly ash (where available)"
+      ]
+    },
+    {
+      "name": "limestone_filler",
+      "full_name": "Ground Limestone (Limestone Powder / Calcium Carbonate Filler)",
+      "astm_standard": "ASTM C595 (component of Type IL cement); ASTM C1157 (performance-based)",
+      "volume_mtpa": 3.0,
+      "us_market_share_pct": 12,
+      "price_range_per_ton": "$15-$30",
+      "avg_price_per_ton": 22,
+      "supply_trend": "RAPIDLY GROWING",
+      "supply_trend_detail": "Portland-limestone cement (PLC/Type IL) is fastest-growing cement type. Limestone replaces 5-15% of clinker at the cement plant. Every major US cement producer now offers Type IL.",
+      "price_trend": "STABLE - limestone is very low cost",
+      "key_players": [
+        {"company": "All major cement producers", "market_share_pct": 100, "role": "Incorporated in Type IL cement at the plant"}
+      ],
+      "typical_replacement_rates": {
+        "type_il_limestone_content_pct": "5-15",
+        "notes": "Interground with clinker at the cement plant, not added at the concrete plant"
+      },
+      "advantages": [
+        "Abundantly available (limestone is cement raw material)",
+        "Reduces clinker factor and CO2 by 8-12%",
+        "No additional infrastructure needed (interground at cement plant)",
+        "Faster specification acceptance than other alternatives",
+        "Cost-effective (limestone cheaper than clinker)"
+      ],
+      "notes": "Type IL is not technically an SCM addition at the concrete plant - it is a blended cement produced at the cement plant. But it serves the same market function of reducing Portland cement clinker content."
+    }
+  ],
+  "astm_standards_summary": [
+    {"standard": "ASTM C150", "title": "Portland Cement", "types": "Type I, II, III, IV, V"},
+    {"standard": "ASTM C595", "title": "Blended Hydraulic Cements", "types": "Type IL, IP, IS, IT"},
+    {"standard": "ASTM C1157", "title": "Hydraulic Cement (Performance Specification)", "types": "GU, HE, MS, HS, MH, LH"},
+    {"standard": "ASTM C618", "title": "Coal Fly Ash and Natural Pozzolan", "classes": "Class F, Class C, Class N"},
+    {"standard": "ASTM C989", "title": "Slag Cement (GGBFS)", "grades": "Grade 80, 100, 120"},
+    {"standard": "ASTM C1240", "title": "Silica Fume", "notes": "Single grade"},
+    {"standard": "ASTM C1697", "title": "Blended Cement with Calcined Clay", "notes": "Newer standard"},
+    {"standard": "ASTM C1866", "title": "Ground Glass Pozzolan", "notes": "Published 2020"}
+  ],
+  "blending_ratios": {
+    "description": "Typical SCM replacement levels in concrete mix designs",
+    "applications": [
+      {
+        "application": "General purpose concrete (3000-4000 psi)",
+        "fly_ash_pct": "15-25",
+        "slag_pct": "25-50",
+        "silica_fume_pct": "0",
+        "natural_pozzolan_pct": "15-20",
+        "total_scm_max_pct": 50,
+        "notes": "Standard ACI 318 limits apply"
+      },
+      {
+        "application": "High-performance concrete (6000+ psi)",
+        "fly_ash_pct": "15-25",
+        "slag_pct": "25-40",
+        "silica_fume_pct": "5-10",
+        "natural_pozzolan_pct": "10-15",
+        "total_scm_max_pct": 50,
+        "notes": "Ternary blends common (cement + fly ash + silica fume)"
+      },
+      {
+        "application": "Mass concrete (low heat)",
+        "fly_ash_pct": "25-40",
+        "slag_pct": "50-80",
+        "silica_fume_pct": "0",
+        "natural_pozzolan_pct": "20-35",
+        "total_scm_max_pct": 80,
+        "notes": "Maximum SCM usage to minimize heat of hydration"
+      },
+      {
+        "application": "DOT bridge decks",
+        "fly_ash_pct": "15-25",
+        "slag_pct": "25-50",
+        "silica_fume_pct": "5-8",
+        "natural_pozzolan_pct": "15-20",
+        "total_scm_max_pct": 50,
+        "notes": "Per state DOT specifications, low permeability required"
+      },
+      {
+        "application": "Sulfate-resistant concrete",
+        "fly_ash_pct": "25-35 (Class F only)",
+        "slag_pct": "50-70",
+        "silica_fume_pct": "5-10",
+        "natural_pozzolan_pct": "20-30",
+        "total_scm_max_pct": 70,
+        "notes": "High SCM levels or Type V cement for sulfate exposure"
+      },
+      {
+        "application": "Precast/prestressed (high early strength)",
+        "fly_ash_pct": "10-20",
+        "slag_pct": "20-35",
+        "silica_fume_pct": "5-10",
+        "natural_pozzolan_pct": "10-15",
+        "total_scm_max_pct": 35,
+        "notes": "Lower SCM levels to maintain early strength for form cycling"
+      }
+    ]
+  },
+  "carbon_reduction_potential": {
+    "description": "CO2 reduction achievable through SCM use in concrete",
+    "baseline_opc_co2_kg_per_ton": 900,
+    "reductions_by_scm": [
+      {"scm": "Fly ash at 25% replacement", "co2_reduction_pct": 22, "notes": "Avoided clinker + low processing energy"},
+      {"scm": "Slag cement at 50% replacement", "co2_reduction_pct": 45, "notes": "Highest reduction per unit of conventional SCMs"},
+      {"scm": "Type IL (PLC) at 12% limestone", "co2_reduction_pct": 10, "notes": "Simplest implementation, already widely adopted"},
+      {"scm": "Calcined clay (LC3 at 50%)", "co2_reduction_pct": 40, "notes": "Emerging technology with high potential"},
+      {"scm": "Silica fume at 8% replacement", "co2_reduction_pct": 7, "notes": "Limited volume impact"},
+      {"scm": "Ground glass pozzolan at 20%", "co2_reduction_pct": 18, "notes": "Additional benefit from waste diversion"},
+      {"scm": "Natural pozzolan at 20%", "co2_reduction_pct": 17, "notes": "Low processing energy requirement"},
+      {"scm": "Ternary blend (Type IL + 20% fly ash + 10% slag)", "co2_reduction_pct": 35, "notes": "Combined approach, increasingly common"}
+    ],
+    "industry_targets": {
+      "pca_roadmap_2050": "Carbon neutral cement and concrete by 2050",
+      "gcca_target": "Net-zero concrete by 2050",
+      "near_term_2030": "40% reduction vs 2020 baseline",
+      "key_levers": [
+        "Clinker substitution with SCMs (largest near-term lever)",
+        "Alternative fuels in kilns (biomass, waste-derived)",
+        "Carbon capture and storage (CCS) at cement plants",
+        "Kiln efficiency improvements",
+        "Novel cements and binders"
+      ]
+    }
+  },
+  "supply_chain_risks": {
+    "fly_ash": {
+      "risk_level": "HIGH",
+      "primary_risk": "Coal plant retirements eliminating fresh supply",
+      "timeline": "2025-2035 critical transition period",
+      "mitigation": ["Harvested ash from ponds", "Natural pozzolan substitution", "Type IL adoption", "Ground glass pozzolan"]
+    },
+    "slag_cement": {
+      "risk_level": "MEDIUM-HIGH",
+      "primary_risk": "Blast furnace closures as EAF steelmaking grows",
+      "timeline": "Gradual decline through 2040",
+      "mitigation": ["Imported GBFS from Brazil, Japan, India", "Calcined clay development", "Type IL substitution"]
+    },
+    "natural_pozzolans": {
+      "risk_level": "LOW",
+      "primary_risk": "Logistics cost from remote deposits to demand centers",
+      "timeline": "Ongoing",
+      "mitigation": ["Processing facility development near deposits", "Rail/truck cost optimization"]
+    },
+    "calcined_clay": {
+      "risk_level": "LOW (supply) / MEDIUM (adoption)",
+      "primary_risk": "Technology commercialization timeline and specification acceptance",
+      "timeline": "2027-2035 for significant US market penetration",
+      "mitigation": ["Global technology transfer from India/Colombia pilots", "ASTM standard development"]
+    }
+  }
+}

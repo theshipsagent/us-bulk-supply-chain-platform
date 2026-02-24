@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESCO Cement | Market Intelligence Package</title>
+    <style>
+        :root {
+            --primary-dark: #1B5E20;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --secondary-dark: #0D47A1;
+            --secondary: #1976D2;
+            --accent: #FF5722;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        .header .date {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            background: rgba(255,255,255,0.15);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        /* Instructions */
+        .instructions {
+            background: #fff3e0;
+            border-left: 4px solid var(--accent);
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        .instructions h3 {
+            color: var(--accent);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        .instructions p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Quick Stats */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-box {
+            background: white;
+            padding: 20px 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .stat-box .value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        .stat-box:nth-child(2) .value { color: var(--secondary-dark); }
+        .stat-box:nth-child(3) .value { color: var(--primary); }
+        .stat-box:nth-child(4) .value { color: var(--accent); }
+        .stat-box .label {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Section Headers */
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .section-header .number {
+            background: var(--primary);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+        .section-header h2 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            font-weight: 500;
+        }
+
+        /* Report Links */
+        .report-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .report-link {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 18px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+            border-left: 4px solid transparent;
+        }
+        .report-link:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left-color: var(--primary);
+        }
+        .report-link.primary {
+            background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%);
+            border-left-color: var(--primary);
+        }
+        .report-link .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+        }
+        .report-link .info { flex: 1; }
+        .report-link .title {
+            font-weight: 600;
+            color: #333;
+            font-size: 1rem;
+            margin-bottom: 3px;
+        }
+        .report-link .desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .report-link .badge {
+            background: #e0e0e0;
+            color: #555;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-left: 10px;
+        }
+        .report-link .badge.recommended {
+            background: var(--primary-light);
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #888;
+            font-size: 0.85rem;
+        }
+        .footer a { color: var(--primary); }
+
+        @media (max-width: 600px) {
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .header h1 { font-size: 1.6rem; }
+            .report-link { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>SESCO Cement Corp</h1>
+            <div class="subtitle">Florida Cement Market Intelligence Package</div>
+            <div class="date">December 2025 | Port Redwing Terminal</div>
+        </header>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>How to Use This Package</h3>
+            <p>Click any report below to open it in your browser. Start with the <strong>Executive Summary</strong> for a quick overview, or the <strong>Full Market Report</strong> for detailed analysis. Interactive maps require an internet connection.</p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="value">9.06M</div>
+                <div class="label">MT Florida Imports/Year</div>
+            </div>
+            <div class="stat-box">
+                <div class="value">75%</div>
+                <div class="label">Tampa Bay Share</div>
+            </div>
+            <div class="stat-box">
+                <div class="value">158</div>
+                <div class="label">NA Cement Plants</div>
+            </div>
+            <div class="stat-box">
+                <div class="value">10%</div>
+                <div class="label">Egypt/Turkey Tariff</div>
+            </div>
+        </div>
+
+        <!-- Section 1: Start Here -->
+        <div class="section-header">
+            <div class="number">1</div>
+            <h2>Start Here - Executive Overview</h2>
+        </div>
+        <div class="report-list">
+            <a href="FLORIDA_CEMENT_EXECUTIVE_SUMMARY.html" class="report-link primary">
+                <span class="icon">&#128196;</span>
+                <div class="info">
+                    <div class="title">Executive Summary</div>
+                    <div class="desc">2-page overview of market opportunity, supply landscape, and strategic recommendations</div>
+                </div>
+                <span class="badge recommended">Start Here</span>
+            </a>
+            <a href="FLORIDA_CEMENT_MARKET_REPORT.html" class="report-link">
+                <span class="icon">&#128214;</span>
+                <div class="info">
+                    <div class="title">Full Market Report</div>
+                    <div class="desc">Comprehensive analysis: supply, demand, imports, customers, export opportunities</div>
+                </div>
+                <span class="badge">Full Report</span>
+            </a>
+        </div>
+
+        <!-- Section 2: Interactive Maps -->
+        <div class="section-header">
+            <div class="number">2</div>
+            <h2>Interactive Maps</h2>
+        </div>
+        <div class="report-list">
+            <a href="PORT_REDWING_TRUCKING_MAP.html" class="report-link">
+                <span class="icon">&#128666;</span>
+                <div class="info">
+                    <div class="title">Port Redwing Trucking Radius</div>
+                    <div class="desc">1-hour, 3-hour, 5-hour delivery zones from the new terminal</div>
+                </div>
+                <span class="badge">Map</span>
+            </a>
+            <a href="CEMENT_INFRASTRUCTURE_MAP.html" class="report-link">
+                <span class="icon">&#127961;</span>
+                <div class="info">
+                    <div class="title">US Cement Infrastructure</div>
+                    <div class="desc">Cement plants (US/Canada/Mexico), import ports, rail network, marine highways</div>
+                </div>
+                <span class="badge">Map</span>
+            </a>
+            <a href="GLOBAL_TRADE_FLOW_MAP.html" class="report-link">
+                <span class="icon">&#127758;</span>
+                <div class="info">
+                    <div class="title">Global Trade Flows</div>
+                    <div class="desc">Import origins, shipping routes, Caribbean export opportunities</div>
+                </div>
+                <span class="badge">Map</span>
+            </a>
+            <a href="READYMIX_CUSTOMER_MAP.html" class="report-link primary">
+                <span class="icon">&#127959;</span>
+                <div class="info">
+                    <div class="title">Ready-Mix Customer Map</div>
+                    <div class="desc">894 Florida ready-mix plants + 800 Gulf Coast plants with trucking zones</div>
+                </div>
+                <span class="badge recommended">NEW</span>
+            </a>
+        </div>
+
+        <!-- Section 3: Market Intelligence -->
+        <div class="section-header">
+            <div class="number">3</div>
+            <h2>Market Intelligence</h2>
+        </div>
+        <div class="report-list">
+            <a href="CEMENT_MARKET_NATIONAL_DASHBOARD.html" class="report-link">
+                <span class="icon">&#128200;</span>
+                <div class="info">
+                    <div class="title">National Market Dashboard</div>
+                    <div class="desc">US cement statistics, state production capacities, demand indicators</div>
+                </div>
+                <span class="badge">Dashboard</span>
+            </a>
+            <a href="CEMENT_MARKET_INTELLIGENCE_REPORT.html" class="report-link">
+                <span class="icon">&#128202;</span>
+                <div class="info">
+                    <div class="title">Competitive Intelligence</div>
+                    <div class="desc">Major players, import trends, tariff analysis, market dynamics</div>
+                </div>
+                <span class="badge">Analysis</span>
+            </a>
+            <a href="CEMENT_MARKET_ARCGIS_EMBED.html" class="report-link">
+                <span class="icon">&#127760;</span>
+                <div class="info">
+                    <div class="title">ArcGIS Online Maps</div>
+                    <div class="desc">Advanced GIS layers with filtering and analysis tools</div>
+                </div>
+                <span class="badge">ArcGIS</span>
+            </a>
+        </div>
+
+        <!-- Section 4: Presentations -->
+        <div class="section-header">
+            <div class="number">4</div>
+            <h2>Presentations</h2>
+        </div>
+        <div class="report-list">
+            <a href="CEMENT_MARKET_PITCH_DECK.html" class="report-link">
+                <span class="icon">&#128187;</span>
+                <div class="info">
+                    <div class="title">Market Pitch Deck</div>
+                    <div class="desc">Presentation-ready slides for meetings and investor discussions</div>
+                </div>
+                <span class="badge">Slides</span>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Prepared for <strong>SESCO Cement Corp</strong> | <a href="https://theshipsagent.com">theshipsagent.com</a></p>
+            <p style="margin-top: 8px;">Data Sources: Panjiva, USGS, GEM Tracker, BTS NTAD, Clarksons</p>
+        </footer>
+    </div>
+</body>
+</html>

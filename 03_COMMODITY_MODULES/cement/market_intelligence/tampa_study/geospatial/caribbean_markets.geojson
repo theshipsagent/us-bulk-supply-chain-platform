@@ -1,0 +1,456 @@
+{
+  "type": "FeatureCollection",
+  "name": "Caribbean_Central_America_Markets",
+  "metadata": {
+    "title": "Caribbean and Central America Cement Markets",
+    "description": "Export opportunity assessment for Caribbean and Central American cement markets",
+    "source": "Industry research, trade data analysis 2024-2025",
+    "created": "2025-12-16",
+    "projection": "EPSG:4326",
+    "colorScheme": {
+      "high_opportunity": "#1B5E20",
+      "moderate_opportunity": "#4CAF50",
+      "low_opportunity": "#81C784",
+      "competitor": "#FF5722"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bahamas",
+        "country_code": "BHS",
+        "opportunity_score": 95,
+        "opportunity_label": "VERY HIGH",
+        "import_dependency": 100,
+        "annual_demand_mt": 150000,
+        "demand_label": "150K MT",
+        "key_driver": "100% import-dependent, tourism construction",
+        "tariff_rate": "Variable",
+        "transit_days_tampa": 3,
+        "priority_tier": 1,
+        "products": "Gray, White, Bagged",
+        "color": "#1B5E20",
+        "symbol_size": 30
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.3963, 25.0343]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trinidad & Tobago",
+        "country_code": "TTO",
+        "opportunity_score": 90,
+        "opportunity_label": "HIGH",
+        "import_dependency": 40,
+        "annual_demand_mt": 500000,
+        "demand_label": "500K MT",
+        "key_driver": "Zero import duty 2025, government encouraging imports",
+        "tariff_rate": "0%",
+        "transit_days_tampa": 5,
+        "priority_tier": 1,
+        "products": "Gray, Bulk",
+        "color": "#1B5E20",
+        "symbol_size": 28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-61.2225, 10.4918]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "US Virgin Islands",
+        "country_code": "VIR",
+        "opportunity_score": 85,
+        "opportunity_label": "HIGH",
+        "import_dependency": 100,
+        "annual_demand_mt": 50000,
+        "demand_label": "50K MT",
+        "key_driver": "US territory, 100% import-dependent",
+        "tariff_rate": "0% (US)",
+        "transit_days_tampa": 4,
+        "priority_tier": 1,
+        "products": "White, Bagged",
+        "color": "#1B5E20",
+        "symbol_size": 22
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.8963, 18.3358]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haiti",
+        "country_code": "HTI",
+        "opportunity_score": 70,
+        "opportunity_label": "MODERATE-HIGH",
+        "import_dependency": 90,
+        "annual_demand_mt": 800000,
+        "demand_label": "800K MT",
+        "key_driver": "High volume but political/payment risk",
+        "tariff_rate": "Variable",
+        "transit_days_tampa": 4,
+        "priority_tier": 2,
+        "products": "Gray, Bagged",
+        "color": "#4CAF50",
+        "symbol_size": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.2852, 18.9712]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nicaragua",
+        "country_code": "NIC",
+        "opportunity_score": 65,
+        "opportunity_label": "MODERATE-HIGH",
+        "import_dependency": 70,
+        "annual_demand_mt": 1000000,
+        "demand_label": "1.0 MT",
+        "key_driver": "1.0M ton imports, Atlantic coast opportunity",
+        "tariff_rate": "CAFTA-DR",
+        "transit_days_tampa": 5,
+        "priority_tier": 2,
+        "products": "Gray, Bulk",
+        "color": "#4CAF50",
+        "symbol_size": 22
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-85.2072, 12.8654]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aruba",
+        "country_code": "ABW",
+        "opportunity_score": 60,
+        "opportunity_label": "MODERATE",
+        "import_dependency": 100,
+        "annual_demand_mt": 40000,
+        "demand_label": "40K MT",
+        "key_driver": "Tourism construction, established distributors",
+        "tariff_rate": "Variable",
+        "transit_days_tampa": 5,
+        "priority_tier": 2,
+        "products": "White, Bagged",
+        "color": "#4CAF50",
+        "symbol_size": 16
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.9683, 12.5211]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Curacao",
+        "country_code": "CUW",
+        "opportunity_score": 60,
+        "opportunity_label": "MODERATE",
+        "import_dependency": 100,
+        "annual_demand_mt": 45000,
+        "demand_label": "45K MT",
+        "key_driver": "A&M Cement packaging facility",
+        "tariff_rate": "Variable",
+        "transit_days_tampa": 5,
+        "priority_tier": 2,
+        "products": "Bulk, White",
+        "color": "#4CAF50",
+        "symbol_size": 16
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.9900, 12.1696]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Maarten",
+        "country_code": "SXM",
+        "opportunity_score": 55,
+        "opportunity_label": "MODERATE",
+        "import_dependency": 100,
+        "annual_demand_mt": 25000,
+        "demand_label": "25K MT",
+        "key_driver": "Tourism, hurricane reconstruction",
+        "tariff_rate": "Variable",
+        "transit_days_tampa": 4,
+        "priority_tier": 2,
+        "products": "Bagged, White",
+        "color": "#4CAF50",
+        "symbol_size": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-63.0548, 18.0425]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suriname",
+        "country_code": "SUR",
+        "opportunity_score": 50,
+        "opportunity_label": "MODERATE",
+        "import_dependency": 100,
+        "annual_demand_mt": 80000,
+        "demand_label": "80K MT",
+        "key_driver": "Small but underserved market",
+        "tariff_rate": "CARICOM",
+        "transit_days_tampa": 6,
+        "priority_tier": 2,
+        "products": "Bagged",
+        "color": "#81C784",
+        "symbol_size": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.2038, 5.8520]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puerto Rico",
+        "country_code": "PRI",
+        "opportunity_score": 45,
+        "opportunity_label": "MODERATE",
+        "import_dependency": 32,
+        "annual_demand_mt": 590000,
+        "demand_label": "590K MT",
+        "key_driver": "Large market, specialty products",
+        "tariff_rate": "0% (US)",
+        "transit_days_tampa": 3,
+        "priority_tier": 2,
+        "products": "White, Specialty",
+        "color": "#81C784",
+        "symbol_size": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-66.5901, 18.2208]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jamaica",
+        "country_code": "JAM",
+        "opportunity_score": 35,
+        "opportunity_label": "LOW-MODERATE",
+        "import_dependency": 15,
+        "annual_demand_mt": 1200000,
+        "demand_label": "1.2 MT",
+        "key_driver": "Strong domestic production, hurricane timing",
+        "tariff_rate": "CARICOM",
+        "transit_days_tampa": 4,
+        "priority_tier": 3,
+        "products": "White, Emergency",
+        "color": "#81C784",
+        "symbol_size": 18
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.2975, 18.1096]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guatemala",
+        "country_code": "GTM",
+        "opportunity_score": 30,
+        "opportunity_label": "LOW-MODERATE",
+        "import_dependency": 25,
+        "annual_demand_mt": 5500000,
+        "demand_label": "5.5 MT",
+        "key_driver": "White cement only, compete on quality",
+        "tariff_rate": "CAFTA-DR",
+        "transit_days_tampa": 4,
+        "priority_tier": 3,
+        "products": "White only",
+        "color": "#81C784",
+        "symbol_size": 16
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.2308, 15.7835]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dominican Republic",
+        "country_code": "DOM",
+        "opportunity_score": 15,
+        "opportunity_label": "LOW (Competitor)",
+        "import_dependency": 0,
+        "annual_demand_mt": 6000000,
+        "demand_label": "NET EXPORTER",
+        "key_driver": "Regional exporter - COMPETITOR",
+        "tariff_rate": "CAFTA-DR",
+        "transit_days_tampa": 4,
+        "priority_tier": 4,
+        "products": "N/A - Competitor",
+        "color": "#FF5722",
+        "symbol_size": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.8988, 18.7357]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colombia",
+        "country_code": "COL",
+        "opportunity_score": 10,
+        "opportunity_label": "VERY LOW (Competitor)",
+        "import_dependency": 0,
+        "annual_demand_mt": 13400000,
+        "demand_label": "NET EXPORTER",
+        "key_driver": "Major regional exporter - COMPETITOR",
+        "tariff_rate": "Various",
+        "transit_days_tampa": 6,
+        "priority_tier": 4,
+        "products": "N/A - Competitor",
+        "color": "#FF5722",
+        "symbol_size": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.2973, 10.9685]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panama",
+        "country_code": "PAN",
+        "opportunity_score": 10,
+        "opportunity_label": "VERY LOW (Competitor)",
+        "import_dependency": 0,
+        "annual_demand_mt": 2000000,
+        "demand_label": "NET EXPORTER",
+        "key_driver": "Exports surged 79% - COMPETITOR",
+        "tariff_rate": "Various",
+        "transit_days_tampa": 5,
+        "priority_tier": 4,
+        "products": "N/A - Competitor",
+        "color": "#FF5722",
+        "symbol_size": 18
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.5342, 9.1012]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guyana",
+        "country_code": "GUY",
+        "opportunity_score": 20,
+        "opportunity_label": "LOW (New Capacity)",
+        "import_dependency": 100,
+        "annual_demand_mt": 250000,
+        "demand_label": "250K MT",
+        "key_driver": "New plants building, window closing",
+        "tariff_rate": "CARICOM",
+        "transit_days_tampa": 6,
+        "priority_tier": 3,
+        "products": "Window closing",
+        "color": "#81C784",
+        "symbol_size": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.1551, 6.8013]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Honduras",
+        "country_code": "HND",
+        "opportunity_score": 20,
+        "opportunity_label": "LOW",
+        "import_dependency": 10,
+        "annual_demand_mt": 2500000,
+        "demand_label": "2.5 MT",
+        "key_driver": "Strong domestic production, Argos presence",
+        "tariff_rate": "CAFTA-DR",
+        "transit_days_tampa": 4,
+        "priority_tier": 3,
+        "products": "White only",
+        "color": "#81C784",
+        "symbol_size": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.2068, 14.0818]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Costa Rica",
+        "country_code": "CRI",
+        "opportunity_score": 20,
+        "opportunity_label": "LOW",
+        "import_dependency": 10,
+        "annual_demand_mt": 2000000,
+        "demand_label": "2.0 MT",
+        "key_driver": "Domestic production, exports to Nicaragua",
+        "tariff_rate": "CAFTA-DR",
+        "transit_days_tampa": 5,
+        "priority_tier": 3,
+        "products": "White only",
+        "color": "#81C784",
+        "symbol_size": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.0907, 9.9281]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Belize",
+        "country_code": "BLZ",
+        "opportunity_score": 15,
+        "opportunity_label": "LOW",
+        "import_dependency": 0,
+        "annual_demand_mt": 100000,
+        "demand_label": "100K MT",
+        "key_driver": "New grinding plant 2024, Guatemala supply",
+        "tariff_rate": "Variable",
+        "transit_days_tampa": 4,
+        "priority_tier": 4,
+        "products": "Limited",
+        "color": "#81C784",
+        "symbol_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-88.4976, 17.1899]
+      }
+    }
+  ]
+}

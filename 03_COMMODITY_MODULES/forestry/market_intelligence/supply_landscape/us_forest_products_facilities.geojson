@@ -1,0 +1,1661 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.456,
+          31.458
+        ]
+      },
+      "properties": {
+        "name": "Alabama River Cellulose Mill",
+        "company": "GP Cellulose",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, market softwood pulp \u2014 diapers, tissue, food packaging",
+        "capacity_kt_yr": 1000,
+        "capacity_notes": "~1M tpy after $800M expansion (2027 target); current ~900kt; largest US softwood pulp mill",
+        "status": "expanding",
+        "address": "Highway 41 North",
+        "city": "Perdue Hill",
+        "state": "AL",
+        "zip_code": "36470",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 440,
+        "year_opened": 1962,
+        "year_acquired": 2010,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Acquired from Parsons & Whittemore 2010. $1.5B+ total GP investment. $800M modernization 2025-2027 adds 300 tpd. New digester, pulp dryer, power boiler. World's #1 GP Cellulose market share ~28% (2015 RISI).",
+        "source": "GP press releases 2024-2025; Made in Alabama 2025; BusinessAlabama 2018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.509,
+          31.155
+        ]
+      },
+      "properties": {
+        "name": "Brunswick Cellulose Mill",
+        "company": "GP Cellulose",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, bleached softwood kraft",
+        "capacity_kt_yr": 350,
+        "capacity_notes": "Est ~350kt fluff + market pulp grades",
+        "status": "operating",
+        "address": "1600 Reynolds Street",
+        "city": "Brunswick",
+        "state": "GA",
+        "zip_code": "31520",
+        "water_access": true,
+        "port_adjacent": true,
+        "rail_served": true,
+        "employees": 350,
+        "year_opened": 1937,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Port of Brunswick access for export. One of GP Cellulose's original mills.",
+        "source": "GP Cellulose website; RISI data references"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.033,
+          31.205
+        ]
+      },
+      "properties": {
+        "name": "Leaf River Cellulose Mill",
+        "company": "GP Cellulose",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, bleached softwood kraft",
+        "capacity_kt_yr": 400,
+        "capacity_notes": "Est ~400kt fluff + market pulp",
+        "status": "operating",
+        "address": "101 GP Road",
+        "city": "New Augusta",
+        "state": "MS",
+        "zip_code": "39462",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 350,
+        "year_opened": 1984,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Leaf River (Perry County). One of GP Cellulose's core mills.",
+        "source": "GP Cellulose website; RISI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.243,
+          34.328
+        ]
+      },
+      "properties": {
+        "name": "Riegelwood Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+softwood",
+        "products": "Fluff pulp, southern bleached softwood kraft \u2014 diapers, feminine hygiene",
+        "capacity_kt_yr": 700,
+        "capacity_notes": "One machine operating (~700kt) after #20 machine permanently closed end-2023. Originally 1.4M tpy at peak (3 machines). Forecasted production increase 2026.",
+        "status": "operating",
+        "address": "150 International Paper Road",
+        "city": "Riegelwood",
+        "state": "NC",
+        "zip_code": "28456",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 450,
+        "year_opened": 1956,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "$135M conversion to 100% fluff/softwood 2015-2016. #20 machine closed Oct 2023 (cut 300kt fluff). Remaining machine continues. Near Port of Wilmington NC for export. IP-Smurfit WestRock merger closed Jun 2024.",
+        "source": "IP press releases 2015, 2023; FisherSolve/ResourceWise 2025; WECT news"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.279,
+          30.622
+        ]
+      },
+      "properties": {
+        "name": "Pensacola Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+softwood",
+        "products": "Fluff pulp, southern bleached softwood kraft",
+        "capacity_kt_yr": 300,
+        "capacity_notes": "Reduced after #4 machine permanently closed 2023. Remaining lines ~300kt.",
+        "status": "operating",
+        "address": "375 Kirby Willis Road",
+        "city": "Cantonment",
+        "state": "FL",
+        "zip_code": "32533",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": 1941,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "#4 machine idled Aug 2023, permanently closed Oct 2023 (cut 200kt SBSK). Remaining lines continue containerboard + pulp. Near Port Pensacola.",
+        "source": "IP press release Oct 2023; Packaging Dive 2023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.393,
+          33.538
+        ]
+      },
+      "properties": {
+        "name": "Columbus Cellulose Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+specialty",
+        "products": "Fluff pulp, specialty cellulose, modified fiber",
+        "capacity_kt_yr": 450,
+        "capacity_notes": "~450kt pulp + modified fiber. Acquired from Weyerhaeuser 2016.",
+        "status": "operating",
+        "address": "4200 Highway 69 North",
+        "city": "Columbus",
+        "state": "MS",
+        "zip_code": "39701",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 1970,
+        "year_acquired": 2016,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703,4702",
+        "notes": "Part of Weyerhaeuser Cellulose Fibers acquisition (5 mills, $2.2B, 2016). Modified fiber facility on same campus.",
+        "source": "Weyerhaeuser/IP press release 2016; GFA 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.079,
+          32.288
+        ]
+      },
+      "properties": {
+        "name": "Flint River Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, bleached softwood kraft",
+        "capacity_kt_yr": 380,
+        "capacity_notes": "~380kt. Acquired from Weyerhaeuser 2016.",
+        "status": "operating",
+        "address": "3455 Flint River Road",
+        "city": "Oglethorpe",
+        "state": "GA",
+        "zip_code": "31068",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 350,
+        "year_opened": 1968,
+        "year_acquired": 2016,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Former Weyerhaeuser. Flint River provides process water.",
+        "source": "Weyerhaeuser/IP 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.152,
+          32.149
+        ]
+      },
+      "properties": {
+        "name": "Port Wentworth Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp \u2014 export-focused via Savannah port",
+        "capacity_kt_yr": 280,
+        "capacity_notes": "~280kt. Port adjacent \u2014 major export fluff mill.",
+        "status": "operating",
+        "address": "1201 International Paper Boulevard",
+        "city": "Port Wentworth",
+        "state": "GA",
+        "zip_code": "31407",
+        "water_access": true,
+        "port_adjacent": true,
+        "rail_served": true,
+        "employees": 300,
+        "year_opened": 1936,
+        "year_acquired": 2016,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Adjacent to Port of Savannah \u2014 major export terminal for fluff pulp to global markets. Acquired from Weyerhaeuser 2016.",
+        "source": "Weyerhaeuser/IP 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.045,
+          35.078
+        ]
+      },
+      "properties": {
+        "name": "New Bern Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, bleached softwood kraft",
+        "capacity_kt_yr": 300,
+        "capacity_notes": "~300kt. Acquired from Weyerhaeuser 2016.",
+        "status": "operating",
+        "address": "5001 Weyerhaeuser Road",
+        "city": "New Bern",
+        "state": "NC",
+        "zip_code": "28560",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 350,
+        "year_opened": 1959,
+        "year_acquired": 2016,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Neuse River. Former Weyerhaeuser. Near Port of Morehead City.",
+        "source": "Weyerhaeuser/IP 2016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.283,
+          33.375
+        ]
+      },
+      "properties": {
+        "name": "Georgetown Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff",
+        "products": "Fluff pulp \u2014 WAS specialized fluff producer",
+        "capacity_kt_yr": 0,
+        "capacity_notes": "CLOSED late 2024. Was ~350kt/yr fluff (~5% US supply). FisherSolve Viability Index flagged as high-risk before closure.",
+        "status": "closed_2024",
+        "address": "801 Front Street",
+        "city": "Georgetown",
+        "state": "SC",
+        "zip_code": "29440",
+        "water_access": true,
+        "port_adjacent": true,
+        "rail_served": true,
+        "employees": 0,
+        "year_opened": 1937,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Closed late 2024 as part of IP cost optimization. ~5% of US fluff capacity removed. Winyah Bay/Sampit River port access. Strategic closure tightened global fluff supply-demand balance.",
+        "source": "ResourceWise/FisherSolve Apr 2025; IP disclosures"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.932,
+          36.677
+        ]
+      },
+      "properties": {
+        "name": "Franklin Mill",
+        "company": "International Paper",
+        "parent_company": "Smurfit WestRock / International Paper",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, bleached softwood kraft",
+        "capacity_kt_yr": 400,
+        "capacity_notes": "~400kt fluff + softwood. One of IP's original fluff mills.",
+        "status": "operating",
+        "address": "1000 Franklin Mill Road",
+        "city": "Franklin",
+        "state": "VA",
+        "zip_code": "23851",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 550,
+        "year_opened": 1937,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Blackwater River. Historic IP facility. Near Port of Virginia (Norfolk/Newport News).",
+        "source": "IP 10-K filings; RISI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.05,
+          32.451
+        ]
+      },
+      "properties": {
+        "name": "Naheola Mill",
+        "company": "Georgia-Pacific",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel+SBS",
+        "products": "Angel Soft, Quilted Northern bath tissue; Brawny, Sparkle towels; Dixie plate/cup stock (SBS paperboard)",
+        "capacity_kt_yr": 300,
+        "capacity_notes": "~300kt tissue/towel + SBS paperboard. New $120M tissue machine (replaced 2 older) startup 2020. Biomass boiler + woodyard modernized.",
+        "status": "operating",
+        "address": "Highway 43 North",
+        "city": "Pennington",
+        "state": "AL",
+        "zip_code": "36916",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 900,
+        "year_opened": 1958,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "GEORGIA-PACIFIC, GEORGIA PACIFIC CONSUMER PRODUCTS",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "$500M+ invested past 5 yrs. New tissue converting lines. Also produces bleached paperboard for Dixie cups/plates. Near Tombigbee River.",
+        "source": "GP press releases 2017-2020; Thompson Engineering; Nonwovens Industry"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.02,
+          44.495
+        ]
+      },
+      "properties": {
+        "name": "Broadway Mill",
+        "company": "Georgia-Pacific",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel",
+        "products": "Brawny paper towels, Quilted Northern bath tissue, private label \u2014 TAD technology",
+        "capacity_kt_yr": 250,
+        "capacity_notes": "~250kt+ after $550M TAD machine expansion (2024 startup). 7 paper machines + converting.",
+        "status": "operating",
+        "address": "1919 South Broadway",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip_code": "54304",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 800,
+        "year_opened": 1920,
+        "year_acquired": 2000,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "GEORGIA-PACIFIC, GP CONSUMER PRODUCTS",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Larger of 2 GP Green Bay plants. $550M Brawny TAD project completed 2024 \u2014 new through-air-dried machine for premium towels. Fox River corridor \u2014 historic papermaking region. Day Street facility closed.",
+        "source": "GP History; IEN 2023; Green Bay Press-Gazette"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.612,
+          29.683
+        ]
+      },
+      "properties": {
+        "name": "Palatka Mill",
+        "company": "Georgia-Pacific",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel+kraft",
+        "products": "Angel Soft, Brawny, Sparkle, private label tissue/towels; kraft paper (mailers, grocery bags); linerboard",
+        "capacity_kt_yr": 350,
+        "capacity_notes": "~350kt tissue/towel + kraft + linerboard. $400M TAD investment (2019 startup). 580-acre site on 6,000-acre campus.",
+        "status": "operating",
+        "address": "215 County Road 216",
+        "city": "Palatka",
+        "state": "FL",
+        "zip_code": "32177",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 1000,
+        "year_opened": 1947,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "GEORGIA-PACIFIC, GP CONSUMER PRODUCTS",
+        "hs_codes_relevant": "4703,4818,4804",
+        "notes": "Largest private employer Putnam County. $1.2B+ GP investment since 2002. $83M warehouse expansion 2025. Produces tissue, towels, kraft paper, linerboard \u2014 highly diversified.",
+        "source": "JAXUSA 2024; GP PR 2017; Jax Daily Record 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.098,
+          44.382
+        ]
+      },
+      "properties": {
+        "name": "Halsey Mill",
+        "company": "Georgia-Pacific",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue",
+        "products": "Quilted Northern Ultra Plush bath tissue, private label tissue",
+        "capacity_kt_yr": 120,
+        "capacity_notes": "~120kt. $150M+ investment for capacity increase (announced Dec 2023). One of 2 GP pulp-to-tissue plants.",
+        "status": "expanding",
+        "address": "88668 Highway 99E",
+        "city": "Halsey",
+        "state": "OR",
+        "zip_code": "97348",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 250,
+        "year_opened": 1954,
+        "year_acquired": 2000,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "GEORGIA-PACIFIC",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Integrated pulp-to-tissue. North of Eugene. $200M+ total invested since 2022. Produces own pulp on site.",
+        "source": "IEN 2023; GP press releases"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.422,
+          35.714
+        ]
+      },
+      "properties": {
+        "name": "Muskogee Mill",
+        "company": "Georgia-Pacific",
+        "parent_company": "Georgia-Pacific (Koch Industries)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel",
+        "products": "Toilet paper, paper towels, napkins \u2014 consumer + commercial",
+        "capacity_kt_yr": 150,
+        "capacity_notes": "~150kt tissue/towel. Integrated pulp-to-tissue (one of 2 GP plants).",
+        "status": "operating",
+        "address": "4801 South 72nd Street West",
+        "city": "Muskogee",
+        "state": "OK",
+        "zip_code": "74401",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 1970,
+        "year_acquired": 2000,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "GEORGIA-PACIFIC",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Arkansas River access. Produces pulp on site for tissue converting.",
+        "source": "CLUI; GP locations"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.12,
+          41.555
+        ]
+      },
+      "properties": {
+        "name": "Mehoopany Plant",
+        "company": "Procter & Gamble",
+        "parent_company": "Procter & Gamble",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel+diaper",
+        "products": "Charmin toilet paper, Bounty paper towels, Bounty napkins, Pampers diapers, Luvs diapers",
+        "capacity_kt_yr": 400,
+        "capacity_notes": "P&G's LARGEST US manufacturing site. Continuous roof >0.5 mile. Est 400kt+ tissue/towel + diaper output.",
+        "status": "operating",
+        "address": "Route 87",
+        "city": "Mehoopany",
+        "state": "PA",
+        "zip_code": "18629",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 2500,
+        "year_opened": 1966,
+        "year_acquired": null,
+        "sqft_millions": 3.0,
+        "panjiva_consignee_names": "PROCTER & GAMBLE, PROCTER AND GAMBLE, P&G MEHOOPANY",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Largest single source of Charmin in US. Susquehanna River. Major fluff pulp consumer for Pampers/Luvs diaper lines. Imports fluff pulp from Brazil (Suzano), Scandinavia, and domestic IP/GP mills.",
+        "source": "P&G Locations; CLUI; Endless Mountains Visitors Bureau"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.572,
+          37.397
+        ]
+      },
+      "properties": {
+        "name": "Cape Girardeau Plant",
+        "company": "Procter & Gamble",
+        "parent_company": "Procter & Gamble",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel+diaper",
+        "products": "Bounty paper towels, Charmin toilet paper, Pampers diapers, Luvs diapers",
+        "capacity_kt_yr": 300,
+        "capacity_notes": "3M+ sqft, one of largest P&G US plants. 1,300-acre site.",
+        "status": "operating",
+        "address": "4500 N Highway 61",
+        "city": "Cape Girardeau",
+        "state": "MO",
+        "zip_code": "63701",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 2000,
+        "year_opened": 1969,
+        "year_acquired": null,
+        "sqft_millions": 3.0,
+        "panjiva_consignee_names": "PROCTER & GAMBLE, P&G CAPE GIRARDEAU",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Began as Pampers diaper plant 1969, expanded to tissue/towel. Mississippi River access. Trail of Tears State Park adjacent.",
+        "source": "P&G Careers Cape Girardeau; CLUI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.02,
+          44.518
+        ]
+      },
+      "properties": {
+        "name": "Green Bay Plant",
+        "company": "Procter & Gamble",
+        "parent_company": "Procter & Gamble",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel",
+        "products": "Bounty paper towels, Charmin toilet paper, Puffs facial tissue",
+        "capacity_kt_yr": 200,
+        "capacity_notes": "~200kt tissue/towel. Fox River papermaking corridor.",
+        "status": "operating",
+        "address": "1919 Taylor Street",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip_code": "54303",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 800,
+        "year_opened": 1957,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "PROCTER & GAMBLE, P&G GREEN BAY",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Former Charmin Paper Company site \u2014 P&G acquired Charmin 1957. Near GP Broadway mill. Fox River between Lake Winnebago and Lake Michigan.",
+        "source": "P&G Locations; CLUI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.178,
+          31.56
+        ]
+      },
+      "properties": {
+        "name": "Albany Plant",
+        "company": "Procter & Gamble",
+        "parent_company": "Procter & Gamble",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel",
+        "products": "Bounty paper towels, Charmin toilet paper",
+        "capacity_kt_yr": 200,
+        "capacity_notes": "~200kt. ~3M sqft. Southern Georgia.",
+        "status": "operating",
+        "address": "2550 Dawson Road",
+        "city": "Albany",
+        "state": "GA",
+        "zip_code": "31707",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 1000,
+        "year_opened": 1974,
+        "year_acquired": null,
+        "sqft_millions": 3.0,
+        "panjiva_consignee_names": "PROCTER & GAMBLE, P&G ALBANY",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Major P&G tissue plant in southern GA. Serves Southeast distribution.",
+        "source": "P&G Locations; CLUI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.157,
+          34.177
+        ]
+      },
+      "properties": {
+        "name": "Oxnard Plant",
+        "company": "Procter & Gamble",
+        "parent_company": "Procter & Gamble",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel",
+        "products": "Charmin toilet paper, Bounty paper towels",
+        "capacity_kt_yr": 150,
+        "capacity_notes": "~150kt. Built by International Paper 1969, acquired P&G 1973.",
+        "status": "operating",
+        "address": "1700 Arcturus Avenue",
+        "city": "Oxnard",
+        "state": "CA",
+        "zip_code": "93033",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 1969,
+        "year_acquired": 1973,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "PROCTER & GAMBLE, P&G OXNARD",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "One of 2 large tissue plants in SoCal (other is K-C Fullerton). Serves West Coast.",
+        "source": "P&G Locations; CLUI; Charmin sources"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.191,
+          41.658
+        ]
+      },
+      "properties": {
+        "name": "Box Elder Plant",
+        "company": "Procter & Gamble",
+        "parent_company": "Procter & Gamble",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel",
+        "products": "Charmin toilet paper, Bounty paper towels",
+        "capacity_kt_yr": 120,
+        "capacity_notes": "~80-120kt. $540M investment. P&G's first greenfield in US in 30 years (opened ~2010-2011).",
+        "status": "operating",
+        "address": "11625 North 6800 West",
+        "city": "Bear River City",
+        "state": "UT",
+        "zip_code": "84301",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 2011,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "PROCTER & GAMBLE, P&G BOX ELDER",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Near Walmart Distribution Center \u2014 Walmart is #1 retailer of Charmin. Serves western/intermountain region. NW of Brigham City.",
+        "source": "Deseret News 2007; P&G Locations"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.89,
+          33.455
+        ]
+      },
+      "properties": {
+        "name": "Beech Island Plant",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel+diaper",
+        "products": "Huggies diapers, Pull-Ups, Cottonelle, Scott bath tissue, Kleenex facial tissue, Viva towels",
+        "capacity_kt_yr": 350,
+        "capacity_notes": "K-C's LARGEST US production plant. ~2,000 employees. $200M automated distribution center under construction (2025-2027).",
+        "status": "expanding",
+        "address": "246 Old Jackson Highway",
+        "city": "Beech Island",
+        "state": "SC",
+        "zip_code": "29842",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 2000,
+        "year_opened": 1970,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK, KIMBERLY CLARK BEECH ISLAND",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "K-C's largest single plant. Major fluff pulp consumer for Huggies/Pull-Ups. Cross-border from Augusta GA. $200M DC expansion + $2B+ company-wide US investment plan (2025). 18 mfg facilities + 39 DCs in NA.",
+        "source": "K-C/Manufacturing Dive 2025; SC Future Makers; Post & Courier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.525,
+          33.665
+        ]
+      },
+      "properties": {
+        "name": "Paris Plant",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "hygiene_converting",
+        "subcategory": "diaper+training",
+        "products": "Huggies diapers, Pull-Ups, Little Swimmers, GoodNites training pants",
+        "capacity_kt_yr": null,
+        "capacity_notes": "Baby/child care focused. Opened May 1983. Celebrated 40th anniversary 2023.",
+        "status": "operating",
+        "address": "2600 E Center Street",
+        "city": "Paris",
+        "state": "TX",
+        "zip_code": "75460",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 800,
+        "year_opened": 1983,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK, KIMBERLY CLARK PARIS",
+        "hs_codes_relevant": "4703",
+        "notes": "Dedicated infant/child care products. Major fluff pulp consumer. 100% green power (energy from landfill gas). Cathode mostly domestic (AZ) but imports fluff pulp from Brazil (Suzano Eucafluff).",
+        "source": "Tissue Online NA 2023; K-C archives"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.519,
+          34.952
+        ]
+      },
+      "properties": {
+        "name": "Corinth Plant",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "hygiene_converting",
+        "subcategory": "nonwoven+hygiene",
+        "products": "Nonwoven fabrics \u2014 spunbond, meltblown, SMS; hygiene product components",
+        "capacity_kt_yr": null,
+        "capacity_notes": "Nonwovens manufacturing. ISO certified.",
+        "status": "operating",
+        "address": "2605 Harper Road",
+        "city": "Corinth",
+        "state": "MS",
+        "zip_code": "38834",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": 1970,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK, KIMBERLY CLARK CORINTH",
+        "hs_codes_relevant": "5603,4703",
+        "notes": "Nonwovens for Huggies, Depend, other K-C products. Processes: spunbond, meltblown, SMS, BCW, hydroentangled, film lamination, elastic lamination, airlaid, Coform.",
+        "source": "Nonwovens Industry 2018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.043,
+          30.694
+        ]
+      },
+      "properties": {
+        "name": "Mobile Plant",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "hygiene_converting",
+        "subcategory": "hygiene",
+        "products": "Hygiene products \u2014 $130M new production line announced 2024",
+        "capacity_kt_yr": null,
+        "capacity_notes": "$130M investment for new hygiene production line.",
+        "status": "expanding",
+        "address": "Mobile",
+        "city": "Mobile",
+        "state": "AL",
+        "zip_code": "36601",
+        "water_access": true,
+        "port_adjacent": true,
+        "rail_served": true,
+        "employees": 300,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK, KIMBERLY CLARK MOBILE",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "$130M investment announced per AF&PA. Port of Mobile access.",
+        "source": "AF&PA homepage 2024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.818,
+          41.238
+        ]
+      },
+      "properties": {
+        "name": "Warren Plant (New)",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "hygiene_converting",
+        "subcategory": "advanced manufacturing",
+        "products": "Advanced manufacturing \u2014 K-C personal care products",
+        "capacity_kt_yr": null,
+        "capacity_notes": "$800M greenfield. 1.1M sqft. Youngstown suburb. Construction began May 2025, 2-3 yr build.",
+        "status": "under_construction",
+        "address": "Warren",
+        "city": "Warren",
+        "state": "OH",
+        "zip_code": "44483",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": null,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": 1.1,
+        "panjiva_consignee_names": "KIMBERLY-CLARK",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Part of K-C's $2B+ US investment plan. Advanced manufacturing facility. Construction started May 2025.",
+        "source": "Manufacturing Dive May 2025; CoStar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.356,
+          39.849
+        ]
+      },
+      "properties": {
+        "name": "Chester Plant (Delco)",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "tissue_converting",
+        "subcategory": "tissue",
+        "products": "Scott toilet paper, Cottonelle \u2014 integrated mill acquired via Scott Paper 1995",
+        "capacity_kt_yr": 120,
+        "capacity_notes": "~120kt. One of older integrated mills from Scott Paper acquisition.",
+        "status": "operating",
+        "address": "Front Street & Morton Avenue",
+        "city": "Chester",
+        "state": "PA",
+        "zip_code": "19013",
+        "water_access": true,
+        "port_adjacent": true,
+        "rail_served": true,
+        "employees": 800,
+        "year_opened": 1902,
+        "year_acquired": 1995,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK, SCOTT PAPER",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Delaware River \u2014 port adjacent. One of K-C's older integrated mills from 1995 Scott Paper acquisition ($9.4B). Near Philadelphia.",
+        "source": "CLUI; K-C history"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.968,
+          36.023
+        ]
+      },
+      "properties": {
+        "name": "Jenks/Owasso Plant",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "tissue_converting",
+        "subcategory": "tissue",
+        "products": "Scott, Cottonelle bath tissue; other disposable paper products",
+        "capacity_kt_yr": 100,
+        "capacity_notes": "~100kt. South of Tulsa.",
+        "status": "operating",
+        "address": "Jenks",
+        "city": "Jenks",
+        "state": "OK",
+        "zip_code": "74037",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK",
+        "hs_codes_relevant": "4818",
+        "notes": "Tulsa suburb. Multiple K-C tissue products.",
+        "source": "CLUI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.924,
+          33.87
+        ]
+      },
+      "properties": {
+        "name": "Fullerton Plant",
+        "company": "Kimberly-Clark",
+        "parent_company": "Kimberly-Clark",
+        "category": "tissue_converting",
+        "subcategory": "tissue",
+        "products": "Scott, Cottonelle bath tissue",
+        "capacity_kt_yr": 80,
+        "capacity_notes": "~80kt. Industrial zone. One of 2 large tissue plants in SoCal.",
+        "status": "operating",
+        "address": "Fullerton",
+        "city": "Fullerton",
+        "state": "CA",
+        "zip_code": "92831",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "KIMBERLY-CLARK",
+        "hs_codes_relevant": "4818",
+        "notes": "Industrial warehouse zone. Near Port of Long Beach/LA \u2014 could receive imported pulp via port.",
+        "source": "CLUI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.447,
+          41.139
+        ]
+      },
+      "properties": {
+        "name": "First Quality Tissue \u2014 Lock Haven",
+        "company": "First Quality Tissue",
+        "parent_company": "First Quality Enterprises (Damaghi family)",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel",
+        "products": "Ultra-premium private-label bath tissue, paper towels (store brands)",
+        "capacity_kt_yr": 200,
+        "capacity_notes": "~200kt. 3 paper machines (3rd added 2019). 2.3M+ sqft (65 acres under roof). Former Hammermill/IP site.",
+        "status": "operating",
+        "address": "904 Woods Avenue",
+        "city": "Lock Haven",
+        "state": "PA",
+        "zip_code": "17745",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 600,
+        "year_opened": 2005,
+        "year_acquired": null,
+        "sqft_millions": 2.3,
+        "panjiva_consignee_names": "FIRST QUALITY, FIRST QUALITY TISSUE",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Former Hammermill/IP mill site purchased 2003 for $2M. Damaghi family (Iranian-American). Bald Eagle Creek water. 4th largest tissue producer in NA. Buys imported market pulp. #1 private-label ultra-premium tissue in US.",
+        "source": "Lock Haven Express 2016, 2020, 2023; First Quality website"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.631,
+          34.503
+        ]
+      },
+      "properties": {
+        "name": "First Quality Tissue \u2014 Anderson",
+        "company": "First Quality Tissue",
+        "parent_company": "First Quality Enterprises (Damaghi family)",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel",
+        "products": "Private-label bath tissue, paper towels",
+        "capacity_kt_yr": 180,
+        "capacity_notes": "3 tissue machines. 3.5M+ sqft campus. Former nylon fiber plant converted.",
+        "status": "operating",
+        "address": "441 Masters Boulevard",
+        "city": "Anderson",
+        "state": "SC",
+        "zip_code": "29626",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 625,
+        "year_opened": 2010,
+        "year_acquired": null,
+        "sqft_millions": 3.5,
+        "panjiva_consignee_names": "FIRST QUALITY TISSUE, FIRST QUALITY ANDERSON",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Converted from idled nylon fiber plant. 3 TAD machines. Near Port of Charleston for imported pulp receipt.",
+        "source": "Lock Haven Express 2016; First Quality website"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.371,
+          41.121
+        ]
+      },
+      "properties": {
+        "name": "First Quality Products \u2014 McElhattan",
+        "company": "First Quality Products",
+        "parent_company": "First Quality Enterprises (Damaghi family)",
+        "category": "hygiene_converting",
+        "subcategory": "diaper+hygiene+wipes",
+        "products": "Prevail adult incontinence, baby diapers, baby wipes, feminine hygiene, disposable washcloths",
+        "capacity_kt_yr": null,
+        "capacity_notes": "600K sqft. Original FQ facility (1989). Major fluff pulp consumer.",
+        "status": "operating",
+        "address": "121 North Road",
+        "city": "McElhattan",
+        "state": "PA",
+        "zip_code": "17748",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 1989,
+        "year_acquired": null,
+        "sqft_millions": 0.6,
+        "panjiva_consignee_names": "FIRST QUALITY PRODUCTS, FIRST QUALITY ENTERPRISES",
+        "hs_codes_relevant": "4703,5603",
+        "notes": "FQ's first facility. Adult incontinence (Prevail brand) + baby care + feminine hygiene. Imports fluff pulp from Brazil (Suzano) and domestic sources.",
+        "source": "First Quality website; Lock Haven Express"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.703,
+          32.811
+        ]
+      },
+      "properties": {
+        "name": "First Quality Products \u2014 Macon",
+        "company": "First Quality Products",
+        "parent_company": "First Quality Enterprises (Damaghi family)",
+        "category": "hygiene_converting",
+        "subcategory": "diaper+hygiene",
+        "products": "Baby diapers, adult incontinence, feminine care products",
+        "capacity_kt_yr": null,
+        "capacity_notes": "1.6M sqft. Major hygiene converting.",
+        "status": "operating",
+        "address": "2108 Avondale Mill Road",
+        "city": "Macon",
+        "state": "GA",
+        "zip_code": "31216",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 2010,
+        "year_acquired": null,
+        "sqft_millions": 1.6,
+        "panjiva_consignee_names": "FIRST QUALITY, FIRST QUALITY MACON",
+        "hs_codes_relevant": "4703,5603",
+        "notes": "Baby care + adult care. 50% capacity expansion announced 2024 (baby diapers +50%, adult care +25%).",
+        "source": "First Quality website; Nonwovens Industry 2024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.575,
+          40.594
+        ]
+      },
+      "properties": {
+        "name": "First Quality Products \u2014 Lewistown",
+        "company": "First Quality Products",
+        "parent_company": "First Quality Enterprises (Damaghi family)",
+        "category": "hygiene_converting",
+        "subcategory": "nonwoven+converting",
+        "products": "Nonwoven materials, converting operations",
+        "capacity_kt_yr": null,
+        "capacity_notes": "2.5M sqft. Largest FQ facility by sqft.",
+        "status": "operating",
+        "address": "97 Locust Road",
+        "city": "Lewistown",
+        "state": "PA",
+        "zip_code": "17044",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": 2.5,
+        "panjiva_consignee_names": "FIRST QUALITY, FIRST QUALITY LEWISTOWN",
+        "hs_codes_relevant": "5603",
+        "notes": "Central PA. Nonwovens and hygiene product converting.",
+        "source": "First Quality website"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.763,
+          34.738
+        ]
+      },
+      "properties": {
+        "name": "Essity Barton Mill",
+        "company": "Essity (fka SCA Tissue)",
+        "parent_company": "Essity AB (Sweden)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel+napkin",
+        "products": "Tork paper towels, bath tissue, napkins \u2014 away-from-home (AFH)",
+        "capacity_kt_yr": 120,
+        "capacity_notes": "1.2M sqft. ~120kt. Produces ~30% of Essity's NA Tork products per Harrodsburg site's claim. Buys 200k+ tons recycled paper/yr.",
+        "status": "operating",
+        "address": "101 Essity Way",
+        "city": "Barton",
+        "state": "AL",
+        "zip_code": "35670",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 500,
+        "year_opened": 2003,
+        "year_acquired": null,
+        "sqft_millions": 1.2,
+        "panjiva_consignee_names": "ESSITY, SCA TISSUE, ESSITY PROFESSIONAL",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Greenfield site built 2003. Cherokee/Shoals area. Makes Tork brand AFH products. 65% of recycled paper intake becomes finished product; residual used as farm nutrient supplement. Key AFH tissue supplier.",
+        "source": "Shoals Chamber 2023; Tissue World Magazine 2023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.398,
+          39.515
+        ]
+      },
+      "properties": {
+        "name": "Essity Middletown Mill",
+        "company": "Essity (fka SCA Tissue)",
+        "parent_company": "Essity AB (Sweden)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue parent rolls",
+        "products": "Parent rolls (mother reels) of towel and tissue paper \u2014 feeds Harrodsburg converting",
+        "capacity_kt_yr": 80,
+        "capacity_notes": "~80kt parent rolls. 150+ employees. Supports Harrodsburg KY converting.",
+        "status": "operating",
+        "address": "4200 Grand Avenue",
+        "city": "Middletown",
+        "state": "OH",
+        "zip_code": "45044",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 150,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "ESSITY, SCA TISSUE MIDDLETOWN",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Produces parent rolls fed to Harrodsburg KY for Tork converting. New water-tube gas boiler for sustainability.",
+        "source": "Warren County Post 2025; Tissue World Magazine 2023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.845,
+          37.762
+        ]
+      },
+      "properties": {
+        "name": "Essity Harrodsburg Converting",
+        "company": "Essity (fka SCA Tissue)",
+        "parent_company": "Essity AB (Sweden)",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel converting",
+        "products": "Tork professional hygiene products \u2014 towels, bath tissue, napkins",
+        "capacity_kt_yr": 100,
+        "capacity_notes": "~100kt converting. $220M expansion 2012. ~30% of Tork NA production.",
+        "status": "operating",
+        "address": "450 S Greenville Road",
+        "city": "Harrodsburg",
+        "state": "KY",
+        "zip_code": "40330",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 300,
+        "year_opened": 1991,
+        "year_acquired": 2016,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "ESSITY, WAUSAU PAPER, SCA TISSUE HARRODSBURG",
+        "hs_codes_relevant": "4818",
+        "notes": "Originally Bay West Paper Corp (1991), became Wausau-Mosinee, then Wausau Paper, acquired by Essity 2016. $220M expansion 2012. Central US distribution.",
+        "source": "Harrodsburg Herald 2024; Tissue World Magazine 2023"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.933,
+          39.58
+        ]
+      },
+      "properties": {
+        "name": "Sofidel Circleville Mill",
+        "company": "Sofidel America",
+        "parent_company": "Sofidel Group (Italy)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel",
+        "products": "Private-label bath tissue, paper towels for major US retailers",
+        "capacity_kt_yr": 150,
+        "capacity_notes": "Sofidel's largest, most modern US facility. 3rd TAD machine added Aug 2025. $500M+ total investment.",
+        "status": "expanding",
+        "address": "25777 US-23",
+        "city": "Circleville",
+        "state": "OH",
+        "zip_code": "43113",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": 2018,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "SOFIDEL, SOFIDEL AMERICA, SOFIDEL CIRCLEVILLE",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Greenfield 2018. TAD technology. Supplies major grocery/supermarket chains' store-brand tissue. 4th largest tissue producer in NA. Sofidel = largest US private-label tissue producer.",
+        "source": "Sofidel press releases; Wikipedia; LM Tribune 2024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.508,
+          36.15
+        ]
+      },
+      "properties": {
+        "name": "Sofidel Inola Mill",
+        "company": "Sofidel America",
+        "parent_company": "Sofidel Group (Italy)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel",
+        "products": "Private-label bath tissue, paper towels",
+        "capacity_kt_yr": 100,
+        "capacity_notes": "Similar scale to Circleville. Opened 2020.",
+        "status": "operating",
+        "address": "Inola",
+        "city": "Inola",
+        "state": "OK",
+        "zip_code": "74036",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 300,
+        "year_opened": 2020,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "SOFIDEL, SOFIDEL INOLA",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Near Tulsa. Built after Circleville success. TAD technology.",
+        "source": "Sofidel press releases"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.012,
+          46.42
+        ]
+      },
+      "properties": {
+        "name": "Sofidel Lewiston Mill (fka Clearwater Paper)",
+        "company": "Sofidel America",
+        "parent_company": "Sofidel Group (Italy)",
+        "category": "tissue_integrated",
+        "subcategory": "tissue+towel",
+        "products": "Conventional tissue \u2014 private label",
+        "capacity_kt_yr": 120,
+        "capacity_notes": "3 conventional tissue machines (1960s, 1970s, 1990s vintage). Sofidel's highest-volume US site. Acquired from Clearwater Paper 2024.",
+        "status": "operating",
+        "address": "601 W 3rd Street North",
+        "city": "Lewiston",
+        "state": "ID",
+        "zip_code": "83501",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 300,
+        "year_opened": 1960,
+        "year_acquired": 2024,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "SOFIDEL, CLEARWATER PAPER, SOFIDEL LEWISTON",
+        "hs_codes_relevant": "4703,4818",
+        "notes": "Acquired from Clearwater Paper 2024. Buys pulp, steam, water from adjacent Clearwater Paper pulp mill. Converting investment planned. 3 machines \u2014 conventional tissue (not TAD).",
+        "source": "LM Tribune Dec 2024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.62,
+          28.113
+        ]
+      },
+      "properties": {
+        "name": "Sofidel Haines City Plant",
+        "company": "Sofidel America",
+        "parent_company": "Sofidel Group (Italy)",
+        "category": "tissue_converting",
+        "subcategory": "tissue+towel converting",
+        "products": "Private-label tissue/towel converting",
+        "capacity_kt_yr": 60,
+        "capacity_notes": "Converting facility. Part of original US entry (2012 FL acquisition).",
+        "status": "operating",
+        "address": "Haines City",
+        "city": "Haines City",
+        "state": "FL",
+        "zip_code": "33844",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 200,
+        "year_opened": 2012,
+        "year_acquired": 2012,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "SOFIDEL, SOFIDEL HAINES CITY",
+        "hs_codes_relevant": "4818",
+        "notes": "Part of Sofidel's 2012 US market entry via FL acquisition. 14 production sites across 11 US states total.",
+        "source": "Sofidel website"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.524,
+          39.158
+        ]
+      },
+      "properties": {
+        "name": "Edgewell Personal Care \u2014 Dover Plant",
+        "company": "Edgewell Personal Care",
+        "parent_company": "Edgewell Personal Care",
+        "category": "hygiene_converting",
+        "subcategory": "feminine hygiene",
+        "products": "Carefree, Stayfree, Playtex feminine hygiene products",
+        "capacity_kt_yr": null,
+        "capacity_notes": "Feminine hygiene converting. Former J&J brands.",
+        "status": "operating",
+        "address": "Dover",
+        "city": "Dover",
+        "state": "DE",
+        "zip_code": "19901",
+        "water_access": false,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 300,
+        "year_opened": null,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "EDGEWELL PERSONAL CARE, ENERGIZER PERSONAL CARE",
+        "hs_codes_relevant": "4703",
+        "notes": "Carefree/Stayfree/Playtex brands formerly J&J, now Edgewell (spun off from Energizer Holdings). Agreed to sell feminine care to Essity Nov 2025 ($340M). Fluff pulp consumer.",
+        "source": "K-C history; Essity press release Nov 2025"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.498,
+          44.811
+        ]
+      },
+      "properties": {
+        "name": "Drylock Technologies \u2014 Eau Claire",
+        "company": "Drylock Technologies",
+        "parent_company": "Drylock Technologies (Belgium)",
+        "category": "hygiene_converting",
+        "subcategory": "diaper+incontinence",
+        "products": "Private-label baby diapers, adult incontinence products",
+        "capacity_kt_yr": null,
+        "capacity_notes": "European diaper maker with US facility. High-speed converting.",
+        "status": "operating",
+        "address": "Eau Claire",
+        "city": "Eau Claire",
+        "state": "WI",
+        "zip_code": "54703",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 200,
+        "year_opened": 2018,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "DRYLOCK TECHNOLOGIES",
+        "hs_codes_relevant": "4703",
+        "notes": "Belgian company. Private-label diaper/incontinence. Fluff pulp consumer. US market entry.",
+        "source": "Industry sources"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.89,
+          31.602
+        ]
+      },
+      "properties": {
+        "name": "Domtar / Paper Excellence \u2014 Jesup Mill",
+        "company": "Resolute Forest Products / Paper Excellence",
+        "parent_company": "Paper Excellence (Jackson family/Indonesia)",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, market pulp",
+        "capacity_kt_yr": 350,
+        "capacity_notes": "~350kt. Former Rayonier then acquired through Domtar/Paper Excellence chain.",
+        "status": "operating",
+        "address": "Highway 341 South",
+        "city": "Jesup",
+        "state": "GA",
+        "zip_code": "31545",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 400,
+        "year_opened": 1954,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Altamaha River. Fluff pulp for hygiene products. Near Port of Savannah for export.",
+        "source": "RISI; industry directories"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.748,
+          35.867
+        ]
+      },
+      "properties": {
+        "name": "Domtar / Paper Excellence \u2014 Plymouth Mill",
+        "company": "Domtar / Paper Excellence",
+        "parent_company": "Paper Excellence (Jackson family/Indonesia)",
+        "category": "fluff_pulp_mill",
+        "subcategory": "fluff+market",
+        "products": "Fluff pulp, southern bleached softwood kraft",
+        "capacity_kt_yr": 300,
+        "capacity_notes": "~300kt. Historic mill. Roanoke River access.",
+        "status": "operating",
+        "address": "Highway 64 East",
+        "city": "Plymouth",
+        "state": "NC",
+        "zip_code": "27962",
+        "water_access": true,
+        "port_adjacent": false,
+        "rail_served": true,
+        "employees": 350,
+        "year_opened": 1937,
+        "year_acquired": null,
+        "sqft_millions": null,
+        "panjiva_consignee_names": "",
+        "hs_codes_relevant": "4703",
+        "notes": "Roanoke River. Former Weyerhaeuser \u2192 Domtar \u2192 Paper Excellence.",
+        "source": "Industry directories"
+      }
+    }
+  ]
+}

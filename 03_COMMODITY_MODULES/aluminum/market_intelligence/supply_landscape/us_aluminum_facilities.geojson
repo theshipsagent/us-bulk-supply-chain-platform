@@ -1,0 +1,2453 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.5286,
+          37.6061
+        ]
+      },
+      "properties": {
+        "name": "Century Sebree Smelter",
+        "company": "Century Aluminum",
+        "facility_types": "primary_smelter",
+        "city": "Sebree",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 220,
+        "capacity_notes": "Full capacity; 100% owned",
+        "products": "primary ingot, T-bar, sow",
+        "markets": "industrial, automotive, packaging",
+        "alloys": "P1020 (99.7% purity)",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": 3,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1973,
+        "employees": 600,
+        "notes": "Largest operating US smelter. Ohio River barge access. Owned by Century since 2003."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0326,
+          32.981
+        ]
+      },
+      "properties": {
+        "name": "Century Mt. Holly Smelter",
+        "company": "Century Aluminum",
+        "facility_types": "primary_smelter",
+        "city": "Goose Creek",
+        "state": "SC",
+        "country": "US",
+        "capacity_kt": 229,
+        "capacity_notes": "Nameplate 229kt; operating at ~75% (172kt in 2023); $50M restart to full capacity by June 2026",
+        "products": "high-purity ingot, T-bar",
+        "markets": "aerospace, defense, electrical",
+        "alloys": "99.9% high-purity aluminum",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": 2,
+        "port_adjacent": true,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "reduced",
+        "startup_year": 1980,
+        "employees": 465,
+        "notes": "Only US smelter producing high-purity (99.9%) aluminum for military/aerospace. 2 potlines, 360 cells, Alcoa A697 tech at 228kA. Santee Cooper 3yr power contract through 2026. Century announced $50M to restore full capacity by mid-2026."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7553,
+          37.9
+        ]
+      },
+      "properties": {
+        "name": "Century Hawesville Smelter",
+        "company": "Century Aluminum",
+        "facility_types": "primary_smelter",
+        "city": "Hawesville",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 252,
+        "capacity_notes": "Nameplate 252kt; temporarily shut down since 2022",
+        "products": "primary ingot",
+        "markets": "industrial",
+        "alloys": "P1020",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": 5,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "idled",
+        "startup_year": 1969,
+        "employees": 0,
+        "notes": "5 potlines, 560 cells, Kaiser P69 tech at 170kA. Ohio River adjacent. Idled since 2022 due to high power costs. Restart depends on competitive long-term energy contract."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.4053,
+          37.9447
+        ]
+      },
+      "properties": {
+        "name": "Alcoa Warrick Smelter",
+        "company": "Alcoa Corporation",
+        "facility_types": "primary_smelter",
+        "city": "Newburgh",
+        "state": "IN",
+        "country": "US",
+        "capacity_kt": 269,
+        "capacity_notes": "3 operating potlines; up to 156kt actual production",
+        "products": "primary ingot, molten metal (to adjacent Kaiser rolling mill)",
+        "markets": "packaging, industrial",
+        "alloys": "P1020",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": 3,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1960,
+        "employees": 600,
+        "notes": "Co-located with Kaiser Warrick rolling mill (sold to Kaiser 2021). Alcoa retained smelter + 800MW coal power plant. 3 potlines of 150 pots each. Supplies molten metal directly to Kaiser casthouse."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.8916,
+          44.9281
+        ]
+      },
+      "properties": {
+        "name": "Alcoa Massena Smelter",
+        "company": "Alcoa Corporation",
+        "facility_types": "primary_smelter",
+        "city": "Massena",
+        "state": "NY",
+        "country": "US",
+        "capacity_kt": 130,
+        "capacity_notes": "Reduced capacity operations",
+        "products": "primary ingot, billet",
+        "markets": "industrial, aerospace",
+        "alloys": "P1020, specialty alloys",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": 2,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "reduced",
+        "startup_year": 1903,
+        "employees": 400,
+        "notes": "Oldest continuously operating aluminum smelter site in US. St. Lawrence River hydropower. Massena East plant uses older S\u00f6derberg technology. 3yr labor agreement ratified 2023."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.5279,
+          36.5864
+        ]
+      },
+      "properties": {
+        "name": "Magnitude 7 New Madrid Smelter",
+        "company": "Magnitude 7 Metals",
+        "facility_types": "primary_smelter",
+        "city": "New Madrid",
+        "state": "MO",
+        "country": "US",
+        "capacity_kt": 263,
+        "capacity_notes": "Nameplate 263kt; fully shut down Jan 2024",
+        "products": "primary ingot",
+        "markets": "industrial",
+        "alloys": "P1020",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": 3,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "idled",
+        "startup_year": 1971,
+        "employees": 0,
+        "notes": "Mississippi River barge access. Originally Noranda, acquired by ARG International 2016. Full shutdown Jan 2024 with no scheduled restart. Previously produced ~250kt/yr."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.5096,
+          36.1518
+        ]
+      },
+      "properties": {
+        "name": "Century Green Aluminum Smelter",
+        "company": "Century Aluminum",
+        "facility_types": "primary_smelter",
+        "city": "Inola",
+        "state": "OK",
+        "country": "US",
+        "capacity_kt": 500,
+        "capacity_notes": "Planned 500kt/yr; $5B investment; DOE $500M grant",
+        "products": "primary ingot",
+        "markets": "industrial, defense, packaging",
+        "alloys": "P1020, high-purity",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "planned",
+        "startup_year": 2031,
+        "employees": null,
+        "notes": "First new US smelter in ~45 years. DOE Office of Clean Energy Demonstrations $500M grant. 100% renewable/nuclear power target. 75% less carbon-intensive. Site selection Feb 2026 (Inola, OK). 5-6yr build timeline."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5105,
+          43.4553
+        ]
+      },
+      "properties": {
+        "name": "Novelis Oswego",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "integrated_mill",
+        "city": "Oswego",
+        "state": "NY",
+        "country": "US",
+        "capacity_kt": 360,
+        "capacity_notes": "Largest Novelis NA plant; ~360kt/yr; hot mill fire Sep 2025, restarted Dec 2025",
+        "products": "can stock, auto body sheet, industrial sheet",
+        "markets": "packaging, automotive, industrial",
+        "alloys": "3xxx, 5xxx, 6xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": true,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1963,
+        "employees": 1100,
+        "notes": "Novelis's largest wholly-owned NA fabrication facility. Full scrap remelting/recycling, ingot casting, hot and cold rolling, finishing. Major fire Sep 2025 damaged hot mill; restarted Dec 2025. Lake Ontario water access."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7741,
+          30.883
+        ]
+      },
+      "properties": {
+        "name": "Novelis Bay Minette",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "integrated_mill",
+        "city": "Bay Minette",
+        "state": "AL",
+        "country": "US",
+        "capacity_kt": 600,
+        "capacity_notes": "Initial 600kt finished goods; expandable to 1,000kt (Danieli 1+4 HSM)",
+        "products": "can stock, auto body sheet",
+        "markets": "packaging, automotive",
+        "alloys": "3xxx, 5xxx, 6xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "construction",
+        "startup_year": 2026,
+        "employees": 1000,
+        "notes": "$2.5B investment. First fully integrated aluminum mill built in US in 40+ years. South Alabama Mega Site at I-65/Hwy 287. 51km from Port of Mobile. Danieli 1+4 HSM. Commissioning H2 2026. UBC recycling center adds 15B cans/yr capacity. Railroad-served for low-carbon logistics."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8872,
+          36.8453
+        ]
+      },
+      "properties": {
+        "name": "Novelis Terre Haute (Logan Aluminum)",
+        "company": "Novelis (Hindalco) / Tri-Arrows JV",
+        "facility_types": "integrated_mill",
+        "city": "Russellville",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 400,
+        "capacity_notes": "~400kt can stock",
+        "products": "can stock (body, end, tab)",
+        "markets": "packaging",
+        "alloys": "3xxx, 5xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1985,
+        "employees": null,
+        "notes": "Logan Aluminum joint venture. Major can stock producer supplying Ball, Crown, Ardagh. Large UBC recycling operation."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.2963,
+          37.5687
+        ]
+      },
+      "properties": {
+        "name": "Novelis Berea",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "rolling_mill",
+        "city": "Berea",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 100,
+        "capacity_notes": "Cold mill and finishing",
+        "products": "auto body sheet, industrial sheet",
+        "markets": "automotive, industrial",
+        "alloys": "5xxx, 6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Cold rolling and finishing operations. Automotive sheet focus."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2793,
+          33.5726
+        ]
+      },
+      "properties": {
+        "name": "Novelis Greensboro",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "secondary_smelter",
+        "city": "Greensboro",
+        "state": "GA",
+        "country": "US",
+        "capacity_kt": 80,
+        "capacity_notes": "Recycling and casting",
+        "products": "recycled ingot, UBC processing",
+        "markets": "packaging",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Aluminum recycling facility. $36M expansion 2019. UBC processing for can stock supply chain."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8872,
+          36.6486
+        ]
+      },
+      "properties": {
+        "name": "Novelis Guthrie (formerly Aleris)",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "rolling_mill",
+        "city": "Guthrie",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 100,
+        "capacity_notes": "",
+        "products": "auto body sheet",
+        "markets": "automotive",
+        "alloys": "5xxx, 6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Acquired via Aleris acquisition 2020. Automotive sheet finishing. $500M+ expansion ongoing."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4654,
+          41.5379
+        ]
+      },
+      "properties": {
+        "name": "Arconic Davenport Works",
+        "company": "Arconic Corporation",
+        "facility_types": "integrated_mill",
+        "city": "Bettendorf",
+        "state": "IA",
+        "country": "US",
+        "capacity_kt": 500,
+        "capacity_notes": "One of world's largest aluminum rolling mills",
+        "products": "sheet, plate, coil",
+        "markets": "aerospace, automotive, industrial",
+        "alloys": "2xxx, 5xxx, 6xxx, 7xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1948,
+        "employees": 2400,
+        "notes": "Flagship Arconic rolling mill. Mississippi River barge access. Produces aerospace plate (2xxx, 7xxx), automotive sheet, and industrial products. One of the largest aluminum rolling complexes in the world."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.9738,
+          35.7898
+        ]
+      },
+      "properties": {
+        "name": "Arconic Tennessee Operations",
+        "company": "Arconic Corporation",
+        "facility_types": "integrated_mill",
+        "city": "Alcoa",
+        "state": "TN",
+        "country": "US",
+        "capacity_kt": 750,
+        "capacity_notes": "~750kt hot+cold rolled products",
+        "products": "sheet, coil",
+        "markets": "automotive, industrial, commercial transportation",
+        "alloys": "3xxx, 5xxx, 6xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1919,
+        "employees": 1500,
+        "notes": "Originally Alcoa's historic Tennessee Works. Now Arconic rolled products. Major automotive sheet producer. $100M+ hot mill expansion completed ~2020. City of Alcoa named after the company."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3114,
+          40.0614
+        ]
+      },
+      "properties": {
+        "name": "Arconic Lancaster",
+        "company": "Arconic Corporation",
+        "facility_types": "rolling_mill",
+        "city": "Lancaster",
+        "state": "PA",
+        "country": "US",
+        "capacity_kt": 150,
+        "capacity_notes": "",
+        "products": "sheet, plate",
+        "markets": "aerospace, industrial, building products",
+        "alloys": "2xxx, 5xxx, 6xxx, 7xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Cold rolling, finishing, and heat treatment for aerospace and industrial applications."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.63,
+          40.1245
+        ]
+      },
+      "properties": {
+        "name": "Arconic Danville",
+        "company": "Arconic Corporation",
+        "facility_types": "rolling_mill",
+        "city": "Danville",
+        "state": "IL",
+        "country": "US",
+        "capacity_kt": 100,
+        "capacity_notes": "",
+        "products": "sheet, plate",
+        "markets": "aerospace, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Cold rolling and finishing operations."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8915,
+          38.0834
+        ]
+      },
+      "properties": {
+        "name": "Arconic Hutchinson Aerospace Center",
+        "company": "Arconic Corporation",
+        "facility_types": "rolling_mill",
+        "city": "Hutchinson",
+        "state": "KS",
+        "country": "US",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "aerospace plate, sheet",
+        "markets": "aerospace, defense",
+        "alloys": "2xxx, 7xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Aerospace-focused plate and sheet finishing center."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6675,
+          34.7462
+        ]
+      },
+      "properties": {
+        "name": "Constellium Muscle Shoals",
+        "company": "Constellium SE",
+        "facility_types": "integrated_mill",
+        "city": "Muscle Shoals",
+        "state": "AL",
+        "country": "US",
+        "capacity_kt": 450,
+        "capacity_notes": ">1B lbs/yr finished coils; widest strip mill in US; 340kt recycling capacity",
+        "products": "can stock (body, end, tab), auto body sheet",
+        "markets": "packaging, automotive",
+        "alloys": "3xxx, 5xxx, 6xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": 1250,
+        "notes": "100+ acres under roof. 5 casting units. Widest strip mill in US. Element 13 recycling center processes 20B+ cans/yr. DoD $23M DPA grant for new DC casting center adding 136kt (300M lbs) annual casting capacity. $65M total expansion. Formerly Wise Metals/Wise Alloys."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.761,
+          38.9487
+        ]
+      },
+      "properties": {
+        "name": "Constellium Ravenswood",
+        "company": "Constellium SE",
+        "facility_types": "integrated_mill",
+        "city": "Ravenswood",
+        "state": "WV",
+        "country": "US",
+        "capacity_kt": 200,
+        "capacity_notes": "Major plate facility",
+        "products": "plate, sheet, coil",
+        "markets": "aerospace, defense, transportation, marine",
+        "alloys": "2xxx, 5xxx, 6xxx, 7xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": 1000,
+        "notes": "One of world's largest rolled products facilities. World's most powerful plate stretchers. Ohio River barge access. DOE $75M grant for low/zero-carbon casthouse using clean hydrogen. Major defense/aerospace plate supplier."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.4808,
+          36.9685
+        ]
+      },
+      "properties": {
+        "name": "Constellium Bowling Green",
+        "company": "Constellium SE",
+        "facility_types": "secondary_smelter",
+        "city": "Bowling Green",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "automotive structural parts, crash management systems",
+        "markets": "automotive",
+        "alloys": "6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Automotive Structures & Industry division. Produces structural parts and crash management systems for OEMs."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.406,
+          37.944
+        ]
+      },
+      "properties": {
+        "name": "Kaiser Warrick Rolling Mill",
+        "company": "Kaiser Aluminum",
+        "facility_types": "integrated_mill",
+        "city": "Newburgh",
+        "state": "IN",
+        "country": "US",
+        "capacity_kt": 300,
+        "capacity_notes": "Cast house, hot mill, cold mills, finishing/coating lines, slitters",
+        "products": "can stock, food packaging coil",
+        "markets": "packaging (beverage, food)",
+        "alloys": "3xxx, 5xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1960,
+        "employees": null,
+        "notes": "Acquired from Alcoa 2021. Co-located with Alcoa smelter which supplies molten metal. $150M roll coating line addition (operational 2024). Major can stock producer."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3531,
+          47.6588
+        ]
+      },
+      "properties": {
+        "name": "Kaiser Trentwood Rolling Mill",
+        "company": "Kaiser Aluminum",
+        "facility_types": "rolling_mill",
+        "city": "Spokane Valley",
+        "state": "WA",
+        "country": "US",
+        "capacity_kt": 200,
+        "capacity_notes": "Plate and sheet for aerospace/general engineering",
+        "products": "plate, sheet, strip, coil",
+        "markets": "aerospace, defense, general engineering",
+        "alloys": "2xxx, 5xxx, 6xxx, 7xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1942,
+        "employees": null,
+        "notes": "Historic Kaiser aluminum plant. Major aerospace plate producer including KaiserSelect AA7099. Originally government war plant, purchased by Kaiser 1946."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.1338,
+          35.2784
+        ]
+      },
+      "properties": {
+        "name": "JW Aluminum Russellville",
+        "company": "JW Aluminum",
+        "facility_types": "rolling_mill",
+        "city": "Russellville",
+        "state": "AR",
+        "country": "US",
+        "capacity_kt": 100,
+        "capacity_notes": "",
+        "products": "sheet, coil, foil stock",
+        "markets": "building products, HVAC, industrial",
+        "alloys": "1xxx, 3xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Continuous cast and cold rolling. Building products focus."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0159,
+          35.2982
+        ]
+      },
+      "properties": {
+        "name": "JW Aluminum Mount Holly",
+        "company": "JW Aluminum",
+        "facility_types": "rolling_mill",
+        "city": "Mount Holly",
+        "state": "SC",
+        "country": "US",
+        "capacity_kt": 80,
+        "capacity_notes": "",
+        "products": "sheet, coil",
+        "markets": "building products, industrial",
+        "alloys": "1xxx, 3xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Continuous cast sheet production for building products."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1994,
+          38.627
+        ]
+      },
+      "properties": {
+        "name": "JW Aluminum St. Louis",
+        "company": "JW Aluminum",
+        "facility_types": "rolling_mill",
+        "city": "St. Louis",
+        "state": "MO",
+        "country": "US",
+        "capacity_kt": 60,
+        "capacity_notes": "",
+        "products": "foil, sheet",
+        "markets": "packaging, industrial",
+        "alloys": "1xxx, 8xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Foil and light-gauge sheet production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8133,
+          40.0847
+        ]
+      },
+      "properties": {
+        "name": "Golden Aluminum",
+        "company": "Golden Aluminum Inc.",
+        "facility_types": "integrated_mill",
+        "city": "Fort Lupton",
+        "state": "CO",
+        "country": "US",
+        "capacity_kt": 120,
+        "capacity_notes": "",
+        "products": "can stock, sheet",
+        "markets": "packaging",
+        "alloys": "3xxx, 5xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Continuous cast can stock producer. DOE $22.3M grant to upgrade casting and rolling equipment. Scrap-based production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.4284,
+          36.0006
+        ]
+      },
+      "properties": {
+        "name": "Granges Huntingdon",
+        "company": "Granges AB",
+        "facility_types": "rolling_mill",
+        "city": "Huntingdon",
+        "state": "TN",
+        "country": "US",
+        "capacity_kt": 80,
+        "capacity_notes": "",
+        "products": "clad sheet, brazing sheet, fin stock",
+        "markets": "HVAC, automotive heat exchangers",
+        "alloys": "1xxx, 3xxx, 4xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Formerly Noranda rolled products. Acquired by Granges 2016. Specialty clad/brazing sheet for heat exchangers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.2168,
+          35.6048
+        ]
+      },
+      "properties": {
+        "name": "Granges Newport",
+        "company": "Granges AB",
+        "facility_types": "rolling_mill",
+        "city": "Newport",
+        "state": "AR",
+        "country": "US",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "fin stock, clad sheet",
+        "markets": "HVAC, automotive",
+        "alloys": "1xxx, 3xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Formerly Noranda. Thin-gauge rolling for HVAC applications."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.4742,
+          35.671
+        ]
+      },
+      "properties": {
+        "name": "Granges Salisbury",
+        "company": "Granges AB",
+        "facility_types": "rolling_mill",
+        "city": "Salisbury",
+        "state": "NC",
+        "country": "US",
+        "capacity_kt": 60,
+        "capacity_notes": "",
+        "products": "sheet, strip",
+        "markets": "HVAC, industrial",
+        "alloys": "1xxx, 3xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Formerly Noranda. Strip and sheet products."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7585,
+          38.2527
+        ]
+      },
+      "properties": {
+        "name": "Tri-Arrows Aluminum Louisville",
+        "company": "Tri-Arrows Aluminum Inc.",
+        "facility_types": "integrated_mill",
+        "city": "Louisville",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 300,
+        "capacity_notes": "Major can stock producer",
+        "products": "can stock (body, end, tab)",
+        "markets": "packaging",
+        "alloys": "3xxx, 5xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Formerly ARCO Aluminum/IMCO Recycling. JV of Japanese interests. Ohio River barge access. Major UBC recycling and can stock production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.4273,
+          33.4957
+        ]
+      },
+      "properties": {
+        "name": "Aluminum Dynamics Columbus",
+        "company": "Aluminum Dynamics LLC (Steel Dynamics)",
+        "facility_types": "integrated_mill",
+        "city": "Columbus",
+        "state": "MS",
+        "country": "US",
+        "capacity_kt": 650,
+        "capacity_notes": "650kt finished products; SMS 1+4 HSM; $1.9B+ investment",
+        "products": "can stock, auto body sheet, common alloy sheet",
+        "markets": "packaging, automotive, industrial",
+        "alloys": "3xxx, 5xxx, 6xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "construction",
+        "startup_year": 2025,
+        "employees": 700,
+        "notes": "SDI's first aluminum mill. $1.9B+. Adjacent to SDI Columbus steel mill. SMS 1+4 hot strip mill, 2 tandem cold mills, CASH lines, coating. Tenn-Tom Waterway barge access. Class I railroad. 2 satellite UBC recycling/casting facilities (AZ and San Luis Potosi MX). Construction started Jul 2023; operations mid-2025."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9021,
+          37.9369
+        ]
+      },
+      "properties": {
+        "name": "Novelis Lewisport (formerly Aleris)",
+        "company": "American Industrial Partners",
+        "facility_types": "rolling_mill",
+        "city": "Lewisport",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 120,
+        "capacity_notes": "",
+        "products": "auto body sheet",
+        "markets": "automotive",
+        "alloys": "5xxx, 6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Formerly Aleris, acquired by Novelis 2020, then divested to American Industrial Partners per DOJ requirement. Ohio River access. Automotive body sheet."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.3468,
+          40.3903
+        ]
+      },
+      "properties": {
+        "name": "Aleris Uhrichsville",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "rolling_mill",
+        "city": "Uhrichsville",
+        "state": "OH",
+        "country": "US",
+        "capacity_kt": 80,
+        "capacity_notes": "",
+        "products": "sheet, plate",
+        "markets": "industrial, building products",
+        "alloys": "3xxx, 5xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Continuous cast sheet producer. Industrial and building product focus."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.436,
+          37.5407
+        ]
+      },
+      "properties": {
+        "name": "Aleris Richmond",
+        "company": "Novelis (Hindalco)",
+        "facility_types": "rolling_mill",
+        "city": "Richmond",
+        "state": "VA",
+        "country": "US",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "sheet",
+        "markets": "building products, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": true,
+        "has_casthouse": false,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Formerly Aleris rolled products. Sheet finishing."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9,
+          37.938
+        ]
+      },
+      "properties": {
+        "name": "Commonwealth Rolled Products Lewisport",
+        "company": "Commonwealth Rolled Products (Lexington, KY)",
+        "facility_types": "rolling_mill",
+        "city": "Lewisport",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 100,
+        "capacity_notes": "",
+        "products": "can stock, sheet",
+        "markets": "packaging, industrial",
+        "alloys": "3xxx, 5xxx",
+        "has_hot_mill": true,
+        "has_cold_mill": true,
+        "has_casthouse": true,
+        "has_recycling": false,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Ohio River access. Can stock and common alloy sheet production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8673,
+          41.1658
+        ]
+      },
+      "properties": {
+        "name": "Matalco Lordstown",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Lordstown",
+        "state": "OH",
+        "country": "US",
+        "capacity_kt": 159,
+        "capacity_notes": "350M lbs/yr; largest Matalco plant",
+        "products": "extrusion billet, forging stock",
+        "markets": "construction, automotive, industrial",
+        "alloys": "6xxx, 7xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2016,
+        "employees": null,
+        "notes": "North America's largest independent billet remelter. Wagstaff Air-Slip casting. 75% scrap / 25% prime ratio. Triple M Metal scrap processing on-site. Billet 7-16 inch diameter."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.3784,
+          40.8059
+        ]
+      },
+      "properties": {
+        "name": "Matalco Canton",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Canton",
+        "state": "OH",
+        "country": "US",
+        "capacity_kt": 82,
+        "capacity_notes": "180M lbs/yr",
+        "products": "extrusion billet",
+        "markets": "construction, industrial",
+        "alloys": "6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2010,
+        "employees": null,
+        "notes": "Acquired as Thakar Aluminum 2010. 7-12 inch billet. Upgraded systems 2011."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.1719,
+          40.7381
+        ]
+      },
+      "properties": {
+        "name": "Matalco Bluffton",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Bluffton",
+        "state": "IN",
+        "country": "US",
+        "capacity_kt": 104,
+        "capacity_notes": "230M lbs/yr",
+        "products": "extrusion billet, forging stock",
+        "markets": "construction, automotive",
+        "alloys": "6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "95,000 sq ft facility. Scrap-based billet production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8171,
+          44.3836
+        ]
+      },
+      "properties": {
+        "name": "Matalco Wisconsin Rapids",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Wisconsin Rapids",
+        "state": "WI",
+        "country": "US",
+        "capacity_kt": 109,
+        "capacity_notes": "240M lbs/yr; expandable",
+        "products": "extrusion billet, rolling ingot, RSI sows",
+        "markets": "construction, automotive, industrial",
+        "alloys": "5xxx, 6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2020,
+        "employees": null,
+        "notes": "$80M greenfield. 110,000 sq ft. Started Nov 2020. Wagstaff ShurCast DC casting. Billet + rolling slab capability. Serves upper Midwest extruders."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.2237,
+          38.212
+        ]
+      },
+      "properties": {
+        "name": "Matalco Shelbyville",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Shelbyville",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 159,
+        "capacity_notes": "350M lbs/yr",
+        "products": "extrusion billet, forging stock",
+        "markets": "construction, automotive",
+        "alloys": "3xxx, 5xxx, 6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "140,000 sq ft. Acquired Ohio Valley Aluminum. 2 melting furnaces, 4 batch homogenization furnaces."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.5769,
+          36.7222
+        ]
+      },
+      "properties": {
+        "name": "Matalco Franklin",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Franklin",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 122,
+        "capacity_notes": "270M lbs/yr; $53.5M investment",
+        "products": "extrusion billet, rolling slab",
+        "markets": "construction, automotive",
+        "alloys": "6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2022,
+        "employees": null,
+        "notes": "$53.5M greenfield. 461,000 sq ft. Matalco Kentucky LLC. Billet and slab from recycled aluminum."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.7624,
+          43.7315
+        ]
+      },
+      "properties": {
+        "name": "Matalco Brampton",
+        "company": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+        "facility_types": "billet_caster",
+        "city": "Brampton",
+        "state": "ON",
+        "country": "Canada",
+        "capacity_kt": 113,
+        "capacity_notes": "250M lbs/yr; HQ facility",
+        "products": "extrusion billet",
+        "markets": "construction, industrial",
+        "alloys": "6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2005,
+        "employees": null,
+        "notes": "Matalco headquarters and original plant. Triple M Metal scrap processing adjacent."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.1076,
+          41.3684
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Elyria",
+        "company": "Real Alloy (Recycling Holdings International)",
+        "facility_types": "secondary_smelter",
+        "city": "Elyria",
+        "state": "OH",
+        "country": "US",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot, sow",
+        "markets": "automotive, industrial casting",
+        "alloys": "A356, A380, secondary casting alloys",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Major secondary smelter. Produces specification alloy ingot for die casters and foundries."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8559,
+          41.6598
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Rock Creek",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Rock Creek",
+        "state": "OH",
+        "country": "US",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6356,
+          41.5062
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Chicago Heights",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Chicago Heights",
+        "state": "IL",
+        "country": "US",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.8205,
+          40.7978
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Wabash",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Wabash",
+        "state": "IN",
+        "country": "US",
+        "capacity_kt": 35,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "DOE $67.3M grant for low-waste recycling facility in Wabash."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.0005,
+          41.9403
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Coldwater",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Coldwater",
+        "state": "MI",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.2036,
+          33.9395
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Steele",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Steele",
+        "state": "AL",
+        "country": "US",
+        "capacity_kt": 35,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.3585,
+          33.4353
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Goodyear",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Goodyear",
+        "state": "AZ",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.1142,
+          35.9987
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Sapulpa",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Sapulpa",
+        "state": "OK",
+        "country": "US",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.9516,
+          47.7177
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Post Falls",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Post Falls",
+        "state": "ID",
+        "country": "US",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.6836,
+          37.2292
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Morgantown",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Morgantown",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3338,
+          35.733
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Loudon",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Loudon",
+        "state": "TN",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.061,
+          39.5098
+        ]
+      },
+      "properties": {
+        "name": "Real Alloy Friendly",
+        "company": "Real Alloy",
+        "facility_types": "secondary_smelter",
+        "city": "Friendly",
+        "state": "WV",
+        "country": "US",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.1258,
+          44.7369
+        ]
+      },
+      "properties": {
+        "name": "Spectro Alloys Rosemount",
+        "company": "Spectro Alloys Corp.",
+        "facility_types": "secondary_smelter",
+        "city": "Rosemount",
+        "state": "MN",
+        "country": "US",
+        "capacity_kt": 80,
+        "capacity_notes": "Acquired by UAE's EGA affiliate Sep 2024 (110kt/yr)",
+        "products": "secondary alloy ingot, sow",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Acquired by UAE-based aluminum producer (EGA affiliate) Sep 2024. 110kt/yr secondary production. Major Midwest secondary smelter."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.831,
+          36.1629
+        ]
+      },
+      "properties": {
+        "name": "Scepter Greeneville",
+        "company": "Scepter Inc.",
+        "facility_types": "secondary_smelter",
+        "city": "Greeneville",
+        "state": "TN",
+        "country": "US",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot, sow",
+        "markets": "automotive die casting, foundry",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7877,
+          36.0839
+        ]
+      },
+      "properties": {
+        "name": "Scepter Waverly",
+        "company": "Scepter Inc.",
+        "facility_types": "secondary_smelter",
+        "city": "Waverly",
+        "state": "TN",
+        "country": "US",
+        "capacity_kt": 35,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3078,
+          38.7742
+        ]
+      },
+      "properties": {
+        "name": "Scepter Bicknell",
+        "company": "Scepter Inc.",
+        "facility_types": "secondary_smelter",
+        "city": "Bicknell",
+        "state": "IN",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.7966,
+          42.9106
+        ]
+      },
+      "properties": {
+        "name": "Scepter Seneca Falls",
+        "company": "Scepter Inc.",
+        "facility_types": "secondary_smelter",
+        "city": "Seneca Falls",
+        "state": "NY",
+        "country": "US",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.5001,
+          41.5834
+        ]
+      },
+      "properties": {
+        "name": "Jupiter Aluminum Hammond",
+        "company": "Jupiter Aluminum Corp.",
+        "facility_types": "secondary_smelter",
+        "city": "Hammond",
+        "state": "IN",
+        "country": "US",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot, sow",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Major secondary smelter in NW Indiana industrial corridor."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.2067,
+          35.5345
+        ]
+      },
+      "properties": {
+        "name": "Smelter Service Mount Pleasant",
+        "company": "Smelter Service Corp.",
+        "facility_types": "secondary_smelter",
+        "city": "Mount Pleasant",
+        "state": "TN",
+        "country": "US",
+        "capacity_kt": 35,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9412,
+          40.053
+        ]
+      },
+      "properties": {
+        "name": "Pennex Aluminum Wellsville",
+        "company": "Pennex Aluminum Co.",
+        "facility_types": "billet_caster|secondary_smelter",
+        "city": "Wellsville",
+        "state": "PA",
+        "country": "US",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "extrusion billet, secondary ingot",
+        "markets": "construction, industrial",
+        "alloys": "6xxx",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Billet casting and secondary smelting. Serves East Coast extruders."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.4388,
+          36.9685
+        ]
+      },
+      "properties": {
+        "name": "Owl's Head Alloys Bowling Green",
+        "company": "Owl's Head Alloys Inc.",
+        "facility_types": "secondary_smelter",
+        "city": "Bowling Green",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "automotive, industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Expanding operations in Bowling Green."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.59,
+          37.8362
+        ]
+      },
+      "properties": {
+        "name": "Audubon Metals Henderson",
+        "company": "Audubon Metals LLC",
+        "facility_types": "secondary_smelter",
+        "city": "Henderson",
+        "state": "KY",
+        "country": "US",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot, sow",
+        "markets": "automotive die casting",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Ohio River access. Produces specification alloys for automotive die casting."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5025,
+          40.0335
+        ]
+      },
+      "properties": {
+        "name": "Colonial Metals Columbia",
+        "company": "Colonial Metals",
+        "facility_types": "secondary_smelter",
+        "city": "Columbia",
+        "state": "PA",
+        "country": "US",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4114,
+          40.3409
+        ]
+      },
+      "properties": {
+        "name": "Beck Aluminum Lebanon",
+        "company": "Beck Aluminum Alloys (Real Alloy)",
+        "facility_types": "secondary_smelter",
+        "city": "Lebanon",
+        "state": "PA",
+        "country": "US",
+        "capacity_kt": 20,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Acquired by Real Alloy 2016."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6517,
+          41.8354
+        ]
+      },
+      "properties": {
+        "name": "Allied Metal Chicago",
+        "company": "Allied Metal Co.",
+        "facility_types": "secondary_smelter",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "US",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "secondary alloy ingot",
+        "markets": "industrial",
+        "alloys": "",
+        "has_hot_mill": false,
+        "has_cold_mill": false,
+        "has_casthouse": true,
+        "has_recycling": true,
+        "num_potlines": null,
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": ""
+      }
+    }
+  ]
+}

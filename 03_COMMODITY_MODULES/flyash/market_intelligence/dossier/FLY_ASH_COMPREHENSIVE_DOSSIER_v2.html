@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLY ASH COMPREHENSIVE DOSSIER v2 - US Supply/Demand Analysis</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.4; font-size: 11pt; }
+h1 { color: #1a365d; border-bottom: 3px solid #1a365d; padding-bottom: 10px; font-size: 22pt; }
+h2 { color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 5px; margin-top: 25px; font-size: 16pt; }
+h3 { color: #2b6cb0; margin-top: 20px; font-size: 13pt; }
+h4 { color: #3182ce; margin-top: 15px; font-size: 11pt; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 10pt; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background-color: #2c5282; color: white; }
+tr:nth-child(even) { background-color: #f7fafc; }
+.highlight { background-color: #fefcbf; padding: 10px; border-left: 4px solid #d69e2e; margin: 15px 0; }
+.alert { background-color: #fed7d7; padding: 10px; border-left: 4px solid #c53030; margin: 15px 0; }
+.success { background-color: #c6f6d5; padding: 10px; border-left: 4px solid #276749; margin: 15px 0; }
+.info { background-color: #bee3f8; padding: 10px; border-left: 4px solid #2b6cb0; margin: 15px 0; }
+ul { margin: 10px 0; }
+li { margin: 5px 0; }
+.two-col { display: flex; gap: 20px; }
+.two-col > div { flex: 1; }
+.price-box { background: #edf2f7; padding: 15px; border-radius: 5px; text-align: center; margin: 10px; }
+.price-big { font-size: 24pt; font-weight: bold; color: #2c5282; }
+.section-divider { border-top: 3px double #1a365d; margin: 30px 0; }
+.chart-container { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; }
+.chart-title { font-weight: bold; color: #2c5282; margin-bottom: 15px; font-size: 12pt; text-align: center; }
+.chart-note { font-size: 9pt; color: #666; margin-top: 10px; text-align: center; font-style: italic; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px 0; }
+.stat-box { background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; }
+.stat-number { font-size: 28pt; font-weight: bold; }
+.stat-label { font-size: 10pt; opacity: 0.9; }
+.stat-change { font-size: 9pt; margin-top: 5px; }
+.stat-change.up { color: #68d391; }
+.stat-change.down { color: #fc8181; }
+@media print { body { margin: 20px; } .chart-container { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<h1>FLY ASH COMPREHENSIVE DOSSIER</h1>
+<p><strong>Prepared:</strong> December 10, 2025 | <strong>Version:</strong> 2.0 | <strong>Focus:</strong> US Supply/Demand Net Balance Analysis</p>
+
+<div class="highlight">
+<strong>EXECUTIVE SUMMARY:</strong> The US fly ash market faces a structural supply deficit as coal plant closures accelerate (-48% capacity since 2011 peak) while infrastructure demand remains elevated through IIJA spending ($1.2T through 2028). Beneficial use rates reached record 72% in 2024 (10th consecutive year >50%), but total CCP production declined from 80M tons (2022) to 67M tons (2023). Import arbitrage remains attractive: Asian FOB $16-27/MT vs US $118-123/MT. Supply gap projected to widen 2025-2030 as 68.8 GW additional coal capacity retires.
+</div>
+
+<!-- KEY METRICS DASHBOARD -->
+<div class="stat-grid">
+<div class="stat-box">
+<div class="stat-number">67M</div>
+<div class="stat-label">Total CCP Produced (2023)</div>
+<div class="stat-change down">-16% from 2022</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">72%</div>
+<div class="stat-label">Beneficial Use Rate (2024)</div>
+<div class="stat-change up">+10% from 2022</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">165</div>
+<div class="stat-label">Coal Capacity GW (End 2025)</div>
+<div class="stat-change down">-48% from 2011 peak</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">$123</div>
+<div class="stat-label">US Price per MT (2025)</div>
+<div class="stat-change up">+$5 from 2024</div>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>1. US COAL CAPACITY DECLINE - THE SUPPLY CRISIS</h2>
+
+<div class="chart-container">
+<div class="chart-title">US Coal-Fired Power Capacity (GW) - 2010 to 2028 Projected</div>
+<svg width="100%" height="320" viewBox="0 0 800 320">
+  <!-- Grid lines -->
+  <defs>
+    <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGradientRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc8181;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Y-axis labels -->
+  <text x="25" y="35" font-size="10" fill="#666">350</text>
+  <text x="25" y="85" font-size="10" fill="#666">280</text>
+  <text x="25" y="135" font-size="10" fill="#666">210</text>
+  <text x="25" y="185" font-size="10" fill="#666">140</text>
+  <text x="25" y="235" font-size="10" fill="#666">70</text>
+  <text x="25" y="285" font-size="10" fill="#666">0</text>
+
+  <!-- Grid lines -->
+  <line x1="50" y1="30" x2="780" y2="30" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="80" x2="780" y2="80" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="130" x2="780" y2="130" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="180" x2="780" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="230" x2="780" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="280" x2="780" y2="280" stroke="#666" stroke-width="1"/>
+
+  <!-- Bars: Height = (GW / 350) * 250, Y = 280 - height -->
+  <!-- 2010: 340 GW -->
+  <rect x="65" y="37" width="50" height="243" fill="url(#barGradient)" rx="3"/>
+  <text x="90" y="300" font-size="9" fill="#333" text-anchor="middle">2010</text>
+  <text x="90" y="30" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">340</text>
+
+  <!-- 2011: 318 GW (PEAK) -->
+  <rect x="130" y="52" width="50" height="228" fill="url(#barGradient)" rx="3"/>
+  <text x="155" y="300" font-size="9" fill="#333" text-anchor="middle">2011</text>
+  <text x="155" y="45" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">318*</text>
+
+  <!-- 2015: 280 GW -->
+  <rect x="195" y="80" width="50" height="200" fill="url(#barGradient)" rx="3"/>
+  <text x="220" y="300" font-size="9" fill="#333" text-anchor="middle">2015</text>
+  <text x="220" y="73" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">280</text>
+
+  <!-- 2019: 229 GW -->
+  <rect x="260" y="116" width="50" height="164" fill="url(#barGradient)" rx="3"/>
+  <text x="285" y="300" font-size="9" fill="#333" text-anchor="middle">2019</text>
+  <text x="285" y="109" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">229</text>
+
+  <!-- 2020: 200 GW -->
+  <rect x="325" y="137" width="50" height="143" fill="url(#barGradient)" rx="3"/>
+  <text x="350" y="300" font-size="9" fill="#333" text-anchor="middle">2020</text>
+  <text x="350" y="130" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">200</text>
+
+  <!-- 2024: 175 GW -->
+  <rect x="390" y="155" width="50" height="125" fill="url(#barGradient)" rx="3"/>
+  <text x="415" y="300" font-size="9" fill="#333" text-anchor="middle">2024</text>
+  <text x="415" y="148" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">175</text>
+
+  <!-- 2025: 165 GW (projected) -->
+  <rect x="455" y="162" width="50" height="118" fill="url(#barGradientRed)" rx="3"/>
+  <text x="480" y="300" font-size="9" fill="#333" text-anchor="middle">2025P</text>
+  <text x="480" y="155" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">165</text>
+
+  <!-- 2026: 159 GW (projected) -->
+  <rect x="520" y="166" width="50" height="114" fill="url(#barGradientRed)" rx="3"/>
+  <text x="545" y="300" font-size="9" fill="#333" text-anchor="middle">2026P</text>
+  <text x="545" y="159" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">159</text>
+
+  <!-- 2028: 145 GW (projected) -->
+  <rect x="585" y="176" width="50" height="104" fill="url(#barGradientRed)" rx="3"/>
+  <text x="610" y="300" font-size="9" fill="#333" text-anchor="middle">2028P</text>
+  <text x="610" y="169" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">145</text>
+
+  <!-- 2030: 106 GW (projected) -->
+  <rect x="650" y="204" width="50" height="76" fill="url(#barGradientRed)" rx="3"/>
+  <text x="675" y="300" font-size="9" fill="#333" text-anchor="middle">2030P</text>
+  <text x="675" y="197" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">106</text>
+
+  <!-- Legend -->
+  <rect x="720" y="50" width="15" height="15" fill="url(#barGradient)" rx="2"/>
+  <text x="740" y="61" font-size="9" fill="#333">Historical</text>
+  <rect x="720" y="70" width="15" height="15" fill="url(#barGradientRed)" rx="2"/>
+  <text x="740" y="81" font-size="9" fill="#333">Projected</text>
+
+  <!-- Annotation -->
+  <text x="155" y="18" font-size="8" fill="#c53030">*Peak Year</text>
+</svg>
+<div class="chart-note">Sources: EIA, IEEFA. 2025-2030 projections based on announced retirements. 68.8 GW scheduled to retire 2025-2030.</div>
+</div>
+
+<h3>1.1 Coal Plant Retirement Acceleration (2025)</h3>
+<table>
+<tr><th>Metric</th><th>2023</th><th>2024</th><th>2025 (Projected)</th><th>Change</th></tr>
+<tr><td>Capacity Retired (MW)</td><td>10,577</td><td>3,629</td><td>14,532</td><td>+300% YoY</td></tr>
+<tr><td>Coal Consumed by Retiring Units (M short tons)</td><td>28.5</td><td>9.0</td><td>39.6</td><td>+340% YoY</td></tr>
+<tr><td>Primary Regions Affected</td><td colspan="4">MISO (39%), PJM (27%), SPP (15%)</td></tr>
+</table>
+
+<div class="alert">
+<strong>2025 RETIREMENT SURGE:</strong> Record 14.5 GW retiring in 2025 - highest since coal decline began. Units consumed 39.6M short tons of coal in 2023. This removes significant fly ash production capacity from Midwest and Mid-Atlantic regions (MISO + PJM = 66% of retirements).
+</div>
+
+<div class="section-divider"></div>
+
+<h2>2. FLY ASH PRODUCTION vs BENEFICIAL USE</h2>
+
+<div class="chart-container">
+<div class="chart-title">US Coal Combustion Products: Production vs Beneficial Use (Million Tons)</div>
+<svg width="100%" height="350" viewBox="0 0 800 350">
+  <!-- Grid -->
+  <line x1="80" y1="30" x2="750" y2="30" stroke="#e2e8f0"/>
+  <line x1="80" y1="80" x2="750" y2="80" stroke="#e2e8f0"/>
+  <line x1="80" y1="130" x2="750" y2="130" stroke="#e2e8f0"/>
+  <line x1="80" y1="180" x2="750" y2="180" stroke="#e2e8f0"/>
+  <line x1="80" y1="230" x2="750" y2="230" stroke="#e2e8f0"/>
+  <line x1="80" y1="280" x2="750" y2="280" stroke="#666"/>
+
+  <!-- Y-axis labels -->
+  <text x="15" y="35" font-size="10" fill="#666">100</text>
+  <text x="15" y="85" font-size="10" fill="#666">80</text>
+  <text x="15" y="135" font-size="10" fill="#666">60</text>
+  <text x="15" y="185" font-size="10" fill="#666">40</text>
+  <text x="15" y="235" font-size="10" fill="#666">20</text>
+  <text x="15" y="285" font-size="10" fill="#666">0</text>
+  <text x="10" y="155" font-size="9" fill="#666" transform="rotate(-90,10,155)">Million Tons</text>
+
+  <!-- Data points - Production (blue line) -->
+  <!-- 2015: 107M, 2017: 111M, 2019: 79M, 2020: 69M, 2021: 77M, 2022: 80M, 2023: 67M -->
+  <polyline points="120,13 220,19 320,82 420,105 520,87 620,80 720,113"
+            fill="none" stroke="#2c5282" stroke-width="3"/>
+  <circle cx="120" cy="13" r="5" fill="#2c5282"/>
+  <circle cx="220" cy="19" r="5" fill="#2c5282"/>
+  <circle cx="320" cy="82" r="5" fill="#2c5282"/>
+  <circle cx="420" cy="105" r="5" fill="#2c5282"/>
+  <circle cx="520" cy="87" r="5" fill="#2c5282"/>
+  <circle cx="620" cy="80" r="5" fill="#2c5282"/>
+  <circle cx="720" cy="113" r="5" fill="#2c5282"/>
+
+  <!-- Data points - Beneficial Use (green line) -->
+  <!-- 2015: 56M (52%), 2017: 71M (64%), 2019: 41M (52%), 2020: 41M (59%), 2021: 35M (46%), 2022: 50M (62%), 2023: 46M (69%) -->
+  <polyline points="120,140 220,102 320,178 420,178 520,193 620,155 720,165"
+            fill="none" stroke="#48bb78" stroke-width="3"/>
+  <circle cx="120" cy="140" r="5" fill="#48bb78"/>
+  <circle cx="220" cy="102" r="5" fill="#48bb78"/>
+  <circle cx="320" cy="178" r="5" fill="#48bb78"/>
+  <circle cx="420" cy="178" r="5" fill="#48bb78"/>
+  <circle cx="520" cy="193" r="5" fill="#48bb78"/>
+  <circle cx="620" cy="155" r="5" fill="#48bb78"/>
+  <circle cx="720" cy="165" r="5" fill="#48bb78"/>
+
+  <!-- Value labels - Production -->
+  <text x="120" y="8" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">107</text>
+  <text x="220" y="14" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">111</text>
+  <text x="320" y="75" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">79</text>
+  <text x="420" y="98" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">69</text>
+  <text x="520" y="80" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">77</text>
+  <text x="620" y="73" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">80</text>
+  <text x="720" y="106" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">67</text>
+
+  <!-- Value labels - Beneficial Use with % -->
+  <text x="120" y="155" font-size="8" fill="#48bb78" text-anchor="middle">56 (52%)</text>
+  <text x="220" y="117" font-size="8" fill="#48bb78" text-anchor="middle">71 (64%)</text>
+  <text x="320" y="193" font-size="8" fill="#48bb78" text-anchor="middle">41 (52%)</text>
+  <text x="420" y="193" font-size="8" fill="#48bb78" text-anchor="middle">41 (59%)</text>
+  <text x="520" y="208" font-size="8" fill="#48bb78" text-anchor="middle">35 (46%)</text>
+  <text x="620" y="170" font-size="8" fill="#48bb78" text-anchor="middle">50 (62%)</text>
+  <text x="720" y="180" font-size="8" fill="#48bb78" text-anchor="middle">46 (69%)</text>
+
+  <!-- X-axis labels -->
+  <text x="120" y="300" font-size="10" fill="#333" text-anchor="middle">2015</text>
+  <text x="220" y="300" font-size="10" fill="#333" text-anchor="middle">2017</text>
+  <text x="320" y="300" font-size="10" fill="#333" text-anchor="middle">2019</text>
+  <text x="420" y="300" font-size="10" fill="#333" text-anchor="middle">2020</text>
+  <text x="520" y="300" font-size="10" fill="#333" text-anchor="middle">2021</text>
+  <text x="620" y="300" font-size="10" fill="#333" text-anchor="middle">2022</text>
+  <text x="720" y="300" font-size="10" fill="#333" text-anchor="middle">2023</text>
+
+  <!-- Legend -->
+  <line x1="280" y1="325" x2="310" y2="325" stroke="#2c5282" stroke-width="3"/>
+  <circle cx="295" cy="325" r="4" fill="#2c5282"/>
+  <text x="315" y="328" font-size="10" fill="#333">Total CCP Production</text>
+
+  <line x1="480" y1="325" x2="510" y2="325" stroke="#48bb78" stroke-width="3"/>
+  <circle cx="495" cy="325" r="4" fill="#48bb78"/>
+  <text x="515" y="328" font-size="10" fill="#333">Beneficial Use (% rate)</text>
+</svg>
+<div class="chart-note">Source: ACAA Production & Use Surveys 2015-2023. Note: 2024 beneficial use rate reached 72% (record high).</div>
+</div>
+
+<h3>2.1 Key Supply/Demand Observations</h3>
+<table>
+<tr><th>Year</th><th>CCP Production (M tons)</th><th>Beneficial Use (M tons)</th><th>Use Rate</th><th>Disposed (M tons)</th></tr>
+<tr><td>2015</td><td>107</td><td>56</td><td>52%</td><td>51</td></tr>
+<tr><td>2017</td><td>111</td><td>71</td><td>64%</td><td>40</td></tr>
+<tr><td>2019</td><td>79</td><td>41</td><td>52%</td><td>38</td></tr>
+<tr><td>2020</td><td>69</td><td>41</td><td>59%</td><td>28</td></tr>
+<tr><td>2021</td><td>77</td><td>35</td><td>46%</td><td>42</td></tr>
+<tr><td>2022</td><td>80</td><td>50</td><td>62%</td><td>30</td></tr>
+<tr><td>2023</td><td>67</td><td>46</td><td>69%</td><td>21</td></tr>
+<tr style="background-color:#c6f6d5;"><td>2024 (est)</td><td>~60</td><td>~43</td><td>72%</td><td>~17</td></tr>
+</table>
+
+<div class="success">
+<strong>BENEFICIAL USE MILESTONE:</strong> 2024 marked the 10th consecutive year with >50% beneficial use rate. Record 72% rate achieved despite declining production. Over 4 million tons of previously disposed ash was reclaimed and utilized in 2023 - indicating markets are adapting to supply constraints.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>3. SUPPLY-DEMAND GAP ANALYSIS</h2>
+
+<div class="chart-container">
+<div class="chart-title">US Fly Ash Supply-Demand Balance (Conceptual - Million Tons)</div>
+<svg width="100%" height="300" viewBox="0 0 800 300">
+  <!-- Background zones -->
+  <rect x="80" y="30" width="670" height="100" fill="#c6f6d5" opacity="0.3"/>
+  <rect x="80" y="130" width="670" height="120" fill="#fed7d7" opacity="0.3"/>
+
+  <!-- Grid -->
+  <line x1="80" y1="30" x2="750" y2="30" stroke="#e2e8f0"/>
+  <line x1="80" y1="80" x2="750" y2="80" stroke="#e2e8f0"/>
+  <line x1="80" y1="130" x2="750" y2="130" stroke="#666" stroke-dasharray="5,5"/>
+  <line x1="80" y1="180" x2="750" y2="180" stroke="#e2e8f0"/>
+  <line x1="80" y1="230" x2="750" y2="230" stroke="#e2e8f0"/>
+
+  <!-- Y-axis labels -->
+  <text x="20" y="35" font-size="9" fill="#666">+20</text>
+  <text x="20" y="85" font-size="9" fill="#666">+10</text>
+  <text x="20" y="135" font-size="9" fill="#666">0</text>
+  <text x="20" y="185" font-size="9" fill="#666">-10</text>
+  <text x="20" y="235" font-size="9" fill="#666">-20</text>
+  <text x="55" y="135" font-size="8" fill="#c53030">DEFICIT</text>
+  <text x="55" y="75" font-size="8" fill="#276749">SURPLUS</text>
+
+  <!-- Supply line (domestic production for beneficial use) -->
+  <!-- 2020: +5, 2022: +10, 2024: -5, 2026: -12, 2028: -18 -->
+  <polyline points="130,105 290,80 450,155 610,182 750,206"
+            fill="none" stroke="#2c5282" stroke-width="3"/>
+
+  <!-- Demand line (actual demand including imports filling gap) -->
+  <line x1="130" y1="130" x2="750" y2="130" stroke="#48bb78" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Import fill area -->
+  <polygon points="450,130 450,155 610,182 750,206 750,130" fill="#f6ad55" opacity="0.4"/>
+
+  <!-- Data points -->
+  <circle cx="130" cy="105" r="6" fill="#2c5282"/>
+  <circle cx="290" cy="80" r="6" fill="#2c5282"/>
+  <circle cx="450" cy="155" r="6" fill="#c53030"/>
+  <circle cx="610" cy="182" r="6" fill="#c53030"/>
+  <circle cx="750" cy="206" r="6" fill="#c53030"/>
+
+  <!-- Labels -->
+  <text x="130" y="95" font-size="9" fill="#276749" text-anchor="middle">+5M</text>
+  <text x="290" y="70" font-size="9" fill="#276749" text-anchor="middle">+10M</text>
+  <text x="450" y="170" font-size="9" fill="#c53030" text-anchor="middle">-5M</text>
+  <text x="610" y="197" font-size="9" fill="#c53030" text-anchor="middle">-12M</text>
+  <text x="750" y="221" font-size="9" fill="#c53030" text-anchor="middle">-18M</text>
+
+  <!-- X-axis -->
+  <text x="130" y="265" font-size="10" fill="#333" text-anchor="middle">2020</text>
+  <text x="290" y="265" font-size="10" fill="#333" text-anchor="middle">2022</text>
+  <text x="450" y="265" font-size="10" fill="#333" text-anchor="middle">2024</text>
+  <text x="610" y="265" font-size="10" fill="#333" text-anchor="middle">2026P</text>
+  <text x="750" y="265" font-size="10" fill="#333" text-anchor="middle">2028P</text>
+
+  <!-- Legend -->
+  <line x1="200" y1="280" x2="240" y2="280" stroke="#2c5282" stroke-width="3"/>
+  <text x="245" y="283" font-size="9" fill="#333">Domestic Supply Balance</text>
+  <rect x="380" y="275" width="20" height="10" fill="#f6ad55" opacity="0.6"/>
+  <text x="405" y="283" font-size="9" fill="#333">Import Requirement Zone</text>
+  <line x1="550" y1="280" x2="590" y2="280" stroke="#48bb78" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="595" y="283" font-size="9" fill="#333">Demand Baseline</text>
+</svg>
+<div class="chart-note">Conceptual projection based on coal plant retirements and steady concrete demand from IIJA spending. Gap must be filled by imports or reclaimed ash.</div>
+</div>
+
+<h3>3.1 Supply Gap Drivers</h3>
+<div class="two-col">
+<div>
+<h4 style="color:#c53030;">Supply Constraints</h4>
+<ul>
+<li><strong>Coal Retirements:</strong> 68.8 GW scheduled 2025-2030</li>
+<li><strong>Production Decline:</strong> 107M tons (2015) → 67M tons (2023)</li>
+<li><strong>Plant Capacity Factor:</strong> Dropped from 67% (2010) to 42% (2023)</li>
+<li><strong>Regional Concentration:</strong> MISO + PJM losing 66% of 2025 retirements</li>
+</ul>
+</div>
+<div>
+<h4 style="color:#276749;">Demand Drivers</h4>
+<ul>
+<li><strong>IIJA Spending:</strong> $1.2T through 2028 ($62B/year)</li>
+<li><strong>Cement Demand:</strong> +4.5% annual growth through 2029</li>
+<li><strong>Low-Carbon Mandates:</strong> California CALGreen, NY regulations</li>
+<li><strong>Record Utilization:</strong> 72% beneficial use rate</li>
+</ul>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>4. IMPORT ECONOMICS & TRADE FLOW</h2>
+
+<div class="chart-container">
+<div class="chart-title">Fly Ash Price Comparison by Region ($/MT - 2025)</div>
+<svg width="100%" height="250" viewBox="0 0 800 250">
+  <!-- Bars -->
+  <rect x="80" y="30" width="100" height="164" fill="#c53030" rx="5"/>
+  <text x="130" y="22" font-size="12" fill="#c53030" text-anchor="middle" font-weight="bold">$123</text>
+  <text x="130" y="210" font-size="10" fill="#333" text-anchor="middle">USA</text>
+
+  <rect x="220" y="81" width="100" height="113" fill="#ed8936" rx="5"/>
+  <text x="270" y="73" font-size="12" fill="#ed8936" text-anchor="middle" font-weight="bold">$87</text>
+  <text x="270" y="210" font-size="10" fill="#333" text-anchor="middle">France</text>
+
+  <rect x="360" y="157" width="100" height="37" fill="#48bb78" rx="5"/>
+  <text x="410" y="149" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">$25</text>
+  <text x="410" y="210" font-size="10" fill="#333" text-anchor="middle">China</text>
+
+  <rect x="500" y="164" width="100" height="30" fill="#48bb78" rx="5"/>
+  <text x="550" y="156" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">$22</text>
+  <text x="550" y="210" font-size="10" fill="#333" text-anchor="middle">Germany</text>
+
+  <rect x="640" y="168" width="100" height="26" fill="#38a169" rx="5"/>
+  <text x="690" y="160" font-size="12" fill="#38a169" text-anchor="middle" font-weight="bold">$16-27</text>
+  <text x="690" y="210" font-size="10" fill="#333" text-anchor="middle">Asia FOB</text>
+
+  <!-- Arbitrage arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d69e2e"/>
+    </marker>
+  </defs>
+  <line x1="690" y1="140" x2="200" y2="50" stroke="#d69e2e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="420" y="80" font-size="10" fill="#d69e2e" font-weight="bold">$91-107/MT ARBITRAGE</text>
+</svg>
+<div class="chart-note">Sources: ChemAnalyst, IMARC Group (Q2-Q3 2025). US prices +$5 YoY driven by tight supply and strong construction demand.</div>
+</div>
+
+<h3>4.1 US Import Sources (Nov 2023 - Oct 2024)</h3>
+<table>
+<tr><th>Source Country</th><th>Share of Imports</th><th>Shipments</th><th>Notes</th></tr>
+<tr><td>South Korea</td><td>49%</td><td>19</td><td>Largest supplier, high-quality Class F</td></tr>
+<tr><td>Turkey</td><td>26%</td><td>10</td><td>Growing supplier</td></tr>
+<tr><td>China</td><td>23%</td><td>9</td><td>145% tariff limits growth</td></tr>
+<tr><td>Other (Japan, Canada)</td><td>2%</td><td>1</td><td>Alternative sources developing</td></tr>
+<tr style="font-weight:bold;"><td>Total</td><td>100%</td><td>39</td><td>US = 11% of global fly ash imports</td></tr>
+</table>
+
+<h3>4.2 Key Import States</h3>
+<p><strong>Highest Volume Recipients:</strong> Florida, Washington, Louisiana, Nevada, Ohio, Texas</p>
+
+<div class="info">
+<strong>IMPORT ECONOMICS:</strong> Asian FOB $16-27/MT + Freight (~$30-50/MT) = Landed cost $46-77/MT vs. US domestic $118-123/MT. Even with freight, imports offer 37-61% cost savings. Declining Asia-USWC freight rates through 2024-2025 further improve arbitrage.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>5. BENEFICIAL USE BY APPLICATION</h2>
+
+<div class="chart-container">
+<div class="chart-title">2023 Fly Ash Beneficial Use by Application (46.3M tons total)</div>
+<svg width="100%" height="280" viewBox="0 0 800 280">
+  <!-- Pie chart approximation using arcs -->
+  <g transform="translate(200,140)">
+    <!-- Concrete/Grout: 61% - 220 degrees -->
+    <path d="M0,0 L100,0 A100,100 0 1,1 -80.9,-58.8 Z" fill="#2c5282"/>
+    <text x="-20" y="-30" font-size="11" fill="white" font-weight="bold">61%</text>
+    <text x="-30" y="-15" font-size="9" fill="white">Concrete</text>
+
+    <!-- Structural Fills: 15% - 54 degrees -->
+    <path d="M0,0 L-80.9,-58.8 A100,100 0 0,1 -30.9,-95.1 Z" fill="#4299e1"/>
+    <text x="-70" y="-70" font-size="10" fill="white" font-weight="bold">15%</text>
+
+    <!-- Road Base: 8% - 29 degrees -->
+    <path d="M0,0 L-30.9,-95.1 A100,100 0 0,1 30.9,-95.1 Z" fill="#48bb78"/>
+    <text x="-5" y="-80" font-size="10" fill="white" font-weight="bold">8%</text>
+
+    <!-- Mine Fill: 4% - 14 degrees -->
+    <path d="M0,0 L30.9,-95.1 A100,100 0 0,1 58.8,-80.9 Z" fill="#ed8936"/>
+    <text x="40" y="-75" font-size="9" fill="white">4%</text>
+
+    <!-- Other: 12% - 43 degrees -->
+    <path d="M0,0 L58.8,-80.9 A100,100 0 0,1 100,0 Z" fill="#9f7aea"/>
+    <text x="60" y="-30" font-size="10" fill="white" font-weight="bold">12%</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="430" y="60" width="15" height="15" fill="#2c5282"/>
+  <text x="450" y="72" font-size="10" fill="#333">Concrete/Grout (28.2M tons)</text>
+
+  <rect x="430" y="85" width="15" height="15" fill="#4299e1"/>
+  <text x="450" y="97" font-size="10" fill="#333">Structural Fills (6.9M tons)</text>
+
+  <rect x="430" y="110" width="15" height="15" fill="#48bb78"/>
+  <text x="450" y="122" font-size="10" fill="#333">Road Base/Stabilization (3.7M tons)</text>
+
+  <rect x="430" y="135" width="15" height="15" fill="#ed8936"/>
+  <text x="450" y="147" font-size="10" fill="#333">Mine Backfill (1.9M tons)</text>
+
+  <rect x="430" y="160" width="15" height="15" fill="#9f7aea"/>
+  <text x="450" y="172" font-size="10" fill="#333">Other (Gypsum, Cement, etc.) (5.6M tons)</text>
+
+  <!-- Growth indicator -->
+  <rect x="430" y="200" width="300" height="50" fill="#c6f6d5" rx="5"/>
+  <text x="445" y="220" font-size="10" fill="#276749" font-weight="bold">CONCRETE USE GROWING:</text>
+  <text x="445" y="238" font-size="9" fill="#333">11.9M tons (2023) vs 10.9M tons (2022) = +9% YoY</text>
+</svg>
+<div class="chart-note">Source: ACAA 2023 Production & Use Survey. Fly ash in concrete increased +9% YoY, reflecting infrastructure demand.</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>6. MARKET PRICING & TRENDS</h2>
+
+<h3>6.1 Current Pricing (2025)</h3>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+<div class="price-box">
+<div class="price-big">$123/MT</div>
+<div>USA (Q3 2025)</div>
+<div style="color:#c53030; font-size:10pt;">+$5 from 2024</div>
+</div>
+<div class="price-box">
+<div class="price-big">$118/MT</div>
+<div>USA (Q2 2025)</div>
+<div style="color:#666; font-size:10pt;">-5.3% QoQ</div>
+</div>
+<div class="price-box">
+<div class="price-big">$87/MT</div>
+<div>France</div>
+<div style="color:#666; font-size:10pt;">Stable</div>
+</div>
+<div class="price-box">
+<div class="price-big">$22/MT</div>
+<div>Germany</div>
+<div style="color:#48bb78; font-size:10pt;">Oversupply</div>
+</div>
+<div class="price-box">
+<div class="price-big">$16-27/MT</div>
+<div>Asian FOB</div>
+<div style="color:#48bb78; font-size:10pt;">Abundant supply</div>
+</div>
+</div>
+
+<h3>6.2 Price Drivers (2024-2025)</h3>
+<table>
+<tr><th>Factor</th><th>Impact</th><th>Direction</th></tr>
+<tr><td>US Coal Plant Closures</td><td>Reduced domestic supply</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>IIJA Infrastructure Spending</td><td>Sustained concrete demand</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>145% China Tariff</td><td>Reduced Chinese imports</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>Declining Asia-USWC Freight</td><td>Lower import costs</td><td style="color:#48bb78;">Price Down</td></tr>
+<tr><td>Alternative Sources (Korea, Turkey)</td><td>Increased competition</td><td style="color:#48bb78;">Price Down</td></tr>
+<tr><td>ILA Strikes / Port Congestion</td><td>Supply disruption (Nov 2024)</td><td style="color:#c53030;">Price Up</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>7. RECLAIMED FLY ASH - EMERGING SUPPLY SOURCE</h2>
+
+<h3>7.1 Reclamation Volume Trend</h3>
+<div class="chart-container">
+<div class="chart-title">Previously Disposed Ash Reclaimed for Beneficial Use (Million Tons)</div>
+<svg width="100%" height="180" viewBox="0 0 700 180">
+  <!-- Bars -->
+  <rect x="100" y="100" width="80" height="50" fill="#9f7aea" rx="3"/>
+  <text x="140" y="92" font-size="12" fill="#9f7aea" text-anchor="middle" font-weight="bold">2.5M</text>
+  <text x="140" y="165" font-size="10" fill="#333" text-anchor="middle">2021</text>
+
+  <rect x="220" y="75" width="80" height="75" fill="#9f7aea" rx="3"/>
+  <text x="260" y="67" font-size="12" fill="#9f7aea" text-anchor="middle" font-weight="bold">3.5M</text>
+  <text x="260" y="165" font-size="10" fill="#333" text-anchor="middle">2022</text>
+
+  <rect x="340" y="45" width="80" height="105" fill="#805ad5" rx="3"/>
+  <text x="380" y="37" font-size="12" fill="#805ad5" text-anchor="middle" font-weight="bold">4.5M</text>
+  <text x="380" y="165" font-size="10" fill="#333" text-anchor="middle">2023</text>
+
+  <rect x="460" y="30" width="80" height="120" fill="#6b46c1" rx="3"/>
+  <text x="500" y="22" font-size="12" fill="#6b46c1" text-anchor="middle" font-weight="bold">5.0M+</text>
+  <text x="500" y="165" font-size="10" fill="#333" text-anchor="middle">2024 Est</text>
+
+  <!-- Growth arrow -->
+  <text x="580" y="80" font-size="10" fill="#276749" font-weight="bold">+100%</text>
+  <text x="580" y="95" font-size="9" fill="#666">growth</text>
+  <text x="580" y="108" font-size="9" fill="#666">2021-24</text>
+</svg>
+<div class="chart-note">Source: ACAA. Reclaimed ash used for concrete products, cement kiln feed, pond closure activities. Markets adapting to supply decline.</div>
+</div>
+
+<h3>7.2 Duke Beckjord Site Profile</h3>
+<table>
+<tr><th>Item</th><th>Details</th></tr>
+<tr><td>Location</td><td>20 miles east of Cincinnati, OH (Ohio River)</td></tr>
+<tr><td>Original Owner</td><td>Duke Energy (closed 2014)</td></tr>
+<tr><td>Current Owner</td><td>Commercial Liability Partners (CLP) - purchased 2018</td></tr>
+<tr><td>Site Size</td><td>1,400 acres</td></tr>
+<tr><td>Coal Ash Volume</td><td>10+ billion pounds in unlined ponds</td></tr>
+<tr><td>Regulatory Status</td><td>EPA CCR Rule compliance required; 100+ residents lawsuit pending</td></tr>
+<tr><td>Potential</td><td>Port terminal development; ash reclamation opportunity</td></tr>
+</table>
+
+<div class="two-col">
+<div>
+<h4 style="color:green;">Reclaimed Ash: PROS</h4>
+<ul>
+<li>Domestic supply as coal plants close</li>
+<li>Reduces environmental liability</li>
+<li>Strong market demand at premium prices</li>
+<li>Supports circular economy goals</li>
+<li>Long-term contracts available</li>
+<li>Potential REE recovery in future</li>
+</ul>
+</div>
+<div>
+<h4 style="color:red;">Reclaimed Ash: CONS</h4>
+<ul>
+<li>Variable quality - contamination risk</li>
+<li>High moisture requires drying</li>
+<li>May not meet ASTM C618 specs</li>
+<li>Beneficiation costs (LOI reduction)</li>
+<li>Regulatory uncertainty (EPA CCR)</li>
+<li>Community opposition/litigation</li>
+</ul>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>8. MARKET OUTLOOK SUMMARY</h2>
+
+<div class="chart-container">
+<div class="chart-title">US Fly Ash Market - 5-Year Outlook (2025-2030)</div>
+<table style="margin:0;">
+<tr>
+<th style="width:20%;">Factor</th>
+<th style="width:40%;">Trend</th>
+<th style="width:20%;">Impact on Supply</th>
+<th style="width:20%;">Impact on Price</th>
+</tr>
+<tr>
+<td><strong>Coal Capacity</strong></td>
+<td>165 GW (2025) → 106 GW (2030): -36%</td>
+<td style="color:#c53030; font-weight:bold;">NEGATIVE</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>CCP Production</strong></td>
+<td>67M tons (2023) → ~45M tons (2030 est)</td>
+<td style="color:#c53030; font-weight:bold;">NEGATIVE</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>Beneficial Use Rate</strong></td>
+<td>72% (2024) → 80%+ (2030 target)</td>
+<td style="color:#48bb78; font-weight:bold;">POSITIVE</td>
+<td style="color:#666;">NEUTRAL</td>
+</tr>
+<tr>
+<td><strong>Reclaimed Ash</strong></td>
+<td>4.5M tons (2023) → 8-10M tons (2030 est)</td>
+<td style="color:#48bb78; font-weight:bold;">POSITIVE</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN</td>
+</tr>
+<tr>
+<td><strong>Import Volume</strong></td>
+<td>Growing - Korea, Turkey, Canada, Japan</td>
+<td style="color:#48bb78; font-weight:bold;">POSITIVE</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN</td>
+</tr>
+<tr>
+<td><strong>IIJA Demand</strong></td>
+<td>$62B/year through 2028; concrete +4.5%/year</td>
+<td style="color:#666;">N/A</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>Carbon Regulations</strong></td>
+<td>Buy Clean mandates; CALGreen Code expansion</td>
+<td style="color:#666;">N/A</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+</table>
+</div>
+
+<div class="success">
+<strong>NET ASSESSMENT:</strong> US fly ash market will remain supply-constrained through 2030. Domestic production decline (-33% projected) will outpace demand moderation. Gap to be filled by: (1) increased imports from Asia/Turkey, (2) reclaimed ash from landfills/ponds, (3) alternative SCMs (slag, natural pozzolans). Prices likely to remain elevated ($100-130/MT range) with periodic spikes during supply disruptions.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>9. QUICK REFERENCE - KEY NUMBERS</h2>
+
+<table>
+<tr><th>Metric</th><th>Value</th><th>Trend</th></tr>
+<tr><td>US Price (Q3 2025)</td><td>$123/MT</td><td style="color:#c53030;">Up $5 YoY</td></tr>
+<tr><td>Asian FOB Price</td><td>$16-27/MT</td><td>Stable</td></tr>
+<tr><td>Import Arbitrage</td><td>$91-107/MT</td><td style="color:#48bb78;">Attractive</td></tr>
+<tr><td>US Coal Capacity (End 2025)</td><td>165 GW</td><td style="color:#c53030;">-48% from 2011 peak</td></tr>
+<tr><td>Coal Retirements 2025</td><td>14.5 GW</td><td style="color:#c53030;">Record year</td></tr>
+<tr><td>CCP Production (2023)</td><td>67M tons</td><td style="color:#c53030;">-16% from 2022</td></tr>
+<tr><td>Beneficial Use Rate (2024)</td><td>72%</td><td style="color:#48bb78;">Record high</td></tr>
+<tr><td>Fly Ash in Concrete (2023)</td><td>11.9M tons</td><td style="color:#48bb78;">+9% YoY</td></tr>
+<tr><td>Reclaimed Ash (2023)</td><td>4.5M tons</td><td style="color:#48bb78;">+29% YoY</td></tr>
+<tr><td>Top Import Source</td><td>South Korea (49%)</td><td>Growing</td></tr>
+<tr><td>US Market Size (2024)</td><td>$2.36 billion</td><td>+5.2% CAGR</td></tr>
+<tr><td>IIJA Infrastructure</td><td>$1.2T through 2028</td><td>Demand driver</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>SOURCES</h2>
+<p style="font-size: 9pt;">
+<strong>Industry Organizations:</strong> ACAA (American Coal Ash Association) Production & Use Surveys 2015-2024, ARTBA Forecast Update 2024<br>
+<strong>Government:</strong> EIA (Energy Information Administration) Coal Capacity Data, USGS CCP Statistics, EPA CCR Rule<br>
+<strong>Market Research:</strong> ChemAnalyst (pricing), IMARC Group, Fortune Business Insights, Market Data Forecast, Verified Market Reports<br>
+<strong>Energy Analysis:</strong> IEEFA (Institute for Energy Economics and Financial Analysis) - Coal Capacity Reports 2024-2025<br>
+<strong>Trade Data:</strong> Volza Import Statistics (Nov 2023 - Oct 2024)<br>
+<strong>Technical:</strong> ASTM C618, Power Engineering, Eco Material Technologies<br>
+<strong>News:</strong> Concrete Products Magazine, Utility Dive, Global Energy Monitor
+</p>
+
+<hr>
+<p style="text-align: center; font-size: 10pt; color: #666;">
+<em>FLY ASH COMPREHENSIVE DOSSIER v2.0 | December 10, 2025 | US Supply/Demand Net Balance Analysis</em>
+</p>
+
+</body>
+</html>

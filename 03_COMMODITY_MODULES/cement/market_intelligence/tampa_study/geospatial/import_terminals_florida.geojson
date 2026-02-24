@@ -1,0 +1,187 @@
+{
+  "type": "FeatureCollection",
+  "name": "Import_Terminals_Florida",
+  "metadata": {
+    "title": "Cement Import Terminals - Florida",
+    "description": "Cement import and distribution terminals in Florida ports",
+    "source": "Panjiva Trade Data 2023-2025, Port Authority Records",
+    "created": "2025-12-16",
+    "projection": "EPSG:4326",
+    "colorScheme": {
+      "primary": "#00ACC1",
+      "secondary": "#0097A7",
+      "accent": "#00897B"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa Bay Terminal",
+        "port": "Port Tampa Bay",
+        "operator": "Multiple",
+        "volume_mt": 3450520,
+        "volume_label": "3.45 MT",
+        "shipments": 96,
+        "rank": 1,
+        "primary_source": "Turkey, Greece",
+        "terminal_type": "Bulk/Bagged",
+        "symbol_size": 35,
+        "color": "#00ACC1",
+        "popup": "Tampa Bay Terminal<br>Volume: 3.45 MT<br>96 shipments"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.4442, 27.9378]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa Port Terminal",
+        "port": "Tampa",
+        "operator": "Martin Marietta",
+        "volume_mt": 2416120,
+        "volume_label": "2.42 MT",
+        "shipments": 73,
+        "rank": 2,
+        "primary_source": "Various",
+        "terminal_type": "Bulk",
+        "symbol_size": 24,
+        "color": "#00ACC1",
+        "popup": "Tampa Port Terminal<br>Volume: 2.42 MT<br>73 shipments"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.4318, 27.9156]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Redwing (Under Construction)",
+        "port": "Gibsonton",
+        "operator": "SESCO Cement Corp",
+        "volume_mt": 0,
+        "volume_label": "New Terminal",
+        "shipments": 0,
+        "rank": null,
+        "primary_source": "Egypt, Turkey",
+        "terminal_type": "Bulk/Bagged",
+        "status": "Under Construction",
+        "symbol_size": 20,
+        "color": "#2E7D32",
+        "popup": "Port Redwing<br>Status: Under Construction<br>Focus: Gray & White Cement"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.3789, 27.8456]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jacksonville Terminal",
+        "port": "JAXPORT",
+        "operator": "Various",
+        "volume_mt": 1611600,
+        "volume_label": "1.61 MT",
+        "shipments": 48,
+        "rank": 3,
+        "primary_source": "Various",
+        "terminal_type": "Bulk/Container",
+        "symbol_size": 16,
+        "color": "#0097A7",
+        "popup": "Jacksonville Terminal<br>Volume: 1.61 MT<br>48 shipments"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.6256, 30.4089]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Manatee Terminal",
+        "port": "Port Manatee",
+        "operator": "Various",
+        "volume_mt": 946260,
+        "volume_label": "0.95 MT",
+        "shipments": 25,
+        "rank": 4,
+        "primary_source": "Turkey, Egypt",
+        "terminal_type": "Bulk",
+        "symbol_size": 10,
+        "color": "#0097A7",
+        "popup": "Port Manatee Terminal<br>Volume: 0.95 MT<br>25 shipments"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.5656, 27.6339]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Everglades Terminal",
+        "port": "Port Everglades",
+        "operator": "Various",
+        "volume_mt": 448572,
+        "volume_label": "0.45 MT",
+        "shipments": 23,
+        "rank": 5,
+        "primary_source": "Caribbean",
+        "terminal_type": "Container/Export",
+        "symbol_size": 8,
+        "color": "#00897B",
+        "popup": "Port Everglades<br>Volume: 0.45 MT<br>Export Focus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.1181, 26.0889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Palm Beach Terminal",
+        "port": "Port of Palm Beach",
+        "operator": "Various",
+        "volume_mt": 191509,
+        "volume_label": "0.19 MT",
+        "shipments": 11,
+        "rank": 6,
+        "primary_source": "Caribbean",
+        "terminal_type": "Container/Export",
+        "symbol_size": 6,
+        "color": "#00897B",
+        "popup": "West Palm Beach<br>Volume: 0.19 MT<br>Caribbean Export Focus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.0556, 26.7656]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miami Seaport Terminal",
+        "port": "PortMiami",
+        "operator": "Various",
+        "volume_mt": 96000,
+        "volume_label": "0.10 MT",
+        "shipments": 7,
+        "rank": 7,
+        "primary_source": "Caribbean",
+        "terminal_type": "Container",
+        "symbol_size": 5,
+        "color": "#00897B",
+        "popup": "Miami Seaport<br>Limited cement operations"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.1656, 25.7742]
+      }
+    }
+  ]
+}

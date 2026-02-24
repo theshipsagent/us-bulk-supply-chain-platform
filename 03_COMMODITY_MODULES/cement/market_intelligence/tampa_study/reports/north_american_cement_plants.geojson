@@ -1,0 +1,3018 @@
+{
+  "type": "FeatureCollection",
+  "name": "North_American_Cement_Plants",
+  "metadata": {
+    "title": "North American Cement Plants (US, Canada, Mexico)",
+    "source": "Global Energy Monitor - Global Cement and Concrete Tracker July 2025",
+    "total_plants": 158,
+    "by_country": {
+      "United States": 100,
+      "Canada": 20,
+      "Mexico": 38
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joliette Cement Plant",
+        "country": "Canada",
+        "state": "Qu\u00e9bec",
+        "owner": "Beton Provincial Lt\u00e9e [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000125641"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.402506,
+          46.029821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mississauga Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "CRH Canada Group Inc [100.0%]",
+        "capacity_mt": 2.0,
+        "status": "operating",
+        "gem_id": "P100000125642"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.623745,
+          43.493509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint Basile Cement Plant",
+        "country": "Canada",
+        "state": "Qu\u00e9bec",
+        "owner": "Ciment Quebec Inc [100.0%]",
+        "capacity_mt": 1.57,
+        "status": "operating",
+        "gem_id": "P100000125643"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.814136,
+          46.743917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Embro Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "Federal White Cement Ltd [100.0%]",
+        "capacity_mt": 0.8,
+        "status": "operating",
+        "gem_id": "P100000125644"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.89613,
+          43.104341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Argenteuil Cement Plant",
+        "country": "Canada",
+        "state": "Qu\u00e9bec",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "mothballed",
+        "gem_id": "P100000125645"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.613505,
+          45.767799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Picton Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0.79,
+        "status": "operating",
+        "gem_id": "P100000125646"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.12085,
+          44.05434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Edmonton Cement Plant",
+        "country": "Canada",
+        "state": "Alberta",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 1.4,
+        "status": "operating",
+        "gem_id": "P100000125647"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.600095,
+          53.580754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Delta Cement Plant 2",
+        "country": "Canada",
+        "state": "British Columbia",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 1.2,
+        "status": "operating",
+        "gem_id": "P100000125648"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.0228,
+          49.143615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bath Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000125649"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.80285,
+          44.16822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brookfield Cement Plant",
+        "country": "Canada",
+        "state": "Nova Scotia",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 0.2,
+        "status": "operating",
+        "gem_id": "P100000125650"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.334259,
+          45.23922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Exshaw Cement Plant",
+        "country": "Canada",
+        "state": "Alberta",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 2.2,
+        "status": "operating",
+        "gem_id": "P100000125651"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.170079,
+          51.060688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Richmond Cement Plant",
+        "country": "Canada",
+        "state": "British Columbia",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000125652"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.004702,
+          49.158452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint Constant Cement Plant",
+        "country": "Canada",
+        "state": "Qu\u00e9bec",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000125653"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.523915,
+          45.339885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stoney Creek Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 0.814,
+        "status": "operating",
+        "gem_id": "P100000125654"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.68735,
+          43.223521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Daniel Cement Plant",
+        "country": "Canada",
+        "state": "Qu\u00e9bec",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 3.1,
+        "status": "operating",
+        "gem_id": "P100000125655"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.920047,
+          48.187695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bowmanville Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 1.8,
+        "status": "operating",
+        "gem_id": "P100000125656"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.700276,
+          43.88114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Mary Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 2.1,
+        "status": "operating",
+        "gem_id": "P100000125657"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.148816,
+          43.242199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamloops Cement Plant",
+        "country": "Canada",
+        "state": "British Columbia",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 0.324,
+        "status": "operating",
+        "gem_id": "P100000125658"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.060723,
+          50.66066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L'Orignal Cement Plant",
+        "country": "Canada",
+        "state": "Ontario",
+        "owner": "Colacem SpA [100.0%]",
+        "capacity_mt": 1.16,
+        "status": "announced",
+        "gem_id": "P100000125695"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.395641,
+          46.429131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Delta Cement Plant",
+        "country": "Canada",
+        "state": "British Columbia",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0.65,
+        "status": "announced",
+        "gem_id": "P100000125734"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.023188,
+          49.143578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Palmar Cement Plant",
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "owner": "Cementos Fortaleza SA de CV [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000127642"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.021412,
+          20.417326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Progreso Cement Plant",
+        "country": "Mexico",
+        "state": "Yucat\u00e1n",
+        "owner": "Cementos Fortaleza SA de CV [100.0%]",
+        "capacity_mt": 0.25,
+        "status": "operating",
+        "gem_id": "P100000127643"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.661391,
+          21.224375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tula Cement Plant",
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "owner": "Cementos Fortaleza SA de CV [100.0%]",
+        "capacity_mt": 2.1,
+        "status": "operating",
+        "gem_id": "P100000127644"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.17914,
+          20.012084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vito Cement Plant",
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "owner": "Cementos Fortaleza SA de CV [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "operating",
+        "gem_id": "P100000127645"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.194761,
+          19.990555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atotonilco Cement Plant",
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.3,
+        "status": "operating",
+        "gem_id": "P100000127646"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.210899,
+          19.996331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barrientos Cement Plant",
+        "country": "Mexico",
+        "state": "Estado de M\u00e9xico",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.4,
+        "status": "operating",
+        "gem_id": "P100000127647"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.201001,
+          19.578436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ensenada Cement Plant",
+        "country": "Mexico",
+        "state": "Baja California",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127648"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.584585,
+          31.844796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guadalajara Cement Plant",
+        "country": "Mexico",
+        "state": "Jalisco",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127649"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.343354,
+          20.603192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hermosillo CPN Cement Plant",
+        "country": "Mexico",
+        "state": "Sonora",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127650"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.718581,
+          29.05856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidalgo Cement Plant",
+        "country": "Mexico",
+        "state": "Nuevo Le\u00f3n",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 0.2,
+        "status": "operating",
+        "gem_id": "P100000127651"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.455768,
+          25.977048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huichapan Cement Plant",
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 3.2,
+        "status": "operating",
+        "gem_id": "P100000127652"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.690335,
+          20.384508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Merida Cement Plant",
+        "country": "Mexico",
+        "state": "Yucat\u00e1n",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127653"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.663822,
+          20.943997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monterrey Cement Plant",
+        "country": "Mexico",
+        "state": "Nuevo Le\u00f3n",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 0.2,
+        "status": "operating",
+        "gem_id": "P100000127654"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.298078,
+          25.698454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tamuin Cement Plant",
+        "country": "Mexico",
+        "state": "San Luis Potos\u00ed",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127655"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.869286,
+          22.044582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tepeaca Cement Plant",
+        "country": "Mexico",
+        "state": "Puebla",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 7.6,
+        "status": "operating",
+        "gem_id": "P100000127656"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.962802,
+          18.968308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torreon Cement Plant",
+        "country": "Mexico",
+        "state": "Coahuila de Zaragoza",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127657"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.397265,
+          25.488268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valles Cement Plant",
+        "country": "Mexico",
+        "state": "San Luis Potos\u00ed",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127658"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.959692,
+          21.985989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yaqui Cement Plant",
+        "country": "Mexico",
+        "state": "Sonora",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.8,
+        "status": "operating",
+        "gem_id": "P100000127659"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.826386,
+          28.927453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zapotiltic Cement Plant",
+        "country": "Mexico",
+        "state": "Jalisco",
+        "owner": "CEMEX SAB de CV [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000127660"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.376683,
+          19.672727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cruz Azul Cement Plant",
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "owner": "Cooperativa La Cruz Azul SCL [100.0%]",
+        "capacity_mt": 1.68,
+        "status": "mothballed",
+        "gem_id": "P100000127661"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.328073,
+          19.987639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lagunas Cement Plant",
+        "country": "Mexico",
+        "state": "Oaxaca",
+        "owner": "Cooperativa La Cruz Azul SCL [100.0%]",
+        "capacity_mt": 3.4,
+        "status": "operating",
+        "gem_id": "P100000127662"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.068016,
+          16.800889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Puebla Cement Plant",
+        "country": "Mexico",
+        "state": "Puebla",
+        "owner": "Cooperativa La Cruz Azul SCL [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000127663"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.65888,
+          18.870811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seybaplaya Cement Plant",
+        "country": "Mexico",
+        "state": "Campeche",
+        "owner": "Cooperativa La Cruz Azul SCL [100.0%]",
+        "capacity_mt": 1.095,
+        "status": "announced",
+        "gem_id": "P100000127664"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.705024,
+          19.673712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tepezala Cement Plant",
+        "country": "Mexico",
+        "state": "Aguascalientes",
+        "owner": "Cooperativa La Cruz Azul SCL [100.0%]",
+        "capacity_mt": 2.1,
+        "status": "operating",
+        "gem_id": "P100000127665"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.205333,
+          22.185048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Apazapan Cement Plant",
+        "country": "Mexico",
+        "state": "Veracruz",
+        "owner": "Corporaci\u00f3n Moctezuma SAB de CV [100.0%]",
+        "capacity_mt": 2.75,
+        "status": "operating",
+        "gem_id": "P100000127666"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.70478,
+          19.343802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cerritos Cement Plant",
+        "country": "Mexico",
+        "state": "San Luis Potos\u00ed",
+        "owner": "Corporaci\u00f3n Moctezuma SAB de CV [100.0%]",
+        "capacity_mt": 2.7,
+        "status": "operating",
+        "gem_id": "P100000127667"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.378977,
+          22.474087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tepetzingo Cement Plant",
+        "country": "Mexico",
+        "state": "Morelos",
+        "owner": "Corporaci\u00f3n Moctezuma SAB de CV [100.0%]",
+        "capacity_mt": 2.5,
+        "status": "operating",
+        "gem_id": "P100000127668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.179188,
+          18.798161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chihuahua Cement Plant",
+        "country": "Mexico",
+        "state": "Chihuahua",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000127669"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.087428,
+          28.686565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juarez Cement Plant",
+        "country": "Mexico",
+        "state": "Chihuahua",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 0.2,
+        "status": "operating",
+        "gem_id": "P100000127670"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.478933,
+          31.657317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samalayuca Cement Plant",
+        "country": "Mexico",
+        "state": "Chihuahua",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 1.2,
+        "status": "operating",
+        "gem_id": "P100000127671"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.449726,
+          31.414784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Acapulco Cement Plant",
+        "country": "Mexico",
+        "state": "Guerrero",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 0.6,
+        "status": "operating",
+        "gem_id": "P100000127672"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.830602,
+          16.888668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Apaxco Cement Plant",
+        "country": "Mexico",
+        "state": "Estado de M\u00e9xico",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 1.6,
+        "status": "operating",
+        "gem_id": "P100000127673"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18218,
+          19.974368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hermosillo Cement Plant",
+        "country": "Mexico",
+        "state": "Sonora",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 1.6,
+        "status": "operating",
+        "gem_id": "P100000127674"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.71443,
+          29.047878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Macuspana Cement Plant",
+        "country": "Mexico",
+        "state": "Tabasco",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 1.5,
+        "status": "operating",
+        "gem_id": "P100000127675"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.443604,
+          17.650835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orizaba Cement Plant",
+        "country": "Mexico",
+        "state": "Veracruz",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 1.8,
+        "status": "operating",
+        "gem_id": "P100000127676"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.041198,
+          18.857753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ramos Arizpe Cement Plant",
+        "country": "Mexico",
+        "state": "Coahuila",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 1.62,
+        "status": "operating",
+        "gem_id": "P100000127677"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.865863,
+          25.613532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tecoman Cement Plant",
+        "country": "Mexico",
+        "state": "Colima",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 2.5,
+        "status": "operating",
+        "gem_id": "P100000127678"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.872494,
+          18.980846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holcim M\u00e9xico Operaciones S.A. de C.V. Uman Cement Plant",
+        "country": "Mexico",
+        "state": "Yucat\u00e1n",
+        "owner": "Holcim M\u00e9xico Operaciones SA de CV [100.0%]",
+        "capacity_mt": 0.7,
+        "status": "operating",
+        "gem_id": "P100000127679"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.740924,
+          20.891549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alamo Concrete Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Alamo Cement Co [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126514"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.374994,
+          29.611942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Girardeau Cement Plant",
+        "country": "United States",
+        "state": "Missouri",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 1.3,
+        "status": "operating",
+        "gem_id": "P100000126515"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.537885,
+          37.267699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chattanooga Cement Plant",
+        "country": "United States",
+        "state": "Tennessee",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 0.82,
+        "status": "operating",
+        "gem_id": "P100000126516"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.34367,
+          35.101255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Festus Cement Plant",
+        "country": "United States",
+        "state": "Missouri",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 2.7,
+        "status": "operating",
+        "gem_id": "P100000126517"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.337427,
+          38.181745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greencastle Cement Plant",
+        "country": "United States",
+        "state": "Indiana",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 1.3,
+        "status": "operating",
+        "gem_id": "P100000126518"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.867685,
+          39.616962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maryneal Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126519"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.457576,
+          32.246956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pryor Cement Plant",
+        "country": "United States",
+        "state": "Oklahoma",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 0.6,
+        "status": "operating",
+        "gem_id": "P100000126520"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.223425,
+          36.272283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stockertown Cement Plant",
+        "country": "United States",
+        "state": "Pennsylvania",
+        "owner": "Buzzi Unicem USA Inc [100.0%]",
+        "capacity_mt": 1.18,
+        "status": "operating",
+        "gem_id": "P100000126521"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.271596,
+          40.750707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sumterville Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 1.2,
+        "status": "operating",
+        "gem_id": "P100000126522"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.025558,
+          28.760848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chanute Cement Plant",
+        "country": "United States",
+        "state": "Kansas",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "operating",
+        "gem_id": "P100000126523"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.460495,
+          37.698646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Montana City Cement Plant",
+        "country": "United States",
+        "state": "Montana",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 0.35,
+        "status": "operating",
+        "gem_id": "P100000126524"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.922081,
+          46.543461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Durkee Cement Plant",
+        "country": "United States",
+        "state": "Oregon",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 1.0841,
+        "status": "operating",
+        "gem_id": "P100000126525"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.42168,
+          44.542712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foreman Cement Plant",
+        "country": "United States",
+        "state": "Arkansas",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 1.5275,
+        "status": "operating",
+        "gem_id": "P100000126526"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.420652,
+          33.694814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Louisville Cement Plant",
+        "country": "United States",
+        "state": "Nebraska",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126527"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.15416,
+          41.006191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leamington Cement Plant",
+        "country": "United States",
+        "state": "Utah",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 0.962,
+        "status": "operating",
+        "gem_id": "P100000126528"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.197506,
+          39.563831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seattle Cement Plant",
+        "country": "United States",
+        "state": "Washington",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 0.6,
+        "status": "operating",
+        "gem_id": "P100000126529"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.342701,
+          47.568137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ash Grove Midlothian Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 0.9,
+        "status": "operating",
+        "gem_id": "P100000126530"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.006754,
+          32.520953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Branford Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000126531"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.850364,
+          29.962052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Antonio Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Capitol Aggregates Inc [100.0%]",
+        "capacity_mt": 0.9,
+        "status": "operating",
+        "gem_id": "P100000126532"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.420966,
+          29.546941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waco White Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Lehigh White Cement Company LLC [100.0%]",
+        "capacity_mt": 0.14,
+        "status": "operating",
+        "gem_id": "P100000126533"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.240875,
+          31.482109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "York Cement Plant",
+        "country": "United States",
+        "state": "Pennsylvania",
+        "owner": "Lehigh White Cement Company LLC [100.0%]",
+        "capacity_mt": 0.14,
+        "status": "operating",
+        "gem_id": "P100000126534"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.76876,
+          39.94794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brooksville South Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 1.5,
+        "status": "operating",
+        "gem_id": "P100000126535"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.430867,
+          28.582321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Clinchfield Cement Plant",
+        "country": "United States",
+        "state": "Georgia",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 0.71,
+        "status": "operating",
+        "gem_id": "P100000126536"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.633103,
+          32.415567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Demopolis Cement Plant",
+        "country": "United States",
+        "state": "Alabama",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 0.816,
+        "status": "operating",
+        "gem_id": "P100000126537"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.814993,
+          32.51394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Knoxville Cement Plant",
+        "country": "United States",
+        "state": "Tennessee",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 0.65,
+        "status": "operating",
+        "gem_id": "P100000126538"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.834219,
+          36.022556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Longmont Lyons Cement Plant",
+        "country": "United States",
+        "state": "Colorado",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 0.4,
+        "status": "operating",
+        "gem_id": "P100000126539"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.23641,
+          40.202578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miami Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126540"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.420227,
+          25.785919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Braunfels Balcones Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 2.0,
+        "status": "operating",
+        "gem_id": "P100000126541"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.184297,
+          29.673765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kosmos Louisville Cement Plant",
+        "country": "United States",
+        "state": "Kentucky",
+        "owner": "Eagle Materials Inc [100.0%]",
+        "capacity_mt": 1.7,
+        "status": "operating",
+        "gem_id": "P100000126542"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.906374,
+          38.035693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Victorville Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "CEMEX Inc [100.0%]",
+        "capacity_mt": 3.0,
+        "status": "operating",
+        "gem_id": "P100000126543"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.303068,
+          34.55371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drake Paulden Cement Plant",
+        "country": "United States",
+        "state": "Arizona",
+        "owner": "Drake Cement LLC [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000126545"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.374353,
+          34.980343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sugar Creek Cement Plant",
+        "country": "United States",
+        "state": "Missouri",
+        "owner": "AUDUBON MATERIALS LLC [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000126547"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.39796,
+          39.145367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tulsa Cement Plant",
+        "country": "United States",
+        "state": "Oklahoma",
+        "owner": "AUDUBON MATERIALS LLC [100.0%]",
+        "capacity_mt": 0.7,
+        "status": "operating",
+        "gem_id": "P100000126548"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.811902,
+          36.195044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Illinois LaSalle Cement Plant",
+        "country": "United States",
+        "state": "Illinois",
+        "owner": "Illinois Cement Company LLC [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000126549"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.081771,
+          41.329439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laramie Cement Plant",
+        "country": "United States",
+        "state": "Wyoming",
+        "owner": "Mountain Cement Company LLC [100.0%]",
+        "capacity_mt": 0.8,
+        "status": "operating",
+        "gem_id": "P100000126550"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.603709,
+          41.268408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nevada Cement Plant",
+        "country": "United States",
+        "state": "Nevada",
+        "owner": "Nevada Cement Company LLC [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "operating",
+        "gem_id": "P100000126551"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.263039,
+          39.62013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dragon Thomaston Cement Plant",
+        "country": "United States",
+        "state": "Maine",
+        "owner": "Dragon Products Company Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating pre-retirement",
+        "gem_id": "P100000126552"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.157138,
+          44.084275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giant Cement Harleyville Cement Plant",
+        "country": "United States",
+        "state": "South Carolina",
+        "owner": "Giant Cement Company Inc [100.0%]",
+        "capacity_mt": 0.8,
+        "status": "operating",
+        "gem_id": "P100000126553"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.442063,
+          33.242074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roberta Cement Plant",
+        "country": "United States",
+        "state": "Alabama",
+        "owner": "Argos USA LLC [100.0%]",
+        "capacity_mt": 1.7,
+        "status": "operating",
+        "gem_id": "P100000126555"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.79896,
+          33.103637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Newberry Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "Argos USA LLC [100.0%]",
+        "capacity_mt": 1.6,
+        "status": "operating",
+        "gem_id": "P100000126556"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.581724,
+          29.690855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harleyville Cement Plant",
+        "country": "United States",
+        "state": "South Carolina",
+        "owner": "Argos USA LLC [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126557"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.452378,
+          33.226276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martinsburg Cement Plant",
+        "country": "United States",
+        "state": "West Virginia",
+        "owner": "Argos USA LLC [100.0%]",
+        "capacity_mt": 2.2,
+        "status": "operating",
+        "gem_id": "P100000126558"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.978002,
+          39.434947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atlanta Cement Plant",
+        "country": "United States",
+        "state": "Georgia",
+        "owner": "Argos USA LLC [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126559"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.469475,
+          33.823833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa Port Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "Argos USA LLC [100.0%]",
+        "capacity_mt": 1.9,
+        "status": "operating",
+        "gem_id": "P100000126561"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.442202,
+          27.9358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trident Cement Plant",
+        "country": "United States",
+        "state": "Montana",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 0.4,
+        "status": "operating",
+        "gem_id": "P100000126562"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.474759,
+          45.946617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GCC SAB de CV Odessa Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "operating",
+        "gem_id": "P100000126563"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.546613,
+          31.74675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rapid City Cement Plant",
+        "country": "United States",
+        "state": "South Dakota",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126564"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.271001,
+          44.089412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pueblo Cement Plant",
+        "country": "United States",
+        "state": "Colorado",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126565"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.606057,
+          38.128944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tijeras Cement Plant",
+        "country": "United States",
+        "state": "New Mexico",
+        "owner": "GCC SAB de CV [100.0%]",
+        "capacity_mt": 0.4,
+        "status": "operating",
+        "gem_id": "P100000126566"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.391982,
+          35.071447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Logansport Cement Plant",
+        "country": "United States",
+        "state": "Indiana",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.43344,
+          40.734706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Speed Slag Cement Plant",
+        "country": "United States",
+        "state": "Indiana",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0.4,
+        "status": "operating",
+        "gem_id": "P100000126568"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.749812,
+          38.416467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Permanente Cupertino Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 1.5,
+        "status": "retired",
+        "gem_id": "P100000126569"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.091704,
+          37.317574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Fleetwood Cement Plant",
+        "country": "United States",
+        "state": "Pennsylvania",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126570"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.894313,
+          40.472973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lehigh Glens Falls Cement Plant",
+        "country": "United States",
+        "state": "New York",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "retired",
+        "gem_id": "P100000126571"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.619036,
+          43.30851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Leeds Cement Plant",
+        "country": "United States",
+        "state": "Alabama",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126572"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.543829,
+          33.540963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Mason City Cement Plant",
+        "country": "United States",
+        "state": "Iowa",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126573"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.212511,
+          43.178901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Mitchell Cement Plant",
+        "country": "United States",
+        "state": "Indiana",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 2.4,
+        "status": "operating",
+        "gem_id": "P100000126574"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.456875,
+          38.738901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Redding Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "CalPortland Co [100.0%]",
+        "capacity_mt": 0.635,
+        "status": "operating",
+        "gem_id": "P100000126575"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.32239,
+          40.736884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UNACEM Tehachapi Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "UNACEM Corp SAA [100.0%]",
+        "capacity_mt": 0.8,
+        "status": "operating",
+        "gem_id": "P100000126576"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.369208,
+          35.122944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Union Bridge Cement Plant",
+        "country": "United States",
+        "state": "Maryland",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126577"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.171631,
+          39.560503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Texas Lehigh Buda Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Texas Lehigh Cement Company LP [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126578"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.857287,
+          30.054328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Camden Cement Plant",
+        "country": "United States",
+        "state": "New Jersey",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0.7,
+        "status": "operating",
+        "gem_id": "P100000126579"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.124692,
+          39.916931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Bellingham Cement Plant",
+        "country": "United States",
+        "state": "Washington",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126580"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.524762,
+          48.768488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Nazareth Cement Plant",
+        "country": "United States",
+        "state": "Pennsylvania",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126581"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.320463,
+          40.735308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heidelberg Catskill Cement Plant",
+        "country": "United States",
+        "state": "New York",
+        "owner": "Heidelberg Materials US Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "retired",
+        "gem_id": "P100000126582"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.913151,
+          42.140334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ste. Genevieve Cement Plant",
+        "country": "United States",
+        "state": "Missouri",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 4.5,
+        "status": "operating",
+        "gem_id": "P100000126583"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.25769,
+          38.109989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ada Cement Plant",
+        "country": "United States",
+        "state": "Oklahoma",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0.682,
+        "status": "operating",
+        "gem_id": "P100000126584"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.697286,
+          34.767732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Florence Cement Plant",
+        "country": "United States",
+        "state": "Colorado",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 1.8,
+        "status": "operating",
+        "gem_id": "P100000126585"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.017592,
+          38.386178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hagerstown Cement Plant",
+        "country": "United States",
+        "state": "Maryland",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0.6,
+        "status": "operating",
+        "gem_id": "P100000126586"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.680576,
+          39.652858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holly Hill Cement Plant",
+        "country": "United States",
+        "state": "South Carolina",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 2.2,
+        "status": "operating",
+        "gem_id": "P100000126587"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.430594,
+          33.277966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holcim US Midlothian Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 2.35,
+        "status": "operating",
+        "gem_id": "P100000126588"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.972477,
+          32.512949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Devli's Slide Cement Plant",
+        "country": "United States",
+        "state": "Utah",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0.8,
+        "status": "operating",
+        "gem_id": "P100000126589"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.531617,
+          41.063898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Theodore Cement Plant",
+        "country": "United States",
+        "state": "Alabama",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 1.5,
+        "status": "operating",
+        "gem_id": "P100000126590"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.112289,
+          30.534921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alpena Cement Plant",
+        "country": "United States",
+        "state": "Michigan",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 2.4,
+        "status": "operating",
+        "gem_id": "P100000126591"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.405173,
+          45.073094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joppa Cement Plant",
+        "country": "United States",
+        "state": "Illinois",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "operating",
+        "gem_id": "P100000126592"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.87899,
+          37.2174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paulding Cement Plant",
+        "country": "United States",
+        "state": "Ohio",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0.5,
+        "status": "operating",
+        "gem_id": "P100000126593"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.605239,
+          41.180945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ravena Cement Plant",
+        "country": "United States",
+        "state": "New York",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 2.2,
+        "status": "operating",
+        "gem_id": "P100000126594"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.813608,
+          42.498501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whitehall Cement Plant",
+        "country": "United States",
+        "state": "Pennsylvania",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126595"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.506226,
+          40.687649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Chicago Slag Cement Plant",
+        "country": "United States",
+        "state": "Illinois",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0.4,
+        "status": "operating",
+        "gem_id": "P100000126596"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.570676,
+          41.660071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sparrow Point Slag Cement Plant",
+        "country": "United States",
+        "state": "Maryland",
+        "owner": "Holcim (US) Inc [100.0%]",
+        "capacity_mt": 0,
+        "status": "operating",
+        "gem_id": "P100000126598"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.464804,
+          39.208657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seattle Slag Cement Plant",
+        "country": "United States",
+        "state": "Washington",
+        "owner": "Lafarge Canada Inc [100.0%]",
+        "capacity_mt": 0.6,
+        "status": "operating",
+        "gem_id": "P100000126599"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.344803,
+          47.553959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martin Marietta Materials Inc. Midlothian Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Martin Marietta Materials Inc [100.0%]",
+        "capacity_mt": 1.89,
+        "status": "operating",
+        "gem_id": "P100000126600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.02502,
+          32.462785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hunter Cement Plant",
+        "country": "United States",
+        "state": "Texas",
+        "owner": "Ash Grove Cement Co [100.0%]",
+        "capacity_mt": 2.1,
+        "status": "operating",
+        "gem_id": "P100000126601"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.041089,
+          29.804648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mitsubishi Lucerne Valley Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "Mitsubishi Cement Corp [100.0%]",
+        "capacity_mt": 1.7,
+        "status": "operating",
+        "gem_id": "P100000126602"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.854593,
+          34.354387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monarch Cement Plant",
+        "country": "United States",
+        "state": "Kansas",
+        "owner": "Monarch Cement Co [100.0%]",
+        "capacity_mt": 1.0,
+        "status": "operating",
+        "gem_id": "P100000126603"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.432306,
+          37.797492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Clarkdale Cement Plant",
+        "country": "United States",
+        "state": "Arizona",
+        "owner": "Salt River Materials Group [100.0%]",
+        "capacity_mt": 1.2,
+        "status": "operating",
+        "gem_id": "P100000126604"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.083155,
+          34.780061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cabot Cement Plant",
+        "country": "United States",
+        "state": "Pennsylvania",
+        "owner": "Armstrong Cement & Supply Corp [100.0%]",
+        "capacity_mt": 0,
+        "status": "unknown",
+        "gem_id": "P100000126605"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.699466,
+          40.794893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hannibal Cement Plant",
+        "country": "United States",
+        "state": "Missouri",
+        "owner": "Continental Cement Company LLC [100.0%]",
+        "capacity_mt": 1.2,
+        "status": "operating",
+        "gem_id": "P100000126606"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.314585,
+          39.677755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Davenport Cement Plant",
+        "country": "United States",
+        "state": "Iowa",
+        "owner": "Continental Cement Company LLC [100.0%]",
+        "capacity_mt": 1.2,
+        "status": "operating",
+        "gem_id": "P100000126607"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.695638,
+          41.459227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oro Grande Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "CalPortland Co [100.0%]",
+        "capacity_mt": 1.35,
+        "status": "operating",
+        "gem_id": "P100000126608"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.336373,
+          34.608111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mojave Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "CalPortland Co [100.0%]",
+        "capacity_mt": 1.3,
+        "status": "operating",
+        "gem_id": "P100000126609"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.314341,
+          35.029722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rillito Cement Plant",
+        "country": "United States",
+        "state": "Arizona",
+        "owner": "CalPortland Co [100.0%]",
+        "capacity_mt": 1.1,
+        "status": "operating",
+        "gem_id": "P100000126610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.151751,
+          32.410114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roanoke Cement Plant",
+        "country": "United States",
+        "state": "Virginia",
+        "owner": "Titan America LLC [100.0%]",
+        "capacity_mt": 1.3,
+        "status": "operating",
+        "gem_id": "P100000126611"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.995105,
+          37.461112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pennusco Cement Plant",
+        "country": "United States",
+        "state": "Florida",
+        "owner": "Titan America LLC [100.0%]",
+        "capacity_mt": 2.1,
+        "status": "operating",
+        "gem_id": "P100000126612"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.377344,
+          25.877824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lebec Cement Plant",
+        "country": "United States",
+        "state": "California",
+        "owner": "National Cement Company Inc [100.0%]",
+        "capacity_mt": 1.6,
+        "status": "operating",
+        "gem_id": "P100000126613"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.7499,
+          34.820463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ragland Cement Plant",
+        "country": "United States",
+        "state": "Alabama",
+        "owner": "National Cement Company Inc [100.0%]",
+        "capacity_mt": 2.2,
+        "status": "operating",
+        "gem_id": "P100000126614"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.154991,
+          33.733579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charlevoix Cement Plant",
+        "country": "United States",
+        "state": "Michigan",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 1.4,
+        "status": "operating",
+        "gem_id": "P100000126615"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.299328,
+          45.317821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dixon Cement Plant",
+        "country": "United States",
+        "state": "Illinois",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 1.53,
+        "status": "operating",
+        "gem_id": "P100000126616"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.455077,
+          41.860725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Detroit Cement Plant",
+        "country": "United States",
+        "state": "Michigan",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 1.13,
+        "status": "operating",
+        "gem_id": "P100000126617"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.135752,
+          42.286723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Badger Cement Plant",
+        "country": "United States",
+        "state": "Wisconsin",
+        "owner": "St Marys Cement Inc (Canada) [100.0%]",
+        "capacity_mt": 0.35,
+        "status": "operating",
+        "gem_id": "P100000126618"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.896528,
+          43.007887
+        ]
+      }
+    }
+  ]
+}

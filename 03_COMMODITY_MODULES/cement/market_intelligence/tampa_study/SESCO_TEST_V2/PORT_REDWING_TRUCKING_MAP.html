@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Redwing Trucking Service Areas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --primary-dark: #1B5E20;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --secondary-dark: #0D47A1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+        #map { width: 100%; height: 100vh; }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: white;
+            padding: 15px 25px;
+            z-index: 1000;
+        }
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .header .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 1000;
+            min-width: 280px;
+        }
+        .legend h4 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .legend-color {
+            width: 30px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 12px;
+            border: 2px solid;
+        }
+        .legend-text {
+            font-size: 0.9rem;
+        }
+        .legend-text strong {
+            display: block;
+            color: #333;
+        }
+        .legend-text span {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .stats-panel {
+            position: absolute;
+            top: 90px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 1000;
+            width: 260px;
+        }
+        .stats-panel h4 {
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-label { color: #666; }
+        .stat-value { font-weight: 600; color: var(--primary-dark); }
+
+        .leaflet-popup-content-wrapper {
+            border-radius: 10px;
+        }
+        .popup-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+        .popup-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Port Redwing Trucking Service Areas</h1>
+        <div class="subtitle">Drive time radius zones from Gibsonton, FL terminal</div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="legend">
+        <h4>Service Zones</h4>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(76, 175, 80, 0.5); border-color: #1B5E20;"></div>
+            <div class="legend-text">
+                <strong>1-Hour Zone (55 mi)</strong>
+                <span>Tampa Bay Metro - 3.4M population</span>
+            </div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(129, 199, 132, 0.4); border-color: #2E7D32;"></div>
+            <div class="legend-text">
+                <strong>3-Hour Zone (165 mi)</strong>
+                <span>Central/SW Florida - 12.8M population</span>
+            </div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(200, 230, 201, 0.3); border-color: #4CAF50;"></div>
+            <div class="legend-text">
+                <strong>5-Hour Zone (275 mi)</strong>
+                <span>All Florida + Adjacent - 22.5M population</span>
+            </div>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #FF5722; border-color: #E64A19; width: 20px; height: 20px; border-radius: 50%;"></div>
+            <div class="legend-text">
+                <strong>Port Redwing</strong>
+                <span>Terminal Location (Origin)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-panel">
+        <h4>Market Reach Summary</h4>
+        <div class="stat-row">
+            <span class="stat-label">1-Hour Markets</span>
+            <span class="stat-value">Tampa, St. Pete, Clearwater</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">3-Hour Markets</span>
+            <span class="stat-value">Orlando, Sarasota, Ft Myers</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">5-Hour Markets</span>
+            <span class="stat-value">Jacksonville, Miami, Mobile</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Total Population</span>
+            <span class="stat-value">22.5 Million</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Ready-Mix Plants</span>
+            <span class="stat-value">894 in Florida</span>
+        </div>
+    </div>
+
+    <script>
+        // Initialize map
+        const map = L.map('map').setView([28.3, -82.5], 7);
+
+        // Add tile layer
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap, &copy; CARTO',
+            subdomains: 'abcd'
+        }).addTo(map);
+
+        // Port Redwing location
+        const portRedwing = [27.8456, -82.3789];
+
+        // 5-Hour zone (outermost)
+        const zone5hr = [
+            [31.8456, -82.3789],
+            [31.7, -81.0],
+            [31.2, -79.8],
+            [30.4, -78.9],
+            [29.3, -78.4],
+            [28.0, -78.3],
+            [26.7, -78.5],
+            [25.5, -79.0],
+            [24.5, -79.8],
+            [23.9, -80.8],
+            [23.7, -82.0],
+            [23.9, -83.2],
+            [24.5, -84.3],
+            [25.5, -85.2],
+            [26.7, -85.8],
+            [28.0, -86.1],
+            [29.3, -86.0],
+            [30.4, -85.6],
+            [31.2, -84.8],
+            [31.7, -83.7],
+            [31.8456, -82.3789]
+        ];
+
+        // 3-Hour zone
+        const zone3hr = [
+            [30.2456, -82.3789],
+            [30.1, -81.4],
+            [29.7, -80.6],
+            [29.0, -80.1],
+            [28.1, -79.9],
+            [27.2, -80.0],
+            [26.4, -80.4],
+            [25.8, -81.0],
+            [25.5, -81.8],
+            [25.5, -82.7],
+            [25.8, -83.5],
+            [26.4, -84.1],
+            [27.2, -84.5],
+            [28.1, -84.6],
+            [29.0, -84.4],
+            [29.7, -84.0],
+            [30.1, -83.3],
+            [30.2456, -82.3789]
+        ];
+
+        // 1-Hour zone (innermost)
+        const zone1hr = [
+            [28.6456, -82.3789],
+            [28.6, -82.0],
+            [28.45, -81.7],
+            [28.2, -81.55],
+            [27.9, -81.5],
+            [27.6, -81.55],
+            [27.35, -81.7],
+            [27.2, -82.0],
+            [27.1456, -82.3789],
+            [27.2, -82.75],
+            [27.35, -83.05],
+            [27.6, -83.2],
+            [27.9, -83.25],
+            [28.2, -83.2],
+            [28.45, -83.05],
+            [28.6, -82.75],
+            [28.6456, -82.3789]
+        ];
+
+        // Add zones (outer to inner for proper layering)
+        L.polygon(zone5hr, {
+            color: '#4CAF50',
+            weight: 2,
+            fillColor: '#C8E6C9',
+            fillOpacity: 0.3
+        }).addTo(map).bindPopup(`
+            <div class="popup-title">5-Hour Service Zone</div>
+            <div class="popup-row"><span>Radius:</span><span>275 miles</span></div>
+            <div class="popup-row"><span>Population:</span><span>22.5 million</span></div>
+            <div class="popup-row"><span>Markets:</span><span>Jacksonville, Orlando, Miami, Tallahassee, Mobile AL</span></div>
+        `);
+
+        L.polygon(zone3hr, {
+            color: '#2E7D32',
+            weight: 2,
+            fillColor: '#81C784',
+            fillOpacity: 0.4
+        }).addTo(map).bindPopup(`
+            <div class="popup-title">3-Hour Service Zone</div>
+            <div class="popup-row"><span>Radius:</span><span>165 miles</span></div>
+            <div class="popup-row"><span>Population:</span><span>12.8 million</span></div>
+            <div class="popup-row"><span>Markets:</span><span>Orlando, Lakeland, Sarasota, Fort Myers, Ocala, Gainesville</span></div>
+        `);
+
+        L.polygon(zone1hr, {
+            color: '#1B5E20',
+            weight: 3,
+            fillColor: '#4CAF50',
+            fillOpacity: 0.5
+        }).addTo(map).bindPopup(`
+            <div class="popup-title">1-Hour Service Zone</div>
+            <div class="popup-row"><span>Radius:</span><span>55 miles</span></div>
+            <div class="popup-row"><span>Population:</span><span>3.4 million</span></div>
+            <div class="popup-row"><span>Markets:</span><span>Tampa, St. Petersburg, Clearwater, Brandon, Lakeland, Bradenton</span></div>
+        `);
+
+        // Add Port Redwing marker
+        L.circleMarker(portRedwing, {
+            radius: 12,
+            fillColor: '#FF5722',
+            color: '#fff',
+            weight: 3,
+            fillOpacity: 1
+        }).addTo(map).bindPopup(`
+            <div class="popup-title">Port Redwing Terminal</div>
+            <div class="popup-row"><span>Location:</span><span>Gibsonton, FL</span></div>
+            <div class="popup-row"><span>Status:</span><span>Under Construction</span></div>
+            <div class="popup-row"><span>Capacity:</span><span>150K MT</span></div>
+        `);
+
+        // Add label for Port Redwing
+        L.marker(portRedwing, {
+            icon: L.divIcon({
+                className: 'port-label',
+                html: '<div style="background: white; padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); white-space: nowrap;">Port Redwing</div>',
+                iconAnchor: [-15, 10]
+            })
+        }).addTo(map);
+
+        // Add major cities
+        const cities = [
+            {name: "Tampa", coords: [27.9506, -82.4572], zone: "1hr"},
+            {name: "St. Petersburg", coords: [27.7676, -82.6403], zone: "1hr"},
+            {name: "Orlando", coords: [28.5383, -81.3792], zone: "3hr"},
+            {name: "Jacksonville", coords: [30.3322, -81.6557], zone: "5hr"},
+            {name: "Miami", coords: [25.7617, -80.1918], zone: "5hr"},
+            {name: "Fort Myers", coords: [26.6406, -81.8723], zone: "3hr"},
+            {name: "Sarasota", coords: [27.3364, -82.5307], zone: "1hr"},
+            {name: "Lakeland", coords: [28.0395, -81.9498], zone: "1hr"},
+            {name: "Gainesville", coords: [29.6516, -82.3248], zone: "3hr"},
+            {name: "Tallahassee", coords: [30.4383, -84.2807], zone: "5hr"}
+        ];
+
+        cities.forEach(city => {
+            const color = city.zone === "1hr" ? "#1B5E20" : city.zone === "3hr" ? "#2E7D32" : "#4CAF50";
+            L.circleMarker(city.coords, {
+                radius: 6,
+                fillColor: color,
+                color: '#fff',
+                weight: 2,
+                fillOpacity: 0.9
+            }).addTo(map);
+
+            L.marker(city.coords, {
+                icon: L.divIcon({
+                    className: 'city-label',
+                    html: `<div style="font-size: 11px; font-weight: 500; color: #333; text-shadow: 1px 1px 2px white;">${city.name}</div>`,
+                    iconAnchor: [-8, 5]
+                })
+            }).addTo(map);
+        });
+    </script>
+</body>
+</html>

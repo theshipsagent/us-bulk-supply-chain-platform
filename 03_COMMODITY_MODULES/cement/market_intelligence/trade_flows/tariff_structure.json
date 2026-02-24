@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "title": "US Cement Import Tariff Structure",
+    "source": "USITC Harmonized Tariff Schedule, USTR Section 301",
+    "currency": "Q1 2026",
+    "notes": "MFN duty rates apply to most countries; ADD/CVD rates are country-specific"
+  },
+  "mfn_duty_rates": {
+    "2523.10.00": {
+      "description": "Cement clinkers",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "Free"
+    },
+    "2523.21.00": {
+      "description": "White Portland cement, whether or not artificially colored",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "Free"
+    },
+    "2523.29.00": {
+      "description": "Other Portland cement",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "Free"
+    },
+    "2523.30.00": {
+      "description": "Aluminous cement",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "Free"
+    },
+    "2523.90.00": {
+      "description": "Other hydraulic cements",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "Free"
+    },
+    "2618.00.00": {
+      "description": "Granulated slag (slag sand) from manufacture of iron or steel",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "Free"
+    },
+    "2621.00.00": {
+      "description": "Slag wool, rock wool and similar mineral wools",
+      "general_rate": "Free",
+      "special_rate": "Free",
+      "column_2_rate": "2.6%"
+    }
+  },
+  "add_cvd_history": [
+    {
+      "country": "Japan",
+      "product": "Gray Portland cement and cement clinker",
+      "type": "ADD",
+      "rate_pct": 0,
+      "status": "Revoked (2011)",
+      "investigation_number": "A-588-815",
+      "notes": "Originally imposed 1991, revoked after sunset review"
+    },
+    {
+      "country": "Mexico",
+      "product": "Gray Portland cement and cement clinker",
+      "type": "ADD",
+      "rate_pct": 0,
+      "status": "Revoked (2006)",
+      "investigation_number": "A-201-802",
+      "notes": "Originally imposed 1990, suspended agreement, revoked"
+    }
+  ],
+  "section_301_maritime_fees": {
+    "effective_date": "2025-10-14",
+    "description": "USTR Section 301 fees on Chinese-built and Chinese-operated vessels",
+    "phases": [
+      {
+        "phase": 1,
+        "effective": "2025-10-14",
+        "chinese_built_bulk": {
+          "fee_per_nrt": 18,
+          "min_fee": 500000,
+          "max_fee": 1000000,
+          "per_voyage": true
+        },
+        "chinese_operated_bulk": {
+          "fee_per_nrt": 9,
+          "min_fee": 250000,
+          "max_fee": 500000,
+          "per_voyage": true
+        }
+      },
+      {
+        "phase": 2,
+        "effective": "2026-10-14",
+        "chinese_built_bulk": {
+          "fee_per_nrt": 25,
+          "min_fee": 750000,
+          "max_fee": 1500000,
+          "per_voyage": true
+        }
+      },
+      {
+        "phase": 3,
+        "effective": "2027-10-14",
+        "chinese_built_bulk": {
+          "fee_per_nrt": 33,
+          "min_fee": 1000000,
+          "max_fee": 2000000,
+          "per_voyage": true
+        }
+      }
+    ],
+    "cement_impact_analysis": {
+      "pct_cement_imports_on_chinese_built": 45,
+      "typical_supramax_nrt": 18000,
+      "typical_cargo_tons": 30000,
+      "phase_1_cost_per_ton_range": [16, 33],
+      "phase_2_cost_per_ton_range": [25, 50],
+      "phase_3_cost_per_ton_range": [33, 67]
+    }
+  },
+  "country_specific_tariff_rates": [
+    {
+      "country": "Turkey",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 10,
+      "total_effective_pct": 10,
+      "notes": "General tariff surcharge"
+    },
+    {
+      "country": "Egypt",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 10,
+      "total_effective_pct": 10,
+      "notes": "General tariff surcharge"
+    },
+    {
+      "country": "Greece",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "EU member, standard MFN"
+    },
+    {
+      "country": "Canada",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "USMCA free trade"
+    },
+    {
+      "country": "Vietnam",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 46,
+      "total_effective_pct": 46,
+      "notes": "Section 301 tariff action"
+    },
+    {
+      "country": "China",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 25,
+      "total_effective_pct": 25,
+      "notes": "Section 301 tariffs, List 3"
+    },
+    {
+      "country": "Algeria",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 30,
+      "total_effective_pct": 30,
+      "notes": "General tariff"
+    },
+    {
+      "country": "Colombia",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "US-Colombia FTA"
+    },
+    {
+      "country": "Dominican Republic",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "DR-CAFTA"
+    },
+    {
+      "country": "Mexico",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "USMCA free trade"
+    },
+    {
+      "country": "South Korea",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "KORUS FTA"
+    },
+    {
+      "country": "Japan",
+      "cement_duty_pct": 0,
+      "additional_tariff_pct": 0,
+      "total_effective_pct": 0,
+      "notes": "Standard MFN, ADD revoked"
+    }
+  ]
+}

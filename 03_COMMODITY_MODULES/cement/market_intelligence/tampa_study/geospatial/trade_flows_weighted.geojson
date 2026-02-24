@@ -1,0 +1,267 @@
+{
+  "type": "FeatureCollection",
+  "name": "Cement_Trade_Flows_Weighted",
+  "metadata": {
+    "title": "Cement Trade Flows - Volume Weighted",
+    "description": "Global and regional cement trade flows weighted by annual volume",
+    "source": "Panjiva, USGS, Industry Analysis 2024",
+    "created": "2025-12-16",
+    "note": "Line weight represents relative trade volume"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turkey to US Gulf",
+        "origin": "Turkey",
+        "destination": "US Gulf Ports",
+        "volume_mt": 7160000,
+        "volume_label": "7.16 MT",
+        "flow_type": "Import",
+        "line_weight": 12,
+        "color": "#0D47A1",
+        "tariff": "10%"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[29.0, 40.9], [20.0, 38.0], [5.0, 36.5], [-15.0, 32.0], [-45.0, 27.0], [-75.0, 26.0], [-90.0, 28.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Canada to US North",
+        "origin": "Canada",
+        "destination": "US Northern Ports",
+        "volume_mt": 4850000,
+        "volume_label": "4.85 MT",
+        "flow_type": "Import",
+        "line_weight": 10,
+        "color": "#1976D2",
+        "tariff": "25%"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-79.0, 43.6], [-79.5, 42.5], [-83.0, 42.3]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vietnam to US West",
+        "origin": "Vietnam",
+        "destination": "US West Coast",
+        "volume_mt": 4170000,
+        "volume_label": "4.17 MT",
+        "flow_type": "Import",
+        "line_weight": 9,
+        "color": "#42A5F5",
+        "tariff": "46%"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[108.3, 14.1], [120.0, 20.0], [140.0, 30.0], [160.0, 35.0], [180.0, 38.0], [-160.0, 40.0], [-140.0, 38.0], [-118.2, 33.7]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greece to US East",
+        "origin": "Greece",
+        "destination": "US East/Gulf",
+        "volume_mt": 1820000,
+        "volume_label": "1.82 MT",
+        "flow_type": "Import",
+        "line_weight": 6,
+        "color": "#64B5F6",
+        "tariff": "10%"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[23.7, 38.0], [15.0, 37.0], [0.0, 36.5], [-20.0, 33.0], [-50.0, 28.0], [-80.0, 26.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mexico to US Gulf",
+        "origin": "Mexico",
+        "destination": "US Gulf Ports",
+        "volume_mt": 1320000,
+        "volume_label": "1.32 MT",
+        "flow_type": "Import",
+        "line_weight": 5,
+        "color": "#00ACC1",
+        "tariff": "25%"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-96.1, 19.2], [-94.0, 22.0], [-92.0, 25.0], [-90.0, 28.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Egypt to Tampa",
+        "origin": "Egypt",
+        "destination": "Tampa Bay",
+        "volume_mt": 500000,
+        "volume_label": "0.5 MT",
+        "flow_type": "Import",
+        "line_weight": 4,
+        "color": "#00897B",
+        "tariff": "10%",
+        "strategic": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[32.3, 31.2], [25.0, 33.0], [10.0, 36.0], [-10.0, 34.0], [-40.0, 28.0], [-70.0, 25.0], [-82.4, 27.9]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turkey to Tampa",
+        "origin": "Turkey",
+        "destination": "Tampa Bay",
+        "volume_mt": 2200000,
+        "volume_label": "2.2 MT",
+        "flow_type": "Import",
+        "line_weight": 7,
+        "color": "#1B5E20",
+        "tariff": "10%",
+        "strategic": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[29.0, 40.9], [20.0, 38.0], [5.0, 36.5], [-15.0, 32.0], [-45.0, 27.0], [-70.0, 25.5], [-82.4, 27.9]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa to Bahamas",
+        "origin": "Tampa",
+        "destination": "Nassau",
+        "volume_mt": 50000,
+        "volume_label": "50K MT (potential)",
+        "flow_type": "Export",
+        "line_weight": 3,
+        "color": "#2E7D32",
+        "opportunity": "HIGH"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-82.4, 27.9], [-80.5, 26.5], [-77.4, 25.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa to Trinidad",
+        "origin": "Tampa",
+        "destination": "Port of Spain",
+        "volume_mt": 30000,
+        "volume_label": "30K MT (potential)",
+        "flow_type": "Export",
+        "line_weight": 2,
+        "color": "#4CAF50",
+        "opportunity": "HIGH"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-82.4, 27.9], [-80.0, 25.0], [-72.0, 20.0], [-65.0, 15.0], [-61.2, 10.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa to USVI",
+        "origin": "Tampa",
+        "destination": "Charlotte Amalie",
+        "volume_mt": 15000,
+        "volume_label": "15K MT (potential)",
+        "flow_type": "Export",
+        "line_weight": 2,
+        "color": "#81C784",
+        "opportunity": "HIGH"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-82.4, 27.9], [-79.0, 24.0], [-70.0, 20.0], [-64.9, 18.3]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa to Curacao",
+        "origin": "Tampa",
+        "destination": "Willemstad",
+        "volume_mt": 20000,
+        "volume_label": "20K MT (potential)",
+        "flow_type": "Export",
+        "line_weight": 2,
+        "color": "#A5D6A7",
+        "opportunity": "MODERATE"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-82.4, 27.9], [-80.0, 24.0], [-75.0, 18.0], [-69.0, 12.2]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DR to Haiti",
+        "origin": "Dominican Republic",
+        "destination": "Haiti",
+        "volume_mt": 350000,
+        "volume_label": "350K MT",
+        "flow_type": "Regional",
+        "line_weight": 4,
+        "color": "#FF5722",
+        "note": "Competitor flow"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-69.9, 18.7], [-72.3, 19.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colombia to Caribbean",
+        "origin": "Colombia",
+        "destination": "Caribbean Basin",
+        "volume_mt": 800000,
+        "volume_label": "800K MT",
+        "flow_type": "Regional",
+        "line_weight": 5,
+        "color": "#FF5722",
+        "note": "Competitor flow"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-74.3, 11.0], [-75.0, 14.0], [-77.0, 18.0]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panama to Caribbean",
+        "origin": "Panama",
+        "destination": "Caribbean Islands",
+        "volume_mt": 209000,
+        "volume_label": "209K MT",
+        "flow_type": "Regional",
+        "line_weight": 3,
+        "color": "#FF5722",
+        "note": "Competitor flow"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-79.5, 9.1], [-78.0, 12.0], [-75.0, 17.0]]
+      }
+    }
+  ]
+}

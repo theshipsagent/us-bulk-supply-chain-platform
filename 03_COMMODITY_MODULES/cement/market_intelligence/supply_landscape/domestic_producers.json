@@ -1,0 +1,1119 @@
+{
+  "metadata": {
+    "title": "US Domestic Cement Producers",
+    "description": "Top 20 US cement manufacturers with plant-level detail",
+    "data_sources": ["USGS Mineral Commodity Summaries 2025", "PCA US Cement Industry Fact Sheet", "EPA GHGRP", "Company annual reports"],
+    "last_updated": "2026-02-14",
+    "total_plants": 96,
+    "total_capacity_mtpa": 103.5,
+    "naics_code": "327310",
+    "notes": "Capacity figures are clinker-equivalent annual nameplate capacity. Actual production utilization typically 75-85%."
+  },
+  "industry_totals": {
+    "total_us_production_2024_mt": 93.0,
+    "total_us_capacity_mt": 103.5,
+    "capacity_utilization_pct": 89.8,
+    "number_of_companies": 20,
+    "number_of_plants": 96,
+    "hhi_index": 1180,
+    "top_5_share_pct": 52.0
+  },
+  "producers": [
+    {
+      "rank": 1,
+      "company_name": "Holcim US",
+      "parent_company": "Holcim Group (Switzerland)",
+      "headquarters": "Chicago, IL",
+      "us_capacity_mtpa": 16.8,
+      "us_market_share_pct": 16.2,
+      "cement_types": ["Type I", "Type I/II", "Type III", "Type IL", "Type IP", "Oil Well"],
+      "plants": [
+        {
+          "name": "Ste. Genevieve Plant",
+          "state": "MO",
+          "city": "Ste. Genevieve",
+          "lat": 37.9826,
+          "lon": -90.0418,
+          "capacity_mtpa": 4.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 2009,
+          "notes": "Largest cement plant in the Western Hemisphere"
+        },
+        {
+          "name": "Ravena Plant",
+          "state": "NY",
+          "city": "Ravena",
+          "lat": 42.4693,
+          "lon": -73.8151,
+          "capacity_mtpa": 1.8,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1962,
+          "notes": "Modernized 2005, serves Northeast market"
+        },
+        {
+          "name": "Whitehall Plant",
+          "state": "PA",
+          "city": "Whitehall",
+          "lat": 40.6574,
+          "lon": -75.4996,
+          "capacity_mtpa": 1.5,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1939,
+          "notes": "Lehigh Valley cement district"
+        },
+        {
+          "name": "Hagerstown Plant",
+          "state": "MD",
+          "city": "Hagerstown",
+          "lat": 39.6418,
+          "lon": -77.7200,
+          "capacity_mtpa": 1.8,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1929,
+          "notes": "Mid-Atlantic market"
+        },
+        {
+          "name": "Florence Plant",
+          "state": "CO",
+          "city": "Florence",
+          "lat": 38.3891,
+          "lon": -105.1186,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1948,
+          "notes": "Rocky Mountain market"
+        },
+        {
+          "name": "Devils Slide Plant",
+          "state": "UT",
+          "city": "Morgan",
+          "lat": 41.0697,
+          "lon": -111.5177,
+          "capacity_mtpa": 0.9,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1980,
+          "notes": "Wasatch Front market"
+        },
+        {
+          "name": "Alpena Plant",
+          "state": "MI",
+          "city": "Alpena",
+          "lat": 45.0617,
+          "lon": -83.4327,
+          "capacity_mtpa": 2.4,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1907,
+          "notes": "Great Lakes shipping access, one of largest in North America"
+        },
+        {
+          "name": "Paulding Plant",
+          "state": "OH",
+          "city": "Paulding",
+          "lat": 41.1367,
+          "lon": -84.5805,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1955,
+          "notes": "Northwest Ohio market"
+        },
+        {
+          "name": "Ada Plant",
+          "state": "OK",
+          "city": "Ada",
+          "lat": 34.7745,
+          "lon": -96.6784,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1971,
+          "notes": "South Central market, oil well cement"
+        },
+        {
+          "name": "Trident Plant",
+          "state": "MT",
+          "city": "Three Forks",
+          "lat": 45.8872,
+          "lon": -111.5568,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1910,
+          "notes": "Northern Rockies market. Note: Trident transferred from Ash Grove/CRH acquisition overlap"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "CEMEX USA",
+      "parent_company": "CEMEX S.A.B. de C.V. (Mexico)",
+      "headquarters": "Houston, TX",
+      "us_capacity_mtpa": 10.2,
+      "us_market_share_pct": 9.8,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Type IL", "Masonry", "Oil Well"],
+      "plants": [
+        {
+          "name": "Balcones Plant",
+          "state": "TX",
+          "city": "New Braunfels",
+          "lat": 29.7200,
+          "lon": -98.1241,
+          "capacity_mtpa": 2.5,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1980,
+          "notes": "Major Texas market, recently expanded"
+        },
+        {
+          "name": "Victorville Plant",
+          "state": "CA",
+          "city": "Victorville",
+          "lat": 34.5362,
+          "lon": -117.2928,
+          "capacity_mtpa": 2.1,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1957,
+          "notes": "Southern California market"
+        },
+        {
+          "name": "Brooksville Plant",
+          "state": "FL",
+          "city": "Brooksville",
+          "lat": 28.5564,
+          "lon": -82.3876,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1972,
+          "notes": "Central Florida market"
+        },
+        {
+          "name": "Fairborn Plant",
+          "state": "OH",
+          "city": "Fairborn",
+          "lat": 39.8203,
+          "lon": -84.0194,
+          "capacity_mtpa": 1.3,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1956,
+          "notes": "Ohio Valley market"
+        },
+        {
+          "name": "Knoxville Plant",
+          "state": "TN",
+          "city": "Knoxville",
+          "lat": 35.9606,
+          "lon": -83.9207,
+          "capacity_mtpa": 1.1,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1968,
+          "notes": "Southeast market"
+        },
+        {
+          "name": "Clinchfield Plant",
+          "state": "GA",
+          "city": "Clinchfield",
+          "lat": 32.4150,
+          "lon": -83.2950,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1971,
+          "notes": "Southeast market, rail-served"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "Buzzi Unicem USA / RC Lonestar",
+      "parent_company": "Buzzi SpA (Italy)",
+      "headquarters": "Bethlehem, PA",
+      "us_capacity_mtpa": 9.8,
+      "us_market_share_pct": 9.5,
+      "cement_types": ["Type I", "Type I/II", "Type III", "Type IL", "Masonry", "Oil Well"],
+      "plants": [
+        {
+          "name": "Maryneal Plant",
+          "state": "TX",
+          "city": "Maryneal",
+          "lat": 32.2381,
+          "lon": -100.4583,
+          "capacity_mtpa": 2.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1958,
+          "notes": "West Texas, serves TX/NM markets"
+        },
+        {
+          "name": "Stockertown Plant",
+          "state": "PA",
+          "city": "Stockertown",
+          "lat": 40.7554,
+          "lon": -75.2688,
+          "capacity_mtpa": 1.7,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1936,
+          "notes": "Lehigh Valley, modernized 2018"
+        },
+        {
+          "name": "Greencastle Plant",
+          "state": "IN",
+          "city": "Greencastle",
+          "lat": 39.6443,
+          "lon": -86.8645,
+          "capacity_mtpa": 1.8,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1946,
+          "notes": "Central Indiana, modernized"
+        },
+        {
+          "name": "Cape Girardeau Plant",
+          "state": "MO",
+          "city": "Cape Girardeau",
+          "lat": 37.3059,
+          "lon": -89.5181,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1930,
+          "notes": "Mississippi River access, barge-served"
+        },
+        {
+          "name": "Festus Plant",
+          "state": "MO",
+          "city": "Festus",
+          "lat": 38.2223,
+          "lon": -90.3957,
+          "capacity_mtpa": 1.3,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1905,
+          "notes": "Mississippi River corridor"
+        },
+        {
+          "name": "Pryor Plant",
+          "state": "OK",
+          "city": "Pryor Creek",
+          "lat": 36.3084,
+          "lon": -95.3172,
+          "capacity_mtpa": 0.9,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1966,
+          "notes": "Oklahoma/Arkansas market"
+        },
+        {
+          "name": "Oglesby Plant",
+          "state": "IL",
+          "city": "Oglesby",
+          "lat": 41.2953,
+          "lon": -89.0593,
+          "capacity_mtpa": 0.9,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1940,
+          "notes": "Illinois Valley, barge access via Illinois River"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "Lehigh Hanson / Heidelberg Materials US",
+      "parent_company": "Heidelberg Materials (Germany)",
+      "headquarters": "Irving, TX",
+      "us_capacity_mtpa": 9.5,
+      "us_market_share_pct": 9.2,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Type IL", "Type IS", "Masonry"],
+      "plants": [
+        {
+          "name": "Mitchell Plant",
+          "state": "IN",
+          "city": "Mitchell",
+          "lat": 38.7325,
+          "lon": -86.4734,
+          "capacity_mtpa": 2.7,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1902,
+          "notes": "One of largest US plants, modernized 2019"
+        },
+        {
+          "name": "Leeds Plant",
+          "state": "AL",
+          "city": "Leeds",
+          "lat": 33.5482,
+          "lon": -86.5441,
+          "capacity_mtpa": 2.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1970,
+          "notes": "Southeast hub, rail distribution"
+        },
+        {
+          "name": "Union Bridge Plant",
+          "state": "MD",
+          "city": "Union Bridge",
+          "lat": 39.5640,
+          "lon": -77.1754,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1910,
+          "notes": "Mid-Atlantic market"
+        },
+        {
+          "name": "Glens Falls Plant",
+          "state": "NY",
+          "city": "Glens Falls",
+          "lat": 43.3101,
+          "lon": -73.6440,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1917,
+          "notes": "Upstate New York"
+        },
+        {
+          "name": "Cupertino Plant",
+          "state": "CA",
+          "city": "Cupertino",
+          "lat": 37.3209,
+          "lon": -122.0375,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1939,
+          "notes": "San Francisco Bay Area"
+        },
+        {
+          "name": "Tehachapi Plant",
+          "state": "CA",
+          "city": "Tehachapi",
+          "lat": 35.1320,
+          "lon": -118.4490,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1959,
+          "notes": "Central/Southern California market"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "Ash Grove Cement / CRH Americas",
+      "parent_company": "CRH plc (Ireland)",
+      "headquarters": "Overland Park, KS",
+      "us_capacity_mtpa": 8.2,
+      "us_market_share_pct": 7.9,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Type IL", "Oil Well", "Masonry"],
+      "plants": [
+        {
+          "name": "Chanute Plant",
+          "state": "KS",
+          "city": "Chanute",
+          "lat": 37.6793,
+          "lon": -95.4572,
+          "capacity_mtpa": 1.4,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1920,
+          "notes": "Central Plains market"
+        },
+        {
+          "name": "Montana City Plant",
+          "state": "MT",
+          "city": "Montana City",
+          "lat": 46.5467,
+          "lon": -111.9464,
+          "capacity_mtpa": 0.6,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1970,
+          "notes": "Northern Rockies"
+        },
+        {
+          "name": "Durkee Plant",
+          "state": "OR",
+          "city": "Durkee",
+          "lat": 44.5866,
+          "lon": -117.7393,
+          "capacity_mtpa": 0.7,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1979,
+          "notes": "Pacific Northwest"
+        },
+        {
+          "name": "Foreman Plant",
+          "state": "AR",
+          "city": "Foreman",
+          "lat": 33.7234,
+          "lon": -94.3937,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1969,
+          "notes": "South Central market"
+        },
+        {
+          "name": "Louisville Plant",
+          "state": "NE",
+          "city": "Louisville",
+          "lat": 40.9978,
+          "lon": -96.1619,
+          "capacity_mtpa": 1.4,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1950,
+          "notes": "Missouri River corridor, rail hub"
+        },
+        {
+          "name": "Leamington Plant",
+          "state": "UT",
+          "city": "Leamington",
+          "lat": 39.5283,
+          "lon": -112.2710,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1982,
+          "notes": "Utah/Intermountain market"
+        },
+        {
+          "name": "Inkom Plant",
+          "state": "ID",
+          "city": "Inkom",
+          "lat": 42.7966,
+          "lon": -112.2533,
+          "capacity_mtpa": 0.6,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1924,
+          "notes": "Intermountain/Idaho market"
+        },
+        {
+          "name": "Seattle Plant",
+          "state": "WA",
+          "city": "Seattle",
+          "lat": 47.5715,
+          "lon": -122.3430,
+          "capacity_mtpa": 0.7,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1927,
+          "notes": "Pacific Northwest, grinding/blending facility"
+        },
+        {
+          "name": "Midlothian Plant",
+          "state": "TX",
+          "city": "Midlothian",
+          "lat": 32.4822,
+          "lon": -96.9936,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1965,
+          "notes": "DFW metro market. Note: CRH acquired; shares Midlothian cement district"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "Eagle Materials",
+      "parent_company": "Eagle Materials Inc. (USA)",
+      "headquarters": "Dallas, TX",
+      "us_capacity_mtpa": 6.8,
+      "us_market_share_pct": 6.6,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Type IL", "Oil Well", "Masonry"],
+      "plants": [
+        {
+          "name": "Buda Plant (Texas Lehigh)",
+          "state": "TX",
+          "city": "Buda",
+          "lat": 30.0849,
+          "lon": -97.8408,
+          "capacity_mtpa": 2.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1987,
+          "notes": "Austin/San Antonio corridor, recently expanded"
+        },
+        {
+          "name": "LaSalle Plant (Illinois Cement)",
+          "state": "IL",
+          "city": "LaSalle",
+          "lat": 41.3446,
+          "lon": -89.0916,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1960,
+          "notes": "Illinois Valley, barge-served via Illinois River"
+        },
+        {
+          "name": "Sugar Creek Plant (Mountain Cement)",
+          "state": "MO",
+          "city": "Sugar Creek",
+          "lat": 39.1082,
+          "lon": -94.4452,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1977,
+          "notes": "Kansas City metro"
+        },
+        {
+          "name": "Laramie Plant (Mountain Cement)",
+          "state": "WY",
+          "city": "Laramie",
+          "lat": 41.3114,
+          "lon": -105.5911,
+          "capacity_mtpa": 0.5,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1927,
+          "notes": "Intermountain/Wyoming market"
+        },
+        {
+          "name": "Nevada Cement Plant",
+          "state": "NV",
+          "city": "Fernley",
+          "lat": 39.6080,
+          "lon": -119.2518,
+          "capacity_mtpa": 0.6,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1964,
+          "notes": "Northern Nevada market"
+        },
+        {
+          "name": "Bison Plant (Central Plains Cement)",
+          "state": "OK",
+          "city": "Bison",
+          "lat": 36.2664,
+          "lon": -98.0048,
+          "capacity_mtpa": 0.7,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 2009,
+          "notes": "Newer plant, Oklahoma/Kansas market"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "Martin Marietta Materials",
+      "parent_company": "Martin Marietta Materials Inc. (USA)",
+      "headquarters": "Raleigh, NC",
+      "us_capacity_mtpa": 5.2,
+      "us_market_share_pct": 5.0,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Type IL", "Oil Well", "Masonry"],
+      "plants": [
+        {
+          "name": "Midlothian Plant (TXI)",
+          "state": "TX",
+          "city": "Midlothian",
+          "lat": 32.4716,
+          "lon": -96.9841,
+          "capacity_mtpa": 2.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1960,
+          "notes": "Largest MM plant, DFW market; acquired from TXI 2014"
+        },
+        {
+          "name": "Hunter Plant",
+          "state": "TX",
+          "city": "New Braunfels",
+          "lat": 29.7949,
+          "lon": -98.0838,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1958,
+          "notes": "San Antonio market; acquired from TXI"
+        },
+        {
+          "name": "Oro Grande Plant",
+          "state": "CA",
+          "city": "Oro Grande",
+          "lat": 34.6089,
+          "lon": -117.3328,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1955,
+          "notes": "Southern California market"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "CalPortland Company",
+      "parent_company": "Taiheiyo Cement Corporation (Japan)",
+      "headquarters": "Glendora, CA",
+      "us_capacity_mtpa": 4.5,
+      "us_market_share_pct": 4.3,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Type IL", "Masonry"],
+      "plants": [
+        {
+          "name": "Mojave Plant",
+          "state": "CA",
+          "city": "Mojave",
+          "lat": 35.0454,
+          "lon": -118.1759,
+          "capacity_mtpa": 1.5,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1955,
+          "notes": "Southern California"
+        },
+        {
+          "name": "Colton Plant",
+          "state": "CA",
+          "city": "Colton",
+          "lat": 34.0622,
+          "lon": -117.3284,
+          "capacity_mtpa": 1.3,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1930,
+          "notes": "Inland Empire, Southern California"
+        },
+        {
+          "name": "Rillito Plant",
+          "state": "AZ",
+          "city": "Rillito",
+          "lat": 32.4106,
+          "lon": -111.1390,
+          "capacity_mtpa": 0.9,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1950,
+          "notes": "Arizona market"
+        },
+        {
+          "name": "Inkom Plant",
+          "state": "ID",
+          "city": "Inkom",
+          "lat": 42.7982,
+          "lon": -112.2544,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1942,
+          "notes": "Intermountain West"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "Argos USA",
+      "parent_company": "Summit Materials / Cementos Argos (Colombia)",
+      "headquarters": "Alpharetta, GA",
+      "us_capacity_mtpa": 4.8,
+      "us_market_share_pct": 4.6,
+      "cement_types": ["Type I/II", "Type III", "Type IL", "Masonry"],
+      "plants": [
+        {
+          "name": "Roberta Plant",
+          "state": "AL",
+          "city": "Calera",
+          "lat": 33.1026,
+          "lon": -86.7536,
+          "capacity_mtpa": 1.9,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1972,
+          "notes": "Largest Argos plant in US, Southeast hub"
+        },
+        {
+          "name": "Newberry Plant",
+          "state": "FL",
+          "city": "Newberry",
+          "lat": 29.6472,
+          "lon": -82.6065,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1955,
+          "notes": "North Florida"
+        },
+        {
+          "name": "Harleyville Plant",
+          "state": "SC",
+          "city": "Harleyville",
+          "lat": 33.2154,
+          "lon": -80.4482,
+          "capacity_mtpa": 1.7,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1946,
+          "notes": "Southeast coastal market"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "Texas Cement (Vicat Group)",
+      "parent_company": "Vicat SA (France)",
+      "headquarters": "Dallas, TX",
+      "us_capacity_mtpa": 2.0,
+      "us_market_share_pct": 1.9,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Oil Well"],
+      "plants": [
+        {
+          "name": "Midlothian Plant",
+          "state": "TX",
+          "city": "Midlothian",
+          "lat": 32.4750,
+          "lon": -96.9900,
+          "capacity_mtpa": 2.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 2,
+          "year_built": 1973,
+          "notes": "DFW metro, Midlothian cement cluster"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "company_name": "National Cement Company",
+      "parent_company": "Vicat SA (France)",
+      "headquarters": "Encino, CA",
+      "us_capacity_mtpa": 2.6,
+      "us_market_share_pct": 2.5,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Masonry"],
+      "plants": [
+        {
+          "name": "Ragland Plant",
+          "state": "AL",
+          "city": "Ragland",
+          "lat": 33.7501,
+          "lon": -86.1466,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1946,
+          "notes": "Southeast market"
+        },
+        {
+          "name": "Lebec Plant",
+          "state": "CA",
+          "city": "Lebec",
+          "lat": 34.8425,
+          "lon": -118.8686,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1962,
+          "notes": "Southern California via I-5 corridor"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "company_name": "St. Marys Cement (Votorantim Cimentos)",
+      "parent_company": "Votorantim Cimentos (Brazil)",
+      "headquarters": "Toronto, ON (US operations)",
+      "us_capacity_mtpa": 3.6,
+      "us_market_share_pct": 3.5,
+      "cement_types": ["Type I/II", "Type III", "Type IL", "Masonry", "Slag Cement"],
+      "plants": [
+        {
+          "name": "Charlevoix Plant",
+          "state": "MI",
+          "city": "Charlevoix",
+          "lat": 45.3178,
+          "lon": -85.2585,
+          "capacity_mtpa": 1.6,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1967,
+          "notes": "Great Lakes shipping access"
+        },
+        {
+          "name": "Dixon Plant",
+          "state": "IL",
+          "city": "Dixon",
+          "lat": 41.8389,
+          "lon": -89.4793,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1949,
+          "notes": "Northern Illinois"
+        },
+        {
+          "name": "Bowmanstown Plant",
+          "state": "PA",
+          "city": "Bowmanstown",
+          "lat": 40.7983,
+          "lon": -75.6508,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1939,
+          "notes": "Lehigh Valley district"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "company_name": "Continental Cement Company",
+      "parent_company": "Südbayerisches Portland-Zementwerk (Germany)",
+      "headquarters": "Hannibal, MO",
+      "us_capacity_mtpa": 1.2,
+      "us_market_share_pct": 1.2,
+      "cement_types": ["Type I/II", "Type III"],
+      "plants": [
+        {
+          "name": "Hannibal Plant",
+          "state": "MO",
+          "city": "Hannibal",
+          "lat": 39.7083,
+          "lon": -91.3585,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1903,
+          "notes": "Mississippi River, barge-served"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "company_name": "Essroc/Italcementi (Heidelberg Materials)",
+      "parent_company": "Heidelberg Materials (Germany)",
+      "headquarters": "Nazareth, PA",
+      "us_capacity_mtpa": 3.0,
+      "us_market_share_pct": 2.9,
+      "cement_types": ["Type I/II", "Type III", "Type IL", "Masonry", "White Cement"],
+      "plants": [
+        {
+          "name": "Nazareth Plant",
+          "state": "PA",
+          "city": "Nazareth",
+          "lat": 40.7401,
+          "lon": -75.3091,
+          "capacity_mtpa": 1.2,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1904,
+          "notes": "Lehigh Valley, Northeast distribution"
+        },
+        {
+          "name": "Speed Plant",
+          "state": "IN",
+          "city": "Speed",
+          "lat": 38.3654,
+          "lon": -86.0834,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1910,
+          "notes": "Southern Indiana"
+        },
+        {
+          "name": "Logansport Plant",
+          "state": "IN",
+          "city": "Logansport",
+          "lat": 40.7545,
+          "lon": -86.3567,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1924,
+          "notes": "Northern Indiana"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "company_name": "GCC of America",
+      "parent_company": "GCC S.A.B. de C.V. (Mexico)",
+      "headquarters": "Pueblo, CO",
+      "us_capacity_mtpa": 3.0,
+      "us_market_share_pct": 2.9,
+      "cement_types": ["Type I/II", "Type III", "Type V", "Oil Well", "Masonry"],
+      "plants": [
+        {
+          "name": "Pueblo Plant",
+          "state": "CO",
+          "city": "Pueblo",
+          "lat": 38.2544,
+          "lon": -104.6091,
+          "capacity_mtpa": 1.5,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1948,
+          "notes": "Southern Colorado/New Mexico market"
+        },
+        {
+          "name": "Rapid City Plant",
+          "state": "SD",
+          "city": "Rapid City",
+          "lat": 44.0805,
+          "lon": -103.2310,
+          "capacity_mtpa": 0.8,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1956,
+          "notes": "Northern Plains market"
+        },
+        {
+          "name": "Tijeras Plant",
+          "state": "NM",
+          "city": "Tijeras",
+          "lat": 35.0600,
+          "lon": -106.3883,
+          "capacity_mtpa": 0.7,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1958,
+          "notes": "New Mexico/West Texas"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "company_name": "Lhoist North America (ISG Resources)",
+      "parent_company": "Lhoist Group (Belgium)",
+      "headquarters": "Fort Worth, TX",
+      "us_capacity_mtpa": 1.0,
+      "us_market_share_pct": 1.0,
+      "cement_types": ["Type I/II", "Masonry", "Lime-based products"],
+      "plants": [
+        {
+          "name": "Picton Plant",
+          "state": "TX",
+          "city": "Picton",
+          "lat": 30.0200,
+          "lon": -97.8900,
+          "capacity_mtpa": 0.5,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1971,
+          "notes": "Central Texas"
+        },
+        {
+          "name": "Catskill Plant",
+          "state": "NY",
+          "city": "Catskill",
+          "lat": 42.2145,
+          "lon": -73.8607,
+          "capacity_mtpa": 0.5,
+          "kiln_type": "Dry preheater",
+          "kilns": 1,
+          "year_built": 1924,
+          "notes": "Hudson Valley"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "company_name": "Phoenix Cement (Salt River Materials)",
+      "parent_company": "Salt River Materials Group (USA)",
+      "headquarters": "Phoenix, AZ",
+      "us_capacity_mtpa": 1.5,
+      "us_market_share_pct": 1.4,
+      "cement_types": ["Type I/II", "Type V"],
+      "plants": [
+        {
+          "name": "Clarkdale Plant",
+          "state": "AZ",
+          "city": "Clarkdale",
+          "lat": 34.7712,
+          "lon": -112.0579,
+          "capacity_mtpa": 1.5,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1958,
+          "notes": "Phoenix/Arizona market"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "company_name": "Quikrete / Suwannee American Cement",
+      "parent_company": "Quikrete Holdings Inc. (USA)",
+      "headquarters": "Atlanta, GA",
+      "us_capacity_mtpa": 1.4,
+      "us_market_share_pct": 1.4,
+      "cement_types": ["Type I/II", "Type IL", "Masonry"],
+      "plants": [
+        {
+          "name": "Branford Plant",
+          "state": "FL",
+          "city": "Branford",
+          "lat": 29.9545,
+          "lon": -82.9270,
+          "capacity_mtpa": 1.4,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1962,
+          "notes": "North Florida, serves Southeast"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "company_name": "Drake Cement",
+      "parent_company": "Drake Cement LLC (USA)",
+      "headquarters": "Paulden, AZ",
+      "us_capacity_mtpa": 0.7,
+      "us_market_share_pct": 0.7,
+      "cement_types": ["Type I/II", "Type V"],
+      "plants": [
+        {
+          "name": "Paulden Plant",
+          "state": "AZ",
+          "city": "Paulden",
+          "lat": 34.8889,
+          "lon": -112.4683,
+          "capacity_mtpa": 0.7,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 2011,
+          "notes": "Modern greenfield plant, Arizona market"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "company_name": "Keystone Cement Company",
+      "parent_company": "Giant Cement Holding (USA)",
+      "headquarters": "Bath, PA",
+      "us_capacity_mtpa": 1.0,
+      "us_market_share_pct": 1.0,
+      "cement_types": ["Type I/II", "Type III", "Masonry"],
+      "plants": [
+        {
+          "name": "Bath Plant",
+          "state": "PA",
+          "city": "Bath",
+          "lat": 40.7259,
+          "lon": -75.3935,
+          "capacity_mtpa": 1.0,
+          "kiln_type": "Dry preheater/precalciner",
+          "kilns": 1,
+          "year_built": 1928,
+          "notes": "Lehigh Valley cement district"
+        }
+      ]
+    }
+  ]
+}

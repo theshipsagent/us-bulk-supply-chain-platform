@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Cement Trade Flows to United States | 2023-2025</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --primary-dark: #1B5E20;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --secondary-dark: #0D47A1;
+            --secondary: #1976D2;
+            --secondary-light: #42A5F5;
+            --neutral-dark: #37474F;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: white;
+            padding: 15px 25px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+        .header .stats {
+            display: flex;
+            gap: 25px;
+            font-size: 0.9rem;
+        }
+        .header .stat-item {
+            text-align: center;
+        }
+        .header .stat-value {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 1000;
+            max-width: 280px;
+        }
+        .legend h4 {
+            margin-bottom: 12px;
+            color: var(--neutral-dark);
+            font-size: 0.95rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+        }
+        .legend-section {
+            margin-bottom: 15px;
+        }
+        .legend-section h5 {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+        }
+        .legend-line {
+            width: 30px;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        .legend-circle {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .info-panel {
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 1000;
+            width: 300px;
+            display: none;
+        }
+        .info-panel.active { display: block; }
+        .info-panel h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .info-panel .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .info-panel .stat-row:last-child { border-bottom: none; }
+        .info-panel .stat-label { color: #666; }
+        .info-panel .stat-val { font-weight: 600; color: var(--neutral-dark); }
+
+        .filter-panel {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+        .filter-panel h4 {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--neutral-dark);
+        }
+        .filter-btn {
+            display: block;
+            width: 100%;
+            padding: 8px 12px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover {
+            background: var(--primary-light);
+            color: white;
+            border-color: var(--primary-light);
+        }
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .leaflet-popup-content-wrapper {
+            border-radius: 8px;
+        }
+        .leaflet-popup-content {
+            margin: 12px 15px;
+        }
+        .popup-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: var(--primary-dark);
+        }
+        .popup-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            font-size: 0.85rem;
+        }
+        .popup-label { color: #666; }
+        .popup-value { font-weight: 500; }
+
+        /* Animation for flow lines */
+        @keyframes flowAnimation {
+            0% { stroke-dashoffset: 20; }
+            100% { stroke-dashoffset: 0; }
+        }
+        .flow-line {
+            stroke-dasharray: 10, 5;
+            animation: flowAnimation 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Global Cement Import Trade Flows to United States | 2023-2025</h1>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value">20M MT</div>
+                <div>Total Imports</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">10+</div>
+                <div>Origin Countries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2,706</div>
+                <div>Shipments Analyzed</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="filter-panel">
+        <h4>Filter by Origin</h4>
+        <button class="filter-btn active" data-filter="all">All Origins</button>
+        <button class="filter-btn" data-filter="TR">Turkey (10% tariff)</button>
+        <button class="filter-btn" data-filter="VN">Vietnam (46% tariff)</button>
+        <button class="filter-btn" data-filter="CA">Canada (25% tariff)</button>
+        <button class="filter-btn" data-filter="GR">Greece (10% tariff)</button>
+        <button class="filter-btn" data-filter="MX">Mexico (25% tariff)</button>
+        <button class="filter-btn" data-filter="EG">Egypt (10% tariff)</button>
+    </div>
+
+    <div class="legend">
+        <h4>Trade Flow Legend</h4>
+        <div class="legend-section">
+            <h5>Flow Volume (MT/year)</h5>
+            <div class="legend-item">
+                <div class="legend-line" style="height: 12px; background: var(--primary);"></div>
+                <span>> 2 Million MT</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-line" style="height: 8px; background: var(--primary-light);"></div>
+                <span>1-2 Million MT</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-line" style="height: 5px; background: #81C784;"></div>
+                <span>500K - 1 Million MT</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-line" style="height: 3px; background: #A5D6A7;"></div>
+                <span>< 500K MT</span>
+            </div>
+        </div>
+        <div class="legend-section">
+            <h5>Tariff Rate</h5>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: var(--primary);"></div>
+                <span>10% (Favorable)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #FF5722;"></div>
+                <span>25% (Standard)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #0D47A1;"></div>
+                <span>46% (High)</span>
+            </div>
+        </div>
+        <div class="legend-section">
+            <h5>Locations</h5>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: var(--secondary-dark); border: 3px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.3);"></div>
+                <span>Origin Country</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #E91E63;"></div>
+                <span>US Port of Entry</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-panel" id="infoPanel">
+        <h3 id="infoPanelTitle">Select a flow</h3>
+        <div id="infoPanelContent"></div>
+    </div>
+
+    <script>
+        // Initialize map centered on Atlantic
+        const map = L.map('map', {
+            center: [25, -40],
+            zoom: 3,
+            minZoom: 2,
+            maxZoom: 8
+        });
+
+        // Add tile layer
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap, &copy; CARTO',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Origin countries data (main locations)
+        const originCountries = [
+            {name: "Turkey", iso: "TR", coords: [38.96, 35.24], production: 75, color: "#1B5E20", usVolume: 7160000},
+            {name: "Vietnam", iso: "VN", coords: [14.06, 108.28], production: 120, color: "#0D47A1", usVolume: 4170000},
+            {name: "Canada", iso: "CA", coords: [56.13, -106.35], production: 12, color: "#1565C0", usVolume: 4850000},
+            {name: "Greece", iso: "GR", coords: [39.07, 21.82], production: 14, color: "#2E7D32", usVolume: 1820000},
+            {name: "Mexico", iso: "MX", coords: [23.63, -102.55], production: 45, color: "#FF5722", usVolume: 1320000},
+            {name: "Egypt", iso: "EG", coords: [26.82, 30.80], production: 65, color: "#00897B", usVolume: 500000},
+            {name: "Saudi Arabia", iso: "SA", coords: [23.89, 45.08], production: 42, color: "#7B1FA2", usVolume: 536000},
+            {name: "Spain", iso: "ES", coords: [40.46, -3.75], production: 24, color: "#FFA000", usVolume: 196000},
+            {name: "Colombia", iso: "CO", coords: [4.57, -74.30], production: 13, color: "#FFC107", usVolume: 38000},
+            {name: "Japan", iso: "JP", coords: [36.20, 138.25], production: 52, color: "#E91E63", usVolume: 170000}
+        ];
+
+        // Pacific-side origin markers (for Asia to West Coast flows - appear on left of map)
+        const pacificOrigins = [
+            {name: "Vietnam (Pacific)", iso: "VN", coords: [25.0, -180.0], color: "#0D47A1", usVolume: 2800000, note: "Pacific Route to West Coast"},
+            {name: "Japan (Pacific)", iso: "JP", coords: [38.0, -180.0], color: "#E91E63", usVolume: 170000, note: "Pacific Route to PNW"}
+        ];
+
+        // US Ports data
+        const usPorts = [
+            {name: "Houston Ship Channel", state: "TX", coords: [29.74, -95.02], volume: 5200000},
+            {name: "Tampa Bay", state: "FL", coords: [27.94, -82.44], volume: 3450000},
+            {name: "Los Angeles/Long Beach", state: "CA", coords: [33.75, -118.24], volume: 2800000},
+            {name: "Mobile", state: "AL", coords: [30.70, -88.04], volume: 2390000},
+            {name: "New Orleans", state: "LA", coords: [29.95, -90.07], volume: 1850000},
+            {name: "Jacksonville", state: "FL", coords: [30.41, -81.63], volume: 1612000},
+            {name: "Seattle/Tacoma", state: "WA", coords: [47.59, -122.44], volume: 680000},
+            {name: "Savannah", state: "GA", coords: [32.08, -81.09], volume: 1090000},
+            {name: "Detroit", state: "MI", coords: [42.33, -83.05], volume: 280000},
+            {name: "Philadelphia", state: "PA", coords: [39.95, -75.17], volume: 380000},
+            {name: "Portland", state: "OR", coords: [45.52, -122.68], volume: 1276000},
+            {name: "South Texas", state: "TX", coords: [25.90, -97.40], volume: 1869000}
+        ];
+
+        // Trade flows data
+        const tradeFlows = [
+            {id: "TR-HOU", origin: "Turkey", originIso: "TR", dest: "Houston Ship Channel", destState: "TX", volume: 2850000, tariff: "10%", coords: [[40.9, 29.0], [38.0, 20.0], [36.5, 5.0], [32.0, -15.0], [27.0, -45.0], [26.0, -75.0], [29.7, -95.0]], color: "#1B5E20"},
+            {id: "TR-TPA", origin: "Turkey", originIso: "TR", dest: "Tampa Bay", destState: "FL", volume: 2200000, tariff: "10%", coords: [[40.9, 29.0], [38.0, 20.0], [36.5, 5.0], [32.0, -15.0], [27.0, -45.0], [25.5, -70.0], [27.9, -82.4]], color: "#2E7D32"},
+            {id: "TR-NOL", origin: "Turkey", originIso: "TR", dest: "New Orleans", destState: "LA", volume: 1560000, tariff: "10%", coords: [[40.9, 29.0], [38.0, 20.0], [36.5, 5.0], [32.0, -15.0], [27.0, -45.0], [26.0, -75.0], [29.9, -90.0]], color: "#4CAF50"},
+            {id: "TR-MOB", origin: "Turkey", originIso: "TR", dest: "Mobile", destState: "AL", volume: 550000, tariff: "10%", coords: [[40.9, 29.0], [38.0, 20.0], [36.5, 5.0], [32.0, -15.0], [27.0, -45.0], [26.0, -75.0], [30.7, -88.0]], color: "#81C784"},
+
+            {id: "VN-LAX", origin: "Vietnam", originIso: "VN", dest: "Los Angeles/Long Beach", destState: "CA", volume: 2800000, tariff: "46%", coords: [[35.0, -180.0], [38.0, -165.0], [36.0, -145.0], [34.5, -125.0], [33.7, -118.2]], color: "#0D47A1"},
+            {id: "VN-HOU", origin: "Vietnam", originIso: "VN", dest: "Houston", destState: "TX", volume: 820000, tariff: "46%", coords: [[14.1, 108.3], [5.0, 100.0], [-5.0, 70.0], [-10.0, 40.0], [0.0, -10.0], [10.0, -50.0], [20.0, -80.0], [29.7, -95.0]], color: "#1976D2"},
+            {id: "VN-TPA", origin: "Vietnam", originIso: "VN", dest: "Tampa Bay", destState: "FL", volume: 550000, tariff: "46%", coords: [[14.1, 108.3], [5.0, 100.0], [-5.0, 70.0], [-10.0, 40.0], [0.0, -10.0], [10.0, -50.0], [22.0, -75.0], [27.9, -82.4]], color: "#42A5F5"},
+
+            {id: "CA-DET", origin: "Canada", originIso: "CA", dest: "Detroit/Great Lakes", destState: "MI", volume: 2800000, tariff: "25%", coords: [[43.6, -79.0], [42.5, -79.5], [42.3, -83.0]], color: "#1565C0"},
+            {id: "CA-SEA", origin: "Canada", originIso: "CA", dest: "Seattle/Tacoma", destState: "WA", volume: 1200000, tariff: "25%", coords: [[49.2, -123.1], [47.6, -122.4]], color: "#1E88E5"},
+            {id: "CA-TPA", origin: "Canada", originIso: "CA", dest: "Tampa Bay", destState: "FL", volume: 450000, tariff: "25%", coords: [[44.6, -63.6], [40.0, -70.0], [35.0, -75.0], [30.0, -80.0], [27.9, -82.4]], color: "#42A5F5"},
+
+            {id: "GR-HOU", origin: "Greece", originIso: "GR", dest: "Houston Ship Channel", destState: "TX", volume: 1200000, tariff: "10%", coords: [[38.0, 23.7], [37.0, 15.0], [36.5, 0.0], [33.0, -20.0], [28.0, -50.0], [26.0, -80.0], [29.7, -95.0]], color: "#1B5E20"},
+            {id: "GR-TPA", origin: "Greece", originIso: "GR", dest: "Tampa Bay", destState: "FL", volume: 450000, tariff: "10%", coords: [[38.0, 23.7], [37.0, 15.0], [36.5, 0.0], [33.0, -20.0], [28.0, -50.0], [26.0, -75.0], [27.9, -82.4]], color: "#4CAF50"},
+
+            {id: "MX-HOU", origin: "Mexico", originIso: "MX", dest: "Houston", destState: "TX", volume: 850000, tariff: "25%", coords: [[19.2, -96.1], [22.0, -95.5], [26.0, -95.0], [29.7, -95.0]], color: "#FF5722"},
+            {id: "MX-STX", origin: "Mexico", originIso: "MX", dest: "South Texas", destState: "TX", volume: 320000, tariff: "25%", coords: [[19.2, -96.1], [22.0, -97.0], [25.9, -97.4]], color: "#E64A19"},
+            {id: "MX-TPA", origin: "Mexico", originIso: "MX", dest: "Tampa Bay", destState: "FL", volume: 150000, tariff: "25%", coords: [[19.2, -96.1], [22.0, -92.0], [24.0, -87.0], [27.9, -82.4]], color: "#FF7043"},
+
+            {id: "EG-TPA", origin: "Egypt", originIso: "EG", dest: "Tampa Bay", destState: "FL", volume: 350000, tariff: "10%", coords: [[31.2, 32.3], [33.0, 25.0], [36.0, 10.0], [34.0, -10.0], [28.0, -40.0], [25.0, -70.0], [27.9, -82.4]], color: "#00897B"},
+            {id: "EG-HOU", origin: "Egypt", originIso: "EG", dest: "Houston", destState: "TX", volume: 150000, tariff: "10%", coords: [[31.2, 32.3], [33.0, 25.0], [36.0, 10.0], [34.0, -10.0], [28.0, -40.0], [26.0, -75.0], [29.7, -95.0]], color: "#00ACC1"},
+
+            {id: "SA-HOU", origin: "Saudi Arabia", originIso: "SA", dest: "Houston", destState: "TX", volume: 420000, tariff: "10%", coords: [[26.4, 50.5], [27.0, 43.0], [30.0, 35.0], [32.0, 25.0], [35.0, 10.0], [32.0, -20.0], [26.0, -55.0], [29.7, -95.0]], color: "#7B1FA2"},
+
+            {id: "ES-TPA", origin: "Spain", originIso: "ES", dest: "Tampa Bay", destState: "FL", volume: 196000, tariff: "10%", coords: [[37.4, -5.9], [33.0, -15.0], [27.0, -45.0], [25.0, -70.0], [27.9, -82.4]], color: "#FFA000"},
+
+            {id: "JP-SEA", origin: "Japan", originIso: "JP", dest: "Seattle", destState: "WA", volume: 120000, tariff: "0%", coords: [[42.0, -180.0], [45.0, -165.0], [48.0, -145.0], [47.6, -122.4]], color: "#E91E63"},
+
+            {id: "JP-PDX", origin: "Japan", originIso: "JP", dest: "Portland", destState: "OR", volume: 50000, tariff: "0%", coords: [[40.0, -180.0], [43.0, -160.0], [45.0, -140.0], [45.5, -122.7]], color: "#F06292"}
+        ];
+
+        // Layer groups
+        const flowLayers = L.layerGroup().addTo(map);
+        const originLayers = L.layerGroup().addTo(map);
+        const portLayers = L.layerGroup().addTo(map);
+
+        // Helper function to get line weight based on volume
+        function getLineWeight(volume) {
+            if (volume >= 2000000) return 8;
+            if (volume >= 1000000) return 6;
+            if (volume >= 500000) return 4;
+            return 3;
+        }
+
+        // Helper function to format number
+        function formatNumber(num) {
+            if (num >= 1000000) return (num / 1000000).toFixed(2) + ' MT';
+            if (num >= 1000) return (num / 1000).toFixed(0) + 'K MT';
+            return num + ' MT';
+        }
+
+        // Draw trade flows
+        function drawFlows(filter = 'all') {
+            flowLayers.clearLayers();
+
+            tradeFlows.forEach(flow => {
+                if (filter !== 'all' && flow.originIso !== filter) return;
+
+                const latlngs = flow.coords.map(c => [c[0], c[1]]);
+                const weight = getLineWeight(flow.volume);
+
+                const polyline = L.polyline(latlngs, {
+                    color: flow.color,
+                    weight: weight,
+                    opacity: 0.8,
+                    dashArray: '10, 5',
+                    className: 'flow-line'
+                }).addTo(flowLayers);
+
+                // Add popup
+                polyline.bindPopup(`
+                    <div class="popup-title">${flow.origin} to ${flow.dest}</div>
+                    <div class="popup-row">
+                        <span class="popup-label">Volume:</span>
+                        <span class="popup-value">${formatNumber(flow.volume)}</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="popup-label">Tariff:</span>
+                        <span class="popup-value">${flow.tariff}</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="popup-label">Destination:</span>
+                        <span class="popup-value">${flow.destState}</span>
+                    </div>
+                `);
+
+                // Add arrow marker at destination
+                const lastCoord = latlngs[latlngs.length - 1];
+                const secondLastCoord = latlngs[latlngs.length - 2];
+                const angle = Math.atan2(lastCoord[0] - secondLastCoord[0], lastCoord[1] - secondLastCoord[1]) * 180 / Math.PI;
+
+                const arrowIcon = L.divIcon({
+                    className: 'arrow-icon',
+                    html: `<div style="transform: rotate(${angle}deg); color: ${flow.color}; font-size: 16px;">&#9660;</div>`,
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
+                });
+            });
+        }
+
+        // Draw origin countries
+        function drawOrigins(filter = 'all') {
+            originLayers.clearLayers();
+
+            originCountries.forEach(country => {
+                if (filter !== 'all' && country.iso !== filter) return;
+
+                const radius = Math.max(15, Math.sqrt(country.usVolume / 50000));
+
+                const circle = L.circleMarker(country.coords, {
+                    radius: radius,
+                    fillColor: country.color,
+                    color: '#fff',
+                    weight: 3,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(originLayers);
+
+                circle.bindPopup(`
+                    <div class="popup-title">${country.name}</div>
+                    <div class="popup-row">
+                        <span class="popup-label">Production:</span>
+                        <span class="popup-value">${country.production} MT/yr</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="popup-label">US Exports:</span>
+                        <span class="popup-value">${formatNumber(country.usVolume)}</span>
+                    </div>
+                `);
+
+                // Add label
+                const label = L.divIcon({
+                    className: 'country-label',
+                    html: `<div style="background: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">${country.name}</div>`,
+                    iconAnchor: [-10, 10]
+                });
+                L.marker(country.coords, {icon: label}).addTo(originLayers);
+            });
+
+            // Draw Pacific-side origin markers (for Asia flows coming from west)
+            pacificOrigins.forEach(origin => {
+                if (filter !== 'all' && origin.iso !== filter) return;
+
+                const radius = Math.max(12, Math.sqrt(origin.usVolume / 80000));
+
+                const circle = L.circleMarker(origin.coords, {
+                    radius: radius,
+                    fillColor: origin.color,
+                    color: '#fff',
+                    weight: 3,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(originLayers);
+
+                circle.bindPopup(`
+                    <div class="popup-title">${origin.name}</div>
+                    <div class="popup-row">
+                        <span class="popup-label">Route:</span>
+                        <span class="popup-value">${origin.note}</span>
+                    </div>
+                    <div class="popup-row">
+                        <span class="popup-label">Volume:</span>
+                        <span class="popup-value">${formatNumber(origin.usVolume)}</span>
+                    </div>
+                `);
+
+                // Add label on right side (pointing toward US)
+                const label = L.divIcon({
+                    className: 'country-label',
+                    html: `<div style="background: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.2);">${origin.iso} via Pacific</div>`,
+                    iconAnchor: [-10, 10]
+                });
+                L.marker(origin.coords, {icon: label}).addTo(originLayers);
+            });
+        }
+
+        // Draw US ports
+        function drawPorts() {
+            portLayers.clearLayers();
+
+            usPorts.forEach(port => {
+                const radius = Math.max(8, Math.sqrt(port.volume / 100000));
+
+                const circle = L.circleMarker(port.coords, {
+                    radius: radius,
+                    fillColor: '#E91E63',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.9
+                }).addTo(portLayers);
+
+                circle.bindPopup(`
+                    <div class="popup-title">${port.name}, ${port.state}</div>
+                    <div class="popup-row">
+                        <span class="popup-label">Import Volume:</span>
+                        <span class="popup-value">${formatNumber(port.volume)}</span>
+                    </div>
+                `);
+            });
+        }
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                drawFlows(filter);
+                drawOrigins(filter);
+            });
+        });
+
+        // Initial draw
+        drawFlows();
+        drawOrigins();
+        drawPorts();
+
+        // Fit bounds to show Pacific origins on left, Europe/Africa on right
+        map.fitBounds([[-15, -185], [55, 55]]);
+    </script>
+</body>
+</html>

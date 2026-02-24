@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "title": "US Cement Distribution Network Patterns",
+    "description": "Cement transportation modes, costs, and regional distribution patterns",
+    "data_sources": ["PCA Cement Distribution Report", "USGS Mineral Commodity Summaries", "ATA Trucking Survey", "STB Rail Waybill", "USACE Waterborne Commerce"],
+    "last_updated": "2026-02-14",
+    "notes": "Cement is a low-value, high-weight commodity where transportation costs significantly affect delivered price. Typical economical delivery radius is 200-300 miles by truck."
+  },
+  "transportation_modes": [
+    {
+      "mode": "truck",
+      "mode_type": "primary",
+      "share_pct": 70.0,
+      "avg_distance_miles": 120,
+      "max_economical_distance_miles": 300,
+      "cost_per_ton_mile": 0.18,
+      "typical_load_tons": 25,
+      "equipment_type": "Pneumatic dry bulk tanker trailer",
+      "equipment_specs": {
+        "trailer_type": "V-bottom pneumatic",
+        "capacity_cubic_ft": 1200,
+        "gross_vehicle_weight_lbs": 80000,
+        "net_payload_lbs": 50000,
+        "unloading_method": "Compressed air (pneumatic)",
+        "unloading_time_minutes": 30,
+        "typical_turnaround_hours": 4
+      },
+      "constraints": [
+        "Limited to ~300 mile radius economically",
+        "Driver shortage impacts availability",
+        "Weight limits vary by state (80K-105.5K lbs GVW)",
+        "Hours of service regulations limit daily range",
+        "Weather/road closures can disrupt deliveries",
+        "Pneumatic trailer fleet is specialized and limited"
+      ],
+      "advantages": [
+        "Door-to-door delivery flexibility",
+        "No infrastructure requirements at destination",
+        "Fast turnaround for short hauls",
+        "Dominant mode for ready-mix plant delivery"
+      ],
+      "cost_breakdown": {
+        "fuel_pct": 35,
+        "driver_pct": 30,
+        "equipment_pct": 20,
+        "insurance_overhead_pct": 15
+      }
+    },
+    {
+      "mode": "rail",
+      "mode_type": "primary",
+      "share_pct": 20.0,
+      "avg_distance_miles": 500,
+      "max_economical_distance_miles": 1500,
+      "cost_per_ton_mile": 0.05,
+      "typical_load_tons": 100,
+      "equipment_type": "Covered hopper car (cement service)",
+      "equipment_specs": {
+        "car_type": "Covered hopper (pressurized discharge)",
+        "capacity_cubic_ft": 3000,
+        "gross_rail_load_lbs": 286000,
+        "net_payload_lbs": 200000,
+        "unloading_method": "Gravity/pneumatic discharge",
+        "unloading_time_hours": 2,
+        "typical_transit_days": 3
+      },
+      "constraints": [
+        "Requires rail siding at both origin and destination",
+        "Minimum shipment typically 1-3 cars",
+        "Transit times of 2-7 days",
+        "Car supply can be constrained in peak season",
+        "Demurrage charges for delayed unloading",
+        "Capital cost for rail siding installation $200K-$1M"
+      ],
+      "advantages": [
+        "Cost-effective for distances >300 miles",
+        "Large volume per shipment (100 tons/car)",
+        "Unit trains (25+ cars) get priority handling",
+        "Year-round reliability (less weather-sensitive than truck)",
+        "Lower carbon footprint per ton-mile"
+      ],
+      "cost_breakdown": {
+        "line_haul_pct": 55,
+        "fuel_surcharge_pct": 20,
+        "car_hire_pct": 15,
+        "switching_terminal_pct": 10
+      },
+      "class_i_railroads_serving_cement": [
+        {"railroad": "BNSF Railway", "key_routes": "TX/OK to Midwest, CO to Pacific NW"},
+        {"railroad": "Union Pacific", "key_routes": "TX/MO/IL corridors, West Coast"},
+        {"railroad": "CSX Transportation", "key_routes": "Southeast, FL, Mid-Atlantic, Northeast"},
+        {"railroad": "Norfolk Southern", "key_routes": "AL/GA to Northeast, Midwest"},
+        {"railroad": "Canadian National", "key_routes": "Great Lakes, Midwest imports"},
+        {"railroad": "Canadian Pacific Kansas City", "key_routes": "Midwest, TX Gulf Coast"}
+      ]
+    },
+    {
+      "mode": "barge",
+      "mode_type": "supplementary",
+      "share_pct": 8.0,
+      "avg_distance_miles": 600,
+      "max_economical_distance_miles": 2000,
+      "cost_per_ton_mile": 0.02,
+      "typical_load_tons": 1500,
+      "equipment_type": "Covered hopper barge",
+      "equipment_specs": {
+        "barge_type": "Covered dry cargo hopper barge",
+        "capacity_tons": 1500,
+        "barge_dimensions_ft": "195 x 35 x 12",
+        "typical_tow_size_barges": 6,
+        "tow_capacity_tons": 9000,
+        "unloading_method": "Clam bucket/pneumatic",
+        "unloading_time_hours": 8
+      },
+      "constraints": [
+        "Limited to navigable waterways (Mississippi, Ohio, Illinois, Tennessee rivers)",
+        "Seasonal restrictions (winter ice, low water in late summer)",
+        "Lock delays on Ohio/Upper Mississippi (2-12 hour waits)",
+        "Requires waterfront terminal infrastructure",
+        "Slower transit (5-15 days for long hauls)",
+        "Limited geographic reach beyond major river systems"
+      ],
+      "advantages": [
+        "Lowest cost per ton-mile of any mode",
+        "Very large shipment volumes (9000+ tons per tow)",
+        "Low carbon footprint",
+        "Mississippi River system connects Gulf imports to Midwest",
+        "Ideal for large-volume inter-terminal transfers"
+      ],
+      "key_waterways": [
+        {"waterway": "Mississippi River", "from": "New Orleans LA", "to": "St. Paul MN", "distance_miles": 1810},
+        {"waterway": "Ohio River", "from": "Pittsburgh PA", "to": "Cairo IL", "distance_miles": 981},
+        {"waterway": "Illinois Waterway", "from": "Chicago IL", "to": "Grafton IL", "distance_miles": 327},
+        {"waterway": "Tennessee River", "from": "Paducah KY", "to": "Knoxville TN", "distance_miles": 652},
+        {"waterway": "Gulf Intracoastal Waterway", "from": "Houston TX", "to": "New Orleans LA", "distance_miles": 365},
+        {"waterway": "Great Lakes", "from": "Alpena MI", "to": "Chicago IL", "distance_miles": 350}
+      ]
+    },
+    {
+      "mode": "vessel_ocean",
+      "mode_type": "import_only",
+      "share_pct": 2.0,
+      "avg_distance_miles": 5000,
+      "max_economical_distance_miles": 12000,
+      "cost_per_ton_mile": 0.01,
+      "typical_load_tons": 35000,
+      "equipment_type": "Handy/Supramax bulk carrier",
+      "equipment_specs": {
+        "vessel_type": "Handymax/Supramax bulk carrier",
+        "capacity_dwt_range": "25000-60000",
+        "typical_cargo_tons": 35000,
+        "loading_method": "Shore-based conveyor/grab crane",
+        "unloading_method": "Pneumatic ship unloaders",
+        "voyage_days_turkey": 18,
+        "voyage_days_canada_east": 3,
+        "voyage_days_egypt": 22,
+        "voyage_days_asia": 28
+      },
+      "constraints": [
+        "Requires deep-water port terminal",
+        "Vessel scheduling and charter market volatility",
+        "Port draft restrictions limit vessel size",
+        "Cargo damage risk (moisture, contamination)",
+        "Jones Act restricts domestic coastal shipping to US-flag vessels",
+        "Port congestion delays"
+      ],
+      "advantages": [
+        "Lowest long-distance transport cost",
+        "Enables price arbitrage from low-cost producing countries",
+        "Large single-shipment volumes",
+        "Multiple origin diversification"
+      ]
+    }
+  ],
+  "regional_distribution_patterns": [
+    {
+      "region": "Texas / Gulf Coast",
+      "states": ["TX", "LA", "MS"],
+      "primary_production_sources": ["Midlothian TX cluster", "New Braunfels TX", "Buda TX", "Maryneal TX"],
+      "import_entry_points": ["Houston", "New Orleans", "Galveston"],
+      "distribution_mix": {
+        "truck_pct": 65,
+        "rail_pct": 20,
+        "barge_pct": 10,
+        "vessel_pct": 5
+      },
+      "avg_delivered_price_per_ton": 140,
+      "market_size_mtpa": 18.0,
+      "key_characteristics": [
+        "Most competitive US cement market due to production surplus",
+        "Houston is largest single metro market (5M+ tpa)",
+        "Oil well cementing creates specialized demand",
+        "Import competition from Turkey, Egypt via Houston/NOLA",
+        "Barge distribution up Mississippi/Intracoastal",
+        "SESCO is major independent import competitor"
+      ]
+    },
+    {
+      "region": "Midwest",
+      "states": ["IL", "IN", "OH", "MI", "WI", "MN", "IA", "MO"],
+      "primary_production_sources": ["Ste. Genevieve MO", "LaSalle IL", "Mitchell IN", "Alpena MI", "Greencastle IN"],
+      "import_entry_points": ["Chicago (Great Lakes)", "New Orleans barge-fed"],
+      "distribution_mix": {
+        "truck_pct": 60,
+        "rail_pct": 25,
+        "barge_pct": 14,
+        "vessel_pct": 1
+      },
+      "avg_delivered_price_per_ton": 150,
+      "market_size_mtpa": 22.0,
+      "key_characteristics": [
+        "Large and mature market with established infrastructure",
+        "Mississippi/Ohio/Illinois rivers enable low-cost barge movement",
+        "Holcim Ste. Genevieve dominates regional supply",
+        "Great Lakes shipping from Alpena MI supplements",
+        "Seasonal demand concentration (April-October)",
+        "Infrastructure spending (IIJA) driving demand growth"
+      ]
+    },
+    {
+      "region": "Southeast",
+      "states": ["FL", "GA", "AL", "SC", "NC", "TN"],
+      "primary_production_sources": ["Leeds AL", "Roberta AL", "Harleyville SC", "Brooksville FL", "Ragland AL"],
+      "import_entry_points": ["Tampa", "Jacksonville", "Savannah", "Norfolk"],
+      "distribution_mix": {
+        "truck_pct": 72,
+        "rail_pct": 20,
+        "barge_pct": 3,
+        "vessel_pct": 5
+      },
+      "avg_delivered_price_per_ton": 155,
+      "market_size_mtpa": 20.0,
+      "key_characteristics": [
+        "Fastest-growing US cement market (population migration)",
+        "Florida is heavily import-dependent (deficit state)",
+        "Titan America dominates import supply from Greece",
+        "Limited inland waterway options except Tennessee River",
+        "Hurricane risk to coastal terminals",
+        "Strong residential construction demand"
+      ]
+    },
+    {
+      "region": "Northeast / Mid-Atlantic",
+      "states": ["NY", "PA", "NJ", "MA", "CT", "MD", "VA", "ME", "VT", "NH"],
+      "primary_production_sources": ["Ravena NY", "Whitehall PA", "Stockertown PA", "Nazareth PA", "Union Bridge MD"],
+      "import_entry_points": ["Coeymans NY", "Philadelphia", "Baltimore", "Norfolk", "Boston"],
+      "distribution_mix": {
+        "truck_pct": 75,
+        "rail_pct": 18,
+        "barge_pct": 2,
+        "vessel_pct": 5
+      },
+      "avg_delivered_price_per_ton": 165,
+      "market_size_mtpa": 14.0,
+      "key_characteristics": [
+        "Highest delivered prices in US",
+        "Lehigh Valley PA is historic cement production hub",
+        "Dense urban markets (NYC, Philadelphia, Boston) with access constraints",
+        "Canadian imports significant in New England (St. Marys/Votorantim)",
+        "Import terminals critical for supplemental supply",
+        "Infrastructure rehabilitation driving steady demand"
+      ]
+    },
+    {
+      "region": "West Coast / Mountain",
+      "states": ["CA", "AZ", "NV", "OR", "WA", "CO", "UT", "ID", "MT", "WY"],
+      "primary_production_sources": ["Victorville CA", "Colton CA", "Mojave CA", "Oro Grande CA", "Clarkdale AZ"],
+      "import_entry_points": ["Long Beach", "Los Angeles", "Seattle", "Richmond CA"],
+      "distribution_mix": {
+        "truck_pct": 78,
+        "rail_pct": 15,
+        "barge_pct": 0,
+        "vessel_pct": 7
+      },
+      "avg_delivered_price_per_ton": 160,
+      "market_size_mtpa": 19.0,
+      "key_characteristics": [
+        "California is second-largest state market",
+        "Long truck haul distances in Mountain states",
+        "Asian imports (Japan, South Korea, Vietnam) via West Coast ports",
+        "Strict emissions regulations in California affect production costs",
+        "Water scarcity constrains some production",
+        "Intermountain region served by smaller plants with high utilization"
+      ]
+    }
+  ],
+  "delivered_cost_model": {
+    "description": "Typical delivered cement cost build-up",
+    "components": [
+      {"component": "Production cost at plant gate", "range_per_ton": "$60-$85", "share_pct": 55},
+      {"component": "Transportation (avg all modes)", "range_per_ton": "$20-$45", "share_pct": 22},
+      {"component": "Terminal/handling costs", "range_per_ton": "$5-$12", "share_pct": 6},
+      {"component": "Selling/admin/overhead", "range_per_ton": "$8-$15", "share_pct": 8},
+      {"component": "Margin", "range_per_ton": "$10-$20", "share_pct": 9}
+    ],
+    "typical_fob_plant_price_per_ton": 130,
+    "typical_delivered_price_per_ton": 155,
+    "transportation_share_of_delivered_pct": 18
+  }
+}

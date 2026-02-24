@@ -1,0 +1,146 @@
+{
+  "type": "FeatureCollection",
+  "name": "Port_Redwing_Trucking_Radius",
+  "metadata": {
+    "title": "Port Redwing Trucking Service Areas",
+    "description": "Drive time radius zones from Port Redwing terminal, Gibsonton FL",
+    "source": "Estimated based on avg trucking speeds (50-55 mph highway, adjusted for loading/traffic)",
+    "created": "2025-12-16",
+    "origin": "Port Redwing, Gibsonton, FL",
+    "origin_coords": [-82.3789, 27.8456],
+    "note": "Approximate circular zones - actual drive times vary by route and traffic"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "5-Hour",
+        "drive_time_hrs": 5,
+        "radius_miles": 275,
+        "color": "#C8E6C9",
+        "fill_opacity": 0.2,
+        "stroke_color": "#4CAF50",
+        "stroke_width": 2,
+        "markets": "Jacksonville, Orlando, Miami, Tallahassee, South Georgia, Mobile AL",
+        "population_millions": 22.5,
+        "description": "Extended regional delivery - covers all of Florida plus adjacent states"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-82.3789, 31.8456],
+          [-81.0, 31.7],
+          [-79.8, 31.2],
+          [-78.9, 30.4],
+          [-78.4, 29.3],
+          [-78.3, 28.0],
+          [-78.5, 26.7],
+          [-79.0, 25.5],
+          [-79.8, 24.5],
+          [-80.8, 23.9],
+          [-82.0, 23.7],
+          [-83.2, 23.9],
+          [-84.3, 24.5],
+          [-85.2, 25.5],
+          [-85.8, 26.7],
+          [-86.1, 28.0],
+          [-86.0, 29.3],
+          [-85.6, 30.4],
+          [-84.8, 31.2],
+          [-83.7, 31.7],
+          [-82.3789, 31.8456]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "3-Hour",
+        "drive_time_hrs": 3,
+        "radius_miles": 165,
+        "color": "#81C784",
+        "fill_opacity": 0.3,
+        "stroke_color": "#2E7D32",
+        "stroke_width": 2,
+        "markets": "Orlando, Lakeland, Sarasota, Fort Myers, Ocala, Gainesville",
+        "population_millions": 12.8,
+        "description": "Same-day delivery zone - major Central and Southwest Florida markets"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-82.3789, 30.2456],
+          [-81.4, 30.1],
+          [-80.6, 29.7],
+          [-80.1, 29.0],
+          [-79.9, 28.1],
+          [-80.0, 27.2],
+          [-80.4, 26.4],
+          [-81.0, 25.8],
+          [-81.8, 25.5],
+          [-82.7, 25.5],
+          [-83.5, 25.8],
+          [-84.1, 26.4],
+          [-84.5, 27.2],
+          [-84.6, 28.1],
+          [-84.4, 29.0],
+          [-84.0, 29.7],
+          [-83.3, 30.1],
+          [-82.3789, 30.2456]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "1-Hour",
+        "drive_time_hrs": 1,
+        "radius_miles": 55,
+        "color": "#4CAF50",
+        "fill_opacity": 0.4,
+        "stroke_color": "#1B5E20",
+        "stroke_width": 3,
+        "markets": "Tampa, St. Petersburg, Clearwater, Brandon, Lakeland, Bradenton",
+        "population_millions": 3.4,
+        "description": "Primary service area - Tampa Bay Metro ready-mix and precast customers"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-82.3789, 28.6456],
+          [-82.0, 28.6],
+          [-81.7, 28.45],
+          [-81.55, 28.2],
+          [-81.5, 27.9],
+          [-81.55, 27.6],
+          [-81.7, 27.35],
+          [-82.0, 27.2],
+          [-82.3789, 27.1456],
+          [-82.75, 27.2],
+          [-83.05, 27.35],
+          [-83.2, 27.6],
+          [-83.25, 27.9],
+          [-83.2, 28.2],
+          [-83.05, 28.45],
+          [-82.75, 28.6],
+          [-82.3789, 28.6456]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Redwing Terminal",
+        "type": "origin",
+        "address": "Gibsonton, FL",
+        "status": "Under Construction",
+        "color": "#FF5722",
+        "symbol_size": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.3789, 27.8456]
+      }
+    }
+  ]
+}

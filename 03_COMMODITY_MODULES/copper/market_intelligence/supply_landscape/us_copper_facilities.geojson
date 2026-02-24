@@ -1,0 +1,1295 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8426,
+          33.4106
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Miami Smelter",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "primary_smelter|wire_rod_mill",
+        "city": "Claypool",
+        "state": "AZ",
+        "capacity_kt": 590,
+        "capacity_notes": "Smelter ~590kt concentrate; IsaSmelt + 4 Hoboken converters; rod mill on-site",
+        "products": "blister copper, anode, copper rod",
+        "markets": "wire & cable, industrial",
+        "feedstock": "concentrate (FCX AZ mines), scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1915,
+        "employees": null,
+        "notes": "Only operating primary copper smelter in US besides Kennecott. IsaSmelt furnace (primary), ELKEM electric furnace (secondary), 4 Hoboken converters, acid plant. Processes concentrate from Morenci, Bagdad, Safford/Lone Star, Sierrita. SX/EW capacity 200M lbs/yr. Rod mill commissioned 1966."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0947,
+          40.7108
+        ]
+      },
+      "properties": {
+        "name": "Kennecott Utah Copper Smelter",
+        "company": "Rio Tinto (Kennecott)",
+        "facility_types": "primary_smelter",
+        "city": "Magna",
+        "state": "UT",
+        "capacity_kt": 300,
+        "capacity_notes": "~300kt anode; Outotec flash smelter + Mitsubishi converter",
+        "products": "copper anode (to adjacent refinery)",
+        "markets": "cathode production",
+        "feedstock": "concentrate (Bingham Canyon mine)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1907,
+        "employees": null,
+        "notes": "Flash smelting furnace + Mitsubishi continuous converting. Major rebuild 2023 (offline May-Sep). Returned to normal operations Q1 2024. Processes concentrate from Bingham Canyon (world's deepest open pit). Acid plant, molybdenum plant co-located."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.093,
+          40.7115
+        ]
+      },
+      "properties": {
+        "name": "Kennecott Utah Copper Refinery",
+        "company": "Rio Tinto (Kennecott)",
+        "facility_types": "primary_refinery",
+        "city": "Magna",
+        "state": "UT",
+        "capacity_kt": 280,
+        "capacity_notes": "Electrolytic refinery ~280kt cathode/yr",
+        "products": "LME Grade A copper cathode, gold, silver, selenium, tellurium",
+        "markets": "wire rod mills, brass mills, tube mills",
+        "feedstock": "anode (from adjacent smelter)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1907,
+        "employees": null,
+        "notes": "Electrolytic refinery co-located with smelter. Rebuilds completed 2023-2024. Produces precious metals (Au, Ag) and specialty metals (Se, Te) as byproducts. Cathode shipped to domestic rod/brass mills."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.4016,
+          31.7851
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan El Paso Refinery & Rod Mill",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "primary_refinery|wire_rod_mill",
+        "city": "El Paso",
+        "state": "TX",
+        "capacity_kt": 408,
+        "capacity_notes": "Refinery capacity ~408kt cathode/yr (900M lbs); rod mill co-located",
+        "products": "copper cathode, copper rod, nickel carbonate, copper telluride, precious metals slimes (Au, Ag, Pt, Pd)",
+        "markets": "wire & cable, electrical, industrial",
+        "feedstock": "anode (from Miami smelter), scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1993,
+        "employees": null,
+        "notes": "Sufficient capacity to refine all anode from Miami operation. Electrolytic refinery + continuous cast rod mill. One of world's largest copper rod producers. Copper Mark designation received 2021."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.8313,
+          35.222
+        ]
+      },
+      "properties": {
+        "name": "ASARCO Amarillo Refinery",
+        "company": "ASARCO LLC (Grupo Mexico)",
+        "facility_types": "primary_refinery",
+        "city": "Amarillo",
+        "state": "TX",
+        "capacity_kt": 185,
+        "capacity_notes": "Electrolytic refinery ~185kt; idled since Oct 2019",
+        "products": "copper cathode",
+        "markets": "wire rod mills",
+        "feedstock": "anode",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "idled",
+        "startup_year": 1975,
+        "employees": null,
+        "notes": "Idled October 2019 along with ASARCO Hayden smelter. Grupo Mexico ownership. No announced restart date."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.3412,
+          33.0851
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Morenci SX/EW",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "sxew_refinery",
+        "city": "Morenci",
+        "state": "AZ",
+        "capacity_kt": 363,
+        "capacity_notes": "SX/EW ~800M lbs/yr cathode from leach solutions",
+        "products": "copper cathode (SX/EW)",
+        "markets": "wire rod mills, brass mills",
+        "feedstock": "pregnant leach solution (oxide ore)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1987,
+        "employees": null,
+        "notes": "World's largest SX/EW copper operation. Part of Morenci mine complex (72% FCX, 15% Sumitomo, 13% SMM). SX/EW plant commissioned 1987."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.2065,
+          34.5801
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Bagdad SX/EW",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "sxew_refinery",
+        "city": "Bagdad",
+        "state": "AZ",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW)",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1970,
+        "employees": null,
+        "notes": "One of the longest continuously operating SX/EW plants in the world (since 1970). Bagdad 2X expansion under study to double mine production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.7071,
+          32.834
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Safford/Lone Star SX/EW",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "sxew_refinery",
+        "city": "Safford",
+        "state": "AZ",
+        "capacity_kt": 91,
+        "capacity_notes": "~200M lbs/yr; expansion to 300M lbs target",
+        "products": "copper cathode (SX/EW)",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Includes Lone Star mine (began 2020). Expansion projects underway to increase to 300M lbs/yr."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.0897,
+          31.8743
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Sierrita SX/EW",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "sxew_refinery",
+        "city": "Green Valley",
+        "state": "AZ",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW), molybdenum concentrate",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Open-pit copper-moly mine south of Tucson."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.3422,
+          32.7307
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Tyrone SX/EW",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "sxew_refinery",
+        "city": "Silver City",
+        "state": "NM",
+        "capacity_kt": 45,
+        "capacity_notes": "SX/EW max capacity ~100M lbs/yr",
+        "products": "copper cathode (SX/EW)",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Open-pit porphyry copper mine. SX/EW only \u2014 no concentrator or smelter."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.1358,
+          32.7001
+        ]
+      },
+      "properties": {
+        "name": "Freeport-McMoRan Chino/Santa Rita SX/EW",
+        "company": "Freeport-McMoRan Inc.",
+        "facility_types": "sxew_refinery",
+        "city": "Hurley",
+        "state": "NM",
+        "capacity_kt": 35,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW), molybdenum",
+        "markets": "",
+        "feedstock": "pregnant leach solution + concentrator",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Historic Chino mine (Santa Rita). Open-pit. Concentrator + SX/EW."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9118,
+          33.0541
+        ]
+      },
+      "properties": {
+        "name": "ASARCO Ray SX/EW",
+        "company": "ASARCO LLC (Grupo Mexico)",
+        "facility_types": "sxew_refinery",
+        "city": "Kearny",
+        "state": "AZ",
+        "capacity_kt": 60,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW), copper concentrate",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Large open-pit copper mine with SX/EW + concentrator. Concentrate shipped to third-party smelters."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.0098,
+          31.9276
+        ]
+      },
+      "properties": {
+        "name": "ASARCO Mission SX/EW",
+        "company": "ASARCO LLC (Grupo Mexico)",
+        "facility_types": "sxew_refinery",
+        "city": "Sahuarita",
+        "state": "AZ",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW), copper concentrate",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Open-pit porphyry copper mine south of Tucson. Concentrator + SX/EW."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.4741,
+          32.3756
+        ]
+      },
+      "properties": {
+        "name": "ASARCO Silver Bell SX/EW",
+        "company": "ASARCO LLC (Grupo Mexico)",
+        "facility_types": "sxew_refinery",
+        "city": "Marana",
+        "state": "AZ",
+        "capacity_kt": 15,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW)",
+        "markets": "",
+        "feedstock": "pregnant leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Oxide copper leaching operation NW of Tucson."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.975,
+          33.425
+        ]
+      },
+      "properties": {
+        "name": "Capstone Pinto Valley SX/EW",
+        "company": "Capstone Copper Corp.",
+        "facility_types": "sxew_refinery",
+        "city": "Miami",
+        "state": "AZ",
+        "capacity_kt": 10,
+        "capacity_notes": "",
+        "products": "copper cathode (SX/EW), copper concentrate",
+        "markets": "",
+        "feedstock": "pregnant leach solution + concentrator",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Open-pit copper mine. Concentrator + small SX/EW. Formerly BHP."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.8225,
+          32.284
+        ]
+      },
+      "properties": {
+        "name": "Excelsior Mining Gunnison SX/EW",
+        "company": "Excelsior Mining Corp.",
+        "facility_types": "sxew_refinery",
+        "city": "Willcox",
+        "state": "AZ",
+        "capacity_kt": 6,
+        "capacity_notes": "Phase 1: 6kt; permitted for 125M lbs/yr",
+        "products": "copper cathode (SX/EW)",
+        "markets": "",
+        "feedstock": "in-situ leach solution",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "reduced",
+        "startup_year": null,
+        "employees": null,
+        "notes": "In-situ copper recovery (ISR). Innovative acid injection into oxide copper zone. Ramp-up delayed. Permitted capacity 125M lbs/yr."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.57,
+          46.755
+        ]
+      },
+      "properties": {
+        "name": "Highland Copper Copperwood",
+        "company": "Highland Copper Company",
+        "facility_types": "sxew_refinery",
+        "city": "White Pine",
+        "state": "MI",
+        "capacity_kt": 3,
+        "capacity_notes": "",
+        "products": "copper concentrate, cathode",
+        "markets": "",
+        "feedstock": "native copper ore",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "construction",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Michigan's Upper Peninsula copper district. Underground mine + flotation. Permitting stage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.0105,
+          33.4735
+        ]
+      },
+      "properties": {
+        "name": "Aurubis Richmond (Augusta)",
+        "company": "Aurubis AG",
+        "facility_types": "secondary_smelter",
+        "city": "Augusta",
+        "state": "GA",
+        "capacity_kt": 180,
+        "capacity_notes": "180kt/yr complex recycling materials \u2192 70kt blister copper",
+        "products": "blister copper (shipped to Europe for refining), precious metals",
+        "markets": "electronics recycling, battery recycling, e-waste",
+        "feedstock": "PCBs, copper cables, e-scrap, complex recycling materials",
+        "port_adjacent": true,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2024,
+        "employees": 230,
+        "notes": "First large secondary smelter for multimetal recycling in US. $800M total investment. Ribbon-cutting Sep 2024. 2 recycling modules. Processes circuit boards, cables, e-scrap. Blister copper refined at Aurubis European sites. Module 2 online 2026."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.0766,
+          33.5749
+        ]
+      },
+      "properties": {
+        "name": "Southwire Secondary Smelter",
+        "company": "Southwire Company LLC",
+        "facility_types": "secondary_smelter|secondary_refinery",
+        "city": "Carrollton",
+        "state": "GA",
+        "capacity_kt": 50,
+        "capacity_notes": "Fire refining of high-grade scrap to supplement cathode purchases",
+        "products": "fire-refined copper (for own rod mill)",
+        "markets": "",
+        "feedstock": "high-grade copper scrap (#1 bare bright)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Integrated with Southwire's rod mill. Produces fire-refined copper from scrap to supplement purchased cathode."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.7849,
+          33.0061
+        ]
+      },
+      "properties": {
+        "name": "ASARCO Hayden Smelter",
+        "company": "ASARCO LLC (Grupo Mexico)",
+        "facility_types": "primary_smelter",
+        "city": "Hayden",
+        "state": "AZ",
+        "capacity_kt": 360,
+        "capacity_notes": "Flash smelter ~360kt anode; idled since Oct 2019",
+        "products": "copper anode (was shipped to Amarillo refinery)",
+        "markets": "",
+        "feedstock": "concentrate (ASARCO AZ mines)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "idled",
+        "startup_year": 1912,
+        "employees": null,
+        "notes": "Flash smelting furnace. Idled October 2019 alongside Amarillo refinery. Grupo Mexico ownership. No announced restart. Was the second primary smelter in US before shutdown."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.0766,
+          33.5804
+        ]
+      },
+      "properties": {
+        "name": "Southwire Carrollton Copper Rod Mill",
+        "company": "Southwire Company LLC",
+        "facility_types": "wire_rod_mill|wire_cable_mfg",
+        "city": "Carrollton",
+        "state": "GA",
+        "capacity_kt": 380,
+        "capacity_notes": "380kt+/yr rod; world's largest SCR copper rod mill; new SCR-9000S online ~2023",
+        "products": "ETP copper rod (8, 12.7, 15.6, 19mm dia), wire & cable",
+        "markets": "building wire, utility, industrial, data centers, military",
+        "feedstock": "copper cathode (LME Grade A) + up to 20% high-grade scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1981,
+        "employees": 9400,
+        "notes": "LARGEST CATHODE CONSUMER IN US. Southwire is #1 US wire & cable producer. SCR-9000S (Primetals) replaced 40yr old system. 54 tph capacity. Cathode sourced domestically (Freeport, Kennecott) + imports (Chile, Peru). 60+ manufacturing facilities total. HQ and primary rod mill in Carrollton. 50% of world's copper rod passes through SCR systems."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6698,
+          33.2148
+        ]
+      },
+      "properties": {
+        "name": "Encore Wire / Prysmian McKinney Rod Mill",
+        "company": "Prysmian Group (Encore Wire)",
+        "facility_types": "wire_rod_mill|wire_cable_mfg",
+        "city": "McKinney",
+        "state": "TX",
+        "capacity_kt": 200,
+        "capacity_notes": "Integrated rod mill on 460-acre campus; largest buyer of copper scrap in US (as single site)",
+        "products": "copper rod, NM-B cable, THHN, armored cable, UF-B, MV cable",
+        "markets": "residential, commercial, industrial building wire",
+        "feedstock": "copper cathode (mostly from AZ), copper scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1989,
+        "employees": 1600,
+        "notes": "Acquired by Prysmian Jul 2024 for $290/share. 3.5M sq ft campus. $500M Prysmian expansion over 4yr including new 650k sq ft medium voltage cable plant. Vertically integrated: rod mill + wire drawing + cable making + distribution. Cathode primarily sourced domestically from Arizona."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1442,
+          40.6843
+        ]
+      },
+      "properties": {
+        "name": "AmRod Port Newark Rod Mill",
+        "company": "AmRod Corporation",
+        "facility_types": "wire_rod_mill",
+        "city": "Newark",
+        "state": "NJ",
+        "capacity_kt": 120,
+        "capacity_notes": "Major independent rod producer",
+        "products": "ETP copper rod (all gauges)",
+        "markets": "wire drawing, communications, magnet wire, building wire",
+        "feedstock": "copper cathode (imported via Port Newark)",
+        "port_adjacent": true,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Leading independent copper rod producer. Port Newark location ideal for imported cathode. Rail, truck, and sea access. Hedging and risk management services. Datamyne top HS 7403 importer."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.0139,
+          41.0709
+        ]
+      },
+      "properties": {
+        "name": "SDI LaFarga Copperworks",
+        "company": "SDI LaFarga (Steel Dynamics / LaFarga Group JV)",
+        "facility_types": "wire_rod_mill|secondary_refinery",
+        "city": "New Haven",
+        "state": "IN",
+        "capacity_kt": 213,
+        "capacity_notes": "Shaft furnace 213kt/yr (470M lbs); refining furnace 113kt/yr (250M lbs) in conjunction",
+        "products": "FRHC copper rod (Advantage\u2122), ETP copper rod (Elemental\u2122), wire, can welding wire",
+        "markets": "building wire, magnet wire, telecom, automotive, aerospace, data",
+        "feedstock": "100% reclaimed copper scrap (FRHC line); cathode + bare bright (ETP line since 2020)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 2010,
+        "employees": null,
+        "notes": "JV of Steel Dynamics + LaFarga Group (Spain). Primarily scrap-based but added cathode-fed ETP rod (Elemental\u2122) in Sep 2020 with new shaft furnace. Proprietary Q-Select sorting for scrap. 1B+ lbs copper scrap diverted from landfill since inception."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9353,
+          34.4437
+        ]
+      },
+      "properties": {
+        "name": "Cerro Wire Hartselle Rod Mill",
+        "company": "Cerro Wire LLC (Marmon/Berkshire Hathaway)",
+        "facility_types": "wire_rod_mill|wire_cable_mfg",
+        "city": "Hartselle",
+        "state": "AL",
+        "capacity_kt": 80,
+        "capacity_notes": "",
+        "products": "copper rod, building wire, THHN, NM-B, UF-B",
+        "markets": "residential, commercial building wire",
+        "feedstock": "copper cathode, scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Marmon Group (Berkshire Hathaway). Integrated rod mill + wire & cable manufacturing."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.1394,
+          41.0793
+        ]
+      },
+      "properties": {
+        "name": "Rea Magnet Wire Fort Wayne Rod Mill",
+        "company": "Rea Magnet Wire (Essex Furukawa)",
+        "facility_types": "wire_rod_mill",
+        "city": "Fort Wayne",
+        "state": "IN",
+        "capacity_kt": 60,
+        "capacity_notes": "",
+        "products": "copper rod, magnet wire",
+        "markets": "motors, transformers, magnetics, EV",
+        "feedstock": "copper cathode",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Magnet wire producer. Essex Furukawa is world's largest MW producer. Rod mill feeds downstream magnet wire drawing."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5878,
+          33.649
+        ]
+      },
+      "properties": {
+        "name": "Southwire Heflin Wire & Cable",
+        "company": "Southwire Company LLC",
+        "facility_types": "wire_cable_mfg",
+        "city": "Heflin",
+        "state": "AL",
+        "capacity_kt": null,
+        "capacity_notes": "",
+        "products": "wire and cable",
+        "markets": "building wire, utility",
+        "feedstock": "copper rod (from Carrollton)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Major wire & cable manufacturing expansion announced. Rod supplied from Carrollton rod mill."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1001,
+          38.8861
+        ]
+      },
+      "properties": {
+        "name": "Wieland Rolled Products East Alton (fka Olin Brass)",
+        "company": "Wieland Group (Germany)",
+        "facility_types": "brass_mill",
+        "city": "East Alton",
+        "state": "IL",
+        "capacity_kt": 200,
+        "capacity_notes": "1M+ lbs finished product per working day; 60 copper alloys",
+        "products": "copper alloy strip, sheet, foil, welded tube",
+        "markets": "munitions, automotive, coinage, electronics, construction",
+        "feedstock": "copper cathode, copper scrap, zinc, tin, other alloying metals",
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1916,
+        "employees": null,
+        "notes": "LARGEST BRASS MILL IN NORTH AMERICA. Formerly Olin Brass, acquired by Wieland Group (Germany) Jul 2019. Founded by Franklin Olin (Western Cartridge). Integrated casting (horizontal DC + vertical DC), hot/cold rolling, annealing, finishing. Produces 60 distinct copper alloys. Downstream ops: Wieland Metal Services (E. Longmeadow MA), Wieland Fabricated Products (stamping), Fineweld Tube Products."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5051,
+          42.0615
+        ]
+      },
+      "properties": {
+        "name": "Wieland Metal Services (Diversified Metals)",
+        "company": "Wieland Group",
+        "facility_types": "brass_mill",
+        "city": "East Longmeadow",
+        "state": "MA",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "slit strip, specialty processed copper alloy",
+        "markets": "electronics, munitions, automotive",
+        "feedstock": "strip from East Alton",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Acquired by Wieland Nov 2018 (formerly Diversified Metals Inc.). Service center / re-roller. Value-added processing of East Alton mill products."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8784,
+          42.8864
+        ]
+      },
+      "properties": {
+        "name": "Aurubis Buffalo",
+        "company": "Aurubis AG",
+        "facility_types": "brass_mill",
+        "city": "Buffalo",
+        "state": "NY",
+        "capacity_kt": 100,
+        "capacity_notes": "Rod, cake, specialty shapes",
+        "products": "copper rod, cake, billet, custom continuous cast shapes",
+        "markets": "electrical, industrial, building products",
+        "feedstock": "copper cathode, copper scrap",
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": true,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Aurubis North America operations (formerly Luvata). Continuous casting of copper rod, cake, and specialty shapes. Great Lakes water access."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.4246,
+          42.9709
+        ]
+      },
+      "properties": {
+        "name": "Mueller Brass Port Huron",
+        "company": "Mueller Industries Inc.",
+        "facility_types": "brass_mill",
+        "city": "Port Huron",
+        "state": "MI",
+        "capacity_kt": 60,
+        "capacity_notes": "",
+        "products": "copper alloy rod, bar, forgings, extrusions",
+        "markets": "plumbing fittings, OEM, industrial",
+        "feedstock": "copper cathode, brass scrap, zinc",
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1917,
+        "employees": null,
+        "notes": "Original Mueller Metals Company (1917). Brass rod and bar production. Rod mill modernized 1971. Now serves OEM/industrial segment."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6465,
+          35.5641
+        ]
+      },
+      "properties": {
+        "name": "Mueller Covington Fittings",
+        "company": "Mueller Industries Inc.",
+        "facility_types": "brass_mill",
+        "city": "Covington",
+        "state": "TN",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "copper fittings, wrot copper elbows, tees, adapters",
+        "markets": "plumbing, construction",
+        "feedstock": "copper alloy rod/bar",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Major copper fittings plant. 1,500+ SKUs. Serves plumbing wholesale and building materials retail."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1818,
+          38.5879
+        ]
+      },
+      "properties": {
+        "name": "Cerro Copper Products (Marmon/BH)",
+        "company": "Cerro Flow Products LLC (Marmon/Berkshire Hathaway)",
+        "facility_types": "brass_mill|tube_mill",
+        "city": "Sauget",
+        "state": "IL",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "copper tube, copper alloy strip",
+        "markets": "plumbing, HVAC, industrial",
+        "feedstock": "copper cathode, fire-refined copper, scrap",
+        "port_adjacent": false,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Cerro Copper Products / Cerro Flow Products. Scrap-based fire refinery producing feed for tube mill. Part of Marmon Group (Berkshire Hathaway). Mississippi River adjacent."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6052,
+          41.5842
+        ]
+      },
+      "properties": {
+        "name": "Chase Brass & Copper (Wieland Chase)",
+        "company": "Wieland Group",
+        "facility_types": "brass_mill",
+        "city": "Montpelier",
+        "state": "OH",
+        "capacity_kt": 80,
+        "capacity_notes": "",
+        "products": "brass rod, bar, shapes (free-machining and specialty)",
+        "markets": "automotive, plumbing, ammunition, industrial",
+        "feedstock": "copper cathode, brass scrap, zinc",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Leading North American producer of brass rod. Wieland Group acquired Chase 2018. Continuous casting + extrusion + cold drawing. Significant automotive and ammunition markets."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.4154,
+          44.2619
+        ]
+      },
+      "properties": {
+        "name": "Luvata (Mitsubishi Materials) Appleton",
+        "company": "Mitsubishi Materials (Luvata)",
+        "facility_types": "brass_mill",
+        "city": "Appleton",
+        "state": "WI",
+        "capacity_kt": 25,
+        "capacity_notes": "",
+        "products": "copper bus bar, profiles, strip",
+        "markets": "electrical, bus bar, switchgear",
+        "feedstock": "copper cathode, OFC copper",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Specialty copper products. Formerly Luvata, now Mitsubishi Materials. High-purity oxygen-free copper (OFC) products."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.6656,
+          41.9779
+        ]
+      },
+      "properties": {
+        "name": "PMX Industries Cedar Rapids",
+        "company": "PMX Industries Inc. (Poongsan)",
+        "facility_types": "brass_mill",
+        "city": "Cedar Rapids",
+        "state": "IA",
+        "capacity_kt": 50,
+        "capacity_notes": "",
+        "products": "copper and copper alloy strip, sheet, plate",
+        "markets": "ammunition, electronics, automotive, coinage",
+        "feedstock": "copper cathode, copper scrap, zinc",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Korean-owned (Poongsan Corp). Integrated brass mill producing strip/sheet. Major US Mint supplier. Ammunition cartridge brass."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.419,
+          34.274
+        ]
+      },
+      "properties": {
+        "name": "Mueller Tube Fulton",
+        "company": "Mueller Industries Inc.",
+        "facility_types": "tube_mill",
+        "city": "Fulton",
+        "state": "MS",
+        "capacity_kt": 100,
+        "capacity_notes": "Largest Mueller tube facility in NA",
+        "products": "water tube (straight lengths, coils), ACR tube, line sets",
+        "markets": "plumbing, construction, HVAC/R",
+        "feedstock": "copper cathode, copper billet (cast on-site)",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": 1971,
+        "employees": 530,
+        "notes": "Mueller's largest NA copper tube facility. 6,300-ton extrusion press. Billet casting facility completed 1999. Multiple modernization phases. 'One of the most efficient tube mills in the United States.'"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7868,
+          35.2245
+        ]
+      },
+      "properties": {
+        "name": "Mueller Tube Wynne",
+        "company": "Mueller Industries Inc.",
+        "facility_types": "tube_mill",
+        "city": "Wynne",
+        "state": "AR",
+        "capacity_kt": 60,
+        "capacity_notes": "",
+        "products": "water tube, ACR tube",
+        "markets": "plumbing, HVAC/R",
+        "feedstock": "copper cathode, scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Acquired via Halstead Industries 1998. $24M modernization 2000. Tube for plumbing and air conditioning."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1322,
+          36.1034
+        ]
+      },
+      "properties": {
+        "name": "Mueller Tube Clinton",
+        "company": "Mueller Industries Inc.",
+        "facility_types": "tube_mill",
+        "city": "Clinton",
+        "state": "TN",
+        "capacity_kt": 40,
+        "capacity_notes": "",
+        "products": "water tube, ACR tube",
+        "markets": "plumbing, HVAC/R",
+        "feedstock": "copper cathode, scrap",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Acquired via Halstead Industries 1998. Plumbing and ACR tube production."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0461,
+          36.3462
+        ]
+      },
+      "properties": {
+        "name": "Cerro Flow Products Pine Hall",
+        "company": "Cerro Flow Products LLC (Marmon/BH)",
+        "facility_types": "tube_mill",
+        "city": "Pine Hall",
+        "state": "NC",
+        "capacity_kt": 30,
+        "capacity_notes": "",
+        "products": "copper tube, industrial tube",
+        "markets": "plumbing, industrial",
+        "feedstock": "copper cathode, fire-refined",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Cerro/Marmon tube manufacturing. Part of Berkshire Hathaway industrial group."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5387,
+          41.0534
+        ]
+      },
+      "properties": {
+        "name": "Engelhart CTP US (ECTP)",
+        "company": "Engelhart Commodities Trading Partners",
+        "facility_types": "trading",
+        "city": "Stamford",
+        "state": "CT",
+        "capacity_kt": null,
+        "capacity_notes": "",
+        "products": "copper cathode (trading/warehousing)",
+        "markets": "distribution to rod mills, brass mills",
+        "feedstock": "imported cathode",
+        "port_adjacent": true,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Major Panjiva consignee for HS 7403. Commodity trading house. Warehouses cathode for distribution to end-consumers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.54,
+          41.0534
+        ]
+      },
+      "properties": {
+        "name": "GT Commodities",
+        "company": "GT Commodities LLC",
+        "facility_types": "trading",
+        "city": "Stamford",
+        "state": "CT",
+        "capacity_kt": null,
+        "capacity_notes": "",
+        "products": "copper cathode (trading)",
+        "markets": "distribution",
+        "feedstock": "imported cathode",
+        "port_adjacent": false,
+        "water_access": false,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Panjiva top HS 7403 importer. Physical commodity trading."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      "properties": {
+        "name": "Geo. Wm. Rueff Inc.",
+        "company": "Geo. Wm. Rueff Inc.",
+        "facility_types": "trading",
+        "city": "New Orleans",
+        "state": "LA",
+        "capacity_kt": null,
+        "capacity_notes": "",
+        "products": "copper cathode, copper concentrates (trading/brokerage)",
+        "markets": "smelters, rod mills",
+        "feedstock": "imported cathode, concentrates",
+        "port_adjacent": true,
+        "water_access": true,
+        "barge_access": false,
+        "rail_served": true,
+        "status": "operating",
+        "startup_year": null,
+        "employees": null,
+        "notes": "Panjiva top HS 7403 importer. New Orleans-based metals broker/trader. Handles imported cathode through Port of New Orleans."
+      }
+    }
+  ]
+}

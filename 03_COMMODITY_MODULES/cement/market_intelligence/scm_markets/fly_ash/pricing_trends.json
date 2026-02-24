@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Fly Ash Pricing Trends and Market Dynamics",
+    "sources": ["Industry broker quotes", "Coal Combustion Products Partnership", "ACAA"],
+    "currency": "USD, Q1 2026 estimates"
+  },
+  "pricing_by_class": {
+    "class_f": {
+      "description": "Low-calcium fly ash from bituminous coal combustion",
+      "astm_standard": "ASTM C618 Class F",
+      "2020_avg_per_ton": 35,
+      "2021_avg_per_ton": 40,
+      "2022_avg_per_ton": 48,
+      "2023_avg_per_ton": 55,
+      "2024_avg_per_ton": 65,
+      "2025_est_per_ton": 75,
+      "trend": "Sharply rising due to coal plant retirements reducing fresh supply",
+      "supply_trend": "declining",
+      "primary_sources": "Appalachian coal plants, Midwest coal plants"
+    },
+    "class_c": {
+      "description": "High-calcium fly ash from sub-bituminous/lignite coal",
+      "astm_standard": "ASTM C618 Class C",
+      "2020_avg_per_ton": 30,
+      "2021_avg_per_ton": 33,
+      "2022_avg_per_ton": 38,
+      "2023_avg_per_ton": 42,
+      "2024_avg_per_ton": 48,
+      "2025_est_per_ton": 55,
+      "trend": "Rising but less steeply than Class F; Western coal plants declining more slowly",
+      "supply_trend": "declining",
+      "primary_sources": "Powder River Basin coal plants (WY, MT), Texas lignite plants"
+    }
+  },
+  "regional_pricing": [
+    {"region": "Northeast", "class_f_per_ton": 85, "class_c_per_ton": 70, "supply_status": "Critical shortage", "notes": "Most coal plants retired; reliance on harvested ash and imports"},
+    {"region": "Southeast", "class_f_per_ton": 70, "class_c_per_ton": 55, "supply_status": "Tight", "notes": "Major plants still operating in AL, GA, SC"},
+    {"region": "Midwest", "class_f_per_ton": 65, "class_c_per_ton": 50, "supply_status": "Moderate", "notes": "Mix of active and retired plants; harvesting growing"},
+    {"region": "Texas", "class_f_per_ton": 60, "class_c_per_ton": 45, "supply_status": "Adequate", "notes": "Lignite plants still operating; Class C dominant"},
+    {"region": "Mountain West", "class_f_per_ton": 55, "class_c_per_ton": 40, "supply_status": "Adequate", "notes": "PRB coal plants operating; Class C available"},
+    {"region": "Pacific Northwest", "class_f_per_ton": 80, "class_c_per_ton": 65, "supply_status": "Tight", "notes": "Limited local supply; relies on rail from Montana/Wyoming"}
+  ],
+  "supply_dynamics": {
+    "coal_plant_retirements": {
+      "plants_retired_since_2010": 210,
+      "capacity_retired_gw": 105,
+      "ash_production_lost_mtpa": 12,
+      "planned_retirements_2025_2030": 45,
+      "additional_ash_at_risk_mtpa": 4
+    },
+    "harvested_ash": {
+      "description": "Reclaimed fly ash from legacy coal ash impoundments and landfills",
+      "total_landfilled_inventory_mt": 1800,
+      "annual_harvesting_volume_mt": 8,
+      "key_operators": [
+        {"company": "Eco Material Technologies (EMT)", "annual_volume_mt": 4.5, "sites": 25, "notes": "Largest US harvester; PE-backed"},
+        {"company": "Boral/Headwaters", "annual_volume_mt": 1.5, "sites": 12},
+        {"company": "Salt River Materials", "annual_volume_mt": 1.0, "sites": 8},
+        {"company": "Various utilities (self-harvest)", "annual_volume_mt": 1.0}
+      ],
+      "quality_considerations": "Harvested ash may have variable LOI (loss on ignition); requires beneficiation for ASTM C618 compliance"
+    },
+    "imported_fly_ash": {
+      "volume_tpa": 500000,
+      "primary_sources": ["India", "South Korea", "Japan"],
+      "landed_cost_per_ton": [55, 75],
+      "notes": "Growing but limited by quality certification and logistics"
+    }
+  },
+  "cement_replacement_economics": {
+    "typical_replacement_rate_pct": [15, 35],
+    "max_replacement_rate_pct": 50,
+    "cement_price_per_ton": 150,
+    "fly_ash_price_per_ton": 65,
+    "savings_per_ton_concrete": [3, 8],
+    "co2_reduction_per_ton_replaced": 0.9,
+    "notes": "At 25% replacement, saves ~$5/ton concrete and 0.22 tons CO2 per ton concrete"
+  }
+}

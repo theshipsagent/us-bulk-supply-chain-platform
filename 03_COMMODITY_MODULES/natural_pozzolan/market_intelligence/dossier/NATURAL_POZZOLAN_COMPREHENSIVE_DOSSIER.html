@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NATURAL POZZOLANS COMPREHENSIVE DOSSIER - SCM Markets, LC3 &amp; Supply Outlook</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.4; font-size: 11pt; }
+h1 { color: #1a365d; border-bottom: 3px solid #1a365d; padding-bottom: 10px; font-size: 22pt; }
+h2 { color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 5px; margin-top: 25px; font-size: 16pt; }
+h3 { color: #2b6cb0; margin-top: 20px; font-size: 13pt; }
+h4 { color: #3182ce; margin-top: 15px; font-size: 11pt; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 10pt; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background-color: #2c5282; color: white; }
+tr:nth-child(even) { background-color: #f7fafc; }
+.highlight { background-color: #fefcbf; padding: 10px; border-left: 4px solid #d69e2e; margin: 15px 0; }
+.alert { background-color: #fed7d7; padding: 10px; border-left: 4px solid #c53030; margin: 15px 0; }
+.success { background-color: #c6f6d5; padding: 10px; border-left: 4px solid #276749; margin: 15px 0; }
+.info { background-color: #bee3f8; padding: 10px; border-left: 4px solid #2b6cb0; margin: 15px 0; }
+ul { margin: 10px 0; }
+li { margin: 5px 0; }
+.two-col { display: flex; gap: 20px; }
+.two-col > div { flex: 1; }
+.price-box { background: #edf2f7; padding: 15px; border-radius: 5px; text-align: center; margin: 10px; }
+.price-big { font-size: 24pt; font-weight: bold; color: #2c5282; }
+.section-divider { border-top: 3px double #1a365d; margin: 30px 0; }
+.chart-container { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; }
+.chart-title { font-weight: bold; color: #2c5282; margin-bottom: 15px; font-size: 12pt; text-align: center; }
+.chart-note { font-size: 9pt; color: #666; margin-top: 10px; text-align: center; font-style: italic; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px 0; }
+.stat-box { background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; }
+.stat-number { font-size: 28pt; font-weight: bold; }
+.stat-label { font-size: 10pt; opacity: 0.9; }
+.stat-change { font-size: 9pt; margin-top: 5px; }
+.stat-change.up { color: #68d391; }
+.stat-change.down { color: #fc8181; }
+@page {
+  size: letter;
+  margin: 0.25in 0.25in 0.5in 0.25in;
+  @bottom-center {
+    content: counter(page);
+    font-size: 9pt;
+    color: #718096;
+    font-family: Arial, sans-serif;
+  }
+}
+@page :first { @bottom-center { content: ''; } }
+@media print {
+  .cover-page {
+    page-break-after: always;
+    padding: 0.65in 0.55in;
+    box-sizing: border-box;
+    margin: 0.4in auto;
+  }
+  .toc-page { page-break-after: always; }
+  .highlight, .alert, .success, .info,
+  .exec-briefing, .price-box { break-inside: avoid; page-break-inside: avoid; }
+  h1, h2, h3, h4 { break-after: avoid; page-break-after: avoid; }
+  tr { break-inside: avoid; page-break-inside: avoid; }
+}
+.cover-page {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; padding: 50px 40px;
+  border: 3px solid #1a365d;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+}
+.cover-logo { font-size: 14pt; letter-spacing: 6px; color: #1a365d; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; }
+.cover-divider { width: 120px; height: 4px; background: #2c5282; margin: 15px auto; }
+.cover-title { font-size: 28pt; font-weight: bold; color: #1a365d; margin: 20px 0 8px; line-height: 1.2; }
+.cover-subtitle { font-size: 14pt; color: #4a5568; margin-bottom: 30px; }
+.cover-classification { display: inline-block; background: #2c5282; color: white; padding: 5px 28px; font-size: 10pt; letter-spacing: 3px; text-transform: uppercase; border-radius: 3px; margin-bottom: 30px; }
+.cover-addressee { font-size: 11pt; color: #2d3748; margin-bottom: 20px; line-height: 1.7; }
+.cover-addressee strong { color: #1a365d; }
+.cover-meta { font-size: 9pt; color: #718096; margin-top: 20px; line-height: 1.8; }
+.toc-page { padding: 30px 0; }
+.toc-page-title { font-size: 20pt; font-weight: bold; color: #1a365d; border-bottom: 3px solid #1a365d; padding-bottom: 10px; margin-bottom: 30px; }
+.toc-page ol { font-size: 11pt; color: #2d3748; line-height: 2.4; padding-left: 25px; }
+.toc-page ol li { border-bottom: 1px dotted #e2e8f0; padding: 3px 0; }
+.exec-briefing { background: #f7fafc; border: 2px solid #2c5282; border-radius: 8px; padding: 25px 30px; margin: 25px 0; }
+.exec-briefing h3 { color: #1a365d; margin-top: 0; font-size: 14pt; border-bottom: 1px solid #cbd5e0; padding-bottom: 8px; }
+.exec-briefing ul { margin: 8px 0; padding-left: 20px; }
+.exec-briefing li { margin: 6px 0; font-size: 10.5pt; }
+.exec-briefing .implication { color: #c53030; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+<div class="cover-logo">SESCO Cement Corporation</div>
+<div class="cover-divider"></div>
+<div class="cover-title">Natural Pozzolans &amp; LC3<br>Comprehensive Market Dossier</div>
+<div class="cover-subtitle">Volcanic Ash, Pumice, Calcined Clay &amp; Metakaolin<br>SCM Markets, LC3 Emergence &amp; Supply Outlook</div>
+<div class="cover-classification">Confidential &mdash; Internal Use</div>
+<div class="cover-addressee">
+Prepared for:<br>
+<strong>Mr. Rick Van Eyk</strong><br>
+Chief Executive Officer<br>
+SESCO Cement Corporation
+</div>
+<div class="cover-meta">
+Version 1.0 &nbsp;|&nbsp; February 18, 2026<br>
+Prepared by OceanDatum Market Intelligence<br>
+Part of the SCM Commodity Dossier Series
+</div>
+</div>
+
+<!-- TABLE OF CONTENTS PAGE -->
+<div class="toc-page">
+<div class="toc-page-title">Contents</div>
+<ol>
+<li>Types of Natural Pozzolans</li>
+<li>US Production</li>
+<li>Market Size &amp; Forecasts</li>
+<li>The SCM Supply Crisis &mdash; Why Natural Pozzolans Matter Now</li>
+<li>Pricing</li>
+<li>Imports &amp; Exports</li>
+<li>Major Producers &amp; Suppliers</li>
+<li>LC3 &mdash; Limestone Calcined Clay Cement</li>
+<li>End Uses &amp; Applications</li>
+<li>Physical Properties &amp; Specifications</li>
+<li>Carbon &amp; Sustainability</li>
+<li>Geographic Sources &amp; Logistics</li>
+<li>Regulatory &amp; Standards</li>
+<li>Supply Outlook &amp; Trends</li>
+<li>Quick Reference &mdash; Key Numbers</li>
+</ol>
+</div>
+
+<h1>NATURAL POZZOLANS COMPREHENSIVE DOSSIER</h1>
+<p><strong>Prepared:</strong> February 18, 2026 | <strong>Version:</strong> 1.0 | <strong>Focus:</strong> SCM Markets, LC3 Emergence &amp; Supply Outlook as Fly Ash/GGBFS Decline</p>
+
+<div class="highlight">
+<strong>EXECUTIVE SUMMARY:</strong> Natural pozzolans are emerging as the critical replacement SCM as both fly ash and GGBFS face structural supply declines. US natural pozzolan shipments to concrete reached 2.5 million tons in 2024 (NPA data), with capacity projected to reach 3.5&ndash;4.0 Mt by 2028. Unlike fly ash (tied to coal) and GGBFS (tied to blast furnaces), natural pozzolans are independent mineral resources with large identified US reserves (&gt;25 Mt pumice alone; Kirkland Mine 39 Mt). The DOE has invested $1.6 billion in cement decarbonization, with 3 of 6 funded projects targeting LC3 (Limestone Calcined Clay Cement) &mdash; which can cut CO2 by 40% using widely available low-grade clays. Fly ash prices have risen to $118/Mt (from $40&ndash;60 historically), making natural pozzolans at ~$115/Mt delivered increasingly cost-competitive. Major cement companies are moving: CRH/Ash Grove acquired Geofortis pozzolan operations (Sep 2024); Eco Material has &gt;4 Mt/yr SCM capacity across 9 plants. This is the growth sector of the SCM market.
+</div>
+
+<!-- KEY METRICS DASHBOARD -->
+<div class="stat-grid">
+<div class="stat-box">
+<div class="stat-number">2.5 Mt</div>
+<div class="stat-label">US Nat. Pozzolan Shipments (2024)</div>
+<div class="stat-change up">3.5-4.0 Mt capacity by 2028</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">$1.6B</div>
+<div class="stat-label">DOE Cement Decarb Investment</div>
+<div class="stat-change up">3 of 6 projects = LC3</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">~$115</div>
+<div class="stat-label">Nat. Pozzolan $/Mt Delivered</div>
+<div class="stat-change up">Now competitive with fly ash $118</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">40%</div>
+<div class="stat-label">LC3 CO2 Reduction vs OPC</div>
+<div class="stat-change up">Using low-grade clay + limestone</div>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- EXECUTIVE BRIEFING -->
+<div class="exec-briefing">
+<h3>Executive Briefing &mdash; Strategic Implications for SESCO Cement</h3>
+<p>Natural pozzolans represent the growth sector of the SCM market and a strategic diversification opportunity as both fly ash and GGBFS face structural supply declines. This briefing highlights the five most critical takeaways:</p>
+<ul>
+<li><strong>Natural pozzolans are the only growing domestic SCM.</strong> US shipments reached 2.5 Mt (2024) with capacity projected to reach 3.5&ndash;4.0 Mt by 2028. Unlike fly ash (declining with coal) and GGBFS (declining with blast furnaces), natural pozzolans are independent mineral resources with large US reserves and no industrial transition risk.</li>
+<li><strong>LC3 is the long-term cement game-changer.</strong> Limestone Calcined Clay Cement can cut CO2 by 40% using widely available low-grade clays. The DOE has invested $1.6B in cement decarbonization, with 3 of 6 funded projects targeting LC3. <span class="implication">SESCO opportunity:</span> Understanding LC3 technology positions SESCO ahead of the curve as US adoption scales from pilot to commercial (2026&ndash;2030).</li>
+<li><strong>Price parity with fly ash has arrived.</strong> Natural pozzolans at ~$115/Mt delivered are now competitive with fly ash at $118&ndash;123/Mt. As fly ash prices continue rising (supply declining), natural pozzolans become the clear cost-effective alternative. <span class="implication">SESCO opportunity:</span> Blending imported cement with domestic natural pozzolans creates a differentiated, cost-competitive, low-carbon product.</li>
+<li><strong>Major cement companies are moving.</strong> CRH/Ash Grove acquired Geofortis pozzolan operations (Sep 2024). Eco Material Technologies has &gt;4 Mt/yr SCM capacity across 9 plants. Boral, Hess Pumice, and CR Minerals are expanding. First-mover advantage in pozzolan sourcing is narrowing.</li>
+<li><strong>Import potential from volcanic regions.</strong> Greece, Italy, Turkey, and Central America have abundant volcanic pozzolan deposits. Turkey is already a SESCO cement supply partner. <span class="implication">SESCO opportunity:</span> Co-sourcing natural pozzolans with cement from Turkey or Mediterranean origins leverages existing trade lanes and vessel logistics.</li>
+</ul>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>1. TYPES OF NATURAL POZZOLANS</h2>
+
+<table>
+<tr><th>Type</th><th>Source / Origin</th><th>Key Properties</th><th>Primary Uses</th><th>US Occurrence</th></tr>
+<tr>
+<td><strong>Volcanic Ash / Tuff</strong></td>
+<td>Volcanic eruption fragments; tuff = consolidated ash</td>
+<td>Glassy, amorphous SiO2 52&ndash;66%; glass content 50&ndash;97%</td>
+<td>SCM in concrete (15&ndash;40% replacement)</td>
+<td>Pacific NW, ID, NM, AZ, NV</td>
+</tr>
+<tr>
+<td><strong>Pumice / Pumicite</strong></td>
+<td>Vesicular volcanic glass; pumicite = finer fraction</td>
+<td>Lightweight (&lt;35 lb/ft&sup3;); SiO2+Al2O3+Fe2O3 &gt;70%; high surface area</td>
+<td>SCM, lightweight aggregate, abrasives, horticulture</td>
+<td>ID (Hess), NM (CR Minerals), CA, OR, KS</td>
+</tr>
+<tr>
+<td><strong>Calcined Clay</strong></td>
+<td>Kaolinitic/illitic clay thermally activated at 600&ndash;850&deg;C</td>
+<td>Reactive amorphous aluminosilicate; low-grade clays (40% kaolin) viable</td>
+<td>LC3 cement (30% replacement); SCM in concrete</td>
+<td>GA, TN, SE kaolin belt</td>
+</tr>
+<tr>
+<td><strong>Metakaolin</strong></td>
+<td>High-purity kaolin clay calcined at 650&ndash;800&deg;C</td>
+<td>SiO2+Al2O3+Fe2O3 &gt;90%; avg particle 1.4 &micro;m; white; highly reactive</td>
+<td>High-performance concrete SCM (5&ndash;20% replacement); fiber cement</td>
+<td>GA (Burgess Pigment)</td>
+</tr>
+<tr>
+<td><strong>Diatomaceous Earth</strong></td>
+<td>Siliceous sedimentary rock (fossilized diatoms)</td>
+<td>80&ndash;90% void; BET 100&ndash;200 m&sup2;/g; controls ASR; higher water demand</td>
+<td>SCM (5&ndash;20%), filtration, insulation, absorbents</td>
+<td>CA, OR, NV, WA</td>
+</tr>
+<tr>
+<td><strong>Perlite</strong></td>
+<td>Volcanic glass with 2&ndash;5% water; expands 4&ndash;20x when heated</td>
+<td>Extremely lightweight; fire resistant; excellent insulator</td>
+<td>Building products (44%), horticulture (21%), fillers, filtration</td>
+<td>Western states; US market $370M (2024)</td>
+</tr>
+<tr>
+<td><strong>Calcined Shale</strong></td>
+<td>Shale/siltstone calcined in rotary kilns at 600&ndash;900&deg;C</td>
+<td>Activated pozzolanic reactivity after thermal treatment</td>
+<td>SCM in concrete; road stabilization</td>
+<td>TX, Midwest</td>
+</tr>
+<tr>
+<td><strong>Rice Husk Ash</strong></td>
+<td>Controlled combustion of rice husks (agricultural byproduct)</td>
+<td>SiO2 up to 80%; high activity when amorphous; ~20 Mt RHA/yr globally</td>
+<td>SCM (10&ndash;20% replacement); market $600M (2024) &rarr; $1.2B by 2033</td>
+<td>AR, CA, LA (rice belt)</td>
+</tr>
+<tr>
+<td><strong>Trass</strong></td>
+<td>Volcanic tuff from Rhine region (Germany/Netherlands)</td>
+<td>Traditional European pozzolan; centuries of proven use</td>
+<td>Cement, mortar, historic restoration</td>
+<td>N/A (European source)</td>
+</tr>
+</table>
+
+<div class="info">
+<strong>ASTM C618 CLASS N:</strong> All natural pozzolans used in concrete must meet ASTM C618 Class N requirements: SiO2+Al2O3+Fe2O3 &ge; 70%, Strength Activity Index &ge; 75% at 7 and 28 days, fineness &le; 34% retained on 45 &micro;m sieve, water requirement &le; 115% of control.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>2. US PRODUCTION</h2>
+
+<h3>2.1 Pumice &amp; Pumicite (USGS Data)</h3>
+<div class="chart-container">
+<div class="chart-title">US Pumice &amp; Pumicite Production (Thousand Tons) &mdash; 2019 to 2024</div>
+<svg width="100%" height="260" viewBox="0 0 800 260">
+  <defs>
+    <linearGradient id="barG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc8181;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Y-axis (0-700, height 200, base y=230) -->
+  <text x="30" y="35" font-size="10" fill="#666">700</text>
+  <text x="30" y="75" font-size="10" fill="#666">560</text>
+  <text x="30" y="115" font-size="10" fill="#666">420</text>
+  <text x="30" y="155" font-size="10" fill="#666">280</text>
+  <text x="30" y="195" font-size="10" fill="#666">140</text>
+  <text x="30" y="235" font-size="10" fill="#666">0</text>
+
+  <line x1="55" y1="30" x2="750" y2="30" stroke="#e2e8f0"/>
+  <line x1="55" y1="70" x2="750" y2="70" stroke="#e2e8f0"/>
+  <line x1="55" y1="110" x2="750" y2="110" stroke="#e2e8f0"/>
+  <line x1="55" y1="150" x2="750" y2="150" stroke="#e2e8f0"/>
+  <line x1="55" y1="190" x2="750" y2="190" stroke="#e2e8f0"/>
+  <line x1="55" y1="230" x2="750" y2="230" stroke="#666"/>
+
+  <!-- Bars: height = (val/700)*200 -->
+  <!-- 2019: 510 -->
+  <rect x="90" y="84" width="80" height="146" fill="url(#barG)" rx="3"/>
+  <text x="130" y="255" font-size="10" fill="#333" text-anchor="middle">2019</text>
+  <text x="130" y="77" font-size="10" fill="#2c5282" text-anchor="middle" font-weight="bold">510</text>
+
+  <!-- 2020: 578 -->
+  <rect x="200" y="65" width="80" height="165" fill="url(#barG)" rx="3"/>
+  <text x="240" y="255" font-size="10" fill="#333" text-anchor="middle">2020</text>
+  <text x="240" y="58" font-size="10" fill="#2c5282" text-anchor="middle" font-weight="bold">578</text>
+
+  <!-- 2021: 580 -->
+  <rect x="310" y="64" width="80" height="166" fill="url(#barG)" rx="3"/>
+  <text x="350" y="255" font-size="10" fill="#333" text-anchor="middle">2021</text>
+  <text x="350" y="57" font-size="10" fill="#2c5282" text-anchor="middle" font-weight="bold">580</text>
+
+  <!-- 2022: 295 -->
+  <rect x="420" y="146" width="80" height="84" fill="url(#barR)" rx="3"/>
+  <text x="460" y="255" font-size="10" fill="#333" text-anchor="middle">2022</text>
+  <text x="460" y="139" font-size="10" fill="#c53030" text-anchor="middle" font-weight="bold">295</text>
+
+  <!-- 2023: 438 -->
+  <rect x="530" y="105" width="80" height="125" fill="url(#barG)" rx="3"/>
+  <text x="570" y="255" font-size="10" fill="#333" text-anchor="middle">2023</text>
+  <text x="570" y="98" font-size="10" fill="#2c5282" text-anchor="middle" font-weight="bold">438</text>
+
+  <!-- 2024: 450 -->
+  <rect x="640" y="101" width="80" height="129" fill="url(#barG)" rx="3"/>
+  <text x="680" y="255" font-size="10" fill="#333" text-anchor="middle">2024E</text>
+  <text x="680" y="94" font-size="10" fill="#2c5282" text-anchor="middle" font-weight="bold">450</text>
+</svg>
+<div class="chart-note">Source: USGS Mineral Commodity Summaries 2024-2025. 10 operations in 5 states (CA, ID, KS, NM, OR). US identified pumice resources: &gt;25 million tons.</div>
+</div>
+
+<h3>2.2 Natural Pozzolan Shipments to Concrete Market (NPA Data)</h3>
+<table>
+<tr><th>Year</th><th>NPA Member Shipments (Mt)</th><th>Capacity Outlook</th></tr>
+<tr><td>2024</td><td>2.5</td><td>Growing rapidly</td></tr>
+<tr><td>2028 (projected)</td><td>&mdash;</td><td>3.5&ndash;4.0 Mt capacity</td></tr>
+</table>
+
+<h3>2.3 Key Mining Operations</h3>
+<table>
+<tr><th>Operation</th><th>Location</th><th>Operator</th><th>Reserves/Capacity</th><th>Status</th></tr>
+<tr><td>Hess Pumice Deposit</td><td>Malad City, ID</td><td>Hess Pumice Products</td><td>Purest commercial white pumice globally; 60+ yrs</td><td style="color:#276749;">Active</td></tr>
+<tr><td>CR Minerals</td><td>Santa Fe, NM</td><td>CR Minerals</td><td>~18% revenue share; vertically integrated</td><td style="color:#276749;">Active</td></tr>
+<tr><td>Kirkland Mine</td><td>Kirkland, AZ</td><td>Kirkland Mining / Eco Material</td><td>39 Mt reserves; 500K t/yr capacity; 40-yr life</td><td style="color:#276749;">Active (opened 2022)</td></tr>
+<tr><td>Geofortis/Ash Grove</td><td>Tooele, UT</td><td>CRH / Ash Grove</td><td>Acquired Sep 2024; approved in CA, CO, NV, UT</td><td style="color:#276749;">Active</td></tr>
+<tr><td>Hazen Pozzolan Project</td><td>Churchill Co., NV</td><td>Sunrise Resources</td><td>Glassy pumice; 9 km from UP rail siding; ASTM C618 compliant</td><td style="color:#ed8936;">Development</td></tr>
+<tr><td>Nevada Pozzolan</td><td>Nevada</td><td>Nevada Pozzolan Ltd</td><td>Volcanic tuff deposit up to 980 ft thick</td><td style="color:#ed8936;">Development</td></tr>
+<tr><td>PozzSource Deposits</td><td>Lassen Co., CA</td><td>PozzSource LLC (fka Geofortis)</td><td>R&amp;D lab in Reno; deposit development</td><td style="color:#ed8936;">Development</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>3. MARKET SIZE &amp; FORECASTS</h2>
+
+<h3>3.1 Natural Pozzolan Markets</h3>
+<table>
+<tr><th>Market Segment</th><th>2024 Value</th><th>Forecast</th><th>CAGR</th></tr>
+<tr><td>Global Pozzolan Market (all types)</td><td>$3.5&ndash;4.6 billion</td><td>$6.2B by 2032</td><td>7.1%</td></tr>
+<tr><td>Global Natural Pozzolan Market</td><td>$865M&ndash;$1.76B</td><td>$1.25&ndash;3.84B by 2031&ndash;33</td><td>5.5&ndash;9.5%</td></tr>
+<tr><td>Global Metakaolin Market</td><td>$151&ndash;809M</td><td>$210M&ndash;$1.07B by 2031&ndash;33</td><td>4.9&ndash;5.5%</td></tr>
+<tr><td>US Perlite Market</td><td>$370 million</td><td>$632M by 2033</td><td>6.1%</td></tr>
+<tr><td>Global Rice Husk Ash Market</td><td>$600 million</td><td>$1.2B by 2033</td><td>8.5%</td></tr>
+<tr><td>Global SCM Market (total)</td><td>$91.1 billion</td><td>$119.9B by 2033</td><td>3.1%</td></tr>
+<tr><td>McKinsey SCM Revenue Projection</td><td>$15&ndash;30 billion</td><td>$40&ndash;60B by 2035</td><td>&mdash;</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>4. THE SCM SUPPLY CRISIS &mdash; WHY NATURAL POZZOLANS MATTER NOW</h2>
+
+<div class="chart-container">
+<div class="chart-title">US SCM Supply Landscape &mdash; Diverging Trajectories</div>
+<svg width="100%" height="320" viewBox="0 0 800 320">
+  <!-- Grid -->
+  <line x1="80" y1="30" x2="750" y2="30" stroke="#e2e8f0"/>
+  <line x1="80" y1="85" x2="750" y2="85" stroke="#e2e8f0"/>
+  <line x1="80" y1="140" x2="750" y2="140" stroke="#e2e8f0"/>
+  <line x1="80" y1="195" x2="750" y2="195" stroke="#e2e8f0"/>
+  <line x1="80" y1="250" x2="750" y2="250" stroke="#666"/>
+
+  <!-- Y-axis -->
+  <text x="15" y="35" font-size="9" fill="#666">20 Mt</text>
+  <text x="15" y="90" font-size="9" fill="#666">15 Mt</text>
+  <text x="15" y="145" font-size="9" fill="#666">10 Mt</text>
+  <text x="15" y="200" font-size="9" fill="#666">5 Mt</text>
+  <text x="15" y="255" font-size="9" fill="#666">0</text>
+
+  <!-- X-axis years -->
+  <text x="120" y="272" font-size="10" fill="#333" text-anchor="middle">2020</text>
+  <text x="280" y="272" font-size="10" fill="#333" text-anchor="middle">2022</text>
+  <text x="440" y="272" font-size="10" fill="#333" text-anchor="middle">2024</text>
+  <text x="600" y="272" font-size="10" fill="#333" text-anchor="middle">2026E</text>
+  <text x="720" y="272" font-size="10" fill="#333" text-anchor="middle">2028E</text>
+
+  <!-- Fly Ash line (declining) - red/orange -->
+  <polyline points="120,85 280,96 440,107 600,129 720,140"
+            fill="none" stroke="#c53030" stroke-width="3"/>
+  <circle cx="120" cy="85" r="5" fill="#c53030"/>
+  <circle cx="280" cy="96" r="5" fill="#c53030"/>
+  <circle cx="440" cy="107" r="5" fill="#c53030"/>
+  <circle cx="600" cy="129" r="5" fill="#c53030"/>
+  <circle cx="720" cy="140" r="5" fill="#c53030"/>
+  <text x="130" y="78" font-size="9" fill="#c53030" font-weight="bold">15 Mt</text>
+  <text x="450" y="100" font-size="9" fill="#c53030" font-weight="bold">14.7</text>
+  <text x="730" y="133" font-size="9" fill="#c53030" font-weight="bold">~10</text>
+
+  <!-- GGBFS line (constrained/flat) - blue -->
+  <polyline points="120,195 280,184 440,173 600,184 720,184"
+            fill="none" stroke="#2c5282" stroke-width="3"/>
+  <circle cx="120" cy="195" r="5" fill="#2c5282"/>
+  <circle cx="280" cy="184" r="5" fill="#2c5282"/>
+  <circle cx="440" cy="173" r="5" fill="#2c5282"/>
+  <circle cx="600" cy="184" r="5" fill="#2c5282"/>
+  <circle cx="720" cy="184" r="5" fill="#2c5282"/>
+  <text x="130" y="210" font-size="9" fill="#2c5282">~5 Mt</text>
+  <text x="450" y="166" font-size="9" fill="#2c5282" font-weight="bold">~8</text>
+  <text x="730" y="198" font-size="9" fill="#2c5282">~6</text>
+
+  <!-- Natural Pozzolan line (growing) - green -->
+  <polyline points="120,239 280,234 440,222 600,206 720,195"
+            fill="none" stroke="#48bb78" stroke-width="3"/>
+  <circle cx="120" cy="239" r="5" fill="#48bb78"/>
+  <circle cx="280" cy="234" r="5" fill="#48bb78"/>
+  <circle cx="440" cy="222" r="5" fill="#48bb78"/>
+  <circle cx="600" cy="206" r="5" fill="#48bb78"/>
+  <circle cx="720" cy="195" r="5" fill="#48bb78"/>
+  <text x="130" y="252" font-size="9" fill="#48bb78">~1 Mt</text>
+  <text x="450" y="237" font-size="9" fill="#48bb78" font-weight="bold">2.5</text>
+  <text x="730" y="209" font-size="9" fill="#48bb78" font-weight="bold">3.5-4.0</text>
+
+  <!-- Legend -->
+  <line x1="200" y1="295" x2="240" y2="295" stroke="#c53030" stroke-width="3"/>
+  <text x="245" y="298" font-size="10" fill="#333">Fly Ash (declining &mdash; coal closures)</text>
+  <line x1="450" y1="295" x2="490" y2="295" stroke="#2c5282" stroke-width="3"/>
+  <text x="495" y="298" font-size="10" fill="#333">GGBFS (constrained &mdash; EAF shift)</text>
+  <line x1="200" y1="310" x2="240" y2="310" stroke="#48bb78" stroke-width="3"/>
+  <text x="245" y="313" font-size="10" fill="#333">Natural Pozzolans (growing &mdash; new mines, LC3)</text>
+</svg>
+<div class="chart-note">Conceptual projection based on ACAA, USGS, NPA data. Fly ash decline driven by coal plant closures; GGBFS constrained by BF-to-EAF transition; natural pozzolans growing from new mines and LC3 development.</div>
+</div>
+
+<h3>4.1 US SCM Consumption (2024)</h3>
+<table>
+<tr><th>SCM Type</th><th>2024 Volume (Mt)</th><th>Supply Trend</th><th>Price ($/Mt)</th><th>Supply Independence</th></tr>
+<tr><td><strong>Coal Fly Ash (live)</strong></td><td>14.7</td><td style="color:#c53030;">Declining (coal closures)</td><td>$118</td><td style="color:#c53030;">Tied to coal power</td></tr>
+<tr><td><strong>Slag Cement (GGBFS)</strong></td><td>~8.0</td><td style="color:#c53030;">Constrained (EAF shift)</td><td>$100&ndash;140+</td><td style="color:#c53030;">Tied to blast furnaces</td></tr>
+<tr><td><strong>Natural Pozzolans</strong></td><td>2.5</td><td style="color:#48bb78;">Growing rapidly</td><td>~$115</td><td style="color:#48bb78;">Independent mineral resource</td></tr>
+<tr><td><strong>Silica Fume</strong></td><td>&lt;1.0</td><td>Stable (niche)</td><td>$400&ndash;600+</td><td>Tied to silicon/ferrosilicon</td></tr>
+<tr style="font-weight:bold; background-color:#bee3f8;"><td>Total SCM to Concrete</td><td>&gt;20</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+</table>
+
+<div class="alert">
+<strong>DUAL SCM CRISIS + SOLUTION:</strong> US fly ash supply is declining because coal plants are closing (-64% coal consumption since 2007 peak). GGBFS supply is constrained because blast furnaces are being replaced by EAFs (~70% of US steelmaking). Combined, the two historically dominant SCMs face irreversible structural decline. Natural pozzolans are the only SCM category with <strong>expanding supply from independent mineral reserves</strong> &mdash; not dependent on any other industry's production decisions. This is why major cement companies (CRH, Eco Material, National Cement) are investing aggressively.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>5. PRICING</h2>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+<div class="price-box">
+<div class="price-big">$163</div>
+<div>Portland Cement (US, 2025)</div>
+<div style="color:#c53030; font-size:10pt;">5.4% CAGR (2020-25)</div>
+</div>
+<div class="price-box">
+<div class="price-big">$171</div>
+<div>Metakaolin (US, Q3 2025)</div>
+<div style="color:#666; font-size:10pt;">Premium calcined product</div>
+</div>
+<div class="price-box">
+<div class="price-big">$118</div>
+<div>Fly Ash (US, Q3 2025)</div>
+<div style="color:#c53030; font-size:10pt;">Up from $40-60 historical</div>
+</div>
+<div class="price-box">
+<div class="price-big">~$115</div>
+<div>Natural Pozzolan (delivered)</div>
+<div style="color:#48bb78; font-size:10pt;">Now competitive with fly ash</div>
+</div>
+<div class="price-box">
+<div class="price-big">~$42</div>
+<div>Pumice (FOB plant)</div>
+<div style="color:#666; font-size:10pt;">$19M / 450K tons</div>
+</div>
+</div>
+
+<h3>5.1 Price Dynamics</h3>
+<table>
+<tr><th>Material</th><th>2020 Price</th><th>2025 Price</th><th>Change</th><th>Driver</th></tr>
+<tr><td>Portland Cement</td><td>~$130/Mt</td><td>$163/Mt</td><td>+25%</td><td>Input costs, demand</td></tr>
+<tr><td>Fly Ash</td><td>~$40&ndash;60/Mt</td><td>$118/Mt</td><td>+100&ndash;195%</td><td>Supply scarcity (coal closures)</td></tr>
+<tr><td>Natural Pozzolan</td><td>~$90&ndash;100/Mt</td><td>~$115/Mt</td><td>+15&ndash;28%</td><td>Modest; supply expandable</td></tr>
+<tr><td>Metakaolin</td><td>~$140/Mt</td><td>$171/Mt</td><td>+22%</td><td>Calcination energy costs</td></tr>
+</table>
+
+<div class="success">
+<strong>PRICE CONVERGENCE:</strong> The critical shift is that fly ash has risen from $40&ndash;60/Mt to $118/Mt while natural pozzolans remain at ~$115/Mt. For the first time, natural pozzolans are <strong>cost-competitive with fly ash</strong> on a delivered basis. This price crossover is the fundamental driver of natural pozzolan market growth &mdash; and unlike fly ash, natural pozzolan supply can expand to meet demand.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>6. IMPORTS &amp; EXPORTS</h2>
+
+<h3>6.1 US Pumice Trade</h3>
+<table>
+<tr><th>Category</th><th>Volume (2024)</th><th>Key Sources</th><th>Notes</th></tr>
+<tr><td>Imports</td><td>~55,000 Mt</td><td>Greece (91%), Iceland (8%)</td><td>Crude pumice for eastern/Gulf Coast markets</td></tr>
+<tr><td>Exports</td><td>~12,500 Mt</td><td>Various</td><td>Processed pumice products</td></tr>
+<tr><td>Net Position</td><td>Net Importer</td><td>&mdash;</td><td>Imports serve markets far from Western US deposits</td></tr>
+</table>
+
+<h3>6.2 HTS Codes</h3>
+<table>
+<tr><th>HTS Code</th><th>Description</th><th>Relevance</th></tr>
+<tr><td>2513.10.0010</td><td>Pumice, crude or in irregular pieces</td><td>Primary import code for raw pumice</td></tr>
+<tr><td>2513.10.0080</td><td>Pumice, except crude or crushed</td><td>Processed pumice products</td></tr>
+<tr><td>2530.90</td><td>Other mineral substances NES</td><td>Some volcanic ash/pozzolans classified here</td></tr>
+</table>
+
+<div class="info">
+<strong>TRADE CONTEXT:</strong> Unlike fly ash and GGBFS (where imports are critical supply supplements), natural pozzolan trade volumes are small. The US has abundant domestic reserves (&gt;25 Mt pumice alone) concentrated in Western states. Greek pumice imports serve Eastern/Gulf markets where domestic sources are distant. The key supply chain challenge is <strong>West-to-East distribution</strong> rather than import dependency.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>7. MAJOR PRODUCERS &amp; SUPPLIERS</h2>
+
+<h3>7.1 Natural Pozzolan Producers</h3>
+<table>
+<tr><th>Company</th><th>Location</th><th>Product</th><th>Key Details</th></tr>
+<tr><td><strong>Hess Pumice Products</strong></td><td>Malad City, ID</td><td>HessPozz; processed pumice</td><td>Largest processed pumice producer globally; 60+ year history; purest white pumice deposit</td></tr>
+<tr><td><strong>CR Minerals</strong></td><td>Santa Fe, NM</td><td>Pumice products; oil &amp; gas applications</td><td>~18% revenue share; vertically integrated mining-processing-distribution</td></tr>
+<tr><td><strong>Eco Material Technologies</strong></td><td>National (45 states)</td><td>Fly ash, natural pozzolan, Green Cement</td><td>&gt;50% fly ash market share; 9 plants; &gt;4 Mt/yr SCM capacity; 4,000+ customer locations</td></tr>
+<tr><td><strong>Kirkland Mining / Eco Material</strong></td><td>Kirkland, AZ</td><td>Pumiceous tuff natural pozzolan</td><td>39 Mt reserves; 500K t/yr; 88 acres; 40-yr mine life; opened 2022</td></tr>
+<tr><td><strong>Ash Grove / CRH</strong></td><td>Tooele, UT</td><td>Natural pozzolan milling &amp; classifying</td><td>Acquired Geofortis ops Sep 2024; approved in CA, CO, NV, UT</td></tr>
+<tr><td><strong>St. Cloud Mining</strong></td><td>NM, AZ, CA, NV, OR</td><td>Zeolite &amp; volcanic ash</td><td>Largest characterized zeolite reserves in US; ASTM-qualified for pozzolanic cements</td></tr>
+<tr><td><strong>Sunrise Resources</strong></td><td>Churchill Co., NV</td><td>Hazen Pozzolan Project</td><td>Glassy pumice; near UP rail siding; ASTM C618 compliant; development stage</td></tr>
+<tr><td><strong>Nevada Pozzolan Ltd</strong></td><td>Nevada</td><td>Volcanic tuff pozzolan</td><td>Deposit up to 980 ft thick; development stage</td></tr>
+<tr><td><strong>Environmental Minerals Inc.</strong></td><td>Las Vegas, NV</td><td>ASTM C618 Class N pozzolan</td><td>Low-carbon concrete additives; also rare earth minerals</td></tr>
+</table>
+
+<h3>7.2 Metakaolin / Calcined Clay Producers</h3>
+<table>
+<tr><th>Company</th><th>Location</th><th>Product</th><th>Key Details</th></tr>
+<tr><td><strong>Burgess Pigment</strong></td><td>Sandersville, GA</td><td>OPTIPOZZ metakaolin</td><td>Avg particle 1.4 &micro;m; Class N pozzolan; SE kaolin belt</td></tr>
+<tr><td><strong>Advanced Cement Technologies</strong></td><td>&mdash;</td><td>PowerPozz High-Reactivity Metakaolin</td><td>High-performance concrete specialist since 1995</td></tr>
+<tr><td><strong>Imerys (fka BASF)</strong></td><td>Various</td><td>MetaMax metakaolin</td><td>Used in 432 Park Ave NYC; high-purity kaolin</td></tr>
+</table>
+
+<h3>7.3 Cement Companies Investing in Natural Pozzolans / LC3</h3>
+<table>
+<tr><th>Company</th><th>Project</th><th>Investment</th><th>Details</th></tr>
+<tr><td><strong>National Cement Co. of CA</strong></td><td>Lebec, CA &mdash; net-zero plant</td><td>Up to $500M (DOE)</td><td>LC3 + biomass + CCS; prevent 2 Mt CO2/yr</td></tr>
+<tr><td><strong>Roanoke Cement</strong></td><td>Troutville, VA &mdash; LC3 demo</td><td>Part of $1.6B DOE</td><td>83% carbon intensity reduction using widely available clays</td></tr>
+<tr><td><strong>Summit Materials</strong></td><td>LC3 demonstration</td><td>$215.6M (DOE potential)</td><td>Low-carbon calcined clay cement</td></tr>
+<tr><td><strong>CRH / Ash Grove</strong></td><td>Geofortis pozzolan acquisition</td><td>N/D</td><td>Acquired Sep 2024; secures natural pozzolan supply</td></tr>
+<tr><td><strong>CalPortland</strong></td><td>ADVANCEMENT eco-cement</td><td>N/D</td><td>Western US; eco-friendly cement products</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>8. LC3 &mdash; LIMESTONE CALCINED CLAY CEMENT</h2>
+
+<h3>8.1 Technology Overview</h3>
+<div class="chart-container">
+<div class="chart-title">LC3-50 Cement Composition vs Ordinary Portland Cement</div>
+<svg width="100%" height="200" viewBox="0 0 800 200">
+  <!-- OPC bar -->
+  <rect x="80" y="30" width="600" height="50" fill="#c53030" rx="5"/>
+  <text x="380" y="60" font-size="12" fill="white" text-anchor="middle" font-weight="bold">OPC: 95% Clinker + 5% Gypsum</text>
+  <text x="50" y="60" font-size="10" fill="#333" text-anchor="end">OPC</text>
+
+  <!-- LC3-50 bar (stacked) -->
+  <!-- Clinker 50% = 300px -->
+  <rect x="80" y="100" width="300" height="50" fill="#c53030" rx="5" opacity="0.7"/>
+  <text x="230" y="130" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Clinker 50%</text>
+
+  <!-- Calcined Clay 30% = 180px -->
+  <rect x="380" y="100" width="180" height="50" fill="#48bb78" rx="0"/>
+  <text x="470" y="130" font-size="11" fill="white" text-anchor="middle" font-weight="bold">Calc. Clay 30%</text>
+
+  <!-- Limestone 15% = 90px -->
+  <rect x="560" y="100" width="90" height="50" fill="#4299e1" rx="0"/>
+  <text x="605" y="130" font-size="10" fill="white" text-anchor="middle" font-weight="bold">ite 15%</text>
+
+  <!-- Gypsum 5% = 30px -->
+  <rect x="650" y="100" width="30" height="50" fill="#ed8936" rx="5"/>
+  <text x="665" y="130" font-size="8" fill="white" text-anchor="middle">5%</text>
+
+  <text x="50" y="130" font-size="10" fill="#333" text-anchor="end">LC3-50</text>
+
+  <!-- Arrow showing CO2 reduction -->
+  <text x="400" y="180" font-size="12" fill="#276749" text-anchor="middle" font-weight="bold">= 40% CO2 Reduction | 25% Cost Reduction</text>
+</svg>
+<div class="chart-note">LC3-50 replaces 45% of clinker with calcined clay (30%) + limestone (15%), achieving up to 40% CO2 reduction while maintaining performance. Uses low-grade clays (40% kaolinite sufficient).</div>
+</div>
+
+<h3>8.2 LC3 Key Facts</h3>
+<table>
+<tr><th>Attribute</th><th>Detail</th></tr>
+<tr><td>Clinker content</td><td>50% (vs 95% in OPC)</td></tr>
+<tr><td>CO2 reduction</td><td>Up to 40% vs OPC</td></tr>
+<tr><td>Cost reduction</td><td>Up to 25% vs OPC</td></tr>
+<tr><td>Clay requirement</td><td>Low-grade: 40% kaolinite sufficient; illite/montmorillonite also viable</td></tr>
+<tr><td>Plant modifications</td><td>Minimal &mdash; existing cement plant infrastructure compatible</td></tr>
+<tr><td>ACEEE impact estimate</td><td>Shifting half of US govt cement procurement to LC3 = <strong>7.3 Mt CO2/yr saved</strong></td></tr>
+</table>
+
+<h3>8.3 Global LC3 Adoption</h3>
+<table>
+<tr><th>Region</th><th>Status</th><th>Key Development</th></tr>
+<tr><td>India</td><td style="color:#276749; font-weight:bold;">Leading</td><td>BIS released IS 18189:2023 &mdash; exclusive LC3 standard</td></tr>
+<tr><td>Ghana</td><td style="color:#276749; font-weight:bold;">Leading</td><td>CBI Ghana/Accra = largest LC3 plant globally (FLSmidth calciner); 60&ndash;70% clinker substitution</td></tr>
+<tr><td>Latin America</td><td style="color:#48bb78;">Growing</td><td>Broad traction across region</td></tr>
+<tr><td>Europe</td><td style="color:#48bb78;">Growing</td><td>Emerging regulatory support</td></tr>
+<tr><td>US</td><td style="color:#ed8936;">Early</td><td>3 DOE-funded demos ($1.6B total); ASTM C595/C618 cover LC3 but limits need expansion</td></tr>
+</table>
+
+<h3>8.4 US LC3 Challenges</h3>
+<ul>
+<li>Insufficient calcination infrastructure (few plants have clay calciners)</li>
+<li>ASTM standards allow calcined clay to 40% and limestone to 15% &mdash; but not as combined LC3 formulation</li>
+<li>Industry pushing for max 70% for any combination of limestone, pozzolan, and slag</li>
+<li>Some state DOTs extending acceptance testing from 28 to 42 or 56 days</li>
+<li>Historical construction practices favor conventional OPC</li>
+<li>Limited domestic production and suppliers at commercial scale</li>
+</ul>
+
+<div class="highlight">
+<strong>LC3 OUTLOOK:</strong> LC3 is the most scalable long-term alternative to declining fly ash and GGBFS. Raw materials (low-grade clay, limestone) are globally abundant and cheaply available. The $1.6B DOE investment in 6 cement decarbonization projects (3 focused on LC3) signals strong federal commitment. But commercial-scale US deployment remains 3&ndash;5 years away. Natural volcanic pozzolans are the near-term bridge SCM while LC3 infrastructure is built.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>9. END USES &amp; APPLICATIONS</h2>
+
+<h3>9.1 Natural Pozzolan in Cement/Concrete</h3>
+<table>
+<tr><th>Application</th><th>Typical Replacement Rate</th><th>Notes</th></tr>
+<tr><td>Portland Pozzolan Cement (PPC / Type IP)</td><td>10&ndash;25% interground with clinker</td><td>ASTM C595 allows up to 40%</td></tr>
+<tr><td>Ready-mix concrete SCM</td><td>15&ndash;40%</td><td>General construction</td></tr>
+<tr><td>High-performance concrete (metakaolin)</td><td>5&ndash;20%</td><td>Bridges, marine, high-strength</td></tr>
+<tr><td>LC3 cement (calcined clay)</td><td>30% clay + 15% limestone</td><td>Combined 45% clinker replacement</td></tr>
+<tr><td>Mass concrete</td><td>20&ndash;35%</td><td>Lower heat of hydration</td></tr>
+<tr><td>Oil well cementing</td><td>Variable</td><td>Especially zeolite-based pozzolans</td></tr>
+<tr><td>Soil stabilization</td><td>Variable</td><td>Geotechnical applications</td></tr>
+</table>
+
+<h3>9.2 Pumice End Uses (Non-Cement)</h3>
+<table>
+<tr><th>Application</th><th>Description</th></tr>
+<tr><td>Lightweight aggregate</td><td>Concrete blocks, structural lightweight concrete</td></tr>
+<tr><td>Abrasives</td><td>Hand soaps, cleaning compounds, polishing</td></tr>
+<tr><td>Horticulture</td><td>Soil amendment, growing media</td></tr>
+<tr><td>Filtration</td><td>Water treatment filter media</td></tr>
+<tr><td>Laundry stone washing</td><td>Textile finishing</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>10. PHYSICAL PROPERTIES &amp; SPECIFICATIONS</h2>
+
+<h3>10.1 Chemical Composition (%)</h3>
+<table>
+<tr><th>Oxide</th><th>Volcanic Ash/Pumice</th><th>Metakaolin</th><th>Diatomaceous Earth</th><th>Fly Ash (Class F)</th><th>Portland Cement</th></tr>
+<tr><td>SiO2</td><td>52&ndash;75</td><td>50&ndash;55</td><td>70&ndash;90</td><td>45&ndash;55</td><td>19&ndash;23</td></tr>
+<tr><td>Al2O3</td><td>12&ndash;18</td><td>35&ndash;45</td><td>2&ndash;10</td><td>20&ndash;30</td><td>4&ndash;7</td></tr>
+<tr><td>Fe2O3</td><td>1&ndash;5</td><td>0.5&ndash;2.0</td><td>1&ndash;5</td><td>5&ndash;15</td><td>2&ndash;4</td></tr>
+<tr><td>CaO</td><td>1&ndash;5</td><td>0.1&ndash;0.3</td><td>0.5&ndash;2</td><td>2&ndash;8</td><td>60&ndash;67</td></tr>
+<tr style="font-weight:bold; background-color:#c6f6d5;"><td>SiO2+Al2O3+Fe2O3</td><td>&gt;70%</td><td>&gt;90%</td><td>&gt;75%</td><td>&gt;70%</td><td>&mdash;</td></tr>
+</table>
+
+<h3>10.2 ASTM C618 Class N Requirements</h3>
+<table>
+<tr><th>Property</th><th>Requirement</th><th>Typical Values</th></tr>
+<tr><td>SiO2 + Al2O3 + Fe2O3</td><td>&ge; 70.0%</td><td>75&ndash;95%</td></tr>
+<tr><td>SO3</td><td>&le; 4.0%</td><td>&lt;1%</td></tr>
+<tr><td>Moisture content</td><td>&le; 3.0%</td><td>&lt;1%</td></tr>
+<tr><td>Loss on ignition</td><td>&le; 10.0%</td><td>2&ndash;6%</td></tr>
+<tr><td>Fineness (retained 45 &micro;m)</td><td>&le; 34%</td><td>5&ndash;30%</td></tr>
+<tr><td>Strength Activity Index (7d)</td><td>&ge; 75%</td><td>75&ndash;90%</td></tr>
+<tr><td>Strength Activity Index (28d)</td><td>&ge; 75%</td><td>85&ndash;110%</td></tr>
+<tr><td>Water requirement</td><td>&le; 115% of control</td><td>95&ndash;115%</td></tr>
+<tr><td>Autoclave expansion</td><td>&le; 0.8%</td><td>&lt;0.1%</td></tr>
+</table>
+
+<h3>10.3 Replacement Rates by Pozzolan Type</h3>
+<table>
+<tr><th>Pozzolan Type</th><th>Typical Range</th><th>Optimal</th><th>Notes</th></tr>
+<tr><td>Pumice / volcanic ash</td><td>15&ndash;40%</td><td>20&ndash;30%</td><td>General concrete; most common</td></tr>
+<tr><td>Metakaolin</td><td>5&ndash;20%</td><td>10&ndash;15%</td><td>High-performance; small dosage, high reactivity</td></tr>
+<tr><td>Calcined clay (LC3)</td><td>20&ndash;40%</td><td>30%</td><td>Combined with 15% limestone</td></tr>
+<tr><td>Diatomaceous earth</td><td>5&ndash;20%</td><td>10&ndash;15%</td><td>Higher water demand</td></tr>
+<tr><td>Rice husk ash</td><td>10&ndash;20%</td><td>10&ndash;15%</td><td>Fineness dependent</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>11. CARBON &amp; SUSTAINABILITY</h2>
+
+<h3>11.1 Embodied CO2 Comparison</h3>
+<div class="chart-container">
+<div class="chart-title">Embodied CO2 by Cementitious Material (kg CO2 / tonne)</div>
+<svg width="100%" height="250" viewBox="0 0 800 250">
+  <!-- Portland Cement: 800-900 -->
+  <rect x="60" y="22" width="100" height="175" fill="#c53030" rx="5"/>
+  <text x="110" y="14" font-size="12" fill="#c53030" text-anchor="middle" font-weight="bold">800&ndash;900</text>
+  <text x="110" y="210" font-size="9" fill="#333" text-anchor="middle">OPC</text>
+
+  <!-- LC3-50: 480-540 -->
+  <rect x="185" y="90" width="100" height="107" fill="#ed8936" rx="5"/>
+  <text x="235" y="82" font-size="12" fill="#ed8936" text-anchor="middle" font-weight="bold">480&ndash;540</text>
+  <text x="235" y="210" font-size="9" fill="#333" text-anchor="middle">LC3-50</text>
+
+  <!-- Calcined Clay: 100-300 -->
+  <rect x="310" y="140" width="100" height="57" fill="#9f7aea" rx="5"/>
+  <text x="360" y="132" font-size="12" fill="#9f7aea" text-anchor="middle" font-weight="bold">100&ndash;300</text>
+  <text x="360" y="210" font-size="9" fill="#333" text-anchor="middle">Calcined Clay</text>
+
+  <!-- GGBFS: 35-67 -->
+  <rect x="435" y="185" width="100" height="12" fill="#2c5282" rx="3"/>
+  <text x="485" y="178" font-size="12" fill="#2c5282" text-anchor="middle" font-weight="bold">35&ndash;67</text>
+  <text x="485" y="210" font-size="9" fill="#333" text-anchor="middle">GGBFS</text>
+
+  <!-- Natural Pozzolan (mine+grind): 20-50 -->
+  <rect x="560" y="187" width="100" height="10" fill="#48bb78" rx="3"/>
+  <text x="610" y="180" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">20&ndash;50</text>
+  <text x="610" y="210" font-size="9" fill="#333" text-anchor="middle">Nat. Pozzolan</text>
+
+  <!-- Fly Ash: ~0-20 -->
+  <rect x="685" y="192" width="100" height="5" fill="#a0aec0" rx="2"/>
+  <text x="735" y="187" font-size="12" fill="#666" text-anchor="middle" font-weight="bold">~0&ndash;20</text>
+  <text x="735" y="210" font-size="9" fill="#333" text-anchor="middle">Fly Ash</text>
+
+  <text x="400" y="240" font-size="10" fill="#276749" text-anchor="middle" font-weight="bold">Natural pozzolans: 95&ndash;97% lower CO2 than OPC (mining + grinding only; no calcination)</text>
+</svg>
+<div class="chart-note">Sources: PCA, CSMA, SLR Consulting, various EPDs. Natural pozzolan CO2 is mining + crushing + grinding only. Calcined clay/metakaolin includes kiln energy. Fly ash and GGBFS allocated as industrial by-products.</div>
+</div>
+
+<h3>11.2 Regulatory Drivers</h3>
+<table>
+<tr><th>Regulation</th><th>Requirement</th><th>Natural Pozzolan Impact</th></tr>
+<tr><td><strong>GSA Buy Clean (IRA)</strong></td><td>EPDs required; GWP limits for concrete</td><td style="color:#48bb78; font-weight:bold;">Strong driver</td></tr>
+<tr><td><strong>LEED v5</strong></td><td>Mandatory embodied carbon prerequisite</td><td style="color:#48bb78; font-weight:bold;">Strong driver</td></tr>
+<tr><td><strong>Buy Clean CA/CO/NY/OR</strong></td><td>State EPD and carbon limits for public works</td><td style="color:#48bb78; font-weight:bold;">Growing driver</td></tr>
+<tr><td><strong>DOE Industrial Demos</strong></td><td>$1.6B for cement decarb; 3 LC3 projects</td><td style="color:#48bb78; font-weight:bold;">Direct investment</td></tr>
+<tr><td><strong>EPA EPD Program</strong></td><td>Funding for EPD creation; NPA/PCA EPD Upgrade (Jul 2024)</td><td style="color:#48bb78; font-weight:bold;">Enabler</td></tr>
+</table>
+
+<div class="success">
+<strong>DURABILITY BONUS:</strong> Portland Pozzolan Cement (PPC) with natural pozzolans can deliver up to <strong>5x longer life expectancy</strong> vs conventional OPC (350 years vs 70 years potential). The refined microstructure, reduced permeability, and resistance to sulfate attack and ASR make pozzolanic concrete ideal for infrastructure with 75&ndash;100+ year design lives &mdash; exactly what IIJA-funded projects require.
+</strong>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>12. GEOGRAPHIC SOURCES &amp; LOGISTICS</h2>
+
+<h3>12.1 US Volcanic Pozzolan Deposits</h3>
+<table>
+<tr><th>Region</th><th>States</th><th>Geology</th><th>Active Operations</th></tr>
+<tr><td>Snake River Plain</td><td>ID</td><td>Large pumice &amp; volcanic tuff deposits</td><td>Hess Pumice (Malad City)</td></tr>
+<tr><td>Rio Grande Rift</td><td>NM</td><td>Volcanic ash &amp; pumice near Santa Fe</td><td>CR Minerals, St. Cloud Mining</td></tr>
+<tr><td>Basin &amp; Range</td><td>NV, UT, AZ</td><td>Rhyolitic tuff; some deposits up to 980 ft thick</td><td>Kirkland Mining (AZ); Nevada Pozzolan; Ash Grove (UT); Sunrise Resources (NV)</td></tr>
+<tr><td>Cascade Range</td><td>OR, WA, CA</td><td>Extensive volcanic ash from Mt. Mazama eruption</td><td>Active pumice mining in OR; PozzSource (CA)</td></tr>
+<tr><td>Great Plains</td><td>KS</td><td>Historic Pearlette ash beds from NV/UT sources</td><td>Active mining</td></tr>
+<tr><td>SE Kaolin Belt</td><td>GA, SC, NC, TN</td><td>Kaolinite deposits for metakaolin/calcined clay</td><td>Burgess Pigment (GA)</td></tr>
+</table>
+
+<h3>12.2 Supply Chain &amp; Logistics</h3>
+<table>
+<tr><th>Stage</th><th>Process</th><th>Notes</th></tr>
+<tr><td>Mining</td><td>Shallow open-pit; low stripping ratios; minimal blasting</td><td>Soft material; 40-yr mine lives typical</td></tr>
+<tr><td>Drying</td><td>Remove hygroscopic moisture</td><td>Required for effective grinding</td></tr>
+<tr><td>Grinding/Classifying</td><td>Ground to 6&ndash;11 &micro;m mean particle size</td><td>Finer = higher reactivity; at 6 &micro;m can replace 40% cement</td></tr>
+<tr><td>Quality Testing</td><td>ASTM C618 Class N compliance</td><td>SAI, fineness, chemistry verified</td></tr>
+<tr><td>Distribution &mdash; Truck</td><td>Pneumatic bulk tankers</td><td>Primary mode; pumice is lightweight, needs high-cube trailers</td></tr>
+<tr><td>Distribution &mdash; Rail</td><td>Covered hopper cars</td><td>Key for long-distance; Hazen NV project near UP rail siding</td></tr>
+<tr><td>Storage</td><td>Enclosed silos (dry storage required)</td><td>Similar to cement/fly ash handling; lower bulk density = more volume needed</td></tr>
+</table>
+
+<div class="alert">
+<strong>GEOGRAPHIC CHALLENGE:</strong> Natural pozzolan deposits are concentrated in the <strong>Western US</strong> (ID, NM, AZ, NV, OR, UT, CA), while the largest concrete markets are in the <strong>East and South</strong> (TX, FL, GA, OH, PA, NY). Rail is critical for bridging this gap. Greek pumice imports serve eastern/Gulf Coast markets where domestic Western pozzolans face high distribution costs. The West-to-East logistics cost is the primary constraint on natural pozzolan market growth.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>13. REGULATORY &amp; STANDARDS</h2>
+
+<h3>13.1 Key Standards</h3>
+<table>
+<tr><th>Standard</th><th>Scope</th><th>Key Provision</th></tr>
+<tr><td><strong>ASTM C618-25a</strong></td><td>Coal Ash &amp; Natural Pozzolans</td><td>Class N: natural pozzolans; SiO2+Al2O3+Fe2O3 &ge;70%; SAI &ge;75%</td></tr>
+<tr><td><strong>ASTM C595/C595M-24</strong></td><td>Blended Hydraulic Cements</td><td>Type IP: up to 40% pozzolan; Type IT: ternary blends</td></tr>
+<tr><td><strong>ASTM C1157</strong></td><td>Performance Hydraulic Cement</td><td>Any SCM proportion if performance criteria met</td></tr>
+<tr><td><strong>ASTM C1240</strong></td><td>Silica Fume</td><td>Max 10% of cementitious; pozzolans max 25%</td></tr>
+<tr><td><strong>ASTM C1697</strong></td><td>Blended SCMs</td><td>Covers SCM combinations</td></tr>
+<tr><td><strong>ASTM C1945</strong></td><td>Natural Pozzolan Grade</td><td>Newer standard for NPA-grade products</td></tr>
+</table>
+
+<h3>13.2 State DOT Acceptance</h3>
+<table>
+<tr><th>State</th><th>Specification</th><th>Key Provision</th></tr>
+<tr><td>Texas (TxDOT)</td><td>DMS-4635</td><td>Comprehensive nat. pozzolan spec; CCRL lab inspection; approved materials list</td></tr>
+<tr><td>New York</td><td>Section 501</td><td>All classes except F allow pozzolan; up to 20% substitution</td></tr>
+<tr><td>Washington</td><td>M 41-10 Div. 9</td><td>Class N natural pozzolan: max 35% in concrete</td></tr>
+<tr><td>California (Caltrans)</td><td>Auth. Materials List</td><td>NP200C authorized for concrete use</td></tr>
+<tr><td>Ohio DOT</td><td>CMS 499</td><td>NP100W on Qualified Products List</td></tr>
+<tr><td>Wisconsin</td><td>2025 Std Specs</td><td>Natural pozzolan recognized as SCM</td></tr>
+<tr><td>Florida DOT</td><td>Proposed changes</td><td>Identifying natural pozzolan as SCM; reflecting ASTM changes</td></tr>
+<tr><td>Minnesota DOT</td><td>NRRA Rigid Team</td><td>Reducing cement content with pozzolanic materials research</td></tr>
+<tr><td>CO, NV, UT</td><td>Various</td><td>Geofortis/Ash Grove product approved</td></tr>
+</table>
+
+<div class="info">
+<strong>EXTENDED TESTING:</strong> Multiple state DOTs are extending acceptance testing from 28 days to <strong>42 or 56 days</strong> to accommodate the slower pozzolanic reaction of natural pozzolans. This is critical: natural pozzolans develop strength more slowly than OPC but achieve equal or superior long-term strength and durability.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>14. SUPPLY OUTLOOK &amp; TRENDS</h2>
+
+<div class="chart-container">
+<div class="chart-title">Natural Pozzolans &mdash; 5-Year Outlook (2025&ndash;2030)</div>
+<table style="margin:0;">
+<tr>
+<th style="width:22%;">Factor</th>
+<th style="width:38%;">Trend</th>
+<th style="width:20%;">Impact on Supply</th>
+<th style="width:20%;">Impact on Price</th>
+</tr>
+<tr>
+<td><strong>Fly Ash Decline</strong></td>
+<td>Coal closures; CCP 66.7 &rarr; 63.6 Mt (2023&ndash;24); no new plants</td>
+<td style="color:#48bb78; font-weight:bold;">DEMAND SHIFT to nat. pozz</td>
+<td style="color:#c53030; font-weight:bold;">UP (fly ash scarcity)</td>
+</tr>
+<tr>
+<td><strong>GGBFS Constraint</strong></td>
+<td>EAF shift (70%); BF closures; 22% of cement producers report shortages</td>
+<td style="color:#48bb78; font-weight:bold;">DEMAND SHIFT to nat. pozz</td>
+<td style="color:#c53030; font-weight:bold;">UP (GGBFS scarcity)</td>
+</tr>
+<tr>
+<td><strong>New Pozzolan Mines</strong></td>
+<td>Kirkland (39 Mt), Hazen (NV), Nevada Pozzolan, PozzSource (CA)</td>
+<td style="color:#48bb78; font-weight:bold;">SUPPLY EXPANDING</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN (competition)</td>
+</tr>
+<tr>
+<td><strong>Major Company Entry</strong></td>
+<td>CRH/Ash Grove acquires Geofortis; Eco Material 4+ Mt/yr capacity</td>
+<td style="color:#48bb78; font-weight:bold;">SUPPLY EXPANDING</td>
+<td style="color:#666;">NEUTRAL (quality premium)</td>
+</tr>
+<tr>
+<td><strong>DOE LC3 Investment</strong></td>
+<td>$1.6B; 3 of 6 projects target LC3; 3&ndash;5 yr deployment</td>
+<td style="color:#48bb78; font-weight:bold;">LONG-TERM SUPPLY</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN (long-term)</td>
+</tr>
+<tr>
+<td><strong>Buy Clean / LEED v5</strong></td>
+<td>Embodied carbon mandates; 14K+ new EPDs; federal &amp; state</td>
+<td style="color:#666;">N/A (demand driver)</td>
+<td style="color:#c53030; font-weight:bold;">UP (demand pull)</td>
+</tr>
+<tr>
+<td><strong>State DOT Acceptance</strong></td>
+<td>TX, NY, WA, CA, OH, WI, FL all accepting or proposing nat. pozz specs</td>
+<td style="color:#48bb78; font-weight:bold;">MARKET EXPANSION</td>
+<td style="color:#666;">NEUTRAL</td>
+</tr>
+<tr>
+<td><strong>Price Convergence</strong></td>
+<td>Fly ash $118/Mt vs nat. pozz ~$115/Mt; first time competitive</td>
+<td style="color:#48bb78; font-weight:bold;">DEMAND SHIFT accelerating</td>
+<td style="color:#666;">STABLE</td>
+</tr>
+</table>
+</div>
+
+<h3>14.1 Natural Pozzolans: Advantages vs Limitations</h3>
+<div class="two-col">
+<div>
+<h4 style="color:#276749;">Advantages</h4>
+<ul>
+<li>Independent mineral resource &mdash; not tied to coal or steel</li>
+<li>Consistent quality (geological deposit vs variable industrial byproduct)</li>
+<li>Large identified US reserves (&gt;25 Mt pumice; 39 Mt Kirkland; massive NV deposits)</li>
+<li>Simple processing: mine, dry, grind, classify</li>
+<li>Now cost-competitive with fly ash (~$115 vs $118)</li>
+<li>ASTM C618 Class N compliant</li>
+<li>Superior long-term durability (up to 5x OPC lifespan)</li>
+<li>95&ndash;97% lower embodied CO2 than OPC</li>
+</ul>
+</div>
+<div>
+<h4 style="color:#c53030;">Limitations</h4>
+<ul>
+<li>Geographic concentration in Western US; high distribution costs to East</li>
+<li>Slower early strength development (7-day) vs OPC</li>
+<li>Higher water demand for some types (diatomaceous earth)</li>
+<li>Quality varies by deposit; not all volcanic materials qualify</li>
+<li>Lighter bulk density = more storage volume needed</li>
+<li>Calcined clay/metakaolin requires energy for kiln processing</li>
+<li>Market awareness still growing; some specifiers unfamiliar</li>
+<li>State DOT acceptance still expanding (not yet universal)</li>
+</ul>
+</div>
+</div>
+
+<div class="success">
+<strong>NET ASSESSMENT:</strong> Natural pozzolans are positioned for strong growth as the <strong>only expanding-supply SCM category</strong> in the US. The convergence of fly ash price increases ($118/Mt), GGBFS supply constraints, new mine openings (Kirkland 39 Mt, Hazen, Nevada deposits), major company investment (CRH, Eco Material), federal LC3 funding ($1.6B DOE), and carbon regulation (Buy Clean, LEED v5) creates a multi-year growth runway. NPA projects capacity growing from 2.5 Mt (2024) to 3.5&ndash;4.0 Mt by 2028 &mdash; and LC3 commercial deployment starting 2028&ndash;2030 could multiply calcined clay demand by an order of magnitude. The primary constraints are Western geographic concentration and the 3&ndash;5 year lead time for LC3 infrastructure. Natural volcanic pozzolans serve as the <strong>near-term bridge SCM</strong> while LC3 scales.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>15. QUICK REFERENCE &mdash; KEY NUMBERS</h2>
+
+<table>
+<tr><th>Metric</th><th>Value</th><th>Trend</th></tr>
+<tr><td>US Pumice Production (2024)</td><td>450K tons, $19M</td><td>Recovering from 2022 dip</td></tr>
+<tr><td>US Nat. Pozzolan Shipments to Concrete (2024)</td><td>2.5 Mt (NPA data)</td><td style="color:#48bb78;">Growing rapidly</td></tr>
+<tr><td>Projected NP Capacity (2028)</td><td>3.5&ndash;4.0 Mt</td><td style="color:#48bb78;">+40&ndash;60% growth</td></tr>
+<tr><td>Total US SCM Shipments (2024)</td><td>&gt;20 Mt</td><td>Fly ash + GGBFS + NP + SF</td></tr>
+<tr><td>US Fly Ash to Concrete (2024)</td><td>14.7 Mt</td><td style="color:#c53030;">Declining (coal closures)</td></tr>
+<tr><td>US GGBFS to Concrete (2024)</td><td>~8.0 Mt</td><td style="color:#c53030;">Constrained (EAF shift)</td></tr>
+<tr><td>Natural Pozzolan Price (delivered)</td><td>~$115/Mt</td><td style="color:#48bb78;">Now competitive with fly ash</td></tr>
+<tr><td>Fly Ash Price (US, Q3 2025)</td><td>$118/Mt</td><td style="color:#c53030;">Up from $40&ndash;60 historical</td></tr>
+<tr><td>Metakaolin Price (US, Q3 2025)</td><td>$171/Mt</td><td>Premium calcined product</td></tr>
+<tr><td>Portland Cement Price (US, 2025)</td><td>$163/Mt</td><td>5.4% CAGR (2020&ndash;25)</td></tr>
+<tr><td>Kirkland Mine Reserves</td><td>39 million tons</td><td>500K t/yr; 40-yr mine life</td></tr>
+<tr><td>US Pumice Reserves (identified)</td><td>&gt;25 million tons</td><td>Western US</td></tr>
+<tr><td>DOE LC3 Investment</td><td>$1.6B (6 projects, 3 LC3)</td><td style="color:#48bb78;">Major federal commitment</td></tr>
+<tr><td>LC3 CO2 Reduction vs OPC</td><td>Up to 40%</td><td>Using low-grade clay + limestone</td></tr>
+<tr><td>Natural Pozzolan Embodied CO2</td><td>20&ndash;50 kg CO2/t</td><td>95&ndash;97% lower than OPC</td></tr>
+<tr><td>Global Natural Pozzolan Market</td><td>$865M&ndash;$1.76B (2024)</td><td>$1.25&ndash;3.84B by 2031&ndash;33</td></tr>
+<tr><td>McKinsey SCM Market (2035)</td><td>$40&ndash;60 billion</td><td>From $15&ndash;30B today</td></tr>
+<tr><td>World Pumice Production (2024)</td><td>~18 Mt</td><td>Turkey #1, Greece #2</td></tr>
+<tr><td>Global Metakaolin Production (2025)</td><td>~1.55 Mt</td><td>Asia-Pacific 40% share</td></tr>
+<tr><td>Eco Material SCM Capacity</td><td>&gt;4 Mt/yr (9 plants, 45 states)</td><td style="color:#48bb78;">Expanding</td></tr>
+<tr><td>ACEEE LC3 Impact Estimate</td><td>7.3 Mt CO2/yr saved</td><td>If half of US govt procurement shifts</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>SOURCES</h2>
+<p style="font-size: 9pt;">
+<strong>Government:</strong> USGS Mineral Commodity Summaries 2024-2025 (Pumice, Perlite); DOE Office of Clean Energy Demonstrations &mdash; Industrial Demonstrations Program; EPA Comprehensive Procurement Guidelines; FHWA Natural Pozzolan SCMs Research; US Army ERDC TR-11-46; ACEEE Research Report i2401<br>
+<strong>Standards:</strong> ASTM C618-25a (Coal Ash &amp; Natural Pozzolans); ASTM C595/C595M-24 (Blended Cement); ASTM C1157; ASTM C1240; ASTM C1697; ASTM C1945<br>
+<strong>Industry Organizations:</strong> National Pozzolan Association (NPA); Slag Cement Association; ACAA (2024 Production &amp; Use Survey); Portland Cement Association (PCA)<br>
+<strong>Companies:</strong> Hess Pumice Products; CR Minerals; Eco Material Technologies; Kirkland Mining; Ash Grove/CRH (Geofortis acquisition); PozzSource LLC; Sunrise Resources; Nevada Pozzolan Ltd; St. Cloud Mining; Burgess Pigment (OPTIPOZZ); Advanced Cement Technologies; CalPortland<br>
+<strong>LC3:</strong> LC3.ch (official); RMI &mdash; Business Case for LC3 (Dec 2024); FLSmidth (Ghana clay calciner); BIS IS 18189:2023 (India LC3 standard)<br>
+<strong>Market Research:</strong> Technavio (Pozzolan Market); Intel Market Research (Natural Pozzolans); Verified Market Reports; IMARC Group (Perlite, Fly Ash Pricing); Cognitive Market Research (Metakaolin); ChemAnalyst (Metakaolin Pricing); McKinsey (Future of SCMs)<br>
+<strong>Trade Publications:</strong> Concrete Products Magazine; Pit &amp; Quarry; Precast.org; Global Cement Magazine<br>
+<strong>State DOTs:</strong> TxDOT DMS-4635; NYSDOT Section 501; WSDOT M 41-10; Caltrans Authorized Materials; ODOT CMS 499; WisDOT 2025 Standard Specifications
+</p>
+
+<hr>
+<p style="text-align: center; font-size: 10pt; color: #666;">
+<em>NATURAL POZZOLANS COMPREHENSIVE DOSSIER v1.0 | February 18, 2026 | SCM Markets, LC3 Emergence &amp; Supply Outlook</em>
+</p>
+
+</body>
+</html>

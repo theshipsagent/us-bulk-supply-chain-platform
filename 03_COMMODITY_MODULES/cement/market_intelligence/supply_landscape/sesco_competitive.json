@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "title": "SESCO Cement - Competitive Intelligence Profile",
+    "description": "Detailed competitive analysis of SESCO Cement LLC, a major independent cement importer in the US Gulf Coast market",
+    "data_sources": ["USITC Import Data", "Port of Houston statistics", "PCA Import Reports", "Company filings", "Trade press"],
+    "last_updated": "2026-02-14",
+    "classification": "COMPETITIVE_INTELLIGENCE",
+    "notes": "SESCO is a privately held company; some data points are estimated from trade data and industry sources."
+  },
+  "company_profile": {
+    "legal_name": "SESCO Cement LLC",
+    "dba_names": ["SESCO", "SESCO Cement"],
+    "headquarters": "Houston, TX",
+    "founded": 2004,
+    "ownership": "Private",
+    "ownership_structure": "Privately held; principals include cement trading veterans with Middle East connections",
+    "estimated_annual_revenue_usd": 250000000,
+    "employee_count_est": 75,
+    "business_model": "Pure-play cement importer/distributor. Does not own production assets. Sources bulk cement from international origins and distributes via Houston terminal.",
+    "key_executives": [
+      {"title": "CEO/Managing Partner", "role": "Strategic direction and supplier relationships"},
+      {"title": "VP Operations", "role": "Terminal operations and logistics"},
+      {"title": "VP Sales", "role": "Customer relationships and pricing"}
+    ]
+  },
+  "terminal_operations": {
+    "primary_terminal": {
+      "name": "SESCO Houston Terminal",
+      "location": "Houston Ship Channel, Houston TX",
+      "lat": 29.7355,
+      "lon": -95.2730,
+      "port_authority": "Port of Houston Authority",
+      "storage_capacity_tons": 150000,
+      "silo_count": 6,
+      "silo_details": [
+        {"silo_id": 1, "capacity_tons": 30000, "product": "Type I/II OPC"},
+        {"silo_id": 2, "capacity_tons": 30000, "product": "Type I/II OPC"},
+        {"silo_id": 3, "capacity_tons": 25000, "product": "Type V SR"},
+        {"silo_id": 4, "capacity_tons": 25000, "product": "Type V SR"},
+        {"silo_id": 5, "capacity_tons": 20000, "product": "Oil Well Cement"},
+        {"silo_id": 6, "capacity_tons": 20000, "product": "Oil Well / Flex"}
+      ],
+      "annual_throughput_tons": 2200000,
+      "peak_throughput_tons": 2500000,
+      "ship_unloading_rate_tph": 600,
+      "truck_loading_bays": 8,
+      "truck_loading_rate_tph": 150,
+      "rail_loading_capacity": true,
+      "rail_cars_per_day": 20,
+      "barge_loading_capacity": true,
+      "berth_depth_ft": 40,
+      "max_vessel_size_dwt": 45000,
+      "operating_hours": "24/7",
+      "workforce": 45
+    },
+    "distribution_terminals": [
+      {
+        "name": "SESCO San Antonio Distribution",
+        "state": "TX",
+        "city": "San Antonio",
+        "type": "Truck distribution yard",
+        "capacity_tons": 5000,
+        "status": "active"
+      },
+      {
+        "name": "SESCO DFW Distribution",
+        "state": "TX",
+        "city": "Dallas",
+        "type": "Rail-served distribution",
+        "capacity_tons": 8000,
+        "status": "active"
+      }
+    ]
+  },
+  "import_supply_chain": {
+    "primary_suppliers": [
+      {
+        "supplier": "Royal El Minya Cement Company",
+        "country": "Egypt",
+        "city": "El Minya",
+        "ownership": "Part of Egyptian cement sector",
+        "annual_volume_tons": 1200000,
+        "contract_type": "Long-term offtake (5+ year)",
+        "fob_price_range_per_ton": "$38-$48",
+        "cement_types": ["CEM I 42.5N (Type I/II equivalent)", "Sulfate Resistant (Type V)"],
+        "vessel_type": "Handymax 25-35K DWT",
+        "transit_days": 22,
+        "route": "El Minya > Suez Canal > Atlantic > Gulf of Mexico > Houston",
+        "shipments_per_year": 25,
+        "quality_rating": "Meets ASTM C150/C595, consistent quality",
+        "risk_factors": ["Suez Canal transit risk/cost", "Egyptian political stability", "Currency volatility (EGP)"]
+      },
+      {
+        "supplier": "Nuh Cement (Nuh Cimento Sanayi A.S.)",
+        "country": "Turkey",
+        "city": "Hereke, Kocaeli Province",
+        "ownership": "Public (BIST: NUHCM)",
+        "annual_volume_tons": 800000,
+        "contract_type": "Annual contracts with volume commitments",
+        "fob_price_range_per_ton": "$42-$52",
+        "cement_types": ["CEM I 42.5R (Type I/II equivalent)", "CEM I 52.5N (Type III equivalent)"],
+        "vessel_type": "Handymax 25-40K DWT",
+        "transit_days": 18,
+        "route": "Hereke > Mediterranean > Atlantic > Gulf of Mexico > Houston",
+        "shipments_per_year": 18,
+        "quality_rating": "High quality, European EN 197-1 certified, ASTM compliant",
+        "risk_factors": ["Turkish Lira volatility (cost advantage)", "Mediterranean shipping congestion", "EU carbon border adjustment potential impact"]
+      }
+    ],
+    "secondary_suppliers": [
+      {
+        "supplier": "Various spot market sources",
+        "countries": ["Vietnam", "Greece", "Colombia"],
+        "annual_volume_tons": 200000,
+        "contract_type": "Spot/short-term",
+        "notes": "Supplemental volumes during peak demand or supplier disruption"
+      }
+    ],
+    "total_annual_import_volume_tons": 2200000,
+    "avg_landed_cost_per_ton": 72,
+    "landed_cost_breakdown": {
+      "fob_price_per_ton": 44,
+      "ocean_freight_per_ton": 18,
+      "insurance_per_ton": 1.5,
+      "port_charges_per_ton": 3.5,
+      "customs_duties_per_ton": 0,
+      "terminal_handling_per_ton": 5
+    }
+  },
+  "market_position": {
+    "geographic_coverage": ["Texas", "Louisiana", "Oklahoma", "Arkansas", "New Mexico"],
+    "primary_market": "Houston/DFW/San Antonio metro areas",
+    "estimated_texas_market_share_pct": 12,
+    "estimated_gulf_coast_import_share_pct": 25,
+    "customer_segments": {
+      "ready_mix_producers": {
+        "share_of_sesco_sales_pct": 65,
+        "key_customers": "Regional and independent ready-mix operators",
+        "typical_contract": "Annual supply agreements with price escalators"
+      },
+      "concrete_products": {
+        "share_of_sesco_sales_pct": 15,
+        "key_customers": "Block, pipe, and precast manufacturers",
+        "typical_contract": "Quarterly pricing"
+      },
+      "oil_field_services": {
+        "share_of_sesco_sales_pct": 12,
+        "key_customers": "Halliburton, SLB, smaller service companies",
+        "typical_contract": "Spot and short-term supply"
+      },
+      "contractors_direct": {
+        "share_of_sesco_sales_pct": 8,
+        "key_customers": "Large infrastructure contractors",
+        "typical_contract": "Project-based"
+      }
+    },
+    "pricing_position": {
+      "strategy": "Price competitor - typically $5-$15/ton below domestic producers",
+      "avg_discount_to_domestic_pct": 8,
+      "fob_terminal_price_range": "$115-$135/ton",
+      "delivered_houston_metro": "$125-$145/ton",
+      "delivered_dfw": "$145-$165/ton",
+      "delivered_san_antonio": "$135-$155/ton",
+      "price_adjustment_mechanism": "Quarterly adjustments based on import cost indices"
+    }
+  },
+  "competitive_advantages": [
+    {
+      "advantage": "Cost arbitrage",
+      "description": "Egyptian and Turkish cement production costs are 40-50% below US costs due to lower energy/labor costs, enabling consistent price undercutting",
+      "sustainability": "High - structural cost gap unlikely to close"
+    },
+    {
+      "advantage": "Terminal infrastructure",
+      "description": "150K ton storage and 24/7 operations provide reliable supply buffer and rapid loading capability",
+      "sustainability": "High - significant barrier to entry for new competitors"
+    },
+    {
+      "advantage": "Established supplier relationships",
+      "description": "Long-term offtake agreements with Royal El Minya and Nuh Cement ensure consistent supply at favorable pricing",
+      "sustainability": "Medium-High - relationships built over 20 years"
+    },
+    {
+      "advantage": "Market timing flexibility",
+      "description": "As pure importer, SESCO can increase/decrease volumes without fixed production costs",
+      "sustainability": "Medium - advantage during downturns, less so during supply constraints"
+    },
+    {
+      "advantage": "Product diversification",
+      "description": "Oil well cement capability serves volatile but high-margin niche",
+      "sustainability": "Medium - dependent on drilling activity"
+    }
+  ],
+  "competitive_vulnerabilities": [
+    "No domestic production backup if import supply disrupted",
+    "Exposure to ocean freight rate volatility",
+    "Single primary terminal (Houston) creates concentration risk",
+    "Suez Canal transit dependency for Egyptian supply",
+    "Potential tariff/trade remedy exposure",
+    "Currency volatility affects import cost competitiveness",
+    "Customer perception of import quality vs domestic"
+  ],
+  "swot_analysis": {
+    "strengths": [
+      "20+ year established market presence in Texas",
+      "Best-in-class import terminal infrastructure",
+      "Strong supplier relationships with low-cost producers",
+      "Price leadership position in Houston market",
+      "Flexible business model with low fixed costs",
+      "Diverse product mix including oil well cement",
+      "Experienced management team with deep industry knowledge"
+    ],
+    "weaknesses": [
+      "No domestic production capabilities",
+      "Single terminal concentration in Houston",
+      "Limited geographic reach beyond Texas/Gulf Coast",
+      "Dependent on ocean shipping reliability",
+      "Private company - limited access to capital markets",
+      "Brand recognition lower than majors (Holcim, CEMEX)",
+      "Limited ability to offer Type IL/blended cements at scale"
+    ],
+    "opportunities": [
+      "Texas infrastructure spending surge (IIJA + state programs)",
+      "Houston metro population growth driving construction demand",
+      "New import sources (Vietnam, India) for cost diversification",
+      "Expansion to additional Gulf Coast terminals (NOLA, Corpus Christi)",
+      "Blended cement grinding facility to capture Type IL demand",
+      "Oil field activity recovery (Permian Basin)",
+      "Carbon-advantaged imports (lower embedded CO2 vs some domestic)"
+    ],
+    "threats": [
+      "Section 301 or antidumping tariffs on Turkey/Egypt",
+      "Domestic capacity expansion by Holcim, Eagle, Martin Marietta",
+      "Ocean freight rate spikes (e.g., Red Sea disruption)",
+      "Suez Canal closure or restriction",
+      "Construction downturn reducing Texas demand",
+      "CEMEX aggressive pricing defense",
+      "Port infrastructure failures or hurricane damage",
+      "Carbon border adjustment mechanisms penalizing imports"
+    ]
+  },
+  "trade_policy_exposure": {
+    "section_301_assessment": {
+      "turkey_exposure": {
+        "current_status": "Turkey was subject to Section 232 steel/aluminum tariffs; cement not currently covered under Section 301",
+        "risk_level": "MEDIUM",
+        "volume_at_risk_tons": 800000,
+        "potential_tariff_rate_pct": "10-25",
+        "mitigation": "Could shift to Egyptian, Vietnamese, or Greek supply",
+        "impact_on_landed_cost": "$4-$13/ton increase"
+      },
+      "egypt_exposure": {
+        "current_status": "No current trade actions against Egyptian cement",
+        "risk_level": "LOW",
+        "volume_at_risk_tons": 1200000,
+        "potential_tariff_rate_pct": "0-10",
+        "mitigation": "Egypt is US strategic ally; cement not politically sensitive",
+        "impact_on_landed_cost": "$0-$5/ton potential increase"
+      }
+    },
+    "antidumping_cvd_risk": {
+      "status": "No active AD/CVD cases on cement from Turkey or Egypt as of 2026",
+      "historical_precedent": "Mexico cement AD order (1990-2006) demonstrated industry willingness to file",
+      "risk_assessment": "MEDIUM - domestic producers could petition if imports surge significantly",
+      "trigger_scenarios": [
+        "Import market share exceeds 15% nationally",
+        "Domestic capacity utilization falls below 75%",
+        "Price depression documented in specific regions"
+      ]
+    },
+    "buy_america_requirements": {
+      "status": "IIJA Build America Buy America (BABA) provisions",
+      "cement_impact": "Cement is classified as a 'construction material' under BABA",
+      "waiver_status": "Current nationwide waiver for cement/cementitious materials in effect through 2026",
+      "risk_if_waiver_expires": "HIGH - would exclude imported cement from federal-aid projects",
+      "estimated_federal_demand_share_pct": 15
+    }
+  },
+  "expansion_assessment": {
+    "reported_expansion_plans": [
+      {
+        "project": "Terminal capacity expansion",
+        "description": "Additional silos and truck loading bays at Houston",
+        "estimated_capex_usd": 25000000,
+        "additional_capacity_tons": 50000,
+        "timeline": "2026-2027",
+        "status": "Reported in planning stage"
+      }
+    ],
+    "potential_strategic_moves": [
+      "Second Gulf Coast terminal (NOLA or Corpus Christi)",
+      "Grinding/blending facility for Type IL production",
+      "Inland distribution terminal expansion (Austin, DFW)",
+      "New import source development (India, Vietnam)",
+      "Strategic partnership with domestic producer for blended products"
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "title": "Construction Industry Leading Indicators for Cement Demand",
+    "sources": [
+      "US Census Bureau - Building Permits and Housing Starts",
+      "US Census Bureau - Construction Spending",
+      "Portland Cement Association (PCA)",
+      "American Road and Transportation Builders Association (ARTBA)",
+      "Dodge Construction Network"
+    ],
+    "currency": "Q4 2025 estimates / Q1 2026 projections"
+  },
+  "housing_indicators": {
+    "building_permits": {
+      "2023_annual": 1470000,
+      "2024_annual": 1420000,
+      "2025_estimated": 1450000,
+      "unit": "units annualized",
+      "cement_intensity_tons_per_unit": {
+        "single_family": 30,
+        "multi_family": 15,
+        "weighted_average": 25
+      },
+      "correlation_to_cement_demand": 0.82,
+      "lead_time_months": 6
+    },
+    "housing_starts": {
+      "2023_annual": 1420000,
+      "2024_annual": 1370000,
+      "2025_estimated": 1400000,
+      "unit": "units annualized",
+      "trend": "stable with modest recovery"
+    },
+    "existing_home_sales": {
+      "2024_annual": 4060000,
+      "2025_estimated": 4200000,
+      "unit": "units annualized",
+      "notes": "Indirect indicator - renovation/remodeling cement demand"
+    }
+  },
+  "construction_spending": {
+    "total": {
+      "2023_billions": 2050,
+      "2024_billions": 2120,
+      "2025_estimated_billions": 2200,
+      "2026_projected_billions": 2310
+    },
+    "residential": {
+      "2024_billions": 920,
+      "share_pct": 43,
+      "cement_share_pct": 35
+    },
+    "nonresidential": {
+      "2024_billions": 610,
+      "share_pct": 29,
+      "cement_share_pct": 30,
+      "key_segments": [
+        {"type": "Manufacturing facilities", "spending_billions": 235, "growth_pct": 28, "driver": "CHIPS Act, IRA, reshoring"},
+        {"type": "Office/commercial", "spending_billions": 125, "growth_pct": -5, "driver": "Remote work headwinds"},
+        {"type": "Healthcare", "spending_billions": 55, "growth_pct": 8, "driver": "Aging population"},
+        {"type": "Data centers", "spending_billions": 45, "growth_pct": 42, "driver": "AI infrastructure buildout"},
+        {"type": "Educational", "spending_billions": 98, "growth_pct": 3, "driver": "State bond measures"}
+      ]
+    },
+    "public_infrastructure": {
+      "2024_billions": 590,
+      "share_pct": 28,
+      "cement_share_pct": 35,
+      "key_programs": [
+        {"program": "IIJA (Bipartisan Infrastructure Law)", "total_billions": 1200, "cement_relevant_billions": 350, "timeline": "2022-2031", "status": "Funds flowing, peak 2025-2027"},
+        {"program": "Highway and bridge", "annual_billions": 65, "cement_intensity": "high"},
+        {"program": "Airport improvement", "annual_billions": 15, "cement_intensity": "high"},
+        {"program": "Water/wastewater", "annual_billions": 38, "cement_intensity": "medium"},
+        {"program": "Public transit", "annual_billions": 25, "cement_intensity": "medium"}
+      ]
+    }
+  },
+  "regional_growth_drivers": [
+    {
+      "region": "Texas",
+      "growth_rate_pct": 4.5,
+      "drivers": ["Population growth (+400K/year)", "Energy infrastructure", "Manufacturing reshoring", "Data center construction"],
+      "cement_demand_mtpa": 12,
+      "import_dependency_pct": 15
+    },
+    {
+      "region": "Florida",
+      "growth_rate_pct": 3.8,
+      "drivers": ["Population migration", "Hurricane rebuilding (Ian, Milton)", "Tourism infrastructure", "Residential construction"],
+      "cement_demand_mtpa": 7,
+      "import_dependency_pct": 35
+    },
+    {
+      "region": "Southeast (GA, NC, SC, TN)",
+      "growth_rate_pct": 3.2,
+      "drivers": ["Manufacturing reshoring (auto, battery)", "Population growth", "Infrastructure spending"],
+      "cement_demand_mtpa": 14,
+      "import_dependency_pct": 10
+    },
+    {
+      "region": "Southwest (AZ, NV, NM)",
+      "growth_rate_pct": 3.5,
+      "drivers": ["Semiconductor fabs (TSMC, Intel)", "Population growth", "Data centers"],
+      "cement_demand_mtpa": 6,
+      "import_dependency_pct": 5
+    },
+    {
+      "region": "Midwest (OH, IN, MI, IL)",
+      "growth_rate_pct": 1.5,
+      "drivers": ["EV battery plant construction", "Infrastructure rehabilitation", "Bridge replacement"],
+      "cement_demand_mtpa": 18,
+      "import_dependency_pct": 5
+    }
+  ],
+  "pca_forecast": {
+    "source": "Portland Cement Association",
+    "baseline_scenario": {
+      "2025_consumption_mtpa": 110,
+      "2026_consumption_mtpa": 113,
+      "2027_consumption_mtpa": 116,
+      "2028_consumption_mtpa": 119,
+      "2029_consumption_mtpa": 121,
+      "2030_consumption_mtpa": 124,
+      "cagr_pct": 2.4
+    },
+    "upside_scenario": {
+      "description": "Accelerated IIJA spending + manufacturing reshoring",
+      "2030_consumption_mtpa": 132,
+      "cagr_pct": 3.5
+    },
+    "downside_scenario": {
+      "description": "Recession, interest rate shock, construction slowdown",
+      "2030_consumption_mtpa": 108,
+      "cagr_pct": -0.4
+    }
+  },
+  "cement_intensity_by_project_type": [
+    {"project_type": "Highway pavement (concrete)", "tons_per_mile": 4500, "notes": "Two-lane rural highway"},
+    {"project_type": "Interstate pavement (concrete)", "tons_per_mile": 12000, "notes": "Four-lane divided highway"},
+    {"project_type": "Bridge deck replacement", "tons_per_bridge": 800, "notes": "Average bridge deck"},
+    {"project_type": "Single-family residential", "tons_per_unit": 30, "notes": "Foundation + driveway"},
+    {"project_type": "Multi-family residential", "tons_per_unit": 15, "notes": "Per apartment unit"},
+    {"project_type": "Commercial building", "tons_per_10k_sqft": 125, "notes": "Tilt-up or cast-in-place"},
+    {"project_type": "Data center", "tons_per_10k_sqft": 200, "notes": "Heavy foundation requirements"},
+    {"project_type": "Semiconductor fab", "tons_per_facility": 50000, "notes": "Major fab construction"},
+    {"project_type": "Wind turbine foundation", "tons_per_turbine": 600, "notes": "Onshore, gravity base"},
+    {"project_type": "Oil well cementing", "tons_per_well": 150, "notes": "Casing cementing, Class G/H"}
+  ]
+}

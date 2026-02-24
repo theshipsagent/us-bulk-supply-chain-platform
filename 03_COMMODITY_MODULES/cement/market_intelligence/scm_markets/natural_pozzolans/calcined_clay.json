@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Calcined Clay and LC3 Technology Assessment for US Market",
+    "sources": ["GCCA", "EPFL LC3 Research Group", "PCA", "Academic literature"],
+    "currency": "Q1 2026"
+  },
+  "lc3_technology": {
+    "full_name": "Limestone Calcined Clay Cement",
+    "abbreviation": "LC3",
+    "description": "Ternary blend of Portland cement clinker (50%), calcined kaolinitic clay (30%), and ground limestone (15%), with gypsum (5%)",
+    "origin": "Developed at EPFL (Switzerland) and IIT Madras (India)",
+    "global_status": "Commercial production in India, Cuba, Colombia; pilot/demo in 15+ countries",
+    "us_status": "Pre-commercial research and standards development"
+  },
+  "technical_properties": {
+    "clinker_factor": 0.50,
+    "vs_opc_clinker_factor": 0.95,
+    "co2_reduction_vs_opc_pct": 40,
+    "calcination_temperature_c": [700, 850],
+    "vs_clinker_temperature_c": 1450,
+    "energy_savings_vs_clinker_pct": 35,
+    "compressive_strength": {
+      "7_day_mpa": 25,
+      "28_day_mpa": 42,
+      "vs_opc_28_day_pct": 95,
+      "notes": "Achieves comparable strength to OPC by 28 days; slower early strength"
+    },
+    "durability": {
+      "chloride_resistance": "Superior to OPC",
+      "sulfate_resistance": "Superior to OPC",
+      "asr_mitigation": "Good",
+      "carbonation": "Slightly higher rate than OPC; acceptable for most applications"
+    },
+    "clay_quality_requirement": {
+      "min_kaolinite_content_pct": 40,
+      "optimal_kaolinite_content_pct": 60,
+      "other_acceptable_minerals": ["halloysite", "montmorillonite (limited)"],
+      "quality_test": "Thermogravimetric analysis (TGA) for kaolinite content"
+    }
+  },
+  "us_clay_resources": [
+    {
+      "region": "Georgia Kaolin Belt",
+      "description": "World's largest kaolin deposit; 100+ year mining history",
+      "kaolinite_content_pct": [85, 95],
+      "annual_production_mt": 8,
+      "current_uses": ["Paper coating", "Ceramics", "Paint", "Rubber filler"],
+      "lc3_suitability": "Excellent",
+      "estimated_available_for_lc3_mtpa": 3,
+      "major_producers": ["KaMin LLC", "BASF (Engelhard)", "Imerys", "Thiele Kaolin"],
+      "logistics": "Rail-served (NS, CSX); truck to regional markets"
+    },
+    {
+      "region": "Texas Gulf Coast",
+      "description": "Ball clay and kaolin deposits in East Texas",
+      "kaolinite_content_pct": [40, 65],
+      "current_uses": ["Ceramics", "Drilling mud", "Construction fill"],
+      "lc3_suitability": "Good (beneficiation may be needed)",
+      "estimated_available_for_lc3_mtpa": 1,
+      "logistics": "BNSF/UP rail; barge on Trinity/Neches rivers"
+    },
+    {
+      "region": "Southeast Coastal Plain (AL, MS, SC)",
+      "description": "Marine sedimentary kaolin deposits",
+      "kaolinite_content_pct": [35, 60],
+      "lc3_suitability": "Moderate to Good",
+      "estimated_available_for_lc3_mtpa": 2
+    }
+  ],
+  "production_economics": {
+    "capital_cost": {
+      "calciner_capacity_mtpa": 0.5,
+      "estimated_capex_millions": 40,
+      "includes": ["Rotary calciner or flash calciner", "Grinding mill", "Storage silos", "Blending system"],
+      "notes": "Can be co-located at existing cement plant to reduce capex"
+    },
+    "operating_cost": {
+      "raw_clay_cost_per_ton": [15, 30],
+      "energy_cost_per_ton_calcined": [8, 15],
+      "grinding_cost_per_ton": [5, 8],
+      "total_calcined_clay_cost_per_ton": [28, 53],
+      "vs_clinker_cost_per_ton": [45, 65],
+      "savings_per_ton_lc3_vs_opc": [5, 15]
+    },
+    "carbon_economics": {
+      "opc_co2_per_ton": 0.9,
+      "lc3_co2_per_ton": 0.54,
+      "co2_savings_per_ton": 0.36,
+      "at_carbon_price_50_per_ton": {
+        "opc_carbon_cost": 45,
+        "lc3_carbon_cost": 27,
+        "additional_lc3_advantage_per_ton": 18
+      }
+    }
+  },
+  "us_adoption_roadmap": {
+    "phase_1_2025_2027": {
+      "description": "Standards development and demonstration",
+      "activities": [
+        "ASTM committee work on LC3 specification",
+        "State DOT evaluation and trial placements",
+        "Cement company pilot production (Holcim, Buzzi likely leaders)",
+        "University research programs (MIT, Georgia Tech, UT Austin)"
+      ],
+      "estimated_production_mtpa": 0.1
+    },
+    "phase_2_2027_2030": {
+      "description": "Early commercial adoption",
+      "activities": [
+        "ASTM standard publication",
+        "First commercial calcined clay production facilities",
+        "State DOT specification adoption (5-10 states)",
+        "Green building project specification"
+      ],
+      "estimated_production_mtpa": 2.0
+    },
+    "phase_3_2030_2035": {
+      "description": "Scale-up and mainstream adoption",
+      "activities": [
+        "Multiple calcined clay production facilities operational",
+        "Widespread DOT specification acceptance",
+        "Carbon pricing incentives accelerate adoption",
+        "LC3 becomes standard offering from major producers"
+      ],
+      "estimated_production_mtpa": 8.0,
+      "market_share_of_cement_pct": 7
+    }
+  }
+}

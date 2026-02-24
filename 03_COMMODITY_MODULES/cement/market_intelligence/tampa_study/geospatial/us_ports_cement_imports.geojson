@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "name": "US_Ports_Cement_Imports",
+  "metadata": {
+    "title": "US Ports - Cement Import Volumes",
+    "description": "Major US ports receiving cement imports with volume data",
+    "source": "Panjiva Trade Data 2023-2025, USACE",
+    "created": "2025-12-16"
+  },
+  "features": [
+    {"type": "Feature", "properties": {"name": "Houston Ship Channel", "state": "TX", "volume_mt": 5200000, "volume_label": "5.2 MT", "rank": 1, "shipments": 142, "pct_us": 26, "region": "Gulf", "color": "#0D47A1", "symbol_size": 45}, "geometry": {"type": "Point", "coordinates": [-95.0158, 29.7355]}},
+    {"type": "Feature", "properties": {"name": "Tampa Bay", "state": "FL", "volume_mt": 3450520, "volume_label": "3.45 MT", "rank": 2, "shipments": 96, "pct_us": 17, "region": "Gulf", "color": "#1B5E20", "symbol_size": 38, "highlight": true}, "geometry": {"type": "Point", "coordinates": [-82.4442, 27.9378]}},
+    {"type": "Feature", "properties": {"name": "Los Angeles/Long Beach", "state": "CA", "volume_mt": 2800000, "volume_label": "2.8 MT", "rank": 3, "shipments": 85, "pct_us": 14, "region": "West", "color": "#1976D2", "symbol_size": 32}, "geometry": {"type": "Point", "coordinates": [-118.2437, 33.7490]}},
+    {"type": "Feature", "properties": {"name": "Mobile", "state": "AL", "volume_mt": 2390000, "volume_label": "2.39 MT", "rank": 4, "shipments": 68, "pct_us": 12, "region": "Gulf", "color": "#1976D2", "symbol_size": 28}, "geometry": {"type": "Point", "coordinates": [-88.0399, 30.6954]}},
+    {"type": "Feature", "properties": {"name": "Tampa (City)", "state": "FL", "volume_mt": 2416120, "volume_label": "2.42 MT", "rank": 5, "shipments": 73, "pct_us": 12, "region": "Gulf", "color": "#2E7D32", "symbol_size": 28, "highlight": true}, "geometry": {"type": "Point", "coordinates": [-82.4318, 27.9156]}},
+    {"type": "Feature", "properties": {"name": "New Orleans", "state": "LA", "volume_mt": 1850000, "volume_label": "1.85 MT", "rank": 6, "shipments": 52, "pct_us": 9, "region": "Gulf", "color": "#42A5F5", "symbol_size": 24}, "geometry": {"type": "Point", "coordinates": [-90.0715, 29.9511]}},
+    {"type": "Feature", "properties": {"name": "Jacksonville", "state": "FL", "volume_mt": 1611600, "volume_label": "1.61 MT", "rank": 7, "shipments": 48, "pct_us": 8, "region": "Atlantic", "color": "#4CAF50", "symbol_size": 22, "highlight": true}, "geometry": {"type": "Point", "coordinates": [-81.6256, 30.4089]}},
+    {"type": "Feature", "properties": {"name": "Savannah", "state": "GA", "volume_mt": 1090000, "volume_label": "1.09 MT", "rank": 8, "shipments": 38, "pct_us": 5, "region": "Atlantic", "color": "#42A5F5", "symbol_size": 18}, "geometry": {"type": "Point", "coordinates": [-81.0912, 32.0809]}},
+    {"type": "Feature", "properties": {"name": "Port Manatee", "state": "FL", "volume_mt": 946260, "volume_label": "0.95 MT", "rank": 9, "shipments": 25, "pct_us": 5, "region": "Gulf", "color": "#81C784", "symbol_size": 16, "highlight": true}, "geometry": {"type": "Point", "coordinates": [-82.5656, 27.6339]}},
+    {"type": "Feature", "properties": {"name": "Seattle/Tacoma", "state": "WA", "volume_mt": 680000, "volume_label": "0.68 MT", "rank": 10, "shipments": 22, "pct_us": 3, "region": "West", "color": "#64B5F6", "symbol_size": 14}, "geometry": {"type": "Point", "coordinates": [-122.4443, 47.5912]}},
+    {"type": "Feature", "properties": {"name": "San Francisco Bay", "state": "CA", "volume_mt": 520000, "volume_label": "0.52 MT", "rank": 11, "shipments": 18, "pct_us": 3, "region": "West", "color": "#64B5F6", "symbol_size": 12}, "geometry": {"type": "Point", "coordinates": [-122.3789, 37.7749]}},
+    {"type": "Feature", "properties": {"name": "Port Everglades", "state": "FL", "volume_mt": 448572, "volume_label": "0.45 MT", "rank": 12, "shipments": 23, "pct_us": 2, "region": "Atlantic", "color": "#A5D6A7", "symbol_size": 10, "highlight": true}, "geometry": {"type": "Point", "coordinates": [-80.1181, 26.0889]}},
+    {"type": "Feature", "properties": {"name": "Philadelphia", "state": "PA", "volume_mt": 380000, "volume_label": "0.38 MT", "rank": 13, "shipments": 15, "pct_us": 2, "region": "Atlantic", "color": "#64B5F6", "symbol_size": 10}, "geometry": {"type": "Point", "coordinates": [-75.1652, 39.9526]}},
+    {"type": "Feature", "properties": {"name": "Baltimore", "state": "MD", "volume_mt": 320000, "volume_label": "0.32 MT", "rank": 14, "shipments": 12, "pct_us": 2, "region": "Atlantic", "color": "#64B5F6", "symbol_size": 9}, "geometry": {"type": "Point", "coordinates": [-76.6122, 39.2904]}},
+    {"type": "Feature", "properties": {"name": "Detroit", "state": "MI", "volume_mt": 280000, "volume_label": "0.28 MT", "rank": 15, "shipments": 45, "pct_us": 1, "region": "Great Lakes", "color": "#90CAF9", "symbol_size": 8}, "geometry": {"type": "Point", "coordinates": [-83.0458, 42.3314]}},
+    {"type": "Feature", "properties": {"name": "West Palm Beach", "state": "FL", "volume_mt": 191509, "volume_label": "0.19 MT", "rank": 16, "shipments": 11, "pct_us": 1, "region": "Atlantic", "color": "#C8E6C9", "symbol_size": 7, "highlight": true, "export_focus": true}, "geometry": {"type": "Point", "coordinates": [-80.0556, 26.7656]}},
+    {"type": "Feature", "properties": {"name": "Port Redwing (New)", "state": "FL", "volume_mt": 0, "volume_label": "Under Construction", "rank": null, "shipments": 0, "pct_us": 0, "region": "Gulf", "color": "#FF9800", "symbol_size": 20, "highlight": true, "new_terminal": true, "note": "Target market entry point"}, "geometry": {"type": "Point", "coordinates": [-82.3789, 27.8456]}}
+  ]
+}

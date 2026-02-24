@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLY ASH COMPREHENSIVE DOSSIER v3 - US Supply/Demand, SCM Markets &amp; Trade Flow Analysis</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.4; font-size: 11pt; }
+h1 { color: #1a365d; border-bottom: 3px solid #1a365d; padding-bottom: 10px; font-size: 22pt; }
+h2 { color: #2c5282; border-bottom: 2px solid #2c5282; padding-bottom: 5px; margin-top: 25px; font-size: 16pt; }
+h3 { color: #2b6cb0; margin-top: 20px; font-size: 13pt; }
+h4 { color: #3182ce; margin-top: 15px; font-size: 11pt; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 10pt; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background-color: #2c5282; color: white; }
+tr:nth-child(even) { background-color: #f7fafc; }
+.highlight { background-color: #fefcbf; padding: 10px; border-left: 4px solid #d69e2e; margin: 15px 0; }
+.alert { background-color: #fed7d7; padding: 10px; border-left: 4px solid #c53030; margin: 15px 0; }
+.success { background-color: #c6f6d5; padding: 10px; border-left: 4px solid #276749; margin: 15px 0; }
+.info { background-color: #bee3f8; padding: 10px; border-left: 4px solid #2b6cb0; margin: 15px 0; }
+ul { margin: 10px 0; }
+li { margin: 5px 0; }
+.two-col { display: flex; gap: 20px; }
+.two-col > div { flex: 1; }
+.price-box { background: #edf2f7; padding: 15px; border-radius: 5px; text-align: center; margin: 10px; }
+.price-big { font-size: 24pt; font-weight: bold; color: #2c5282; }
+.section-divider { border-top: 3px double #1a365d; margin: 30px 0; }
+.chart-container { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; }
+.chart-title { font-weight: bold; color: #2c5282; margin-bottom: 15px; font-size: 12pt; text-align: center; }
+.chart-note { font-size: 9pt; color: #666; margin-top: 10px; text-align: center; font-style: italic; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px 0; }
+.stat-box { background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; }
+.stat-number { font-size: 28pt; font-weight: bold; }
+.stat-label { font-size: 10pt; opacity: 0.9; }
+.stat-change { font-size: 9pt; margin-top: 5px; }
+.stat-change.up { color: #68d391; }
+.stat-change.down { color: #fc8181; }
+@page {
+  size: letter;
+  margin: 0.25in 0.25in 0.5in 0.25in;
+  @bottom-center {
+    content: counter(page);
+    font-size: 9pt;
+    color: #718096;
+    font-family: Arial, sans-serif;
+  }
+}
+@page :first { @bottom-center { content: ''; } }
+@media print {
+  .cover-page {
+    page-break-after: always;
+    padding: 0.65in 0.55in;
+    box-sizing: border-box;
+    margin: 0.4in auto;
+  }
+  .toc-page { page-break-after: always; }
+  .highlight, .alert, .success, .info,
+  .exec-briefing, .price-box { break-inside: avoid; page-break-inside: avoid; }
+  h1, h2, h3, h4 { break-after: avoid; page-break-after: avoid; }
+  tr { break-inside: avoid; page-break-inside: avoid; }
+}
+.cover-page {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; padding: 50px 40px;
+  border: 3px solid #1a365d;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+}
+.cover-logo { font-size: 14pt; letter-spacing: 6px; color: #1a365d; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; }
+.cover-divider { width: 120px; height: 4px; background: #2c5282; margin: 15px auto; }
+.cover-title { font-size: 28pt; font-weight: bold; color: #1a365d; margin: 20px 0 8px; line-height: 1.2; }
+.cover-subtitle { font-size: 14pt; color: #4a5568; margin-bottom: 30px; }
+.cover-classification { display: inline-block; background: #2c5282; color: white; padding: 5px 28px; font-size: 10pt; letter-spacing: 3px; text-transform: uppercase; border-radius: 3px; margin-bottom: 30px; }
+.cover-addressee { font-size: 11pt; color: #2d3748; margin-bottom: 20px; line-height: 1.7; }
+.cover-addressee strong { color: #1a365d; }
+.cover-meta { font-size: 9pt; color: #718096; margin-top: 20px; line-height: 1.8; }
+.toc-page { padding: 30px 0; }
+.toc-page-title { font-size: 20pt; font-weight: bold; color: #1a365d; border-bottom: 3px solid #1a365d; padding-bottom: 10px; margin-bottom: 30px; }
+.toc-page ol { font-size: 11pt; color: #2d3748; line-height: 2.4; padding-left: 25px; }
+.toc-page ol li { border-bottom: 1px dotted #e2e8f0; padding: 3px 0; }
+.exec-briefing { background: #f7fafc; border: 2px solid #2c5282; border-radius: 8px; padding: 25px 30px; margin: 25px 0; }
+.exec-briefing h3 { color: #1a365d; margin-top: 0; font-size: 14pt; border-bottom: 1px solid #cbd5e0; padding-bottom: 8px; }
+.exec-briefing ul { margin: 8px 0; padding-left: 20px; }
+.exec-briefing li { margin: 6px 0; font-size: 10.5pt; }
+.exec-briefing .implication { color: #c53030; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+<div class="cover-logo">SESCO Cement Corporation</div>
+<div class="cover-divider"></div>
+<div class="cover-title">Fly Ash<br>Comprehensive Market Dossier</div>
+<div class="cover-subtitle">Coal Combustion Products &amp; Fly Ash as SCM<br>US Supply/Demand, Import Economics &amp; Trade Flow Analysis</div>
+<div class="cover-classification">Confidential &mdash; Internal Use</div>
+<div class="cover-addressee">
+Prepared for:<br>
+<strong>Mr. Rick Van Eyk</strong><br>
+Chief Executive Officer<br>
+SESCO Cement Corporation
+</div>
+<div class="cover-meta">
+Version 3.0 &nbsp;|&nbsp; February 18, 2026<br>
+Prepared by OceanDatum Market Intelligence<br>
+Part of the SCM Commodity Dossier Series
+</div>
+</div>
+
+<!-- TABLE OF CONTENTS PAGE -->
+<div class="toc-page">
+<div class="toc-page-title">Contents</div>
+<ol>
+<li>Types of Fly Ash</li>
+<li>US Production &amp; Domestic Supply</li>
+<li>The Coal Plant Closure Crisis</li>
+<li>Global Production &amp; Market Size</li>
+<li>Imports, Exports &amp; Trade Flows</li>
+<li>Pricing</li>
+<li>SCM Market Context</li>
+<li>Major Producers &amp; Suppliers</li>
+<li>End Uses by Application</li>
+<li>Physical Properties &amp; Specifications</li>
+<li>Carbon &amp; Sustainability</li>
+<li>Regulatory &amp; Standards</li>
+<li>Logistics &amp; Handling</li>
+<li>Industry Trends &amp; Outlook</li>
+<li>Quick Reference &mdash; Key Numbers</li>
+</ol>
+</div>
+
+<h1>FLY ASH COMPREHENSIVE DOSSIER</h1>
+<p><strong>Prepared:</strong> February 18, 2026 | <strong>Version:</strong> 3.0 | <strong>Focus:</strong> Coal Combustion Products &amp; Fly Ash &mdash; US Supply/Demand, Import Economics &amp; Trade Flow Analysis</p>
+
+<div class="highlight">
+<strong>EXECUTIVE SUMMARY:</strong> Fly ash is the most widely used supplementary cementitious material (SCM) in US concrete, but faces a structural supply crisis as coal-fired power generation declines. US coal plant capacity has fallen 48% from the 2011 peak (318 GW) to ~165 GW (end 2025), with an additional 68.8 GW scheduled to retire by 2030. Total CCP production fell from 111 Mt (2017) to 67 Mt (2023). Beneficial use reached a record 72% (2024) but total available fly ash for concrete is shrinking. US prices have risen to $118&ndash;123/Mt while Asian FOB prices remain $16&ndash;27/Mt, creating a $91&ndash;107/Mt import arbitrage. South Korea (49%), Turkey (26%), and China (23%) are the primary import sources. The fly ash supply gap is projected to widen to 12&ndash;18 Mt by 2028&ndash;2030, driving increased reliance on imports, reclaimed ash from landfills, and alternative SCMs.
+</div>
+
+<!-- KEY METRICS DASHBOARD -->
+<div class="stat-grid">
+<div class="stat-box">
+<div class="stat-number">67 Mt</div>
+<div class="stat-label">Total CCP Produced (2023)</div>
+<div class="stat-change down">-16% from 80 Mt (2022)</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">72%</div>
+<div class="stat-label">Beneficial Use Rate (2024)</div>
+<div class="stat-change up">Record &mdash; 10th yr &gt;50%</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">$123/Mt</div>
+<div class="stat-label">US Fly Ash Price (2025)</div>
+<div class="stat-change up">+$5 YoY</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">165 GW</div>
+<div class="stat-label">US Coal Capacity (End 2025)</div>
+<div class="stat-change down">-48% from 2011 peak</div>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- EXECUTIVE BRIEFING -->
+<div class="exec-briefing">
+<h3>Executive Briefing &mdash; Strategic Implications for SESCO Cement</h3>
+<p>The fly ash market presents both challenges and opportunities for SESCO&rsquo;s cement import and distribution operations. This briefing highlights the five most critical takeaways:</p>
+<ul>
+<li><strong>Domestic fly ash supply is in structural decline.</strong> US coal capacity has fallen 48% since 2011 and will lose another 68.8 GW by 2030. Total CCP production dropped from 111 Mt (2017) to 67 Mt (2023). This is permanent &mdash; coal plant closures are irreversible. The SCM most widely used in US concrete is disappearing.</li>
+<li><strong>Import arbitrage is compelling.</strong> US fly ash trades at $118&ndash;123/Mt while Asian FOB prices are $16&ndash;27/Mt. Even with ocean freight ($30&ndash;50/Mt), landed cost of $46&ndash;77/Mt represents 37&ndash;61% savings vs domestic. <span class="implication">SESCO opportunity:</span> SESCO&rsquo;s Houston terminal infrastructure and vessel agency expertise position the company for fly ash import/distribution.</li>
+<li><strong>Tariff barriers are selective.</strong> Chinese fly ash faces a 145% tariff, effectively blocking that origin. South Korean (49% of imports) and Turkish (26%) fly ash face minimal barriers. <span class="implication">SESCO opportunity:</span> Turkey is already a SESCO cement supply partner (Nuh Cement); fly ash co-sourcing from Turkey is a natural extension.</li>
+<li><strong>Reclaimed ash is a growing domestic source.</strong> Previously disposed ash reclamation has doubled from 2.5 Mt (2021) to 5.0+ Mt (2024 est). Companies like Eco Material Technologies (EMT) and Charah Solutions are commercializing landfill ash processing. Quality variability and ASTM compliance remain challenges.</li>
+<li><strong>The combined SCM deficit is accelerating.</strong> Fly ash supply is declining (coal closures) while GGBFS supply is declining (EAF transition). US cement demand continues rising (IIJA $1.2T through 2028). This dual SCM crisis creates sustained pricing pressure and import demand. <span class="implication">SESCO opportunity:</span> Building a diversified SCM import portfolio (fly ash + GGBFS + natural pozzolans) alongside cement creates a differentiated competitive position.</li>
+</ul>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>1. TYPES OF FLY ASH</h2>
+
+<table>
+<tr><th>Type</th><th>Source</th><th>Key Properties</th><th>Primary Uses</th><th>SCM Value</th></tr>
+<tr>
+<td><strong>Class F</strong></td>
+<td>Anthracite or bituminous coal combustion</td>
+<td>Pozzolanic; SiO2+Al2O3+Fe2O3 &ge;70%; CaO &lt;18%; low LOI</td>
+<td>General concrete SCM (15&ndash;35% replacement); mass concrete; marine structures; sulfate resistance</td>
+<td style="color:#276749; font-weight:bold;">HIGHEST &mdash; Premium SCM</td>
+</tr>
+<tr>
+<td><strong>Class C</strong></td>
+<td>Lignite or sub-bituminous coal combustion</td>
+<td>Pozzolanic + cementitious; SiO2+Al2O3+Fe2O3 &ge;50%; CaO 18&ndash;40%; self-cementing</td>
+<td>Concrete SCM (15&ndash;30% replacement); soil stabilization; flowable fill</td>
+<td style="color:#2c5282; font-weight:bold;">HIGH &mdash; Self-cementing advantage</td>
+</tr>
+<tr>
+<td><strong>Class N (Natural Pozzolan)</strong></td>
+<td>ASTM C618 also classifies raw/calcined natural pozzolans</td>
+<td>SiO2+Al2O3+Fe2O3 &ge;70%; not coal-derived; variable</td>
+<td>Concrete SCM; cement replacement where fly ash unavailable</td>
+<td style="color:#ed8936; font-weight:bold;">MODERATE &mdash; Growing alternative</td>
+</tr>
+<tr>
+<td><strong>Bottom Ash</strong></td>
+<td>Coarser fraction from coal combustion; falls to boiler bottom</td>
+<td>Coarse, granular; 10&ndash;20% of total CCP; angular particles</td>
+<td>Structural fill; aggregate substitute; roadbase</td>
+<td style="color:#666;">LOW &mdash; Aggregate only</td>
+</tr>
+<tr>
+<td><strong>Boiler Slag</strong></td>
+<td>Wet-bottom boilers; molten ash quenched in water</td>
+<td>Glassy, angular; &lt;2% of CCP; declining as wet-bottom boilers retire</td>
+<td>Blasting abrasive; roofing granules; fill</td>
+<td style="color:#666;">LOW &mdash; Niche</td>
+</tr>
+<tr>
+<td><strong>FGD Gypsum</strong></td>
+<td>Flue gas desulfurization scrubbers</td>
+<td>CaSO4&middot;2H2O; high purity; ~15% of CCP volume</td>
+<td>Wallboard manufacturing; cement retarder; agriculture</td>
+<td style="color:#666;">LOW &mdash; Different market (gypsum)</td>
+</tr>
+</table>
+
+<div class="alert">
+<strong>CRITICAL DISTINCTION:</strong> Only Class F and Class C fly ash have significant SCM value for concrete. Class F (from bituminous coal, dominant in eastern US) is the premium product for durability applications. Class C (from sub-bituminous coal, dominant in western US) has self-cementing properties but higher CaO limits its use in some applications. The ~14.5 GW retiring in 2025 is primarily MISO and PJM capacity (Midwest/Mid-Atlantic) &mdash; the heartland of Class F production.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>2. US PRODUCTION &amp; DOMESTIC SUPPLY</h2>
+
+<h3>2.1 Coal Combustion Products Production</h3>
+<table>
+<tr><th>Year</th><th>CCP Production (Mt)</th><th>Beneficial Use (Mt)</th><th>Use Rate</th><th>Disposed (Mt)</th></tr>
+<tr><td>2015</td><td>107</td><td>56</td><td>52%</td><td>51</td></tr>
+<tr><td>2017</td><td>111</td><td>71</td><td>64%</td><td>40</td></tr>
+<tr><td>2019</td><td>79</td><td>41</td><td>52%</td><td>38</td></tr>
+<tr><td>2020</td><td>69</td><td>41</td><td>59%</td><td>28</td></tr>
+<tr><td>2021</td><td>77</td><td>35</td><td>46%</td><td>42</td></tr>
+<tr><td>2022</td><td>80</td><td>50</td><td>62%</td><td>30</td></tr>
+<tr><td>2023</td><td>67</td><td>46</td><td>69%</td><td>21</td></tr>
+<tr style="background-color:#c6f6d5;"><td>2024 (est)</td><td>~60</td><td>~43</td><td>72%</td><td>~17</td></tr>
+</table>
+
+<h3>2.2 Fly Ash Breakdown within CCP</h3>
+<div class="chart-container">
+<div class="chart-title">US CCP Production by Type (2023 &mdash; 67 Mt Total)</div>
+<svg width="100%" height="280" viewBox="0 0 800 280">
+  <g transform="translate(200,140)">
+    <!-- Fly Ash: 55% -->
+    <path d="M0,0 L100,0 A100,100 0 1,1 -30.9,-95.1 Z" fill="#2c5282"/>
+    <text x="-15" y="-15" font-size="13" fill="white" font-weight="bold">55%</text>
+    <text x="-25" y="5" font-size="9" fill="white">Fly Ash</text>
+
+    <!-- Bottom Ash: 14% -->
+    <path d="M0,0 L-30.9,-95.1 A100,100 0 0,1 30.9,-95.1 Z" fill="#4299e1"/>
+    <text x="-5" y="-75" font-size="10" fill="white" font-weight="bold">14%</text>
+
+    <!-- FGD Gypsum: 15% -->
+    <path d="M0,0 L30.9,-95.1 A100,100 0 0,1 80.9,-58.8 Z" fill="#48bb78"/>
+    <text x="45" y="-68" font-size="10" fill="white" font-weight="bold">15%</text>
+
+    <!-- FGD Other: 8% -->
+    <path d="M0,0 L80.9,-58.8 A100,100 0 0,1 100,0 Z" fill="#ed8936"/>
+    <text x="70" y="-20" font-size="9" fill="white">8%</text>
+
+    <!-- Other: 8% -->
+    <path d="M0,0 L100,0 A100,100 0 0,0 100,0 Z" fill="#9f7aea"/>
+  </g>
+
+  <!-- Legend -->
+  <rect x="430" y="55" width="15" height="15" fill="#2c5282"/>
+  <text x="450" y="67" font-size="10" fill="#333">Fly Ash &mdash; 36.9 Mt (55%)</text>
+
+  <rect x="430" y="80" width="15" height="15" fill="#4299e1"/>
+  <text x="450" y="92" font-size="10" fill="#333">Bottom Ash &mdash; 9.4 Mt (14%)</text>
+
+  <rect x="430" y="105" width="15" height="15" fill="#48bb78"/>
+  <text x="450" y="117" font-size="10" fill="#333">FGD Gypsum &mdash; 10.1 Mt (15%)</text>
+
+  <rect x="430" y="130" width="15" height="15" fill="#ed8936"/>
+  <text x="450" y="142" font-size="10" fill="#333">FGD Other &mdash; 5.4 Mt (8%)</text>
+
+  <rect x="430" y="155" width="15" height="15" fill="#9f7aea"/>
+  <text x="450" y="167" font-size="10" fill="#333">Boiler Slag/Other &mdash; 5.2 Mt (8%)</text>
+
+  <rect x="430" y="195" width="300" height="45" fill="#fefcbf" rx="5"/>
+  <text x="445" y="213" font-size="10" fill="#744210" font-weight="bold">KEY: Fly ash = 55% of CCP by weight</text>
+  <text x="445" y="230" font-size="9" fill="#333">~37 Mt fly ash produced from 67 Mt total CCP (2023)</text>
+</svg>
+<div class="chart-note">Source: ACAA 2023 Production &amp; Use Survey. Fly ash is the single largest CCP category. Concrete/grout consumes 61% of beneficially used fly ash.</div>
+</div>
+
+<h3>2.3 Top Fly Ash Producing States</h3>
+<table>
+<tr><th>State</th><th>Coal Capacity (GW, 2024)</th><th>Fly Ash Class</th><th>Notes</th></tr>
+<tr><td>Texas</td><td>~18</td><td>Mixed F/C</td><td>Largest coal fleet; multiple units retiring 2025&ndash;2028</td></tr>
+<tr><td>Indiana</td><td>~14</td><td>Class F (bituminous)</td><td>Heavy coal reliance; MISO region; significant retirements</td></tr>
+<tr><td>West Virginia</td><td>~12</td><td>Class F (bituminous)</td><td>Appalachian coal heartland; premium Class F source</td></tr>
+<tr><td>Ohio</td><td>~10</td><td>Class F (bituminous)</td><td>PJM region; Duke Beckjord ash reclamation opportunity</td></tr>
+<tr><td>Kentucky</td><td>~9</td><td>Class F (bituminous)</td><td>TVA and utility plants; major retirement wave</td></tr>
+<tr><td>Wyoming</td><td>~7</td><td>Class C (sub-bituminous)</td><td>PRB coal region; Class C source for western US</td></tr>
+<tr><td>Missouri</td><td>~7</td><td>Mixed F/C</td><td>Ameren, Evergy fleets</td></tr>
+<tr><td>Georgia</td><td>~6</td><td>Class F</td><td>Southern Co. fleet; Plant Scherer, one of the largest</td></tr>
+<tr><td>Pennsylvania</td><td>~6</td><td>Class F (anthracite/bituminous)</td><td>PJM region; premium Class F</td></tr>
+<tr><td>Alabama</td><td>~5</td><td>Class F</td><td>TVA and Alabama Power</td></tr>
+</table>
+
+<div class="info">
+<strong>GEOGRAPHIC NOTE:</strong> Class F fly ash (from bituminous/anthracite coal) is concentrated in eastern states: WV, OH, PA, IN, KY, GA, AL. Class C fly ash (from sub-bituminous coal) is concentrated in western states: WY, MT, ND, TX. The 2025 retirement surge hits MISO (39%) and PJM (27%) hardest &mdash; primarily Class F production territory.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>3. THE COAL PLANT CLOSURE CRISIS</h2>
+
+<div class="chart-container">
+<div class="chart-title">US Coal-Fired Power Capacity (GW) &mdash; 2010 to 2030 Projected</div>
+<svg width="100%" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGradientRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fc8181;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c53030;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Y-axis labels -->
+  <text x="25" y="35" font-size="10" fill="#666">350</text>
+  <text x="25" y="85" font-size="10" fill="#666">280</text>
+  <text x="25" y="135" font-size="10" fill="#666">210</text>
+  <text x="25" y="185" font-size="10" fill="#666">140</text>
+  <text x="25" y="235" font-size="10" fill="#666">70</text>
+  <text x="25" y="285" font-size="10" fill="#666">0</text>
+
+  <!-- Grid lines -->
+  <line x1="50" y1="30" x2="780" y2="30" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="80" x2="780" y2="80" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="130" x2="780" y2="130" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="180" x2="780" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="230" x2="780" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="280" x2="780" y2="280" stroke="#666" stroke-width="1"/>
+
+  <!-- Bars: Height = (GW / 350) * 250, Y = 280 - height -->
+  <!-- 2010: 340 GW -->
+  <rect x="65" y="37" width="50" height="243" fill="url(#barGradient)" rx="3"/>
+  <text x="90" y="300" font-size="9" fill="#333" text-anchor="middle">2010</text>
+  <text x="90" y="30" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">340</text>
+
+  <!-- 2011: 318 GW (PEAK) -->
+  <rect x="130" y="52" width="50" height="228" fill="url(#barGradient)" rx="3"/>
+  <text x="155" y="300" font-size="9" fill="#333" text-anchor="middle">2011</text>
+  <text x="155" y="45" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">318*</text>
+
+  <!-- 2015: 280 GW -->
+  <rect x="195" y="80" width="50" height="200" fill="url(#barGradient)" rx="3"/>
+  <text x="220" y="300" font-size="9" fill="#333" text-anchor="middle">2015</text>
+  <text x="220" y="73" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">280</text>
+
+  <!-- 2019: 229 GW -->
+  <rect x="260" y="116" width="50" height="164" fill="url(#barGradient)" rx="3"/>
+  <text x="285" y="300" font-size="9" fill="#333" text-anchor="middle">2019</text>
+  <text x="285" y="109" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">229</text>
+
+  <!-- 2020: 200 GW -->
+  <rect x="325" y="137" width="50" height="143" fill="url(#barGradient)" rx="3"/>
+  <text x="350" y="300" font-size="9" fill="#333" text-anchor="middle">2020</text>
+  <text x="350" y="130" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">200</text>
+
+  <!-- 2024: 175 GW -->
+  <rect x="390" y="155" width="50" height="125" fill="url(#barGradient)" rx="3"/>
+  <text x="415" y="300" font-size="9" fill="#333" text-anchor="middle">2024</text>
+  <text x="415" y="148" font-size="9" fill="#2c5282" text-anchor="middle" font-weight="bold">175</text>
+
+  <!-- 2025: 165 GW (projected) -->
+  <rect x="455" y="162" width="50" height="118" fill="url(#barGradientRed)" rx="3"/>
+  <text x="480" y="300" font-size="9" fill="#333" text-anchor="middle">2025P</text>
+  <text x="480" y="155" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">165</text>
+
+  <!-- 2026: 159 GW (projected) -->
+  <rect x="520" y="166" width="50" height="114" fill="url(#barGradientRed)" rx="3"/>
+  <text x="545" y="300" font-size="9" fill="#333" text-anchor="middle">2026P</text>
+  <text x="545" y="159" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">159</text>
+
+  <!-- 2028: 145 GW (projected) -->
+  <rect x="585" y="176" width="50" height="104" fill="url(#barGradientRed)" rx="3"/>
+  <text x="610" y="300" font-size="9" fill="#333" text-anchor="middle">2028P</text>
+  <text x="610" y="169" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">145</text>
+
+  <!-- 2030: 106 GW (projected) -->
+  <rect x="650" y="204" width="50" height="76" fill="url(#barGradientRed)" rx="3"/>
+  <text x="675" y="300" font-size="9" fill="#333" text-anchor="middle">2030P</text>
+  <text x="675" y="197" font-size="9" fill="#c53030" text-anchor="middle" font-weight="bold">106</text>
+
+  <!-- Legend -->
+  <rect x="720" y="50" width="15" height="15" fill="url(#barGradient)" rx="2"/>
+  <text x="740" y="61" font-size="9" fill="#333">Historical</text>
+  <rect x="720" y="70" width="15" height="15" fill="url(#barGradientRed)" rx="2"/>
+  <text x="740" y="81" font-size="9" fill="#333">Projected</text>
+
+  <text x="155" y="18" font-size="8" fill="#c53030">*Peak Year</text>
+</svg>
+<div class="chart-note">Sources: EIA, IEEFA. 2025&ndash;2030 projections based on announced retirements. 68.8 GW scheduled to retire 2025&ndash;2030.</div>
+</div>
+
+<h3>3.1 2025 Retirement Surge</h3>
+<table>
+<tr><th>Metric</th><th>2023</th><th>2024</th><th>2025 (Projected)</th><th>Change</th></tr>
+<tr><td>Capacity Retired (MW)</td><td>10,577</td><td>3,629</td><td>14,532</td><td>+300% YoY</td></tr>
+<tr><td>Coal Consumed by Retiring Units (M short tons)</td><td>28.5</td><td>9.0</td><td>39.6</td><td>+340% YoY</td></tr>
+<tr><td>Primary Regions Affected</td><td colspan="4">MISO (39%), PJM (27%), SPP (15%)</td></tr>
+</table>
+
+<div class="alert">
+<strong>2025 RETIREMENT SURGE:</strong> Record 14.5 GW retiring in 2025 &mdash; the highest annual retirement since the coal decline began. These units consumed 39.6 Mt of coal in 2023, generating millions of tons of fly ash. MISO + PJM account for 66% of 2025 retirements, removing significant Class F fly ash production from the Midwest and Mid-Atlantic &mdash; precisely the regions where concrete demand remains strong.
+</div>
+
+<h3>3.2 Supply Impact Summary</h3>
+<div class="two-col">
+<div>
+<h4 style="color:#c53030;">Supply Threats</h4>
+<ul>
+<li><strong>Coal retirements:</strong> 68.8 GW scheduled to close 2025&ndash;2030</li>
+<li><strong>Production decline:</strong> 111 Mt CCP (2017) &rarr; 67 Mt (2023) &rarr; ~45 Mt by 2030</li>
+<li><strong>Capacity factor:</strong> Dropped from 67% (2010) to 42% (2023)</li>
+<li><strong>Regional loss:</strong> MISO + PJM losing 66% of 2025 retirements (Class F heartland)</li>
+<li><strong>EPA regulations:</strong> Mercury/Air Toxics (MATS), CCR Rule driving closures</li>
+</ul>
+</div>
+<div>
+<h4 style="color:#276749;">Supply Stabilizers</h4>
+<ul>
+<li><strong>Beneficial use rate:</strong> 72% (2024 record) &mdash; extracting more from less</li>
+<li><strong>Reclaimed ash:</strong> 4.5 Mt (2023), doubling annually</li>
+<li><strong>Imports growing:</strong> Korea, Turkey filling domestic gap</li>
+<li><strong>CCS at coal plants:</strong> Could extend some plant lifespans</li>
+<li><strong>Western coal:</strong> PRB plants retiring more slowly (Class C)</li>
+</ul>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>4. GLOBAL PRODUCTION &amp; MARKET SIZE</h2>
+
+<h3>4.1 World Fly Ash Production</h3>
+<table>
+<tr><th>Region</th><th>CCP/Fly Ash Production (Mt/yr)</th><th>Utilization Rate</th><th>Key Detail</th></tr>
+<tr><td>China</td><td>~600 Mt fly ash</td><td>~68%</td><td>World&rsquo;s largest producer; 145% tariff on US imports</td></tr>
+<tr><td>India</td><td>~280 Mt CCP</td><td>~80%</td><td>Rapidly growing utilization; government mandates</td></tr>
+<tr><td>EU-27</td><td>~40 Mt</td><td>&gt;90%</td><td>Mature market; coal phase-out accelerating (Germany, Poland last major)</td></tr>
+<tr><td>United States</td><td>~67 Mt CCP (37 Mt fly ash)</td><td>72%</td><td>Structural decline; coal closures irreversible</td></tr>
+<tr><td>Japan/S. Korea</td><td>~20 Mt combined</td><td>&gt;95%</td><td>Export surplus; high quality; key US import sources</td></tr>
+<tr><td>Australia</td><td>~13 Mt</td><td>~45%</td><td>Lower utilization; export potential to Asian markets</td></tr>
+<tr><td>SE Asia</td><td>~50 Mt</td><td>~30&ndash;40%</td><td>Vietnam, Indonesia, Philippines &mdash; low-cost FOB source</td></tr>
+</table>
+
+<h3>4.2 Global Market Size</h3>
+<table>
+<tr><th>Market Segment</th><th>2024 Value</th><th>Forecast</th><th>CAGR</th></tr>
+<tr><td>Global Fly Ash Market</td><td>$5.2&ndash;7.4 billion</td><td>$8.7&ndash;12.5B by 2031&ndash;33</td><td>5.2&ndash;7.5%</td></tr>
+<tr><td>US Fly Ash Market</td><td>$2.36 billion</td><td>$3.2B by 2030</td><td>5.2%</td></tr>
+<tr><td>Global SCM Market</td><td>$91.1 billion</td><td>$119.9B by 2033</td><td>3.1%</td></tr>
+</table>
+
+<div class="highlight">
+<strong>MARKET PARADOX:</strong> The US fly ash market value continues to grow ($2.36B, +5.2% CAGR) even as production volume declines. This reflects rising prices driven by supply scarcity. China produces ~600 Mt of fly ash annually (16x the US) but faces 145% tariff barriers. South Korea and Japan, with utilization rates &gt;95%, have limited export surplus but are the primary suppliers to the US.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>5. IMPORTS, EXPORTS &amp; TRADE FLOWS</h2>
+
+<h3>5.1 US Import Position</h3>
+<div class="chart-container">
+<div class="chart-title">US Fly Ash Imports by Source Country (Nov 2023 &ndash; Oct 2024)</div>
+<svg width="100%" height="260" viewBox="0 0 800 260">
+  <g transform="translate(200,130)">
+    <!-- South Korea: 49% -->
+    <path d="M0,0 L100,0 A100,100 0 1,1 -6.3,-99.8 Z" fill="#2c5282"/>
+    <text x="-30" y="-10" font-size="14" fill="white" font-weight="bold">49%</text>
+    <text x="-40" y="10" font-size="9" fill="white">S. Korea</text>
+
+    <!-- Turkey: 26% -->
+    <path d="M0,0 L-6.3,-99.8 A100,100 0 0,1 66.9,-74.3 Z" fill="#c53030"/>
+    <text x="15" y="-70" font-size="11" fill="white" font-weight="bold">26%</text>
+    <text x="10" y="-55" font-size="8" fill="white">Turkey</text>
+
+    <!-- China: 23% -->
+    <path d="M0,0 L66.9,-74.3 A100,100 0 0,1 100,0 Z" fill="#ed8936"/>
+    <text x="70" y="-25" font-size="11" fill="white" font-weight="bold">23%</text>
+    <text x="65" y="-10" font-size="8" fill="white">China</text>
+
+    <!-- Other: 2% -->
+  </g>
+
+  <!-- Legend -->
+  <rect x="430" y="50" width="15" height="15" fill="#2c5282"/>
+  <text x="450" y="62" font-size="10" fill="#333">South Korea (49%) &mdash; 19 shipments; high-quality Class F</text>
+
+  <rect x="430" y="75" width="15" height="15" fill="#c53030"/>
+  <text x="450" y="87" font-size="10" fill="#333">Turkey (26%) &mdash; 10 shipments; growing supplier</text>
+
+  <rect x="430" y="100" width="15" height="15" fill="#ed8936"/>
+  <text x="450" y="112" font-size="10" fill="#333">China (23%) &mdash; 9 shipments; 145% tariff limits growth</text>
+
+  <rect x="430" y="125" width="15" height="15" fill="#a0aec0"/>
+  <text x="450" y="137" font-size="10" fill="#333">Other (2%) &mdash; Japan, Canada; alternative sources developing</text>
+
+  <rect x="430" y="165" width="300" height="45" fill="#fefcbf" rx="5"/>
+  <text x="445" y="183" font-size="10" fill="#744210" font-weight="bold">US = 11% of global fly ash imports</text>
+  <text x="445" y="200" font-size="9" fill="#333">39 total shipments in trailing 12-month period</text>
+</svg>
+<div class="chart-note">Source: Volza Import Statistics (Nov 2023 &ndash; Oct 2024). US accounts for 11% of global fly ash import volume.</div>
+</div>
+
+<h3>5.2 Key Receiving States</h3>
+<table>
+<tr><th>State</th><th>Role</th><th>Drivers</th></tr>
+<tr><td>Florida</td><td>Major importer</td><td>No domestic coal plants; massive construction; port access</td></tr>
+<tr><td>Washington</td><td>West Coast gateway</td><td>Trans-Pacific route from Korea/Japan; short sea from BC</td></tr>
+<tr><td>Louisiana</td><td>Gulf gateway</td><td>Mississippi River system distribution; lower landing costs</td></tr>
+<tr><td>Texas</td><td>Gulf gateway + domestic</td><td>Houston terminal infrastructure; local coal declining</td></tr>
+<tr><td>Nevada</td><td>Inland importer</td><td>No domestic coal; rail from West Coast ports</td></tr>
+<tr><td>Ohio</td><td>Domestic + reclaimed</td><td>Beckjord reclamation; Midwest concrete demand</td></tr>
+</table>
+
+<h3>5.3 Import Economics</h3>
+<div class="chart-container">
+<div class="chart-title">Fly Ash Price Comparison by Region ($/Mt &mdash; 2025)</div>
+<svg width="100%" height="250" viewBox="0 0 800 250">
+  <!-- Bars -->
+  <rect x="80" y="30" width="100" height="164" fill="#c53030" rx="5"/>
+  <text x="130" y="22" font-size="12" fill="#c53030" text-anchor="middle" font-weight="bold">$123</text>
+  <text x="130" y="210" font-size="10" fill="#333" text-anchor="middle">USA</text>
+
+  <rect x="220" y="81" width="100" height="113" fill="#ed8936" rx="5"/>
+  <text x="270" y="73" font-size="12" fill="#ed8936" text-anchor="middle" font-weight="bold">$87</text>
+  <text x="270" y="210" font-size="10" fill="#333" text-anchor="middle">France</text>
+
+  <rect x="360" y="160" width="100" height="34" fill="#48bb78" rx="5"/>
+  <text x="410" y="152" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">$25</text>
+  <text x="410" y="210" font-size="10" fill="#333" text-anchor="middle">China</text>
+
+  <rect x="500" y="164" width="100" height="30" fill="#48bb78" rx="5"/>
+  <text x="550" y="156" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">$22</text>
+  <text x="550" y="210" font-size="10" fill="#333" text-anchor="middle">Germany</text>
+
+  <rect x="640" y="168" width="100" height="26" fill="#38a169" rx="5"/>
+  <text x="690" y="160" font-size="12" fill="#38a169" text-anchor="middle" font-weight="bold">$16&ndash;27</text>
+  <text x="690" y="210" font-size="10" fill="#333" text-anchor="middle">Asia FOB</text>
+
+  <!-- Arbitrage arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d69e2e"/>
+    </marker>
+  </defs>
+  <line x1="690" y1="140" x2="200" y2="50" stroke="#d69e2e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="420" y="80" font-size="10" fill="#d69e2e" font-weight="bold">$91&ndash;107/Mt ARBITRAGE</text>
+</svg>
+<div class="chart-note">Sources: ChemAnalyst, IMARC Group (2025). Asian FOB + ocean freight ($30&ndash;50/Mt) = landed cost $46&ndash;77/Mt vs US domestic $118&ndash;123/Mt. Import savings of 37&ndash;61%.</div>
+</div>
+
+<div class="info">
+<strong>TARIFF LANDSCAPE:</strong> Chinese fly ash faces <strong>145% tariff</strong> (Sec. 301), effectively blocking that origin despite $16&ndash;25/Mt FOB pricing. South Korean and Turkish fly ash face standard duties only (minimal). Japan and Canadian fly ash enter at favorable rates. The tariff structure creates a two-tier import market: Korea/Turkey accessible, China blocked.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>6. PRICING</h2>
+
+<h3>6.1 Current Pricing (2025)</h3>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+<div class="price-box">
+<div class="price-big">$123/Mt</div>
+<div>USA (Q3 2025)</div>
+<div style="color:#c53030; font-size:10pt;">+$5 YoY</div>
+</div>
+<div class="price-box">
+<div class="price-big">$118/Mt</div>
+<div>USA (Q2 2025)</div>
+<div style="color:#666; font-size:10pt;">-5.3% QoQ</div>
+</div>
+<div class="price-box">
+<div class="price-big">$87/Mt</div>
+<div>France</div>
+<div style="color:#666; font-size:10pt;">Stable</div>
+</div>
+<div class="price-box">
+<div class="price-big">$22/Mt</div>
+<div>Germany</div>
+<div style="color:#48bb78; font-size:10pt;">Oversupply</div>
+</div>
+<div class="price-box">
+<div class="price-big">$16&ndash;27/Mt</div>
+<div>Asian FOB</div>
+<div style="color:#48bb78; font-size:10pt;">Abundant supply</div>
+</div>
+</div>
+
+<h3>6.2 Historical US Pricing Trend</h3>
+<table>
+<tr><th>Period</th><th>US Price ($/Mt)</th><th>Key Driver</th></tr>
+<tr><td>2018</td><td>~$50&ndash;70</td><td>Adequate supply; coal fleet still ~230 GW</td></tr>
+<tr><td>2020</td><td>~$70&ndash;85</td><td>Coal capacity dropped below 200 GW; tightening supply</td></tr>
+<tr><td>2022</td><td>~$90&ndash;100</td><td>Post-COVID construction surge; supply-demand gap widening</td></tr>
+<tr><td>2024 Q2</td><td>$118</td><td>Coal retirements accelerating; IIJA spending ramping</td></tr>
+<tr><td>2025 Q3</td><td>$123</td><td>Record retirements (14.5 GW); constrained supply + strong demand</td></tr>
+</table>
+
+<h3>6.3 Price Drivers</h3>
+<table>
+<tr><th>Factor</th><th>Impact</th><th>Direction</th></tr>
+<tr><td>Coal plant closures</td><td>Reduced domestic supply</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>IIJA infrastructure spending</td><td>Sustained concrete demand</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>145% China tariff</td><td>Reduced cheapest import source</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>Buy Clean / LEED v5 mandates</td><td>Increased SCM demand</td><td style="color:#c53030;">Price Up</td></tr>
+<tr><td>Declining Asia-USWC freight</td><td>Lower import costs</td><td style="color:#48bb78;">Price Down</td></tr>
+<tr><td>Korean/Turkish import growth</td><td>Increased competition</td><td style="color:#48bb78;">Price Down</td></tr>
+<tr><td>Reclaimed ash expansion</td><td>New domestic supply source</td><td style="color:#48bb78;">Price Down</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>7. SCM MARKET CONTEXT</h2>
+
+<h3>7.1 Fly Ash vs Competing SCMs</h3>
+<table>
+<tr><th>SCM</th><th>US Consumption</th><th>Typical Replacement</th><th>Supply Trend</th><th>Price ($/Mt)</th></tr>
+<tr><td><strong>Fly Ash</strong></td><td>~15&ndash;35 Mt</td><td>15&ndash;35%</td><td style="color:#c53030;">Declining (coal closures)</td><td>$118&ndash;123</td></tr>
+<tr><td><strong>GGBFS</strong></td><td>~3&ndash;5 Mt</td><td>25&ndash;70%</td><td style="color:#c53030;">Declining (BF&rarr;EAF shift)</td><td>$100&ndash;140+</td></tr>
+<tr><td><strong>Natural Pozzolans</strong></td><td>Growing</td><td>15&ndash;25%</td><td style="color:#48bb78;">Growing (volcanic, pumice)</td><td>$40&ndash;80</td></tr>
+<tr><td><strong>Silica Fume</strong></td><td>&lt;1 Mt</td><td>5&ndash;10%</td><td>Stable (niche)</td><td>$400&ndash;600+</td></tr>
+<tr><td><strong>LC3 (Calcined Clay)</strong></td><td>Minimal</td><td>Up to 40%</td><td style="color:#48bb78;">Emerging (early US stage)</td><td>$50&ndash;80 est.</td></tr>
+<tr><td><strong>Portland Cement</strong></td><td>~100 Mt</td><td>Baseline</td><td>Stable/growing</td><td>$163</td></tr>
+</table>
+
+<div class="alert">
+<strong>DUAL SCM SUPPLY CRISIS:</strong> The US faces a unique crisis &mdash; both primary SCMs are in structural decline simultaneously from unrelated industrial transitions. Fly ash is declining because coal plants are closing. GGBFS is declining because blast furnaces are being replaced by EAFs. Combined, this creates a growing SCM deficit that cannot be filled by domestic sources alone. LC3 (limestone calcined clay cement) is the leading long-term replacement, but US commercial-scale adoption remains minimal.
+</div>
+
+<h3>7.2 Fly Ash Performance in Concrete</h3>
+<div class="two-col">
+<div>
+<h4 style="color:#276749;">Advantages</h4>
+<ul>
+<li>15&ndash;35% cement replacement (typical); higher in mass concrete</li>
+<li>Improved workability and pumpability</li>
+<li>Reduced water demand (ball-bearing effect of spherical particles)</li>
+<li>Reduced heat of hydration (mass concrete, hot weather)</li>
+<li>Enhanced sulfate resistance (Class F)</li>
+<li>Reduced ASR (alkali-silica reaction) expansion</li>
+<li>Lower permeability at later ages</li>
+<li>86&ndash;95% lower embodied CO2 than OPC</li>
+<li>LEED v5 / Buy Clean compliance</li>
+<li>Cost savings vs Portland cement ($40&ndash;60/Mt less)</li>
+</ul>
+</div>
+<div>
+<h4 style="color:#c53030;">Limitations</h4>
+<ul>
+<li>Slower early strength gain (3 and 7-day)</li>
+<li>Quality variability by coal source and plant</li>
+<li>LOI (loss on ignition) can vary &mdash; high LOI reduces air entrainment</li>
+<li>Supply increasingly constrained and unreliable</li>
+<li>Class C high-CaO limits sulfate resistance</li>
+<li>Cold weather extends set times further</li>
+<li>Color variability (aesthetic applications)</li>
+<li>Fineness varies between sources</li>
+</ul>
+</div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>8. MAJOR PRODUCERS &amp; SUPPLIERS</h2>
+
+<h3>8.1 Ash Processors &amp; Marketers</h3>
+<table>
+<tr><th>Company</th><th>Role</th><th>Key Details</th></tr>
+<tr><td><strong>Eco Material Technologies (EMT)</strong></td><td>Largest US ash processor</td><td>Boral Industries ash business acquired. 12+ Mt/yr handling. Reclaimed ash processing (harvesting). Proprietary beneficiation technology (LOI reduction, classification). 40+ terminals/processing sites.</td></tr>
+<tr><td><strong>Charah Solutions</strong></td><td>Ash management &amp; processing</td><td>NYSE: CHRA. Environmental services + ash marketing. MultiCem&trade; slag/pozzolan product. Greens Port terminal (Houston). Coal ash pond remediation.</td></tr>
+<tr><td><strong>SEFA Group</strong></td><td>Ash marketer</td><td>Southeast/Mid-Atlantic focus. Long-term utility contracts. Duke Energy, Dominion supply agreements.</td></tr>
+<tr><td><strong>Headwaters (now Boral)</strong></td><td>Former major processor</td><td>Acquired by Boral 2017; ash business to EMT. Legacy contracts at many plants.</td></tr>
+<tr><td><strong>Salt River Materials Group</strong></td><td>Southwest processor</td><td>Arizona/New Mexico focus. Navajo Generating Station ash inventories.</td></tr>
+<tr><td><strong>ISG Resources</strong></td><td>Midwest/South processor</td><td>Utility-owned ash marketing. Quality control focus.</td></tr>
+</table>
+
+<h3>8.2 Major Utility Producers (Coal Fleet Owners)</h3>
+<table>
+<tr><th>Utility</th><th>Coal Fleet (GW, approx)</th><th>Key Plants</th><th>Retirement Plans</th></tr>
+<tr><td><strong>Duke Energy</strong></td><td>~8</td><td>Belews Creek, Marshall, Gibson</td><td>Aggressive coal exit; Beckjord closed 2014 (reclamation site)</td></tr>
+<tr><td><strong>Southern Company</strong></td><td>~10</td><td>Plant Scherer (3.5 GW), Miller, Bowen</td><td>Scherer one of largest US coal plants; partial unit retirements</td></tr>
+<tr><td><strong>AEP (American Electric Power)</strong></td><td>~12</td><td>Mountaineer, Mitchell, Cardinal</td><td>Exiting coal by 2035; WV plants among last</td></tr>
+<tr><td><strong>Ameren</strong></td><td>~5</td><td>Labadie, Rush Island</td><td>Rush Island closed; Labadie 2036</td></tr>
+<tr><td><strong>TVA (Tennessee Valley Authority)</strong></td><td>~6</td><td>Cumberland, Kingston, Paradise</td><td>Federal mandate; aggressive closure schedule</td></tr>
+<tr><td><strong>Vistra Energy</strong></td><td>~8</td><td>Luminant TX fleet, various Midwest</td><td>Texas lignite plants among first to retire</td></tr>
+</table>
+
+<h3>8.3 International Suppliers</h3>
+<table>
+<tr><th>Company/Source</th><th>Country</th><th>Quality</th><th>US Market Strategy</th></tr>
+<tr><td><strong>KEPCO/Korean generators</strong></td><td>South Korea</td><td>High-quality Class F</td><td>49% of US imports; consistent quality; established logistics</td></tr>
+<tr><td><strong>Turkish utilities</strong></td><td>Turkey</td><td>Class F</td><td>26% of US imports; growing rapidly; existing cement trade lanes</td></tr>
+<tr><td><strong>Chinese generators</strong></td><td>China</td><td>Variable</td><td>23% of imports but 145% tariff limits growth; cheapest FOB</td></tr>
+<tr><td><strong>J-Power/JERA</strong></td><td>Japan</td><td>Premium Class F</td><td>Small share but high quality; potential growth</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>9. END USES BY APPLICATION</h2>
+
+<h3>9.1 Fly Ash Beneficial Use by Application (2023)</h3>
+<div class="chart-container">
+<div class="chart-title">2023 Fly Ash Beneficial Use by Application (46.3 Mt total CCP beneficially used)</div>
+<svg width="100%" height="280" viewBox="0 0 800 280">
+  <g transform="translate(200,140)">
+    <!-- Concrete/Grout: 61% -->
+    <path d="M0,0 L100,0 A100,100 0 1,1 -80.9,-58.8 Z" fill="#2c5282"/>
+    <text x="-20" y="-30" font-size="11" fill="white" font-weight="bold">61%</text>
+    <text x="-30" y="-15" font-size="9" fill="white">Concrete</text>
+
+    <!-- Structural Fills: 15% -->
+    <path d="M0,0 L-80.9,-58.8 A100,100 0 0,1 -30.9,-95.1 Z" fill="#4299e1"/>
+    <text x="-70" y="-70" font-size="10" fill="white" font-weight="bold">15%</text>
+
+    <!-- Road Base: 8% -->
+    <path d="M0,0 L-30.9,-95.1 A100,100 0 0,1 30.9,-95.1 Z" fill="#48bb78"/>
+    <text x="-5" y="-80" font-size="10" fill="white" font-weight="bold">8%</text>
+
+    <!-- Mine Fill: 4% -->
+    <path d="M0,0 L30.9,-95.1 A100,100 0 0,1 58.8,-80.9 Z" fill="#ed8936"/>
+    <text x="40" y="-75" font-size="9" fill="white">4%</text>
+
+    <!-- Other: 12% -->
+    <path d="M0,0 L58.8,-80.9 A100,100 0 0,1 100,0 Z" fill="#9f7aea"/>
+    <text x="60" y="-30" font-size="10" fill="white" font-weight="bold">12%</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="430" y="60" width="15" height="15" fill="#2c5282"/>
+  <text x="450" y="72" font-size="10" fill="#333">Concrete/Grout &mdash; 28.2 Mt (61%)</text>
+
+  <rect x="430" y="85" width="15" height="15" fill="#4299e1"/>
+  <text x="450" y="97" font-size="10" fill="#333">Structural Fills &mdash; 6.9 Mt (15%)</text>
+
+  <rect x="430" y="110" width="15" height="15" fill="#48bb78"/>
+  <text x="450" y="122" font-size="10" fill="#333">Road Base/Stabilization &mdash; 3.7 Mt (8%)</text>
+
+  <rect x="430" y="135" width="15" height="15" fill="#ed8936"/>
+  <text x="450" y="147" font-size="10" fill="#333">Mine Backfill &mdash; 1.9 Mt (4%)</text>
+
+  <rect x="430" y="160" width="15" height="15" fill="#9f7aea"/>
+  <text x="450" y="172" font-size="10" fill="#333">Other (gypsum panels, cement kiln, etc.) &mdash; 5.6 Mt (12%)</text>
+
+  <rect x="430" y="200" width="300" height="45" fill="#c6f6d5" rx="5"/>
+  <text x="445" y="218" font-size="10" fill="#276749" font-weight="bold">FLY ASH IN CONCRETE +9% YoY</text>
+  <text x="445" y="235" font-size="9" fill="#333">11.9 Mt (2023) vs 10.9 Mt (2022) — demand rising</text>
+</svg>
+<div class="chart-note">Source: ACAA 2023 Production &amp; Use Survey. Fly ash in concrete increased +9% YoY despite total CCP declining 16%.</div>
+</div>
+
+<h3>9.2 Concrete Applications by Sector</h3>
+<table>
+<tr><th>Sector</th><th>Fly Ash Use</th><th>Typical Replacement %</th><th>Key Requirement</th></tr>
+<tr><td>Ready-mix concrete</td><td>Largest consumer</td><td>15&ndash;25%</td><td>Workability, cost savings, strength</td></tr>
+<tr><td>Precast/prestressed</td><td>Growing</td><td>15&ndash;20%</td><td>Surface finish, early strength, consistency</td></tr>
+<tr><td>Mass concrete (dams, foundations)</td><td>Essential</td><td>25&ndash;40%</td><td>Low heat of hydration</td></tr>
+<tr><td>Highway paving</td><td>DOT specifications</td><td>15&ndash;25%</td><td>Durability, ASR mitigation, sulfate resistance</td></tr>
+<tr><td>Oil well cementing</td><td>Specialty</td><td>Variable</td><td>Temperature resistance, low permeability</td></tr>
+<tr><td>Soil stabilization</td><td>Class C dominant</td><td>N/A (direct)</td><td>Self-cementing property</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>10. PHYSICAL PROPERTIES &amp; SPECIFICATIONS</h2>
+
+<h3>10.1 ASTM C618 Chemical Requirements</h3>
+<table>
+<tr><th>Property</th><th>Class F</th><th>Class C</th><th>Class N</th></tr>
+<tr><td>SiO2 + Al2O3 + Fe2O3 (min %)</td><td style="font-weight:bold;">&ge;70%</td><td style="font-weight:bold;">&ge;50%</td><td style="font-weight:bold;">&ge;70%</td></tr>
+<tr><td>SO3 (max %)</td><td>5.0</td><td>5.0</td><td>4.0</td></tr>
+<tr><td>Moisture content (max %)</td><td>3.0</td><td>3.0</td><td>3.0</td></tr>
+<tr><td>Loss on Ignition (LOI, max %)</td><td>6.0*</td><td>6.0</td><td>10.0</td></tr>
+</table>
+<p style="font-size:9pt;">*Some specifications allow up to 12% LOI with approval. Low-LOI ash (&lt;3%) commands premium pricing. High LOI reduces air entrainment in concrete.</p>
+
+<h3>10.2 ASTM C618 Physical Requirements</h3>
+<table>
+<tr><th>Property</th><th>Requirement</th><th>Test Method</th></tr>
+<tr><td>Fineness (retained on 45&mu;m / No. 325 sieve)</td><td>Max 34%</td><td>ASTM C430</td></tr>
+<tr><td>Strength Activity Index (7-day)</td><td>Min 75% of control</td><td>ASTM C311</td></tr>
+<tr><td>Strength Activity Index (28-day)</td><td>Min 75% of control</td><td>ASTM C311</td></tr>
+<tr><td>Water requirement</td><td>Max 105% of control</td><td>ASTM C311</td></tr>
+<tr><td>Soundness (autoclave expansion)</td><td>Max 0.8%</td><td>ASTM C151</td></tr>
+<tr><td>Uniformity (density variation)</td><td>Max &plusmn;5% of average</td><td>ASTM C311</td></tr>
+</table>
+
+<h3>10.3 Typical Chemical Composition</h3>
+<table>
+<tr><th>Oxide</th><th>Class F (Bituminous)</th><th>Class C (Sub-bituminous)</th><th>Portland Cement</th></tr>
+<tr><td>SiO2</td><td>40&ndash;60%</td><td>25&ndash;45%</td><td>17&ndash;25%</td></tr>
+<tr><td>Al2O3</td><td>15&ndash;30%</td><td>15&ndash;25%</td><td>3&ndash;8%</td></tr>
+<tr><td>Fe2O3</td><td>5&ndash;20%</td><td>5&ndash;15%</td><td>0.5&ndash;6%</td></tr>
+<tr><td>CaO</td><td>1&ndash;12%</td><td>18&ndash;40%</td><td>60&ndash;67%</td></tr>
+<tr><td>MgO</td><td>1&ndash;4%</td><td>3&ndash;8%</td><td>0.5&ndash;6%</td></tr>
+<tr><td>SO3</td><td>0.5&ndash;2%</td><td>1&ndash;5%</td><td>1.5&ndash;4.5%</td></tr>
+<tr><td>Na2O + K2O (alkali)</td><td>1&ndash;4%</td><td>1&ndash;6%</td><td>0.2&ndash;1.3%</td></tr>
+<tr><td>LOI</td><td>1&ndash;12%</td><td>0.5&ndash;3%</td><td>0.5&ndash;3%</td></tr>
+</table>
+
+<h3>10.4 Physical Characteristics</h3>
+<table>
+<tr><th>Property</th><th>Fly Ash</th><th>Portland Cement</th></tr>
+<tr><td>Particle shape</td><td>Spherical (cenospheres, plerospheres)</td><td>Angular, irregular</td></tr>
+<tr><td>Particle size</td><td>1&ndash;100 &mu;m (mean ~20 &mu;m)</td><td>1&ndash;80 &mu;m (mean ~15 &mu;m)</td></tr>
+<tr><td>Specific gravity</td><td>2.1&ndash;2.6 (Class F); 2.4&ndash;2.8 (Class C)</td><td>~3.15</td></tr>
+<tr><td>Specific surface area</td><td>300&ndash;500 m&sup2;/kg (Blaine)</td><td>350&ndash;380 m&sup2;/kg</td></tr>
+<tr><td>Color</td><td>Light tan to dark gray (depends on carbon content)</td><td>Gray</td></tr>
+<tr><td>Hydraulic activity</td><td>Pozzolanic (Class F); Pozzolanic + cementitious (Class C)</td><td>Direct hydraulic</td></tr>
+</table>
+
+<div class="info">
+<strong>QUALITY NOTE:</strong> The spherical particle shape of fly ash is its key physical advantage &mdash; it acts as a ball bearing in concrete, improving workability and reducing water demand. This is unique among SCMs (GGBFS and natural pozzolans have angular particles). Low-LOI Class F fly ash (&lt;3% LOI) from eastern bituminous coal commands premium pricing due to superior air entrainment compatibility.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>11. CARBON &amp; SUSTAINABILITY</h2>
+
+<h3>11.1 Embodied Carbon Comparison</h3>
+<div class="chart-container">
+<div class="chart-title">Embodied CO2 by Cementitious Material (kg CO2e / tonne)</div>
+<svg width="100%" height="250" viewBox="0 0 800 250">
+  <!-- Portland Cement: 844-967 -->
+  <rect x="100" y="25" width="120" height="170" fill="#c53030" rx="5"/>
+  <text x="160" y="15" font-size="14" fill="#c53030" text-anchor="middle" font-weight="bold">844&ndash;967</text>
+  <text x="160" y="210" font-size="10" fill="#333" text-anchor="middle">Portland Cement</text>
+  <text x="160" y="223" font-size="9" fill="#666" text-anchor="middle">(OPC / CEM I)</text>
+
+  <!-- Fly Ash: 20-50 -->
+  <rect x="270" y="186" width="120" height="9" fill="#ed8936" rx="3"/>
+  <text x="330" y="178" font-size="14" fill="#ed8936" text-anchor="middle" font-weight="bold">20&ndash;50</text>
+  <text x="330" y="210" font-size="10" fill="#333" text-anchor="middle">Fly Ash</text>
+
+  <!-- GGBFS: 35-67 -->
+  <rect x="440" y="183" width="120" height="12" fill="#2c5282" rx="3"/>
+  <text x="500" y="175" font-size="14" fill="#2c5282" text-anchor="middle" font-weight="bold">35&ndash;67</text>
+  <text x="500" y="210" font-size="10" fill="#333" text-anchor="middle">GGBFS</text>
+
+  <!-- Natural Pozzolan: 15-40 -->
+  <rect x="610" y="187" width="120" height="8" fill="#48bb78" rx="3"/>
+  <text x="670" y="179" font-size="14" fill="#48bb78" text-anchor="middle" font-weight="bold">15&ndash;40</text>
+  <text x="670" y="210" font-size="10" fill="#333" text-anchor="middle">Natural Pozzolan</text>
+
+  <!-- Annotation -->
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d69e2e"/>
+    </marker>
+  </defs>
+  <line x1="160" y1="200" x2="330" y2="200" stroke="#d69e2e" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="245" y="240" font-size="11" fill="#d69e2e" text-anchor="middle" font-weight="bold">95&ndash;97% CO2 REDUCTION</text>
+</svg>
+<div class="chart-note">Sources: PCA, EPDs, various LCA studies. Fly ash embodied CO2 reflects only collection, processing, and transport energy &mdash; combustion emissions allocated to power generation.</div>
+</div>
+
+<h3>11.2 CO2 Reduction in Concrete</h3>
+<table>
+<tr><th>Fly Ash Replacement Rate</th><th>Concrete CO2 Reduction</th><th>Performance Impact</th></tr>
+<tr><td>15%</td><td>~13&ndash;15%</td><td>Negligible strength reduction; improved workability</td></tr>
+<tr><td>20%</td><td>~17&ndash;20%</td><td>Standard replacement; most DOT specifications</td></tr>
+<tr><td>25%</td><td>~22&ndash;25%</td><td>Comparable to OPC at 28 days; improved long-term</td></tr>
+<tr><td>35%</td><td>~30&ndash;33%</td><td>Reduced early strength; excellent durability; sulfate resistance</td></tr>
+<tr><td>50% (HVFA)</td><td>~45&ndash;48%</td><td>Mass concrete; extended set time; superior durability</td></tr>
+</table>
+
+<div class="success">
+<strong>CARBON VALUE PROPOSITION:</strong> At just 20&ndash;50 kg CO2e/tonne, fly ash has the lowest embodied carbon of any major SCM. Every ton of fly ash used instead of Portland cement saves approximately <strong>800&ndash;920 kg CO2</strong>. With Buy Clean mandates and LEED v5 now requiring embodied carbon quantification, fly ash is the most impactful ingredient for decarbonizing concrete &mdash; but the irony is clear: the cleanest SCM is disappearing because its source (coal combustion) is too dirty.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>12. REGULATORY &amp; STANDARDS</h2>
+
+<h3>12.1 Key Standards</h3>
+<table>
+<tr><th>Standard</th><th>Scope</th><th>Key Provisions</th></tr>
+<tr><td><strong>ASTM C618-23</strong></td><td>Coal Fly Ash and Natural Pozzolans for Concrete</td><td>Defines Class F, Class C, Class N; chemical/physical requirements; SAI testing</td></tr>
+<tr><td><strong>ASTM C595/C595M-24</strong></td><td>Blended Hydraulic Cements</td><td>Type IP (Portland-pozzolan); allows up to 40% pozzolan</td></tr>
+<tr><td><strong>ASTM C1157</strong></td><td>Performance Hydraulic Cement</td><td>Any SCM proportion if performance criteria met</td></tr>
+<tr><td><strong>ACI 232.2R</strong></td><td>Use of Fly Ash in Concrete</td><td>Technical guide: mix design, placement, curing for fly ash concrete</td></tr>
+<tr><td><strong>AASHTO M 295</strong></td><td>Coal Fly Ash for Highway Concrete</td><td>State DOT specification (mirrors C618 with additional state-specific limits)</td></tr>
+<tr><td><strong>EN 450-1</strong></td><td>Fly Ash for Concrete (European)</td><td>European equivalent; Category A/B/C by LOI</td></tr>
+</table>
+
+<h3>12.2 EPA Coal Combustion Residuals (CCR) Rule</h3>
+<table>
+<tr><th>Provision</th><th>Requirement</th><th>Impact on Fly Ash Market</th></tr>
+<tr><td>40 CFR Part 257 (2015)</td><td>National standards for CCR disposal in landfills and surface impoundments</td><td>Increased closure costs incentivize beneficial use</td></tr>
+<tr><td>CCR Rule 2024 Amendments</td><td>Strengthened groundwater monitoring; legacy pond closure deadlines</td><td>Accelerates ash reclamation from legacy ponds</td></tr>
+<tr><td>EPA Beneficial Use Determination</td><td>Fly ash in concrete classified as <strong>non-waste</strong>; exempt from RCRA</td><td style="color:#276749;">Protects commercial ash market</td></tr>
+<tr><td>Comprehensive Procurement Guidelines</td><td>Federal agencies must specify fly ash in concrete when available</td><td style="color:#276749;">Demand floor for federal projects</td></tr>
+</table>
+
+<h3>12.3 Buy Clean &amp; Carbon Policy</h3>
+<table>
+<tr><th>Regulation</th><th>Requirement</th><th>Impact on Fly Ash</th></tr>
+<tr><td><strong>GSA Low-Embodied Carbon (LEC)</strong></td><td>GWP limits for concrete; EPDs required for IRA-funded procurement</td><td style="color:#48bb78; font-weight:bold;">Strong demand driver</td></tr>
+<tr><td><strong>LEED v5 (2024)</strong></td><td>Mandatory embodied carbon prerequisite; products must outperform baseline by 20%</td><td style="color:#48bb78; font-weight:bold;">Strong demand driver</td></tr>
+<tr><td><strong>California CALGreen</strong></td><td>Maximum GWP for concrete; state-mandated for all public works</td><td style="color:#48bb78; font-weight:bold;">West Coast premium</td></tr>
+<tr><td><strong>State Buy Clean (CO, NY, OR, WA)</strong></td><td>EPDs and/or embodied carbon limits for public projects</td><td style="color:#48bb78; font-weight:bold;">Growing demand driver</td></tr>
+</table>
+
+<div class="highlight">
+<strong>REGULATORY TAILWIND:</strong> Carbon regulations are simultaneously increasing demand for fly ash while coal regulations are decreasing supply. The IRA&rsquo;s $350B clean energy provisions include Buy Clean mandates for federally funded construction. Since 2023, manufacturers have published <strong>14,000+ additional EPDs for concrete</strong>. Fly ash at 95&ndash;97% lower embodied CO2 than OPC is the single most impactful ingredient for meeting these new requirements.
+</div>
+
+<div class="section-divider"></div>
+
+<h2>13. LOGISTICS &amp; HANDLING</h2>
+
+<h3>13.1 Transportation Modes</h3>
+<table>
+<tr><th>Mode</th><th>Application</th><th>Details</th></tr>
+<tr><td><strong>Ocean Vessel</strong></td><td>Import from Korea/Turkey/Asia</td><td>Handysize/Supramax (25K&ndash;60K DWT); bulk cargo holds; loading ~6,000&ndash;10,000 t/day</td></tr>
+<tr><td><strong>Barge</strong></td><td>Inland waterway distribution</td><td>Mississippi system from power plants; ~1,500 tons/barge; covered dry cargo</td></tr>
+<tr><td><strong>Rail</strong></td><td>Medium-distance distribution</td><td>Covered hopper cars; 100&ndash;110 ton loads; unit trains from large plants</td></tr>
+<tr><td><strong>Truck</strong></td><td>Final delivery</td><td>Pneumatic tankers (dry bulk); 25&ndash;28 ton loads; 100&ndash;200 mile typical radius</td></tr>
+</table>
+
+<h3>13.2 Terminal &amp; Storage</h3>
+<table>
+<tr><th>Requirement</th><th>Specification</th></tr>
+<tr><td>Storage type</td><td><strong>Enclosed silos or domes</strong> &mdash; moisture is the critical enemy</td></tr>
+<tr><td>Silo capacity</td><td>Typical 5,000&ndash;30,000 tons per silo; import terminals may need 50,000+</td></tr>
+<tr><td>Handling system</td><td>Pneumatic conveyance (300&ndash;500 t/hr); screw conveyors; bucket elevators</td></tr>
+<tr><td>Vessel discharge</td><td>Grab cranes + hopper/conveyor to silo; 5,000&ndash;10,000 t/day rate</td></tr>
+<tr><td>Truck loading</td><td>Gravity or pneumatic fill into tanker trailers; weighbridge required</td></tr>
+<tr><td>Rail loading</td><td>Covered hopper car loading via gravity or pneumatic</td></tr>
+<tr><td>Quality control</td><td>LOI testing, fineness, moisture monitoring at receipt and dispatch</td></tr>
+<tr><td>Dust control</td><td>Baghouse or cartridge filtration on all transfer points; OSHA PM limits</td></tr>
+</table>
+
+<h3>13.3 Reclaimed Ash Processing</h3>
+<table>
+<tr><th>Step</th><th>Process</th><th>Purpose</th></tr>
+<tr><td>1. Excavation</td><td>Hydraulic or mechanical dredging from ponds/landfills</td><td>Extract raw ash</td></tr>
+<tr><td>2. Dewatering</td><td>Filter presses, centrifuges, drying beds</td><td>Reduce moisture to &lt;3%</td></tr>
+<tr><td>3. Classification</td><td>Air classification, screening</td><td>Remove coarse particles; target &lt;34% retained on 45&mu;m</td></tr>
+<tr><td>4. Beneficiation</td><td>Carbon burnout or electrostatic LOI reduction</td><td>Achieve &lt;6% LOI for ASTM C618 compliance</td></tr>
+<tr><td>5. Testing</td><td>Full ASTM C618 suite (chemical, physical, SAI)</td><td>Certify as Class F or Class C equivalent</td></tr>
+<tr><td>6. Storage</td><td>Enclosed silo or dome</td><td>Moisture-free storage for market</td></tr>
+</table>
+
+<div class="info">
+<strong>HANDLING NOTE:</strong> Fly ash is an extremely fine powder (mean ~20 &mu;m) that becomes airborne readily. All handling must be enclosed with dust collection. Unlike GGBFS (which can be stored open as GBS), fly ash requires fully enclosed pneumatic systems from vessel discharge to truck loading. Terminal infrastructure mirrors cement terminals &mdash; silos, pneumatic transfer, covered loading &mdash; and can share existing cement import infrastructure. <strong>SESCO&rsquo;s Houston terminal already has the physical infrastructure for fly ash handling.</strong>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>14. INDUSTRY TRENDS &amp; OUTLOOK</h2>
+
+<h3>14.1 Reclaimed Ash &mdash; Emerging Domestic Supply</h3>
+<div class="chart-container">
+<div class="chart-title">Previously Disposed Ash Reclaimed for Beneficial Use (Million Tons)</div>
+<svg width="100%" height="180" viewBox="0 0 700 180">
+  <!-- Bars -->
+  <rect x="100" y="100" width="80" height="50" fill="#9f7aea" rx="3"/>
+  <text x="140" y="92" font-size="12" fill="#9f7aea" text-anchor="middle" font-weight="bold">2.5M</text>
+  <text x="140" y="165" font-size="10" fill="#333" text-anchor="middle">2021</text>
+
+  <rect x="220" y="75" width="80" height="75" fill="#9f7aea" rx="3"/>
+  <text x="260" y="67" font-size="12" fill="#9f7aea" text-anchor="middle" font-weight="bold">3.5M</text>
+  <text x="260" y="165" font-size="10" fill="#333" text-anchor="middle">2022</text>
+
+  <rect x="340" y="45" width="80" height="105" fill="#805ad5" rx="3"/>
+  <text x="380" y="37" font-size="12" fill="#805ad5" text-anchor="middle" font-weight="bold">4.5M</text>
+  <text x="380" y="165" font-size="10" fill="#333" text-anchor="middle">2023</text>
+
+  <rect x="460" y="30" width="80" height="120" fill="#6b46c1" rx="3"/>
+  <text x="500" y="22" font-size="12" fill="#6b46c1" text-anchor="middle" font-weight="bold">5.0M+</text>
+  <text x="500" y="165" font-size="10" fill="#333" text-anchor="middle">2024 Est</text>
+
+  <!-- Growth indicator -->
+  <text x="580" y="80" font-size="10" fill="#276749" font-weight="bold">+100%</text>
+  <text x="580" y="95" font-size="9" fill="#666">growth</text>
+  <text x="580" y="108" font-size="9" fill="#666">2021&ndash;24</text>
+</svg>
+<div class="chart-note">Source: ACAA. US has an estimated 1&ndash;2 billion tons of fly ash in legacy disposal sites. At current reclamation rates, decades of supply exist &mdash; but quality variability and beneficiation costs remain challenges.</div>
+</div>
+
+<h3>14.2 Five-Year Market Outlook (2025&ndash;2030)</h3>
+<div class="chart-container">
+<div class="chart-title">US Fly Ash Market &mdash; 5-Year Outlook</div>
+<table style="margin:0;">
+<tr>
+<th style="width:22%;">Factor</th>
+<th style="width:38%;">Trend</th>
+<th style="width:20%;">Impact on Supply</th>
+<th style="width:20%;">Impact on Price</th>
+</tr>
+<tr>
+<td><strong>Coal Capacity</strong></td>
+<td>165 GW (2025) &rarr; 106 GW (2030): -36%</td>
+<td style="color:#c53030; font-weight:bold;">NEGATIVE</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>CCP Production</strong></td>
+<td>67 Mt (2023) &rarr; ~45 Mt (2030 est)</td>
+<td style="color:#c53030; font-weight:bold;">NEGATIVE</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>Beneficial Use Rate</strong></td>
+<td>72% (2024) &rarr; 80%+ (2030 target)</td>
+<td style="color:#48bb78; font-weight:bold;">POSITIVE</td>
+<td style="color:#666;">NEUTRAL</td>
+</tr>
+<tr>
+<td><strong>Reclaimed Ash</strong></td>
+<td>5 Mt (2024) &rarr; 8&ndash;10 Mt (2030 est)</td>
+<td style="color:#48bb78; font-weight:bold;">POSITIVE</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN</td>
+</tr>
+<tr>
+<td><strong>Import Volume</strong></td>
+<td>Growing &mdash; Korea, Turkey, Japan, Canada</td>
+<td style="color:#48bb78; font-weight:bold;">POSITIVE</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN</td>
+</tr>
+<tr>
+<td><strong>IIJA Demand</strong></td>
+<td>$62B/year through 2028; concrete +4.5%/yr</td>
+<td style="color:#666;">N/A</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>Carbon Regulations</strong></td>
+<td>Buy Clean mandates; LEED v5; CALGreen</td>
+<td style="color:#666;">N/A (demand side)</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>China Tariff (145%)</strong></td>
+<td>Blocks cheapest global source</td>
+<td style="color:#c53030; font-weight:bold;">NEGATIVE</td>
+<td style="color:#c53030; font-weight:bold;">UP</td>
+</tr>
+<tr>
+<td><strong>Alternative SCMs (LC3, NP)</strong></td>
+<td>Abundant raw materials; early US adoption</td>
+<td style="color:#48bb78; font-weight:bold;">LONG-TERM POSITIVE</td>
+<td style="color:#48bb78; font-weight:bold;">DOWN (long-term)</td>
+</tr>
+</table>
+</div>
+
+<div class="success">
+<strong>NET ASSESSMENT:</strong> The US fly ash market will remain supply-constrained through 2030. Domestic production decline (-33% projected) will outpace demand moderation from beneficial use optimization. The gap will be filled by: (1) increased imports from Korea and Turkey, (2) reclaimed ash from legacy landfills/ponds (5&ndash;10 Mt/yr potential), (3) alternative SCMs (GGBFS, natural pozzolans, LC3). Prices will remain elevated in the $100&ndash;130/Mt range with periodic spikes during supply disruptions. <strong>The import arbitrage ($91&ndash;107/Mt) and terminal infrastructure position create lasting competitive advantages for companies with established bulk handling capabilities and international trade networks.</strong>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>15. QUICK REFERENCE &mdash; KEY NUMBERS</h2>
+
+<table>
+<tr><th>Metric</th><th>Value</th><th>Trend</th></tr>
+<tr><td>US Price (Q3 2025)</td><td>$123/Mt</td><td style="color:#c53030;">Up $5 YoY</td></tr>
+<tr><td>Asian FOB Price</td><td>$16&ndash;27/Mt</td><td>Stable</td></tr>
+<tr><td>Import Arbitrage</td><td>$91&ndash;107/Mt</td><td style="color:#48bb78;">Attractive</td></tr>
+<tr><td>US Coal Capacity (End 2025)</td><td>165 GW</td><td style="color:#c53030;">-48% from 2011 peak</td></tr>
+<tr><td>Coal Retirements 2025</td><td>14.5 GW</td><td style="color:#c53030;">Record year</td></tr>
+<tr><td>CCP Production (2023)</td><td>67 Mt</td><td style="color:#c53030;">-16% from 2022</td></tr>
+<tr><td>Fly Ash (of CCP, 2023)</td><td>~37 Mt (55%)</td><td style="color:#c53030;">Declining with coal</td></tr>
+<tr><td>Beneficial Use Rate (2024)</td><td>72%</td><td style="color:#48bb78;">Record high (10th yr &gt;50%)</td></tr>
+<tr><td>Fly Ash in Concrete (2023)</td><td>11.9 Mt</td><td style="color:#48bb78;">+9% YoY</td></tr>
+<tr><td>Reclaimed Ash (2024 est)</td><td>5.0 Mt+</td><td style="color:#48bb78;">+100% from 2021</td></tr>
+<tr><td>Legacy Ash Inventory</td><td>1&ndash;2 billion tons</td><td>Decades of potential supply</td></tr>
+<tr><td>Top Import Source</td><td>South Korea (49%)</td><td>Growing</td></tr>
+<tr><td>China Tariff</td><td>145%</td><td style="color:#c53030;">Blocks cheapest source</td></tr>
+<tr><td>US Market Size (2024)</td><td>$2.36 billion</td><td>+5.2% CAGR</td></tr>
+<tr><td>Global Fly Ash Market</td><td>$5.2&ndash;7.4 billion</td><td>$8.7&ndash;12.5B by 2031&ndash;33</td></tr>
+<tr><td>IIJA Infrastructure</td><td>$1.2T through 2028</td><td>Demand driver</td></tr>
+<tr><td>Fly Ash Embodied CO2</td><td>20&ndash;50 kg CO2e/tonne</td><td>95&ndash;97% lower than OPC</td></tr>
+<tr><td>Portland Cement CO2</td><td>844&ndash;967 kg CO2e/tonne</td><td>Industry baseline</td></tr>
+<tr><td>CO2 Saved per Ton Fly Ash</td><td>~800&ndash;920 kg CO2</td><td>Key sustainability metric</td></tr>
+<tr><td>ASTM C618 Classes</td><td>F (bituminous), C (sub-bit), N (natural)</td><td>Class F = premium</td></tr>
+</table>
+
+<div class="section-divider"></div>
+
+<h2>SOURCES</h2>
+<p style="font-size: 9pt;">
+<strong>Industry Organizations:</strong> ACAA (American Coal Ash Association) Production &amp; Use Surveys 2015&ndash;2024; ARTBA Forecast Update 2024; ACI Committee 232 (Fly Ash in Concrete)<br>
+<strong>Government:</strong> EIA (Energy Information Administration) Coal Capacity Data; USGS CCP Statistics; EPA CCR Rule (40 CFR 257); EPA Comprehensive Procurement Guidelines; DOE Clean Energy Programs<br>
+<strong>Standards:</strong> ASTM C618-23 (Coal Fly Ash and Natural Pozzolans); ASTM C595/C595M-24 (Blended Cements); ASTM C1157 (Performance Cement); ACI 232.2R (Use of Fly Ash in Concrete); AASHTO M 295; EN 450-1<br>
+<strong>Market Research:</strong> ChemAnalyst (Fly Ash Pricing Q2&ndash;Q3 2025); IMARC Group (Global Fly Ash Market); Fortune Business Insights; Market Data Forecast; Verified Market Reports; Credence Research<br>
+<strong>Energy Analysis:</strong> IEEFA (Institute for Energy Economics and Financial Analysis) &mdash; Coal Capacity Reports 2024&ndash;2025; Global Energy Monitor Coal Plant Tracker<br>
+<strong>Trade Data:</strong> Volza Import Statistics (Nov 2023 &ndash; Oct 2024); US Census Bureau Foreign Trade; HTS 2621.00<br>
+<strong>Companies:</strong> Eco Material Technologies (EMT); Charah Solutions (NYSE: CHRA); SEFA Group; Salt River Materials; Duke Energy; Southern Company; AEP; TVA; Vistra Energy<br>
+<strong>Carbon &amp; Sustainability:</strong> PCA EPDs; GSA Buy Clean / Low-Embodied Carbon Program; USGBC LEED v5; California CALGreen Code; Climate Earth; various concrete EPDs<br>
+<strong>Technical:</strong> Power Engineering; Concrete Products Magazine; Rock Products; Utility Dive; Engineering News-Record
+</p>
+
+<hr>
+<p style="text-align: center; font-size: 10pt; color: #666;">
+<em>FLY ASH COMPREHENSIVE DOSSIER v3.0 | February 18, 2026 | Coal Combustion Products &amp; Fly Ash &mdash; US Supply/Demand, Import Economics &amp; Trade Flow Analysis</em><br>
+<em>Prepared by OceanDatum Market Intelligence | Part of the SCM Commodity Dossier Series</em>
+</p>
+
+</body>
+</html>

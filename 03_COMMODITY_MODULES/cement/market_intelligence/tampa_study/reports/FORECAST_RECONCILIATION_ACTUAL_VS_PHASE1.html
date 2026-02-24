@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Reconciliation: Actual Business Model vs. Phase 1 Assumptions</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            font-size: 11pt;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+            color: white;
+            padding: 25px 30px;
+            margin: -20px -20px 25px -20px;
+            border-bottom: 4px solid #0d47a1;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24pt;
+            font-weight: bold;
+        }
+
+        .header .subtitle {
+            font-size: 13pt;
+            margin-top: 8px;
+            opacity: 0.95;
+        }
+
+        .alert-box {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 20px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        .alert-box .title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .critical-change {
+            background: #fff3e0;
+            border-left: 5px solid #ff6f00;
+            padding: 18px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        .critical-change .title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #e65100;
+            margin-bottom: 8px;
+        }
+
+        .validated {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 18px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        .validated .title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            color: #1976d2;
+            font-size: 18pt;
+            border-bottom: 3px solid #1976d2;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #1976d2;
+            font-size: 14pt;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #0d47a1;
+            font-size: 12pt;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+            page-break-inside: avoid;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tr.actual {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+
+        tr.phase1 {
+            background-color: #fff9c4;
+        }
+
+        tr.delta {
+            background-color: #ffebee;
+            font-weight: bold;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .comparison-box {
+            border: 2px solid #1976d2;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .comparison-box h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 2px solid #ccc;
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 12pt;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 10000;
+        }
+
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        strong {
+            color: #1976d2;
+        }
+
+        .highlight-number {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #ff6f00;
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-button no-print" onclick="window.print()">🖨️ Print to PDF</button>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>FORECAST RECONCILIATION</h1>
+    <div class="subtitle">Actual Business Model vs. Phase 1 Market Study Assumptions</div>
+    <div style="font-size: 10pt; margin-top: 10px; opacity: 0.9;">Tampa Bay Market Entry | SESCO Cement Corporation | January 2026</div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="alert-box">
+    <div class="title">📊 EXECUTIVE SUMMARY: Fundamental Business Model Differences</div>
+    <p>Actual operating forecast reveals <strong>fundamentally different business model</strong> than Phase 1 market study assumed. Core business is <strong>SRM/slag products (70-75% of revenue)</strong>, not gray cement to ready-mix. White cement opportunity <strong>validated and exceeds Phase 1 estimates</strong> (Mapei 30K MT confirmed). Gray cement severely constrained by <strong>SRM concrete restriction prohibiting Florida ready-mix sales</strong>. Phase 1 strategic framework valid but product mix, customer targeting, and competitive positioning require complete reframing.</p>
+</div>
+
+<h1>I. Actual Forecast vs. Phase 1 Assumptions</h1>
+
+<h2>Volume & Revenue Comparison</h2>
+
+<table>
+    <tr>
+        <th>Product Line</th>
+        <th>2026 Volume (MT)</th>
+        <th>2026 Price ($/MT)</th>
+        <th>2026 Revenue</th>
+        <th>Full Year Volume</th>
+        <th>Full Year Revenue</th>
+    </tr>
+    <tr class="actual">
+        <td><strong>SRM (Supplementary Raw Materials)</strong></td>
+        <td>300,000</td>
+        <td>$25</td>
+        <td>$7,500,000</td>
+        <td>400,000</td>
+        <td>$10,000,000</td>
+    </tr>
+    <tr class="actual">
+        <td><strong>Gray Cement</strong></td>
+        <td>50,000</td>
+        <td>$145</td>
+        <td>$7,250,000</td>
+        <td>150,000</td>
+        <td>$19,500,000</td>
+    </tr>
+    <tr class="actual">
+        <td><strong>White Cement</strong></td>
+        <td>20,000</td>
+        <td>$230</td>
+        <td>$4,600,000</td>
+        <td>30,000</td>
+        <td>$6,900,000</td>
+    </tr>
+    <tr class="actual">
+        <td><strong>Slag (Dedicated Silos)</strong></td>
+        <td colspan="3" style="text-align: center;"><em>Included in SRM or Other</em></td>
+        <td>~100,000</td>
+        <td><em>Pricing TBD</em></td>
+    </tr>
+    <tr class="actual">
+        <td><strong>SLAG, Bags, Other</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>$650,000</td>
+        <td>—</td>
+        <td>$3,600,000</td>
+    </tr>
+    <tr class="actual" style="background: #bbdefb; font-size: 11pt;">
+        <td><strong>TOTAL</strong></td>
+        <td><strong>370,000+</strong></td>
+        <td>—</td>
+        <td><strong>$20,000,000</strong></td>
+        <td><strong>580,000+</strong></td>
+        <td><strong>$40,000,000</strong></td>
+    </tr>
+</table>
+
+<table style="margin-top: 30px;">
+    <tr>
+        <th>Product Line</th>
+        <th>Phase 1 Year 3 Volume (MT)</th>
+        <th>Phase 1 Year 3 Price</th>
+        <th>Phase 1 Year 3 Revenue</th>
+    </tr>
+    <tr class="phase1">
+        <td><strong>SRM/Slag</strong></td>
+        <td>0</td>
+        <td>—</td>
+        <td>$0</td>
+    </tr>
+    <tr class="phase1">
+        <td><strong>Gray Cement</strong></td>
+        <td>150,000</td>
+        <td>$90</td>
+        <td>$13,500,000</td>
+    </tr>
+    <tr class="phase1">
+        <td><strong>White Cement</strong></td>
+        <td>46,000</td>
+        <td>$225</td>
+        <td>$10,350,000</td>
+    </tr>
+    <tr class="phase1" style="background: #fff9c4; font-size: 11pt;">
+        <td><strong>TOTAL</strong></td>
+        <td><strong>196,000</strong></td>
+        <td>—</td>
+        <td><strong>$23,850,000</strong></td>
+    </tr>
+</table>
+
+<h2>Key Differences Summary</h2>
+
+<table>
+    <tr>
+        <th style="width: 30%;">Dimension</th>
+        <th style="width: 35%;">Phase 1 Assumption</th>
+        <th style="width: 35%;">Actual Business Model</th>
+    </tr>
+    <tr class="delta">
+        <td><strong>Core Product</strong></td>
+        <td>Gray cement to ready-mix (77% of volume)</td>
+        <td><strong>SRM/Slag (69-75% of volume)</strong></td>
+    </tr>
+    <tr class="delta">
+        <td><strong>Gray Cement Market</strong></td>
+        <td>Target independent ready-mix producers (150K MT)</td>
+        <td><strong>RESTRICTED from FL ready-mix. Conservative volumes (50-150K MT)</strong></td>
+    </tr>
+    <tr class="delta">
+        <td><strong>White Cement Volume</strong></td>
+        <td>46K MT Year 3 (questioned in Critical Review)</td>
+        <td><strong>20-30K MT near term, 60-75K MT 2027 target</strong></td>
+    </tr>
+    <tr class="delta">
+        <td><strong>Gray Cement Pricing</strong></td>
+        <td>$90/MT</td>
+        <td><strong>$130-145/MT (61% higher!)</strong></td>
+    </tr>
+    <tr class="delta">
+        <td><strong>Revenue Trajectory</strong></td>
+        <td>Year 3: $23.8M</td>
+        <td><strong>2026: $20M → Full Year: $40M</strong></td>
+    </tr>
+    <tr class="delta">
+        <td><strong>Slag Business</strong></td>
+        <td>Not analyzed</td>
+        <td><strong>Dedicated 2 silos, 100K MT customer discussions</strong></td>
+    </tr>
+</table>
+
+<h1>II. Critical Strategic Implications</h1>
+
+<div class="critical-change">
+    <div class="title">⚠️ CRITICAL CHANGE #1: SRM/Slag is the Core Business, Not Gray Cement</div>
+    <p><strong>Phase 1 Missed:</strong> Entire Phase 1 study analyzed Tampa Bay as gray cement import opportunity serving ready-mix market. SRM (Supplementary Raw Materials, likely slag cement/fly ash) was not mentioned once in 50+ page report.</p>
+
+    <p><strong>Actual Reality:</strong></p>
+    <ul>
+        <li><strong>300,000 MT SRM in 2026</strong> (81% of total volume, 38% of revenue)</li>
+        <li><strong>400,000 MT SRM full year</strong> (69% of volume, 25% of revenue)</li>
+        <li>At $25/MT, this is high-volume, low-margin commodity business</li>
+        <li>Dedicated slag silos (2 silos) with 100K MT customer in discussions</li>
+        <li>"Put more weight to Slag" - this is strategic priority</li>
+    </ul>
+
+    <p><strong>What This Means:</strong></p>
+    <ul>
+        <li><strong>Port Redwing must handle SRM/slag products</strong> - infrastructure requirements different than pure cement terminal</li>
+        <li><strong>Customer base is concrete producers needing SCMs</strong> (Supplementary Cementitious Materials), not just ready-mix buying portland cement</li>
+        <li><strong>Competitive dynamics different</strong> - slag suppliers, fly ash distributors, not just cement importers</li>
+        <li><strong>Margin profile lower</strong> - $25/MT SRM vs. $90-230/MT cement requires volume scale</li>
+        <li><strong>Phase 1 financial model invalid</strong> - cost structure, margin assumptions, profitability timeline all based on wrong product mix</li>
+    </ul>
+</div>
+
+<div class="critical-change">
+    <div class="title">⚠️ CRITICAL CHANGE #2: Gray Cement Severely Restricted - Cannot Sell to Florida Ready-Mix</div>
+    <p><strong>Phase 1 Strategy:</strong> Primary gray cement target was independent ready-mix producers in Tampa Bay. Year 1 goal: 15-20 ready-mix accounts. Entire customer segmentation built around this.</p>
+
+    <p><strong>Actual Restriction:</strong> "We have a restriction per the SRM concrete which doesn't allow us to sell gray cement to the ready-mix industry in Florida, so gray sales will be conservative."</p>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+        <li><strong>Phase 1 Tier 1-B customer segment (Independent Ready-Mix) is UNAVAILABLE</strong></li>
+        <li>Gray cement limited to: concrete products manufacturers (block, precast, pipe), contractors direct, bagged sales, out-of-state markets</li>
+        <li>50,000 MT Year 1 vs. Phase 1's 33,000 MT - but growing only to 150K MT full year vs. Phase 1's 150K MT Year 3</li>
+        <li>Higher pricing ($130-145/MT vs. $90/MT) suggests non-ready-mix markets command premium (block plants, specialty applications)</li>
+        <li><strong>Entire Phase 1 go-to-market strategy for gray cement requires rewrite</strong></li>
+    </ul>
+
+    <p><strong>Question Requiring Clarification:</strong> What is the "SRM concrete restriction"? Is this:</p>
+    <ul>
+        <li>Contractual restriction with SRM supplier? (Non-compete in ready-mix market?)</li>
+        <li>Product specification issue? (SRM concrete incompatible with certain applications?)</li>
+        <li>Regulatory/certification restriction?</li>
+        <li><em>Understanding this restriction is critical for refining strategy</em></li>
+    </ul>
+</div>
+
+<div class="validated">
+    <div class="title">✓ VALIDATED: White Cement Opportunity Confirmed and Exceeds Phase 1 Estimates</div>
+    <p><strong>Phase 1 Estimate:</strong> 46,000 MT Year 3 white cement (questioned in Critical Review due to stucco market deterioration feedback)</p>
+
+    <p><strong>Actual Confirmation:</strong></p>
+    <ul>
+        <li><strong>Mapei plant alone: 30,000 MT/year consumption</strong> ("which we plan to supply")</li>
+        <li>2026 target: 20,000 MT</li>
+        <li>Full year target: 30,000 MT</li>
+        <li><strong>2027 push: 60-75,000 MT</strong> ("I would push white cement in 2027 to at least 60-75k tons")</li>
+    </ul>
+
+    <p><strong>Key Validations:</strong></p>
+    <ul>
+        <li>✓ Florida white cement market is real and substantial (NOT overstated as Critical Review feared)</li>
+        <li>✓ Mapei (tile adhesive/grout manufacturer) is anchor customer - validates Tier 2 targeting in Phase 1</li>
+        <li>✓ 60-75K MT 2027 target <strong>exceeds</strong> Phase 1 Year 3 estimate of 46K MT</li>
+        <li>✓ Pricing $230/MT aligns with Phase 1 $225/MT assumption</li>
+        <li>✓ White cement is strategic priority ("plan to push more white cement sales")</li>
+    </ul>
+
+    <p><strong>Strategic Clarity:</strong> While Phase 1 incorrectly emphasized stucco/EIFS manufacturers (which use pre-mixed products), the white cement opportunity is REAL via:</p>
+    <ul>
+        <li><strong>Tile adhesive/grout producers</strong> (Mapei confirmed as anchor - 30K MT alone!)</li>
+        <li>Pool plaster manufacturers</li>
+        <li>Architectural precast applications</li>
+        <li>Other specialty white cement users</li>
+    </ul>
+</div>
+
+<div class="critical-change">
+    <div class="title">⚠️ CRITICAL CHANGE #3: Slag as Major Product Line (Not Analyzed in Phase 1)</div>
+    <p><strong>Phase 1:</strong> Zero mention of slag as product line or business opportunity.</p>
+
+    <p><strong>Actual Plans:</strong></p>
+    <ul>
+        <li><strong>Dedicating 2 silos to slag</strong> at Port Redwing (significant infrastructure commitment)</li>
+        <li><strong>~100,000 MT/year customer in preliminary discussions</strong> (single customer = 17% of total full-year volume!)</li>
+        <li>"I would put more weight to Slag" - strategic emphasis</li>
+        <li>Pricing still unknown (need to determine for forecast refinement)</li>
+    </ul>
+
+    <p><strong>Questions Requiring Clarification:</strong></p>
+    <ol>
+        <li><strong>Is slag separate from SRM line item?</strong> Or is 100K MT slag customer included in 400K MT SRM full-year forecast?</li>
+        <li><strong>Slag sourcing:</strong> Domestic (steel mill slag) or import? Supplier relationships?</li>
+        <li><strong>Slag market dynamics:</strong> Who are competitors? Pricing benchmarks? Customer requirements?</li>
+        <li><strong>Margin profile:</strong> Similar to $25/MT SRM, or higher?</li>
+        <li><strong>Technical capabilities:</strong> Slag grinding required? Port Redwing equipped? Or receive finished ground slag?</li>
+    </ol>
+
+    <p><strong>Strategic Implication:</strong> If slag is major product line (100K MT customer + additional sales), this fundamentally changes:</p>
+    <ul>
+        <li>Competitive analysis (need to study slag suppliers, not just cement importers)</li>
+        <li>Customer targeting (concrete producers using slag for sustainability/cost reduction)</li>
+        <li>Port operations (slag handling different than cement - dust control, grinding, quality specs)</li>
+        <li>Financial model (margin structure, capital requirements, working capital for slag inventory)</li>
+    </ul>
+</div>
+
+<h1>III. Revised Financial Model Implications</h1>
+
+<h2>Revenue Build Comparison</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Product</th>
+        <th colspan="2" style="text-align: center; background: #fff9c4; color: #333;">Phase 1 Year 3</th>
+        <th colspan="2" style="text-align: center; background: #e3f2fd; color: #333;">Actual 2026</th>
+        <th colspan="2" style="text-align: center; background: #e3f2fd; color: #333;">Actual Full Year</th>
+    </tr>
+    <tr>
+        <th style="background: #fff9c4; color: #333;">Volume</th>
+        <th style="background: #fff9c4; color: #333;">Revenue</th>
+        <th style="background: #e3f2fd; color: #333;">Volume</th>
+        <th style="background: #e3f2fd; color: #333;">Revenue</th>
+        <th style="background: #e3f2fd; color: #333;">Volume</th>
+        <th style="background: #e3f2fd; color: #333;">Revenue</th>
+    </tr>
+    <tr>
+        <td>SRM/Slag</td>
+        <td style="background: #fff9c4;">0</td>
+        <td style="background: #fff9c4;">$0</td>
+        <td style="background: #e3f2fd;"><strong>300K</strong></td>
+        <td style="background: #e3f2fd;"><strong>$7.5M</strong></td>
+        <td style="background: #e3f2fd;"><strong>400K</strong></td>
+        <td style="background: #e3f2fd;"><strong>$10.0M</strong></td>
+    </tr>
+    <tr>
+        <td>Gray Cement</td>
+        <td style="background: #fff9c4;">150K</td>
+        <td style="background: #fff9c4;">$13.5M</td>
+        <td style="background: #e3f2fd;">50K</td>
+        <td style="background: #e3f2fd;">$7.3M</td>
+        <td style="background: #e3f2fd;">150K</td>
+        <td style="background: #e3f2fd;">$19.5M</td>
+    </tr>
+    <tr>
+        <td>White Cement</td>
+        <td style="background: #fff9c4;">46K</td>
+        <td style="background: #fff9c4;">$10.4M</td>
+        <td style="background: #e3f2fd;">20K</td>
+        <td style="background: #e3f2fd;">$4.6M</td>
+        <td style="background: #e3f2fd;">30K</td>
+        <td style="background: #e3f2fd;">$6.9M</td>
+    </tr>
+    <tr>
+        <td>Other</td>
+        <td style="background: #fff9c4;">0</td>
+        <td style="background: #fff9c4;">$0</td>
+        <td style="background: #e3f2fd;">—</td>
+        <td style="background: #e3f2fd;">$0.7M</td>
+        <td style="background: #e3f2fd;">—</td>
+        <td style="background: #e3f2fd;">$3.6M</td>
+    </tr>
+    <tr style="font-weight: bold; font-size: 11pt;">
+        <td>TOTAL</td>
+        <td style="background: #fff9c4;">196K</td>
+        <td style="background: #fff9c4;">$23.8M</td>
+        <td style="background: #e3f2fd;">370K+</td>
+        <td style="background: #e3f2fd;">$20.0M</td>
+        <td style="background: #e3f2fd;">580K+</td>
+        <td style="background: #e3f2fd;">$40.0M</td>
+    </tr>
+</table>
+
+<h2>Margin Structure Implications</h2>
+
+<div class="alert-box">
+    <div class="title">Revised Margin Profile (Estimated)</div>
+    <p><strong>Phase 1 assumed 29% blended gross margin</strong> based on gray (20-30%) and white (50-65%) cement mix. <strong>Actual product mix requires complete rethinking:</strong></p>
+
+    <table style="font-size: 10pt;">
+        <tr>
+            <th>Product</th>
+            <th>Full Year Volume</th>
+            <th>Price/MT</th>
+            <th>Est. Cost/MT</th>
+            <th>Est. Gross Margin %</th>
+            <th>Revenue</th>
+            <th>Est. Gross Profit</th>
+        </tr>
+        <tr>
+            <td>SRM</td>
+            <td>400,000</td>
+            <td>$25</td>
+            <td>$18-20</td>
+            <td style="background: #ffebee;">20-28%</td>
+            <td>$10.0M</td>
+            <td>$2.0-2.8M</td>
+        </tr>
+        <tr>
+            <td>Gray Cement</td>
+            <td>150,000</td>
+            <td>$130</td>
+            <td>$85-95</td>
+            <td>27-35%</td>
+            <td>$19.5M</td>
+            <td>$5.3-6.8M</td>
+        </tr>
+        <tr>
+            <td>White Cement</td>
+            <td>30,000</td>
+            <td>$230</td>
+            <td>$100-115</td>
+            <td style="background: #e8f5e9;">50-57%</td>
+            <td>$6.9M</td>
+            <td>$3.5-3.9M</td>
+        </tr>
+        <tr>
+            <td>Other/Slag</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>25-35%?</td>
+            <td>$3.6M</td>
+            <td>$0.9-1.3M</td>
+        </tr>
+        <tr style="background: #bbdefb; font-weight: bold;">
+            <td>TOTAL</td>
+            <td>580K+</td>
+            <td>—</td>
+            <td>—</td>
+            <td><strong>~30%</strong></td>
+            <td><strong>$40.0M</strong></td>
+            <td><strong>$12-15M</strong></td>
+        </tr>
+    </table>
+
+    <p><strong>Key Observations:</strong></p>
+    <ul>
+        <li><strong>SRM low margin</strong> ($25 price, likely $18-20 cost = 20-28% margin) but huge volume drives $2-3M gross profit</li>
+        <li><strong>Gray cement MUCH better pricing</strong> ($130-145 vs. Phase 1's $90 assumption) improves margins significantly</li>
+        <li><strong>White cement margins strong</strong> as expected (50-57%)</li>
+        <li><strong>Blended margin ~30%</strong> similar to Phase 1, but product mix completely different</li>
+        <li><strong>Full year $12-15M gross profit</strong> vs. Phase 1 Year 3 $6.8M - much stronger!</li>
+    </ul>
+</div>
+
+<h2>Profitability Timeline</h2>
+
+<div class="validated">
+    <div class="title">Financial Performance Trajectory</div>
+    <p><strong>Based on actual forecast, assuming operating expenses scale appropriately:</strong></p>
+
+    <p><strong>2026 (Partial Year):</strong></p>
+    <ul>
+        <li>Revenue: $20M</li>
+        <li>Gross Profit: ~$6M (30% margin)</li>
+        <li>Operating Expenses: ~$7-9M (terminal ops, sales, corporate, ramp costs)</li>
+        <li><strong>EBITDA: ($1-3M) loss</strong> - typical Year 1 ramp</li>
+    </ul>
+
+    <p><strong>Full Year (Year 2):</strong></p>
+    <ul>
+        <li>Revenue: $40M</li>
+        <li>Gross Profit: ~$12-15M (30% margin)</li>
+        <li>Operating Expenses: ~$10-12M (scaled operations, mature sales team)</li>
+        <li><strong>EBITDA: $2-5M positive</strong> - achieving profitability!</li>
+    </ul>
+
+    <p><strong>2027 (White Cement Push to 60-75K MT):</strong></p>
+    <ul>
+        <li>Revenue: $45-50M+ (white cement increment adds $7-10M)</li>
+        <li>Gross Profit: $15-18M (higher white cement mix improves blended margin)</li>
+        <li>Operating Expenses: $11-13M (modest increase with scale)</li>
+        <li><strong>EBITDA: $4-7M</strong> - strong profitability</li>
+    </ul>
+</div>
+
+<h1>IV. What Phase 1 Got Right vs. What Needs Reframing</h1>
+
+<h2>✓ Validated Phase 1 Findings</h2>
+
+<div class="validated">
+    <p><strong>These Phase 1 findings remain valid and don't require revision:</strong></p>
+
+    <ol>
+        <li><strong>Tampa Bay Import Gateway Position</strong>
+            <ul>
+                <li>6.8M MT annual imports, 75% of Florida total - CORRECT</li>
+                <li>Superior port infrastructure, I-75/I-4 access - CORRECT</li>
+                <li>Central positioning for Florida distribution - CORRECT</li>
+            </ul>
+        </li>
+
+        <li><strong>Tariff Advantage (10% vs. 25-46%)</strong>
+            <ul>
+                <li>Egyptian/Turkish sourcing advantage - CORRECT and MATERIAL</li>
+                <li>$12-27/MT cost advantage vs. competitors - CORRECT</li>
+                <li>Applies to cement products (gray, white); unclear if relevant to SRM/slag sourcing</li>
+            </ul>
+        </li>
+
+        <li><strong>Port Redwing Infrastructure Scale</strong>
+            <ul>
+                <li>150,000 MT storage capacity advantage - CORRECT</li>
+                <li>Enables inventory buffers, multi-product operations - CORRECT</li>
+                <li>Cost efficiencies through vessel optimization - CORRECT</li>
+            </ul>
+        </li>
+
+        <li><strong>White Cement Market Opportunity</strong>
+            <ul>
+                <li>Florida market 42-55K MT consumption - VALIDATED (Mapei 30K MT confirms market size)</li>
+                <li>2-3x price premium ($230/MT vs. $90-145 gray) - CORRECT</li>
+                <li>45-65% gross margins - CORRECT (50-57% estimated in actual model)</li>
+                <li>Limited competition, import-dependent - CORRECT</li>
+                <li><strong>60-75K MT 2027 target EXCEEDS Phase 1 Year 3 estimate</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>Competitive Landscape Structure</strong>
+            <ul>
+                <li>Argos, Martin Marietta, CEMEX market structure - CORRECT</li>
+                <li>Rational competitive behavior - CORRECT</li>
+                <li>Space for well-positioned entrant - CORRECT</li>
+            </ul>
+        </li>
+
+        <li><strong>Florida Supply-Demand Gap</strong>
+            <ul>
+                <li>6.5M MT structural import requirement - CORRECT</li>
+                <li>46% import dependency vs. 22% US average - CORRECT</li>
+                <li>No new domestic capacity additions - CORRECT</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<h2>⚠️ Phase 1 Elements Requiring Complete Reframing</h2>
+
+<div class="critical-change">
+    <p><strong>These Phase 1 analyses are invalidated by actual business model and require rewrite:</strong></p>
+
+    <ol>
+        <li><strong>Product Mix Strategy</strong>
+            <ul>
+                <li>❌ Phase 1: 77% gray cement, 23% white cement</li>
+                <li>✓ Actual: 69% SRM, 26% gray, 5% white (by volume); 25% SRM, 49% gray, 17% white, 9% other (by revenue)</li>
+                <li><strong>Action: Reframe as SRM/slag-centric business with cement as complementary lines</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>Gray Cement Customer Targeting</strong>
+            <ul>
+                <li>❌ Phase 1 Tier 1-B: Independent ready-mix producers (15-20 accounts Year 1, 50-60 accounts Year 3)</li>
+                <li>✓ Actual: <strong>RESTRICTED from Florida ready-mix sales</strong></li>
+                <li><strong>Action: Redefine gray cement targets - CMU block plants, precast manufacturers, out-of-state ready-mix, bagged distribution, contractors</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>White Cement Customer Segmentation</strong>
+            <ul>
+                <li>❌ Phase 1: Emphasized stucco/EIFS manufacturers (60-65% of demand)</li>
+                <li>✓ Actual: Mapei (tile adhesive) is anchor customer (30K MT confirmed)</li>
+                <li><strong>Action: Reframe white cement strategy around Mapei anchor + tile/grout manufacturers + pool plaster + architectural precast</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>Competitive Analysis</strong>
+            <ul>
+                <li>❌ Phase 1: Analyzed cement importers and producers (Argos, Martin Marietta, CEMEX)</li>
+                <li>✓ Actual: Need to analyze SRM/slag suppliers, SCM distributors</li>
+                <li><strong>Action: Add competitive analysis of slag market (suppliers, pricing, customer relationships, 100K MT customer competitive landscape)</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>Port Operations and Infrastructure</strong>
+            <ul>
+                <li>❌ Phase 1: Analyzed as pure cement terminal (pneumatic unloading, cement silos, truck loading)</li>
+                <li>✓ Actual: Must handle SRM/slag (2 dedicated silos), multiple product lines, different handling requirements</li>
+                <li><strong>Action: Assess Port Redwing capability for slag handling, grinding (if needed), quality control for SCM products</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>Financial Model</strong>
+            <ul>
+                <li>❌ Phase 1: Built on gray + white cement economics, 29% blended margin, Year 3 $23.8M revenue</li>
+                <li>✓ Actual: SRM/slag + cement model, similar ~30% blended margin but different cost structures, 2026 $20M → Full year $40M</li>
+                <li><strong>Action: Rebuild financial model with actual product mix, pricing, volume trajectory, SRM/slag cost structure</strong></li>
+            </ul>
+        </li>
+
+        <li><strong>Risk Assessment</strong>
+            <ul>
+                <li>❌ Phase 1: Risks focused on cement market dynamics (competitive price war, white cement demand, supplier reliability)</li>
+                <li>✓ Actual: Need to add SRM/slag-specific risks (100K MT customer concentration, slag sourcing, SRM market volatility, restriction on FL ready-mix impacts)</li>
+                <li><strong>Action: Revise risk register to reflect actual business model risks</strong></li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<h1>V. Critical Information Gaps Requiring Clarification</h1>
+
+<h2>Immediate Clarifications Needed for Strategy Refinement</h2>
+
+<div class="alert-box">
+    <div class="title">Questions for Management Team (Karim's Go-To-Market Deck)</div>
+
+    <h3>1. SRM/Slag Product Details</h3>
+    <ol>
+        <li><strong>What is SRM?</strong> Slag cement? Fly ash? Blended products? Natural pozzolans? Clarify product specifications.</li>
+        <li><strong>Is 100K MT slag customer included in 400K MT SRM full-year forecast? Or additional volume?</strong></li>
+        <li><strong>Slag sourcing:</strong> Domestic steel mill slag or import? Supplier relationships established? Ground vs. unground?</li>
+        <li><strong>SRM/slag pricing:</strong> $25/MT for SRM confirmed. What is slag pricing? Market benchmarks?</li>
+        <li><strong>Margin profile:</strong> Estimated 20-28% gross margin for SRM realistic? What are actual cost components?</li>
+        <li><strong>Port Redwing capabilities:</strong> Can facility handle slag? Grinding equipment needed? Quality testing protocols?</li>
+    </ol>
+
+    <h3>2. SRM Concrete Restriction</h3>
+    <ol>
+        <li><strong>What is the exact restriction?</strong> Contractual non-compete? Product specification limitation? Regulatory issue?</li>
+        <li><strong>Who imposed restriction?</strong> SRM supplier? Customer agreement? Industry standard?</li>
+        <li><strong>Geographic scope:</strong> Florida only? All Southeast? What about Georgia, Alabama markets?</li>
+        <li><strong>Product scope:</strong> All gray cement to ready-mix? Or only certain types/grades?</li>
+        <li><strong>Duration:</strong> Permanent restriction or time-limited?</li>
+        <li><strong>Implications:</strong> Can we sell gray cement to ready-mix producers who DON'T use SRM concrete?</li>
+    </ol>
+
+    <h3>3. White Cement Strategy Details</h3>
+    <ol>
+        <li><strong>Mapei relationship status:</strong> Formal supply agreement? Volume commitment? Pricing locked? Timeline to supply?</li>
+        <li><strong>Mapei plant location:</strong> Deerfield Beach HQ confirmed? Delivery logistics?</li>
+        <li><strong>Other white cement customers identified:</strong> Beyond Mapei, who are next targets to reach 60-75K MT 2027?</li>
+        <li><strong>Federal White withdrawal:</strong> Timeline? Customer list available? Opportunity to capture their volume?</li>
+        <li><strong>White cement sourcing:</strong> Egypt (Royal, Cleopatra) confirmed? Turkey (Nuh)? Supply reliability for 60-75K MT volumes?</li>
+    </ol>
+
+    <h3>4. Gray Cement Market Clarifications</h3>
+    <ol>
+        <li><strong>If restricted from FL ready-mix, who ARE the gray cement customers?</strong>
+            <ul>
+                <li>CMU block manufacturers? (Phase 1 identified 30M blocks = 270K MT opportunity)</li>
+                <li>Precast concrete plants?</li>
+                <li>Bagged cement distributors?</li>
+                <li>Out-of-state ready-mix (Georgia, Alabama)?</li>
+                <li>Direct contractor sales?</li>
+            </ul>
+        </li>
+        <li><strong>Gray cement pricing:</strong> Why $145/MT in 2026 vs. $130/MT full year? Market conditions? Product grade differences?</li>
+        <li><strong>Volume growth:</strong> 50K MT (2026) to 150K MT (full year) - what drives 3x growth? Customer pipeline visibility?</li>
+    </ol>
+
+    <h3>5. Financial Model Inputs</h3>
+    <ol>
+        <li><strong>"Other" line item ($650K in 2026, $3.6M full year):</strong> What products? Margins? Growth drivers?</li>
+        <li><strong>Operating expense assumptions:</strong> Terminal ops costs? Sales team size and comp? Corporate overhead allocation?</li>
+        <li><strong>Working capital:</strong> SRM/slag receivables/payables cycles? Inventory requirements by product?</li>
+        <li><strong>Capital expenditures:</strong> Slag silos, grinding equipment (if needed), bagging lines (if planned)?</li>
+    </ol>
+
+    <h3>6. Timeline and Sequencing</h3>
+    <ol>
+        <li><strong>"2026" vs. "Full Year":</strong> Does 2026 = partial year (e.g., Jun-Dec 2026)? Full year = 2027? Clarify timeline.</li>
+        <li><strong>Port Redwing commissioning:</strong> Operational start date? Product line ramp sequence (SRM first, then cement?)?</li>
+        <li><strong>Customer acquisition timeline:</strong> Mapei supply start date? 100K MT slag customer decision timeline?</li>
+    </ol>
+</div>
+
+<h1>VI. Recommendations for Karim's Go-To-Market Deck</h1>
+
+<div class="alert-box">
+    <div class="title">Recommended Deck Structure</div>
+
+    <p><strong>Given the fundamental business model differences vs. Phase 1, the go-to-market deck should be structured around actual product lines and strategy:</strong></p>
+
+    <h3>Section 1: Business Model Overview</h3>
+    <ul>
+        <li>Product portfolio: SRM/Slag (core volume), Gray Cement (restricted market), White Cement (specialty/margin driver)</li>
+        <li>Revenue build: 2026 $20M → Full year $40M → 2027 $45-50M (white cement push)</li>
+        <li>Margin profile: ~30% blended (SRM 20-28%, Gray 27-35%, White 50-57%)</li>
+        <li>Port Redwing platform: Multi-product terminal serving complementary customer base</li>
+    </ul>
+
+    <h3>Section 2: SRM/Slag Strategy (70-75% of Volume)</h3>
+    <ul>
+        <li><strong>Market intelligence:</strong> Florida SCM demand, competitor analysis, pricing benchmarks</li>
+        <li><strong>Customer targeting:</strong> Concrete producers using slag for sustainability/cost, 100K MT anchor customer, expansion targets</li>
+        <li><strong>Sourcing strategy:</strong> Supplier relationships, quality specifications, logistics</li>
+        <li><strong>Sales forecast:</strong> 300K MT (2026) → 400K MT (full year) build, customer pipeline</li>
+        <li><strong>Competitive positioning:</strong> How do we compete vs. existing slag suppliers?</li>
+    </ul>
+
+    <h3>Section 3: White Cement Strategy (Margin Driver)</h3>
+    <ul>
+        <li><strong>Mapei anchor customer:</strong> 30K MT/year, relationship status, supply timeline</li>
+        <li><strong>Market expansion:</strong> Path from 20K MT (2026) → 30K (full year) → 60-75K (2027)</li>
+        <li><strong>Customer targeting:</strong> Tile/grout manufacturers beyond Mapei, pool plaster, architectural precast</li>
+        <li><strong>Federal White opportunity:</strong> Customer capture plan, volume estimate, competitive response</li>
+        <li><strong>Sourcing:</strong> Egyptian/Turkish supply chain, quality assurance, 60-75K MT capacity confirmation</li>
+    </ul>
+
+    <h3>Section 4: Gray Cement Strategy (Within Restrictions)</h3>
+    <ul>
+        <li><strong>SRM restriction clarification:</strong> Exactly what markets are available vs. restricted</li>
+        <li><strong>Target customers:</strong> CMU block plants (Phase 1 identified 270K MT opportunity), precast, bagged distribution, out-of-state ready-mix</li>
+        <li><strong>Pricing strategy:</strong> $130-145/MT premium pricing rationale (non-ready-mix markets command premium?)</li>
+        <li><strong>Volume build:</strong> 50K (2026) → 150K (full year) customer pipeline and growth drivers</li>
+    </ul>
+
+    <h3>Section 5: Sales Forecast & Financial Model</h3>
+    <ul>
+        <li><strong>Volume forecast:</strong> By product line, quarterly ramp, Year 1-3 trajectory</li>
+        <li><strong>Revenue forecast:</strong> Pricing assumptions, sensitivity analysis</li>
+        <li><strong>Gross margin model:</strong> Cost structure by product, blended margin evolution</li>
+        <li><strong>Operating expense plan:</strong> Terminal ops, sales team (sizing and comp), corporate overhead</li>
+        <li><strong>EBITDA trajectory:</strong> 2026 ($1-3M loss) → Full year $2-5M profit → 2027 $4-7M</li>
+        <li><strong>Working capital:</strong> Inventory, receivables, payables by product line</li>
+        <li><strong>CapEx requirements:</strong> Slag silos, grinding equipment (if needed), other infrastructure</li>
+    </ul>
+
+    <h3>Section 6: Market Intelligence</h3>
+    <ul>
+        <li><strong>SRM/slag market:</strong> Florida demand, competitors, pricing trends, customer needs</li>
+        <li><strong>White cement market:</strong> Validated opportunity (Mapei confirms market), Federal White impact, 2027 growth path</li>
+        <li><strong>Gray cement within restrictions:</strong> Available market sizing, customer landscape, competitive dynamics</li>
+        <li><strong>Tariff advantage:</strong> 10% vs. 25-46% impact on cement products (unclear if applies to SRM/slag)</li>
+    </ul>
+
+    <h3>Section 7: Action Plan & Responsibilities</h3>
+    <ul>
+        <li><strong>Phase 2 validation (if pursuing):</strong> SRM/slag market study, customer confirmation, sourcing finalization</li>
+        <li><strong>Customer development:</strong> Mapei agreement finalization, 100K slag customer negotiation, gray cement pipeline building</li>
+        <li><strong>Port Redwing commissioning:</strong> Slag silo installation, product handling protocols, quality testing setup</li>
+        <li><strong>Supplier agreements:</strong> SRM/slag sources, white cement (Egypt/Turkey), gray cement</li>
+        <li><strong>Sales organization:</strong> Team structure (SRM/slag specialists vs. cement specialists?), hiring plan, compensation</li>
+        <li><strong>Responsibility matrix:</strong> Who owns each product line? Customer relationships? Operations? Finance?</li>
+    </ul>
+</div>
+
+<h1>VII. Conclusion</h1>
+
+<div class="alert-box">
+    <div class="title">Key Takeaways: Phase 1 Strategic Framework Valid, But Product Strategy Requires Rewrite</div>
+
+    <p><strong>What Phase 1 Got Right:</strong></p>
+    <ul>
+        <li>✓ Tampa Bay as strategic import gateway (validated)</li>
+        <li>✓ Tariff advantage framework (10% vs. 25-46% - material to cement products)</li>
+        <li>✓ Port Redwing infrastructure positioning (scale, location, multi-product capability)</li>
+        <li>✓ White cement opportunity (VALIDATED - Mapei 30K MT confirms, 2027 target 60-75K MT exceeds Phase 1)</li>
+        <li>✓ Competitive landscape analysis (rational behavior, space for entrant)</li>
+        <li>✓ Florida structural supply gap (46% import dependency durable)</li>
+    </ul>
+
+    <p><strong>What Requires Complete Reframing:</strong></p>
+    <ul>
+        <li>❌ Product mix: Actual is SRM/slag-centric (70-75% volume), NOT gray cement-centric</li>
+        <li>❌ Gray cement strategy: RESTRICTED from FL ready-mix (Phase 1's primary target), must redefine customer base</li>
+        <li>❌ White cement customer targeting: Mapei/tile adhesive confirmed (not stucco/EIFS as Phase 1 emphasized)</li>
+        <li>❌ Competitive analysis: Need SRM/slag supplier landscape, not just cement importers</li>
+        <li>❌ Financial model: Requires rebuild with actual product mix, pricing ($145/MT gray!), margin structures</li>
+        <li>❌ Risk assessment: SRM/slag risks (customer concentration, sourcing, restriction impacts) not analyzed</li>
+    </ul>
+
+    <p><strong>What This Means Going Forward:</strong></p>
+    <ul>
+        <li><strong>Phase 1 provides valid strategic foundation</strong> but cannot be used as go-to-market plan without major rewrites</li>
+        <li><strong>Karim's deck should be organized around actual business model:</strong> SRM/slag core, white cement margin driver, gray cement complementary within restrictions</li>
+        <li><strong>Information gaps (SRM details, restriction specifics, slag customer, Mapei agreement) must be filled</strong> before finalizing sales forecast and action plan</li>
+        <li><strong>Financial outlook potentially BETTER than Phase 1:</strong> Full year $40M revenue (vs. Phase 1 Year 3 $23.8M), similar margins, faster profitability (Full year $2-5M EBITDA vs. Phase 1 Year 3 breakeven)</li>
+        <li><strong>Execution complexity HIGHER:</strong> Managing 3-4 distinct product lines (SRM, slag, gray, white) with different customers, competitors, and operational requirements</li>
+    </ul>
+
+    <p style="margin-top: 20px; font-size: 12pt;"><strong>Recommendation: Use Phase 1 for strategic context (Tampa Bay gateway, tariff advantage, white cement opportunity validation) but build Karim's go-to-market deck from actual business model and forecast. Phase 1's detailed customer targeting, competitive analysis, and financial models require substantial revision to reflect SRM/slag-centric reality and gray cement restrictions.</strong></p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <strong>FORECAST RECONCILIATION: ACTUAL BUSINESS MODEL vs. PHASE 1 ASSUMPTIONS</strong><br>
+    Tampa Bay Cement Market Entry | SESCO Cement Corporation<br>
+    January 2026 | Strategic Planning Document - Confidential<br>
+    For use with Karim's go-to-market strategy deck development
+</div>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+{
+  "type": "FeatureCollection",
+  "name": "Cement_Plants_Florida_Gulf",
+  "metadata": {
+    "title": "Cement Plants - Florida and Gulf States",
+    "description": "Integrated cement production facilities in Florida and US Gulf region",
+    "source": "Global Energy Monitor Cement Tracker (July 2025), USGS",
+    "created": "2025-12-16",
+    "projection": "EPSG:4326",
+    "colorScheme": {
+      "primary": "#1B5E20",
+      "secondary": "#2E7D32",
+      "accent": "#00ACC1"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pennusco",
+        "owner": "Titan America",
+        "state": "Florida",
+        "city": "Miami",
+        "capacity_mt": 2.1,
+        "capacity_label": "2.1 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 1,
+        "products": "Portland Cement",
+        "symbol_size": 21,
+        "color": "#1B5E20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.2456, 25.7889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa Port",
+        "owner": "Argos USA",
+        "state": "Florida",
+        "city": "Tampa",
+        "capacity_mt": 1.9,
+        "capacity_label": "1.9 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 2,
+        "products": "Portland Cement, Masonry Cement",
+        "symbol_size": 19,
+        "color": "#2E7D32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.4572, 27.9478]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Newberry",
+        "owner": "Argos USA",
+        "state": "Florida",
+        "city": "Newberry",
+        "capacity_mt": 1.6,
+        "capacity_label": "1.6 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 3,
+        "products": "Portland Cement",
+        "symbol_size": 16,
+        "color": "#2E7D32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.6068, 29.6464]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brooksville South",
+        "owner": "CEMEX",
+        "state": "Florida",
+        "city": "Brooksville",
+        "capacity_mt": 1.5,
+        "capacity_label": "1.5 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 4,
+        "products": "Portland Cement, Blended Cement",
+        "symbol_size": 15,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.3879, 28.5561]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sumterville",
+        "owner": "Ash Grove (CRH)",
+        "state": "Florida",
+        "city": "Sumterville",
+        "capacity_mt": 1.2,
+        "capacity_label": "1.2 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 5,
+        "products": "Portland Cement",
+        "symbol_size": 12,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.0756, 28.7514]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miami",
+        "owner": "CEMEX",
+        "state": "Florida",
+        "city": "Miami",
+        "capacity_mt": 1.1,
+        "capacity_label": "1.1 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 6,
+        "products": "Portland Cement",
+        "symbol_size": 11,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.3256, 25.7017]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Branford",
+        "owner": "Ash Grove (CRH)",
+        "state": "Florida",
+        "city": "Branford",
+        "capacity_mt": 1.0,
+        "capacity_label": "1.0 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": 7,
+        "products": "Portland Cement",
+        "symbol_size": 10,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.9276, 29.9544]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midlothian",
+        "owner": "Holcim",
+        "state": "Texas",
+        "city": "Midlothian",
+        "capacity_mt": 4.2,
+        "capacity_label": "4.2 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": null,
+        "products": "Portland Cement",
+        "symbol_size": 42,
+        "color": "#0D47A1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.0022, 32.4824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Braunfels",
+        "owner": "Buzzi Unicem",
+        "state": "Texas",
+        "city": "New Braunfels",
+        "capacity_mt": 2.8,
+        "capacity_label": "2.8 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": null,
+        "products": "Portland Cement",
+        "symbol_size": 28,
+        "color": "#0D47A1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.1245, 29.7030]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Houston",
+        "owner": "CEMEX",
+        "state": "Texas",
+        "city": "Houston",
+        "capacity_mt": 2.5,
+        "capacity_label": "2.5 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": null,
+        "products": "Portland Cement",
+        "symbol_size": 25,
+        "color": "#0D47A1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-95.3698, 29.7604]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roberta",
+        "owner": "Argos USA",
+        "state": "Alabama",
+        "city": "Roberta",
+        "capacity_mt": 2.0,
+        "capacity_label": "2.0 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": null,
+        "products": "Portland Cement",
+        "symbol_size": 20,
+        "color": "#1976D2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.5931, 32.7454]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leeds",
+        "owner": "Lehigh Hanson",
+        "state": "Alabama",
+        "city": "Leeds",
+        "capacity_mt": 1.8,
+        "capacity_label": "1.8 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": null,
+        "products": "Portland Cement",
+        "symbol_size": 18,
+        "color": "#1976D2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-86.5444, 33.5484]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Theodore",
+        "owner": "Holcim",
+        "state": "Alabama",
+        "city": "Theodore",
+        "capacity_mt": 1.5,
+        "capacity_label": "1.5 MT/yr",
+        "status": "Operating",
+        "type": "Integrated",
+        "rank_florida": null,
+        "products": "Portland Cement",
+        "symbol_size": 15,
+        "color": "#1976D2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-88.1753, 30.5477]
+      }
+    }
+  ]
+}

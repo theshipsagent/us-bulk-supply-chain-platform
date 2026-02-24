@@ -1,0 +1,420 @@
+{
+  "type": "FeatureCollection",
+  "name": "Florida_Counties_Cement_Demand",
+  "metadata": {
+    "title": "Florida Counties - Cement Demand Indicators",
+    "description": "County-level construction activity and cement demand indicators for Florida",
+    "source": "US Census Building Permits, FL DEO, Industry Analysis 2024",
+    "created": "2025-12-16",
+    "projection": "EPSG:4326",
+    "note": "Centroids for point visualization. For choropleth, join to standard FL county boundaries."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Miami-Dade",
+        "fips": "12086",
+        "region": "Southeast",
+        "population": 2716940,
+        "pop_growth_pct": 1.2,
+        "building_permits_2024": 18500,
+        "construction_value_m": 4850,
+        "cement_demand_index": 95,
+        "demand_tier": "Very High",
+        "major_projects": "Brickell high-rises, airport expansion, Brightline",
+        "nearest_plant": "Pennusco (Titan)",
+        "nearest_terminal": "Miami Seaport",
+        "color": "#1B5E20",
+        "symbol_size": 40
+      },
+      "geometry": { "type": "Point", "coordinates": [-80.4161, 25.7617] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Hillsborough",
+        "fips": "12057",
+        "region": "Tampa Bay",
+        "population": 1512070,
+        "pop_growth_pct": 2.1,
+        "building_permits_2024": 14200,
+        "construction_value_m": 3650,
+        "cement_demand_index": 92,
+        "demand_tier": "Very High",
+        "major_projects": "Water Street Tampa, port expansion, I-275",
+        "nearest_plant": "Tampa Port (Argos)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#1B5E20",
+        "symbol_size": 38,
+        "target_market": true
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.4572, 27.9904] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Orange",
+        "fips": "12095",
+        "region": "Central",
+        "population": 1429908,
+        "pop_growth_pct": 1.8,
+        "building_permits_2024": 12800,
+        "construction_value_m": 3200,
+        "cement_demand_index": 88,
+        "demand_tier": "Very High",
+        "major_projects": "Disney expansion, SunRail, I-4 Ultimate",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#1B5E20",
+        "symbol_size": 35
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.3081, 28.5142] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Broward",
+        "fips": "12011",
+        "region": "Southeast",
+        "population": 1952778,
+        "pop_growth_pct": 0.9,
+        "building_permits_2024": 11500,
+        "construction_value_m": 2950,
+        "cement_demand_index": 85,
+        "demand_tier": "High",
+        "major_projects": "Fort Lauderdale downtown, Brightline station",
+        "nearest_plant": "Miami (CEMEX)",
+        "nearest_terminal": "Port Everglades",
+        "color": "#2E7D32",
+        "symbol_size": 32
+      },
+      "geometry": { "type": "Point", "coordinates": [-80.2456, 26.1224] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Palm Beach",
+        "fips": "12099",
+        "region": "Southeast",
+        "population": 1524453,
+        "pop_growth_pct": 1.5,
+        "building_permits_2024": 10200,
+        "construction_value_m": 2780,
+        "cement_demand_index": 82,
+        "demand_tier": "High",
+        "major_projects": "West Palm Beach revival, luxury condos",
+        "nearest_plant": "Miami (CEMEX)",
+        "nearest_terminal": "West Palm Beach",
+        "color": "#2E7D32",
+        "symbol_size": 30
+      },
+      "geometry": { "type": "Point", "coordinates": [-80.2684, 26.6515] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Pinellas",
+        "fips": "12103",
+        "region": "Tampa Bay",
+        "population": 974996,
+        "pop_growth_pct": 0.8,
+        "building_permits_2024": 6800,
+        "construction_value_m": 1850,
+        "cement_demand_index": 78,
+        "demand_tier": "High",
+        "major_projects": "St. Pete waterfront, Gateway development",
+        "nearest_plant": "Tampa Port (Argos)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#2E7D32",
+        "symbol_size": 28,
+        "target_market": true
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.7401, 27.8764] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Duval",
+        "fips": "12031",
+        "region": "Northeast",
+        "population": 1017080,
+        "pop_growth_pct": 1.6,
+        "building_permits_2024": 8500,
+        "construction_value_m": 2100,
+        "cement_demand_index": 76,
+        "demand_tier": "High",
+        "major_projects": "Downtown Jacksonville, port expansion",
+        "nearest_plant": "Branford (CRH)",
+        "nearest_terminal": "JAXPORT",
+        "color": "#2E7D32",
+        "symbol_size": 28
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.6613, 30.3322] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Lee",
+        "fips": "12071",
+        "region": "Southwest",
+        "population": 802893,
+        "pop_growth_pct": 2.8,
+        "building_permits_2024": 9200,
+        "construction_value_m": 2350,
+        "cement_demand_index": 80,
+        "demand_tier": "High",
+        "major_projects": "Fort Myers rebuild (Hurricane Ian), Cape Coral growth",
+        "nearest_plant": "Brooksville South (CEMEX)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#2E7D32",
+        "symbol_size": 30
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.8490, 26.6195] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Polk",
+        "fips": "12105",
+        "region": "Central",
+        "population": 753520,
+        "pop_growth_pct": 2.5,
+        "building_permits_2024": 7800,
+        "construction_value_m": 1650,
+        "cement_demand_index": 72,
+        "demand_tier": "High",
+        "major_projects": "Lakeland growth, logistics centers",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#4CAF50",
+        "symbol_size": 26,
+        "target_market": true
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.6981, 27.9531] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Pasco",
+        "fips": "12101",
+        "region": "Tampa Bay",
+        "population": 587804,
+        "pop_growth_pct": 3.2,
+        "building_permits_2024": 6500,
+        "construction_value_m": 1420,
+        "cement_demand_index": 70,
+        "demand_tier": "High",
+        "major_projects": "Wesley Chapel boom, SR 54 corridor",
+        "nearest_plant": "Brooksville South (CEMEX)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#4CAF50",
+        "symbol_size": 24,
+        "target_market": true
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.4319, 28.3070] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Brevard",
+        "fips": "12009",
+        "region": "East Coast",
+        "population": 617178,
+        "pop_growth_pct": 1.9,
+        "building_permits_2024": 5200,
+        "construction_value_m": 1180,
+        "cement_demand_index": 65,
+        "demand_tier": "Moderate",
+        "major_projects": "Space Coast development, NASA/SpaceX",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "JAXPORT",
+        "color": "#4CAF50",
+        "symbol_size": 22
+      },
+      "geometry": { "type": "Point", "coordinates": [-80.7214, 28.2639] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Manatee",
+        "fips": "12081",
+        "region": "Tampa Bay",
+        "population": 418869,
+        "pop_growth_pct": 2.6,
+        "building_permits_2024": 4800,
+        "construction_value_m": 1050,
+        "cement_demand_index": 68,
+        "demand_tier": "Moderate",
+        "major_projects": "Lakewood Ranch expansion",
+        "nearest_plant": "Tampa Port (Argos)",
+        "nearest_terminal": "Port Manatee",
+        "color": "#4CAF50",
+        "symbol_size": 22,
+        "target_market": true
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.3652, 27.4799] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Sarasota",
+        "fips": "12115",
+        "region": "Southwest",
+        "population": 452424,
+        "pop_growth_pct": 1.8,
+        "building_permits_2024": 4200,
+        "construction_value_m": 1150,
+        "cement_demand_index": 64,
+        "demand_tier": "Moderate",
+        "major_projects": "Downtown Sarasota, barrier island rebuilding",
+        "nearest_plant": "Tampa Port (Argos)",
+        "nearest_terminal": "Port Manatee",
+        "color": "#4CAF50",
+        "symbol_size": 20
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.3654, 27.1869] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Volusia",
+        "fips": "12127",
+        "region": "East Coast",
+        "population": 567118,
+        "pop_growth_pct": 1.4,
+        "building_permits_2024": 4500,
+        "construction_value_m": 980,
+        "cement_demand_index": 58,
+        "demand_tier": "Moderate",
+        "major_projects": "Daytona Beach redevelopment",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "JAXPORT",
+        "color": "#81C784",
+        "symbol_size": 18
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.0559, 29.0280] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Seminole",
+        "fips": "12117",
+        "region": "Central",
+        "population": 481946,
+        "pop_growth_pct": 1.2,
+        "building_permits_2024": 3800,
+        "construction_value_m": 920,
+        "cement_demand_index": 55,
+        "demand_tier": "Moderate",
+        "major_projects": "SunRail development, commercial growth",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#81C784",
+        "symbol_size": 18
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.2362, 28.7131] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Collier",
+        "fips": "12021",
+        "region": "Southwest",
+        "population": 395199,
+        "pop_growth_pct": 2.2,
+        "building_permits_2024": 4100,
+        "construction_value_m": 1280,
+        "cement_demand_index": 62,
+        "demand_tier": "Moderate",
+        "major_projects": "Naples luxury development, hurricane rebuilding",
+        "nearest_plant": "Miami (CEMEX)",
+        "nearest_terminal": "Port Everglades",
+        "color": "#4CAF50",
+        "symbol_size": 20
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.3480, 26.1118] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Osceola",
+        "fips": "12097",
+        "region": "Central",
+        "population": 407062,
+        "pop_growth_pct": 2.9,
+        "building_permits_2024": 5500,
+        "construction_value_m": 1180,
+        "cement_demand_index": 68,
+        "demand_tier": "Moderate",
+        "major_projects": "Kissimmee growth, Disney-adjacent development",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#4CAF50",
+        "symbol_size": 22
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.1448, 28.0617] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Lake",
+        "fips": "12069",
+        "region": "Central",
+        "population": 404955,
+        "pop_growth_pct": 2.4,
+        "building_permits_2024": 4200,
+        "construction_value_m": 880,
+        "cement_demand_index": 56,
+        "demand_tier": "Moderate",
+        "major_projects": "Villages expansion, Clermont growth",
+        "nearest_plant": "Sumterville (CRH)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#81C784",
+        "symbol_size": 18
+      },
+      "geometry": { "type": "Point", "coordinates": [-81.7129, 28.7653] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Hernando",
+        "fips": "12053",
+        "region": "Tampa Bay",
+        "population": 203702,
+        "pop_growth_pct": 2.8,
+        "building_permits_2024": 2800,
+        "construction_value_m": 580,
+        "cement_demand_index": 52,
+        "demand_tier": "Moderate",
+        "major_projects": "Spring Hill growth, commercial development",
+        "nearest_plant": "Brooksville South (CEMEX)",
+        "nearest_terminal": "Port Tampa Bay",
+        "color": "#81C784",
+        "symbol_size": 16,
+        "target_market": true
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.4659, 28.5536] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county": "Alachua",
+        "fips": "12001",
+        "region": "North Central",
+        "population": 285213,
+        "pop_growth_pct": 0.8,
+        "building_permits_2024": 2200,
+        "construction_value_m": 520,
+        "cement_demand_index": 45,
+        "demand_tier": "Low",
+        "major_projects": "UF expansion, Gainesville infill",
+        "nearest_plant": "Newberry (Argos)",
+        "nearest_terminal": "JAXPORT",
+        "color": "#A5D6A7",
+        "symbol_size": 14
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.3578, 29.6520] }
+    }
+  ]
+}

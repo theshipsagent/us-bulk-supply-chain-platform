@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Cement Market Entry Analysis | Strategic Overview</title>
+    <style>
+        :root {
+            --primary-dark: #1B5E20;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --primary-lighter: #81C784;
+            --secondary-dark: #0D47A1;
+            --secondary: #1976D2;
+            --secondary-light: #42A5F5;
+            --accent: #00ACC1;
+            --accent-dark: #00897B;
+            --neutral-dark: #37474F;
+            --neutral: #78909C;
+            --neutral-light: #ECEFF1;
+            --white: #FFFFFF;
+            --warning: #FF5722;
+            --gold: #FFC107;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--neutral-dark);
+            color: var(--neutral-dark);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .slide-nav {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .slide-nav a {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            border: 2px solid white;
+            transition: all 0.3s;
+        }
+        .slide-nav a:hover, .slide-nav a.active {
+            background: var(--primary-light);
+            transform: scale(1.3);
+        }
+
+        /* Top nav bar */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(55, 71, 79, 0.95);
+            padding: 12px 30px;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+        .top-nav .logo {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            letter-spacing: 1px;
+        }
+        .top-nav .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        .top-nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .top-nav a:hover { opacity: 1; }
+
+        /* Slide container */
+        .slide {
+            min-height: 100vh;
+            padding: 80px 60px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Title Slide */
+        .slide-title {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+        .slide-title h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        .slide-title .subtitle {
+            font-size: 1.8rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+        .slide-title .meta {
+            font-size: 1.1rem;
+            opacity: 0.7;
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+        .slide-title .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s backwards;
+        }
+        .slide-title .badge {
+            padding: 12px 25px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Content slides */
+        .slide-content {
+            background: var(--white);
+        }
+        .slide-content.alt {
+            background: var(--neutral-light);
+        }
+        .slide-content.dark {
+            background: var(--neutral-dark);
+            color: var(--white);
+        }
+        .slide-content.green {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+        }
+        .slide-content.blue {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+            color: var(--white);
+        }
+
+        .slide-header {
+            margin-bottom: 40px;
+        }
+        .slide-header .section-number {
+            font-size: 5rem;
+            font-weight: 700;
+            opacity: 0.1;
+            position: absolute;
+            top: 60px;
+            right: 60px;
+        }
+        .slide-header h2 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .slide-header .divider {
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        .dark .slide-header .divider,
+        .green .slide-header .divider,
+        .blue .slide-header .divider {
+            background: var(--white);
+        }
+
+        /* Grid layouts */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+
+        /* KPI boxes */
+        .kpi-large {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 16px;
+            color: var(--white);
+        }
+        .kpi-large .value {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .kpi-large .label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .kpi-large .sub {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        .kpi-medium {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--neutral-light);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+        .dark .kpi-medium,
+        .green .kpi-medium,
+        .blue .kpi-medium {
+            background: rgba(255,255,255,0.1);
+            border-left-color: var(--white);
+        }
+        .kpi-medium .value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        .dark .kpi-medium .value,
+        .green .kpi-medium .value,
+        .blue .kpi-medium .value {
+            color: var(--white);
+        }
+        .kpi-medium .label {
+            font-size: 0.95rem;
+            margin-top: 8px;
+        }
+
+        /* Info cards */
+        .info-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .dark .info-card {
+            background: rgba(255,255,255,0.05);
+            box-shadow: none;
+        }
+        .info-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .dark .info-card h3,
+        .green .info-card h3,
+        .blue .info-card h3 {
+            color: var(--white);
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--neutral-light);
+            display: flex;
+            justify-content: space-between;
+        }
+        .dark .info-card li {
+            border-bottom-color: rgba(255,255,255,0.1);
+        }
+        .info-card li:last-child { border-bottom: none; }
+
+        /* Feature list */
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .feature-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+        .feature-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        .feature-content p {
+            opacity: 0.8;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .data-table th {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 15px;
+            text-align: left;
+            font-weight: 500;
+        }
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--neutral-light);
+        }
+        .data-table tr:hover {
+            background: var(--neutral-light);
+        }
+        .data-table .highlight {
+            background: rgba(76, 175, 80, 0.1);
+        }
+        .data-table .number {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* Progress bars */
+        .progress-bar {
+            background: var(--neutral-light);
+            border-radius: 10px;
+            height: 12px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+        }
+
+        /* Badges */
+        .badge-sm {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .badge-green { background: var(--primary-light); color: white; }
+        .badge-blue { background: var(--secondary); color: white; }
+        .badge-gold { background: var(--gold); color: var(--neutral-dark); }
+        .badge-orange { background: var(--warning); color: white; }
+
+        /* Map placeholder */
+        .map-frame {
+            background: var(--neutral-light);
+            border-radius: 12px;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--neutral);
+        }
+        .map-frame-dark {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        /* Quote */
+        .quote-box {
+            background: rgba(76, 175, 80, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 25px 30px;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        .slide-footer {
+            position: absolute;
+            bottom: 30px;
+            left: 60px;
+            right: 60px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .slide { padding: 80px 30px 60px; }
+            .slide-title h1 { font-size: 2.5rem; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .kpi-large .value { font-size: 3rem; }
+            .slide-header h2 { font-size: 2rem; }
+            .slide-nav { display: none; }
+        }
+
+        /* Print styles */
+        @media print {
+            .slide { page-break-after: always; min-height: auto; padding: 40px; }
+            .top-nav, .slide-nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="logo">CEMENT MARKET INTELLIGENCE</div>
+        <div class="nav-links">
+            <a href="#title">Overview</a>
+            <a href="#opportunity">Opportunity</a>
+            <a href="#supply">Supply</a>
+            <a href="#demand">Demand</a>
+            <a href="#imports">Imports</a>
+            <a href="#tampa">Tampa Bay</a>
+            <a href="#exports">Exports</a>
+            <a href="#strategy">Strategy</a>
+        </div>
+    </nav>
+
+    <!-- Slide Navigation Dots -->
+    <nav class="slide-nav">
+        <a href="#title" title="Title"></a>
+        <a href="#opportunity" title="Market Opportunity"></a>
+        <a href="#supply" title="Supply Landscape"></a>
+        <a href="#demand" title="Demand Analysis"></a>
+        <a href="#imports" title="Import Strategy"></a>
+        <a href="#tampa" title="Tampa Bay Focus"></a>
+        <a href="#exports" title="Export Opportunity"></a>
+        <a href="#competitive" title="Competitive Position"></a>
+        <a href="#strategy" title="Strategic Recommendations"></a>
+    </nav>
+
+    <!-- SLIDE 1: Title -->
+    <section class="slide slide-title" id="title">
+        <h1>Florida Cement Market</h1>
+        <div class="subtitle">Strategic Entry Analysis & Market Intelligence</div>
+        <div class="meta">Tampa Bay Region Focus | December 2025</div>
+        <div class="badge-row">
+            <span class="badge">$95B Construction Market</span>
+            <span class="badge">20M MT Annual Demand</span>
+            <span class="badge">9M MT Imports</span>
+            <span class="badge">#2 US State by Consumption</span>
+        </div>
+        <div class="slide-footer">
+            <span>Market Intelligence Report</span>
+            <span>Confidential</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: Market Opportunity -->
+    <section class="slide slide-content" id="opportunity">
+        <div class="slide-header">
+            <span class="section-number">01</span>
+            <h2>Market Opportunity</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 40px;">
+            <div class="kpi-large">
+                <div class="value">20M</div>
+                <div class="label">MT Annual Demand</div>
+                <div class="sub">Florida State</div>
+            </div>
+            <div class="kpi-large" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);">
+                <div class="value">45%</div>
+                <div class="label">Import Dependency</div>
+                <div class="sub">Demand vs Production Gap</div>
+            </div>
+            <div class="kpi-large" style="background: linear-gradient(135deg, var(--accent-dark) 0%, var(--primary-dark) 100%);">
+                <div class="value">2.8%</div>
+                <div class="label">Annual Growth</div>
+                <div class="sub">5-Year CAGR</div>
+            </div>
+            <div class="kpi-large" style="background: linear-gradient(135deg, var(--warning) 0%, #E64A19 100%);">
+                <div class="value">$4.8B</div>
+                <div class="label">Tampa Bay Construction</div>
+                <div class="sub">2024 Permitted Value</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Why Florida Now?</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">+</div>
+                        <div class="feature-content">
+                            <h4>Population Boom</h4>
+                            <p>1,000+ new residents daily; #1 state for domestic migration</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">$</div>
+                        <div class="feature-content">
+                            <h4>Infrastructure Investment</h4>
+                            <p>$12B FDOT 5-year plan; port expansions; Brightline rail</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">!</div>
+                        <div class="feature-content">
+                            <h4>Supply-Demand Gap</h4>
+                            <p>10.4 MT production vs 20 MT demand = 9.6 MT import opportunity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Tampa Bay Advantages</h3>
+                <ul>
+                    <li><span>Market Size</span> <span class="number">6.8 MT/yr</span></li>
+                    <li><span>Share of Florida Imports</span> <span class="number">75%</span></li>
+                    <li><span>Deep Water Ports</span> <span class="number">3 Active</span></li>
+                    <li><span>Building Permits (2024)</span> <span class="number">34,000+</span></li>
+                    <li><span>Construction Value</span> <span class="number">$9.5B</span></li>
+                    <li><span>Population Growth</span> <span class="number">2.1%/yr</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide-footer">
+            <span>Market Intelligence Report</span>
+            <span>1 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: Supply Landscape -->
+    <section class="slide slide-content alt" id="supply">
+        <div class="slide-header">
+            <span class="section-number">02</span>
+            <h2>Supply Landscape</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <h3 style="margin-bottom: 20px; color: var(--primary-dark);">Florida Cement Plants (7 Total)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Plant</th>
+                            <th>Owner</th>
+                            <th>Capacity</th>
+                            <th>Region</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pennusco</td>
+                            <td>Titan America</td>
+                            <td class="number">2.1 MT</td>
+                            <td>Miami</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Tampa Port</td>
+                            <td>Argos USA</td>
+                            <td class="number">1.9 MT</td>
+                            <td>Tampa</td>
+                        </tr>
+                        <tr>
+                            <td>Newberry</td>
+                            <td>Argos USA</td>
+                            <td class="number">1.6 MT</td>
+                            <td>Gainesville</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Brooksville South</td>
+                            <td>CEMEX</td>
+                            <td class="number">1.5 MT</td>
+                            <td>Tampa Area</td>
+                        </tr>
+                        <tr>
+                            <td>Sumterville</td>
+                            <td>CRH (Ash Grove)</td>
+                            <td class="number">1.2 MT</td>
+                            <td>Central</td>
+                        </tr>
+                        <tr>
+                            <td>Miami</td>
+                            <td>CEMEX</td>
+                            <td class="number">1.1 MT</td>
+                            <td>Miami</td>
+                        </tr>
+                        <tr>
+                            <td>Branford</td>
+                            <td>CRH (Ash Grove)</td>
+                            <td class="number">1.0 MT</td>
+                            <td>North FL</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--neutral);">
+                    <strong>Total Florida Production:</strong> 10.4 MT/year | <strong>Utilization:</strong> ~92%
+                </p>
+            </div>
+
+            <div>
+                <h3 style="margin-bottom: 20px; color: var(--primary-dark);">Import Terminals</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Terminal</th>
+                            <th>Port</th>
+                            <th>Volume</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td>Port Tampa Bay</td>
+                            <td>Tampa</td>
+                            <td class="number">3.45 MT</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Tampa City</td>
+                            <td>Tampa</td>
+                            <td class="number">2.42 MT</td>
+                        </tr>
+                        <tr>
+                            <td>JAXPORT</td>
+                            <td>Jacksonville</td>
+                            <td class="number">1.61 MT</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Port Manatee</td>
+                            <td>Tampa Bay</td>
+                            <td class="number">0.95 MT</td>
+                        </tr>
+                        <tr>
+                            <td>Port Everglades</td>
+                            <td>Ft. Lauderdale</td>
+                            <td class="number">0.45 MT</td>
+                        </tr>
+                        <tr>
+                            <td>West Palm Beach</td>
+                            <td>Palm Beach</td>
+                            <td class="number">0.19 MT</td>
+                        </tr>
+                        <tr class="highlight" style="background: rgba(255, 152, 0, 0.2);">
+                            <td>Port Redwing (NEW)</td>
+                            <td>Gibsonton</td>
+                            <td><span class="badge-sm badge-gold">Under Construction</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="quote-box" style="margin-top: 25px;">
+                    "Tampa Bay receives 75% of all Florida cement imports, making it the strategic hub for market entry."
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-footer">
+            <span>Market Intelligence Report</span>
+            <span>2 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: Demand Analysis -->
+    <section class="slide slide-content dark" id="demand">
+        <div class="slide-header">
+            <span class="section-number">03</span>
+            <h2>Demand Analysis</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 40px;">
+            <div class="kpi-medium">
+                <div class="value">20M MT</div>
+                <div class="label">Florida Annual Demand</div>
+            </div>
+            <div class="kpi-medium">
+                <div class="value">6.8M MT</div>
+                <div class="label">Tampa Bay Region</div>
+            </div>
+            <div class="kpi-medium">
+                <div class="value">34%</div>
+                <div class="label">Tampa Share of FL</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Top Demand Counties (Tampa Bay)</h3>
+                <table class="data-table" style="margin-top: 0;">
+                    <thead>
+                        <tr>
+                            <th>County</th>
+                            <th>Permits</th>
+                            <th>$ Value</th>
+                            <th>Growth</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hillsborough</td>
+                            <td class="number">14,200</td>
+                            <td class="number">$3.65B</td>
+                            <td><span class="badge-sm badge-green">+2.1%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pinellas</td>
+                            <td class="number">6,800</td>
+                            <td class="number">$1.85B</td>
+                            <td><span class="badge-sm badge-blue">+0.8%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pasco</td>
+                            <td class="number">6,500</td>
+                            <td class="number">$1.42B</td>
+                            <td><span class="badge-sm badge-green">+3.2%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Manatee</td>
+                            <td class="number">4,800</td>
+                            <td class="number">$1.05B</td>
+                            <td><span class="badge-sm badge-green">+2.6%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Polk</td>
+                            <td class="number">7,800</td>
+                            <td class="number">$1.65B</td>
+                            <td><span class="badge-sm badge-green">+2.5%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-card">
+                <h3>Demand by Segment</h3>
+                <div style="margin-top: 20px;">
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Ready-Mix Concrete</span>
+                            <span class="number">70-75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 72%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Precast/Concrete Products</span>
+                            <span class="number">12-15%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 14%; background: var(--secondary);"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Masonry/Block</span>
+                            <span class="number">5-8%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 7%; background: var(--accent);"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Other (Soil Stabilization, etc.)</span>
+                            <span class="number">5-7%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 6%; background: var(--neutral);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-footer" style="color: rgba(255,255,255,0.5);">
+            <span>Market Intelligence Report</span>
+            <span>3 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 5: Import Strategy -->
+    <section class="slide slide-content" id="imports">
+        <div class="slide-header">
+            <span class="section-number">04</span>
+            <h2>Import Strategy</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-2">
+            <div>
+                <h3 style="margin-bottom: 20px; color: var(--primary-dark);">US Import Origins (2024)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Volume</th>
+                            <th>Share</th>
+                            <th>Tariff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Turkey</td>
+                            <td class="number">7.16 MT</td>
+                            <td class="number">36%</td>
+                            <td><span class="badge-sm badge-green">10%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Canada</td>
+                            <td class="number">4.85 MT</td>
+                            <td class="number">24%</td>
+                            <td><span class="badge-sm badge-orange">25%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Vietnam</td>
+                            <td class="number">4.17 MT</td>
+                            <td class="number">21%</td>
+                            <td><span class="badge-sm badge-orange">46%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Greece</td>
+                            <td class="number">1.82 MT</td>
+                            <td class="number">9%</td>
+                            <td><span class="badge-sm badge-green">10%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mexico</td>
+                            <td class="number">1.32 MT</td>
+                            <td class="number">7%</td>
+                            <td><span class="badge-sm badge-orange">25%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Egypt</td>
+                            <td class="number">0.50 MT</td>
+                            <td class="number">3%</td>
+                            <td><span class="badge-sm badge-green">10%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h3 style="margin-bottom: 20px; color: var(--primary-dark);">Freight Economics (Dec 2025)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Vessel</th>
+                            <th>Rate/MT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Turkey to Tampa</td>
+                            <td>Supramax</td>
+                            <td class="number">$5.50-6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Egypt to Tampa</td>
+                            <td>Handysize</td>
+                            <td class="number">$7.00-8.00</td>
+                        </tr>
+                        <tr>
+                            <td>Greece to Tampa</td>
+                            <td>Supramax</td>
+                            <td class="number">$5.50-6.50</td>
+                        </tr>
+                        <tr>
+                            <td>Mexico to Tampa</td>
+                            <td>Handysize</td>
+                            <td class="number">$3.00-4.00</td>
+                        </tr>
+                        <tr>
+                            <td>Colombia to Tampa</td>
+                            <td>Handysize</td>
+                            <td class="number">$4.00-5.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top: 25px; padding: 20px; background: var(--neutral-light); border-radius: 12px;">
+                    <h4 style="color: var(--primary-dark); margin-bottom: 10px;">Tariff Advantage</h4>
+                    <p>Turkey, Egypt, and Greece enjoy 10% tariff vs 25-46% for Canada, Mexico, Vietnam. This creates a <strong>$8-15/MT</strong> landed cost advantage for Mediterranean sources.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-footer">
+            <span>Market Intelligence Report</span>
+            <span>4 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 6: Tampa Bay Focus -->
+    <section class="slide slide-content green" id="tampa">
+        <div class="slide-header">
+            <span class="section-number">05</span>
+            <h2>Tampa Bay Focus</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 40px;">
+            <div class="kpi-medium">
+                <div class="value">6.8M</div>
+                <div class="label">MT Import Volume</div>
+            </div>
+            <div class="kpi-medium">
+                <div class="value">75%</div>
+                <div class="label">FL Import Share</div>
+            </div>
+            <div class="kpi-medium">
+                <div class="value">3.4M</div>
+                <div class="label">Population Metro</div>
+            </div>
+            <div class="kpi-medium">
+                <div class="value">$9.5B</div>
+                <div class="label">Construction Value</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Key Import Sources to Tampa</h3>
+                <ul>
+                    <li><span>Turkey</span> <span class="number">33%</span></li>
+                    <li><span>Greece</span> <span class="number">28%</span></li>
+                    <li><span>Colombia</span> <span class="number">15%</span></li>
+                    <li><span>Mexico</span> <span class="number">12%</span></li>
+                    <li><span>Egypt</span> <span class="number">8%</span></li>
+                    <li><span>Other</span> <span class="number">4%</span></li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Major Development Projects</h3>
+                <ul>
+                    <li><span>Water Street Tampa</span> <span class="badge-sm badge-green">Active</span></li>
+                    <li><span>Port Tampa Bay Expansion</span> <span class="badge-sm badge-green">Active</span></li>
+                    <li><span>I-275/Howard Frankland</span> <span class="badge-sm badge-blue">$865M</span></li>
+                    <li><span>Westshore Marina District</span> <span class="badge-sm badge-green">Active</span></li>
+                    <li><span>Tampa General Hospital</span> <span class="badge-sm badge-gold">$500M</span></li>
+                    <li><span>Midtown Tampa Phase 2</span> <span class="badge-sm badge-green">Active</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 25px; background: rgba(0,0,0,0.2); border-radius: 12px;">
+            <h3 style="margin-bottom: 15px;">Port Redwing Opportunity</h3>
+            <p>New terminal at Gibsonton offers strategic advantages: direct Gulf access, modern infrastructure, rail connectivity potential, and proximity to Tampa Bay's fastest-growing counties (Hillsborough, Pasco, Polk).</p>
+        </div>
+
+        <div class="slide-footer" style="color: rgba(255,255,255,0.5);">
+            <span>Market Intelligence Report</span>
+            <span>5 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 7: Export Opportunity -->
+    <section class="slide slide-content" id="exports">
+        <div class="slide-header">
+            <span class="section-number">06</span>
+            <h2>Caribbean Export Opportunity</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 40px;">
+            <div class="kpi-large">
+                <div class="value">68.8%</div>
+                <div class="label">US Exports to Caribbean/LatAm</div>
+                <div class="sub">73,886 MT annually</div>
+            </div>
+            <div class="kpi-large" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);">
+                <div class="value">95%</div>
+                <div class="label">Import Dependency</div>
+                <div class="sub">Caribbean Islands Average</div>
+            </div>
+            <div class="kpi-large" style="background: linear-gradient(135deg, var(--accent-dark) 0%, var(--primary-dark) 100%);">
+                <div class="value">$4-6</div>
+                <div class="label">Freight Rate/MT</div>
+                <div class="sub">Tampa to Caribbean</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Top Export Markets</h3>
+                <table class="data-table" style="margin-top: 0;">
+                    <thead>
+                        <tr>
+                            <th>Destination</th>
+                            <th>Volume</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Honduras</td>
+                            <td class="number">18,500 MT</td>
+                            <td><span class="badge-sm badge-green">HIGH</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bahamas</td>
+                            <td class="number">12,800 MT</td>
+                            <td><span class="badge-sm badge-green">HIGH</span></td>
+                        </tr>
+                        <tr>
+                            <td>Costa Rica</td>
+                            <td class="number">8,200 MT</td>
+                            <td><span class="badge-sm badge-green">HIGH</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jamaica</td>
+                            <td class="number">7,500 MT</td>
+                            <td><span class="badge-sm badge-blue">MEDIUM</span></td>
+                        </tr>
+                        <tr>
+                            <td>Trinidad & Tobago</td>
+                            <td class="number">6,800 MT</td>
+                            <td><span class="badge-sm badge-green">HIGH</span></td>
+                        </tr>
+                        <tr>
+                            <td>USVI</td>
+                            <td class="number">5,200 MT</td>
+                            <td><span class="badge-sm badge-green">HIGH</span></td>
+                        </tr>
+                        <tr>
+                            <td>Curacao</td>
+                            <td class="number">4,100 MT</td>
+                            <td><span class="badge-sm badge-blue">MEDIUM</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-card">
+                <h3>White Cement Opportunity</h3>
+                <p style="margin-bottom: 20px;">Caribbean markets have high white cement demand for:</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon" style="background: var(--secondary);">1</div>
+                        <div class="feature-content">
+                            <h4>Tourism Construction</h4>
+                            <p>Resorts, hotels, villas with decorative concrete</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon" style="background: var(--secondary);">2</div>
+                        <div class="feature-content">
+                            <h4>Hurricane Rebuilding</h4>
+                            <p>Stucco/EIFS systems for storm-resistant construction</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon" style="background: var(--secondary);">3</div>
+                        <div class="feature-content">
+                            <h4>Premium Residential</h4>
+                            <p>High-end homes with architectural concrete finishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-footer">
+            <span>Market Intelligence Report</span>
+            <span>6 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: Competitive Position -->
+    <section class="slide slide-content blue" id="competitive">
+        <div class="slide-header">
+            <span class="section-number">07</span>
+            <h2>Competitive Landscape</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Major Players - Florida</h3>
+                <table class="data-table" style="margin-top: 0;">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Type</th>
+                            <th>Est. Share</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Argos USA</td>
+                            <td>Producer + Importer</td>
+                            <td class="number">~25%</td>
+                        </tr>
+                        <tr>
+                            <td>CEMEX</td>
+                            <td>Producer + Importer</td>
+                            <td class="number">~20%</td>
+                        </tr>
+                        <tr>
+                            <td>Titan America</td>
+                            <td>Producer + Importer</td>
+                            <td class="number">~18%</td>
+                        </tr>
+                        <tr>
+                            <td>CRH (Ash Grove)</td>
+                            <td>Producer</td>
+                            <td class="number">~12%</td>
+                        </tr>
+                        <tr>
+                            <td>Martin Marietta</td>
+                            <td>Importer</td>
+                            <td class="number">~10%</td>
+                        </tr>
+                        <tr>
+                            <td>Others/Independent</td>
+                            <td>Mixed</td>
+                            <td class="number">~15%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-card">
+                <h3>Competitive Advantages</h3>
+                <div class="feature-list" style="margin-top: 10px;">
+                    <div class="feature-item">
+                        <div class="feature-icon">1</div>
+                        <div class="feature-content">
+                            <h4>Favorable Tariffs</h4>
+                            <p>10% for Turkey/Egypt vs 25%+ for competitors' sources</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">2</div>
+                        <div class="feature-content">
+                            <h4>New Terminal Asset</h4>
+                            <p>Modern infrastructure at Port Redwing vs aging competitors</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">3</div>
+                        <div class="feature-content">
+                            <h4>White Cement Focus</h4>
+                            <p>Limited competition in specialty white cement segment</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">4</div>
+                        <div class="feature-content">
+                            <h4>Supply Relationships</h4>
+                            <p>Established Egypt/Turkey suppliers with quality track record</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 25px; background: rgba(0,0,0,0.2); border-radius: 12px;">
+            <h3 style="margin-bottom: 15px;">Market Entry Window</h3>
+            <p>Current market conditions favor new entrants: high utilization at existing plants (~92%), strong demand growth, and tariff advantages for Mediterranean sources. Independent ready-mix producers seeking alternative suppliers represent immediate opportunity.</p>
+        </div>
+
+        <div class="slide-footer" style="color: rgba(255,255,255,0.5);">
+            <span>Market Intelligence Report</span>
+            <span>7 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 9: Strategic Recommendations -->
+    <section class="slide slide-content dark" id="strategy">
+        <div class="slide-header">
+            <span class="section-number">08</span>
+            <h2>Strategic Recommendations</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 40px;">
+            <div class="info-card">
+                <h3>Phase 1: Market Entry</h3>
+                <ul style="margin-top: 15px;">
+                    <li style="border: none; display: block; padding: 8px 0;">Complete Port Redwing terminal infrastructure</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Establish initial inventory (50-75K MT)</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Target 3-5 independent ready-mix customers</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Launch white cement specialty positioning</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Phase 2: Growth</h3>
+                <ul style="margin-top: 15px;">
+                    <li style="border: none; display: block; padding: 8px 0;">Expand to 150K MT annual throughput</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Add Central Florida distribution</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Develop Caribbean export channel</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Build contractor/developer relationships</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Phase 3: Scale</h3>
+                <ul style="margin-top: 15px;">
+                    <li style="border: none; display: block; padding: 8px 0;">Target 300K+ MT annual volume</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Evaluate Jacksonville/SE FL expansion</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Establish bagging/repackaging capability</li>
+                    <li style="border: none; display: block; padding: 8px 0;">Consider rail siding development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div style="padding: 30px; background: rgba(76,175,80,0.2); border-radius: 12px; border-left: 4px solid var(--primary-light);">
+                <h3 style="color: var(--primary-light); margin-bottom: 15px;">Key Success Factors</h3>
+                <ul style="list-style: none;">
+                    <li style="padding: 8px 0;">Reliable supply chain from Turkey/Egypt</li>
+                    <li style="padding: 8px 0;">Competitive pricing vs incumbent producers</li>
+                    <li style="padding: 8px 0;">Service excellence for ready-mix customers</li>
+                    <li style="padding: 8px 0;">White cement differentiation strategy</li>
+                    <li style="padding: 8px 0;">Caribbean export diversification</li>
+                </ul>
+            </div>
+
+            <div style="padding: 30px; background: rgba(25,118,210,0.2); border-radius: 12px; border-left: 4px solid var(--secondary-light);">
+                <h3 style="color: var(--secondary-light); margin-bottom: 15px;">Target Metrics (Year 1)</h3>
+                <ul style="list-style: none;">
+                    <li style="padding: 8px 0; display: flex; justify-content: space-between;">
+                        <span>Import Volume</span>
+                        <span class="number" style="color: var(--secondary-light);">75-100K MT</span>
+                    </li>
+                    <li style="padding: 8px 0; display: flex; justify-content: space-between;">
+                        <span>Customer Count</span>
+                        <span class="number" style="color: var(--secondary-light);">5-8</span>
+                    </li>
+                    <li style="padding: 8px 0; display: flex; justify-content: space-between;">
+                        <span>White Cement Share</span>
+                        <span class="number" style="color: var(--secondary-light);">15-20%</span>
+                    </li>
+                    <li style="padding: 8px 0; display: flex; justify-content: space-between;">
+                        <span>Caribbean Exports</span>
+                        <span class="number" style="color: var(--secondary-light);">10-15K MT</span>
+                    </li>
+                    <li style="padding: 8px 0; display: flex; justify-content: space-between;">
+                        <span>Market Share (Tampa)</span>
+                        <span class="number" style="color: var(--secondary-light);">1-2%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide-footer" style="color: rgba(255,255,255,0.5);">
+            <span>Market Intelligence Report</span>
+            <span>8 of 9</span>
+        </div>
+    </section>
+
+    <!-- SLIDE 10: Data Sources & Contact -->
+    <section class="slide slide-content" id="sources">
+        <div class="slide-header">
+            <span class="section-number">09</span>
+            <h2>Data Sources & Methodology</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-3">
+            <div class="info-card">
+                <h3>Trade Data</h3>
+                <ul style="margin-top: 15px;">
+                    <li style="border: none; display: block; padding: 6px 0;">Panjiva Import Manifests (2,706 records)</li>
+                    <li style="border: none; display: block; padding: 6px 0;">Panjiva Export Manifests (340 records)</li>
+                    <li style="border: none; display: block; padding: 6px 0;">US Census Foreign Trade Data</li>
+                    <li style="border: none; display: block; padding: 6px 0;">USITC Tariff Database</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Industry Data</h3>
+                <ul style="margin-top: 15px;">
+                    <li style="border: none; display: block; padding: 6px 0;">USGS Mineral Commodity Summary 2025</li>
+                    <li style="border: none; display: block; padding: 6px 0;">Global Energy Monitor Cement Tracker</li>
+                    <li style="border: none; display: block; padding: 6px 0;">Portland Cement Association</li>
+                    <li style="border: none; display: block; padding: 6px 0;">USACE Waterborne Commerce Statistics</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Market Data</h3>
+                <ul style="margin-top: 15px;">
+                    <li style="border: none; display: block; padding: 6px 0;">US Census Building Permits</li>
+                    <li style="border: none; display: block; padding: 6px 0;">Florida DEO Construction Data</li>
+                    <li style="border: none; display: block; padding: 6px 0;">Clarksons Freight Analysis (337 emails)</li>
+                    <li style="border: none; display: block; padding: 6px 0;">Port Authority Statistics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center; padding: 40px; background: var(--neutral-light); border-radius: 12px;">
+            <h3 style="color: var(--primary-dark); margin-bottom: 15px;">Analysis Summary</h3>
+            <div class="grid-4" style="margin-top: 25px;">
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary);">50+</div>
+                    <div>Data Sources</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary);">3,000+</div>
+                    <div>Trade Records</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary);">337</div>
+                    <div>Freight Emails</div>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary);">5 Years</div>
+                    <div>Time Series</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <p style="font-size: 1.1rem; color: var(--neutral);">
+                Report Generated: December 2025 | Data through Q4 2025
+            </p>
+        </div>
+
+        <div class="slide-footer">
+            <span>Market Intelligence Report</span>
+            <span>9 of 9</span>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Update active nav dot on scroll
+        const slides = document.querySelectorAll('.slide');
+        const navDots = document.querySelectorAll('.slide-nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            slides.forEach(slide => {
+                const slideTop = slide.offsetTop;
+                const slideHeight = slide.clientHeight;
+                if (scrollY >= (slideTop - slideHeight / 3)) {
+                    current = slide.getAttribute('id');
+                }
+            });
+
+            navDots.forEach(dot => {
+                dot.classList.remove('active');
+                if (dot.getAttribute('href') === '#' + current) {
+                    dot.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

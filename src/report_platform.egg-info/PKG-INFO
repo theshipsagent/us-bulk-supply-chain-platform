@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: report-platform
+Version: 1.0.0
+Summary: US Bulk Supply Chain Reporting Platform
+Requires-Python: >=3.11
+Requires-Dist: click>=8.1
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: tqdm>=4.65
+Requires-Dist: requests>=2.31
+Requires-Dist: duckdb>=0.9
+Requires-Dist: pandas>=2.0
+Requires-Dist: pyarrow>=14.0
+Requires-Dist: openpyxl>=3.1
+Provides-Extra: geo
+Requires-Dist: geopandas>=0.14; extra == "geo"
+Requires-Dist: folium>=0.15; extra == "geo"
+Requires-Dist: shapely>=2.0; extra == "geo"
+Provides-Extra: viz
+Requires-Dist: matplotlib>=3.8; extra == "viz"
+Requires-Dist: plotly>=5.18; extra == "viz"
+Provides-Extra: all
+Requires-Dist: report-platform[geo,viz]; extra == "all"
+Requires-Dist: rapidfuzz>=3.5; extra == "all"
+Requires-Dist: networkx>=3.2; extra == "all"
+Requires-Dist: beautifulsoup4>=4.12; extra == "all"
+Requires-Dist: lxml>=4.9; extra == "all"

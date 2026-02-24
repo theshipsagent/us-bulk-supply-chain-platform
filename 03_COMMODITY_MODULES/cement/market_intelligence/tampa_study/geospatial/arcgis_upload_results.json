@@ -1,0 +1,29 @@
+{
+  "upload_date": "2025-12-17T07:33:43.283698",
+  "layers": [
+    {
+      "layer": "North American Cement Plants",
+      "filename": "north_american_cement_plants.geojson",
+      "item_id": "353a095f807d475e8a415c9d21e0be4f",
+      "publish_result": null
+    },
+    {
+      "layer": "US Cement Import Ports (Weighted)",
+      "filename": "us_cement_import_ports_weighted.geojson",
+      "item_id": "1ee57142d20a4779a58e3abffe3d1c6e",
+      "publish_result": null
+    },
+    {
+      "layer": "Class I Rail Network (US)",
+      "filename": "class1_rail_part1.geojson",
+      "item_id": "cab0b48ec7224fd6b1e186db7f1de695",
+      "publish_result": null
+    },
+    {
+      "layer": "US Marine Highways",
+      "filename": "us_marine_highways.geojson",
+      "item_id": "3f760be450b246e99dc1718e8d9284f0",
+      "publish_result": null
+    }
+  ]
+}

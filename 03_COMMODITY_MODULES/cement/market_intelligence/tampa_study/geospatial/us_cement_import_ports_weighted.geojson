@@ -1,0 +1,420 @@
+{
+  "type": "FeatureCollection",
+  "name": "US_Cement_Import_Ports_Weighted",
+  "metadata": {
+    "title": "US Cement Import Ports with Volume Weights",
+    "source": "Panjiva Trade Intelligence 2023-2025",
+    "total_imports_mt": 12327418,
+    "hs_code": "2523 (Portland Cement)"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Houston, Houston, Texas",
+        "import_volume_mt": 3385474,
+        "shipments": 118,
+        "volume_label": "3.39M MT",
+        "bubble_size": 33.85474
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1,
+          29.7
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Houston Ship Channel",
+        "import_volume_mt": 2331675,
+        "shipments": 75,
+        "volume_label": "2.33M MT",
+        "bubble_size": 23.31675
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0,
+          29.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New York/Newark Area, Newark, New Jersey",
+        "import_volume_mt": 856976,
+        "shipments": 31,
+        "volume_label": "857K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.15,
+          40.68
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Portland, Portland, Oregon",
+        "import_volume_mt": 747137,
+        "shipments": 26,
+        "volume_label": "747K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.67,
+          45.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Stockton, Stockton, California",
+        "import_volume_mt": 504643,
+        "shipments": 17,
+        "volume_label": "505K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.3,
+          37.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Gramercy, Gramercy, Louisiana",
+        "import_volume_mt": 419976,
+        "shipments": 14,
+        "volume_label": "420K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7,
+          30.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Virginia, Norfolk, Virginia",
+        "import_volume_mt": 418674,
+        "shipments": 22,
+        "volume_label": "419K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3,
+          36.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa Bay",
+        "import_volume_mt": 396594,
+        "shipments": 19,
+        "volume_label": "397K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.45,
+          27.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ProvPort, Providence, Rhode Island",
+        "import_volume_mt": 390778,
+        "shipments": 51,
+        "volume_label": "391K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4,
+          41.82
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lower Miss River",
+        "import_volume_mt": 357744,
+        "shipments": 9,
+        "volume_label": "358K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1,
+          29.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Georgia Ports Authority, Savannah, Georgia",
+        "import_volume_mt": 294289,
+        "shipments": 30,
+        "volume_label": "294K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1,
+          32.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampa, Florida",
+        "import_volume_mt": 276450,
+        "shipments": 17,
+        "volume_label": "276K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.46,
+          27.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Port of Brownsville, Brownsville, Texas",
+        "import_volume_mt": 216639,
+        "shipments": 5,
+        "volume_label": "217K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.4,
+          25.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",
+        "import_volume_mt": 210584,
+        "shipments": 5,
+        "volume_label": "211K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15,
+          39.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+        "import_volume_mt": 203233,
+        "shipments": 12,
+        "volume_label": "203K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.12,
+          26.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of Lake Charles, Lake Charles, Louisiana",
+        "import_volume_mt": 192016,
+        "shipments": 7,
+        "volume_label": "192K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.25,
+          30.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Service Port-San Francisco, San Francisco, California",
+        "import_volume_mt": 172695,
+        "shipments": 7,
+        "volume_label": "173K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4,
+          37.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+        "import_volume_mt": 162709,
+        "shipments": 10,
+        "volume_label": "163K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.05,
+          26.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Texas",
+        "import_volume_mt": 149531,
+        "shipments": 3,
+        "volume_label": "150K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5,
+          26.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Of NewHampshire, Portsmouth, New Hampshire",
+        "import_volume_mt": 105495,
+        "shipments": 12,
+        "volume_label": "105K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.75,
+          43.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port of New Orleans, New Orleans, Louisiana",
+        "import_volume_mt": 46910,
+        "shipments": 1,
+        "volume_label": "47K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.05,
+          29.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mobile",
+        "import_volume_mt": 20004,
+        "shipments": 1,
+        "volume_label": "20K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.05,
+          30.7
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Manatee, Florida",
+        "import_volume_mt": 16498,
+        "shipments": 1,
+        "volume_label": "16K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.55,
+          27.65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alabama State Port Authority, Mobile, Alabama",
+        "import_volume_mt": 10012,
+        "shipments": 1,
+        "volume_label": "10K MT",
+        "bubble_size": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.05,
+          30.68
+        ]
+      }
+    }
+  ]
+}

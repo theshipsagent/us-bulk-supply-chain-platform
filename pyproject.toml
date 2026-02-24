@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "report-platform"
+version = "1.0.0"
+description = "US Bulk Supply Chain Reporting Platform"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1",
+    "pyyaml>=6.0",
+    "tqdm>=4.65",
+    "requests>=2.31",
+    "duckdb>=0.9",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+geo = [
+    "geopandas>=0.14",
+    "folium>=0.15",
+    "shapely>=2.0",
+]
+viz = [
+    "matplotlib>=3.8",
+    "plotly>=5.18",
+]
+all = [
+    "report-platform[geo,viz]",
+    "rapidfuzz>=3.5",
+    "networkx>=3.2",
+    "beautifulsoup4>=4.12",
+    "lxml>=4.9",
+]
+
+[project.scripts]
+report-platform = "report_platform.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

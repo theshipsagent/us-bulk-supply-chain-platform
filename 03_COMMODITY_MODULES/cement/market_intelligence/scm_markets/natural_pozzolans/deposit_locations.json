@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "title": "Natural Pozzolan Deposit Locations and Market Assessment",
+    "sources": ["USGS Mineral Commodity Summaries", "State geological surveys", "Academic literature"],
+    "currency": "Q1 2026"
+  },
+  "natural_pozzolan_types": [
+    {
+      "type": "Volcanic ash (pumice/pumicite)",
+      "astm_standard": "ASTM C618 Class N",
+      "locations": [
+        {"state": "Nevada", "deposit": "Various Basin and Range deposits", "estimated_resource_mt": 500, "status": "Some active quarries"},
+        {"state": "New Mexico", "deposit": "Jemez Mountains, Rio Grande Rift", "estimated_resource_mt": 300, "status": "Limited extraction"},
+        {"state": "Oregon", "deposit": "Cascade Range volcanic fields", "estimated_resource_mt": 400, "status": "Active quarrying"},
+        {"state": "Idaho", "deposit": "Snake River Plain", "estimated_resource_mt": 250, "status": "Active quarrying"},
+        {"state": "Arizona", "deposit": "San Francisco Peaks volcanic field", "estimated_resource_mt": 200, "status": "Limited extraction"},
+        {"state": "California", "deposit": "Mono/Inyo Craters, Cascades", "estimated_resource_mt": 150, "status": "Permitting challenges"}
+      ],
+      "price_per_ton": [35, 55],
+      "processing": "Crushing, screening, drying; minimal processing required",
+      "cement_replacement_rate_pct": [10, 25],
+      "advantages": ["Abundant resource", "Low processing cost", "No carbon from calcination"],
+      "disadvantages": ["Variable quality", "Limited geographic distribution (Western US)", "Transportation cost to Eastern markets"]
+    },
+    {
+      "type": "Diatomaceous earth",
+      "astm_standard": "ASTM C618 Class N",
+      "locations": [
+        {"state": "California", "deposit": "Lompoc", "estimated_resource_mt": 100, "status": "Active (EP Minerals/US Silica)"},
+        {"state": "Nevada", "deposit": "Clark County", "estimated_resource_mt": 80, "status": "Active"},
+        {"state": "Oregon", "deposit": "Christmas Valley", "estimated_resource_mt": 60, "status": "Active"}
+      ],
+      "price_per_ton": [80, 120],
+      "processing": "Calcination at 800-1000C may be required",
+      "cement_replacement_rate_pct": [5, 15],
+      "notes": "Higher cost limits cement application; primarily used for filtration"
+    },
+    {
+      "type": "Metakaolin (calcined kaolin clay)",
+      "astm_standard": "ASTM C618 Class N",
+      "locations": [
+        {"state": "Georgia", "deposit": "Kaolin belt (Sandersville, Wrens)", "estimated_resource_mt": 2000, "status": "Large active mines (KaMin, BASF, Imerys)"},
+        {"state": "South Carolina", "deposit": "Coastal Plain kaolin", "estimated_resource_mt": 500, "status": "Some extraction"},
+        {"state": "Texas", "deposit": "Various clay deposits", "estimated_resource_mt": 300, "status": "Emerging"}
+      ],
+      "price_per_ton": [150, 250],
+      "processing": "Calcination at 600-800C; energy-intensive but lower than cement clinker",
+      "cement_replacement_rate_pct": [8, 15],
+      "advantages": ["Very high pozzolanic activity", "White color", "Well-characterized"],
+      "disadvantages": ["High cost relative to cement", "Energy for calcination", "High water demand in concrete"]
+    }
+  ],
+  "calcined_clay": {
+    "description": "Limestone Calcined Clay Cement (LC3) technology",
+    "astm_relevance": "Emerging standard; ASTM C595 Type IL + Class N pozzolan",
+    "concept": "Replace 30-50% of clinker with blend of calcined clay + limestone filler",
+    "co2_reduction_pct": 30,
+    "processing_temperature_c": 800,
+    "vs_clinker_temperature_c": 1450,
+    "energy_savings_pct": 30,
+    "us_development_status": [
+      {"entity": "GCCA/PCA", "activity": "LC3 technology assessment for US market", "status": "Research phase"},
+      {"entity": "Holcim", "activity": "LC3 pilot production in Europe; considering US deployment", "status": "Pilot"},
+      {"entity": "Argos", "activity": "Evaluating LC3 at Colombian operations for US export", "status": "Feasibility"},
+      {"entity": "Various universities", "activity": "ASTM standards development, durability testing", "status": "Ongoing"}
+    ],
+    "clay_sources_for_lc3": [
+      {"region": "Georgia kaolin belt", "suitability": "Excellent (high kaolinite content)", "availability": "Abundant"},
+      {"region": "Texas Gulf Coast clays", "suitability": "Good (moderate kaolinite)", "availability": "Abundant"},
+      {"region": "Southeast marine clays", "suitability": "Moderate (mixed mineralogy)", "availability": "Abundant"}
+    ],
+    "market_outlook": {
+      "2025_us_production_mtpa": 0,
+      "2030_projected_mtpa": 2,
+      "2035_projected_mtpa": 8,
+      "adoption_barriers": ["Standards development", "Contractor familiarity", "Capital for calcination equipment", "Clay quality variability"],
+      "adoption_drivers": ["Carbon pricing", "EPD requirements", "State green procurement", "Cost advantage at scale"]
+    }
+  },
+  "market_summary": {
+    "total_us_natural_pozzolan_production_mtpa": 1.5,
+    "projected_2030_mtpa": 5.0,
+    "growth_driver": "Coal plant retirements creating fly ash shortage; natural pozzolans fill gap",
+    "key_challenge": "Most deposits are in Western US; Eastern US demand centers require long-haul transport"
+  }
+}

@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampa Bay Cement Market Study - SESCO Cement Corp</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+
+        .cover-page {
+            page-break-after: always;
+            text-align: center;
+            padding-top: 3in;
+        }
+
+        .cover-page h1 {
+            font-size: 36pt;
+            color: #003366;
+            margin-bottom: 0.5in;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #003366;
+            font-size: 24pt;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            page-break-before: always;
+        }
+
+        h2 {
+            color: #0066cc;
+            font-size: 18pt;
+            margin-top: 30px;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #0066cc;
+            font-size: 14pt;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 10pt;
+            page-break-inside: avoid;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .key-stat {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 20px 0;
+            font-weight: bold;
+            page-break-inside: avoid;
+        }
+
+        .chart-container {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            margin: 30px auto;
+            page-break-inside: avoid;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #003366;
+            margin: 20px 0;
+            page-break-inside: avoid;
+            position: relative;
+        }
+
+        .map-title {
+            background: #003366;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .map-description {
+            background: #f0f0f0;
+            padding: 10px 15px;
+            font-size: 10pt;
+            border-bottom: 2px solid #003366;
+        }
+
+        .section-divider {
+            page-break-before: always;
+            background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin: 40px -20px;
+        }
+
+        .section-divider h1 {
+            color: white;
+            border: none;
+            font-size: 36pt;
+            margin: 0;
+            page-break-before: auto;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .map-container {
+                height: 500px;
+                page-break-inside: avoid;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14pt;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 10000;
+        }
+
+        .print-button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-button no-print" onclick="window.print()">🖨️ Print to PDF</button>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+    <h1>TAMPA BAY CEMENT MARKET STUDY</h1>
+    <h2 style="font-size: 24pt; color: #0066cc;">A Comprehensive Market Analysis<br>for Strategic Market Entry</h2>
+
+    <div style="margin: 2in 0;">
+        <p style="font-size: 18pt; color: #003366;"><strong>Prepared For:</strong></p>
+        <p style="font-size: 20pt; color: #0066cc; font-weight: bold;">SESCO Cement Corporation</p>
+    </div>
+
+    <div style="font-size: 14pt; color: #666; margin-top: 2in;">
+        <p><strong>Report Date:</strong> January 2026</p>
+        <p><strong>Classification:</strong> Strategic Planning Document</p>
+        <p><strong>Prepared By:</strong> Market Intelligence Division</p>
+    </div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<h1>EXECUTIVE SUMMARY</h1>
+
+<div class="key-stat">
+    <p><strong>Market Opportunity:</strong> Tampa Bay represents Florida's cement import gateway (75% of state imports, 6.8M MT annually) with SESCO positioned to capture 3-5% market share through white cement specialty and independent ready-mix targeting.</p>
+</div>
+
+<h2>1.1 Key Findings</h2>
+
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Metric</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td><strong>Market Size</strong></td>
+        <td>Florida consumption</td>
+        <td>2nd largest in US (~14M MT/year)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Tampa Bay market</td>
+        <td>4.0-5.5M MT/year</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Florida white cement</td>
+        <td>42-55K MT/year</td>
+    </tr>
+    <tr>
+        <td><strong>Supply Gap</strong></td>
+        <td>Florida import dependency</td>
+        <td>46% (vs. 22% US average)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Import requirement</td>
+        <td>6.5M MT annually</td>
+    </tr>
+    <tr>
+        <td><strong>SESCO Advantage</strong></td>
+        <td>Tariff position</td>
+        <td>10% vs. 25-46% (competitors)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Cost advantage</td>
+        <td>$12-27/MT vs. major competitors</td>
+    </tr>
+    <tr>
+        <td><strong>Year 3 Targets</strong></td>
+        <td>Total volume</td>
+        <td>190-200K MT</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Revenue</td>
+        <td>$23-24 million</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Market share (Tampa Bay)</td>
+        <td>3-5%</td>
+    </tr>
+</table>
+
+<h2>1.2 Strategic Advantages</h2>
+
+<h3>Favorable Tariff Position</h3>
+<table>
+    <tr>
+        <th>Source Country</th>
+        <th>Tariff Rate</th>
+        <th>SESCO Position</th>
+    </tr>
+    <tr>
+        <td>Egypt/Turkey (SESCO sources)</td>
+        <td style="background: #c8e6c9;"><strong>10%</strong></td>
+        <td style="background: #c8e6c9;">✓ Cost advantage</td>
+    </tr>
+    <tr>
+        <td>Canada (competitor source)</td>
+        <td style="background: #ffcdd2;">25%</td>
+        <td>Higher cost</td>
+    </tr>
+    <tr>
+        <td>Mexico (competitor source)</td>
+        <td style="background: #ffcdd2;">25%</td>
+        <td>Higher cost</td>
+    </tr>
+    <tr>
+        <td>Vietnam (competitor source)</td>
+        <td style="background: #ffcdd2;">46%</td>
+        <td>Much higher cost</td>
+    </tr>
+</table>
+
+<h3>White Cement Premium Opportunity</h3>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Price Range</th>
+        <th>Gross Margin</th>
+        <th>Competition</th>
+    </tr>
+    <tr>
+        <td>Gray Cement</td>
+        <td>$79-95/MT</td>
+        <td>15-25%</td>
+        <td style="background: #ffcdd2;">High</td>
+    </tr>
+    <tr>
+        <td><strong>White Cement</strong></td>
+        <td><strong>$180-280/MT</strong></td>
+        <td style="background: #c8e6c9;"><strong>45-65%</strong></td>
+        <td style="background: #c8e6c9;"><strong>Low</strong></td>
+    </tr>
+</table>
+
+<div class="key-stat">
+    <p><strong>White Cement Strategy:</strong> 2-3x price premium with only 1 US domestic producer and fragmented imports. Florida building codes mandating stucco/EIFS create sustained demand.</p>
+</div>
+
+<!-- VOLUME PROJECTIONS CHART -->
+<h2>1.3 Volume Projections</h2>
+<div class="chart-container">
+    <canvas id="volumeChart"></canvas>
+</div>
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Year 1</th>
+        <th>Year 2</th>
+        <th>Year 3</th>
+    </tr>
+    <tr>
+        <td>Gray Cement</td>
+        <td>25-50K MT</td>
+        <td>75-100K MT</td>
+        <td>150K MT</td>
+    </tr>
+    <tr>
+        <td>White Cement</td>
+        <td>5-10K MT</td>
+        <td>15-25K MT</td>
+        <td>40-50K MT</td>
+    </tr>
+    <tr style="background: #e3f2fd; font-weight: bold;">
+        <td><strong>Total</strong></td>
+        <td><strong>30-60K MT</strong></td>
+        <td><strong>90-125K MT</strong></td>
+        <td><strong>190-200K MT</strong></td>
+    </tr>
+</table>
+
+<!-- PORT REDWING TRUCKING MAP -->
+<h1>PORT REDWING STRATEGIC POSITIONING</h1>
+
+<h2>Market Reach Analysis</h2>
+
+<div class="map-container">
+    <div class="map-title">Port Redwing Trucking Service Areas</div>
+    <div class="map-description">
+        Interactive map showing 1-hour (55 mi), 3-hour (165 mi), and 5-hour (275 mi) delivery zones from Gibsonton, FL terminal.
+        <strong>Pan and zoom before printing!</strong> Click markers for details.
+    </div>
+    <div id="map1" style="width: 100%; height: calc(100% - 90px);"></div>
+</div>
+
+<h2>Market Reach Summary</h2>
+<table>
+    <tr>
+        <th>Zone</th>
+        <th>Drive Time</th>
+        <th>Radius</th>
+        <th>Population</th>
+        <th>Key Markets</th>
+    </tr>
+    <tr>
+        <td><strong>Primary</strong></td>
+        <td>1 hour</td>
+        <td>55 mi</td>
+        <td>3.4 million</td>
+        <td>Tampa, St. Petersburg, Clearwater, Brandon, Lakeland, Bradenton</td>
+    </tr>
+    <tr>
+        <td><strong>Same-Day</strong></td>
+        <td>3 hours</td>
+        <td>165 mi</td>
+        <td>12.8 million</td>
+        <td>Orlando, Sarasota, Fort Myers, Ocala, Gainesville</td>
+    </tr>
+    <tr>
+        <td><strong>Extended</strong></td>
+        <td>5 hours</td>
+        <td>275 mi</td>
+        <td>22.5 million</td>
+        <td>Jacksonville, Miami, Tallahassee, South Georgia, Mobile AL</td>
+    </tr>
+</table>
+
+<div class="key-stat">
+    <p><strong>Strategic Assets:</strong> I-75/I-4 corridor access • Direct routes to entire Florida + Southeast • 200+ ready-mix plants within 5-hour delivery radius • Caribbean export proximity (5-8 days vs. 30+ from Asia)</p>
+</div>
+
+<!-- MARKET ANALYSIS CHARTS -->
+<h1>FLORIDA MARKET DYNAMICS</h1>
+
+<h2>Supply-Demand Balance</h2>
+<div class="chart-container">
+    <canvas id="supplyDemandChart"></canvas>
+</div>
+
+<h2>Import Share Trend</h2>
+<div class="chart-container">
+    <canvas id="importShareChart"></canvas>
+</div>
+
+<div class="key-stat">
+    <p><strong>Structural Shift:</strong> US cement import share growing from 19% (2020) to 22% (2024) with Florida at 46%. Low capacity utilization (72%) means no new domestic plants likely, supporting continued import growth.</p>
+</div>
+
+<!-- FLORIDA MAP -->
+<h1>FLORIDA CEMENT INFRASTRUCTURE</h1>
+
+<div class="map-container">
+    <div class="map-title">Florida Cement Plants & Import Terminals</div>
+    <div class="map-description">
+        Interactive map showing all 7 Florida cement plants and 6 major import terminals.
+        <strong>Click to explore!</strong> Port Redwing highlighted.
+    </div>
+    <div id="map2" style="width: 100%; height: calc(100% - 90px);"></div>
+</div>
+
+<h2>Florida Cement Plants (7 Total)</h2>
+<table>
+    <tr>
+        <th>Plant</th>
+        <th>Owner</th>
+        <th>Location</th>
+        <th>Capacity (MT/yr)</th>
+    </tr>
+    <tr>
+        <td>Pennusco</td>
+        <td>Titan America</td>
+        <td>Miami</td>
+        <td>2.1M</td>
+    </tr>
+    <tr>
+        <td>Tampa Port</td>
+        <td>Argos USA</td>
+        <td>Tampa</td>
+        <td>1.9M</td>
+    </tr>
+    <tr>
+        <td>Newberry</td>
+        <td>Argos USA</td>
+        <td>Newberry</td>
+        <td>1.6M</td>
+    </tr>
+    <tr>
+        <td>Brooksville South</td>
+        <td>CEMEX</td>
+        <td>Brooksville</td>
+        <td>1.5M</td>
+    </tr>
+    <tr>
+        <td>Sumterville</td>
+        <td>Ash Grove (CRH)</td>
+        <td>Sumterville</td>
+        <td>1.2M</td>
+    </tr>
+    <tr>
+        <td>Miami</td>
+        <td>CEMEX</td>
+        <td>Miami</td>
+        <td>1.1M</td>
+    </tr>
+    <tr>
+        <td>Branford</td>
+        <td>Ash Grove (CRH)</td>
+        <td>Branford</td>
+        <td>1.0M</td>
+    </tr>
+    <tr style="background: #e3f2fd; font-weight: bold;">
+        <td colspan="3"><strong>TOTAL</strong></td>
+        <td><strong>10.4M MT/year</strong></td>
+    </tr>
+</table>
+
+<!-- COMPETITIVE LANDSCAPE -->
+<h1>COMPETITIVE LANDSCAPE</h1>
+
+<h2>Tampa Bay Market Share</h2>
+<div class="chart-container">
+    <canvas id="marketShareChart"></canvas>
+</div>
+
+<h2>Competitive Analysis</h2>
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Type</th>
+        <th>Est. Volume (MT)</th>
+        <th>Share</th>
+        <th>SESCO Counter-Strategy</th>
+    </tr>
+    <tr>
+        <td>Argos USA</td>
+        <td>Producer</td>
+        <td>1.4M</td>
+        <td>26%</td>
+        <td>Target independents avoiding integrated supplier</td>
+    </tr>
+    <tr>
+        <td>Martin Marietta</td>
+        <td>Importer</td>
+        <td>1.35M</td>
+        <td>25%</td>
+        <td>White cement differentiation, non-aggregates customers</td>
+    </tr>
+    <tr>
+        <td>CEMEX</td>
+        <td>Producer + Importer</td>
+        <td>1.1M</td>
+        <td>21%</td>
+        <td>Mexican tariff disadvantage (25% vs. 10%)</td>
+    </tr>
+    <tr>
+        <td>Titan America</td>
+        <td>Producer + Importer</td>
+        <td>0.6M</td>
+        <td>11%</td>
+        <td>Geographic focus (Miami), limited Tampa presence</td>
+    </tr>
+    <tr>
+        <td>Others</td>
+        <td>Various</td>
+        <td>0.55M</td>
+        <td>10%</td>
+        <td>Professional operations, reliability</td>
+    </tr>
+    <tr>
+        <td>Ash Grove</td>
+        <td>Producer</td>
+        <td>0.35M</td>
+        <td>7%</td>
+        <td>Distance (Sumterville/Branford)</td>
+    </tr>
+    <tr style="background: #c8e6c9; font-weight: bold;">
+        <td><strong>SESCO (Yr 3)</strong></td>
+        <td><strong>Importer</strong></td>
+        <td><strong>0.15M</strong></td>
+        <td><strong>3%</strong></td>
+        <td><strong>White cement specialty + tariff advantage</strong></td>
+    </tr>
+</table>
+
+<!-- WHITE CEMENT OPPORTUNITY -->
+<h1>WHITE CEMENT MARKET OPPORTUNITY</h1>
+
+<h2>Margin Comparison: Gray vs White Cement</h2>
+<div class="chart-container">
+    <canvas id="marginComparisonChart"></canvas>
+</div>
+
+<h2>Florida White Cement Market Sizing</h2>
+<table>
+    <tr>
+        <th>Customer Segment</th>
+        <th>FL Demand (MT/yr)</th>
+        <th>Share</th>
+        <th>SESCO Yr 3 Target</th>
+        <th>Target Share</th>
+    </tr>
+    <tr>
+        <td>Stucco/EIFS Manufacturers</td>
+        <td>28-35K</td>
+        <td>60-65%</td>
+        <td>20-25K</td>
+        <td>60-70%</td>
+    </tr>
+    <tr>
+        <td>Tile/Mortar Producers</td>
+        <td>8-11K</td>
+        <td>18-20%</td>
+        <td>4-6K</td>
+        <td>40-55%</td>
+    </tr>
+    <tr>
+        <td>Architectural/Decorative</td>
+        <td>6.5-9K</td>
+        <td>15-18%</td>
+        <td>2-4K</td>
+        <td>25-45%</td>
+    </tr>
+    <tr style="background: #e3f2fd; font-weight: bold;">
+        <td><strong>TOTAL</strong></td>
+        <td><strong>42-55K</strong></td>
+        <td><strong>100%</strong></td>
+        <td><strong>26-35K</strong></td>
+        <td><strong>50-65%</strong></td>
+    </tr>
+</table>
+
+<div class="key-stat">
+    <p><strong>Why Florida White Cement:</strong> Hurricane building codes mandate stucco/EIFS exteriors • High humidity favors cement-based materials • Tourism/hospitality drives architectural demand • Pool construction (Florida #1 market) uses white cement plaster</p>
+</div>
+
+<!-- GO-TO-MARKET STRATEGY -->
+<h1>GO-TO-MARKET STRATEGY</h1>
+
+<h2>Customer Prioritization</h2>
+<table>
+    <tr>
+        <th>Segment</th>
+        <th>Volume Potential</th>
+        <th>Margin</th>
+        <th>Priority</th>
+        <th>Year 1 Target</th>
+    </tr>
+    <tr>
+        <td>Stucco/EIFS Manufacturers</td>
+        <td>High</td>
+        <td style="background: #c8e6c9;">High (50-65%)</td>
+        <td style="background: #c8e6c9;"><strong>#1</strong></td>
+        <td>3-5 accounts, 5-10K MT</td>
+    </tr>
+    <tr>
+        <td>Independent Ready-Mix</td>
+        <td>Very High</td>
+        <td>Medium (15-25%)</td>
+        <td style="background: #c8e6c9;"><strong>#2</strong></td>
+        <td>5-8 accounts, 20-40K MT</td>
+    </tr>
+    <tr>
+        <td>Tile/Mortar Producers</td>
+        <td>Medium</td>
+        <td style="background: #c8e6c9;">High (45-60%)</td>
+        <td><strong>#3</strong></td>
+        <td>Sample programs initiated</td>
+    </tr>
+    <tr>
+        <td>Concrete Products Mfrs</td>
+        <td>Medium-High</td>
+        <td>Medium</td>
+        <td><strong>#4</strong></td>
+        <td>Outreach initiated</td>
+    </tr>
+    <tr>
+        <td>Bahamas Export</td>
+        <td>Medium</td>
+        <td style="background: #c8e6c9;">High</td>
+        <td><strong>#5</strong></td>
+        <td>1-2 distributors, 3-5K MT</td>
+    </tr>
+</table>
+
+<h2>Geographic Rollout (3-Phase Approach)</h2>
+<table>
+    <tr>
+        <th>Phase</th>
+        <th>Timeline</th>
+        <th>Geography</th>
+        <th>Target Volume</th>
+        <th>Market Share</th>
+    </tr>
+    <tr>
+        <td><strong>Phase 1</strong></td>
+        <td>Months 1-12</td>
+        <td>Tampa Bay (1-hour radius)</td>
+        <td>30-60K MT</td>
+        <td>1-2% Tampa Bay</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 2</strong></td>
+        <td>Months 13-24</td>
+        <td>I-4 Corridor (Orlando, SW FL)</td>
+        <td>90-125K MT</td>
+        <td>2-3% expanded geography</td>
+    </tr>
+    <tr>
+        <td><strong>Phase 3</strong></td>
+        <td>Months 25-36</td>
+        <td>Statewide + Caribbean Export</td>
+        <td>190-200K MT</td>
+        <td>3-5% Tampa Bay, 15-20% FL white</td>
+    </tr>
+</table>
+
+<!-- FINANCIAL PROJECTIONS -->
+<h1>FINANCIAL PROJECTIONS</h1>
+
+<h2>3-Year Revenue Projection</h2>
+<table>
+    <tr>
+        <th>Metric</th>
+        <th>Year 1</th>
+        <th>Year 2</th>
+        <th>Year 3</th>
+    </tr>
+    <tr>
+        <td><strong>Volume</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gray Cement (MT)</td>
+        <td>33,000</td>
+        <td>85,000</td>
+        <td>150,000</td>
+    </tr>
+    <tr>
+        <td>White Cement (MT)</td>
+        <td>7,000</td>
+        <td>19,000</td>
+        <td>46,000</td>
+    </tr>
+    <tr style="background: #f0f0f0;">
+        <td><strong>Total Volume</strong></td>
+        <td><strong>40,000</strong></td>
+        <td><strong>104,000</strong></td>
+        <td><strong>196,000</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Revenue</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gray Cement @ $90/MT</td>
+        <td>$3.0M</td>
+        <td>$7.7M</td>
+        <td>$13.5M</td>
+    </tr>
+    <tr>
+        <td>White Cement @ $225/MT</td>
+        <td>$1.6M</td>
+        <td>$4.2M</td>
+        <td>$10.1M</td>
+    </tr>
+    <tr style="background: #e3f2fd; font-weight: bold;">
+        <td><strong>Total Revenue</strong></td>
+        <td><strong>$4.5M</strong></td>
+        <td><strong>$11.8M</strong></td>
+        <td><strong>$23.6M</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Profitability</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Gross Profit</td>
+        <td>$1.1M</td>
+        <td>$3.2M</td>
+        <td>$6.8M</td>
+    </tr>
+    <tr>
+        <td>Gross Margin %</td>
+        <td>25%</td>
+        <td>27%</td>
+        <td>29%</td>
+    </tr>
+    <tr>
+        <td>Operating Expenses</td>
+        <td>($3.2M)</td>
+        <td>($5.2M)</td>
+        <td>($6.8M)</td>
+    </tr>
+    <tr style="background: #fff3cd;">
+        <td><strong>EBITDA</strong></td>
+        <td><strong>($2.1M)</strong></td>
+        <td><strong>($2.0M)</strong></td>
+        <td><strong>$0.0M</strong></td>
+    </tr>
+    <tr>
+        <td>EBITDA Margin %</td>
+        <td>(45%)</td>
+        <td>(17%)</td>
+        <td>0%</td>
+    </tr>
+</table>
+
+<div class="key-stat">
+    <p><strong>Investment Phase:</strong> Years 1-2 are market entry investment phase with negative EBITDA. Year 3 achieves breakeven. Year 4+ expected strongly positive as fixed costs leverage across growing volume base.</p>
+</div>
+
+<!-- RISK ASSESSMENT -->
+<h1>RISK ASSESSMENT & MITIGATION</h1>
+
+<h2>Top 5 Risks</h2>
+<table>
+    <tr>
+        <th>Risk</th>
+        <th>Probability</th>
+        <th>Impact</th>
+        <th>Mitigation Strategy</th>
+    </tr>
+    <tr>
+        <td>Competitive Price War</td>
+        <td style="background: #fff3cd;">Medium</td>
+        <td style="background: #ffcdd2;">High</td>
+        <td>White cement differentiation, tariff advantage ($12-27/MT), target independents</td>
+    </tr>
+    <tr>
+        <td>Port Redwing Operational Issues</td>
+        <td style="background: #fff3cd;">Medium</td>
+        <td style="background: #ffcdd2;">High</td>
+        <td>Equipment redundancy, backup terminals, insurance, experienced team</td>
+    </tr>
+    <tr>
+        <td>Supplier Delivery Failures</td>
+        <td style="background: #c8e6c9;">Low-Med</td>
+        <td style="background: #ffcdd2;">High</td>
+        <td>Multiple suppliers (Royal, Cleopatra, Nuh), 45-90 day inventory buffer</td>
+    </tr>
+    <tr>
+        <td>Market Demand Downturn</td>
+        <td style="background: #c8e6c9;">Low-Med</td>
+        <td style="background: #ffcdd2;">High</td>
+        <td>Geographic diversification (FL + export), product mix (gray + white)</td>
+    </tr>
+    <tr>
+        <td>Tariff Policy Changes</td>
+        <td style="background: #c8e6c9;">Low-Med</td>
+        <td style="background: #ffcdd2;">High</td>
+        <td>Diversified sourcing, pass-through clauses, even at 20-25% still competitive</td>
+    </tr>
+</table>
+
+<!-- RECOMMENDATION -->
+<h1>STRATEGIC RECOMMENDATION</h1>
+
+<div class="key-stat" style="background: #c8e6c9; border-color: #4CAF50; padding: 30px; font-size: 14pt;">
+    <p style="text-align: center; font-size: 18pt; margin-bottom: 15px;"><strong>✓ RECOMMENDATION: PROCEED WITH TAMPA BAY MARKET ENTRY</strong></p>
+    <p>The Tampa Bay cement market represents a compelling opportunity for SESCO with:</p>
+    <ul style="margin-top: 10px;">
+        <li>Large, growing market with structural import dependency (46%)</li>
+        <li>Favorable competitive position (tariff advantage, white cement specialty)</li>
+        <li>Port Redwing infrastructure provides strategic platform</li>
+        <li>Achievable financial targets (Year 3: 190-200K MT, $24M revenue)</li>
+        <li>Manageable risks with clear mitigation strategies</li>
+    </ul>
+</div>
+
+<h2>Immediate Next Steps (Next 90 Days)</h2>
+<table>
+    <tr>
+        <th>Priority</th>
+        <th>Action</th>
+        <th>Owner</th>
+        <th>Target Date</th>
+    </tr>
+    <tr>
+        <td style="background: #ffcdd2;"><strong>1</strong></td>
+        <td>Finalize Port Redwing operational readiness</td>
+        <td>Operations</td>
+        <td>Month -1</td>
+    </tr>
+    <tr>
+        <td style="background: #ffcdd2;"><strong>2</strong></td>
+        <td>Complete sales team recruitment (4-6 people)</td>
+        <td>Sales VP</td>
+        <td>Month -1</td>
+    </tr>
+    <tr>
+        <td style="background: #ffcdd2;"><strong>3</strong></td>
+        <td>Finalize supplier agreements (Egypt/Turkey)</td>
+        <td>Procurement</td>
+        <td>Month -2</td>
+    </tr>
+    <tr>
+        <td style="background: #fff3cd;"><strong>4</strong></td>
+        <td>Receive initial inventory vessel (30K MT)</td>
+        <td>Logistics</td>
+        <td>Month -1</td>
+    </tr>
+    <tr>
+        <td style="background: #fff3cd;"><strong>5</strong></td>
+        <td>Initiate top 10 customer conversations</td>
+        <td>Sales</td>
+        <td>Month 0</td>
+    </tr>
+    <tr>
+        <td style="background: #c8e6c9;"><strong>6</strong></td>
+        <td>Board approval and funding confirmation</td>
+        <td>Finance/CEO</td>
+        <td>Month 0</td>
+    </tr>
+</table>
+
+<!-- FOOTER -->
+<div style="margin-top: 60px; padding-top: 20px; border-top: 2px solid #003366; text-align: center; font-size: 9pt; color: #666;">
+    <p><strong>TAMPA BAY CEMENT MARKET STUDY</strong></p>
+    <p>Prepared for SESCO Cement Corporation | January 2026</p>
+    <p>Strategic Planning Document - Internal Use Only | Confidential and Proprietary</p>
+    <p>© 2026 SESCO Cement Corp. All rights reserved.</p>
+</div>
+
+<!-- INSTRUCTIONS -->
+<div class="no-print" style="background: #fff3cd; border: 3px solid #ffc107; padding: 30px; margin: 40px 0; text-align: center; font-size: 12pt;">
+    <h2 style="color: #f57c00; margin-top: 0;">📄 HOW TO CREATE PDF</h2>
+    <ol style="text-align: left; max-width: 600px; margin: 20px auto;">
+        <li><strong>Explore the Interactive Maps:</strong> Zoom, pan, click markers to see details</li>
+        <li><strong>Click the "Print to PDF" button</strong> in the top right (or press Ctrl+P / Cmd+P)</li>
+        <li><strong>In Print Dialog:</strong>
+            <ul>
+                <li>Destination: "Save as PDF" or "Microsoft Print to PDF"</li>
+                <li>Pages: All</li>
+                <li>Layout: Portrait</li>
+                <li>Margins: Default</li>
+                <li><strong>✓ IMPORTANT:</strong> Check "Background graphics" box</li>
+                <li>Scale: 100%</li>
+            </ul>
+        </li>
+        <li><strong>Save</strong> your PDF to desired location</li>
+    </ol>
+    <p style="color: #666; margin-top: 20px;"><em>The maps will print exactly as you see them on screen, so zoom to your preferred view before printing!</em></p>
+</div>
+
+<!-- JAVASCRIPT FOR MAPS AND CHARTS -->
+<script>
+// ============================================================================
+// MAP 1: PORT REDWING TRUCKING RADIUS
+// ============================================================================
+const map1 = L.map('map1').setView([28.3, -82.5], 7);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap, &copy; CARTO'
+}).addTo(map1);
+
+const portRedwing = [27.8456, -82.3789];
+
+// Zone polygons
+const zone5hr = [[31.8456, -82.3789],[31.7, -81.0],[31.2, -79.8],[30.4, -78.9],[29.3, -78.4],[28.0, -78.3],[26.7, -78.5],[25.5, -79.0],[24.5, -79.8],[23.9, -80.8],[23.7, -82.0],[23.9, -83.2],[24.5, -84.3],[25.5, -85.2],[26.7, -85.8],[28.0, -86.1],[29.3, -86.0],[30.4, -85.6],[31.2, -84.8],[31.7, -83.7],[31.8456, -82.3789]];
+const zone3hr = [[30.2456, -82.3789],[30.1, -81.4],[29.7, -80.6],[29.0, -80.1],[28.1, -79.9],[27.2, -80.0],[26.4, -80.4],[25.8, -81.0],[25.5, -81.8],[25.5, -82.7],[25.8, -83.5],[26.4, -84.1],[27.2, -84.5],[28.1, -84.6],[29.0, -84.4],[29.7, -84.0],[30.1, -83.3],[30.2456, -82.3789]];
+const zone1hr = [[28.6456, -82.3789],[28.6, -82.0],[28.45, -81.7],[28.2, -81.55],[27.9, -81.5],[27.6, -81.55],[27.35, -81.7],[27.2, -82.0],[27.1456, -82.3789],[27.2, -82.75],[27.35, -83.05],[27.6, -83.2],[27.9, -83.25],[28.2, -83.2],[28.45, -83.05],[28.6, -82.75],[28.6456, -82.3789]];
+
+L.polygon(zone5hr, {color: '#4CAF50', weight: 2, fillColor: '#C8E6C9', fillOpacity: 0.3}).addTo(map1).bindPopup('<strong>5-Hour Zone</strong><br>275 mi radius<br>22.5M population');
+L.polygon(zone3hr, {color: '#2E7D32', weight: 2, fillColor: '#81C784', fillOpacity: 0.4}).addTo(map1).bindPopup('<strong>3-Hour Zone</strong><br>165 mi radius<br>12.8M population');
+L.polygon(zone1hr, {color: '#1B5E20', weight: 3, fillColor: '#4CAF50', fillOpacity: 0.5}).addTo(map1).bindPopup('<strong>1-Hour Zone</strong><br>55 mi radius<br>3.4M population');
+
+L.circleMarker(portRedwing, {radius: 12, fillColor: '#FF5722', color: '#fff', weight: 3, fillOpacity: 1}).addTo(map1).bindPopup('<strong>Port Redwing Terminal</strong><br>Gibsonton, FL<br>150K MT capacity');
+
+// Cities
+const cities = [
+    {name: "Tampa", coords: [27.9506, -82.4572]},
+    {name: "St. Petersburg", coords: [27.7676, -82.6403]},
+    {name: "Orlando", coords: [28.5383, -81.3792]},
+    {name: "Jacksonville", coords: [30.3322, -81.6557]},
+    {name: "Miami", coords: [25.7617, -80.1918]},
+    {name: "Fort Myers", coords: [26.6406, -81.8723]},
+    {name: "Sarasota", coords: [27.3364, -82.5307]},
+    {name: "Lakeland", coords: [28.0395, -81.9498]}
+];
+
+cities.forEach(city => {
+    L.circleMarker(city.coords, {radius: 5, fillColor: '#003366', color: '#fff', weight: 2, fillOpacity: 1}).addTo(map1);
+    L.marker(city.coords, {
+        icon: L.divIcon({
+            className: 'city-label',
+            html: `<div style="font-size: 10px; font-weight: 600; color: #333; text-shadow: 1px 1px 2px white;">${city.name}</div>`,
+            iconAnchor: [-5, 5]
+        })
+    }).addTo(map1);
+});
+
+// ============================================================================
+// MAP 2: FLORIDA CEMENT INFRASTRUCTURE
+// ============================================================================
+const map2 = L.map('map2').setView([28.5, -82.0], 6);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap, &copy; CARTO'
+}).addTo(map2);
+
+// Florida cement plants
+const plants = [
+    {name: "Tampa Port (Argos)", coords: [27.9506, -82.4572], capacity: "1.9M MT/yr"},
+    {name: "Brooksville (CEMEX)", coords: [28.5672, -82.3876], capacity: "1.5M MT/yr"},
+    {name: "Pennusco (Titan)", coords: [25.8456, -80.1918], capacity: "2.1M MT/yr"},
+    {name: "Newberry (Argos)", coords: [29.6391, -82.6079], capacity: "1.6M MT/yr"},
+    {name: "Sumterville (Ash Grove)", coords: [28.7433, -82.0573], capacity: "1.2M MT/yr"},
+    {name: "Miami (CEMEX)", coords: [25.7617, -80.1918], capacity: "1.1M MT/yr"},
+    {name: "Branford (Ash Grove)", coords: [29.9549, -82.9281], capacity: "1.0M MT/yr"}
+];
+
+plants.forEach(plant => {
+    L.circleMarker(plant.coords, {
+        radius: 8,
+        fillColor: '#003366',
+        color: '#fff',
+        weight: 2,
+        fillOpacity: 0.8
+    }).addTo(map2).bindPopup(`<strong>${plant.name}</strong><br>Capacity: ${plant.capacity}`);
+});
+
+// Import terminals
+const terminals = [
+    {name: "Tampa Bay Terminals", coords: [27.9506, -82.4572], volume: "3.5M MT"},
+    {name: "Port Manatee", coords: [27.6392, -82.5618], volume: "0.9M MT"},
+    {name: "Jacksonville", coords: [30.3322, -81.6557], volume: "1.6M MT"},
+    {name: "Port Everglades", coords: [26.0921, -80.1076], volume: "0.4M MT"},
+    {name: "Port Redwing (SESCO)", coords: [27.8456, -82.3789], volume: "NEW"}
+];
+
+terminals.forEach(terminal => {
+    const color = terminal.name.includes("SESCO") ? '#FF5722' : '#0066cc';
+    L.circleMarker(terminal.coords, {
+        radius: 6,
+        fillColor: color,
+        color: '#fff',
+        weight: 2,
+        fillOpacity: 0.9
+    }).addTo(map2).bindPopup(`<strong>${terminal.name}</strong><br>Volume: ${terminal.volume}`);
+});
+
+// ============================================================================
+// CHARTS
+// ============================================================================
+
+// Volume Chart
+const volumeCtx = document.getElementById('volumeChart').getContext('2d');
+new Chart(volumeCtx, {
+    type: 'bar',
+    data: {
+        labels: ['Year 1', 'Year 2', 'Year 3'],
+        datasets: [{
+            label: 'Gray Cement (MT)',
+            data: [33000, 85000, 150000],
+            backgroundColor: 'rgba(0, 51, 102, 0.8)'
+        }, {
+            label: 'White Cement (MT)',
+            data: [7000, 19000, 46000],
+            backgroundColor: 'rgba(255, 193, 7, 0.8)'
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+            x: { stacked: true },
+            y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Volume (MT)' }}
+        },
+        plugins: {
+            title: { display: true, text: '3-Year Volume Ramp-Up Projection', font: { size: 16 }},
+            legend: { position: 'top' }
+        }
+    }
+});
+
+// Supply-Demand Chart
+const supplyDemandCtx = document.getElementById('supplyDemandChart').getContext('2d');
+new Chart(supplyDemandCtx, {
+    type: 'bar',
+    data: {
+        labels: ['Florida Cement Market'],
+        datasets: [{
+            label: 'Production (Actual)',
+            data: [7.5],
+            backgroundColor: 'rgba(0, 51, 102, 0.8)'
+        }, {
+            label: 'Imports',
+            data: [9.06],
+            backgroundColor: 'rgba(0, 102, 204, 0.8)'
+        }, {
+            label: 'Consumption',
+            data: [14],
+            backgroundColor: 'rgba(255, 165, 0, 0.8)'
+        }]
+    },
+    options: {
+        responsive: true,
+        indexAxis: 'y',
+        scales: {
+            x: { title: { display: true, text: 'Million Metric Tons per Year' }}
+        },
+        plugins: {
+            title: { display: true, text: 'Florida Supply-Demand Balance', font: { size: 16 }},
+            legend: { position: 'top' }
+        }
+    }
+});
+
+// Import Share Trend
+const importCtx = document.getElementById('importShareChart').getContext('2d');
+new Chart(importCtx, {
+    type: 'line',
+    data: {
+        labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
+        datasets: [{
+            label: 'US Import Share (%)',
+            data: [19, 20, 21, 21, 22, 23],
+            borderColor: 'rgba(0, 102, 204, 1)',
+            backgroundColor: 'rgba(0, 102, 204, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: { min: 15, max: 25, title: { display: true, text: 'Import Share (%)' }}
+        },
+        plugins: {
+            title: { display: true, text: 'US Cement Import Share Growth Trend', font: { size: 16 }}
+        }
+    }
+});
+
+// Market Share Pie
+const marketShareCtx = document.getElementById('marketShareChart').getContext('2d');
+new Chart(marketShareCtx, {
+    type: 'pie',
+    data: {
+        labels: ['Argos USA', 'Martin Marietta', 'CEMEX', 'Titan America', 'Others', 'Ash Grove'],
+        datasets: [{
+            data: [26, 25, 21, 11, 10, 7],
+            backgroundColor: [
+                'rgba(0, 51, 102, 0.8)',
+                'rgba(0, 102, 204, 0.8)',
+                'rgba(33, 150, 243, 0.8)',
+                'rgba(100, 181, 246, 0.8)',
+                'rgba(187, 222, 251, 0.8)',
+                'rgba(144, 164, 174, 0.8)'
+            ],
+            borderWidth: 2,
+            borderColor: 'white'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: { display: true, text: 'Tampa Bay Competitive Market Share', font: { size: 16 }},
+            legend: { position: 'right' }
+        }
+    }
+});
+
+// Margin Comparison
+const marginCtx = document.getElementById('marginComparisonChart').getContext('2d');
+new Chart(marginCtx, {
+    type: 'bar',
+    data: {
+        labels: ['Gray Cement', 'White Cement'],
+        datasets: [{
+            label: 'Gross Margin %',
+            data: [20, 55],
+            backgroundColor: ['rgba(0, 51, 102, 0.8)', 'rgba(255, 193, 7, 0.8)'],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: { beginAtZero: true, max: 70, title: { display: true, text: 'Gross Margin (%)' }}
+        },
+        plugins: {
+            title: { display: true, text: 'Margin Comparison: Gray vs White Cement', font: { size: 16 }},
+            legend: { display: false }
+        }
+    }
+});
+</script>
+
+</body>
+</html>

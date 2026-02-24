@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "title": "Section 301 Maritime Fee Impact on US Cement Imports",
+    "description": "Analysis of USTR Section 301 Chinese-built vessel fees on cement import economics",
+    "effective_date": "2025-10-14",
+    "analysis_date": "Q1 2026"
+  },
+  "background": {
+    "action": "USTR Section 301 Investigation into China's Dominance in Maritime, Logistics, and Shipbuilding Sectors",
+    "mechanism": "Per-voyage fees on Chinese-built and Chinese-operated vessels calling at US ports",
+    "targets": "Bulk carriers, container ships, car carriers, LNG tankers",
+    "cement_relevance": "Approximately 45% of cement import tonnage arrives on Chinese-built bulk carriers"
+  },
+  "fleet_exposure_analysis": {
+    "total_cement_import_vessels_annual": 350,
+    "chinese_built_share_pct": 45,
+    "chinese_operated_share_pct": 8,
+    "by_trade_lane": [
+      {
+        "route": "Turkey → US Gulf",
+        "vessels_annual": 80,
+        "chinese_built_pct": 40,
+        "typical_vessel": "Supramax 52-58K DWT",
+        "typical_nrt": 18000,
+        "typical_cargo_tons": 30000
+      },
+      {
+        "route": "Greece → US Gulf/East Coast",
+        "vessels_annual": 45,
+        "chinese_built_pct": 50,
+        "typical_vessel": "Supramax/Handymax",
+        "typical_nrt": 16000,
+        "typical_cargo_tons": 28000
+      },
+      {
+        "route": "Egypt → Houston",
+        "vessels_annual": 35,
+        "chinese_built_pct": 35,
+        "typical_vessel": "Supramax",
+        "typical_nrt": 17000,
+        "typical_cargo_tons": 30000
+      },
+      {
+        "route": "Vietnam → US West Coast",
+        "vessels_annual": 30,
+        "chinese_built_pct": 70,
+        "typical_vessel": "Handymax",
+        "typical_nrt": 14000,
+        "typical_cargo_tons": 25000
+      },
+      {
+        "route": "China → US",
+        "vessels_annual": 20,
+        "chinese_built_pct": 95,
+        "typical_vessel": "Handysize/Handymax",
+        "typical_nrt": 12000,
+        "typical_cargo_tons": 22000
+      },
+      {
+        "route": "Colombia → US Gulf/East Coast",
+        "vessels_annual": 40,
+        "chinese_built_pct": 25,
+        "typical_vessel": "Handysize",
+        "typical_nrt": 10000,
+        "typical_cargo_tons": 18000
+      }
+    ]
+  },
+  "cost_impact_by_phase": [
+    {
+      "phase": 1,
+      "period": "Oct 2025 - Sep 2026",
+      "fee_per_nrt_chinese_built": 18,
+      "supramax_fee_range": [500000, 1000000],
+      "cost_per_ton_30k_cargo": [16.67, 33.33],
+      "annual_industry_cost_millions": 85,
+      "affected_tonnage_mtpa": 6.75,
+      "pct_of_total_imports": 45
+    },
+    {
+      "phase": 2,
+      "period": "Oct 2026 - Sep 2027",
+      "fee_per_nrt_chinese_built": 25,
+      "supramax_fee_range": [750000, 1500000],
+      "cost_per_ton_30k_cargo": [25.00, 50.00],
+      "annual_industry_cost_millions": 135,
+      "affected_tonnage_mtpa": 5.50,
+      "notes": "Some trade diversion to non-Chinese-built vessels expected"
+    },
+    {
+      "phase": 3,
+      "period": "Oct 2027+",
+      "fee_per_nrt_chinese_built": 33,
+      "supramax_fee_range": [1000000, 2000000],
+      "cost_per_ton_30k_cargo": [33.33, 66.67],
+      "annual_industry_cost_millions": 160,
+      "affected_tonnage_mtpa": 4.00,
+      "notes": "Significant fleet substitution; some origins become uneconomic"
+    }
+  ],
+  "sesco_specific_impact": {
+    "company": "SESCO Cement Corporation",
+    "import_volume_tpa": 500000,
+    "vessels_per_year": 15,
+    "current_fleet_chinese_built_pct": 35,
+    "phase_1_annual_cost_increase": 2500000,
+    "phase_1_cost_per_ton_increase": 5.00,
+    "mitigation_strategies": [
+      "Charter non-Chinese-built tonnage (premium: $2,000-4,000/day)",
+      "Long-term time charter on Japanese/Korean-built vessels",
+      "Shift to smaller parcels on non-Chinese geared vessels",
+      "Negotiate FOB terms where seller arranges non-Chinese tonnage"
+    ],
+    "competitive_advantage": "Egypt and Turkey origins have lower Chinese-built fleet exposure than Vietnam/China origins"
+  },
+  "market_restructuring_effects": {
+    "short_term_2025_2026": [
+      "Freight rate premium for non-Chinese-built bulk carriers (+15-25%)",
+      "Cement importers shift to Japanese, Korean, European-built vessels",
+      "Some Vietnam/China cement volumes redirected to other markets",
+      "Temporary supply disruptions at import-dependent terminals"
+    ],
+    "medium_term_2027_2028": [
+      "Fleet composition shift: new orders at Japanese/Korean yards increase",
+      "Canadian cross-border cement volumes increase (no vessel exposure)",
+      "Colombian cement gains market share (short voyage, low Chinese-built exposure)",
+      "Domestic cement producers benefit from reduced import competition"
+    ],
+    "long_term_2029_plus": [
+      "Structural shift away from Chinese-built bulkers in US trade lanes",
+      "Higher baseline freight costs for all bulk imports (+5-10%)",
+      "Domestic capacity expansion incentivized by higher import costs",
+      "Possible shift to FOB purchasing with US-controlled tonnage"
+    ]
+  },
+  "exemptions_and_carveouts": {
+    "bulk_carrier_exemptions": [
+      "Vessels under 4,000 NRT (small coasters)",
+      "US-flagged vessels (Jones Act fleet)",
+      "Vessels on existing long-term charter before effective date (limited period)"
+    ],
+    "compliance_options": [
+      "Declare vessel build origin at port entry",
+      "Pay fee per voyage (not per port call)",
+      "Appeal mechanism through USTR for hardship cases"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Slag Cement (GGBFS) Pricing Trends and Market Dynamics",
+    "sources": ["Slag Cement Association", "Industry quotes", "USGS Mineral Commodity Summaries"],
+    "currency": "USD, Q1 2026 estimates"
+  },
+  "product_overview": {
+    "name": "Ground Granulated Blast Furnace Slag (GGBFS)",
+    "astm_standard": "ASTM C989 Grade 80/100/120",
+    "description": "Byproduct of iron blast furnace operations, granulated and ground to cement fineness",
+    "typical_blaine_fineness": "4000-5500 cm2/g",
+    "cement_replacement_rate_pct": [25, 70],
+    "max_replacement_rate_pct": 80
+  },
+  "pricing": {
+    "2020_avg_per_ton": 65,
+    "2021_avg_per_ton": 70,
+    "2022_avg_per_ton": 78,
+    "2023_avg_per_ton": 85,
+    "2024_avg_per_ton": 92,
+    "2025_est_per_ton": 98,
+    "trend": "Steadily rising as domestic blast furnace capacity declines and demand for low-carbon binders grows",
+    "price_relative_to_cement_pct": 65,
+    "notes": "Slag cement typically priced at 60-70% of Portland cement"
+  },
+  "regional_pricing": [
+    {"region": "Great Lakes/Midwest", "price_per_ton": 85, "supply_status": "Good", "notes": "Proximity to blast furnaces (Gary, Burns Harbor, Indiana Harbor)"},
+    {"region": "Northeast", "price_per_ton": 105, "supply_status": "Moderate", "notes": "Some local supply (Braddock PA); supplemented by import"},
+    {"region": "Southeast", "price_per_ton": 95, "supply_status": "Moderate", "notes": "Import terminals (Mobile, New Orleans)"},
+    {"region": "Gulf Coast/Texas", "price_per_ton": 100, "supply_status": "Tight", "notes": "No local BF production; relies on barge/rail from Midwest or import"},
+    {"region": "West Coast", "price_per_ton": 115, "supply_status": "Tight", "notes": "No local BF; relies on import from Asia"}
+  ],
+  "supply_sources": {
+    "domestic_blast_furnaces": [
+      {"mill": "USS Gary Works", "location": "Gary, IN", "operator": "US Steel", "annual_slag_mt": 1.5, "status": "Active", "grinding": "Holcim/Amrize Gary"},
+      {"mill": "ArcelorMittal Burns Harbor", "location": "Burns Harbor, IN", "operator": "Cleveland-Cliffs", "annual_slag_mt": 1.2, "status": "Active", "grinding": "Holcim/Amrize"},
+      {"mill": "ArcelorMittal Indiana Harbor", "location": "East Chicago, IN", "operator": "Cleveland-Cliffs", "annual_slag_mt": 0.8, "status": "Active"},
+      {"mill": "USS Granite City", "location": "Granite City, IL", "operator": "US Steel", "annual_slag_mt": 0.5, "status": "Idled/Restart pending"},
+      {"mill": "USS Braddock (ET Works)", "location": "Braddock, PA", "operator": "US Steel", "annual_slag_mt": 0.6, "status": "Active"},
+      {"mill": "Cleveland-Cliffs Dearborn", "location": "Dearborn, MI", "operator": "Cleveland-Cliffs", "annual_slag_mt": 0.4, "status": "Active"}
+    ],
+    "total_domestic_slag_mt": 5.0,
+    "grinding_facilities": [
+      {"name": "Holcim/Amrize Gary", "location": "Gary, IN", "capacity_mtpa": 1.0},
+      {"name": "Holcim/Amrize South Chicago", "location": "Chicago, IL", "capacity_mtpa": 0.5},
+      {"name": "Buzzi Unicem Cape Canaveral", "location": "Cape Canaveral, FL", "capacity_mtpa": 0.6},
+      {"name": "Lehigh Hanson import terminal", "location": "Mobile, AL", "capacity_mtpa": 0.4},
+      {"name": "Various smaller grinding plants", "capacity_mtpa": 1.0}
+    ],
+    "imported_slag": {
+      "annual_volume_mt": 2.5,
+      "primary_sources": ["Japan", "South Korea", "Brazil", "India"],
+      "import_ports": ["Mobile", "New Orleans", "Tampa", "Norfolk", "Long Beach"],
+      "cif_price_per_ton_range": [55, 75]
+    }
+  },
+  "market_outlook": {
+    "demand_growth_pct": 3.5,
+    "drivers": [
+      "Green building requirements (LEED, Envision)",
+      "State DOT specifications allowing higher slag replacement",
+      "Carbon pricing/reporting requirements",
+      "Durability advantages (sulfate resistance, ASR mitigation)"
+    ],
+    "risks": [
+      "Blast furnace closure/conversion to EAF (eliminates slag production)",
+      "US Steel/Nippon acquisition uncertainty affecting Gary/Braddock",
+      "Import dependency increasing as domestic BF capacity declines"
+    ]
+  }
+}

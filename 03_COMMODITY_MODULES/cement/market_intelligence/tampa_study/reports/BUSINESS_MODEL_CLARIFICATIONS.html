@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampa Bay Business Model - Key Clarifications</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 15px;
+            background: white;
+            font-size: 11pt;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+            color: white;
+            padding: 20px 25px;
+            margin: -15px -15px 20px -15px;
+            border-bottom: 4px solid #0d47a1;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24pt;
+            font-weight: bold;
+        }
+
+        .header .subtitle {
+            font-size: 13pt;
+            margin-top: 6px;
+            opacity: 0.95;
+        }
+
+        .summary-box {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 15px;
+            margin: 15px 0;
+            page-break-inside: auto;
+        }
+
+        .summary-box .title {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #0d47a1;
+            margin-bottom: 8px;
+        }
+
+        .critical-clarification {
+            background: #fff3e0;
+            border-left: 5px solid #ff6f00;
+            padding: 15px;
+            margin: 15px 0;
+            page-break-inside: auto;
+        }
+
+        .critical-clarification .title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #e65100;
+            margin-bottom: 6px;
+        }
+
+        .validated {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            page-break-inside: auto;
+        }
+
+        .validated .title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 6px;
+        }
+
+        .stakeholder-quote {
+            background: #f5f5f5;
+            border-left: 3px solid #607d8b;
+            padding: 10px 12px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #424242;
+        }
+
+        .initials {
+            font-weight: bold;
+            color: #1976d2;
+            font-style: normal;
+        }
+
+        h1 {
+            color: #1976d2;
+            font-size: 16pt;
+            border-bottom: 3px solid #1976d2;
+            padding-bottom: 6px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #1976d2;
+            font-size: 13pt;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 10pt;
+            page-break-inside: auto;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+            padding: 8px 6px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 9pt;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 6px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tr.actual {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 22px;
+        }
+
+        li {
+            margin: 4px 0;
+        }
+
+        strong {
+            color: #1976d2;
+        }
+
+        .footer {
+            margin-top: 25px;
+            padding-top: 12px;
+            border-top: 2px solid #ccc;
+            text-align: center;
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 12pt;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 10000;
+        }
+
+        .print-button:hover {
+            background: #45a049;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 10px;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-button no-print" onclick="window.print()">🖨️ Print to PDF</button>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>TAMPA BAY BUSINESS MODEL</h1>
+    <div class="subtitle">Key Clarifications: Actual Business vs. Phase 1 Assumptions</div>
+    <div style="font-size: 10pt; margin-top: 10px; opacity: 0.9;">For Karim's Go-To-Market Strategy Deck | January 2026</div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="summary-box">
+    <div class="title">📊 SUMMARY: Critical Business Model Clarifications</div>
+    <p>Phase 1 market study provides valid strategic framework (Tampa Bay gateway, tariff advantage, Port Redwing positioning) but requires clarification on actual business model. <strong>Core business is SRM partner throughput (not SESCO product)</strong>, white cement opportunity validated and exceeds Phase 1, and gray cement restricted from Florida ready-mix per SRM partnership agreement. Key clarifications below align Phase 1 analysis with actual go-to-market strategy.</p>
+</div>
+
+<h1>I. SRM Partnership Clarification</h1>
+
+<div class="critical-clarification">
+    <div class="title">⚠️ CLARIFICATION #1: SRM is Partner/Customer, Not SESCO Product Line</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(RVD):</span> "SRM is a partner that has throughput agreement, so is a customer of the terminal but there market share agreement, so to clarify, this means by contract, can't market to the ready-mix"
+    </div>
+
+    <p><strong>What This Means:</strong></p>
+    <ul>
+        <li><strong>SRM is a customer of Port Redwing terminal</strong>, not a SESCO product line or revenue source</li>
+        <li>300-400K MT represents SRM's throughput volume through the facility (partner's business, not SESCO's)</li>
+        <li><strong>Market share agreement restricts SESCO from selling gray cement to Florida ready-mix industry</strong></li>
+        <li>SRM relationship provides terminal throughput/utilization but revenue comes from handling fees, not cement sales</li>
+    </ul>
+
+    <p><strong>Impact on Phase 1 Analysis:</strong></p>
+    <ul>
+        <li>Phase 1's primary gray cement customer target (independent ready-mix producers, Tier 1-B in study) is <strong>contractually unavailable</strong></li>
+        <li>Gray cement strategy must focus on: CMU block plants, precast manufacturers, bagged distribution, contractors, out-of-state ready-mix</li>
+        <li>Financial model needs revision: Terminal revenue model (throughput fees) vs. commodity sales model</li>
+    </ul>
+</div>
+
+<h1>II. Slag Business Opportunity</h1>
+
+<div class="critical-clarification">
+    <div class="title">⚠️ CLARIFICATION #2: Slag as Strategic Product Line (Not Analyzed in Phase 1)</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(AEE):</span> "We are planning to dedicate two silos to slag – there are preliminary discussions with one customer which would purchase ~100k per year. Pricing still unknown. I would put more weight to Slag"
+    </div>
+
+    <p><strong>What This Means:</strong></p>
+    <ul>
+        <li><strong>2 dedicated silos at Port Redwing</strong> = significant infrastructure commitment to slag product line</li>
+        <li><strong>100K MT/year customer in discussions</strong> = single anchor customer opportunity</li>
+        <li>"Put more weight to Slag" = strategic priority for business development</li>
+        <li>Pricing still unknown = need to establish market rates and margin profile</li>
+    </ul>
+
+    <p><strong>Phase 1 Gap:</strong></p>
+    <ul>
+        <li>Slag not mentioned once in Phase 1 study (zero competitive analysis, customer targeting, or market sizing)</li>
+        <li>Need to add: Slag supplier landscape, customer requirements, competitive positioning, margin structure</li>
+        <li>Port operations assessment required: Slag handling capabilities, grinding requirements (if any), quality control</li>
+    </ul>
+</div>
+
+<h1>III. White Cement Strategy - Validated and Enhanced</h1>
+
+<div class="validated">
+    <div class="title">✓ VALIDATED: White Cement Opportunity Confirmed - Exceeds Phase 1 Estimates</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(AEE):</span> "Also, the plan is to push more white cement sales. We know that one of the Mapei plants alone consumes 30k tpa, which we plan to supply. I would push white cement in 2027 to at least 60-75k tons."
+    </div>
+
+    <p><strong>What This Validates:</strong></p>
+    <ul>
+        <li><strong>Mapei anchor customer confirmed: 30K MT/year consumption</strong> (single customer validates Phase 1 market sizing)</li>
+        <li>2027 target 60-75K MT <strong>exceeds Phase 1 Year 3 estimate of 46K MT</strong></li>
+        <li>Strategic emphasis on white cement ("plan to push more white cement sales") confirms Phase 1 specialty product focus</li>
+    </ul>
+
+    <p><strong>Addressing Phase 1 Concerns:</strong></p>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(BH):</span> "A long time ago FL was a huge Stucco market, houses were constructed with CMU Block and parged (coated) with white cement (a blend of White Masonry & Portland bags). My understanding is this market has deteriorated significantly; we will need to quantify. EIFS stucco helps us very little on the bag side."
+    </div>
+
+    <p><strong>Clarification on Customer Targeting:</strong></p>
+    <ul>
+        <li>Phase 1 incorrectly emphasized stucco/EIFS manufacturers as primary white cement target</li>
+        <li><strong>Actual driver: Tile adhesive/grout manufacturers (Mapei confirms this)</strong></li>
+        <li>Traditional white cement stucco market has deteriorated (not viable target)</li>
+        <li>EIFS uses pre-mixed products (doesn't drive bulk cement demand)</li>
+        <li><strong>Revised white cement targets:</strong> Tile adhesive producers (Mapei anchor), pool plaster, architectural precast, specialty applications</li>
+    </ul>
+</div>
+
+<div class="validated">
+    <div class="title">✓ Additional White Cement Opportunity: Federal White Market Withdrawal</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(BH):</span> "If Federal continues to reduce there presence in the US it will definitely have a big impact."
+    </div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(MS):</span> "I'm hearing that Federal White is reducing their presence in USA market"
+    </div>
+
+    <p><strong>Strategic Opportunity:</strong></p>
+    <ul>
+        <li>Federal White Cement is major US supplier - market withdrawal creates capture opportunity</li>
+        <li>Phase 1 did not identify this competitive development</li>
+        <li>Action: Identify Federal White customer list, assess volume being released, develop capture strategy</li>
+    </ul>
+</div>
+
+<h1>IV. Gray Cement Market - Restricted But Viable</h1>
+
+<div class="critical-clarification">
+    <div class="title">⚠️ CLARIFICATION #3: Gray Cement Restriction Scope and Alternative Markets</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(AEE):</span> "We have a restriction per the SRM concrete which doesn't allow us to sell gray cement to the ready-mix industry in Florida, so gray sales will be conservative."
+    </div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(MS):</span> "Our contract with SRM needs to be reviewed to know what restrictions we have pertaining to selling gray cement."
+    </div>
+
+    <p><strong>What This Means:</strong></p>
+    <ul>
+        <li><strong>Contractual restriction</strong> from SRM partnership prohibits marketing to Florida ready-mix industry</li>
+        <li>Gray cement volumes will be "conservative" (50-150K MT) vs. Phase 1's ready-mix focus (150K MT Year 3)</li>
+        <li>Need to clarify exact scope: All Florida? Just ready-mix? Geographic boundaries?</li>
+    </ul>
+
+    <p><strong>Alternative Gray Cement Markets (Not Restricted):</strong></p>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(BH):</span> "There appears to be an abundant amount of Brick and block being used in C.FL. A broad swipe looks like 15 million bricks in C.FL. and another 20 mil. In Jacksonville. CMU block approx. 30mil. In C.FL."
+    </div>
+
+    <p><strong>CMU Block Opportunity:</strong></p>
+    <ul>
+        <li><strong>30 million CMU blocks in Central Florida ≈ 270,000 MT cement demand annually</strong></li>
+        <li>Phase 1 mentioned CMU construction but did not quantify cement consumption</li>
+        <li>At 10-15% market share: 27-40K MT potential (meaningful volume within restrictions)</li>
+        <li>Target customers: Block manufacturers, not restricted by SRM ready-mix agreement</li>
+    </ul>
+
+    <p><strong>Other Non-Ready-Mix Targets:</strong></p>
+    <ul>
+        <li>Precast concrete manufacturers</li>
+        <li>Bagged cement distributors</li>
+        <li>Direct contractor sales</li>
+        <li>Out-of-state ready-mix (Georgia, Alabama - if geographically outside restriction)</li>
+    </ul>
+</div>
+
+<h1>V. Pricing and Market Conditions</h1>
+
+<div class="critical-clarification">
+    <div class="title">⚠️ CLARIFICATION #4: Pricing Expectations vs. Phase 1 Assumptions</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(MS):</span> "Pricing from Andy's report look a bit inflated, especially the White cement. Not sure about the Gray but I have heard that pricing in Florida was closer to the Texas prices. I have been told that there is a surplus of gray cement that would tend to start lowering price."
+    </div>
+
+    <p><strong>Market Reality Check:</strong></p>
+    <ul>
+        <li><strong>Gray cement surplus expected</strong> = pricing pressure (Phase 1 used $90/MT, actual forecast $130-145/MT needs validation)</li>
+        <li>White cement pricing may be "inflated" in Phase 1 assumptions (Phase 1: $225/MT, actual forecast: $230/MT)</li>
+        <li>Florida pricing "closer to Texas prices" suggests competitive environment</li>
+    </ul>
+
+    <p><strong>Actual Forecast Pricing (RVD):</strong></p>
+    <table style="font-size: 10pt;">
+        <tr>
+            <th>Product</th>
+            <th>2026 Price</th>
+            <th>Full Year Price</th>
+            <th>Phase 1 Assumption</th>
+        </tr>
+        <tr>
+            <td>Gray Cement</td>
+            <td>$145/MT</td>
+            <td>$130/MT</td>
+            <td>$90/MT</td>
+        </tr>
+        <tr>
+            <td>White Cement</td>
+            <td>$230/MT</td>
+            <td>$230/MT</td>
+            <td>$225/MT</td>
+        </tr>
+    </table>
+
+    <p><strong>Implications:</strong></p>
+    <ul>
+        <li>Gray cement forecast $130-145/MT (44-61% higher than Phase 1's $90/MT) may be optimistic given "surplus" conditions</li>
+        <li>Need to reconcile: Conservative volumes + premium pricing vs. market surplus warnings</li>
+        <li>Pricing strategy: Value positioning (tariff advantage, service, Port Redwing location) vs. volume/price trade-offs</li>
+    </ul>
+</div>
+
+<h1>VI. Distributor Channel Gap</h1>
+
+<div class="critical-clarification">
+    <div class="title">⚠️ CLARIFICATION #5: Distributor Channel Not Analyzed in Phase 1</div>
+
+    <div class="stakeholder-quote">
+        <span class="initials">(BH):</span> "We will need some further understanding about the distributor Market in FL"
+    </div>
+
+    <p><strong>Phase 1 Gap:</strong></p>
+    <ul>
+        <li>Phase 1 focused exclusively on bulk cement terminal-to-customer model</li>
+        <li>Bagged cement distribution channel not analyzed (market size, economics, distributor relationships)</li>
+        <li>Port Redwing bagging capability not assessed</li>
+    </ul>
+
+    <p><strong>Questions Requiring Clarification:</strong></p>
+    <ul>
+        <li>What % of Florida cement market moves as bags vs. bulk? (White cement particularly bag-dominant?)</li>
+        <li>Does Port Redwing have bagging equipment? Capacity? Costs?</li>
+        <li>Distributor margin expectations and economics?</li>
+        <li>Is bagged distribution strategic opportunity or necessary capability for certain segments (white cement, contractors)?</li>
+    </ul>
+</div>
+
+<h1>VII. Revised Business Model Summary</h1>
+
+<h2>Actual Go-To-Market Strategy</h2>
+
+<table>
+    <tr>
+        <th style="width: 25%;">Product/Service</th>
+        <th style="width: 45%;">Strategy</th>
+        <th style="width: 30%;">Volume Target</th>
+    </tr>
+    <tr class="actual">
+        <td><strong>SRM Partner Throughput</strong></td>
+        <td>Port Redwing customer with market share agreement. Provides terminal utilization. <strong>Not a SESCO product/revenue line.</strong></td>
+        <td>300-400K MT (partner volume)<br><em>Revenue: Handling fees</em></td>
+    </tr>
+    <tr class="actual">
+        <td><strong>Slag</strong></td>
+        <td>2 dedicated silos, 100K MT anchor customer discussions. Strategic priority ("put more weight to Slag").</td>
+        <td>Year 1-2: 100K+ MT<br><em>Pricing: TBD</em></td>
+    </tr>
+    <tr class="actual">
+        <td><strong>White Cement</strong></td>
+        <td>Margin driver. Mapei 30K MT anchor. Tile adhesive/grout focus (NOT stucco/EIFS). Federal White opportunity. Push to 60-75K MT 2027.</td>
+        <td>2026: 20K MT → 2027: 60-75K MT<br><em>$230/MT</em></td>
+    </tr>
+    <tr class="actual">
+        <td><strong>Gray Cement</strong></td>
+        <td><strong>Restricted from FL ready-mix.</strong> Target CMU block (30M blocks ≈ 270K MT market), precast, bagged distribution, contractors.</td>
+        <td>2026: 50K MT → Full year: 150K MT<br><em>$130-145/MT</em></td>
+    </tr>
+</table>
+
+<h2>Key Strategic Shifts from Phase 1</h2>
+
+<div class="summary-box">
+    <div class="title">What Phase 1 Got Right (Keep These Elements):</div>
+    <ul>
+        <li>✓ Tampa Bay 6.8M MT import gateway positioning</li>
+        <li>✓ Tariff advantage (10% vs. 25-46%) = $12-27/MT cost benefit</li>
+        <li>✓ Port Redwing infrastructure scale (150K MT capacity, I-75/I-4 access)</li>
+        <li>✓ White cement opportunity validated (Mapei 30K MT confirms market, 2027 target exceeds Phase 1)</li>
+        <li>✓ Competitive landscape structure (Argos, Martin Marietta, CEMEX)</li>
+        <li>✓ Florida structural supply gap (6.5M MT import requirement)</li>
+    </ul>
+</div>
+
+<div class="critical-clarification">
+    <div class="title">What Requires Reframing for Go-To-Market Deck:</div>
+    <ul>
+        <li><strong>SRM understanding:</strong> Partner/customer with throughput agreement, NOT SESCO product line</li>
+        <li><strong>Gray cement customer targeting:</strong> Phase 1's Tier 1-B (independent ready-mix) is restricted. Redefine as CMU block, precast, bagged distribution, contractors</li>
+        <li><strong>White cement customer focus:</strong> Tile adhesive (Mapei anchor) not stucco/EIFS manufacturers</li>
+        <li><strong>Slag addition:</strong> Strategic product line not analyzed in Phase 1. Need competitive analysis, sourcing strategy, customer targeting</li>
+        <li><strong>Distributor channel:</strong> Assess bagged market opportunity and Port Redwing capabilities</li>
+        <li><strong>Pricing validation:</strong> Gray surplus warnings vs. $130-145/MT forecast. White cement pricing scrutiny.</li>
+    </ul>
+</div>
+
+<h1>VIII. Action Items for Karim's Deck</h1>
+
+<div class="summary-box">
+    <div class="title">Immediate Clarifications Needed (For Go-To-Market Deck Completion)</div>
+
+    <h2 style="color: #0d47a1; font-size: 12pt; border: none; margin-top: 15px;">1. SRM Agreement Details</h2>
+    <ul>
+        <li>Review SRM contract: Exact geographic scope of ready-mix restriction? Duration? Any exceptions?</li>
+        <li>Terminal economics: Handling fee structure for SRM throughput? Contribution to fixed cost coverage?</li>
+    </ul>
+
+    <h2 style="color: #0d47a1; font-size: 12pt; border: none; margin-top: 15px;">2. Slag Business Development</h2>
+    <ul>
+        <li>100K MT customer: Status of discussions? Pricing expectations? Timeline to commitment?</li>
+        <li>Slag sourcing: Domestic vs. import? Supplier relationships? Ground vs. unground?</li>
+        <li>Competitive landscape: Who supplies slag to Florida concrete producers? Pricing benchmarks?</li>
+        <li>Port Redwing: Slag handling capabilities? Grinding requirements? Quality control protocols?</li>
+    </ul>
+
+    <h2 style="color: #0d47a1; font-size: 12pt; border: none; margin-top: 15px;">3. White Cement Execution</h2>
+    <ul>
+        <li>Mapei: Supply agreement status? Volume commitment timeline? Pricing locked?</li>
+        <li>Federal White: Customer capture plan? Volume estimate? Competitive response risk?</li>
+        <li>Path to 60-75K MT 2027: Beyond Mapei, who are next 30-45K MT targets?</li>
+    </ul>
+
+    <h2 style="color: #0d47a1; font-size: 12pt; border: none; margin-top: 15px;">4. Gray Cement Alternative Markets</h2>
+    <ul>
+        <li>CMU block: Plant census, cement consumption validation, competitive supply analysis</li>
+        <li>Bagged distribution: Market size, distributor channel economics, Port Redwing bagging capability</li>
+    </ul>
+
+    <h2 style="color: #0d47a1; font-size: 12pt; border: none; margin-top: 15px;">5. Pricing Strategy</h2>
+    <ul>
+        <li>Reconcile gray cement "surplus" warnings with $130-145/MT forecast pricing</li>
+        <li>Validate white cement $230/MT against "inflated" pricing concerns</li>
+        <li>Volume/price sensitivity scenarios for financial model</li>
+    </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <strong>TAMPA BAY BUSINESS MODEL - KEY CLARIFICATIONS</strong><br>
+    Strategic Planning Document for Go-To-Market Deck | January 2026<br>
+    SESCO Cement Corporation - Confidential
+</div>
+
+</body>
+</html>

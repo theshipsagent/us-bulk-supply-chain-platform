@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Cement Market Intelligence Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary-dark: #1B5E20;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --primary-lighter: #81C784;
+            --secondary-dark: #0D47A1;
+            --secondary: #1976D2;
+            --secondary-light: #42A5F5;
+            --accent: #00ACC1;
+            --accent-dark: #00897B;
+            --neutral-dark: #37474F;
+            --neutral: #78909C;
+            --neutral-light: #ECEFF1;
+            --white: #FFFFFF;
+            --warning: #FF5722;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--neutral-light);
+            color: var(--neutral-dark);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .header .date {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .section-title {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-light);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .kpi-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .kpi-card.secondary {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+        }
+
+        .kpi-card.accent {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+        }
+
+        .kpi-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .kpi-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .kpi-change {
+            font-size: 0.85rem;
+            margin-top: 8px;
+            padding: 4px 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 350px;
+            padding: 15px;
+        }
+
+        .chart-container.tall {
+            height: 450px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--neutral-light);
+        }
+
+        th {
+            background: var(--primary-dark);
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        tr:hover {
+            background: var(--neutral-light);
+        }
+
+        .highlight-row {
+            background: rgba(46, 125, 50, 0.1) !important;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .badge-high { background: var(--primary); color: white; }
+        .badge-medium { background: var(--primary-light); color: white; }
+        .badge-low { background: var(--primary-lighter); color: var(--neutral-dark); }
+        .badge-competitor { background: var(--warning); color: white; }
+
+        .progress-bar {
+            height: 8px;
+            background: var(--neutral-light);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 4px;
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .executive-summary h2 {
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .executive-summary ul {
+            list-style: none;
+            columns: 2;
+            gap: 30px;
+        }
+
+        .executive-summary li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .executive-summary li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+        }
+
+        .map-placeholder {
+            background: var(--neutral-light);
+            border: 2px dashed var(--neutral);
+            border-radius: 10px;
+            padding: 60px 20px;
+            text-align: center;
+            color: var(--neutral);
+        }
+
+        .map-placeholder h3 {
+            margin-bottom: 10px;
+        }
+
+        .source-note {
+            font-size: 0.85rem;
+            color: var(--neutral);
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--neutral-light);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--neutral);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8rem; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .executive-summary ul { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Florida Cement Market Intelligence Report</h1>
+    <div class="subtitle">Tampa Bay Region Focus | Supply, Demand & Export Opportunities</div>
+    <div class="date">December 2025 | Data Period: 2020-2025</div>
+</div>
+
+<div class="container">
+
+    <!-- Executive Summary -->
+    <div class="executive-summary">
+        <h2>Executive Summary</h2>
+        <ul>
+            <li><strong>Florida:</strong> 2nd largest cement consumer, 4th largest producer in US</li>
+            <li><strong>Tampa Area:</strong> 75% of Florida's 9.06 MT annual imports</li>
+            <li><strong>Market Size:</strong> $17 billion US market, 110 MT shipments (2024)</li>
+            <li><strong>Import Share:</strong> 22% of US consumption from imports</li>
+            <li><strong>Tariff Advantage:</strong> Egypt/Turkey at 10% vs 25-46% for competitors</li>
+            <li><strong>Export Opportunity:</strong> 68.8% of US exports to Caribbean/Central America</li>
+            <li><strong>White Cement:</strong> Premium market, 2-3x gray cement pricing</li>
+            <li><strong>Transit Advantage:</strong> Tampa to Caribbean: 5-8 days vs 30+ from Asia</li>
+        </ul>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="grid-4">
+        <div class="kpi-card">
+            <div class="kpi-value">10.4 MT</div>
+            <div class="kpi-label">Florida Production Capacity</div>
+            <div class="kpi-change">7 Plants Operating</div>
+        </div>
+        <div class="kpi-card secondary">
+            <div class="kpi-value">9.06 MT</div>
+            <div class="kpi-label">Florida Import Volume</div>
+            <div class="kpi-change">16.8% of US Imports</div>
+        </div>
+        <div class="kpi-card accent">
+            <div class="kpi-value">$79/MT</div>
+            <div class="kpi-label">Avg Import Price (2024)</div>
+            <div class="kpi-change">↓ 6.4% YoY</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value">72%</div>
+            <div class="kpi-label">US Capacity Utilization</div>
+            <div class="kpi-change">86 MT vs 120 MT Capacity</div>
+        </div>
+    </div>
+
+    <!-- US Production & Consumption -->
+    <div class="section">
+        <h2 class="section-title">US Cement Production & Consumption Trends (2020-2025)</h2>
+        <div class="grid-2">
+            <div class="chart-container">
+                <canvas id="productionChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="consumptionChart"></canvas>
+            </div>
+        </div>
+        <p class="source-note">Source: USGS Mineral Commodity Summaries 2021-2025</p>
+    </div>
+
+    <!-- Import Analysis -->
+    <div class="section">
+        <h2 class="section-title">US Cement Import Analysis</h2>
+        <div class="grid-2">
+            <div class="chart-container">
+                <canvas id="importOriginChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="importTrendChart"></canvas>
+            </div>
+        </div>
+        <p class="source-note">Source: Panjiva Trade Data, USGS 2024</p>
+    </div>
+
+    <!-- Florida Market -->
+    <div class="section">
+        <h2 class="section-title">Florida Cement Plants</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plant Name</th>
+                    <th>Owner</th>
+                    <th>Location</th>
+                    <th>Capacity (MT/yr)</th>
+                    <th>FL Rank</th>
+                    <th>Capacity Share</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Pennusco</strong></td>
+                    <td>Titan America</td>
+                    <td>Miami</td>
+                    <td>2.1</td>
+                    <td>#1</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 20%"></div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Tampa Port</strong></td>
+                    <td>Argos USA</td>
+                    <td>Tampa</td>
+                    <td>1.9</td>
+                    <td>#2</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 18%"></div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Newberry</strong></td>
+                    <td>Argos USA</td>
+                    <td>Newberry</td>
+                    <td>1.6</td>
+                    <td>#3</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 15%"></div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Brooksville South</strong></td>
+                    <td>CEMEX</td>
+                    <td>Brooksville</td>
+                    <td>1.5</td>
+                    <td>#4</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 14%"></div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Sumterville</strong></td>
+                    <td>Ash Grove (CRH)</td>
+                    <td>Sumterville</td>
+                    <td>1.2</td>
+                    <td>#5</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 12%"></div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Miami</strong></td>
+                    <td>CEMEX</td>
+                    <td>Miami</td>
+                    <td>1.1</td>
+                    <td>#6</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 11%"></div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Branford</strong></td>
+                    <td>Ash Grove (CRH)</td>
+                    <td>Branford</td>
+                    <td>1.0</td>
+                    <td>#7</td>
+                    <td>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 10%"></div></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Florida Port Imports -->
+    <div class="section">
+        <h2 class="section-title">Florida Port Import Volumes</h2>
+        <div class="grid-2">
+            <div class="chart-container tall">
+                <canvas id="floridaPortsChart"></canvas>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Port</th>
+                            <th>Volume (MT)</th>
+                            <th>Shipments</th>
+                            <th>Share</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td><strong>Tampa Bay</strong></td>
+                            <td>3,450,520</td>
+                            <td>96</td>
+                            <td>38%</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Tampa, FL</strong></td>
+                            <td>2,416,120</td>
+                            <td>73</td>
+                            <td>27%</td>
+                        </tr>
+                        <tr>
+                            <td>Jacksonville</td>
+                            <td>1,611,600</td>
+                            <td>48</td>
+                            <td>18%</td>
+                        </tr>
+                        <tr>
+                            <td>Port Manatee</td>
+                            <td>946,260</td>
+                            <td>25</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>Port Everglades</td>
+                            <td>448,572</td>
+                            <td>23</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>West Palm Beach</td>
+                            <td>191,509</td>
+                            <td>11</td>
+                            <td>2%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 20px; padding: 15px; background: var(--neutral-light); border-radius: 8px;">
+                    <strong>Tampa Area Total:</strong> 6.8 MT (75% of Florida imports)<br>
+                    Combined Tampa Bay + Tampa + Port Manatee represents the core market opportunity.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Caribbean Export Opportunities -->
+    <div class="section">
+        <h2 class="section-title">Caribbean & Central America Export Opportunities</h2>
+        <div class="grid-2">
+            <div class="chart-container tall">
+                <canvas id="caribbeanOpportunityChart"></canvas>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Market</th>
+                            <th>Opportunity</th>
+                            <th>Import Dep.</th>
+                            <th>Transit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bahamas</strong></td>
+                            <td><span class="badge badge-high">VERY HIGH</span></td>
+                            <td>100%</td>
+                            <td>3 days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trinidad & Tobago</strong></td>
+                            <td><span class="badge badge-high">HIGH</span></td>
+                            <td>40%</td>
+                            <td>5 days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>US Virgin Islands</strong></td>
+                            <td><span class="badge badge-high">HIGH</span></td>
+                            <td>100%</td>
+                            <td>4 days</td>
+                        </tr>
+                        <tr>
+                            <td>Haiti</td>
+                            <td><span class="badge badge-medium">MODERATE</span></td>
+                            <td>90%</td>
+                            <td>4 days</td>
+                        </tr>
+                        <tr>
+                            <td>Nicaragua</td>
+                            <td><span class="badge badge-medium">MODERATE</span></td>
+                            <td>70%</td>
+                            <td>5 days</td>
+                        </tr>
+                        <tr>
+                            <td>Aruba/Curacao</td>
+                            <td><span class="badge badge-medium">MODERATE</span></td>
+                            <td>100%</td>
+                            <td>5 days</td>
+                        </tr>
+                        <tr>
+                            <td>Dominican Republic</td>
+                            <td><span class="badge badge-competitor">COMPETITOR</span></td>
+                            <td>0%</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Colombia</td>
+                            <td><span class="badge badge-competitor">COMPETITOR</span></td>
+                            <td>0%</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p class="source-note">Transit times from Tampa. Import dependency indicates reliance on cement imports vs domestic production.</p>
+    </div>
+
+    <!-- Tariff Comparison -->
+    <div class="section">
+        <h2 class="section-title">Import Tariff Structure</h2>
+        <div class="grid-2">
+            <div class="chart-container">
+                <canvas id="tariffChart"></canvas>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 15px; color: var(--primary-dark);">Strategic Sourcing Advantage</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Origin</th>
+                            <th>Tariff</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td><strong>Egypt</strong></td>
+                            <td>10%</td>
+                            <td><span class="badge badge-high">Favorable</span></td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Turkey</strong></td>
+                            <td>10%</td>
+                            <td><span class="badge badge-high">Favorable</span></td>
+                        </tr>
+                        <tr>
+                            <td>Greece</td>
+                            <td>10%</td>
+                            <td><span class="badge badge-medium">MFN Rate</span></td>
+                        </tr>
+                        <tr>
+                            <td>Canada</td>
+                            <td>25%</td>
+                            <td><span class="badge badge-low">Sec. 232</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mexico</td>
+                            <td>25%</td>
+                            <td><span class="badge badge-low">Sec. 232</span></td>
+                        </tr>
+                        <tr>
+                            <td>Vietnam</td>
+                            <td>46%</td>
+                            <td><span class="badge badge-competitor">AD/CVD</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Freight Rates -->
+    <div class="section">
+        <h2 class="section-title">Ocean Freight Analysis</h2>
+        <div class="grid-2">
+            <div class="chart-container">
+                <canvas id="freightChart"></canvas>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 15px; color: var(--primary-dark);">Cement Shipping Routes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Rate/MT</th>
+                            <th>Transit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Turkey → Tampa</td>
+                            <td>$5.50-6.00</td>
+                            <td>18 days</td>
+                        </tr>
+                        <tr>
+                            <td>Egypt → Tampa</td>
+                            <td>$7.00-8.00</td>
+                            <td>21 days</td>
+                        </tr>
+                        <tr>
+                            <td>Greece → Tampa</td>
+                            <td>$5.00-5.50</td>
+                            <td>17 days</td>
+                        </tr>
+                        <tr>
+                            <td>Mexico → Tampa</td>
+                            <td>$3.00-4.00</td>
+                            <td>3 days</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Tampa → Caribbean</strong></td>
+                            <td>$4.00-6.00</td>
+                            <td>3-5 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--neutral);">
+                    Rates as of December 2025. Handysize/Supramax vessels for cement cargo.
+                </p>
+            </div>
+        </div>
+        <p class="source-note">Source: Clarksons Freight Analysis, December 2025</p>
+    </div>
+
+    <!-- Customer Segments -->
+    <div class="section">
+        <h2 class="section-title">Customer Segments</h2>
+        <div class="grid-2">
+            <div>
+                <h3 style="margin-bottom: 15px; color: var(--primary-dark);">Gray Cement (Tampa Area)</h3>
+                <div class="chart-container">
+                    <canvas id="graySegmentChart"></canvas>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 15px; color: var(--primary-dark);">White Cement (Florida-Wide)</h3>
+                <div class="chart-container">
+                    <canvas id="whiteSegmentChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Placeholder -->
+    <div class="section">
+        <h2 class="section-title">Interactive Maps</h2>
+        <div class="map-placeholder">
+            <h3>GeoJSON Layers Available for ArcGIS Online</h3>
+            <p style="margin-top: 15px;">
+                Upload the following layers to create interactive Story Maps:
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px;">
+                <span class="badge badge-high">cement_plants_florida_gulf.geojson</span>
+                <span class="badge badge-high">import_terminals_florida.geojson</span>
+                <span class="badge badge-medium">caribbean_markets.geojson</span>
+                <span class="badge badge-medium">shipping_routes.geojson</span>
+                <span class="badge badge-low">import_origins.geojson</span>
+                <span class="badge badge-low">us_states_cement.geojson</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Florida Cement Market Intelligence Report | December 2025</p>
+    <p style="margin-top: 5px;">Data Sources: USGS, Panjiva, Clarksons, Global Energy Monitor, Industry Analysis</p>
+</div>
+
+<script>
+    // Color palette
+    const colors = {
+        primary: ['#1B5E20', '#2E7D32', '#4CAF50', '#81C784', '#A5D6A7', '#C8E6C9'],
+        secondary: ['#0D47A1', '#1976D2', '#42A5F5', '#64B5F6', '#90CAF9'],
+        accent: ['#00ACC1', '#00897B', '#26A69A'],
+        mixed: ['#1B5E20', '#0D47A1', '#00ACC1', '#4CAF50', '#1976D2', '#00897B', '#81C784', '#42A5F5']
+    };
+
+    // Production Chart
+    new Chart(document.getElementById('productionChart'), {
+        type: 'bar',
+        data: {
+            labels: ['2020', '2021', '2022', '2023', '2024'],
+            datasets: [{
+                label: 'US Cement Production (Million MT)',
+                data: [82, 86, 89, 87.5, 84],
+                backgroundColor: colors.primary[1],
+                borderColor: colors.primary[0],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'US Cement Production',
+                    font: { size: 16 }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    min: 75,
+                    title: { display: true, text: 'Million MT' }
+                }
+            }
+        }
+    });
+
+    // Consumption Chart
+    new Chart(document.getElementById('consumptionChart'), {
+        type: 'line',
+        data: {
+            labels: ['2020', '2021', '2022', '2023', '2024'],
+            datasets: [{
+                label: 'Total Shipments',
+                data: [99, 108, 118, 117, 110],
+                borderColor: colors.secondary[1],
+                backgroundColor: 'rgba(25, 118, 210, 0.1)',
+                fill: true,
+                tension: 0.3
+            }, {
+                label: 'Imports',
+                data: [16, 18, 21, 20.5, 19.8],
+                borderColor: colors.accent[0],
+                backgroundColor: 'transparent',
+                borderDash: [5, 5],
+                tension: 0.3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'US Cement Consumption & Imports',
+                    font: { size: 16 }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    min: 0,
+                    title: { display: true, text: 'Million MT' }
+                }
+            }
+        }
+    });
+
+    // Import Origin Chart
+    new Chart(document.getElementById('importOriginChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Turkey', 'Canada', 'Vietnam', 'Greece', 'Mexico', 'Egypt', 'Other'],
+            datasets: [{
+                data: [36, 24, 21, 9, 7, 4, 3],
+                backgroundColor: colors.mixed
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Import Origins by Market Share (%)',
+                    font: { size: 16 }
+                },
+                legend: {
+                    position: 'right'
+                }
+            }
+        }
+    });
+
+    // Import Trend Chart
+    new Chart(document.getElementById('importTrendChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Thailand', 'Spain', 'Egypt', 'Saudi Arabia'],
+            datasets: [{
+                label: 'YoY Growth (%)',
+                data: [542, 116, 71, 34],
+                backgroundColor: [colors.accent[0], colors.accent[1], colors.accent[2], colors.primary[2]]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Fastest Growing Import Sources (2023-2024)',
+                    font: { size: 16 }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: '% Growth' }
+                }
+            }
+        }
+    });
+
+    // Florida Ports Chart
+    new Chart(document.getElementById('floridaPortsChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Tampa Bay', 'Tampa, FL', 'Jacksonville', 'Port Manatee', 'Port Everglades', 'West Palm Beach'],
+            datasets: [{
+                label: 'Volume (Million MT)',
+                data: [3.45, 2.42, 1.61, 0.95, 0.45, 0.19],
+                backgroundColor: [colors.primary[0], colors.primary[1], colors.secondary[1], colors.secondary[2], colors.accent[0], colors.accent[1]]
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Florida Port Import Volumes (2023-2025)',
+                    font: { size: 16 }
+                },
+                legend: { display: false }
+            }
+        }
+    });
+
+    // Caribbean Opportunity Chart
+    new Chart(document.getElementById('caribbeanOpportunityChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Bahamas', 'Trinidad', 'USVI', 'Haiti', 'Nicaragua', 'Aruba/Curacao', 'Suriname', 'Puerto Rico'],
+            datasets: [{
+                label: 'Opportunity Score',
+                data: [95, 90, 85, 70, 65, 60, 50, 45],
+                backgroundColor: [
+                    colors.primary[0], colors.primary[0], colors.primary[1],
+                    colors.primary[2], colors.primary[2], colors.primary[3],
+                    colors.primary[4], colors.primary[4]
+                ]
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Export Market Opportunity Score',
+                    font: { size: 16 }
+                },
+                legend: { display: false }
+            },
+            scales: {
+                x: {
+                    max: 100,
+                    title: { display: true, text: 'Score (0-100)' }
+                }
+            }
+        }
+    });
+
+    // Tariff Chart
+    new Chart(document.getElementById('tariffChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Egypt', 'Turkey', 'Greece', 'Canada', 'Mexico', 'Vietnam'],
+            datasets: [{
+                label: 'Tariff Rate (%)',
+                data: [10, 10, 10, 25, 25, 46],
+                backgroundColor: [colors.primary[1], colors.primary[1], colors.primary[2], colors.accent[0], colors.accent[0], '#FF5722']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'US Import Tariff by Origin',
+                    font: { size: 16 }
+                },
+                legend: { display: false }
+            },
+            scales: {
+                y: {
+                    max: 50,
+                    title: { display: true, text: 'Tariff %' }
+                }
+            }
+        }
+    });
+
+    // Freight Chart
+    new Chart(document.getElementById('freightChart'), {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            datasets: [{
+                label: 'Handysize 38K',
+                data: [12500, 13200, 14100, 14800, 15200, 14600, 13900, 13200, 12800, 13500, 14100, 14132],
+                borderColor: colors.primary[1],
+                tension: 0.3
+            }, {
+                label: 'Supramax 58K',
+                data: [11800, 12400, 13200, 14100, 14500, 14200, 13600, 13100, 12500, 13200, 13700, 13891],
+                borderColor: colors.secondary[1],
+                tension: 0.3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Dry Bulk Freight Rates 2025 ($/day)',
+                    font: { size: 16 }
+                }
+            },
+            scales: {
+                y: {
+                    title: { display: true, text: '$/day' }
+                }
+            }
+        }
+    });
+
+    // Gray Cement Segments
+    new Chart(document.getElementById('graySegmentChart'), {
+        type: 'pie',
+        data: {
+            labels: ['Ready-Mix Producers', 'Concrete Products', 'Contractors', 'Other'],
+            datasets: [{
+                data: [72, 12, 9, 7],
+                backgroundColor: colors.primary
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+
+    // White Cement Segments
+    new Chart(document.getElementById('whiteSegmentChart'), {
+        type: 'pie',
+        data: {
+            labels: ['Stucco/EIFS', 'Tile Adhesives', 'Architectural Precast', 'Decorative Concrete', 'Other'],
+            datasets: [{
+                data: [40, 25, 15, 12, 8],
+                backgroundColor: colors.secondary
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

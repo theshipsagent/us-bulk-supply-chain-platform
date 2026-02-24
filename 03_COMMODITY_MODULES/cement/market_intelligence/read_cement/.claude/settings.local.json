@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sqlite3:*)",
+      "Bash(python zotero_extractor.py:*)",
+      "Bash(pip install:*)",
+      "Bash(python process_documents.py:*)",
+      "Bash(python rag_system.py:*)",
+      "Bash(python zotero_extractor_rail.py:*)",
+      "Bash(timeout:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

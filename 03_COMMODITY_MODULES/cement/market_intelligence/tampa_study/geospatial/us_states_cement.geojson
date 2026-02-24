@@ -1,0 +1,288 @@
+{
+  "type": "FeatureCollection",
+  "name": "US_States_Cement_Data",
+  "metadata": {
+    "title": "US States - Cement Production and Consumption",
+    "description": "State-level cement industry statistics for choropleth mapping",
+    "source": "USGS MCS 2025, Industry Analysis",
+    "created": "2025-12-16",
+    "projection": "EPSG:4326",
+    "note": "Simplified state centroids for point-based visualization. For polygon choropleth, use standard US states boundary file with data join.",
+    "colorScheme": {
+      "high_production": "#1B5E20",
+      "medium_production": "#4CAF50",
+      "low_production": "#81C784",
+      "no_production": "#E8F5E9"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Texas",
+        "abbrev": "TX",
+        "production_rank": 1,
+        "consumption_rank": 1,
+        "plants": 11,
+        "capacity_mt": 18.5,
+        "capacity_label": "18.5 MT/yr",
+        "share_us_production": 18,
+        "consumption_mt": 15.2,
+        "import_terminals": 4,
+        "key_producers": "Holcim, CEMEX, Buzzi",
+        "symbol_size": 40,
+        "color": "#1B5E20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-99.9018, 31.9686]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Missouri",
+        "abbrev": "MO",
+        "production_rank": 2,
+        "consumption_rank": 8,
+        "plants": 6,
+        "capacity_mt": 12.8,
+        "capacity_label": "12.8 MT/yr",
+        "share_us_production": 12,
+        "consumption_mt": 3.5,
+        "import_terminals": 0,
+        "key_producers": "Holcim, Buzzi, Ash Grove",
+        "symbol_size": 35,
+        "color": "#1B5E20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.8318, 37.9643]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "California",
+        "abbrev": "CA",
+        "production_rank": 3,
+        "consumption_rank": 3,
+        "plants": 9,
+        "capacity_mt": 11.2,
+        "capacity_label": "11.2 MT/yr",
+        "share_us_production": 11,
+        "consumption_mt": 10.5,
+        "import_terminals": 3,
+        "key_producers": "Lehigh Hanson, CalPortland, CEMEX",
+        "symbol_size": 32,
+        "color": "#1B5E20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.4179, 36.7783]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Florida",
+        "abbrev": "FL",
+        "production_rank": 4,
+        "consumption_rank": 2,
+        "plants": 7,
+        "capacity_mt": 10.4,
+        "capacity_label": "10.4 MT/yr",
+        "share_us_production": 10,
+        "consumption_mt": 12.8,
+        "import_terminals": 7,
+        "key_producers": "Argos USA, CEMEX, Titan, CRH",
+        "masonry_cement_rank": 1,
+        "import_volume_mt": 9.06,
+        "symbol_size": 30,
+        "color": "#2E7D32",
+        "highlight": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.5158, 27.6648]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Pennsylvania",
+        "abbrev": "PA",
+        "production_rank": 5,
+        "consumption_rank": 6,
+        "plants": 7,
+        "capacity_mt": 8.5,
+        "capacity_label": "8.5 MT/yr",
+        "share_us_production": 8,
+        "consumption_mt": 4.2,
+        "import_terminals": 1,
+        "key_producers": "Lehigh Hanson, Essroc, Buzzi",
+        "symbol_size": 28,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.1945, 41.2033]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Alabama",
+        "abbrev": "AL",
+        "production_rank": 6,
+        "consumption_rank": 12,
+        "plants": 5,
+        "capacity_mt": 7.2,
+        "capacity_label": "7.2 MT/yr",
+        "share_us_production": 7,
+        "consumption_mt": 2.8,
+        "import_terminals": 2,
+        "key_producers": "Argos USA, Lehigh Hanson, Holcim",
+        "symbol_size": 25,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-86.9023, 32.3182]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Michigan",
+        "abbrev": "MI",
+        "production_rank": 7,
+        "consumption_rank": 10,
+        "plants": 4,
+        "capacity_mt": 5.8,
+        "capacity_label": "5.8 MT/yr",
+        "share_us_production": 5,
+        "consumption_mt": 3.2,
+        "import_terminals": 1,
+        "key_producers": "Lehigh Hanson, St Marys",
+        "symbol_size": 22,
+        "color": "#4CAF50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-85.6024, 44.3148]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Georgia",
+        "abbrev": "GA",
+        "production_rank": 8,
+        "consumption_rank": 5,
+        "plants": 3,
+        "capacity_mt": 4.5,
+        "capacity_label": "4.5 MT/yr",
+        "share_us_production": 4,
+        "consumption_mt": 4.8,
+        "import_terminals": 2,
+        "key_producers": "Lehigh Hanson, Argos USA",
+        "symbol_size": 20,
+        "color": "#81C784"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.9001, 32.1656]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Ohio",
+        "abbrev": "OH",
+        "production_rank": 9,
+        "consumption_rank": 7,
+        "plants": 3,
+        "capacity_mt": 4.2,
+        "capacity_label": "4.2 MT/yr",
+        "share_us_production": 4,
+        "consumption_mt": 3.8,
+        "import_terminals": 0,
+        "key_producers": "Holcim, Essroc",
+        "symbol_size": 18,
+        "color": "#81C784"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.9071, 40.4173]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "New York",
+        "abbrev": "NY",
+        "production_rank": 10,
+        "consumption_rank": 4,
+        "plants": 3,
+        "capacity_mt": 3.8,
+        "capacity_label": "3.8 MT/yr",
+        "share_us_production": 3,
+        "consumption_mt": 5.2,
+        "import_terminals": 2,
+        "key_producers": "Lehigh Hanson, Holcim",
+        "symbol_size": 16,
+        "color": "#81C784"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.2179, 43.2994]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "North Carolina",
+        "abbrev": "NC",
+        "production_rank": 11,
+        "consumption_rank": 9,
+        "plants": 2,
+        "capacity_mt": 3.2,
+        "capacity_label": "3.2 MT/yr",
+        "share_us_production": 3,
+        "consumption_mt": 3.4,
+        "import_terminals": 1,
+        "key_producers": "Argos USA, Martin Marietta",
+        "symbol_size": 14,
+        "color": "#81C784"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.0193, 35.7596]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "state": "Louisiana",
+        "abbrev": "LA",
+        "production_rank": null,
+        "consumption_rank": 11,
+        "plants": 0,
+        "capacity_mt": 0,
+        "capacity_label": "Import Only",
+        "share_us_production": 0,
+        "consumption_mt": 3.0,
+        "import_terminals": 3,
+        "key_producers": "None - Import dependent",
+        "symbol_size": 12,
+        "color": "#E8F5E9",
+        "import_dependent": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-91.9623, 30.9843]
+      }
+    }
+  ]
+}

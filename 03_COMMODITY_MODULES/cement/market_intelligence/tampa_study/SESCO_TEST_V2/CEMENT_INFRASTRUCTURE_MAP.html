@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Cement Infrastructure Map | SESCO Cement</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        .header {
+            background: linear-gradient(135deg, #1B5E20 0%, #0D47A1 100%);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 { font-size: 1.4rem; font-weight: 400; }
+        .header .subtitle { opacity: 0.9; font-size: 0.85rem; }
+
+        #map { height: calc(100vh - 60px); width: 100%; }
+
+        .legend {
+            background: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            font-size: 12px;
+            max-width: 220px;
+        }
+        .legend h4 { margin-bottom: 10px; color: #333; font-size: 13px; }
+        .legend-item { display: flex; align-items: center; margin: 6px 0; }
+        .legend-icon { width: 20px; height: 14px; margin-right: 8px; border-radius: 2px; }
+        .legend-line { height: 3px; width: 20px; margin-right: 8px; }
+        .legend-circle { border-radius: 50%; }
+
+        .info-panel {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            font-size: 12px;
+            max-width: 280px;
+        }
+        .info-panel h4 { margin-bottom: 8px; color: #1B5E20; }
+        .info-panel p { margin: 4px 0; color: #555; }
+        .info-panel .stat { font-weight: 600; color: #333; }
+
+        .layer-control {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .layer-control h4 { margin-bottom: 10px; font-size: 13px; }
+        .layer-control label {
+            display: flex;
+            align-items: center;
+            margin: 6px 0;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .layer-control input { margin-right: 8px; }
+
+        .popup-content h3 { color: #1B5E20; margin-bottom: 8px; font-size: 14px; }
+        .popup-content p { margin: 4px 0; font-size: 12px; }
+        .popup-content .highlight {
+            background: #e8f5e9;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>US Cement Infrastructure Map</h1>
+            <div class="subtitle">North American Cement Plants, Import Ports, Rail & Waterways</div>
+        </div>
+        <div class="subtitle">SESCO Cement Corp | December 2025</div>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        // Initialize map centered on continental US
+        const map = L.map('map').setView([39.5, -98.5], 4);
+
+        // Base layers
+        const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        });
+
+        const cartoLight = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }).addTo(map);
+
+        const cartoDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        });
+
+        // Layer groups
+        let railLayer, waterLayer, plantsLayer, portsLayer;
+
+        // Styling functions
+        const railStyle = {
+            color: '#795548',
+            weight: 1.5,
+            opacity: 0.7
+        };
+
+        const waterStyle = {
+            color: '#1976D2',
+            weight: 3,
+            opacity: 0.8
+        };
+
+        function plantStyle(feature) {
+            const capacity = feature.properties.capacity_mtpa || 0;
+            return {
+                radius: Math.max(6, Math.min(15, capacity / 0.3)),
+                fillColor: feature.properties.country === 'United States' ? '#4CAF50' :
+                           feature.properties.country === 'Canada' ? '#FF9800' : '#9C27B0',
+                color: '#fff',
+                weight: 1.5,
+                opacity: 1,
+                fillOpacity: 0.8
+            };
+        }
+
+        function portStyle(feature) {
+            const volume = feature.properties.import_volume_mt || 0;
+            const radius = Math.max(8, Math.min(35, Math.sqrt(volume / 10000)));
+            return {
+                radius: radius,
+                fillColor: '#E53935',
+                color: '#fff',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.75
+            };
+        }
+
+        // Popup functions
+        function plantPopup(feature, layer) {
+            const p = feature.properties;
+            layer.bindPopup(`
+                <div class="popup-content">
+                    <h3>${p.plant_name || p.name || 'Cement Plant'}</h3>
+                    <p><strong>Owner:</strong> ${p.owner || 'N/A'}</p>
+                    <p><strong>Country:</strong> ${p.country || 'N/A'}</p>
+                    <p><strong>State:</strong> ${p.state || 'N/A'}</p>
+                    <p><strong>Capacity:</strong> <span class="highlight">${p.capacity_mtpa ? p.capacity_mtpa.toFixed(1) + ' MT/yr' : 'N/A'}</span></p>
+                    <p><strong>Status:</strong> ${p.status || 'Operating'}</p>
+                </div>
+            `);
+        }
+
+        function portPopup(feature, layer) {
+            const p = feature.properties;
+            layer.bindPopup(`
+                <div class="popup-content">
+                    <h3>${p.name || 'Port'}</h3>
+                    <p><strong>Import Volume:</strong> <span class="highlight">${p.volume_label || (p.import_volume_mt ? (p.import_volume_mt/1000000).toFixed(2) + 'M MT' : 'N/A')}</span></p>
+                    <p><strong>Shipments:</strong> ${p.shipments || 'N/A'}</p>
+                    <p><em>Bubble size proportional to import volume</em></p>
+                </div>
+            `);
+        }
+
+        function railPopup(feature, layer) {
+            const p = feature.properties;
+            layer.bindPopup(`
+                <div class="popup-content">
+                    <h3>${p.RROWNER1 || 'Railroad'}</h3>
+                    <p><strong>State:</strong> ${p.STATEAB || 'N/A'}</p>
+                    <p><strong>Miles:</strong> ${p.MILES ? p.MILES.toFixed(1) : 'N/A'}</p>
+                    <p><strong>Tracks:</strong> ${p.TRACKS || 'N/A'}</p>
+                </div>
+            `);
+        }
+
+        function waterPopup(feature, layer) {
+            const p = feature.properties;
+            layer.bindPopup(`
+                <div class="popup-content">
+                    <h3>Marine Highway</h3>
+                    <p><strong>Name:</strong> ${p.Name || p.ROUTE_NAME || 'Waterway'}</p>
+                    <p><strong>Type:</strong> ${p.ROUTE_TYPE || 'Navigable'}</p>
+                </div>
+            `);
+        }
+
+        // Load data from ArcGIS Online
+        async function loadLayers() {
+            // ArcGIS Online hosted GeoJSON URLs
+            const arcgisUrls = {
+                rail: 'https://www.arcgis.com/sharing/rest/content/items/cab0b48ec7224fd6b1e186db7f1de695/data',
+                water: 'https://www.arcgis.com/sharing/rest/content/items/3f760be450b246e99dc1718e8d9284f0/data',
+                plants: 'https://www.arcgis.com/sharing/rest/content/items/353a095f807d475e8a415c9d21e0be4f/data',
+                ports: 'https://www.arcgis.com/sharing/rest/content/items/1ee57142d20a4779a58e3abffe3d1c6e/data'
+            };
+
+            try {
+                // Load Class I Rail
+                const railResp = await fetch(arcgisUrls.rail);
+                const railData = await railResp.json();
+                railLayer = L.geoJSON(railData, {
+                    style: railStyle,
+                    onEachFeature: railPopup
+                });
+
+                // Load Marine Highways
+                const waterResp = await fetch(arcgisUrls.water);
+                const waterData = await waterResp.json();
+                waterLayer = L.geoJSON(waterData, {
+                    style: waterStyle,
+                    onEachFeature: waterPopup
+                });
+
+                // Load Cement Plants
+                const plantsResp = await fetch(arcgisUrls.plants);
+                const plantsData = await plantsResp.json();
+                plantsLayer = L.geoJSON(plantsData, {
+                    pointToLayer: (feature, latlng) => L.circleMarker(latlng, plantStyle(feature)),
+                    onEachFeature: plantPopup
+                });
+
+                // Load Import Ports
+                const portsResp = await fetch(arcgisUrls.ports);
+                const portsData = await portsResp.json();
+                portsLayer = L.geoJSON(portsData, {
+                    pointToLayer: (feature, latlng) => L.circleMarker(latlng, portStyle(feature)),
+                    onEachFeature: portPopup
+                });
+
+                // Add layers to map (order matters for visibility)
+                waterLayer.addTo(map);
+                railLayer.addTo(map);
+                plantsLayer.addTo(map);
+                portsLayer.addTo(map);
+
+                // Update layer control
+                setupLayerControl();
+
+            } catch (error) {
+                console.error('Error loading layers:', error);
+                // Load from inline data if fetch fails
+                loadInlineData();
+            }
+        }
+
+        function setupLayerControl() {
+            const layerControl = L.control({position: 'topright'});
+            layerControl.onAdd = function() {
+                const div = L.DomUtil.create('div', 'layer-control');
+                div.innerHTML = `
+                    <h4>Map Layers</h4>
+                    <label><input type="checkbox" id="toggle-ports" checked> Import Ports (Weighted)</label>
+                    <label><input type="checkbox" id="toggle-plants" checked> Cement Plants (NA)</label>
+                    <label><input type="checkbox" id="toggle-rail" checked> Class I Rail Network</label>
+                    <label><input type="checkbox" id="toggle-water" checked> Marine Highways</label>
+                `;
+                L.DomEvent.disableClickPropagation(div);
+                return div;
+            };
+            layerControl.addTo(map);
+
+            // Layer toggle handlers
+            document.getElementById('toggle-ports').addEventListener('change', (e) => {
+                e.target.checked ? map.addLayer(portsLayer) : map.removeLayer(portsLayer);
+            });
+            document.getElementById('toggle-plants').addEventListener('change', (e) => {
+                e.target.checked ? map.addLayer(plantsLayer) : map.removeLayer(plantsLayer);
+            });
+            document.getElementById('toggle-rail').addEventListener('change', (e) => {
+                e.target.checked ? map.addLayer(railLayer) : map.removeLayer(railLayer);
+            });
+            document.getElementById('toggle-water').addEventListener('change', (e) => {
+                e.target.checked ? map.addLayer(waterLayer) : map.removeLayer(waterLayer);
+            });
+        }
+
+        // Legend
+        const legend = L.control({position: 'bottomright'});
+        legend.onAdd = function() {
+            const div = L.DomUtil.create('div', 'legend');
+            div.innerHTML = `
+                <h4>Legend</h4>
+                <div class="legend-item">
+                    <div class="legend-icon legend-circle" style="background: #E53935; width: 16px; height: 16px;"></div>
+                    <span>Import Port (size = volume)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon legend-circle" style="background: #4CAF50; width: 12px; height: 12px;"></div>
+                    <span>US Cement Plant</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon legend-circle" style="background: #FF9800; width: 12px; height: 12px;"></div>
+                    <span>Canada Cement Plant</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-icon legend-circle" style="background: #9C27B0; width: 12px; height: 12px;"></div>
+                    <span>Mexico Cement Plant</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-line" style="background: #795548;"></div>
+                    <span>Class I Rail Network</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-line" style="background: #1976D2; height: 4px;"></div>
+                    <span>Marine Highway</span>
+                </div>
+            `;
+            return div;
+        };
+        legend.addTo(map);
+
+        // Info panel
+        const info = L.control({position: 'topleft'});
+        info.onAdd = function() {
+            const div = L.DomUtil.create('div', 'info-panel');
+            div.innerHTML = `
+                <h4>Infrastructure Overview</h4>
+                <p><span class="stat">158</span> Cement Plants (NA)</p>
+                <p><span class="stat">24</span> Import Ports</p>
+                <p><span class="stat">12.3M MT</span> Total Imports</p>
+                <p><span class="stat">35</span> Marine Highway Routes</p>
+                <p style="margin-top: 10px; font-size: 11px; color: #888;">
+                    Sources: GEM Tracker, Panjiva, BTS NTAD
+                </p>
+            `;
+            return div;
+        };
+        info.addTo(map);
+
+        // Base layer control
+        L.control.layers({
+            'Light': cartoLight,
+            'Dark': cartoDark,
+            'OpenStreetMap': osm
+        }, null, {position: 'bottomleft'}).addTo(map);
+
+        // Inline data fallback for standalone viewing
+        function loadInlineData() {
+            // Simplified inline data for standalone operation
+            const samplePorts = {
+                "type": "FeatureCollection",
+                "features": [
+                    {"type": "Feature", "properties": {"name": "Houston, Texas", "import_volume_mt": 5717149, "volume_label": "5.72M MT"}, "geometry": {"type": "Point", "coordinates": [-95.05, 29.72]}},
+                    {"type": "Feature", "properties": {"name": "New York/Newark", "import_volume_mt": 856976, "volume_label": "857K MT"}, "geometry": {"type": "Point", "coordinates": [-74.15, 40.68]}},
+                    {"type": "Feature", "properties": {"name": "Tampa Bay, Florida", "import_volume_mt": 689542, "volume_label": "690K MT"}, "geometry": {"type": "Point", "coordinates": [-82.45, 27.9]}},
+                    {"type": "Feature", "properties": {"name": "Portland, Oregon", "import_volume_mt": 747137, "volume_label": "747K MT"}, "geometry": {"type": "Point", "coordinates": [-122.67, 45.55]}}
+                ]
+            };
+
+            portsLayer = L.geoJSON(samplePorts, {
+                pointToLayer: (feature, latlng) => L.circleMarker(latlng, portStyle(feature)),
+                onEachFeature: portPopup
+            }).addTo(map);
+        }
+
+        // Initialize
+        loadLayers();
+    </script>
+</body>
+</html>

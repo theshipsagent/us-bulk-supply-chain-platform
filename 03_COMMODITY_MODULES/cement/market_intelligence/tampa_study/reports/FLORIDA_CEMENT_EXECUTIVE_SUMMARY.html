@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Cement Market | Executive Summary</title>
+    <style>
+        :root {
+            --primary-dark: #1B5E20;
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --secondary-dark: #0D47A1;
+            --secondary: #1976D2;
+            --accent: #FF5722;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        .content { padding: 40px; }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: -60px 20px 30px;
+            position: relative;
+            z-index: 10;
+        }
+        .hero-stat {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+        .hero-stat .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        .hero-stat:nth-child(2) .value { color: var(--secondary-dark); }
+        .hero-stat:nth-child(3) .value { color: var(--primary); }
+        .hero-stat:nth-child(4) .value { color: var(--accent); }
+        .hero-stat .label {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+        .section.blue { border-left-color: var(--secondary); }
+        .section.orange { border-left-color: var(--accent); }
+        .section h2 {
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        .section.blue h2 { color: var(--secondary-dark); }
+        .section.orange h2 { color: var(--accent); }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        th {
+            background: #e8e8e8;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #FFC107;
+        }
+
+        .recommendations {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .recommendations h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        .rec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .rec-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .rec-item .num {
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .rec-item h4 {
+            font-size: 0.95rem;
+            color: var(--primary-dark);
+            margin-bottom: 5px;
+        }
+        .rec-item p {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .footer {
+            background: #37474F;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .footer a { color: var(--primary-light); }
+
+        @media (max-width: 768px) {
+            .hero-stats { grid-template-columns: repeat(2, 1fr); margin-top: -40px; }
+            .two-col { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Florida Cement Market</h1>
+            <p style="opacity: 0.9; font-size: 1.1rem;">Executive Summary | Tampa Bay Region</p>
+            <div class="badge">December 2025 | SESCO Cement Corp</div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="value">9.06M</div>
+                <div class="label">MT Florida Imports/Year</div>
+            </div>
+            <div class="hero-stat">
+                <div class="value">75%</div>
+                <div class="label">Tampa Area Share</div>
+            </div>
+            <div class="hero-stat">
+                <div class="value">10.4M</div>
+                <div class="label">MT Production Capacity</div>
+            </div>
+            <div class="hero-stat">
+                <div class="value">10%</div>
+                <div class="label">Egypt/Turkey Tariff</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Market Opportunity</h2>
+                <p>Florida is the <strong>2nd largest cement consuming state</strong> and <strong>4th largest producer</strong> in the US. The Tampa Bay region receives <strong>75% of Florida's cement imports</strong> (6.8M MT annually), making it the strategic center for cement distribution.</p>
+                <p style="margin-top: 15px;">SESCO's new <strong>Port Redwing terminal</strong> in Gibsonton positions the company to capture significant market share with favorable sourcing from Egypt and Turkey (10% tariff) versus competitors facing 25-46% duties.</p>
+            </div>
+
+            <div class="two-col">
+                <div class="section blue">
+                    <h2>Supply Landscape</h2>
+                    <table>
+                        <tr><td><strong>Argos USA</strong></td><td>Tampa plant (1.9 MT/yr)</td></tr>
+                        <tr><td><strong>Martin Marietta</strong></td><td>Largest importer (4.1M MT)</td></tr>
+                        <tr><td><strong>CEMEX</strong></td><td>Brooksville + Mobile</td></tr>
+                        <tr><td><strong>Titan America</strong></td><td>Miami plant, Greek supply</td></tr>
+                    </table>
+                </div>
+                <div class="section">
+                    <h2>Port Redwing Reach</h2>
+                    <table>
+                        <tr><td><strong>1 Hour</strong></td><td>3.4M pop</td><td>Tampa Bay</td></tr>
+                        <tr><td><strong>3 Hours</strong></td><td>12.8M pop</td><td>Orlando, Ft Myers</td></tr>
+                        <tr><td><strong>5 Hours</strong></td><td>22.5M pop</td><td>All Florida</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <strong>SESCO Competitive Advantage:</strong> Egypt/Turkey sourcing at 10% tariff vs. 25% (Canada/Mexico) or 46% (Vietnam) for competitors. White cement specialty focus with limited competition.
+            </div>
+
+            <div class="section orange">
+                <h2>Customer Priorities</h2>
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>Segment</th><th>Product</th><th>Potential</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Stucco/EIFS Manufacturers</td><td>White</td><td>High volume, high margin</td></tr>
+                        <tr><td>2</td><td>Independent Ready-Mix</td><td>Gray</td><td>Volume builder</td></tr>
+                        <tr><td>3</td><td>Tile Adhesive Producers</td><td>White</td><td>Specialty, premium</td></tr>
+                        <tr><td>4</td><td>Precast Producers</td><td>Both</td><td>Technical relationships</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section blue">
+                <h2>Export Opportunity</h2>
+                <p><strong>68.8% of US cement exports</strong> go to Caribbean/Central America. Tampa is ideally positioned.</p>
+                <div class="two-col" style="margin-top: 15px;">
+                    <div>
+                        <strong>Tier 1 Markets:</strong>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Bahamas - 100% import-dependent</li>
+                            <li>Trinidad & Tobago - Zero duty 2025</li>
+                            <li>USVI - US territory</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Transit Advantage:</strong>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Tampa to Caribbean: 5-8 days</li>
+                            <li>Asia to Caribbean: 30+ days</li>
+                            <li>White cement premium market</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendations">
+                <h3>Strategic Recommendations</h3>
+                <div class="rec-grid">
+                    <div class="rec-item">
+                        <div class="num">1</div>
+                        <h4>White Cement Lead</h4>
+                        <p>Highest margins, least competition</p>
+                    </div>
+                    <div class="rec-item">
+                        <div class="num">2</div>
+                        <h4>Target Stucco/EIFS</h4>
+                        <p>Florida's hurricane codes drive demand</p>
+                    </div>
+                    <div class="rec-item">
+                        <div class="num">3</div>
+                        <h4>Independent Ready-Mix</h4>
+                        <p>Volume builder, non-integrated</p>
+                    </div>
+                    <div class="rec-item">
+                        <div class="num">4</div>
+                        <h4>Caribbean Export</h4>
+                        <p>Re-export from Port Redwing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Volume Targets</h2>
+                <table>
+                    <thead>
+                        <tr><th>Product</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Gray Cement</td><td>25-50K MT</td><td>75-100K MT</td><td>150K+ MT</td></tr>
+                        <tr><td>White Cement</td><td>5-10K MT</td><td>15-25K MT</td><td>40-50K MT</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Full Report:</strong> Florida Cement Market Analysis | <a href="https://theshipsagent.com">theshipsagent.com</a></p>
+            <p style="margin-top: 10px; opacity: 0.8;">Sources: USGS, Panjiva, Global Energy Monitor, Clarksons | December 2025</p>
+        </div>
+    </div>
+</body>
+</html>
