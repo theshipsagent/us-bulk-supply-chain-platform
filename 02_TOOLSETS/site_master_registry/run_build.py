@@ -44,6 +44,8 @@ def main():
         builder.build_phase_1()
     elif args.phase == 2:
         builder.build_phase_2(max_tier=args.max_tier)
+    elif args.phase == 3:
+        builder.build_phase_3()
     else:
         print(f"Phase {args.phase} not yet implemented")
         sys.exit(1)

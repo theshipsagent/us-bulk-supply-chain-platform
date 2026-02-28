@@ -2,6 +2,7 @@
 
 Phase 1: Seed commodity CSVs → master_sites → match to FRS → source_links
 Phase 2: FRS Industrial Expansion — add unlinked FRS facilities by NAICS anchor codes
+Phase 3: SCRS Rail + BTS Navigation enrichment — rail_served / water_access flags
 """
 
 from __future__ import annotations
@@ -495,6 +496,253 @@ class RegistryBuilder:
             summary["sector_distribution"].items(), key=lambda x: -x[1]
         ):
             print(f"    {sector:25s}: {count:,}")
+        print("=" * 70 + "\n")
+
+    # ----- Phase 3: SCRS Rail + BTS Navigation Enrichment -----
+
+    def build_phase_3(self) -> dict:
+        """Enrich master sites with rail-served and water-access attributes.
+
+        1. Match SCRS rail records to master sites by name+city+state
+        2. Match BTS navigation records to master sites by spatial proximity
+        3. Set rail_served / water_access / barge_access flags
+        """
+        from ..connectors.scrs_connector import ScrsConnector
+        from ..connectors.bts_navigation_connector import BtsNavigationConnector
+        from ..matching.name_matcher import name_similarity
+        from ..matching.spatial_matcher import haversine_meters
+
+        conn = self._init_db()
+        run_id = self._start_run("phase_3_rail_navigation")
+
+        # Load all master sites into memory for matching
+        site_rows = conn.execute("""
+            SELECT facility_uid, canonical_name, city, state,
+                   latitude, longitude
+            FROM master_sites
+        """).fetchall()
+        sites = []
+        for r in site_rows:
+            sites.append({
+                "uid": r[0], "name": r[1], "city": r[2] or "",
+                "state": r[3], "lat": r[4], "lon": r[5],
+            })
+        logger.info(f"Phase 3: {len(sites)} master sites loaded for matching")
+
+        # Index sites by state for fast lookup
+        sites_by_state: dict[str, list[dict]] = {}
+        for s in sites:
+            sites_by_state.setdefault(s["state"], []).append(s)
+
+        # ---- SCRS Rail Matching ----
+        scrs_path = str(self.root / "01_DATA_SOURCES" / "federal_rail"
+                        / "stb_economic_data" / "integrated" / "scrs_integration_ready.csv")
+        scrs_conn = ScrsConnector(scrs_path)
+        scrs_records = scrs_conn.fetch_records()
+
+        rail_matches = 0
+        rail_links = 0
+        matched_uids_rail: set[str] = set()
+
+        for scrs_rec in scrs_records:
+            state_sites = sites_by_state.get(scrs_rec.state, [])
+            if not state_sites:
+                continue
+
+            # Find best name match in same state+city first, then state
+            best_uid = None
+            best_sim = 0.0
+
+            # City-level match first (faster, more precise)
+            city_upper = scrs_rec.city.upper()
+            for site in state_sites:
+                if site["city"].upper() != city_upper:
+                    continue
+                sim = name_similarity(scrs_rec.name, site["name"])
+                if sim > best_sim:
+                    best_sim = sim
+                    best_uid = site["uid"]
+
+            # If no city match, try state-wide with higher threshold
+            if best_sim < 0.70:
+                for site in state_sites:
+                    sim = name_similarity(scrs_rec.name, site["name"])
+                    if sim > best_sim:
+                        best_sim = sim
+                        best_uid = site["uid"]
+
+            if best_uid and best_sim >= 0.60:
+                matched_uids_rail.add(best_uid)
+
+                # Add source link (skip if already linked to same source)
+                existing = conn.execute("""
+                    SELECT 1 FROM source_links
+                    WHERE facility_uid = ? AND source_system = 'scrs_rail'
+                      AND source_record_id = ?
+                """, [best_uid, scrs_rec.source_record_id]).fetchone()
+
+                if not existing:
+                    self._insert_source_link(
+                        conn, best_uid, scrs_rec,
+                        match_method="name_city_state",
+                        match_confidence=best_sim,
+                        distance_m=None,
+                        name_sim=best_sim,
+                    )
+                    rail_links += 1
+                    rail_matches += 1
+
+        # Set rail_served=True on matched sites
+        if matched_uids_rail:
+            placeholders = ",".join(["?"] * len(matched_uids_rail))
+            conn.execute(f"""
+                UPDATE master_sites
+                SET rail_served = TRUE, updated_at = CURRENT_TIMESTAMP
+                WHERE facility_uid IN ({placeholders})
+            """, list(matched_uids_rail))
+
+        logger.info(f"Phase 3 SCRS: {rail_matches} rail links created, "
+                     f"{len(matched_uids_rail)} sites flagged rail_served")
+
+        # ---- BTS Navigation Matching ----
+        bts_path = str(self.root / "01_DATA_SOURCES" / "geospatial"
+                       / "base_layers" / "05_bts_navigation_fac"
+                       / "Docks_8605051818000540974.csv")
+        bts_conn = BtsNavigationConnector(bts_path)
+        bts_records = bts_conn.fetch_records()
+
+        nav_matches = 0
+        nav_links = 0
+        matched_uids_water: set[str] = set()
+        match_radius_m = 2500.0  # 2.5 km
+
+        # Only match BTS records to sites that have coordinates
+        sites_with_coords = [s for s in sites if s["lat"] is not None and s["lon"] is not None]
+
+        # Index sites with coords by state for efficiency
+        coord_sites_by_state: dict[str, list[dict]] = {}
+        for s in sites_with_coords:
+            coord_sites_by_state.setdefault(s["state"], []).append(s)
+
+        for bts_rec in bts_records:
+            if bts_rec.latitude is None or bts_rec.longitude is None:
+                continue
+
+            state_sites = coord_sites_by_state.get(bts_rec.state, [])
+            if not state_sites:
+                continue
+
+            # Find nearest master site within radius
+            best_uid = None
+            best_dist = match_radius_m + 1
+
+            for site in state_sites:
+                # Quick lat check
+                if abs(site["lat"] - bts_rec.latitude) > 0.025:  # ~2.8km
+                    continue
+                if abs(site["lon"] - bts_rec.longitude) > 0.035:
+                    continue
+
+                dist = haversine_meters(
+                    site["lat"], site["lon"],
+                    bts_rec.latitude, bts_rec.longitude,
+                )
+                if dist < best_dist:
+                    best_dist = dist
+                    best_uid = site["uid"]
+
+            if best_uid and best_dist <= match_radius_m:
+                matched_uids_water.add(best_uid)
+
+                # Add source link (one per BTS record, skip dupes)
+                existing = conn.execute("""
+                    SELECT 1 FROM source_links
+                    WHERE facility_uid = ? AND source_system = 'bts_navigation'
+                      AND source_record_id = ?
+                """, [best_uid, bts_rec.source_record_id]).fetchone()
+
+                if not existing:
+                    self._insert_source_link(
+                        conn, best_uid, bts_rec,
+                        match_method="spatial_proximity",
+                        match_confidence=max(0.5, 1.0 - best_dist / match_radius_m),
+                        distance_m=best_dist,
+                        name_sim=0.0,
+                    )
+                    nav_links += 1
+                    nav_matches += 1
+
+        # Set water_access=True on matched sites
+        if matched_uids_water:
+            placeholders = ",".join(["?"] * len(matched_uids_water))
+            conn.execute(f"""
+                UPDATE master_sites
+                SET water_access = TRUE, barge_access = TRUE,
+                    updated_at = CURRENT_TIMESTAMP
+                WHERE facility_uid IN ({placeholders})
+            """, list(matched_uids_water))
+
+        logger.info(f"Phase 3 BTS: {nav_matches} nav links created, "
+                     f"{len(matched_uids_water)} sites flagged water_access")
+
+        # Update source_count
+        conn.execute("""
+            UPDATE master_sites
+            SET source_count = (
+                SELECT COUNT(*) FROM source_links sl
+                WHERE sl.facility_uid = master_sites.facility_uid
+            ),
+            updated_at = CURRENT_TIMESTAMP
+        """)
+
+        total_sites = conn.execute("SELECT COUNT(*) FROM master_sites").fetchone()[0]
+        total_rail = conn.execute("SELECT COUNT(*) FROM master_sites WHERE rail_served = TRUE").fetchone()[0]
+        total_water = conn.execute("SELECT COUNT(*) FROM master_sites WHERE water_access = TRUE").fetchone()[0]
+
+        self._finish_run(
+            run_id, 0, len(matched_uids_rail) + len(matched_uids_water),
+            rail_links + nav_links, 0,
+            f"SCRS: {rail_matches} links → {len(matched_uids_rail)} rail_served. "
+            f"BTS: {nav_matches} links → {len(matched_uids_water)} water_access.",
+        )
+
+        summary = {
+            "phase": "phase_3_rail_navigation",
+            "run_id": run_id,
+            "scrs_records": len(scrs_records),
+            "scrs_matches": rail_matches,
+            "sites_rail_served": len(matched_uids_rail),
+            "bts_records": len(bts_records),
+            "bts_matches": nav_matches,
+            "sites_water_access": len(matched_uids_water),
+            "total_links_created": rail_links + nav_links,
+            "total_sites": total_sites,
+            "total_rail_served": total_rail,
+            "total_water_access": total_water,
+        }
+
+        self._print_phase3_summary(summary)
+        return summary
+
+    @staticmethod
+    def _print_phase3_summary(summary: dict):
+        print("\n" + "=" * 70)
+        print("  SITE MASTER REGISTRY — Phase 3 Build Summary")
+        print("=" * 70)
+        print(f"  SCRS rail records:       {summary['scrs_records']:,}")
+        print(f"  SCRS matches:            {summary['scrs_matches']:,}")
+        print(f"  Sites → rail_served:     {summary['sites_rail_served']:,}")
+        print("-" * 70)
+        print(f"  BTS nav records:         {summary['bts_records']:,}")
+        print(f"  BTS matches:             {summary['bts_matches']:,}")
+        print(f"  Sites → water_access:    {summary['sites_water_access']:,}")
+        print("-" * 70)
+        print(f"  Total links created:     {summary['total_links_created']:,}")
+        print(f"  TOTAL master sites:      {summary['total_sites']:,}")
+        print(f"  With rail_served:        {summary['total_rail_served']:,} "
+              f"({100*summary['total_rail_served']/summary['total_sites']:.1f}%)")
+        print(f"  With water_access:       {summary['total_water_access']:,} "
+              f"({100*summary['total_water_access']/summary['total_sites']:.1f}%)")
         print("=" * 70 + "\n")
 
     @staticmethod
