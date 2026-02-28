@@ -1,0 +1,128 @@
+{
+  "primary_sources": {
+    "usgs_minerals": {
+      "name": "USGS Mineral Commodity Summaries - Aluminum",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/aluminum-statistics-and-information",
+      "vintage": "2024-2025",
+      "refresh": "annual",
+      "coverage": "US production, consumption, trade statistics; primary smelter status"
+    },
+    "aluminum_association": {
+      "name": "The Aluminum Association",
+      "url": "https://www.aluminum.org",
+      "vintage": "2025",
+      "refresh": "annual",
+      "coverage": "Industry statistics, sustainability reports, policy advocacy"
+    },
+    "crs_report": {
+      "name": "CRS Report R47294: U.S. Aluminum Manufacturing",
+      "url": "https://crsreports.congress.gov",
+      "vintage": "2024",
+      "refresh": "periodic",
+      "coverage": "Industry trends, policy analysis, sustainability pathways"
+    }
+  },
+  "company_sources": {
+    "novelis": {
+      "name": "Novelis Inc. (Hindalco subsidiary)",
+      "url": "https://www.novelis.com",
+      "facilities": ["Oswego NY", "Bay Minette AL", "Logan KY", "Berea KY", "Guthrie KY", "Greensboro GA", "Lewisport KY", "Uhrichsville OH", "Richmond VA"],
+      "sec_filings": "Parent company Hindalco Industries (India) NSE: HINDALCO"
+    },
+    "arconic": {
+      "name": "Arconic Corporation",
+      "url": "https://www.arconic.com",
+      "facilities": ["Alcoa TN", "Davenport IA", "Lancaster PA", "Danville IL", "Hutchinson KS"],
+      "sec_filings": "NYSE: ARNC"
+    },
+    "constellium": {
+      "name": "Constellium SE",
+      "url": "https://www.constellium.com",
+      "facilities": ["Muscle Shoals AL", "Ravenswood WV", "Bowling Green KY"],
+      "sec_filings": "NYSE: CSTM"
+    },
+    "kaiser": {
+      "name": "Kaiser Aluminum Corporation",
+      "url": "https://www.kaiseraluminum.com",
+      "facilities": ["Warrick IN", "Trentwood WA"],
+      "sec_filings": "NASDAQ: KALU"
+    },
+    "century": {
+      "name": "Century Aluminum Company",
+      "url": "https://www.centuryaluminum.com",
+      "facilities": ["Sebree KY", "Mt. Holly SC", "Hawesville KY (idled)", "Inola OK (planned)"],
+      "sec_filings": "NASDAQ: CENX"
+    },
+    "alcoa": {
+      "name": "Alcoa Corporation",
+      "url": "https://www.alcoa.com",
+      "facilities": ["Warrick IN", "Massena NY"],
+      "sec_filings": "NYSE: AA"
+    },
+    "matalco": {
+      "name": "Matalco Inc. (Giampaolo/Rio Tinto JV)",
+      "url": "https://www.matalco.com",
+      "facilities": ["Lordstown OH", "Canton OH", "Bluffton IN", "Wisconsin Rapids WI", "Shelbyville KY", "Franklin KY", "Brampton ON"],
+      "ownership": "Private (Giampaolo family + Rio Tinto minority)"
+    },
+    "real_alloy": {
+      "name": "Real Alloy (Recycling Holdings International)",
+      "url": "https://www.realalloy.com",
+      "facilities": ["12 US facilities across OH, IL, IN, MI, AL, AZ, OK, ID, KY, TN, WV, PA"],
+      "ownership": "Private equity (American Securities)"
+    },
+    "aluminum_dynamics": {
+      "name": "Aluminum Dynamics LLC (Steel Dynamics subsidiary)",
+      "url": "https://www.steeldynamics.com",
+      "facilities": ["Columbus MS"],
+      "sec_filings": "NASDAQ: STLD (parent company)",
+      "status": "Under construction, operational mid-2025"
+    }
+  },
+  "trade_publications": {
+    "light_metal_age": {
+      "name": "Light Metal Age Magazine",
+      "url": "https://www.lightmetalage.com",
+      "coverage": "Facility reports, capacity updates, industry news (2016-2025)"
+    },
+    "fastmarkets": {
+      "name": "Fastmarkets",
+      "url": "https://www.fastmarkets.com",
+      "coverage": "Aluminum pricing, market intelligence, trade flows"
+    },
+    "platts": {
+      "name": "S&P Global Platts",
+      "url": "https://www.spglobal.com/commodityinsights",
+      "coverage": "Aluminum market reporting, pricing assessments"
+    },
+    "recycling_today": {
+      "name": "Recycling Today - Secondary Aluminum Producers Directory",
+      "vintage": "2015",
+      "coverage": "Secondary smelter facility directory"
+    }
+  },
+  "government_sources": {
+    "epa_frs": {
+      "name": "EPA Facility Registry System",
+      "url": "https://www.epa.gov/frs",
+      "naics_codes": ["331313", "331314", "331315", "331318"],
+      "coverage": "Environmental compliance, facility locations, permits"
+    },
+    "doe_grants": {
+      "name": "DOE Office of Clean Energy Demonstrations",
+      "url": "https://www.energy.gov/oced",
+      "coverage": "Century Green Aluminum $500M grant, Constellium $75M grant, Real Alloy $67M grant"
+    },
+    "dod_grants": {
+      "name": "Department of Defense - Defense Production Act",
+      "coverage": "Constellium Muscle Shoals $23M grant for casting capacity expansion"
+    }
+  },
+  "facility_database": {
+    "source_file": "market_intelligence/supply_landscape/us_aluminum_facilities.csv",
+    "record_count": 68,
+    "vintage": "2026-02",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "notes": "Comprehensive facility database covering primary smelters, integrated mills, rolling mills, secondary smelters, and billet casters"
+  }
+}

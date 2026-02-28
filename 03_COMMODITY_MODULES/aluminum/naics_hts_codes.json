@@ -1,0 +1,92 @@
+{
+  "naics_codes": {
+    "primary_production": {
+      "331313": "Alumina Refining and Primary Aluminum Production"
+    },
+    "secondary_production": {
+      "331314": "Secondary Smelting and Alloying of Aluminum"
+    },
+    "rolling_drawing": {
+      "331315": "Aluminum Sheet, Plate, and Foil Manufacturing",
+      "331318": "Other Aluminum Rolling, Drawing, and Extruding"
+    },
+    "foundries": {
+      "331524": "Aluminum Foundries (except Die-Casting)",
+      "331523": "Nonferrous Metal Die-Casting Foundries"
+    },
+    "end_users_automotive": {
+      "336111": "Automobile Manufacturing",
+      "336112": "Light Truck and Utility Vehicle Manufacturing",
+      "336370": "Motor Vehicle Metal Stamping"
+    },
+    "end_users_packaging": {
+      "332439": "Other Metal Container Manufacturing"
+    },
+    "end_users_aerospace": {
+      "336411": "Aircraft Manufacturing",
+      "336412": "Aircraft Engine and Engine Parts Manufacturing"
+    },
+    "end_users_construction": {
+      "332321": "Metal Window and Door Manufacturing",
+      "332322": "Sheet Metal Work Manufacturing"
+    }
+  },
+  "hts_codes": {
+    "unwrought_aluminum": {
+      "7601.10": "Aluminum, not alloyed, unwrought",
+      "7601.20": "Aluminum alloys, unwrought"
+    },
+    "aluminum_waste_scrap": {
+      "7602.00": "Aluminum waste and scrap"
+    },
+    "aluminum_powders_flakes": {
+      "7603.10": "Aluminum powders of non-lamellar structure",
+      "7603.20": "Aluminum powders of lamellar structure; flakes"
+    },
+    "aluminum_bars_rods_profiles": {
+      "7604.10": "Aluminum, not alloyed, bars, rods and profiles",
+      "7604.21": "Aluminum alloy, hollow profiles",
+      "7604.29": "Aluminum alloy, other bars, rods and profiles"
+    },
+    "aluminum_wire": {
+      "7605.11": "Aluminum, not alloyed, wire, maximum cross-sectional dimension >7mm",
+      "7605.19": "Aluminum, not alloyed, wire, other",
+      "7605.21": "Aluminum alloy, wire, maximum cross-sectional dimension >7mm",
+      "7605.29": "Aluminum alloy, wire, other"
+    },
+    "aluminum_plate_sheet_strip": {
+      "7606.11": "Aluminum, not alloyed, rectangular plates, sheets and strip, thickness >0.2mm",
+      "7606.12": "Aluminum alloy, rectangular plates, sheets and strip, thickness >0.2mm",
+      "7606.91": "Aluminum, not alloyed, other plates, sheets and strip, thickness >0.2mm",
+      "7606.92": "Aluminum alloy, other plates, sheets and strip, thickness >0.2mm"
+    },
+    "aluminum_foil": {
+      "7607.11": "Aluminum, not alloyed, foil, thickness ≤0.2mm, not backed",
+      "7607.19": "Aluminum alloy, foil, thickness ≤0.2mm, not backed",
+      "7607.20": "Aluminum foil, thickness ≤0.2mm, backed"
+    },
+    "aluminum_tubes_pipes": {
+      "7608.10": "Aluminum, not alloyed, tubes and pipes",
+      "7608.20": "Aluminum alloy, tubes and pipes"
+    },
+    "aluminum_tube_pipe_fittings": {
+      "7609.00": "Aluminum tube or pipe fittings"
+    }
+  },
+  "alloy_series": {
+    "1xxx": "99%+ pure aluminum (electrical conductor, foil stock)",
+    "2xxx": "Aluminum-copper alloys (aerospace plate, high strength)",
+    "3xxx": "Aluminum-manganese alloys (beverage can bodies, general sheet)",
+    "4xxx": "Aluminum-silicon alloys (brazing sheet, welding wire)",
+    "5xxx": "Aluminum-magnesium alloys (beverage can ends, automotive sheet, marine)",
+    "6xxx": "Aluminum-magnesium-silicon alloys (extrusions, structural, automotive)",
+    "7xxx": "Aluminum-zinc alloys (aerospace plate, high strength)",
+    "8xxx": "Aluminum-lithium and other alloys (aerospace, specialty)"
+  },
+  "section_232_tariffs": {
+    "base_rate": "10%",
+    "russia_rate": "200% (imposed 2024)",
+    "exempt_countries": ["Canada", "Mexico (USMCA)"],
+    "notes": "Section 232 tariffs imposed March 2018 on aluminum imports for national security reasons"
+  }
+}

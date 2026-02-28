@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Gulf Cement Market Report - February 2026</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calibri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        /* Letter-size optimized layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Inter', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+        }
+
+        .container {
+            width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.15);
+        }
+
+        .page {
+            width: 7.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            min-height: 10in;
+            background: white;
+        }
+
+        /* Header Design */
+        .header {
+            position: relative;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
+            color: white;
+            padding: 30px 30px 25px 30px;
+            margin: -0.5in -0.5in 25px -0.5in;
+            border-radius: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .header-logo {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 48px;
+            opacity: 0.9;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .main-title {
+            font-size: 26pt;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 13pt;
+            font-weight: 400;
+            opacity: 0.95;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .header-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 9pt;
+        }
+
+        .header-date {
+            font-weight: 600;
+        }
+
+        .header-source {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Executive Summary Styling */
+        .executive-summary {
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f7fb 100%);
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(52, 152, 219, 0.15);
+        }
+
+        .executive-summary h1 {
+            color: #2c3e50;
+            font-size: 16pt;
+            margin: 0 0 15px 0;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+
+        /* Key Metrics Cards */
+        .key-metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #e1e8ed;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+
+        .metric-value {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #e74c3c;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .metric-label {
+            font-size: 8.5pt;
+            color: #7f8c8d;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        /* Section Headers */
+        h1 {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #3498db;
+            background: linear-gradient(to right, rgba(52, 152, 219, 0.08), transparent);
+            padding-left: 12px;
+        }
+
+        h2 {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #34495e;
+            margin: 22px 0 12px 0;
+            border-left: 4px solid #e74c3c;
+            padding-left: 12px;
+        }
+
+        h3 {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #34495e;
+            margin: 18px 0 10px 0;
+        }
+
+        /* Charts */
+        .chart-container {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+            padding: 18px;
+            background: linear-gradient(135deg, #fafbfc 0%, #ffffff 100%);
+            border-radius: 12px;
+            border: 1px solid #e1e8ed;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .chart-small {
+            height: 250px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+            font-size: 9pt;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        th {
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #e3f2fd;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Highlight Boxes */
+        .highlight {
+            background: linear-gradient(135deg, #fff9e6 0%, #fffbf0 100%);
+            padding: 15px;
+            border-left: 5px solid #f39c12;
+            margin: 18px 0;
+            border-radius: 8px;
+            font-size: 9.5pt;
+            box-shadow: 0 3px 10px rgba(243, 156, 18, 0.15);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #e8f8f5 0%, #f0faf7 100%);
+            padding: 15px;
+            border-left: 5px solid #27ae60;
+            margin: 18px 0;
+            border-radius: 8px;
+            font-size: 9.5pt;
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.15);
+        }
+
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 18px 0;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+
+        p {
+            margin: 10px 0;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px solid #ecf0f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 8.5pt;
+            color: #7f8c8d;
+        }
+
+        .footer-logo {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        /* Page Break for Printing */
+        .page-break {
+            page-break-before: always;
+            margin-top: 0;
+        }
+
+        /* Print Optimizations */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 100%;
+                box-shadow: none;
+            }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                padding: 0.5in;
+            }
+
+            .chart-container {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                height: 250px;
+            }
+
+            .executive-summary,
+            .highlight,
+            .info-box,
+            table {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            h1, h2, h3 {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+        }
+
+        @page {
+            size: letter;
+            margin: 0.5in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-logo">⚓</div>
+                <h1 class="main-title">US Gulf Cement Market Report</h1>
+                <div class="subtitle">Monthly Market Intelligence & Strategic Analysis</div>
+                <div class="header-meta">
+                    <div class="header-date">February 2026</div>
+                    <div class="header-source">Takoradi Automations LLC | OceanDatum.ai</div>
+                </div>
+            </div>
+
+            <!-- Executive Summary -->
+            <div class="executive-summary">
+                <h1>Executive Summary</h1>
+                <p><strong>The US Gulf Coast cement market enters February 2026 with cautious optimism as tariff structures stabilize, infrastructure spending accelerates, and supply chain dynamics continue to favor strategic import terminal operators.</strong></p>
+
+                <div class="key-metrics">
+                    <div class="metric-card">
+                        <div class="metric-value">12.5 MT</div>
+                        <div class="metric-label">US Cement Imports (2024)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$2.31T</div>
+                        <div class="metric-label">US Construction Spending (2026E)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">20%</div>
+                        <div class="metric-label">Houston Import Market Share</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">25.6%</div>
+                        <div class="metric-label">Turkey Import Share</div>
+                    </div>
+                </div>
+
+                <p><strong>Key Market Developments:</strong></p>
+                <ul>
+                    <li><strong>Import Growth Trajectory:</strong> US cement imports stabilized at 12.5 MT in 2024, representing 12.8% of domestic consumption with Houston maintaining its dominant 20% share of import volumes</li>
+                    <li><strong>Trade Flow Dynamics:</strong> Turkey remains the largest import source (3.2 MT, 25.6% share) followed by Canada (2.8 MT, 22.4%), Greece (1.8 MT, 14.4%), and Egypt (1.2 MT, 9.6%)</li>
+                    <li><strong>SCM Market Transition:</strong> Fly ash supply constraints intensifying as coal plant retirements accelerate; calcined clay (LC3) technology advancing toward commercial deployment 2027-2030</li>
+                    <li><strong>Construction Outlook:</strong> Infrastructure Investment and Jobs Act (IIJA) spending approaching peak phase (2025-2027) with $350B cement-relevant projects in pipeline</li>
+                    <li><strong>Regional Demand Drivers:</strong> Texas manufacturing expansion (+4.5% growth), Florida population migration (+3.8%), Southeast auto/battery plants (+3.2%)</li>
+                </ul>
+            </div>
+
+            <!-- Import Infrastructure -->
+            <h1>Gulf Coast Import Infrastructure</h1>
+
+            <div class="two-column">
+                <div>
+                    <h2>Houston Ship Channel</h2>
+                    <p>Houston processes approximately <strong>5.2 million tons annually</strong> (20% of total US cement imports), making it the largest cement import gateway in North America.</p>
+
+                    <p><strong>Major Terminal Operators:</strong></p>
+                    <ul>
+                        <li><strong>SESCO Cement:</strong> 150,000-ton storage capacity, 2.2 MT annual throughput, serving Egyptian (Royal El Minya) and Turkish (Nuh Cement) supply chains</li>
+                        <li><strong>CEMEX Galena Park:</strong> 120,000-ton capacity, integrated with CEMEX global supply network</li>
+                        <li><strong>Argos USA/Summit Materials:</strong> 80,000-ton capacity, Colombian and Turkish imports</li>
+                        <li><strong>Buzzi Unicem:</strong> Multi-modal distribution supporting Houston grinding operations</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Louisiana Port System</h2>
+                    <p><strong>Port of New Orleans:</strong> Holcim, Argos, and Buzzi terminals collectively handle ~4.7 million tons (18% of US imports) with strategic Mississippi River barge redistribution capabilities.</p>
+
+                    <p><strong>Lake Charles:</strong> Handles ~780,000 tons (3% of imports), serving Louisiana and Eastern Texas markets with shorter transit times from Caribbean/South American sources.</p>
+
+                    <div class="info-box">
+                        <strong>Strategic Advantage:</strong> Gulf Coast terminals benefit from favorable tariff structure (0-10% for Turkey/Egypt vs higher rates for Asian sources), shorter transit times from Mediterranean, and integrated barge/rail distribution networks.
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container chart-small">
+                <canvas id="importsByPortChart"></canvas>
+            </div>
+
+            <!-- Market Dynamics -->
+            <h1>Import Trade Flow Analysis</h1>
+
+            <h2>Current Import Origins & Tariff Structure</h2>
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Volume (MT)</th>
+                    <th>Share</th>
+                    <th>Tariff Rate</th>
+                    <th>Avg CIF Price</th>
+                    <th>Primary Gulf Ports</th>
+                </tr>
+                <tr>
+                    <td>Turkey</td>
+                    <td>3.2</td>
+                    <td>25.6%</td>
+                    <td>0%</td>
+                    <td>$68/ton</td>
+                    <td>Houston, New Orleans, Tampa</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>2.8</td>
+                    <td>22.4%</td>
+                    <td>0% (USMCA)</td>
+                    <td>$95/ton</td>
+                    <td>Great Lakes (limited Gulf)</td>
+                </tr>
+                <tr>
+                    <td>Greece</td>
+                    <td>1.8</td>
+                    <td>14.4%</td>
+                    <td>0%</td>
+                    <td>$70/ton</td>
+                    <td>Norfolk, Jacksonville, Tampa</td>
+                </tr>
+                <tr>
+                    <td>Egypt</td>
+                    <td>1.2</td>
+                    <td>9.6%</td>
+                    <td>0%</td>
+                    <td>$66/ton</td>
+                    <td>Houston, New Orleans</td>
+                </tr>
+                <tr>
+                    <td>Vietnam</td>
+                    <td>0.9</td>
+                    <td>7.2%</td>
+                    <td>0%</td>
+                    <td>$65/ton</td>
+                    <td>Long Beach, LA (via Panama)</td>
+                </tr>
+                <tr>
+                    <td>Colombia</td>
+                    <td>0.6</td>
+                    <td>4.8%</td>
+                    <td>0% (FTA)</td>
+                    <td>$65/ton</td>
+                    <td>Houston, New Orleans, Tampa</td>
+                </tr>
+            </table>
+
+            <div class="highlight">
+                <strong>Trade Policy Environment:</strong> Current MFN tariff rate on Portland cement (HTS 2523.29) remains at 0% for all origins. No active antidumping or countervailing duty orders. Historic Mexico AD case (1990-2006) precedent demonstrates US industry capacity to pursue trade remedies if import surges threaten domestic production.
+            </div>
+
+            <div class="chart-container chart-small">
+                <canvas id="importTrendsChart"></canvas>
+            </div>
+
+            <!-- New Page -->
+            <div class="page-break"></div>
+
+            <!-- SCM Market -->
+            <h1>Supplementary Cementitious Materials (SCM) Market</h1>
+
+            <h2>Market Overview</h2>
+            <p>The US SCM market represents <strong>$4.5 billion in annual value</strong> with 25 million tons consumed in 2024, accounting for approximately 20% of total cementitious content in concrete. The market is undergoing fundamental restructuring as traditional byproduct sources (fly ash, slag cement) face long-term supply constraints.</p>
+
+            <div class="two-column">
+                <div>
+                    <h3>Fly Ash Supply Crisis</h3>
+                    <ul>
+                        <li><strong>Declining Production:</strong> Fresh fly ash supply declining 5-8% annually as coal-fired power plants retire</li>
+                        <li><strong>Price Pressure:</strong> Average fly ash prices rising 8-12% annually ($40-75/ton range)</li>
+                        <li><strong>Gulf Sources:</strong> Texas (W.A. Parish, Limestone, Martin Lake), Louisiana (Big Cajun II, Rodemacher) remain active but capacity declining</li>
+                        <li><strong>Harvested Ash:</strong> Eco Material Technologies and others expanding reclamation from legacy ash ponds, but quality variability concerns persist</li>
+                    </ul>
+
+                    <h3>Slag Cement Supply Headwinds</h3>
+                    <ul>
+                        <li><strong>Blast Furnace Closures:</strong> US steelmaking shifting to EAF (electric arc furnace) technology which generates no GGBFS</li>
+                        <li><strong>Texas/Gulf Limitation:</strong> No major blast furnaces in Texas; Louisiana's Nucor Convent produces limited volumes</li>
+                        <li><strong>Import Dependency:</strong> Growing reliance on Great Lakes slag and imports from Brazil, Japan, Turkey</li>
+                        <li><strong>Pricing:</strong> $65-100/ton range, increasing 5-8% annually</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="chart-container" style="height: 320px; margin-top: 0;">
+                        <canvas id="scmMarketChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Alternative SCM Development</h2>
+            <table>
+                <tr>
+                    <th>Material Type</th>
+                    <th>Status</th>
+                    <th>Gulf Availability</th>
+                    <th>Price Range</th>
+                    <th>Timeline</th>
+                </tr>
+                <tr>
+                    <td>Calcined Clay (LC3)</td>
+                    <td>Emerging</td>
+                    <td>TX/LA clay reserves abundant</td>
+                    <td>$100-250/ton</td>
+                    <td>Commercial 2027-2030</td>
+                </tr>
+                <tr>
+                    <td>Natural Pozzolans</td>
+                    <td>Growing</td>
+                    <td>New Mexico sources</td>
+                    <td>$30-60/ton</td>
+                    <td>Available now</td>
+                </tr>
+                <tr>
+                    <td>Ground Glass Pozzolan</td>
+                    <td>Emerging</td>
+                    <td>Urban recycling streams</td>
+                    <td>$50-90/ton</td>
+                    <td>Expanding (ASTM C1866)</td>
+                </tr>
+                <tr>
+                    <td>Limestone Filler (Type IL)</td>
+                    <td>Commercial</td>
+                    <td>Abundant local sources</td>
+                    <td>$15-30/ton</td>
+                    <td>Widely adopted</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <strong>LC3 Technology Outlook:</strong> Holcim leading US commercialization of Limestone Calcined Clay Cement (LC3) technology, which achieves 40% CO2 reduction vs ordinary Portland cement. Texas and Louisiana's abundant kaolinitic clay reserves position Gulf region favorably for LC3 production. Commercial deployment expected 2027-2030 timeframe with calcination facilities co-located at existing cement plants.
+            </div>
+
+            <!-- Construction Outlook -->
+            <h1>Construction Demand & Economic Outlook</h1>
+
+            <h2>Infrastructure Investment & Jobs Act (IIJA) Impact</h2>
+            <p>Federal infrastructure spending entering peak deployment phase with <strong>$350 billion in cement-relevant projects</strong> across highways, bridges, airports, and water infrastructure through 2031. FY2026-2027 represents peak spending window.</p>
+
+            <div class="two-column">
+                <div>
+                    <h3>Key Demand Drivers</h3>
+                    <ul>
+                        <li><strong>Highway/Bridge:</strong> $65B annual, high cement intensity (4,500-12,000 tons/mile)</li>
+                        <li><strong>Manufacturing Reshoring:</strong> CHIPS Act semiconductor fabs (TSMC Arizona, Intel Ohio), EV battery plants across Southeast</li>
+                        <li><strong>Data Centers:</strong> AI infrastructure buildout driving 42% growth in data center construction (200 tons cement per 10K sqft)</li>
+                        <li><strong>Residential Construction:</strong> 1.45M housing permits (2025E), ~25 tons cement per unit</li>
+                        <li><strong>Energy Infrastructure:</strong> Gulf petrochemical expansion, LNG export terminals</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Regional Growth Leaders</h3>
+                    <ul>
+                        <li><strong>Texas:</strong> +4.5% annual growth, 12 MT cement demand, driven by population (+400K/year), data centers, manufacturing</li>
+                        <li><strong>Florida:</strong> +3.8% growth, 7 MT demand, population migration and hurricane rebuilding (Ian, Milton)</li>
+                        <li><strong>Southeast:</strong> +3.2% growth, 14 MT demand, auto/battery reshoring (GA, NC, SC, TN)</li>
+                        <li><strong>Southwest:</strong> +3.5% growth, 6 MT demand, semiconductor fabs and data centers (AZ, NM)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="demandForecastChart"></canvas>
+            </div>
+
+            <!-- New Page -->
+            <div class="page-break"></div>
+
+            <!-- Pricing Analysis -->
+            <h1>Pricing Trends & Cost Dynamics</h1>
+
+            <h2>Current Pricing Environment (February 2026)</h2>
+            <div class="two-column">
+                <div>
+                    <h3>Portland Cement</h3>
+                    <ul>
+                        <li><strong>Gulf Coast Avg:</strong> $145/ton (up from $138/ton Q3 2025)</li>
+                        <li><strong>Import CIF:</strong> $65-95/ton depending on origin</li>
+                        <li><strong>Domestic Production:</strong> $110-130/ton ex-plant</li>
+                        <li><strong>Trend:</strong> +3-5% annual increases driven by energy costs, carbon compliance, supply tightness</li>
+                    </ul>
+
+                    <h3>Ready-Mix Concrete</h3>
+                    <ul>
+                        <li><strong>Gulf Coast Avg:</strong> $182/cubic yard</li>
+                        <li><strong>Houston Metro:</strong> $185-195/yd³</li>
+                        <li><strong>Trend:</strong> +4-6% annual, tracking cement plus aggregates/labor inflation</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Cost Drivers</h3>
+                    <ul>
+                        <li><strong>Energy:</strong> Natural gas price volatility impacting kiln operations ($3-5/MMBtu range)</li>
+                        <li><strong>Freight:</strong> Bulk shipping costs moderating from 2024 peaks but remaining elevated vs pre-2020</li>
+                        <li><strong>Carbon Compliance:</strong> State-level LCFS programs (CA, WA, OR) increasing cement carbon costs</li>
+                        <li><strong>Labor:</strong> Construction wage inflation +5-7% in Gulf states</li>
+                        <li><strong>Logistics:</strong> Truck driver shortages constraining distribution capacity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="priceForecastChart"></canvas>
+            </div>
+
+            <div class="highlight">
+                <strong>Price Outlook 2026-2027:</strong> Portland cement prices projected to increase 3-5% annually through 2027, driven by: (1) energy cost pass-through, (2) carbon compliance costs, (3) domestic capacity discipline, (4) freight cost persistence. Import competition provides pricing ceiling but does not eliminate upward trajectory. Ready-mix concrete expected to track cement increases plus 1-2% for aggregates/labor.
+            </div>
+
+            <!-- Strategic Analysis -->
+            <h1>Strategic Market Positioning</h1>
+
+            <h2>Competitive Landscape</h2>
+
+            <div class="two-column">
+                <div>
+                    <h3>Major Import Terminal Operators</h3>
+                    <ul>
+                        <li><strong>SESCO Cement:</strong> Largest independent Houston terminal, Egyptian/Turkish supply chains, 2.2 MT throughput</li>
+                        <li><strong>Holcim US:</strong> Integrated import/domestic production, New Orleans and multi-port network</li>
+                        <li><strong>CEMEX:</strong> Vertically integrated Mexico/global supply, Houston and Tampa terminals</li>
+                        <li><strong>Titan America (Greece):</strong> Vertically integrated Greek supply, Norfolk/Jacksonville terminals plus Roanoke grinding</li>
+                        <li><strong>Argos/Summit Materials:</strong> Colombian supply integration post-acquisition</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Domestic Producers (Gulf Region)</h3>
+                    <ul>
+                        <li><strong>Holcim:</strong> Ste. Genevieve MO (6 MT capacity)</li>
+                        <li><strong>Buzzi Unicem:</strong> Festus MO, Maryneal TX grinding</li>
+                        <li><strong>Lehigh Hanson:</strong> Mason City IA, Union Bridge MD</li>
+                        <li><strong>CalPortland:</strong> Oro Grande CA (West Coast supply to Gulf via rail)</li>
+                        <li><strong>Eagle Materials:</strong> Sugar Creek MO, plus Kosmos import terminals</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Key Success Factors for Terminal Operators</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0;">
+                <div style="background: linear-gradient(135deg, #e8f4f8, #f0f7fb); padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                    <h3 style="margin-top: 0;">Supply Chain Diversification</h3>
+                    <p style="margin-bottom: 0;">Multi-origin sourcing reduces geopolitical/supply risk. SESCO's Egypt+Turkey strategy exemplifies effective diversification.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #e8f4f8, #f0f7fb); padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                    <h3 style="margin-top: 0;">Logistics Infrastructure</h3>
+                    <p style="margin-bottom: 0;">Multi-modal capability (vessel + rail + barge + truck) enables broader market reach and customer flexibility.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #e8f4f8, #f0f7fb); padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                    <h3 style="margin-top: 0;">Storage Capacity</h3>
+                    <p style="margin-bottom: 0;">Large storage (100K+ tons) enables vessel economics and supply buffer during peak demand or supply disruptions.</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #e8f4f8, #f0f7fb); padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                    <h3 style="margin-top: 0;">SCM Handling Capability</h3>
+                    <p style="margin-bottom: 0;">Adding slag cement or alternative SCM handling positions terminals for market transition as demand for blended products grows.</p>
+                </div>
+            </div>
+
+            <!-- Recommendations -->
+            <h1>Strategic Recommendations</h1>
+
+            <div class="executive-summary" style="background: linear-gradient(135deg, #fff9e6, #fffbf0); border-left: 5px solid #f39c12;">
+                <h2 style="margin-top: 0; border: none;">For Import Terminal Operators</h2>
+                <ul>
+                    <li><strong>Leverage Current Tariff Environment:</strong> Turkey and Egypt's 0% tariff rates provide competitive advantage vs potential future trade actions on Vietnam/China. Strengthen supplier relationships in favorable-tariff jurisdictions.</li>
+                    <li><strong>Invest in SCM Infrastructure:</strong> Add slag cement grinding or alternative SCM handling capabilities to capture growing blended cement demand and diversify revenue streams.</li>
+                    <li><strong>Expand Storage Capacity:</strong> Larger inventory buffers enable vessel optimization, provide supply security during disruptions, and support customer service improvements.</li>
+                    <li><strong>Develop Rail/Barge Distribution:</strong> Multi-modal logistics extends market reach beyond truck radius and improves cost competitiveness vs domestic production.</li>
+                    <li><strong>Monitor Trade Policy:</strong> Stay engaged with Section 301, antidumping case developments. Historic Mexico AD case (1990-2006) shows US industry willingness to pursue trade remedies.</li>
+                </ul>
+            </div>
+
+            <div class="executive-summary" style="background: linear-gradient(135deg, #e8f8f5, #f0faf7); border-left: 5px solid #27ae60;">
+                <h2 style="margin-top: 0; border: none;">For Cement Consumers</h2>
+                <ul>
+                    <li><strong>Secure Long-Term Supply Agreements:</strong> Market tightness and price trends favor early commitment to reliable supply at predictable pricing.</li>
+                    <li><strong>Optimize SCM Usage:</strong> Evaluate fly ash alternatives (Type IL cement, natural pozzolans, ground glass) as traditional fly ash becomes scarce. Work with suppliers on mix design optimization.</li>
+                    <li><strong>Geographic Diversification:</strong> Multi-supplier strategy reduces dependence on single source and provides leverage during negotiations.</li>
+                    <li><strong>Monitor IIJA Project Timing:</strong> Federal infrastructure spending peak (2026-2027) may create regional supply tightness. Plan procurement ahead of major local projects.</li>
+                    <li><strong>Sustainability Positioning:</strong> As carbon regulations expand (state LCFS programs, potential federal CBAM), low-carbon cement sourcing provides competitive differentiation for green building projects.</li>
+                </ul>
+            </div>
+
+            <!-- Conclusion -->
+            <h1>Market Outlook Summary</h1>
+            <p>The US Gulf Coast cement market is well-positioned for sustained growth through 2027, supported by robust infrastructure investment, manufacturing reshoring, and population-driven residential construction. While challenges persist—fly ash supply constraints, potential trade policy changes, energy cost volatility—the market fundamentals remain constructive.</p>
+
+            <p><strong>Import terminal operators</strong> benefit from favorable tariff structures for Mediterranean sources, strategic Houston dominance, and integrated multi-modal distribution networks. The transition from traditional SCM sources to alternatives (LC3, natural pozzolans, ground glass) presents both challenge and opportunity for operators willing to invest in new handling capabilities.</p>
+
+            <p><strong>Cement consumers</strong> face a rising price environment but benefit from adequate supply availability and competitive dynamics among import terminals. Proactive supply planning, SCM optimization, and engagement with sustainable sourcing initiatives position consumers favorably for the evolving market landscape.</p>
+
+            <p>The February 2026 outlook: <strong>Steady demand growth (+2-3% annually), moderate price increases (+3-5%), continued import competitiveness, and accelerating SCM market transformation. Gulf Coast infrastructure advantages and favorable trade positioning sustain the region's cement import gateway status.</strong></p>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-logo">Takoradi Automations LLC</div>
+                <div>OceanDatum.ai Maritime Intelligence</div>
+                <div>February 2026</div>
+                <div>Page 1 of 1</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Professional chart configuration
+        const chartConfig = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        font: {
+                            size: 11,
+                            family: 'Calibri, Inter, sans-serif'
+                        },
+                        padding: 12,
+                        usePointStyle: true
+                    }
+                },
+                title: {
+                    display: true,
+                    font: {
+                        size: 13,
+                        weight: 'bold',
+                        family: 'Calibri, Inter, sans-serif'
+                    },
+                    padding: 18,
+                    color: '#2c3e50'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.05)'
+                    },
+                    ticks: {
+                        font: {
+                            size: 10
+                        }
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        font: {
+                            size: 10
+                        }
+                    }
+                }
+            }
+        };
+
+        // 1. Imports by Port Chart
+        const ctx1 = document.getElementById('importsByPortChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                labels: ['Houston (20%)', 'Lower Mississippi (18%)', 'Lake Charles (3%)', 'Other US Ports (59%)'],
+                datasets: [{
+                    data: [20, 18, 3, 59],
+                    backgroundColor: [
+                        '#e74c3c',
+                        '#3498db',
+                        '#f39c12',
+                        '#95a5a6'
+                    ],
+                    borderWidth: 3,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        ...chartConfig.plugins.title,
+                        text: 'US Cement Import Share by Port Region (2024)'
+                    }
+                }
+            }
+        });
+
+        // 2. Import Trends Chart
+        const ctx2 = document.getElementById('importTrendsChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024', '2025E', '2026F'],
+                datasets: [{
+                    label: 'Total US Imports (MT)',
+                    data: [10.8, 11.5, 12.1, 12.3, 12.5, 12.8, 13.1],
+                    borderColor: '#2980b9',
+                    backgroundColor: 'rgba(41, 128, 185, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4
+                }, {
+                    label: 'Houston Imports (MT)',
+                    data: [2.1, 2.3, 2.4, 2.5, 2.5, 2.6, 2.6],
+                    borderColor: '#e74c3c',
+                    backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        ...chartConfig.plugins.title,
+                        text: 'US Cement Import Volume Trends (Million Tons)'
+                    }
+                }
+            }
+        });
+
+        // 3. SCM Market Share Chart
+        const ctx3 = document.getElementById('scmMarketChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: [
+                    'Fly Ash (54%)',
+                    'Slag Cement (20%)',
+                    'Limestone Filler (12%)',
+                    'Natural Pozzolans (10%)',
+                    'Calcined Clay (2%)',
+                    'Other (2%)'
+                ],
+                datasets: [{
+                    data: [54, 20, 12, 10, 2, 2],
+                    backgroundColor: [
+                        '#3498db',
+                        '#e74c3c',
+                        '#95a5a6',
+                        '#27ae60',
+                        '#f39c12',
+                        '#9b59b6'
+                    ],
+                    borderColor: '#ffffff',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        ...chartConfig.plugins.title,
+                        text: 'US SCM Market Share by Material (2024)'
+                    }
+                }
+            }
+        });
+
+        // 4. Demand Forecast Chart
+        const ctx4 = document.getElementById('demandForecastChart').getContext('2d');
+        new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: ['2024', '2025E', '2026F', '2027F', '2028F'],
+                datasets: [{
+                    label: 'Residential',
+                    data: [38, 39, 40, 41, 42],
+                    backgroundColor: '#3498db'
+                }, {
+                    label: 'Non-Residential',
+                    data: [33, 34, 36, 37, 38],
+                    backgroundColor: '#e74c3c'
+                }, {
+                    label: 'Infrastructure',
+                    data: [32, 35, 37, 38, 39],
+                    backgroundColor: '#27ae60'
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        ...chartConfig.plugins.title,
+                        text: 'US Cement Consumption Forecast by End Use (Million Tons)'
+                    }
+                },
+                scales: {
+                    ...chartConfig.scales,
+                    x: {
+                        stacked: true,
+                        grid: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 5. Price Forecast Chart
+        const ctx5 = document.getElementById('priceForecastChart').getContext('2d');
+        new Chart(ctx5, {
+            type: 'line',
+            data: {
+                labels: ['Q1 2025', 'Q2 2025', 'Q3 2025', 'Q4 2025', 'Q1 2026', 'Q2 2026', 'Q3 2026E', 'Q4 2026E'],
+                datasets: [{
+                    label: 'Portland Cement ($/ton)',
+                    data: [132, 135, 138, 142, 145, 148, 151, 154],
+                    borderColor: '#2980b9',
+                    backgroundColor: 'rgba(41, 128, 185, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true
+                }, {
+                    label: 'Ready-Mix Concrete ($/yd³)',
+                    data: [168, 172, 177, 182, 186, 190, 194, 198],
+                    borderColor: '#e74c3c',
+                    backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    title: {
+                        ...chartConfig.plugins.title,
+                        text: 'Gulf Coast Cement & Concrete Price Trends'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

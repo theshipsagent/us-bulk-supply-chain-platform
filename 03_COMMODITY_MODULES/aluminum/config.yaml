@@ -1,0 +1,156 @@
+module:
+  name: "Aluminum Commodity Module"
+  commodity: "aluminum"
+  version: "1.0.0"
+  last_updated: "2026-02-24"
+  status: "production_landscape_complete"
+
+scope:
+  facilities: 68
+  countries: ["US", "Canada"]
+  facility_types:
+    - primary_smelter
+    - integrated_mill
+    - rolling_mill
+    - secondary_smelter
+    - billet_caster
+
+capacity_summary:
+  primary_smelters:
+    operating: 848  # kt/year
+    idled: 515      # kt/year
+    planned: 500    # kt/year (Century Green Aluminum)
+  integrated_mills:
+    operating: 3830   # kt/year
+    construction: 1250  # kt/year (Novelis Bay Minette + Aluminum Dynamics Columbus)
+  rolling_mills: 1480    # kt/year
+  secondary_smelters: 1005  # kt/year
+  billet_casters: 888    # kt/year
+
+naics_codes:
+  primary:
+    - "331313"  # Alumina Refining and Primary Aluminum Production
+  secondary:
+    - "331314"  # Secondary Smelting and Alloying of Aluminum
+  rolling:
+    - "331315"  # Aluminum Sheet, Plate, and Foil Manufacturing
+    - "331318"  # Other Aluminum Rolling, Drawing, and Extruding
+
+hts_codes:
+  unwrought:
+    - "7601.10"  # Aluminum, not alloyed, unwrought
+    - "7601.20"  # Aluminum alloys, unwrought
+  scrap:
+    - "7602.00"  # Aluminum waste and scrap
+  plate_sheet_strip:
+    - "7606.11"  # Aluminum, not alloyed, rectangular plates, sheets and strip
+    - "7606.12"  # Aluminum alloy, rectangular plates, sheets and strip
+
+trade:
+  section_232:
+    base_tariff: "10%"
+    russia_tariff: "200%"
+    exempt_countries: ["Canada", "Mexico"]
+    effective_date: "2018-03-01"
+  major_import_origins:
+    - country: "Canada"
+      share: "65%"
+      notes: "USMCA exempt from Section 232"
+    - country: "UAE"
+      share: "8%"
+      tariff: "10%"
+    - country: "Russia"
+      share: "<1% (down from 10% in 2017)"
+      tariff: "200%"
+      notes: "Tariff increased 2024 following Ukraine invasion"
+    - country: "Bahrain"
+      share: "4%"
+      tariff: "10%"
+
+end_use_markets:
+  packaging:
+    share: "36%"
+    consumption_kt: 1980
+    products: ["beverage cans", "foil", "food containers"]
+  automotive:
+    share: "23%"
+    consumption_kt: 1265
+    products: ["body panels", "structural", "engine blocks"]
+  building_construction:
+    share: "14%"
+    consumption_kt: 770
+    products: ["windows", "doors", "siding", "roofing"]
+  electrical:
+    share: "9%"
+    consumption_kt: 495
+    products: ["transmission wire", "bus bars"]
+  aerospace_defense:
+    share: "8%"
+    consumption_kt: 440
+    products: ["airframe", "structural", "plate"]
+  consumer_industrial:
+    share: "10%"
+    consumption_kt: 550
+    products: ["machinery", "appliances", "equipment"]
+
+data_sources:
+  primary: "market_intelligence/supply_landscape/us_aluminum_facilities.csv"
+  geojson: "market_intelligence/supply_landscape/us_aluminum_facilities.geojson"
+  python_module: "market_intelligence/supply_landscape/us_aluminum_facilities.py"
+  categorized:
+    primary_smelters: "market_intelligence/supply_landscape/primary_smelters.json"
+    integrated_mills: "market_intelligence/supply_landscape/integrated_mills.json"
+    rolling_mills: "market_intelligence/supply_landscape/rolling_mills.json"
+    secondary_smelters: "market_intelligence/supply_landscape/secondary_smelters.json"
+    billet_casters: "market_intelligence/supply_landscape/billet_casters.json"
+
+geographic_clusters:
+  ohio_river_valley:
+    states: ["KY", "IN", "OH", "WV"]
+    facility_count: 30
+    logistics: "Barge access for ingot/scrap imports, finished product distribution"
+  southeast:
+    states: ["AL", "TN", "MS", "GA", "SC"]
+    facility_count: 11
+    notes: "New integrated mills (Novelis Bay Minette, Aluminum Dynamics Columbus)"
+  northeast:
+    states: ["NY", "PA"]
+    facility_count: 7
+    notes: "Legacy Alcoa/Arconic facilities, aerospace plate"
+
+major_producers:
+  - name: "Arconic Corporation"
+    capacity_kt: 1550
+    facilities: 5
+    focus: "Aerospace/automotive sheet and plate"
+  - name: "Novelis (Hindalco)"
+    capacity_kt: 1170
+    facilities: 7
+    focus: "Can stock, automotive body sheet, UBC recycling"
+  - name: "Matalco (Giampaolo/Rio Tinto JV)"
+    capacity_kt: 848
+    facilities: 7
+    focus: "Extrusion billet for construction industry"
+  - name: "Constellium SE"
+    capacity_kt: 700
+    facilities: 3
+    focus: "Can stock, aerospace/defense plate"
+  - name: "Aluminum Dynamics (SDI)"
+    capacity_kt: 650
+    facilities: 1
+    status: "construction"
+    focus: "Can stock, automotive sheet, common alloy sheet"
+
+toolset_integration:
+  epa_frs:
+    query: "NAICS 3313xx"
+    purpose: "Environmental compliance, facility validation"
+  rail_intelligence:
+    scrs_integration: true
+    purpose: "Rail-served facility identification, freight cost modeling"
+  barge_cost_model:
+    waterway_facilities: 9
+    purpose: "Ingot/scrap import costs, finished coil distribution"
+  vessel_intelligence:
+    hts_codes: ["7601"]
+    purpose: "Import manifest analysis, consignee matching"
