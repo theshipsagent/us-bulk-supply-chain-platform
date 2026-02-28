@@ -16,6 +16,7 @@ _EXTRACTOR_MAP: dict[str, tuple[str, str]] = {
     "port": ("report_platform.reports.extractors.port_extractor", "PortExtractor"),
     "vessel": ("report_platform.reports.extractors.vessel_extractor", "VesselExtractor"),
     "commodity": ("report_platform.reports.extractors.commodity_extractor", "CommodityExtractor"),
+    "site_registry": ("report_platform.reports.extractors.site_registry_extractor", "SiteRegistryExtractor"),
 }
 
 

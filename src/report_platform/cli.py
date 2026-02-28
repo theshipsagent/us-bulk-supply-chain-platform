@@ -501,6 +501,175 @@ def facility_search(state: str, naics: str, radius: int,
 
 
 # ---------------------------------------------------------------------------
+# SITE REGISTRY commands (wired to site_master_registry toolset)
+# ---------------------------------------------------------------------------
+@cli.group("site-registry")
+def site_registry():
+    """Unified industrial site master registry — search, export, map."""
+
+
+@site_registry.command("search")
+@click.option("--name", default=None, help="Facility name (partial match).")
+@click.option("--state", default=None, help="Two-letter state code.")
+@click.option("--sector", default=None, help="Commodity sector (steel, cement, etc.).")
+@click.option("--rail", is_flag=True, default=False, help="Only rail-served sites.")
+@click.option("--water", is_flag=True, default=False, help="Only water-access sites.")
+@click.option("--limit", default=25, type=int, help="Max results.")
+def site_registry_search(name, state, sector, rail, water, limit):
+    """Search the master site registry."""
+    db_path = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+               / "data" / "site_master.duckdb")
+    if not db_path.exists():
+        click.echo("Error: site_master.duckdb not found. Run the build pipeline first.")
+        return
+
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    from src.query import SiteRegistryQuery
+    query = SiteRegistryQuery(str(db_path))
+
+    results = query.search(
+        name=name, state=state, sector=sector,
+        rail_served=True if rail else None,
+        water_access=True if water else None,
+        limit=limit,
+    )
+    query.close()
+
+    if not results:
+        click.echo("No sites found.")
+        return
+
+    click.echo(f"\n{'#':<4} {'Name':<42} {'City':<18} {'St':<4} {'Sector':<14} {'Src':<4} {'Flags'}")
+    click.echo("-" * 95)
+    for i, s in enumerate(results, 1):
+        flags = []
+        if s.get("rail_served"):
+            flags.append("R")
+        if s.get("water_access"):
+            flags.append("W")
+        click.echo(
+            f"{i:<4} {str(s['canonical_name'])[:41]:<42} "
+            f"{str(s.get('city', ''))[:17]:<18} "
+            f"{s.get('state', ''):<4} "
+            f"{str(s.get('commodity_sectors', ''))[:13]:<14} "
+            f"{s.get('source_count', 0):<4} "
+            f"{','.join(flags)}"
+        )
+    click.echo(f"\n{len(results)} sites found.")
+
+
+@site_registry.command("summary")
+def site_registry_summary():
+    """Show registry statistics."""
+    db_path = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+               / "data" / "site_master.duckdb")
+    if not db_path.exists():
+        click.echo("Error: site_master.duckdb not found.")
+        return
+
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    from src.query import SiteRegistryQuery
+    query = SiteRegistryQuery(str(db_path))
+    s = query.summary()
+    query.close()
+
+    click.echo("\n" + "=" * 50)
+    click.echo("  Site Master Registry — Summary")
+    click.echo("=" * 50)
+    click.echo(f"  Total sites:       {s['total_sites']:,}")
+    click.echo(f"  Source links:      {s['total_links']:,}")
+    click.echo(f"  States:            {s['states']}")
+    click.echo(f"  Rail served:       {s['rail_served']:,}")
+    click.echo(f"  Water access:      {s['water_access']:,}")
+    click.echo(f"  Multimodal:        {s['multimodal']:,}")
+    click.echo("-" * 50)
+    click.echo("  Sites by sector:")
+    for sector, count in sorted(s["sectors"].items(), key=lambda x: -x[1]):
+        click.echo(f"    {sector:25s}: {count:,}")
+    click.echo("=" * 50 + "\n")
+
+
+@site_registry.command("export")
+@click.option("--format", "fmt", default="csv",
+              type=click.Choice(["csv", "geojson", "json"]),
+              help="Export format.")
+@click.option("--sector", default=None, help="Filter to sector.")
+@click.option("--output", default=None, help="Output file path.")
+def site_registry_export(fmt, sector, output):
+    """Export registry data to CSV, GeoJSON, or JSON."""
+    db_path = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+               / "data" / "site_master.duckdb")
+    if not db_path.exists():
+        click.echo("Error: site_master.duckdb not found.")
+        return
+
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    from src.query import SiteRegistryQuery
+    from src.exporters import export_csv, export_geojson, export_json_summary
+
+    sectors = [sector] if sector else None
+    default_dir = get_project_root() / "02_TOOLSETS" / "site_master_registry" / "data"
+
+    query = SiteRegistryQuery(str(db_path))
+
+    if fmt == "csv":
+        out = output or str(default_dir / "site_master_export.csv")
+        export_csv(query, out, sectors=sectors)
+    elif fmt == "geojson":
+        out = output or str(default_dir / "site_master_export.geojson")
+        export_geojson(query, out, sectors=sectors)
+    elif fmt == "json":
+        out = output or str(default_dir / "site_master_summary.json")
+        export_json_summary(query, out)
+
+    query.close()
+    click.echo(f"Exported to {out}")
+
+
+@site_registry.command("map")
+@click.option("--sector", default=None, help="Filter to sector (comma-separated for multiple).")
+@click.option("--min-sources", default=0, type=int, help="Minimum source count.")
+@click.option("--output", default=None, help="Output HTML file path.")
+@click.option("--open", "open_browser", is_flag=True, help="Open in browser after creating.")
+def site_registry_map(sector, min_sources, output, open_browser):
+    """Generate interactive Folium map of registry sites."""
+    db_path = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+               / "data" / "site_master.duckdb")
+    if not db_path.exists():
+        click.echo("Error: site_master.duckdb not found.")
+        return
+
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    from src.query import SiteRegistryQuery
+    from src.map_builder import build_registry_map
+
+    sectors = [s.strip() for s in sector.split(",")] if sector else None
+    default_out = get_project_root() / "02_TOOLSETS" / "site_master_registry" / "data" / "site_master_map.html"
+    out = output or str(default_out)
+
+    query = SiteRegistryQuery(str(db_path))
+    path = build_registry_map(query, out, sectors=sectors, min_sources=min_sources)
+    query.close()
+
+    click.echo(f"Map saved to {path}")
+    if open_browser:
+        import webbrowser
+        webbrowser.open(f"file://{path.resolve()}")
+
+
+# ---------------------------------------------------------------------------
 # POLICY commands (wired to policy_analysis toolset)
 # ---------------------------------------------------------------------------
 @cli.group()
