@@ -1,7 +1,7 @@
 # CLAUDE.md — US Bulk Supply Chain Reporting Platform
 **Project Root:** `G:\My Drive\LLM\project_master_reporting`
 **Owner:** William S. Davis III (30+ yrs maritime/supply chain consulting)
-**Version:** 1.0.0 | Last Updated: 2026-02-24
+**Version:** 1.1.0 | Last Updated: 2026-02-28
 
 ---
 
@@ -76,9 +76,10 @@ project_master_reporting/
 │   ├── rail_intelligence/             ✅ OPERATIONAL (6 Class I + 71 short lines)
 │   ├── vessel_voyage_analysis/        ✅ OPERATIONAL (Phase 1+2, FGIS grain, 41K voyages)
 │   ├── facility_registry/             ✅ OPERATIONAL (EPA FRS 4M+ facilities, DuckDB)
-│   ├── port_cost_model/               ⏳ PARTIAL (pilotage calculator exists)
-│   ├── geospatial_engine/             ⏳ PLANNED (shared GIS utilities)
-│   └── policy_analysis/               ⏳ PARTIAL (Section 301 data exists)
+│   ├── census_trade/                  ✅ OPERATIONAL (Census Bureau API, port/cargo dictionaries)
+│   ├── policy_analysis/               ✅ OPERATIONAL (Section 301, USACE entrance/clearance)
+│   ├── port_cost_model/               ⏳ PARTIAL (pilotage, towage, stevedoring calculators)
+│   └── geospatial_engine/             ⏳ PARTIAL (legacy scripts migrated, needs production build)
 │
 ├── 03_COMMODITY_MODULES/              ← Pluggable commodity verticals
 │   ├── cement/                        ✅ ACTIVE (market intel, SCM, supply chain models)
@@ -163,31 +164,41 @@ report-platform commodity init --name grain    # Scaffold new module
 
 ---
 
-## CURRENT PRIORITIES (2026-02-24)
+## CURRENT PRIORITIES (2026-02-28)
 
 ### Platform Status
-- **Toolsets operational:** 6 of 8 (75%)
-- **Projects migrated:** 8 of 12 (67%)
-- **Commodity modules:** 5 active
+- **Toolsets operational:** 8 of 9 (89%) — added census_trade, usace_entrance_clearance, geospatial_engine
+- **Projects migrated:** 12 of 12 (100%) — all legacy folders consolidated or deleted
+- **Commodity modules:** 5 active + 6 scaffolded
 - **Production-ready:** Yes
+- **Git repo:** Clean, 1,700+ tracked files, ~171 MB, all large data excluded via .gitignore
+
+### Completed (2026-02-28)
+- ✅ All 17 legacy root-level folders migrated and deleted
+- ✅ Git repo cleaned: large data files excluded, 3 GB → 171 MB
+- ✅ GitHub auth (HTTPS via `gh` CLI) and push working
+- ✅ Cross-project boundary safeguard (OceanDatum.ai website)
+- ✅ Master CLI 80% complete (barge-cost, rail-cost, port-cost, facility-search, policy, report, commodity)
+- ✅ Report chapters written: US Bulk Supply Chain (10 ch) + Cement Commodity (10 ch)
+- ✅ Census Bureau trade API client exists at `02_TOOLSETS/census_trade/`
 
 ### Next Work (in priority order)
 
-**1. Remaining Project Migrations:**
-- `project_us_flag` (~50% complete) → `02_TOOLSETS/policy_analysis/` + `01_DATA_SOURCES/federal_vessel/`
-- `project_port_nickle` (0% complete) → `01_DATA_SOURCES/regional_studies/plaquemines_parish/` + `04_REPORTS/`
-- `sources_data_maps` (~40% complete) → `01_DATA_SOURCES/geospatial/` (consolidate remaining GIS layers)
-- `project_pipelines` (~30% complete) → Assess if needed, may deprecate
-
-**2. Platform Enhancements:**
-- Master CLI integration (`report-platform` commands for all toolsets)
+**1. Platform Enhancements:**
+- Wire `report-platform data download/ingest` commands to per-source downloaders
 - End-to-end cement module integration test (use ALL toolsets for single analysis)
-- Census Bureau trade statistics collection
-- Port cost model completion (stevedoring, tariffs, proforma generator)
+- Port cost model: populate real tariff data (currently using templates)
+- Populate `01_DATA_SOURCES/federal_vessel/` with processed vessel data from policy_analysis
 
-**3. Report Generation:**
-- US Bulk Supply Chain Report (10 chapters) — leverage existing toolset outputs
-- Cement Commodity Report (10 chapters) — integrate vessel_intelligence + rail/barge models
+**2. Report Generation:**
+- US Bulk Supply Chain Report — inject live data from toolsets via ReportEngine extractors
+- Cement Commodity Report — integrate vessel_intelligence + rail/barge model outputs
+- Port Nickel/Plaquemines study — consolidate from `01_DATA_SOURCES/regional_studies/` + `04_REPORTS/pipeline_infrastructure/`
+
+**3. Toolset Refinement:**
+- `census_trade` — wire into CLI, test API endpoints
+- `geospatial_engine` — promote legacy scripts to production modules
+- `port_cost_model` — source real port authority tariff schedules
 
 ---
 
