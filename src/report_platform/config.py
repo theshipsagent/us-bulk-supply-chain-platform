@@ -33,3 +33,8 @@ def get_databases_config() -> dict[str, Any]:
 def get_commodity_modules_config() -> dict[str, Any]:
     """Return the commodity_modules section of config."""
     return load_config().get("commodity_modules", {})
+
+
+def get_reports_config() -> dict[str, Any]:
+    """Return the reports section of config."""
+    return load_config().get("reports", {})

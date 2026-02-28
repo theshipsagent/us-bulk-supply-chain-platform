@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William S. Davis III | US Bulk Supply Chain Intelligence Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css">
+    <style>
+        :root {
+            --ocean-blue: #0d3b66;
+            --deep-blue: #0a2744;
+            --cyan-accent: #4fc3f7;
+            --gold-accent: #f4a460;
+            --maritime-teal: #006d77;
+            --steel-gray: #778da9;
+        }
+
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--ocean-blue) 50%, #1a4060 100%);
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: var(--cyan-accent);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+
+        .reveal h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .reveal h2 {
+            font-size: 2.5em;
+            border-bottom: 3px solid var(--cyan-accent);
+            padding-bottom: 0.3em;
+            margin-bottom: 0.8em;
+        }
+
+        .reveal p, .reveal li {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(79, 195, 247, 0.15) 0%, rgba(13, 59, 102, 0.25) 100%);
+            padding: 1.5em;
+            border-radius: 12px;
+            margin: 0.8em;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(79, 195, 247, 0.3);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(79, 195, 247, 0.4);
+        }
+
+        .stat-number {
+            font-size: 3.5em;
+            font-weight: 900;
+            color: var(--cyan-accent);
+            display: block;
+            text-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-top: 1.5em;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5em;
+            margin-top: 1.5em;
+        }
+
+        .grid-4col {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            margin-top: 1.5em;
+        }
+
+        .feature-box {
+            background: rgba(79, 195, 247, 0.1);
+            padding: 1.5em;
+            border-radius: 10px;
+            border-left: 5px solid var(--cyan-accent);
+            margin: 1em 0;
+        }
+
+        .feature-box h3 {
+            color: var(--gold-accent);
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .toolset-card {
+            background: linear-gradient(135deg, rgba(0, 109, 119, 0.2) 0%, rgba(13, 59, 102, 0.3) 100%);
+            padding: 1.2em;
+            border-radius: 8px;
+            border: 2px solid var(--maritime-teal);
+            text-align: left;
+            min-height: 200px;
+        }
+
+        .toolset-card h4 {
+            color: var(--cyan-accent);
+            margin: 0 0 0.5em 0;
+            font-size: 1.5em;
+        }
+
+        .toolset-card .status {
+            display: inline-block;
+            background: #00e676;
+            color: #000;
+            padding: 0.3em 0.8em;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .module-card {
+            background: linear-gradient(135deg, rgba(244, 164, 96, 0.15) 0%, rgba(13, 59, 102, 0.25) 100%);
+            padding: 1.2em;
+            border-radius: 8px;
+            border: 2px solid var(--gold-accent);
+            text-align: left;
+        }
+
+        .module-card h4 {
+            color: var(--gold-accent);
+            margin: 0 0 0.5em 0;
+            font-size: 1.4em;
+        }
+
+        .highlight-text {
+            color: var(--cyan-accent);
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: var(--gold-accent);
+            font-size: 1.5em;
+            font-style: italic;
+            margin-top: 0.5em;
+        }
+
+        .section-header {
+            background: linear-gradient(90deg, var(--maritime-teal) 0%, transparent 100%);
+            padding: 1em 2em;
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+        }
+
+        ul.compact {
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .two-column-list {
+            columns: 2;
+            column-gap: 3em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--maritime-teal);
+            color: white;
+            padding: 0.4em 1em;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 0.3em;
+        }
+
+        .emphasis-box {
+            background: rgba(244, 164, 96, 0.2);
+            border: 3px solid var(--gold-accent);
+            border-radius: 10px;
+            padding: 2em;
+            margin: 1.5em 0;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            font-size: 0.9em;
+        }
+
+        .data-table th {
+            background: var(--maritime-teal);
+            padding: 0.8em;
+            text-align: left;
+            border-bottom: 2px solid var(--cyan-accent);
+        }
+
+        .data-table td {
+            padding: 0.7em;
+            border-bottom: 1px solid rgba(79, 195, 247, 0.2);
+        }
+
+        .data-table tr:hover {
+            background: rgba(79, 195, 247, 0.1);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 1em 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--maritime-teal) 0%, var(--cyan-accent) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 1s ease;
+        }
+
+        .reveal .controls {
+            color: var(--cyan-accent);
+        }
+
+        .reveal .progress {
+            background: rgba(79, 195, 247, 0.2);
+            height: 6px;
+        }
+
+        .reveal .progress span {
+            background: var(--cyan-accent);
+        }
+
+        .icon-large {
+            font-size: 4em;
+            color: var(--cyan-accent);
+            margin-bottom: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: TITLE -->
+            <section data-background-gradient="linear-gradient(135deg, #0a2744 0%, #0d3b66 50%, #006d77 100%)">
+                <h1>US Bulk Supply Chain<br>Intelligence Platform</h1>
+                <p class="subtitle">Maritime Operations | Bulk Commodity Intelligence | Supply Chain Economics</p>
+                <div style="margin-top: 2em;">
+                    <h3 style="color: #f4a460;">William S. Davis III</h3>
+                    <p style="font-size: 1.1em; color: #ccc;">30+ Years Maritime Industry Experience<br>
+                    Independent Maritime Consultant & Platform Developer</p>
+                </div>
+                <p style="margin-top: 2em; font-size: 0.9em; color: #999;">
+                    Unified Analytics Platform for US Inland Waterway, Port, Rail, and Vessel Operations<br>
+                    with Pluggable Commodity Modules
+                </p>
+            </section>
+
+            <!-- SLIDE 2: PLATFORM OVERVIEW -->
+            <section>
+                <h2>Platform Overview</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>🏗️ Core Platform</h3>
+                        <p><strong>Commodity-Agnostic Infrastructure</strong></p>
+                        <ul class="compact">
+                            <li>US inland waterway system</li>
+                            <li>Port & terminal operations</li>
+                            <li>Rail network integration</li>
+                            <li>Pipeline infrastructure</li>
+                            <li>Vessel intelligence</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>📦 Commodity Modules</h3>
+                        <p><strong>Pluggable Vertical Add-Ons</strong></p>
+                        <ul class="compact">
+                            <li>Cement & SCMs</li>
+                            <li>Steel & metals</li>
+                            <li>Aluminum products</li>
+                            <li>Copper & brass</li>
+                            <li>Forestry products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    One Platform. Multiple Commodities. Complete Supply Chain Visibility.
+                </div>
+            </section>
+
+            <!-- SLIDE 3: PLATFORM STATISTICS -->
+            <section>
+                <h2>Platform Scale & Capability</h2>
+                <div class="grid-4col">
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Core Toolsets</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Commodity Modules</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">20GB+</span>
+                        <span class="stat-label">Data Integrated</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">854K+</span>
+                        <span class="stat-label">Import Records</span>
+                    </div>
+                </div>
+                <div class="grid-4col" style="margin-top: 1em;">
+                    <div class="stat-card">
+                        <span class="stat-number">4M+</span>
+                        <span class="stat-label">EPA Facilities</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">40K+</span>
+                        <span class="stat-label">Rail Facilities</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">52K+</span>
+                        <span class="stat-label">Vessel Registry</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">41K+</span>
+                        <span class="stat-label">Maritime Voyages</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: CORE TOOLSETS OVERVIEW -->
+            <section>
+                <h2>Core Toolsets (8 of 8 Operational)</h2>
+                <div class="grid-2col">
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚢 Vessel Intelligence</h4>
+                        <p>8-phase commodity classification system</p>
+                        <ul class="compact">
+                            <li>854,870 records processed</li>
+                            <li>100% classification coverage</li>
+                            <li>5,000+ keyword rules</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>⚓ Vessel Voyage Analysis</h4>
+                        <p>Maritime voyage tracking & analytics</p>
+                        <ul class="compact">
+                            <li>41,156 voyages analyzed</li>
+                            <li>Phase 1+2 complete</li>
+                            <li>FGIS grain integration (438MB)</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚂 Rail Intelligence</h4>
+                        <p>Railroad knowledge bank & facility mapping</p>
+                        <ul class="compact">
+                            <li>6 Class I carriers</li>
+                            <li>71 short line railroads</li>
+                            <li>39,936 rail-served facilities</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚃 Rail Cost Model</h4>
+                        <p>Rail freight cost calculator & routing</p>
+                        <ul class="compact">
+                            <li>NTAD/NARN network graph</li>
+                            <li>10,340 STB rate contracts</li>
+                            <li>URCS cost integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: MORE TOOLSETS -->
+            <section>
+                <h2>Core Toolsets (Continued)</h2>
+                <div class="grid-2col">
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚛 Barge Cost Model</h4>
+                        <p>Inland waterway freight economics</p>
+                        <ul class="compact">
+                            <li>6,860 waterway nodes</li>
+                            <li>USDA GTR rate benchmarks</li>
+                            <li>VAR/SpVAR forecasting</li>
+                            <li>FastAPI + Streamlit UI</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🏭 Facility Registry</h4>
+                        <p>EPA FRS geospatial analysis</p>
+                        <ul class="compact">
+                            <li>4M+ facilities (DuckDB)</li>
+                            <li>NAICS classification</li>
+                            <li>Proximity analysis</li>
+                            <li>Entity resolution</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>⚓ Port Cost Model</h4>
+                        <p>Port/terminal cost estimation</p>
+                        <ul class="compact">
+                            <li>Pilotage calculator</li>
+                            <li>Towage estimation</li>
+                            <li>Stevedoring rates</li>
+                            <li>Proforma generator</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>📜 Policy Analysis</h4>
+                        <p>Maritime regulatory impact</p>
+                        <ul class="compact">
+                            <li>Section 301 analysis</li>
+                            <li>Jones Act modeling</li>
+                            <li>Tariff impact calculator</li>
+                            <li>HTS code integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: COMMODITY MODULES -->
+            <section>
+                <h2>Commodity Modules (5 Active)</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>🏗️ Cement & SCMs</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>68 plants/terminals</li>
+                            <li>17,671 industry facilities</li>
+                            <li>12.5 MT import analysis</li>
+                            <li>Fly ash, slag, pozzolans</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🔩 Steel & Metals</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>68 production facilities</li>
+                            <li>53 major end users</li>
+                            <li>AIST data integration</li>
+                            <li>Hot strip, EAF, galvanizing</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>⚙️ Aluminum</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>68 facilities mapped</li>
+                            <li>Primary smelters</li>
+                            <li>Rolling mills</li>
+                            <li>Extrusion plants</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="module-card">
+                        <h4>🔸 Copper & Brass</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>43 facilities total</li>
+                            <li>Smelters & refineries (6)</li>
+                            <li>Wire rod mills (8)</li>
+                            <li>Brass mills (9)</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🌲 Forestry Products</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>Sawmills mapped</li>
+                            <li>Pulp & paper mills</li>
+                            <li>Wood products</li>
+                            <li>Trade flow analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: DATA SOURCES -->
+            <section>
+                <h2>Integrated Data Sources</h2>
+                <div class="two-column-list">
+                    <div>
+                        <h4 style="color: var(--cyan-accent);">Federal Waterway</h4>
+                        <ul class="compact">
+                            <li>USACE WCSC/MRTIS</li>
+                            <li>USACE Lock Performance</li>
+                            <li>USACE Entrance/Clearance</li>
+                            <li>FGIS Grain Inspection</li>
+                        </ul>
+
+                        <h4 style="color: var(--cyan-accent); margin-top: 1em;">Federal Rail</h4>
+                        <ul class="compact">
+                            <li>STB Economic Data</li>
+                            <li>NTAD Rail Network</li>
+                            <li>SCRS Facility Data</li>
+                            <li>STB Rate Database</li>
+                        </ul>
+
+                        <h4 style="color: var(--cyan-accent); margin-top: 1em;">Environmental</h4>
+                        <ul class="compact">
+                            <li>EPA FRS (4M+ facilities)</li>
+                            <li>EPA ECHO compliance</li>
+                            <li>NAICS/SIC lookups</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--cyan-accent);">Trade & Vessel</h4>
+                        <ul class="compact">
+                            <li>Panjiva Import Manifests</li>
+                            <li>Ships Register (52K vessels)</li>
+                            <li>MARAD US Flag Fleet</li>
+                            <li>USCG Port State Info</li>
+                        </ul>
+
+                        <h4 style="color: var(--cyan-accent); margin-top: 1em;">Market Intelligence</h4>
+                        <ul class="compact">
+                            <li>USDA GTR (barge rates)</li>
+                            <li>USGS Minerals data</li>
+                            <li>Portland Cement Association</li>
+                            <li>EIA Energy data</li>
+                        </ul>
+
+                        <h4 style="color: var(--cyan-accent); margin-top: 1em;">Geospatial</h4>
+                        <ul class="compact">
+                            <li>GIS layers (976 MB)</li>
+                            <li>Rail network shapefiles</li>
+                            <li>Port boundaries</li>
+                            <li>Facility locations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: SHIP AGENCY MODEL INTRO -->
+            <section data-background-gradient="linear-gradient(135deg, #8B0000 0%, #DC143C 100%)">
+                <h2>Ship Agency Business Model</h2>
+                <p class="subtitle">Ocean DATUM: New Agent for a New Era</p>
+                <div class="emphasis-box" style="background: rgba(220, 20, 60, 0.3); border-color: #ff6b6b;">
+                    Integrating traditional ship agency services with AI-enabled operations<br>
+                    and radical transparency
+                </div>
+                <div class="grid-3col" style="margin-top: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">54+</span>
+                        <span class="stat-label">Agencies Analyzed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">0%</span>
+                        <span class="stat-label">True Differentiation</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">F-</span>
+                        <span class="stat-label">Average Tech Grade</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: RED OCEAN REALITY -->
+            <section data-background-gradient="linear-gradient(135deg, #8B0000 0%, #DC143C 100%)">
+                <h2>Red Ocean Reality</h2>
+                <div class="section-header">
+                    <h3>Complete Commoditization Confirmed</h3>
+                </div>
+                <div class="grid-2col">
+                    <div class="stat-card">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Say "Experience"</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">Claim "24/7"</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">"Full Service"</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">0%</span>
+                        <span class="stat-label">True Differentiation</span>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1.5em;">
+                    "Interchangeable website copy. No one owns anything."
+                </div>
+            </section>
+
+            <!-- SLIDE 10: TECHNOLOGY LIE -->
+            <section data-background-gradient="linear-gradient(135deg, #8B0000 0%, #DC143C 100%)">
+                <h2>The Technology Lie</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Agency</th>
+                            <th>Grade</th>
+                            <th>Reality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T. Parker Host</td>
+                            <td><strong style="color: #ff4444;">F</strong></td>
+                            <td>Claims "data-driven," uses Excel</td>
+                        </tr>
+                        <tr>
+                            <td>Wilhelmsen</td>
+                            <td><strong style="color: #ff6666;">C-</strong></td>
+                            <td>Digital page returns 404</td>
+                        </tr>
+                        <tr>
+                            <td>GAC</td>
+                            <td><strong style="color: #ff6666;">D+</strong></td>
+                            <td>Contact form from 1998</td>
+                        </tr>
+                        <tr>
+                            <td>Inchcape</td>
+                            <td><strong style="color: #ff5555;">D</strong></td>
+                            <td>Broken links everywhere</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Industry Average</strong></td>
+                            <td><strong style="color: #ff0000;">F-</strong></td>
+                            <td>Gap between claims and reality</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    "Claiming 'data-driven' while using spreadsheets isn't data-driven—it's data-entry."
+                </div>
+            </section>
+
+            <!-- SLIDE 11: BLUE OCEAN STRATEGY -->
+            <section data-background-gradient="linear-gradient(135deg, #004E7C 0%, #0080C8 100%)">
+                <h2>Blue Ocean Strategy</h2>
+                <div class="grid-2col">
+                    <div class="feature-box" style="background: rgba(220, 20, 60, 0.2); border-color: #ff4444;">
+                        <h3 style="color: #ff6b6b;">Red Ocean</h3>
+                        <ul class="compact">
+                            <li>Compete in existing market</li>
+                            <li>Beat the competition</li>
+                            <li>Exploit existing demand</li>
+                            <li>Make value-cost trade-off</li>
+                            <li>Bloody competitive waters</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box" style="background: rgba(79, 195, 247, 0.2); border-color: #4fc3f7;">
+                        <h3 style="color: #4fc3f7;">Blue Ocean</h3>
+                        <ul class="compact">
+                            <li>Create uncontested market space</li>
+                            <li>Make competition irrelevant</li>
+                            <li>Create and capture new demand</li>
+                            <li>Break the value-cost trade-off</li>
+                            <li>Clear, untapped waters</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: AGENCY FINANCIAL MODEL -->
+            <section>
+                <h2>Agency Financial Model: AI Impact</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>Small Operation</h4>
+                        <p><strong>500 calls/year, 10 staff</strong></p>
+                        <ul class="compact">
+                            <li>Revenue: ~$1.6M</li>
+                            <li>Traditional costs: $800K-900K</li>
+                            <li><span class="highlight-text">AI savings: $50K-100K</span></li>
+                            <li>Staff reduction: 1-2 positions</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>Medium Operation</h4>
+                        <p><strong>1,500 calls/year, 25 staff</strong></p>
+                        <ul class="compact">
+                            <li>Revenue: ~$5M-6M</li>
+                            <li>Traditional costs: $3M-4M</li>
+                            <li><span class="highlight-text">AI savings: $300K-500K</span></li>
+                            <li>Staff reduction: 3-5 positions</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>Large Operation</h4>
+                        <p><strong>3,000 calls/year, 50 staff</strong></p>
+                        <ul class="compact">
+                            <li>Revenue: ~$12M-15M</li>
+                            <li>Traditional costs: $7M-9M</li>
+                            <li><span class="highlight-text">AI savings: $800K-1.2M</span></li>
+                            <li>Staff reduction: 5-8 positions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    50-70% reduction in admin staff costs while INCREASING service quality
+                </div>
+            </section>
+
+            <!-- SLIDE 13: DATUM PHILOSOPHY -->
+            <section data-background-gradient="linear-gradient(135deg, #0d3b66 0%, #1a4060 100%)">
+                <h2>The DATUM Philosophy</h2>
+                <div class="section-header">
+                    <h3>"In the beginning was the datum"</h3>
+                </div>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>3100 BCE</h3>
+                        <p>Mesopotamian clay tablet records grain shipment</p>
+                        <ul class="compact">
+                            <li>First commercial "datum"</li>
+                            <li>Enabled trust at a distance</li>
+                            <li>Transformed trade from local barter to scalable commerce</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>2026 CE</h3>
+                        <p>AI-ready knowledge artifacts</p>
+                        <ul class="compact">
+                            <li>Self-contained HTML + JSON-LD</li>
+                            <li>Machine-readable structure</li>
+                            <li>Client owns the artifact</li>
+                            <li>Living knowledge that evolves</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    We are not disrupting tradition. We are continuing it.
+                </div>
+            </section>
+
+            <!-- SLIDE 14: RECENT DELIVERABLES -->
+            <section>
+                <h2>Recent Deliverables</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>📊 Panjiva Commodity Analysis</h3>
+                        <ul class="compact">
+                            <li><strong>854,870 shipments</strong> classified</li>
+                            <li>100% classification coverage</li>
+                            <li>8-phase processing pipeline</li>
+                            <li>560,091 bulk cargo records</li>
+                            <li>13,000-word methodology white paper</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🏗️ Cement Market Report</h3>
+                        <ul class="compact">
+                            <li>February 2026 Gulf Coast analysis</li>
+                            <li>12.5 MT import dynamics</li>
+                            <li>12 origin countries analyzed</li>
+                            <li>Tariff impact modeling</li>
+                            <li>SCM market transformation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="feature-box">
+                        <h3>⚙️ Aluminum Module</h3>
+                        <ul class="compact">
+                            <li>68 facilities mapped (US + Canada)</li>
+                            <li>Primary smelters & secondary refineries</li>
+                            <li>Rolling mills & extrusion plants</li>
+                            <li>GeoJSON + interactive maps</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🔩 Steel Module</h3>
+                        <ul class="compact">
+                            <li>68 production facilities (AIST)</li>
+                            <li>87,180 kt/yr hot strip capacity</li>
+                            <li>37,846 kt/yr EAF capacity</li>
+                            <li>53 major end user facilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 15: CEMENT MODULE DEEP DIVE -->
+            <section>
+                <h2>Cement Module: Market Intelligence</h2>
+                <div class="grid-2col">
+                    <div class="toolset-card">
+                        <h4>Import Dynamics</h4>
+                        <ul class="compact">
+                            <li><strong>12.5 million tons</strong> imported (2025)</li>
+                            <li>12 origin countries tracked</li>
+                            <li>Turkey & Egypt: 10% tariff</li>
+                            <li>Vietnam: 46% tariff (anti-dumping)</li>
+                            <li>Algeria: 30% tariff</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <h4>Supply Landscape</h4>
+                        <ul class="compact">
+                            <li>68 cement plants/terminals</li>
+                            <li>17,671 industry facilities (EPA FRS)</li>
+                            <li>Consolidated to 9,114 parent companies</li>
+                            <li>Regional capacity analysis</li>
+                            <li>Distribution network mapping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>SCM Market Transformation</h3>
+                    <div class="grid-3col">
+                        <div>
+                            <p><strong>Fly Ash</strong></p>
+                            <p>Coal plant retirement impact, harvesting operations, quality variations</p>
+                        </div>
+                        <div>
+                            <p><strong>Slag Cement</strong></p>
+                            <p>Steel mill supply, grinding facilities, GGBFS production</p>
+                        </div>
+                        <div>
+                            <p><strong>Natural Pozzolans</strong></p>
+                            <p>LC3 technology, calcined clay processing, deposit locations</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 16: VOYAGE ANALYSIS CAPABILITIES -->
+            <section>
+                <h2>Maritime Voyage Analysis</h2>
+                <div class="stat-card" style="margin-bottom: 1.5em;">
+                    <span class="stat-number">41,156</span>
+                    <span class="stat-label">Voyages Analyzed | 296K Events | 98.4% Data Completeness</span>
+                </div>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Phase 1: Voyage Detection</h3>
+                        <ul class="compact">
+                            <li>Cross In → Cross Out boundary detection</li>
+                            <li>Port time calculations</li>
+                            <li>Anchor time tracking</li>
+                            <li>Terminal assignment</li>
+                            <li>217 zone terminal dictionary</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Phase 2: Segmentation</h3>
+                        <ul class="compact">
+                            <li>Inbound/outbound classification</li>
+                            <li>Draft analysis (ballast vs loaded)</li>
+                            <li>Cargo status inference</li>
+                            <li>Efficiency metrics</li>
+                            <li>Ship register integration (52K vessels)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    FGIS Grain Integration: 438 MB database (CY1983-present)<br>
+                    Grain-to-Voyage Matching: Automated ETL pipeline
+                </div>
+            </section>
+
+            <!-- SLIDE 17: RAIL INTELLIGENCE -->
+            <section>
+                <h2>Rail Intelligence & Cost Modeling</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Knowledge Bank</h3>
+                        <ul class="compact">
+                            <li><strong>6 Class I Carriers</strong>
+                                <ul style="margin-left: 1.5em; font-size: 0.9em;">
+                                    <li>BNSF, UP, CSX, NS, CN, CPKC</li>
+                                </ul>
+                            </li>
+                            <li><strong>71 Short Lines</strong>
+                                <ul style="margin-left: 1.5em; font-size: 0.9em;">
+                                    <li>Watco Companies (38 railroads)</li>
+                                    <li>Genesee & Wyoming (33 railroads)</li>
+                                </ul>
+                            </li>
+                            <li>~13,500 route miles documented</li>
+                            <li>Interactive HTML knowledge base</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Cost Modeling</h3>
+                        <ul class="compact">
+                            <li><strong>10,340 STB rate contracts</strong></li>
+                            <li>Union Pacific benchmarking database</li>
+                            <li>URCS variable cost integration</li>
+                            <li>NTAD/NARN network routing</li>
+                            <li>Shortest path optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>SCRS Facility Database</h3>
+                    <p><strong>39,936 rail-served facilities</strong> across 8 states (AL, DE, FL, GA, LA, MD, MS, NC)</p>
+                    <p>8,555 bulk commodity facilities identified | 42 parent companies tracked</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 18: BARGE COST MODEL -->
+            <section>
+                <h2>Barge Cost Model</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Network & Routing</h3>
+                        <ul class="compact">
+                            <li><strong>6,860 waterway nodes</strong></li>
+                            <li>80 lock locations</li>
+                            <li>NetworkX graph topology</li>
+                            <li>Dijkstra & A* routing algorithms</li>
+                            <li>&lt;500ms API response time</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Cost Components</h3>
+                        <ul class="compact">
+                            <li>USDA GTR rate benchmarks</li>
+                            <li>Lock delay probabilistic modeling</li>
+                            <li>Fuel cost integration (EIA data)</li>
+                            <li>Seasonal adjustment factors</li>
+                            <li>Fleet utilization impacts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>Advanced Capabilities</h3>
+                    <div class="grid-3col">
+                        <div>
+                            <p><strong>Forecasting</strong></p>
+                            <p>VAR/SpVAR models<br>17-29% MAPE improvement</p>
+                        </div>
+                        <div>
+                            <p><strong>API Integration</strong></p>
+                            <p>FastAPI REST endpoints<br>4 routers operational</p>
+                        </div>
+                        <div>
+                            <p><strong>Dashboard</strong></p>
+                            <p>Streamlit UI<br>3 interactive pages</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 19: INTEGRATION ARCHITECTURE -->
+            <section>
+                <h2>Cross-Toolset Integration</h2>
+                <div class="section-header">
+                    <h3>Seamless Data Flow Across Platform</h3>
+                </div>
+                <div style="text-align: left; max-width: 900px; margin: 0 auto;">
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">vessel_intelligence ↔ cement module</h4>
+                        <p>Import manifest classification feeds commodity trade flow analysis</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">rail_intelligence ↔ rail_cost_model</h4>
+                        <p>Knowledge bank + STB rate benchmarking = complete rail analytics</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">vessel_voyage_analysis ↔ facility_registry</h4>
+                        <p>Terminal zone dictionary linked to EPA FRS facility database</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">barge_cost_model ↔ all commodity modules</h4>
+                        <p>Inland distribution routing serves every commodity vertical</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 20: USE CASES -->
+            <section>
+                <h2>Platform Use Cases</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Maritime Operations</h3>
+                        <ul class="compact">
+                            <li>Vessel voyage reconstruction</li>
+                            <li>Port time analysis & optimization</li>
+                            <li>Terminal efficiency metrics</li>
+                            <li>Import manifest processing</li>
+                            <li>Trade flow pattern analysis</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Supply Chain Economics</h3>
+                        <ul class="compact">
+                            <li>Multi-modal freight cost comparison</li>
+                            <li>Route optimization (barge/rail/truck)</li>
+                            <li>Port economic impact modeling</li>
+                            <li>Landed cost calculation</li>
+                            <li>Distribution network design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="feature-box">
+                        <h3>Market Intelligence</h3>
+                        <ul class="compact">
+                            <li>Facility proximity analysis</li>
+                            <li>Competitive landscape mapping</li>
+                            <li>Parent company consolidation</li>
+                            <li>Demand center identification</li>
+                            <li>Capacity utilization tracking</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Regulatory Analysis</h3>
+                        <ul class="compact">
+                            <li>Tariff impact assessment</li>
+                            <li>Jones Act compliance tracking</li>
+                            <li>Section 301 fee modeling</li>
+                            <li>Environmental compliance (EPA ECHO)</li>
+                            <li>Customs classification (HTS codes)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 21: MIGRATION SUCCESS -->
+            <section>
+                <h2>Autonomous Migration Achievement</h2>
+                <p class="subtitle">February 23, 2026 | Zero User Interaction | 100% Success Rate</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Size</th>
+                            <th>Files</th>
+                            <th>Completion</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>vessel_intelligence</strong></td>
+                            <td>5.7 GB</td>
+                            <td>854K+ records</td>
+                            <td>18% → 95%</td>
+                            <td><span class="badge" style="background: #00e676;">✅ Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>rail_intelligence</strong></td>
+                            <td>745 KB</td>
+                            <td>71 railroads</td>
+                            <td>0% → 100%</td>
+                            <td><span class="badge" style="background: #00e676;">✅ Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>rail_cost_model</strong></td>
+                            <td>~5 GB</td>
+                            <td>39,936 facilities</td>
+                            <td>21% → 95%</td>
+                            <td><span class="badge" style="background: #00e676;">✅ Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>vessel_voyage_analysis</strong></td>
+                            <td>740 MB</td>
+                            <td>41,156 voyages</td>
+                            <td>8% → 86%</td>
+                            <td><span class="badge" style="background: #00e676;">✅ Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>barge_cost_model</strong></td>
+                            <td>6.4 MB</td>
+                            <td>6,860 nodes</td>
+                            <td>0% → 100%</td>
+                            <td><span class="badge" style="background: #00e676;">✅ Complete</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="stat-card" style="margin-top: 1em;">
+                    <span class="stat-number">~14 GB</span>
+                    <span class="stat-label">Total Data Migrated | 4,500+ Files | 23/23 Tests Passing</span>
+                </div>
+            </section>
+
+            <!-- SLIDE 22: TECHNICAL ARCHITECTURE -->
+            <section>
+                <h2>Technical Architecture</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Technology Stack</h3>
+                        <ul class="compact">
+                            <li><strong>Python 3.11+</strong> (core language)</li>
+                            <li><strong>DuckDB</strong> (embedded analytics)</li>
+                            <li><strong>pandas/geopandas</strong> (data processing)</li>
+                            <li><strong>NetworkX</strong> (graph routing)</li>
+                            <li><strong>FastAPI</strong> (REST endpoints)</li>
+                            <li><strong>Streamlit</strong> (dashboards)</li>
+                            <li><strong>Folium</strong> (interactive maps)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Data Standards</h3>
+                        <ul class="compact">
+                            <li>WGS84 (EPSG:4326) for coordinates</li>
+                            <li>ISO 8601 date format</li>
+                            <li>Short tons (US) for tonnage</li>
+                            <li>Statute miles (inland) / nautical miles (ocean)</li>
+                            <li>USD with year notation</li>
+                            <li>Parquet for intermediate storage</li>
+                            <li>JSON/YAML for configuration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    Master CLI: <code style="background: rgba(0,0,0,0.5); padding: 0.3em 0.8em; border-radius: 5px;">report-platform</code><br>
+                    Unified interface for all toolsets and commodity modules
+                </div>
+            </section>
+
+            <!-- SLIDE 23: METHODOLOGY WHITE PAPERS -->
+            <section>
+                <h2>Methodology Documentation</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>📄 Barge Cost Model</h4>
+                        <ul class="compact">
+                            <li>USDA GTR methodology</li>
+                            <li>Seasonal adjustment</li>
+                            <li>Lock delay modeling</li>
+                            <li>Fleet utilization impact</li>
+                            <li>VAR/SpVAR forecasting</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>📄 Rail Cost Model</h4>
+                        <ul class="compact">
+                            <li>NTAD/NARN graph construction</li>
+                            <li>STB URCS integration</li>
+                            <li>Route optimization algorithms</li>
+                            <li>Cost validation methods</li>
+                            <li>Tariff benchmarking</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>📄 Vessel Intelligence</h4>
+                        <ul class="compact">
+                            <li>13,000-word white paper</li>
+                            <li>8-phase classification system</li>
+                            <li>5,000+ keyword rules</li>
+                            <li>Confidence scoring</li>
+                            <li>Quality assurance protocols</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>Comprehensive Documentation</h3>
+                    <div class="grid-2col">
+                        <ul class="compact">
+                            <li>Every toolset has METHODOLOGY.md</li>
+                            <li>Data source catalogs with URLs</li>
+                            <li>Master data dictionary (grid reference system)</li>
+                        </ul>
+                        <ul class="compact">
+                            <li>Verification reports (40K-65K words)</li>
+                            <li>Session handoff documentation</li>
+                            <li>Migration summaries with metrics</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 24: COMPETITIVE ADVANTAGES -->
+            <section>
+                <h2>Competitive Advantages</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>📊 Data Integration</h3>
+                        <ul class="compact">
+                            <li><strong>No competitor</strong> integrates USACE + STB + EPA + Panjiva at this scale</li>
+                            <li>20+ GB federal data consolidated</li>
+                            <li>Cross-source harmonization & entity resolution</li>
+                            <li>Real-time analytics via DuckDB</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🔧 Toolset Modularity</h3>
+                        <ul class="compact">
+                            <li>8 operational toolsets (100% functional)</li>
+                            <li>Reusable across commodities</li>
+                            <li>Pluggable architecture</li>
+                            <li>Each toolset independently deployable</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="feature-box">
+                        <h3>🎯 Commodity Expertise</h3>
+                        <ul class="compact">
+                            <li>5 active commodity modules</li>
+                            <li>Deep market intelligence per vertical</li>
+                            <li>Facility-level granularity</li>
+                            <li>Trade flow & tariff analysis</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>⚡ Speed & Automation</h3>
+                        <ul class="compact">
+                            <li>Autonomous migration (zero manual intervention)</li>
+                            <li>&lt;500ms API response times</li>
+                            <li>Automated ETL pipelines</li>
+                            <li>23/23 automated tests passing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 25: MARKET INTELLIGENCE MODELS -->
+            <section>
+                <h2>Market Intelligence Models</h2>
+                <div class="feature-box">
+                    <h3>Cement Import Analysis</h3>
+                    <div class="grid-3col">
+                        <div>
+                            <p><strong>12.5 million tons</strong></p>
+                            <p>Total US cement imports (2025)</p>
+                        </div>
+                        <div>
+                            <p><strong>12 countries</strong></p>
+                            <p>Origin diversity tracking</p>
+                        </div>
+                        <div>
+                            <p><strong>10%-46%</strong></p>
+                            <p>Tariff range by country</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>SCM Market Transformation</h3>
+                    <p>$28B global supplementary cementitious materials market</p>
+                    <div class="grid-2col">
+                        <ul class="compact">
+                            <li><strong>Fly Ash:</strong> Coal plant retirement impacts, harvesting operations</li>
+                            <li><strong>Slag Cement:</strong> Integrated steel mills, grinding facilities</li>
+                        </ul>
+                        <ul class="compact">
+                            <li><strong>Natural Pozzolans:</strong> LC3 technology, calcined clay</li>
+                            <li><strong>Trade Flows:</strong> Import/export analysis by origin/destination</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>Construction Demand Forecasting</h3>
+                    <p>Leading indicators: building permits, construction starts, highway spending, oil well activity</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 26: GOOGLE SLIDES REFERENCE -->
+            <section data-background-gradient="linear-gradient(135deg, #f4a460 0%, #d4822b 100%)">
+                <h2>📊 Additional Resources</h2>
+                <div class="feature-box" style="background: rgba(0,0,0,0.4); border-color: #f4a460;">
+                    <h3>Google Slides Presentation</h3>
+                    <p style="font-size: 1.3em; margin: 1em 0;">
+                        <a href="https://docs.google.com/presentation/d/1dpTb9H_-CKj0nDycxwvXqXnGCx1My94u/edit"
+                           target="_blank"
+                           style="color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7;">
+                            View Complete Slide Deck →
+                        </a>
+                    </p>
+                    <p>Additional visual materials, client-specific analyses, and supplementary documentation available in Google Slides format</p>
+                </div>
+                <div class="grid-2col" style="margin-top: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">📄</span>
+                        <span class="stat-label">Ship Agency Financial Models</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">📊</span>
+                        <span class="stat-label">Market Analysis Charts</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 27: FUTURE ROADMAP -->
+            <section>
+                <h2>Development Roadmap</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>✅ Phase 0: Foundation</h4>
+                        <p><strong>Status: Complete</strong></p>
+                        <ul class="compact">
+                            <li>Unified directory structure</li>
+                            <li>Master CLI framework</li>
+                            <li>Data source integration</li>
+                            <li>Core toolset migration</li>
+                            <li>8/8 toolsets operational</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🚧 Phase 1: Core Platform</h4>
+                        <p><strong>Status: In Progress</strong></p>
+                        <ul class="compact">
+                            <li>US Bulk Supply Chain Report</li>
+                            <li>Data source documentation</li>
+                            <li>Methodology white papers</li>
+                            <li>Integration testing</li>
+                            <li>API endpoint expansion</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🚧 Phase 2: Commodity Expansion</h4>
+                        <p><strong>Status: In Progress</strong></p>
+                        <ul class="compact">
+                            <li>Cement module completion</li>
+                            <li>Steel/aluminum/copper integration</li>
+                            <li>Grain module (planned)</li>
+                            <li>Fertilizer module (planned)</li>
+                            <li>Petroleum module (planned)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>📅 Phase 3: Advanced Analytics (Planned)</h3>
+                    <div class="grid-2col">
+                        <ul class="compact">
+                            <li>Real-time data pipelines</li>
+                            <li>Predictive freight cost modeling</li>
+                            <li>Machine learning integration</li>
+                        </ul>
+                        <ul class="compact">
+                            <li>Interactive dashboards (Streamlit/Plotly)</li>
+                            <li>External API endpoints</li>
+                            <li>Client portal development</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 28: CONTACT & NEXT STEPS -->
+            <section>
+                <h2>Next Steps & Applications</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Immediate Applications</h3>
+                        <ul class="compact">
+                            <li>Client market intelligence reports</li>
+                            <li>Supply chain cost optimization</li>
+                            <li>Competitive landscape analysis</li>
+                            <li>Facility proximity studies</li>
+                            <li>Trade flow impact assessment</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Platform Expansion</h3>
+                        <ul class="compact">
+                            <li>New commodity module development</li>
+                            <li>Custom client dashboards</li>
+                            <li>Real-time data integration</li>
+                            <li>Predictive analytics deployment</li>
+                            <li>API commercialization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1.5em;">
+                    <h3>Platform Capabilities Ready for Deployment</h3>
+                    <p>All 8 core toolsets operational | 5 commodity modules active | 20+ GB data integrated</p>
+                    <p style="margin-top: 1em;">Production-ready for client deliverables and consulting engagements</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 29: CONCLUSION -->
+            <section data-background-gradient="linear-gradient(135deg, #0a2744 0%, #0d3b66 50%, #006d77 100%)">
+                <h2>Platform Summary</h2>
+                <div class="grid-2col" style="margin-bottom: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">8/8</span>
+                        <span class="stat-label">Core Toolsets Operational</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Commodity Modules Active</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Classification Coverage</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98.4%</span>
+                        <span class="stat-label">Data Completeness</span>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    <h3 style="color: #f4a460; margin-top: 0;">Comprehensive Maritime & Bulk Commodity Intelligence</h3>
+                    <p style="font-size: 1.2em; line-height: 1.6;">
+                        From clay tablets to AI-ready knowledge artifacts — continuing 5,000 years of maritime trade documentation<br>
+                        <span style="color: #4fc3f7; font-weight: bold;">One platform. Multiple commodities. Complete supply chain visibility.</span>
+                    </p>
+                </div>
+                <div style="margin-top: 2em;">
+                    <h3 style="color: #f4a460;">William S. Davis III</h3>
+                    <p style="font-size: 1.1em; color: #ccc;">
+                        Independent Maritime Consultant<br>
+                        30+ Years Industry Experience<br>
+                        Platform Developer & Supply Chain Intelligence Analyst
+                    </p>
+                </div>
+            </section>
+
+            <!-- SLIDE 30: THANK YOU -->
+            <section data-background-gradient="linear-gradient(135deg, #006d77 0%, #0d3b66 100%)">
+                <h1 style="font-size: 4em;">Thank You</h1>
+                <p class="subtitle" style="font-size: 1.8em;">Questions & Discussion</p>
+                <div style="margin-top: 3em;">
+                    <p style="font-size: 1.3em; color: #e0e0e0;">
+                        William S. Davis III<br>
+                        <span style="color: #f4a460;">Independent Maritime Consultant</span>
+                    </p>
+                </div>
+                <div style="margin-top: 3em; font-size: 0.9em; color: #999;">
+                    <p>Platform Documentation: project_master_reporting/</p>
+                    <p>Ship Agency Model: project_agency/</p>
+                    <p>Built with Claude Code | Last Updated: February 24, 2026</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            center: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            controls: true,
+            progress: true,
+            history: true,
+            keyboard: true,
+            overview: true,
+            touch: true,
+            loop: false,
+            rtl: false,
+            fragments: true,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            autoSlide: 0,
+            mouseWheel: false,
+            hideAddressBar: true,
+            previewLinks: false,
+            width: 1920,
+            height: 1080,
+            margin: 0.04,
+            minScale: 0.2,
+            maxScale: 2.0
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+# Report manifest: Cement Commodity Module Report
+# Links to chapters in 04_REPORTS/cement_commodity_report/
+
+title: "US Cement & Cementitious Materials Supply Chain Report"
+directory: "cement_commodity_report"
+
+metadata:
+  author: "William S. Davis III"
+  version: "1.0"
+  classification: "Proprietary"
+  commodity: "cement"
+
+chapters:
+  - file: "00_executive_summary.md"
+    number: "00"
+    title: "Executive Summary"
+
+  - file: "01_us_cement_market_overview.md"
+    number: "01"
+    title: "US Cement Market Overview"
+    extractors: [facility, commodity]
+
+  - file: "02_import_dynamics.md"
+    number: "02"
+    title: "Import Dynamics"
+    extractors: [vessel, policy]
+
+  - file: "03_scm_supplementary_materials.md"
+    number: "03"
+    title: "SCM & Supplementary Materials"
+    extractors: [commodity]
+
+  - file: "04_supply_chain_logistics.md"
+    number: "04"
+    title: "Supply Chain Logistics"
+    extractors: [barge, rail, port]
+
+  - file: "05_lower_miss_river_cement.md"
+    number: "05"
+    title: "Lower Mississippi River Cement"
+    extractors: [barge, port, facility]
+
+  - file: "06_competitive_landscape.md"
+    number: "06"
+    title: "Competitive Landscape"
+    extractors: [facility, commodity]
+
+  - file: "07_pricing_cost_analysis.md"
+    number: "07"
+    title: "Pricing & Cost Analysis"
+    extractors: [barge, rail, port, policy]
+
+  - file: "08_demand_drivers_outlook.md"
+    number: "08"
+    title: "Demand Drivers & Outlook"
+    extractors: [commodity]
+
+  - file: "09_sesco_market_position.md"
+    number: "09"
+    title: "Market Position Analysis"
+
+  - file: "10_methodology_sources.md"
+    number: "10"
+    title: "Methodology & Sources"

@@ -637,25 +637,77 @@ def report():
 @click.option("--format", "fmt", default="md",
               type=click.Choice(["md", "docx", "html"]),
               help="Output format.")
-@click.option("--section", default=None, help="Generate a specific section only.")
-def report_generate(report_name: str, fmt: str, section: str | None):
+@click.option("--section", default=None, help="Generate a specific section only (e.g., '09').")
+@click.option("--with-data", is_flag=True, help="Run data extractors for live data injection.")
+def report_generate(report_name: str, fmt: str, section: str | None, with_data: bool):
     """Generate a master report or commodity report."""
-    click.echo(f"Generating: {report_name} (format={fmt})")
+    import logging
+
+    logging.basicConfig(level=logging.INFO, format="  %(message)s")
+
+    from report_platform.reports.engine import ReportEngine
+
+    click.echo(f"Generating: {report_name}")
+    click.echo(f"  Format:    {fmt}")
     if section:
-        click.echo(f"  Section: {section}")
-    click.echo("Will integrate report generation pipeline in Phase 3.")
+        click.echo(f"  Section:   {section}")
+    if with_data:
+        click.echo(f"  Data:      live extraction enabled")
+
+    try:
+        engine = ReportEngine()
+        output_path = engine.generate(
+            report_name=report_name,
+            fmt=fmt,
+            section=section,
+            with_data=with_data,
+        )
+        click.echo(f"\n  Output: {output_path}")
+        click.echo(f"  Size:   {output_path.stat().st_size:,} bytes")
+    except FileNotFoundError as e:
+        click.echo(f"Error: {e}")
+    except Exception as e:
+        click.echo(f"Error generating report: {e}")
+
+
+@report.command("preview")
+@click.option("--report", "report_name", required=True,
+              type=click.Choice(["us_bulk_supply_chain", "cement_commodity"]),
+              help="Report to preview.")
+def report_preview(report_name: str):
+    """Preview report structure and chapter listing."""
+    from report_platform.reports.engine import ReportEngine
+
+    engine = ReportEngine()
+    try:
+        chapters = engine.preview_report(report_name)
+        click.echo(f"\nReport: {report_name}")
+        click.echo(f"Chapters: {len(chapters)}")
+        click.echo()
+        click.echo(f"  {'#':<4} {'Title':<40} {'Size':<14} {'Template':<9} Extractors")
+        click.echo("  " + "-" * 85)
+        for ch in chapters:
+            click.echo(
+                f"  {ch['number']:<4} {ch['title'][:39]:<40} {ch['size']:<14} "
+                f"{ch['template']:<9} {ch['extractors']}"
+            )
+    except FileNotFoundError as e:
+        click.echo(f"Error: {e}")
 
 
 @report.command("list")
 def report_list():
     """List available reports and their status."""
-    reports_dir = get_project_root() / "04_REPORTS"
+    from report_platform.reports.engine import ReportEngine
+
+    engine = ReportEngine()
+    reports = engine.list_reports()
     click.echo("Available reports:")
     click.echo()
-    for report_dir in sorted(reports_dir.iterdir()):
-        if report_dir.is_dir() and not report_dir.name.startswith("."):
-            chapters = list(report_dir.glob("*.md"))
-            click.echo(f"  {report_dir.name}/ ({len(chapters)} chapters)")
+    for r in reports:
+        click.echo(f"  {r['directory']}/ ({r['chapters']} chapters)")
+        for f in r['files']:
+            click.echo(f"    - {f}")
 
 
 # ---------------------------------------------------------------------------

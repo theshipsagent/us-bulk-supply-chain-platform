@@ -337,12 +337,12 @@ This platform consolidates **4 major projects** migrated autonomously:
 
 ## Contributing
 
-This is a proprietary platform developed for **SESCO Cement Corporation** and **OceanDatum.ai** maritime consultancy.
+This is a proprietary platform developed by **William S. Davis III** for maritime and bulk commodity supply chain consulting.
 
 For questions or collaboration inquiries:
 - **Developer**: Claude (Anthropic)
-- **Project Lead**: William Davis
-- **Organization**: OceanDatum.ai
+- **Author & Owner**: William S. Davis III
+- **Domain**: Maritime operations, bulk commodity supply chain intelligence
 
 ---
 
@@ -375,7 +375,7 @@ For questions or collaboration inquiries:
 
 ## License
 
-**Proprietary** — Internal use for SESCO Cement Corporation and OceanDatum.ai clients.
+**Proprietary** — Copyright © 2026 William S. Davis III. All rights reserved.
 
 ---
 

@@ -1,7 +1,7 @@
 project:
   name: "US Bulk Supply Chain Reporting Platform"
   version: "1.0.0"
-  root: "G:/My Drive/LLM/project_master_reporting"
+  root: "."
 
 data_sources:
   # Federal Waterway
@@ -80,11 +80,21 @@ databases:
     engine: "duckdb"
     path: "data/analytics.duckdb"
 
+reports:
+  output_base: "04_REPORTS"
+  default_format: "docx"
+  available:
+    - us_bulk_supply_chain
+    - cement_commodity
+
 commodity_modules:
   active:
     - cement
+    - steel
+    - aluminum
+    - copper
+    - forestry
   planned:
     - grain
     - fertilizer
     - petroleum
-    - metals

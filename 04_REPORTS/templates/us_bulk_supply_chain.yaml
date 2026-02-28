@@ -1,0 +1,64 @@
+# Report manifest: US Bulk Supply Chain Master Report
+# Auto-discovery works without this file, but manifests enable
+# per-chapter extractor configuration and template flags.
+
+title: "US Bulk Supply Chain Infrastructure Report"
+directory: "us_bulk_supply_chain"
+
+metadata:
+  author: "William S. Davis III"
+  version: "1.0"
+  classification: "Proprietary"
+
+chapters:
+  - file: "00_executive_summary.md"
+    number: "00"
+    title: "Executive Summary"
+
+  - file: "01_executive_overview.md"
+    number: "01"
+    title: "Executive Overview"
+
+  - file: "02_inland_waterway_system.md"
+    number: "02"
+    title: "Inland Waterway System"
+    extractors: [barge]
+
+  - file: "03_port_infrastructure.md"
+    number: "03"
+    title: "Port Infrastructure"
+    extractors: [port, facility]
+
+  - file: "04_railroad_network.md"
+    number: "04"
+    title: "Railroad Network"
+    extractors: [rail]
+
+  - file: "05_intermodal_connectivity.md"
+    number: "05"
+    title: "Intermodal Connectivity"
+    extractors: [barge, rail, facility]
+
+  - file: "06_vessel_fleet.md"
+    number: "06"
+    title: "Vessel Fleet"
+    extractors: [vessel]
+
+  - file: "07_trade_flow_analysis.md"
+    number: "07"
+    title: "Trade Flow Analysis"
+    extractors: [vessel, policy]
+
+  - file: "08_regulatory_environment.md"
+    number: "08"
+    title: "Regulatory Environment"
+    extractors: [policy]
+
+  - file: "09_cost_benchmarking.md"
+    number: "09"
+    title: "Cost Benchmarking"
+    extractors: [barge, rail, port, policy]
+
+  - file: "10_infrastructure_outlook.md"
+    number: "10"
+    title: "Infrastructure Outlook"
