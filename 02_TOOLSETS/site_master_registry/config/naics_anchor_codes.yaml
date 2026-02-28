@@ -1,0 +1,55 @@
+# NAICS codes that define major industrial sites for FRS expansion (Phase 2)
+# Each entry: prefix -> sector label + description
+
+anchor_codes:
+  # Metals
+  "3311":
+    sector: "steel"
+    description: "Iron and Steel Mills and Ferroalloy Manufacturing"
+  "3312":
+    sector: "steel"
+    description: "Steel Product Manufacturing from Purchased Steel"
+  "3313":
+    sector: "aluminum"
+    description: "Alumina and Aluminum Production and Processing"
+  "3314":
+    sector: "nonferrous_metals"
+    description: "Nonferrous Metal (except Aluminum) Production and Processing"
+  "3315":
+    sector: "steel"
+    description: "Foundries"
+
+  # Cement & Concrete
+  "327310":
+    sector: "cement"
+    description: "Cement Manufacturing"
+  "327320":
+    sector: "concrete"
+    description: "Ready-Mix Concrete Manufacturing"
+  "327390":
+    sector: "concrete"
+    description: "Other Concrete Product Manufacturing"
+
+  # Petroleum & Chemicals
+  "32411":
+    sector: "petroleum"
+    description: "Petroleum Refineries"
+  "32511":
+    sector: "chemicals"
+    description: "Petrochemical Manufacturing"
+  "32518":
+    sector: "chemicals"
+    description: "Other Basic Inorganic Chemical Manufacturing"
+
+  # Grain & Agriculture
+  "311211":
+    sector: "grain"
+    description: "Flour Milling"
+  "311221":
+    sector: "grain"
+    description: "Wet Corn Milling"
+
+  # Aggregates & Mining
+  "21232":
+    sector: "aggregates"
+    description: "Sand, Gravel, Clay, and Ceramic and Refractory Minerals Mining"

@@ -1,0 +1,44 @@
+# Site Master Registry — Configuration
+# Paths are relative to project root unless marked absolute
+
+database:
+  path: "02_TOOLSETS/site_master_registry/data/site_master.duckdb"
+
+sources:
+  epa_frs:
+    db_path: "02_TOOLSETS/facility_registry/data/frs.duckdb"
+    read_only: true
+  steel:
+    csv_path: "03_COMMODITY_MODULES/steel/market_intelligence/supply_landscape/aist_steel_plants.csv"
+    commodity_sector: "steel"
+    naics_prefixes: ["3311", "3312", "3315"]
+  aluminum:
+    csv_path: "03_COMMODITY_MODULES/aluminum/market_intelligence/supply_landscape/us_aluminum_facilities.csv"
+    commodity_sector: "aluminum"
+    naics_prefixes: ["3313", "3314"]
+  copper:
+    csv_path: "03_COMMODITY_MODULES/copper/market_intelligence/supply_landscape/us_copper_facilities.csv"
+    commodity_sector: "copper"
+    naics_prefixes: ["3314", "331411", "331420"]
+
+matching:
+  # Name matching
+  name_similarity_high: 85       # ≥ this = HIGH confidence (with state + NAICS match)
+  name_similarity_medium: 70     # ≥ this = MEDIUM confidence
+
+  # Spatial matching
+  spatial_radius_km: 2.5         # Max distance for spatial match
+  spatial_high_m: 500            # ≤ this + name > 0.8 = HIGH
+  spatial_medium_m: 1500         # ≤ this + name > 0.6 = MEDIUM
+
+  # Composite scoring weights
+  weight_name: 0.45
+  weight_spatial: 0.35
+  weight_naics: 0.15
+  weight_parent: 0.05
+
+  # Parent company boost
+  parent_company_boost: 0.10     # Added to confidence when parent matches
+
+uid:
+  namespace: "us-bulk-supply-chain"  # UUID v5 namespace seed

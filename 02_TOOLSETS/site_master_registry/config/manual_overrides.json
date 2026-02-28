@@ -1,0 +1,5 @@
+{
+  "_comment": "Hand-curated overrides that bypass algorithmic matching. Keys are {source_system}:{source_record_id}, values are target FRS registry_id.",
+  "_format": "{source}:{id} -> frs_registry_id",
+  "overrides": {}
+}
