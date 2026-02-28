@@ -1,0 +1,38 @@
+# Natural Pozzolan Industry NAICS Codes
+# =======================================
+# Pozzolan mining (pumice, volcanic ash, kaolin/clay), processing,
+# limestone mining (LC3 feedstock), cement/concrete end users
+
+pozzolan_mining:
+  - code: "212399"
+    description: "All Other Nonmetallic Mineral Mining and Quarrying"
+    category: "Pozzolan Mining"
+  - code: "212325"
+    description: "Clay and Ceramic and Refractory Minerals Mining"
+    category: "Pozzolan Mining"
+  - code: "212312"
+    description: "Crushed and Broken Limestone Mining and Quarrying"
+    category: "Limestone Mining (LC3)"
+
+processing:
+  - code: "327999"
+    description: "All Other Miscellaneous Nonmetallic Mineral Product Manufacturing"
+    category: "Pozzolan Processing"
+  - code: "325199"
+    description: "All Other Basic Organic Chemical Manufacturing"
+    category: "Pozzolan Processing"
+
+cement_concrete:
+  - code: "327310"
+    description: "Cement Manufacturing"
+    category: "Cement/Concrete End User"
+  - code: "327320"
+    description: "Ready-Mix Concrete Manufacturing"
+    category: "Cement/Concrete End User"
+  - code: "327390"
+    description: "Other Concrete Product Manufacturing"
+    category: "Cement/Concrete End User"
+
+broad_prefixes:
+  - "2123"
+  - "3273"

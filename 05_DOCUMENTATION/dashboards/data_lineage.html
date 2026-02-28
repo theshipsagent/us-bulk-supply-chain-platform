@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime Cargo Classification - Data Lineage</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // Fallback if CDN fails
+        if (typeof d3 === 'undefined') {
+            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"><\/script>');
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0f0f1a 100%);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Node styling */
+        .node {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .node circle {
+            stroke-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .node:hover circle {
+            filter: brightness(1.3);
+        }
+
+        .node text {
+            font-size: 10px;
+            fill: #e0e0e0;
+            pointer-events: none;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            text-shadow: 0 0 8px rgba(0,0,0,0.8);
+        }
+
+        /* Link styling */
+        .link {
+            fill: none;
+            stroke-opacity: 0.4;
+            transition: all 0.3s ease;
+        }
+
+        .link.highlighted {
+            stroke-opacity: 1;
+            stroke-width: 3px !important;
+        }
+
+        .link.faded {
+            stroke-opacity: 0.05;
+        }
+
+        .node.faded circle {
+            opacity: 0.2;
+        }
+
+        .node.faded text {
+            opacity: 0.2;
+        }
+
+        .node.highlighted circle {
+            filter: brightness(1.5) drop-shadow(0 0 10px currentColor);
+        }
+
+        /* Legend */
+        #legend {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(20, 20, 30, 0.9);
+            border: 1px solid rgba(100, 100, 150, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            color: #e0e0e0;
+            font-size: 12px;
+            backdrop-filter: blur(10px);
+            max-width: 320px;
+        }
+
+        #legend h3 {
+            margin-bottom: 15px;
+            color: #fff;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(100, 100, 150, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        /* Info Panel */
+        #info-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(20, 20, 30, 0.95);
+            border: 1px solid rgba(100, 100, 150, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            color: #e0e0e0;
+            font-size: 13px;
+            backdrop-filter: blur(10px);
+            max-width: 400px;
+            min-width: 350px;
+            display: none;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        #info-panel.visible {
+            display: block;
+        }
+
+        #info-panel h3 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        #info-panel .node-type {
+            color: #888;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        #info-panel .columns-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(100, 100, 150, 0.3);
+            font-size: 11px;
+            color: #aaa;
+        }
+
+        #info-panel .columns-section h4 {
+            font-size: 12px;
+            color: #bbb;
+            margin-bottom: 8px;
+        }
+
+        #info-panel .column-list {
+            background: rgba(50, 50, 70, 0.3);
+            border-radius: 4px;
+            padding: 8px;
+            line-height: 1.6;
+        }
+
+        #info-panel .path-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(100, 100, 150, 0.3);
+        }
+
+        #info-panel .path-section h4 {
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 8px;
+        }
+
+        #info-panel .path-list {
+            font-size: 11px;
+            line-height: 1.8;
+        }
+
+        #info-panel .path-list .path-item {
+            padding: 4px 8px;
+            background: rgba(50, 50, 70, 0.5);
+            border-radius: 4px;
+            margin: 4px 0;
+        }
+
+        /* Controls */
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(20, 20, 30, 0.9);
+            border: 1px solid rgba(100, 100, 150, 0.3);
+            border-radius: 12px;
+            padding: 15px 20px;
+            color: #e0e0e0;
+            font-size: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        #controls button {
+            background: rgba(60, 60, 100, 0.6);
+            border: 1px solid rgba(100, 100, 150, 0.4);
+            color: #e0e0e0;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.2s ease;
+        }
+
+        #controls button:hover {
+            background: rgba(80, 80, 130, 0.8);
+        }
+
+        /* Title */
+        #title {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: rgba(255,255,255,0.6);
+            font-size: 11px;
+            text-align: right;
+        }
+
+        #title h1 {
+            font-size: 18px;
+            font-weight: 300;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 5px;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            background: rgba(30, 30, 50, 0.95);
+            border: 1px solid rgba(100, 100, 150, 0.5);
+            border-radius: 8px;
+            padding: 10px 14px;
+            color: #e0e0e0;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            z-index: 1000;
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <svg id="graph"></svg>
+    </div>
+
+    <div id="legend">
+        <h3>Data Lineage Tiers</h3>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ff6b6b;"></div>
+            <span>PORT CALL (Nucleus)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #4ecdc4;"></div>
+            <span>Source Categories</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #45b7d1;"></div>
+            <span>Source Files</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #a29bfe;"></div>
+            <span>Intermediate Datasets</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #fd79a8;"></div>
+            <span>Matching & Enrichment</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #55efc4;"></div>
+            <span>Final Output</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #fdcb6e;"></div>
+            <span>Reports (Future)</span>
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(100,100,150,0.3); font-size: 11px; color: #888;">
+            Click any node to trace lineage.<br>
+            Click background to reset.<br>
+            Drag nodes to reposition.
+        </div>
+    </div>
+
+    <div id="info-panel">
+        <div class="node-type" id="panel-type">-</div>
+        <h3 id="panel-title">Select a Node</h3>
+        <div id="panel-content"></div>
+        <div class="path-section">
+            <h4>↑ Upstream Sources</h4>
+            <div class="path-list" id="upstream-paths"></div>
+        </div>
+        <div class="path-section">
+            <h4>↓ Downstream Targets</h4>
+            <div class="path-list" id="downstream-paths"></div>
+        </div>
+    </div>
+
+    <div id="controls">
+        <button onclick="resetView()">Reset View</button>
+        <button onclick="toggleLabels()">Toggle Labels</button>
+        <button onclick="expandAll()">Expand All</button>
+    </div>
+
+    <div id="title">
+        <h1>Maritime Cargo Classification</h1>
+        Data Lineage & Provenance Graph
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        // Wait for DOM and D3 to be ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if D3 loaded
+            if (typeof d3 === 'undefined') {
+                document.body.innerHTML = '<div style="color: white; padding: 50px; font-family: sans-serif;"><h1>Error: D3.js failed to load</h1><p>Please check your internet connection and refresh the page.</p></div>';
+                return;
+            }
+
+        // ============================================
+        // DATA STRUCTURE
+        // ============================================
+
+        const nodeData = {
+            // Tier 0: Nucleus
+            nucleus: {
+                id: "port-call",
+                name: "PORT CALL",
+                tier: 0,
+                type: "nucleus"
+            },
+
+            // Tier 1: Source Categories
+            sourceCategories: [
+                { id: "panjiva", name: "Panjiva Imports", tier: 1, type: "source-category" },
+                { id: "usace", name: "USACE Vessel Movements", tier: 1, type: "source-category" },
+                { id: "reference", name: "Reference Data", tier: 1, type: "source-category" }
+            ],
+
+            // Tier 2: Source Files
+            sourceFiles: {
+                "panjiva": [
+                    {
+                        id: "panjiva-170",
+                        name: "170 Import Files (2023-2025)",
+                        tier: 2,
+                        type: "source-file",
+                        columns: "Shipper, Consignee, HS_Code, Weight_KG, Port_of_Lading, Port_of_Unlading, Vessel_Name, Arrival_Date, Carrier, Product_Description"
+                    }
+                ],
+                "usace": [
+                    {
+                        id: "usace-entrance",
+                        name: "Entrance Records",
+                        tier: 2,
+                        type: "source-file",
+                        columns: "RECID, Vessel_Name, IMO, PORT, Arrival_Date, ICST_Vessel_Type, DWT, DRAFT_FT, Cargo_Type, Cargo_Tons"
+                    },
+                    {
+                        id: "usace-clearance",
+                        name: "Clearance Records",
+                        tier: 2,
+                        type: "source-file",
+                        columns: "RECID, Vessel_Name, IMO, PORT, Clearance_Date, ICST_Vessel_Type, Cargo_Type, Cargo_Tons"
+                    }
+                ],
+                "reference": [
+                    {
+                        id: "ship-registry",
+                        name: "Ship Registry",
+                        tier: 2,
+                        type: "source-file",
+                        columns: "Vessel_Name, IMO, Vessel_Type, DWT, Flag, Built_Year, Gross_Tonnage"
+                    },
+                    {
+                        id: "port-mapping",
+                        name: "Port Mapping",
+                        tier: 2,
+                        type: "source-file",
+                        columns: "USACE_PORT, Census_Port, Port_Consolidated, Port_Coast, Port_Region, Latitude, Longitude"
+                    },
+                    {
+                        id: "hs-dictionary",
+                        name: "HS Code Dictionary",
+                        tier: 2,
+                        type: "source-file",
+                        columns: "HS2, HS4, HS6, Description, Unit_of_Measure"
+                    }
+                ]
+            },
+
+            // Tier 3: Intermediate Datasets
+            intermediates: [
+                {
+                    id: "panjiva-2023",
+                    name: "Panjiva 2023 Preprocessed",
+                    tier: 3,
+                    type: "intermediate",
+                    columns: "All Panjiva columns + HS2, HS4, HS6 (extracted), Year, Month, Cleaned_Vessel, Cleaned_Port"
+                },
+                {
+                    id: "panjiva-2024",
+                    name: "Panjiva 2024 Preprocessed",
+                    tier: 3,
+                    type: "intermediate",
+                    columns: "All Panjiva columns + HS2, HS4, HS6 (extracted), Year, Month, Cleaned_Vessel, Cleaned_Port"
+                },
+                {
+                    id: "panjiva-2025",
+                    name: "Panjiva 2025 Preprocessed",
+                    tier: 3,
+                    type: "intermediate",
+                    columns: "All Panjiva columns + HS2, HS4, HS6 (extracted), Year, Month, Cleaned_Vessel, Cleaned_Port"
+                },
+                {
+                    id: "export-calls",
+                    name: "Export Port Calls (VOY_RECID grouped)",
+                    tier: 3,
+                    type: "intermediate",
+                    columns: "VOY_RECID, Vessel, Port_of_Lading, Departure_Date, Total_Shipments, Total_Weight_KG, HS_Codes_List"
+                },
+                {
+                    id: "import-calls",
+                    name: "Import Port Calls (VOY_RECID grouped)",
+                    tier: 3,
+                    type: "intermediate",
+                    columns: "VOY_RECID, Vessel, Port_of_Unlading, Arrival_Date, Total_Shipments, Total_Weight_KG, HS_Codes_List"
+                }
+            ],
+
+            // Tier 4: Matching & Enrichment
+            matchingSteps: [
+                {
+                    id: "entrance-match",
+                    name: "Entrance + Panjiva Match (v1.3.1)",
+                    tier: 4,
+                    type: "matching",
+                    columns: "All Entrance columns + Import_VOY_RECID, Panjiva_Shipments_Matched, Match_Confidence, Match_Method"
+                },
+                {
+                    id: "clearance-match",
+                    name: "Clearance + Panjiva Match (v1.0.1)",
+                    tier: 4,
+                    type: "matching",
+                    columns: "All Clearance columns + Export_VOY_RECID, Panjiva_Shipments_Matched, Match_Confidence, Match_Method"
+                },
+                {
+                    id: "entrance-clearance-marriage",
+                    name: "Entrance-Clearance Marriage (v1.0.0)",
+                    tier: 4,
+                    type: "matching",
+                    columns: "Entrance_RECID, Clearance_RECID, Marriage_Confidence, Port_Stay_Days, Vessel_IMO, Match_Logic"
+                },
+                {
+                    id: "tug-barge-pairing",
+                    name: "Tug-Barge Pairing (v1.1.0)",
+                    tier: 4,
+                    type: "matching",
+                    columns: "Tug_Barge_Pair_ID, Tug_Vessel, Barge_Vessel, Port, Arrival_Date, Cargo_Transferred"
+                }
+            ],
+
+            // Tier 5: Final Output
+            finalOutput: [
+                {
+                    id: "portcall-master",
+                    name: "PORT CALL MASTER (v1.1.0)",
+                    tier: 5,
+                    type: "final-output",
+                    columns: "PORTCALL_ID, Entrance_*, Clearance_*, Port_Stay_Days_Decimal, Match_Type, Tug_Barge_Pair_ID, Panjiva_Imports_Matched, Panjiva_Exports_Matched, Total_Cargo_Tons, Vessel_IMO, Vessel_Type, Port_Region"
+                }
+            ],
+
+            // Tier 6: Reports (Future)
+            reports: [
+                {
+                    id: "customs-reports",
+                    name: "Customs Reports",
+                    tier: 6,
+                    type: "report",
+                    columns: "TBD - Future Development"
+                },
+                {
+                    id: "agency-forecasts",
+                    name: "Agency Fee Forecasts",
+                    tier: 6,
+                    type: "report",
+                    columns: "TBD - Future Development"
+                }
+            ]
+        };
+
+        // Build nodes and links arrays
+        let nodes = [];
+        let links = [];
+
+        // Add nucleus
+        nodes.push({ ...nodeData.nucleus });
+
+        // Add source categories and link to nucleus
+        nodeData.sourceCategories.forEach(cat => {
+            nodes.push({ ...cat });
+            links.push({ source: cat.id, target: "port-call", type: "source-to-nucleus" });
+        });
+
+        // Add source files
+        Object.entries(nodeData.sourceFiles).forEach(([catId, files]) => {
+            files.forEach(file => {
+                nodes.push({ ...file, parent: catId });
+                links.push({ source: file.id, target: catId, type: "file-to-category" });
+            });
+        });
+
+        // Add intermediates - link from source files
+        nodeData.intermediates.forEach(inter => {
+            nodes.push({ ...inter });
+
+            // Link Panjiva intermediates from panjiva-170
+            if (inter.id.startsWith("panjiva-")) {
+                links.push({ source: "panjiva-170", target: inter.id, type: "file-to-intermediate" });
+            }
+
+            // Link export/import calls from panjiva year files AND USACE
+            if (inter.id === "export-calls") {
+                links.push({ source: "panjiva-2023", target: inter.id, type: "intermediate-to-intermediate" });
+                links.push({ source: "panjiva-2024", target: inter.id, type: "intermediate-to-intermediate" });
+                links.push({ source: "panjiva-2025", target: inter.id, type: "intermediate-to-intermediate" });
+                links.push({ source: "usace-clearance", target: inter.id, type: "file-to-intermediate" });
+            }
+
+            if (inter.id === "import-calls") {
+                links.push({ source: "panjiva-2023", target: inter.id, type: "intermediate-to-intermediate" });
+                links.push({ source: "panjiva-2024", target: inter.id, type: "intermediate-to-intermediate" });
+                links.push({ source: "panjiva-2025", target: inter.id, type: "intermediate-to-intermediate" });
+                links.push({ source: "usace-entrance", target: inter.id, type: "file-to-intermediate" });
+            }
+        });
+
+        // Add matching steps - link from intermediates and reference data
+        nodeData.matchingSteps.forEach(match => {
+            nodes.push({ ...match });
+
+            if (match.id === "entrance-match") {
+                links.push({ source: "usace-entrance", target: match.id, type: "file-to-matching" });
+                links.push({ source: "import-calls", target: match.id, type: "intermediate-to-matching" });
+                links.push({ source: "ship-registry", target: match.id, type: "reference-to-matching" });
+            }
+
+            if (match.id === "clearance-match") {
+                links.push({ source: "usace-clearance", target: match.id, type: "file-to-matching" });
+                links.push({ source: "export-calls", target: match.id, type: "intermediate-to-matching" });
+                links.push({ source: "ship-registry", target: match.id, type: "reference-to-matching" });
+            }
+
+            if (match.id === "entrance-clearance-marriage") {
+                links.push({ source: "entrance-match", target: match.id, type: "matching-to-matching" });
+                links.push({ source: "clearance-match", target: match.id, type: "matching-to-matching" });
+            }
+
+            if (match.id === "tug-barge-pairing") {
+                links.push({ source: "entrance-match", target: match.id, type: "matching-to-matching" });
+                links.push({ source: "ship-registry", target: match.id, type: "reference-to-matching" });
+            }
+        });
+
+        // Add final output - link from all matching steps
+        nodeData.finalOutput.forEach(output => {
+            nodes.push({ ...output });
+
+            // Link from all matching steps
+            nodeData.matchingSteps.forEach(match => {
+                links.push({ source: match.id, target: output.id, type: "matching-to-output" });
+            });
+
+            // Link from port mapping
+            links.push({ source: "port-mapping", target: output.id, type: "reference-to-output" });
+
+            // Link back to nucleus (completing the circle)
+            links.push({ source: output.id, target: "port-call", type: "output-to-nucleus" });
+        });
+
+        // Add reports - link from final output
+        nodeData.reports.forEach(report => {
+            nodes.push({ ...report });
+            links.push({ source: "portcall-master", target: report.id, type: "output-to-report" });
+        });
+
+        // ============================================
+        // COLOR SCHEME
+        // ============================================
+
+        const colorMap = {
+            "nucleus": "#ff6b6b",
+            "source-category": "#4ecdc4",
+            "source-file": "#45b7d1",
+            "intermediate": "#a29bfe",
+            "matching": "#fd79a8",
+            "final-output": "#55efc4",
+            "report": "#fdcb6e"
+        };
+
+        const sizeMap = {
+            "nucleus": 40,
+            "source-category": 25,
+            "source-file": 16,
+            "intermediate": 18,
+            "matching": 18,
+            "final-output": 30,
+            "report": 20
+        };
+
+        // ============================================
+        // D3 VISUALIZATION
+        // ============================================
+
+        const svg = d3.select("#graph");
+        const container = document.getElementById("container");
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
+        // Create zoom behavior
+        const zoom = d3.zoom()
+            .scaleExtent([0.2, 4])
+            .on("zoom", (event) => {
+                g.attr("transform", event.transform);
+            });
+
+        svg.call(zoom);
+
+        // Main group for zoom/pan
+        const g = svg.append("g");
+
+        // Arrow markers for directed edges
+        svg.append("defs").selectAll("marker")
+            .data(["arrow"])
+            .enter().append("marker")
+            .attr("id", d => d)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 20)
+            .attr("refY", 0)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("fill", "#666")
+            .attr("d", "M0,-5L10,0L0,5");
+
+        // Create force simulation
+        const simulation = d3.forceSimulation(nodes)
+            .force("link", d3.forceLink(links)
+                .id(d => d.id)
+                .distance(d => {
+                    if (d.type === "source-to-nucleus") return 200;
+                    if (d.type === "file-to-category") return 100;
+                    if (d.type === "file-to-intermediate") return 120;
+                    if (d.type === "intermediate-to-intermediate") return 80;
+                    if (d.type === "file-to-matching") return 100;
+                    if (d.type === "intermediate-to-matching") return 100;
+                    if (d.type === "reference-to-matching") return 90;
+                    if (d.type === "matching-to-matching") return 80;
+                    if (d.type === "matching-to-output") return 120;
+                    if (d.type === "reference-to-output") return 100;
+                    if (d.type === "output-to-nucleus") return 180;
+                    if (d.type === "output-to-report") return 100;
+                    return 100;
+                })
+                .strength(d => {
+                    if (d.type === "output-to-nucleus") return 0.2;
+                    return 0.5;
+                })
+            )
+            .force("charge", d3.forceManyBody()
+                .strength(d => {
+                    if (d.type === "nucleus") return -1000;
+                    if (d.type === "source-category") return -500;
+                    if (d.type === "source-file") return -300;
+                    if (d.type === "intermediate") return -350;
+                    if (d.type === "matching") return -350;
+                    if (d.type === "final-output") return -600;
+                    if (d.type === "report") return -300;
+                    return -200;
+                })
+            )
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(d => sizeMap[d.type] + 10))
+            .force("x", d3.forceX(width / 2).strength(0.03))
+            .force("y", d3.forceY(height / 2).strength(0.03));
+
+        // Draw links
+        const link = g.append("g")
+            .attr("class", "links")
+            .selectAll("path")
+            .data(links)
+            .enter().append("path")
+            .attr("class", "link")
+            .attr("stroke", d => {
+                if (d.type === "output-to-nucleus") return "#ff6b6b";
+                if (d.type === "source-to-nucleus") return "#4ecdc4";
+                if (d.type.includes("matching")) return "#fd79a8";
+                return "#888";
+            })
+            .attr("stroke-width", d => {
+                if (d.type === "source-to-nucleus" || d.type === "output-to-nucleus") return 3;
+                if (d.type.includes("matching")) return 2;
+                return 1.5;
+            })
+            .attr("marker-end", "url(#arrow)");
+
+        // Draw nodes
+        const node = g.append("g")
+            .attr("class", "nodes")
+            .selectAll("g")
+            .data(nodes)
+            .enter().append("g")
+            .attr("class", "node")
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended))
+            .on("click", (event, d) => {
+                event.stopPropagation();
+                highlightLineage(d);
+            })
+            .on("mouseover", showTooltip)
+            .on("mouseout", hideTooltip);
+
+        // Node circles
+        node.append("circle")
+            .attr("r", d => sizeMap[d.type])
+            .attr("fill", d => colorMap[d.type])
+            .attr("stroke", d => d3.color(colorMap[d.type]).darker(0.5));
+
+        // Node labels
+        node.append("text")
+            .text(d => {
+                if (d.name.length > 25) return d.name.substring(0, 23) + "...";
+                return d.name;
+            })
+            .attr("dy", d => sizeMap[d.type] + 14)
+            .attr("class", "node-label");
+
+        // Click on background to reset
+        svg.on("click", resetHighlight);
+
+        // Update positions on tick
+        simulation.on("tick", () => {
+            link.attr("d", d => {
+                const dx = d.target.x - d.source.x;
+                const dy = d.target.y - d.source.y;
+                return `M${d.source.x},${d.source.y}L${d.target.x},${d.target.y}`;
+            });
+
+            node.attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+
+        // ============================================
+        // INTERACTION FUNCTIONS
+        // ============================================
+
+        function highlightLineage(selectedNode) {
+            const upstream = new Set();
+            const downstream = new Set();
+            const connectedLinks = new Set();
+
+            // Find all upstream nodes (sources)
+            function findUpstream(nodeId) {
+                links.forEach(l => {
+                    const sourceId = typeof l.source === "object" ? l.source.id : l.source;
+                    const targetId = typeof l.target === "object" ? l.target.id : l.target;
+
+                    if (targetId === nodeId && !upstream.has(sourceId)) {
+                        upstream.add(sourceId);
+                        connectedLinks.add(l);
+                        findUpstream(sourceId);
+                    }
+                });
+            }
+
+            // Find all downstream nodes (targets)
+            function findDownstream(nodeId) {
+                links.forEach(l => {
+                    const sourceId = typeof l.source === "object" ? l.source.id : l.source;
+                    const targetId = typeof l.target === "object" ? l.target.id : l.target;
+
+                    if (sourceId === nodeId && !downstream.has(targetId)) {
+                        downstream.add(targetId);
+                        connectedLinks.add(l);
+                        findDownstream(targetId);
+                    }
+                });
+            }
+
+            findUpstream(selectedNode.id);
+            findDownstream(selectedNode.id);
+
+            // Apply highlighting
+            node.classed("highlighted", d => d.id === selectedNode.id)
+                .classed("faded", d => d.id !== selectedNode.id && !upstream.has(d.id) && !downstream.has(d.id));
+
+            link.classed("highlighted", l => connectedLinks.has(l))
+                .classed("faded", l => !connectedLinks.has(l));
+
+            // Update info panel
+            updateInfoPanel(selectedNode, upstream, downstream);
+        }
+
+        function resetHighlight() {
+            node.classed("highlighted", false).classed("faded", false);
+            link.classed("highlighted", false).classed("faded", false);
+            document.getElementById("info-panel").classList.remove("visible");
+        }
+
+        function updateInfoPanel(selectedNode, upstream, downstream) {
+            const panel = document.getElementById("info-panel");
+            document.getElementById("panel-type").textContent = selectedNode.type.replace(/-/g, " ").toUpperCase();
+            document.getElementById("panel-title").textContent = selectedNode.name;
+
+            // Show columns if available
+            const columnsSection = selectedNode.columns
+                ? `<div class="columns-section"><h4>📋 Columns:</h4><div class="column-list">${selectedNode.columns}</div></div>`
+                : "";
+            document.getElementById("panel-content").innerHTML = columnsSection;
+
+            // Get upstream node names
+            const upstreamNames = Array.from(upstream)
+                .map(id => nodes.find(n => n.id === id))
+                .filter(n => n)
+                .map(n => n.name);
+
+            // Get downstream node names
+            const downstreamNames = Array.from(downstream)
+                .map(id => nodes.find(n => n.id === id))
+                .filter(n => n)
+                .map(n => n.name);
+
+            document.getElementById("upstream-paths").innerHTML = upstreamNames.length > 0
+                ? upstreamNames.map(n => `<div class="path-item">← ${n}</div>`).join("")
+                : "<div class='path-item' style='color:#666'>None (Root Source)</div>";
+
+            document.getElementById("downstream-paths").innerHTML = downstreamNames.length > 0
+                ? downstreamNames.map(n => `<div class="path-item">→ ${n}</div>`).join("")
+                : "<div class='path-item' style='color:#666'>None (Terminal Node)</div>";
+
+            panel.classList.add("visible");
+        }
+
+        function showTooltip(event, d) {
+            const tooltip = document.getElementById("tooltip");
+            tooltip.textContent = d.name;
+            tooltip.style.left = (event.pageX + 15) + "px";
+            tooltip.style.top = (event.pageY - 10) + "px";
+            tooltip.classList.add("visible");
+        }
+
+        function hideTooltip() {
+            document.getElementById("tooltip").classList.remove("visible");
+        }
+
+        // Drag functions
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Control functions
+        let labelsVisible = true;
+
+        function resetView() {
+            resetHighlight();
+            svg.transition().duration(750).call(
+                zoom.transform,
+                d3.zoomIdentity.translate(0, 0).scale(1)
+            );
+        }
+
+        function toggleLabels() {
+            labelsVisible = !labelsVisible;
+            d3.selectAll(".node-label").style("opacity", labelsVisible ? 1 : 0);
+        }
+
+        function expandAll() {
+            simulation.alpha(0.5).restart();
+        }
+
+        // Initial zoom to fit
+        setTimeout(() => {
+            const bounds = g.node().getBBox();
+            const fullWidth = bounds.width;
+            const fullHeight = bounds.height;
+            const midX = bounds.x + fullWidth / 2;
+            const midY = bounds.y + fullHeight / 2;
+
+            const scale = 0.8 / Math.max(fullWidth / width, fullHeight / height);
+            const translate = [width / 2 - scale * midX, height / 2 - scale * midY];
+
+            svg.transition().duration(1500).call(
+                zoom.transform,
+                d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+            );
+        }, 2000);
+
+        // Expose functions to global scope for button handlers
+        window.resetView = resetView;
+        window.toggleLabels = toggleLabels;
+        window.expandAll = expandAll;
+
+        }); // End DOMContentLoaded
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+# Fly Ash / CCP Industry NAICS Codes
+# ====================================
+# Coal power generation (fly ash source), ash processors/harvesters,
+# cement/concrete end users, distribution
+
+coal_power_generation:
+  - code: "221112"
+    description: "Fossil Fuel Electric Power Generation"
+    category: "Coal Power (Fly Ash Source)"
+
+ash_processing:
+  - code: "562998"
+    description: "All Other Miscellaneous Waste Management Services"
+    category: "Ash Processing/Harvesting"
+  - code: "562910"
+    description: "Remediation Services"
+    category: "Ash Processing/Harvesting"
+  - code: "212399"
+    description: "All Other Nonmetallic Mineral Mining and Quarrying"
+    category: "Ash Processing/Harvesting"
+
+cement_concrete:
+  - code: "327310"
+    description: "Cement Manufacturing"
+    category: "Cement/Concrete End User"
+  - code: "327320"
+    description: "Ready-Mix Concrete Manufacturing"
+    category: "Cement/Concrete End User"
+  - code: "327390"
+    description: "Other Concrete Product Manufacturing"
+    category: "Cement/Concrete End User"
+
+distribution:
+  - code: "424690"
+    description: "Other Chemical and Allied Products Merchant Wholesalers"
+    category: "Distribution"
+
+# Broad prefixes for initial filtering
+broad_prefixes:
+  - "2211"
+  - "3273"

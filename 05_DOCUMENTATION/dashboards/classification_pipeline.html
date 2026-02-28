@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panjiva Classification Pipeline Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .stat-card h3 {
+            color: #667eea;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .section {
+            padding: 40px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .mermaid {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            overflow-x: auto;
+        }
+
+        .timeline {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            width: 15px;
+            height: 15px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 17px;
+            top: 23px;
+            width: 2px;
+            height: calc(100% + 20px);
+            background: #e0e0e0;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+
+        .timeline-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚢 Panjiva Classification Pipeline</h1>
+            <p>Maritime Cargo Classification System | 2023-2025 | Phases 1-10 Complete</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Records</h3>
+                <div class="value">1.3M</div>
+                <div class="label">Processed (2023-2025)</div>
+            </div>
+            <div class="stat-card">
+                <h3>Classification Rate</h3>
+                <div class="value">62.9%</div>
+                <div class="label">785,674 records</div>
+            </div>
+            <div class="stat-card">
+                <h3>Tonnage Captured</h3>
+                <div class="value">71.3%</div>
+                <div class="label">1.47 billion tons</div>
+            </div>
+            <div class="stat-card">
+                <h3>Processing Time</h3>
+                <div class="value">~15 min</div>
+                <div class="label">Per year dataset</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📊 Classification Pipeline Flow</h2>
+            <div class="mermaid">
+graph TB
+    Start[Raw Panjiva Data<br/>454K records 2023<br/>449K records 2024<br/>399K records 2025] --> Filter[PASS 1: Ship Spares Filter<br/>33K filtered 2023<br/>10K filtered 2024/2025]
+
+    Filter --> P2[PHASE 2-3: Carrier Locks<br/>RoRo + Reefer<br/>AUTHORITATIVE - Never Override]
+    P2 --> P4[PHASE 4-7: HS2 + Keywords<br/>Aggregates, Lumber, Pulp, Paper, Rubber<br/>HIGH CONFIDENCE 85-95%]
+    P4 --> P8[PHASE 8: Combinatorial Rules<br/>Chemical Tankers, Salt, Cement<br/>Iron Ore, Steel, Machinery]
+    P8 --> P9[PHASE 9: User Refinements<br/>LBK Package 275M tons!<br/>Manganese, Phosphate, Bauxite<br/>Gasoline, Fuel Oil, Wind Components]
+    P9 --> P10[PHASE 10: High-Value Commodities<br/>Crude Oil Variants 79M tons!<br/>Aluminum, LPG, Soybeans, HDF/MDF<br/>15 commodity types added]
+
+    P10 --> Result[FINAL RESULTS<br/>2023: 80.2% classified<br/>2024: 52.5% records 84.0% tonnage<br/>2025: 55.9% records 82.8% tonnage]
+
+    style Start fill:#e1f5ff
+    style Filter fill:#fff4e6
+    style P2 fill:#d4edda
+    style P4 fill:#d1ecf1
+    style P8 fill:#f8d7da
+    style P9 fill:#d4edda
+    style P10 fill:#fff3cd
+    style Result fill:#c3e6cb
+            </div>
+        </div>
+
+        <div class="section" style="background: #f8f9fa;">
+            <h2 class="section-title">📈 3-Year Classification Progress</h2>
+            <div class="chart-container">
+                <div id="progressChart"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 Tonnage Capture by Year</h2>
+            <div class="chart-container">
+                <div id="tonnageChart"></div>
+            </div>
+        </div>
+
+        <div class="section" style="background: #f8f9fa;">
+            <h2 class="section-title">🏆 Phase 10 Top Commodities</h2>
+            <div class="chart-container">
+                <div id="phase10Chart"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💡 Key Discoveries</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-title">LBK Package Rule - The Hidden Gem</div>
+                        <p><span class="highlight">501M tons</span> captured across 2024/2025 from single package type indicator. Accounts for ~50% of all classified tonnage!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-title">Simplified Salt Rule</div>
+                        <p>User's intuition: "salt is just salt" - Captured <span class="highlight">32.9M tons</span> total (13-19x more than specific variants)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-title">Crude Oil Variants Discovery</div>
+                        <p>Phase 10 added specific grade names (BASRAH, KIRKUK, HIBERNIA, PAYARA, LIZA, TUPI) = <span class="highlight">79.1M tons</span></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-title">2025 Reefer Spike</div>
+                        <p>Reefer cargo <span class="highlight">5x increase</span> in 2025 (7.6M tons vs 1.5M in 2023/2024) - Major trade shift detected</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-title">Aluminum Discovery</div>
+                        <p>2024 had <span class="highlight">4.3M tons</span> of primary aluminum unclassified - likely Emirates Global Aluminium (EGA) shipments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="background: #f8f9fa;">
+            <h2 class="section-title">🔄 Rule Performance by Tier</h2>
+            <div class="chart-container">
+                <div id="rulePerformanceChart"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📋 Processing Timeline</h2>
+            <div class="chart-container">
+                <div id="timelineChart"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Classification System Status:</strong> ✅ Functioning Sufficiently & ML-Ready</p>
+            <p style="margin-top: 10px; opacity: 0.8;">786K classified records provide robust training set for machine learning pattern discovery</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Generated: 2026-01-13 | Dataset: Panjiva US Imports 2023-2025</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        // 3-Year Classification Progress
+        const progressData = [
+            {
+                x: ['Phase 1-9', 'Phase 10'],
+                y: [80.0, 80.2],
+                name: '2023',
+                type: 'bar',
+                marker: {color: '#667eea'}
+            },
+            {
+                x: ['Phase 1-9', 'Phase 10'],
+                y: [50.8, 52.5],
+                name: '2024',
+                type: 'bar',
+                marker: {color: '#764ba2'}
+            },
+            {
+                x: ['Phase 1-9', 'Phase 10'],
+                y: [54.6, 55.9],
+                name: '2025',
+                type: 'bar',
+                marker: {color: '#f6d365'}
+            }
+        ];
+
+        const progressLayout = {
+            title: 'Record Classification Rate by Phase',
+            yaxis: {title: 'Classification %', range: [0, 100]},
+            barmode: 'group',
+            height: 400
+        };
+
+        Plotly.newPlot('progressChart', progressData, progressLayout, {responsive: true});
+
+        // Tonnage Capture
+        const tonnageData = [
+            {
+                x: ['Phase 1-9', 'Phase 10'],
+                y: [49.2, 49.3],
+                name: '2023',
+                type: 'bar',
+                marker: {color: '#667eea'}
+            },
+            {
+                x: ['Phase 1-9', 'Phase 10'],
+                y: [76.5, 84.0],
+                name: '2024',
+                type: 'bar',
+                marker: {color: '#764ba2'}
+            },
+            {
+                x: ['Phase 1-9', 'Phase 10'],
+                y: [74.3, 82.8],
+                name: '2025',
+                type: 'bar',
+                marker: {color: '#f6d365'}
+            }
+        ];
+
+        const tonnageLayout = {
+            title: 'Tonnage Capture % by Phase',
+            yaxis: {title: 'Tonnage %', range: [0, 100]},
+            barmode: 'group',
+            height: 400
+        };
+
+        Plotly.newPlot('tonnageChart', tonnageData, tonnageLayout, {responsive: true});
+
+        // Phase 10 Top Commodities
+        const phase10Data = [{
+            x: [79.1, 5.7, 4.0, 3.1, 2.6, 2.4, 2.1, 1.9],
+            y: ['Crude Oil Variants', 'Aluminum', 'LPG', 'HDF/MDF Boards', 'Hot Rolled Steel', 'Soybeans', 'Ammonium Sulphate', 'Orange Juice'],
+            type: 'bar',
+            orientation: 'h',
+            marker: {
+                color: ['#d4af37', '#c0c0c0', '#cd7f32', '#667eea', '#764ba2', '#f6d365', '#fda085', '#ff6b6b']
+            },
+            text: ['79.1M', '5.7M', '4.0M', '3.1M', '2.6M', '2.4M', '2.1M', '1.9M'],
+            textposition: 'outside'
+        }];
+
+        const phase10Layout = {
+            title: 'Phase 10: Top Commodities by Tonnage (3-Year Total)',
+            xaxis: {title: 'Million Tons'},
+            height: 400,
+            margin: {l: 150}
+        };
+
+        Plotly.newPlot('phase10Chart', phase10Data, phase10Layout, {responsive: true});
+
+        // Rule Performance by Tier
+        const ruleData = [{
+            values: [130.8, 501.2, 184.2, 256.8, 83.0],
+            labels: ['Tier 1: Carrier Locks', 'Tier 2: Package Types (LBK)', 'Tier 3: HS2 + Keywords', 'Tier 4: Tonnage Overrides', 'Tier 5: User Refinements'],
+            type: 'pie',
+            marker: {
+                colors: ['#667eea', '#764ba2', '#f6d365', '#fda085', '#84fab0']
+            },
+            textinfo: 'label+percent',
+            hovertemplate: '<b>%{label}</b><br>%{value:.1f}M tons<br>%{percent}<extra></extra>'
+        }];
+
+        const ruleLayout = {
+            title: '3-Year Tonnage Distribution by Rule Tier (Million Tons)',
+            height: 500
+        };
+
+        Plotly.newPlot('rulePerformanceChart', ruleData, ruleLayout, {responsive: true});
+
+        // Processing Timeline
+        const timelineData = [{
+            x: ['2023', '2024', '2025'],
+            y: [15, 14, 12],
+            type: 'bar',
+            name: 'Runtime (minutes)',
+            marker: {color: '#667eea'},
+            yaxis: 'y',
+        }, {
+            x: ['2023', '2024', '2025'],
+            y: [454266, 449233, 398747],
+            type: 'scatter',
+            name: 'Records Processed',
+            mode: 'lines+markers',
+            marker: {color: '#764ba2', size: 12},
+            line: {width: 3},
+            yaxis: 'y2'
+        }];
+
+        const timelineLayout = {
+            title: 'Processing Performance by Year',
+            yaxis: {title: 'Runtime (minutes)'},
+            yaxis2: {
+                title: 'Records',
+                overlaying: 'y',
+                side: 'right'
+            },
+            height: 400,
+            hovermode: 'x unified'
+        };
+
+        Plotly.newPlot('timelineChart', timelineData, timelineLayout, {responsive: true});
+    </script>
+</body>
+</html>

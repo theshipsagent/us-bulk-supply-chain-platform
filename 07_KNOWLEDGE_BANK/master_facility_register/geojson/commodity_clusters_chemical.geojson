@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.10739895539199,
+          29.94980891196605
+        ]
+      },
+      "properties": {
+        "cluster_id": "CHEM_0",
+        "cluster_type": "Chemical Manufacturing Corridor",
+        "facility_count": 6,
+        "avg_river_mile": 100.3,
+        "facilities": [
+          "Cornerstone Chemical",
+          "Cornerstone Chemical",
+          "RAIN Gramercy",
+          "Domino Sugar",
+          "Domino Sugar",
+          "Vulcan Westwego"
+        ],
+        "river_stretch": "Mile 89-114"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.45305571765249,
+          29.99329241015775
+        ]
+      },
+      "properties": {
+        "cluster_id": "CHEM_1",
+        "cluster_type": "Chemical Manufacturing Corridor",
+        "facility_count": 2,
+        "avg_river_mile": 128.5,
+        "facilities": [
+          "Dow Taft",
+          "Occidental Taft"
+        ],
+        "river_stretch": "Mile 128-129"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.96591791324671,
+          30.15686932844715
+        ]
+      },
+      "properties": {
+        "cluster_id": "CHEM_2",
+        "cluster_type": "Chemical Manufacturing Corridor",
+        "facility_count": 20,
+        "avg_river_mile": 178.6,
+        "facilities": [
+          "Mosaic Uncle Sam",
+          "Occidental Convent",
+          "Americas Styrenics",
+          "IMC Faustina",
+          "CFI Donaldsonville",
+          "CFI Donaldsonville ",
+          "CFI Donaldsonville 101",
+          "Cosmar Carville",
+          "PCS Nitrogen",
+          "Total Carville",
+          "Axiall Plaquemine",
+          "Shintech",
+          "Dow Missouri",
+          "Dow Plaquemine",
+          "Noranda Alumina",
+          "Louisiana Sugar Refining",
+          "RAIN Chalmette",
+          "Nucor Steel",
+          "Yara Fertilizer",
+          "Drax Biomass"
+        ],
+        "river_stretch": "Mile 145-229"
+      }
+    }
+  ]
+}

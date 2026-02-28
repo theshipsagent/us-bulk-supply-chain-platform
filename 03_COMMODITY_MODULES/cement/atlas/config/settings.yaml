@@ -1,0 +1,34 @@
+# ATLAS Configuration
+# ===================
+
+# Data sources
+data:
+  epa_frs:
+    path: "../../task_epa_frs/data/frs.duckdb"
+    read_only: true
+  atlas:
+    path: "../data/atlas.duckdb"
+  gem_cement:
+    path: "../../industry_tracker/Global-Cement-and-Concrete-Tracker_July-2025.xlsx"
+  schedule_k:
+    path: "../../industry_tracker/Schedule K 4th Quarter 2025.xlsx"
+
+# NAICS configuration
+naics:
+  cement_config: "config/naics_cement.yaml"
+
+# Entity resolution
+entity_resolution:
+  target_companies: "config/target_companies.yaml"
+  fuzzy_threshold: 65
+
+# Facility matching
+facility_matching:
+  # Maximum distance (km) for GEM-FRS matching
+  max_match_distance_km: 25
+  # Minimum name similarity score (0-100)
+  min_name_similarity: 40
+
+# Output
+output:
+  processed_data: "../data/processed/"

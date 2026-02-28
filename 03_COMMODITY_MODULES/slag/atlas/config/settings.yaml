@@ -1,0 +1,31 @@
+# Slag / GGBFS ATLAS Configuration
+# ==================================
+
+# Data sources
+data:
+  epa_frs:
+    # Relative to atlas/ directory
+    path: "../../../02_TOOLSETS/facility_registry/data/frs.duckdb"
+    read_only: true
+  atlas:
+    path: "../data/atlas_slag.duckdb"
+
+# NAICS configuration
+naics:
+  slag_config: "config/naics_slag.yaml"
+
+# Entity resolution
+entity_resolution:
+  target_companies: "config/target_companies.yaml"
+  fuzzy_threshold: 65
+
+# Output
+output:
+  processed_data: "../data/processed/"
+
+# Tonnage convention
+# USGS reports in metric tons; GGBFS market data also in metric tons
+tonnage:
+  source_unit: "metric_tons"
+  suffix: "_mt"
+  short_ton_factor: 1.10231

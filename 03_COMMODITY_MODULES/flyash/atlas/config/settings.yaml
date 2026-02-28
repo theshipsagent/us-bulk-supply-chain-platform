@@ -1,0 +1,31 @@
+# Fly Ash / CCP ATLAS Configuration
+# ====================================
+
+# Data sources
+data:
+  epa_frs:
+    # Relative to atlas/ directory
+    path: "../../../02_TOOLSETS/facility_registry/data/frs.duckdb"
+    read_only: true
+  atlas:
+    path: "../data/atlas_flyash.duckdb"
+
+# NAICS configuration
+naics:
+  flyash_config: "config/naics_flyash.yaml"
+
+# Entity resolution
+entity_resolution:
+  target_companies: "config/target_companies.yaml"
+  fuzzy_threshold: 65
+
+# Output
+output:
+  processed_data: "../data/processed/"
+
+# Tonnage convention
+# ACAA reports in short tons; US market data in short tons
+tonnage:
+  source_unit: "short_tons"
+  suffix: "_st"
+  metric_ton_factor: 0.907185

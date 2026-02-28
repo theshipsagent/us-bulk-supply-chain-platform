@@ -1,0 +1,4323 @@
+{
+  "us_capacity": {
+    "total_capacity": 104.9,
+    "total_plants": 100,
+    "producers": 31
+  },
+  "producers": [
+    {
+      "company": "Holcim (US) Inc",
+      "plants": 15,
+      "capacity_mtpa": 20.43,
+      "market_share": 19.5
+    },
+    {
+      "company": "Ash Grove Cement Co",
+      "plants": 11,
+      "capacity_mtpa": 11.32,
+      "market_share": 10.8
+    },
+    {
+      "company": "CEMEX Inc",
+      "plants": 8,
+      "capacity_mtpa": 10.18,
+      "market_share": 9.7
+    },
+    {
+      "company": "Argos USA LLC",
+      "plants": 6,
+      "capacity_mtpa": 9.6,
+      "market_share": 9.2
+    },
+    {
+      "company": "Buzzi Unicem USA Inc",
+      "plants": 7,
+      "capacity_mtpa": 9.0,
+      "market_share": 8.6
+    },
+    {
+      "company": "Heidelberg Materials US Inc",
+      "plants": 13,
+      "capacity_mtpa": 5.5,
+      "market_share": 5.2
+    },
+    {
+      "company": "St Marys Cement Inc (Canada)",
+      "plants": 4,
+      "capacity_mtpa": 4.41,
+      "market_share": 4.2
+    },
+    {
+      "company": "CalPortland Co",
+      "plants": 4,
+      "capacity_mtpa": 4.39,
+      "market_share": 4.2
+    },
+    {
+      "company": "National Cement Company Inc",
+      "plants": 2,
+      "capacity_mtpa": 3.8,
+      "market_share": 3.6
+    },
+    {
+      "company": "GCC SAB de CV",
+      "plants": 5,
+      "capacity_mtpa": 3.5,
+      "market_share": 3.3
+    },
+    {
+      "company": "Titan America LLC",
+      "plants": 2,
+      "capacity_mtpa": 3.4,
+      "market_share": 3.2
+    },
+    {
+      "company": "Continental Cement Company LLC",
+      "plants": 2,
+      "capacity_mtpa": 2.4,
+      "market_share": 2.3
+    },
+    {
+      "company": "Martin Marietta Materials Inc",
+      "plants": 1,
+      "capacity_mtpa": 1.89,
+      "market_share": 1.8
+    },
+    {
+      "company": "Eagle Materials Inc",
+      "plants": 1,
+      "capacity_mtpa": 1.7,
+      "market_share": 1.6
+    },
+    {
+      "company": "AUDUBON MATERIALS LLC",
+      "plants": 2,
+      "capacity_mtpa": 1.7,
+      "market_share": 1.6
+    },
+    {
+      "company": "Mitsubishi Cement Corp",
+      "plants": 1,
+      "capacity_mtpa": 1.7,
+      "market_share": 1.6
+    },
+    {
+      "company": "Salt River Materials Group",
+      "plants": 1,
+      "capacity_mtpa": 1.2,
+      "market_share": 1.1
+    },
+    {
+      "company": "Alamo Cement Co",
+      "plants": 1,
+      "capacity_mtpa": 1.1,
+      "market_share": 1.0
+    },
+    {
+      "company": "Illinois Cement Company LLC",
+      "plants": 1,
+      "capacity_mtpa": 1.0,
+      "market_share": 1.0
+    },
+    {
+      "company": "Drake Cement LLC",
+      "plants": 1,
+      "capacity_mtpa": 1.0,
+      "market_share": 1.0
+    },
+    {
+      "company": "Monarch Cement Co",
+      "plants": 1,
+      "capacity_mtpa": 1.0,
+      "market_share": 1.0
+    },
+    {
+      "company": "Capitol Aggregates Inc",
+      "plants": 1,
+      "capacity_mtpa": 0.9,
+      "market_share": 0.9
+    },
+    {
+      "company": "Giant Cement Company Inc",
+      "plants": 1,
+      "capacity_mtpa": 0.8,
+      "market_share": 0.8
+    },
+    {
+      "company": "UNACEM Corp SAA",
+      "plants": 1,
+      "capacity_mtpa": 0.8,
+      "market_share": 0.8
+    },
+    {
+      "company": "Mountain Cement Company LLC",
+      "plants": 1,
+      "capacity_mtpa": 0.8,
+      "market_share": 0.8
+    },
+    {
+      "company": "Lafarge Canada Inc",
+      "plants": 1,
+      "capacity_mtpa": 0.6,
+      "market_share": 0.6
+    },
+    {
+      "company": "Nevada Cement Company LLC",
+      "plants": 1,
+      "capacity_mtpa": 0.5,
+      "market_share": 0.5
+    },
+    {
+      "company": "Lehigh White Cement Company LLC",
+      "plants": 2,
+      "capacity_mtpa": 0.28,
+      "market_share": 0.3
+    },
+    {
+      "company": "Armstrong Cement & Supply Corp",
+      "plants": 1,
+      "capacity_mtpa": NaN,
+      "market_share": NaN
+    },
+    {
+      "company": "Dragon Products Company Inc",
+      "plants": 1,
+      "capacity_mtpa": NaN,
+      "market_share": NaN
+    },
+    {
+      "company": "Texas Lehigh Cement Company LP",
+      "plants": 1,
+      "capacity_mtpa": NaN,
+      "market_share": NaN
+    }
+  ],
+  "capacity_by_state": [
+    {
+      "state": "Texas",
+      "plants": 11,
+      "capacity_mtpa": 12.98
+    },
+    {
+      "state": "California",
+      "plants": 8,
+      "capacity_mtpa": 11.89
+    },
+    {
+      "state": "Missouri",
+      "plants": 5,
+      "capacity_mtpa": 10.7
+    },
+    {
+      "state": "Florida",
+      "plants": 7,
+      "capacity_mtpa": 10.4
+    },
+    {
+      "state": "Alabama",
+      "plants": 5,
+      "capacity_mtpa": 6.22
+    },
+    {
+      "state": "Michigan",
+      "plants": 3,
+      "capacity_mtpa": 4.93
+    },
+    {
+      "state": "Indiana",
+      "plants": 4,
+      "capacity_mtpa": 4.1
+    },
+    {
+      "state": "South Carolina",
+      "plants": 3,
+      "capacity_mtpa": 4.1
+    },
+    {
+      "state": "Illinois",
+      "plants": 4,
+      "capacity_mtpa": 3.43
+    },
+    {
+      "state": "Arizona",
+      "plants": 3,
+      "capacity_mtpa": 3.3
+    },
+    {
+      "state": "Colorado",
+      "plants": 3,
+      "capacity_mtpa": 3.3
+    },
+    {
+      "state": "New York",
+      "plants": 3,
+      "capacity_mtpa": 2.7
+    },
+    {
+      "state": "West Virginia",
+      "plants": 1,
+      "capacity_mtpa": 2.2
+    },
+    {
+      "state": "Oklahoma",
+      "plants": 3,
+      "capacity_mtpa": 1.98
+    },
+    {
+      "state": "Georgia",
+      "plants": 2,
+      "capacity_mtpa": 1.81
+    },
+    {
+      "state": "Utah",
+      "plants": 2,
+      "capacity_mtpa": 1.76
+    },
+    {
+      "state": "Kentucky",
+      "plants": 1,
+      "capacity_mtpa": 1.7
+    },
+    {
+      "state": "Arkansas",
+      "plants": 1,
+      "capacity_mtpa": 1.53
+    },
+    {
+      "state": "Kansas",
+      "plants": 2,
+      "capacity_mtpa": 1.5
+    },
+    {
+      "state": "Tennessee",
+      "plants": 2,
+      "capacity_mtpa": 1.47
+    },
+    {
+      "state": "Pennsylvania",
+      "plants": 6,
+      "capacity_mtpa": 1.32
+    },
+    {
+      "state": "Virginia",
+      "plants": 1,
+      "capacity_mtpa": 1.3
+    },
+    {
+      "state": "Washington",
+      "plants": 3,
+      "capacity_mtpa": 1.2
+    },
+    {
+      "state": "Iowa",
+      "plants": 2,
+      "capacity_mtpa": 1.2
+    },
+    {
+      "state": "Nebraska",
+      "plants": 1,
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "South Dakota",
+      "plants": 1,
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "Oregon",
+      "plants": 1,
+      "capacity_mtpa": 1.08
+    },
+    {
+      "state": "Wyoming",
+      "plants": 1,
+      "capacity_mtpa": 0.8
+    },
+    {
+      "state": "Montana",
+      "plants": 2,
+      "capacity_mtpa": 0.75
+    },
+    {
+      "state": "New Jersey",
+      "plants": 1,
+      "capacity_mtpa": 0.7
+    },
+    {
+      "state": "Maryland",
+      "plants": 3,
+      "capacity_mtpa": 0.6
+    },
+    {
+      "state": "Nevada",
+      "plants": 1,
+      "capacity_mtpa": 0.5
+    },
+    {
+      "state": "Ohio",
+      "plants": 1,
+      "capacity_mtpa": 0.5
+    },
+    {
+      "state": "New Mexico",
+      "plants": 1,
+      "capacity_mtpa": 0.4
+    },
+    {
+      "state": "Wisconsin",
+      "plants": 1,
+      "capacity_mtpa": 0.35
+    },
+    {
+      "state": "Maine",
+      "plants": 1,
+      "capacity_mtpa": NaN
+    }
+  ],
+  "import_totals": {
+    "million_tons": 66.82,
+    "shipments": 3420,
+    "countries": 25,
+    "ports": 54,
+    "importers": 75,
+    "start_date": "2022-06-25 00:00:00",
+    "end_date": "2025-06-19 00:00:00"
+  },
+  "imports_by_country": [
+    {
+      "origin_country": "Turkey",
+      "shipments": 834,
+      "million_tons": 23.57,
+      "pct_share": 35.3,
+      "ports_served": 34
+    },
+    {
+      "origin_country": "Vietnam",
+      "shipments": 443,
+      "million_tons": 11.81,
+      "pct_share": 17.7,
+      "ports_served": 22
+    },
+    {
+      "origin_country": "Canada",
+      "shipments": 1007,
+      "million_tons": 8.32,
+      "pct_share": 12.5,
+      "ports_served": 14
+    },
+    {
+      "origin_country": "Greece",
+      "shipments": 182,
+      "million_tons": 5.51,
+      "pct_share": 8.3,
+      "ports_served": 10
+    },
+    {
+      "origin_country": "Colombia",
+      "shipments": 164,
+      "million_tons": 2.43,
+      "pct_share": 3.6,
+      "ports_served": 7
+    },
+    {
+      "origin_country": "United Arab Emirates",
+      "shipments": 52,
+      "million_tons": 2.24,
+      "pct_share": 3.4,
+      "ports_served": 4
+    },
+    {
+      "origin_country": "South Korea",
+      "shipments": 81,
+      "million_tons": 2.05,
+      "pct_share": 3.1,
+      "ports_served": 4
+    },
+    {
+      "origin_country": "Algeria",
+      "shipments": 61,
+      "million_tons": 2.05,
+      "pct_share": 3.1,
+      "ports_served": 10
+    },
+    {
+      "origin_country": "Mexico",
+      "shipments": 223,
+      "million_tons": 1.79,
+      "pct_share": 2.7,
+      "ports_served": 12
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "shipments": 49,
+      "million_tons": 1.78,
+      "pct_share": 2.7,
+      "ports_served": 5
+    },
+    {
+      "origin_country": "Egypt",
+      "shipments": 139,
+      "million_tons": 1.55,
+      "pct_share": 2.3,
+      "ports_served": 12
+    },
+    {
+      "origin_country": "Spain",
+      "shipments": 50,
+      "million_tons": 1.13,
+      "pct_share": 1.7,
+      "ports_served": 10
+    },
+    {
+      "origin_country": "Thailand",
+      "shipments": 19,
+      "million_tons": 0.67,
+      "pct_share": 1.0,
+      "ports_served": 3
+    },
+    {
+      "origin_country": "Taiwan",
+      "shipments": 19,
+      "million_tons": 0.6,
+      "pct_share": 0.9,
+      "ports_served": 2
+    },
+    {
+      "origin_country": "Pakistan",
+      "shipments": 12,
+      "million_tons": 0.36,
+      "pct_share": 0.5,
+      "ports_served": 3
+    },
+    {
+      "origin_country": "Italy",
+      "shipments": 15,
+      "million_tons": 0.31,
+      "pct_share": 0.5,
+      "ports_served": 4
+    },
+    {
+      "origin_country": "Tunisia",
+      "shipments": 32,
+      "million_tons": 0.26,
+      "pct_share": 0.4,
+      "ports_served": 3
+    },
+    {
+      "origin_country": "France",
+      "shipments": 7,
+      "million_tons": 0.1,
+      "pct_share": 0.2,
+      "ports_served": 1
+    },
+    {
+      "origin_country": "Croatia",
+      "shipments": 18,
+      "million_tons": 0.08,
+      "pct_share": 0.1,
+      "ports_served": 1
+    },
+    {
+      "origin_country": "Congo",
+      "shipments": 2,
+      "million_tons": 0.07,
+      "pct_share": 0.1,
+      "ports_served": 2
+    },
+    {
+      "origin_country": "Dominican Republic",
+      "shipments": 4,
+      "million_tons": 0.05,
+      "pct_share": 0.1,
+      "ports_served": 2
+    },
+    {
+      "origin_country": "North Korea",
+      "shipments": 1,
+      "million_tons": 0.03,
+      "pct_share": 0.0,
+      "ports_served": 1
+    },
+    {
+      "origin_country": "Singapore",
+      "shipments": 1,
+      "million_tons": 0.03,
+      "pct_share": 0.0,
+      "ports_served": 1
+    },
+    {
+      "origin_country": "China",
+      "shipments": 4,
+      "million_tons": 0.01,
+      "pct_share": 0.0,
+      "ports_served": 4
+    },
+    {
+      "origin_country": "Panama",
+      "shipments": 1,
+      "million_tons": 0.01,
+      "pct_share": 0.0,
+      "ports_served": 1
+    }
+  ],
+  "imports_by_port": [
+    {
+      "port": "Houston, Houston, Texas",
+      "shipments": 462,
+      "million_tons": 13.46,
+      "pct_share": 20.1,
+      "source_countries": 13,
+      "importers": 20
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "shipments": 118,
+      "million_tons": 3.68,
+      "pct_share": 5.5,
+      "source_countries": 8,
+      "importers": 11
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "shipments": 82,
+      "million_tons": 3.55,
+      "pct_share": 5.3,
+      "source_countries": 7,
+      "importers": 7
+    },
+    {
+      "port": "Tampa, Florida",
+      "shipments": 138,
+      "million_tons": 3.33,
+      "pct_share": 5.0,
+      "source_countries": 9,
+      "importers": 4
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "shipments": 128,
+      "million_tons": 3.25,
+      "pct_share": 4.9,
+      "source_countries": 3,
+      "importers": 4
+    },
+    {
+      "port": "Port of Stockton, Stockton, California",
+      "shipments": 99,
+      "million_tons": 2.94,
+      "pct_share": 4.4,
+      "source_countries": 3,
+      "importers": 5
+    },
+    {
+      "port": "Port of Portland, Portland, Oregon",
+      "shipments": 123,
+      "million_tons": 2.84,
+      "pct_share": 4.3,
+      "source_countries": 4,
+      "importers": 3
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "shipments": 144,
+      "million_tons": 2.72,
+      "pct_share": 4.1,
+      "source_countries": 9,
+      "importers": 7
+    },
+    {
+      "port": "Corpus Christi, Corpus Christi, Texas",
+      "shipments": 52,
+      "million_tons": 2.65,
+      "pct_share": 4.0,
+      "source_countries": 2,
+      "importers": 1
+    },
+    {
+      "port": "Port of Seattle, Seattle, Washington",
+      "shipments": 226,
+      "million_tons": 2.45,
+      "pct_share": 3.7,
+      "source_countries": 7,
+      "importers": 3
+    },
+    {
+      "port": "Service Port-San Francisco, San Francisco, California",
+      "shipments": 105,
+      "million_tons": 2.27,
+      "pct_share": 3.4,
+      "source_countries": 3,
+      "importers": 3
+    },
+    {
+      "port": "Detroit/Wayne County Port Authority, Detroit, Michigan",
+      "shipments": 127,
+      "million_tons": 2.05,
+      "pct_share": 3.1,
+      "source_countries": 4,
+      "importers": 4
+    },
+    {
+      "port": "Port of Virginia, Norfolk, Virginia",
+      "shipments": 88,
+      "million_tons": 1.87,
+      "pct_share": 2.8,
+      "source_countries": 4,
+      "importers": 3
+    },
+    {
+      "port": "ProvPort, Providence, Rhode Island",
+      "shipments": 166,
+      "million_tons": 1.62,
+      "pct_share": 2.4,
+      "source_countries": 4,
+      "importers": 5
+    },
+    {
+      "port": "New York, New York",
+      "shipments": 81,
+      "million_tons": 1.58,
+      "pct_share": 2.4,
+      "source_countries": 3,
+      "importers": 4
+    },
+    {
+      "port": "Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",
+      "shipments": 39,
+      "million_tons": 1.58,
+      "pct_share": 2.4,
+      "source_countries": 5,
+      "importers": 2
+    },
+    {
+      "port": "Port Of Cleveland, Cleveland, Ohio",
+      "shipments": 182,
+      "million_tons": 1.25,
+      "pct_share": 1.9,
+      "source_countries": 1,
+      "importers": 4
+    },
+    {
+      "port": "San Juan, San Juan, Puerto Rico",
+      "shipments": 96,
+      "million_tons": 1.18,
+      "pct_share": 1.8,
+      "source_countries": 4,
+      "importers": 2
+    },
+    {
+      "port": "The Port of Brownsville, Brownsville, Texas",
+      "shipments": 26,
+      "million_tons": 1.04,
+      "pct_share": 1.6,
+      "source_countries": 2,
+      "importers": 2
+    },
+    {
+      "port": "Jacksonville, Florida",
+      "shipments": 29,
+      "million_tons": 1.04,
+      "pct_share": 1.6,
+      "source_countries": 6,
+      "importers": 4
+    },
+    {
+      "port": "Service Port-Honolulu, Honolulu, Hawaii",
+      "shipments": 28,
+      "million_tons": 0.97,
+      "pct_share": 1.4,
+      "source_countries": 3,
+      "importers": 2
+    },
+    {
+      "port": "Port of Long Beach, Long Beach, California",
+      "shipments": 61,
+      "million_tons": 0.76,
+      "pct_share": 1.1,
+      "source_countries": 3,
+      "importers": 2
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "shipments": 39,
+      "million_tons": 0.72,
+      "pct_share": 1.1,
+      "source_countries": 6,
+      "importers": 7
+    },
+    {
+      "port": "Port Of Boston, Boston, Massachusetts",
+      "shipments": 30,
+      "million_tons": 0.7,
+      "pct_share": 1.0,
+      "source_countries": 2,
+      "importers": 3
+    },
+    {
+      "port": "The Port of Pensacola, Pensacola, Florida",
+      "shipments": 69,
+      "million_tons": 0.69,
+      "pct_share": 1.0,
+      "source_countries": 1,
+      "importers": 3
+    },
+    {
+      "port": "Wilmington, Wilmington, North Carolina",
+      "shipments": 27,
+      "million_tons": 0.65,
+      "pct_share": 1.0,
+      "source_countries": 3,
+      "importers": 4
+    },
+    {
+      "port": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+      "shipments": 45,
+      "million_tons": 0.64,
+      "pct_share": 1.0,
+      "source_countries": 6,
+      "importers": 4
+    },
+    {
+      "port": "Port of Oswego, Oswego, New York",
+      "shipments": 131,
+      "million_tons": 0.55,
+      "pct_share": 0.8,
+      "source_countries": 1,
+      "importers": 2
+    },
+    {
+      "port": "Anchorage, Alaska",
+      "shipments": 20,
+      "million_tons": 0.37,
+      "pct_share": 0.6,
+      "source_countries": 3,
+      "importers": 3
+    },
+    {
+      "port": "Alabama State Port Authority, Mobile, Alabama",
+      "shipments": 81,
+      "million_tons": 0.35,
+      "pct_share": 0.5,
+      "source_countries": 4,
+      "importers": 3
+    },
+    {
+      "port": "Buffalo\u2011Niagara Falls, New York",
+      "shipments": 71,
+      "million_tons": 0.34,
+      "pct_share": 0.5,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": null,
+      "shipments": 13,
+      "million_tons": 0.34,
+      "pct_share": 0.5,
+      "source_countries": 1,
+      "importers": 3
+    },
+    {
+      "port": "Albany, New York",
+      "shipments": 26,
+      "million_tons": 0.33,
+      "pct_share": 0.5,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Ponce, Ponce, Puerto Rico",
+      "shipments": 8,
+      "million_tons": 0.32,
+      "pct_share": 0.5,
+      "source_countries": 3,
+      "importers": 2
+    },
+    {
+      "port": "Port Canaveral, Port Canaveral, Florida",
+      "shipments": 47,
+      "million_tons": 0.28,
+      "pct_share": 0.4,
+      "source_countries": 3,
+      "importers": 7
+    },
+    {
+      "port": "Port of Everett, Everett, Washington",
+      "shipments": 30,
+      "million_tons": 0.28,
+      "pct_share": 0.4,
+      "source_countries": 2,
+      "importers": 1
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "shipments": 9,
+      "million_tons": 0.26,
+      "pct_share": 0.4,
+      "source_countries": 2,
+      "importers": 5
+    },
+    {
+      "port": "Rochester, New York",
+      "shipments": 59,
+      "million_tons": 0.24,
+      "pct_share": 0.4,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Duluth Seaway Port Authority, Duluth, Wisconsin",
+      "shipments": 12,
+      "million_tons": 0.24,
+      "pct_share": 0.4,
+      "source_countries": 1,
+      "importers": 2
+    },
+    {
+      "port": "Port of Redwood City, Redwood City, California",
+      "shipments": 25,
+      "million_tons": 0.21,
+      "pct_share": 0.3,
+      "source_countries": 2,
+      "importers": 1
+    },
+    {
+      "port": "The Port of Charleston, Charleston, South Carolina",
+      "shipments": 7,
+      "million_tons": 0.19,
+      "pct_share": 0.3,
+      "source_countries": 2,
+      "importers": 0
+    },
+    {
+      "port": "Illinois International Port District, Chicago, Illinois",
+      "shipments": 8,
+      "million_tons": 0.17,
+      "pct_share": 0.3,
+      "source_countries": 1,
+      "importers": 2
+    },
+    {
+      "port": "Port Of NewHampshire, Portsmouth, New Hampshire",
+      "shipments": 15,
+      "million_tons": 0.14,
+      "pct_share": 0.2,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Port Panama City, Panama City, Florida",
+      "shipments": 8,
+      "million_tons": 0.13,
+      "pct_share": 0.2,
+      "source_countries": 2,
+      "importers": 0
+    },
+    {
+      "port": "Port Of Entry-Morehead City - Beaufort, Beaufort\u2011Morehead City, North Carolina",
+      "shipments": 9,
+      "million_tons": 0.11,
+      "pct_share": 0.2,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Sabine, Texas",
+      "shipments": 6,
+      "million_tons": 0.11,
+      "pct_share": 0.2,
+      "source_countries": 3,
+      "importers": 1
+    },
+    {
+      "port": "Baltimore, Maryland",
+      "shipments": 9,
+      "million_tons": 0.1,
+      "pct_share": 0.1,
+      "source_countries": 3,
+      "importers": 3
+    },
+    {
+      "port": "Ashtabula/Conneaut, Ohio",
+      "shipments": 6,
+      "million_tons": 0.09,
+      "pct_share": 0.1,
+      "source_countries": 2,
+      "importers": 2
+    },
+    {
+      "port": "Port Manatee, Florida",
+      "shipments": 3,
+      "million_tons": 0.05,
+      "pct_share": 0.1,
+      "source_countries": 2,
+      "importers": 3
+    },
+    {
+      "port": "Searsport, Maine",
+      "shipments": 2,
+      "million_tons": 0.05,
+      "pct_share": 0.1,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Freeport, Freeport, Texas",
+      "shipments": 1,
+      "million_tons": 0.03,
+      "pct_share": 0.0,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Port Of Entry-Fernandina Beach, Fernandina Beach, Florida",
+      "shipments": 1,
+      "million_tons": 0.02,
+      "pct_share": 0.0,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Port Lavaca, Port Lavaca, Texas",
+      "shipments": 1,
+      "million_tons": 0.02,
+      "pct_share": 0.0,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Port of Beaumont, Beaumont, Texas",
+      "shipments": 1,
+      "million_tons": 0.01,
+      "pct_share": 0.0,
+      "source_countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Saginaw-Bay City-Flint, Saginaw/Bay City, Michigan",
+      "shipments": 1,
+      "million_tons": 0.01,
+      "pct_share": 0.0,
+      "source_countries": 1,
+      "importers": 1
+    }
+  ],
+  "gulf_ports": [
+    {
+      "port": "Houston, Houston, Texas",
+      "shipments": 462,
+      "million_tons": 13.46,
+      "countries": 13,
+      "importers": 20
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "shipments": 82,
+      "million_tons": 3.55,
+      "countries": 7,
+      "importers": 7
+    },
+    {
+      "port": "Corpus Christi, Corpus Christi, Texas",
+      "shipments": 52,
+      "million_tons": 2.65,
+      "countries": 2,
+      "importers": 1
+    },
+    {
+      "port": "The Port of Brownsville, Brownsville, Texas",
+      "shipments": 26,
+      "million_tons": 1.04,
+      "countries": 2,
+      "importers": 2
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "shipments": 39,
+      "million_tons": 0.72,
+      "countries": 6,
+      "importers": 7
+    },
+    {
+      "port": "Alabama State Port Authority, Mobile, Alabama",
+      "shipments": 81,
+      "million_tons": 0.35,
+      "countries": 4,
+      "importers": 3
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "shipments": 9,
+      "million_tons": 0.26,
+      "countries": 2,
+      "importers": 5
+    },
+    {
+      "port": "Sabine, Texas",
+      "shipments": 6,
+      "million_tons": 0.11,
+      "countries": 3,
+      "importers": 1
+    },
+    {
+      "port": "Freeport, Freeport, Texas",
+      "shipments": 1,
+      "million_tons": 0.03,
+      "countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Port Lavaca, Port Lavaca, Texas",
+      "shipments": 1,
+      "million_tons": 0.02,
+      "countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Port of Beaumont, Beaumont, Texas",
+      "shipments": 1,
+      "million_tons": 0.01,
+      "countries": 1,
+      "importers": 1
+    }
+  ],
+  "florida_ports": [
+    {
+      "port": "Tampa, Florida",
+      "shipments": 138,
+      "million_tons": 3.33,
+      "countries": 9,
+      "importers": 4
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "shipments": 144,
+      "million_tons": 2.72,
+      "countries": 9,
+      "importers": 7
+    },
+    {
+      "port": "Jacksonville, Florida",
+      "shipments": 29,
+      "million_tons": 1.04,
+      "countries": 6,
+      "importers": 4
+    },
+    {
+      "port": "The Port of Pensacola, Pensacola, Florida",
+      "shipments": 69,
+      "million_tons": 0.69,
+      "countries": 1,
+      "importers": 3
+    },
+    {
+      "port": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+      "shipments": 45,
+      "million_tons": 0.64,
+      "countries": 6,
+      "importers": 4
+    },
+    {
+      "port": "Port Canaveral, Port Canaveral, Florida",
+      "shipments": 47,
+      "million_tons": 0.28,
+      "countries": 3,
+      "importers": 7
+    },
+    {
+      "port": "Port Panama City, Panama City, Florida",
+      "shipments": 8,
+      "million_tons": 0.13,
+      "countries": 2,
+      "importers": 0
+    },
+    {
+      "port": "Port Manatee, Florida",
+      "shipments": 3,
+      "million_tons": 0.05,
+      "countries": 2,
+      "importers": 3
+    },
+    {
+      "port": "Port Of Entry-Fernandina Beach, Fernandina Beach, Florida",
+      "shipments": 1,
+      "million_tons": 0.02,
+      "countries": 1,
+      "importers": 1
+    }
+  ],
+  "east_coast_ports": [
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "shipments": 118,
+      "million_tons": 3.68,
+      "countries": 8,
+      "importers": 11
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "shipments": 128,
+      "million_tons": 3.25,
+      "countries": 3,
+      "importers": 4
+    },
+    {
+      "port": "Port of Virginia, Norfolk, Virginia",
+      "shipments": 88,
+      "million_tons": 1.87,
+      "countries": 4,
+      "importers": 3
+    },
+    {
+      "port": "ProvPort, Providence, Rhode Island",
+      "shipments": 166,
+      "million_tons": 1.62,
+      "countries": 4,
+      "importers": 5
+    },
+    {
+      "port": "Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",
+      "shipments": 39,
+      "million_tons": 1.58,
+      "countries": 5,
+      "importers": 2
+    },
+    {
+      "port": "New York, New York",
+      "shipments": 81,
+      "million_tons": 1.58,
+      "countries": 3,
+      "importers": 4
+    },
+    {
+      "port": "Port Of Boston, Boston, Massachusetts",
+      "shipments": 30,
+      "million_tons": 0.7,
+      "countries": 2,
+      "importers": 3
+    },
+    {
+      "port": "Wilmington, Wilmington, North Carolina",
+      "shipments": 27,
+      "million_tons": 0.65,
+      "countries": 3,
+      "importers": 4
+    },
+    {
+      "port": "Port of Oswego, Oswego, New York",
+      "shipments": 131,
+      "million_tons": 0.55,
+      "countries": 1,
+      "importers": 2
+    },
+    {
+      "port": "Buffalo\u2011Niagara Falls, New York",
+      "shipments": 71,
+      "million_tons": 0.34,
+      "countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Albany, New York",
+      "shipments": 26,
+      "million_tons": 0.33,
+      "countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Rochester, New York",
+      "shipments": 59,
+      "million_tons": 0.24,
+      "countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "The Port of Charleston, Charleston, South Carolina",
+      "shipments": 7,
+      "million_tons": 0.19,
+      "countries": 2,
+      "importers": 0
+    },
+    {
+      "port": "Port Of Entry-Morehead City - Beaufort, Beaufort\u2011Morehead City, North Carolina",
+      "shipments": 9,
+      "million_tons": 0.11,
+      "countries": 1,
+      "importers": 1
+    },
+    {
+      "port": "Baltimore, Maryland",
+      "shipments": 9,
+      "million_tons": 0.1,
+      "countries": 3,
+      "importers": 3
+    }
+  ],
+  "canada_imports": [
+    {
+      "port": "Detroit/Wayne County Port Authority, Detroit, Michigan",
+      "shipments": 110,
+      "million_tons": 1.69
+    },
+    {
+      "port": "Port Of Cleveland, Cleveland, Ohio",
+      "shipments": 182,
+      "million_tons": 1.25
+    },
+    {
+      "port": "Port of Seattle, Seattle, Washington",
+      "shipments": 171,
+      "million_tons": 1.07
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "shipments": 52,
+      "million_tons": 1.05
+    },
+    {
+      "port": "ProvPort, Providence, Rhode Island",
+      "shipments": 120,
+      "million_tons": 0.89
+    },
+    {
+      "port": "New York, New York",
+      "shipments": 27,
+      "million_tons": 0.66
+    },
+    {
+      "port": "Port of Oswego, Oswego, New York",
+      "shipments": 131,
+      "million_tons": 0.55
+    },
+    {
+      "port": "Buffalo\u2011Niagara Falls, New York",
+      "shipments": 71,
+      "million_tons": 0.34
+    },
+    {
+      "port": "Rochester, New York",
+      "shipments": 59,
+      "million_tons": 0.24
+    },
+    {
+      "port": "Port of Portland, Portland, Oregon",
+      "shipments": 33,
+      "million_tons": 0.23
+    },
+    {
+      "port": "Port of Everett, Everett, Washington",
+      "shipments": 27,
+      "million_tons": 0.17
+    },
+    {
+      "port": "Port Of NewHampshire, Portsmouth, New Hampshire",
+      "shipments": 15,
+      "million_tons": 0.14
+    },
+    {
+      "port": "Port Of Boston, Boston, Massachusetts",
+      "shipments": 7,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Ashtabula/Conneaut, Ohio",
+      "shipments": 2,
+      "million_tons": 0.0
+    }
+  ],
+  "canada_importers": [
+    {
+      "importer": "Votorantim",
+      "shipments": 383,
+      "million_tons": 4.83,
+      "ports": 5
+    },
+    {
+      "importer": "Heidelberg",
+      "shipments": 312,
+      "million_tons": 1.76,
+      "ports": 7
+    },
+    {
+      "importer": "Holcim",
+      "shipments": 311,
+      "million_tons": 1.72,
+      "ports": 9
+    },
+    {
+      "importer": "La Farge Cleveland",
+      "shipments": 1,
+      "million_tons": 0.01,
+      "ports": 1
+    }
+  ],
+  "top_importers": [
+    {
+      "importer": "CEMEX",
+      "parent": "Cemex, S.A.B. De C.V.",
+      "shipments": 448,
+      "million_tons": 5.93,
+      "source_countries": 7,
+      "ports_used": 13
+    },
+    {
+      "importer": "Taiheiyo Cement",
+      "parent": "Taiheiyo Cement Corporation",
+      "shipments": 198,
+      "million_tons": 5.43,
+      "source_countries": 6,
+      "ports_used": 4
+    },
+    {
+      "importer": "Houston Cement Co.",
+      "parent": "Houston Cement Company, L.P.",
+      "shipments": 113,
+      "million_tons": 5.21,
+      "source_countries": 5,
+      "ports_used": 1
+    },
+    {
+      "importer": "Hollingshead Cement Llc",
+      "parent": "Hollingshead Cement Llc",
+      "shipments": 79,
+      "million_tons": 3.35,
+      "source_countries": 7,
+      "ports_used": 4
+    },
+    {
+      "importer": "SESCO",
+      "parent": "Sesco Cement Corp.",
+      "shipments": 154,
+      "million_tons": 3.07,
+      "source_countries": 3,
+      "ports_used": 2
+    },
+    {
+      "importer": "IMI",
+      "parent": null,
+      "shipments": 54,
+      "million_tons": 2.7,
+      "source_countries": 2,
+      "ports_used": 4
+    },
+    {
+      "importer": "Titan",
+      "parent": "Titan S.A.",
+      "shipments": 85,
+      "million_tons": 2.67,
+      "source_countries": 2,
+      "ports_used": 3
+    },
+    {
+      "importer": "Heidelberg",
+      "parent": null,
+      "shipments": 301,
+      "million_tons": 2.64,
+      "source_countries": 3,
+      "ports_used": 12
+    },
+    {
+      "importer": "Titan",
+      "parent": null,
+      "shipments": 87,
+      "million_tons": 2.6,
+      "source_countries": 2,
+      "ports_used": 4
+    },
+    {
+      "importer": "Votorantim",
+      "parent": "Mcinnis Usa Inc.",
+      "shipments": 194,
+      "million_tons": 2.58,
+      "source_countries": 1,
+      "ports_used": 3
+    },
+    {
+      "importer": "Votorantim",
+      "parent": "Hejoassu Administra\u00e7\u00e3o S.A.",
+      "shipments": 187,
+      "million_tons": 2.25,
+      "source_countries": 1,
+      "ports_used": 2
+    },
+    {
+      "importer": "Argos",
+      "parent": null,
+      "shipments": 135,
+      "million_tons": 2.2,
+      "source_countries": 4,
+      "ports_used": 7
+    },
+    {
+      "importer": null,
+      "parent": null,
+      "shipments": 103,
+      "million_tons": 1.84,
+      "source_countries": 9,
+      "ports_used": 20
+    },
+    {
+      "importer": "Argos",
+      "parent": "Grupo Argos S.A.",
+      "shipments": 127,
+      "million_tons": 1.78,
+      "source_countries": 4,
+      "ports_used": 7
+    },
+    {
+      "importer": "Holcim",
+      "parent": "Holcim Ag",
+      "shipments": 81,
+      "million_tons": 1.72,
+      "source_countries": 4,
+      "ports_used": 9
+    },
+    {
+      "importer": "Two Rivers Cement",
+      "parent": "Martin Marietta Materials, Inc.",
+      "shipments": 61,
+      "million_tons": 1.68,
+      "source_countries": 1,
+      "ports_used": 1
+    },
+    {
+      "importer": "Holcim",
+      "parent": null,
+      "shipments": 270,
+      "million_tons": 1.57,
+      "source_countries": 1,
+      "ports_used": 7
+    },
+    {
+      "importer": "Ozinga",
+      "parent": null,
+      "shipments": 42,
+      "million_tons": 1.47,
+      "source_countries": 2,
+      "ports_used": 7
+    },
+    {
+      "importer": "Heidelberg",
+      "parent": "Hm Southeast Cement Llc",
+      "shipments": 38,
+      "million_tons": 1.31,
+      "source_countries": 2,
+      "ports_used": 1
+    },
+    {
+      "importer": "Riverside Constructions",
+      "parent": "Riverside Construction Materials, Inc.",
+      "shipments": 25,
+      "million_tons": 1.19,
+      "source_countries": 3,
+      "ports_used": 1
+    },
+    {
+      "importer": "CIMSA",
+      "parent": "Cimsa Americas Cement Manufacturing And Sales Corp.",
+      "shipments": 90,
+      "million_tons": 1.16,
+      "source_countries": 2,
+      "ports_used": 5
+    },
+    {
+      "importer": "Ash Grove Cement Co.",
+      "parent": "Crh Plc",
+      "shipments": 31,
+      "million_tons": 0.92,
+      "source_countries": 2,
+      "ports_used": 2
+    },
+    {
+      "importer": "Hawaiian Cement",
+      "parent": "Knife River Corporation",
+      "shipments": 27,
+      "million_tons": 0.92,
+      "source_countries": 2,
+      "ports_used": 1
+    },
+    {
+      "importer": "Heidelberg",
+      "parent": "Cementir Holding N.V.",
+      "shipments": 27,
+      "million_tons": 0.87,
+      "source_countries": 2,
+      "ports_used": 2
+    },
+    {
+      "importer": "Heidelberg",
+      "parent": "Heidelberg Materials Us Cement Llc",
+      "shipments": 41,
+      "million_tons": 0.87,
+      "source_countries": 2,
+      "ports_used": 6
+    }
+  ],
+  "monthly_trends": [
+    {
+      "year": 2022,
+      "month": 6,
+      "shipments": 21,
+      "million_tons": 0.32
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "shipments": 110,
+      "million_tons": 1.97
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "shipments": 138,
+      "million_tons": 2.63
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "shipments": 126,
+      "million_tons": 2.16
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "shipments": 110,
+      "million_tons": 2.16
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "shipments": 97,
+      "million_tons": 1.82
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "shipments": 95,
+      "million_tons": 1.6
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "shipments": 93,
+      "million_tons": 1.98
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "shipments": 79,
+      "million_tons": 1.53
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "shipments": 80,
+      "million_tons": 1.83
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "shipments": 102,
+      "million_tons": 1.71
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "shipments": 120,
+      "million_tons": 2.36
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "shipments": 112,
+      "million_tons": 2.25
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "shipments": 123,
+      "million_tons": 2.38
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "shipments": 112,
+      "million_tons": 1.97
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "shipments": 109,
+      "million_tons": 2.04
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "shipments": 105,
+      "million_tons": 1.87
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "shipments": 84,
+      "million_tons": 1.75
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "shipments": 78,
+      "million_tons": 1.3
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "shipments": 72,
+      "million_tons": 1.44
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "shipments": 64,
+      "million_tons": 1.55
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "shipments": 81,
+      "million_tons": 1.77
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "shipments": 102,
+      "million_tons": 1.87
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "shipments": 108,
+      "million_tons": 2.3
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "shipments": 98,
+      "million_tons": 2.1
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "shipments": 111,
+      "million_tons": 2.04
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "shipments": 103,
+      "million_tons": 1.88
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "shipments": 89,
+      "million_tons": 1.89
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "shipments": 76,
+      "million_tons": 1.27
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "shipments": 83,
+      "million_tons": 1.63
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "shipments": 84,
+      "million_tons": 1.64
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "shipments": 62,
+      "million_tons": 1.44
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "shipments": 62,
+      "million_tons": 1.45
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "shipments": 77,
+      "million_tons": 1.54
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "shipments": 92,
+      "million_tons": 1.93
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "shipments": 105,
+      "million_tons": 2.27
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "shipments": 57,
+      "million_tons": 1.19
+    }
+  ],
+  "trade_flows": [
+    {
+      "origin_country": "Turkey",
+      "port": "Houston, Houston, Texas",
+      "importer": "Houston Cement Co.",
+      "shipments": 80,
+      "million_tons": 3.72
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Corpus Christi, Corpus Christi, Texas",
+      "importer": "IMI",
+      "shipments": 48,
+      "million_tons": 2.44
+    },
+    {
+      "origin_country": "Greece",
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "importer": "Titan",
+      "shipments": 66,
+      "million_tons": 1.93
+    },
+    {
+      "origin_country": "United Arab Emirates",
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 40,
+      "million_tons": 1.78
+    },
+    {
+      "origin_country": "Canada",
+      "port": "Detroit/Wayne County Port Authority, Detroit, Michigan",
+      "importer": "Votorantim",
+      "shipments": 105,
+      "million_tons": 1.68
+    },
+    {
+      "origin_country": "South Korea",
+      "port": "Port of Portland, Portland, Oregon",
+      "importer": "Taiheiyo Cement",
+      "shipments": 61,
+      "million_tons": 1.67
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "importer": "Heidelberg",
+      "shipments": 48,
+      "million_tons": 1.67
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Stockton, Stockton, California",
+      "importer": "Taiheiyo Cement",
+      "shipments": 54,
+      "million_tons": 1.6
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Service Port-San Francisco, San Francisco, California",
+      "importer": "Two Rivers Cement",
+      "shipments": 51,
+      "million_tons": 1.4
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",
+      "importer": "Riverside Constructions",
+      "shipments": 28,
+      "million_tons": 1.36
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Houston, Houston, Texas",
+      "importer": "SESCO",
+      "shipments": 37,
+      "million_tons": 1.33
+    },
+    {
+      "origin_country": "Greece",
+      "port": "Tampa, Florida",
+      "importer": "Titan",
+      "shipments": 36,
+      "million_tons": 1.32
+    },
+    {
+      "origin_country": "Greece",
+      "port": "Port of Virginia, Norfolk, Virginia",
+      "importer": "Titan",
+      "shipments": 48,
+      "million_tons": 1.21
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Houston, Houston, Texas",
+      "importer": "Houston Cement Co.",
+      "shipments": 22,
+      "million_tons": 1.12
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Houston, Houston, Texas",
+      "importer": "Argos",
+      "shipments": 51,
+      "million_tons": 1.1
+    },
+    {
+      "origin_country": "Colombia",
+      "port": "San Juan, San Juan, Puerto Rico",
+      "importer": "Argos",
+      "shipments": 74,
+      "million_tons": 1.09
+    },
+    {
+      "origin_country": "Canada",
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "importer": "Votorantim",
+      "shipments": 52,
+      "million_tons": 1.05
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Seattle, Seattle, Washington",
+      "importer": "Taiheiyo Cement",
+      "shipments": 33,
+      "million_tons": 0.97
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "port": "Houston, Houston, Texas",
+      "importer": "SESCO",
+      "shipments": 23,
+      "million_tons": 0.95
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Ozinga",
+      "shipments": 20,
+      "million_tons": 0.93
+    },
+    {
+      "origin_country": "Canada",
+      "port": "ProvPort, Providence, Rhode Island",
+      "importer": "Votorantim",
+      "shipments": 115,
+      "million_tons": 0.87
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "New York, New York",
+      "importer": "Heidelberg",
+      "shipments": 45,
+      "million_tons": 0.81
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Portland, Portland, Oregon",
+      "importer": "Ash Grove Cement Co.",
+      "shipments": 25,
+      "million_tons": 0.81
+    },
+    {
+      "origin_country": "Egypt",
+      "port": "Houston, Houston, Texas",
+      "importer": "SESCO",
+      "shipments": 88,
+      "million_tons": 0.77
+    },
+    {
+      "origin_country": "Canada",
+      "port": "Port of Seattle, Seattle, Washington",
+      "importer": "Heidelberg",
+      "shipments": 118,
+      "million_tons": 0.74
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Houston, Houston, Texas",
+      "importer": "CIMSA",
+      "shipments": 34,
+      "million_tons": 0.71
+    },
+    {
+      "origin_country": "Algeria",
+      "port": "Jacksonville, Florida",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 17,
+      "million_tons": 0.7
+    },
+    {
+      "origin_country": "Mexico",
+      "port": "The Port of Pensacola, Pensacola, Florida",
+      "importer": "CEMEX",
+      "shipments": 65,
+      "million_tons": 0.68
+    },
+    {
+      "origin_country": "Algeria",
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Holcim",
+      "shipments": 17,
+      "million_tons": 0.68
+    },
+    {
+      "origin_country": "Canada",
+      "port": "New York, New York",
+      "importer": "Votorantim",
+      "shipments": 27,
+      "million_tons": 0.66
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Service Port-San Francisco, San Francisco, California",
+      "importer": "CEMEX",
+      "shipments": 42,
+      "million_tons": 0.66
+    },
+    {
+      "origin_country": "Spain",
+      "port": "Port Of Boston, Boston, Massachusetts",
+      "importer": "Coastal Cement Corp.",
+      "shipments": 23,
+      "million_tons": 0.66
+    },
+    {
+      "origin_country": "Colombia",
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Argos",
+      "shipments": 40,
+      "million_tons": 0.64
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "ProvPort, Providence, Rhode Island",
+      "importer": "Heidelberg",
+      "shipments": 36,
+      "million_tons": 0.61
+    },
+    {
+      "origin_country": "Greece",
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Holcim",
+      "shipments": 14,
+      "million_tons": 0.61
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "The Port of Brownsville, Brownsville, Texas",
+      "importer": "Texan Cement ",
+      "shipments": 14,
+      "million_tons": 0.6
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Stockton, Stockton, California",
+      "importer": "Nevada Cement",
+      "shipments": 19,
+      "million_tons": 0.58
+    },
+    {
+      "origin_country": "Canada",
+      "port": "Port Of Cleveland, Cleveland, Ohio",
+      "importer": "Votorantim",
+      "shipments": 84,
+      "million_tons": 0.58
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "port": "Houston, Houston, Texas",
+      "importer": "CEMEX",
+      "shipments": 15,
+      "million_tons": 0.55
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Tampa, Florida",
+      "importer": "Heidelberg",
+      "shipments": 16,
+      "million_tons": 0.53
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Houston, Houston, Texas",
+      "importer": "CEMEX",
+      "shipments": 18,
+      "million_tons": 0.52
+    },
+    {
+      "origin_country": "Thailand",
+      "port": "Service Port-Honolulu, Honolulu, Hawaii",
+      "importer": "Hawaiian Cement",
+      "shipments": 14,
+      "million_tons": 0.49
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Long Beach, Long Beach, California",
+      "importer": "CEMEX",
+      "shipments": 44,
+      "million_tons": 0.48
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Tampa, Florida",
+      "importer": "Titan",
+      "shipments": 10,
+      "million_tons": 0.46
+    },
+    {
+      "origin_country": "Canada",
+      "port": "Port Of Cleveland, Cleveland, Ohio",
+      "importer": "Holcim",
+      "shipments": 63,
+      "million_tons": 0.43
+    },
+    {
+      "origin_country": "Taiwan",
+      "port": "Service Port-Honolulu, Honolulu, Hawaii",
+      "importer": "Hawaiian Cement",
+      "shipments": 13,
+      "million_tons": 0.43
+    },
+    {
+      "origin_country": "Colombia",
+      "port": "Port of Virginia, Norfolk, Virginia",
+      "importer": "Argos",
+      "shipments": 29,
+      "million_tons": 0.43
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "The Port of Brownsville, Brownsville, Texas",
+      "importer": "CRH",
+      "shipments": 10,
+      "million_tons": 0.43
+    },
+    {
+      "origin_country": "Turkey",
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Summit",
+      "shipments": 8,
+      "million_tons": 0.4
+    },
+    {
+      "origin_country": "Vietnam",
+      "port": "Port of Stockton, Stockton, California",
+      "importer": "Heidelberg",
+      "shipments": 11,
+      "million_tons": 0.36
+    }
+  ],
+  "houston": [
+    {
+      "origin_country": "Turkey",
+      "importer": "Houston Cement Co.",
+      "shipments": 80,
+      "million_tons": 3.72
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "SESCO",
+      "shipments": 37,
+      "million_tons": 1.33
+    },
+    {
+      "origin_country": "Vietnam",
+      "importer": "Houston Cement Co.",
+      "shipments": 22,
+      "million_tons": 1.12
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Argos",
+      "shipments": 51,
+      "million_tons": 1.1
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "importer": "SESCO",
+      "shipments": 23,
+      "million_tons": 0.95
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "SESCO",
+      "shipments": 88,
+      "million_tons": 0.77
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "CIMSA",
+      "shipments": 34,
+      "million_tons": 0.71
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "importer": "CEMEX",
+      "shipments": 15,
+      "million_tons": 0.55
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "CEMEX",
+      "shipments": 18,
+      "million_tons": 0.52
+    },
+    {
+      "origin_country": "Vietnam",
+      "importer": "CEMEX",
+      "shipments": 8,
+      "million_tons": 0.35
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 7,
+      "million_tons": 0.31
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "CEMECO",
+      "shipments": 8,
+      "million_tons": 0.27
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "SESACEM",
+      "shipments": 6,
+      "million_tons": 0.24
+    },
+    {
+      "origin_country": "Greece",
+      "importer": "Houston Cement Co.",
+      "shipments": 5,
+      "million_tons": 0.21
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "Royal White Cement",
+      "shipments": 10,
+      "million_tons": 0.13
+    },
+    {
+      "origin_country": "Spain",
+      "importer": "CEMEX",
+      "shipments": 4,
+      "million_tons": 0.13
+    },
+    {
+      "origin_country": "Italy",
+      "importer": "Houston Cement Co.",
+      "shipments": 3,
+      "million_tons": 0.12
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "CEMCO",
+      "shipments": 3,
+      "million_tons": 0.12
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": null,
+      "shipments": 8,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Royal White Cement",
+      "shipments": 3,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Space City Cement Llc",
+      "shipments": 2,
+      "million_tons": 0.06
+    },
+    {
+      "origin_country": "Colombia",
+      "importer": "Argos",
+      "shipments": 3,
+      "million_tons": 0.06
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": null,
+      "shipments": 2,
+      "million_tons": 0.05
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "Texcem Llc",
+      "shipments": 1,
+      "million_tons": 0.05
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Ozinga",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "Construction Asset Holdings Inc.",
+      "shipments": 2,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "Valencia Shipping Llc",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "Us Cement Enterprises Llc",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "importer": "Houston Cement Co.",
+      "shipments": 3,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Vietnam",
+      "importer": "Sohico Ltd. Room 1203 (Hk)",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "Granit Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Greece",
+      "importer": "CEMEX",
+      "shipments": 2,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "United Arab Emirates",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Algeria",
+      "importer": "Sohico Ltd.",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "Cementco Usa Llc",
+      "shipments": 2,
+      "million_tons": 0.02
+    },
+    {
+      "origin_country": "Mexico",
+      "importer": "CEMEX",
+      "shipments": 1,
+      "million_tons": 0.01
+    },
+    {
+      "origin_country": "China",
+      "importer": "CIMSA",
+      "shipments": 1,
+      "million_tons": 0.0
+    },
+    {
+      "origin_country": "Pakistan",
+      "importer": "Space City Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.0
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "Space City Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.0
+    }
+  ],
+  "tampa": [
+    {
+      "origin_country": "Greece",
+      "importer": "Titan",
+      "shipments": 36,
+      "million_tons": 1.32
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Heidelberg",
+      "shipments": 16,
+      "million_tons": 0.53
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Titan",
+      "shipments": 10,
+      "million_tons": 0.46
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "CEMEX",
+      "shipments": 14,
+      "million_tons": 0.22
+    },
+    {
+      "origin_country": "Vietnam",
+      "importer": "CEMEX",
+      "shipments": 9,
+      "million_tons": 0.16
+    },
+    {
+      "origin_country": "Colombia",
+      "importer": "Argos",
+      "shipments": 13,
+      "million_tons": 0.14
+    },
+    {
+      "origin_country": "Mexico",
+      "importer": "CEMEX",
+      "shipments": 11,
+      "million_tons": 0.12
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Argos",
+      "shipments": 6,
+      "million_tons": 0.11
+    },
+    {
+      "origin_country": "Spain",
+      "importer": "CEMEX",
+      "shipments": 7,
+      "million_tons": 0.1
+    },
+    {
+      "origin_country": "Tunisia",
+      "importer": "Argos",
+      "shipments": 10,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "Greece",
+      "importer": "CEMEX",
+      "shipments": 3,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "importer": "CEMEX",
+      "shipments": 2,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "Argos",
+      "shipments": 1,
+      "million_tons": 0.01
+    }
+  ],
+  "louisiana": [
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Vietnam",
+      "importer": "Ozinga",
+      "shipments": 20,
+      "million_tons": 0.93
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Algeria",
+      "importer": "Holcim",
+      "shipments": 17,
+      "million_tons": 0.68
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Greece",
+      "importer": "Holcim",
+      "shipments": 14,
+      "million_tons": 0.61
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "Summit",
+      "shipments": 8,
+      "million_tons": 0.4
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "United Arab Emirates",
+      "importer": "Holcim",
+      "shipments": 4,
+      "million_tons": 0.22
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Vietnam",
+      "importer": null,
+      "shipments": 5,
+      "million_tons": 0.17
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Turkey",
+      "importer": null,
+      "shipments": 3,
+      "million_tons": 0.16
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "CIMSA",
+      "shipments": 5,
+      "million_tons": 0.14
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Vietnam",
+      "importer": null,
+      "shipments": 5,
+      "million_tons": 0.13
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "CIMSA",
+      "shipments": 4,
+      "million_tons": 0.11
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Vietnam",
+      "importer": "Summit",
+      "shipments": 2,
+      "million_tons": 0.1
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "Ozinga",
+      "shipments": 2,
+      "million_tons": 0.1
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Croatia",
+      "importer": "Calucem Inc.",
+      "shipments": 18,
+      "million_tons": 0.08
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "CEMEX",
+      "shipments": 2,
+      "million_tons": 0.08
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Italy",
+      "importer": "Buzzi",
+      "shipments": 2,
+      "million_tons": 0.08
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "Bysco International Llc",
+      "shipments": 2,
+      "million_tons": 0.07
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Italy",
+      "importer": "Lone Star Industries Inc.",
+      "shipments": 2,
+      "million_tons": 0.07
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Egypt",
+      "importer": "Royal White Cement",
+      "shipments": 2,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "IMI",
+      "shipments": 1,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Dominican Republic",
+      "importer": "Asher Materials Llc",
+      "shipments": 3,
+      "million_tons": 0.05
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "Nuh Cimento Sanayi A.S.",
+      "shipments": 1,
+      "million_tons": 0.05
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "CEMECO",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Italy",
+      "importer": null,
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "CEMECO",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "Ozinga",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "origin_country": "Turkey",
+      "importer": "Intercoast Materials Llc",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "origin_country": "Vietnam",
+      "importer": "IMI",
+      "shipments": 1,
+      "million_tons": 0.01
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "origin_country": "Italy",
+      "importer": "Calucem Inc.",
+      "shipments": 1,
+      "million_tons": 0.0
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "origin_country": "China",
+      "importer": null,
+      "shipments": 1,
+      "million_tons": 0.0
+    }
+  ],
+  "usgs_shipments": [
+    {
+      "state": "Texas, southern",
+      "million_short_tons": 24.27
+    },
+    {
+      "state": "California, southern",
+      "million_short_tons": 18.0
+    },
+    {
+      "state": "Florida",
+      "million_short_tons": 11.91
+    },
+    {
+      "state": "Arizona",
+      "million_short_tons": 10.66
+    },
+    {
+      "state": "California, northern",
+      "million_short_tons": 9.78
+    },
+    {
+      "state": "Texas, northern",
+      "million_short_tons": 8.72
+    },
+    {
+      "state": "Nevada",
+      "million_short_tons": 4.66
+    },
+    {
+      "state": "North Carolina",
+      "million_short_tons": 4.02
+    },
+    {
+      "state": "Pennsylvania, eastern",
+      "million_short_tons": 3.51
+    },
+    {
+      "state": "New York, metropolitan",
+      "million_short_tons": 3.14
+    },
+    {
+      "state": "Georgia",
+      "million_short_tons": 2.86
+    },
+    {
+      "state": "Massachusetts",
+      "million_short_tons": 2.45
+    },
+    {
+      "state": "Virginia",
+      "million_short_tons": 2.45
+    },
+    {
+      "state": "South Carolina",
+      "million_short_tons": 2.1
+    },
+    {
+      "state": "New Jersey",
+      "million_short_tons": 2.02
+    },
+    {
+      "state": "Kansas",
+      "million_short_tons": 1.8
+    },
+    {
+      "state": "Missouri",
+      "million_short_tons": 1.75
+    },
+    {
+      "state": "Louisiana",
+      "million_short_tons": 1.69
+    },
+    {
+      "state": "New Mexico",
+      "million_short_tons": 1.68
+    },
+    {
+      "state": "Illinois, excluding Chicago",
+      "million_short_tons": 1.65
+    },
+    {
+      "state": "Iowa",
+      "million_short_tons": 1.63
+    },
+    {
+      "state": "New York, eastern",
+      "million_short_tons": 1.62
+    },
+    {
+      "state": "Ohio",
+      "million_short_tons": 1.59
+    },
+    {
+      "state": "Puerto Rico",
+      "million_short_tons": 1.53
+    },
+    {
+      "state": "Foreign countries",
+      "million_short_tons": 1.51
+    },
+    {
+      "state": "Illinois, metropolitan Chicago",
+      "million_short_tons": 1.44
+    },
+    {
+      "state": "Oklahoma",
+      "million_short_tons": 1.43
+    },
+    {
+      "state": "Connecticut",
+      "million_short_tons": 1.24
+    },
+    {
+      "state": "Arkansas",
+      "million_short_tons": 1.2
+    },
+    {
+      "state": "Washington",
+      "million_short_tons": 1.15
+    }
+  ],
+  "rail_summary": [
+    {
+      "facility_type": "CEMENT_CONSUMER",
+      "total": 546,
+      "rail_served": 546.0
+    },
+    {
+      "facility_type": "CEMENT_DISTRIBUTION",
+      "total": 222,
+      "rail_served": 222.0
+    },
+    {
+      "facility_type": "AGGREGATE",
+      "total": 134,
+      "rail_served": 134.0
+    },
+    {
+      "facility_type": "MASONRY",
+      "total": 101,
+      "rail_served": 101.0
+    },
+    {
+      "facility_type": "CEMENT_PLANT",
+      "total": 100,
+      "rail_served": 88.0
+    },
+    {
+      "facility_type": "READY_MIX",
+      "total": 94,
+      "rail_served": 94.0
+    },
+    {
+      "facility_type": "PRECAST",
+      "total": 3,
+      "rail_served": 3.0
+    },
+    {
+      "facility_type": "TERMINAL",
+      "total": 3,
+      "rail_served": 3.0
+    }
+  ],
+  "plants_by_state": [
+    {
+      "state": "Texas",
+      "plants": 11,
+      "capacity_mtpa": 12.98,
+      "rail_served": 10.0
+    },
+    {
+      "state": "California",
+      "plants": 8,
+      "capacity_mtpa": 11.89,
+      "rail_served": 6.0
+    },
+    {
+      "state": "Missouri",
+      "plants": 5,
+      "capacity_mtpa": 10.7,
+      "rail_served": 4.0
+    },
+    {
+      "state": "Florida",
+      "plants": 7,
+      "capacity_mtpa": 10.4,
+      "rail_served": 7.0
+    },
+    {
+      "state": "Alabama",
+      "plants": 5,
+      "capacity_mtpa": 6.22,
+      "rail_served": 4.0
+    },
+    {
+      "state": "Michigan",
+      "plants": 3,
+      "capacity_mtpa": 4.93,
+      "rail_served": 3.0
+    },
+    {
+      "state": "South Carolina",
+      "plants": 3,
+      "capacity_mtpa": 4.1,
+      "rail_served": 2.0
+    },
+    {
+      "state": "Indiana",
+      "plants": 4,
+      "capacity_mtpa": 4.1,
+      "rail_served": 4.0
+    },
+    {
+      "state": "Illinois",
+      "plants": 4,
+      "capacity_mtpa": 3.43,
+      "rail_served": 3.0
+    },
+    {
+      "state": "Arizona",
+      "plants": 3,
+      "capacity_mtpa": 3.3,
+      "rail_served": 3.0
+    },
+    {
+      "state": "Colorado",
+      "plants": 3,
+      "capacity_mtpa": 3.3,
+      "rail_served": 3.0
+    },
+    {
+      "state": "New York",
+      "plants": 3,
+      "capacity_mtpa": 2.7,
+      "rail_served": 3.0
+    },
+    {
+      "state": "West Virginia",
+      "plants": 1,
+      "capacity_mtpa": 2.2,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Oklahoma",
+      "plants": 3,
+      "capacity_mtpa": 1.98,
+      "rail_served": 2.0
+    },
+    {
+      "state": "Georgia",
+      "plants": 2,
+      "capacity_mtpa": 1.81,
+      "rail_served": 2.0
+    },
+    {
+      "state": "Utah",
+      "plants": 2,
+      "capacity_mtpa": 1.76,
+      "rail_served": 2.0
+    },
+    {
+      "state": "Kentucky",
+      "plants": 1,
+      "capacity_mtpa": 1.7,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Arkansas",
+      "plants": 1,
+      "capacity_mtpa": 1.53,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Kansas",
+      "plants": 2,
+      "capacity_mtpa": 1.5,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Tennessee",
+      "plants": 2,
+      "capacity_mtpa": 1.47,
+      "rail_served": 2.0
+    },
+    {
+      "state": "Pennsylvania",
+      "plants": 6,
+      "capacity_mtpa": 1.32,
+      "rail_served": 5.0
+    },
+    {
+      "state": "Virginia",
+      "plants": 1,
+      "capacity_mtpa": 1.3,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Washington",
+      "plants": 3,
+      "capacity_mtpa": 1.2,
+      "rail_served": 3.0
+    },
+    {
+      "state": "Iowa",
+      "plants": 2,
+      "capacity_mtpa": 1.2,
+      "rail_served": 2.0
+    },
+    {
+      "state": "Nebraska",
+      "plants": 1,
+      "capacity_mtpa": 1.1,
+      "rail_served": 1.0
+    },
+    {
+      "state": "South Dakota",
+      "plants": 1,
+      "capacity_mtpa": 1.1,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Oregon",
+      "plants": 1,
+      "capacity_mtpa": 1.08,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Wyoming",
+      "plants": 1,
+      "capacity_mtpa": 0.8,
+      "rail_served": 0.0
+    },
+    {
+      "state": "Montana",
+      "plants": 2,
+      "capacity_mtpa": 0.75,
+      "rail_served": 2.0
+    },
+    {
+      "state": "New Jersey",
+      "plants": 1,
+      "capacity_mtpa": 0.7,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Maryland",
+      "plants": 3,
+      "capacity_mtpa": 0.6,
+      "rail_served": 3.0
+    },
+    {
+      "state": "Ohio",
+      "plants": 1,
+      "capacity_mtpa": 0.5,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Nevada",
+      "plants": 1,
+      "capacity_mtpa": 0.5,
+      "rail_served": 1.0
+    },
+    {
+      "state": "New Mexico",
+      "plants": 1,
+      "capacity_mtpa": 0.4,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Wisconsin",
+      "plants": 1,
+      "capacity_mtpa": 0.35,
+      "rail_served": 1.0
+    },
+    {
+      "state": "Maine",
+      "plants": 1,
+      "capacity_mtpa": NaN,
+      "rail_served": 0.0
+    }
+  ],
+  "savannah": [
+    {
+      "origin_country": "United Arab Emirates",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 40,
+      "million_tons": 1.78
+    },
+    {
+      "origin_country": "Colombia",
+      "importer": "Argos",
+      "shipments": 40,
+      "million_tons": 0.64
+    },
+    {
+      "origin_country": "Algeria",
+      "importer": "Heidelberg",
+      "shipments": 7,
+      "million_tons": 0.28
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": null,
+      "shipments": 8,
+      "million_tons": 0.19
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Gcnc Port Operations I Llc",
+      "shipments": 3,
+      "million_tons": 0.13
+    },
+    {
+      "origin_country": "Tunisia",
+      "importer": "Heidelberg",
+      "shipments": 3,
+      "million_tons": 0.11
+    },
+    {
+      "origin_country": "Algeria",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 2,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Ozinga",
+      "shipments": 4,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.05
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Nuh Cimento Sanayi A.S.",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Holland Co. Inc.",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Algeria",
+      "importer": "Smyrna Ready Mix Concrete Llc",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "IMI",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Greece",
+      "importer": "Holcim",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "United Arab Emirates",
+      "importer": "Smyrna Ready Mix Concrete Llc",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Argos",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "origin_country": "Congo",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "origin_country": "Saudi Arabia",
+      "importer": "CEMEX",
+      "shipments": 1,
+      "million_tons": 0.02
+    }
+  ],
+  "virginia": [
+    {
+      "origin_country": "Greece",
+      "importer": "Titan",
+      "shipments": 48,
+      "million_tons": 1.21
+    },
+    {
+      "origin_country": "Colombia",
+      "importer": "Argos",
+      "shipments": 29,
+      "million_tons": 0.43
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Titan",
+      "shipments": 4,
+      "million_tons": 0.12
+    },
+    {
+      "origin_country": "France",
+      "importer": null,
+      "shipments": 6,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "France",
+      "importer": "Kerneos Inc.",
+      "shipments": 1,
+      "million_tons": 0.02
+    }
+  ],
+  "nynj": [
+    {
+      "origin_country": "Greece",
+      "importer": "Titan",
+      "shipments": 68,
+      "million_tons": 1.95
+    },
+    {
+      "origin_country": "Canada",
+      "importer": "Votorantim",
+      "shipments": 79,
+      "million_tons": 1.71
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Heidelberg",
+      "shipments": 67,
+      "million_tons": 1.1
+    },
+    {
+      "origin_country": "Canada",
+      "importer": "Holcim",
+      "shipments": 145,
+      "million_tons": 0.66
+    },
+    {
+      "origin_country": "Canada",
+      "importer": "Heidelberg",
+      "shipments": 116,
+      "million_tons": 0.47
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Titan",
+      "shipments": 7,
+      "million_tons": 0.23
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": null,
+      "shipments": 12,
+      "million_tons": 0.14
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Mcinnis Usa Inc.",
+      "shipments": 2,
+      "million_tons": 0.03
+    }
+  ],
+  "providence": [
+    {
+      "origin_country": "Canada",
+      "importer": "Votorantim",
+      "shipments": 115,
+      "million_tons": 0.87
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Heidelberg",
+      "shipments": 36,
+      "million_tons": 0.61
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": null,
+      "shipments": 8,
+      "million_tons": 0.09
+    },
+    {
+      "origin_country": "Algeria",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "origin_country": "Canada",
+      "importer": "Holcim",
+      "shipments": 5,
+      "million_tons": 0.02
+    },
+    {
+      "origin_country": "Spain",
+      "importer": "Mcinnis Usa Inc.",
+      "shipments": 1,
+      "million_tons": 0.01
+    }
+  ],
+  "philadelphia": [
+    {
+      "origin_country": "Turkey",
+      "importer": "Riverside Constructions",
+      "shipments": 28,
+      "million_tons": 1.36
+    },
+    {
+      "origin_country": "Vietnam",
+      "importer": "Riverside Constructions",
+      "shipments": 2,
+      "million_tons": 0.08
+    },
+    {
+      "origin_country": "Algeria",
+      "importer": null,
+      "shipments": 4,
+      "million_tons": 0.05
+    },
+    {
+      "origin_country": "Greece",
+      "importer": "Riverside Constructions",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "origin_country": "Turkey",
+      "importer": "Royal White Cement",
+      "shipments": 2,
+      "million_tons": 0.03
+    },
+    {
+      "origin_country": "Egypt",
+      "importer": "Royal White Cement",
+      "shipments": 2,
+      "million_tons": 0.03
+    }
+  ],
+  "annual_imports": [
+    {
+      "year": 2022,
+      "shipments": 697,
+      "million_tons": 12.65,
+      "countries": 19,
+      "importers": 38
+    },
+    {
+      "year": 2023,
+      "shipments": 1197,
+      "million_tons": 22.96,
+      "countries": 22,
+      "importers": 50
+    },
+    {
+      "year": 2024,
+      "shipments": 1071,
+      "million_tons": 21.39,
+      "countries": 22,
+      "importers": 52
+    },
+    {
+      "year": 2025,
+      "shipments": 455,
+      "million_tons": 9.81,
+      "countries": 19,
+      "importers": 36
+    }
+  ],
+  "turkey_flows": [
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "Houston Cement Co.",
+      "shipments": 80,
+      "million_tons": 3.72
+    },
+    {
+      "port": "Corpus Christi, Corpus Christi, Texas",
+      "importer": "IMI",
+      "shipments": 48,
+      "million_tons": 2.44
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "importer": "Heidelberg",
+      "shipments": 48,
+      "million_tons": 1.67
+    },
+    {
+      "port": "Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",
+      "importer": "Riverside Constructions",
+      "shipments": 28,
+      "million_tons": 1.36
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "SESCO",
+      "shipments": 37,
+      "million_tons": 1.33
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "Argos",
+      "shipments": 51,
+      "million_tons": 1.1
+    },
+    {
+      "port": "New York, New York",
+      "importer": "Heidelberg",
+      "shipments": 45,
+      "million_tons": 0.81
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "CIMSA",
+      "shipments": 34,
+      "million_tons": 0.71
+    },
+    {
+      "port": "ProvPort, Providence, Rhode Island",
+      "importer": "Heidelberg",
+      "shipments": 36,
+      "million_tons": 0.61
+    },
+    {
+      "port": "The Port of Brownsville, Brownsville, Texas",
+      "importer": "Texan Cement ",
+      "shipments": 14,
+      "million_tons": 0.6
+    },
+    {
+      "port": "Tampa, Florida",
+      "importer": "Heidelberg",
+      "shipments": 16,
+      "million_tons": 0.53
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "CEMEX",
+      "shipments": 18,
+      "million_tons": 0.52
+    },
+    {
+      "port": "Tampa, Florida",
+      "importer": "Titan",
+      "shipments": 10,
+      "million_tons": 0.46
+    },
+    {
+      "port": "The Port of Brownsville, Brownsville, Texas",
+      "importer": "CRH",
+      "shipments": 10,
+      "million_tons": 0.43
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Summit",
+      "shipments": 8,
+      "million_tons": 0.4
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "importer": "CEMEX",
+      "shipments": 18,
+      "million_tons": 0.34
+    },
+    {
+      "port": "Detroit/Wayne County Port Authority, Detroit, Michigan",
+      "importer": "Sultan Cement Llc",
+      "shipments": 15,
+      "million_tons": 0.33
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 7,
+      "million_tons": 0.31
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "CEMECO",
+      "shipments": 8,
+      "million_tons": 0.27
+    },
+    {
+      "port": "Albany, New York",
+      "importer": "Heidelberg",
+      "shipments": 21,
+      "million_tons": 0.27
+    },
+    {
+      "port": "Wilmington, Wilmington, North Carolina",
+      "importer": "Ozinga",
+      "shipments": 8,
+      "million_tons": 0.24
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "SESACEM",
+      "shipments": 6,
+      "million_tons": 0.24
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "importer": "Titan",
+      "shipments": 7,
+      "million_tons": 0.23
+    },
+    {
+      "port": "Wilmington, Wilmington, North Carolina",
+      "importer": "Fortress Cement Inc.",
+      "shipments": 11,
+      "million_tons": 0.23
+    },
+    {
+      "port": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+      "importer": "Nuh Cimento Sanayi A.S.",
+      "shipments": 8,
+      "million_tons": 0.22
+    },
+    {
+      "port": "Tampa, Florida",
+      "importer": "CEMEX",
+      "shipments": 14,
+      "million_tons": 0.22
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": null,
+      "shipments": 8,
+      "million_tons": 0.19
+    },
+    {
+      "port": "Alabama State Port Authority, Mobile, Alabama",
+      "importer": "Argos",
+      "shipments": 8,
+      "million_tons": 0.16
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": null,
+      "shipments": 3,
+      "million_tons": 0.16
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "importer": "CIMSA",
+      "shipments": 5,
+      "million_tons": 0.14
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Gcnc Port Operations I Llc",
+      "shipments": 3,
+      "million_tons": 0.13
+    },
+    {
+      "port": "Duluth Seaway Port Authority, Duluth, Wisconsin",
+      "importer": "CRH",
+      "shipments": 6,
+      "million_tons": 0.13
+    },
+    {
+      "port": "Port Canaveral, Port Canaveral, Florida",
+      "importer": "CIMSA",
+      "shipments": 27,
+      "million_tons": 0.13
+    },
+    {
+      "port": "Port of Virginia, Norfolk, Virginia",
+      "importer": "Titan",
+      "shipments": 4,
+      "million_tons": 0.12
+    },
+    {
+      "port": "Wilmington, Wilmington, North Carolina",
+      "importer": "Heidelberg",
+      "shipments": 4,
+      "million_tons": 0.12
+    },
+    {
+      "port": "Duluth Seaway Port Authority, Duluth, Wisconsin",
+      "importer": "Ash Grove Cement Co.",
+      "shipments": 6,
+      "million_tons": 0.11
+    },
+    {
+      "port": "Illinois International Port District, Chicago, Illinois",
+      "importer": "Nuh Cimento Sanayi A.S.",
+      "shipments": 5,
+      "million_tons": 0.11
+    },
+    {
+      "port": "Tampa, Florida",
+      "importer": "Argos",
+      "shipments": 6,
+      "million_tons": 0.11
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "importer": "CIMSA",
+      "shipments": 4,
+      "million_tons": 0.11
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "importer": "Ozinga",
+      "shipments": 2,
+      "million_tons": 0.1
+    },
+    {
+      "port": "Port Of Entry-Morehead City - Beaufort, Beaufort\u2011Morehead City, North Carolina",
+      "importer": "Fortress Cement Inc.",
+      "shipments": 7,
+      "million_tons": 0.1
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Ozinga",
+      "shipments": 4,
+      "million_tons": 0.09
+    },
+    {
+      "port": "ProvPort, Providence, Rhode Island",
+      "importer": null,
+      "shipments": 8,
+      "million_tons": 0.09
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "Royal White Cement",
+      "shipments": 3,
+      "million_tons": 0.09
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "importer": "CEMEX",
+      "shipments": 2,
+      "million_tons": 0.08
+    },
+    {
+      "port": "Ashtabula/Conneaut, Ohio",
+      "importer": "Brunet Trading Ltd.",
+      "shipments": 4,
+      "million_tons": 0.08
+    },
+    {
+      "port": "The Port of Charleston, Charleston, South Carolina",
+      "importer": null,
+      "shipments": 2,
+      "million_tons": 0.08
+    },
+    {
+      "port": "Illinois International Port District, Chicago, Illinois",
+      "importer": "Ozinga",
+      "shipments": 3,
+      "million_tons": 0.07
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "importer": "Bysco International Llc",
+      "shipments": 2,
+      "million_tons": 0.07
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "importer": "CIMSA",
+      "shipments": 19,
+      "million_tons": 0.07
+    },
+    {
+      "port": "Baltimore, Maryland",
+      "importer": "Nouma Trading S.A.",
+      "shipments": 2,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Albany, New York",
+      "importer": null,
+      "shipments": 5,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "Space City Cement Llc",
+      "shipments": 2,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "IMI",
+      "shipments": 1,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Port Canaveral, Port Canaveral, Florida",
+      "importer": "Cement It Inc.",
+      "shipments": 14,
+      "million_tons": 0.06
+    },
+    {
+      "port": "New York, New York",
+      "importer": null,
+      "shipments": 6,
+      "million_tons": 0.06
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Nuh Cimento Sanayi A.S.",
+      "shipments": 1,
+      "million_tons": 0.05
+    },
+    {
+      "port": "Searsport, Maine",
+      "importer": "Dragon Products Ltd.",
+      "shipments": 2,
+      "million_tons": 0.05
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": null,
+      "shipments": 2,
+      "million_tons": 0.05
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Nuh Cimento Sanayi A.S.",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Holland Co. Inc.",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+      "importer": "Royal White Cement",
+      "shipments": 3,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Hollingshead Cement Llc",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Houston, Houston, Texas",
+      "importer": "Ozinga",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port of New Orleans, New Orleans, Louisiana",
+      "importer": "CEMECO",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Jacksonville, Florida",
+      "importer": null,
+      "shipments": 2,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "importer": "CEMECO",
+      "shipments": 1,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+      "importer": "CEMEX",
+      "shipments": 5,
+      "million_tons": 0.04
+    },
+    {
+      "port": "Port Canaveral, Port Canaveral, Florida",
+      "importer": "Crc Rota Sanayi Ve Dis",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Port Manatee, Florida",
+      "importer": "Ash Grove Cement Co.",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Freeport, Freeport, Texas",
+      "importer": "On Site Concrete Solutions",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Port of Gramercy, Gramercy, Louisiana",
+      "importer": "Ozinga",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",
+      "importer": "Royal White Cement",
+      "shipments": 2,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Port Of Entry-West Palm Beach, West Palm Beach, Florida",
+      "importer": "Ozinga",
+      "shipments": 4,
+      "million_tons": 0.03
+    },
+    {
+      "port": "New York, New York",
+      "importer": "Mcinnis Usa Inc.",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "IMI",
+      "shipments": 1,
+      "million_tons": 0.03
+    },
+    {
+      "port": "Georgia Ports Authority, Savannah, Georgia",
+      "importer": "Argos",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port Panama City, Panama City, Florida",
+      "importer": null,
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "importer": null,
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Sabine, Texas",
+      "importer": null,
+      "shipments": 2,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port of Lake Charles, Lake Charles, Louisiana",
+      "importer": "Intercoast Materials Llc",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "importer": "Leheigh hansen",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "importer": "Heidelberg",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port Of Entry-Fernandina Beach, Fernandina Beach, Florida",
+      "importer": "Royal White Cement",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Jacksonville, Florida",
+      "importer": "IMI",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",
+      "importer": "Cement It Inc.",
+      "shipments": 3,
+      "million_tons": 0.02
+    },
+    {
+      "port": "San Juan, San Juan, Puerto Rico",
+      "importer": "Best Distributors Inc.",
+      "shipments": 1,
+      "million_tons": 0.02
+    },
+    {
+      "port": "Port Manatee, Florida",
+      "importer": "Irex De Costa Rica S.A.",
+      "shipments": 1,
+      "million_tons": 0.01
+    },
+    {
+      "port": "Port Canaveral, Port Canaveral, Florida",
+      "importer": "Comercio Para El Desarrrollo",
+      "shipments": 1,
+      "million_tons": 0.01
+    },
+    {
+      "port": "San Juan, San Juan, Puerto Rico",
+      "importer": "Argos",
+      "shipments": 1,
+      "million_tons": 0.01
+    },
+    {
+      "port": "Port Of Entry-Morehead City - Beaufort, Beaufort\u2011Morehead City, North Carolina",
+      "importer": null,
+      "shipments": 2,
+      "million_tons": 0.01
+    },
+    {
+      "port": "New York/Newark Area, Newark, New Jersey",
+      "importer": "Mcinnis Usa Inc.",
+      "shipments": 1,
+      "million_tons": 0.0
+    }
+  ],
+  "gulf_production": [
+    {
+      "state": "Texas",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Holcim US Midlothian Cement Plant",
+      "capacity_mtpa": 2.35
+    },
+    {
+      "state": "Alabama",
+      "company": "National Cement Company Inc",
+      "plant_name": "Ragland Cement Plant",
+      "capacity_mtpa": 2.2
+    },
+    {
+      "state": "Texas",
+      "company": "Ash Grove Cement Co",
+      "plant_name": "Hunter Cement Plant",
+      "capacity_mtpa": 2.1
+    },
+    {
+      "state": "Florida",
+      "company": "Titan America LLC",
+      "plant_name": "Pennusco Cement Plant",
+      "capacity_mtpa": 2.1
+    },
+    {
+      "state": "Texas",
+      "company": "CEMEX Inc",
+      "plant_name": "New Braunfels Balcones Cement Plant",
+      "capacity_mtpa": 2.0
+    },
+    {
+      "state": "Florida",
+      "company": "Argos USA LLC",
+      "plant_name": "Tampa Port Cement Plant",
+      "capacity_mtpa": 1.9
+    },
+    {
+      "state": "Texas",
+      "company": "Martin Marietta Materials Inc",
+      "plant_name": "Martin Marietta Materials Inc. Midlothian Cement Plant",
+      "capacity_mtpa": 1.89
+    },
+    {
+      "state": "Alabama",
+      "company": "Argos USA LLC",
+      "plant_name": "Roberta Cement Plant",
+      "capacity_mtpa": 1.7
+    },
+    {
+      "state": "Florida",
+      "company": "Argos USA LLC",
+      "plant_name": "Newberry Cement Plant",
+      "capacity_mtpa": 1.6
+    },
+    {
+      "state": "Florida",
+      "company": "CEMEX Inc",
+      "plant_name": "Brooksville South Cement Plant",
+      "capacity_mtpa": 1.5
+    },
+    {
+      "state": "Alabama",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Theodore Cement Plant",
+      "capacity_mtpa": 1.5
+    },
+    {
+      "state": "Florida",
+      "company": "Ash Grove Cement Co",
+      "plant_name": "Sumterville Cement Plant",
+      "capacity_mtpa": 1.2
+    },
+    {
+      "state": "Texas",
+      "company": "Alamo Cement Co",
+      "plant_name": "Alamo Concrete Cement Plant",
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "Texas",
+      "company": "Buzzi Unicem USA Inc",
+      "plant_name": "Maryneal Cement Plant",
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "Florida",
+      "company": "CEMEX Inc",
+      "plant_name": "Miami Cement Plant",
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "Florida",
+      "company": "Ash Grove Cement Co",
+      "plant_name": "Branford Cement Plant",
+      "capacity_mtpa": 1.0
+    },
+    {
+      "state": "Texas",
+      "company": "Ash Grove Cement Co",
+      "plant_name": "Ash Grove Midlothian Cement Plant",
+      "capacity_mtpa": 0.9
+    },
+    {
+      "state": "Texas",
+      "company": "Capitol Aggregates Inc",
+      "plant_name": "San Antonio Cement Plant",
+      "capacity_mtpa": 0.9
+    },
+    {
+      "state": "Alabama",
+      "company": "CEMEX Inc",
+      "plant_name": "Demopolis Cement Plant",
+      "capacity_mtpa": 0.82
+    },
+    {
+      "state": "Texas",
+      "company": "GCC SAB de CV",
+      "plant_name": "GCC SAB de CV Odessa Cement Plant",
+      "capacity_mtpa": 0.5
+    },
+    {
+      "state": "Texas",
+      "company": "Lehigh White Cement Company LLC",
+      "plant_name": "Waco White Cement Plant",
+      "capacity_mtpa": 0.14
+    },
+    {
+      "state": "Alabama",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Heidelberg Leeds Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "Texas",
+      "company": "Texas Lehigh Cement Company LP",
+      "plant_name": "Texas Lehigh Buda Cement Plant",
+      "capacity_mtpa": NaN
+    }
+  ],
+  "east_coast_production": [
+    {
+      "state": "West Virginia",
+      "company": "Argos USA LLC",
+      "plant_name": "Martinsburg Cement Plant",
+      "capacity_mtpa": 2.2
+    },
+    {
+      "state": "South Carolina",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Holly Hill Cement Plant",
+      "capacity_mtpa": 2.2
+    },
+    {
+      "state": "New York",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Ravena Cement Plant",
+      "capacity_mtpa": 2.2
+    },
+    {
+      "state": "Virginia",
+      "company": "Titan America LLC",
+      "plant_name": "Roanoke Cement Plant",
+      "capacity_mtpa": 1.3
+    },
+    {
+      "state": "Pennsylvania",
+      "company": "Buzzi Unicem USA Inc",
+      "plant_name": "Stockertown Cement Plant",
+      "capacity_mtpa": 1.18
+    },
+    {
+      "state": "South Carolina",
+      "company": "Argos USA LLC",
+      "plant_name": "Harleyville Cement Plant",
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "Georgia",
+      "company": "Argos USA LLC",
+      "plant_name": "Atlanta Cement Plant",
+      "capacity_mtpa": 1.1
+    },
+    {
+      "state": "South Carolina",
+      "company": "Giant Cement Company Inc",
+      "plant_name": "Giant Cement Harleyville Cement Plant",
+      "capacity_mtpa": 0.8
+    },
+    {
+      "state": "Georgia",
+      "company": "CEMEX Inc",
+      "plant_name": "Clinchfield Cement Plant",
+      "capacity_mtpa": 0.71
+    },
+    {
+      "state": "New Jersey",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Heidelberg Camden Cement Plant",
+      "capacity_mtpa": 0.7
+    },
+    {
+      "state": "Maryland",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Hagerstown Cement Plant",
+      "capacity_mtpa": 0.6
+    },
+    {
+      "state": "New York",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Lehigh Glens Falls Cement Plant",
+      "capacity_mtpa": 0.5
+    },
+    {
+      "state": "Pennsylvania",
+      "company": "Lehigh White Cement Company LLC",
+      "plant_name": "York Cement Plant",
+      "capacity_mtpa": 0.14
+    },
+    {
+      "state": "Pennsylvania",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Heidelberg Fleetwood Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "Maryland",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Heidelberg Union Bridge Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "Pennsylvania",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Heidelberg Nazareth Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "New York",
+      "company": "Heidelberg Materials US Inc",
+      "plant_name": "Heidelberg Catskill Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "Pennsylvania",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Whitehall Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "Maryland",
+      "company": "Holcim (US) Inc",
+      "plant_name": "Sparrow Point Slag Cement Plant",
+      "capacity_mtpa": NaN
+    },
+    {
+      "state": "Pennsylvania",
+      "company": "Armstrong Cement & Supply Corp",
+      "plant_name": "Cabot Cement Plant",
+      "capacity_mtpa": NaN
+    }
+  ],
+  "competitor_imports": [
+    {
+      "importer": "Heidelberg",
+      "total_million_tons": 6.74,
+      "gulf_mt": 0.0,
+      "florida_mt": 2.24,
+      "georgia_mt": 0.4,
+      "nynj_mt": 1.57
+    },
+    {
+      "importer": "CEMEX",
+      "total_million_tons": 6.16,
+      "gulf_mt": 1.67,
+      "florida_mt": 2.37,
+      "georgia_mt": 0.02,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Taiheiyo Cement",
+      "total_million_tons": 5.46,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Titan",
+      "total_million_tons": 5.29,
+      "gulf_mt": 0.0,
+      "florida_mt": 1.78,
+      "georgia_mt": 0.0,
+      "nynj_mt": 2.18
+    },
+    {
+      "importer": "Houston Cement Co.",
+      "total_million_tons": 5.21,
+      "gulf_mt": 5.21,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Votorantim",
+      "total_million_tons": 4.83,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 1.71
+    },
+    {
+      "importer": "Argos",
+      "total_million_tons": 3.98,
+      "gulf_mt": 1.16,
+      "florida_mt": 0.35,
+      "georgia_mt": 0.66,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Hollingshead Cement Llc",
+      "total_million_tons": 3.35,
+      "gulf_mt": 0.39,
+      "florida_mt": 0.96,
+      "georgia_mt": 1.98,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Holcim",
+      "total_million_tons": 3.29,
+      "gulf_mt": 1.51,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.03,
+      "nynj_mt": 0.66
+    },
+    {
+      "importer": "SESCO",
+      "total_million_tons": 3.08,
+      "gulf_mt": 3.05,
+      "florida_mt": 0.03,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "IMI",
+      "total_million_tons": 2.77,
+      "gulf_mt": 2.72,
+      "florida_mt": 0.02,
+      "georgia_mt": 0.03,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": null,
+      "total_million_tons": 1.84,
+      "gulf_mt": 0.71,
+      "florida_mt": 0.32,
+      "georgia_mt": 0.19,
+      "nynj_mt": 0.14
+    },
+    {
+      "importer": "Two Rivers Cement",
+      "total_million_tons": 1.7,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Ozinga",
+      "total_million_tons": 1.52,
+      "gulf_mt": 1.09,
+      "florida_mt": 0.03,
+      "georgia_mt": 0.09,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Riverside Constructions",
+      "total_million_tons": 1.48,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "CIMSA",
+      "total_million_tons": 1.16,
+      "gulf_mt": 0.96,
+      "florida_mt": 0.2,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Ash Grove Cement Co.",
+      "total_million_tons": 0.95,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.03,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Hawaiian Cement",
+      "total_million_tons": 0.92,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Coastal Cement Corp.",
+      "total_million_tons": 0.66,
+      "gulf_mt": 0.0,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    },
+    {
+      "importer": "Texan Cement ",
+      "total_million_tons": 0.6,
+      "gulf_mt": 0.6,
+      "florida_mt": 0.0,
+      "georgia_mt": 0.0,
+      "nynj_mt": 0.0
+    }
+  ]
+}

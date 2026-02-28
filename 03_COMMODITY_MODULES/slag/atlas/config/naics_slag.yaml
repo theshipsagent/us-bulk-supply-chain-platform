@@ -1,0 +1,46 @@
+# Slag / GGBFS Industry NAICS Codes
+# ====================================
+# Iron & steel mills (GGBFS source), EAF operations (non-source),
+# slag processors, cement/concrete end users
+
+steel_production_integrated:
+  - code: "331110"
+    description: "Iron and Steel Mills and Ferroalloy Manufacturing"
+    category: "Steel Production (BF-BOF)"
+  - code: "331111"
+    description: "Iron and Steel Mills"
+    category: "Steel Production (BF-BOF)"
+
+steel_production_eaf:
+  - code: "331112"
+    description: "Electrometallurgical Ferroalloy Product Manufacturing"
+    category: "Steel Production (EAF)"
+
+cement_concrete:
+  - code: "327310"
+    description: "Cement Manufacturing"
+    category: "Cement/Concrete End User"
+  - code: "327320"
+    description: "Ready-Mix Concrete Manufacturing"
+    category: "Cement/Concrete End User"
+  - code: "327390"
+    description: "Other Concrete Product Manufacturing"
+    category: "Cement/Concrete End User"
+
+slag_processing:
+  - code: "212399"
+    description: "All Other Nonmetallic Mineral Mining and Quarrying"
+    category: "Slag Processing"
+  - code: "562998"
+    description: "All Other Miscellaneous Waste Management Services"
+    category: "Slag Processing"
+
+steel_pipe:
+  - code: "331210"
+    description: "Iron and Steel Pipe and Tube Manufacturing from Purchased Steel"
+    category: "Steel Downstream"
+
+# Broad prefixes for initial filtering
+broad_prefixes:
+  - "3311"   # Iron and Steel Mills
+  - "3273"   # Cement and Concrete Product Manufacturing

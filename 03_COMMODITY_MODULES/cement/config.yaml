@@ -1,0 +1,164 @@
+## Cement Commodity Module Configuration
+## US Bulk Supply Chain Reporting Platform v1.0.0
+
+module:
+  name: "Cement & Cementitious Materials"
+  version: "1.0.0"
+  status: "active"
+
+## NAICS codes for EPA FRS facility queries
+naics_codes:
+  primary:
+    - "327310"   # Cement Manufacturing
+    - "327320"   # Ready-Mix Concrete Manufacturing
+  secondary:
+    - "327331"   # Concrete Block and Brick Manufacturing
+    - "327332"   # Concrete Pipe Manufacturing
+    - "327390"   # Other Concrete Product Manufacturing
+    - "327410"   # Lime Manufacturing
+  scm_sources:
+    - "221112"   # Fossil Fuel Electric Power Generation (fly ash)
+    - "331110"   # Iron and Steel Mills (slag)
+    - "212312"   # Crushed Stone Mining (limestone)
+    - "212319"   # Other Crushed and Broken Stone Mining (pozzolans)
+
+## HTS codes for Panjiva/trade flow analysis
+hts_codes:
+  portland_cement:
+    "2523.10": "Cement clinkers"
+    "2523.21": "White Portland cement"
+    "2523.29": "Other Portland cement"
+    "2523.30": "Aluminous cement"
+    "2523.90": "Other hydraulic cements"
+  scm_trade:
+    "2618.00": "Granulated slag from iron/steel"
+    "2619.00": "Slag, dross (non-granulated)"
+    "2621.00": "Slag wool, rock wool"
+
+## STCC codes for rail waybill analysis
+stcc_codes:
+  cement: "3241"
+  concrete_products: "3273"
+  lime: "3274"
+  slag: "3312"
+
+## Key market parameters (2024-2025 estimates)
+market:
+  us_production_mtpa: 100
+  us_consumption_mtpa: 110
+  us_import_mtpa: 15
+  us_export_mtpa: 2
+  avg_plant_price_per_ton: 150
+  capacity_utilization_pct: 88
+  num_plants: 98
+  num_import_terminals: 25
+
+## Import origins (top 10 by volume)
+import_origins:
+  - country: "Turkey"
+    share_pct: 30
+    tariff_rate_pct: 0
+    section_301_exposure: "high"
+  - country: "Canada"
+    share_pct: 15
+    tariff_rate_pct: 0
+    section_301_exposure: "low"
+  - country: "Greece"
+    share_pct: 12
+    tariff_rate_pct: 0
+    section_301_exposure: "medium"
+  - country: "Egypt"
+    share_pct: 10
+    tariff_rate_pct: 0
+    section_301_exposure: "medium"
+  - country: "Vietnam"
+    share_pct: 8
+    tariff_rate_pct: 0
+    section_301_exposure: "high"
+  - country: "China"
+    share_pct: 6
+    tariff_rate_pct: 0
+    section_301_exposure: "very_high"
+  - country: "Colombia"
+    share_pct: 5
+    tariff_rate_pct: 0
+    section_301_exposure: "low"
+  - country: "Dominican Republic"
+    share_pct: 4
+    tariff_rate_pct: 0
+    section_301_exposure: "low"
+  - country: "Mexico"
+    share_pct: 3
+    tariff_rate_pct: 0
+    section_301_exposure: "low"
+  - country: "South Korea"
+    share_pct: 2
+    tariff_rate_pct: 0
+    section_301_exposure: "medium"
+
+## SESCO context
+sesco:
+  company: "SESCO Cement Corporation"
+  parent: "SESCO Group (Egypt)"
+  brands:
+    - "Royal El Minya White Cement (Egypt)"
+    - "Cleopatra Cement (Egypt)"
+  partners:
+    - "Nuh Cement (Turkey) - gray cement"
+  terminals:
+    houston:
+      description: "World's largest privately owned single-user cement terminal"
+      acreage: 22
+      storage_capacity_tons: 150000
+      expansion_target_year: 2025
+      lat: 29.7355
+      lon: -95.2615
+  import_origins:
+    - country: "Egypt"
+      tariff_rate_pct: 10
+      products: ["white Portland cement", "clinker"]
+    - country: "Turkey"
+      tariff_rate_pct: 10
+      products: ["gray Portland cement"]
+
+## Toolset dependencies
+toolsets:
+  barge_cost_model:
+    use: "cement-specific barge route costing"
+    config:
+      commodity: "cement"
+      handling: "pneumatic"
+      discharge_rate_tph: 400
+  rail_cost_model:
+    use: "cement rail distribution costing"
+    config:
+      stcc: "3241"
+      car_type: "covered_hopper"
+      tons_per_car: 100
+  port_cost_model:
+    use: "port proforma for cement vessels"
+    config:
+      cargo_type: "cement_pneumatic"
+      typical_vessel: "supramax"
+  facility_registry:
+    use: "EPA FRS cement plant/terminal locations"
+    config:
+      naics_filter: ["327310", "327320"]
+  vessel_intelligence:
+    use: "Panjiva cement import tracking"
+    config:
+      hts_filter: ["2523"]
+  policy_analysis:
+    use: "Section 301, tariff impact on cement imports"
+    config:
+      vessel_types: ["bulk", "general_cargo"]
+
+## Report generation
+reports:
+  commodity_report:
+    path: "04_REPORTS/cement_commodity_report/"
+    chapters: 11  # 00 (exec summary) + 01-10
+    format: ["markdown", "docx"]
+  executive_briefing:
+    path: "03_COMMODITY_MODULES/cement/reports/published/"
+    format: ["markdown", "pdf"]

@@ -1,0 +1,103 @@
+# Target Companies for Fuzzy Matching — US Slag / GGBFS Supply Chain
+# ===================================================================
+# Steel producers (BF-BOF), slag processors, GGBFS grinders, cement consumers
+
+integrated_steel_mills:
+  # Cleveland-Cliffs — largest US flat-rolled steel, multiple BFs
+  - "Cleveland-Cliffs"
+  - "Cleveland Cliffs"
+  - "Cliffs Natural Resources"
+  - "AK Steel"
+  - "ArcelorMittal USA"
+  - "ArcelorMittal"
+
+  # U.S. Steel / Nippon Steel — Gary Works, Mon Valley, Great Lakes
+  - "United States Steel"
+  - "U.S. Steel"
+  - "US Steel"
+  - "USS"
+  - "Nippon Steel"
+
+  # Nucor — primarily EAF but has some integrated capacity
+  - "Nucor"
+  - "Nucor Corporation"
+  - "Nucor Steel"
+
+  # Steel Dynamics (SDI) — EAF
+  - "Steel Dynamics"
+  - "SDI"
+
+  # SSAB — formerly IPSCO
+  - "SSAB"
+  - "SSAB Americas"
+  - "IPSCO"
+
+slag_processors:
+  # Edw. C. Levy Co. — largest US slag processor (10+ Mt/yr)
+  - "Edw. C. Levy"
+  - "Levy"
+  - "Edward C. Levy"
+  - "E.C. Levy"
+
+  # Charah Solutions — Greens Port grinding, MultiCem
+  - "Charah"
+  - "Charah Solutions"
+  - "Charah Inc"
+
+  # Harsco Environmental — slag processing/metal recovery
+  - "Harsco"
+  - "Harsco Environmental"
+  - "Harsco Metals"
+
+  # Phoenix Services — slag processing
+  - "Phoenix Services"
+
+  # Tube City IMS — slag processing (acquired by Harsco)
+  - "Tube City"
+  - "Tube City IMS"
+
+  # SATHI (Sathi Group) — GGBFS importer/distributor
+  - "SATHI"
+  - "Sathi Group"
+
+ggbfs_grinders:
+  # Heidelberg Materials — Houston facility 500K t/yr, major GGBFS operations
+  - "Heidelberg Materials"
+  - "Lehigh Hanson"
+  - "Lehigh Cement"
+
+  # Holcim — slag grinding stations (IL 600K t/yr, Midfield AL 450K t/yr)
+  - "Holcim"
+  - "Holcim US"
+  - "LafargeHolcim"
+  - "Lafarge"
+  - "Lafarge Holcim"
+
+  # Buzzi Unicem — Cape Canaveral, Stockertown
+  - "Buzzi Unicem"
+  - "Buzzi"
+  - "Essroc"
+
+  # Argos — slag operations
+  - "Argos"
+  - "Argos USA"
+  - "Cementos Argos"
+
+  # Skyway Cement — GGBFS specialist
+  - "Skyway Cement"
+  - "Skyway"
+
+  # Ecocem — Europe's largest, entering US
+  - "Ecocem"
+
+cement_consumers:
+  # Major cement producers that use GGBFS
+  - "CEMEX"
+  - "CEMEX USA"
+  - "CalPortland"
+  - "Ash Grove"
+  - "Texas Lehigh"
+  - "CRH"
+  - "CRH Americas"
+  - "Summit Materials"
+  - "Quikrete"

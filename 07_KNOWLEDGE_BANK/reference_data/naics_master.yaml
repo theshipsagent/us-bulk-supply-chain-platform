@@ -1,0 +1,405 @@
+# NAICS MASTER TAXONOMY
+# Centralized NAICS code reference with commodity mappings
+# Eliminates duplication across commodity modules
+# Source: US Census Bureau NAICS 2022 (next revision: 2027)
+# Last Updated: 2026-02-23
+
+---
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+
+221:
+  description: "Utilities"
+  parent_sector: "22 - Utilities"
+  commodities: []
+  notes: "Broad utilities sector"
+
+221112:
+  description: "Fossil Fuel Electric Power Generation"
+  parent_sector: "221 - Utilities"
+  commodities:
+    - commodity: "coal"
+      relationship: "primary_fuel"
+    - commodity: "fly_ash"
+      relationship: "byproduct_source"
+    - commodity: "cement"
+      relationship: "scm_supplier"
+    - commodity: "natural_gas"
+      relationship: "fuel_alternative"
+  closure_risk: "high"
+  notes: "Coal plant retirement wave ongoing; 68.8 GW to retire by 2030. Primary source of fly ash for SCM market."
+  data_sources:
+    - "EIA-860 (electric generator inventory)"
+    - "EPA FRS"
+    - "EIA-923 (generation and fuel)"
+
+# ============================================================================
+# MINING & QUARRYING
+# ============================================================================
+
+212312:
+  description: "Crushed and Broken Limestone Mining and Quarrying"
+  parent_sector: "2123 - Nonmetallic Mineral Mining and Quarrying"
+  commodities:
+    - commodity: "aggregates"
+      relationship: "primary_product"
+    - commodity: "cement"
+      relationship: "raw_material_supplier"
+    - commodity: "natural_pozzolan"
+      relationship: "related_product"
+  notes: "Limestone is both construction aggregate and cement feedstock. ~1.05 Bt annually."
+  data_sources:
+    - "USGS Mineral Commodity Summaries"
+    - "EPA FRS"
+
+212319:
+  description: "Other Crushed and Broken Stone Mining and Quarrying"
+  parent_sector: "2123 - Nonmetallic Mineral Mining and Quarrying"
+  commodities:
+    - commodity: "aggregates"
+      relationship: "primary_product"
+    - commodity: "natural_pozzolan"
+      relationship: "includes_pumice_volcanic_ash"
+  notes: "Includes granite, trap rock, and other specialty aggregates."
+  data_sources:
+    - "USGS Mineral Commodity Summaries"
+    - "EPA FRS"
+
+212325:
+  description: "Clay and Ceramic and Refractory Minerals Mining"
+  parent_sector: "2123 - Nonmetallic Mineral Mining and Quarrying"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "kaolin_for_calcined_clay"
+    - commodity: "cement"
+      relationship: "lc3_feedstock"
+  notes: "Kaolin clay source for calcined clay (metakaolin) production; LC3 cement feedstock."
+  data_sources:
+    - "USGS Mineral Commodity Summaries"
+    - "EPA FRS"
+
+212399:
+  description: "All Other Nonmetallic Mineral Mining and Quarrying"
+  parent_sector: "2123 - Nonmetallic Mineral Mining and Quarrying"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "pumice_volcanic_ash_mining"
+    - commodity: "slag"
+      relationship: "slag_reprocessing"
+    - commodity: "fly_ash"
+      relationship: "ash_harvesting"
+  notes: "Catch-all for specialty minerals including pozzolans, slag pile reprocessing, ash pond harvesting."
+  data_sources:
+    - "EPA FRS"
+
+# ============================================================================
+# NONMETALLIC MINERAL PRODUCT MANUFACTURING
+# ============================================================================
+
+327310:
+  description: "Cement Manufacturing"
+  parent_sector: "3273 - Cement and Concrete Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "primary_manufacturer"
+    - commodity: "slag"
+      relationship: "scm_consumer_blender"
+    - commodity: "fly_ash"
+      relationship: "scm_consumer"
+    - commodity: "natural_pozzolan"
+      relationship: "scm_consumer"
+  notes: "Portland cement production and blended cement (slag cement, pozzolan cement). ~38 active plants in US."
+  data_sources:
+    - "Portland Cement Association (PCA)"
+    - "USGS Mineral Commodity Summaries"
+    - "EPA FRS"
+
+327320:
+  description: "Ready-Mix Concrete Manufacturing"
+  parent_sector: "3273 - Cement and Concrete Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "primary_consumer"
+    - commodity: "aggregates"
+      relationship: "primary_consumer"
+    - commodity: "slag"
+      relationship: "scm_consumer"
+    - commodity: "fly_ash"
+      relationship: "scm_consumer"
+    - commodity: "natural_pozzolan"
+      relationship: "scm_consumer"
+  notes: "Largest consumer of cement, aggregates, and SCMs. ~5,500 plants nationwide."
+  data_sources:
+    - "National Ready Mixed Concrete Association (NRMCA)"
+    - "EPA FRS"
+
+327331:
+  description: "Concrete Block and Brick Manufacturing"
+  parent_sector: "3273 - Cement and Concrete Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "consumer"
+    - commodity: "aggregates"
+      relationship: "consumer"
+  notes: "Precast concrete product manufacturing."
+  data_sources:
+    - "EPA FRS"
+
+327332:
+  description: "Concrete Pipe Manufacturing"
+  parent_sector: "3273 - Cement and Concrete Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "consumer"
+    - commodity: "aggregates"
+      relationship: "consumer"
+  notes: "Specialty precast concrete products."
+  data_sources:
+    - "EPA FRS"
+
+327390:
+  description: "Other Concrete Product Manufacturing"
+  parent_sector: "3273 - Cement and Concrete Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "consumer"
+    - commodity: "aggregates"
+      relationship: "consumer"
+    - commodity: "slag"
+      relationship: "scm_consumer"
+    - commodity: "fly_ash"
+      relationship: "scm_consumer"
+  notes: "Includes precast structural elements, architectural concrete, etc."
+  data_sources:
+    - "EPA FRS"
+
+327410:
+  description: "Lime Manufacturing"
+  parent_sector: "3274 - Lime and Gypsum Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "related_industry"
+    - commodity: "steel"
+      relationship: "lime_consumer"
+  notes: "Lime production; related to cement but distinct process."
+  data_sources:
+    - "USGS Mineral Commodity Summaries"
+    - "EPA FRS"
+
+327420:
+  description: "Gypsum Product Manufacturing"
+  parent_sector: "3274 - Lime and Gypsum Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "related_industry"
+  notes: "Gypsum wallboard; related to cement/construction materials."
+  data_sources:
+    - "EPA FRS"
+
+327910:
+  description: "Abrasive Product Manufacturing"
+  parent_sector: "3279 - Other Nonmetallic Mineral Product Manufacturing"
+  commodities:
+    - commodity: "cement"
+      relationship: "related_industry"
+  notes: "Industrial abrasives."
+  data_sources:
+    - "EPA FRS"
+
+327999:
+  description: "All Other Miscellaneous Nonmetallic Mineral Product Manufacturing"
+  parent_sector: "3279 - Other Nonmetallic Mineral Product Manufacturing"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "processing"
+    - commodity: "cement"
+      relationship: "specialty_products"
+  notes: "Catch-all for specialty nonmetallic mineral products including pozzolan processing."
+  data_sources:
+    - "EPA FRS"
+
+# ============================================================================
+# PRIMARY METAL MANUFACTURING
+# ============================================================================
+
+331110:
+  description: "Iron and Steel Mills and Ferroalloy Manufacturing"
+  parent_sector: "3311 - Iron and Steel Mills and Ferroalloy Manufacturing"
+  commodities:
+    - commodity: "steel"
+      relationship: "primary_manufacturer"
+    - commodity: "slag"
+      relationship: "byproduct_source_integrated"
+    - commodity: "cement"
+      relationship: "scm_supplier"
+  furnace_type: "integrated_blast_furnace"
+  notes: "Integrated steel mills (blast furnace-basic oxygen furnace); primary source of GGBFS. US market transitioning to EAF (70% of production) which does NOT produce GGBFS."
+  data_sources:
+    - "American Iron and Steel Institute (AISI)"
+    - "EPA FRS"
+
+331111:
+  description: "Iron and Steel Mills (Integrated BF-BOF)"
+  parent_sector: "3311 - Iron and Steel Mills and Ferroalloy Manufacturing"
+  commodities:
+    - commodity: "steel"
+      relationship: "integrated_production"
+    - commodity: "slag"
+      relationship: "ggbfs_source"
+  furnace_type: "blast_furnace"
+  notes: "Specific to integrated blast furnace operations. ONLY source of GGBFS in US."
+  data_sources:
+    - "EPA FRS"
+
+331112:
+  description: "Electrometallurgical Ferroalloy Product Manufacturing (EAF)"
+  parent_sector: "3311 - Iron and Steel Mills and Ferroalloy Manufacturing"
+  commodities:
+    - commodity: "steel"
+      relationship: "eaf_production"
+  furnace_type: "electric_arc_furnace"
+  notes: "Electric arc furnace steel production. Does NOT produce GGBFS. Growing share of US steel production (70% in 2024)."
+  data_sources:
+    - "EPA FRS"
+
+331210:
+  description: "Iron and Steel Pipe and Tube Manufacturing from Purchased Steel"
+  parent_sector: "3312 - Steel Product Manufacturing from Purchased Steel"
+  commodities:
+    - commodity: "steel"
+      relationship: "downstream_fabrication"
+  notes: "Steel fabrication from purchased steel; not primary production."
+  data_sources:
+    - "EPA FRS"
+
+# ============================================================================
+# CHEMICAL MANUFACTURING
+# ============================================================================
+
+325199:
+  description: "All Other Basic Organic Chemical Manufacturing"
+  parent_sector: "3251 - Basic Chemical Manufacturing"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "processing"
+  notes: "May include specialty chemical processing of pozzolanic materials."
+  data_sources:
+    - "EPA FRS"
+
+# ============================================================================
+# WHOLESALE TRADE
+# ============================================================================
+
+423320:
+  description: "Brick, Stone, and Related Construction Material Merchant Wholesalers"
+  parent_sector: "4233 - Lumber and Other Construction Materials Merchant Wholesalers"
+  commodities:
+    - commodity: "cement"
+      relationship: "distribution"
+    - commodity: "aggregates"
+      relationship: "distribution"
+    - commodity: "slag"
+      relationship: "distribution"
+    - commodity: "natural_pozzolan"
+      relationship: "distribution"
+  notes: "Primary distribution channel for cement, aggregates, and construction materials."
+  data_sources:
+    - "EPA FRS"
+    - "Census Bureau Economic Census"
+
+424690:
+  description: "Other Chemical and Allied Products Merchant Wholesalers"
+  parent_sector: "4246 - Chemical and Allied Products Merchant Wholesalers"
+  commodities:
+    - commodity: "fly_ash"
+      relationship: "distribution"
+    - commodity: "slag"
+      relationship: "distribution"
+    - commodity: "cement"
+      relationship: "specialty_distribution"
+  notes: "Secondary distribution channel for SCMs and specialty cement products."
+  data_sources:
+    - "EPA FRS"
+
+# ============================================================================
+# WASTE MANAGEMENT
+# ============================================================================
+
+562910:
+  description: "Remediation Services"
+  parent_sector: "5629 - Remediation and Other Waste Management Services"
+  commodities:
+    - commodity: "fly_ash"
+      relationship: "ash_pond_remediation"
+  notes: "Coal combustion residual (CCR) pond remediation and closure."
+  data_sources:
+    - "EPA FRS"
+
+562998:
+  description: "All Other Miscellaneous Waste Management Services"
+  parent_sector: "5629 - Remediation and Other Waste Management Services"
+  commodities:
+    - commodity: "fly_ash"
+      relationship: "ash_management"
+    - commodity: "slag"
+      relationship: "slag_reprocessing"
+  notes: "Industrial waste management including ash management and slag pile reprocessing."
+  data_sources:
+    - "EPA FRS"
+
+---
+
+# USAGE NOTES
+
+## Query NAICS by Commodity
+
+```python
+import yaml
+
+with open('naics_master.yaml') as f:
+    naics = yaml.safe_load(f)
+
+# Get all NAICS codes for cement
+cement_naics = [
+    code for code, data in naics.items()
+    if any(c['commodity'] == 'cement' for c in data.get('commodities', []))
+]
+# Returns: ['327310', '327320', '327331', '327332', '327390', ...]
+```
+
+## Query Commodities by Relationship
+
+```python
+# Get all fly ash sources
+fly_ash_sources = [
+    code for code, data in naics.items()
+    if any(c['commodity'] == 'fly_ash' and 'source' in c['relationship']
+           for c in data.get('commodities', []))
+]
+# Returns: ['221112'] (coal power plants)
+```
+
+---
+
+# COMMODITY COVERAGE
+
+| Commodity | Primary NAICS | Related NAICS | Total |
+|-----------|---------------|---------------|-------|
+| cement | 327310 | 14 codes | 15 |
+| aggregates | 212312, 212319 | 6 codes | 8 |
+| slag | 331110, 331111 | 8 codes | 10 |
+| fly_ash | 221112 | 7 codes | 8 |
+| natural_pozzolan | 212399, 212325 | 5 codes | 7 |
+| steel | 331110, 331111, 331112 | 2 codes | 5 |
+
+**Total Unique NAICS Codes**: 35
+**Total Commodity Relationships Mapped**: 65+
+
+---
+
+**Maintained By**: OceanDatum.ai / US Bulk Supply Chain Reporting Platform
+**Source**: US Census Bureau NAICS 2022
+**Next NAICS Revision**: 2027
+**Last Updated**: 2026-02-23

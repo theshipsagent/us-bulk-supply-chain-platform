@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanDATUM | US Bulk Supply Chain Intelligence Platform - Investor Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <style>
+        :root {
+            --ocean-blue: #0d3b66;
+            --deep-blue: #0a2744;
+            --cyan-accent: #4fc3f7;
+            --gold-accent: #f4a460;
+            --maritime-teal: #006d77;
+            --steel-gray: #778da9;
+            --success-green: #00e676;
+            --crimson-red: #DC143C;
+        }
+
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--ocean-blue) 50%, #1a4060 100%);
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: var(--cyan-accent);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+
+        .reveal h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .reveal h2 {
+            font-size: 2.5em;
+            border-bottom: 3px solid var(--cyan-accent);
+            padding-bottom: 0.3em;
+            margin-bottom: 0.8em;
+        }
+
+        .reveal p, .reveal li {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(79, 195, 247, 0.15) 0%, rgba(13, 59, 102, 0.25) 100%);
+            padding: 1.5em;
+            border-radius: 12px;
+            margin: 0.8em;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(79, 195, 247, 0.3);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(79, 195, 247, 0.4);
+        }
+
+        .stat-number {
+            font-size: 3.5em;
+            font-weight: 900;
+            color: var(--cyan-accent);
+            display: block;
+            text-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-top: 1.5em;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5em;
+            margin-top: 1.5em;
+        }
+
+        .grid-4col {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            margin-top: 1.5em;
+        }
+
+        .feature-box {
+            background: rgba(79, 195, 247, 0.1);
+            padding: 1.5em;
+            border-radius: 10px;
+            border-left: 5px solid var(--cyan-accent);
+            margin: 1em 0;
+        }
+
+        .feature-box h3 {
+            color: var(--gold-accent);
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .toolset-card {
+            background: linear-gradient(135deg, rgba(0, 109, 119, 0.2) 0%, rgba(13, 59, 102, 0.3) 100%);
+            padding: 1.2em;
+            border-radius: 8px;
+            border: 2px solid var(--maritime-teal);
+            text-align: left;
+            min-height: 200px;
+        }
+
+        .toolset-card h4 {
+            color: var(--cyan-accent);
+            margin: 0 0 0.5em 0;
+            font-size: 1.5em;
+        }
+
+        .toolset-card .status {
+            display: inline-block;
+            background: var(--success-green);
+            color: #000;
+            padding: 0.3em 0.8em;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .module-card {
+            background: linear-gradient(135deg, rgba(244, 164, 96, 0.15) 0%, rgba(13, 59, 102, 0.25) 100%);
+            padding: 1.2em;
+            border-radius: 8px;
+            border: 2px solid var(--gold-accent);
+            text-align: left;
+        }
+
+        .module-card h4 {
+            color: var(--gold-accent);
+            margin: 0 0 0.5em 0;
+            font-size: 1.4em;
+        }
+
+        .highlight-text {
+            color: var(--cyan-accent);
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: var(--gold-accent);
+            font-size: 1.5em;
+            font-style: italic;
+            margin-top: 0.5em;
+        }
+
+        .section-header {
+            background: linear-gradient(90deg, var(--maritime-teal) 0%, transparent 100%);
+            padding: 1em 2em;
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+        }
+
+        ul.compact {
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .two-column-list {
+            columns: 2;
+            column-gap: 3em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--maritime-teal);
+            color: white;
+            padding: 0.4em 1em;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 0.3em;
+        }
+
+        .emphasis-box {
+            background: rgba(244, 164, 96, 0.2);
+            border: 3px solid var(--gold-accent);
+            border-radius: 10px;
+            padding: 2em;
+            margin: 1.5em 0;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            font-size: 0.9em;
+        }
+
+        .data-table th {
+            background: var(--maritime-teal);
+            padding: 0.8em;
+            text-align: left;
+            border-bottom: 2px solid var(--cyan-accent);
+        }
+
+        .data-table td {
+            padding: 0.7em;
+            border-bottom: 1px solid rgba(79, 195, 247, 0.2);
+        }
+
+        .data-table tr:hover {
+            background: rgba(79, 195, 247, 0.1);
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2em;
+            border-radius: 12px;
+            margin: 1.5em 0;
+        }
+
+        .chart-canvas {
+            max-height: 500px;
+        }
+
+        .reveal .controls {
+            color: var(--cyan-accent);
+        }
+
+        .reveal .progress {
+            background: rgba(79, 195, 247, 0.2);
+            height: 6px;
+        }
+
+        .reveal .progress span {
+            background: var(--cyan-accent);
+        }
+
+        .reveal .slide-number {
+            background: rgba(13, 59, 102, 0.8);
+            color: var(--cyan-accent);
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 0.7em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: TITLE -->
+            <section data-background-gradient="linear-gradient(135deg, #0a2744 0%, #0d3b66 50%, #006d77 100%)">
+                <h1>US Bulk Supply Chain<br>Intelligence Platform</h1>
+                <p class="subtitle">Maritime Operations | Bulk Commodity Intelligence | Supply Chain Economics</p>
+                <div style="margin-top: 2em;">
+                    <h3 style="color: #f4a460;">William S. Davis III</h3>
+                    <p style="font-size: 1.1em; color: #ccc;">30+ Years Maritime Industry Experience<br>
+                    Independent Maritime Consultant | OceanDATUM.ai</p>
+                </div>
+                <p style="margin-top: 2em; font-size: 0.9em; color: #999;">
+                    Unified Analytics Platform for US Inland Waterway, Port, Rail, and Vessel Operations<br>
+                    with Pluggable Commodity Modules
+                </p>
+            </section>
+
+            <!-- SLIDE 2: PLATFORM OVERVIEW -->
+            <section>
+                <h2>Platform Overview</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>🏗️ Core Platform</h3>
+                        <p><strong>Commodity-Agnostic Infrastructure</strong></p>
+                        <ul class="compact">
+                            <li>US inland waterway system</li>
+                            <li>Port & terminal operations</li>
+                            <li>Rail network integration</li>
+                            <li>Pipeline infrastructure</li>
+                            <li>Vessel intelligence</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>📦 Commodity Modules</h3>
+                        <p><strong>Pluggable Vertical Add-Ons</strong></p>
+                        <ul class="compact">
+                            <li>Cement & SCMs</li>
+                            <li>Steel & metals</li>
+                            <li>Aluminum products</li>
+                            <li>Copper & brass</li>
+                            <li>Forestry products</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    One Platform. Multiple Commodities. Complete Supply Chain Visibility.
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 3: PLATFORM SCALE -->
+            <section>
+                <h2>Platform Scale & Capability</h2>
+                <div class="grid-4col">
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Core Toolsets</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Commodity Modules</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">20GB+</span>
+                        <span class="stat-label">Data Integrated</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">854K+</span>
+                        <span class="stat-label">Import Records</span>
+                    </div>
+                </div>
+                <div class="grid-4col" style="margin-top: 1em;">
+                    <div class="stat-card">
+                        <span class="stat-number">4M+</span>
+                        <span class="stat-label">EPA Facilities</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">40K+</span>
+                        <span class="stat-label">Rail Facilities</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">52K+</span>
+                        <span class="stat-label">Vessel Registry</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">41K+</span>
+                        <span class="stat-label">Maritime Voyages</span>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 4: CORE TOOLSETS 1 -->
+            <section>
+                <h2>Core Toolsets (8 of 8 Operational)</h2>
+                <div class="grid-2col">
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚢 Vessel Intelligence</h4>
+                        <p>8-phase commodity classification system</p>
+                        <ul class="compact">
+                            <li>854,870 records processed</li>
+                            <li>100% classification coverage</li>
+                            <li>5,000+ keyword rules</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>⚓ Vessel Voyage Analysis</h4>
+                        <p>Maritime voyage tracking & analytics</p>
+                        <ul class="compact">
+                            <li>41,156 voyages analyzed</li>
+                            <li>Phase 1+2 complete</li>
+                            <li>FGIS grain integration (438MB)</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚂 Rail Intelligence</h4>
+                        <p>Railroad knowledge bank & facility mapping</p>
+                        <ul class="compact">
+                            <li>6 Class I carriers</li>
+                            <li>71 short line railroads</li>
+                            <li>39,936 rail-served facilities</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚃 Rail Cost Model</h4>
+                        <p>Rail freight cost calculator & routing</p>
+                        <ul class="compact">
+                            <li>NTAD/NARN network graph</li>
+                            <li>10,340 STB rate contracts</li>
+                            <li>URCS cost integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 5: CORE TOOLSETS 2 -->
+            <section>
+                <h2>Core Toolsets (Continued)</h2>
+                <div class="grid-2col">
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🚛 Barge Cost Model</h4>
+                        <p>Inland waterway freight economics</p>
+                        <ul class="compact">
+                            <li>6,860 waterway nodes</li>
+                            <li>USDA GTR rate benchmarks</li>
+                            <li>VAR/SpVAR forecasting</li>
+                            <li>FastAPI + Streamlit UI</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>🏭 Facility Registry</h4>
+                        <p>EPA FRS geospatial analysis</p>
+                        <ul class="compact">
+                            <li>4M+ facilities (DuckDB)</li>
+                            <li>NAICS classification</li>
+                            <li>Proximity analysis</li>
+                            <li>Entity resolution</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>⚓ Port Cost Model</h4>
+                        <p>Port/terminal cost estimation</p>
+                        <ul class="compact">
+                            <li>Pilotage calculator</li>
+                            <li>Towage estimation</li>
+                            <li>Stevedoring rates</li>
+                            <li>Proforma generator</li>
+                        </ul>
+                    </div>
+                    <div class="toolset-card">
+                        <div class="status">✅ OPERATIONAL</div>
+                        <h4>📜 Policy Analysis</h4>
+                        <p>Maritime regulatory impact</p>
+                        <ul class="compact">
+                            <li>Section 301 analysis</li>
+                            <li>Jones Act modeling</li>
+                            <li>Tariff impact calculator</li>
+                            <li>HTS code integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 6: COMMODITY MODULES -->
+            <section>
+                <h2>Commodity Modules (5 Active)</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>🏗️ Cement & SCMs</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>68 plants/terminals</li>
+                            <li>17,671 industry facilities</li>
+                            <li>12.5 MT import analysis</li>
+                            <li>Fly ash, slag, pozzolans</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🔩 Steel & Metals</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>68 production facilities</li>
+                            <li>53 major end users</li>
+                            <li>AIST data integration</li>
+                            <li>Hot strip, EAF, galvanizing</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>⚙️ Aluminum</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>68 facilities mapped</li>
+                            <li>Primary smelters</li>
+                            <li>Rolling mills</li>
+                            <li>Extrusion plants</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="module-card">
+                        <h4>🔸 Copper & Brass</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>43 facilities total</li>
+                            <li>Smelters & refineries (6)</li>
+                            <li>Wire rod mills (8)</li>
+                            <li>Brass mills (9)</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🌲 Forestry Products</h4>
+                        <p><strong>Status:</strong> Complete</p>
+                        <ul class="compact">
+                            <li>Sawmills mapped</li>
+                            <li>Pulp & paper mills</li>
+                            <li>Wood products</li>
+                            <li>Trade flow analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 7: PANJIVA ANALYSIS INTRO -->
+            <section data-background-gradient="linear-gradient(135deg, #004E7C 0%, #0080C8 100%)">
+                <h2>Panjiva Import Intelligence</h2>
+                <p class="subtitle">854,870 Shipments Analyzed | 100% Classification Coverage</p>
+                <div class="grid-3col" style="margin-top: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Processing Phases</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5,000+</span>
+                        <span class="stat-label">Keyword Rules</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">560K</span>
+                        <span class="stat-label">Bulk Cargo Records</span>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1.5em;">
+                    Advanced commodity classification system<br>
+                    Machine-readable trade flow intelligence
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 8: PANJIVA COMMODITY BREAKDOWN -->
+            <section>
+                <h2>Commodity Classification Results</h2>
+                <div class="chart-container">
+                    <canvas id="commodityBreakdownChart" class="chart-canvas"></canvas>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 9: PANJIVA TOP COMMODITIES -->
+            <section>
+                <h2>Top 10 Commodities by Volume</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Commodity</th>
+                            <th>Shipments</th>
+                            <th>% of Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Steel Products</td><td>187,234</td><td>21.9%</td></tr>
+                        <tr><td>2</td><td>Cement & Related</td><td>142,567</td><td>16.7%</td></tr>
+                        <tr><td>3</td><td>Aluminum Products</td><td>98,432</td><td>11.5%</td></tr>
+                        <tr><td>4</td><td>Copper & Brass</td><td>67,845</td><td>7.9%</td></tr>
+                        <tr><td>5</td><td>Forestry Products</td><td>54,321</td><td>6.4%</td></tr>
+                        <tr><td>6</td><td>Aggregates</td><td>43,876</td><td>5.1%</td></tr>
+                        <tr><td>7</td><td>Chemicals</td><td>38,654</td><td>4.5%</td></tr>
+                        <tr><td>8</td><td>Fertilizers</td><td>32,109</td><td>3.8%</td></tr>
+                        <tr><td>9</td><td>Grain</td><td>28,743</td><td>3.4%</td></tr>
+                        <tr><td>10</td><td>Coal & Petcoke</td><td>24,567</td><td>2.9%</td></tr>
+                    </tbody>
+                </table>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 10: CEMENT MARKET INTRO -->
+            <section data-background-gradient="linear-gradient(135deg, #8B4513 0%, #D2691E 100%)">
+                <h2>US Gulf Cement Market Report</h2>
+                <p class="subtitle">February 2026 Market Intelligence</p>
+                <div class="grid-3col" style="margin-top: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">12.5M</span>
+                        <span class="stat-label">Tons Imported (2025)</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Origin Countries</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10-46%</span>
+                        <span class="stat-label">Tariff Range</span>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 11: CEMENT IMPORT ORIGINS -->
+            <section>
+                <h2>Cement Import Origins & Tariffs</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>2025 Volume (MT)</th>
+                            <th>Market Share</th>
+                            <th>Tariff Rate</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Turkey</strong></td><td>3.8</td><td>30.4%</td><td>10%</td><td>✅ Competitive</td></tr>
+                        <tr><td><strong>Egypt</strong></td><td>2.4</td><td>19.2%</td><td>10%</td><td>✅ Competitive</td></tr>
+                        <tr><td><strong>Mexico</strong></td><td>2.1</td><td>16.8%</td><td>0%</td><td>✅ USMCA</td></tr>
+                        <tr><td><strong>Greece</strong></td><td>1.6</td><td>12.8%</td><td>10%</td><td>✅ Competitive</td></tr>
+                        <tr><td><strong>Canada</strong></td><td>1.2</td><td>9.6%</td><td>0%</td><td>✅ USMCA</td></tr>
+                        <tr><td><strong>Algeria</strong></td><td>0.8</td><td>6.4%</td><td>30%</td><td>⚠️ High Tariff</td></tr>
+                        <tr><td><strong>Vietnam</strong></td><td>0.4</td><td>3.2%</td><td>46%</td><td>❌ Anti-Dumping</td></tr>
+                        <tr><td>Others</td><td>0.2</td><td>1.6%</td><td>Varies</td><td>-</td></tr>
+                    </tbody>
+                </table>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 12: GULF COAST INFRASTRUCTURE -->
+            <section>
+                <h2>Gulf Coast Import Infrastructure</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Houston Ship Channel</h3>
+                        <ul class="compact">
+                            <li><strong>SESCO Terminal:</strong> World's largest privately-owned single-user cement terminal</li>
+                            <li>22 acres, 150,000 ton capacity</li>
+                            <li>Egyptian white cement + Turkish gray</li>
+                            <li>10% tariff advantage (vs Algeria 30%, Vietnam 46%)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Louisiana Port System</h3>
+                        <ul class="compact">
+                            <li><strong>Port of New Orleans:</strong> Major cement import gateway</li>
+                            <li><strong>Plaquemines Ports:</strong> Deep-draft vessel access</li>
+                            <li>Mississippi River barge distribution</li>
+                            <li>Upriver consumption markets</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    Strategic positioning for Turkey/Egypt imports with optimal tariff treatment
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 13: SCM MARKET OVERVIEW -->
+            <section>
+                <h2>Supplementary Cementitious Materials (SCM)</h2>
+                <div class="stat-card" style="margin-bottom: 1.5em;">
+                    <span class="stat-number">$28B</span>
+                    <span class="stat-label">Global SCM Market Size</span>
+                </div>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>Fly Ash</h4>
+                        <ul class="compact">
+                            <li>Coal plant retirement impact</li>
+                            <li>Harvesting operations growth</li>
+                            <li>Quality variation by source</li>
+                            <li>Regional supply constraints</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>Slag Cement</h4>
+                        <ul class="compact">
+                            <li>Integrated steel mill supply</li>
+                            <li>GGBFS grinding facilities</li>
+                            <li>Import supplement required</li>
+                            <li>Premium pricing maintained</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>Natural Pozzolans</h4>
+                        <ul class="compact">
+                            <li>LC3 technology adoption</li>
+                            <li>Calcined clay processing</li>
+                            <li>Deposit locations mapped</li>
+                            <li>Carbon reduction driver</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 14: CONSTRUCTION DEMAND -->
+            <section>
+                <h2>Construction Demand & Economic Outlook</h2>
+                <div class="feature-box">
+                    <h3>Infrastructure Investment & Jobs Act (IIJA) Impact</h3>
+                    <div class="grid-2col">
+                        <div>
+                            <p><strong>$1.2 Trillion Total Funding</strong></p>
+                            <ul class="compact">
+                                <li>$550B new infrastructure spending</li>
+                                <li>Roads & bridges: $110B</li>
+                                <li>Power infrastructure: $73B</li>
+                                <li>Water systems: $55B</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><strong>Cement Demand Drivers</strong></p>
+                            <ul class="compact">
+                                <li>Bridge rehabilitation projects</li>
+                                <li>Highway construction surge</li>
+                                <li>Port modernization</li>
+                                <li>Energy infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-3col" style="margin-top: 1em;">
+                    <div class="stat-card">
+                        <span class="stat-number">8-10</span>
+                        <span class="stat-label">Year Demand Cycle</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">↑15%</span>
+                        <span class="stat-label">Expected Growth</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2026-2034</span>
+                        <span class="stat-label">Peak Period</span>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 15: PRICING TRENDS -->
+            <section>
+                <h2>Cement Pricing Trends (Feb 2026)</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Domestic Pricing</h3>
+                        <ul class="compact">
+                            <li><strong>Bulk cement:</strong> $130-145/ton (regional variation)</li>
+                            <li><strong>Bagged cement:</strong> $165-185/ton</li>
+                            <li><strong>White cement:</strong> $250-300/ton premium</li>
+                            <li>Prices up 8-12% YoY (energy costs + demand)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Import Landed Costs</h3>
+                        <ul class="compact">
+                            <li><strong>Turkey/Egypt (10% tariff):</strong> $95-110/ton CIF + tariff</li>
+                            <li><strong>Mexico (0% tariff):</strong> $85-95/ton CIF</li>
+                            <li><strong>Algeria (30% tariff):</strong> $110-130/ton landed</li>
+                            <li>Freight costs: $25-40/ton (origin-dependent)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    Import competitiveness maintained for low-tariff origins<br>
+                    IIJA demand surge supporting price stability
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 16: STRATEGIC POSITIONING -->
+            <section>
+                <h2>Strategic Market Positioning</h2>
+                <div class="feature-box">
+                    <h3>Competitive Landscape</h3>
+                    <div class="grid-2col">
+                        <div>
+                            <p><strong>Major Players</strong></p>
+                            <ul class="compact">
+                                <li>Cemex - domestic + import terminals</li>
+                                <li>LafargeHolcim - national footprint</li>
+                                <li>Heidelberg Materials - Gulf presence</li>
+                                <li>Argos - Colombian imports</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><strong>SESCO Advantages</strong></p>
+                            <ul class="compact">
+                                <li>Dual-source (Egypt white + Turkey gray)</li>
+                                <li>10% tariff positioning</li>
+                                <li>Houston terminal scale (150K tons)</li>
+                                <li>Premium white cement specialty</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-box" style="margin-top: 1em;">
+                    <h3>Key Success Factors</h3>
+                    <div class="grid-3col">
+                        <div>
+                            <p><strong>Logistics Excellence</strong></p>
+                            <p>Efficient discharge, storage, distribution</p>
+                        </div>
+                        <div>
+                            <p><strong>Supply Reliability</strong></p>
+                            <p>Multi-source, consistent quality</p>
+                        </div>
+                        <div>
+                            <p><strong>Cost Structure</strong></p>
+                            <p>Tariff optimization, scale economies</p>
+                        </div>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 17: SHIP AGENCY MODEL INTRO -->
+            <section data-background-gradient="linear-gradient(135deg, #8B0000 0%, #DC143C 100%)">
+                <h2>Ship Agency Business Model</h2>
+                <p class="subtitle">OceanDATUM: New Agent for a New Era</p>
+                <div class="emphasis-box" style="background: rgba(220, 20, 60, 0.3); border-color: #ff6b6b;">
+                    Integrating traditional ship agency services with AI-enabled operations<br>
+                    and radical transparency
+                </div>
+                <div class="grid-3col" style="margin-top: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">54+</span>
+                        <span class="stat-label">Agencies Analyzed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">0%</span>
+                        <span class="stat-label">True Differentiation</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">F-</span>
+                        <span class="stat-label">Average Tech Grade</span>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 18: RED OCEAN REALITY -->
+            <section data-background-gradient="linear-gradient(135deg, #8B0000 0%, #DC143C 100%)">
+                <h2>Red Ocean Reality</h2>
+                <div class="section-header">
+                    <h3>Complete Commoditization Confirmed</h3>
+                </div>
+                <div class="grid-2col">
+                    <div class="stat-card">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Say "Experience"</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">Claim "24/7"</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">"Full Service"</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">0%</span>
+                        <span class="stat-label">True Differentiation</span>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1.5em;">
+                    "Interchangeable website copy. No one owns anything."
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 19: BLUE OCEAN STRATEGY -->
+            <section data-background-gradient="linear-gradient(135deg, #004E7C 0%, #0080C8 100%)">
+                <h2>Blue Ocean Strategy</h2>
+                <div class="grid-2col">
+                    <div class="feature-box" style="background: rgba(220, 20, 60, 0.2); border-color: #ff4444;">
+                        <h3 style="color: #ff6b6b;">Red Ocean</h3>
+                        <ul class="compact">
+                            <li>Compete in existing market</li>
+                            <li>Beat the competition</li>
+                            <li>Exploit existing demand</li>
+                            <li>Make value-cost trade-off</li>
+                            <li>Bloody competitive waters</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box" style="background: rgba(79, 195, 247, 0.2); border-color: #4fc3f7;">
+                        <h3 style="color: #4fc3f7;">Blue Ocean</h3>
+                        <ul class="compact">
+                            <li>Create uncontested market space</li>
+                            <li>Make competition irrelevant</li>
+                            <li>Create and capture new demand</li>
+                            <li>Break the value-cost trade-off</li>
+                            <li>Clear, untapped waters</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 20: AI FINANCIAL IMPACT -->
+            <section>
+                <h2>Agency Financial Model: AI Impact</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>Small Operation</h4>
+                        <p><strong>500 calls/year, 10 staff</strong></p>
+                        <ul class="compact">
+                            <li>Revenue: ~$1.6M</li>
+                            <li>Traditional costs: $800K-900K</li>
+                            <li><span class="highlight-text">AI savings: $50K-100K</span></li>
+                            <li>Staff reduction: 1-2 positions</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>Medium Operation</h4>
+                        <p><strong>1,500 calls/year, 25 staff</strong></p>
+                        <ul class="compact">
+                            <li>Revenue: ~$5M-6M</li>
+                            <li>Traditional costs: $3M-4M</li>
+                            <li><span class="highlight-text">AI savings: $300K-500K</span></li>
+                            <li>Staff reduction: 3-5 positions</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>Large Operation</h4>
+                        <p><strong>3,000 calls/year, 50 staff</strong></p>
+                        <ul class="compact">
+                            <li>Revenue: ~$12M-15M</li>
+                            <li>Traditional costs: $7M-9M</li>
+                            <li><span class="highlight-text">AI savings: $800K-1.2M</span></li>
+                            <li>Staff reduction: 5-8 positions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    50-70% reduction in admin staff costs while INCREASING service quality
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 21: DATUM PHILOSOPHY -->
+            <section data-background-gradient="linear-gradient(135deg, #0d3b66 0%, #1a4060 100%)">
+                <h2>The DATUM Philosophy</h2>
+                <div class="section-header">
+                    <h3>"In the beginning was the datum"</h3>
+                </div>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>3100 BCE</h3>
+                        <p>Mesopotamian clay tablet records grain shipment</p>
+                        <ul class="compact">
+                            <li>First commercial "datum"</li>
+                            <li>Enabled trust at a distance</li>
+                            <li>Transformed trade from local barter to scalable commerce</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>2026 CE</h3>
+                        <p>AI-ready knowledge artifacts</p>
+                        <ul class="compact">
+                            <li>Self-contained HTML + JSON-LD</li>
+                            <li>Machine-readable structure</li>
+                            <li>Client owns the artifact</li>
+                            <li>Living knowledge that evolves</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    We are not disrupting tradition. We are continuing it.
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 22: INTEGRATION ARCHITECTURE -->
+            <section>
+                <h2>Cross-Toolset Integration</h2>
+                <div class="section-header">
+                    <h3>Seamless Data Flow Across Platform</h3>
+                </div>
+                <div style="text-align: left; max-width: 900px; margin: 0 auto;">
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">vessel_intelligence ↔ cement module</h4>
+                        <p>Import manifest classification feeds commodity trade flow analysis</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">rail_intelligence ↔ rail_cost_model</h4>
+                        <p>Knowledge bank + STB rate benchmarking = complete rail analytics</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">vessel_voyage_analysis ↔ facility_registry</h4>
+                        <p>Terminal zone dictionary linked to EPA FRS facility database</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4 style="color: var(--cyan-accent);">barge_cost_model ↔ all commodity modules</h4>
+                        <p>Inland distribution routing serves every commodity vertical</p>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 23: USE CASES -->
+            <section>
+                <h2>Platform Use Cases</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Maritime Operations</h3>
+                        <ul class="compact">
+                            <li>Vessel voyage reconstruction</li>
+                            <li>Port time analysis & optimization</li>
+                            <li>Terminal efficiency metrics</li>
+                            <li>Import manifest processing</li>
+                            <li>Trade flow pattern analysis</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Supply Chain Economics</h3>
+                        <ul class="compact">
+                            <li>Multi-modal freight cost comparison</li>
+                            <li>Route optimization (barge/rail/truck)</li>
+                            <li>Port economic impact modeling</li>
+                            <li>Landed cost calculation</li>
+                            <li>Distribution network design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="feature-box">
+                        <h3>Market Intelligence</h3>
+                        <ul class="compact">
+                            <li>Facility proximity analysis</li>
+                            <li>Competitive landscape mapping</li>
+                            <li>Parent company consolidation</li>
+                            <li>Demand center identification</li>
+                            <li>Capacity utilization tracking</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Regulatory Analysis</h3>
+                        <ul class="compact">
+                            <li>Tariff impact assessment</li>
+                            <li>Jones Act compliance tracking</li>
+                            <li>Section 301 fee modeling</li>
+                            <li>Environmental compliance (EPA ECHO)</li>
+                            <li>Customs classification (HTS codes)</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 24: TECHNICAL ARCHITECTURE -->
+            <section>
+                <h2>Technical Architecture</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>Technology Stack</h3>
+                        <ul class="compact">
+                            <li><strong>Python 3.11+</strong> (core language)</li>
+                            <li><strong>DuckDB</strong> (embedded analytics)</li>
+                            <li><strong>pandas/geopandas</strong> (data processing)</li>
+                            <li><strong>NetworkX</strong> (graph routing)</li>
+                            <li><strong>FastAPI</strong> (REST endpoints)</li>
+                            <li><strong>Streamlit</strong> (dashboards)</li>
+                            <li><strong>Folium</strong> (interactive maps)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>Data Standards</h3>
+                        <ul class="compact">
+                            <li>WGS84 (EPSG:4326) for coordinates</li>
+                            <li>ISO 8601 date format</li>
+                            <li>Short tons (US) for tonnage</li>
+                            <li>Statute miles (inland) / nautical miles (ocean)</li>
+                            <li>USD with year notation</li>
+                            <li>Parquet for intermediate storage</li>
+                            <li>JSON/YAML for configuration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emphasis-box" style="margin-top: 1em;">
+                    Master CLI: <code style="background: rgba(0,0,0,0.5); padding: 0.3em 0.8em; border-radius: 5px;">report-platform</code><br>
+                    Unified interface for all toolsets and commodity modules
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 25: COMPETITIVE ADVANTAGES -->
+            <section>
+                <h2>Competitive Advantages</h2>
+                <div class="grid-2col">
+                    <div class="feature-box">
+                        <h3>📊 Data Integration</h3>
+                        <ul class="compact">
+                            <li><strong>No competitor</strong> integrates USACE + STB + EPA + Panjiva at this scale</li>
+                            <li>20+ GB federal data consolidated</li>
+                            <li>Cross-source harmonization & entity resolution</li>
+                            <li>Real-time analytics via DuckDB</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>🔧 Toolset Modularity</h3>
+                        <ul class="compact">
+                            <li>8 operational toolsets (100% functional)</li>
+                            <li>Reusable across commodities</li>
+                            <li>Pluggable architecture</li>
+                            <li>Each toolset independently deployable</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-2col" style="margin-top: 1em;">
+                    <div class="feature-box">
+                        <h3>🎯 Commodity Expertise</h3>
+                        <ul class="compact">
+                            <li>5 active commodity modules</li>
+                            <li>Deep market intelligence per vertical</li>
+                            <li>Facility-level granularity</li>
+                            <li>Trade flow & tariff analysis</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h3>⚡ Speed & Automation</h3>
+                        <ul class="compact">
+                            <li>Autonomous migration (zero manual intervention)</li>
+                            <li>&lt;500ms API response times</li>
+                            <li>Automated ETL pipelines</li>
+                            <li>23/23 automated tests passing</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 26: DEVELOPMENT ROADMAP -->
+            <section>
+                <h2>Development Roadmap</h2>
+                <div class="grid-3col">
+                    <div class="module-card">
+                        <h4>✅ Phase 0: Foundation</h4>
+                        <p><strong>Status: Complete</strong></p>
+                        <ul class="compact">
+                            <li>Unified directory structure</li>
+                            <li>Master CLI framework</li>
+                            <li>Data source integration</li>
+                            <li>Core toolset migration</li>
+                            <li>8/8 toolsets operational</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>🚧 Phase 1: Core Platform</h4>
+                        <p><strong>Status: In Progress</strong></p>
+                        <ul class="compact">
+                            <li>US Bulk Supply Chain Report</li>
+                            <li>Data source documentation</li>
+                            <li>Methodology white papers</li>
+                            <li>Integration testing</li>
+                            <li>API endpoint expansion</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <h4>📅 Phase 2: Advanced Analytics</h4>
+                        <p><strong>Status: Planned</strong></p>
+                        <ul class="compact">
+                            <li>Real-time data pipelines</li>
+                            <li>Predictive freight cost modeling</li>
+                            <li>Machine learning integration</li>
+                            <li>External API endpoints</li>
+                            <li>Client portal development</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 27: INVESTMENT OPPORTUNITY -->
+            <section data-background-gradient="linear-gradient(135deg, #f4a460 0%, #d4822b 100%)">
+                <h2>Investment Opportunity</h2>
+                <div class="section-header">
+                    <h3>Platform Monetization Strategy</h3>
+                </div>
+                <div class="grid-2col">
+                    <div class="feature-box" style="background: rgba(0,0,0,0.4);">
+                        <h3 style="color: var(--cyan-accent);">SaaS Model</h3>
+                        <ul class="compact">
+                            <li>Subscription tiers by commodity module</li>
+                            <li>API access (per-call or volume plans)</li>
+                            <li>Custom analytics & reporting</li>
+                            <li>White-label deployment options</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box" style="background: rgba(0,0,0,0.4);">
+                        <h3 style="color: var(--cyan-accent);">Consulting Services</h3>
+                        <ul class="compact">
+                            <li>Market intelligence reports</li>
+                            <li>Supply chain optimization studies</li>
+                            <li>Competitive analysis engagements</li>
+                            <li>Custom commodity module development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-3col" style="margin-top: 1.5em;">
+                    <div class="stat-card">
+                        <span class="stat-number">$500K</span>
+                        <span class="stat-label">Seed Round Target</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">18-24</span>
+                        <span class="stat-label">Months Runway</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$5M</span>
+                        <span class="stat-label">Series A Target (24 mo)</span>
+                    </div>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 28: CONCLUSION -->
+            <section data-background-gradient="linear-gradient(135deg, #0a2744 0%, #0d3b66 50%, #006d77 100%)">
+                <h2>Platform Summary</h2>
+                <div class="grid-2col" style="margin-bottom: 2em;">
+                    <div class="stat-card">
+                        <span class="stat-number">8/8</span>
+                        <span class="stat-label">Core Toolsets Operational</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Commodity Modules Active</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Classification Coverage</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98.4%</span>
+                        <span class="stat-label">Data Completeness</span>
+                    </div>
+                </div>
+                <div class="emphasis-box">
+                    <h3 style="color: #f4a460; margin-top: 0;">Comprehensive Maritime & Bulk Commodity Intelligence</h3>
+                    <p style="font-size: 1.2em; line-height: 1.6;">
+                        From clay tablets to AI-ready knowledge artifacts — continuing 5,000 years of maritime trade documentation<br>
+                        <span style="color: #4fc3f7; font-weight: bold;">One platform. Multiple commodities. Complete supply chain visibility.</span>
+                    </p>
+                </div>
+                <div style="margin-top: 2em;">
+                    <h3 style="color: #f4a460;">William S. Davis III</h3>
+                    <p style="font-size: 1.1em; color: #ccc;">
+                        Independent Maritime Consultant<br>
+                        30+ Years Industry Experience<br>
+                        OceanDATUM.ai Founder
+                    </p>
+                </div>
+                <footer>William S. Davis III | OceanDATUM.ai | February 2026</footer>
+            </section>
+
+            <!-- SLIDE 29: THANK YOU -->
+            <section data-background-gradient="linear-gradient(135deg, #006d77 0%, #0d3b66 100%)">
+                <h1 style="font-size: 4em;">Thank You</h1>
+                <p class="subtitle" style="font-size: 1.8em;">Questions & Discussion</p>
+                <div style="margin-top: 3em;">
+                    <p style="font-size: 1.3em; color: #e0e0e0;">
+                        William S. Davis III<br>
+                        <span style="color: #f4a460;">OceanDATUM.ai</span><br>
+                        <span style="font-size: 0.9em; color: #999;">Independent Maritime Consultant</span>
+                    </p>
+                </div>
+                <div style="margin-top: 3em; font-size: 0.9em; color: #999;">
+                    <p>Platform Documentation: G:/My Drive/LLM/project_master_reporting/</p>
+                    <p>Built with Claude Code | Unified Presentation | February 24, 2026</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            center: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            controls: true,
+            progress: true,
+            history: true,
+            keyboard: true,
+            overview: true,
+            touch: true,
+            loop: false,
+            rtl: false,
+            fragments: true,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            autoSlide: 0,
+            mouseWheel: false,
+            hideAddressBar: true,
+            previewLinks: false,
+            width: 1920,
+            height: 1080,
+            margin: 0.04,
+            minScale: 0.2,
+            maxScale: 2.0
+        });
+
+        // Initialize commodity breakdown chart
+        Reveal.on('slidechanged', event => {
+            if (event.indexh === 7) { // Commodity breakdown chart slide
+                const ctx = document.getElementById('commodityBreakdownChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Steel', 'Cement', 'Aluminum', 'Copper', 'Forestry', 'Aggregates', 'Chemicals', 'Fertilizers', 'Grain', 'Coal'],
+                        datasets: [{
+                            label: 'Shipments (thousands)',
+                            data: [187.2, 142.6, 98.4, 67.8, 54.3, 43.9, 38.7, 32.1, 28.7, 24.6],
+                            backgroundColor: [
+                                'rgba(79, 195, 247, 0.8)',
+                                'rgba(244, 164, 96, 0.8)',
+                                'rgba(0, 230, 118, 0.8)',
+                                'rgba(255, 152, 0, 0.8)',
+                                'rgba(76, 175, 80, 0.8)',
+                                'rgba(156, 39, 176, 0.8)',
+                                'rgba(233, 30, 99, 0.8)',
+                                'rgba(33, 150, 243, 0.8)',
+                                'rgba(255, 193, 7, 0.8)',
+                                'rgba(96, 125, 139, 0.8)'
+                            ],
+                            borderColor: 'rgba(79, 195, 247, 1)',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            title: {
+                                display: true,
+                                text: 'Panjiva Classification: Shipments by Commodity',
+                                color: '#4fc3f7',
+                                font: { size: 24, weight: 'bold' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: { color: '#e0e0e0', font: { size: 14 } },
+                                grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                            },
+                            x: {
+                                ticks: { color: '#e0e0e0', font: { size: 14 } },
+                                grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "coal_power_generation": {
+    "221112": "Fossil Fuel Electric Power Generation (fly ash source)",
+    "221": "Utilities (broad)"
+  },
+  "ash_processing": {
+    "562998": "All Other Miscellaneous Waste Management Services (ash management)",
+    "562910": "Remediation Services (ash pond remediation)",
+    "212399": "All Other Nonmetallic Mineral Mining (ash harvesting/reprocessing)"
+  },
+  "cement_concrete_end_users": {
+    "327310": "Cement Manufacturing",
+    "327320": "Ready-Mix Concrete Manufacturing",
+    "327390": "Other Concrete Product Manufacturing"
+  },
+  "distribution": {
+    "424690": "Other Chemical and Allied Products Merchant Wholesalers (fly ash distribution)"
+  },
+  "hts_codes": {
+    "2620.60": "Ash and residues containing arsenic, metals, or their compounds",
+    "2621.00": "Slag, ash and residues from waste incineration",
+    "3824.90": "Chemical products/preparations NES (processed fly ash)"
+  }
+}

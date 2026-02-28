@@ -1,0 +1,140 @@
+# Target Companies for Fuzzy Matching
+# ====================================
+# Extracted from existing enrich_cement_facilities_from_frs.py
+
+precast_prestressed:
+  - "Oldcastle Infrastructure"
+  - "Oldcastle Precast"
+  - "Oldcastle APG"
+  - "CRH"
+  - "CRH Americas"
+  - "Jensen Precast"
+  - "Jensen Infrastructure"
+  - "Forterra"
+  - "Forterra Pipe"
+  - "Wells Concrete"
+  - "Tindall Corporation"
+  - "Tindall Corp"
+  - "Molin Concrete"
+  - "Nitterhouse Concrete"
+  - "Locke Solutions"
+  - "Smith-Midland"
+  - "County Materials"
+  - "High Concrete"
+  - "Coreslab Structures"
+  - "Clark Pacific"
+  - "Enterprise Precast"
+  - "Stresscon"
+  - "Metromont"
+  - "Gate Precast"
+  - "Vianini Pipe"
+  - "Rinker Materials"
+  - "Commercial Metals"
+  - "CMC"
+  - "Concrete Pipe & Precast"
+  - "CP&P"
+  - "Foley Products"
+
+concrete_masonry:
+  - "Basalite"
+  - "Basalite Building Products"
+  - "QUIKRETE"
+  - "Quikrete"
+  - "Boral Best Block"
+  - "Pavestone"
+  - "Block USA"
+  - "Midwest Block"
+  - "Ernest Maier"
+
+concrete_roof_tile:
+  - "Boral Roofing"
+  - "Eagle Roofing Products"
+  - "Entegra Roof Tile"
+
+highway_paving:
+  - "Granite Construction"
+  - "Kiewit"
+  - "Kiewit Corporation"
+  - "Lane Construction"
+  - "Flatiron Construction"
+  - "Walsh Group"
+  - "Walsh Construction"
+  - "Archer Western"
+  - "Tutor Perini"
+  - "Barnhill Contracting"
+  - "AMES Construction"
+  - "Sundt Construction"
+  - "Rock Solid Stabilization"
+  - "Midstate Companies"
+  - "Cem-Base"
+  - "Blount Construction"
+  - "Slurry Pavers"
+
+building_materials:
+  - "Foundation Building Materials"
+  - "FBM"
+  - "ABC Supply"
+  - "SRS Distribution"
+  - "US LBM"
+  - "BlueLinx"
+  - "HD Supply"
+
+oil_gas_cementing:
+  - "Halliburton"
+  - "SLB"
+  - "Schlumberger"
+  - "Baker Hughes"
+  - "Weatherford"
+  - "Nine Energy"
+  - "ProPetro"
+  - "BJ Services"
+
+white_cement:
+  - "Lehigh White Cement"
+  - "Lehigh Cement"
+  - "Lehigh Hanson"
+  - "Cementir"
+  - "Cimsa"
+  - "Royal White Cement"
+
+tile_grout_adhesive:
+  - "MAPEI"
+  - "Custom Building Products"
+  - "Laticrete"
+  - "Bostik"
+  - "ARDEX"
+  - "Sika"
+  - "Sika Corporation"
+  - "Henkel"
+
+stucco_eifs:
+  - "LaHabra"
+  - "Omega Products"
+  - "Parex"
+  - "Dryvit"
+  - "STO Corporation"
+
+cement_producers:
+  - "CEMEX"
+  - "Holcim"
+  - "Heidelberg Materials"
+  - "Ash Grove"
+  - "CalPortland"
+  - "Buzzi Unicem"
+  - "Argos"
+  - "Texas Lehigh"
+
+terrazzo:
+  - "Doyle Dickerson"
+  - "David Allen Company"
+  - "Concord Terrazzo"
+
+mortar_specialty:
+  - "Spec Mix"
+  - "Essroc"
+  - "CTS Cement"
+  - "Rapid Set"
+  - "U.S. Mix"
+  - "Martin Marietta"
+  - "USG"
+  - "National Gypsum"

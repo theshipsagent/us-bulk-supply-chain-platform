@@ -1,0 +1,30 @@
+# Natural Pozzolan ATLAS Configuration
+# ======================================
+
+# Data sources
+data:
+  epa_frs:
+    path: "../../../02_TOOLSETS/facility_registry/data/frs.duckdb"
+    read_only: true
+  atlas:
+    path: "../data/atlas_pozzolan.duckdb"
+
+# NAICS configuration
+naics:
+  pozzolan_config: "config/naics_pozzolan.yaml"
+
+# Entity resolution
+entity_resolution:
+  target_companies: "config/target_companies.yaml"
+  fuzzy_threshold: 65
+
+# Output
+output:
+  processed_data: "../data/processed/"
+
+# Tonnage convention
+# NPA and USGS report in short tons; pozzolan market data in short tons
+tonnage:
+  source_unit: "short_tons"
+  suffix: "_st"
+  metric_ton_factor: 0.907185

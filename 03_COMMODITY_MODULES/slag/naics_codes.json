@@ -1,0 +1,23 @@
+{
+  "steel_production_integrated": {
+    "331110": "Iron and Steel Mills and Ferroalloy Manufacturing",
+    "331111": "Iron and Steel Mills (integrated BF-BOF — GGBFS source)"
+  },
+  "steel_production_eaf": {
+    "331112": "Electrometallurgical Ferroalloy Product Manufacturing (EAF — NO GGBFS)"
+  },
+  "cement_concrete_end_users": {
+    "327310": "Cement Manufacturing (slag cement consumers/producers)",
+    "327320": "Ready-Mix Concrete Manufacturing (GGBFS end users)",
+    "327390": "Other Concrete Product Manufacturing (GGBFS end users)"
+  },
+  "slag_processing": {
+    "212399": "All Other Nonmetallic Mineral Mining (slag reprocessing)",
+    "562998": "All Other Miscellaneous Waste Management Services (slag pile reprocessing)"
+  },
+  "hts_codes": {
+    "2618.00.0000": "Granulated slag (slag sand) from iron/steel manufacture — PRIMARY",
+    "2619.00": "Slag, dross (non-granulated) from iron/steel manufacture",
+    "2523": "Portland cement, aluminous cement, slag cement (blended products)"
+  }
+}

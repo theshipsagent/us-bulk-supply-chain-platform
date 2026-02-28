@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "commodity": "cement",
+    "category": "vessel_discharge",
+    "version": "1.0",
+    "last_updated": "2026-02-14",
+    "description": "Vessel discharge rates and costs for imported cement and clinker at US Gulf and Atlantic port terminals. Rates represent typical sustained throughput under normal operating conditions.",
+    "sources": [
+      "International Association of Ports and Harbors (IAPH)",
+      "BIMCO Standard Discharge Rate Guidelines",
+      "Terminal operator performance data (anonymized)",
+      "US Gulf stevedoring contract benchmarks"
+    ]
+  },
+  "discharge_methods": [
+    {
+      "method": "pneumatic_unloader",
+      "equipment": "Shore-based pneumatic ship unloader (vacuum type)",
+      "equipment_description": "Fixed or mobile vacuum-type unloading system that conveys cement/clinker powder through enclosed pipelines from vessel hold to shore silo. Dust-free enclosed system.",
+      "rate_tph": 400,
+      "rate_range_tph": [350, 500],
+      "cost_per_ton": 5.50,
+      "cost_range_per_ton": [4.75, 6.50],
+      "setup_time_hours": 2.0,
+      "teardown_time_hours": 1.5,
+      "crew_size": 8,
+      "crew_breakdown": {
+        "unloader_operators": 2,
+        "hold_workers": 3,
+        "shore_silo_operators": 2,
+        "supervisor": 1
+      },
+      "power_requirements": {
+        "connected_power_kw": 750,
+        "average_consumption_kw": 550,
+        "power_source": "Shore power (440V/60Hz) or self-contained diesel generator"
+      },
+      "suitable_vessel_types": [
+        "handysize",
+        "supramax",
+        "panamax"
+      ],
+      "suitable_cargo_types": [
+        "portland_cement",
+        "blended_cement",
+        "slag_cement",
+        "fly_ash",
+        "fine_ground_clinker"
+      ],
+      "advantages": [
+        "Highest throughput rate for finished cement",
+        "Fully enclosed system minimizes dust emissions",
+        "Meets EPA and state air quality requirements",
+        "Continuous operation with minimal interruption",
+        "Direct pipeline to silo eliminates intermediate handling"
+      ],
+      "disadvantages": [
+        "High capital cost ($3-5 million per unit)",
+        "Not suitable for coarse clinker (>25mm)",
+        "Requires dedicated shore infrastructure",
+        "Longer setup/positioning time",
+        "Pipeline routing constraints limit flexibility"
+      ],
+      "weather_sensitivity": "Low - enclosed system operates in most weather. High winds (>40 mph) may halt hatch operations.",
+      "notes": "Preferred method for finished cement. Most Lower Mississippi terminals have at least one pneumatic unloader. Rate assumes single unloader; dual-unloader terminals can achieve 700-800 TPH."
+    },
+    {
+      "method": "grab_crane_to_hopper",
+      "equipment": "Mobile harbor crane with clamshell grab bucket discharging to receiving hopper",
+      "equipment_description": "Shore-based or floating crane equipped with 15-25 cubic meter clamshell grab. Grabs cement/clinker from vessel hold and deposits into a receiving hopper connected to enclosed conveyor system leading to storage.",
+      "rate_tph": 300,
+      "rate_range_tph": [250, 400],
+      "cost_per_ton": 4.25,
+      "cost_range_per_ton": [3.50, 5.25],
+      "setup_time_hours": 1.5,
+      "teardown_time_hours": 1.0,
+      "crew_size": 10,
+      "crew_breakdown": {
+        "crane_operators": 2,
+        "hold_workers": 4,
+        "hopper_tenders": 2,
+        "conveyor_operators": 1,
+        "supervisor": 1
+      },
+      "power_requirements": {
+        "connected_power_kw": 500,
+        "average_consumption_kw": 350,
+        "power_source": "Diesel-hydraulic (self-contained on mobile harbor crane)"
+      },
+      "suitable_vessel_types": [
+        "handysize",
+        "supramax",
+        "panamax",
+        "handy_bulker"
+      ],
+      "suitable_cargo_types": [
+        "clinker",
+        "coarse_ground_cement",
+        "slag",
+        "portland_cement",
+        "gypsum"
+      ],
+      "advantages": [
+        "Versatile - handles both fine cement and coarse clinker",
+        "Lower capital cost than pneumatic unloader",
+        "Mobile cranes can be repositioned between berths",
+        "Faster setup time than pneumatic",
+        "Can work multiple hatches simultaneously with multiple cranes"
+      ],
+      "disadvantages": [
+        "Higher dust generation than pneumatic (requires suppression)",
+        "Cycle time affected by crane swing radius and hold depth",
+        "Grab wear increases maintenance costs with abrasive clinker",
+        "Wind-sensitive during swing (gusts affect accuracy)",
+        "Spillage at hopper transfer point requires cleanup"
+      ],
+      "weather_sensitivity": "Moderate - wind gusts >30 mph affect grab accuracy. Rain causes cement hardening issues.",
+      "notes": "Preferred method for clinker discharge. Many terminals use combination of grab crane (for clinker) and pneumatic (for cement). Rate assumes single crane; dual-crane operations achieve 500-600 TPH."
+    },
+    {
+      "method": "ships_gear",
+      "equipment": "Vessel's own derricks/cranes with grab bucket",
+      "equipment_description": "Uses the vessel's installed cargo handling gear (derricks or deck cranes, typically 25-30 ton SWL) with clamshell grab to discharge cargo to shore hopper or directly to trucks/barges.",
+      "rate_tph": 200,
+      "rate_range_tph": [150, 250],
+      "cost_per_ton": 6.00,
+      "cost_range_per_ton": [5.00, 7.50],
+      "setup_time_hours": 1.0,
+      "teardown_time_hours": 0.5,
+      "crew_size": 12,
+      "crew_breakdown": {
+        "crane_operators": 2,
+        "winch_operators": 2,
+        "hold_workers": 4,
+        "shore_receivers": 2,
+        "signalmen": 1,
+        "supervisor": 1
+      },
+      "power_requirements": {
+        "connected_power_kw": 300,
+        "average_consumption_kw": 200,
+        "power_source": "Vessel's auxiliary engine/generators"
+      },
+      "suitable_vessel_types": [
+        "handysize",
+        "handy_bulker",
+        "geared_supramax"
+      ],
+      "suitable_cargo_types": [
+        "clinker",
+        "slag",
+        "bagged_cement",
+        "portland_cement"
+      ],
+      "advantages": [
+        "No shore crane infrastructure required",
+        "Can discharge at terminals without unloading equipment",
+        "Lower terminal capital investment",
+        "Vessel self-sufficient for cargo operations",
+        "Useful at secondary or undeveloped berths"
+      ],
+      "disadvantages": [
+        "Slowest discharge rate of the three methods",
+        "Higher labor cost per ton due to longer operation time",
+        "Vessel gear typically less powerful than shore cranes",
+        "Higher dust emissions and spillage",
+        "Vessel bears gear maintenance cost (reflected in freight rate)",
+        "Not available on gearless vessels (most Panamax)"
+      ],
+      "weather_sensitivity": "High - exposed operations affected by wind, rain, and visibility. Operations typically cease at wind >25 mph.",
+      "notes": "Used primarily at secondary terminals lacking shore equipment, or as supplemental discharge alongside shore equipment working other hatches. Common for small parcels or opportunistic discharge at multi-use berths. Rate assumes single crane; geared vessels with twin cranes can achieve 300-350 TPH."
+    }
+  ],
+  "combined_operations": {
+    "description": "Many terminals deploy multiple methods simultaneously on different hatches to maximize discharge rate.",
+    "examples": [
+      {
+        "configuration": "1 pneumatic + 1 grab crane (parallel hatches)",
+        "combined_rate_tph": 650,
+        "typical_use": "Large Supramax/Panamax with mixed cement and clinker parcels"
+      },
+      {
+        "configuration": "2 grab cranes (fore and aft hatches)",
+        "combined_rate_tph": 550,
+        "typical_use": "Clinker-only Supramax discharge"
+      },
+      {
+        "configuration": "1 pneumatic + ship's gear (supplemental)",
+        "combined_rate_tph": 550,
+        "typical_use": "Geared Handysize at terminal with pneumatic unloader"
+      }
+    ]
+  },
+  "demurrage_context": {
+    "description": "Vessel discharge rates directly impact demurrage costs. Faster discharge = lower demurrage exposure.",
+    "typical_demurrage_rate_per_day": {
+      "handysize": 12000,
+      "supramax": 16000,
+      "panamax": 22000
+    },
+    "laytime_calculation_notes": "Standard laytime for cement: 5,000-8,000 tons per weather working day (WWWD) depending on terminal and contract terms."
+  }
+}

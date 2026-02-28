@@ -1,0 +1,91 @@
+# Cement Industry NAICS Codes
+# =============================
+# Extracted from existing enrich_cement_facilities_from_frs.py
+
+cement_manufacturing:
+  - code: "327310"
+    description: "Cement Manufacturing"
+    category: "Primary Production"
+
+ready_mix:
+  - code: "327320"
+    description: "Ready-Mix Concrete"
+    category: "Distribution"
+
+precast_concrete:
+  - code: "327331"
+    description: "Concrete Block and Brick Manufacturing"
+    category: "Precast Products"
+  - code: "327332"
+    description: "Concrete Pipe Manufacturing"
+    category: "Precast Products"
+  - code: "327390"
+    description: "Other Concrete Product Manufacturing"
+    category: "Precast Products"
+
+related_manufacturing:
+  - code: "327410"
+    description: "Lime Manufacturing"
+    category: "Related Supply Chain"
+  - code: "327999"
+    description: "All Other Nonmetallic Mineral Product Mfg"
+    category: "Related Supply Chain"
+  - code: "327120"
+    description: "Clay Building Material and Refractories Mfg"
+    category: "Related Supply Chain"
+  - code: "327910"
+    description: "Abrasive Product Manufacturing"
+    category: "Related Supply Chain"
+
+asphalt_paving:
+  - code: "324121"
+    description: "Asphalt Paving Mixture Manufacturing"
+    category: "Highway/Paving"
+  - code: "324122"
+    description: "Asphalt Shingle and Coating Manufacturing"
+    category: "Highway/Paving"
+
+specialty_materials:
+  - code: "325520"
+    description: "Adhesive Manufacturing"
+    category: "Tile/Grout/Adhesive"
+  - code: "325510"
+    description: "Paint and Coating Manufacturing"
+    category: "Stucco/EIFS"
+
+construction:
+  - code: "238110"
+    description: "Poured Concrete Foundation and Structure"
+    category: "Construction"
+  - code: "238910"
+    description: "Site Preparation Contractors"
+    category: "Construction"
+  - code: "237310"
+    description: "Highway, Street, and Bridge Construction"
+    category: "Highway/Paving"
+  - code: "238340"
+    description: "Tile and Terrazzo Contractors"
+    category: "Construction"
+  - code: "238310"
+    description: "Drywall and Insulation Contractors"
+    category: "Construction"
+
+oil_gas:
+  - code: "213112"
+    description: "Support Activities for Oil and Gas"
+    category: "Oil & Gas Cementing"
+
+distribution:
+  - code: "423320"
+    description: "Brick, Stone, and Related Construction Material Distributors"
+    category: "Building Materials"
+  - code: "423390"
+    description: "Other Construction Material Distributors"
+    category: "Building Materials"
+  - code: "444190"
+    description: "Other Building Material Dealers"
+    category: "Building Materials"
+
+# Broad prefix for initial filtering
+broad_prefixes:
+  - "3273"  # Cement and Concrete Product Manufacturing

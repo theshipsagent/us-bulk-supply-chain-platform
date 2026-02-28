@@ -1,0 +1,110 @@
+Category,Metric,Value,Unit,Year/Period,Source_Document,Notes
+Historical Volume,Total U.S. Waterborne Commerce,0.7,Billion tons,1947,FCWL5PVF,Starting baseline
+Historical Volume,Total U.S. Waterborne Commerce,2.1,Billion tons,1979,L27EYGW9,32-year endpoint
+Historical Volume,Annual Growth Rate,3.1,Percent,1947-1979,FCWL5PVF,Compound annual growth
+Historical Volume,Domestic Waterborne Commerce,579,Million tons,1947,FCWL5PVF,
+Historical Volume,Domestic Waterborne Commerce,973,Million tons,1977,FCWL5PVF,
+Historical Volume,Domestic Waterborne Commerce,1079,Million tons,1979,L27EYGW9,
+Historical Volume,Foreign Waterborne Commerce,188,Million tons,1947,L27EYGW9,
+Historical Volume,Foreign Waterborne Commerce,935,Million tons,1977,FCWL5PVF,
+Historical Volume,Foreign Waterborne Commerce,994,Million tons,1979,L27EYGW9,
+Historical Volume,Foreign Commerce Annual Growth,5.5,Percent,1947-1979,L27EYGW9,
+Inland Waterways,Internal Traffic Volume,150,Million tons,1953,L27EYGW9,
+Inland Waterways,Internal Traffic Volume,540,Million tons,1979,L27EYGW9,
+Inland Waterways,Internal Traffic Growth Rate,4.3,Percent per year,1953-1979,L27EYGW9,
+Commodity - Coal,Inland Waterway Coal,58,Million tons,1953,L27EYGW9,
+Commodity - Coal,Inland Waterway Coal,130,Million tons,1979,L27EYGW9,
+Commodity - Coal,Coal Export Volume,30,Million tons,1953,L27EYGW9,
+Commodity - Coal,Coal Export Volume,73,Million tons,1957,L27EYGW9,Peak
+Commodity - Coal,Coal Export Volume,66,Million tons,1979,L27EYGW9,
+Commodity - Petroleum,Crude Petroleum Inland,24,Million tons,1953,L27EYGW9,
+Commodity - Petroleum,Crude Petroleum Inland,60,Million tons,1972,L27EYGW9,Peak
+Commodity - Petroleum,Crude Petroleum Inland,47,Million tons,1979,L27EYGW9,
+Commodity - Petroleum,Petroleum Products Inland,52,Million tons,1953,L27EYGW9,
+Commodity - Petroleum,Petroleum Products Inland,113,Million tons,1977,L27EYGW9,
+Commodity - Petroleum,Petroleum Products Inland,103,Million tons,1979,L27EYGW9,
+Commodity - Petroleum,Crude Petroleum Imports,44,Million tons,1953,L27EYGW9,
+Commodity - Petroleum,Crude Petroleum Imports,90,Million tons,1970,L27EYGW9,
+Commodity - Petroleum,Crude Petroleum Imports,404,Million tons,1977,L27EYGW9,Peak
+Commodity - Petroleum,Crude Petroleum Imports,379,Million tons,1979,L27EYGW9,
+Commodity - Grain,Inland Grain Traffic,4,Million tons,1953,L27EYGW9,
+Commodity - Grain,Inland Grain Traffic,50,Million tons,1979,L27EYGW9,
+Commodity - Grain,Grain Growth Factor,12.5,Times,1953-1979,L27EYGW9,12-fold increase
+Commodity - Grain,Total Grain Exports,10,Million tons,1953,L27EYGW9,
+Commodity - Grain,Total Grain Exports,104,Million tons,1976,L27EYGW9,
+Commodity - Grain,Total Grain Exports,115,Million tons,1978,L27EYGW9,Peak
+Commodity - Grain,Total Grain Exports,100,Million tons,1979,L27EYGW9,
+Energy Commodities,Share of Total Commerce,61,Percent,1977,L27EYGW9,Petroleum + Coal
+Energy Commodities,Petroleum Share of Traffic,49,Percent,1977,L27EYGW9,All traffic
+Energy Commodities,Petroleum Foreign Traffic,53,Percent,1977,L27EYGW9,
+Energy Commodities,Petroleum Domestic Traffic,46,Percent,1977,L27EYGW9,
+Energy Commodities,Coal Share of All Commerce,12,Percent,1977,L27EYGW9,
+Energy Commodities,Coal Domestic Commerce,16,Percent,1977,L27EYGW9,
+Energy Commodities,Coal Foreign Commerce,8,Percent,1977,L27EYGW9,
+Elasticity - Rate,Arc Elasticity (10% increase),1.4,Dimensionless,2004 survey,ZG54IV2J,Mode/OD choice
+Elasticity - Rate,Arc Elasticity (100% increase),0.6,Dimensionless,2004 survey,ZG54IV2J,Mode/OD choice
+Elasticity - Time,Arc Elasticity (10% increase),0.8,Dimensionless,2004 survey,ZG54IV2J,Mode/OD choice
+Elasticity - Time,Arc Elasticity (100% increase),0.4,Dimensionless,2004 survey,ZG54IV2J,Mode/OD choice
+Elasticity - Volume,Arc Elasticity Range,0.23-0.41,Dimensionless,2004 survey,ZG54IV2J,Annual volume
+Elasticity - Volume,Arc Elasticity (10% rate),0.3,Dimensionless,2004 survey,ZG54IV2J,Annual volume
+Shipper Behavior,No Alternatives (Captive),26,Percent,2004 survey,ZG54IV2J,Would shut down
+Shipper Behavior,Would Switch (10% increase),14,Percent,2004 survey,ZG54IV2J,Mode/OD switch
+Shipper Behavior,Would Switch (100% increase),62,Percent,2004 survey,ZG54IV2J,Mode/OD switch
+Shipper Behavior,Would NOT Switch (100%),38,Percent,2004 survey,ZG54IV2J,Captive shippers
+Shipper Behavior,Would NOT Switch Time (100%),55,Percent,2004 survey,ZG54IV2J,Time insensitive
+Shipper Behavior,Existing Facility Immobile,60,Percent,2004 survey,ZG54IV2J,Won't relocate
+Shipper Behavior,New Facility Cost Sensitive,76,Percent,2004 survey,ZG54IV2J,Choose low transport cost
+Modal Comparison - Cost,Barge Rate,1.19,Cents/ton-mile,2003-2004,ZG54IV2J,
+Modal Comparison - Cost,Rail Rate,3.16,Cents/ton-mile,2003-2004,ZG54IV2J,2.7x barge
+Modal Comparison - Cost,Truck Rate,12.90,Cents/ton-mile,2003-2004,ZG54IV2J,10.8x barge
+Modal Comparison - Cost,Multi-mode Rate,18.48,Cents/ton-mile,2003-2004,ZG54IV2J,15.5x barge
+Modal Comparison - Speed,Barge Speed,4.26,Miles per hour,2003-2004,ZG54IV2J,
+Modal Comparison - Speed,Rail Speed,8.64,Miles per hour,2003-2004,ZG54IV2J,2.0x barge
+Modal Comparison - Speed,Truck Speed,34.78,Miles per hour,2003-2004,ZG54IV2J,8.2x barge
+Modal Comparison - Speed,Multi-mode Speed,28.92,Miles per hour,2003-2004,ZG54IV2J,
+Modal Comparison - Distance,Barge Average Distance,863,Miles,2003-2004,ZG54IV2J,
+Modal Comparison - Distance,Rail Average Distance,775,Miles,2003-2004,ZG54IV2J,
+Modal Comparison - Distance,Truck Average Distance,123,Miles,2003-2004,ZG54IV2J,
+Modal Comparison - Distance,Multi-mode Distance,644,Miles,2003-2004,ZG54IV2J,
+Modal Comparison - Size,Barge Median Shipment,1740,Tons,2003-2004,ZG54IV2J,
+Modal Comparison - Size,Rail Median Shipment,2752,Tons,2003-2004,ZG54IV2J,
+Modal Comparison - Size,Truck Median Shipment,25.2,Tons,2003-2004,ZG54IV2J,
+Modal Comparison - Size,Multi-mode Median,27.3,Tons,2003-2004,ZG54IV2J,
+Port Performance - Gulf,Average Annual Tonnage,248,Million tons,1953-57,FCWL5PVF,
+Port Performance - Gulf,Average Annual Tonnage,300,Million tons,1958-62,FCWL5PVF,
+Port Performance - Gulf,Average Annual Tonnage,371,Million tons,1963-67,FCWL5PVF,
+Port Performance - Gulf,Average Annual Tonnage,435,Million tons,1968-72,FCWL5PVF,
+Port Performance - Gulf,Average Annual Tonnage,581,Million tons,1973-77,FCWL5PVF,
+Port Performance - Gulf,Annual Growth Rate,4.4,Percent,1953-1977,FCWL5PVF,
+Port Performance - Atlantic,Average Annual Tonnage,457,Million tons,1953-57,FCWL5PVF,
+Port Performance - Atlantic,Average Annual Tonnage,574,Million tons,1973-77,FCWL5PVF,
+Port Performance - Atlantic,Annual Growth Rate,1.1,Percent,1953-1977,FCWL5PVF,
+Port Performance - Pacific,Average Annual Tonnage,66,Million tons,1953-57,FCWL5PVF,
+Port Performance - Pacific,Average Annual Tonnage,124,Million tons,1973-77,FCWL5PVF,
+Port Performance - Pacific,Annual Growth Rate,3.2,Percent,1953-1977,FCWL5PVF,
+Grain Export Routes,Mississippi to Gulf,46,Percent of exports,1976,FCWL5PVF,48M tons of 104M
+Grain Export Routes,Texas Ports,20,Percent of exports,1976,FCWL5PVF,Houston/Galveston
+Grain Export Routes,East Gulf,4,Percent of exports,1976,FCWL5PVF,Mobile
+Grain Export Routes,Total Gulf Ports,70,Percent of exports,1976,FCWL5PVF,Combined
+Grain Export Routes,East Coast Ports,12,Percent of exports,1976,FCWL5PVF,"Norfolk, Baltimore, etc"
+Grain Export Routes,Great Lakes-Seaway,10,Percent of exports,1976,FCWL5PVF,
+Grain Export Routes,Pacific Northwest,8,Percent of exports,1976,FCWL5PVF,"Portland, Seattle"
+River Characteristics,River Length,2340,Miles,Historical,S97FGYWY,
+River Characteristics,Watershed Area,1245000,Square miles,Historical,S97FGYWY,40% of cont. US
+River Characteristics,Navigable Length,15000,Miles,Historical,S97FGYWY,With tributaries
+River Characteristics,Average Discharge,785000,Million cu yards/year,Historical,S97FGYWY,
+River Characteristics,Silt Burden,50,Pounds per 1000 cu ft,Historical,S97FGYWY,
+River Characteristics,US Drainage,40,Percent,Historical,S97FGYWY,Contiguous US
+River Characteristics,Canada Drainage,13,Percent,Historical,S97FGYWY,
+Lock Performance,Simulation Model Error,0.54,Percent,Validation,WUDNR4MQ,Average absolute
+Lock Performance,V/C Ratio Range Tested,0.04-0.89,Dimensionless,Validation,WUDNR4MQ,
+Lock Performance,Departure Variance SE,0.0058,Standard error,Metamodel,WUDNR4MQ,
+Lock Performance,Departure Variance Mean,0.8311,Mean value,Metamodel,WUDNR4MQ,
+Survey Data,Total Respondents,369,Grain elevators,Dec 2003-Feb 2004,ZG54IV2J,
+Survey Data,Corn Shipments,219,Frequency,2003-2004,ZG54IV2J,59% of sample
+Survey Data,Wheat Shipments,54,Frequency,2003-2004,ZG54IV2J,15% of sample
+Survey Data,Soybean Shipments,26,Frequency,2003-2004,ZG54IV2J,7% of sample
+Survey Data,Other Commodities,70,Frequency,2003-2004,ZG54IV2J,19% of sample
+Alternative Choices,Mode Switch,57.7,Percent,2004 survey,ZG54IV2J,Different mode same O/D
+Alternative Choices,Location Change,15.6,Percent,2004 survey,ZG54IV2J,Different O/D
+Alternative Choices,Shutdown,26.8,Percent,2004 survey,ZG54IV2J,No viable alternative

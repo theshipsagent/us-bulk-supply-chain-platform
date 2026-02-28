@@ -1,0 +1,986 @@
+[
+  {
+    "id": 1,
+    "title": "State carbon dioxide emissions data",
+    "url": "https://catalog.data.gov/dataset/state-carbon-dioxide-emissions-data",
+    "description": "Annual state-level estimates of energy consumption, prices, and expenditures for jet fuel.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": ["https://www.eia.gov/environment/emissions/state/"],
+    "tags": ["climate", "emissions", "energy"]
+  },
+  {
+    "id": 2,
+    "title": "Electricity Data and Statistics Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/electricity-data-and-statistics-application-programming-interface-api",
+    "description": "Monthly, quarterly, and annual data on electricity generation, consumption, retail sales, price, revenue from retail sales, useful thermal output, fossil fuel stocks, and more.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API", "HTML"],
+    "resource_urls": [
+      "https://api.eia.gov/category?api_key=YOUR_API_KEY_HERE&category_id=0",
+      "https://www.eia.gov/electricity/data.cfm",
+      "https://www.eia.gov/beta/api/qb.cfm?category=0"
+    ],
+    "tags": ["electricity-generation", "api", "electricity", "retail-sales"]
+  },
+  {
+    "id": 3,
+    "title": "Monthly and Annual Energy Consumption by Sector",
+    "url": "https://catalog.data.gov/dataset/monthly-and-annual-energy-consumption-by-sector",
+    "description": "Monthly data since January 1973 and annual data since 1949 on U.S. primary and total energy consumption by end-use sector (residential, commercial, industrial, transportation).",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": ["https://www.eia.gov/totalenergy/data/monthly/query/mer_data_excel.asp?table=T02.01"],
+    "tags": ["energy", "consumption", "residential", "commercial", "industrial", "transportation"]
+  },
+  {
+    "id": 4,
+    "title": "Petroleum Data: Prices Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-prices-application-programming-interface-api",
+    "description": "Prices of petroleum products and crude oil. Weekly, monthly, and annual data available. Users of the EIA API are required to obtain an API Key.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "API"],
+    "resource_urls": [
+      "https://www.eia.gov/beta/api/qb.cfm?category=714757",
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=714757"
+    ],
+    "tags": ["petroleum", "crude-oil", "prices", "api"]
+  },
+  {
+    "id": 5,
+    "title": "Annual Electricity Price by State",
+    "url": "https://catalog.data.gov/dataset/annual-electricity-price-by-state",
+    "description": "Annual data on the average price of retail electricity to consumers. Data organized by U.S. state and by provider, i.e., total electric industry, full-service providers, and more.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": ["https://www.eia.gov/electricity/data/state/avgprice_annual.xlsx"],
+    "tags": ["electricity", "prices", "state-level"]
+  },
+  {
+    "id": 6,
+    "title": "U.S. Crude Oil, Natural Gas, and Natural Gas Liquids Reserves",
+    "url": "https://catalog.data.gov/dataset/u-s-crude-oil-natural-gas-and-natural-gas-liquids-reserves",
+    "description": "Annual data on proved reserves of crude oil, natural gas, and natural gas liquids in the U.S. Based on EIA Form-23L data. Proved reserves are estimated volumes of hydrocarbon resources.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": ["https://www.eia.gov/naturalgas/crudeoilreserves/excel/reserves_tables_2018.xlsx"],
+    "tags": ["crude-oil", "natural-gas", "reserves", "natural-gas-liquids"]
+  },
+  {
+    "id": 7,
+    "title": "State Energy Data System (SEDS): Consumption Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-consumption-application-programming-interface-api",
+    "description": "This API provides state-level and national-level energy consumption data. Data organized by major economic sectors. EIA's State Energy Data System (SEDS) is a comprehensive dataset.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "API"],
+    "resource_urls": [
+      "https://www.eia.gov/beta/api/qb.cfm?category=40204",
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=40204"
+    ],
+    "tags": ["seds", "consumption", "state-level", "api"]
+  },
+  {
+    "id": 8,
+    "title": "State Energy Data System (SEDS)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds",
+    "description": "EIA's State Energy Data System (SEDS) is a comprehensive data set that consists of annual time series estimates of state-level energy use by major economic sectors.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["CSV", "HTML"],
+    "resource_urls": [
+      "https://www.eia.gov/state/seds/CDF/Complete_SEDS.csv",
+      "https://www.eia.gov/state/seds/seds-data-complete.cfm?sid=US"
+    ],
+    "tags": ["seds", "state-level", "energy", "comprehensive"]
+  },
+  {
+    "id": 9,
+    "title": "Monthly Electric Utility Sales and Revenue",
+    "url": "https://catalog.data.gov/dataset/monthly-electric-utility-sales-and-revenue",
+    "description": "Utility level retail sales of electricity and associated revenue. Organized by reporting month, state, and by end-use sector, i.e., residential, commercial, industrial.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["electricity", "sales", "revenue", "utility"]
+  },
+  {
+    "id": 10,
+    "title": "Liquids pipeline projects database",
+    "url": "https://catalog.data.gov/dataset/liquids-pipeline-projects-database",
+    "description": "EIA launched a new liquids pipeline projects database that tracks more than 200 pipeline projects for crude oil, hydrocarbon gas liquids (HGL), and other petroleum products.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": ["https://www.eia.gov/petroleum/xls/EIA_LiqPipProject.xlsx"],
+    "tags": ["pipeline", "crude-oil", "petroleum", "infrastructure"]
+  },
+  {
+    "id": 11,
+    "title": "EIA Thermoelectric Water Cooling Data",
+    "url": "https://catalog.data.gov/dataset/eia-thermoelectric-water-cooling-data-5ea33",
+    "description": "The U.S. Energy Information Administration (EIA) collects water cooling data for the electric power industry in the United States. This submission includes annual data on water cooling systems.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [
+      "https://data.openei.org/files/6465/cooling_data_2014.xlsx",
+      "https://data.openei.org/files/6465/cooling_data_2015.xlsx",
+      "https://data.openei.org/files/6465/cooling_data_2017.xlsx",
+      "https://data.openei.org/files/6465/cooling_data_2016.xlsx",
+      "https://data.openei.org/files/6465/cooling_data_2018.xlsx",
+      "https://data.openei.org/files/6465/cooling_data_2019.xlsx"
+    ],
+    "tags": ["water", "cooling", "thermoelectric", "power-plants"]
+  },
+  {
+    "id": 12,
+    "title": "Petroleum & Other Liquids Data and Statistics",
+    "url": "https://catalog.data.gov/dataset/petroleum-other-liquids-data-and-statistics",
+    "description": "Weekly, monthly, and annual data on crude oil, gasoline, diesel, propane, jet fuel, ethanol, and other liquid fuels. Domestic and international data on petroleum production and consumption.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "API"],
+    "resource_urls": [
+      "https://www.eia.gov/petroleum/data.cfm",
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=714755",
+      "https://www.eia.gov/beta/api/qb.cfm?category=714755"
+    ],
+    "tags": ["petroleum", "crude-oil", "gasoline", "diesel", "jet-fuel"]
+  },
+  {
+    "id": 13,
+    "title": "Energy Data and Statistics from U.S. States",
+    "url": "https://catalog.data.gov/dataset/energy-data-and-statistics-from-u-s-states",
+    "description": "State-level data on all energy sources. Data on production, consumption, reserves, stocks, prices, imports, and exports. Data are collated from state-specific data sources.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": ["https://www.eia.gov/state/"],
+    "tags": ["state-level", "energy", "production", "consumption"]
+  },
+  {
+    "id": 14,
+    "title": "Bulk Download Facility",
+    "url": "https://catalog.data.gov/dataset/bulk-download-facility",
+    "description": "The bulk download facility provides the entire contents of each major API data set in a single ZIP file. A small JSON formatted manifest file lists the bulk files and their metadata.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": ["https://www.eia.gov/beta/api/bulkfiles.cfm"],
+    "tags": ["api", "bulk-download", "data"]
+  },
+  {
+    "id": 15,
+    "title": "Commercial Buildings Energy Consumption Survey",
+    "url": "https://catalog.data.gov/dataset/commercial-buildings-energy-consumption-survey",
+    "description": "The Commercial Buildings Energy Consumption Survey (CBECS) is a national sample survey that collects information on the stock of U.S. commercial buildings, their energy-related characteristics, and their energy consumption.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": ["https://www.eia.gov/consumption/commercial/data/2012/index.php?view=microdata"],
+    "tags": ["commercial", "buildings", "consumption", "survey"]
+  },
+  {
+    "id": 16,
+    "title": "Electricity Data: Plant Level Data Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/electricity-data-plant-level-data-application-programming-interface-api",
+    "description": "This API provides data on electric fuel consumption, fuel consumption, and net generation at the plant level. Annual, quarterly, and monthly data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "API"],
+    "resource_urls": [
+      "https://www.eia.gov/beta/api/qb.cfm?category=1017",
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=1017",
+      "https://www.eia.gov/electricity/data/browser/?src=-f10#/topic/1?agg=2,0,1&fuel=vvg&geo=g&sec=g&freq=M&start=200101&end=201504&ctype=linechart&ltype=pin&rtype=s&pin=&rse=0&maptype=0"
+    ],
+    "tags": ["electricity", "plant-level", "generation", "api"]
+  },
+  {
+    "id": 17,
+    "title": "Renewable and Alternative Fuels Data and Statistics",
+    "url": "https://catalog.data.gov/dataset/renewable-and-alternative-fuels-data-and-statistics",
+    "description": "Monthly and annual data on renewable energy, i.e., biomass, geothermal, hydropower, solar, and wind. Also data on alternative transportation fuels, i.e., hydrogen, ethanol.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": ["https://www.eia.gov/renewable/data.cfm"],
+    "tags": ["renewable", "solar", "wind", "biomass", "geothermal"]
+  },
+  {
+    "id": 18,
+    "title": "State Energy Data System (SEDS) Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-application-programming-interface-api",
+    "description": "State-level data on all energy sources. Data include production, consumption, reserves, stocks, prices, imports, and exports. Data are collated from state-specific sources.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API", "HTML"],
+    "resource_urls": [
+      "https://api.eia.gov/category?api_key=YOUR_API_KEY_HERE&category_id=40203",
+      "https://www.eia.gov/beta/api/qb.cfm?category=40203"
+    ],
+    "tags": ["seds", "state-level", "api"]
+  },
+  {
+    "id": 19,
+    "title": "Consumption & Efficiency Data and Statistics",
+    "url": "https://catalog.data.gov/dataset/consumption-efficiency-data-and-statistics",
+    "description": "Data and statistics on energy consumption in homes, commercial buildings, manufacturing, and transportation. Data released monthly or annually.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": ["https://www.eia.gov/consumption/data.cfm"],
+    "tags": ["consumption", "efficiency", "homes", "buildings"]
+  },
+  {
+    "id": 20,
+    "title": "Short-Term Energy Outlook: U.S. CO2 Emissions Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-co2-emissions-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes CO2 emissions from coal, fossil fuels, natural gas, and petroleum.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API", "HTML"],
+    "resource_urls": [
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=1039844",
+      "https://www.eia.gov/beta/api/qb.cfm?category=1039844",
+      "https://www.eia.gov/beta/steo/"
+    ],
+    "tags": ["steo", "projections", "co2", "emissions"]
+  },
+  {
+    "id": 21,
+    "title": "International Energy Data - All Energy",
+    "url": "https://catalog.data.gov/dataset/international-energy-data-all-energy",
+    "description": "This API provides international data on energy sources (e.g., coal, electricity, natural gas, petroleum, coal, renewables) and activities (e.g., consumption, imports, exports, production).",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["international", "energy", "api"]
+  },
+  {
+    "id": 22,
+    "title": "Annual Distribution and Production of Oil and Gas Wells by State From 1919-Latest Year Available",
+    "url": "https://catalog.data.gov/dataset/annual-distribution-and-production-of-oil-and-gas-wells-by-state-from-1919-latest-year-ava",
+    "description": "Annual data on the number and production volumes of oil and natural gas wells by state. Annual time series extend back to 1919.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["oil", "gas", "wells", "production", "state-level"]
+  },
+  {
+    "id": 23,
+    "title": "Petroleum Data: Crude Reserves and Production Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-crude-reserves-and-production-application-programming-interface-api",
+    "description": "Data on the proved reserves, production, and drilling of crude oil, lease condensates, natural gas, and natural gas wells. Monthly and annual data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["crude-oil", "reserves", "production", "api"]
+  },
+  {
+    "id": 24,
+    "title": "Nuclear & Uranium Data and Statistics",
+    "url": "https://catalog.data.gov/dataset/nuclear-uranium-data-and-statistics",
+    "description": "Data on uranium and nuclear fuel, nuclear power plants and reactors, radioactive waste, and nuclear power generation. International data on nuclear generation also available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["nuclear", "uranium", "power-plants"]
+  },
+  {
+    "id": 25,
+    "title": "Residential Energy Consumption Survey (RECS) Files, Energy Consumption, 2009",
+    "url": "https://catalog.data.gov/dataset/residential-energy-consumption-survey-recs-files-energy-consumption-2009",
+    "description": "This 2009 version represents the 13th iteration of the RECS program. First conducted in 1978, the Residential Energy Consumption Survey is a national sample survey that collects data on energy consumption in U.S. homes.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["CSV"],
+    "resource_urls": [],
+    "tags": ["residential", "consumption", "survey", "recs"]
+  },
+  {
+    "id": 26,
+    "title": "Annual Electric Power Industry Data",
+    "url": "https://catalog.data.gov/dataset/annual-electric-power-industry-data",
+    "description": "Historical U.S. electric utility data. Data on generation, electric purchases, peak load, sales, revenues, customer counts, demand-side management programs, green pricing.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["electricity", "generation", "sales", "revenue"]
+  },
+  {
+    "id": 27,
+    "title": "Energy-Related Environmental Data",
+    "url": "https://catalog.data.gov/dataset/energy-related-environmental-data",
+    "description": "Environmental data on carbon dioxide emissions from energy and industry, by consuming sector (residential, commercial, industrial, transportation, electric power), and by fuel type.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["environment", "emissions", "co2", "climate"]
+  },
+  {
+    "id": 28,
+    "title": "Electricity Data: Net Generation from Electricity Plants Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/electricity-data-net-generation-from-electricity-plants-application-programming-interface-",
+    "description": "This API provides data on U.S. electricity generation by fuel type, i.e., coal, petroleum, natural gas, nuclear, hydroelectric, wind, solar, geothermal, and wood.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["electricity-generation", "api", "fuel-type"]
+  },
+  {
+    "id": 29,
+    "title": "Electric Power Annual",
+    "url": "https://catalog.data.gov/dataset/electric-power-annual",
+    "description": "Annual data on electricity generating capacity, electricity generation and useful thermal output, fuel receipts, fuel stocks, sales, consumption, and emissions in the U.S.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["electricity", "annual", "capacity", "generation"]
+  },
+  {
+    "id": 30,
+    "title": "Electricity Data - Consumption",
+    "url": "https://catalog.data.gov/dataset/electricity-data-consumption",
+    "description": "This API provides data on U.S. consumption for electricity generation in Btu. Data organized by fuel type, i.e., coal, petroleum liquids, petroleum coke, and natural gas.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["electricity", "consumption", "api"]
+  },
+  {
+    "id": 31,
+    "title": "Total Energy Data and Statistics",
+    "url": "https://catalog.data.gov/dataset/total-energy-data-and-statistics",
+    "description": "Comprehensive monthly and annual time series on all energy sources. Data on production, consumption, reserves, stocks, prices, imports, and exports. Monthly time series since 1973.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "XLS"],
+    "resource_urls": [],
+    "tags": ["energy", "comprehensive", "total-energy"]
+  },
+  {
+    "id": 32,
+    "title": "Alternative Fuel Vehicle Data",
+    "url": "https://catalog.data.gov/dataset/alternative-fuel-vehicle-data",
+    "description": "Annual data on the number of on-road alternative fuel vehicles and hybrid vehicles made available in the U.S. Data on the use of alternative fueled vehicles and the consumption of alternative fuels.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["alternative-fuel", "vehicles", "hybrid"]
+  },
+  {
+    "id": 33,
+    "title": "Annual Company Level Natural Gas Supply and Disposition From 1997-Latest Year Available",
+    "url": "https://catalog.data.gov/dataset/annual-company-level-natural-gas-supply-and-disposition-from-1997-latest-year-available",
+    "description": "Annual company level data on the supply and disposition of natural gas in the United States from an identified universe of pipelines, local distribution companies, and other operators.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["natural-gas", "supply", "disposition", "company-level"]
+  },
+  {
+    "id": 34,
+    "title": "Natural Gas Data",
+    "url": "https://catalog.data.gov/dataset/natural-gas-data",
+    "description": "Data and statistics on natural gas prices, exploration and reserves, production, imports and exports, storage, pipelines, and consumption. Data released on a weekly, monthly, and annual basis.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["natural-gas", "prices", "production", "storage"]
+  },
+  {
+    "id": 35,
+    "title": "Coal Data: Aggregate Coal Mine Productivity Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/coal-data-aggregate-coal-mine-productivity-application-programming-interface-api",
+    "description": "Annual data on coal mine productivity in short tons per labor hour. Data organized by mine type (total, surface, underground, refuse).",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["coal-production", "productivity", "api"]
+  },
+  {
+    "id": 36,
+    "title": "Energy Analysis & Projections",
+    "url": "https://catalog.data.gov/dataset/energy-analysis-projections",
+    "description": "Monthly and yearly forecasts of energy production, consumption, and price at the national level and by energy type. Monthly forecasts extend 18 months and yearly forecasts extend 30 years.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["projections", "forecasts", "analysis"]
+  },
+  {
+    "id": 37,
+    "title": "Annual Energy Outlook",
+    "url": "https://catalog.data.gov/dataset/annual-energy-outlook",
+    "description": "The Annual Energy Outlook presents longterm annual projections of energy supply, demand, and prices focused on the U.S. through 2050, based on results from EIA's National Energy Modeling System.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["projections", "outlook", "annual"]
+  },
+  {
+    "id": 38,
+    "title": "Energy Markets & Finance Data and Statistics",
+    "url": "https://catalog.data.gov/dataset/energy-markets-finance-data-and-statistics",
+    "description": "Information on price volatility and forecast uncertainty for crude oil and natural gas as well as an analysis of 7 key factors that may influence oil prices, physical market indicators, and financial market data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["markets", "finance", "prices", "volatility"]
+  },
+  {
+    "id": 39,
+    "title": "Petroleum Data Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-application-programming-interface-api",
+    "description": "Data on crude oil reserves and production; refining and processing; imports, exports, movements; stocks; prices; and consumption/sales are available in machine-readable format.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["petroleum", "crude-oil", "api"]
+  },
+  {
+    "id": 40,
+    "title": "Annual U. S. Electric Power Industry Estimated Emissions by State From 1990 - Latest Year Available",
+    "url": "https://catalog.data.gov/dataset/annual-u-s-electric-power-industry-estimated-emissions-by-state-from-1990-latest-year-avai",
+    "description": "Data on annual emissions of Carbon Dioxide (CO2), Sulfur Dioxide (SO2), and Nitrogen Oxides (NOx). Data organized by type of electric power producer, by energy source, and by state.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["emissions", "co2", "electricity", "state-level"]
+  },
+  {
+    "id": 41,
+    "title": "Coal Data Collection",
+    "url": "https://catalog.data.gov/dataset/coal-data-collection",
+    "description": "International and domestic data on coal production, consumption, prices, reserves, stocks, imports, exports, distribution, and transportation rates. Weekly, monthly, and annual data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["coal", "coal-production", "consumption"]
+  },
+  {
+    "id": 42,
+    "title": "Residential Energy Consumption Survey (RECS) Files, All Data, 2015",
+    "url": "https://catalog.data.gov/dataset/residential-energy-consumption-survey-recs-files-all-data-2015",
+    "description": "The 2015 study represents the 14th iteration of the RECS program. First conducted in 1978, the Residential Energy Consumption Survey is a national sample survey that provides energy consumption and expenditure data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["CSV"],
+    "resource_urls": [],
+    "tags": ["residential", "consumption", "survey", "recs"]
+  },
+  {
+    "id": 43,
+    "title": "Company Level Petroleum Imports",
+    "url": "https://catalog.data.gov/dataset/company-level-petroleum-imports",
+    "description": "Monthly data at the company level on imports of crude oil and/or petroleum products into the 50 States, the District of Columbia, Puerto Rico, the Virgin Islands, and other U.S. territories.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["petroleum", "imports", "crude-oil", "company-level"]
+  },
+  {
+    "id": 44,
+    "title": "Crude Oil Imports Tracking Tool",
+    "url": "https://catalog.data.gov/dataset/crude-oil-imports-tracking-tool",
+    "description": "Maps and data for petroleum imports by type, crude oil grade, location, and country of origin.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["crude-oil", "imports", "tracking"]
+  },
+  {
+    "id": 45,
+    "title": "Petroleum Data: Imports/Exports and Movements Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-imports-exports-and-movements-application-programming-interface-api",
+    "description": "Imports and exports of petroleum products and crude oil. Weekly, monthly, and annual data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["petroleum", "imports", "exports", "api"]
+  },
+  {
+    "id": 46,
+    "title": "Electricity Data - Retail Sales",
+    "url": "https://catalog.data.gov/dataset/electricity-data-retail-sales",
+    "description": "This API provides data on retail sales of electricity by major end-use sectors, i.e., residential, commercial, industrial, and transportation. Based on Form EIA-826 data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["electricity", "retail-sales", "api"]
+  },
+  {
+    "id": 47,
+    "title": "Annual Electric Generator Report - Latest Year",
+    "url": "https://catalog.data.gov/dataset/annual-electric-generator-report-latest-year",
+    "description": "Annual U.S. generator level data about generators at electric power plants owned and operated by electric utilities and nonutilities (including independent power producers).",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["electricity-generation", "generators", "power-plants"]
+  },
+  {
+    "id": 48,
+    "title": "Coal Mines, Surface and Underground",
+    "url": "https://catalog.data.gov/dataset/coal-mines-surface-and-underground",
+    "description": "All operating surface and underground coal mines in the United States.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["SHP"],
+    "resource_urls": [],
+    "tags": ["coal", "coal-production", "mines", "geospatial"]
+  },
+  {
+    "id": 49,
+    "title": "Crude Oil Imports",
+    "url": "https://catalog.data.gov/dataset/crude-oil-imports",
+    "description": "Imports by origin of all grades of crude oil, i.e., heavy sour, heavy sweet, light sour, light sweet, and medium crude oil. View data by country, by world region, or by crude quality.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["crude-oil", "imports"]
+  },
+  {
+    "id": 50,
+    "title": "International Energy Data - Coal",
+    "url": "https://catalog.data.gov/dataset/international-energy-data-coal",
+    "description": "This API provides international data on coal production. Data organized by country.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["international", "coal", "api"]
+  },
+  {
+    "id": 51,
+    "title": "Tight Oil Production Estimates by Play",
+    "url": "https://catalog.data.gov/dataset/tight-oil-production-estimates-by-play",
+    "description": "Estimated monthly production derived from state administrative data. Data are back to January 2000.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["oil", "production", "tight-oil"]
+  },
+  {
+    "id": 52,
+    "title": "Short-Term Energy Outlook: International Petroleum and Other Liquids Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-international-petroleum-and-other-liquids-application-programmin",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for supply, consumption, inventory, and prices.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "petroleum", "international"]
+  },
+  {
+    "id": 53,
+    "title": "Short-Term Energy Outlook: U.S. Natural Gas Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-natural-gas-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for supply, consumption, inventories, and prices.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "natural-gas"]
+  },
+  {
+    "id": 54,
+    "title": "International Energy Data - Petroleum and Other Liquids",
+    "url": "https://catalog.data.gov/dataset/international-energy-data-petroleum-and-other-liquids",
+    "description": "This API provides international data on crude oil including lease condensate production, imports, exports, and reserves. Data organized by country.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["international", "petroleum", "crude-oil", "api"]
+  },
+  {
+    "id": 55,
+    "title": "Petroleum Data: Consumption/Sales Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-consumption-sales-application-programming-interface-api",
+    "description": "Data on the consumption and sales of petroleum products. Weekly, monthly, and annual data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["petroleum", "petroleum-consumption", "sales", "api"]
+  },
+  {
+    "id": 56,
+    "title": "Annual Solar Photovoltaic Module Shipments Report",
+    "url": "https://catalog.data.gov/dataset/annual-solar-photovoltaic-module-shipments-report",
+    "description": "Data on domestic shipments of photovoltaic cells and modules by market sector, end use, and type. Based on information reported on Form EIA-63B.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["solar", "photovoltaic", "renewable"]
+  },
+  {
+    "id": 57,
+    "title": "Short-Term Energy Outlook: U.S. Prices Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-prices-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for prices of petroleum, natural gas, coal, and electricity.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "prices"]
+  },
+  {
+    "id": 58,
+    "title": "Electricity Data: Average Retail Price of Electricity Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/electricity-data-average-retail-price-of-electricity-application-programming-interface-api",
+    "description": "This API provides data on average retail price of electricity by major end-use sectors, i.e., residential, commercial, industrial, and transportation. Based on Form EIA-826 data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["electricity", "prices", "retail", "api"]
+  },
+  {
+    "id": 59,
+    "title": "Short-Term Energy Outlook Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-application-programming-interface-api",
+    "description": "The API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for demand, supply and prices for petroleum, natural gas, coal, and electricity.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "api"]
+  },
+  {
+    "id": 60,
+    "title": "Monthly Utility and Nonutility Fuel",
+    "url": "https://catalog.data.gov/dataset/monthly-utility-and-nonutility-fuel",
+    "description": "Monthly data on U.S. electric power generation, fuel consumption, stocks, and fuel heat content from utility power plants, nonutility power plants, and combined heat and power plants.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["electricity-generation", "fuel", "monthly"]
+  },
+  {
+    "id": 61,
+    "title": "Electricity Data - Fossil Fuels",
+    "url": "https://catalog.data.gov/dataset/electricity-data-fossil-fuels",
+    "description": "This provides data on the average cost of fossil fuels. Data organized by fuel type, i.e., coal, bituminous coal, subbituminous coal, lignite coal, petroleum liquids, petroleum coke, natural gas.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["electricity", "fossil-fuels", "coal", "natural-gas"]
+  },
+  {
+    "id": 62,
+    "title": "Petroleum Data: Stocks Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-stocks-application-programming-interface-api",
+    "description": "Data on petroleum and crude oil stocks. Weekly, monthly, and annual data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["petroleum", "crude-oil", "stocks", "api"]
+  },
+  {
+    "id": 63,
+    "title": "U.S. Energy Mapping System",
+    "url": "https://catalog.data.gov/dataset/u-s-energy-mapping-system",
+    "description": "Map data for energy production and consumption in geospatial format.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["SHP", "HTML"],
+    "resource_urls": [],
+    "tags": ["mapping", "geospatial", "energy"]
+  },
+  {
+    "id": 64,
+    "title": "Short-Term Energy Outlook - Real and Nominal Petroleum Prices",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-real-and-nominal-petroleum-prices",
+    "description": "Provides annual, quarterly, and monthly prices back to 1976 for gasoline, heating oil, and diesel fuel. Also provides annual prices from 1968 and quarterly and monthly prices from 1976 for crude oil.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["steo", "petroleum", "prices", "gasoline"]
+  },
+  {
+    "id": 65,
+    "title": "International Energy Data - Alternative Energy",
+    "url": "https://catalog.data.gov/dataset/international-energy-data-alternative-energy",
+    "description": "This API provides international data on alternative energy such as biodiesel production and consumption. Data organized by country.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["international", "alternative-energy", "biodiesel", "api"]
+  },
+  {
+    "id": 66,
+    "title": "Dry Shale Gas Production Estimates by Play",
+    "url": "https://catalog.data.gov/dataset/dry-shale-gas-production-estimates-by-play",
+    "description": "Estimated monthly production derived from state administrative data. Data are back to January 2000.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["natural-gas", "shale-gas", "production"]
+  },
+  {
+    "id": 67,
+    "title": "Coal Production by MSHA ID",
+    "url": "https://catalog.data.gov/dataset/coal-production-by-msha-id",
+    "description": "Data on U.S mining operation (i.e., operation name, mailing address, telephone number, State and county of operation, etc.), annual coal production, code definitions, and more.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["coal", "coal-production", "mining"]
+  },
+  {
+    "id": 68,
+    "title": "Short-Term Energy Outlook: U.S. Electricity Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-electricity-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for U.S electricity generation, consumption, and prices.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "electricity-generation"]
+  },
+  {
+    "id": 69,
+    "title": "Short-Term Energy Outlook: U.S. Weather Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-weather-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. It provides data on U.S. heating degree days and cooling degree days.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "weather"]
+  },
+  {
+    "id": 70,
+    "title": "International Energy Data - Natural Gas",
+    "url": "https://catalog.data.gov/dataset/international-energy-data-natural-gas",
+    "description": "This collection provides international data on natural gas. Data organized by country.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["international", "natural-gas", "api"]
+  },
+  {
+    "id": 71,
+    "title": "Short-Term Energy Outlook: U.S. Renewable Energy Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-renewable-energy-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for renewable energy consumption and electricity generation.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "renewable"]
+  },
+  {
+    "id": 72,
+    "title": "State Energy Data System (SEDS): Conversion Factors Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-conversion-factors-application-programming-interface-api",
+    "description": "This API provides the conversion factors to change physical units to Btu. EIA's State Energy Data System (SEDS) is a comprehensive data set that consists of annual time series estimates of state-level energy data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["seds", "conversion", "api"]
+  },
+  {
+    "id": 73,
+    "title": "Crude Oil and Petroleum Exports",
+    "url": "https://catalog.data.gov/dataset/crude-oil-and-petroleum-exports",
+    "description": "Monthly Crude Oil and Petroleum Products Exports. Data are back to January 1981 for petroleum products and back to January 1920 for crude oil.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["crude-oil", "petroleum", "exports"]
+  },
+  {
+    "id": 74,
+    "title": "State Energy Data System (SEDS): Production Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-production-application-programming-interface-api",
+    "description": "This API contains state-level and national-level data on energy production. EIA's State Energy Data System (SEDS) is a comprehensive data set that consists of annual time series estimates.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["seds", "production", "state-level", "api"]
+  },
+  {
+    "id": 75,
+    "title": "State Energy Data System (SEDS): GDP Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-gdp-application-programming-interface-api",
+    "description": "This API provides state-level and national-level GDP. EIA's State Energy Data System (SEDS) is a comprehensive data set that consists of annual time series estimates of state-level energy data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["seds", "gdp", "state-level", "api"]
+  },
+  {
+    "id": 76,
+    "title": "Annual Summary Electricity Statistics for the U. S. From 2003 - Latest Year Available",
+    "url": "https://catalog.data.gov/dataset/annual-summary-electricity-statistics-for-the-u-s-from-2003-latest-year-available",
+    "description": "Annual data back to 2003 at the national level for electricity generation; capacity; consumption and cost of fossil fuels; sales, price and revenue; emissions; customer counts; and more.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": [],
+    "tags": ["electricity", "annual", "statistics"]
+  },
+  {
+    "id": 77,
+    "title": "Petroleum Data: Summary Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-summary-application-programming-interface-api",
+    "description": "Data on petroleum production, imports, inputs, stocks, exports, and prices. Weekly, monthly, and annual data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["petroleum", "api", "summary"]
+  },
+  {
+    "id": 78,
+    "title": "New England Dashboard",
+    "url": "https://catalog.data.gov/dataset/new-england-dashboard",
+    "description": "To increase customer understanding of weather-related energy issues in New England, EIA released an interactive dashboard showing energy market conditions in that region.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML"],
+    "resource_urls": [],
+    "tags": ["regional", "new-england", "dashboard"]
+  },
+  {
+    "id": 79,
+    "title": "Short-Term Energy Outlook: U.S. Petroleum and Other Liquids Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-petroleum-and-other-liquids-application-programming-interfac",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for U.S. petroleum and other liquids production, consumption, and inventories.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["steo", "projections", "petroleum"]
+  },
+  {
+    "id": 80,
+    "title": "State Energy Data System (SEDS): Population Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-population-application-programming-interface-api",
+    "description": "This API provides state-level population, in addition to the U.S. total population. EIA's State Energy Data System (SEDS) is a comprehensive data set that consists of annual time series estimates.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API"],
+    "resource_urls": [],
+    "tags": ["seds", "population", "state-level", "api"]
+  },
+  {
+    "id": 81,
+    "title": "Short-Term Energy Outlook: U.S. Coal Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-coal-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. Summarizes the outlook for supply, consumption, inventories, and prices of coal.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API", "HTML"],
+    "resource_urls": [
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=829720",
+      "https://www.eia.gov/beta/api/qb.cfm?category=829720",
+      "https://www.eia.gov/beta/steo/"
+    ],
+    "tags": ["steo", "projections", "coal"]
+  },
+  {
+    "id": 82,
+    "title": "State Energy Data System (SEDS): Prices & Expenditures Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/state-energy-data-system-seds-prices-expenditures-application-programming-interface-api",
+    "description": "This API provides state-level and national-level energy prices and expenditures. Data organized by major economic sectors. EIA's State Energy Data System (SEDS) is a comprehensive dataset.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "API"],
+    "resource_urls": [
+      "https://www.eia.gov/beta/api/qb.cfm?category=40909",
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=40909"
+    ],
+    "tags": ["seds", "prices", "expenditures", "state-level", "api"]
+  },
+  {
+    "id": 83,
+    "title": "Petroleum Data: Refining and Processing Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/petroleum-data-refining-and-processing-application-programming-interface-api",
+    "description": "Data on petroleum inputs, production, yield, and capacity. Weekly, monthly and annual data available.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["HTML", "API"],
+    "resource_urls": [
+      "https://www.eia.gov/beta/api/qb.cfm?category=714759",
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=714759"
+    ],
+    "tags": ["petroleum", "refining", "processing", "api"]
+  },
+  {
+    "id": 84,
+    "title": "Monthly Gross Withdrawals of Natural Gas",
+    "url": "https://catalog.data.gov/dataset/monthly-gross-withdrawals-of-natural-gas",
+    "description": "Data from 2005 to the latest month available on gross withdrawals of natural gas. Data organized by area and by month. Based on Form EIA-914 data.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["XLS"],
+    "resource_urls": ["https://www.eia.gov/petroleum/production/xls/table3.xlsx"],
+    "tags": ["natural-gas", "withdrawals", "production"]
+  },
+  {
+    "id": 85,
+    "title": "Short-Term Energy Outlook: U.S. Economy Application Programming Interface (API)",
+    "url": "https://catalog.data.gov/dataset/short-term-energy-outlook-u-s-economy-application-programming-interface-api",
+    "description": "This API provides data back to 1990 and projections annually, monthly, and quarterly for 18 months. It provides data on economic output, income, expenditures, employment, and inflation.",
+    "publisher": "U.S. Energy Information Administration",
+    "organization": "Department of Energy",
+    "formats": ["API", "HTML"],
+    "resource_urls": [
+      "https://api.eia.gov/category/?api_key=YOUR_API_KEY_HERE&category_id=829724",
+      "https://www.eia.gov/beta/api/qb.cfm?category=829724",
+      "https://www.eia.gov/beta/steo/"
+    ],
+    "tags": ["steo", "projections", "economy"]
+  }
+]

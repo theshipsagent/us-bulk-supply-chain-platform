@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Bulk Supply Chain Intelligence Platform - Master Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a2744;
+            color: #333;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portal-header {
+            background: linear-gradient(135deg, #0d3b66 0%, #0a2744 100%);
+            color: white;
+            padding: 12px 40px;
+            text-align: center;
+            border-bottom: 3px solid #4fc3f7;
+            flex-shrink: 0;
+        }
+
+        .portal-header h1 {
+            font-size: 1.6em;
+            margin-bottom: 2px;
+            color: #4fc3f7;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .portal-header p {
+            font-size: 0.85em;
+            color: #90caf9;
+            font-weight: 300;
+        }
+
+        .tab-nav {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 0;
+            background: #f5f5f5;
+            border-bottom: 2px solid #0d3b66;
+            flex-shrink: 0;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 12px 20px;
+            background: #f5f5f5;
+            border: none;
+            cursor: pointer;
+            font-size: 0.92em;
+            font-weight: 600;
+            color: #0d3b66;
+            transition: all 0.3s ease;
+            text-align: center;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            white-space: nowrap;
+        }
+
+        .tab-button:hover {
+            background: #e8e8e8;
+            color: #006d77;
+        }
+
+        .tab-button.active {
+            background: white;
+            color: #4fc3f7;
+            border-bottom: 3px solid #4fc3f7;
+        }
+
+        .content-area {
+            flex: 1;
+            position: relative;
+            width: 100%;
+            background: white;
+            min-height: 0;
+            overflow: visible;
+        }
+
+        .tab-content {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            overflow: auto;
+        }
+
+        .portal-footer {
+            background: #0a2744;
+            color: #607d8b;
+            padding: 6px 40px;
+            text-align: center;
+            font-size: 0.75em;
+            border-top: 2px solid #4fc3f7;
+            flex-shrink: 0;
+        }
+
+        .portal-footer a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+
+        .portal-footer a:hover {
+            color: #b3e5fc;
+        }
+
+        .spinner {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+        .spinner.loading {
+            display: block;
+        }
+
+        .spinner::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(79, 195, 247, 0.3);
+            border-top-color: #4fc3f7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tab-button {
+                padding: 10px 8px;
+                font-size: 0.82em;
+            }
+
+            .portal-header {
+                padding: 8px 20px;
+            }
+
+            .portal-header h1 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="portal-header">
+        <h1>US Bulk Supply Chain Intelligence Platform</h1>
+        <p>William S. Davis III | OceanDatum.ai | SESCO Cement</p>
+    </div>
+
+    <div class="tab-nav">
+        <button class="tab-button active" onclick="switchTab('platform', this)">
+            Platform Overview
+        </button>
+        <button class="tab-button" onclick="switchTab('panjiva', this)">
+            Commodity Trends
+        </button>
+        <button class="tab-button" onclick="switchTab('mrtis', this)">
+            Lower Miss River Traffic
+        </button>
+        <button class="tab-button" onclick="switchTab('cement', this)">
+            Cement Report
+        </button>
+    </div>
+
+    <div class="content-area">
+        <div id="platform" class="tab-content active">
+            <div class="spinner" id="platform-spinner"></div>
+            <iframe id="platform-frame" src="Master_Presentation_Comprehensive.html" onload="hideSpinner('platform-spinner')"></iframe>
+        </div>
+
+        <div id="panjiva" class="tab-content">
+            <div class="spinner" id="panjiva-spinner"></div>
+            <iframe id="panjiva-frame" src="Panjiva_Commodity_Trends_Charts.html" onload="hideSpinner('panjiva-spinner')"></iframe>
+        </div>
+
+        <div id="mrtis" class="tab-content">
+            <div class="spinner" id="mrtis-spinner"></div>
+            <iframe id="mrtis-frame" src="MRTIS_MARITIME_VOYAGE_ANALYSIS.html" onload="hideSpinner('mrtis-spinner')"></iframe>
+        </div>
+
+        <div id="cement" class="tab-content">
+            <div class="spinner" id="cement-spinner"></div>
+            <iframe id="cement-frame" src="03_COMMODITY_MODULES/cement/reports/published/Monthly_Cement_Report_Feb_2026.html" onload="hideSpinner('cement-spinner')"></iframe>
+        </div>
+    </div>
+
+    <div class="portal-footer">
+        <p>
+            US Bulk Supply Chain Reporting Platform v1.0 | Feb 24, 2026 |
+            <a href="#" onclick="toggleFullscreen(); return false;">Fullscreen</a> |
+            OceanDatum.ai
+        </p>
+    </div>
+
+    <script>
+        function switchTab(tabName, buttonElement) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(c => c.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(b => b.classList.remove('active'));
+
+            const activeTab = document.getElementById(tabName);
+            if (activeTab) {
+                activeTab.classList.add('active');
+                const spinnerIds = {
+                    'platform': 'platform-spinner',
+                    'panjiva': 'panjiva-spinner',
+                    'mrtis': 'mrtis-spinner',
+                    'cement': 'cement-spinner'
+                };
+                if (spinnerIds[tabName]) showSpinner(spinnerIds[tabName]);
+            }
+
+            if (buttonElement) buttonElement.classList.add('active');
+        }
+
+        function showSpinner(id) {
+            const s = document.getElementById(id);
+            if (s) s.classList.add('loading');
+        }
+
+        function hideSpinner(id) {
+            const s = document.getElementById(id);
+            if (s) s.classList.remove('loading');
+        }
+
+        function toggleFullscreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else {
+                document.documentElement.requestFullscreen();
+            }
+        }
+
+        window.addEventListener('load', function() {
+            ['platform-spinner','panjiva-spinner','mrtis-spinner','cement-spinner']
+                .forEach(hideSpinner);
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                const tabs = ['platform','panjiva','mrtis','cement'];
+                const keys = ['1','2','3','4'];
+                const idx = keys.indexOf(e.key);
+                if (idx >= 0) {
+                    e.preventDefault();
+                    switchTab(tabs[idx], document.querySelectorAll('.tab-button')[idx]);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

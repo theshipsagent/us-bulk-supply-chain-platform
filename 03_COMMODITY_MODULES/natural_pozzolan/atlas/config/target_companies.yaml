@@ -1,0 +1,43 @@
+# Target Companies for Fuzzy Matching — US Natural Pozzolan Supply Chain
+# =======================================================================
+# Pozzolan producers, SCM processors, metakaolin producers, cement consumers
+
+pozzolan_producers:
+  - "Hess Pumice"
+  - "Hess Pumice Products"
+  - "CR Minerals"
+  - "CR Minerals Company"
+  - "Kirkland Mining"
+  - "Geofortis"
+  - "Sunrise Resources"
+  - "Idaho Minerals"
+
+scm_processors:
+  - "Eco Material Technologies"
+  - "Eco Material"
+  - "Eco-Material"
+  - "Boral Material Technologies"
+  - "Headwaters"
+  - "Headwaters Resources"
+
+metakaolin_producers:
+  - "Burgess Pigment"
+  - "Burgess"
+  - "Advanced Cement Technologies"
+  - "BASF"
+  - "Imerys"
+
+cement_companies:
+  - "Ash Grove"
+  - "CRH"
+  - "CRH Americas"
+  - "CEMEX"
+  - "Holcim"
+  - "Heidelberg Materials"
+  - "Lehigh Hanson"
+  - "CalPortland"
+  - "Buzzi Unicem"
+  - "National Cement"
+  - "Summit Materials"
+  - "Quikrete"
+  - "Argos"

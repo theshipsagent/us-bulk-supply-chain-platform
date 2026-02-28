@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "commodity": "cement",
+    "category": "terminal_storage",
+    "version": "1.0",
+    "last_updated": "2026-02-14",
+    "description": "Terminal storage economics for cement and clinker at US port and inland terminals. Covers major storage types with capital costs, operating costs, and throughput capacity.",
+    "cost_basis_year": 2025,
+    "sources": [
+      "Portland Cement Association (PCA) Plant Design Guidelines",
+      "FLSmidth terminal engineering references",
+      "US terminal operator financial disclosures (anonymized)",
+      "ASCE Civil Engineering construction cost indices"
+    ]
+  },
+  "storage_types": [
+    {
+      "storage_type": "steel_silo_small",
+      "description": "Welded steel cylindrical silo with cone bottom, 5,000 ton nominal capacity. Common at truck distribution terminals and small rail-served facilities.",
+      "capacity_tons_min": 3000,
+      "capacity_tons_max": 5000,
+      "capacity_tons_typical": 5000,
+      "construction_cost_per_ton": 80.00,
+      "construction_cost_range_per_ton": [65.00, 100.00],
+      "total_construction_cost_typical": 400000,
+      "monthly_cost_per_ton_stored": 2.50,
+      "monthly_cost_breakdown": {
+        "depreciation": 0.80,
+        "maintenance": 0.60,
+        "power_aeration": 0.40,
+        "insurance": 0.35,
+        "labor_allocation": 0.35
+      },
+      "annual_throughput_capacity_tons": 60000,
+      "throughput_notes": "Assumes ~1 complete fill/empty cycle per month",
+      "fill_rate_tph": 150,
+      "discharge_rate_tph": 200,
+      "advantages": [
+        "Lower capital cost per unit",
+        "Faster construction timeline (3-6 months)",
+        "Modular - can add additional silos as demand grows",
+        "Proven technology with simple maintenance",
+        "Small footprint suitable for constrained terminal sites"
+      ],
+      "disadvantages": [
+        "Limited capacity per unit",
+        "Higher cost per ton at small scale",
+        "Steel corrosion risk in humid/coastal environments",
+        "Interior coating required for cement compatibility",
+        "Flow problems possible with cement bridging in cone bottom"
+      ],
+      "typical_dimensions": {
+        "diameter_ft": 30,
+        "height_ft": 80,
+        "cone_angle_degrees": 60
+      },
+      "suitable_materials": ["portland_cement", "blended_cement", "slag_cement", "fly_ash"],
+      "environmental_controls": ["bin_vent_filter", "level_indicators", "aeration_pads"],
+      "lifespan_years": 30
+    },
+    {
+      "storage_type": "steel_silo_large",
+      "description": "Large welded steel cylindrical silo with cone or flat bottom, 10,000-25,000 ton capacity. Used at major import terminals and large distribution hubs.",
+      "capacity_tons_min": 10000,
+      "capacity_tons_max": 25000,
+      "capacity_tons_typical": 20000,
+      "construction_cost_per_ton": 55.00,
+      "construction_cost_range_per_ton": [45.00, 70.00],
+      "total_construction_cost_typical": 1100000,
+      "monthly_cost_per_ton_stored": 1.80,
+      "monthly_cost_breakdown": {
+        "depreciation": 0.55,
+        "maintenance": 0.40,
+        "power_aeration": 0.30,
+        "insurance": 0.25,
+        "labor_allocation": 0.30
+      },
+      "annual_throughput_capacity_tons": 200000,
+      "throughput_notes": "Higher throughput due to vessel-scale receiving and continuous truck/barge loading",
+      "fill_rate_tph": 400,
+      "discharge_rate_tph": 500,
+      "advantages": [
+        "Better economies of scale than small silos",
+        "Can receive full vessel parcels without overflow",
+        "Higher fill and discharge rates support vessel discharge schedules",
+        "Multiple discharge points for simultaneous truck and barge loading",
+        "Flat-bottom option with reclaim system maximizes usable volume"
+      ],
+      "disadvantages": [
+        "Higher absolute capital cost",
+        "Longer construction timeline (6-12 months)",
+        "Foundation requirements more substantial",
+        "Flat-bottom requires mechanical reclaim (sweep auger or airslide)",
+        "Single-point failure risk if only one large silo vs. multiple small"
+      ],
+      "typical_dimensions": {
+        "diameter_ft": 60,
+        "height_ft": 120,
+        "cone_angle_degrees": 55
+      },
+      "suitable_materials": ["portland_cement", "blended_cement", "slag_cement", "fly_ash"],
+      "environmental_controls": ["bin_vent_filter", "level_indicators", "aeration_system", "temperature_monitoring"],
+      "lifespan_years": 35
+    },
+    {
+      "storage_type": "concrete_dome",
+      "description": "Concrete dome storage structure, 50,000-100,000 ton capacity. Used at major production plants and large-scale import terminals for bulk clinker or cement storage.",
+      "capacity_tons_min": 50000,
+      "capacity_tons_max": 100000,
+      "capacity_tons_typical": 75000,
+      "construction_cost_per_ton": 35.00,
+      "construction_cost_range_per_ton": [28.00, 45.00],
+      "total_construction_cost_typical": 2625000,
+      "monthly_cost_per_ton_stored": 1.20,
+      "monthly_cost_breakdown": {
+        "depreciation": 0.35,
+        "maintenance": 0.25,
+        "power_reclaim": 0.25,
+        "insurance": 0.15,
+        "labor_allocation": 0.20
+      },
+      "annual_throughput_capacity_tons": 600000,
+      "throughput_notes": "High capacity supports large vessel parcels and continuous outbound distribution. Typical 8-10 fills per year.",
+      "fill_rate_tph": 800,
+      "discharge_rate_tph": 600,
+      "advantages": [
+        "Lowest cost per ton of capacity at scale",
+        "Extremely durable (50+ year lifespan)",
+        "Weather-resistant and climate-controlled interior",
+        "Low visual profile compared to equivalent silo farm",
+        "Can store clinker, cement, or other bulk powders",
+        "Minimal maintenance requirements"
+      ],
+      "disadvantages": [
+        "Very high absolute capital cost",
+        "Long construction timeline (12-18 months)",
+        "Requires mechanical reclaim system (portal or bridge reclaimer)",
+        "Not easily expanded once built",
+        "Large footprint requirement",
+        "Specialized contractor required for dome construction"
+      ],
+      "typical_dimensions": {
+        "diameter_ft": 200,
+        "height_ft": 100,
+        "dome_shape": "hemispherical or ogival"
+      },
+      "suitable_materials": ["clinker", "portland_cement", "slag", "raw_materials", "gypsum"],
+      "environmental_controls": ["dust_collection_system", "ventilation", "temperature_monitoring", "reclaim_dust_suppression"],
+      "lifespan_years": 50
+    },
+    {
+      "storage_type": "flat_storage_warehouse",
+      "description": "Enclosed flat-floor warehouse with front-end loader or overhead crane reclaim. Used for temporary storage, overflow, or multi-product terminals.",
+      "capacity_tons_min": 5000,
+      "capacity_tons_max": 30000,
+      "capacity_tons_typical": 15000,
+      "construction_cost_per_ton": 45.00,
+      "construction_cost_range_per_ton": [35.00, 60.00],
+      "total_construction_cost_typical": 675000,
+      "monthly_cost_per_ton_stored": 2.20,
+      "monthly_cost_breakdown": {
+        "depreciation": 0.55,
+        "maintenance": 0.50,
+        "power_equipment": 0.35,
+        "insurance": 0.30,
+        "labor_allocation": 0.50
+      },
+      "annual_throughput_capacity_tons": 120000,
+      "throughput_notes": "Limited by loader reclaim rate. Good for slower-moving products or overflow.",
+      "fill_rate_tph": 300,
+      "discharge_rate_tph": 150,
+      "advantages": [
+        "Flexible multi-product storage (partition for different cement types)",
+        "Can be converted from existing warehouse buildings",
+        "Simple reclaim with standard front-end loaders",
+        "Easy to inspect and sample stored product",
+        "Lower foundation requirements than silos"
+      ],
+      "disadvantages": [
+        "Lower utilization of floor space (limited pile height)",
+        "Higher labor cost due to loader operations",
+        "Product segregation risk with multiple products",
+        "Moisture intrusion risk at floor level",
+        "Dust management more challenging than enclosed silos",
+        "Not suitable for finished cement long-term (moisture/hardening)"
+      ],
+      "typical_dimensions": {
+        "length_ft": 200,
+        "width_ft": 100,
+        "eave_height_ft": 40,
+        "pile_height_ft": 30
+      },
+      "suitable_materials": ["clinker", "slag", "gypsum", "raw_materials", "cement_short_term"],
+      "environmental_controls": ["building_ventilation", "dust_suppression", "floor_drainage"],
+      "lifespan_years": 40
+    },
+    {
+      "storage_type": "open_pad_clinker",
+      "description": "Open-air paved storage pad for clinker only. Clinker is weather-resistant and can be stored outdoors. Not suitable for finished cement.",
+      "capacity_tons_min": 10000,
+      "capacity_tons_max": 200000,
+      "capacity_tons_typical": 50000,
+      "construction_cost_per_ton": 8.00,
+      "construction_cost_range_per_ton": [5.00, 12.00],
+      "total_construction_cost_typical": 400000,
+      "monthly_cost_per_ton_stored": 0.75,
+      "monthly_cost_breakdown": {
+        "depreciation": 0.10,
+        "maintenance": 0.15,
+        "equipment_loader": 0.25,
+        "insurance": 0.10,
+        "labor_allocation": 0.15
+      },
+      "annual_throughput_capacity_tons": 400000,
+      "throughput_notes": "High throughput limited only by stacking/reclaim equipment capacity.",
+      "fill_rate_tph": 500,
+      "discharge_rate_tph": 400,
+      "advantages": [
+        "Lowest cost storage option by far",
+        "Virtually unlimited scalability (add more pad area)",
+        "Simple construction (grading + paving)",
+        "Easy access for inspection and sampling",
+        "Clinker is weatherproof - no degradation from rain/sun",
+        "Can use standard construction equipment for stacking/reclaim"
+      ],
+      "disadvantages": [
+        "Clinker only - NOT suitable for finished cement or fly ash",
+        "Large land area requirement",
+        "Stormwater runoff management required (alkaline runoff)",
+        "Dust from wind erosion requires suppression",
+        "Contamination risk from adjacent operations",
+        "Seasonal ground freezing can create reclaim difficulties"
+      ],
+      "typical_dimensions": {
+        "pad_area_sq_ft": 100000,
+        "pile_height_ft": 40,
+        "pad_surface": "reinforced_concrete_or_asphalt"
+      },
+      "suitable_materials": ["clinker", "slag_granulated"],
+      "environmental_controls": ["stormwater_management", "wind_fencing", "dust_suppression_sprays", "runoff_pH_monitoring"],
+      "lifespan_years": 25
+    }
+  ],
+  "storage_planning_notes": {
+    "buffer_stock_guidance": "Import terminals should maintain 15-30 days of average throughput as buffer stock to accommodate vessel scheduling variability.",
+    "vessel_parcel_sizing": "Storage capacity should accommodate at least one full vessel parcel (25,000-50,000 tons for Supramax) plus working inventory.",
+    "product_segregation": "Terminals handling multiple cement types (Type I, Type II, Type I/II, Type V, slag cement) require separate silos for each product to avoid contamination.",
+    "seasonal_considerations": "Northern terminals should pre-build inventory in Q4 for spring construction season demand surge (March-June)."
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.06545919697624,
+          29.90436157989874
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_0",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 17,
+        "refinery_count": 2,
+        "terminal_count": 15,
+        "avg_river_mile": 94.5,
+        "facilities": [
+          "Valero Meraux",
+          "PBF Chalmette",
+          "Chevron Oak Point",
+          "Stolthaven",
+          "Stolthaven",
+          "IMTT ",
+          "Blackwater Harvey",
+          "KMI Harvey",
+          "Buckeye Marrero ",
+          "KMI Harvey",
+          "KMI Harvey",
+          "KMI Harvey",
+          "Magellan Marrero ",
+          "Magellan Marrero ",
+          "Blackwater Westwego",
+          "KMI Seven Oaks",
+          "IMTT "
+        ],
+        "major_refineries": [
+          "Valero Meraux",
+          "PBF Chalmette"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.36885696659455,
+          29.97036940793339
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_1",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 11,
+        "refinery_count": 7,
+        "terminal_count": 4,
+        "avg_river_mile": 122.9,
+        "facilities": [
+          "Valero St Charles",
+          "Valero St Charles",
+          "Valero St Charles",
+          "Valero St Charles",
+          "Shell Norco ",
+          "Shell Norco ",
+          "Shell Norco ",
+          "IMTT ",
+          "IMTT ",
+          "IMTT ",
+          "IMTT "
+        ],
+        "major_refineries": [
+          "Valero St Charles",
+          "Valero St Charles",
+          "Valero St Charles",
+          "Valero St Charles",
+          "Shell Norco ",
+          "Shell Norco ",
+          "Shell Norco "
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.61327358163078,
+          30.050278689960145
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_2",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 11,
+        "refinery_count": 3,
+        "terminal_count": 8,
+        "avg_river_mile": 141.5,
+        "facilities": [
+          "Marathon Garyville",
+          "Marathon Garyville",
+          "Marathon Garyville",
+          "Cargill Molasses",
+          "MPLX Garyville ",
+          "MPLX Garyville ",
+          "MPLX Garyville ",
+          "Apex Mt Airy",
+          "MPLX Mt Airy",
+          "MPLX Mt Airy",
+          "Pin Oak Mt Airy"
+        ],
+        "major_refineries": [
+          "Marathon Garyville",
+          "Marathon Garyville",
+          "Marathon Garyville"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.85352012786186,
+          30.04031320716495
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_3",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 10,
+        "refinery_count": 2,
+        "terminal_count": 8,
+        "avg_river_mile": 160.8,
+        "facilities": [
+          "Aramco Convent",
+          "Aramco Convent",
+          "Plains St James",
+          "Sugarland St James ",
+          "Sugarland St James ",
+          "Capline St James ",
+          "Capline St James ",
+          "Ergon St James",
+          "NuStar St James",
+          "NuStar St James"
+        ],
+        "major_refineries": [
+          "Aramco Convent",
+          "Aramco Convent"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.19777743898027,
+          30.45468373441255
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_4",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 4,
+        "refinery_count": 1,
+        "terminal_count": 3,
+        "avg_river_mile": 230.8,
+        "facilities": [
+          "Exxon Baton Rouge",
+          "Genesis Baton Rouge",
+          "Apex Baton Rouge",
+          "Placid Oil"
+        ],
+        "major_refineries": [
+          "Exxon Baton Rouge"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9744495750093,
+          29.690561359642
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_5",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 2,
+        "refinery_count": 0,
+        "terminal_count": 2,
+        "avg_river_mile": 63.0,
+        "facilities": [
+          "Phillips 66 Alliance",
+          "Phillips 66 Alliance "
+        ],
+        "major_refineries": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.07660022946253,
+          30.226493939751567
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_6",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 6,
+        "refinery_count": 0,
+        "terminal_count": 6,
+        "avg_river_mile": 192.8,
+        "facilities": [
+          "Shell Geismar",
+          "IMTT ",
+          "Crosstex Energy",
+          "KMI St Gabriel",
+          "Willow Glen",
+          "LBC Sunshine"
+        ],
+        "major_refineries": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.5544584475919,
+          29.3714103025487
+        ]
+      },
+      "properties": {
+        "cluster_id": "PETRO_noise_15",
+        "cluster_type": "Petroleum Refinery Complex",
+        "facility_count": 1,
+        "refinery_count": 0,
+        "terminal_count": 1,
+        "avg_river_mile": 27.0,
+        "facilities": [
+          "Chevron Empire"
+        ],
+        "major_refineries": []
+      }
+    }
+  ]
+}

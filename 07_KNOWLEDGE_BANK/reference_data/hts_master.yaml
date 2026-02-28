@@ -1,0 +1,381 @@
+# HTS MASTER TAXONOMY
+# Centralized Harmonized Tariff Schedule code reference with commodity mappings
+# Eliminates duplication across commodity modules
+# Source: US International Trade Commission HTS 2026
+# Last Updated: 2026-02-23
+
+---
+
+metadata:
+  title: "Harmonized Tariff Schedule (HTS) Master Taxonomy"
+  source: "US International Trade Commission"
+  url: "https://hts.usitc.gov/"
+  last_updated: "2026-02-23"
+  hts_year: "2026"
+  notes: "Tariff rates shown are Most Favored Nation (MFN) / Normal Trade Relations (NTR) rates unless otherwise noted."
+
+---
+
+# ============================================================================
+# CHAPTER 25 — Salt; sulfur; earths and stone; plastering materials, lime and cement
+# ============================================================================
+
+"2507":
+  chapter: "25"
+  description: "Kaolin and other kaolinic clays, whether or not calcined"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "calcined_clay_feedstock"
+      notes: "Kaolin clay for metakaolin (calcined clay) production; LC3 cement feedstock"
+  data_sources:
+    - "Panjiva import manifests"
+    - "Census Bureau trade statistics"
+
+"2513.10.0010":
+  chapter: "25"
+  description: "Pumice stone; crude or in irregular pieces, including crushed pumice"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "primary_product"
+      notes: "Volcanic pumice for pozzolanic applications"
+  data_sources:
+    - "Panjiva import manifests"
+
+"2513.10.0080":
+  chapter: "25"
+  description: "Pumice stone; other"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "primary_product"
+  data_sources:
+    - "Panjiva import manifests"
+
+"2523.10.00":
+  chapter: "25"
+  description: "Cement clinkers"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "cement"
+      relationship: "intermediate_product"
+      notes: "Unground Portland cement clinker; imported for grinding domestically"
+  data_sources:
+    - "Panjiva import manifests"
+    - "USGS Mineral Commodity Summaries"
+
+"2523.21.00":
+  chapter: "25"
+  description: "White Portland cement, whether or not artificially colored"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "cement"
+      relationship: "specialty_product"
+      notes: "White cement for architectural concrete; higher value than gray cement"
+  major_origins:
+    - country: "Egypt"
+      supplier: "Royal El Minya (SESCO partner)"
+      market_share_pct: 40
+    - country: "Turkey"
+      market_share_pct: 25
+  data_sources:
+    - "Panjiva import manifests"
+    - "SESCO import data"
+
+"2523.29.00":
+  chapter: "25"
+  description: "Other Portland cement (gray)"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "cement"
+      relationship: "primary_product"
+      notes: "Primary import category for bulk Portland cement (gray)"
+  major_origins:
+    - country: "Turkey"
+      supplier: "Nuh Cement (SESCO partner)"
+      market_share_pct: 25
+    - country: "Egypt"
+      market_share_pct: 15
+    - country: "Vietnam"
+      market_share_pct: 12
+      tariff_notes: "Subject to potential anti-dumping investigations"
+    - country: "Greece"
+      market_share_pct: 10
+  data_sources:
+    - "Panjiva import manifests"
+    - "USGS Mineral Commodity Summaries"
+
+"2523.30.00":
+  chapter: "25"
+  description: "Aluminous cement (calcium aluminate cement)"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "cement"
+      relationship: "specialty_product"
+      notes: "High-alumina cement for refractory applications; niche market"
+  data_sources:
+    - "Panjiva import manifests"
+
+"2523.90.00":
+  chapter: "25"
+  description: "Other hydraulic cements (pozzolanic cement, slag cement, supersulfate cement, etc.)"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "cement"
+      relationship: "blended_products"
+      notes: "Includes blended cements, masonry cement, slag cement, pozzolanic cement"
+    - commodity: "slag"
+      relationship: "blended_slag_cement"
+    - commodity: "natural_pozzolan"
+      relationship: "pozzolanic_cement"
+  data_sources:
+    - "Panjiva import manifests"
+
+"2530.90":
+  chapter: "25"
+  description: "Mineral substances not elsewhere specified or included (NESOI)"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "natural_pozzolan"
+      relationship: "volcanic_ash_trass"
+      notes: "Natural pozzolanic materials for cement blending (volcanic ash, trass, etc.)"
+  data_sources:
+    - "Panjiva import manifests"
+
+# ============================================================================
+# CHAPTER 26 — Ores, slag and ash
+# ============================================================================
+
+"2618.00.00":
+  chapter: "26"
+  description: "Granulated slag (slag sand) from the manufacture of iron or steel"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "slag"
+      relationship: "primary_product_ggbfs"
+      notes: "Ground granulated blast-furnace slag (GGBFS) for cement replacement; primary SCM import"
+    - commodity: "cement"
+      relationship: "scm_component"
+  major_origins:
+    - country: "Japan"
+      market_share_pct: 52
+      notes: "Largest GGBFS supplier to US"
+    - country: "China"
+      market_share_pct: 23
+    - country: "Brazil"
+      market_share_pct: 11
+    - country: "Canada"
+      market_share_pct: 8
+  data_sources:
+    - "Panjiva import manifests"
+    - "USGS Mineral Commodity Summaries"
+
+"2619.00":
+  chapter: "26"
+  description: "Slag, dross (other than granulated slag), scalings and other waste from the manufacture of iron or steel"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "slag"
+      relationship: "non_granulated_slag"
+      notes: "Non-granulated slag; lower value than GGBFS; aggregate use"
+  data_sources:
+    - "Panjiva import manifests"
+
+"2620.60":
+  chapter: "26"
+  description: "Ash and residues containing arsenic, metals or their compounds"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "fly_ash"
+      relationship: "includes_coal_combustion_ash"
+      notes: "May include fly ash from coal combustion if containing trace metals"
+  data_sources:
+    - "Panjiva import manifests"
+
+"2621.00":
+  chapter: "26"
+  description: "Other slag and ash, including seaweed ash (kelp)"
+  general_duty: "Free"
+  special: "Free"
+  column_2: "Free"
+  unit: "metric tons"
+  commodities:
+    - commodity: "fly_ash"
+      relationship: "primary_import_category"
+      notes: "Includes fly ash (coal combustion residuals) for SCM use"
+    - commodity: "cement"
+      relationship: "scm_component"
+  major_origins:
+    - country: "South Korea"
+      market_share_pct: 49
+      notes: "Largest fly ash supplier to US"
+    - country: "Turkey"
+      market_share_pct: 26
+      notes: "SESCO potential co-sourcing opportunity"
+    - country: "China"
+      market_share_pct: 23
+  data_sources:
+    - "Panjiva import manifests"
+    - "American Coal Ash Association (ACAA)"
+
+# ============================================================================
+# CHAPTER 38 — Miscellaneous chemical products
+# ============================================================================
+
+"3824.90":
+  chapter: "38"
+  description: "Prepared binders for foundry molds or cores; chemical products and preparations of the chemical or allied industries (including mixtures of natural products), NESOI"
+  general_duty: "5.0%"
+  special: "Free (various FTAs)"
+  column_2: "25%"
+  unit: "kilogram"
+  commodities:
+    - commodity: "fly_ash"
+      relationship: "processed_fly_ash"
+      notes: "Processed/beneficiated fly ash; chemical preparations"
+    - commodity: "natural_pozzolan"
+      relationship: "processed_pozzolans"
+  data_sources:
+    - "Panjiva import manifests"
+
+---
+
+# TARIFF NOTES
+
+## Anti-Dumping & Countervailing Duties (ADD/CVD)
+
+### Cement (HTS 2523.29.00 - Gray Portland Cement)
+**Active Orders**: None as of 2026-02-23
+**Monitoring**:
+- **Turkey**: No petition filed; 25% US import market share
+- **Egypt**: No petition filed; 15% US import market share
+- **Vietnam**: No petition filed; 12% US import market share; historical target of ADD investigations
+- **Greece**: No petition filed; 10% US import market share
+- **China**: Minimal imports; 3% market share
+
+**Historical Context**:
+- Mexico: ADD order terminated 2008
+- Venezuela: ADD order terminated 2015
+- China: Minimal participation post-2009 order
+
+---
+
+# USAGE NOTES
+
+## Query HTS by Commodity
+
+```python
+import yaml
+
+with open('hts_master.yaml') as f:
+    hts = yaml.safe_load(f)
+
+# Get all HTS codes for cement
+cement_hts = [
+    code for code, data in hts.items()
+    if 'commodities' in data and
+    any(c['commodity'] == 'cement' for c in data['commodities'])
+]
+# Returns: ['2523.10.00', '2523.21.00', '2523.29.00', '2523.30.00', '2523.90.00']
+```
+
+## Query by Tariff Rate
+
+```python
+# Get all duty-free imports
+duty_free = [
+    code for code, data in hts.items()
+    if data.get('general_duty') == 'Free'
+]
+# Most cement/SCM products are duty-free
+```
+
+## Query by Origin Country
+
+```python
+# Get all HTS codes with Japan as major origin
+japan_exports = [
+    code for code, data in hts.items()
+    if 'major_origins' in data and
+    any(o['country'] == 'Japan' for o in data['major_origins'])
+]
+# Returns: ['2618.00.00'] (GGBFS)
+```
+
+---
+
+# COMMODITY COVERAGE
+
+| Commodity | Primary HTS | Related HTS | Total |
+|-----------|-------------|-------------|-------|
+| cement | 2523.29.00 | 6 codes | 7 |
+| slag | 2618.00.00 | 2 codes | 3 |
+| fly_ash | 2621.00 | 2 codes | 3 |
+| natural_pozzolan | 2530.90, 2507 | 3 codes | 5 |
+
+**Total Unique HTS Codes**: 15
+**Total Commodity Relationships Mapped**: 18
+
+---
+
+# TRADE FLOW ANALYSIS INTEGRATION
+
+This HTS master taxonomy integrates with:
+- **Panjiva import manifests** (800K+ records) in `01_DATA_SOURCES/federal_trade/panjiva_imports/`
+- **USGS Mineral Commodity Summaries** for trade volume validation
+- **SESCO import data** for white cement and Turkey/Egypt sourcing
+
+Query Panjiva by HTS code:
+```python
+from report_platform.toolsets import ocean_vessel
+
+# Get all cement imports from Turkey
+imports = ocean_vessel.query_manifests(
+    hts_code='2523.29.00',
+    origin_country='Turkey',
+    date_range=('2024-01-01', '2025-12-31')
+)
+```
+
+---
+
+**Maintained By**: OceanDatum.ai / US Bulk Supply Chain Reporting Platform
+**Source**: US International Trade Commission HTS 2026
+**Last Updated**: 2026-02-23

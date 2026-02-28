@@ -102,3 +102,44 @@ Thumbs.db
 
 # --- Specific large files ---
 03_COMMODITY_MODULES/cement/market_intelligence/tampa_study/data/epa/echo_exporter.zip
+
+# ============================================================
+# RAW DATA SOURCES — large downloads, stay local only
+# ============================================================
+01_DATA_SOURCES/
+
+# ============================================================
+# ARCHIVE — original 12 project folders (read-only reference)
+# Too large for git (8,400+ files, 220 over 50MB).
+# ============================================================
+06_ARCHIVE/
+
+# ============================================================
+# PRE-MIGRATION PROJECT FOLDERS — legacy workstreams
+# Being migrated into 01-05 structure. Keep local only.
+# ============================================================
+project_manifest_v2/
+project_rail/
+barge_econ/
+maritime_infrastructure_project/
+sources_data_maps/
+task_barge/
+task_census/
+task_econ/
+task_epa_frs/
+task_mrtis/
+task_pipelines/
+task_stowagefactors/
+task_us_flag/
+task_usace_entrance_clearance/
+
+# --- Documentation: rail reference data (1,900+ files, 25 over 50MB) ---
+05_DOCUMENTATION/rail_reference/
+
+# --- Cement atlas large data files ---
+03_COMMODITY_MODULES/cement/atlas/data/
+03_COMMODITY_MODULES/*/atlas/data/
+
+# --- PDFs in reports (keep generated HTML, exclude large PDFs) ---
+04_REPORTS/*.pdf
+03_COMMODITY_MODULES/cement/reports/published/*.pdf

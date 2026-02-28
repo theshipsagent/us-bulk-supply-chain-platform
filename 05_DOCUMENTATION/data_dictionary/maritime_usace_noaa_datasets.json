@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Shipping Fairways, Lanes, and Zones for US Waters",
+    "description": "Documents various shipping zones that delineate activities and regulations for marine vessel traffic including traffic lanes, separation zones, precautionary navigation areas, safety fairways, recommended shipping routes, seasonal speed-reduction zones protecting endangered species (North Atlantic Right Whales), Particularly Sensitive Sea Areas, and areas to be avoided due to navigation hazards.",
+    "formats": [
+      "ZIP",
+      "Esri REST Services",
+      "ISO-19139 Metadata"
+    ],
+    "source": "NOAA - National Oceanic and Atmospheric Administration, Department of Commerce, Office of Coast Survey",
+    "category": "Maritime Navigation, Marine Spatial Planning",
+    "url": "https://catalog.data.gov/dataset/shipping-fairways-lanes-and-zones-for-us-waters1",
+    "update_status": "Weekly updates. Last updated: May 20, 2025. Not for navigation - intended for coastal and ocean planning purposes only.",
+    "geographic_coverage": "U.S. waters from 179.46°W to 174.6°E longitude and 9.31°N to 60.98°N latitude",
+    "contact": "patrick.keown@noaa.gov"
+  },
+  {
+    "title": "Waterborne Commerce Statistics Center (WCSC) Data",
+    "description": "Comprehensive waterborne commerce data including vessel trips and cargo data collected within the Oracle Waterborne System and Lock Performance Monitoring System. Provides downloadable data for port, lock and waterway facility characteristics; vessel characteristics; and commodity movement across the nation. Includes monthly indicators and annual reports on waterborne commerce statistics.",
+    "formats": [
+      "Database (Oracle)",
+      "W-DAPP tool (Waterborne Data Analyzer and Pre-Processor)",
+      "Downloadable datasets"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Institute for Water Resources (IWR), Waterborne Commerce Statistics Center",
+    "category": "Waterborne Commerce, Port Operations, Maritime Trade",
+    "url": "https://www.iwr.usace.army.mil/About/Technical-Centers/WCSC-Waterborne-Commerce-Statistics-Center/",
+    "update_status": "Ongoing collection and annual reports. Data sources include U.S. Customs and Border Protection, U.S. Census Bureau, and Port Import Export Reporting Service.",
+    "additional_portal": "https://ndc.ops.usace.army.mil/wcsc/webpub/"
+  },
+  {
+    "title": "Foreign Traffic Vessel Entrances and Clearances",
+    "description": "Dataset series documenting foreign trade vessel movements including vessel entrance and clearance dates, customs district and port codes, vessel manifest numbers, vessel names, and IMO (International Maritime Organization) numbers. Compiled from U.S. Customs and Border Protection data.",
+    "formats": [
+      "Database records",
+      "Historical archives"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Navigation Data Center (NDC) Library, in cooperation with U.S. Customs and Border Protection",
+    "category": "Maritime Trade, Port Operations, Vessel Traffic",
+    "url": "https://ndclibrary.sec.usace.army.mil/searchResults?series=Foreign%20Traffic%20Vessel%20Entrances%20Clearances",
+    "update_status": "Historical compilation maintained by ERDC team through USACE Navigation Data Center",
+    "data_sources": "U.S. Customs and Border Protection, U.S. Census Bureau, Port Import Export Reporting Service"
+  },
+  {
+    "title": "Schedule K - Foreign Port Codes",
+    "description": "Geographic coding scheme identifying seaports worldwide that handle waterborne shipments involved in foreign trade with the United States. Five-digit numeric identifiers assigned to major seaports. Originally developed by U.S. Maritime Administration, now maintained by USACE. Used by carriers to identify foreign ports of loading on electronic vessel manifests and by importers/customs brokers in entry filings.",
+    "formats": [
+      "PDF",
+      "Database listings",
+      "CBP ACE Appendix F publications"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Waterborne Commerce Statistics Center (WCSC). Also published by U.S. Customs and Border Protection",
+    "category": "Port Identification, Maritime Trade, Customs Documentation",
+    "url": "https://ndclibrary.sec.usace.army.mil/searchResults?series=Schedule%20K%20Foreign%20Port%20Codes",
+    "update_status": "Regularly updated. Recent versions: February 2025, August 2024. USACE assumed maintenance responsibility effective April 7, 2003.",
+    "cbp_resources": [
+      "https://www.cbp.gov/document/guidance/ace-ocean-camir-appendix-f-schedule-k"
+    ]
+  },
+  {
+    "title": "Lock Performance Monitoring System (LPMS) - NDC Locks Database",
+    "description": "Web-based system collecting and reporting data on vessels traversing through Corps-owned or operated locks in near real-time. Provides lock and vessel-specific information including lock performance metrics and hourly lock performance data for navigation decision support.",
+    "formats": [
+      "Web-based database",
+      "Real-time data system",
+      "Online portal access"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Navigation and Civil Works Decision Support Center (NDC), Institute for Water Resources",
+    "category": "Navigation Infrastructure, Lock Operations, Vessel Traffic",
+    "url": "https://www.iwr.usace.army.mil/About/Technical-Centers/NDC-Navigation-and-Civil-Works-Decision-Support/NDC-Locks/",
+    "update_status": "Near real-time data collection and reporting",
+    "data_portal": "https://ndc.ops.usace.army.mil/ords/f?p=108:1::::::"
+  },
+  {
+    "title": "Dredging Information System (DIS) - NDC Dredges Database",
+    "description": "Full lifecycle database capturing USACE dredging work including both in-house operations and contracted work. USACE district staff input data on dredging work completed using USACE dredges and awarded contracts. Includes data on bid schedules, location of contracts, dredge types, cubic yards, and comprehensive dredging contract activities.",
+    "formats": [
+      "Database system",
+      "Web portal access"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Navigation and Civil Works Decision Support Center (NDC), Dredging Statistics Program",
+    "category": "Navigation Infrastructure, Dredging Operations, Waterway Maintenance",
+    "url": "https://www.iwr.usace.army.mil/About/Technical-Centers/NDC-Navigation-and-Civil-Works-Decision-Support/NDC-Dredges/",
+    "update_status": "Ongoing collection with district staff data input",
+    "data_portal": "https://ndc.ops.usace.army.mil/dis/"
+  },
+  {
+    "title": "Navigation and Civil Works Decision Support Center (NDC) - Main Portal",
+    "description": "Central technical center within IWR providing navigation decision support to USACE. Manages information systems capturing data for lock operations, navigation dredging projects, and various navigation-related datasets. Serves as umbrella organization for multiple navigation data systems.",
+    "formats": [
+      "Multiple database systems",
+      "Web portals",
+      "Data libraries"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Institute for Water Resources (IWR), Navigation and Civil Works Decision Support Center",
+    "category": "Navigation Infrastructure, Decision Support, Data Integration",
+    "url": "https://www.iwr.usace.army.mil/About/Technical-Centers/NDC-Navigation-and-Civil-Works-Decision-Support/",
+    "update_status": "Ongoing operations with multiple sub-systems maintained continuously",
+    "library_portal": "https://ndclibrary.sec.usace.army.mil/"
+  },
+  {
+    "title": "Notice to Navigation Interests (NTNI) - Navigation Notices",
+    "description": "Centralized access point for mariners to find notices of maintenance projects, hazards, closures or restrictions, and other pertinent waterway information. Provides real-time information about conditions affecting navigation on U.S. waterways. Official USACE platform for data entry and dissemination of navigation status information.",
+    "formats": [
+      "Web-based database",
+      "Online searchable portal",
+      "Real-time notices"
+    ],
+    "source": "USACE - U.S. Army Corps of Engineers, Navigation and Civil Works Decision Support Center (NDC), Institute for Water Resources",
+    "category": "Navigation Safety, Waterway Status, Maritime Notices",
+    "url": "https://www.iwr.usace.army.mil/About/Technical-Centers/NDC-Navigation-and-Civil-Works-Decision-Support/NDC-Navigation-Notices/",
+    "update_status": "Real-time updates as conditions change",
+    "data_portal": "https://ndc.ops.usace.army.mil/ords/f?p=107:1::::::"
+  },
+  {
+    "title": "Physical Oceanographic Real-Time System (PORTS)",
+    "description": "Decision support system measuring and disseminating real-time observations and predictions of water levels, currents, salinity, and meteorological parameters (winds, atmospheric pressure, air and water temperatures). Integrates real-time environmental observations with forecasts and geospatial information to improve safety and efficiency of maritime commerce and coastal resource management. Installations vary from single water-level gauges to systems with over 50 separate instruments, customized for local community needs.",
+    "formats": [
+      "Internet/Web platforms",
+      "Telephone voice response systems",
+      "PUFFF (PORTS Uniform Flat File Format)",
+      "Numerical circulation model forecasts"
+    ],
+    "source": "NOAA - National Oceanic and Atmospheric Administration, National Ocean Service (NOS)",
+    "category": "Port Operations, Real-Time Oceanographic Data, Maritime Safety, Navigation",
+    "url": "https://tidesandcurrents.noaa.gov/ports.html",
+    "update_status": "Real-time continuous data collection and dissemination",
+    "geographic_coverage": "Various U.S. ports and harbors including Delaware River, Alaska, and other coastal locations"
+  }
+]

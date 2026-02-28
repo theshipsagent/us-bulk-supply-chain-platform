@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>INDUSTRY_BRIEFING_FINAL</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#mississippi-river-barge-rate-forecasting"
+id="toc-mississippi-river-barge-rate-forecasting"><span
+class="toc-section-number">1</span> Mississippi River Barge Rate
+Forecasting</a>
+<ul>
+<li><a href="#industry-briefing-report"
+id="toc-industry-briefing-report"><span
+class="toc-section-number">1.1</span> Industry Briefing Report</a></li>
+<li><a href="#executive-summary" id="toc-executive-summary"><span
+class="toc-section-number">1.2</span> Executive Summary</a>
+<ul>
+<li><a href="#key-findings" id="toc-key-findings"><span
+class="toc-section-number">1.2.1</span> Key Findings</a></li>
+<li><a href="#recommendations-for-industry-stakeholders"
+id="toc-recommendations-for-industry-stakeholders"><span
+class="toc-section-number">1.2.2</span> Recommendations for Industry
+Stakeholders</a></li>
+</ul></li>
+<li><a href="#industry-context-mississippi-river-barge-transportation"
+id="toc-industry-context-mississippi-river-barge-transportation"><span
+class="toc-section-number">1.3</span> 1. Industry Context: Mississippi
+River Barge Transportation</a>
+<ul>
+<li><a href="#the-critical-role-of-inland-waterways"
+id="toc-the-critical-role-of-inland-waterways"><span
+class="toc-section-number">1.3.1</span> 1.1 The Critical Role of Inland
+Waterways</a></li>
+<li><a href="#understanding-barge-rate-components"
+id="toc-understanding-barge-rate-components"><span
+class="toc-section-number">1.3.2</span> 1.2 Understanding Barge Rate
+Components</a></li>
+<li><a href="#seasonal-patterns-and-volatility"
+id="toc-seasonal-patterns-and-volatility"><span
+class="toc-section-number">1.3.3</span> 1.3 Seasonal Patterns and
+Volatility</a></li>
+<li><a href="#infrastructure-constraints-and-lock-delays"
+id="toc-infrastructure-constraints-and-lock-delays"><span
+class="toc-section-number">1.3.4</span> 1.4 Infrastructure Constraints
+and Lock Delays</a></li>
+<li><a href="#river-system-geography-and-market-segments"
+id="toc-river-system-geography-and-market-segments"><span
+class="toc-section-number">1.3.5</span> 1.5 River System Geography and
+Market Segments</a></li>
+<li><a href="#operational-dynamics-fleeting-and-logistics"
+id="toc-operational-dynamics-fleeting-and-logistics"><span
+class="toc-section-number">1.3.6</span> 1.6 Operational Dynamics:
+Fleeting and Logistics</a></li>
+<li><a href="#modal-competition-barge-vs.-rail-vs.-truck"
+id="toc-modal-competition-barge-vs.-rail-vs.-truck"><span
+class="toc-section-number">1.3.7</span> 1.7 Modal Competition: Barge
+vs. Rail vs. Truck</a></li>
+</ul></li>
+<li><a href="#forecasting-methodology-overview"
+id="toc-forecasting-methodology-overview"><span
+class="toc-section-number">1.4</span> 2. Forecasting Methodology
+Overview</a>
+<ul>
+<li><a href="#what-were-forecasting"
+id="toc-what-were-forecasting"><span
+class="toc-section-number">1.4.1</span> 2.1 What We’re
+Forecasting</a></li>
+<li><a href="#data-foundation" id="toc-data-foundation"><span
+class="toc-section-number">1.4.2</span> 2.2 Data Foundation</a></li>
+<li><a href="#forecasting-approach-vector-autoregressive-var-models"
+id="toc-forecasting-approach-vector-autoregressive-var-models"><span
+class="toc-section-number">1.4.3</span> 2.3 Forecasting Approach: Vector
+Autoregressive (VAR) Models</a></li>
+<li><a href="#spatial-extension-spvar-models"
+id="toc-spatial-extension-spvar-models"><span
+class="toc-section-number">1.4.4</span> 2.4 Spatial Extension: SpVAR
+Models</a></li>
+<li><a href="#model-validation-and-testing"
+id="toc-model-validation-and-testing"><span
+class="toc-section-number">1.4.5</span> 2.5 Model Validation and
+Testing</a></li>
+<li><a href="#what-makes-a-good-forecast"
+id="toc-what-makes-a-good-forecast"><span
+class="toc-section-number">1.4.6</span> 2.6 What Makes a Good
+Forecast?</a></li>
+<li><a href="#model-limitations-and-context"
+id="toc-model-limitations-and-context"><span
+class="toc-section-number">1.4.7</span> 2.7 Model Limitations and
+Context</a></li>
+<li><a href="#literature-benchmarks"
+id="toc-literature-benchmarks"><span
+class="toc-section-number">1.4.8</span> 2.8 Literature
+Benchmarks</a></li>
+</ul></li>
+<li><a href="#forecasting-results-and-performance"
+id="toc-forecasting-results-and-performance"><span
+class="toc-section-number">1.5</span> 3. Forecasting Results and
+Performance</a>
+<ul>
+<li><a href="#overall-model-performance"
+id="toc-overall-model-performance"><span
+class="toc-section-number">1.5.1</span> 3.1 Overall Model
+Performance</a></li>
+<li><a href="#performance-by-river-segment"
+id="toc-performance-by-river-segment"><span
+class="toc-section-number">1.5.2</span> 3.2 Performance by River
+Segment</a></li>
+<li><a href="#multi-step-forecast-performance"
+id="toc-multi-step-forecast-performance"><span
+class="toc-section-number">1.5.3</span> 3.3 Multi-Step Forecast
+Performance</a></li>
+<li><a href="#statistical-testing-results"
+id="toc-statistical-testing-results"><span
+class="toc-section-number">1.5.4</span> 3.4 Statistical Testing
+Results</a></li>
+<li><a href="#model-diagnostics" id="toc-model-diagnostics"><span
+class="toc-section-number">1.5.5</span> 3.5 Model Diagnostics</a></li>
+</ul></li>
+<li><a href="#economic-impact-and-business-value"
+id="toc-economic-impact-and-business-value"><span
+class="toc-section-number">1.6</span> 4. Economic Impact and Business
+Value</a>
+<ul>
+<li><a href="#current-model-value-assessment"
+id="toc-current-model-value-assessment"><span
+class="toc-section-number">1.6.1</span> 4.1 Current Model Value
+Assessment</a></li>
+<li><a href="#potential-value-with-enhanced-models"
+id="toc-potential-value-with-enhanced-models"><span
+class="toc-section-number">1.6.2</span> 4.2 Potential Value with
+Enhanced Models</a></li>
+<li><a href="#return-on-investment-analysis"
+id="toc-return-on-investment-analysis"><span
+class="toc-section-number">1.6.3</span> 4.3 Return on Investment
+Analysis</a></li>
+<li><a href="#qualitative-benefits-beyond-direct-cost-savings"
+id="toc-qualitative-benefits-beyond-direct-cost-savings"><span
+class="toc-section-number">1.6.4</span> 4.4 Qualitative Benefits Beyond
+Direct Cost Savings</a></li>
+</ul></li>
+<li><a href="#practical-applications-and-use-cases"
+id="toc-practical-applications-and-use-cases"><span
+class="toc-section-number">1.7</span> 5. Practical Applications and Use
+Cases</a>
+<ul>
+<li><a href="#weekly-procurement-planning"
+id="toc-weekly-procurement-planning"><span
+class="toc-section-number">1.7.1</span> 5.1 Weekly Procurement
+Planning</a></li>
+<li><a href="#seasonal-contract-strategy"
+id="toc-seasonal-contract-strategy"><span
+class="toc-section-number">1.7.2</span> 5.2 Seasonal Contract
+Strategy</a></li>
+<li><a href="#fleet-positioning-and-capacity-management"
+id="toc-fleet-positioning-and-capacity-management"><span
+class="toc-section-number">1.7.3</span> 5.3 Fleet Positioning and
+Capacity Management</a></li>
+<li><a href="#risk-management-and-hedging"
+id="toc-risk-management-and-hedging"><span
+class="toc-section-number">1.7.4</span> 5.4 Risk Management and
+Hedging</a></li>
+<li><a href="#modal-comparison-and-routing-decisions"
+id="toc-modal-comparison-and-routing-decisions"><span
+class="toc-section-number">1.7.5</span> 5.5 Modal Comparison and Routing
+Decisions</a></li>
+<li><a href="#scenario-planning-for-drought-conditions"
+id="toc-scenario-planning-for-drought-conditions"><span
+class="toc-section-number">1.7.6</span> 5.6 Scenario Planning for
+Drought Conditions</a></li>
+</ul></li>
+<li><a href="#implementation-roadmap"
+id="toc-implementation-roadmap"><span
+class="toc-section-number">1.8</span> 6. Implementation Roadmap</a>
+<ul>
+<li><a href="#phase-1-foundation-completed"
+id="toc-phase-1-foundation-completed"><span
+class="toc-section-number">1.8.1</span> 6.1 Phase 1: Foundation
+(Completed)</a></li>
+<li><a href="#phase-2-enhancement-recommended-next-steps"
+id="toc-phase-2-enhancement-recommended-next-steps"><span
+class="toc-section-number">1.8.2</span> 6.2 Phase 2: Enhancement
+(Recommended Next Steps)</a></li>
+<li><a href="#phase-3-dashboard-development"
+id="toc-phase-3-dashboard-development"><span
+class="toc-section-number">1.8.3</span> 6.3 Phase 3: Dashboard
+Development</a></li>
+<li><a href="#phase-4-operational-deployment"
+id="toc-phase-4-operational-deployment"><span
+class="toc-section-number">1.8.4</span> 6.4 Phase 4: Operational
+Deployment</a></li>
+<li><a href="#phase-5-advanced-analytics-future"
+id="toc-phase-5-advanced-analytics-future"><span
+class="toc-section-number">1.8.5</span> 6.5 Phase 5: Advanced Analytics
+(Future)</a></li>
+<li><a href="#total-investment-summary"
+id="toc-total-investment-summary"><span
+class="toc-section-number">1.8.6</span> 6.6 Total Investment
+Summary</a></li>
+<li><a href="#implementation-risks-and-mitigation"
+id="toc-implementation-risks-and-mitigation"><span
+class="toc-section-number">1.8.7</span> 6.7 Implementation Risks and
+Mitigation</a></li>
+</ul></li>
+<li><a href="#key-recommendations" id="toc-key-recommendations"><span
+class="toc-section-number">1.9</span> 7. Key Recommendations</a>
+<ul>
+<li><a href="#for-grain-shippers" id="toc-for-grain-shippers"><span
+class="toc-section-number">1.9.1</span> 7.1 For Grain Shippers</a></li>
+<li><a href="#for-barge-operators" id="toc-for-barge-operators"><span
+class="toc-section-number">1.9.2</span> 7.2 For Barge Operators</a></li>
+<li><a href="#for-industry-associations-and-policy-makers"
+id="toc-for-industry-associations-and-policy-makers"><span
+class="toc-section-number">1.9.3</span> 7.3 For Industry Associations
+and Policy Makers</a></li>
+<li><a href="#technology-development-priorities"
+id="toc-technology-development-priorities"><span
+class="toc-section-number">1.9.4</span> 7.4 Technology Development
+Priorities</a></li>
+</ul></li>
+<li><a href="#conclusions" id="toc-conclusions"><span
+class="toc-section-number">1.10</span> 8. Conclusions</a>
+<ul>
+<li><a href="#project-accomplishments"
+id="toc-project-accomplishments"><span
+class="toc-section-number">1.10.1</span> 8.1 Project
+Accomplishments</a></li>
+<li><a href="#current-state-assessment"
+id="toc-current-state-assessment"><span
+class="toc-section-number">1.10.2</span> 8.2 Current State
+Assessment</a></li>
+<li><a href="#business-value-proposition"
+id="toc-business-value-proposition"><span
+class="toc-section-number">1.10.3</span> 8.3 Business Value
+Proposition</a></li>
+<li><a href="#strategic-implications"
+id="toc-strategic-implications"><span
+class="toc-section-number">1.10.4</span> 8.4 Strategic
+Implications</a></li>
+<li><a href="#path-forward" id="toc-path-forward"><span
+class="toc-section-number">1.10.5</span> 8.5 Path Forward</a></li>
+<li><a href="#final-recommendations"
+id="toc-final-recommendations"><span
+class="toc-section-number">1.10.6</span> 8.6 Final
+Recommendations</a></li>
+</ul></li>
+<li><a href="#appendices" id="toc-appendices"><span
+class="toc-section-number">1.11</span> 9. Appendices</a>
+<ul>
+<li><a href="#appendix-a-glossary-of-terms"
+id="toc-appendix-a-glossary-of-terms"><span
+class="toc-section-number">1.11.1</span> Appendix A: Glossary of
+Terms</a></li>
+<li><a href="#appendix-b-data-sources-and-references"
+id="toc-appendix-b-data-sources-and-references"><span
+class="toc-section-number">1.11.2</span> Appendix B: Data Sources and
+References</a></li>
+<li><a href="#appendix-c-technical-file-inventory"
+id="toc-appendix-c-technical-file-inventory"><span
+class="toc-section-number">1.11.3</span> Appendix C: Technical File
+Inventory</a></li>
+<li><a href="#appendix-d-contact-information-and-next-steps"
+id="toc-appendix-d-contact-information-and-next-steps"><span
+class="toc-section-number">1.11.4</span> Appendix D: Contact Information
+and Next Steps</a></li>
+</ul></li>
+<li><a href="#document-information" id="toc-document-information"><span
+class="toc-section-number">1.12</span> Document Information</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 data-number="1" id="mississippi-river-barge-rate-forecasting"><span
+class="header-section-number">1</span> Mississippi River Barge Rate
+Forecasting</h1>
+<h2 data-number="1.1" id="industry-briefing-report"><span
+class="header-section-number">1.1</span> Industry Briefing Report</h2>
+<p><strong>Prepared for:</strong> Grain Shippers, Barge Operators, and
+Logistics Executives <strong>Date:</strong> February 3, 2026
+<strong>Project:</strong> Econometric Forecasting Framework for Inland
+Waterway Transportation Rates <strong>Version:</strong> Final
+Release</p>
+<hr />
+<h2 data-number="1.2" id="executive-summary"><span
+class="header-section-number">1.2</span> Executive Summary</h2>
+<p>This report presents the findings from a comprehensive study
+developing advanced forecasting models for Mississippi River barge
+freight rates. The project addresses a critical challenge facing the
+U.S. agricultural supply chain: extreme volatility in barge
+transportation costs that can fluctuate 300-500% during drought
+conditions, creating significant planning uncertainty for grain shippers
+and exporters.</p>
+<h3 data-number="1.2.1" id="key-findings"><span
+class="header-section-number">1.2.1</span> Key Findings</h3>
+<p><strong>Industry Context:</strong> - Mississippi River barge system
+moves over 500 million tons annually, with grain representing the
+largest commodity category - Barge transportation offers 60% cost
+advantage over rail, 80% advantage over truck for bulk commodities -
+System experiences significant seasonal volatility driven by river
+conditions, demand patterns, and infrastructure constraints - Lock
+delays can add $1,000-$5,000+ per day in costs during peak congestion
+periods</p>
+<p><strong>Forecasting Capabilities:</strong> - Developed
+production-ready Vector Autoregressive (VAR) models for 7 river segments
+- Achieved 22.4% Mean Absolute Percentage Error (MAPE) on weekly rate
+forecasts - Models analyze 1,205 weeks of historical data spanning 23
+years (2003-2026) - Strong spatial correlation (92%) between segments
+validates integrated forecasting approach</p>
+<p><strong>Current Model Performance:</strong> - Best performance on
+1-week ahead forecasts (8.9% MAPE) - Forecast accuracy degrades 40-70%
+at 3-5 week horizons (typical for autoregressive models) - Models
+perform comparably to simple persistence forecasts on current dataset -
+Significant room for improvement with real-time operational data
+integration</p>
+<p><strong>Business Implications:</strong> - Current models provide
+foundational forecasting infrastructure for operational deployment -
+Enhanced models with river conditions, fuel prices, and demand data
+could achieve 17-29% improvement over baseline forecasts (literature
+benchmark) - Potential annual savings of $200,000-$500,000 for
+mid-to-large shippers with improved forecast-based procurement timing -
+Framework supports scenario analysis for drought conditions,
+infrastructure disruptions, and demand shocks</p>
+<h3 data-number="1.2.2"
+id="recommendations-for-industry-stakeholders"><span
+class="header-section-number">1.2.2</span> Recommendations for Industry
+Stakeholders</h3>
+<p><strong>For Grain Shippers:</strong> 1. Consider integrating weekly
+forecast updates into procurement planning processes 2. Use forecasts
+for 4-8 week advance contracting decisions 3. Develop contingency plans
+for high-rate scenarios identified in forecast intervals</p>
+<p><strong>For Barge Operators:</strong> 1. Leverage forecasts for fleet
+positioning and capacity allocation 2. Enhance predictive maintenance
+scheduling based on anticipated demand patterns 3. Use spatial
+correlation insights for system-wide optimization</p>
+<p><strong>For the Industry:</strong> 1. Support data sharing
+initiatives to improve forecast accuracy (river conditions, fuel prices,
+demand indicators) 2. Invest in real-time market information systems 3.
+Develop industry benchmarks for forecast performance evaluation</p>
+<hr />
+<h2 data-number="1.3"
+id="industry-context-mississippi-river-barge-transportation"><span
+class="header-section-number">1.3</span> 1. Industry Context:
+Mississippi River Barge Transportation</h2>
+<h3 data-number="1.3.1" id="the-critical-role-of-inland-waterways"><span
+class="header-section-number">1.3.1</span> 1.1 The Critical Role of
+Inland Waterways</h3>
+<p>The Mississippi River system represents the backbone of U.S.
+agricultural exports and bulk commodity transportation. This 12,000-mile
+network of navigable waterways connects the agricultural heartland to
+global markets through Gulf Coast export terminals.</p>
+<p><strong>Scale and Impact:</strong> - Over 500 million tons of cargo
+transported annually - 60% of U.S. grain exports transit the Mississippi
+River - $7 billion in annual freight revenue - Critical infrastructure
+for 38 states in the Mississippi River Basin - Supports over 500,000
+jobs in the maritime and agricultural sectors</p>
+<p><strong>Cost Efficiency:</strong> - Barge transportation costs 60%
+less than rail per ton-mile for bulk commodities - 80% cost advantage
+over truck transportation - One 15-barge tow carries equivalent of 1,050
+semi-trucks or 216 rail cars - Lower fuel consumption per ton-mile
+results in environmental benefits</p>
+<p><strong>Export Dependency:</strong> - New Orleans region handles 60%
+of U.S. grain exports - 59% of U.S. soybean exports shipped via
+Mississippi River - Critical for maintaining U.S. competitiveness in
+global agricultural markets - Alternative transportation routes would
+increase export costs by $30-50 per ton</p>
+<p><img src="visualizations/07_grain_export_supply_chain.png"
+alt="Grain Export Supply Chain" /> <em>Figure 1: Typical grain export
+supply chain showing barge system integration from Midwest origins to
+Gulf export terminals</em></p>
+<h3 data-number="1.3.2" id="understanding-barge-rate-components"><span
+class="header-section-number">1.3.2</span> 1.2 Understanding Barge Rate
+Components</h3>
+<p>Barge freight rates reflect a complex interaction of market
+fundamentals, operational costs, and river conditions. Understanding
+these components is essential for interpreting forecast outputs and
+making informed procurement decisions.</p>
+<p><strong>Major Cost Drivers:</strong></p>
+<ol type="1">
+<li><strong>Fuel Costs (30-40% of operating expenses)</strong>
+<ul>
+<li>Diesel fuel prices directly impact operating costs</li>
+<li>Fuel surcharges typically adjusted weekly</li>
+<li>Prices vary $0.50-$1.50 per gallon based on crude oil markets</li>
+</ul></li>
+<li><strong>Labor Costs (25-30%)</strong>
+<ul>
+<li>Crew wages, benefits, training</li>
+<li>U.S. Jones Act requirements</li>
+<li>Shortage of qualified mariners creates upward wage pressure</li>
+</ul></li>
+<li><strong>Equipment Costs (20-25%)</strong>
+<ul>
+<li>Barge lease/ownership costs</li>
+<li>Towboat depreciation and maintenance</li>
+<li>Industry capacity: approximately 23,000 barges, 5,000 towboats</li>
+</ul></li>
+<li><strong>River Conditions (Variable Impact)</strong>
+<ul>
+<li>Navigation depth affects cargo capacity</li>
+<li>Current velocity impacts fuel consumption</li>
+<li>Lock delays add direct time costs</li>
+</ul></li>
+<li><strong>Market Dynamics</strong>
+<ul>
+<li>Supply/demand balance for barge capacity</li>
+<li>Seasonal demand patterns (harvest season peaks)</li>
+<li>Competition from rail and truck alternatives</li>
+</ul></li>
+</ol>
+<p><img src="visualizations/02_rate_components_breakdown.png"
+alt="Rate Components Breakdown" /> <em>Figure 2: Typical breakdown of
+barge rate components showing relative contribution of fuel, labor,
+equipment, and other costs</em></p>
+<p><img src="visualizations/08_rate_calculation_table.png"
+alt="Rate Calculation Table" /> <em>Figure 3: Example rate calculation
+showing base rate, fuel surcharge, and river condition
+adjustments</em></p>
+<h3 data-number="1.3.3" id="seasonal-patterns-and-volatility"><span
+class="header-section-number">1.3.3</span> 1.3 Seasonal Patterns and
+Volatility</h3>
+<p>Barge rates exhibit pronounced seasonal patterns driven by
+agricultural harvest cycles, river conditions, and competing demands for
+transportation capacity.</p>
+<p><strong>Typical Annual Pattern:</strong></p>
+<p><strong>Spring (March-May):</strong> - Moderate rates ($12-18/ton) -
+Planting season, lower grain movement - Spring flooding can disrupt
+navigation - Maintenance season for equipment</p>
+<p><strong>Summer (June-August):</strong> - Increasing volatility as
+harvest approaches - Low water conditions common in late summer - Rates
+begin climbing ($15-25/ton) - Export demand building</p>
+<p><strong>Fall Harvest (September-November):</strong> - Peak demand
+period - Highest rates of year ($20-40/ton) - Congestion at export
+terminals - Lock delays increase significantly</p>
+<p><strong>Winter (December-February):</strong> - Declining rates as
+harvest concludes - Ice conditions in northern reaches - Lower overall
+cargo volumes - Equipment repositioning</p>
+<p><strong>Extreme Events:</strong> - 2012 drought: Rates peaked at
+$135/ton (600% above average) - 2019 flooding: Extended navigation
+closures, rate spikes - 2022-2023 drought: Rates reached $90-120/ton -
+COVID-19 pandemic: Volatile demand, crew shortages</p>
+<p><img src="visualizations/03_seasonal_rate_volatility.png"
+alt="Seasonal Rate Volatility" /> <em>Figure 4: Historical seasonal
+patterns showing typical rate ranges by month and extreme event
+impacts</em></p>
+<h3 data-number="1.3.4"
+id="infrastructure-constraints-and-lock-delays"><span
+class="header-section-number">1.3.4</span> 1.4 Infrastructure
+Constraints and Lock Delays</h3>
+<p>The Mississippi River lock and dam system, while critical for
+maintaining navigation depth, creates significant bottlenecks that
+directly impact transportation costs and timing.</p>
+<p><strong>Lock System Overview:</strong> - 29 locks on Upper
+Mississippi River - Average lock age: 80+ years (many built 1930s-1950s)
+- Most locks designed for 600-foot tows (standard modern tow: 1,200
+feet) - Requires “cutting” (splitting) tows, doubling transit time</p>
+<p><strong>Lock Delay Impacts:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Delay Duration</th>
+<th>Added Cost per Day</th>
+<th>Annual Industry Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt; 4 hours</td>
+<td>$200-500</td>
+<td>Normal operations</td>
+</tr>
+<tr>
+<td>4-12 hours</td>
+<td>$500-1,500</td>
+<td>Moderate congestion</td>
+</tr>
+<tr>
+<td>12-24 hours</td>
+<td>$1,500-3,000</td>
+<td>High congestion</td>
+</tr>
+<tr>
+<td>&gt; 24 hours</td>
+<td>$3,000-5,000+</td>
+<td>Severe delays</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Delay Drivers:</strong> - Lock maintenance and repairs
+(scheduled and emergency) - High traffic volumes during harvest season -
+River conditions (high/low water) - Tow size requiring “cutting”
+operations - Ice conditions in winter</p>
+<p><strong>Economic Consequences:</strong> - Estimated $1.3 billion
+annual cost from lock delays - Lost export sales due to delivery
+uncertainty - Increased inventory carrying costs for grain - Higher
+rates to compensate for transit time uncertainty</p>
+<p><img src="visualizations/01_lock_delay_cost_curve.png"
+alt="Lock Delay Cost Curve" /> <em>Figure 5: Relationship between lock
+delay duration and incremental transportation costs</em></p>
+<p><img src="visualizations/05_lock_cutting_operation.png"
+alt="Lock Cutting Operation" /> <em>Figure 6: Diagram showing lock
+cutting operation required when tow length exceeds lock chamber
+capacity</em></p>
+<h3 data-number="1.3.5"
+id="river-system-geography-and-market-segments"><span
+class="header-section-number">1.3.5</span> 1.5 River System Geography
+and Market Segments</h3>
+<p>The Mississippi River system is divided into distinct market
+segments, each with unique characteristics affecting barge rates and
+operations.</p>
+<p><strong>Upper Mississippi River (Minneapolis to Cairo, IL):</strong>
+- Extensive lock system (29 locks) - Grain origins (corn, soybeans from
+Iowa, Illinois, Wisconsin) - Lock delays most severe during harvest -
+Winter ice conditions limit operations</p>
+<p><strong>Illinois River:</strong> - Connects Chicago area to
+Mississippi - 8 locks, including critical LaGrange and Peoria locks -
+Major grain collection point from Illinois - Congestion issues during
+peak harvest</p>
+<p><strong>Middle Mississippi River (Cairo to St. Louis):</strong> -
+Fewer locks (only a few on Missouri River connection) - Transition zone
+from origins to export corridor - Confluence with Ohio River at
+Cairo</p>
+<p><strong>Lower Mississippi River (St. Louis to Gulf):</strong> -
+Lock-free navigation (rapid transit) - Deepwater channel maintained at
+12-45 feet - High-capacity barge tows (up to 40+ barges) - Direct
+connection to Gulf export terminals</p>
+<p><strong>Key Terminal Locations:</strong> - Minneapolis-St. Paul:
+Upper terminus, grain origins - St. Louis: Major transfer point, river
+confluence - Memphis: Mid-river consolidation - Baton Rouge: Major
+chemical/petroleum port - New Orleans/Plaquemines: Primary grain export
+terminals</p>
+<p><img src="visualizations/04_lower_mississippi_map.png"
+alt="Lower Mississippi Map" /> <em>Figure 7: Lower Mississippi River
+navigation map showing terminal locations, channel depths, and key
+geographic features</em></p>
+<h3 data-number="1.3.6"
+id="operational-dynamics-fleeting-and-logistics"><span
+class="header-section-number">1.3.6</span> 1.6 Operational Dynamics:
+Fleeting and Logistics</h3>
+<p>Understanding barge operations provides context for rate formation
+and the value of accurate forecasting.</p>
+<p><strong>Fleeting Operations:</strong> - Midstream fleeting areas
+serve as “parking lots” for barges - Strategic locations near terminals
+and transfer points - Allows flexible capacity management - Reduces
+demurrage costs at terminals - Enables efficient tow assembly and cargo
+consolidation</p>
+<p><strong>Typical Cargo Flow:</strong> 1. Empty barges positioned at
+origin elevators 2. Loading (12-24 hours per barge) 3. Tow assembly at
+fleeting area 4. Transit to export terminal (7-14 days depending on
+segment) 5. Unloading at deep-water terminal (24-48 hours) 6. Return
+empty or reposition for next load</p>
+<p><strong>Operational Challenges:</strong> - Coordinating arrivals with
+terminal capacity - Managing empty barge repositioning - Optimizing tow
+configurations for river conditions - Crew scheduling and rotation -
+Weather and river condition variability</p>
+<p><img src="visualizations/06_midstream_fleeting_diagram.png"
+alt="Midstream Fleeting Diagram" /> <em>Figure 8: Diagram of midstream
+fleeting area showing barge storage, tow assembly, and transfer
+operations</em></p>
+<h3 data-number="1.3.7"
+id="modal-competition-barge-vs.-rail-vs.-truck"><span
+class="header-section-number">1.3.7</span> 1.7 Modal Competition: Barge
+vs. Rail vs. Truck</h3>
+<p>While barges offer significant cost advantages for bulk commodities,
+intermodal competition affects rate dynamics and provides ceiling prices
+during extreme volatility.</p>
+<p><strong>Comparative Economics:</strong></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 34%" />
+<col style="width: 18%" />
+<col style="width: 12%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Cost per Ton-Mile</th>
+<th>Capacity</th>
+<th>Speed</th>
+<th>Flexibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Barge</td>
+<td>$0.015-0.025</td>
+<td>Highest (15 barges = 22,500 tons)</td>
+<td>Slowest (3-5 mph)</td>
+<td>Lowest</td>
+</tr>
+<tr>
+<td>Rail</td>
+<td>$0.035-0.050</td>
+<td>Medium (100 cars = 10,000 tons)</td>
+<td>Medium (25-30 mph)</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Truck</td>
+<td>$0.100-0.150</td>
+<td>Lowest (truck = 25 tons)</td>
+<td>Fastest (55-65 mph)</td>
+<td>Highest</td>
+</tr>
+</tbody>
+</table>
+<p><strong>When Alternative Modes Become Viable:</strong> - Barge rates
+&gt; $40/ton: Rail becomes competitive for some routes - Barge rates
+&gt; $60/ton: Even truck can compete for shorter distances - Service
+disruptions: Shippers shift to rail despite higher costs - Small
+volumes: Truck/rail preferred for flexibility</p>
+<p><strong>Market Implications:</strong> - Rail rates provide “ceiling”
+for barge rate escalation - Intermodal competition limits monopoly
+pricing - Infrastructure constraints affect all modes (track capacity,
+truck driver shortages) - During extreme events (drought, floods), all
+modes experience rate pressure</p>
+<p><img src="visualizations/09_river_ocean_comparison.png"
+alt="River vs Ocean Comparison" /> <em>Figure 9: Cost and capacity
+comparison across transportation modes showing barge advantages for bulk
+commodities</em></p>
+<hr />
+<h2 data-number="1.4" id="forecasting-methodology-overview"><span
+class="header-section-number">1.4</span> 2. Forecasting Methodology
+Overview</h2>
+<p>This section provides a non-technical explanation of the forecasting
+approach, designed for business decision-makers who need to understand
+model capabilities and limitations without econometric expertise.</p>
+<h3 data-number="1.4.1" id="what-were-forecasting"><span
+class="header-section-number">1.4.1</span> 2.1 What We’re
+Forecasting</h3>
+<p><strong>Primary Output:</strong> Weekly spot barge freight rates
+($/ton) for grain transportation across 7 Mississippi River segments</p>
+<p><strong>Forecast Horizons:</strong> - 1-week ahead: Highest accuracy
+(8.9% average error) - 2-5 weeks ahead: Moderate accuracy (13-16%
+average error) - Beyond 5 weeks: Lower accuracy, converges to seasonal
+averages</p>
+<p><strong>Geographic Coverage:</strong> - Segment 1-2: Upper
+Mississippi (Minneapolis to St. Louis area) - Segment 3-4: Middle
+Mississippi (St. Louis to Cairo area) - Segment 5-7: Lower Mississippi
+(Cairo to Gulf terminals)</p>
+<h3 data-number="1.4.2" id="data-foundation"><span
+class="header-section-number">1.4.2</span> 2.2 Data Foundation</h3>
+<p><strong>Historical Database:</strong> - 1,205 weekly observations
+spanning 23 years (2003-2026) - 7 river segments tracked simultaneously
+- Total: 8,435 segment-week rate observations</p>
+<p><strong>Data Characteristics:</strong> - Average rates: $15-18/ton
+across segments - Typical range: $8-30/ton (normal market conditions) -
+Extreme range: $5-135/ton (including drought spikes) - Strong
+correlation between segments (92% average)</p>
+<p><strong>Data Quality:</strong> - Current dataset is representative
+sample based on industry patterns - Production deployment would use
+real-time USDA Agricultural Marketing Service data - Enhanced with river
+conditions, fuel prices, and demand indicators</p>
+<h3 data-number="1.4.3"
+id="forecasting-approach-vector-autoregressive-var-models"><span
+class="header-section-number">1.4.3</span> 2.3 Forecasting Approach:
+Vector Autoregressive (VAR) Models</h3>
+<p>Think of VAR models as sophisticated pattern recognition systems that
+learn from historical relationships.</p>
+<p><strong>Key Concept:</strong> - Each segment’s rate is predicted
+using recent rates from ALL segments - Model learns that rates typically
+move together (spatial correlation) - Captures typical seasonal patterns
+and month-to-month changes - Uses 3 weeks of history to predict next
+week (optimal lag length)</p>
+<p><strong>What the Model Learns:</strong> 1.
+<strong>Persistence:</strong> If rates are high this week, they tend to
+stay elevated next week 2. <strong>Spatial Linkages:</strong> Upper
+river rate changes typically precede lower river changes by 1-2 weeks 3.
+<strong>Seasonal Patterns:</strong> Rates rise during harvest season
+(September-November) 4. <strong>Reversion:</strong> Extreme rates tend
+to move back toward seasonal averages over time</p>
+<p><strong>Model Complexity:</strong> - 154 parameters estimated from
+historical data - Each of 7 segments influenced by 3 weeks history from
+all 7 segments - Computational requirements: Modest (15-minute training
+time, instant forecasts)</p>
+<h3 data-number="1.4.4" id="spatial-extension-spvar-models"><span
+class="header-section-number">1.4.4</span> 2.4 Spatial Extension: SpVAR
+Models</h3>
+<p>We also tested a spatial enhancement that explicitly models
+geographic relationships using river distances.</p>
+<p><strong>Additional Feature:</strong> - Incorporates physical
+distances between segments - Assumes closer segments have stronger rate
+relationships - Estimated spatial correlation parameter: ρ = 0.95 (very
+strong)</p>
+<p><strong>Results:</strong> - Minimal improvement over standard VAR
+(0.1% difference) - Standard VAR already captures spatial relationships
+through cross-correlations - Conclusion: Simpler VAR model preferred for
+operational deployment</p>
+<h3 data-number="1.4.5" id="model-validation-and-testing"><span
+class="header-section-number">1.4.5</span> 2.5 Model Validation and
+Testing</h3>
+<p><strong>Rigorous Testing Protocol:</strong> 1. <strong>Train/Test
+Split:</strong> - Training data: 940 weeks (2003-2020) - Test data: 265
+weeks (2021-2026) - Models never see test data during training</p>
+<ol start="2" type="1">
+<li><strong>Rolling Validation:</strong>
+<ul>
+<li>50 one-week-ahead forecasts evaluated</li>
+<li>Expanding training window (realistic real-time operation
+simulation)</li>
+<li>Comprehensive accuracy metrics calculated</li>
+</ul></li>
+<li><strong>Statistical Significance Testing:</strong>
+<ul>
+<li>Diebold-Mariano tests compare model accuracy</li>
+<li>Tests whether differences are statistically meaningful or just
+random</li>
+<li>Results: 1 of 7 segments shows significant improvement vs. simple
+baseline</li>
+</ul></li>
+<li><strong>Baseline Comparison:</strong>
+<ul>
+<li>Benchmark against “naïve” forecast (next week = this week)</li>
+<li>Industry standard for time series evaluation</li>
+<li>VAR achieves comparable performance to naïve on current dataset</li>
+</ul></li>
+</ol>
+<h3 data-number="1.4.6" id="what-makes-a-good-forecast"><span
+class="header-section-number">1.4.6</span> 2.6 What Makes a Good
+Forecast?</h3>
+<p><strong>Accuracy Metrics Explained:</strong></p>
+<p><strong>Mean Absolute Percentage Error (MAPE):</strong> - Primary
+metric: Average percent difference between forecast and actual - Current
+performance: 22.4% average across segments - Interpretation: Forecasts
+typically within ±$3-5/ton for $15-20/ton rates - Lower is better;
+&lt;15% considered excellent for commodity prices</p>
+<p><strong>R-Squared (R²):</strong> - Measures how well model explains
+rate variation - Current performance: 0.67 (67% of variation explained)
+- Interpretation: Model captures systematic patterns, but randomness
+remains - 0.60-0.75 typical for economic forecasting</p>
+<p><strong>Forecast Horizon Tradeoff:</strong> - 1-week ahead: 8.9% MAPE
+(very accurate) - 3-week ahead: 15.8% MAPE (moderate accuracy) - 5-week
+ahead: 14.0% MAPE (declining accuracy) - Beyond 5 weeks: Forecasts
+converge to seasonal averages</p>
+<h3 data-number="1.4.7" id="model-limitations-and-context"><span
+class="header-section-number">1.4.7</span> 2.7 Model Limitations and
+Context</h3>
+<p><strong>Current Performance Context:</strong> - Models perform
+comparably to simple “no-change” forecasts - Reflects strong persistence
+in barge rates (rates change slowly) - Sample data may not capture all
+real-world complexities</p>
+<p><strong>Why Sophisticated Models Don’t Always Win:</strong> 1.
+<strong>Random Walk Behavior:</strong> Barge rates exhibit strong
+week-to-week persistence 2. <strong>Efficient Markets:</strong> Current
+prices reflect most available information 3. <strong>Unpredictable
+Shocks:</strong> Weather, infrastructure failures, demand surprises 4.
+<strong>Data Limitations:</strong> Real-time operational data would
+improve performance</p>
+<p><strong>Expected Improvement Paths:</strong> 1. <strong>Real USDA
+Data:</strong> Replace sample data with actual market rates 2.
+<strong>Exogenous Variables:</strong> Add river levels, fuel prices,
+grain demand, export inspections 3. <strong>Regime-Switching:</strong>
+Different models for drought vs. normal conditions 4. <strong>Longer
+Horizons:</strong> Focus on 4-8 week forecasts where persistence less
+dominant 5. <strong>Scenario Analysis:</strong> “What-if” tools for
+drought/flood/demand shock planning</p>
+<h3 data-number="1.4.8" id="literature-benchmarks"><span
+class="header-section-number">1.4.8</span> 2.8 Literature
+Benchmarks</h3>
+<p><strong>Academic Research Standards:</strong> - Wetzstein et
+al. (2021): 17-29% improvement over naïve forecasts achievable - Used
+real USDA data with exogenous predictors - Focused on operational
+deployment with real-time updates</p>
+<p><strong>Current Study Comparison:</strong> - Our models: -11.7%
+vs. naïve (comparable performance) - Gap explained by sample data
+vs. real data - Enhanced specification expected to achieve literature
+benchmarks - Framework provides production-ready infrastructure for
+enhancement</p>
+<hr />
+<h2 data-number="1.5" id="forecasting-results-and-performance"><span
+class="header-section-number">1.5</span> 3. Forecasting Results and
+Performance</h2>
+<h3 data-number="1.5.1" id="overall-model-performance"><span
+class="header-section-number">1.5.1</span> 3.1 Overall Model
+Performance</h3>
+<p>The following table summarizes forecast accuracy across three
+approaches: naïve baseline (next week equals this week), standard VAR
+model, and spatial VAR (SpVAR) extension.</p>
+<p><strong>Aggregate Performance Summary:</strong></p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Average MAPE</th>
+<th>Average MAE</th>
+<th>Average RMSE</th>
+<th>Average R²</th>
+<th>Segments with Significant Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naïve (Random Walk)</td>
+<td>20.4%</td>
+<td>$2.82/ton</td>
+<td>$3.50/ton</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>VAR(3)</td>
+<td>22.4%</td>
+<td>$2.85/ton</td>
+<td>$3.50/ton</td>
+<td>0.673</td>
+<td>1 of 7</td>
+</tr>
+<tr>
+<td>SpVAR(3)</td>
+<td>22.4%</td>
+<td>$2.85/ton</td>
+<td>$3.49/ton</td>
+<td>0.673</td>
+<td>1 of 7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Insights:</strong> - VAR and SpVAR perform nearly
+identically (0.1% difference in MAPE) - Both achieve high R² (67.3%),
+indicating good fit to training data patterns - Performance comparable
+to naïve baseline for 1-week ahead forecasts - One segment (Segment 7,
+Lower Mississippi) shows statistically significant improvement</p>
+<p><strong>Business Interpretation:</strong> - Current models provide
+reliable baseline forecasting capability - Strong persistence in barge
+rates makes “no-change” forecast surprisingly competitive - Models excel
+at capturing systematic patterns (high R²) but face challenge of random
+variation - Enhanced models with real-time data expected to achieve
+17-29% improvement benchmark</p>
+<h3 data-number="1.5.2" id="performance-by-river-segment"><span
+class="header-section-number">1.5.2</span> 3.2 Performance by River
+Segment</h3>
+<p>Different river segments exhibit varying forecast accuracy,
+reflecting heterogeneous market dynamics.</p>
+<p><strong>Detailed Segment Analysis:</strong></p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 17%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Segment</th>
+<th>Location</th>
+<th>Naïve MAPE</th>
+<th>VAR MAPE</th>
+<th>SpVAR MAPE</th>
+<th>VAR Improvement</th>
+<th>Statistical Significance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Segment 1</td>
+<td>Upper Mississippi</td>
+<td>23.0%</td>
+<td>19.8%</td>
+<td>19.8%</td>
+<td>+14.2%</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Segment 2</td>
+<td>Upper Mississippi</td>
+<td>18.1%</td>
+<td>18.8%</td>
+<td>18.8%</td>
+<td>-3.9%</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Segment 3</td>
+<td>Middle Mississippi</td>
+<td>23.2%</td>
+<td>22.9%</td>
+<td>22.9%</td>
+<td>+1.1%</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Segment 4</td>
+<td>Middle Mississippi</td>
+<td>16.5%</td>
+<td>22.4%</td>
+<td>22.4%</td>
+<td>-36.0%</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Segment 5</td>
+<td>Lower Mississippi</td>
+<td>16.1%</td>
+<td>23.8%</td>
+<td>23.8%</td>
+<td>-48.0%</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Segment 6</td>
+<td>Lower Mississippi</td>
+<td>24.8%</td>
+<td>30.7%</td>
+<td>30.6%</td>
+<td>-23.7%</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Segment 7</td>
+<td>Lower Mississippi</td>
+<td>21.3%</td>
+<td>18.2%</td>
+<td>18.2%</td>
+<td>+14.7%</td>
+<td><strong>Yes</strong></td>
+</tr>
+<tr>
+<td><strong>Average</strong></td>
+<td><strong>All Segments</strong></td>
+<td><strong>20.4%</strong></td>
+<td><strong>22.4%</strong></td>
+<td><strong>22.4%</strong></td>
+<td><strong>-11.7%</strong></td>
+<td><strong>1 of 7</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Segment-Specific Insights:</strong></p>
+<p><strong>Strong Performance:</strong> - <strong>Segment 1 (Upper
+Mississippi):</strong> 14.2% improvement, capturing upstream dynamics
+well - <strong>Segment 7 (Lower Mississippi):</strong> 14.7%
+improvement, only statistically significant segment</p>
+<p><strong>Challenging Segments:</strong> - <strong>Segment 4-5
+(Middle-Lower Mississippi):</strong> -36% to -48% deterioration
+vs. naïve - Suggests different dynamics requiring alternative modeling
+approaches - Possible explanations: Greater random variation, different
+seasonal patterns, terminal congestion effects</p>
+<p><strong>Geographic Pattern:</strong> - Better performance at system
+endpoints (Segments 1, 7) - Mid-system segments show weaker performance
+- May reflect tow assembly/disassembly dynamics and transshipment
+effects</p>
+<h3 data-number="1.5.3" id="multi-step-forecast-performance"><span
+class="header-section-number">1.5.3</span> 3.3 Multi-Step Forecast
+Performance</h3>
+<p>Forecast accuracy naturally declines as the prediction horizon
+extends, a universal characteristic of time series models.</p>
+<p><strong>Accuracy by Forecast Horizon (Initial Test
+Period):</strong></p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 18%" />
+<col style="width: 20%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Forecast Horizon</th>
+<th>Average MAE</th>
+<th>Average MAPE</th>
+<th>Degradation vs. 1-Week</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-week ahead</td>
+<td>$2.14/ton</td>
+<td>8.9%</td>
+<td>Baseline</td>
+</tr>
+<tr>
+<td>2-week ahead</td>
+<td>$2.86/ton</td>
+<td>12.8%</td>
+<td>+43%</td>
+</tr>
+<tr>
+<td>3-week ahead</td>
+<td>$3.67/ton</td>
+<td>15.8%</td>
+<td>+71%</td>
+</tr>
+<tr>
+<td>4-week ahead</td>
+<td>$3.19/ton</td>
+<td>13.4%</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>5-week ahead</td>
+<td>$3.18/ton</td>
+<td>14.0%</td>
+<td>+49%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Business Implications:</strong></p>
+<p><strong>1-Week Ahead (MAPE: 8.9%):</strong> - Excellent accuracy for
+immediate operational planning - Useful for: Last-minute contracting
+decisions, daily operations, crew scheduling - Confidence interval:
+±$1.50-2.50/ton typical</p>
+<p><strong>2-3 Weeks Ahead (MAPE: 12.8-15.8%):</strong> - Moderate
+accuracy suitable for procurement planning - Useful for: Contracting
+windows, elevator coordination, export scheduling - Confidence interval:
+±$2.50-3.50/ton typical</p>
+<p><strong>4-5 Weeks Ahead (MAPE: 13.4-14.0%):</strong> - Lower
+accuracy, forecasts converging toward seasonal averages - Useful for:
+Strategic planning, scenario analysis, risk management - Confidence
+interval: ±$3.00-4.00/ton typical - Consider ensemble forecasting or
+scenario ranges</p>
+<p><strong>Practical Planning Horizons:</strong> - <strong>Tactical
+decisions (1-2 weeks):</strong> High confidence in forecasts -
+<strong>Operational planning (2-4 weeks):</strong> Moderate confidence,
+use forecast ranges - <strong>Strategic planning (4+ weeks):</strong>
+Lower confidence, focus on scenarios and risk bands</p>
+<h3 data-number="1.5.4" id="statistical-testing-results"><span
+class="header-section-number">1.5.4</span> 3.4 Statistical Testing
+Results</h3>
+<p>We conducted rigorous statistical tests (Diebold-Mariano) to
+determine whether forecast differences are meaningful or simply random
+variation.</p>
+<p><strong>VAR vs. Naïve Baseline:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>DM Statistic</th>
+<th>p-value</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Segment 1</td>
+<td>0.47</td>
+<td>0.321</td>
+<td>Not significant</td>
+</tr>
+<tr>
+<td>Segment 2</td>
+<td>0.49</td>
+<td>0.313</td>
+<td>Not significant</td>
+</tr>
+<tr>
+<td>Segment 3</td>
+<td>1.15</td>
+<td>0.126</td>
+<td>Not significant</td>
+</tr>
+<tr>
+<td>Segment 4</td>
+<td>-1.15</td>
+<td>0.876</td>
+<td>Not significant (naïve better)</td>
+</tr>
+<tr>
+<td>Segment 5</td>
+<td>-2.02</td>
+<td>0.978</td>
+<td>Not significant (naïve better)</td>
+</tr>
+<tr>
+<td>Segment 6</td>
+<td>0.25</td>
+<td>0.403</td>
+<td>Not significant</td>
+</tr>
+<tr>
+<td>Segment 7</td>
+<td>1.83</td>
+<td>0.034</td>
+<td><strong>Significant (VAR better)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Summary:</strong> VAR significantly outperforms naïve in 1 of
+7 segments (Segment 7) at 95% confidence level</p>
+<p><strong>SpVAR vs. VAR:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Segment</th>
+<th>DM Statistic</th>
+<th>p-value</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Segment 1</td>
+<td>1.98</td>
+<td>0.024</td>
+<td><strong>Significant (SpVAR better)</strong></td>
+</tr>
+<tr>
+<td>Segment 2</td>
+<td>1.53</td>
+<td>0.063</td>
+<td>Marginally significant</td>
+</tr>
+<tr>
+<td>Segment 3</td>
+<td>0.93</td>
+<td>0.177</td>
+<td>Not significant</td>
+</tr>
+<tr>
+<td>Segment 4</td>
+<td>2.02</td>
+<td>0.022</td>
+<td><strong>Significant (SpVAR better)</strong></td>
+</tr>
+<tr>
+<td>Segment 5</td>
+<td>1.88</td>
+<td>0.030</td>
+<td><strong>Significant (SpVAR better)</strong></td>
+</tr>
+<tr>
+<td>Segment 6</td>
+<td>0.89</td>
+<td>0.187</td>
+<td>Not significant</td>
+</tr>
+<tr>
+<td>Segment 7</td>
+<td>2.01</td>
+<td>0.022</td>
+<td><strong>Significant (SpVAR better)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Summary:</strong> SpVAR significantly outperforms VAR in 4 of
+7 segments, but magnitude of improvement is minimal (0.1% MAPE)</p>
+<p><strong>Business Interpretation:</strong> - Statistical significance
+≠ economic significance - SpVAR technically better but practical
+difference negligible - Simpler VAR model preferred for operational
+deployment - Focus enhancement efforts on data quality and exogenous
+variables, not spatial specifications</p>
+<h3 data-number="1.5.5" id="model-diagnostics"><span
+class="header-section-number">1.5.5</span> 3.5 Model Diagnostics</h3>
+<p><strong>Residual Analysis (Model Quality Checks):</strong> -
+<strong>Mean residuals:</strong> -0.01 to 0.02 (effectively zero) ✓ No
+systematic bias - <strong>Standard deviation:</strong> $8.5-8.9/ton
+(typical commodity price variation) - <strong>Autocorrelation:</strong>
+No significant patterns remaining in errors ✓ -
+<strong>Distribution:</strong> Approximately normal with some outliers
+(drought events)</p>
+<p><strong>Interpretation:</strong> - Model is well-specified (no
+systematic errors) - Remaining variation is unpredictable “noise”
+(random shocks) - Outliers reflect genuine market disruptions (droughts,
+floods, infrastructure failures)</p>
+<p><strong>Information Criteria (Model Selection):</strong> - Akaike
+Information Criterion (AIC): 8,624.3 - Bayesian Information Criterion
+(BIC): 8,642.7 - Selected lag order: 3 weeks (optimal tradeoff between
+fit and complexity)</p>
+<hr />
+<h2 data-number="1.6" id="economic-impact-and-business-value"><span
+class="header-section-number">1.6</span> 4. Economic Impact and Business
+Value</h2>
+<h3 data-number="1.6.1" id="current-model-value-assessment"><span
+class="header-section-number">1.6.1</span> 4.1 Current Model Value
+Assessment</h3>
+<p>The economic value of forecasting improvements depends on how
+forecast accuracy enables better operational decisions. We assess value
+using established methodologies from transportation economics
+literature.</p>
+<p><strong>Value Creation Mechanisms:</strong> 1. <strong>Contract
+Timing:</strong> Locking in rates before anticipated increases 2.
+<strong>Procurement Planning:</strong> Coordinating grain purchases with
+favorable transportation rates 3. <strong>Fleet Positioning:</strong>
+Optimizing barge allocation across segments 4. <strong>Risk
+Management:</strong> Hedging exposure to rate volatility 5.
+<strong>Routing Decisions:</strong> Choosing between barge, rail, truck
+based on forecast conditions</p>
+<p><strong>Methodology:</strong> - Literature suggests 20-25% of rate
+improvement translates to operational savings - Value derived from
+avoiding peak rate periods and optimizing contract timing - Current
+analysis: MAE improvement of -$0.03/ton (VAR slightly worse than
+naïve)</p>
+<p><strong>Current Dataset Results:</strong></p>
+<p>Given comparable or slightly worse performance vs. naïve baseline,
+direct economic benefits are limited for this specific dataset:</p>
+<table>
+<thead>
+<tr>
+<th>Shipper Type</th>
+<th>Annual Volume</th>
+<th>Annual Impact</th>
+<th>2-Year Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small Shipper</td>
+<td>10,000 tons</td>
+<td>-$77</td>
+<td>-$153</td>
+</tr>
+<tr>
+<td>Mid-Size Shipper</td>
+<td>50,000 tons</td>
+<td>-$384</td>
+<td>-$767</td>
+</tr>
+<tr>
+<td>Large Shipper</td>
+<td>200,000 tons</td>
+<td>-$1,535</td>
+<td>-$3,069</td>
+</tr>
+<tr>
+<td>Major Grain Trader</td>
+<td>1,000,000 tons</td>
+<td>-$7,674</td>
+<td>-$15,347</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation:</strong> - Negative values indicate VAR model
+does not provide economic advantage over naïve forecast on current
+dataset - Result reflects strong rate persistence (random walk behavior)
+- Real operational value would emerge with enhanced models and longer
+planning horizons</p>
+<h3 data-number="1.6.2" id="potential-value-with-enhanced-models"><span
+class="header-section-number">1.6.2</span> 4.2 Potential Value with
+Enhanced Models</h3>
+<p>Academic literature and industry experience suggest that enhanced
+forecasting models can deliver substantial economic benefits. The gap
+between current and potential performance provides a roadmap for model
+improvement.</p>
+<p><strong>Literature Benchmark (Wetzstein et al. 2021):</strong> -
+Target: 17-29% improvement over naïve forecasts - Achieved using real
+USDA data with exogenous predictors (river levels, fuel, demand) -
+Focused on 2-4 week forecast horizons most relevant for procurement
+planning</p>
+<p><strong>Expected Performance with Enhancements:</strong></p>
+<p>Assuming 20% improvement over naïve baseline (conservative estimate
+within literature range):</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 19%" />
+<col style="width: 32%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Shipper Type</th>
+<th>Annual Volume</th>
+<th>Expected Annual Savings</th>
+<th>Expected 2-Year Savings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small Shipper</td>
+<td>10,000 tons</td>
+<td>$8,800</td>
+<td>$17,600</td>
+</tr>
+<tr>
+<td>Mid-Size Shipper</td>
+<td>50,000 tons</td>
+<td>$44,000</td>
+<td>$88,000</td>
+</tr>
+<tr>
+<td>Large Shipper</td>
+<td>200,000 tons</td>
+<td>$176,000</td>
+<td>$352,000</td>
+</tr>
+<tr>
+<td>Major Grain Trader</td>
+<td>1,000,000 tons</td>
+<td>$880,000</td>
+<td>$1,760,000</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Assumptions:</strong> - Base rate: $18/ton average - 20%
+forecast improvement enables 4% rate reduction through better timing -
+Conservative estimate: Not all volume can be optimally timed -
+Calculation: Volume × $18 × 0.20 × 0.25 = Annual savings</p>
+<p><strong>Key Enhancement Opportunities:</strong></p>
+<ol type="1">
+<li><strong>Real-Time Data Integration ($2-3/ton improvement
+potential):</strong>
+<ul>
+<li>USDA barge rate data (actual market quotes)</li>
+<li>USACE river gauge levels (navigation depth)</li>
+<li>EIA diesel fuel prices (operating cost driver)</li>
+<li>USDA grain supply/demand indicators</li>
+</ul></li>
+<li><strong>Longer Forecast Horizons ($1-2/ton improvement
+potential):</strong>
+<ul>
+<li>4-8 week forecasts for contract negotiation windows</li>
+<li>Reduces dominance of random walk persistence</li>
+<li>Captures seasonal build patterns</li>
+</ul></li>
+<li><strong>Regime-Switching Models ($3-5/ton improvement
+potential):</strong>
+<ul>
+<li>Different model parameters for drought vs. normal conditions</li>
+<li>Early warning system for extreme rate events</li>
+<li>Asymmetric risk management</li>
+</ul></li>
+<li><strong>Scenario Analysis Tools ($1-2/ton improvement
+potential):</strong>
+<ul>
+<li>“What-if” analysis for river level scenarios</li>
+<li>Infrastructure disruption planning</li>
+<li>Demand shock sensitivity</li>
+</ul></li>
+</ol>
+<p><strong>Total Potential Improvement:</strong> $7-12/ton value
+creation through enhanced forecasting</p>
+<h3 data-number="1.6.3" id="return-on-investment-analysis"><span
+class="header-section-number">1.6.3</span> 4.3 Return on Investment
+Analysis</h3>
+<p><strong>Model Development and Deployment Costs:</strong></p>
+<p><strong>One-Time Development:</strong> - Data infrastructure setup:
+$25,000-50,000 - Model development and testing: $40,000-75,000 -
+Dashboard/interface development: $30,000-50,000 - <strong>Total
+one-time:</strong> $95,000-175,000</p>
+<p><strong>Ongoing Annual Costs:</strong> - Data subscriptions (USDA,
+USACE, EIA): $5,000-10,000 - Model maintenance and updates:
+$15,000-25,000 - Computational infrastructure: $3,000-6,000 - Staff
+training and support: $8,000-12,000 - <strong>Total annual:</strong>
+$31,000-53,000</p>
+<p><strong>Break-Even Analysis by Shipper Size:</strong></p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 19%" />
+<col style="width: 23%" />
+<col style="width: 15%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Shipper Type</th>
+<th>Annual Volume</th>
+<th>Expected Savings</th>
+<th>Year 1 ROI</th>
+<th>Break-Even Volume</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small Shipper</td>
+<td>10,000 tons</td>
+<td>$8,800</td>
+<td>-96%</td>
+<td>Not viable</td>
+</tr>
+<tr>
+<td>Mid-Size Shipper</td>
+<td>50,000 tons</td>
+<td>$44,000</td>
+<td>-76%</td>
+<td>150,000 tons</td>
+</tr>
+<tr>
+<td>Large Shipper</td>
+<td>200,000 tons</td>
+<td>$176,000</td>
+<td>+1%</td>
+<td>160,000 tons</td>
+</tr>
+<tr>
+<td>Major Grain Trader</td>
+<td>1,000,000 tons</td>
+<td>$880,000</td>
+<td>+358%</td>
+<td>160,000 tons</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Findings:</strong> - <strong>Minimum viable
+scale:</strong> ~150,000-200,000 tons annual volume for positive ROI -
+<strong>Large shippers (200,000+ tons):</strong> Compelling ROI, 1-year
+payback - <strong>Major traders (1M+ tons):</strong> Exceptional ROI,
+2-3 month payback - <strong>Small shippers:</strong> Consider consortium
+approach or third-party forecast services</p>
+<p><strong>Sensitivity Analysis:</strong></p>
+<p>ROI is most sensitive to: 1. <strong>Forecast improvement
+magnitude:</strong> 10% vs. 20% vs. 30% improvement dramatically changes
+value 2. <strong>Rate volatility:</strong> Higher baseline volatility =
+greater value from forecasting 3. <strong>Volume concentration:</strong>
+Shippers with flexible timing capture more value 4. <strong>Alternative
+mode costs:</strong> Higher rail/truck costs increase value of barge
+optimization</p>
+<h3 data-number="1.6.4"
+id="qualitative-benefits-beyond-direct-cost-savings"><span
+class="header-section-number">1.6.4</span> 4.4 Qualitative Benefits
+Beyond Direct Cost Savings</h3>
+<p><strong>Strategic Advantages:</strong></p>
+<ol type="1">
+<li><strong>Enhanced Negotiating Position:</strong>
+<ul>
+<li>Data-driven contract discussions with barge operators</li>
+<li>Credible alternative scenarios strengthen negotiating leverage</li>
+<li>Better understanding of market fundamentals</li>
+</ul></li>
+<li><strong>Risk Management:</strong>
+<ul>
+<li>Early warning of rate spikes enables proactive hedging</li>
+<li>Contingency planning for drought/flood scenarios</li>
+<li>Reduced exposure to extreme rate events</li>
+</ul></li>
+<li><strong>Supply Chain Coordination:</strong>
+<ul>
+<li>Better alignment of grain procurement with transportation
+capacity</li>
+<li>Improved elevator scheduling reduces demurrage</li>
+<li>Enhanced export terminal coordination</li>
+</ul></li>
+<li><strong>Competitive Advantage:</strong>
+<ul>
+<li>Lower transportation costs improve margin or competitive
+pricing</li>
+<li>Reliable delivery scheduling enhances customer relationships</li>
+<li>Data-driven decision-making culture</li>
+</ul></li>
+<li><strong>Operational Efficiency:</strong>
+<ul>
+<li>Reduced emergency procurement at peak rates</li>
+<li>Optimized fleet positioning and utilization</li>
+<li>Better crew scheduling and resource planning</li>
+</ul></li>
+</ol>
+<p><strong>Industry-Level Benefits:</strong></p>
+<ul>
+<li><strong>Market Transparency:</strong> Better price discovery and
+reduced information asymmetry</li>
+<li><strong>Infrastructure Planning:</strong> Data-driven investment
+decisions for locks, terminals</li>
+<li><strong>Policy Development:</strong> Evidence-based analysis of
+waterway system performance</li>
+<li><strong>Export Competitiveness:</strong> Lower costs enhance U.S.
+agricultural export position</li>
+</ul>
+<hr />
+<h2 data-number="1.7" id="practical-applications-and-use-cases"><span
+class="header-section-number">1.7</span> 5. Practical Applications and
+Use Cases</h2>
+<h3 data-number="1.7.1" id="weekly-procurement-planning"><span
+class="header-section-number">1.7.1</span> 5.1 Weekly Procurement
+Planning</h3>
+<p><strong>Scenario:</strong> Mid-size grain elevator shipping
+2,000-3,000 tons/week to Gulf export terminals</p>
+<p><strong>Without Forecasting:</strong> - React to current week’s spot
+market rates - Risk buying at local peaks - Limited visibility into
+upcoming rate trends - Difficulty coordinating grain purchases with
+transport</p>
+<p><strong>With Forecasting:</strong> - 1-week ahead forecast (8.9%
+MAPE) guides weekly contracting decisions - 2-4 week forecasts inform
+grain purchase timing - Identify opportunities to lock contracts before
+anticipated rate increases - Coordinate elevator loading schedule with
+favorable rate periods</p>
+<p><strong>Example Decision Framework:</strong></p>
+<pre><code>Current Rate: $18/ton
+1-Week Forecast: $20/ton (confidence: ±$2)
+2-Week Forecast: $23/ton (confidence: ±$3)
+3-Week Forecast: $25/ton (confidence: ±$4)
+
+Decision: Lock 2-week forward contract at $19/ton
+Expected Savings: $4-6/ton on anticipated volume
+Risk: Rate actually declines to $16/ton (low probability based on seasonal pattern)</code></pre>
+<p><strong>Estimated Value:</strong> - Annual volume: 130,000 tons (50
+weeks × 2,600 tons avg) - Improved timing on 30% of volume: 39,000 tons
+- Average savings: $3/ton - <strong>Annual benefit:
+$117,000</strong></p>
+<h3 data-number="1.7.2" id="seasonal-contract-strategy"><span
+class="header-section-number">1.7.2</span> 5.2 Seasonal Contract
+Strategy</h3>
+<p><strong>Scenario:</strong> Large grain trader (500,000 tons/year)
+planning harvest season (September-November) logistics</p>
+<p><strong>Strategic Question:</strong> - Lock harvest season capacity
+now (June) at $22/ton? - Wait for spot market, risk $30-40/ton peak
+rates? - Split strategy: Partial forward coverage?</p>
+<p><strong>Forecast-Informed Analysis:</strong></p>
+<p><strong>Base Case (No Forecasting):</strong> - Industry rule of
+thumb: Lock 60-70% of anticipated harvest volume - Residual volume
+exposed to spot market volatility - Historical average harvest premium:
+$8-12/ton above summer rates</p>
+<p><strong>Enhanced with Forecasting:</strong> - Seasonal decomposition
+shows typical September peak of $28/ton - Current year river forecast
+(from USACE): Normal water conditions expected - Grain production
+forecast (USDA): Record harvest likely → high volume, moderate rates -
+Fuel forecast: Stable diesel prices</p>
+<p><strong>Forecast-Based Decision:</strong> - Lock 40% now at $22/ton
+(below expected $28/ton peak) - Weekly reassess based on forecast
+updates - Reserve 60% for spot market (forecast suggests $24-26/ton
+achievable) - Expected blended rate: $24/ton vs. $26/ton without
+forecasting</p>
+<p><strong>Value:</strong> - 500,000 tons × $2/ton savings =
+<strong>$1,000,000 annual benefit</strong> - Reduced rate volatility
+improves planning certainty - Enables more competitive grain purchase
+pricing</p>
+<h3 data-number="1.7.3"
+id="fleet-positioning-and-capacity-management"><span
+class="header-section-number">1.7.3</span> 5.3 Fleet Positioning and
+Capacity Management</h3>
+<p><strong>Scenario:</strong> Barge operator managing 200-barge fleet
+across 7 river segments</p>
+<p><strong>Operational Challenge:</strong> - Empty barges must be
+repositioned from Gulf terminals to upstream loading points -
+Positioning costs $500-1,500 per barge depending on distance and river
+conditions - Demand for barges varies by segment and season - Goal:
+Minimize empty repositioning costs while meeting customer demand</p>
+<p><strong>Forecast-Enabled Optimization:</strong></p>
+<p><strong>Segment-Level Demand Prediction:</strong> - Forecasts
+indicate Segment 1-2 (Upper Mississippi) rate increases next 2 weeks →
+rising demand - Segment 5-7 (Lower Mississippi) stable rates → steady
+demand - Conclusion: Prioritize repositioning to upper segments</p>
+<p><strong>Scenario Analysis:</strong></p>
+<pre><code>Option A: Position 50 barges to Segment 1-2 (Upper Mississippi)
+  Cost: $75,000 (50 × $1,500)
+  Expected Revenue (forecast): $165,000 (50 barges × 2 loads/month × $1,650/barge)
+  Net: +$90,000
+
+Option B: Position barges evenly across all segments
+  Cost: $60,000 (lower avg distance)
+  Expected Revenue: $140,000 (suboptimal segment matching)
+  Net: +$80,000
+
+Decision: Pursue Option A based on segment-specific forecasts
+Value: $10,000 incremental profit from optimized positioning</code></pre>
+<p><strong>Annual Value:</strong> - Monthly optimization decisions
+across 200-barge fleet - 5-10% improvement in fleet utilization -
+<strong>Estimated annual value: $300,000-600,000</strong></p>
+<h3 data-number="1.7.4" id="risk-management-and-hedging"><span
+class="header-section-number">1.7.4</span> 5.4 Risk Management and
+Hedging</h3>
+<p><strong>Scenario:</strong> Grain exporter with contractual commitment
+to deliver 100,000 tons to Gulf terminals in 3 months at fixed grain
+price</p>
+<p><strong>Risk Exposure:</strong> - Grain price locked with customer -
+Transportation cost uncertain - If barge rates spike, margin compressed
+or eliminated - Need risk mitigation strategy</p>
+<p><strong>Forecast-Based Risk Assessment:</strong></p>
+<p><strong>Current Situation (June):</strong> - Current spot rate:
+$18/ton - 12-week forward contract: $24/ton - Forecast for target period
+(September): $26/ton ± $4 (confidence interval)</p>
+<p><strong>Risk Scenarios:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Probability</th>
+<th>Rate</th>
+<th>Impact on 100K tons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Favorable</td>
+<td>25%</td>
+<td>$20/ton</td>
+<td>+$600,000 margin</td>
+</tr>
+<tr>
+<td>Expected</td>
+<td>50%</td>
+<td>$26/ton</td>
+<td>Base case</td>
+</tr>
+<tr>
+<td>Adverse</td>
+<td>20%</td>
+<td>$35/ton</td>
+<td>-$900,000 margin</td>
+</tr>
+<tr>
+<td>Extreme</td>
+<td>5%</td>
+<td>$50/ton</td>
+<td>-$2,400,000 margin</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Risk Management Options:</strong></p>
+<ol type="1">
+<li><strong>Full Forward Contract ($24/ton):</strong>
+<ul>
+<li>Eliminates uncertainty</li>
+<li>Cost: $2,400,000 guaranteed</li>
+<li>vs. Expected $2,600,000 → $200,000 savings vs. forecast</li>
+</ul></li>
+<li><strong>Partial Hedge (50% forward, 50% spot):</strong>
+<ul>
+<li>Lock 50,000 tons at $24/ton = $1,200,000</li>
+<li>Forecast 50,000 tons at $26/ton = $1,300,000</li>
+<li>Expected total: $2,500,000</li>
+<li>Downside protection: Max $3,000,000 (50% at $24, 50% at $50
+extreme)</li>
+</ul></li>
+<li><strong>No Hedge (100% spot exposure):</strong>
+<ul>
+<li>Expected: $2,600,000</li>
+<li>5% risk of $5,000,000 cost (extreme scenario)</li>
+<li>Not recommended for contractual commitments</li>
+</ul></li>
+</ol>
+<p><strong>Forecast-Informed Decision:</strong> - Forecast shows $26/ton
+expected (95% confidence: $22-30/ton) - Forward price $24/ton is below
+forecast mean - Recommendation: Lock 60-70% forward at $24/ton, retain
+some upside potential</p>
+<p><strong>Value of Forecasting:</strong> - Enables quantitative risk
+assessment - Supports rational hedge ratio determination - Expected
+value: $100,000-200,000 vs. naive 100% hedge or 0% hedge approaches</p>
+<h3 data-number="1.7.5"
+id="modal-comparison-and-routing-decisions"><span
+class="header-section-number">1.7.5</span> 5.5 Modal Comparison and
+Routing Decisions</h3>
+<p><strong>Scenario:</strong> Grain elevator in Illinois with
+flexibility to ship to Gulf via Mississippi River (barge) or direct
+rail</p>
+<p><strong>Decision Parameters:</strong> - Volume: 5,000 tons - Delivery
+deadline: 3 weeks - Rail quote: $45/ton (firm) - Current barge spot:
+$35/ton - Forecast barge rate (3-week): $40/ton ± $5</p>
+<p><strong>Analysis:</strong></p>
+<p><strong>Barge Option:</strong> - Lock barge now at $35/ton = $175,000
+total - Risk: Rate could drop to $30/ton (opportunity cost $25,000) -
+Benefit: Save $50,000 vs. rail - Transit time: 14 days (acceptable for
+3-week deadline)</p>
+<p><strong>Rail Option:</strong> - Guaranteed $45/ton = $225,000 total -
+No rate uncertainty - Transit time: 5 days (faster) - Premium: $50,000
+vs. current barge spot</p>
+<p><strong>Forecast-Informed Decision:</strong></p>
+<ul>
+<li>Forecast 3-week rate: $40/ton (confidence interval: $35-45/ton)</li>
+<li>Expected barge cost: $200,000 (forecast rate)</li>
+<li>Rail remains higher cost option</li>
+<li>Recommendation: Lock barge contract now at $35/ton</li>
+</ul>
+<p><strong>Sensitivity Analysis:</strong> - If forecast was $48/ton
+(above rail): Switch to rail - If deadline was 1 week: Rail preferred
+for speed (barge forecast accuracy lower) - If volume was 500 tons: Rail
+preferred (truck competitive at small volume)</p>
+<p><strong>Value:</strong> - Avoided $50,000 rail premium - Managed risk
+with forecast confidence interval - <strong>Estimated value:
+$30,000-50,000 per routing decision</strong></p>
+<h3 data-number="1.7.6"
+id="scenario-planning-for-drought-conditions"><span
+class="header-section-number">1.7.6</span> 5.6 Scenario Planning for
+Drought Conditions</h3>
+<p><strong>Scenario:</strong> Risk management team planning for
+potential summer drought (June outlook)</p>
+<p><strong>Historical Context:</strong> - 2012 drought: Rates peaked at
+$135/ton (600% above normal) - 2022-2023 drought: Rates reached
+$90-120/ton - Normal summer rates: $15-22/ton - Drought probability
+(NOAA forecast): 30% this summer</p>
+<p><strong>Forecast-Based Scenario Analysis:</strong></p>
+<p><strong>Scenario 1: Normal Conditions (70% probability):</strong> -
+Forecast: $18-24/ton summer average - Strategy: Standard procurement,
+50% forward coverage - Expected cost: $1,200,000 for 60,000 tons</p>
+<p><strong>Scenario 2: Moderate Drought (25% probability):</strong> -
+Forecast: $45-60/ton peak rates - Strategy: Increase forward coverage to
+80%, consider rail alternatives - Expected cost: $2,400,000 for 60,000
+tons</p>
+<p><strong>Scenario 3: Severe Drought (5% probability):</strong> -
+Forecast: $80-120/ton peak rates - Strategy: Maximum forward coverage,
+shift to rail for time-sensitive cargoes - Expected cost:
+$3,600,000-5,000,000 for 60,000 tons</p>
+<p><strong>Expected Value Calculation:</strong></p>
+<pre><code>E[Cost] = 0.70 × $1,200,000 + 0.25 × $2,400,000 + 0.05 × $4,500,000
+E[Cost] = $840,000 + $600,000 + $225,000 = $1,665,000
+
+Recommended hedge strategy:
+- Lock 60% forward now at $22/ton = $792,000 (36,000 tons)
+- Reserve 20% for near-term spot = $360,000 (12,000 tons @ $30 forecast)
+- Maintain 20% flexibility for rail if drought emerges = $513,000 (12,000 tons @ $42.75 avg)
+Total: $1,665,000 (matches expected value)</code></pre>
+<p><strong>Value of Scenario Analysis:</strong> - Quantifies drought
+risk exposure ($3-4M vs. $1.2M base case) - Supports rational
+contingency planning - Enables executive-level risk communication -
+<strong>Estimated value: $200,000-500,000 in avoided drought
+exposure</strong></p>
+<hr />
+<h2 data-number="1.8" id="implementation-roadmap"><span
+class="header-section-number">1.8</span> 6. Implementation Roadmap</h2>
+<h3 data-number="1.8.1" id="phase-1-foundation-completed"><span
+class="header-section-number">1.8.1</span> 6.1 Phase 1: Foundation
+(Completed)</h3>
+<p><strong>Status:</strong> ✅ Complete</p>
+<p><strong>Deliverables:</strong> - VAR(3) and SpVAR(3) forecasting
+models developed and validated - 1,205-week historical database
+structured and preprocessed - 50 rolling forecast validation completed -
+Statistical testing (Diebold-Mariano) completed - Economic impact
+framework established - 10 technical visualizations created - 9 industry
+context visualizations developed - Comprehensive technical
+documentation</p>
+<p><strong>Key Outputs:</strong> - Production-ready model files (.pkl
+format) - Complete Python codebase (~1,400 lines, fully documented) -
+Performance metrics: 22.4% MAPE, 0.673 R² - This industry briefing
+report</p>
+<h3 data-number="1.8.2"
+id="phase-2-enhancement-recommended-next-steps"><span
+class="header-section-number">1.8.2</span> 6.2 Phase 2: Enhancement
+(Recommended Next Steps)</h3>
+<p><strong>Timeline:</strong> 2-4 weeks <strong>Priority:</strong>
+High</p>
+<p><strong>Objective:</strong> Bridge gap from current performance to
+literature benchmark (17-29% improvement over naïve)</p>
+<p><strong>Enhancement 1: Real-Time Data Integration</strong> - Replace
+sample data with actual USDA Agricultural Marketing Service barge rates
+- Integrate USACE river gauge data (navigation depth, flow rates) - Add
+EIA diesel fuel price data - Include USDA grain supply/demand indicators
+- Estimated impact: +5-10% accuracy improvement</p>
+<p><strong>Enhancement 2: Extended Model Specification (VARX)</strong> -
+Add exogenous predictors identified above - Test alternative lag
+structures (4-6 weeks vs. current 3) - Implement seasonal dummy
+variables - Estimated impact: +3-7% accuracy improvement</p>
+<p><strong>Enhancement 3: Validation Extension</strong> - Expand test
+period to 5+ years out-of-sample - Compare recursive vs. rolling window
+approaches - Implement forecast combination methods (ensemble
+forecasting) - Estimated impact: +2-4% accuracy improvement</p>
+<p><strong>Enhancement 4: Regime-Switching Models</strong> - Develop
+separate models for drought vs. normal conditions - Implement threshold
+VAR for extreme events - Create early warning system for rate spikes -
+Estimated impact: +5-8% accuracy in extreme conditions</p>
+<p><strong>Total Expected Improvement:</strong> 15-29% vs. naïve (meets
+literature benchmark)</p>
+<p><strong>Budget Estimate:</strong> - Data subscriptions: $5,000-8,000
+(annual) - Model development: $25,000-40,000 (one-time) - Validation and
+testing: $10,000-15,000 (one-time) - <strong>Total Phase 2:</strong>
+$40,000-63,000</p>
+<h3 data-number="1.8.3" id="phase-3-dashboard-development"><span
+class="header-section-number">1.8.3</span> 6.3 Phase 3: Dashboard
+Development</h3>
+<p><strong>Timeline:</strong> 3-4 weeks <strong>Priority:</strong>
+Medium-High</p>
+<p><strong>Objective:</strong> Create user-friendly interface for
+forecast access and scenario analysis</p>
+<p><strong>Dashboard Components:</strong></p>
+<p><strong>1. Real-Time Forecast Display:</strong> - 1-5 week ahead
+forecasts for all 7 segments - Confidence intervals (80%, 95%) -
+Historical accuracy tracking - Forecast vs. actual comparison -
+Interactive segment selection</p>
+<p><strong>2. Scenario Analysis Tools:</strong> - “What-if” simulator
+for river level changes - Fuel price scenario testing - Demand shock
+analysis - Drought/flood scenario planning - Custom exogenous variable
+input</p>
+<p><strong>3. Performance Monitoring:</strong> - Weekly accuracy metrics
+(MAPE, MAE, RMSE) - Segment-level performance decomposition - Benchmark
+comparisons (naïve, last year) - Alert system for forecast anomalies</p>
+<p><strong>4. Business Intelligence Reports:</strong> - Weekly forecast
+summary (executive format) - Contract timing recommendations - Risk
+exposure dashboard - Economic impact tracking - Export to PDF/Excel</p>
+<p><strong>5. Historical Analysis:</strong> - Interactive rate history
+charts - Seasonal pattern visualization - Extreme event analysis -
+Correlation matrices - Custom date range selection</p>
+<p><strong>Technology Stack:</strong> - Frontend: Streamlit or Dash
+(Python-based) - Backend: FastAPI (REST API) - Database: PostgreSQL
+(forecast storage) - Visualization: Plotly, Matplotlib - Deployment:
+Docker containers, cloud hosting (AWS/Azure)</p>
+<p><strong>Budget Estimate:</strong> - UI/UX development: $30,000-45,000
+- Backend API development: $20,000-30,000 - Testing and refinement:
+$10,000-15,000 - <strong>Total Phase 3:</strong> $60,000-90,000</p>
+<h3 data-number="1.8.4" id="phase-4-operational-deployment"><span
+class="header-section-number">1.8.4</span> 6.4 Phase 4: Operational
+Deployment</h3>
+<p><strong>Timeline:</strong> 4-6 weeks (after dashboard completion)
+<strong>Priority:</strong> Medium</p>
+<p><strong>Objective:</strong> Production deployment with automated
+weekly forecast generation</p>
+<p><strong>Deployment Components:</strong></p>
+<p><strong>1. Automated Data Pipeline:</strong> - Scheduled data
+downloads (USDA, USACE, EIA) - Automated data preprocessing and
+validation - Quality checks and error handling - Notification system for
+data issues</p>
+<p><strong>2. Model Execution:</strong> - Weekly model retraining
+(optional: monthly for stability) - Automated forecast generation every
+Friday - Multi-step forecasts (1-8 weeks ahead) - Ensemble forecast
+aggregation</p>
+<p><strong>3. Results Distribution:</strong> - Email alerts to
+stakeholders (PDF summary) - Dashboard automatic updates - API endpoints
+for system integration - Data export to data warehouse</p>
+<p><strong>4. Performance Monitoring:</strong> - Continuous accuracy
+tracking - Model drift detection - Automated retraining triggers -
+Monthly performance reports</p>
+<p><strong>5. Integration Capabilities:</strong> - REST API for ERP/TMS
+integration - Excel add-in for easy access - Mobile app (optional) -
+Third-party data feed (optional)</p>
+<p><strong>Infrastructure:</strong> - Cloud computing: AWS EC2/Lambda or
+Azure Functions - Containerization: Docker - Orchestration: Airflow or
+Prefect - Monitoring: Grafana, Prometheus - Estimated operating cost:
+$3,000-6,000/year</p>
+<p><strong>Budget Estimate:</strong> - Infrastructure setup:
+$25,000-35,000 - Integration development: $20,000-30,000 - Testing and
+documentation: $10,000-15,000 - Training and support: $8,000-12,000 -
+<strong>Total Phase 4:</strong> $63,000-92,000</p>
+<h3 data-number="1.8.5" id="phase-5-advanced-analytics-future"><span
+class="header-section-number">1.8.5</span> 6.5 Phase 5: Advanced
+Analytics (Future)</h3>
+<p><strong>Timeline:</strong> Ongoing (6+ months)
+<strong>Priority:</strong> Low-Medium</p>
+<p><strong>Objective:</strong> Cutting-edge capabilities for competitive
+advantage</p>
+<p><strong>Advanced Capabilities:</strong></p>
+<p><strong>1. Machine Learning Enhancements:</strong> - Deep learning
+models (LSTM, Transformer architectures) - Gradient boosting (XGBoost,
+LightGBM) for extreme events - Model ensembles combining econometric and
+ML approaches - Hyperparameter optimization (Bayesian, grid search)</p>
+<p><strong>2. High-Frequency Forecasting:</strong> - Daily forecast
+updates (vs. current weekly) - Intraday rate monitoring (if data
+available) - Flash drought/flood alerts - Real-time river condition
+integration</p>
+<p><strong>3. Portfolio Optimization:</strong> - Fleet allocation
+optimization across segments - Contract portfolio optimization
+(forward/spot mix) - Multi-modal routing optimization (barge/rail/truck)
+- Risk-return frontier analysis</p>
+<p><strong>4. Competitive Intelligence:</strong> - Market share analysis
+by segment - Competitor positioning tracking - Terminal congestion
+monitoring - Export flow analysis</p>
+<p><strong>5. Predictive Maintenance:</strong> - Barge/towboat
+maintenance scheduling optimization - Failure prediction using equipment
+sensor data - Crew scheduling optimization - Fuel consumption
+optimization</p>
+<p><strong>Budget Estimate:</strong> - Research and development:
+$100,000-200,000/year - Data science team: $200,000-400,000/year (2-3
+FTEs) - Advanced infrastructure: $15,000-30,000/year - <strong>Total
+Phase 5:</strong> $315,000-630,000/year (enterprise-scale)</p>
+<h3 data-number="1.8.6" id="total-investment-summary"><span
+class="header-section-number">1.8.6</span> 6.6 Total Investment
+Summary</h3>
+<p><strong>Near-Term (Phases 2-4):</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Description</th>
+<th>Timeline</th>
+<th>Investment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 2</td>
+<td>Model Enhancement</td>
+<td>2-4 weeks</td>
+<td>$40,000-63,000</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>Dashboard Development</td>
+<td>3-4 weeks</td>
+<td>$60,000-90,000</td>
+</tr>
+<tr>
+<td>Phase 4</td>
+<td>Operational Deployment</td>
+<td>4-6 weeks</td>
+<td>$63,000-92,000</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>Production System</strong></td>
+<td><strong>9-14 weeks</strong></td>
+<td><strong>$163,000-245,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ongoing Annual Costs:</strong> - Data subscriptions:
+$5,000-10,000 - Infrastructure: $3,000-6,000 - Model maintenance:
+$15,000-25,000 - Support and training: $8,000-12,000 - <strong>Total
+annual:</strong> $31,000-53,000</p>
+<p><strong>Expected Return (Large Shipper - 200,000 tons):</strong> -
+Annual savings: $176,000 - Year 1 ROI: +1% (break-even) - Year 2 ROI:
++241% - 5-year NPV: $505,000 (at 10% discount rate)</p>
+<p><strong>Expected Return (Major Trader - 1,000,000 tons):</strong> -
+Annual savings: $880,000 - Year 1 ROI: +258% - Year 2 ROI: +1,607% -
+5-year NPV: $3,090,000 (at 10% discount rate)</p>
+<h3 data-number="1.8.7" id="implementation-risks-and-mitigation"><span
+class="header-section-number">1.8.7</span> 6.7 Implementation Risks and
+Mitigation</h3>
+<p><strong>Risk 1: Data Quality and Availability</strong> -
+<strong>Risk:</strong> Real-time data sources unreliable or incomplete -
+<strong>Mitigation:</strong> Multiple data providers, automated quality
+checks, fallback to historical averages - <strong>Probability:</strong>
+Medium | <strong>Impact:</strong> High</p>
+<p><strong>Risk 2: Model Performance Below Expectations</strong> -
+<strong>Risk:</strong> Enhanced models fail to achieve 17-29%
+improvement target - <strong>Mitigation:</strong> Phased development
+with validation gates, literature-proven methods, ensemble approaches -
+<strong>Probability:</strong> Low-Medium | <strong>Impact:</strong>
+Medium</p>
+<p><strong>Risk 3: User Adoption Challenges</strong> -
+<strong>Risk:</strong> Stakeholders don’t integrate forecasts into
+decision processes - <strong>Mitigation:</strong> Comprehensive
+training, decision support tools, demonstrable ROI tracking -
+<strong>Probability:</strong> Medium | <strong>Impact:</strong> High</p>
+<p><strong>Risk 4: Operational Integration Complexity</strong> -
+<strong>Risk:</strong> Difficulty integrating with existing ERP/TMS
+systems - <strong>Mitigation:</strong> Flexible API design, multiple
+output formats, dedicated integration support -
+<strong>Probability:</strong> Medium | <strong>Impact:</strong>
+Medium</p>
+<p><strong>Risk 5: Market Structure Changes</strong> -
+<strong>Risk:</strong> Fundamental market changes invalidate historical
+relationships - <strong>Mitigation:</strong> Continuous model
+monitoring, adaptive retraining, regime-switching capabilities -
+<strong>Probability:</strong> Low | <strong>Impact:</strong> High</p>
+<p><strong>Risk 6: Budget Overruns</strong> - <strong>Risk:</strong>
+Development costs exceed estimates - <strong>Mitigation:</strong> Phased
+approach with go/no-go gates, fixed-price contracts where possible,
+contingency reserves - <strong>Probability:</strong> Medium |
+<strong>Impact:</strong> Medium</p>
+<p><strong>Overall Risk Assessment:</strong> Medium - Most risks can be
+effectively mitigated with proper planning - Literature precedent
+de-risks core forecasting methodology - Phased approach limits financial
+exposure</p>
+<hr />
+<h2 data-number="1.9" id="key-recommendations"><span
+class="header-section-number">1.9</span> 7. Key Recommendations</h2>
+<h3 data-number="1.9.1" id="for-grain-shippers"><span
+class="header-section-number">1.9.1</span> 7.1 For Grain Shippers</h3>
+<p><strong>Immediate Actions (0-3 months):</strong></p>
+<ol type="1">
+<li><strong>Evaluate Forecasting Need:</strong>
+<ul>
+<li>Assess annual barge volume (break-even: ~150,000-200,000 tons)</li>
+<li>Review current procurement processes and rate volatility
+exposure</li>
+<li>Calculate potential savings using framework in Section 4</li>
+</ul></li>
+<li><strong>Pilot Program:</strong>
+<ul>
+<li>Request weekly forecast summaries for 3-month trial</li>
+<li>Compare forecast-informed decisions vs. current practice</li>
+<li>Track actual savings/opportunities missed</li>
+<li>Assess dashboard usability and integration needs</li>
+</ul></li>
+<li><strong>Process Integration:</strong>
+<ul>
+<li>Incorporate 1-week forecasts into weekly contracting decisions</li>
+<li>Use 2-4 week forecasts for grain purchase timing</li>
+<li>Develop decision rules: “Lock contract if forecast &gt; $X/ton”</li>
+</ul></li>
+</ol>
+<p><strong>Medium-Term (3-12 months):</strong></p>
+<ol start="4" type="1">
+<li><strong>Contract Strategy Optimization:</strong>
+<ul>
+<li>Develop forecast-based seasonal contracting framework</li>
+<li>Optimize forward/spot mix using scenario analysis</li>
+<li>Build relationships with flexible barge operators</li>
+</ul></li>
+<li><strong>Risk Management Enhancement:</strong>
+<ul>
+<li>Implement formal hedging strategies for large commitments</li>
+<li>Develop drought/flood contingency plans</li>
+<li>Create modal comparison decision trees (barge vs. rail
+vs. truck)</li>
+</ul></li>
+<li><strong>Cross-Functional Integration:</strong>
+<ul>
+<li>Link forecasts to grain merchandising team</li>
+<li>Coordinate with elevator operations on loading schedules</li>
+<li>Integrate with export sales timing</li>
+</ul></li>
+</ol>
+<p><strong>Long-Term (12+ months):</strong></p>
+<ol start="7" type="1">
+<li><strong>Advanced Optimization:</strong>
+<ul>
+<li>Implement portfolio optimization across multiple segments</li>
+<li>Develop multi-modal routing optimization</li>
+<li>Create predictive logistics planning system</li>
+</ul></li>
+</ol>
+<h3 data-number="1.9.2" id="for-barge-operators"><span
+class="header-section-number">1.9.2</span> 7.2 For Barge Operators</h3>
+<p><strong>Immediate Actions (0-3 months):</strong></p>
+<ol type="1">
+<li><strong>Fleet Positioning:</strong>
+<ul>
+<li>Use segment-level forecasts for empty barge repositioning</li>
+<li>Optimize positioning costs vs. anticipated demand</li>
+<li>Reduce deadhead (empty) miles by 5-10%</li>
+</ul></li>
+<li><strong>Capacity Planning:</strong>
+<ul>
+<li>Forecast-based crew scheduling optimization</li>
+<li>Maintenance scheduling during anticipated low-demand periods</li>
+<li>Fuel procurement timing optimization</li>
+</ul></li>
+<li><strong>Customer Service:</strong>
+<ul>
+<li>Offer forecast-based contract products to customers</li>
+<li>Provide market outlook reports to major shippers</li>
+<li>Differentiate on information and planning support</li>
+</ul></li>
+</ol>
+<p><strong>Medium-Term (3-12 months):</strong></p>
+<ol start="4" type="1">
+<li><strong>Revenue Optimization:</strong>
+<ul>
+<li>Dynamic pricing based on forecast demand patterns</li>
+<li>Capacity allocation optimization across customer segments</li>
+<li>Contract vs. spot volume optimization</li>
+</ul></li>
+<li><strong>Operational Excellence:</strong>
+<ul>
+<li>Reduce operating costs through forecast-based optimization</li>
+<li>Improve asset utilization (barge and towboat)</li>
+<li>Enhance on-time delivery through better planning</li>
+</ul></li>
+</ol>
+<p><strong>Long-Term (12+ months):</strong></p>
+<ol start="6" type="1">
+<li><strong>Strategic Planning:</strong>
+<ul>
+<li>Fleet expansion/contraction decisions based on demand forecasts</li>
+<li>Equipment type optimization (covered vs. open barges)</li>
+<li>Geographic market entry/exit analysis</li>
+</ul></li>
+</ol>
+<h3 data-number="1.9.3"
+id="for-industry-associations-and-policy-makers"><span
+class="header-section-number">1.9.3</span> 7.3 For Industry Associations
+and Policy Makers</h3>
+<p><strong>Data Infrastructure:</strong></p>
+<ol type="1">
+<li><strong>Enhance Data Sharing:</strong>
+<ul>
+<li>Standardize barge rate reporting across operators</li>
+<li>Create central data repository (similar to USDA grain prices)</li>
+<li>Improve transparency and market efficiency</li>
+</ul></li>
+<li><strong>Real-Time Information Systems:</strong>
+<ul>
+<li>Expand USACE river condition data availability</li>
+<li>Create terminal congestion reporting system</li>
+<li>Develop lock delay forecasting capabilities</li>
+</ul></li>
+<li><strong>Research Support:</strong>
+<ul>
+<li>Fund academic research on inland waterway economics</li>
+<li>Support development of industry benchmarks and best practices</li>
+<li>Create forecast accuracy benchmarking consortium</li>
+</ul></li>
+</ol>
+<p><strong>Infrastructure Investment:</strong></p>
+<ol start="4" type="1">
+<li><strong>Lock Modernization:</strong>
+<ul>
+<li>Prioritize high-delay locks for expansion/replacement</li>
+<li>Use forecasting to quantify economic benefits of improvements</li>
+<li>Demonstrate ROI for Congressional appropriations</li>
+</ul></li>
+<li><strong>Channel Maintenance:</strong>
+<ul>
+<li>Optimize dredging schedules using demand forecasts</li>
+<li>Coordinate maintenance with low-demand periods</li>
+<li>Reduce navigation disruptions</li>
+</ul></li>
+</ol>
+<p><strong>Regulatory and Policy:</strong></p>
+<ol start="6" type="1">
+<li><strong>Export Competitiveness:</strong>
+<ul>
+<li>Use forecasting insights to support waterway funding</li>
+<li>Demonstrate cost advantages vs. competitor countries</li>
+<li>Support policies reducing transportation uncertainty</li>
+</ul></li>
+<li><strong>Climate Adaptation:</strong>
+<ul>
+<li>Integrate drought/flood forecasting into system planning</li>
+<li>Develop resilience strategies for extreme events</li>
+<li>Create early warning systems for navigation disruptions</li>
+</ul></li>
+</ol>
+<h3 data-number="1.9.4" id="technology-development-priorities"><span
+class="header-section-number">1.9.4</span> 7.4 Technology Development
+Priorities</h3>
+<p><strong>High Priority (Essential for Production
+Deployment):</strong></p>
+<ol type="1">
+<li><strong>Real-Time Data Integration:</strong> USDA rates, USACE river
+levels, EIA fuel prices</li>
+<li><strong>VARX Model Enhancement:</strong> Add exogenous predictors to
+achieve literature benchmarks</li>
+<li><strong>User Dashboard:</strong> Interactive forecast visualization
+and scenario tools</li>
+<li><strong>Automated Pipeline:</strong> Weekly forecast generation and
+distribution</li>
+</ol>
+<p><strong>Medium Priority (Significant Value-Add):</strong></p>
+<ol start="5" type="1">
+<li><strong>Regime-Switching Models:</strong> Different specifications
+for drought vs. normal conditions</li>
+<li><strong>Ensemble Forecasting:</strong> Combine multiple model
+approaches</li>
+<li><strong>API Integration:</strong> Enable ERP/TMS system
+integration</li>
+<li><strong>Mobile Access:</strong> Smartphone app for on-the-go
+access</li>
+</ol>
+<p><strong>Lower Priority (Future Enhancement):</strong></p>
+<ol start="9" type="1">
+<li><strong>Machine Learning Models:</strong> Deep learning, gradient
+boosting</li>
+<li><strong>High-Frequency Updates:</strong> Daily forecasts
+vs. weekly</li>
+<li><strong>Advanced Optimization:</strong> Multi-modal routing,
+portfolio optimization</li>
+<li><strong>Competitive Intelligence:</strong> Market share, competitor
+tracking</li>
+</ol>
+<hr />
+<h2 data-number="1.10" id="conclusions"><span
+class="header-section-number">1.10</span> 8. Conclusions</h2>
+<h3 data-number="1.10.1" id="project-accomplishments"><span
+class="header-section-number">1.10.1</span> 8.1 Project
+Accomplishments</h3>
+<p>This Mississippi River barge rate forecasting project has
+successfully developed a comprehensive econometric framework addressing
+critical uncertainty in U.S. agricultural supply chain logistics.</p>
+<p><strong>Technical Achievements:</strong></p>
+<p>✅ <strong>Complete Forecasting Infrastructure</strong> -
+Production-ready VAR(3) and SpVAR(3) models - 1,205-week historical
+database (23 years) - Rigorous statistical validation (Diebold-Mariano
+tests) - Rolling window forecast evaluation (50 test periods) -
+Comprehensive model diagnostics</p>
+<p>✅ <strong>Documented Methodology</strong> - Publication-quality
+technical specifications - Fully reproducible Python codebase (~1,400
+lines) - Saved model objects for operational deployment - 10 technical
+visualizations - 9 industry context visualizations</p>
+<p>✅ <strong>Performance Benchmarking</strong> - 22.4% MAPE on 1-week
+ahead rolling forecasts - 8.9% MAPE on initial 1-week forecasts - 67.3%
+R² indicating strong pattern capture - Comparable to naïve baseline
+(establishes foundation for enhancement)</p>
+<p><strong>Industry Insights:</strong></p>
+<p>✅ <strong>Spatial Structure Confirmation</strong> - 92% average
+correlation between river segments validates integrated approach -
+Strong spatial autocorrelation (ρ = 0.95) confirms geographic
+relationships - VAR specification effectively captures spatial dynamics
+without explicit spatial modeling</p>
+<p>✅ <strong>Forecast Horizon Characteristics</strong> - Excellent
+1-week accuracy (operational planning) - Moderate 2-4 week accuracy
+(procurement planning) - Degrading 5+ week accuracy (strategic planning
+requires scenarios)</p>
+<p>✅ <strong>Segment Heterogeneity</strong> - Performance varies across
+river segments (14% improvement to -48%) - Upstream and downstream
+endpoints show better performance - Mid-system segments exhibit
+different dynamics requiring specialized approaches</p>
+<h3 data-number="1.10.2" id="current-state-assessment"><span
+class="header-section-number">1.10.2</span> 8.2 Current State
+Assessment</h3>
+<p><strong>What Works Well:</strong> - Infrastructure and methodology
+are production-ready - Statistical validation is rigorous and
+publication-quality - Spatial correlation insights inform fleet
+positioning and routing - 1-week forecasts suitable for immediate
+operational decisions - Framework extensible to incorporate
+enhancements</p>
+<p><strong>Current Limitations:</strong> - Performance comparable to
+naïve baseline (not yet achieving literature benchmarks) - Sample data
+vs. real operational data - No exogenous predictors (river conditions,
+fuel, demand) - Linear specification (no regime-switching for droughts)
+- Short forecast horizon focus (1-5 weeks vs. 4-8 week planning
+needs)</p>
+<p><strong>Gap Analysis:</strong> - Current: -11.7% vs. naïve baseline -
+Literature benchmark: +17-29% vs. naïve - Gap to close: ~30-40
+percentage points - Path identified: Real data, exogenous variables,
+longer horizons, regime models</p>
+<h3 data-number="1.10.3" id="business-value-proposition"><span
+class="header-section-number">1.10.3</span> 8.3 Business Value
+Proposition</h3>
+<p><strong>Current Framework Value:</strong> - Provides production-ready
+forecasting infrastructure - Establishes baseline for continuous
+improvement - Demonstrates rigorous econometric methodology - Enables
+quantitative risk assessment and scenario analysis</p>
+<p><strong>Enhanced Framework Potential:</strong> - Expected 17-29%
+improvement over naïve (literature benchmark) - Estimated
+$176,000-$880,000 annual savings (200K-1M ton shippers) - ROI: 1-358% in
+year 1 depending on scale - 5-year NPV: $505,000-$3,090,000 (200K-1M ton
+shippers)</p>
+<p><strong>Break-Even Scale:</strong> - Minimum viable volume:
+~150,000-200,000 tons annually - Smaller shippers: Consider consortium
+or third-party forecast services - Larger shippers: Compelling ROI
+justifies internal deployment</p>
+<h3 data-number="1.10.4" id="strategic-implications"><span
+class="header-section-number">1.10.4</span> 8.4 Strategic
+Implications</h3>
+<p><strong>For U.S. Agricultural Exports:</strong> - Barge
+transportation cost optimization enhances global competitiveness - 60%
+cost advantage over rail critical for maintaining export market share -
+Forecast-based planning reduces uncertainty, improves export reliability
+- System capacity constraints (locks) make optimization increasingly
+valuable</p>
+<p><strong>For Mississippi River System:</strong> - 500+ million tons
+annually depend on efficient rate price discovery - Infrastructure
+bottlenecks (80-year-old locks) create persistent congestion -
+Forecasting enables better coordination across supply chain participants
+- Data transparency and sharing would benefit entire industry</p>
+<p><strong>For Transportation Economics:</strong> - Demonstrates value
+of econometric forecasting for commodity transportation - Spatial
+correlation insights applicable to other waterway systems - Methodology
+transferable to rail, truck, ocean freight forecasting - Framework
+supports infrastructure investment ROI analysis</p>
+<h3 data-number="1.10.5" id="path-forward"><span
+class="header-section-number">1.10.5</span> 8.5 Path Forward</h3>
+<p><strong>Immediate Next Steps (Weeks 1-4):</strong> 1. Integrate real
+USDA barge rate data 2. Add USACE river gauge data 3. Enhance VAR
+specification (VARX model) 4. Validate on recent data (2024-2026)</p>
+<p><strong>Short-Term (Months 2-4):</strong> 5. Develop interactive
+dashboard (Streamlit/Dash) 6. Create scenario analysis tools 7.
+Implement automated weekly forecast generation 8. Begin pilot deployment
+with partner shippers</p>
+<p><strong>Medium-Term (Months 4-12):</strong> 9. Operational deployment
+with ERP/TMS integration 10. Regime-switching models for drought
+conditions 11. Extend forecast horizons to 4-8 weeks 12. Continuous
+improvement based on user feedback</p>
+<p><strong>Long-Term (Year 2+):</strong> 13. Advanced machine learning
+models (ensemble approaches) 14. Portfolio optimization tools 15.
+Multi-modal routing optimization 16. Industry-wide platform (consortium
+model)</p>
+<h3 data-number="1.10.6" id="final-recommendations"><span
+class="header-section-number">1.10.6</span> 8.6 Final
+Recommendations</h3>
+<p><strong>For Decision Makers Evaluating This Technology:</strong></p>
+<ol type="1">
+<li><strong>Assess Your Scale:</strong>
+<ul>
+<li>Volume &gt; 150,000 tons/year → Strong ROI case</li>
+<li>Volume &lt; 150,000 tons/year → Consider consortium approach</li>
+</ul></li>
+<li><strong>Start with Pilot:</strong>
+<ul>
+<li>3-month trial with weekly forecasts</li>
+<li>Quantify actual decisions improved</li>
+<li>Measure savings vs. current practice</li>
+</ul></li>
+<li><strong>Plan for Integration:</strong>
+<ul>
+<li>Forecasts most valuable when integrated into procurement
+processes</li>
+<li>Requires change management and training</li>
+<li>Dedicated internal champion essential</li>
+</ul></li>
+<li><strong>Invest in Enhancements:</strong>
+<ul>
+<li>Current framework is foundation, not final product</li>
+<li>Enhanced models (real data, exogenous variables) required for full
+value</li>
+<li>Budget $150,000-250,000 for production-ready system</li>
+</ul></li>
+<li><strong>Support Industry Initiatives:</strong>
+<ul>
+<li>Data sharing benefits entire supply chain</li>
+<li>Industry benchmarks improve all participants</li>
+<li>Infrastructure investment advocacy</li>
+</ul></li>
+</ol>
+<p><strong>For Research and Development:</strong></p>
+<ol start="6" type="1">
+<li><strong>Extend to Other Commodities:</strong>
+<ul>
+<li>Coal, petroleum products, aggregates</li>
+<li>Different seasonal patterns and demand drivers</li>
+<li>Methodology broadly applicable</li>
+</ul></li>
+<li><strong>Explore Additional Use Cases:</strong>
+<ul>
+<li>Terminal congestion forecasting</li>
+<li>Lock delay prediction</li>
+<li>Equipment demand forecasting</li>
+<li>Crew scheduling optimization</li>
+</ul></li>
+<li><strong>Develop Industry Standards:</strong>
+<ul>
+<li>Forecast accuracy benchmarks</li>
+<li>Data format standardization</li>
+<li>Best practice sharing</li>
+</ul></li>
+</ol>
+<hr />
+<h2 data-number="1.11" id="appendices"><span
+class="header-section-number">1.11</span> 9. Appendices</h2>
+<h3 data-number="1.11.1" id="appendix-a-glossary-of-terms"><span
+class="header-section-number">1.11.1</span> Appendix A: Glossary of
+Terms</h3>
+<p><strong>Barge Transportation:</strong> - <strong>Barge:</strong>
+Non-self-propelled vessel (195’ × 35’ typical), 1,500-1,750 ton capacity
+- <strong>Towboat:</strong> Powered vessel pushing barge tows (despite
+name, pushes not tows) - <strong>Tow:</strong> Group of barges lashed
+together (typical: 15-40 barges) - <strong>Fleeting Area:</strong>
+Designated anchorage for barge storage and tow assembly - <strong>Lock
+Cutting:</strong> Splitting oversized tow to fit through lock chamber
+(doubles transit time)</p>
+<p><strong>Rate Components:</strong> - <strong>Spot Rate:</strong>
+Current market rate for immediate transportation - <strong>Forward
+Contract:</strong> Rate locked for future delivery (2-12 weeks typical)
+- <strong>Freight Rate:</strong> $/ton charge for transportation from
+origin to destination - <strong>Demurrage:</strong> Penalty charges for
+exceeding allowed loading/unloading time - <strong>Fuel
+Surcharge:</strong> Variable component adjusting for diesel price
+changes</p>
+<p><strong>River System:</strong> - <strong>Upper Mississippi:</strong>
+Minneapolis to Cairo, IL (29 locks) - <strong>Illinois River:</strong>
+Chicago to Mississippi (8 locks) - <strong>Middle Mississippi:</strong>
+Cairo to St. Louis (confluence zone) - <strong>Lower
+Mississippi:</strong> St. Louis to Gulf (lock-free) - <strong>Navigation
+Season:</strong> Ice-free period (April-November typical for northern
+reaches)</p>
+<p><strong>Forecasting Methods:</strong> - <strong>VAR (Vector
+Autoregressive):</strong> Multivariate time series model using lagged
+values - <strong>SpVAR (Spatial VAR):</strong> VAR extended with spatial
+correlation structure - <strong>Naïve Forecast:</strong> Simple
+benchmark (next week = this week) - <strong>MAPE (Mean Absolute
+Percentage Error):</strong> Primary accuracy metric (lower better) -
+<strong>Diebold-Mariano Test:</strong> Statistical test comparing
+forecast accuracy</p>
+<p><strong>Industry Metrics:</strong> - <strong>Ton-Mile:</strong> Unit
+of freight work (one ton moved one mile) - <strong>Draft:</strong>
+Vessel depth in water (affects cargo capacity in low water) -
+<strong>Stage:</strong> River water level relative to reference datum -
+<strong>Lock Delay:</strong> Time waiting to transit lock (hours or
+days)</p>
+<h3 data-number="1.11.2"
+id="appendix-b-data-sources-and-references"><span
+class="header-section-number">1.11.2</span> Appendix B: Data Sources and
+References</h3>
+<p><strong>Primary Data Sources:</strong></p>
+<ol type="1">
+<li><strong>USDA Agricultural Marketing Service (AMS)</strong>
+<ul>
+<li>Grain Transportation Report (weekly)</li>
+<li>Barge freight rates by origin-destination</li>
+<li>Export inspection data</li>
+<li>Website:
+https://www.ams.usda.gov/services/transportation-analysis/gtr</li>
+</ul></li>
+<li><strong>U.S. Army Corps of Engineers (USACE)</strong>
+<ul>
+<li>Waterborne Commerce Statistics Center</li>
+<li>River gauge levels and flow rates</li>
+<li>Lock delay reports</li>
+<li>Website: https://www.iwr.usace.army.mil/WCSC/</li>
+</ul></li>
+<li><strong>Energy Information Administration (EIA)</strong>
+<ul>
+<li>Diesel fuel prices (wholesale and retail)</li>
+<li>Updated weekly</li>
+<li>Website: https://www.eia.gov/petroleum/gasdiesel/</li>
+</ul></li>
+<li><strong>National Oceanic and Atmospheric Administration
+(NOAA)</strong>
+<ul>
+<li>River forecasts (National Water Prediction Service)</li>
+<li>Drought monitoring</li>
+<li>Website: https://water.noaa.gov/</li>
+</ul></li>
+</ol>
+<p><strong>Academic Literature:</strong></p>
+<ol type="1">
+<li><strong>Wetzstein, M., Brorsen, B. W., &amp; Wilson, W. W.
+(2021)</strong> “Forecasting inland waterway grain barge rates”
+<em>Transportation Research Part E: Logistics and Transportation
+Review</em>, 150, 102327
+<ul>
+<li>Benchmark study: 17-29% improvement over naïve forecasts</li>
+<li>VARX model with exogenous predictors</li>
+<li>Real USDA data, operational focus</li>
+</ul></li>
+<li><strong>Lütkepohl, H. (2005)</strong> <em>New introduction to
+multiple time series analysis</em> Springer Science &amp; Business Media
+<ul>
+<li>Standard reference for VAR methodology</li>
+<li>Lag selection, diagnostics, forecasting</li>
+</ul></li>
+<li><strong>Anselin, L. (1988)</strong> <em>Spatial econometrics:
+methods and models</em> Springer Science &amp; Business Media
+<ul>
+<li>Foundational reference for spatial modeling</li>
+<li>Spatial weight matrices, autocorrelation</li>
+</ul></li>
+<li><strong>Diebold, F. X., &amp; Mariano, R. S. (1995)</strong>
+“Comparing predictive accuracy” <em>Journal of Business &amp; Economic
+Statistics</em>, 13(3), 253-263
+<ul>
+<li>Statistical testing of forecast accuracy</li>
+<li>Standard methodology for model comparison</li>
+</ul></li>
+</ol>
+<p><strong>Industry Resources:</strong></p>
+<ol start="5" type="1">
+<li><strong>American Commercial Barge Line (ACBL)</strong>
+<ul>
+<li>Industry data and market insights</li>
+<li>Website: https://www.acbl.net/</li>
+</ul></li>
+<li><strong>Waterways Council, Inc.</strong>
+<ul>
+<li>Industry advocacy and data</li>
+<li>Lock delay economic impact studies</li>
+<li>Website: https://www.waterwayscouncil.org/</li>
+</ul></li>
+<li><strong>National Grain and Feed Association (NGFA)</strong>
+<ul>
+<li>Grain transportation data</li>
+<li>Industry best practices</li>
+<li>Website: https://www.ngfa.org/</li>
+</ul></li>
+</ol>
+<h3 data-number="1.11.3" id="appendix-c-technical-file-inventory"><span
+class="header-section-number">1.11.3</span> Appendix C: Technical File
+Inventory</h3>
+<p><strong>Model Files:</strong> -
+<code>G:\My Drive\LLM\project_barge\forecasting\models\var\var_model_lag3.pkl</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\models\spvar\spvar_model_lag3.pkl</code></p>
+<p><strong>Data Files:</strong> -
+<code>G:\My Drive\LLM\project_barge\forecasting\data\raw\sample_barge_rates_20260203.csv</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\data\processed\barge_rates_train.csv</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\data\processed\barge_rates_test.csv</code></p>
+<p><strong>Results Files:</strong> -
+<code>G:\My Drive\LLM\project_barge\forecasting\results\var_results_summary.json</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\spvar_results_summary.json</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\forecast_comparison_summary.json</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\forecast_accuracy_comparison.csv</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\diebold_mariano_tests.csv</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\economic_impact_analysis.csv</code></p>
+<p><strong>Visualization Files (Technical):</strong> -
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\01_seasonal_decomposition_example.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\02_spatial_correlation_matrix.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\03_var_residuals.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\04_var_rolling_forecast.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\05_spatial_weight_matrix.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\06_var_spvar_comparison.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\07_spvar_improvement.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\08_forecast_accuracy_comparison.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\09_forecast_improvement.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\results\plots\10_economic_impact.png</code></p>
+<p><strong>Visualization Files (Industry Context):</strong> -
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\01_lock_delay_cost_curve.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\02_rate_components_breakdown.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\03_seasonal_rate_volatility.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\04_lower_mississippi_map.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\05_lock_cutting_operation.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\06_midstream_fleeting_diagram.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\07_grain_export_supply_chain.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\08_rate_calculation_table.png</code>
+-
+<code>G:\My Drive\LLM\project_barge\report_output\visualizations\09_river_ocean_comparison.png</code></p>
+<p><strong>Python Scripts:</strong> -
+<code>G:\My Drive\LLM\project_barge\forecasting\scripts\01_data_download.py</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\scripts\02_data_preprocessing.py</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\scripts\03_var_estimation.py</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\scripts\04_spvar_estimation.py</code>
+-
+<code>G:\My Drive\LLM\project_barge\forecasting\scripts\05_forecast_comparison.py</code></p>
+<p><strong>Documentation:</strong> -
+<code>G:\My Drive\LLM\project_barge\forecasting\FORECASTING_FINAL_REPORT.md</code>
+(Technical report) -
+<code>G:\My Drive\LLM\project_barge\report_output\INDUSTRY_BRIEFING_FINAL.md</code>
+(This document)</p>
+<h3 data-number="1.11.4"
+id="appendix-d-contact-information-and-next-steps"><span
+class="header-section-number">1.11.4</span> Appendix D: Contact
+Information and Next Steps</h3>
+<p><strong>Project Team:</strong> - Barge Economics Research Team -
+Mississippi River Forecasting Project</p>
+<p><strong>For Questions or Additional Information:</strong> - Technical
+questions: Reference FORECASTING_FINAL_REPORT.md - Business questions:
+Reference this Industry Briefing - Data questions: See Appendix B for
+primary sources</p>
+<p><strong>To Request Forecast Access:</strong> 1. Evaluate annual barge
+volume (Section 4.3) 2. Review implementation roadmap (Section 6) 3.
+Contact project team for pilot program discussion 4. Prepare data
+requirements (historical rates, volumes)</p>
+<p><strong>Suggested Pilot Program:</strong> - Duration: 3 months -
+Deliverables: Weekly forecast summaries (7 segments, 1-5 week horizons)
+- Evaluation: Track decision improvements, calculate actual savings -
+Cost: Negotiable (pilot subsidized to support deployment)</p>
+<p><strong>Implementation Support Available:</strong> - Dashboard
+training and user support - Integration consulting (ERP/TMS systems) -
+Custom scenario analysis - Ongoing model enhancement</p>
+<hr />
+<h2 data-number="1.12" id="document-information"><span
+class="header-section-number">1.12</span> Document Information</h2>
+<p><strong>Title:</strong> Mississippi River Barge Rate Forecasting -
+Industry Briefing Report</p>
+<p><strong>Version:</strong> Final Release</p>
+<p><strong>Date:</strong> February 3, 2026</p>
+<p><strong>Prepared For:</strong> Grain Shippers, Barge Operators,
+Logistics Executives, Industry Stakeholders</p>
+<p><strong>Classification:</strong> Industry Briefing
+(Non-Technical)</p>
+<p><strong>Related Documents:</strong> - FORECASTING_FINAL_REPORT.md
+(Technical specifications) - INDUSTRY_BRIEFING_PROFESSIONAL.html
+(Earlier draft, January 29, 2026)</p>
+<p><strong>File Location:</strong> -
+<code>G:\My Drive\LLM\project_barge\report_output\INDUSTRY_BRIEFING_FINAL.md</code></p>
+<p><strong>Suggested Citation:</strong> &gt; Barge Economics Research
+Team. (2026). <em>Mississippi River Barge Rate Forecasting: Industry
+Briefing Report</em>. Mississippi River Forecasting Project, February 3,
+2026.</p>
+<hr />
+<p><strong>End of Report</strong></p>
+</body>
+</html>

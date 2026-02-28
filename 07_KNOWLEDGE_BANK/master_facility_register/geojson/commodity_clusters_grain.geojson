@@ -1,0 +1,144 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1416756308922,
+          29.9383354083641
+        ]
+      },
+      "properties": {
+        "cluster_id": "GRAIN_0",
+        "cluster_type": "Grain Export Corridor",
+        "facility_count": 2,
+        "avg_river_mile": 103.0,
+        "facilities": [
+          "Cargill Westwego ",
+          "Cargill Westwego "
+        ],
+        "operators": [],
+        "market_area": "River Mile 103-103"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.3387140177248,
+          29.939846402293167
+        ]
+      },
+      "properties": {
+        "cluster_id": "GRAIN_1",
+        "cluster_type": "Grain Export Corridor",
+        "facility_count": 3,
+        "avg_river_mile": 119.0,
+        "facilities": [
+          "ADM AMA",
+          "ADM Destrehan",
+          "Bunge Destrehan"
+        ],
+        "operators": [
+          "Current Operator: ADM/GROWMARK, Subsidiary of Arch"
+        ],
+        "market_area": "River Mile 117-120"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.58318775547157,
+          30.05380875231887
+        ]
+      },
+      "properties": {
+        "cluster_id": "GRAIN_2",
+        "cluster_type": "Grain Export Corridor",
+        "facility_count": 3,
+        "avg_river_mile": 139.3,
+        "facilities": [
+          "ADM Reserve",
+          "Cargill Reserve ",
+          "Cargill Reserve "
+        ],
+        "operators": [
+          "Current Operator: ADM/Growmark, a subsidiary of Ar"
+        ],
+        "market_area": "River Mile 139-140"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.87505883476588,
+          30.065550411896698
+        ]
+      },
+      "properties": {
+        "cluster_id": "GRAIN_3",
+        "cluster_type": "Grain Export Corridor",
+        "facility_count": 3,
+        "avg_river_mile": 164.0,
+        "facilities": [
+          "Zen-Noh",
+          "Zen-Noh",
+          "Zen-Noh"
+        ],
+        "operators": [],
+        "market_area": "River Mile 164-164"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9641725715335,
+          29.6741723563786
+        ]
+      },
+      "properties": {
+        "cluster_id": "GRAIN_noise_0",
+        "cluster_type": "Grain Export Corridor",
+        "facility_count": 1,
+        "avg_river_mile": 62.0,
+        "facilities": [
+          "Cenex Harvest States"
+        ],
+        "operators": [],
+        "market_area": "River Mile 62-62"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.2015919390652,
+          30.4340084798782
+        ]
+      },
+      "properties": {
+        "cluster_id": "GRAIN_noise_12",
+        "cluster_type": "Grain Export Corridor",
+        "facility_count": 1,
+        "avg_river_mile": 229.0,
+        "facilities": [
+          "Dreyfuss"
+        ],
+        "operators": [
+          "Current Operator: LOUIS DREYFUS COMMODITIES LLC Ph"
+        ],
+        "market_area": "River Mile 229-229"
+      }
+    }
+  ]
+}

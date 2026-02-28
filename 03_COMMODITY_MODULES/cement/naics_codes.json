@@ -1,0 +1,26 @@
+{
+  "cement_manufacturing": {
+    "327310": "Cement Manufacturing",
+    "327320": "Ready-Mix Concrete Manufacturing",
+    "327331": "Concrete Block and Brick Manufacturing",
+    "327332": "Concrete Pipe Manufacturing",
+    "327390": "Other Concrete Product Manufacturing"
+  },
+  "related_manufacturing": {
+    "327410": "Lime Manufacturing",
+    "327420": "Gypsum Product Manufacturing",
+    "327910": "Abrasive Product Manufacturing",
+    "327999": "All Other Nonmetallic Mineral Product Manufacturing"
+  },
+  "scm_sources": {
+    "221112": "Fossil Fuel Electric Power Generation (fly ash source)",
+    "331110": "Iron and Steel Mills and Ferroalloy Manufacturing (slag source)",
+    "331210": "Iron and Steel Pipe and Tube Manufacturing from Purchased Steel",
+    "212312": "Crushed Stone Mining and Quarrying (limestone/aggregate)",
+    "212319": "Other Crushed and Broken Stone Mining (pozzolans)"
+  },
+  "distribution": {
+    "423320": "Brick, Stone, and Related Construction Material Merchant Wholesalers",
+    "424690": "Other Chemical and Allied Products Merchant Wholesalers"
+  }
+}

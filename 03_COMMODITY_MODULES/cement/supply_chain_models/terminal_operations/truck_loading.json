@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "commodity": "cement",
+    "category": "truck_loading_operations",
+    "version": "1.0",
+    "last_updated": "2026-02-14",
+    "description": "Truck loading operations at cement terminals, covering loading methods, rates, equipment costs, and peak capacity. Truck loading is the final mile of distribution for most cement, delivering from rail/barge terminals or plants to ready-mix concrete plants, block plants, and construction sites.",
+    "sources": [
+      "Portland Cement Association (PCA) distribution data",
+      "FLSmidth bulk material handling specifications",
+      "Terminal operator performance benchmarks (anonymized)",
+      "NRMCA (National Ready Mixed Concrete Association) fleet data"
+    ]
+  },
+  "loading_methods": [
+    {
+      "method": "gravity_feed_from_silo",
+      "description": "Cement flows by gravity from silo bottom through a discharge gate and telescoping loading spout into the truck's pneumatic tanker. Fastest and most common method at modern terminals and plants.",
+      "rate_trucks_per_hour": 30,
+      "rate_range_trucks_per_hour": [25, 40],
+      "tons_per_truck": 25,
+      "tons_range_per_truck": [22, 27],
+      "turnaround_minutes": 15,
+      "turnaround_breakdown_minutes": {
+        "weigh_in": 2,
+        "positioning_under_spout": 3,
+        "loading": 5,
+        "securing_hatches": 2,
+        "weigh_out": 2,
+        "paperwork_BOL": 1
+      },
+      "equipment_cost": {
+        "loading_spout_per_unit": 45000,
+        "dust_collector_per_spout": 25000,
+        "truck_scale": 85000,
+        "control_system": 35000,
+        "total_single_lane": 190000,
+        "notes": "Cost for one complete loading lane. Most terminals have 2-4 lanes."
+      },
+      "operating_cost_per_ton": 0.75,
+      "operating_cost_breakdown_per_ton": {
+        "power": 0.15,
+        "maintenance": 0.20,
+        "labor": 0.25,
+        "dust_collection_filters": 0.10,
+        "scale_calibration": 0.05
+      },
+      "peak_daily_capacity_trucks": 300,
+      "peak_daily_capacity_tons": 7500,
+      "peak_capacity_notes": "Assumes 2 loading lanes operating 12 hours (typical 5 AM - 5 PM). Peak spring season (March-June) can see 250+ trucks/day at major terminals.",
+      "truck_types_served": [
+        "pneumatic_tanker_trailer (most common, 25 tons)",
+        "pneumatic_tanker_straight_truck (15-18 tons)",
+        "super_dump_pneumatic (28-30 tons, some states)"
+      ],
+      "advantages": [
+        "Fastest loading method - minimal truck dwell time",
+        "Fully automated weighing and loading",
+        "Low dust emissions with enclosed spout and dust collector",
+        "Consistent fill accuracy (+/- 0.5% of target weight)",
+        "Minimal labor required (1-2 operators for multiple lanes)",
+        "Truck driver remains in cab during loading"
+      ],
+      "disadvantages": [
+        "Requires elevated silo with gravity flow design",
+        "Product bridging/ratholing can interrupt flow",
+        "Limited to free-flowing powdered materials",
+        "Capital cost for silo infrastructure"
+      ],
+      "notes": "Standard method at all modern cement plants and distribution terminals. Industry norm for finished cement (Type I, I/II, II, III, V, slag cement). Loading spout telescopes into truck hatch to minimize dust."
+    },
+    {
+      "method": "pneumatic_loading",
+      "description": "Cement is conveyed pneumatically via enclosed pipeline from storage to a pressurized loading vessel, then pressure-discharged into the truck tanker. Used when gravity feed is not available or for remote loading points.",
+      "rate_trucks_per_hour": 20,
+      "rate_range_trucks_per_hour": [15, 25],
+      "tons_per_truck": 25,
+      "tons_range_per_truck": [22, 27],
+      "turnaround_minutes": 25,
+      "turnaround_breakdown_minutes": {
+        "weigh_in": 2,
+        "positioning_and_hookup": 5,
+        "pneumatic_transfer": 12,
+        "disconnect_and_secure": 3,
+        "weigh_out": 2,
+        "paperwork_BOL": 1
+      },
+      "equipment_cost": {
+        "pneumatic_conveying_system": 250000,
+        "pressure_vessel_loader": 75000,
+        "compressor": 60000,
+        "dust_collection": 30000,
+        "truck_scale": 85000,
+        "control_system": 40000,
+        "total_single_lane": 540000,
+        "notes": "Higher capital cost due to conveying system. Justified when silo elevation doesn't support gravity or for multi-point distribution."
+      },
+      "operating_cost_per_ton": 1.25,
+      "operating_cost_breakdown_per_ton": {
+        "power_compressed_air": 0.45,
+        "maintenance": 0.30,
+        "labor": 0.30,
+        "dust_collection_filters": 0.10,
+        "compressor_maintenance": 0.10
+      },
+      "peak_daily_capacity_trucks": 200,
+      "peak_daily_capacity_tons": 5000,
+      "peak_capacity_notes": "Assumes 2 loading lanes operating 12 hours. Slower than gravity but adequate for most terminal volumes.",
+      "truck_types_served": [
+        "pneumatic_tanker_trailer",
+        "pneumatic_tanker_straight_truck"
+      ],
+      "advantages": [
+        "Can load from ground-level or low-profile storage",
+        "Flexible - pipeline can be routed around obstacles",
+        "Completely enclosed transfer minimizes emissions",
+        "Precise weight control via batch metering",
+        "Can serve multiple loading points from one storage source"
+      ],
+      "disadvantages": [
+        "Slower than gravity feed (12+ minutes per truck vs 5 minutes)",
+        "Higher energy cost (compressed air is expensive)",
+        "More complex system with more maintenance points",
+        "Compressor noise requires mitigation in urban areas",
+        "Pipeline wear from abrasive cement particles"
+      ],
+      "notes": "Common at import terminals where cement is stored in low-profile or ground-level silos. Also used for secondary loading points at plants (e.g., truck loading at silo farm away from main loadout)."
+    },
+    {
+      "method": "front_end_loader",
+      "description": "Front-end loader (wheel loader) scoops material from flat storage or stockpile and loads into open-top dump trucks or flat-bed trucks. Used for clinker, slag, and other coarse materials not requiring pneumatic containment.",
+      "rate_trucks_per_hour": 10,
+      "rate_range_trucks_per_hour": [8, 15],
+      "tons_per_truck": 25,
+      "tons_range_per_truck": [20, 28],
+      "turnaround_minutes": 35,
+      "turnaround_breakdown_minutes": {
+        "weigh_in": 2,
+        "positioning": 3,
+        "loading_multiple_scoops": 20,
+        "leveling_and_tarping": 5,
+        "weigh_out": 2,
+        "paperwork_BOL": 3
+      },
+      "equipment_cost": {
+        "wheel_loader_5_yard": 350000,
+        "truck_scale": 85000,
+        "dust_suppression_system": 20000,
+        "paving_and_grading": 50000,
+        "total_single_lane": 505000,
+        "notes": "Loader cost is for a CAT 966 or equivalent 5-yard bucket. Loader serves multiple trucks but can only load one at a time."
+      },
+      "operating_cost_per_ton": 2.10,
+      "operating_cost_breakdown_per_ton": {
+        "loader_fuel": 0.60,
+        "loader_maintenance": 0.40,
+        "operator_labor": 0.55,
+        "tire_wear": 0.20,
+        "dust_suppression": 0.15,
+        "scale_and_admin": 0.20
+      },
+      "peak_daily_capacity_trucks": 100,
+      "peak_daily_capacity_tons": 2500,
+      "peak_capacity_notes": "Assumes single loader operating 12 hours. Add second loader for 180+ trucks/day during peak periods.",
+      "truck_types_served": [
+        "end_dump_trailer (clinker, slag)",
+        "belly_dump_trailer (clinker)",
+        "flat_bed_with_sides (bagged cement)",
+        "roll_off_container"
+      ],
+      "advantages": [
+        "Extremely flexible - handles any dry bulk material",
+        "Low infrastructure requirement (just paved pad + scale)",
+        "Can load various truck configurations",
+        "Mobile equipment can be redeployed as needed",
+        "Simple operations, widely available operators"
+      ],
+      "disadvantages": [
+        "Slowest loading method - 20+ minutes per truck",
+        "Highest operating cost per ton (labor + fuel intensive)",
+        "Significant dust generation (requires suppression program)",
+        "NOT suitable for finished cement (contamination, moisture)",
+        "Weather-dependent for outdoor operations",
+        "Inconsistent load weights (loader bucket variability)"
+      ],
+      "notes": "Used exclusively for clinker, slag, gypsum, and other coarse/granular materials that can tolerate open handling. Never used for finished portland cement due to moisture and contamination concerns. Common at clinker storage yards at grinding stations and import terminals receiving clinker."
+    }
+  ],
+  "operational_planning": {
+    "peak_season": {
+      "description": "Cement truck loading peaks during construction season, typically March through October in most US markets.",
+      "peak_months": ["March", "April", "May", "June", "July", "August", "September"],
+      "peak_vs_trough_ratio": 2.5,
+      "notes": "Spring ramp-up (March-April) is the most operationally challenging period as demand surges before terminals have fully staffed seasonal workers."
+    },
+    "daily_pattern": {
+      "description": "Truck traffic follows a strong daily pattern driven by ready-mix batch plant demand.",
+      "peak_hours": "5:00 AM - 10:00 AM",
+      "secondary_peak": "1:00 PM - 3:00 PM",
+      "low_hours": "After 4:00 PM",
+      "notes": "Ready-mix plants typically start pouring at 6-7 AM, requiring cement deliveries starting at 5 AM. Terminal hours typically 5 AM to 5 PM Monday-Friday, limited Saturday."
+    },
+    "queue_management": {
+      "description": "Managing truck queues is critical to terminal efficiency and driver satisfaction.",
+      "best_practices": [
+        "Electronic queue management / appointment system",
+        "Pre-registration with automated weigh-in (RFID/transponder)",
+        "Separate lanes for spot vs. contract customers",
+        "Real-time queue status display / mobile app",
+        "Minimum 2 loading lanes to avoid single-point bottleneck"
+      ]
+    }
+  },
+  "cost_comparison_summary": {
+    "gravity_feed": {
+      "cost_per_ton": 0.75,
+      "trucks_per_hour": 30,
+      "best_for": "Finished cement at high-volume terminals and plants"
+    },
+    "pneumatic": {
+      "cost_per_ton": 1.25,
+      "trucks_per_hour": 20,
+      "best_for": "Finished cement at terminals without gravity-feed silos"
+    },
+    "front_end_loader": {
+      "cost_per_ton": 2.10,
+      "trucks_per_hour": 10,
+      "best_for": "Clinker, slag, and other coarse bulk materials only"
+    }
+  }
+}

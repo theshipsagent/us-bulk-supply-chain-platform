@@ -1,0 +1,22 @@
+{
+  "pozzolan_mining": {
+    "212399": "All Other Nonmetallic Mineral Mining (pumice, volcanic ash)",
+    "212325": "Clay and Ceramic and Refractory Minerals Mining (kaolin for calcined clay)",
+    "212312": "Crushed and Broken Limestone Mining (limestone for LC3)"
+  },
+  "processing": {
+    "327999": "All Other Miscellaneous Nonmetallic Mineral Product Manufacturing",
+    "325199": "All Other Basic Organic Chemical Manufacturing"
+  },
+  "cement_concrete_end_users": {
+    "327310": "Cement Manufacturing (blended cement with pozzolans)",
+    "327320": "Ready-Mix Concrete Manufacturing (pozzolan consumers)",
+    "327390": "Other Concrete Product Manufacturing"
+  },
+  "hts_codes": {
+    "2513.10.0010": "Pumice, crude or in irregular pieces",
+    "2513.10.0080": "Pumice, except crude or crushed",
+    "2530.90": "Other mineral substances NES",
+    "2507": "Kaolin and other kaolinic clays"
+  }
+}

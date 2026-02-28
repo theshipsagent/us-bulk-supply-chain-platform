@@ -1,0 +1,79 @@
+# Target Companies for Fuzzy Matching — US Fly Ash / CCP Supply Chain
+# ===================================================================
+# Ash processors/harvesters, coal utilities, cement/concrete consumers
+
+ash_processors:
+  # Eco Material Technologies — largest US fly ash handler (>4 Mt/yr)
+  - "Eco Material Technologies"
+  - "Eco Material"
+  - "Eco-Material"
+  - "EMT"
+  - "Boral Material Technologies"
+  - "Boral Industries"
+  - "Headwaters"
+  - "Headwaters Inc"
+  - "Headwaters Resources"
+
+  # Charah Solutions — ash management, MultiCem
+  - "Charah"
+  - "Charah Solutions"
+
+  # SEFA Group — fly ash marketing
+  - "SEFA Group"
+  - "SEFA"
+
+  # Salt River Materials Group
+  - "Salt River Materials"
+  - "Salt River Materials Group"
+
+  # ISG Resources
+  - "ISG Resources"
+  - "ISG"
+
+  # Separation Technologies
+  - "Separation Technologies"
+  - "STAR"
+  - "STI"
+
+  # SCB International
+  - "SCB International"
+  - "SCB Materials"
+
+  # GA Materials
+  - "GA Materials"
+  - "GAM"
+
+coal_utilities:
+  - "Duke Energy"
+  - "Southern Company"
+  - "American Electric Power"
+  - "AEP"
+  - "FirstEnergy"
+  - "TVA"
+  - "Tennessee Valley Authority"
+  - "Dominion Energy"
+  - "Ameren"
+  - "Xcel Energy"
+  - "DTE Energy"
+  - "Consumers Energy"
+  - "MidAmerican Energy"
+  - "Berkshire Hathaway Energy"
+  - "Entergy"
+  - "PPL Corporation"
+  - "Evergy"
+  - "Vistra Energy"
+  - "NRG Energy"
+  - "Luminant"
+
+cement_consumers:
+  - "CEMEX"
+  - "Holcim"
+  - "Heidelberg Materials"
+  - "Lehigh Hanson"
+  - "Ash Grove"
+  - "CalPortland"
+  - "Buzzi Unicem"
+  - "CRH"
+  - "Argos"
+  - "Summit Materials"
+  - "Quikrete"
