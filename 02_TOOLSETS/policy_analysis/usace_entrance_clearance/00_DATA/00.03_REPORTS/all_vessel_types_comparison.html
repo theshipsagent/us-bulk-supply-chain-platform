@@ -1,0 +1,1037 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>All Vessel Types Market Share Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e3c72;
+            text-align: center;
+        }
+        .insight {
+            background: #e8f5e9;
+            padding: 20px;
+            border-left: 5px solid #4caf50;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .insight h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .warning {
+            background: #fff3e0;
+            padding: 15px;
+            border-left: 5px solid #ff9800;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-box h3 {
+            font-size: 2em;
+            margin: 0 0 10px 0;
+        }
+        .stat-box p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        th {
+            background: #2a5298;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+        tr:hover {
+            background: #e3f2fd;
+        }
+        .high-ratio {
+            background: #c8e6c9 !important;
+        }
+        .low-ratio {
+            background: #ffccbc !important;
+        }
+        .fallback {
+            color: #666;
+            font-style: italic;
+        }
+        .filter-section {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        button {
+            background: #2a5298;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1e3c72;
+        }
+        button.active {
+            background: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚢 Comprehensive Vessel Type Market Share Analysis</h1>
+        <h2 style="text-align: center; color: #666;">All Vessel Types: Ship Count vs Revenue</h2>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>78</h3>
+                <p>Vessel Types</p>
+            </div>
+            <div class="stat-box">
+                <h3>36.9%</h3>
+                <p>Top 10 Ship Count</p>
+            </div>
+            <div class="stat-box">
+                <h3>61.5%</h3>
+                <p>Top 10 Revenue</p>
+            </div>
+            <div class="stat-box">
+                <h3>1.67x</h3>
+                <p>Top 10 Ratio</p>
+            </div>
+        </div>
+
+        <div class="insight">
+            <h3>Key Insight</h3>
+            <p><strong>Market concentration:</strong> The top 10 vessel types represent <strong>36.9%</strong>
+            of ship count but generate <strong>61.5%</strong> of revenue.</p>
+            <p>The ratio of 1.67x indicates that top vessel types generate significantly more revenue per clearance.</p>
+        </div>
+
+        <div class="warning">
+            <strong>Note:</strong> Vessel types shown in <span class="fallback">[brackets]</span> use ICST_DESC classification
+            as fallback when Ships_Type is not available. This ensures complete market coverage.
+        </div>
+
+        <html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="all_vessel_comparison" class="plotly-graph-div" style="height:700px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("all_vessel_comparison")) {                    Plotly.newPlot(                        "all_vessel_comparison",                        [{"customdata":{"dtype":"i2","bdata":"2QoECMoOygS9BYAGYQT3AzoJWwM8A7cDlQObBkgBQQM5AucN8wDuARsCvwPYATIJiAE="},"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eShip Count: %{y:.1f}%\u003cbr\u003eClearances: %{customdata:,}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"lightblue"},"name":"Ship Count %","text":["5.6%","4.1%","7.6%","2.5%","3.0%","3.3%","2.3%","2.0%","4.8%","1.7%","1.7%","1.9%","1.8%","3.4%","0.7%","1.7%","1.1%","7.2%","0.5%","1.0%","1.1%","1.9%","0.9%","4.7%","0.8%"],"textposition":"outside","x":["Bulk Carrier-Supra\u002fUltramax","Bulk Carrier-Large Handy","Tanker-MR2","Bulk Carrier-Pmax\u002fKamsarmax","Tanker-Aframax","Tanker-Handy","[GENERAL CARGO-MULTI DECK NEI]","General Cargo =\u003e30,000dwt","Cruise-100,000-149,999gt","LNG-New Panamax","Tanker-Suezmax","Tanker-MR1","LPG-Very Large Gas Carrier","Cruise-50,000-99,999gt","Bulk Carrier-Handymax","LPG-Small Gas Carrier","General Cargo 10,000-14,999dwt","Containership-Post-Panamax","[OTHER BULK CARRIER]","General Cargo 5,000-9,999 dwt","LPG-Medium Gas Carrier","Cruise-150,000-199,999gt","Tanker-LR2","PCC\u002fPCTC =\u003e 4,000 cars","[OTHER SPECIALIZED CARRIER NEI]"],"y":{"dtype":"f8","bdata":"1ntbVaJWFkAweToPp4EQQNtb+dpzdB5AjBnR1F25A0B2yq\u002fRLaIHQAHaVdJMxQpAjzgVreoIAkA11MIqWVQAQEQCXOgHABNAi48V7rOj+z8dv6H9WaT6Px36QwqFmf4\u002fghVJ+nSB\u002fT\u002fHtDVggDQLQKk6YUOQG+U\u002fu+CCh4nN+j+18ROx7k7yP0sePrH+oBxATof15n9G3z\u002fi8sU5S8rvPwAozXXRV\u002fE\u002f5y+ss2rb\u002fj8LywgW3F\u002fuP9L0AX6O7xJAR5fk2eo56T8="},"type":"bar"},{"customdata":{"dtype":"i4","bdata":"MCaZAciDKwEAxtkAVJC2AETeZAAAN18AYBZNACQySgAgFUgAnPs6AArMOACqajYAnng0APCaMwBM9y8AJqovAPQRJwCGTCMAlDkjAETzIgCC1x4AMEQdABACGwB88BoAoOoaAA=="},"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eRevenue: %{y:.1f}%\u003cbr\u003eAmount: $%{customdata:,.0f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"darkgreen"},"name":"Revenue %","text":["15.9%","11.6%","8.4%","7.1%","3.9%","3.7%","3.0%","2.9%","2.8%","2.3%","2.2%","2.1%","2.0%","2.0%","1.9%","1.8%","1.5%","1.4%","1.4%","1.4%","1.2%","1.1%","1.0%","1.0%","1.0%"],"textposition":"outside","x":["Bulk Carrier-Supra\u002fUltramax","Bulk Carrier-Large Handy","Tanker-MR2","Bulk Carrier-Pmax\u002fKamsarmax","Tanker-Aframax","Tanker-Handy","[GENERAL CARGO-MULTI DECK NEI]","General Cargo =\u003e30,000dwt","Cruise-100,000-149,999gt","LNG-New Panamax","Tanker-Suezmax","Tanker-MR1","LPG-Very Large Gas Carrier","Cruise-50,000-99,999gt","Bulk Carrier-Handymax","LPG-Small Gas Carrier","General Cargo 10,000-14,999dwt","Containership-Post-Panamax","[OTHER BULK CARRIER]","General Cargo 5,000-9,999 dwt","LPG-Medium Gas Carrier","Cruise-150,000-199,999gt","Tanker-LR2","PCC\u002fPCTC =\u003e 4,000 cars","[OTHER SPECIALIZED CARRIER NEI]"],"y":{"dtype":"f8","bdata":"YNbOcqq0L0DJpsmCvzUnQHMmhqwr4CBAhlWNdl5LHEAcuwJ7D0QPQMRWTY90gw1AH26qSgPlB0CieEh4kP8GQN+qPfzdVwZALY6C+WJIAkCKzxwl8JoBQPhGITsN3gBAqGNHY6xDAEDa39t56\u002f3\u002fP\u002fYRBwddvP0\u002fQIK0UImM\u002fT83\u002fsUKjzj4P1ghVSgO4vU\u002fxJNKeU\u002fW9T8Fw8GluKr1P4SQODSzHvM\u002fyY2576ok8j\u002fCLjiWRL7wP5L6VeFes\u002fA\u002fLelf+ryv8D8="},"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"title":{"text":"All Vessel Types: Ship Count vs Revenue Market Share\u003cbr\u003e\u003csub\u003eTop 25 by Revenue - Showing disparity between vessel numbers and revenue generation\u003c\u002fsub\u003e","x":0.5,"xanchor":"center"},"xaxis":{"tickfont":{"size":9},"title":{"text":"Vessel Type"},"tickangle":-45},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"xanchor":"right","x":1},"yaxis":{"title":{"text":"Market Share (%)"}},"barmode":"group","height":700,"hovermode":"x unified"},                        {"responsive": true}                    )                };            </script>        </div>
+</body>
+</html>
+
+        <h2 style="margin-top: 40px;">Complete Market Share Data (All 78 Vessel Types)</h2>
+
+        <div class="filter-section">
+            <strong>Quick Filters:</strong>
+            <button onclick="showAll()">Show All</button>
+            <button onclick="filterHighRatio()">High Ratio (>1.5x)</button>
+            <button onclick="filterLowRatio()">Low Ratio (<0.8x)</button>
+            <button onclick="filterBulkCarriers()">Bulk Carriers Only</button>
+            <button onclick="filterContainers()">Containers Only</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Vessel Type</th>
+                        <th>Clearances</th>
+                        <th>Ship Count %</th>
+                        <th>Total Revenue</th>
+                        <th>Revenue %</th>
+                        <th>Rev/Count Ratio</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="high-ratio" data-ratio="2.84" data-type="Bulk Carrier-Supra/Ultramax">
+                        <td>1</td>
+                        <td class="">Bulk Carrier-Supra/Ultramax</td>
+                        <td>2,777</td>
+                        <td>5.58%</td>
+                        <td>$26,814,000</td>
+                        <td>15.85%</td>
+                        <td><strong>2.84x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.81" data-type="Bulk Carrier-Large Handy">
+                        <td>2</td>
+                        <td class="">Bulk Carrier-Large Handy</td>
+                        <td>2,052</td>
+                        <td>4.13%</td>
+                        <td>$19,629,000</td>
+                        <td>11.60%</td>
+                        <td><strong>2.81x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.11" data-type="Tanker-MR2">
+                        <td>3</td>
+                        <td class="">Tanker-MR2</td>
+                        <td>3,786</td>
+                        <td>7.61%</td>
+                        <td>$14,272,000</td>
+                        <td>8.44%</td>
+                        <td><strong>1.11x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.87" data-type="Bulk Carrier-Pmax/Kamsarmax">
+                        <td>4</td>
+                        <td class="">Bulk Carrier-Pmax/Kamsarmax</td>
+                        <td>1,226</td>
+                        <td>2.47%</td>
+                        <td>$11,964,500</td>
+                        <td>7.07%</td>
+                        <td><strong>2.87x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Tanker-Aframax">
+                        <td>5</td>
+                        <td class="">Tanker-Aframax</td>
+                        <td>1,469</td>
+                        <td>2.95%</td>
+                        <td>$6,610,500</td>
+                        <td>3.91%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="Tanker-Handy">
+                        <td>6</td>
+                        <td class="">Tanker-Handy</td>
+                        <td>1,664</td>
+                        <td>3.35%</td>
+                        <td>$6,240,000</td>
+                        <td>3.69%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[GENERAL CARGO-MULTI DECK NEI]">
+                        <td>7</td>
+                        <td class="fallback">[GENERAL CARGO-MULTI DECK NEI]</td>
+                        <td>1,121</td>
+                        <td>2.25%</td>
+                        <td>$5,052,000</td>
+                        <td>2.99%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.41" data-type="General Cargo =>30,000dwt">
+                        <td>8</td>
+                        <td class="">General Cargo =>30,000dwt</td>
+                        <td>1,015</td>
+                        <td>2.04%</td>
+                        <td>$4,862,500</td>
+                        <td>2.87%</td>
+                        <td><strong>1.41x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.59" data-type="Cruise-100,000-149,999gt">
+                        <td>9</td>
+                        <td class="">Cruise-100,000-149,999gt</td>
+                        <td>2,362</td>
+                        <td>4.75%</td>
+                        <td>$4,724,000</td>
+                        <td>2.79%</td>
+                        <td><strong>0.59x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="LNG-New Panamax">
+                        <td>10</td>
+                        <td class="">LNG-New Panamax</td>
+                        <td>859</td>
+                        <td>1.73%</td>
+                        <td>$3,865,500</td>
+                        <td>2.29%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Tanker-Suezmax">
+                        <td>11</td>
+                        <td class="">Tanker-Suezmax</td>
+                        <td>828</td>
+                        <td>1.67%</td>
+                        <td>$3,722,250</td>
+                        <td>2.20%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="Tanker-MR1">
+                        <td>12</td>
+                        <td class="">Tanker-MR1</td>
+                        <td>951</td>
+                        <td>1.91%</td>
+                        <td>$3,566,250</td>
+                        <td>2.11%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="LPG-Very Large Gas Carrier">
+                        <td>13</td>
+                        <td class="">LPG-Very Large Gas Carrier</td>
+                        <td>917</td>
+                        <td>1.84%</td>
+                        <td>$3,438,750</td>
+                        <td>2.03%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.59" data-type="Cruise-50,000-99,999gt">
+                        <td>14</td>
+                        <td class="">Cruise-50,000-99,999gt</td>
+                        <td>1,691</td>
+                        <td>3.40%</td>
+                        <td>$3,382,000</td>
+                        <td>2.00%</td>
+                        <td><strong>0.59x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.82" data-type="Bulk Carrier-Handymax">
+                        <td>15</td>
+                        <td class="">Bulk Carrier-Handymax</td>
+                        <td>328</td>
+                        <td>0.66%</td>
+                        <td>$3,143,500</td>
+                        <td>1.86%</td>
+                        <td><strong>2.82x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="LPG-Small Gas Carrier">
+                        <td>16</td>
+                        <td class="">LPG-Small Gas Carrier</td>
+                        <td>833</td>
+                        <td>1.68%</td>
+                        <td>$3,123,750</td>
+                        <td>1.85%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="General Cargo 10,000-14,999dwt">
+                        <td>17</td>
+                        <td class="">General Cargo 10,000-14,999dwt</td>
+                        <td>569</td>
+                        <td>1.14%</td>
+                        <td>$2,560,500</td>
+                        <td>1.51%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Post-Panamax">
+                        <td>18</td>
+                        <td class="">Containership-Post-Panamax</td>
+                        <td>3,559</td>
+                        <td>7.16%</td>
+                        <td>$2,313,350</td>
+                        <td>1.37%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.79" data-type="[OTHER BULK CARRIER]">
+                        <td>19</td>
+                        <td class="fallback">[OTHER BULK CARRIER]</td>
+                        <td>243</td>
+                        <td>0.49%</td>
+                        <td>$2,308,500</td>
+                        <td>1.36%</td>
+                        <td><strong>2.79x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.36" data-type="General Cargo 5,000-9,999 dwt">
+                        <td>20</td>
+                        <td class="">General Cargo 5,000-9,999 dwt</td>
+                        <td>494</td>
+                        <td>0.99%</td>
+                        <td>$2,290,500</td>
+                        <td>1.35%</td>
+                        <td><strong>1.36x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="LPG-Medium Gas Carrier">
+                        <td>21</td>
+                        <td class="">LPG-Medium Gas Carrier</td>
+                        <td>539</td>
+                        <td>1.08%</td>
+                        <td>$2,021,250</td>
+                        <td>1.19%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.59" data-type="Cruise-150,000-199,999gt">
+                        <td>22</td>
+                        <td class="">Cruise-150,000-199,999gt</td>
+                        <td>959</td>
+                        <td>1.93%</td>
+                        <td>$1,918,000</td>
+                        <td>1.13%</td>
+                        <td><strong>0.59x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="Tanker-LR2">
+                        <td>23</td>
+                        <td class="">Tanker-LR2</td>
+                        <td>472</td>
+                        <td>0.95%</td>
+                        <td>$1,770,000</td>
+                        <td>1.05%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="PCC/PCTC => 4,000 cars">
+                        <td>24</td>
+                        <td class="">PCC/PCTC => 4,000 cars</td>
+                        <td>2,354</td>
+                        <td>4.73%</td>
+                        <td>$1,765,500</td>
+                        <td>1.04%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[OTHER SPECIALIZED CARRIER NEI]">
+                        <td>25</td>
+                        <td class="fallback">[OTHER SPECIALIZED CARRIER NEI]</td>
+                        <td>392</td>
+                        <td>0.79%</td>
+                        <td>$1,764,000</td>
+                        <td>1.04%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.12" data-type="Tanker-LR1">
+                        <td>26</td>
+                        <td class="">Tanker-LR1</td>
+                        <td>464</td>
+                        <td>0.93%</td>
+                        <td>$1,763,250</td>
+                        <td>1.04%</td>
+                        <td><strong>1.12x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="[CONTAINER]">
+                        <td>27</td>
+                        <td class="fallback">[CONTAINER]</td>
+                        <td>2,331</td>
+                        <td>4.69%</td>
+                        <td>$1,515,150</td>
+                        <td>0.90%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.81" data-type="Bulk Carrier-Small Handy">
+                        <td>28</td>
+                        <td class="">Bulk Carrier-Small Handy</td>
+                        <td>151</td>
+                        <td>0.30%</td>
+                        <td>$1,444,500</td>
+                        <td>0.85%</td>
+                        <td><strong>2.81x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="General Cargo 15,000-19,999dwt">
+                        <td>29</td>
+                        <td class="">General Cargo 15,000-19,999dwt</td>
+                        <td>318</td>
+                        <td>0.64%</td>
+                        <td>$1,431,000</td>
+                        <td>0.85%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Tanker-VLCC">
+                        <td>30</td>
+                        <td class="">Tanker-VLCC</td>
+                        <td>309</td>
+                        <td>0.62%</td>
+                        <td>$1,390,500</td>
+                        <td>0.82%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Regional Feeder">
+                        <td>31</td>
+                        <td class="">Containership-Regional Feeder</td>
+                        <td>1,948</td>
+                        <td>3.92%</td>
+                        <td>$1,266,200</td>
+                        <td>0.75%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-New Panamax">
+                        <td>32</td>
+                        <td class="">Containership-New Panamax</td>
+                        <td>1,921</td>
+                        <td>3.86%</td>
+                        <td>$1,248,650</td>
+                        <td>0.74%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="General Cargo <=4,999 dwt">
+                        <td>33</td>
+                        <td class="">General Cargo <=4,999 dwt</td>
+                        <td>257</td>
+                        <td>0.52%</td>
+                        <td>$1,156,500</td>
+                        <td>0.68%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.79" data-type="Bulk Carrier-Capesize">
+                        <td>34</td>
+                        <td class="">Bulk Carrier-Capesize</td>
+                        <td>116</td>
+                        <td>0.23%</td>
+                        <td>$1,102,000</td>
+                        <td>0.65%</td>
+                        <td><strong>2.79x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.18" data-type="[OTHER TANKER]">
+                        <td>35</td>
+                        <td class="fallback">[OTHER TANKER]</td>
+                        <td>265</td>
+                        <td>0.53%</td>
+                        <td>$1,060,000</td>
+                        <td>0.63%</td>
+                        <td><strong>1.18x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Reefer-=>8,000dwt">
+                        <td>36</td>
+                        <td class="">Reefer-=>8,000dwt</td>
+                        <td>229</td>
+                        <td>0.46%</td>
+                        <td>$1,030,500</td>
+                        <td>0.61%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="[OTHER RO-RO CARGO]">
+                        <td>37</td>
+                        <td class="fallback">[OTHER RO-RO CARGO]</td>
+                        <td>1,236</td>
+                        <td>2.49%</td>
+                        <td>$927,000</td>
+                        <td>0.55%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.80" data-type="Bulk Carrier-Post Panamax">
+                        <td>38</td>
+                        <td class="">Bulk Carrier-Post Panamax</td>
+                        <td>93</td>
+                        <td>0.19%</td>
+                        <td>$886,000</td>
+                        <td>0.52%</td>
+                        <td><strong>2.80x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.59" data-type="Cruise-10,000-49,999gt">
+                        <td>39</td>
+                        <td class="">Cruise-10,000-49,999gt</td>
+                        <td>439</td>
+                        <td>0.88%</td>
+                        <td>$878,000</td>
+                        <td>0.52%</td>
+                        <td><strong>0.59x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Feedermax">
+                        <td>40</td>
+                        <td class="">Containership-Feedermax</td>
+                        <td>1,142</td>
+                        <td>2.30%</td>
+                        <td>$742,300</td>
+                        <td>0.44%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Panamax">
+                        <td>41</td>
+                        <td class="">Containership-Panamax</td>
+                        <td>1,081</td>
+                        <td>2.17%</td>
+                        <td>$702,650</td>
+                        <td>0.42%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.79" data-type="Bulk Carrier-Mini Capesize">
+                        <td>42</td>
+                        <td class="">Bulk Carrier-Mini Capesize</td>
+                        <td>72</td>
+                        <td>0.14%</td>
+                        <td>$684,000</td>
+                        <td>0.40%</td>
+                        <td><strong>2.79x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.37" data-type="General Cargo 20,000-29,999dwt">
+                        <td>43</td>
+                        <td class="">General Cargo 20,000-29,999dwt</td>
+                        <td>140</td>
+                        <td>0.28%</td>
+                        <td>$652,500</td>
+                        <td>0.39%</td>
+                        <td><strong>1.37x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Tanker-Panamax">
+                        <td>44</td>
+                        <td class="">Tanker-Panamax</td>
+                        <td>124</td>
+                        <td>0.25%</td>
+                        <td>$558,000</td>
+                        <td>0.33%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Small Feeder">
+                        <td>45</td>
+                        <td class="">Containership-Small Feeder</td>
+                        <td>833</td>
+                        <td>1.68%</td>
+                        <td>$541,450</td>
+                        <td>0.32%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.59" data-type="Cruise-=>200,000gt">
+                        <td>46</td>
+                        <td class="">Cruise-=>200,000gt</td>
+                        <td>252</td>
+                        <td>0.51%</td>
+                        <td>$504,000</td>
+                        <td>0.30%</td>
+                        <td><strong>0.59x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.59" data-type="[CRUISE]">
+                        <td>47</td>
+                        <td class="fallback">[CRUISE]</td>
+                        <td>212</td>
+                        <td>0.43%</td>
+                        <td>$424,000</td>
+                        <td>0.25%</td>
+                        <td><strong>0.59x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="[LPG CARRIER]">
+                        <td>48</td>
+                        <td class="fallback">[LPG CARRIER]</td>
+                        <td>102</td>
+                        <td>0.21%</td>
+                        <td>$382,500</td>
+                        <td>0.23%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.11" data-type="Tanker-7,500-9,999dwt">
+                        <td>49</td>
+                        <td class="">Tanker-7,500-9,999dwt</td>
+                        <td>84</td>
+                        <td>0.17%</td>
+                        <td>$315,750</td>
+                        <td>0.19%</td>
+                        <td><strong>1.11x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[OTHER LIQUIFIED GAS CARRIER]">
+                        <td>50</td>
+                        <td class="fallback">[OTHER LIQUIFIED GAS CARRIER]</td>
+                        <td>70</td>
+                        <td>0.14%</td>
+                        <td>$315,000</td>
+                        <td>0.19%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="LPG-Large Gas Carrier">
+                        <td>51</td>
+                        <td class="">LPG-Large Gas Carrier</td>
+                        <td>83</td>
+                        <td>0.17%</td>
+                        <td>$311,250</td>
+                        <td>0.18%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Container-Baby post-Panamax">
+                        <td>52</td>
+                        <td class="">Container-Baby post-Panamax</td>
+                        <td>464</td>
+                        <td>0.93%</td>
+                        <td>$301,600</td>
+                        <td>0.18%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="[OTHER TANKER NEI]">
+                        <td>53</td>
+                        <td class="fallback">[OTHER TANKER NEI]</td>
+                        <td>77</td>
+                        <td>0.15%</td>
+                        <td>$288,750</td>
+                        <td>0.17%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="LNG-Conventional Gas Carrier">
+                        <td>54</td>
+                        <td class="">LNG-Conventional Gas Carrier</td>
+                        <td>53</td>
+                        <td>0.11%</td>
+                        <td>$238,500</td>
+                        <td>0.14%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.79" data-type="[OTHER BULK/OIL CARRIER]">
+                        <td>55</td>
+                        <td class="fallback">[OTHER BULK/OIL CARRIER]</td>
+                        <td>25</td>
+                        <td>0.05%</td>
+                        <td>$237,500</td>
+                        <td>0.14%</td>
+                        <td><strong>2.79x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="Ro-ro cargo =>3,000 LM">
+                        <td>56</td>
+                        <td class="">Ro-ro cargo =>3,000 LM</td>
+                        <td>307</td>
+                        <td>0.62%</td>
+                        <td>$230,250</td>
+                        <td>0.14%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="Ro-ro cargo <=499 LM">
+                        <td>57</td>
+                        <td class="">Ro-ro cargo <=499 LM</td>
+                        <td>270</td>
+                        <td>0.54%</td>
+                        <td>$202,500</td>
+                        <td>0.12%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Reefer-5,000-7,999dwt">
+                        <td>58</td>
+                        <td class="">Reefer-5,000-7,999dwt</td>
+                        <td>43</td>
+                        <td>0.09%</td>
+                        <td>$193,500</td>
+                        <td>0.11%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Sub New Panamax">
+                        <td>59</td>
+                        <td class="">Containership-Sub New Panamax</td>
+                        <td>267</td>
+                        <td>0.54%</td>
+                        <td>$173,550</td>
+                        <td>0.10%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-Sub-Panamax">
+                        <td>60</td>
+                        <td class="">Containership-Sub-Panamax</td>
+                        <td>213</td>
+                        <td>0.43%</td>
+                        <td>$138,450</td>
+                        <td>0.08%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[LNG CARRIER]">
+                        <td>61</td>
+                        <td class="fallback">[LNG CARRIER]</td>
+                        <td>25</td>
+                        <td>0.05%</td>
+                        <td>$112,500</td>
+                        <td>0.07%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.79" data-type="Bulk Carrier-Newcastlemax">
+                        <td>62</td>
+                        <td class="">Bulk Carrier-Newcastlemax</td>
+                        <td>11</td>
+                        <td>0.02%</td>
+                        <td>$104,500</td>
+                        <td>0.06%</td>
+                        <td><strong>2.79x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[REEFER]">
+                        <td>63</td>
+                        <td class="fallback">[REEFER]</td>
+                        <td>19</td>
+                        <td>0.04%</td>
+                        <td>$85,500</td>
+                        <td>0.05%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.12" data-type="Tanker-<=4,999dwt">
+                        <td>64</td>
+                        <td class="">Tanker-<=4,999dwt</td>
+                        <td>17</td>
+                        <td>0.03%</td>
+                        <td>$64,500</td>
+                        <td>0.04%</td>
+                        <td><strong>1.12x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="1.69" data-type="[OTHER LAKERS]">
+                        <td>65</td>
+                        <td class="fallback">[OTHER LAKERS]</td>
+                        <td>11</td>
+                        <td>0.02%</td>
+                        <td>$63,250</td>
+                        <td>0.04%</td>
+                        <td><strong>1.69x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.10" data-type="[CHEMICAL TANKER]">
+                        <td>66</td>
+                        <td class="fallback">[CHEMICAL TANKER]</td>
+                        <td>16</td>
+                        <td>0.03%</td>
+                        <td>$60,000</td>
+                        <td>0.04%</td>
+                        <td><strong>1.10x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.12" data-type="Tanker-5,000-7,499dwt">
+                        <td>67</td>
+                        <td class="">Tanker-5,000-7,499dwt</td>
+                        <td>11</td>
+                        <td>0.02%</td>
+                        <td>$42,000</td>
+                        <td>0.02%</td>
+                        <td><strong>1.12x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[LIVESTOCK CARRIER]">
+                        <td>68</td>
+                        <td class="fallback">[LIVESTOCK CARRIER]</td>
+                        <td>9</td>
+                        <td>0.02%</td>
+                        <td>$40,500</td>
+                        <td>0.02%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="high-ratio" data-ratio="2.79" data-type="Bulk Carrier-5,000-7,499dwt">
+                        <td>69</td>
+                        <td class="">Bulk Carrier-5,000-7,499dwt</td>
+                        <td>4</td>
+                        <td>0.01%</td>
+                        <td>$38,000</td>
+                        <td>0.02%</td>
+                        <td><strong>2.79x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="Reefer-2,000-4,999dwt">
+                        <td>70</td>
+                        <td class="">Reefer-2,000-4,999dwt</td>
+                        <td>8</td>
+                        <td>0.02%</td>
+                        <td>$36,000</td>
+                        <td>0.02%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="PCC/PCTC 3,000-3,999 cars">
+                        <td>71</td>
+                        <td class="">PCC/PCTC 3,000-3,999 cars</td>
+                        <td>46</td>
+                        <td>0.09%</td>
+                        <td>$34,500</td>
+                        <td>0.02%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="[CRUDE OIL TANKER]">
+                        <td>72</td>
+                        <td class="fallback">[CRUDE OIL TANKER]</td>
+                        <td>5</td>
+                        <td>0.01%</td>
+                        <td>$22,500</td>
+                        <td>0.01%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.19" data-type="Containership-ULCS">
+                        <td>73</td>
+                        <td class="">Containership-ULCS</td>
+                        <td>34</td>
+                        <td>0.07%</td>
+                        <td>$22,100</td>
+                        <td>0.01%</td>
+                        <td><strong>0.19x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="PCC/PCTC 2,000-2,999 cars">
+                        <td>74</td>
+                        <td class="">PCC/PCTC 2,000-2,999 cars</td>
+                        <td>23</td>
+                        <td>0.05%</td>
+                        <td>$17,250</td>
+                        <td>0.01%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="Ro-ro cargo 2,000-2,999 LM">
+                        <td>75</td>
+                        <td class="">Ro-ro cargo 2,000-2,999 LM</td>
+                        <td>21</td>
+                        <td>0.04%</td>
+                        <td>$15,750</td>
+                        <td>0.01%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.18" data-type="[OIL PRODUCTS TANKER]">
+                        <td>76</td>
+                        <td class="fallback">[OIL PRODUCTS TANKER]</td>
+                        <td>3</td>
+                        <td>0.01%</td>
+                        <td>$12,000</td>
+                        <td>0.01%</td>
+                        <td><strong>1.18x</strong></td>
+                    </tr>
+
+                    <tr class="low-ratio" data-ratio="0.22" data-type="Ro-ro cargo 500-999 LM">
+                        <td>77</td>
+                        <td class="">Ro-ro cargo 500-999 LM</td>
+                        <td>11</td>
+                        <td>0.02%</td>
+                        <td>$8,250</td>
+                        <td>0.00%</td>
+                        <td><strong>0.22x</strong></td>
+                    </tr>
+
+                    <tr class="" data-ratio="1.32" data-type="LNG-Q Flex">
+                        <td>78</td>
+                        <td class="">LNG-Q Flex</td>
+                        <td>1</td>
+                        <td>0.00%</td>
+                        <td>$4,500</td>
+                        <td>0.00%</td>
+                        <td><strong>1.32x</strong></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insight" style="margin-top: 30px;">
+            <h3>Understanding the Ratio</h3>
+            <ul>
+                <li><strong>Ratio > 1.0:</strong> Vessel type generates MORE revenue per clearance than average (highlighted in green)</li>
+                <li><strong>Ratio = 1.0:</strong> Vessel type generates revenue proportional to its ship count</li>
+                <li><strong>Ratio < 1.0:</strong> Vessel type generates LESS revenue per clearance than average (highlighted in orange)</li>
+            </ul>
+            <p><strong>Example:</strong> Bulk carriers with ratio 2.8x generate almost 3 times more revenue per clearance than their representation in the fleet would suggest.</p>
+        </div>
+
+        <script>
+            const table = document.getElementById('dataTable');
+            const rows = Array.from(table.getElementsByTagName('tbody')[0].getElementsByTagName('tr'));
+
+            function showAll() {
+                rows.forEach(row => row.style.display = '');
+                document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+
+            function filterHighRatio() {
+                rows.forEach(row => {
+                    const ratio = parseFloat(row.dataset.ratio);
+                    row.style.display = ratio > 1.5 ? '' : 'none';
+                });
+                document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+
+            function filterLowRatio() {
+                rows.forEach(row => {
+                    const ratio = parseFloat(row.dataset.ratio);
+                    row.style.display = ratio < 0.8 ? '' : 'none';
+                });
+                document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+
+            function filterBulkCarriers() {
+                rows.forEach(row => {
+                    const type = row.dataset.type.toLowerCase();
+                    row.style.display = type.includes('bulk') ? '' : 'none';
+                });
+                document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+
+            function filterContainers() {
+                rows.forEach(row => {
+                    const type = row.dataset.type.toLowerCase();
+                    row.style.display = type.includes('container') ? '' : 'none';
+                });
+                document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+        </script>
+
+        <p style="text-align: center; color: #666; margin-top: 40px;">
+            Generated: {pd.Timestamp.now().strftime('%B %d, %Y at %I:%M %p')}
+        </p>
+    </div>
+</body>
+</html>

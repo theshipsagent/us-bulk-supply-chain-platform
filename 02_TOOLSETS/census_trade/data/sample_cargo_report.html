@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargo HS6 Classification Report</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --text: #e6edf3; --text-dim: #8b949e; --accent: #58a6ff;
+    --green: #3fb950; --red: #f85149; --yellow: #d29922; --purple: #bc8cff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.5; padding: 24px; }
+  .container { max-width: 1400px; margin: 0 auto; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .subtitle { color: var(--text-dim); font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 20px; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 16px; margin: 24px 0 12px; color: var(--text-dim); }
+
+  /* Summary cards */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .card .label { font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+  .card .value { font-size: 28px; font-weight: 600; margin-top: 4px; }
+  .card .detail { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 24px; font-size: 13px; }
+  th { background: var(--surface); color: var(--text-dim); font-weight: 600; text-transform: uppercase;
+       font-size: 11px; letter-spacing: 0.5px; padding: 10px 12px; text-align: left;
+       border-bottom: 2px solid var(--border); position: sticky; top: 0; }
+  td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  tr:hover td { background: rgba(88, 166, 255, 0.04); }
+  .right { text-align: right; }
+  .mono { font-family: 'SF Mono', 'Consolas', monospace; font-size: 12px; }
+  .total-row td { font-weight: 700; border-top: 2px solid var(--border); background: var(--surface); }
+  .group-header td { background: var(--surface); font-weight: 700; font-size: 14px;
+                     padding: 14px 12px 10px; border-bottom: 2px solid var(--border); }
+
+  /* Badges */
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+  .badge.manual { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+  .badge.heading { background: rgba(88, 166, 255, 0.15); color: var(--accent); }
+  .badge.chapter { background: rgba(210, 153, 34, 0.15); color: var(--yellow); }
+
+  /* Group color dots */
+  .gdot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+
+  /* Bar chart (CSS only) */
+  .bar-container { display: flex; height: 32px; border-radius: 6px; overflow: hidden; margin: 12px 0 24px; }
+  .bar-segment { display: flex; align-items: center; justify-content: center;
+                 font-size: 11px; font-weight: 600; color: #fff; min-width: 40px; }
+  .bar-legend { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 24px; font-size: 13px; }
+  .bar-legend .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+
+  /* Propagation section */
+  .prop-block { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+  .prop-heading { font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+  .prop-row { display: flex; gap: 12px; align-items: baseline; padding: 3px 0; font-size: 13px; }
+  .prop-row .hs6 { font-family: 'SF Mono', 'Consolas', monospace; min-width: 65px; }
+  .prop-row .desc { flex: 1; color: var(--text-dim); }
+  .prop-row .cargo { min-width: 150px; }
+  .prop-row .vol { min-width: 100px; text-align: right; }
+  .prop-auto { background: rgba(88, 166, 255, 0.06); border-radius: 4px; padding: 3px 8px; }
+
+  /* Coverage donut placeholder */
+  .coverage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 16px 0; }
+  .coverage-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin: 4px 0 2px; }
+  .coverage-fill { height: 100%; border-radius: 4px; }
+
+  @media (max-width: 768px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+    .coverage-grid { grid-template-columns: 1fr; }
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+
+<h1>Cargo HS6 Classification Report</h1>
+<div class="subtitle">Source: cargo_hs6_dictionary.json &nbsp;|&nbsp; Period: Sep&ndash;Nov 2025 &nbsp;|&nbsp; Vessel-Borne US Trade &nbsp;|&nbsp; Built by build_cargo_dict.py</div>
+
+<div class="cards">
+<div class="card"><div class="label">Total HS6 Codes</div><div class="value">5,591</div><div class="detail">100% classified</div></div>
+<div class="card"><div class="label">Total Volume</div><div class="value">379.7M MT</div><div class="detail">Exports + Imports</div></div>
+<div class="card"><div class="label">Manual Mappings</div><div class="value" style="color:var(--green)">2,788</div><div class="detail">91.7% of volume</div></div>
+<div class="card"><div class="label">Auto-Classified</div><div class="value" style="color:var(--accent)">2,803</div><div class="detail">450 heading + 2353 chapter</div></div>
+</div>
+<h2>Volume by Cargo Group</h2>
+<div class="bar-container">
+<div class="bar-segment" style="width:40.62974987607726%;background:#4a90d9">Dry Bulk 41%</div>
+<div class="bar-segment" style="width:38.431920477759796%;background:#d94a4a">Liquid Bulk 38%</div>
+<div class="bar-segment" style="width:14.354337666957706%;background:#e8a838">Liquid Gas 14%</div>
+<div class="bar-segment" style="width:4.230177491654773%;background:#50b050"></div>
+<div class="bar-segment" style="width:2.353814487550467%;background:#9b59b6"></div>
+</div>
+<div class="bar-legend">
+<span><span class="swatch" style="background:#4a90d9"></span>Dry Bulk: 154,254,050 MT (40.6%)</span>
+<span><span class="swatch" style="background:#d94a4a"></span>Liquid Bulk: 145,909,817 MT (38.4%)</span>
+<span><span class="swatch" style="background:#e8a838"></span>Liquid Gas: 54,497,375 MT (14.4%)</span>
+<span><span class="swatch" style="background:#9b59b6"></span>Dry: 8,936,442 MT (2.4%)</span>
+<span><span class="swatch" style="background:#50b050"></span>Containerized: 16,060,202 MT (4.2%)</span>
+</div>
+<h2>Section 1: Group Overview</h2>
+<table>
+<tr><th>Group</th><th class="right">Codes</th><th class="right">Manual</th><th class="right">Heading</th>
+<th class="right">Chapter</th><th class="right">Exports MT</th><th class="right">Imports MT</th>
+<th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td><span class="gdot" style="background:#4a90d9"></span>Dry Bulk</td><td class="right">2,087</td><td class="right">1,642</td><td class="right">372</td><td class="right">73</td><td class="right mono">94,255,449</td><td class="right mono">59,998,600</td><td class="right mono"><b>154,254,050</b></td><td class="right">40.6%</td></tr>
+<tr><td><span class="gdot" style="background:#d94a4a"></span>Liquid Bulk</td><td class="right">815</td><td class="right">751</td><td class="right">4</td><td class="right">60</td><td class="right mono">93,842,924</td><td class="right mono">52,066,893</td><td class="right mono"><b>145,909,817</b></td><td class="right">38.4%</td></tr>
+<tr><td><span class="gdot" style="background:#e8a838"></span>Liquid Gas</td><td class="right">15</td><td class="right">15</td><td class="right">0</td><td class="right">0</td><td class="right mono">53,671,459</td><td class="right mono">825,916</td><td class="right mono"><b>54,497,375</b></td><td class="right">14.4%</td></tr>
+<tr><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td class="right">2,100</td><td class="right">0</td><td class="right">0</td><td class="right">2,100</td><td class="right mono">2,880,812</td><td class="right mono">13,179,391</td><td class="right mono"><b>16,060,202</b></td><td class="right">4.2%</td></tr>
+<tr><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td class="right">574</td><td class="right">380</td><td class="right">74</td><td class="right">120</td><td class="right mono">3,235,326</td><td class="right mono">5,701,116</td><td class="right mono"><b>8,936,442</b></td><td class="right">2.4%</td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="right">5,591</td><td class="right">2,788</td><td class="right">450</td><td class="right">2,353</td><td class="right mono">247,885,970</td><td class="right mono">131,771,917</td><td class="right mono"><b>379,657,886</b></td><td class="right">100%</td></tr>
+</table>
+<h2>Section 2: Commodity Breakdown by Group</h2>
+<h3><span class="gdot" style="background:#4a90d9"></span>Dry Bulk &mdash; 2,087 codes, 154,254,050 MT</h3>
+<table>
+    <tr><th>Commodity</th><th class="right">Codes</th><th>Source Mix</th>
+    <th class="right">Exports MT</th><th class="right">Imports MT</th>
+    <th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td>Agricultural</td><td class="right">177</td><td>M164 / H9 / C4</td><td class="right mono">41,755,172</td><td class="right mono">3,725,881</td><td class="right mono"><b>45,481,053</b></td><td class="right">29.5%</td></tr>
+<tr><td>Carbon Products</td><td class="right">12</td><td>M11 / H1</td><td class="right mono">29,094,487</td><td class="right mono">1,082,273</td><td class="right mono"><b>30,176,760</b></td><td class="right">19.6%</td></tr>
+<tr><td>Construction Materials</td><td class="right">126</td><td>M126</td><td class="right mono">773,115</td><td class="right mono">15,849,281</td><td class="right mono"><b>16,622,396</b></td><td class="right">10.8%</td></tr>
+<tr><td>General Cargo</td><td class="right">841</td><td>M480 / H361</td><td class="right mono">1,849,220</td><td class="right mono">13,136,545</td><td class="right mono"><b>14,985,765</b></td><td class="right">9.7%</td></tr>
+<tr><td>Forestry</td><td class="right">248</td><td>M247 / H1</td><td class="right mono">6,548,978</td><td class="right mono">4,329,907</td><td class="right mono"><b>10,878,884</b></td><td class="right">7.1%</td></tr>
+<tr><td>Ferrous Raw Materials</td><td class="right">37</td><td>M37</td><td class="right mono">3,597,560</td><td class="right mono">4,396,484</td><td class="right mono"><b>7,994,044</b></td><td class="right">5.2%</td></tr>
+<tr><td>Minerals & Ores</td><td class="right">49</td><td>M48 / C1</td><td class="right mono">2,531,942</td><td class="right mono">4,299,676</td><td class="right mono"><b>6,831,618</b></td><td class="right">4.4%</td></tr>
+<tr><td>Steel</td><td class="right">262</td><td>M262</td><td class="right mono">749,490</td><td class="right mono">4,402,514</td><td class="right mono"><b>5,152,004</b></td><td class="right">3.3%</td></tr>
+<tr><td>Fertilizer</td><td class="right">40</td><td>M39 / C1</td><td class="right mono">1,904,905</td><td class="right mono">1,962,717</td><td class="right mono"><b>3,867,622</b></td><td class="right">2.5%</td></tr>
+<tr><td>Biomass</td><td class="right">2</td><td>M2</td><td class="right mono">3,455,946</td><td class="right mono">429</td><td class="right mono"><b>3,456,375</b></td><td class="right">2.2%</td></tr>
+<tr><td>Plastics</td><td class="right">67</td><td>C67</td><td class="right mono">309,349</td><td class="right mono">2,960,449</td><td class="right mono"><b>3,269,798</b></td><td class="right">2.1%</td></tr>
+<tr><td>Metals</td><td class="right">119</td><td>M119</td><td class="right mono">1,401,052</td><td class="right mono">1,325,031</td><td class="right mono"><b>2,726,083</b></td><td class="right">1.8%</td></tr>
+<tr><td>Non Ferrous Raw Materials</td><td class="right">14</td><td>M14</td><td class="right mono">44,980</td><td class="right mono">1,996,915</td><td class="right mono"><b>2,041,895</b></td><td class="right">1.3%</td></tr>
+<tr><td>Misc Bulk</td><td class="right">93</td><td>M93</td><td class="right mono">239,253</td><td class="right mono">530,499</td><td class="right mono"><b>769,752</b></td><td class="right">0.5%</td></tr>
+</table>
+<h3><span class="gdot" style="background:#d94a4a"></span>Liquid Bulk &mdash; 815 codes, 145,909,817 MT</h3>
+<table>
+    <tr><th>Commodity</th><th class="right">Codes</th><th>Source Mix</th>
+    <th class="right">Exports MT</th><th class="right">Imports MT</th>
+    <th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td>Petroleum Products</td><td class="right">20</td><td>M20</td><td class="right mono">81,663,320</td><td class="right mono">44,580,319</td><td class="right mono"><b>126,243,639</b></td><td class="right">86.5%</td></tr>
+<tr><td>Chemicals</td><td class="right">676</td><td>M672 / H4</td><td class="right mono">11,003,959</td><td class="right mono">3,651,543</td><td class="right mono"><b>14,655,502</b></td><td class="right">10.0%</td></tr>
+<tr><td>Agricultural</td><td class="right">72</td><td>M57 / C15</td><td class="right mono">697,184</td><td class="right mono">3,367,513</td><td class="right mono"><b>4,064,697</b></td><td class="right">2.8%</td></tr>
+<tr><td>Fertilizer</td><td class="right">2</td><td>M2</td><td class="right mono">363,894</td><td class="right mono">360,151</td><td class="right mono"><b>724,044</b></td><td class="right">0.5%</td></tr>
+<tr><td>Misc Chemicals</td><td class="right">45</td><td>C45</td><td class="right mono">114,566</td><td class="right mono">107,368</td><td class="right mono"><b>221,934</b></td><td class="right">0.2%</td></tr>
+</table>
+<h3><span class="gdot" style="background:#e8a838"></span>Liquid Gas &mdash; 15 codes, 54,497,375 MT</h3>
+<table>
+    <tr><th>Commodity</th><th class="right">Codes</th><th>Source Mix</th>
+    <th class="right">Exports MT</th><th class="right">Imports MT</th>
+    <th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td>LNG</td><td class="right">3</td><td>M3</td><td class="right mono">29,224,025</td><td class="right mono">480,577</td><td class="right mono"><b>29,704,602</b></td><td class="right">54.5%</td></tr>
+<tr><td>LPG</td><td class="right">12</td><td>M12</td><td class="right mono">24,447,434</td><td class="right mono">345,339</td><td class="right mono"><b>24,792,773</b></td><td class="right">45.5%</td></tr>
+</table>
+<h3><span class="gdot" style="background:#9b59b6"></span>Dry &mdash; 574 codes, 8,936,442 MT</h3>
+<table>
+    <tr><th>Commodity</th><th class="right">Codes</th><th>Source Mix</th>
+    <th class="right">Exports MT</th><th class="right">Imports MT</th>
+    <th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td>Reefer</td><td class="right">574</td><td>M380 / H74 / C120</td><td class="right mono">3,235,326</td><td class="right mono">5,701,116</td><td class="right mono"><b>8,936,442</b></td><td class="right">100.0%</td></tr>
+</table>
+<h3><span class="gdot" style="background:#50b050"></span>Containerized &mdash; 2,100 codes, 16,060,202 MT</h3>
+<table>
+    <tr><th>Commodity</th><th class="right">Codes</th><th>Source Mix</th>
+    <th class="right">Exports MT</th><th class="right">Imports MT</th>
+    <th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td>Textiles & Apparel</td><td class="right">771</td><td>C771</td><td class="right mono">383,874</td><td class="right mono">2,805,157</td><td class="right mono"><b>3,189,031</b></td><td class="right">19.9%</td></tr>
+<tr><td>Prepared Foods</td><td class="right">100</td><td>C100</td><td class="right mono">504,407</td><td class="right mono">1,470,391</td><td class="right mono"><b>1,974,798</b></td><td class="right">12.3%</td></tr>
+<tr><td>Furniture & Misc</td><td class="right">102</td><td>C102</td><td class="right mono">40,920</td><td class="right mono">1,912,554</td><td class="right mono"><b>1,953,474</b></td><td class="right">12.2%</td></tr>
+<tr><td>Electrical Equipment</td><td class="right">162</td><td>C162</td><td class="right mono">158,705</td><td class="right mono">1,503,293</td><td class="right mono"><b>1,661,997</b></td><td class="right">10.3%</td></tr>
+<tr><td>Oilseeds & Fats</td><td class="right">31</td><td>C31</td><td class="right mono">1,000,441</td><td class="right mono">83,145</td><td class="right mono"><b>1,083,585</b></td><td class="right">6.7%</td></tr>
+<tr><td>Special Provisions</td><td class="right">15</td><td>C15</td><td class="right mono">21,875</td><td class="right mono">1,027,651</td><td class="right mono"><b>1,049,526</b></td><td class="right">6.5%</td></tr>
+<tr><td>Stone/Glass Products</td><td class="right">64</td><td>C64</td><td class="right mono">39,837</td><td class="right mono">507,212</td><td class="right mono"><b>547,049</b></td><td class="right">3.4%</td></tr>
+<tr><td>Soaps & Detergents</td><td class="right">24</td><td>C24</td><td class="right mono">182,711</td><td class="right mono">360,891</td><td class="right mono"><b>543,602</b></td><td class="right">3.4%</td></tr>
+<tr><td>Machinery</td><td class="right">58</td><td>C58</td><td class="right mono">38,254</td><td class="right mono">503,907</td><td class="right mono"><b>542,160</b></td><td class="right">3.4%</td></tr>
+<tr><td>Footwear & Accessories</td><td class="right">47</td><td>C47</td><td class="right mono">7,347</td><td class="right mono">502,484</td><td class="right mono"><b>509,830</b></td><td class="right">3.2%</td></tr>
+<tr><td>Metal Products</td><td class="right">80</td><td>C80</td><td class="right mono">12,163</td><td class="right mono">496,420</td><td class="right mono"><b>508,583</b></td><td class="right">3.2%</td></tr>
+<tr><td>Spices & Coffee</td><td class="right">39</td><td>C39</td><td class="right mono">12,869</td><td class="right mono">416,258</td><td class="right mono"><b>429,126</b></td><td class="right">2.7%</td></tr>
+<tr><td>Cosmetics & Perfumery</td><td class="right">29</td><td>C29</td><td class="right mono">94,434</td><td class="right mono">259,995</td><td class="right mono"><b>354,428</b></td><td class="right">2.2%</td></tr>
+<tr><td>Instruments</td><td class="right">183</td><td>C183</td><td class="right mono">39,778</td><td class="right mono">215,620</td><td class="right mono"><b>255,398</b></td><td class="right">1.6%</td></tr>
+<tr><td>Printed Materials</td><td class="right">18</td><td>C18</td><td class="right mono">11,729</td><td class="right mono">242,048</td><td class="right mono"><b>253,777</b></td><td class="right">1.6%</td></tr>
+<tr><td>Leather Goods</td><td class="right">19</td><td>C19</td><td class="right mono">4,307</td><td class="right mono">238,460</td><td class="right mono"><b>242,767</b></td><td class="right">1.5%</td></tr>
+<tr><td>Starches & Glues</td><td class="right">15</td><td>C15</td><td class="right mono">89,393</td><td class="right mono">123,611</td><td class="right mono"><b>213,004</b></td><td class="right">1.3%</td></tr>
+<tr><td>Vehicles & Transport</td><td class="right">60</td><td>C60</td><td class="right mono">58,734</td><td class="right mono">101,742</td><td class="right mono"><b>160,476</b></td><td class="right">1.0%</td></tr>
+<tr><td>Pharmaceuticals</td><td class="right">45</td><td>C45</td><td class="right mono">30,704</td><td class="right mono">115,860</td><td class="right mono"><b>146,564</b></td><td class="right">0.9%</td></tr>
+<tr><td>Animal Products</td><td class="right">14</td><td>C14</td><td class="right mono">53,147</td><td class="right mono">63,253</td><td class="right mono"><b>116,400</b></td><td class="right">0.7%</td></tr>
+<tr><td>Tobacco</td><td class="right">16</td><td>C16</td><td class="right mono">22,278</td><td class="right mono">57,917</td><td class="right mono"><b>80,195</b></td><td class="right">0.5%</td></tr>
+<tr><td>Hides & Skins</td><td class="right">28</td><td>C28</td><td class="right mono">43,631</td><td class="right mono">2,596</td><td class="right mono"><b>46,227</b></td><td class="right">0.3%</td></tr>
+<tr><td>Gums & Resins</td><td class="right">11</td><td>C11</td><td class="right mono">3,933</td><td class="right mono">36,093</td><td class="right mono"><b>40,026</b></td><td class="right">0.2%</td></tr>
+<tr><td>Explosives</td><td class="right">13</td><td>C13</td><td class="right mono">2,724</td><td class="right mono">31,681</td><td class="right mono"><b>34,404</b></td><td class="right">0.2%</td></tr>
+<tr><td>Vegetable Products</td><td class="right">5</td><td>C5</td><td class="right mono">1,758</td><td class="right mono">27,752</td><td class="right mono"><b>29,510</b></td><td class="right">0.2%</td></tr>
+<tr><td>Basketware</td><td class="right">11</td><td>C11</td><td class="right mono">121</td><td class="right mono">26,468</td><td class="right mono"><b>26,588</b></td><td class="right">0.2%</td></tr>
+<tr><td>Arms</td><td class="right">18</td><td>C18</td><td class="right mono">9,843</td><td class="right mono">15,498</td><td class="right mono"><b>25,341</b></td><td class="right">0.2%</td></tr>
+<tr><td>Photographic Goods</td><td class="right">30</td><td>C30</td><td class="right mono">7,270</td><td class="right mono">11,807</td><td class="right mono"><b>19,078</b></td><td class="right">0.1%</td></tr>
+<tr><td>Precious Metals</td><td class="right">54</td><td>C54</td><td class="right mono">3,152</td><td class="right mono">9,206</td><td class="right mono"><b>12,357</b></td><td class="right">0.1%</td></tr>
+<tr><td>Cork Products</td><td class="right">7</td><td>C7</td><td class="right mono">110</td><td class="right mono">5,998</td><td class="right mono"><b>6,109</b></td><td class="right">0.0%</td></tr>
+<tr><td>Art & Antiques</td><td class="right">19</td><td>C19</td><td class="right mono">257</td><td class="right mono">3,999</td><td class="right mono"><b>4,256</b></td><td class="right">0.0%</td></tr>
+<tr><td>Furskins</td><td class="right">12</td><td>C12</td><td class="right mono">107</td><td class="right mono">426</td><td class="right mono"><b>532</b></td><td class="right">0.0%</td></tr>
+</table>
+<h2>Section 3: Deep Dive &mdash; Dry Bulk / Agricultural</h2>
+<div class="cards">
+<div class="card"><div class="label">HS6 Codes</div><div class="value">177</div></div>
+<div class="card"><div class="label">Total Volume</div><div class="value">45.5M MT</div></div>
+<div class="card"><div class="label">Exports</div><div class="value">41.8M MT</div><div class="detail">91.8% of total</div></div>
+<div class="card"><div class="label">Imports</div><div class="value">3.7M MT</div><div class="detail">8.2% of total</div></div>
+</div>
+<table>
+<tr><th>Cargo Type</th><th class="right">Codes</th><th>Source</th>
+<th class="right">Exports MT</th><th class="right">Imports MT</th>
+<th class="right">Total MT</th><th class="right">Share</th></tr>
+<tr><td><b>Grain</b></td><td class="right">62</td><td><span class="badge manual">Manual</span> <span class="badge heading">Heading</span></td><td class="right mono">40,837,892</td><td class="right mono">939,925</td><td class="right mono"><b>41,777,817</b></td><td class="right">91.9%</td></tr>
+<tr><td><b>Rubber</b></td><td class="right">80</td><td><span class="badge manual">Manual</span></td><td class="right mono">433,928</td><td class="right mono">1,619,271</td><td class="right mono"><b>2,053,199</b></td><td class="right">4.5%</td></tr>
+<tr><td><b>Sugar</b></td><td class="right">16</td><td><span class="badge manual">Manual</span></td><td class="right mono">166,636</td><td class="right mono">727,039</td><td class="right mono"><b>893,674</b></td><td class="right">2.0%</td></tr>
+<tr><td><b>Agricultural</b></td><td class="right">4</td><td><span class="badge chapter">Chapter</span></td><td class="right mono">276,152</td><td class="right mono">197,852</td><td class="right mono"><b>474,004</b></td><td class="right">1.0%</td></tr>
+<tr><td><b>Cocoa</b></td><td class="right">11</td><td><span class="badge manual">Manual</span> <span class="badge heading">Heading</span></td><td class="right mono">38,494</td><td class="right mono">185,359</td><td class="right mono"><b>223,853</b></td><td class="right">0.5%</td></tr>
+<tr><td><b>Oats</b></td><td class="right">2</td><td><span class="badge manual">Manual</span></td><td class="right mono">1,449</td><td class="right mono">45,372</td><td class="right mono"><b>46,821</b></td><td class="right">0.1%</td></tr>
+<tr><td><b>Malt</b></td><td class="right">2</td><td><span class="badge manual">Manual</span></td><td class="right mono">622</td><td class="right mono">11,064</td><td class="right mono"><b>11,685</b></td><td class="right">0.0%</td></tr>
+</table>
+<h3>Top 30 HS6 Codes by Volume</h3>
+<table>
+<tr><th>HS6</th><th>Description</th><th>Cargo</th><th>Source</th>
+<th class="right">Exports MT</th><th class="right">Imports MT</th><th class="right">Total MT</th></tr>
+<tr><td class="mono">100590</td><td>YELLOW DENT CORN (MAIZE), U. S. NO. 1, EXCEPT SEED</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">15,825,021</td><td class="right mono">91,562</td><td class="right mono"><b>15,916,583</b></td></tr>
+<tr><td class="mono">120190</td><td>SOYBEAN SEEDS OF A KIND USED AS OIL STOCK, WHETHER OR NOT BROKEN</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">11,351,362</td><td class="right mono">80,800</td><td class="right mono"><b>11,432,162</b></td></tr>
+<tr><td class="mono">100199</td><td>WHITE WHEAT, EXCEPT SEED</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">5,950,616</td><td class="right mono">147,799</td><td class="right mono"><b>6,098,415</b></td></tr>
+<tr><td class="mono">230400</td><td>SOYBEAN OILCAKE AND OTHER SOLID RESIDUES RESULTING FROM THE EXTRA</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">2,355,235</td><td class="right mono">144,895</td><td class="right mono"><b>2,500,131</b></td></tr>
+<tr><td class="mono">230330</td><td>BREWING OR DISTILLING DREGS AND WASTE, WHETHER OR NOT IN THE FORM</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">2,244,797</td><td class="right mono">11,432</td><td class="right mono"><b>2,256,229</b></td></tr>
+<tr><td class="mono">100630</td><td>RICE, SEMI-MILLED OR WHOLLY MILLED, PARBOILED, LONG GRAIN</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">381,310</td><td class="right mono">306,176</td><td class="right mono"><b>687,486</b></td></tr>
+<tr><td class="mono">120810</td><td>FLOURS AND MEALS OF SOYBEANS</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">657,909</td><td class="right mono">141</td><td class="right mono"><b>658,050</b></td></tr>
+<tr><td class="mono">401110</td><td>RADIAL TIRES OF A KIND USED ON MOTOR CARS (INCLUDING STATION WAGO</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">5,579</td><td class="right mono">470,902</td><td class="right mono"><b>476,481</b></td></tr>
+<tr><td class="mono">100790</td><td>GRAIN SORGHUM EXCEPT SEEDS FOR SOWING</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">431,492</td><td class="right mono">133</td><td class="right mono"><b>431,625</b></td></tr>
+<tr><td class="mono">170114</td><td>CANE SUGAR, RAW, IN SOLID FORM, NOT CONTAINING ADDED FLAVORING OR</td><td>Sugar</td><td><span class="badge manual">Manual</span></td><td class="right mono">3,004</td><td class="right mono">426,830</td><td class="right mono"><b>429,834</b></td></tr>
+<tr><td class="mono">520100</td><td>COTTON, NOT CARDED OR COMBED, HAVING A STAPLE LENGTH UNDER 25.4 M</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">384,101</td><td class="right mono">1</td><td class="right mono"><b>384,101</b></td></tr>
+<tr><td class="mono">401120</td><td>NEW RADIAL TIRES, ON-THE-HIGHWAY, OF A KIND USED ON LIGHT TRUCKS</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">10,536</td><td class="right mono">365,046</td><td class="right mono"><b>375,582</b></td></tr>
+<tr><td class="mono">230310</td><td>CORN GLUTEN FEED, WHETHER OR NOT IN PELLETS</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">353,214</td><td class="right mono">1,195</td><td class="right mono"><b>354,410</b></td></tr>
+<tr><td class="mono">230990</td><td>PET FOOD, PUT UP FOR RETAIL SALE EXCEPT DOG AND CAT FOOD</td><td>Agricultural</td><td><span class="badge chapter">Chapter</span></td><td class="right mono">174,575</td><td class="right mono">99,106</td><td class="right mono"><b>273,681</b></td></tr>
+<tr><td class="mono">230110</td><td>FLOURS, MEALS AND PELLETS, OF MEAT OR MEAT OFFAL, UNFIT FOR HUMAN</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">236,104</td><td class="right mono">14,567</td><td class="right mono"><b>250,671</b></td></tr>
+<tr><td class="mono">230910</td><td>DOG AND CAT FOOD, PUT UP FOR RETAIL SALE</td><td>Agricultural</td><td><span class="badge chapter">Chapter</span></td><td class="right mono">67,337</td><td class="right mono">95,504</td><td class="right mono"><b>162,840</b></td></tr>
+<tr><td class="mono">400122</td><td>TECHNICALLY SPECIFIED NATURAL RUBBER (TSNR)</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">225</td><td class="right mono">162,587</td><td class="right mono"><b>162,812</b></td></tr>
+<tr><td class="mono">100610</td><td>RICE IN THE HUSK (PADDY OR ROUGH)</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">153,681</td><td class="right mono">124</td><td class="right mono"><b>153,806</b></td></tr>
+<tr><td class="mono">400400</td><td>WASTE, PARINGS & SCRAP OF RUBBER (OTHER THAN HARD RUBBER) & POWDE</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">148,022</td><td class="right mono">1,727</td><td class="right mono"><b>149,750</b></td></tr>
+<tr><td class="mono">170199</td><td>CANE/BEET SUGAR & CHEMICALLY PURE SUCROSE, SOLID, NO FLAVORING/CO</td><td>Sugar</td><td><span class="badge manual">Manual</span></td><td class="right mono">2,007</td><td class="right mono">134,583</td><td class="right mono"><b>136,589</b></td></tr>
+<tr><td class="mono">100119</td><td>DURUM WHEAT, EXCEPT SEED</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">135,872</td><td class="right mono">15</td><td class="right mono"><b>135,886</b></td></tr>
+<tr><td class="mono">170490</td><td>CONFECTIONS OR SWEETMEATS READY FOR CONSUMPTION, NOT CONTAINING C</td><td>Sugar</td><td><span class="badge manual">Manual</span></td><td class="right mono">10,262</td><td class="right mono">96,087</td><td class="right mono"><b>106,349</b></td></tr>
+<tr><td class="mono">401190</td><td>NEW PNEUMATIC TIRES, OF RUBBER, OTHER, HAVING A HERRING-BONE OR S</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">1,326</td><td class="right mono">89,606</td><td class="right mono"><b>90,932</b></td></tr>
+<tr><td class="mono">170211</td><td>LACTOSE AND LACTOSE SYRUP, CONTAINING BY WEIGHT 99% OR MORE LACTO</td><td>Sugar</td><td><span class="badge manual">Manual</span></td><td class="right mono">89,731</td><td class="right mono">733</td><td class="right mono"><b>90,464</b></td></tr>
+<tr><td class="mono">401512</td><td>MEDICAL GLOVES, OF VULCANIZED RUBBER OTHER THAN HARD RUBBER, NESO</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">215</td><td class="right mono">85,850</td><td class="right mono"><b>86,064</b></td></tr>
+<tr><td class="mono">100620</td><td>RICE, BASMATI, HUSKED (BROWN)</td><td>Grain</td><td><span class="badge manual">Manual</span></td><td class="right mono">69,453</td><td class="right mono">5,688</td><td class="right mono"><b>75,141</b></td></tr>
+<tr><td class="mono">401180</td><td>NEW PNEUMATIC TIRES, RUBBER, KIND USED ON CONSTRUCTION, MINING/IN</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">32,266</td><td class="right mono">36,033</td><td class="right mono"><b>68,299</b></td></tr>
+<tr><td class="mono">400219</td><td>STYRENE-BUTADIENE-STYRENE BLOCK COPOLYMERS PRODUCED BY SOLUTION P</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">20,763</td><td class="right mono">41,911</td><td class="right mono"><b>62,674</b></td></tr>
+<tr><td class="mono">400270</td><td>ETHYLENE-PROPYLENE-NONCONJUGATED DIENE RUBBER (EPDM)</td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">53,726</td><td class="right mono">8,669</td><td class="right mono"><b>62,396</b></td></tr>
+<tr><td class="mono">401699</td><td>HOUSEHOLD ARTICLES, OF VULCANIZED RUBBER OTHER THAN HARD RUBBER, </td><td>Rubber</td><td><span class="badge manual">Manual</span></td><td class="right mono">8,503</td><td class="right mono">50,173</td><td class="right mono"><b>58,676</b></td></tr>
+</table>
+<h2>Section 4: Deep Dive &mdash; Liquid Bulk / Petroleum Products</h2>
+<div class="cards">
+<div class="card"><div class="label">HS6 Codes</div><div class="value">20</div><div class="detail">All manual</div></div>
+<div class="card"><div class="label">Total Volume</div><div class="value">126.2M MT</div></div>
+<div class="card"><div class="label">Exports</div><div class="value">81.7M MT</div><div class="detail">64.7%</div></div>
+<div class="card"><div class="label">Imports</div><div class="value">44.6M MT</div><div class="detail">35.3%</div></div>
+</div>
+<table>
+<tr><th>HS6</th><th>Description</th><th>Cargo</th>
+<th class="right">Exports MT</th><th class="right">Imports MT</th><th class="right">Total MT</th></tr>
+<tr><td class="mono">270900</td><td>PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS MINERALS, TESTIN</td><td><b>Crude Oil</b></td><td class="right mono">48,749,450</td><td class="right mono">27,391,222</td><td class="right mono"><b>76,140,672</b></td></tr>
+<tr><td class="mono">271019</td><td>NO. 4-TYPE FUEL OILS CONTAINING NOT MORE THAN 500 PPM OF SULFUR, </td><td><b>Dirty Products</b></td><td class="right mono">19,421,512</td><td class="right mono">10,439,782</td><td class="right mono"><b>29,861,294</b></td></tr>
+<tr><td class="mono">271012</td><td>LEADED GASOLINE, NOT CONTAINING BIODIESEL</td><td><b>Clean Products</b></td><td class="right mono">12,742,715</td><td class="right mono">5,945,661</td><td class="right mono"><b>18,688,376</b></td></tr>
+<tr><td class="mono">271320</td><td>PETROLEUM BITUMEN</td><td><b>Dirty Products</b></td><td class="right mono">238,424</td><td class="right mono">624,737</td><td class="right mono"><b>863,161</b></td></tr>
+<tr><td class="mono">271020</td><td>PETROLEUM OILS OR OILS OBTAINED FROM BITUMINOUS MINERALS, OTHER T</td><td><b>Dirty Products</b></td><td class="right mono">286,178</td><td class="right mono">811</td><td class="right mono"><b>286,989</b></td></tr>
+<tr><td class="mono">270799</td><td>LIGHT OIL</td><td><b>Dirty Products</b></td><td class="right mono">172,295</td><td class="right mono">2,629</td><td class="right mono"><b>174,924</b></td></tr>
+<tr><td class="mono">270791</td><td>CREOSOTE OILS</td><td><b>Dirty Products</b></td><td class="right mono">0</td><td class="right mono">58,173</td><td class="right mono"><b>58,173</b></td></tr>
+<tr><td class="mono">270750</td><td>AROMATIC HYDROCARBONS OF WHICH 65 PCT OR MORE BY VOLUME DISTILLS </td><td><b>Dirty Products</b></td><td class="right mono">15,982</td><td class="right mono">29,135</td><td class="right mono"><b>45,118</b></td></tr>
+<tr><td class="mono">271490</td><td>BITUMEN AND ASPHALT, NATURAL; ASPHALTITES AND ASPHALTIC ROCKS</td><td><b>Dirty Products</b></td><td class="right mono">4,395</td><td class="right mono">28,474</td><td class="right mono"><b>32,869</b></td></tr>
+<tr><td class="mono">271500</td><td>BITUMINOUS MIXTURES BASED ON NATURAL ASPHALT, NATURAL BITUMEN, PE</td><td><b>Dirty Products</b></td><td class="right mono">18,593</td><td class="right mono">10,952</td><td class="right mono"><b>29,544</b></td></tr>
+<tr><td class="mono">280300</td><td>CARBON BLACK</td><td><b>Dirty Products</b></td><td class="right mono">8,180</td><td class="right mono">16,021</td><td class="right mono"><b>24,201</b></td></tr>
+<tr><td class="mono">270300</td><td>PEAT (INCLUDING PEAT LITTER) WHETHER OR NOT AGGLOMERATED</td><td><b>Dirty Products</b></td><td class="right mono">914</td><td class="right mono">17,621</td><td class="right mono"><b>18,534</b></td></tr>
+<tr><td class="mono">271390</td><td>RESIDUES OF PETROLEUM OILS OR OF OILS OBTAINED FROM BITUMINOUS MA</td><td><b>Dirty Products</b></td><td class="right mono">202</td><td class="right mono">13,461</td><td class="right mono"><b>13,663</b></td></tr>
+<tr><td class="mono">270740</td><td>NAPHTHALENE</td><td><b>Clean Products</b></td><td class="right mono">3,859</td><td class="right mono">574</td><td class="right mono"><b>4,433</b></td></tr>
+<tr><td class="mono">270600</td><td>TAR DISTILLED FROM COAL, LIGNITE OR FROM PEAT, & OTHER MINERAL TA</td><td><b>Dirty Products</b></td><td class="right mono">19</td><td class="right mono">1,067</td><td class="right mono"><b>1,085</b></td></tr>
+<tr><td class="mono">270210</td><td>LIGNITE, NOT AGGLOMERATED, EXCLUDING JET</td><td><b>Dirty Products</b></td><td class="right mono">545</td><td class="right mono">0</td><td class="right mono"><b>545</b></td></tr>
+<tr><td class="mono">271410</td><td>BITUMINOUS OR OIL SHALE AND TAR SANDS</td><td><b>Dirty Products</b></td><td class="right mono">33</td><td class="right mono">0</td><td class="right mono"><b>33</b></td></tr>
+<tr><td class="mono">270220</td><td>LIGNITE, AGGLOMERATED, EXCLUDING JET</td><td><b>Dirty Products</b></td><td class="right mono">19</td><td class="right mono">0</td><td class="right mono"><b>19</b></td></tr>
+<tr><td class="mono">270120</td><td>BRIQUETTES, OVOIDS AND SIMILAR SOLID FUELS MANUFACTURED FROM COAL</td><td><b>Dirty Products</b></td><td class="right mono">6</td><td class="right mono">0</td><td class="right mono"><b>6</b></td></tr>
+<tr><td class="mono">270500</td><td>COAL GAS, WATER GAS, PRODUCER GAS AND SIMILAR GASES OTHER THAN PE</td><td><b>Dirty Products</b></td><td class="right mono">0</td><td class="right mono">0</td><td class="right mono"><b>0</b></td></tr>
+</table>
+<h2>Section 5: Heading Propagation Examples</h2>
+<p style="color:var(--text-dim);margin-bottom:16px">Unmapped HS6 codes automatically inherit the classification of manually-mapped codes in the same 4-digit HS heading. <span class="badge heading">Heading</span> rows were auto-classified.</p>
+<div class="prop-block">
+<div class="prop-heading">Heading 0301 &rarr; Reefer</div>
+<div class="prop-row"><span class="hs6">030111</span><span class="desc">ORNAMENTAL FRESHWATER FISH, LIVE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030119</span><span class="desc">FISH, ORNAMENTAL, LIVE, OTHER THAN FRESHWATER</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030191</span><span class="desc">TROUT (SALMO TRUTTA, ONCORHYNCHUS MYKISS, CLARKI, AGUAB</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030192</span><span class="desc">EELS (ANGUILLA SPP.), LIVE</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030193</span><span class="desc">CARP (CYPRINUS CARPIO, CARASSIUS CARASSIUS, CTENOPHARYN</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030194</span><span class="desc">ATLANTIC AND PACIFIC BLUEFIN TUNAS (THUNNUS THYNNUS, TH</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030199</span><span class="desc">FISH, LIVE, OTHER</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">26 MT</span></div>
+</div>
+<div class="prop-block">
+<div class="prop-heading">Heading 0302 &rarr; Reefer</div>
+<div class="prop-row"><span class="hs6">030211</span><span class="desc">RAINBOW TROUT (SALMO GAIRDNERI), FARMED, FRESH OR CHILL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030213</span><span class="desc">CHINOOK (KING) SALMON, EXCLUDING FILLETS, LIVERS AND RO</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">100 MT</span></div>
+<div class="prop-row"><span class="hs6">030214</span><span class="desc">ATLANTIC SALMON (SALMO SALAR), FARMED, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2,701 MT</span></div>
+<div class="prop-row"><span class="hs6">030219</span><span class="desc">SALMONIDAE, FRESH OR CHILLED, EXCEPT FILLETS, LIVERS AN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4 MT</span></div>
+<div class="prop-row"><span class="hs6">030221</span><span class="desc">HALIBUT AND GREENLAND TURBOT (REINHARDTIUS HIPPOGLOSSOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">12 MT</span></div>
+<div class="prop-row"><span class="hs6">030223</span><span class="desc">SOLE (SOLEA SPP.), FRESH OR CHILLED, EXCEPT FILLETS, LI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030224</span><span class="desc">TURBOTS (PSETTA MAXIMA), FRESH OR CHILLED, EXCLEPT FILL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030229</span><span class="desc">FLATFISH, NESOI, EXCLUDING FILLETS, LIVERS AND ROES, FR</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">23 MT</span></div>
+<div class="prop-row"><span class="hs6">030231</span><span class="desc">ALBACORE OR LONGFINNED TUNAS (THUNNUS ALALUNGA), FRESH </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1 MT</span></div>
+<div class="prop-row"><span class="hs6">030232</span><span class="desc">YELLOWFIN TUNAS (THUNNUS ALBACARES), FRESH OR CHILLED, </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1 MT</span></div>
+<div class="prop-row"><span class="hs6">030233</span><span class="desc">SKIPJACK TUNA (STRIPE-BELLIED BONITO) (KATSUWONUS PELAM</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">88 MT</span></div>
+<div class="prop-row"><span class="hs6">030234</span><span class="desc">BIGEYE TUNAS (THUNNUS OBESUS), FRESH OR CHILLED, EXCEPT</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1 MT</span></div>
+<div class="prop-row"><span class="hs6">030235</span><span class="desc">ATLANTIC AND PACIFIC BLUEFIN TUNAS (THUNNUS THYNNUS, TH</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030236</span><span class="desc">SOUTHERN BLUEFIN TUNAS (THUNNUS MACCOYII), FRESH OR CHI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030239</span><span class="desc">TUNAS (OF GENUS THUNNUS), FRESH OR CHILLED, EXCEPT FILL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">25 MT</span></div>
+<div class="prop-row"><span class="hs6">030241</span><span class="desc">HERRINGS (CLUPEA HARENGUS, CLUPEA PALLASII), FRESH OR C</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">104 MT</span></div>
+<div class="prop-row"><span class="hs6">030242</span><span class="desc">ANCHOVIES, FRESH OR CHILLED, EXCLUDING LIVERS, ROES, FI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030244</span><span class="desc">MACKEREL (SCOMBER SCOMBRUS, SCOMBER AUSTRALASICUS, SCOM</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">65 MT</span></div>
+<div class="prop-row"><span class="hs6">030245</span><span class="desc">JACK AND HORSE MACKEREL, FRESH OR CHILLED, EXCLUDING FI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1 MT</span></div>
+<div class="prop-row"><span class="hs6">030246</span><span class="desc">COBIA, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AND </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030247</span><span class="desc">SWORDFISH (XIPHIAS GLADIUS), FRESH OR CHILLED, EXCEPT F</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030249</span><span class="desc">INDIAN MACKRLS,SEERFISHES, JACKS, CREVALLES, SILVER POM</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2 MT</span></div>
+<div class="prop-row"><span class="hs6">030251</span><span class="desc">COD (GADUS MORHUA, GADUS OGAC, GADUS MACROCEPHALUS), EX</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030252</span><span class="desc">HADDOCK (MELANOGRAMMUS AEGLEFINUS), FRESH OR CHILLED, E</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">60 MT</span></div>
+<div class="prop-row"><span class="hs6">030253</span><span class="desc">ATLANTIC POLLOCK (POLLACHIUS VIRENS), FRESH OR CHILLED,</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030254</span><span class="desc">HAKE, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AND R</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">26 MT</span></div>
+<div class="prop-row"><span class="hs6">030255</span><span class="desc">ALASKA POLLOCK, FRESH OR CHILLED, EXCLUDING FILLETS, LI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030256</span><span class="desc">BLUE WHITINGS, FRESH OR CHILLED, EXCLUDING FILLETS, LIV</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030259</span><span class="desc">FISH OF THE FAMILIES BREGMACEROTIDAE, EUCLICHTHYIDAE, G</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030271</span><span class="desc">TILAPIAS, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS A</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">40 MT</span></div>
+<div class="prop-row"><span class="hs6">030272</span><span class="desc">CATFISH, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030273</span><span class="desc">CARP, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AND R</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030274</span><span class="desc">EELS (ANGUILLA SPP.), FRESH OR CHILLED, EXCEPT FILLETS,</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030279</span><span class="desc">NILE PERCH AND SNAKEHEADS, FRESH OR CHILLED, EXCLUDING </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030281</span><span class="desc">DOGFISH (SQUALUS SPP.), FRESH OR CHILLED, EXCEPT FILLET</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030282</span><span class="desc">RAYS AND SKATES, FRESH OR CHILLED, EXCLUDING LIVERS, RO</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030283</span><span class="desc">TOOTHFISH (DISSOSTICHUS SPP.), FRESH OR CHILLED, EXCLUD</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030284</span><span class="desc">SEABASS, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">5 MT</span></div>
+<div class="prop-row"><span class="hs6">030285</span><span class="desc">SEABREAM (SPARIDAE), FRESH OR CHILLED, EXCLUDING FILLET</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">20 MT</span></div>
+<div class="prop-row"><span class="hs6">030289</span><span class="desc">SABLEFISH (ANOPLOPOMA FIMBRIA), FRESH OR CHILLED EXCLUD</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">248 MT</span></div>
+<div class="prop-row"><span class="hs6">030291</span><span class="desc">MULLET ROE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">5 MT</span></div>
+<div class="prop-row"><span class="hs6">030299</span><span class="desc">OTHER EDIBLE FISH OFFAL, FRESH OR CHILLED, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">32 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030243</span><span class="desc">SARDINES (SARDINA PILCHARDUS, SARDINOPS SPP.), SARDINEL</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">1 MT</span></div>
+</div>
+<div class="prop-block">
+<div class="prop-heading">Heading 0303 &rarr; Reefer</div>
+<div class="prop-row"><span class="hs6">030311</span><span class="desc">SOCKEYE (RED) SALMON (ONCORHYNCHUS NERKA), FROZEN, EXCE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">3,000 MT</span></div>
+<div class="prop-row"><span class="hs6">030312</span><span class="desc">CHINOOK (KING) SALMON (ONCORHYNCHUS TSCHAWYTSCHA), FROZ</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">60,725 MT</span></div>
+<div class="prop-row"><span class="hs6">030313</span><span class="desc">ATLANTIC SALMON (SALMO SALAR) AND DANUBE SALMON (HUCHO </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">882 MT</span></div>
+<div class="prop-row"><span class="hs6">030314</span><span class="desc">TROUT (SALMO TRUTTA; ONCORHYNCHUS MYKISS, CLARKI, AGUAB</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">190 MT</span></div>
+<div class="prop-row"><span class="hs6">030319</span><span class="desc">SALMONIDAE, FROZEN, EXCEPT FILLETS, LIVERS AND ROES, NE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">71 MT</span></div>
+<div class="prop-row"><span class="hs6">030323</span><span class="desc">TILAPIA (OREOCHROMIS SPP.), FROZEN, EXCEPT FILLETS, LIV</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">12,097 MT</span></div>
+<div class="prop-row"><span class="hs6">030324</span><span class="desc">CATFISH, FROZEN, EXCLUDING LIVERS, ROES, FILLETS AND OT</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,359 MT</span></div>
+<div class="prop-row"><span class="hs6">030325</span><span class="desc">CARP, FROZEN, EXCEPT FILLETS, LIVERS AND ROES</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">988 MT</span></div>
+<div class="prop-row"><span class="hs6">030326</span><span class="desc">EELS (ANGUILLA SPP.), FROZEN, EXCEPT FILLETS, LIVERS AN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">404 MT</span></div>
+<div class="prop-row"><span class="hs6">030329</span><span class="desc">NILE PERCH (LATES NILOTICUS) AND SNAKEHEADS (CHANNA SPP</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">89 MT</span></div>
+<div class="prop-row"><span class="hs6">030331</span><span class="desc">ATLANTIC AND PACIFIC HALIBUT (HIPPOGLOSSUS HIPPOGLOSSUS</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">585 MT</span></div>
+<div class="prop-row"><span class="hs6">030332</span><span class="desc">PLAICE (PLEURONECTES PLATESSA), FROZEN, EXCEPT FILLETS,</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">288 MT</span></div>
+<div class="prop-row"><span class="hs6">030333</span><span class="desc">SOLE (SOLEA SPP.), FROZEN, EXCEPT FILLETS, LIVERS AND R</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,217 MT</span></div>
+<div class="prop-row"><span class="hs6">030334</span><span class="desc">TURBOTS, FROZEN, EXCEPT FILLETS, LIVERS AND ROES</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030339</span><span class="desc">ROCK SOLE (PLEURONECTES BILINEATUS), FROZEN, EXCEPT FIL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">26,817 MT</span></div>
+<div class="prop-row"><span class="hs6">030341</span><span class="desc">ALBACORE OR LONGFINNED TUNAS (THUNNUS ALALUNGA), FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2,184 MT</span></div>
+<div class="prop-row"><span class="hs6">030342</span><span class="desc">YELLOWFIN TUNAS, (THUNNUS ALBACARES), EXCLUDING FILLETS</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,064 MT</span></div>
+<div class="prop-row"><span class="hs6">030343</span><span class="desc">SKIPJACK TUNA (STRIPE-BELLIED BONITO) (KATSUWONUS PELAM</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030344</span><span class="desc">BIGEYE TUNAS (THUNNUS OBESUS), FROZEN, EXCEPT FILLETS, </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">30 MT</span></div>
+<div class="prop-row"><span class="hs6">030345</span><span class="desc">ATLANTIC AND PACIFIC BLUEFIN TUNAS, FROZEN, EXCEPT FILL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">3 MT</span></div>
+<div class="prop-row"><span class="hs6">030346</span><span class="desc">SOUTHERN BLUEFIN TUNAS (THUNNUS MACCOYII), FROZEN, EXCE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4 MT</span></div>
+<div class="prop-row"><span class="hs6">030349</span><span class="desc">TUNAS (OF THE GENUS THUNNUS), FROZEN, EXCEPT FILLETS, L</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">67 MT</span></div>
+<div class="prop-row"><span class="hs6">030351</span><span class="desc">HERRINGS (CLUPEA HARENGUS, CLUPEA PALLASII), FROZEN, EX</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">554 MT</span></div>
+<div class="prop-row"><span class="hs6">030354</span><span class="desc">MACKEREL (SCOMBER SCOMBRUS, SCOMBER AUSTRALASICUS, SCOM</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4,689 MT</span></div>
+<div class="prop-row"><span class="hs6">030355</span><span class="desc">JACK AND HORSE MACKEREL, FROZEN, EXCEPT FILLETS, LIVERS</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,198 MT</span></div>
+<div class="prop-row"><span class="hs6">030356</span><span class="desc">COBIA, FROZEN, EXCEPT FILLETS, LIVERS AND ROES</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">10 MT</span></div>
+<div class="prop-row"><span class="hs6">030357</span><span class="desc">SWORDFISH (XIPHIAS GLADIUS), FROZEN, EXCEPT FILLETS, LI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">106 MT</span></div>
+<div class="prop-row"><span class="hs6">030359</span><span class="desc">FISH, FROZEN, EXCEPT FILLETS, LIVERS AND ROES, HERRINGS</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">936 MT</span></div>
+<div class="prop-row"><span class="hs6">030363</span><span class="desc">COD (GADUS MORHUA, GADUS OGAC, GADUS MACROCEPHALUS), FR</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">9,069 MT</span></div>
+<div class="prop-row"><span class="hs6">030364</span><span class="desc">HADDOCK (MELANOGRAMMUS AEGLEFINUS), FROZEN, EXCEPT FILL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">993 MT</span></div>
+<div class="prop-row"><span class="hs6">030365</span><span class="desc">ATLANTIC POLLOCK (POLLACHIUS VIRENS), FROZEN, EXCEPT FI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030366</span><span class="desc">WHITING (MERLUCCIUS SPP.) AND HAKE (UROPHYCIS SPP.), FR</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">23,677 MT</span></div>
+<div class="prop-row"><span class="hs6">030367</span><span class="desc">ALASKA POLLOCK (THERAGRA CHALCOGRAMMA), FROZEN, EXCLUDI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">7,313 MT</span></div>
+<div class="prop-row"><span class="hs6">030368</span><span class="desc">BLUE WHITINGS, FROZEN, EXCEPT FILLETS, LIVERS AND ROES</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">38 MT</span></div>
+<div class="prop-row"><span class="hs6">030369</span><span class="desc">FISH OF FAMILIES BREGMAVEROTIDAE, EUCLICHTHYIDAE, GADID</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">230 MT</span></div>
+<div class="prop-row"><span class="hs6">030381</span><span class="desc">DOGFISH (SQUALUS SPP.), FROZEN, EXCEPT FILLETS, LIVERS </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">260 MT</span></div>
+<div class="prop-row"><span class="hs6">030382</span><span class="desc">RAYS AND SKATES, FROZEN, EXCEPT FILLETS, LIVERS AND ROE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,326 MT</span></div>
+<div class="prop-row"><span class="hs6">030383</span><span class="desc">TOOTHFISH (DISSOSTICHUS SPP.), FROZEN, EXCLUDING FISH F</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,844 MT</span></div>
+<div class="prop-row"><span class="hs6">030384</span><span class="desc">SEA BASS (DICENTRARCHUS LABRAX, DICENTRARCHUS PUNCTATUS</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">316 MT</span></div>
+<div class="prop-row"><span class="hs6">030389</span><span class="desc">TILAPIA, OTHER THAN OREOCHROMIS SPP., FROZEN, EXCEPT FI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">46,190 MT</span></div>
+<div class="prop-row"><span class="hs6">030391</span><span class="desc">STURGEON ROE, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">8,158 MT</span></div>
+<div class="prop-row"><span class="hs6">030399</span><span class="desc">OTHER EDIBLE FISH OFFAL, FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">264 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030353</span><span class="desc">SARDINES (SARDINA PILCHARDUS, SARDINOPS SPP.), SARDINEL</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">899 MT</span></div>
+</div>
+<div class="prop-block">
+<div class="prop-heading">Heading 0304 &rarr; Reefer</div>
+<div class="prop-row"><span class="hs6">030431</span><span class="desc">TILAPIA (OREOCHROMIS) FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">190 MT</span></div>
+<div class="prop-row"><span class="hs6">030432</span><span class="desc">CATFISH FILLETS AND OTHER MEAT, EXCLUDING FISH STEAKS, </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">19 MT</span></div>
+<div class="prop-row"><span class="hs6">030433</span><span class="desc">NILE PERCH FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030439</span><span class="desc">CARP, EEL OR SNAKEHEAD FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">165 MT</span></div>
+<div class="prop-row"><span class="hs6">030441</span><span class="desc">PACIFIC SALMON AND ATLANTIC SALMON FILLETS, FRESH OR CH</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,505 MT</span></div>
+<div class="prop-row"><span class="hs6">030442</span><span class="desc">TROUT FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">21 MT</span></div>
+<div class="prop-row"><span class="hs6">030443</span><span class="desc">FLAT FISH FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">11 MT</span></div>
+<div class="prop-row"><span class="hs6">030445</span><span class="desc">SWORDFISH (XIPHIAS GLADIUS), FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030446</span><span class="desc">TOOTHFISH (DISSOSTICHUS SPP), FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">13 MT</span></div>
+<div class="prop-row"><span class="hs6">030448</span><span class="desc">RAY AND SKATE (RAJIDAE) FILLETS, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1 MT</span></div>
+<div class="prop-row"><span class="hs6">030449</span><span class="desc">FISH FILLETS, FRESH OR CHILLED, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">144 MT</span></div>
+<div class="prop-row"><span class="hs6">030451</span><span class="desc">TILAPIAS, CATFISH, CARP, EELS, NILE PERCH AND SNAKEHEAD</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">3 MT</span></div>
+<div class="prop-row"><span class="hs6">030452</span><span class="desc">SALMONIDAE MEAT, NESOI, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">304 MT</span></div>
+<div class="prop-row"><span class="hs6">030454</span><span class="desc">SWORDFISH (XIPHIAS GLADIUS), FISH MEAT, OTHER THAN FILL</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030457</span><span class="desc">RAYS AND SKATES (RAJIDAE), FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">11 MT</span></div>
+<div class="prop-row"><span class="hs6">030459</span><span class="desc">FISH MEAT, NESOI, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">166 MT</span></div>
+<div class="prop-row"><span class="hs6">030461</span><span class="desc">TILAPIA FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">31,943 MT</span></div>
+<div class="prop-row"><span class="hs6">030462</span><span class="desc">CATFISH FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">33,014 MT</span></div>
+<div class="prop-row"><span class="hs6">030463</span><span class="desc">NILE PERCH FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">24 MT</span></div>
+<div class="prop-row"><span class="hs6">030469</span><span class="desc">CARP, EELS AND SNAKEHEAD FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">272 MT</span></div>
+<div class="prop-row"><span class="hs6">030471</span><span class="desc">COD FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">13,144 MT</span></div>
+<div class="prop-row"><span class="hs6">030472</span><span class="desc">HADDOCK FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">5,285 MT</span></div>
+<div class="prop-row"><span class="hs6">030473</span><span class="desc">COALFISH FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">103 MT</span></div>
+<div class="prop-row"><span class="hs6">030474</span><span class="desc">HAKE FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4,975 MT</span></div>
+<div class="prop-row"><span class="hs6">030475</span><span class="desc">ALASKA POLLOCK (THERAGRA CHALCOGRAMMA) FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">32,659 MT</span></div>
+<div class="prop-row"><span class="hs6">030479</span><span class="desc">FROZEN FILLETS OF FISH OF THE FAMILIES BREGMACEROTIDAE,</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2,208 MT</span></div>
+<div class="prop-row"><span class="hs6">030481</span><span class="desc">PACIFIC SALMON FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">42,034 MT</span></div>
+<div class="prop-row"><span class="hs6">030482</span><span class="desc">TROUT FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,263 MT</span></div>
+<div class="prop-row"><span class="hs6">030483</span><span class="desc">HALIBUT FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4,481 MT</span></div>
+<div class="prop-row"><span class="hs6">030484</span><span class="desc">SWORDFISH (XIPHIAS GLADIUS) FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">436 MT</span></div>
+<div class="prop-row"><span class="hs6">030485</span><span class="desc">TOOTHFISH (DISSOSTICHUS SPP.) FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">181 MT</span></div>
+<div class="prop-row"><span class="hs6">030486</span><span class="desc">HERRING FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">56 MT</span></div>
+<div class="prop-row"><span class="hs6">030487</span><span class="desc">SKIPJACK TUNA (STRIPE-BELLIED BONITO) (KATSUWONUS PELAM</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">10,897 MT</span></div>
+<div class="prop-row"><span class="hs6">030488</span><span class="desc">DOGFISH, OTHER SHARKS, RAYS AND SKATES (RAJIDAE) FILLET</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">49 MT</span></div>
+<div class="prop-row"><span class="hs6">030489</span><span class="desc">FISH FILLETS, NESOI, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">10,826 MT</span></div>
+<div class="prop-row"><span class="hs6">030491</span><span class="desc">SWORDFISH (XIPHIAS GLADIUS) MEAT, FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">45 MT</span></div>
+<div class="prop-row"><span class="hs6">030492</span><span class="desc">TOOTHFISH (DISSOSTICHUS SPP), MEAT, FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">219 MT</span></div>
+<div class="prop-row"><span class="hs6">030493</span><span class="desc">TILAPIAS, CATFISH, CARP, EELS, NILE PERCH AND SNAKEHEAD</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">92 MT</span></div>
+<div class="prop-row"><span class="hs6">030494</span><span class="desc">ALASKA POLLOCK, FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4,068 MT</span></div>
+<div class="prop-row"><span class="hs6">030496</span><span class="desc">DOGFISH AND OTHER SHARKS, FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">34 MT</span></div>
+<div class="prop-row"><span class="hs6">030497</span><span class="desc">RAY AND SKATES (RAJIDAE), FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">55 MT</span></div>
+<div class="prop-row"><span class="hs6">030499</span><span class="desc">SURIMI OF ALASKA POLLOCK (THERAGRA CHALCOGRAMMA), FROZE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">40,311 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030444</span><span class="desc">FISH FILLETS OF THE FAMILIES BREGMACEROTIDAE, EUCLICHTH</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">176 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030453</span><span class="desc">MEAT OF FISH OF THE FAMILIES BREGMACEROTIDAE, EUCLICHTH</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">119 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030495</span><span class="desc">MEAT OF FISH OF THE FAMILIES BREGMACEROTIDAE,EUCLICHTHY</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">1,037 MT</span></div>
+</div>
+<div class="prop-block">
+<div class="prop-heading">Heading 0306 &rarr; Reefer</div>
+<div class="prop-row"><span class="hs6">030611</span><span class="desc">CARIBBEAN SPINY LOBSTER (PANULIRUS ARGUS), FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">3,116 MT</span></div>
+<div class="prop-row"><span class="hs6">030612</span><span class="desc">LOBSTERS (HOMARUS SPP,) INCLUDING IN SHELL, COOKED BY S</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">637 MT</span></div>
+<div class="prop-row"><span class="hs6">030614</span><span class="desc">CRABMEAT, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4,827 MT</span></div>
+<div class="prop-row"><span class="hs6">030615</span><span class="desc">NORWAY LOBSTERS (NEPHROPS NORVEGICUS), FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1 MT</span></div>
+<div class="prop-row"><span class="hs6">030616</span><span class="desc">COLD-WATER SHRIMPS AND PRAWNS (PANDALUS SPP., CRANGON C</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">1,390 MT</span></div>
+<div class="prop-row"><span class="hs6">030617</span><span class="desc">SHRIMPS AND PRAWNS (PANDALUS SPP., CRANGON CRANGON), FR</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">159,745 MT</span></div>
+<div class="prop-row"><span class="hs6">030619</span><span class="desc">FRESHWATER CRAWFISH, INCLUDING IN SHELL, COOKED BY STEA</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2,656 MT</span></div>
+<div class="prop-row"><span class="hs6">030631</span><span class="desc">ROCK LOBSTER AND OTHER SEA CRAWFISH (PALINURUS SPP., PA</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030632</span><span class="desc">LOBSTERS (HOMARUS SPP.), LIVE, FRESH OR CHILLED, EXCEPT</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030633</span><span class="desc">CRABMEAT, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4 MT</span></div>
+<div class="prop-row"><span class="hs6">030634</span><span class="desc">NORWAY LOBSTERS (NEPHROPS NORVEGICUS), LIVE, FRESH OR C</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2 MT</span></div>
+<div class="prop-row"><span class="hs6">030635</span><span class="desc">COLD-WATER SHRIMPS AND PRAWNS (PANDALUS SPP., CRANGON C</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">16 MT</span></div>
+<div class="prop-row"><span class="hs6">030636</span><span class="desc">SHRIMPS AND PRAWNS, LIVE, FRESH OR CHILLED, OTHER THAN </span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">29 MT</span></div>
+<div class="prop-row"><span class="hs6">030639</span><span class="desc">CRUSTACEANS WHETHER IN SHELL OR NOT, LIVE, FRESH OR CHI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030699</span><span class="desc">CRUSTACEANS, DRIED, SALTED, IN BRINE OR SMOKED; CRUSTAC</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">9 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030691</span><span class="desc">ROCK LOBSTER AND OTHER SEA CRAWFISH (PALINURUS SPP., PA</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">14 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030692</span><span class="desc">LOBSTERS (HOMARUS SPP.), EXCEPT ROCK LOBSTER, NESOI</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">58 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030693</span><span class="desc">CRABMEAT, NESOI</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">9 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030695</span><span class="desc">SHRIMPS AND PRAWNS, NESOI</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">236 MT</span></div>
+</div>
+<div class="prop-block">
+<div class="prop-heading">Heading 0307 &rarr; Reefer</div>
+<div class="prop-row"><span class="hs6">030711</span><span class="desc">SEED OYSTERS, LIVE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030712</span><span class="desc">OYSTERS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">388 MT</span></div>
+<div class="prop-row"><span class="hs6">030721</span><span class="desc">SCALLOPS AND OTHER MOLLUSCS OF THE FAMILY PECTINIDAE, L</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">17 MT</span></div>
+<div class="prop-row"><span class="hs6">030722</span><span class="desc">SCALLOPS AND OTHER MOLLUSCS OF THE FAMILY PECTINIDAE, F</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">3,493 MT</span></div>
+<div class="prop-row"><span class="hs6">030731</span><span class="desc">MUSSELS (MYTILUS SPP., PERNA SPP.), FARMED, LIVE, FRESH</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">44 MT</span></div>
+<div class="prop-row"><span class="hs6">030732</span><span class="desc">MUSSELS (MYTILUS SPP., PERNA SPP.), FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">2,732 MT</span></div>
+<div class="prop-row"><span class="hs6">030742</span><span class="desc">LOLIGO SQUID, LIVE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">4 MT</span></div>
+<div class="prop-row"><span class="hs6">030743</span><span class="desc">SQUID FILLETS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">40,422 MT</span></div>
+<div class="prop-row"><span class="hs6">030751</span><span class="desc">OCTOPUS, LIVE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">3 MT</span></div>
+<div class="prop-row"><span class="hs6">030752</span><span class="desc">OCTOPUS (OCTOPUS SPP.), FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">6,124 MT</span></div>
+<div class="prop-row"><span class="hs6">030771</span><span class="desc">GEODUCK CLAMS, LIVE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030772</span><span class="desc">GEODUCK CLAMS, FROZEN</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">155 MT</span></div>
+<div class="prop-row"><span class="hs6">030781</span><span class="desc">ABALONE, LIVE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030782</span><span class="desc">STROMBOID CONCHS (STROMBUS SPP.), LIVE, FRESH OR CHILLE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">0 MT</span></div>
+<div class="prop-row"><span class="hs6">030783</span><span class="desc">FROZEN ABALONE, DRIED, SALTED OR IN BRINE</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">45 MT</span></div>
+<div class="prop-row"><span class="hs6">030784</span><span class="desc">FROZEN STROMBOID CONCHS (STROMBUS SPP.)</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">281 MT</span></div>
+<div class="prop-row"><span class="hs6">030791</span><span class="desc">CONCH, LIVE, FRESH OR CHILLED</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">7 MT</span></div>
+<div class="prop-row"><span class="hs6">030792</span><span class="desc">MOLLUSCS, FROZEN, NESOI</span><span class="cargo"><span class="badge manual">Manual</span> Reefer</span><span class="vol">367 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030719</span><span class="desc">OYSTERS, DRIED, SALTED OR IN BRINE</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">34 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030729</span><span class="desc">SCALLOPS AND OTHER MOLLUSCS OF THE FAMILY PECTINIDAE, N</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">190 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030739</span><span class="desc">MUSSELS (MYTILUS SPP., PERNA SPP.), DRIED, SALTED OR IN</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">509 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030749</span><span class="desc">SQUID, LOLIGO OPALESCENS, DRIED, SALTED OR IN BRINE</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">4,978 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030759</span><span class="desc">OCTOPUS, DRIED, SALTED OR IN BRINE</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">487 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030760</span><span class="desc">SNAILS, OTHER THAN SEA SNAILS</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">73 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030779</span><span class="desc">GEODUCK CLAMS, INCLUDING FLOURS, MEALS AND PELLETS FIT </span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">71 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030787</span><span class="desc">ABALONE, DRIED, SALTED OR IN BRINE</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">3 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030788</span><span class="desc">OTHER STROMBOID CONCHS (STROMBUS SPP.)</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">2 MT</span></div>
+<div class="prop-row prop-auto"><span class="hs6">030799</span><span class="desc">MOLLUSCS, EXCLUDING FLOURS, MEALS AND PELLETS FIT FOR H</span><span class="cargo"><span class="badge heading">Heading</span> Reefer</span><span class="vol">55 MT</span></div>
+</div>
+<h2>Section 6: Chapter Default Examples</h2>
+<p style="color:var(--text-dim);margin-bottom:16px">For HS headings with no manual mappings at all, codes receive a broad default classification by HS chapter.</p>
+<table>
+<tr><th>Chapter</th><th class="right">Codes</th><th>Default Group</th><th>Default Commodity</th>
+<th class="right">Total MT</th><th>Top Code</th></tr>
+<tr><td class="mono">Ch.01</td><td class="right">34</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">495</td><td class="mono" style="color:var(--text-dim)">010690 ANIMALS, LIVE, EXCEPT MAMMALS, REPTILES,</td></tr>
+<tr><td class="mono">Ch.02</td><td class="right">8</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">12,579</td><td class="mono" style="color:var(--text-dim)">021019 MEAT OF SWINE, SALTED, IN BRINE, DRIED O</td></tr>
+<tr><td class="mono">Ch.03</td><td class="right">23</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">9,136</td><td class="mono" style="color:var(--text-dim)">030541 PACIFIC SALMON (ONCORHYNCHUS SPP.), ATLA</td></tr>
+<tr><td class="mono">Ch.04</td><td class="right">17</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">351,565</td><td class="mono" style="color:var(--text-dim)">040410 WHEY PROTEIN CONCENTRATES, MODIFIED WHEY</td></tr>
+<tr><td class="mono">Ch.05</td><td class="right">14</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Animal Products</td><td class="right mono">116,400</td><td class="mono" style="color:var(--text-dim)">051199 HORSEHAIR AND HORSEHAIR WASTE, WHETHER O</td></tr>
+<tr><td class="mono">Ch.06</td><td class="right">7</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">37,642</td><td class="mono" style="color:var(--text-dim)">060290 ORCHID PLANTS, LIVE</td></tr>
+<tr><td class="mono">Ch.07</td><td class="right">24</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">219,100</td><td class="mono" style="color:var(--text-dim)">071310 PEAS (PISUM SATIVUM), SEEDS OF A KIND US</td></tr>
+<tr><td class="mono">Ch.08</td><td class="right">7</td><td><span class="gdot" style="background:#9b59b6"></span>Dry</td><td>Reefer</td><td class="right mono">27,854</td><td class="mono" style="color:var(--text-dim)">081310 APRICOTS, DRIED</td></tr>
+<tr><td class="mono">Ch.09</td><td class="right">39</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Spices & Coffee</td><td class="right mono">429,126</td><td class="mono" style="color:var(--text-dim)">090111 COFFEE, NOT ROASTED, NOT DECAFFEINATED</td></tr>
+<tr><td class="mono">Ch.11</td><td class="right">11</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Prepared Foods</td><td class="right mono">96,013</td><td class="mono" style="color:var(--text-dim)">110813 STARCH, POTATO</td></tr>
+<tr><td class="mono">Ch.12</td><td class="right">31</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Oilseeds & Fats</td><td class="right mono">1,083,585</td><td class="mono" style="color:var(--text-dim)">121490 ALFALFA HAY, NESOI, WHETHER OR NOT DOUBL</td></tr>
+<tr><td class="mono">Ch.13</td><td class="right">11</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Gums & Resins</td><td class="right mono">40,026</td><td class="mono" style="color:var(--text-dim)">130232 MUCILAGES AND THICKENERS, WHETHER OR NOT</td></tr>
+<tr><td class="mono">Ch.14</td><td class="right">5</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Vegetable Products</td><td class="right mono">29,510</td><td class="mono" style="color:var(--text-dim)">140490 VEGETABLE HAIR USED PRIMARILY AS STUFFIN</td></tr>
+<tr><td class="mono">Ch.16</td><td class="right">41</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Prepared Foods</td><td class="right mono">286,116</td><td class="mono" style="color:var(--text-dim)">160414 TUNAS, SKIPJACK AND ATLANTIC BONITO (SAR</td></tr>
+<tr><td class="mono">Ch.19</td><td class="right">9</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Prepared Foods</td><td class="right mono">267,478</td><td class="mono" style="color:var(--text-dim)">190219 PASTA, EXCLUSIVELY, WITHOUT EGG, UNCOOKE</td></tr>
+<tr><td class="mono">Ch.20</td><td class="right">23</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Prepared Foods</td><td class="right mono">648,847</td><td class="mono" style="color:var(--text-dim)">200899 WILD BLUEBERRIES, CANNED</td></tr>
+<tr><td class="mono">Ch.21</td><td class="right">16</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Prepared Foods</td><td class="right mono">676,344</td><td class="mono" style="color:var(--text-dim)">210690 COMPOUND ALCOHOLIC PREPARATIONS OF A KIN</td></tr>
+<tr><td class="mono">Ch.22</td><td class="right">15</td><td><span class="gdot" style="background:#d94a4a"></span>Liquid Bulk</td><td>Agricultural</td><td class="right mono">1,940,128</td><td class="mono" style="color:var(--text-dim)">220110 MINERAL WATERS AND AERATED WATERS, NATUR</td></tr>
+<tr><td class="mono">Ch.23</td><td class="right">4</td><td><span class="gdot" style="background:#4a90d9"></span>Dry Bulk</td><td>Agricultural</td><td class="right mono">474,004</td><td class="mono" style="color:var(--text-dim)">230990 PET FOOD, PUT UP FOR RETAIL SALE EXCEPT </td></tr>
+<tr><td class="mono">Ch.24</td><td class="right">16</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Tobacco</td><td class="right mono">80,195</td><td class="mono" style="color:var(--text-dim)">240120 CONNECTICUT SHADE TOBACCO, PARTLY OR WHO</td></tr>
+<tr><td class="mono">Ch.25</td><td class="right">1</td><td><span class="gdot" style="background:#4a90d9"></span>Dry Bulk</td><td>Minerals & Ores</td><td class="right mono">25</td><td class="mono" style="color:var(--text-dim)">252490 ASBESTOS, NESOI</td></tr>
+<tr><td class="mono">Ch.30</td><td class="right">45</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Pharmaceuticals</td><td class="right mono">146,564</td><td class="mono" style="color:var(--text-dim)">300490 MEDICAMENTS CONTAINING ANTIGENS OR HYALU</td></tr>
+<tr><td class="mono">Ch.31</td><td class="right">1</td><td><span class="gdot" style="background:#4a90d9"></span>Dry Bulk</td><td>Fertilizer</td><td class="right mono">31,776</td><td class="mono" style="color:var(--text-dim)">310100 ANIMAL/VEG FERTILIZERS, WHETHER OR NOT M</td></tr>
+<tr><td class="mono">Ch.32</td><td class="right">45</td><td><span class="gdot" style="background:#d94a4a"></span>Liquid Bulk</td><td>Misc Chemicals</td><td class="right mono">221,934</td><td class="mono" style="color:var(--text-dim)">320611 PIGMENTS AND PREPARATIONS BASED ON TITAN</td></tr>
+<tr><td class="mono">Ch.33</td><td class="right">29</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Cosmetics & Perfumery</td><td class="right mono">354,428</td><td class="mono" style="color:var(--text-dim)">330499 PETROLEUM JELLY PUT UP FOR RETAIL SALE</td></tr>
+<tr><td class="mono">Ch.34</td><td class="right">24</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Soaps & Detergents</td><td class="right mono">543,602</td><td class="mono" style="color:var(--text-dim)">340600 CANDLES, TAPERS AND THE LIKE</td></tr>
+<tr><td class="mono">Ch.35</td><td class="right">15</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Starches & Glues</td><td class="right mono">213,004</td><td class="mono" style="color:var(--text-dim)">350510 DEXTRINS, DERIVED FROM POTATO STARCH</td></tr>
+<tr><td class="mono">Ch.36</td><td class="right">13</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Explosives</td><td class="right mono">34,404</td><td class="mono" style="color:var(--text-dim)">360410 CLASS 1.3G FIREWORKS</td></tr>
+<tr><td class="mono">Ch.37</td><td class="right">30</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Photographic Goods</td><td class="right mono">19,078</td><td class="mono" style="color:var(--text-dim)">370130 OTHER PLATES AND FILM, WITH ANY SIDE EXC</td></tr>
+<tr><td class="mono">Ch.39</td><td class="right">67</td><td><span class="gdot" style="background:#4a90d9"></span>Dry Bulk</td><td>Plastics</td><td class="right mono">3,269,798</td><td class="mono" style="color:var(--text-dim)">392410 TABLEWARE AND KITCHENWARE OF PLASTICS</td></tr>
+<tr><td class="mono">Ch.41</td><td class="right">28</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Hides & Skins</td><td class="right mono">46,227</td><td class="mono" style="color:var(--text-dim)">410411 BOVINE TANNED HIDES AND SKINS, WHOLE UPP</td></tr>
+<tr><td class="mono">Ch.42</td><td class="right">19</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Leather Goods</td><td class="right mono">242,767</td><td class="mono" style="color:var(--text-dim)">420292 INSULATED FOOD OR BEVERAGE BASGS WITH OU</td></tr>
+<tr><td class="mono">Ch.43</td><td class="right">12</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Furskins</td><td class="right mono">532</td><td class="mono" style="color:var(--text-dim)">430390 ARTICLES OF FURSKINS, NESOI</td></tr>
+<tr><td class="mono">Ch.45</td><td class="right">7</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Cork Products</td><td class="right mono">6,109</td><td class="mono" style="color:var(--text-dim)">450410 BLOCKS, PLATES, SHEETS AND STRIPS; TILE </td></tr>
+<tr><td class="mono">Ch.46</td><td class="right">11</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Basketware</td><td class="right mono">26,588</td><td class="mono" style="color:var(--text-dim)">460219 BASKETWORK, WICKERWORK AND OTHER ARTICLE</td></tr>
+<tr><td class="mono">Ch.49</td><td class="right">18</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Printed Materials</td><td class="right mono">253,777</td><td class="mono" style="color:var(--text-dim)">490199 TEXTBOOKS</td></tr>
+<tr><td class="mono">Ch.50</td><td class="right">9</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">18</td><td class="mono" style="color:var(--text-dim)">500720 WOVEN FABRICS OF SILK OR SILK WASTE OTHE</td></tr>
+<tr><td class="mono">Ch.51</td><td class="right">38</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">3,640</td><td class="mono" style="color:var(--text-dim)">510119 WOOL NOT CARDED OR COMBED GREASY INCLUDI</td></tr>
+<tr><td class="mono">Ch.52</td><td class="right">119</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">89,738</td><td class="mono" style="color:var(--text-dim)">520512 COTTON YARN (EXCEPT SEWING THREAD), 85% </td></tr>
+<tr><td class="mono">Ch.53</td><td class="right">22</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">23,022</td><td class="mono" style="color:var(--text-dim)">530500 COCONUT, ABACA, RAMIE & OTHER VEG TEXTIL</td></tr>
+<tr><td class="mono">Ch.54</td><td class="right">72</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">129,910</td><td class="mono" style="color:var(--text-dim)">540220 SYNTHETIC FILAMENT YARN OTHER THAN SEWIN</td></tr>
+<tr><td class="mono">Ch.55</td><td class="right">110</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">198,311</td><td class="mono" style="color:var(--text-dim)">550320 SYNTHETIC STAPLE FIBERS NOT CARDED, COMB</td></tr>
+<tr><td class="mono">Ch.56</td><td class="right">30</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">156,343</td><td class="mono" style="color:var(--text-dim)">560312 NONWOVENS, WHETHER OR NOT IMPREGNATED, C</td></tr>
+<tr><td class="mono">Ch.57</td><td class="right">24</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">188,850</td><td class="mono" style="color:var(--text-dim)">570242 CARPETS AND OTHER TEXTILE FLOOR COVERING</td></tr>
+<tr><td class="mono">Ch.58</td><td class="right">37</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">16,437</td><td class="mono" style="color:var(--text-dim)">580632 RIBBONS OF MAN-MADE FIBERS SUITABLE FOR </td></tr>
+<tr><td class="mono">Ch.59</td><td class="right">18</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">84,707</td><td class="mono" style="color:var(--text-dim)">590390 TEXTILE FABRICS, IMPREGNATED, COATED, CO</td></tr>
+<tr><td class="mono">Ch.60</td><td class="right">30</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">18,885</td><td class="mono" style="color:var(--text-dim)">600632 OTHER KNITTED OR CROCHETED FABRICS OF DY</td></tr>
+<tr><td class="mono">Ch.61</td><td class="right">106</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">858,191</td><td class="mono" style="color:var(--text-dim)">611020 MEN'S OR BOYS' SWEATERS, KNITTED OR CROC</td></tr>
+<tr><td class="mono">Ch.62</td><td class="right">104</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">402,837</td><td class="mono" style="color:var(--text-dim)">620342 MEN'S OR BOYS' TROUSERS,B&B OVERALLS,BRE</td></tr>
+<tr><td class="mono">Ch.63</td><td class="right">52</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Textiles & Apparel</td><td class="right mono">1,018,142</td><td class="mono" style="color:var(--text-dim)">630790 OTHER MADE-UP ARTICLES, INCLUDING DRESS </td></tr>
+<tr><td class="mono">Ch.64</td><td class="right">25</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Footwear & Accessories</td><td class="right mono">385,049</td><td class="mono" style="color:var(--text-dim)">640419 FOOTWEAR WITH UPPERS OF TEXTILE MATERIAL</td></tr>
+<tr><td class="mono">Ch.65</td><td class="right">8</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Footwear & Accessories</td><td class="right mono">30,302</td><td class="mono" style="color:var(--text-dim)">650500 HAIR-NETS, ANY MATERIAL, WHETHER OR NOT </td></tr>
+<tr><td class="mono">Ch.66</td><td class="right">6</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Footwear & Accessories</td><td class="right mono">19,369</td><td class="mono" style="color:var(--text-dim)">660110 UMBRELLAS, GARDEN OR SIMILAR</td></tr>
+<tr><td class="mono">Ch.67</td><td class="right">8</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Footwear & Accessories</td><td class="right mono">75,111</td><td class="mono" style="color:var(--text-dim)">670210 PLASTIC ARTIFICAL FLOWERS, FLOIAGE, & FR</td></tr>
+<tr><td class="mono">Ch.70</td><td class="right">64</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Stone/Glass Products</td><td class="right mono">547,049</td><td class="mono" style="color:var(--text-dim)">701090 SERUM BOTTLES, VIALS AND OTHER PHARMACEU</td></tr>
+<tr><td class="mono">Ch.71</td><td class="right">54</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Precious Metals</td><td class="right mono">12,357</td><td class="mono" style="color:var(--text-dim)">711790 IMITATION JEWELRY NOT OF BASE METAL</td></tr>
+<tr><td class="mono">Ch.82</td><td class="right">59</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Metal Products</td><td class="right mono">213,903</td><td class="mono" style="color:var(--text-dim)">820559 PIPE TOOLS AND PARTS THEREOF, BASE METAL</td></tr>
+<tr><td class="mono">Ch.83</td><td class="right">21</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Metal Products</td><td class="right mono">294,679</td><td class="mono" style="color:var(--text-dim)">830629 STAUETTES AND OTHER ORNAMENTS, AND PARTS</td></tr>
+<tr><td class="mono">Ch.84</td><td class="right">58</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Machinery</td><td class="right mono">542,160</td><td class="mono" style="color:var(--text-dim)">848180 HAND OPERATED TAPS, COCKS, VALVES AND SI</td></tr>
+<tr><td class="mono">Ch.85</td><td class="right">162</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Electrical Equipment</td><td class="right mono">1,661,997</td><td class="mono" style="color:var(--text-dim)">850760 LITHIUM ION BATTERIES</td></tr>
+<tr><td class="mono">Ch.86</td><td class="right">13</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Vehicles & Transport</td><td class="right mono">57,475</td><td class="mono" style="color:var(--text-dim)">860900 CONTAINERS (INCLUDING CONTAINERS FOR THE</td></tr>
+<tr><td class="mono">Ch.87</td><td class="right">7</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Vehicles & Transport</td><td class="right mono">69,184</td><td class="mono" style="color:var(--text-dim)">871200 BICYCLES HAVING BOTH WHEELS NOT EXCEEDIN</td></tr>
+<tr><td class="mono">Ch.88</td><td class="right">27</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Vehicles & Transport</td><td class="right mono">16,590</td><td class="mono" style="color:var(--text-dim)">880730 OTHER PARTS OF AIRPLANES OR HELICOPTERS </td></tr>
+<tr><td class="mono">Ch.89</td><td class="right">13</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Vehicles & Transport</td><td class="right mono">17,227</td><td class="mono" style="color:var(--text-dim)">890190 VESSELS, NESOI, FOR THE TRANSPORT OF GOO</td></tr>
+<tr><td class="mono">Ch.90</td><td class="right">120</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Instruments</td><td class="right mono">232,917</td><td class="mono" style="color:var(--text-dim)">901890 OPTICAL INSTRUMENTS AND APPLIANCES AND P</td></tr>
+<tr><td class="mono">Ch.91</td><td class="right">46</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Instruments</td><td class="right mono">7,104</td><td class="mono" style="color:var(--text-dim)">910521 WALL CLOCKS, ELECTRICALLY OPERATED</td></tr>
+<tr><td class="mono">Ch.92</td><td class="right">17</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Instruments</td><td class="right mono">15,377</td><td class="mono" style="color:var(--text-dim)">920790 FRETTED STRINGED INSTRUMENTS</td></tr>
+<tr><td class="mono">Ch.93</td><td class="right">18</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Arms</td><td class="right mono">25,341</td><td class="mono" style="color:var(--text-dim)">930630 CARTRIDGES CONTAINING A PROJECTILE FOR R</td></tr>
+<tr><td class="mono">Ch.94</td><td class="right">26</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Furniture & Misc</td><td class="right mono">501,419</td><td class="mono" style="color:var(--text-dim)">940490 PILLOWS, CUSHIONS, AND SIMILAR FURNISHIN</td></tr>
+<tr><td class="mono">Ch.95</td><td class="right">34</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Furniture & Misc</td><td class="right mono">1,277,767</td><td class="mono" style="color:var(--text-dim)">950300 TRICYCLES, SCOOTERS, PEDAL CARS, SIMILAR</td></tr>
+<tr><td class="mono">Ch.96</td><td class="right">42</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Furniture & Misc</td><td class="right mono">174,288</td><td class="mono" style="color:var(--text-dim)">961900 SANITARY NAPKINS AND TAMPONS, DIAPERS AN</td></tr>
+<tr><td class="mono">Ch.97</td><td class="right">19</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Art & Antiques</td><td class="right mono">4,256</td><td class="mono" style="color:var(--text-dim)">970690 ANTIQUES OF AN AGE EXCEEDING 100 YEARS B</td></tr>
+<tr><td class="mono">Ch.98</td><td class="right">14</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Special Provisions</td><td class="right mono">1,049,526</td><td class="mono" style="color:var(--text-dim)">980100 </td></tr>
+<tr><td class="mono">Ch.99</td><td class="right">1</td><td><span class="gdot" style="background:#50b050"></span>Containerized</td><td>Special Provisions</td><td class="right mono">0</td><td class="mono" style="color:var(--text-dim)">999995 </td></tr>
+</table>
+<h2>Section 7: Mapping Coverage Summary</h2>
+<div class="coverage-grid">
+<div class="card">
+<div class="label">Coverage by Code Count</div>
+<div style="margin-top:12px"><b>Manual</b> &mdash; 2,788 codes (49.9%)</div>
+<div class="coverage-bar"><div class="coverage-fill" style="width:49.865855839742444%;background:var(--green)"></div></div>
+<div style="margin-top:12px"><b>Heading</b> &mdash; 450 codes (8.0%)</div>
+<div class="coverage-bar"><div class="coverage-fill" style="width:8.048649615453407%;background:var(--accent)"></div></div>
+<div style="margin-top:12px"><b>Chapter</b> &mdash; 2,353 codes (42.1%)</div>
+<div class="coverage-bar"><div class="coverage-fill" style="width:42.08549454480415%;background:var(--yellow)"></div></div>
+</div>
+<div class="card">
+<div class="label">Coverage by Volume</div>
+<div style="margin-top:12px"><b>Manual</b> &mdash; 348,001,291 MT (91.7%)</div>
+<div class="coverage-bar"><div class="coverage-fill" style="width:91.66180999824927%;background:var(--green)"></div></div>
+<div style="margin-top:12px"><b>Heading</b> &mdash; 9,000,357 MT (2.4%)</div>
+<div class="coverage-bar"><div class="coverage-fill" style="width:2.370649250181968%;background:var(--accent)"></div></div>
+<div style="margin-top:12px"><b>Chapter</b> &mdash; 22,656,239 MT (6.0%)</div>
+<div class="coverage-bar"><div class="coverage-fill" style="width:5.967540751568772%;background:var(--yellow)"></div></div>
+</div>
+</div>
+<table>
+<tr><th>Source</th><th class="right">Codes</th><th class="right">% Codes</th>
+<th class="right">Volume MT</th><th class="right">% Volume</th></tr>
+<tr><td><span class="badge manual">Manual</span> Manual</td><td class="right">2,788</td><td class="right">49.9%</td><td class="right mono">348,001,291</td><td class="right">91.7%</td></tr>
+<tr><td><span class="badge heading">Heading</span> Heading</td><td class="right">450</td><td class="right">8.0%</td><td class="right mono">9,000,357</td><td class="right">2.4%</td></tr>
+<tr><td><span class="badge chapter">Chapter</span> Chapter</td><td class="right">2,353</td><td class="right">42.1%</td><td class="right mono">22,656,239</td><td class="right">6.0%</td></tr>
+<tr class="total-row"><td>Total</td><td class="right">5,591</td><td class="right">100%</td><td class="right mono">379,657,886</td><td class="right">100%</td></tr>
+</table>
+<p style="color:var(--green);font-size:16px;margin-top:16px;font-weight:600">Unmapped codes: 0</p>
+
+</div>
+</body>
+</html>

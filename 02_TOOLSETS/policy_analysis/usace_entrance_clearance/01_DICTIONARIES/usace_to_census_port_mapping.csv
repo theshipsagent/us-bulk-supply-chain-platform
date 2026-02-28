@@ -1,0 +1,274 @@
+USACE_PORT,USACE_PORT_NAME,Census_Code,Census_Sked_D_E,Port_Consolidated,Port_Coast,Port_Region,Match_Type
+2,"Lubec Channel, ME",,,Boston,East,North Atlantic,State Fallback
+77,"Searsport, ME",0152,"Searsport, Maine",Boston,East,North Atlantic,City+State Exact
+78,"Portsmouth, NH",0131,"Portsmouth, New Hampshire",New York ,East,North Atlantic,City+State Exact
+90,"Port of Boston, MA",0401,"Boston, Massachusetts",Boston,East,North Atlantic,City+State Exact
+91,"Gloucester, MA",0404,"Gloucester, Massachusetts",Boston,East,North Atlantic,City+State Exact
+95,"Falmouth, MA",,,Boston,East,North Atlantic,State Fallback
+96,"Bucksport Harbor, ME",,,Boston,East,North Atlantic,State Fallback
+97,"Eastport Port Authority, ME",0103,"Eastport, Maine",Boston,East,North Atlantic,City+State Exact
+98,"New Bedford Port Authority, MA",0405,"New Bedford, Massachusetts",Boston,East,North Atlantic,City+State Exact
+99,"Portland, ME",0101,"Portland, Maine",Boston,East,North Atlantic,City+State Exact
+135,"Portsmouth Harbor, NH",0131,"Portsmouth, New Hampshire",New York ,East,North Atlantic,City+State Exact
+146,"Salem, MA",,,Boston,East,North Atlantic,State Fallback
+150,"Boston, MA Main Waterfront",,,,,,NO MATCH
+152,"Chelsea River, MA",,,Boston,East,North Atlantic,State Fallback
+153,"Mystic River, MA",,,Boston,East,North Atlantic,State Fallback
+162,"Weymouth Fore River, MA",,,Boston,East,North Atlantic,State Fallback
+163,"Town River, MA",,,Boston,East,North Atlantic,State Fallback
+170,"Plymouth, MA",0406,"Plymouth, Massachusetts",Boston,East,North Atlantic,City+State Exact
+189,"Fall River Harbor, MA",0407,"Fall River, Massachusetts",Boston,East,North Atlantic,City Fuzzy+State
+191,"Providence River and Harbor, RI",0502,"Providence, Rhode Island",New York ,East,North Atlantic,City+State Exact
+196,"Narragansett Bay, RI",,,New York ,East,North Atlantic,State Fallback
+203,"Port of Providence, RI",0502,"Providence, Rhode Island",New York ,East,North Atlantic,City+State Exact
+232,"Fall River Port Authority, MA",0407,"Fall River, Massachusetts",Boston,East,North Atlantic,City Fuzzy+State
+272,"Bridgeport, CT",0410,"Bridgeport, Connecticut",New York ,East,North Atlantic,City+State Exact
+273,"New London, CT",0413,"New London, Connecticut",New York ,East,North Atlantic,City+State Exact
+304,"New London Harbor, CT",0413,"New London, Connecticut",New York ,East,North Atlantic,City+State Exact
+324,"Port of Davisville, RI",,,New York ,East,North Atlantic,State Fallback
+398,"Port Authority of New York and New Jersey, NY & NJ",1001,"New York, New York",New York ,East,North Atlantic,Manual Override
+399,"Northville, Long Island, NY",,,New York ,East,North Atlantic,State Fallback
+400,"Chesapeake Bay, MD and VA",,,,,,NO MATCH
+505,"Albany Port District, NY",1002,"Albany, New York",New York ,East,North Atlantic,City+State Exact
+544,"Newport, RI",0501,"Newport, Rhode Island",New York ,East,North Atlantic,City+State Exact
+550,"South Jersey Port Corporation, NJ",,,,,,NO MATCH
+552,"Philadelphia Regional Port Authority, PA",1101,"Philadelphia, Pennsylvania",Delaware River,East,Mid-Atlantic,City+State Exact
+555,"Wilmington, DE",1103,"Wilmington, Delaware",Delaware River,East,Mid-Atlantic,City+State Exact
+648,"York River, VA",,,Hampton Roads,East,Mid-Atlantic,State Fallback
+700,"Baltimore, MD",1303,"Baltimore, Maryland",Baltimore,East,Mid-Atlantic,City+State Exact
+727,"Annapolis, MD",1301,"Annapolis, Maryland",Baltimore,East,Mid-Atlantic,City+State Exact
+737,"Richmond, VA",1404,"Richmond-Petersburg, Virginia",Hampton Roads,East,Mid-Atlantic,City Fuzzy+State
+738,"Hopewell, VA",,,Hampton Roads,East,Mid-Atlantic,State Fallback
+759,"Morehead City, NC",,,North Carolina Ports,East,South Atlantic,State Fallback
+766,"Wilmington, NC",1501,"Wilmington, North Carolina",North Carolina Ports,East,South Atlantic,City+State Exact
+775,"Port of Charleston, SC",1601,"Charleston, South Carolina",South Carolina Ports,East,South Atlantic,City+State Exact
+776,"Port of Savannah, GA",1703,"Savannah, Georgia",Georgia Ports,East,South Atlantic,City+State Exact
+783,"Port of Brunswick, GA",1701,"Brunswick, Georgia",Georgia Ports,East,South Atlantic,City+State Exact
+786,"Ocean Highway and Port Authority, FL",,,South Florida,East,South Atlantic,State Fallback
+844,"Northeast (Cape Fear) River, NC",,,North Carolina Ports,East,South Atlantic,State Fallback
+847,"Wilmington Harbor, NC",1501,"Wilmington, North Carolina",North Carolina Ports,East,South Atlantic,City+State Exact
+1117,"Mussell Ridge, ME",,,Boston,East,North Atlantic,State Fallback
+1191,"Oak Bluffs, MA",,,Boston,East,North Atlantic,State Fallback
+1238,"Calvert County, Maryland Cove Point to Holland Point, MD",,,Baltimore,East,Mid-Atlantic,State Fallback
+1324,"Lagoon Pond, Martha's Vineyard, MA",,,Boston,East,North Atlantic,State Fallback
+1506,"New Haven, CT",0412,"New Haven, Connecticut",New York ,East,North Atlantic,City+State Exact
+1910,"Greater Lafourche Port Commission, LA",,,New Orleans,Gulf,Gulf East,State Fallback
+1911,"Port Everglades, FL",5203,"Port Everglades, Florida",South Florida,East,South Atlantic,City+State Exact
+1912,"Guaynabo, PR",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+1913,"San Juan, PR",4909,"San Juan, Puerto Rico","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+1980,"Guayanilla, PR",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+1981,"Guayama, PR",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+1983,"Port of Palm Beach District, FL",5204,"West Palm Beach, Florida",South Florida,East,South Atlantic,Manual Override
+1986,"Fort Pierce, FL",5205,"Fort Pierce, Florida",Land Ports,Land Ports,Land Ports,City+State Exact
+1988,"Key West, FL",5202,"Key West, Florida",Land Ports,Land Ports,Land Ports,City+State Exact
+1989,"Virgin Islands Port Authority - St. Thomas, VI",5101,"Charlotte Amalie, St. Thomas, Virgin Islands","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",Manual Override
+1991,"Port of Pensacola, FL",1819,"Pensacola, Florida",Mobile,Gulf,Gulf East,City+State Exact
+1992,"PortMiami, FL",5201,"Miami, Florida",South Florida,East,South Atlantic,Manual Override
+1995,"Port of Pascagoula, MS",1903,"Pascagoula, Mississippi",Mobile,Gulf,Gulf East,City+State Exact
+2000,Mobile Bay Ship Channel,,,,,,NO MATCH
+2008,"Theodore Ship Channel, AL",,,Mobile,Gulf,Gulf East,State Fallback
+2012,"Houston Ship Channel, TX",5301,"Houston, Texas",Houston,Gulf,North Texas,City+State Exact
+2014,"Clear Creek, TX",,,Sabine River,Gulf,North Texas,State Fallback
+2017,"Jacksonville, FL",1803,"Jacksonville, Florida",North Florida,East,South Atlantic,City+State Exact
+2021,"Tampa Port Authority, FL",1801,"Tampa, Florida",Tampa,Gulf,Gulf East,City+State Exact
+2030,"Port of Iberia District, LA",,,New Orleans,Gulf,Gulf East,State Fallback
+2031,"Port of Houston Authority of Harris County, TX",5301,"Houston, Texas",Houston,Gulf,North Texas,Manual Override
+2032,"Mobile, AL",1901,"Mobile, Alabama",Mobile,Gulf,Gulf East,City+State Exact
+2066,"Barataria Bay Waterway, LA",,,New Orleans,Gulf,Gulf East,State Fallback
+2082,GIWW Morgan City-Port Allen Landside Route (Bayou Boeuf),,,,,,NO MATCH
+2087,"Morgan City Harbor and Terminal District, LA",2001,"Morgan City, Louisiana",New Orleans,Gulf,Gulf East,City+State Exact
+2107,"St. Lucie Inlet, FL",1814,"St. Petersburg, Florida",Land Ports,Land  Ports,Land Ports,City Fuzzy+State
+2111,"Key West Harbor, FL",5202,"Key West, Florida",Land Ports,Land Ports,Land Ports,City+State Exact
+2139,"Fajardo, PR",4904,"Fajardo, Puerto Rico","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+2142,"Virgin Islands Port Authority - St. Johns, VI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+2151,"Ponce Port Authority, PR",4908,"Ponce, Puerto Rico","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+2152,"Guayanilla Harbor, PR",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+2160,"Canaveral Port District, FL",1816,"Port Canaveral, Florida",North Florida,East,South Atlantic,Manual Override
+2162,"Palm Beach Harbor, FL",,,South Florida,East,South Atlantic,State Fallback
+2177,"Tallaboa Bay, PR",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+2196,"Chickasaw Creek, AL",,,Mobile,Gulf,Gulf East,State Fallback
+2199,"Bayou La Batre, AL",,,Mobile,Gulf,Gulf East,State Fallback
+2220,"Yabucoa, PR",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+2224,"Terrebonne Parish Port Commission, LA",,,New Orleans,Gulf,Gulf East,State Fallback
+2248,"Lake Charles Harbor and Terminal District, LA",2017,"Lake Charles, Louisiana",Lake Charles,Gulf,Gulf East,City+State Exact
+2251,"Port of New Orleans, LA",2002,"New Orleans, Louisiana",New Orleans,Gulf,Gulf East,City+State Exact
+2252,"Port of Greater Baton Rouge, LA",2004,"Baton Rouge, Louisiana",New Orleans,Gulf,Gulf East,Manual Override
+2253,"Port of South Louisiana, LA",,,New Orleans,Gulf,Gulf East,State Fallback
+2255,"Plaquemines Port, Harbor and Terminal District, LA",,,New Orleans,Gulf,Gulf East,State Fallback
+2391,"Sabine Pass, TX",2102,"Sabine, Texas",Sabine River,Gulf,North Texas,City Fuzzy+State
+2393,"Beaumont, TX",2104,"Beaumont, Texas",Sabine River,Gulf,North Texas,City+State Exact
+2397,"Sabine Pass Port Authority, TX",2102,"Sabine, Texas",Sabine River,Gulf,North Texas,City Fuzzy+State
+2398,"Orange County Navigation and Port District, TX",2103,"Orange, Texas",Sabine River,Gulf,North Texas,City Fuzzy+State
+2408,"Port Freeport, TX",2101,"Port Arthur, Texas",Sabine River,Gulf,North Texas,City Fuzzy+State
+2416,"Port Arthur, TX",2101,"Port Arthur, Texas",Sabine River,Gulf,North Texas,City+State Exact
+2417,"Galveston, TX",5310,"Galveston, Texas",Houston,Gulf,North Texas,City+State Exact
+2420,"Brownsville Navigation District of Cameron County, TX",2301,"Brownsville, Texas",South Texas,Gulf,South Texas,City Fuzzy+State
+2422,"Port Isabel-San Benito Navigation District of Cameron County Texas, TX",2101,"Port Arthur, Texas",Sabine River,Gulf,North Texas,City Fuzzy+State
+2427,"Calhoun Port Authority, TX",,,Sabine River,Gulf,North Texas,State Fallback
+2428,"Texas City, TX",5306,"Texas City, Texas",Houston,Gulf,North Texas,City+State Exact
+2436,"Corpus Christi, TX",5312,"Corpus Christi, Texas",South Texas,Gulf,South Texas,City+State Exact
+2437,"Manatee County Port Authority, FL",,,South Florida,East,South Atlantic,State Fallback
+2440,"Port of Gulfport, MS",1902,"Gulfport, Mississippi",Mobile,Gulf,Gulf East,City+State Exact
+2441,"Panama City Port Authority, FL",1818,"Panama City, Florida",Mobile,Gulf,Gulf East,City+State Exact
+2443,"Virgin Islands Port Authority - St. Croix, VI",5104,"Christiansted, St. Croix, Virgin Islands","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",Manual Override
+2502,"St. Petersburg, FL",1814,"St. Petersburg, Florida",Land Ports,Land  Ports,Land Ports,City+State Exact
+3007,"Ogdensburg Bridge and Port Authority, NY",0701,"Ogdensburg, New York",Toledo-Cleveland,Great Lakes,Great Lakes,City Fuzzy+State
+3105,"Rochester, NY",0903,"Rochester, New York",Land Ports,Land  Ports,Land Ports,City+State Exact
+3111,"Oswego, NY",0904,"Oswego, New York",Toledo-Cleveland,Great Lakes,Great Lakes,City+State Exact
+3198,"Monroe, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3201,"Lake Erie, Including Upper Niagara River",,,,,,NO MATCH
+3204,"Toledo-Lucas County Port Authority, OH",4105,"Toledo, Ohio",Toledo-Cleveland,Great Lakes,Great Lakes,Manual Override
+3212,"Marblehead, OH",,,Toledo-Cleveland,Great Lakes,Great Lakes,State Fallback
+3213,"Sandusky, OH",,,Toledo-Cleveland,Great Lakes,Great Lakes,State Fallback
+3217,"Cleveland-Cuyahoga County, OH",4101,"Cleveland, Ohio",Toledo-Cleveland,Great Lakes,Great Lakes,Manual Override
+3219,"Ashtabula Port Authority, OH",4122,"Ashtabula/Conneaut, Ohio",Toledo-Cleveland,Great Lakes,Great Lakes,City Fuzzy+State
+3221,"Erie, PA",4106,"Erie, Pennsylvania",Toledo-Cleveland,Great Lakes,Great Lakes,City+State Exact
+3226,"Buffalo Harbor, NY",0901,"Buffalo-Niagara Falls, New York",Land Ports,Land  Ports,Land Ports,City Fuzzy+State
+3227,"Conneaut, OH",,,Toledo-Cleveland,Great Lakes,Great Lakes,State Fallback
+3230,"Buffalo, NY",0901,"Buffalo-Niagara Falls, New York",Land Ports,Land  Ports,Land Ports,City Fuzzy+State
+3235,"Lorain Port Authority, OH",,,Toledo-Cleveland,Great Lakes,Great Lakes,State Fallback
+3321,"Detroit/Wayne County Port Authority, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3500,"Marine City, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3501,"St. Clair River, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3512,"Marysville, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3516,"Port Huron, MI",3802,"Port Huron, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3603,"Saginaw River, MI",3804,"Saginaw/Bay City, Michigan",Land Ports,Land  Ports,Land Ports,City Fuzzy+State
+3617,"Alpena, MI",3843,"Alpena, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3619,"Presque Isle Township, MI",3842,"Presque Island, Michigan",Land Ports,Land  Ports,Land Ports,City Fuzzy+State
+3623,"St. Ignace, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3627,"Clark Township, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3629,"Cheboygan, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3635,"Rogers City, MI",3818,"Rogers City, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3700,"Muskegon, MI",3815,"Muskegon, Michigan",Detroit-Milwaukee,Great Lakes,Great Lakes,City+State Exact
+3701,Lake Michigan,,,,,,NO MATCH
+3721,"Holland, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3726,"Grand Haven, MI",3816,"Grand Haven, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3728,"Grand Haven Harbor and Grand River, MI",3816,"Grand Haven, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3733,"St. Joseph Harbor, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3743,"Northern Indiana Maritime District, IN",3905,"Gary, Indiana",Detroit-Milwaukee,Great Lakes,Great Lakes,Manual Override
+3749,"Illinois International Port District, IL",3901,"Chicago, Illinois, including O’Hare International Airport",Detroit-Milwaukee,Great Lakes,Great Lakes,Manual Override
+3756,"Port Milwaukee, WI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3767,"Sturgeon Bay, WI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3778,"Port of Green Bay, WI",3703,"Green Bay, Wisconsin",Detroit-Milwaukee,Great Lakes,Great Lakes,City+State Exact
+3782,"Manistee, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3783,"Port of Ludington, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3795,"Escanaba, MI",3808,"Escanaba, Michigan",Detroit-Milwaukee,Great Lakes,Great Lakes,City+State Exact
+3803,"Mueller Township, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3809,St Mary's River-drummond Island Access,,,,,,NO MATCH
+3817,"Sault Ste Marie, MI",3803,"Sault Ste Marie, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3841,"Marquette, MI",3809,"Marquette, Michigan",Land Ports,Land  Ports,Land Ports,City+State Exact
+3850,"Keweenaw Waterway, MI",,,Detroit-Milwaukee,Great Lakes,Great Lakes,State Fallback
+3901,Lake Superior,,,,,,NO MATCH
+3924,"Duluth-Superior, MN and WI",3510,"Duluth, Wisconsin",Duluth,Great Lakes,Great Lakes,Manual Override
+3926,"Two Harbors, MN",,,,,,NO MATCH
+4102,"San Diego Unified Port District, CA",2501,"San Diego, California",LA-Long Beach,West,California,City+State Exact
+4110,"Port of Long Beach, CA",2709,"Long Beach, California",LA-Long Beach,West,California,Manual Override
+4120,"Port of Los Angeles, CA",2704,"Los Angeles, California",LA-Long Beach,West,California,Manual Override
+4133,"Santa Barbara, CA",,,San Franciso,West,California,State Fallback
+4142,"Catalina Island Ports, CA",,,San Franciso,West,California,State Fallback
+4146,"El Segundo, CA",,,San Franciso,West,California,State Fallback
+4150,"PORT HUENEME, CA",2713,"Port Hueneme, California",LA-Long Beach,West,California,City+State Exact
+4151,"Oxnard Harbor District, CA",,,San Franciso,West,California,State Fallback
+4200,"Suisun Bay Channel, CA",,,San Franciso,West,California,State Fallback
+4240,"Sacramento-Yolo Port District, CA",,,San Franciso,West,California,State Fallback
+4260,"San Joaquin River, CA",2501,"San Diego, California",LA-Long Beach,West,California,City Fuzzy+State
+4270,"Stockton Port District, CA",2810,"Stockton, California",San Franciso,West,California,City+State Exact
+4335,"San Francisco Port Commission, CA",2809,"San Francisco, California",San Franciso,West,California,City+State Exact
+4340,"Redwood City, CA",2821,"Redwood City, California",San Franciso,West,California,City+State Exact
+4344,"Port of Oakland, CA",2811,"Oakland, California",San Franciso,West,California,City+State Exact
+4345,"Oakland Harbor, CA",2811,"Oakland, California",San Franciso,West,California,City+State Exact
+4351,"Richmond, CA",2812,"Richmond, California",San Franciso,West,California,City+State Exact
+4355,"San Pablo Bay and Mare Island Strait, CA",2501,"San Diego, California",LA-Long Beach,West,California,City Fuzzy+State
+4360,"Carquinez Strait, CA",2830,"Carquinez Strait, California",San Franciso,West,California,City+State Exact
+4374,"Humboldt Bay Harbor, Recreation and Conservation District, CA",,,San Franciso,West,California,State Fallback
+4400,"Hilo, Hawai'i, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4410,"Kahului, Maui, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4412,"Kailua-Kona, Hawai'i, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4421,"Honolulu, O'ahu, HI",3201,"Honolulu, Hawaii","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",Manual Override
+4431,"Nawiliwili, Kaua'i, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4445,"Kewalo Basin, Honolulu, Oahu, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4450,"Pearl Harbor, O'ahu, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4458,"Kalaeloa Barbers Point, O'ahu, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4468,"Lahaina, Maui, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4471,"Maalaea, Maui, HI",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4490,"Santa Barbara Island, CA",,,San Franciso,West,California,State Fallback
+4560,"St Matthew Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4590,"Shelikof Strait, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4610,"Clatsop County Port District, OR",,,Columbia River,West,Pacific Northwest,State Fallback
+4622,"Port of Longview, WA",2905,"Longview, Washington",Columbia River,West,Pacific Northwest,City+State Exact
+4626,"Port of Kalama, WA",2909,"Kalama, Washington",Columbia River,West,Pacific Northwest,City+State Exact
+4629,"Port of Columbia County, OR",,,Columbia River,West,Pacific Northwest,State Fallback
+4636,"Port of Vancouver USA, WA",2908,"Vancouver, Washington",Columbia River,West,Pacific Northwest,City Fuzzy+State
+4646,"Port of Portland, OR",2904,"Portland, Oregon",Columbia River,West,Pacific Northwest,City+State Exact
+4659,"Oregon International Port of Coos Bay, OR",,,Columbia River,West,Pacific Northwest,State Fallback
+4707,"Clallam County Port District, WA",,,Seattle-Tacoma,West,Pacific Northwest,State Fallback
+4709,"Grays Harbor Port District, WA",,,Seattle-Tacoma,West,Pacific Northwest,State Fallback
+4713,"Port of Olympia, WA",3026,"Olympia, Washington",Seattle-Tacoma,West,Pacific Northwest,City+State Exact
+4715,"Puget Sound Spine, WA",,,Seattle-Tacoma,West,Pacific Northwest,State Fallback
+4719,"Tacoma, WA",3002,"Tacoma, Washington",Seattle-Tacoma,West,Pacific Northwest,City+State Exact
+4721,"Bremeton, WA, Channel to",,,,,,NO MATCH
+4722,"Port of Seattle, WA",3001,"Seattle, Washington",Seattle-Tacoma,West,Pacific Northwest,Manual Override
+4727,"Port of Everett, WA",3006,"Everett, Washington",Seattle-Tacoma,West,Pacific Northwest,City+State Exact
+4730,"Port of Anacortes, WA",3010,"Anacortes, Washington",Seattle-Tacoma,West,Pacific Northwest,City+State Exact
+4736,"Bellingham, WA",3005,"Bellingham, Washington",Seattle-Tacoma,West,Pacific Northwest,City+State Exact
+4743,"Rosario Strait, WA - Georgia Strait Spine, WA",,,Seattle-Tacoma,West,Pacific Northwest,State Fallback
+4754,"Puget Sound Area, WA, Other Ports",,,,,,NO MATCH
+4768,"Behm Canal, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4770,"Tongass Narrows, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4793,"Icy Strait, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4795,"Wrangell, AK",3105,"Wrangell, Alaska",Land Ports,Land  Ports,Land Ports,City+State Exact
+4796,"Sitka Ports and Harbor Commission, AK",3115,"Sitka, Alaska","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City Fuzzy+State
+4797,"Hoonah, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4799,"Cordova, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4808,"Sitka Harbor, AK",3115,"Sitka, Alaska","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+4816,"Valdez, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4820,"Port of Alaska, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4823,"Juneau, AK",3101,"Juneau, Alaska","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+4824,"Whittier, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4826,"Petersburg, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4827,"Ketchikan, AK",3102,"Ketchikan, Alaska","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+4830,"Homer, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4831,"Nikiski, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4845,"Cook Inlet, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4857,"Skagway, AK",3103,"Skagway, Alaska","Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",City+State Exact
+4859,"Prince William Sound, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4865,"Prince of Wales Is. West Side, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4869,"Craig, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4878,"Metlakatla, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4886,"Klawock Harbor, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4889,"Togiak Bay, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4893,"Kotzebue Sound, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4903,"Klawock, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4905,"False Pass, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4906,"Kodiak, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4907,"Seward, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4916,"Nome, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4932,"Afognak Bay, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4935,"Kodiak Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4939,"Unalaska Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4940,"Chignik Bay, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4943,"Baralof Bay, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4946,"Akutan Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4951,"Adak Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4952,"St. Paul Island, Pribilof Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4954,"Amchitka Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4957,"Mitrofania Bay, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4966,"Nunavak Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4971,"St. Lawrence Island, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4972,"Teller, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4981,"Point Hope, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4986,"Wainwright, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4988,"Utqiagvik (Barrow), AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4995,"Prudhoe Bay, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+4998,"Kivalina, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+5003,"Old Harbor, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+5004,"Yakutat, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+5005,"Haines Borough, AK",,,"Alaska, US Islands","Alaska, US Islands","Alaska, US Islands",State Fallback
+5250,"Delaware River, Philadelphia, PA to the Sea",,,,,,NO MATCH
+5303,"Hudson River, NY, Mouth of Spuyten Duyvil Creek (Harlem River) to  Waterford, NY",,,New York ,East,North Atlantic,State Fallback
+5562,"James River below Richmond, VA",,,Hampton Roads,East,Mid-Atlantic,State Fallback
+5680,"Atlantic Intracoastal Waterway between Norfolk, VA, and the St. Johns River, FL (Wilmington District)",,,,,,NO MATCH
+5685,"Atlantic Intracoastal Waterway between Norfolk, VA, and the St. Johns River, FL (Charleston District)",,,,,,NO MATCH
+5700,"Port of Virginia, VA",1401,"Norfolk, Virginia",Hampton Roads,East,Mid-Atlantic,Manual Override
+6242,"Gulf Intracoastal Waterway, Mississippi River, LA, to Sabine River, TX",,,Sabine River,Gulf,North Texas,State Fallback
+8604,"Columbia and Lower Willamette Rivers below Vancouver, WA and Portland, OR",,,Columbia River,West,Pacific Northwest,State Fallback

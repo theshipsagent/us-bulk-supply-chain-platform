@@ -1,0 +1,488 @@
+----------------------------------------------------------------------
+Schedule D - District/Port List (by name)[ProducedAPRIL25]
+----------------------------------------------------------------------
+Name                                                  | Code    | District/Port
+----------------------------------------------------------------------
+ABERDEEN-HOQUIAM, WA                                  | 3003    | Port
+ADDISON AIRPORT, ADDISON, TX                          | 5584    | Port
+AGUADILLA, PR                                         | 4901    | Port
+AIR FRANCE (MACH PLUS), JAMAICA, NY                   | 1074    | Port
+AIRBORNE EXPRESS, SEATTLE, WA                         | 3074    | Port
+AIRCARGO HANDLING SERVIC                              | 2871    | Port
+ALBANY, NY                                            | 1002    | Port
+ALBUQUERQUE, NM                                       | 2407    | Port
+ALCAN, AK                                             | 3104    | Port
+ALEXANDRIA BAY, NY                                    | 0708    | Port
+ALEXANDRIA, VA                                        | 5402    | Port
+ALGONAC, MI                                           | 3814    | Port
+ALLENTOWN, PA (LEHIGH VALLEY INTL AIRPT)              | 1119    | Port
+ALPENA, MI                                            | 3843    | Port
+AMARILLO, TX                                          | 5502    | Port
+AMBROSE, ND                                           | 3410    | Port
+ANACORTES, WA                                         | 3010    | Port
+ANCHORAGE, AK                                         | 31      | District
+ANCHORAGE, AK                                         | 3126    | Port
+ANDRADE, CA                                           | 2502    | Port
+ANNAPOLIS, MD                                         | 1301    | Port
+ANTLER, ND                                            | 3413    | Port
+ARAPAHOE COUNTY PUBLIC AIRPORT, CO                    | 3384    | Port
+ASHLAND, WI                                           | 3511    | Port
+ASHTABULA/CONNEAUT, OH                                | 4122    | Port
+ASTORIA, OR                                           | 2901    | Port
+ATLANTA, GA                                           | 1704    | Port
+ATLANTIC CITY REGIONAL AIRPORT, NJ                    | 1182    | Port
+AUSTIN, TX                                            | 5506    | Port
+AVION BROKERS, SEATTLE, WA                            | 3072    | Port
+BALTIMORE, MD                                         | 13      | District
+BALTIMORE, MD                                         | 1303    | Port
+BANGOR, ME                                            | 0102    | Port
+BAR HARBOR, ME                                        | 0112    | Port
+BATH, ME                                              | 0111    | Port
+BATON ROUGE, LA                                       | 2004    | Port
+BATTLE CREEK, MI                                      | 3805    | Port
+BAUDETTE, MN                                          | 3424    | Port
+BEAUFORT-MOREHEAD CITY,NC                             | 1511    | Port
+BEAUMONT, TX                                          | 2104    | Port
+BEECHER FALLS, VT                                     | 0206    | Port
+BELLINGHAM, WA                                        | 3005    | Port
+BINGHAMTON REGIONAL AIRPORT, NY                       | 0981    | Port
+BIRMINGHAM, AL                                        | 1904    | Port
+BLAINE, WA                                            | 3004    | Port
+BLUE GRASS AIRPORT                                    | 4184    | Port
+BOCA GRANDE, FL                                       | 1807    | Port
+BOISE, ID                                             | 2907    | Port
+BOSTON, MA                                            | 04      | District
+BOSTON, MA                                            | 0401    | Port
+BOUNDARY, WA                                          | 3015    | Port
+BOZEMAN YELLOWSTONE USER FEE AIRPORT, BELGRADE, MT    | 3386    | Port
+BRIDGEPORT,CT                                         | 0410    | Port
+BRIDGEWATER, ME                                       | 0127    | Port
+BROWNSVILLE, TX                                       | 2301    | Port
+BRUNSWICK, GA                                         | 1701    | Port
+BUFFALO, NY                                           | 09      | District
+BUFFALO-NIAGARA FALLS, NY                             | 0901    | Port
+BURLINGTON, VT                                        | 0207    | Port
+BUTTE, MT                                             | 3305    | Port
+BALTIMORE-WASHINGTON INTERNATIONAL AIRPORT, MD        | 1305    | Port
+CALAIS, ME                                            | 0115    | Port
+CALEXICO, CA                                          | 2503    | Port
+CALEXICO-EAST                                         | 2507    | Port
+CAMBRIDGE, MD                                         | 1302    | Port
+CANADIAN LATE RECEIPTS ESTIMATE                       | 7010    | Port
+CAPE VINCENT, NY                                      | 0706    | Port
+CAPITAL REGION INTL AIRPORT, LANSING, MI              | 3883    | Port
+CAPITAN, CA                                           | 2715    | Port
+CARBURY, ND                                           | 3421    | Port
+CARQUINEZ STRAIT,CA                                   | 2830    | Port
+CHAMPLAIN-ROUSES POINT, NY                            | 0712    | Port
+CHARLESTON, SC                                        | 16      | District
+CHARLESTON, SC                                        | 1601    | Port
+CHARLESTON, WV                                        | 1409    | Port
+CHARLOTTE AMALIE, VI                                  | 5101    | Port
+CHARLOTTE, NC                                         | 1512    | Port
+CHATTANOOGA, TN                                       | 2008    | Port
+CHESTER, PA                                           | 1102    | Port
+CHICAGO EXECUTIVE AIRPORT, IL                         | 3983    | Port
+CHICAGO MIDWAY INT'L AIRPORT, IL                      | 3910    | Port
+CHICAGO, IL                                           | 39      | District
+CHICAGO, IL                                           | 3901    | Port
+CHRISTIANSTED, VI                                     | 5104    | Port
+CINCINNATI, OH                                        | 4102    | Port
+CLAYTON, NY                                           | 0714    | Port
+CLEVELAND, OH                                         | 41      | District
+CLEVELAND, OH                                         | 4101    | Port
+COLUMBIA, SC                                          | 1604    | Port
+COLUMBIA-SNAKE, OR                                    | 29      | District
+COLUMBUS, NM                                          | 2406    | Port
+COLUMBUS, OH                                          | 4103    | Port
+COOS BAY, OR                                          | 2903    | Port
+CORPUS CHRISTI, TX                                    | 5312    | Port
+CRISFIELD, MD                                         | 1304    | Port
+CROCKETT,CA                                           | 2815    | Port
+CRUZ BAY, VI                                          | 5102    | Port
+DALLAS LOVE FIELD USER FEE AIRP, DALLAS, TX           | 5588    | Port
+DALLAS/FT. WORTH, TX                                  | 55      | District
+DALLAS/FT. WORTH, TX                                  | 5501    | Port
+DALTON CACHE, AK                                      | 3106    | Port
+DANVILLE, WA                                          | 3012    | Port
+DAVENPORT, IA-ROCK ISLAND, IL                         | 3908    | Port
+DAYTON, OH                                            | 4104    | Port
+DAYTONA BEACH INT'L ARPT, FL                          | 1884    | Port
+DEL BONITA, MT                                        | 3322    | Port
+DEL RIO, TX                                           | 2302    | Port
+DENVER, CO                                            | 3307    | Port
+DERBY LINE, VT                                        | 0209    | Port
+DES MOINES, IA                                        | 3513    | Port
+DETOUR, MI                                            | 3819    | Port
+DETROIT METRO AIRPORT, DETROIT, MI                    | 3807    | Port
+DETROIT, MI                                           | 38      | District
+DETROIT, MI                                           | 3801    | Port
+DHL, JAMAICA, NY                                      | 1072    | Port
+DHL CINCINNATI, OH                                    | 4197    | Port
+DHL-HUB, LOS ANGELES, CA                              | 2791    | Port
+DHL, SEATTLE, WA                                      | 3073    | Port
+DHL, MIAMI, FL                                        | 5296    | Port
+DOUGLAS, AZ                                           | 2601    | Port
+DULUTH, MN                                            | 36      | District
+DULUTH, MN-SUPERIOR, WI                               | 3510    | Port
+DUNSEITH, ND                                          | 3422    | Port
+DUPAGE AIRPORT, IL                                    | 3984    | Port
+DURHAM, NC                                            | 1503    | Port
+EAGLE COUNTY REGIONAL AIRPORT                         | 3385    | Port
+EAGLE PASS, TX                                        | 2303    | Port
+EASTPORT, ID                                          | 3302    | Port
+EASTPORT, ME                                          | 0103    | Port
+EL PASO, TX                                           | 24      | District
+EL PASO, TX                                           | 2402    | Port
+EMERY WORLDWIDE                                       | 1073    | Port
+ERIE, PA                                              | 4106    | Port
+ESCANABA, MI                                          | 3808    | Port
+EUREKA, CA                                            | 2802    | Port
+EVERETT, WA                                           | 3006    | Port
+FABENS, TX                                            | 2404    | Port
+FAIRBANKS, AK                                         | 3111    | Port
+FAJARDO, PR                                           | 4904    | Port
+FALL RIVER, MA                                        | 0407    | Port
+FARGO,ND                                              | 3411    | Port
+FEDEX, MIAMI, FL                                      | 5297    | Port
+FEDEX ECCF, NEWARK, NJ                                | 4671    | Port
+FEDEX, ANCHORAGE, AK                                  | 3195    | Port
+FEDEX, INDIANAPOLIS, IN                               | 4198    | Port
+FEDEX, MEMPHIS, TN                                    | 2095    | Port
+FEDEX, OAKLAND, CA                                    | 2895    | Port
+FERNANDINA BEACH, FL                                  | 1805    | Port
+FERRY, WA                                             | 3013    | Port
+FORT FAIRFIELD, ME                                    | 0107    | Port
+FORT KENT, ME                                         | 0110    | Port
+FORT MYERS AIRPORT, FL                                | 1822    | Port
+FORT PIERCE, FL                                       | 5205    | Port
+FORT WAYNE AIRPORT                                    | 4183    | Port
+FORTH WORTH ALLIANCE  AIRP, TX                        | 5583    | Port
+FORTUNA, ND                                           | 3417    | Port
+FREDERIKSTED, VI                                      | 5105    | Port
+FREEPORT, TX                                          | 5311    | Port
+FRESNO, CA                                            | 2803    | Port
+FRIDAY HARBOR, WA                                     | 3014    | Port
+FRONT ROYAL, VA                                       | 1410    | Port
+FRONTIER, WA                                          | 3020    | Port
+FT. LAUDERDALE INTERNATIONAL AIRPORT, FL              | 5210    | Port
+GALVESTON, TX                                         | 5310    | Port
+GARY, IN                                              | 3905    | Port
+GEORGETOWN, SC                                        | 1602    | Port
+GLOUCESTER CITY, NJ                                   | 1113    | Port
+GLOUCESTER, MA                                        | 0404    | Port
+GRAMERCY, LA                                          | 2010    | Port
+GRAND FORKS, ND                                       | 3427    | Port
+GRAND HAVEN, MI                                       | 3816    | Port
+GRAND PORTAGE, MN                                     | 3613    | Port
+GRAND RAPIDS, MI                                      | 3806    | Port
+GRANT COUNTY AIRPORT                                  | 3082    | Port
+GREAT FALLS, MT                                       | 33      | District
+GREAT FALLS, MT                                       | 3304    | Port
+GREEN BAY, WI                                         | 3703    | Port
+GREENVILLE, MS                                        | 2011    | Port
+GREENVILLE-SPARTANBRG, SC                             | 1603    | Port
+GULFPORT, MS                                          | 1902    | Port
+HANNAH, ND                                            | 3408    | Port
+HANSBORO, ND                                          | 3415    | Port
+HARRISBURG, PA                                        | 1109    | Port
+HARTFORD. CT                                          | 0411    | Port
+HIDALGO, PHARR, TX                                    | 2305    | Port
+HIGHGATE SPRINGS/ALBURG, VT                           | 0212    | Port
+HILO, HI                                              | 3202    | Port
+HONOLULU INTL AIRPRT, HI                              | 3205    | Port
+HONOLULU, HI                                          | 32      | District
+HONOLULU, HI                                          | 3201    | Port
+HOULTON, ME                                           | 0106    | Port
+HOUSTON INTERCONTL AIRP, TX                           | 5309    | Port
+HOUSTON, TX                                           | 5301    | Port
+HOUSTON-GALVESTON, TX                                 | 53      | District
+HUNTSVILLE, AL                                        | 1910    | Port
+IBC COURIER HUB, FL                                   | 5298    | Port
+IBC PACIFIC                                           | 2776    | Port
+INDIANAPOLIS, IN                                      | 4110    | Port
+INTERNATIONAL FALLS-RANIER, MN                        | 3604    | Port
+ITHACA TOMPKINS INTL AIR, ITHACA, NY                  | 0983    | Port
+JACKMAN, ME                                           | 0104    | Port
+JACKSONVILLE, FL                                      | 1803    | Port
+JFK INTERNATIONAL AIRPORT, NY                         | 1012    | Port
+JONESPORT, ME                                         | 0122    | Port
+JUNEAU, AK                                            | 3101    | Port
+KAHULUI, HI                                           | 3203    | Port
+KALAMA, WA                                            | 2909    | Port
+KALISPELL AIRPORT                                     | 3324    | Port
+KANSAS CITY, MO                                       | 4501    | Port
+KENMORE AIR HARBOR, WA                                | 3018    | Port
+KETCHIKAN, AK                                         | 3102    | Port
+KEY WEST, FL                                          | 5202    | Port
+KNOXVILLE, TN                                         | 2016    | Port
+KONA, HI                                              | 3206    | Port
+LAKE CHARLES, LA                                      | 2017    | Port
+LANCASTER, MN                                         | 3430    | Port
+LAREDO, TX                                            | 23      | District
+LAREDO, TX                                            | 2304    | Port
+LAS VEGAS, NV                                         | 2722    | Port
+LAURIER, WA                                           | 3016    | Port
+LAWRENCE, MA                                          | 0416    | Port
+LEESBURG REGIONAL AIRP, LEESBURG, FL                  | 1887    | Port
+L.G. HANSCOM FIELD, MA                                | 0481    | Port
+LIMESTONE, ME                                         | 0118    | Port
+LITTLE ROCK, AR                                       | 2003    | Port
+LOGAN AIRPORT, MA                                     | 0417    | Port
+LONG BEACH, CA                                        | 2709    | Port
+LONGVIEW, WA                                          | 2905    | Port
+LORAIN, OH                                            | 4121    | Port
+LOS ANGELES, CA                                       | 27      | District
+LOS ANGELES, CA                                       | 2704    | Port
+LOS ANGELES INTERNATIONAL AIRPORT, CA                 | 2720    | Port
+LOUISVILLE, KY                                        | 4115    | Port
+LOW-VALUED IMPORTS AND EXPORTS                        | 70      | District
+LOW-VALUE                                             | 7000    | Port
+LUBBOCK, TX                                           | 5503    | Port
+LUKEVILLE, AZ                                         | 2602    | Port
+LYNDEN, WA                                            | 3023    | Port
+MADAWASKA, ME                                         | 0109    | Port
+MAIDA, ND                                             | 3416    | Port
+MAIL SHIPMENTS (EXPORT ONLY)                          | 80      | District
+MANCHESTER USER FEE AIRPORT, NH                       | 0182    | Port
+MANITOWOC, WI                                         | 3706    | Port
+MARINETTE, WI                                         | 3702    | Port
+MARQUETTE, MI                                         | 3809    | Port
+MARTINEZ,CA                                           | 2820    | Port
+MASSENA, NY                                           | 0704    | Port
+MAYAGUEZ, PR                                          | 4907    | Port
+MEADOWS FIELD AIRPORT, CA                             | 2786    | Port
+MELBOURNE REGIONAL AIRPORT, FL                        | 1885    | Port
+MELLVILLE, RI                                         | 0503    | Port
+MEMPHIS, TN                                           | 2006    | Port
+METALINE FALLS                                        | 3025    | Port
+MIAMI INTL AIRPORT                                    | 5206    | Port
+MIAMI, FL                                             | 52      | District
+MIAMI, FL                                             | 5201    | Port
+MIDAMERICAN AIRPORT, IL                               | 4581    | Port
+MIDLAND INTL AIRPORT, MIDLAND, TX                     | 5582    | Port
+MILWAUKEE, WI                                         | 37      | District
+MILWAUKEE, WI                                         | 3701    | Port
+MINNEAPOLIS, MN                                       | 35      | District
+MINNEAPOLIS-ST. PAUL, MN                              | 3501    | Port
+MINOT AIRPORT, ND                                     | 3434    | Port
+MOBILE, AL                                            | 19      | District
+MOBILE, AL                                            | 1901    | Port
+MONTEREY, CA                                          | 2805    | Port
+MORGAN CITY, LA                                       | 2001    | Port
+MORGAN, MT                                            | 3319    | Port
+MORRISTOWN AIRPORT, NJ                                | 1081    | Port
+MORRO BAY, CA                                         | 2719    | Port
+MUSKEGON, MI                                          | 3815    | Port
+MYRTLE BEACH INTL AIRPORT, SC                         | 1681    | Port
+NACO, AZ                                              | 2603    | Port
+NAPLES MUNICIPAL USER FEE AIRP, FL                    | 1880    | Port
+NASHVILLE, TN                                         | 2007    | Port
+NAWILIWILI-PORT ALLEN,HI                              | 3204    | Port
+NECHE, ND                                             | 3404    | Port
+NEW BEDFORD, MA                                       | 0405    | Port
+NEW HAVEN,CT                                          | 0412    | Port
+NEW LONDON, CT                                        | 0413    | Port
+NEW ORLEANS, LA                                       | 20      | District
+NEW ORLEANS, LA                                       | 2002    | Port
+NEW RIVER VALLEY AIRPORT, VA                          | 1412    | Port
+NEW YORK CITY, NY                                     | 10      | District
+NEW YORK, NY                                          | 1001    | Port
+NEWARK, NJ                                            | 1003    | Port
+NEWARK FEDEX ECCF, NJ                                 | 1068    | Port
+NEWPORT, OR                                           | 2902    | Port
+NEWPORT, RI                                           | 0501    | Port
+NIGHTHAWK, WA                                         | 3011    | Port
+NOGALES, AZ                                           | 26      | District
+NOGALES, AZ                                           | 2604    | Port
+NOONAN, ND                                            | 3420    | Port
+NORFOLK, VA                                           | 14      | District
+NORFOLK/MOBILE/CHARLESTON                             | 59      | District
+NORFOLK/MOBILE/CHARLESTON                             | 5901    | Port
+NORFOLK-NEWPORT NEWS, VA                              | 1401    | Port
+NORTHGATE, ND                                         | 3406    | Port
+NORTON, VT                                            | 0211    | Port
+NYACC, JAMAICA, NY                                    | 1071    | Port
+OAKLAND, CA                                           | 2811    | Port
+OAKLAND/PONTIAC AIRPORT                               | 3881    | Port
+OGDENSBURG, NY                                        | 07      | District
+OGDENSBURG, NY                                        | 0701    | Port
+OKLAHOMA CITY, OK                                     | 5504    | Port
+OLYMPIA, WA                                           | 3026    | Port
+OMAHA, NE                                             | 3512    | Port
+ONTARIO INTL AIRPORT, CA                              | 2721    | Port
+OPHEIM, MT                                            | 3317    | Port
+ORANGE, TX                                            | 2103    | Port
+ORLANDO EXECUTIVE AIRPORT, FL                         | 1888    | Port
+ORLANDO, FL                                           | 1808    | Port
+ORLANDO-SANFORD AIRPORT, FL                           | 1809    | Port
+OROVILLE, WA                                          | 3019    | Port
+OSWEGO, NY                                            | 0904    | Port
+OTAY MESA                                             | 2506    | Port
+OWENSBORO-EVANSVILLE, KY                              | 4116    | Port
+PANAMA CITY, FL                                       | 1818    | Port
+PASCAGOULA, MS                                        | 1903    | Port
+PEMBINA, ND                                           | 34      | District
+PEMBINA, ND                                           | 3401    | Port
+PENSACOLA, FL                                         | 1819    | Port
+PEORIA, IL                                            | 3902    | Port
+PERTH AMBOY, NJ                                       | 1004    | Port
+PHILA. INTL. AIRPORT, PA                              | 1108    | Port
+PHILADELPHIA, PA                                      | 11      | District
+PHILADELPHIA, PA                                      | 1101    | Port
+PHOENIX, AZ                                           | 2605    | Port
+PIEGAN, MT                                            | 3316    | Port
+PINECREEK, MN                                         | 3425    | Port
+PITTSBURGH, PA                                        | 1104    | Port
+PLYMOUTH, MA                                          | 0406    | Port
+POINT ROBERTS, WA                                     | 3017    | Port
+PONCE, PR                                             | 4908    | Port
+PORT ANGELES, WA                                      | 3007    | Port
+PORT ARTHUR, TX                                       | 21      | District
+PORT ARTHUR, TX                                       | 2101    | Port
+PORT CANAVERAL, FL                                    | 1816    | Port
+PORT EVERGLADES, FL                                   | 5203    | Port
+PORT HUENEME, CA                                      | 2713    | Port
+PORT HURON, MI                                        | 3802    | Port
+PORT LAVACA, TX                                       | 5313    | Port
+PORT MANATEE, FL                                      | 1821    | Port
+PORT TOWNSEND, WA                                     | 3008    | Port
+PORTAL, ND                                            | 3403    | Port
+PORTHILL, ID                                          | 3308    | Port
+PORTLAND INTL AIRPORT, OR                             | 2910    | Port
+PORTLAND, ME                                          | 01      | District
+PORTLAND, ME                                          | 0101    | Port
+PORTLAND, OR                                          | 2904    | Port
+PORTSMOUTH, NH                                        | 0131    | Port
+PRESIDIO, TX                                          | 2403    | Port
+PRESQUE ISLE, MI                                      | 3842    | Port
+PROGRESO, TX                                          | 2309    | Port
+PROVIDENCE, RI                                        | 05      | District
+PROVIDENCE, RI                                        | 0502    | Port
+RACINE, WI                                            | 3708    | Port
+RAYMOND, MT                                           | 3301    | Port
+REDWOOD CITY,CA                                       | 2821    | Port
+RENO, NV                                              | 2833    | Port
+RICHFORD, VT                                          | 0203    | Port
+RICHMOND,CA                                           | 2812    | Port
+RICHMOND-PETERSBURG, VA                               | 1404    | Port
+RIO GRANDE CITY, TX                                   | 2307    | Port
+ROCHESTER USER FEE AIRPORT, MN                        | 3581    | Port
+ROCHESTER, NY                                         | 0903    | Port
+ROCKFORD AIRPORT, IL                                  | 3909    | Port
+ROCKLAND, ME                                          | 0121    | Port
+ROGERS CITY, MI                                       | 3818    | Port
+ROMA, TX                                              | 2310    | Port
+ROOSVILLE, MT                                         | 3318    | Port
+ROSEAU, MN                                            | 3426    | Port
+SABINE, TX                                            | 2102    | Port
+SACRAMENTO INT'L AIRPORT, CA                          | 2835    | Port
+SAGINAW/BAY CITY, MI                                  | 3804    | Port
+SALEM, MA                                             | 0408    | Port
+SALT LAKE CITY, UT                                    | 3303    | Port
+SAN ANTONIO, TX                                       | 5507    | Port
+SAN DIEGO, CA                                         | 25      | District
+SAN DIEGO, CA                                         | 2501    | Port
+SAN FRANCISCO INTL ARPT, CA                           | 2801    | Port
+SAN FRANCISCO, CA                                     | 28      | District
+SAN FRANCISCO, CA                                     | 2809    | Port
+SAN JOSE INTL AIRPORT, CA                             | 2834    | Port
+SAN JUAN INTL AIRPORT, PR                             | 4913    | Port
+SAN JUAN, PR                                          | 49      | District
+SAN JUAN, PR                                          | 4909    | Port
+SAN JUAQUIN RIVER,CA                                  | 2828    | Port
+SAN LUIS, AZ                                          | 2608    | Port
+SAN PABLO BAY,CA                                      | 2829    | Port
+SAN YSIDRO                                            | 2504    | Port
+SANTA TERESA AIRPORT, NM                              | 2481    | Port
+SANTA TERESA, NM                                      | 2408    | Port
+SARASOTA BRADENTON ARPT, FL                           | 1883    | Port
+SARLES, ND                                            | 3409    | Port
+SASABE, AZ                                            | 2606    | Port
+SAULT STE. MARIE, MI                                  | 3803    | Port
+SAVANNAH, GA                                          | 17      | District
+SAVANNAH, GA                                          | 1703    | Port
+SCOBY, MT                                             | 3309    | Port
+SEARSPORT, ME                                         | 0152    | Port
+SEATTLE, WA                                           | 30      | District
+SEATTLE, WA                                           | 3001    | Port
+SEATTLE-TACOMA INTL ARPT                              | 3029    | Port
+SELBY,CA                                              | 2827    | Port
+SHERWOOD, ND                                          | 3414    | Port
+SHREVEPORT/BOSSIER CITY, LA                           | 2018    | Port
+SIOUX FALLS, S.D.                                     | 3502    | Port
+SITKA, AK                                             | 3115    | Port
+SKAGWAY, AK                                           | 3103    | Port
+SODUS POINT, NY                                       | 0905    | Port
+SPOKANE, WA                                           | 3022    | Port
+SPRINGFIELD, MA                                       | 0402    | Port
+SPRINGFIELD, MO                                       | 4505    | Port
+ST JOHN, ND                                           | 3405    | Port
+ST JOSEPH, MO                                         | 4502    | Port
+ST LOUIS, MO                                          | 45      | District
+ST LOUIS, MO                                          | 4503    | Port
+ST. ALBANS, VT                                        | 02      | District
+ST. ALBANS, VT                                        | 0201    | Port
+ST. AUGUSTINE AIRPORT, FL                             | 1889    | Port
+ST. PETERSBURG, FL                                    | 1814    | Port
+ST. THOMAS VI BORDER PATROL                           | 4952    | Port
+STOCKTON, CA                                          | 2810    | Port
+SUGAR LAND REG AIRP, SUGAR LAND, TX                   | 5381    | Port
+SUMAS, WA                                             | 3009    | Port
+SWEETGRASS, MT                                        | 3310    | Port
+SYRACUSE, NY                                          | 0906    | Port
+TACOMA, WA                                            | 3002    | Port
+TAMPA, FL                                             | 18      | District
+TAMPA, FL                                             | 1801    | Port
+TECATE, CA                                            | 2505    | Port
+TEXAS CITY, TX                                        | 5306    | Port
+TNT EXPRESS CONSIGNMENT, CHICAGO, IL                  | 3971    | Port
+TNT EXPRESS, LAX, CA                                  | 2775    | Port
+TNT SKYPAK, JAMAICA, NY                               | 1078    | Port
+TOLEDO-SANDUSKY, OH                                   | 4105    | Port
+TRENTON/MERCER COUNTY AIRPORT, NJ                     | 1183    | Port
+TRI-CITIES AIRPORT, TN                                | 2027    | Port
+TROUT RIVER, NY                                       | 0715    | Port
+TUCSON, AZ                                            | 2609    | Port
+TULSA, OK                                             | 5505    | Port
+TURNER, MT                                            | 3306    | Port
+UFA UI WILLARD AIRPORT, SAVOY, IL                     | 3987    | Port
+UPS COURIER                                           | 4196    | Port
+UPS, ANCHORAGE, AK                                    | 3196    | Port
+UPS, MIAMI, FL                                        | 5295    | Port
+UPS, SEATTLE, WA                                      | 3095    | Port
+UPS, NEWARK, NJ                                       | 1069    | Port
+UPS, PHILADELPHIA, PA                                 | 1195    | Port
+UPS, SEATTLE, WA                                      | 3071    | Port
+UPS-ONTARIO, CA                                       | 2795    | Port
+VALLEY INTL AIRPORT, HARLINGEN, TX                    | 2383    | Port
+VAN BUREN, ME                                         | 0108    | Port
+VANCEBORO, ME                                         | 0105    | Port
+VANCOUVER, WA                                         | 2908    | Port
+VENTURA, CA                                           | 2712    | Port
+VESSELS UNDER THEIR OWN POWER (IMPORTS AND EXPORTS)   | 60      | District
+VICKSBURG, MS                                         | 2015    | Port
+VIRGIN ISLANDS OF THE UNITED STATES                   | 51      | District
+WALHALLA, ND                                          | 3407    | Port
+WARROAD, MN                                           | 3423    | Port
+WASHINGTON, DC                                        | 54      | District
+WASHINGTON, DC                                        | 5401    | Port
+WEST PALM BEACH, FL                                   | 5204    | Port
+WESTHOPE, ND                                          | 3419    | Port
+WHITLASH, MT                                          | 3321    | Port
+WICHITA, KS                                           | 4504    | Port
+WILDHORSE, MT                                         | 3323    | Port
+WILKES-BARRE/SCRANTON, PA                             | 1106    | Port
+WILLISTON AIRPORT, ND                                 | 3433    | Port
+WILLOW RUN AIRPORT, YPSILANTI, MI                     | 3882    | Port
+WILMINGTON, DE                                        | 1103    | Port
+WILMINGTON, NC                                        | 15      | District
+WILMINGTON, NC                                        | 1501    | Port
+WINSTON-SALEM, NC                                     | 1502    | Port
+WORCESTER, MA                                         | 0403    | Port
+WRANGELL, AK                                          | 3105    | Port
+YSLETA, TX                                            | 2401    | Port
+----------------------------------------------------------------------
+Source: Foreign Trade Division, U.S. Census Bureau, Washington, D.C. 20233
+This listing produced...APRIL25
+----------------------------------------------------------------------

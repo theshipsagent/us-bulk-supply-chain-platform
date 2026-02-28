@@ -1,0 +1,475 @@
+====================================================================================================
+  CARGO HS6 CLASSIFICATION — FULL SAMPLE REPORT
+  Source: cargo_hs6_dictionary.json  |  Period: Sep-Nov 2025  |  Vessel-Borne US Trade
+====================================================================================================
+
+  SECTION 1: GROUP OVERVIEW
+  ==============================================================================================
+
+  Group                 Codes  Manual   Head   Chap      Exports MT      Imports MT        Total MT  Share
+  -------------------- ------ ------- ------ ------ --------------- --------------- --------------- ------
+  Dry Bulk              2,087   1,642    372     73      94,255,449      59,998,600     154,254,050  40.6%
+  Liquid Bulk             815     751      4     60      93,842,924      52,066,893     145,909,817  38.4%
+  Liquid Gas               15      15      0      0      53,671,459         825,916      54,497,375  14.4%
+  Containerized         2,100       0      0  2,100       2,880,812      13,179,391      16,060,202   4.2%
+  Dry                     574     380     74    120       3,235,326       5,701,116       8,936,442   2.4%
+  -------------------- ------ ------- ------ ------ --------------- --------------- --------------- ------
+  TOTAL                 5,591   2,788    450  2,353     247,885,970     131,771,917     379,657,886   100%
+
+
+  SECTION 2: COMMODITY BREAKDOWN BY GROUP
+  ==============================================================================================
+
+  --- Dry Bulk (2,087 codes, 154,254,050 MT) ---
+  Commodity                    Codes        Src     Exports MT     Imports MT       Total MT  Share
+  ---------------------------- ----- ---------- -------------- -------------- -------------- ------
+  Agricultural                   177 M164/H9/C4     41,755,172      3,725,881     45,481,053  29.5%
+  Carbon Products                 12     M11/H1     29,094,487      1,082,273     30,176,760  19.6%
+  Construction Materials         126       M126        773,115     15,849,281     16,622,396  10.8%
+  General Cargo                  841  M480/H361      1,849,220     13,136,545     14,985,765   9.7%
+  Forestry                       248    M247/H1      6,548,978      4,329,907     10,878,884   7.1%
+  Ferrous Raw Materials           37        M37      3,597,560      4,396,484      7,994,044   5.2%
+  Minerals & Ores                 49     M48/C1      2,531,942      4,299,676      6,831,618   4.4%
+  Steel                          262       M262        749,490      4,402,514      5,152,004   3.3%
+  Fertilizer                      40     M39/C1      1,904,905      1,962,717      3,867,622   2.5%
+  Biomass                          2         M2      3,455,946            429      3,456,375   2.2%
+  Plastics                        67        C67        309,349      2,960,449      3,269,798   2.1%
+  Metals                         119       M119      1,401,052      1,325,031      2,726,083   1.8%
+  Non Ferrous Raw Materials       14        M14         44,980      1,996,915      2,041,895   1.3%
+  Misc Bulk                       93        M93        239,253        530,499        769,752   0.5%
+
+  --- Liquid Bulk (815 codes, 145,909,817 MT) ---
+  Commodity                    Codes        Src     Exports MT     Imports MT       Total MT  Share
+  ---------------------------- ----- ---------- -------------- -------------- -------------- ------
+  Petroleum Products              20        M20     81,663,320     44,580,319    126,243,639  86.5%
+  Chemicals                      676    M672/H4     11,003,959      3,651,543     14,655,502  10.0%
+  Agricultural                    72    M57/C15        697,184      3,367,513      4,064,697   2.8%
+  Fertilizer                       2         M2        363,894        360,151        724,044   0.5%
+  Misc Chemicals                  45        C45        114,566        107,368        221,934   0.2%
+
+  --- Liquid Gas (15 codes, 54,497,375 MT) ---
+  Commodity                    Codes        Src     Exports MT     Imports MT       Total MT  Share
+  ---------------------------- ----- ---------- -------------- -------------- -------------- ------
+  LNG                              3         M3     29,224,025        480,577     29,704,602  54.5%
+  LPG                             12        M12     24,447,434        345,339     24,792,773  45.5%
+
+  --- Dry (574 codes, 8,936,442 MT) ---
+  Commodity                    Codes        Src     Exports MT     Imports MT       Total MT  Share
+  ---------------------------- ----- ---------- -------------- -------------- -------------- ------
+  Reefer                         574 M380/H74/C120      3,235,326      5,701,116      8,936,442 100.0%
+
+  --- Containerized (2,100 codes, 16,060,202 MT) ---
+  Commodity                    Codes        Src     Exports MT     Imports MT       Total MT  Share
+  ---------------------------- ----- ---------- -------------- -------------- -------------- ------
+  Textiles & Apparel             771       C771        383,874      2,805,157      3,189,031  19.9%
+  Prepared Foods                 100       C100        504,407      1,470,391      1,974,798  12.3%
+  Furniture & Misc               102       C102         40,920      1,912,554      1,953,474  12.2%
+  Electrical Equipment           162       C162        158,705      1,503,293      1,661,997  10.3%
+  Oilseeds & Fats                 31        C31      1,000,441         83,145      1,083,585   6.7%
+  Special Provisions              15        C15         21,875      1,027,651      1,049,526   6.5%
+  Stone/Glass Products            64        C64         39,837        507,212        547,049   3.4%
+  Soaps & Detergents              24        C24        182,711        360,891        543,602   3.4%
+  Machinery                       58        C58         38,254        503,907        542,160   3.4%
+  Footwear & Accessories          47        C47          7,347        502,484        509,830   3.2%
+  Metal Products                  80        C80         12,163        496,420        508,583   3.2%
+  Spices & Coffee                 39        C39         12,869        416,258        429,126   2.7%
+  Cosmetics & Perfumery           29        C29         94,434        259,995        354,428   2.2%
+  Instruments                    183       C183         39,778        215,620        255,398   1.6%
+  Printed Materials               18        C18         11,729        242,048        253,777   1.6%
+  Leather Goods                   19        C19          4,307        238,460        242,767   1.5%
+  Starches & Glues                15        C15         89,393        123,611        213,004   1.3%
+  Vehicles & Transport            60        C60         58,734        101,742        160,476   1.0%
+  Pharmaceuticals                 45        C45         30,704        115,860        146,564   0.9%
+  Animal Products                 14        C14         53,147         63,253        116,400   0.7%
+  Tobacco                         16        C16         22,278         57,917         80,195   0.5%
+  Hides & Skins                   28        C28         43,631          2,596         46,227   0.3%
+  Gums & Resins                   11        C11          3,933         36,093         40,026   0.2%
+  Explosives                      13        C13          2,724         31,681         34,404   0.2%
+  Vegetable Products               5         C5          1,758         27,752         29,510   0.2%
+  Basketware                      11        C11            121         26,468         26,588   0.2%
+  Arms                            18        C18          9,843         15,498         25,341   0.2%
+  Photographic Goods              30        C30          7,270         11,807         19,078   0.1%
+  Precious Metals                 54        C54          3,152          9,206         12,357   0.1%
+  Cork Products                    7         C7            110          5,998          6,109   0.0%
+  Art & Antiques                  19        C19            257          3,999          4,256   0.0%
+  Furskins                        12        C12            107            426            532   0.0%
+
+
+  SECTION 3: DEEP DIVE -- Dry Bulk / Agricultural
+  ==============================================================================================
+
+  HS6 codes: 177  |  Manual: 164  |  Heading: 9  |  Chapter: 4
+  Volume: 45,481,053 MT  |  Exports: 41,755,172 MT (91.8%)  |  Imports: 3,725,881 MT (8.2%)
+
+  Cargo Type             Codes     Source     Exports MT     Imports MT       Total MT  Share
+  ---------------------- ----- ---------- -------------- -------------- -------------- ------
+  Grain                     62     M56/H6     40,837,892        939,925     41,777,817  91.9%
+  Rubber                    80        M80        433,928      1,619,271      2,053,199   4.5%
+  Sugar                     16        M16        166,636        727,039        893,674   2.0%
+  Agricultural               4         C4        276,152        197,852        474,004   1.0%
+  Cocoa                     11      M8/H3         38,494        185,359        223,853   0.5%
+  Oats                       2         M2          1,449         45,372         46,821   0.1%
+  Malt                       2         M2            622         11,064         11,685   0.0%
+
+  Top 30 HS6 Codes by Volume:
+  HS6      Description                                             Cargo            Src            Exp MT       Imp MT
+  -------- ------------------------------------------------------- ---------------- -------- ------------ ------------
+  100590   YELLOW DENT CORN (MAIZE), U. S. NO. 1, EXCEPT SEED      Grain            manual     15,825,021       91,562
+  120190   SOYBEAN SEEDS OF A KIND USED AS OIL STOCK, WHETHER OR N Grain            manual     11,351,362       80,800
+  100199   WHITE WHEAT, EXCEPT SEED                                Grain            manual      5,950,616      147,799
+  230400   SOYBEAN OILCAKE AND OTHER SOLID RESIDUES RESULTING FROM Grain            manual      2,355,235      144,895
+  230330   BREWING OR DISTILLING DREGS AND WASTE, WHETHER OR NOT I Grain            manual      2,244,797       11,432
+  100630   RICE, SEMI-MILLED OR WHOLLY MILLED, PARBOILED, LONG GRA Grain            manual        381,310      306,176
+  120810   FLOURS AND MEALS OF SOYBEANS                            Grain            manual        657,909          141
+  401110   RADIAL TIRES OF A KIND USED ON MOTOR CARS (INCLUDING ST Rubber           manual          5,579      470,902
+  100790   GRAIN SORGHUM EXCEPT SEEDS FOR SOWING                   Grain            manual        431,492          133
+  170114   CANE SUGAR, RAW, IN SOLID FORM, NOT CONTAINING ADDED FL Sugar            manual          3,004      426,830
+  520100   COTTON, NOT CARDED OR COMBED, HAVING A STAPLE LENGTH UN Grain            manual        384,101            1
+  401120   NEW RADIAL TIRES, ON-THE-HIGHWAY, OF A KIND USED ON LIG Rubber           manual         10,536      365,046
+  230310   CORN GLUTEN FEED, WHETHER OR NOT IN PELLETS             Grain            manual        353,214        1,195
+  230990   PET FOOD, PUT UP FOR RETAIL SALE EXCEPT DOG AND CAT FOO Agricultural     chapter       174,575       99,106
+  230110   FLOURS, MEALS AND PELLETS, OF MEAT OR MEAT OFFAL, UNFIT Grain            manual        236,104       14,567
+  230910   DOG AND CAT FOOD, PUT UP FOR RETAIL SALE                Agricultural     chapter        67,337       95,504
+  400122   TECHNICALLY SPECIFIED NATURAL RUBBER (TSNR)             Rubber           manual            225      162,587
+  100610   RICE IN THE HUSK (PADDY OR ROUGH)                       Grain            manual        153,681          124
+  400400   WASTE, PARINGS & SCRAP OF RUBBER (OTHER THAN HARD RUBBE Rubber           manual        148,022        1,727
+  170199   CANE/BEET SUGAR & CHEMICALLY PURE SUCROSE, SOLID, NO FL Sugar            manual          2,007      134,583
+  100119   DURUM WHEAT, EXCEPT SEED                                Grain            manual        135,872           15
+  170490   CONFECTIONS OR SWEETMEATS READY FOR CONSUMPTION, NOT CO Sugar            manual         10,262       96,087
+  401190   NEW PNEUMATIC TIRES, OF RUBBER, OTHER, HAVING A HERRING Rubber           manual          1,326       89,606
+  170211   LACTOSE AND LACTOSE SYRUP, CONTAINING BY WEIGHT 99% OR  Sugar            manual         89,731          733
+  401512   MEDICAL GLOVES, OF VULCANIZED RUBBER OTHER THAN HARD RU Rubber           manual            215       85,850
+  100620   RICE, BASMATI, HUSKED (BROWN)                           Grain            manual         69,453        5,688
+  401180   NEW PNEUMATIC TIRES, RUBBER, KIND USED ON CONSTRUCTION, Rubber           manual         32,266       36,033
+  400219   STYRENE-BUTADIENE-STYRENE BLOCK COPOLYMERS PRODUCED BY  Rubber           manual         20,763       41,911
+  400270   ETHYLENE-PROPYLENE-NONCONJUGATED DIENE RUBBER (EPDM)    Rubber           manual         53,726        8,669
+  401699   HOUSEHOLD ARTICLES, OF VULCANIZED RUBBER OTHER THAN HAR Rubber           manual          8,503       50,173
+
+
+  SECTION 4: DEEP DIVE -- Liquid Bulk / Petroleum Products
+  ==============================================================================================
+
+  HS6 codes: 20  |  All manual
+  Volume: 126,243,639 MT  |  Exports: 81,663,320 MT (64.7%)  |  Imports: 44,580,319 MT (35.3%)
+
+  Cargo Type             Codes     Exports MT     Imports MT       Total MT  Share
+  ---------------------- ----- -------------- -------------- -------------- ------
+  Crude Oil                  1     48,749,450     27,391,222     76,140,672  60.3%
+  Dirty Products            17     20,167,295     11,242,862     31,410,158  24.9%
+  Clean Products             2     12,746,575      5,946,235     18,692,810  14.8%
+
+  All 20 HS6 Codes:
+  HS6      Description                                             Cargo                  Exp MT       Imp MT
+  -------- ------------------------------------------------------- ---------------- ------------ ------------
+  270900   PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS MINERA Crude Oil          48,749,450   27,391,222
+  271019   NO. 4-TYPE FUEL OILS CONTAINING NOT MORE THAN 500 PPM O Dirty Products     19,421,512   10,439,782
+  271012   LEADED GASOLINE, NOT CONTAINING BIODIESEL               Clean Products     12,742,715    5,945,661
+  271320   PETROLEUM BITUMEN                                       Dirty Products        238,424      624,737
+  271020   PETROLEUM OILS OR OILS OBTAINED FROM BITUMINOUS MINERAL Dirty Products        286,178          811
+  270799   LIGHT OIL                                               Dirty Products        172,295        2,629
+  270791   CREOSOTE OILS                                           Dirty Products              0       58,173
+  270750   AROMATIC HYDROCARBONS OF WHICH 65 PCT OR MORE BY VOLUME Dirty Products         15,982       29,135
+  271490   BITUMEN AND ASPHALT, NATURAL; ASPHALTITES AND ASPHALTIC Dirty Products          4,395       28,474
+  271500   BITUMINOUS MIXTURES BASED ON NATURAL ASPHALT, NATURAL B Dirty Products         18,593       10,952
+  280300   CARBON BLACK                                            Dirty Products          8,180       16,021
+  270300   PEAT (INCLUDING PEAT LITTER) WHETHER OR NOT AGGLOMERATE Dirty Products            914       17,621
+  271390   RESIDUES OF PETROLEUM OILS OR OF OILS OBTAINED FROM BIT Dirty Products            202       13,461
+  270740   NAPHTHALENE                                             Clean Products          3,859          574
+  270600   TAR DISTILLED FROM COAL, LIGNITE OR FROM PEAT, & OTHER  Dirty Products             19        1,067
+  270210   LIGNITE, NOT AGGLOMERATED, EXCLUDING JET                Dirty Products            545            0
+  271410   BITUMINOUS OR OIL SHALE AND TAR SANDS                   Dirty Products             33            0
+  270220   LIGNITE, AGGLOMERATED, EXCLUDING JET                    Dirty Products             19            0
+  270120   BRIQUETTES, OVOIDS AND SIMILAR SOLID FUELS MANUFACTURED Dirty Products              6            0
+  270500   COAL GAS, WATER GAS, PRODUCER GAS AND SIMILAR GASES OTH Dirty Products              0            0
+
+
+  SECTION 5: HEADING PROPAGATION EXAMPLES (auto-classification in action)
+  ==============================================================================================
+
+  Heading 0301 -- inherits from 030119 (Reefer)
+    [AUTO] 030199  FISH, LIVE, OTHER                                     Reefer                     26 MT
+    [AUTO] 030194  ATLANTIC AND PACIFIC BLUEFIN TUNAS (THUNNUS THYNNUS,  Reefer                      0 MT
+    [AUTO] 030193  CARP (CYPRINUS CARPIO, CARASSIUS CARASSIUS, CTENOPHA  Reefer                      0 MT
+    [AUTO] 030192  EELS (ANGUILLA SPP.), LIVE                            Reefer                      0 MT
+    [AUTO] 030191  TROUT (SALMO TRUTTA, ONCORHYNCHUS MYKISS, CLARKI, AG  Reefer                      0 MT
+    [    ] 030119  FISH, ORNAMENTAL, LIVE, OTHER THAN FRESHWATER         Reefer                      0 MT
+    [    ] 030111  ORNAMENTAL FRESHWATER FISH, LIVE                      Reefer                      0 MT
+
+  Heading 0302 -- inherits from 030299 (Reefer)
+    [AUTO] 030243  SARDINES (SARDINA PILCHARDUS, SARDINOPS SPP.), SARDI  Reefer                      1 MT
+    [    ] 030299  OTHER EDIBLE FISH OFFAL, FRESH OR CHILLED, NESOI      Reefer                     32 MT
+    [    ] 030291  MULLET ROE, FRESH OR CHILLED                          Reefer                      5 MT
+    [    ] 030289  SABLEFISH (ANOPLOPOMA FIMBRIA), FRESH OR CHILLED EXC  Reefer                    248 MT
+    [    ] 030285  SEABREAM (SPARIDAE), FRESH OR CHILLED, EXCLUDING FIL  Reefer                     20 MT
+    [    ] 030284  SEABASS, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS  Reefer                      5 MT
+    [    ] 030283  TOOTHFISH (DISSOSTICHUS SPP.), FRESH OR CHILLED, EXC  Reefer                      0 MT
+    [    ] 030282  RAYS AND SKATES, FRESH OR CHILLED, EXCLUDING LIVERS,  Reefer                      0 MT
+    [    ] 030281  DOGFISH (SQUALUS SPP.), FRESH OR CHILLED, EXCEPT FIL  Reefer                      0 MT
+    [    ] 030279  NILE PERCH AND SNAKEHEADS, FRESH OR CHILLED, EXCLUDI  Reefer                      0 MT
+    [    ] 030274  EELS (ANGUILLA SPP.), FRESH OR CHILLED, EXCEPT FILLE  Reefer                      0 MT
+    [    ] 030273  CARP, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AN  Reefer                      0 MT
+    [    ] 030272  CATFISH, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS  Reefer                      0 MT
+    [    ] 030271  TILAPIAS, FRESH OR CHILLED, EXCLUDING FILLETS, LIVER  Reefer                     40 MT
+    [    ] 030259  FISH OF THE FAMILIES BREGMACEROTIDAE, EUCLICHTHYIDAE  Reefer                      0 MT
+    [    ] 030256  BLUE WHITINGS, FRESH OR CHILLED, EXCLUDING FILLETS,   Reefer                      0 MT
+    [    ] 030255  ALASKA POLLOCK, FRESH OR CHILLED, EXCLUDING FILLETS,  Reefer                      0 MT
+    [    ] 030254  HAKE, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS AN  Reefer                     26 MT
+    [    ] 030253  ATLANTIC POLLOCK (POLLACHIUS VIRENS), FRESH OR CHILL  Reefer                      0 MT
+    [    ] 030252  HADDOCK (MELANOGRAMMUS AEGLEFINUS), FRESH OR CHILLED  Reefer                     60 MT
+    [    ] 030251  COD (GADUS MORHUA, GADUS OGAC, GADUS MACROCEPHALUS),  Reefer                      0 MT
+    [    ] 030249  INDIAN MACKRLS,SEERFISHES, JACKS, CREVALLES, SILVER   Reefer                      2 MT
+    [    ] 030247  SWORDFISH (XIPHIAS GLADIUS), FRESH OR CHILLED, EXCEP  Reefer                      0 MT
+    [    ] 030246  COBIA, FRESH OR CHILLED, EXCLUDING FILLETS, LIVERS A  Reefer                      0 MT
+    [    ] 030245  JACK AND HORSE MACKEREL, FRESH OR CHILLED, EXCLUDING  Reefer                      1 MT
+    [    ] 030244  MACKEREL (SCOMBER SCOMBRUS, SCOMBER AUSTRALASICUS, S  Reefer                     65 MT
+    [    ] 030242  ANCHOVIES, FRESH OR CHILLED, EXCLUDING LIVERS, ROES,  Reefer                      0 MT
+    [    ] 030241  HERRINGS (CLUPEA HARENGUS, CLUPEA PALLASII), FRESH O  Reefer                    104 MT
+    [    ] 030239  TUNAS (OF GENUS THUNNUS), FRESH OR CHILLED, EXCEPT F  Reefer                     25 MT
+    [    ] 030236  SOUTHERN BLUEFIN TUNAS (THUNNUS MACCOYII), FRESH OR   Reefer                      0 MT
+    [    ] 030235  ATLANTIC AND PACIFIC BLUEFIN TUNAS (THUNNUS THYNNUS,  Reefer                      0 MT
+    [    ] 030234  BIGEYE TUNAS (THUNNUS OBESUS), FRESH OR CHILLED, EXC  Reefer                      1 MT
+    [    ] 030233  SKIPJACK TUNA (STRIPE-BELLIED BONITO) (KATSUWONUS PE  Reefer                     88 MT
+    [    ] 030232  YELLOWFIN TUNAS (THUNNUS ALBACARES), FRESH OR CHILLE  Reefer                      1 MT
+    [    ] 030231  ALBACORE OR LONGFINNED TUNAS (THUNNUS ALALUNGA), FRE  Reefer                      1 MT
+    [    ] 030229  FLATFISH, NESOI, EXCLUDING FILLETS, LIVERS AND ROES,  Reefer                     23 MT
+    [    ] 030224  TURBOTS (PSETTA MAXIMA), FRESH OR CHILLED, EXCLEPT F  Reefer                      0 MT
+    [    ] 030223  SOLE (SOLEA SPP.), FRESH OR CHILLED, EXCEPT FILLETS,  Reefer                      0 MT
+    [    ] 030221  HALIBUT AND GREENLAND TURBOT (REINHARDTIUS HIPPOGLOS  Reefer                     12 MT
+    [    ] 030219  SALMONIDAE, FRESH OR CHILLED, EXCEPT FILLETS, LIVERS  Reefer                      4 MT
+    [    ] 030214  ATLANTIC SALMON (SALMO SALAR), FARMED, FRESH OR CHIL  Reefer                  2,701 MT
+    [    ] 030213  CHINOOK (KING) SALMON, EXCLUDING FILLETS, LIVERS AND  Reefer                    100 MT
+    [    ] 030211  RAINBOW TROUT (SALMO GAIRDNERI), FARMED, FRESH OR CH  Reefer                      0 MT
+
+  Heading 0303 -- inherits from 030399 (Reefer)
+    [AUTO] 030353  SARDINES (SARDINA PILCHARDUS, SARDINOPS SPP.), SARDI  Reefer                    899 MT
+    [    ] 030399  OTHER EDIBLE FISH OFFAL, FROZEN, NESOI                Reefer                    264 MT
+    [    ] 030391  STURGEON ROE, FROZEN                                  Reefer                  8,158 MT
+    [    ] 030389  TILAPIA, OTHER THAN OREOCHROMIS SPP., FROZEN, EXCEPT  Reefer                 46,190 MT
+    [    ] 030384  SEA BASS (DICENTRARCHUS LABRAX, DICENTRARCHUS PUNCTA  Reefer                    316 MT
+    [    ] 030383  TOOTHFISH (DISSOSTICHUS SPP.), FROZEN, EXCLUDING FIS  Reefer                  1,844 MT
+    [    ] 030382  RAYS AND SKATES, FROZEN, EXCEPT FILLETS, LIVERS AND   Reefer                  1,326 MT
+    [    ] 030381  DOGFISH (SQUALUS SPP.), FROZEN, EXCEPT FILLETS, LIVE  Reefer                    260 MT
+    [    ] 030369  FISH OF FAMILIES BREGMAVEROTIDAE, EUCLICHTHYIDAE, GA  Reefer                    230 MT
+    [    ] 030368  BLUE WHITINGS, FROZEN, EXCEPT FILLETS, LIVERS AND RO  Reefer                     38 MT
+    [    ] 030367  ALASKA POLLOCK (THERAGRA CHALCOGRAMMA), FROZEN, EXCL  Reefer                  7,313 MT
+    [    ] 030366  WHITING (MERLUCCIUS SPP.) AND HAKE (UROPHYCIS SPP.),  Reefer                 23,677 MT
+    [    ] 030365  ATLANTIC POLLOCK (POLLACHIUS VIRENS), FROZEN, EXCEPT  Reefer                      0 MT
+    [    ] 030364  HADDOCK (MELANOGRAMMUS AEGLEFINUS), FROZEN, EXCEPT F  Reefer                    993 MT
+    [    ] 030363  COD (GADUS MORHUA, GADUS OGAC, GADUS MACROCEPHALUS),  Reefer                  9,069 MT
+    [    ] 030359  FISH, FROZEN, EXCEPT FILLETS, LIVERS AND ROES, HERRI  Reefer                    936 MT
+    [    ] 030357  SWORDFISH (XIPHIAS GLADIUS), FROZEN, EXCEPT FILLETS,  Reefer                    106 MT
+    [    ] 030356  COBIA, FROZEN, EXCEPT FILLETS, LIVERS AND ROES        Reefer                     10 MT
+    [    ] 030355  JACK AND HORSE MACKEREL, FROZEN, EXCEPT FILLETS, LIV  Reefer                  1,198 MT
+    [    ] 030354  MACKEREL (SCOMBER SCOMBRUS, SCOMBER AUSTRALASICUS, S  Reefer                  4,689 MT
+    [    ] 030351  HERRINGS (CLUPEA HARENGUS, CLUPEA PALLASII), FROZEN,  Reefer                    554 MT
+    [    ] 030349  TUNAS (OF THE GENUS THUNNUS), FROZEN, EXCEPT FILLETS  Reefer                     67 MT
+    [    ] 030346  SOUTHERN BLUEFIN TUNAS (THUNNUS MACCOYII), FROZEN, E  Reefer                      4 MT
+    [    ] 030345  ATLANTIC AND PACIFIC BLUEFIN TUNAS, FROZEN, EXCEPT F  Reefer                      3 MT
+    [    ] 030344  BIGEYE TUNAS (THUNNUS OBESUS), FROZEN, EXCEPT FILLET  Reefer                     30 MT
+    [    ] 030343  SKIPJACK TUNA (STRIPE-BELLIED BONITO) (KATSUWONUS PE  Reefer                      0 MT
+    [    ] 030342  YELLOWFIN TUNAS, (THUNNUS ALBACARES), EXCLUDING FILL  Reefer                  1,064 MT
+    [    ] 030341  ALBACORE OR LONGFINNED TUNAS (THUNNUS ALALUNGA), FRO  Reefer                  2,184 MT
+    [    ] 030339  ROCK SOLE (PLEURONECTES BILINEATUS), FROZEN, EXCEPT   Reefer                 26,817 MT
+    [    ] 030334  TURBOTS, FROZEN, EXCEPT FILLETS, LIVERS AND ROES      Reefer                      0 MT
+    [    ] 030333  SOLE (SOLEA SPP.), FROZEN, EXCEPT FILLETS, LIVERS AN  Reefer                  1,217 MT
+    [    ] 030332  PLAICE (PLEURONECTES PLATESSA), FROZEN, EXCEPT FILLE  Reefer                    288 MT
+    [    ] 030331  ATLANTIC AND PACIFIC HALIBUT (HIPPOGLOSSUS HIPPOGLOS  Reefer                    585 MT
+    [    ] 030329  NILE PERCH (LATES NILOTICUS) AND SNAKEHEADS (CHANNA   Reefer                     89 MT
+    [    ] 030326  EELS (ANGUILLA SPP.), FROZEN, EXCEPT FILLETS, LIVERS  Reefer                    404 MT
+    [    ] 030325  CARP, FROZEN, EXCEPT FILLETS, LIVERS AND ROES         Reefer                    988 MT
+    [    ] 030324  CATFISH, FROZEN, EXCLUDING LIVERS, ROES, FILLETS AND  Reefer                  1,359 MT
+    [    ] 030323  TILAPIA (OREOCHROMIS SPP.), FROZEN, EXCEPT FILLETS,   Reefer                 12,097 MT
+    [    ] 030319  SALMONIDAE, FROZEN, EXCEPT FILLETS, LIVERS AND ROES,  Reefer                     71 MT
+    [    ] 030314  TROUT (SALMO TRUTTA; ONCORHYNCHUS MYKISS, CLARKI, AG  Reefer                    190 MT
+    [    ] 030313  ATLANTIC SALMON (SALMO SALAR) AND DANUBE SALMON (HUC  Reefer                    882 MT
+    [    ] 030312  CHINOOK (KING) SALMON (ONCORHYNCHUS TSCHAWYTSCHA), F  Reefer                 60,725 MT
+    [    ] 030311  SOCKEYE (RED) SALMON (ONCORHYNCHUS NERKA), FROZEN, E  Reefer                  3,000 MT
+
+  Heading 0304 -- inherits from 030499 (Reefer)
+    [AUTO] 030495  MEAT OF FISH OF THE FAMILIES BREGMACEROTIDAE,EUCLICH  Reefer                  1,037 MT
+    [AUTO] 030453  MEAT OF FISH OF THE FAMILIES BREGMACEROTIDAE, EUCLIC  Reefer                    119 MT
+    [AUTO] 030444  FISH FILLETS OF THE FAMILIES BREGMACEROTIDAE, EUCLIC  Reefer                    176 MT
+    [    ] 030499  SURIMI OF ALASKA POLLOCK (THERAGRA CHALCOGRAMMA), FR  Reefer                 40,311 MT
+    [    ] 030497  RAY AND SKATES (RAJIDAE), FROZEN, NESOI               Reefer                     55 MT
+    [    ] 030496  DOGFISH AND OTHER SHARKS, FROZEN, NESOI               Reefer                     34 MT
+    [    ] 030494  ALASKA POLLOCK, FROZEN, NESOI                         Reefer                  4,068 MT
+    [    ] 030493  TILAPIAS, CATFISH, CARP, EELS, NILE PERCH AND SNAKEH  Reefer                     92 MT
+    [    ] 030492  TOOTHFISH (DISSOSTICHUS SPP), MEAT, FROZEN, NESOI     Reefer                    219 MT
+    [    ] 030491  SWORDFISH (XIPHIAS GLADIUS) MEAT, FROZEN, NESOI       Reefer                     45 MT
+    [    ] 030489  FISH FILLETS, NESOI, FROZEN                           Reefer                 10,826 MT
+    [    ] 030488  DOGFISH, OTHER SHARKS, RAYS AND SKATES (RAJIDAE) FIL  Reefer                     49 MT
+    [    ] 030487  SKIPJACK TUNA (STRIPE-BELLIED BONITO) (KATSUWONUS PE  Reefer                 10,897 MT
+    [    ] 030486  HERRING FILLETS, FROZEN                               Reefer                     56 MT
+    [    ] 030485  TOOTHFISH (DISSOSTICHUS SPP.) FILLETS, FROZEN         Reefer                    181 MT
+    [    ] 030484  SWORDFISH (XIPHIAS GLADIUS) FILLETS, FROZEN           Reefer                    436 MT
+    [    ] 030483  HALIBUT FILLETS, FROZEN                               Reefer                  4,481 MT
+    [    ] 030482  TROUT FILLETS, FROZEN                                 Reefer                  1,263 MT
+    [    ] 030481  PACIFIC SALMON FILLETS, FROZEN                        Reefer                 42,034 MT
+    [    ] 030479  FROZEN FILLETS OF FISH OF THE FAMILIES BREGMACEROTID  Reefer                  2,208 MT
+    [    ] 030475  ALASKA POLLOCK (THERAGRA CHALCOGRAMMA) FILLETS, FROZ  Reefer                 32,659 MT
+    [    ] 030474  HAKE FILLETS, FROZEN                                  Reefer                  4,975 MT
+    [    ] 030473  COALFISH FILLETS, FROZEN                              Reefer                    103 MT
+    [    ] 030472  HADDOCK FILLETS, FROZEN                               Reefer                  5,285 MT
+    [    ] 030471  COD FILLETS, FROZEN                                   Reefer                 13,144 MT
+    [    ] 030469  CARP, EELS AND SNAKEHEAD FILLETS, FROZEN              Reefer                    272 MT
+    [    ] 030463  NILE PERCH FILLETS, FROZEN                            Reefer                     24 MT
+    [    ] 030462  CATFISH FILLETS, FROZEN                               Reefer                 33,014 MT
+    [    ] 030461  TILAPIA FILLETS, FROZEN                               Reefer                 31,943 MT
+    [    ] 030459  FISH MEAT, NESOI, FRESH OR CHILLED                    Reefer                    166 MT
+    [    ] 030457  RAYS AND SKATES (RAJIDAE), FRESH OR CHILLED           Reefer                     11 MT
+    [    ] 030454  SWORDFISH (XIPHIAS GLADIUS), FISH MEAT, OTHER THAN F  Reefer                      0 MT
+    [    ] 030452  SALMONIDAE MEAT, NESOI, FRESH OR CHILLED              Reefer                    304 MT
+    [    ] 030451  TILAPIAS, CATFISH, CARP, EELS, NILE PERCH AND SNAKEH  Reefer                      3 MT
+    [    ] 030449  FISH FILLETS, FRESH OR CHILLED, NESOI                 Reefer                    144 MT
+    [    ] 030448  RAY AND SKATE (RAJIDAE) FILLETS, FRESH OR CHILLED     Reefer                      1 MT
+    [    ] 030446  TOOTHFISH (DISSOSTICHUS SPP), FILLETS, FRESH OR CHIL  Reefer                     13 MT
+    [    ] 030445  SWORDFISH (XIPHIAS GLADIUS), FILLETS, FRESH OR CHILL  Reefer                      0 MT
+    [    ] 030443  FLAT FISH FILLETS, FRESH OR CHILLED                   Reefer                     11 MT
+    [    ] 030442  TROUT FILLETS, FRESH OR CHILLED                       Reefer                     21 MT
+    [    ] 030441  PACIFIC SALMON AND ATLANTIC SALMON FILLETS, FRESH OR  Reefer                  1,505 MT
+    [    ] 030439  CARP, EEL OR SNAKEHEAD FILLETS, FRESH OR CHILLED      Reefer                    165 MT
+    [    ] 030433  NILE PERCH FILLETS, FRESH OR CHILLED                  Reefer                      0 MT
+    [    ] 030432  CATFISH FILLETS AND OTHER MEAT, EXCLUDING FISH STEAK  Reefer                     19 MT
+    [    ] 030431  TILAPIA (OREOCHROMIS) FILLETS, FRESH OR CHILLED       Reefer                    190 MT
+
+  Heading 0306 -- inherits from 030699 (Reefer)
+    [AUTO] 030695  SHRIMPS AND PRAWNS, NESOI                             Reefer                    236 MT
+    [AUTO] 030693  CRABMEAT, NESOI                                       Reefer                      9 MT
+    [AUTO] 030692  LOBSTERS (HOMARUS SPP.), EXCEPT ROCK LOBSTER, NESOI   Reefer                     58 MT
+    [AUTO] 030691  ROCK LOBSTER AND OTHER SEA CRAWFISH (PALINURUS SPP.,  Reefer                     14 MT
+    [    ] 030699  CRUSTACEANS, DRIED, SALTED, IN BRINE OR SMOKED; CRUS  Reefer                      9 MT
+    [    ] 030639  CRUSTACEANS WHETHER IN SHELL OR NOT, LIVE, FRESH OR   Reefer                      0 MT
+    [    ] 030636  SHRIMPS AND PRAWNS, LIVE, FRESH OR CHILLED, OTHER TH  Reefer                     29 MT
+    [    ] 030635  COLD-WATER SHRIMPS AND PRAWNS (PANDALUS SPP., CRANGO  Reefer                     16 MT
+    [    ] 030634  NORWAY LOBSTERS (NEPHROPS NORVEGICUS), LIVE, FRESH O  Reefer                      2 MT
+    [    ] 030633  CRABMEAT, FRESH OR CHILLED                            Reefer                      4 MT
+    [    ] 030632  LOBSTERS (HOMARUS SPP.), LIVE, FRESH OR CHILLED, EXC  Reefer                      0 MT
+    [    ] 030631  ROCK LOBSTER AND OTHER SEA CRAWFISH (PALINURUS SPP.,  Reefer                      0 MT
+    [    ] 030619  FRESHWATER CRAWFISH, INCLUDING IN SHELL, COOKED BY S  Reefer                  2,656 MT
+    [    ] 030617  SHRIMPS AND PRAWNS (PANDALUS SPP., CRANGON CRANGON),  Reefer                159,745 MT
+    [    ] 030616  COLD-WATER SHRIMPS AND PRAWNS (PANDALUS SPP., CRANGO  Reefer                  1,390 MT
+    [    ] 030615  NORWAY LOBSTERS (NEPHROPS NORVEGICUS), FROZEN         Reefer                      1 MT
+    [    ] 030614  CRABMEAT, FROZEN                                      Reefer                  4,827 MT
+    [    ] 030612  LOBSTERS (HOMARUS SPP,) INCLUDING IN SHELL, COOKED B  Reefer                    637 MT
+    [    ] 030611  CARIBBEAN SPINY LOBSTER (PANULIRUS ARGUS), FROZEN     Reefer                  3,116 MT
+
+  Heading 0307 -- inherits from 030792 (Reefer)
+    [AUTO] 030799  MOLLUSCS, EXCLUDING FLOURS, MEALS AND PELLETS FIT FO  Reefer                     55 MT
+    [AUTO] 030788  OTHER STROMBOID CONCHS (STROMBUS SPP.)                Reefer                      2 MT
+    [AUTO] 030787  ABALONE, DRIED, SALTED OR IN BRINE                    Reefer                      3 MT
+    [AUTO] 030779  GEODUCK CLAMS, INCLUDING FLOURS, MEALS AND PELLETS F  Reefer                     71 MT
+    [AUTO] 030760  SNAILS, OTHER THAN SEA SNAILS                         Reefer                     73 MT
+    [AUTO] 030759  OCTOPUS, DRIED, SALTED OR IN BRINE                    Reefer                    487 MT
+    [AUTO] 030749  SQUID, LOLIGO OPALESCENS, DRIED, SALTED OR IN BRINE   Reefer                  4,978 MT
+    [AUTO] 030739  MUSSELS (MYTILUS SPP., PERNA SPP.), DRIED, SALTED OR  Reefer                    509 MT
+    [AUTO] 030729  SCALLOPS AND OTHER MOLLUSCS OF THE FAMILY PECTINIDAE  Reefer                    190 MT
+    [AUTO] 030719  OYSTERS, DRIED, SALTED OR IN BRINE                    Reefer                     34 MT
+    [    ] 030792  MOLLUSCS, FROZEN, NESOI                               Reefer                    367 MT
+    [    ] 030791  CONCH, LIVE, FRESH OR CHILLED                         Reefer                      7 MT
+    [    ] 030784  FROZEN STROMBOID CONCHS (STROMBUS SPP.)               Reefer                    281 MT
+    [    ] 030783  FROZEN ABALONE, DRIED, SALTED OR IN BRINE             Reefer                     45 MT
+    [    ] 030782  STROMBOID CONCHS (STROMBUS SPP.), LIVE, FRESH OR CHI  Reefer                      0 MT
+    [    ] 030781  ABALONE, LIVE, FRESH OR CHILLED                       Reefer                      0 MT
+    [    ] 030772  GEODUCK CLAMS, FROZEN                                 Reefer                    155 MT
+    [    ] 030771  GEODUCK CLAMS, LIVE, FRESH OR CHILLED                 Reefer                      0 MT
+    [    ] 030752  OCTOPUS (OCTOPUS SPP.), FROZEN                        Reefer                  6,124 MT
+    [    ] 030751  OCTOPUS, LIVE, FRESH OR CHILLED                       Reefer                      3 MT
+    [    ] 030743  SQUID FILLETS, FROZEN                                 Reefer                 40,422 MT
+    [    ] 030742  LOLIGO SQUID, LIVE, FRESH OR CHILLED                  Reefer                      4 MT
+    [    ] 030732  MUSSELS (MYTILUS SPP., PERNA SPP.), FROZEN            Reefer                  2,732 MT
+    [    ] 030731  MUSSELS (MYTILUS SPP., PERNA SPP.), FARMED, LIVE, FR  Reefer                     44 MT
+    [    ] 030722  SCALLOPS AND OTHER MOLLUSCS OF THE FAMILY PECTINIDAE  Reefer                  3,493 MT
+    [    ] 030721  SCALLOPS AND OTHER MOLLUSCS OF THE FAMILY PECTINIDAE  Reefer                     17 MT
+    [    ] 030712  OYSTERS, FROZEN                                       Reefer                    388 MT
+    [    ] 030711  SEED OYSTERS, LIVE, FRESH OR CHILLED                  Reefer                      0 MT
+
+
+  SECTION 6: CHAPTER DEFAULT EXAMPLES (auto-classification by HS chapter)
+  ==============================================================================================
+
+  Chapter 01 -- 34 codes, 495 MT total --> Dry / Reefer
+    010690  ANIMALS, LIVE, EXCEPT MAMMALS, REPTILES, BIRDS OR INSEC         356 MT
+    010391  SWINE, WEIGHING LESS THAN 50 KG EACH, LIVE, EXCEPT PURE          37 MT
+    010229  CATTLE, LIVE, OTHER THAN PUREBRED BREEDING ANIMALS               33 MT
+    ... and 31 more codes
+
+  Chapter 02 -- 8 codes, 12,579 MT total --> Dry / Reefer
+    021019  MEAT OF SWINE, SALTED, IN BRINE, DRIED OR SMOKED, NESOI       5,555 MT
+    021012  BACON OF SWINE                                                4,269 MT
+    021011  HAMS, SHOULDERS AND CUTS THEREOF, OF SWINE, WITH BONE I       2,450 MT
+    ... and 5 more codes
+
+  Chapter 03 -- 23 codes, 9,136 MT total --> Dry / Reefer
+    030541  PACIFIC SALMON (ONCORHYNCHUS SPP.), ATLANTIC SALMON (SA       3,445 MT
+    030532  FILLETS OF FISH OF THE FAMILIES BREGMACEROTIDAE, EUCLIC       2,505 MT
+    030549  SMOKED FISH INCLUDING FILLETS, NESOI                            666 MT
+    ... and 20 more codes
+
+  Chapter 04 -- 17 codes, 351,565 MT total --> Dry / Reefer
+    040410  WHEY PROTEIN CONCENTRATES, MODIFIED WHEY, WHETHER OR NO      97,877 MT
+    040210  MILK AND CREAM, CONCENTRATED, WHETHER OR NOT SWEETENED,      78,801 MT
+    040900  COMB HONEY AND HONEY PACKAGED FOR RETAIL SALE                62,748 MT
+    ... and 14 more codes
+
+  Chapter 05 -- 14 codes, 116,400 MT total --> Containerized / Animal Products
+    051199  HORSEHAIR AND HORSEHAIR WASTE, WHETHER OR NOT PUT UP AS      45,096 MT
+    050590  FEATHER MEAL                                                 24,806 MT
+    050690  POWDER AND WASTE OF BONES AND HORN-CORES, NESOI              23,922 MT
+    ... and 11 more codes
+
+  Chapter 06 -- 7 codes, 37,642 MT total --> Dry / Reefer
+    060290  ORCHID PLANTS, LIVE                                          22,431 MT
+    060110  BULBS, TUBERS, TUBEROUS ROOTS, CORMS, CROWNS AND RHIZOM      14,032 MT
+    060210  UNROOTED CUTTINGS AND SLIPS OF PLANTS, NESOI                    779 MT
+    ... and 4 more codes
+
+  Chapter 07 -- 24 codes, 219,100 MT total --> Dry / Reefer
+    071310  PEAS (PISUM SATIVUM), SEEDS OF A KIND USED FOR SOWING,       60,334 MT
+    071339  BEAN (VIGNA SPP., PHASEOLUS SPP.) SEEDS OF A KIND USED       29,576 MT
+    071340  LENTILS, SEEDS OF A KIND USED FOR SOWING, DRIED              28,956 MT
+    ... and 21 more codes
+
+  Chapter 08 -- 7 codes, 27,854 MT total --> Dry / Reefer
+    081310  APRICOTS, DRIED                                              12,234 MT
+    081340  WILD BLUEBERRIES, DRIED                                       5,983 MT
+    081320  PRUNES, DRIED                                                 5,480 MT
+    ... and 4 more codes
+
+  Chapter 09 -- 39 codes, 429,126 MT total --> Containerized / Spices & Coffee
+    090111  COFFEE, NOT ROASTED, NOT DECAFFEINATED                      257,804 MT
+    090121  COFFEE, ROASTED, NOT DECAFFEINATED, CERTIFIED ORGANIC        26,138 MT
+    091011  GINGER, NEITHER CRUSHED NOR GROUND                           25,867 MT
+    ... and 36 more codes
+
+  Chapter 11 -- 11 codes, 96,013 MT total --> Containerized / Prepared Foods
+    110813  STARCH, POTATO                                               26,976 MT
+    110814  STARCH, CASSAVA (MANIOC)                                     19,200 MT
+    110520  FLAKES, GRANULES AND PELLETS OF POTATOES                     12,248 MT
+    ... and 8 more codes
+
+  Chapter 12 -- 31 codes, 1,083,585 MT total --> Containerized / Oilseeds & Fats
+    121490  ALFALFA HAY, NESOI, WHETHER OR NOT DOUBLE COMPRESSED        899,625 MT
+    120729  COTTON SEEDS, EXCEPT FOR SOWING, WHETHER OR NOT BROKEN       68,935 MT
+    120600  SUNFLOWER SEEDS, WHETHER OR NOT BROKEN, FOR USE AS OIL       21,459 MT
+    ... and 28 more codes
+
+  Chapter 13 -- 11 codes, 40,026 MT total --> Containerized / Gums & Resins
+    130232  MUCILAGES AND THICKENERS, WHETHER OR NOT MODIFIED, DERI      17,586 MT
+    130120  GUM ARABIC                                                    7,916 MT
+    130219  VEGETABLE SAPS AND EXTRACTS, NESOI                            7,141 MT
+    ... and 8 more codes
+
+
+  SECTION 7: MAPPING COVERAGE SUMMARY
+  ==============================================================================================
+
+  Source                  Codes  % Codes       Volume MT  % Volume
+  ---------------------- ------ -------- --------------- ---------
+  manual                  2,788    49.9%     348,001,291     91.7%
+  heading                   450     8.0%       9,000,357      2.4%
+  chapter                 2,353    42.1%      22,656,239      6.0%
+  ---------------------- ------ -------- --------------- ---------
+  TOTAL                   5,591     100%     379,657,886      100%
+
+  Unmapped codes: 0
+

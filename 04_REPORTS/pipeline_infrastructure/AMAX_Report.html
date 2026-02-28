@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louisiana Pipeline Infrastructure Analysis - AMAX Port Nickel Terminal</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #003366;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+            page-break-after: avoid;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 6pt;
+        }
+
+        h2 {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #0066CC;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #336699;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }
+
+        h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #666;
+            margin-top: 12pt;
+            margin-bottom: 6pt;
+        }
+
+        p {
+            margin: 0 0 10pt 0;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0 0 10pt 20pt;
+            padding-left: 20pt;
+        }
+
+        li {
+            margin-bottom: 6pt;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12pt 0;
+            page-break-inside: avoid;
+            font-size: 10pt;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 8pt;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #003366;
+        }
+
+        td {
+            padding: 6pt 8pt;
+            border: 1px solid #ccc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .cover-page {
+            page-break-after: always;
+            text-align: center;
+            padding-top: 2in;
+        }
+
+        .cover-title {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 24pt;
+            line-height: 1.3;
+        }
+
+        .cover-subtitle {
+            font-size: 18pt;
+            color: #0066CC;
+            margin-bottom: 36pt;
+        }
+
+        .cover-info {
+            font-size: 12pt;
+            color: #666;
+            margin: 12pt 0;
+        }
+
+        .section-break {
+            page-break-before: always;
+            border-top: 3px solid #003366;
+            padding-top: 12pt;
+            margin-top: 24pt;
+        }
+
+        .executive-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #0066CC;
+            padding: 12pt;
+            margin: 12pt 0;
+            page-break-inside: avoid;
+        }
+
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2pt 4pt;
+        }
+
+        .key-finding {
+            background-color: #e6f3ff;
+            border: 1px solid #0066CC;
+            padding: 10pt;
+            margin: 10pt 0;
+            border-radius: 4px;
+        }
+
+        .map-container {
+            text-align: center;
+            margin: 20pt 0;
+            page-break-inside: avoid;
+        }
+
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .map-caption {
+            font-size: 10pt;
+            font-style: italic;
+            color: #666;
+            margin-top: 6pt;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2pt 4pt;
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+        }
+
+        .toc {
+            page-break-after: always;
+        }
+
+        .toc-entry {
+            margin: 6pt 0 6pt 20pt;
+        }
+
+        .toc-level-1 {
+            font-weight: bold;
+            margin-top: 12pt;
+        }
+
+        .toc-level-2 {
+            margin-left: 40pt;
+        }
+
+        .toc-level-3 {
+            margin-left: 60pt;
+            font-size: 10pt;
+        }
+
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            h1, h2, h3, h4 {
+                page-break-after: avoid;
+            }
+
+            table, figure, .map-container, .executive-box, .key-finding {
+                page-break-inside: avoid;
+            }
+        }
+
+        .status-operational { color: #006400; font-weight: bold; }
+        .status-construction { color: #FF8C00; font-weight: bold; }
+        .status-development { color: #4169E1; font-weight: bold; }
+        .status-cancelled { color: #DC143C; font-weight: bold; }
+
+        .footer {
+            font-size: 9pt;
+            color: #999;
+            text-align: center;
+            margin-top: 36pt;
+            padding-top: 12pt;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cover-page">
+    <div class="cover-title">
+        Louisiana Pipeline Infrastructure Analysis
+    </div>
+    <div class="cover-subtitle">
+        AMAX Port Nickel Terminal<br>
+        Redevelopment Study
+    </div>
+    <div style="margin-top: 48pt;">
+        <img src="03_maps/inset_maps/map_02_amax_site_detail_close.png" style="max-width: 500px; border: 2px solid #003366;" alt="AMAX Site Location" onerror="this.style.display='none'">
+    </div>
+    <div class="cover-info" style="margin-top: 48pt;">
+        <strong>Project Location:</strong> Braithwaite, Plaquemines Parish, Louisiana<br>
+        <strong>Site Size:</strong> 387 Acres<br>
+        <strong>Analysis Type:</strong> Strategic Infrastructure Assessment<br>
+        <strong>Completion Date:</strong> February 4, 2026
+    </div>
+</div>
+
+<div class="toc">
+    <h1>Table of Contents</h1>
+    <div class="toc-entry toc-level-1">1. Executive Summary</div>
+    <div class="toc-entry toc-level-2">Purpose and Scope</div>
+    <div class="toc-entry toc-level-2">Key Findings</div>
+    <div class="toc-entry toc-level-2">Strategic Implications</div>
+
+    <div class="toc-entry toc-level-1">2. Introduction</div>
+    <div class="toc-entry toc-level-2">Project Context</div>
+    <div class="toc-entry toc-level-2">Study Area Definition</div>
+    <div class="toc-entry toc-level-2">Methodology</div>
+
+    <div class="toc-entry toc-level-1">3. Regional Pipeline Infrastructure Overview</div>
+    <div class="toc-entry toc-level-2">Natural Gas Transmission Systems</div>
+    <div class="toc-entry toc-level-2">Crude Oil Pipelines</div>
+    <div class="toc-entry toc-level-2">Refined Products Pipelines</div>
+    <div class="toc-entry toc-level-2">NGL and Petrochemical Pipelines</div>
+
+    <div class="toc-entry toc-level-1">4. Site-Proximate Infrastructure</div>
+    <div class="toc-entry toc-level-2">AMAX Port Nickel Location Context</div>
+    <div class="toc-entry toc-level-2">Pipelines Within 50 Miles</div>
+    <div class="toc-entry toc-level-2">Interconnection Opportunities</div>
+
+    <div class="toc-entry toc-level-1">5. Market Drivers</div>
+    <div class="toc-entry toc-level-2">LNG Export Capacity Expansion</div>
+    <div class="toc-entry toc-level-2">Data Center Development</div>
+    <div class="toc-entry toc-level-2">Construction Materials Demand</div>
+
+    <div class="toc-entry toc-level-1">6. Louisiana-Focused Pipeline Analysis</div>
+    <div class="toc-entry toc-level-2">Lower Mississippi River Pipelines (24 systems)</div>
+    <div class="toc-entry toc-level-2">LNG Feed Infrastructure</div>
+    <div class="toc-entry toc-level-2">Critical Finding: Gator Express</div>
+
+    <div class="toc-entry toc-level-1">7. Implications for Site Development</div>
+    <div class="toc-entry toc-level-2">Case A: Pipeline Network Integration</div>
+    <div class="toc-entry toc-level-2">Case B: Construction Materials Terminal</div>
+    <div class="toc-entry toc-level-2">Strategic Recommendations</div>
+
+    <div class="toc-entry toc-level-1">8. Appendices</div>
+    <div class="toc-entry toc-level-2">Pipeline Inventory Tables</div>
+    <div class="toc-entry toc-level-2">LNG Facilities Data</div>
+    <div class="toc-entry toc-level-2">Data Dictionary & Glossary</div>
+    <div class="toc-entry toc-level-2">Source References</div>
+</div>
+
+<div class="section-break"></div>
+
+</body>
+</html>

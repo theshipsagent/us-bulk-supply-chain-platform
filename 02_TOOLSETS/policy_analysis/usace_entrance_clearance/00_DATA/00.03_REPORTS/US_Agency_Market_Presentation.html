@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Agency Market Analysis 2023</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .presentation-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide {
+            display: none;
+            width: 90%;
+            max-width: 1400px;
+            height: 85vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Title Slide */
+        .title-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .title-slide h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -2px;
+        }
+
+        .title-slide h2 {
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .title-slide .stats {
+            font-size: 1.8em;
+            color: #ecf0f1;
+            margin-top: 20px;
+            padding: 20px 40px;
+            background: rgba(52, 152, 219, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Content Slide */
+        .content-slide {
+            padding: 40px 60px;
+            overflow-y: auto;
+        }
+
+        .content-slide h1 {
+            font-size: 2.5em;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .content-slide .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .content-slide .column h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+
+        .content-slide ul {
+            list-style: none;
+            line-height: 1.8;
+        }
+
+        .content-slide li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1.05em;
+            color: #333;
+        }
+
+        .content-slide li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Image Slide */
+        .image-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .image-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Navigation */
+        .nav-controls {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            padding: 15px 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .nav-btn:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-counter {
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        /* Fullscreen Button */
+        .fullscreen-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+
+        .fullscreen-btn:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        /* Keyboard hint */
+        .keyboard-hint {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Progress bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #3498db;
+            transition: width 0.3s;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="keyboard-hint">Use ← → arrow keys or buttons below</div>
+    <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active title-slide">
+            <h1>US Agency Market Analysis</h1>
+            <h2>2023 Market Overview by Region, Port & Vessel Class</h2>
+            <div class="stats">Total Market: $167.7M | 49,726 Port Calls</div>
+        </div>
+
+        <!-- Slide 2: Executive Summary -->
+        <div class="slide content-slide">
+            <h1>Executive Summary</h1>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Market Overview</h3>
+                    <ul>
+                        <li>Total US Agency Market: $167.7M in annual revenue</li>
+                        <li>49,726 port calls across all US ports</li>
+                        <li>Average fee per call: $3,373</li>
+                    </ul>
+
+                    <h3 style="margin-top: 30px;">Regional Concentration</h3>
+                    <ul>
+                        <li>Gulf Coast dominates: 47.8% of total market</li>
+                        <li>Houston is the mega-market: $24.7M (17.6%)</li>
+                        <li>Top 5 ports = 46.9% of market</li>
+                        <li>Top 10 ports = 72.0% of market</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Vessel Class Insights</h3>
+                    <ul>
+                        <li>Bulk Carriers: 38.2% of revenue ($64.0M)</li>
+                        <li>Tankers: 25.4% of revenue ($42.5M)</li>
+                        <li>Container Ships: High volume, lower revenue (5.4%)</li>
+                    </ul>
+
+                    <h3 style="margin-top: 30px;">Strategic Implications</h3>
+                    <ul>
+                        <li>Market highly concentrated in Gulf Coast</li>
+                        <li>Texas triangle = 31.4% of entire US market</li>
+                        <li>Container = volume opportunity, lower margins</li>
+                        <li>Energy/bulk trade drives premium pricing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Regional Market Analysis -->
+        <div class="slide image-slide">
+            <img src="SLIDE_Regional_Market_Analysis.png" alt="Regional Market Analysis">
+        </div>
+
+        <!-- Slide 4: Geographic Market Map -->
+        <div class="slide image-slide">
+            <img src="SLIDE_Geographic_Market_Map.png" alt="Geographic Market Map">
+        </div>
+
+        <!-- Slide 5: Regional Deep Dive -->
+        <div class="slide image-slide">
+            <img src="SLIDE_Regional_Geographic_Zooms.png" alt="Regional Deep Dive">
+        </div>
+
+        <!-- Slide 6: Revenue Density Heatmap -->
+        <div class="slide image-slide">
+            <img src="SLIDE_Revenue_Density_Heatmap.png" alt="Revenue Density Heatmap">
+        </div>
+
+        <!-- Slide 7: Top Ports Analysis -->
+        <div class="slide image-slide">
+            <img src="SLIDE_Top_Ports_Analysis.png" alt="Top Ports Analysis">
+        </div>
+
+        <!-- Slide 8: Key Takeaways -->
+        <div class="slide content-slide">
+            <h1>Key Takeaways & Strategic Insights</h1>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Geographic Concentration</h3>
+                    <ul>
+                        <li>Gulf Coast = 48% of US market</li>
+                        <li>Houston mega-market dominates</li>
+                        <li>Texas corridor controls 31% of total revenue</li>
+                    </ul>
+
+                    <h3 style="margin-top: 25px;">Market Structure</h3>
+                    <ul>
+                        <li>Highly concentrated: Top 10 ports = 72%</li>
+                        <li>Energy & bulk commodities drive revenue</li>
+                        <li>Container = high volume, low margin</li>
+                        <li>Tankers/bulk = lower volume, high margin</li>
+                    </ul>
+
+                    <h3 style="margin-top: 25px;">Regional Champions</h3>
+                    <ul>
+                        <li>North Texas: Houston ($24.7M)</li>
+                        <li>South Atlantic: South Florida ($12.6M)</li>
+                        <li>Gulf East: New Orleans ($8.6M)</li>
+                        <li>Mid-Atlantic: New York ($9.2M)</li>
+                        <li>California: LA-Long Beach ($7.3M)</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Vessel Class Opportunities</h3>
+                    <ul>
+                        <li>Bulk Carriers: Highest revenue/call ($9,000)</li>
+                        <li>Tankers: Strong margin ($4,500 avg)</li>
+                        <li>Gas Carriers: Premium segment (8.2%)</li>
+                        <li>Container: Volume play ($650 avg, 28% calls)</li>
+                    </ul>
+
+                    <h3 style="margin-top: 25px;">Market Entry Strategy</h3>
+                    <ul>
+                        <li>Focus on Gulf Coast for bulk/energy</li>
+                        <li>East Coast for container volume</li>
+                        <li>Regional approach vs. national</li>
+                        <li>Partner with established ports</li>
+                        <li>Specialize by vessel class</li>
+                    </ul>
+
+                    <h3 style="margin-top: 25px;">Growth Potential</h3>
+                    <ul>
+                        <li>Container volume growing</li>
+                        <li>Energy export expansion (LNG)</li>
+                        <li>Chemical tanker demand increasing</li>
+                        <li>Regional consolidation trends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn" onclick="previousSlide()">← Previous</button>
+        <span class="slide-counter" id="slideCounter">1 / 8</span>
+        <button class="nav-btn" id="nextBtn" onclick="nextSlide()">Next →</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+
+            if (n >= totalSlides) currentSlide = totalSlides - 1;
+            if (n < 0) currentSlide = 0;
+
+            slides[currentSlide].classList.add('active');
+
+            // Update counter
+            document.getElementById('slideCounter').textContent = `${currentSlide + 1} / ${totalSlides}`;
+
+            // Update buttons
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+
+            // Update progress bar
+            const progress = ((currentSlide + 1) / totalSlides) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') previousSlide();
+            if (e.key === 'Home') {
+                currentSlide = 0;
+                showSlide(currentSlide);
+            }
+            if (e.key === 'End') {
+                currentSlide = totalSlides - 1;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Fullscreen toggle
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>

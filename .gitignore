@@ -140,6 +140,10 @@ task_usace_entrance_clearance/
 03_COMMODITY_MODULES/cement/atlas/data/
 03_COMMODITY_MODULES/*/atlas/data/
 
+# --- Census trade: raw downloaded data (large fixed-width text files) ---
+02_TOOLSETS/census_trade/data/extracted/
+02_TOOLSETS/census_trade/data/zips/
+
 # --- PDFs in reports (keep generated HTML, exclude large PDFs) ---
 04_REPORTS/*.pdf
 03_COMMODITY_MODULES/cement/reports/published/*.pdf

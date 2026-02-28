@@ -1,0 +1,4083 @@
+CTRY_NAME,FORPORT_NAME,FORPORT_CD
+Albania,All Other Albania Ports,48100
+Albania,Durazzo,48109
+Albania,Durres,48109
+Albania,San Giovanni di Medua,48100
+Albania,Shengjin,48100
+Albania,Skele e Vlores,48100
+Albania,Vallona,48100
+Albania,Vlore,48100
+Albania,Volore,48100
+Algeria,Alger,72101
+Algeria,Algiers,72101
+Algeria,All Other Algeria Ports,72100
+Algeria,Annaba,72123
+Algeria,Arzew,72105
+Algeria,Arziw,72105
+Algeria,Bejaia,72107
+Algeria,Beni Saf,72123
+Algeria,Bethioua,72105
+Algeria,Bona,72123
+Algeria,Bone,72123
+Algeria,Cherchell,72100
+Algeria,Collo,72100
+Algeria,Dellys,72100
+Algeria,Djidjelli,72100
+Algeria,El Djazair,72101
+Algeria,Ghazaouet,72142
+Algeria,Ghazawet,72142
+Algeria,Jijel,72100
+Algeria,Mers El Kebir,72100
+Algeria,Mestghanem,72100
+Algeria,Mostaganem,72100
+Algeria,Nemours,72142
+Algeria,Oran,72179
+Algeria,Skikda,72189
+Algeria,Tenes,72100
+Algeria,Wahran,72179
+American Samoa,Pago Pago Harbor,95101
+Angola,All Other Angola Ports,76299
+Angola,Ambriz,76299
+Angola,Benguela,76299
+Angola,Cabinda,76231
+Angola,Cuio,76299
+Angola,Lobito,76274
+Angola,Lombo,76288
+Angola,Lombo Terminal,76288
+Angola,Luanda,76278
+Angola,Malongo Oil Terminal,76282
+Angola,Namibe,76279
+Angola,Novo Redondo,76299
+Angola,Palanca Terminal,76283
+Angola,Port Lombo,76288
+Angola,Porto Alexandre,76299
+Angola,Porto Amboim,76299
+Angola,Soyo Oil Terminal,76281
+Angola,Soyo-Quinfuquena term.,76281
+Angola,Takula,76284
+Angola,Takula Terminal,76284
+Angola,Tombua,76299
+Anguilla,Anguilla,24821
+Anguilla,Sombrero Island,24823
+Antigua,"Parham Harbour, Antigua",24831
+Antigua,"St. John's, Antigua",24831
+Argentina,Acevedo,35700
+Argentina,All Other Argentina Ports,35700
+Argentina,Bagual,35710
+Argentina,Bahia Blanca,35701
+Argentina,Buenos Aires,35705
+Argentina,Caleta Cordova,35703
+Argentina,Caleta Olivares,35703
+Argentina,Caleta Olivia,35703
+Argentina,Campana,35711
+Argentina,Comodoro Rivadavia,35702
+Argentina,Concepcion del Uruguay,35700
+Argentina,Diamante,35700
+Argentina,Ibicuy,35700
+Argentina,La Plata,35737
+Argentina,Madryn,35740
+Argentina,Mar del Plata,35739
+Argentina,Necochea,35741
+Argentina,Pto. General San Martin,35779
+Argentina,Puerto Borghio,35779
+Argentina,Puerto Deseado,35745
+Argentina,Puerto Madryn,35740
+Argentina,Puerto Quequen,35700
+Argentina,Puerto San Lorenzo,35779
+Argentina,Punta Quilla,35700
+Argentina,Rio Gallegos,35700
+Argentina,Rivadavia,35702
+Argentina,Rosario,35771
+Argentina,San Antonio,35700
+Argentina,San Lorenzo,35779
+Argentina,San Nicolas,35781
+Argentina,San Pedro,35785
+Argentina,San Sebastian Bay,35700
+Argentina,Santa Cruz,35700
+Argentina,Santa Fe,35791
+Argentina,Ushuaia,35700
+Argentina,Villa Constitucion,35795
+Argentina,Zarate,35796
+Aruba,Barcadera,27703
+Aruba,Orangestad,27701
+Aruba,Oranjestad,27701
+Aruba,Paarden Baai,27701
+Aruba,Paarden Bay,27701
+Aruba,San Nicolas Bay,27702
+Aruba,Sint Nicolaas Baai,27702
+Aruba,St. Nicolaas,27702
+Australia,Abbot Point,60200
+Australia,Adelaide,60201
+Australia,Albany,60200
+Australia,All Other Australia Ports,60200
+Australia,All Other Tasmania Ports,60299
+Australia,Androssan,60276
+Australia,Beauty Point,60299
+Australia,Bell Bay,60290
+Australia,Botany Bay,60205
+Australia,Bowen,60200
+Australia,Brisbane,60210
+Australia,Broome,60200
+Australia,Bunbury,60213
+Australia,Bundaberg,60214
+Australia,Burnie,60291
+Australia,Cairns,60200
+Australia,Clarence River,60281
+Australia,Dalrymple Bay,60212
+Australia,Dampier,60218
+Australia,Darwin,60220
+Australia,Devonport,60299
+Australia,Esperance,60282
+Australia,Fremantle,60222
+Australia,Geelong,60225
+Australia,Geraldton,60224
+Australia,Gladstone,60231
+Australia,Gove,60227
+Australia,Hasting,60237
+Australia,Hay Point,60212
+Australia,Hobart,60295
+Australia,Kwinana,60234
+Australia,Launceston,60297
+Australia,Liezen,60217
+Australia,Lucinda,60200
+Australia,Mackay,60204
+Australia,Melbourne,60237
+Australia,Milner Bay,60200
+Australia,Mourilyan Harbour,60239
+Australia,Newcastle,60240
+Australia,Perth,60243
+Australia,Port Alma,60249
+Australia,Port Hedland,60219
+Australia,Port Kembla,60252
+Australia,Port Pirie,60258
+Australia,Portland,60261
+Australia,Risdon,60299
+Australia,Sydney,60267
+Australia,Thursday Island,60200
+Australia,Townsville,60273
+Australia,Varanus Oil Terminal,60200
+Australia,Wallaroo,60200
+Australia,Warrnambool,60200
+Australia,Weipa,60275
+Australia,Westernport,60280
+Australia,Whyalla,60200
+Australia,Williamstown,60200
+Australia,Wyndham,60200
+Australia,Yamba,60281
+Australia,Yarraville,60237
+Bahamas,Abaco-Snake Cay,23640
+Bahamas,All Other Bahamas Ports,23600
+Bahamas,Andros Island,23672
+Bahamas,Arawak Cay,23630
+Bahamas,Bimini Island,23683
+Bahamas,Browns Cays,23600
+Bahamas,Castaway Cay,23684
+Bahamas,Cat Cay,23620
+Bahamas,Cat Island,23660
+Bahamas,Cherokee Sound,23640
+Bahamas,Chub Cay,23641
+Bahamas,Clarence Town,23635
+Bahamas,Clifton Pier,23675
+Bahamas,Clifton Point,23675
+Bahamas,Coco Cay,23640
+Bahamas,Duncan Town,23636
+Bahamas,Eleuthera Island,23619
+Bahamas,Exuma,23621
+Bahamas,"Freeport, Grand Bahama I",23645
+Bahamas,Fresh Creek,23600
+Bahamas,Gorda Cay,23640
+Bahamas,Governor's Harbour,23623
+Bahamas,Great Abaco Island,23640
+Bahamas,Great Harbour Cay,23643
+Bahamas,Great Inagua,23653
+Bahamas,Great Stirrup Cay,23642
+Bahamas,Green Turtle Cay,23640
+Bahamas,Gun Cay,23683
+Bahamas,Half Moon Cay,23624
+Bahamas,Harbour Island,23619
+Bahamas,Long Island,23635
+Bahamas,Marsh Harbour,23640
+Bahamas,Matthew Town,23653
+Bahamas,Mayaguana Island,23600
+Bahamas,"Nassau, New Providence I",23661
+Bahamas,Ocean Cay,23665
+Bahamas,Port Andros,23672
+Bahamas,Port Lucaya,23646
+Bahamas,Port Nelson,23650
+Bahamas,Ragged Island,23636
+Bahamas,Rum Cay,23650
+Bahamas,San Salvador,23600
+Bahamas,South Riding Point,23645
+Bahamas,Spanish Wells,23622
+Bahamas,Treasure Cay,23644
+Bahamas,Walker Cay,23667
+Bahamas,West End,23647
+Bahamas,Whale Cay,23600
+Bahrain,Al Manamah Harbor,52502
+Bahrain,All Other Bahrain Ports,52500
+Bahrain,Khalifa Bin Salman,52503
+Bahrain,Manama,52502
+Bahrain,Mina Sulman,52501
+Bahrain,Sitra,52500
+Bahrain,Sitrah,52500
+Bangladesh,All Other Bangladesh Ports,53800
+Bangladesh,Chalna,53820
+Bangladesh,Chittagong,53827
+Bangladesh,Khulna,53820
+Bangladesh,Mongla,53800
+Bangladesh,Mungla Anchorage,53800
+Barbados,Bridgetown,27201
+Barbados,Oistino,27210
+Barbados,Speightstown,27213
+Belgium,All Other Belgium Ports,42300
+Belgium,Antwerp,42305
+Belgium,Anvers,42305
+Belgium,Bruges,42311
+Belgium,Brugge,42311
+Belgium,Brussels,42315
+Belgium,Bruxelles,42315
+Belgium,Ertvelde,42300
+Belgium,Gand,42331
+Belgium,Gent,42331
+Belgium,Ghent,42331
+Belgium,Haren,42300
+Belgium,Hemiksem,42385
+Belgium,Himixen,42385
+Belgium,Humbeek,42300
+Belgium,Ostend,42351
+Belgium,Rieme,42300
+Belgium,Schelde,42306
+Belgium,Schelde Terminal,42306
+Belgium,Selzaete,42300
+Belgium,Terdonck Cluysen,42300
+Belgium,Terdouk,42300
+Belgium,Vilvoorde,42300
+Belgium,Vilvorde,42300
+Belgium,Zeebrugge,42381
+Belgium,Zelzate,42300
+Belgium,Zwijndrecht,42300
+Belgium,Zwyndrecht,42300
+Belize,Belize,20801
+Belize,Big Creek,20802
+Belize,Dangriga,20803
+Belize,Other Belize Ports,20800
+Belize,Punta Gorda,20800
+Belize,San Pedro,20800
+Belize,Stann Creek,20803
+Benin,All Other Benin ports,76100
+Benin,Cotonou,76101
+Benin,Grand Popo,76100
+Benin,Seme Terminal,76102
+Bermuda,All Other Bermuda Ports,23299
+Bermuda,"Freeport, Ireland Island",23299
+Bermuda,Hamilton,23201
+Bermuda,Saint Georges,23251
+Bermuda,St. Georges,23251
+Brazil,Abaetetuba,35198
+Brazil,Alenquer,35198
+Brazil,All Other Brazil Ports North of Recife,35198
+Brazil,All Other Brazil Ports South of Recife,35199
+Brazil,Amarracao,35198
+Brazil,Angra dos Reis,35107
+Brazil,Antonina,35159
+Brazil,Aracaju,35199
+Brazil,Aracati,35198
+Brazil,Aratu,35115
+Brazil,Areia Branca,35198
+Brazil,Barao de Teffe,35159
+Brazil,Barcarena,35121
+Brazil,Barro do Riacho,35199
+Brazil,Belem,35121
+Brazil,Boa Vista,35198
+Brazil,Breves,35123
+Brazil,Cabedelo,35127
+Brazil,Camocim,35198
+Brazil,Ceara,35133
+Brazil,Fortaleza,35133
+Brazil,Ilheus,35137
+Brazil,Imbituba,35178
+Brazil,Itacoatiara,35139
+Brazil,Itaguai,35185
+Brazil,Itajai,35138
+Brazil,Itajay,35138
+Brazil,Itaqui,35135
+Brazil,Joao Pessoa,35127
+Brazil,Luis Correia,35198
+Brazil,Macapa,35165
+Brazil,Maceio,35141
+Brazil,Madre de Deus,35113
+Brazil,Malhado,35137
+Brazil,Manaus,35144
+Brazil,Mossoro,35198
+Brazil,Mucuripe,35133
+Brazil,Munguba,35164
+Brazil,Natal,35157
+Brazil,Navegantes,35136
+Brazil,Niteroi,35171
+Brazil,Obidos,35158
+Brazil,Oriximina,35198
+Brazil,Para,35121
+Brazil,Paranagua,35159
+Brazil,Parnahyba,35163
+Brazil,Parnaiba,35163
+Brazil,Pecem,35120
+Brazil,Pelotas,35199
+Brazil,Pernambuco,35169
+Brazil,Point Ubu,35166
+Brazil,Ponta da Madeira,35168
+Brazil,Ponta do Ubu,35166
+Brazil,Port Itapoa,35180
+Brazil,Port Itaqui,35135
+Brazil,Port Santana,35165
+Brazil,Port do Pecem,35120
+Brazil,Portel,35198
+Brazil,Porto Alegre,35167
+Brazil,Portocel,35199
+Brazil,Praia Mole,35160
+Brazil,Recife,35169
+Brazil,Rio Grande,35173
+Brazil,Rio de Janeiro,35171
+Brazil,Salvador,35181
+Brazil,Santa Clara,35167
+Brazil,Santana,35165
+Brazil,Santarem,35198
+Brazil,Santos,35177
+Brazil,Sao Francisco do Sul,35179
+Brazil,Sao Luiz de Maranhao,35135
+Brazil,Sao Miguel dos Macaos,35198
+Brazil,Sao Paulo,35177
+Brazil,Sao Sebastio,35175
+Brazil,Sepetiba Bay,35185
+Brazil,Suape,35170
+Brazil,Tebig,35107
+Brazil,Termisa Terminal,35198
+Brazil,Tramandai,35161
+Brazil,Trombetas,35176
+Brazil,Tubarao,35160
+Brazil,Tutoia,35163
+Brazil,Tutoya,35163
+Brazil,Urucara,35198
+Brazil,Victoria,35195
+Brazil,Vila do Conde,35121
+Brazil,Vitoria,35195
+Brit Ind Ocean,All Other British Indian Ocean Territory,78100
+Brit Ind Ocean,Diego Garcia,78101
+British Virgin,Port Purcell,24815
+British Virgin,"Road Harbour, Tortola",24815
+British Virgin,"Road Town, Tortola Island",24815
+British Virgin,Virgin  Gorda,24813
+Brunei,All Other Brunei Ports,56100
+Brunei,Lumut,56100
+Brunei,Muara Port,56151
+Brunei,Seria,56150
+Bulgaria,All Other Ports in Bulgaria,48700
+Bulgaria,Bourgas,48702
+Bulgaria,Burgas,48702
+Bulgaria,Varna,48707
+Burma,All Other Burma Ports,54600
+Burma,Rangoon,54601
+Burma,Tavoy,54600
+Burma,Yangon,54601
+Cambodia,All Ports in Cambodia,55500
+Cambodia,Kampong Saom,55500
+Cambodia,Kampot,55500
+Cambodia,Phnom Penh,55500
+Cambodia,Sihanoukville,55500
+Cameroon,All Other Cameroon Ports,74299
+Cameroon,Bonaberi,74201
+Cameroon,Cap  Limboh,74298
+Cameroon,Cap Limboah,74298
+Cameroon,Douala,74201
+Cameroon,Garoua,74297
+Cameroon,Kole Terminal,74201
+Cameroon,Kribi,74213
+Cameroon,Limbe,74298
+Cameroon,Limboh Terminal,74298
+Cameroon,Moudi Terminal,74296
+Cameroon,Tiko,74298
+Cameroon,Victoria,74298
+Canada,"Alert Bay, BC",12203
+Canada,"Algoma, ONT",8525
+Canada,All Other Canada Atlantic Region Ports,13400
+Canada,All Other Canada Great Lakes Region Ports,9000
+Canada,All Other Canada Pacific Region Ports,12200
+Canada,All Other Labrador Ports,15298
+Canada,All Other Newfoundland Ports,15200
+Canada,"Amherstburg, ONT",3504
+Canada,"Argentia, NFLD",15213
+Canada,"Auld's Cove, NS",13846
+Canada,"Back Bay, NB",13400
+Canada,"Baddeck, CBI",13855
+Canada,"Baffin Island, NL",15298
+Canada,"Baie Comeau, QUE",13481
+Canada,"Bath, ONT",1653
+Canada,"Bathurst, NB",13458
+Canada,"Bay Roberts, NFLD",15205
+Canada,"Bayside, NB",13459
+Canada,"Beale Cove, BC",12215
+Canada,"Beauharnoi, QUE",1806
+Canada,"Beaver Harbour, NB",13435
+Canada,"Becancour, QUE",13441
+Canada,"Bella Coola, BC",12216
+Canada,"Belledune, NB",13442
+Canada,"Blacks Harbor, NB",13450
+Canada,"Bliss Harbor, NB",13400
+Canada,"Blubber Bay, BC",12214
+Canada,"Boca Sec, NB",13829
+Canada,"Bonavista, NFLD",15200
+Canada,"Botwood, NFLD",15214
+Canada,"Bowmanville, ONT",9665
+Canada,"Bridgeburg, ONT",9000
+Canada,"Bridgetown, NS",13400
+Canada,"Bridgewater, NS",13850
+Canada,"Britt, ONT",1528
+Canada,"Brockville, ONT",1694
+Canada,"Bruce Mines, ONT",8526
+Canada,"Bull Arm, NFLD",15201
+Canada,"Burgeo, NFLD",15200
+Canada,"Burnaby, BC",12495
+Canada,"Butedale, BC",12200
+Canada,"Cacouna, QUE",13410
+Canada,"Campbell River, BC",12207
+Canada,"Campbellton, NB",13444
+Canada,"Campobello, NB",13445
+Canada,"Cape Beale, BC",12213
+Canada,"Carbonear, NFLD",15206
+Canada,"Cardinal, ONT",1705
+Canada,"Cayuga, ONT",2641
+Canada,"Chance Harbor, NB",13445
+Canada,"Chandler, QUE",13466
+Canada,"Charlottetown, PEI",14471
+Canada,"Chatham, NB",13460
+Canada,"Chemainus, BC",12229
+Canada,"Chicoutimi, QUE",13473
+Canada,"Churchill, MAN",14001
+Canada,"Clarenville, NFLD",15224
+Canada,"Clarke City, QUE",13476
+Canada,"Clarke Harbour, NS",13451
+Canada,"Clarke's Harbour, NS",13451
+Canada,"Clarkson, ONT",1527
+Canada,"Coley's Point, NFLD",15226
+Canada,"Come-by-Chance, NFLD",15229
+Canada,"Comeau Bay, QUE",13481
+Canada,"Conception Bay, NFLD",15220
+Canada,"Contrecoeur, QUE",13482
+Canada,"Corner Brook, NFLD",15231
+Canada,"Cornwall, ONT",1784
+Canada,"Corunna, ONT",5517
+Canada,"Courtright, ONT",5515
+Canada,"Cowichan Bay, BC",12231
+Canada,"Crofton, BC",12234
+Canada,"Dalhousie, NB",13484
+Canada,"Dartmouth, NS",13485
+Canada,"Deadmans Harbour, NB",13400
+Canada,"Deer Island, NB",13475
+Canada,Delta BC,12496
+Canada,"Depot Harbor, ONT",6695
+Canada,"Digby, NS",13420
+Canada,"Dipper Harbor, NB",13400
+Canada,"Donnacona, QUE",13493
+Canada,"Duncan Bay, BC",12246
+Canada,"Dundas Island, BC",12200
+Canada,"Dunnville, ONT",2645
+Canada,"Earls Island, NLFD",15223
+Canada,"Elk Falls, BC",12237
+Canada,"Englee Harbor, NFLD",15207
+Canada,"Esquimalt, BC",12200
+Canada,"Fisher Harbour, ONT",8528
+Canada,"Fort Frances, ONT",9000
+Canada,"Fort Williams, ONT",9662
+Canada,"Fortune, NL",15208
+Canada,"Fox River, QUE",13400
+Canada,"Fraser River, BC",12261
+Canada,"Frobisher Bay, NL",15298
+Canada,"Ganges, BC",12494
+Canada,"Gaspe, QUE",13819
+Canada,"Goderich, ONT",6533
+Canada,"Gold River, BC",12275
+Canada,"Gold River, NS",13452
+Canada,"Gooch Island, BC",12493
+Canada,"Grand Bank, NFLD",15209
+Canada,"Grand Harbor, NB",13829
+Canada,"Grand Manan Island, NB",13829
+Canada,"Greenville, ONT",9000
+Canada,"Gros Cacouna, QUE",13820
+Canada,"Groscacouna, QUE",13820
+Canada,"Halifax, NS",13841
+Canada,"Hamilton, ONT",1520
+Canada,"Hantsport, NS",13848
+Canada,"Harbour Breton, NFLD",15210
+Canada,"Harbour Grace, NFLD",15232
+Canada,"Harmac, BC",12407
+Canada,"Hartley Bay, BC",12200
+Canada,"Hartley, BC",12200
+Canada,"Heron Bay, ONT",9669
+Canada,"Hibernia, NFLD",15201
+Canada,"Holsteinborg, BC",12200
+Canada,"Holyrood, NFLD",15245
+Canada,"Howie Sound, BC",12208
+Canada,"Jackson Bay, BC",12200
+Canada,"Jervis Inlet, BC",12217
+Canada,"Kingston, ONT",1670
+Canada,"Kingsville, ONT",3506
+Canada,"Kitimat, BC",12287
+Canada,"Ladysmith, BC",12209
+Canada,"Lakeview, ONT",1530
+Canada,"Lambton, ONT",5515
+Canada,"Lampton, ONT",5515
+Canada,"Leamington, ONT",3508
+Canada,"Levis, QUE",1832
+Canada,"Little Current, ONT",6748
+Canada,"Little Narrows, CBI",13884
+Canada,"Liverpool, NS",13887
+Canada,"Long Harbor, NFLD",15255
+Canada,"Long Pond Manuels, NFLD",15260
+Canada,"Louisburg, NS",13437
+Canada,"Lunenburg, NS",13851
+Canada,"Maces Bay, NB",13400
+Canada,"Maple Bay, BC",12200
+Canada,"Marathon, ONT",9601
+Canada,"Marystown, NFLD",15233
+Canada,"Masset, BC",12210
+Canada,"Matane, QUE",14070
+Canada,"McBride Bay, BC",12200
+Canada,Meldrum Bay,6766
+Canada,"Meteghan, NS",13870
+Canada,"Michipicoten Harbor, ONT",9555
+Canada,"Michipicoten, ONT.",9555
+Canada,"Mission, BC",12490
+Canada,"Mississauga, ONT",1530
+Canada,"Mitchell Bay, ONT",8530
+Canada,"Mont Louis, QUE",14021
+Canada,"Montague, PEI",14472
+Canada,"Montreal, QUE",1822
+Canada,"Morrisburg,ONT",1696
+Canada,"Mulgrave, NS",13436
+Canada,"Nanaimo, BC",12406
+Canada,"Nanticoke, ONT",6645
+Canada,"New Westminster, BC",12408
+Canada,"Newcastle, NB",14037
+Canada,"Nootka, BC",12200
+Canada,"North Sydney, NS",13853
+Canada,"Oak Bay, BC",12498
+Canada,"Oakville, ONT",6770
+Canada,"Ojibway, ONT",3510
+Canada,"Oshawa, ONT",9670
+Canada,"Ottawa, ONT",7238
+Canada,"Otter Island, ONT",9554
+Canada,"Owen Sound, ONT",6768
+Canada,"Parry Sound, ONT",6697
+Canada,"Pelee Island, ONT",3507
+Canada,"Picton, ONT",1652
+Canada,"Pictou, NS",13854
+Canada,"Point Tupper, CBI",14065
+Canada,"Pointe Au Pic, QUE",14066
+Canada,"Pointe Noire, QUE",13476
+Canada,"Pointe aux Trembles, ONT",1823
+Canada,"Porcher Island, BC",12200
+Canada,"Port Alberni, BC",12202
+Canada,"Port Alfred, QUE",14069
+Canada,"Port Alice, BC",12422
+Canada,"Port Arthur, ONT",9662
+Canada,"Port Cartier, QUE",14073
+Canada,"Port Clements, BC",12204
+Canada,"Port Colborne, ONT",2641
+Canada,"Port Credit, ONT",1530
+Canada,"Port Edward, BC",12420
+Canada,"Port Hardy, BC",12211
+Canada,"Port Hawkesbury, NS",13849
+Canada,"Port Johnstown, ONT",1700
+Canada,"Port Maitland, NS",13430
+Canada,"Port Mann, BC",12426
+Canada,"Port Mellon, BC",12428
+Canada,"Port Moody, BC",12430
+Canada,"Port Simpson, BC",12444
+Canada,"Port Stanley, ONT",2566
+Canada,"Port Weller, ONT",9663
+Canada,"Port Whitby, ONT",9671
+Canada,"Port of Digby, NS",13420
+Canada,"Powell River, BC",12441
+Canada,"Prescott, ONT",1700
+Canada,"Prince Rupert, BC",12442
+Canada,"Quebec, QUE",14094
+Canada,"Ramea, NFLD",15211
+Canada,"Red Head, NB",13400
+Canada,"Richardson Island, NB",13454
+Canada,"Richardson, NB",13454
+Canada,"Richmond, BC",12497
+Canada,"Rimouski, QUE",14068
+Canada,"Robert's Bank, BC",12489
+Canada,"Rockport, ONT",2643
+Canada,"Rocky Point, ONT",1697
+Canada,"Rupert Inlet, QUE",14095
+Canada,"Saint Andrews, NB",14426
+Canada,"Saint Anthony, NL",15212
+Canada,"Saint Catharines, ONT",1690
+Canada,"Saint George, NB",14427
+Canada,"Saint Jean, QUE",14429
+Canada,"Saint John's, NFLD",15282
+Canada,"Saint John, NB",14428
+Canada,"Saint Johns, QUE",14429
+Canada,"Saint Lawrence, NFLD",15283
+Canada,"Saint Stephen, NB",14438
+Canada,"San Mateo, BC",12200
+Canada,"Sandy Cove, NS",13400
+Canada,"Sarnia, ONT",5520
+Canada,"Sault Ste. Marie, ONT",8525
+Canada,"Scudder, ONT",3507
+Canada,"Seal Cove, NB",13829
+Canada,"Sechelt, BC",12219
+Canada,"Seelys Basin, NB",13829
+Canada,"Seelys Cove, NB",13829
+Canada,"Seelys Head, NB",13829
+Canada,"Sept Iles, QUE",14444
+Canada,"Serpent Harbor, ONT",6767
+Canada,"Seven Islands, QUE",14444
+Canada,"Sheet Harbour, NS",13888
+Canada,"Shelburne, NS",13455
+Canada,"Sidney, BC",12468
+Canada,"Sillery, QUE",14092
+Canada,"Slate Islands, ONT",9000
+Canada,"Sombra, ONT",5512
+Canada,"Soo, ONT",8525
+Canada,"Sooke, BC",12205
+Canada,"Sorel, QUE",14466
+Canada,"Souris, PEI",14467
+Canada,"South Pender Island, BC",12200
+Canada,"Spences Island, NS",13400
+Canada,"Spragge, ONT",6767
+Canada,"Squamish, BC",12208
+Canada,"St. Andrews, NB",14426
+Canada,"St. Anthony, NFLD",15212
+Canada,"St. Catharines, ONT",1690
+Canada,"St. John's, NFLD",15282
+Canada,"St. Lawrence, NFLD",15283
+Canada,"St. Romuald, QUE",14090
+Canada,"Stanovan, BC",12475
+Canada,"Stephenville, NL",15285
+Canada,"Steveston, BC",12200
+Canada,"Stewart, BC",12478
+Canada,"Summerside, PEI",14470
+Canada,"Sydney, NS",13852
+Canada,"Tahsis, BC",12482
+Canada,"Texada, BC",12206
+Canada,"Thessalon, ONT",8527
+Canada,"Thorold, ONT",2649
+Canada,"Three Rivers, QUE",14474
+Canada,"Thunder Bay, ONT",9662
+Canada,"Toronto, ONT",1535
+Canada,"Tracy, QUE",1807
+Canada,"Trois Rivieres, QUE",14474
+Canada,"Tuktoyaktuk, NWT",13470
+Canada,"Twin Creeks, BC",12208
+Canada,"Ucuelet, BC",12218
+Canada,"Union Bay, BC",12491
+Canada,"Valleyfield, QUE",14067
+Canada,"Van Anda, BC",12492
+Canada,"Vancouver, BC",12493
+Canada,"Victoria Harbor, ONT",6682
+Canada,"Victoria, BC",12494
+Canada,"Victoria, PEI",13456
+Canada,"Walkerville, ONT",9605
+Canada,"Watson Island, BC",12420
+Canada,"Welland, ONT",2645
+Canada,"Welshpool, NB",13457
+Canada,"Whiffen Head, NFLD",15230
+Canada,"Whitby, ONT",9671
+Canada,"White Rock,BC",12200
+Canada,"Whitefish River, ONT",9667
+Canada,"Whonnock, BC",12488
+Canada,"Whonok, BC",12488
+Canada,"Wiarton, ONT",9000
+Canada,"Wilsons Beach, NB",13400
+Canada,"Windsor, ONT",3512
+Canada,"Witless Bay, NFLD",15200
+Canada,"Woodfibre, BC",12212
+Canada,"Woodwards Cove, NB",13829
+Canada,"Yarmouth, NS",13847
+Cape Verde,All Other Cape Verde Ports,76499
+Cape Verde,Mindelo,76465
+Cape Verde,Porto Grande,76465
+Cape Verde,Porto Praia,76475
+Cape Verde,Praia,76475
+Cape Verde,Sal Island,76499
+Cayman Isl,All Other Cayman Island Ports,24400
+Cayman Isl,Cayman Brac,24415
+Cayman Isl,Georgetown,24410
+Cayman Isl,Grand Cayman,24410
+Chile,All Other Chile Ports,33700
+Chile,Ancud,33700
+Chile,Angamos,33704
+Chile,Antofagasta,33703
+Chile,Arica,33706
+Chile,Caldera,33708
+Chile,Caleta Barquito,33716
+Chile,Caleta Buena,33700
+Chile,Caleta Patillos,33765
+Chile,Carrizal Bajo,33700
+Chile,Chacabuco,33700
+Chile,Chanaral,33716
+Chile,Coquimbo,33721
+Chile,Coronel,33700
+Chile,Corral,33700
+Chile,Cruz Grande,33700
+Chile,Easter Island,33700
+Chile,Gatico,33700
+Chile,Guanillo,33700
+Chile,Guayacan,33735
+Chile,Huasco,33739
+Chile,Iquique,33741
+Chile,Las Salinas,33797
+Chile,Lebu,33700
+Chile,Lirquen,33751
+Chile,Los Vilos,33700
+Chile,Lota,33700
+Chile,Mejillones del Sur,33700
+Chile,Pabellon,33700
+Chile,Papudo,33700
+Chile,Patillos,33765
+Chile,Pena Blanca,33700
+Chile,Penco,33782
+Chile,Pisagua,33700
+Chile,Puerto Montt,33700
+Chile,Puerto de Lirquen,33751
+Chile,Punta Arenas,33770
+Chile,Punta Patache,33700
+Chile,Quintero,33775
+Chile,San Antonio,33779
+Chile,San Vicente,33780
+Chile,Santiago,33776
+Chile,Talcahuano,33781
+Chile,Taltal,33700
+Chile,Tocopilla,33788
+Chile,Tome,33700
+Chile,Valdivia,33700
+Chile,Valparaiso,33797
+China,All Other Peoples Republic of China Ports,57000
+China,Amoy,57069
+China,Basuo,57003
+China,Bei Hai,57076
+China,Bei Jao,57016
+China,Beihai,57076
+China,Beilun,57005
+China,Chang Sha,57000
+China,Chefoo,57055
+China,Chen Chiang,57000
+China,Chen Huang Tao,57009
+China,Cheng Ling Chi,57000
+China,Chenglin,57000
+China,Chenglingji,57000
+China,Chin Wang Tao,57009
+China,Chin Wangtao,57009
+China,Ching Kiang,57000
+China,Ching Tao,57047
+China,Chinkiang,57000
+China,Chiwan,57067
+China,Da Chan Bay,57045
+China,Dagu/Tanggu,57017
+China,Dairen,57051
+China,Dalian,57051
+China,Dongfeng,57003
+China,Dongguan,57056
+China,Fangcheng,57044
+China,Foochou,57015
+China,Foochow,57015
+China,Fuchou,57015
+China,Fuqing,57011
+China,Fuzhou,57015
+China,Guangzhou,57071
+China,Haikou,57012
+China,Hankow,57013
+China,Hsia Men,57069
+China,Hsin Kang,57017
+China,Hsinkang,57017
+China,Hu lu Tao,57000
+China,Huangpu,57072
+China,Huizhou,57022
+China,Huludao Gang,57000
+China,Hulutao,57000
+China,Jiangmen,57000
+China,Jiangyin,57080
+China,Jiu Jiang,57000
+China,Jiuzhou,57077
+China,Kiukiang,57000
+China,Lianyungang,57025
+China,Lien Yin Chiang,57025
+China,Lu Shun,57052
+China,Luda,57051
+China,Lushun,57052
+China,Military-Guangzhou,92008
+China,Military-Hsinhaing,92007
+China,Military-Quingdao,92010
+China,Military-Tainjin,92009
+China,Nan Ching,57014
+China,Nanjing,57014
+China,Nanking,57014
+China,Nansha,57073
+China,Nantong,57074
+China,Newchang,57000
+China,Newchwang,57000
+China,Ning Bo,57020
+China,Ningpo,57020
+China,Pakho,57076
+China,Pakhoi,57076
+China,Pei hai Anchorage,57000
+China,Port Arthur,57052
+China,Qingdao,57047
+China,Qinhuangdao Gang,57009
+China,Qinzhou,57042
+China,Quangzhou,57071
+China,Quanzhou,57071
+China,Quingdao,57047
+China,Rizhao,57024
+China,Rongqi,57000
+China,Ryojun Ko,57000
+China,San T Ou,57070
+China,Shan T ou,57070
+China,Shang hai,57035
+China,Shanghai,57035
+China,Shantou,57070
+China,Shekou,57018
+China,Shunde,57000
+China,Swatou,57070
+China,Swatow,57070
+China,Taicang,57038
+China,Tanjiajing,57030
+China,Tianjin,57043
+China,Tianjinxin Gang,57043
+China,Tienching,57043
+China,Tientsin,57043
+China,Tsamkong,57075
+China,Tsingtao,57047
+China,Wei hai,57000
+China,Weihai,57000
+China,Wenzhow,57021
+China,Whampoa,57072
+China,Wu Hu,57000
+China,Wuhan,57013
+China,Wuhu,57000
+China,Xiamen,57069
+China,Xingang,57017
+China,YangShan,57037
+China,Yantai,57055
+China,Yantian,57078
+China,Yentai,57055
+China,Yingkou,57053
+China,Zhangjiagang,57075
+China,Zhanjiang,57075
+China,Zhanjiang gang,57075
+China,Zhaoqing,57000
+China,Zhenjiang,57019
+China,Zhongshan,57079
+China,Zhuhai,57077
+China Taiwan,All Other China (Taiwan) Ports,58300
+China Taiwan,Chi Lung,58301
+China Taiwan,Chilung,58301
+China Taiwan,Hualien,58312
+China Taiwan,Kao Hsiung,58309
+China Taiwan,Kaohsiung,58309
+China Taiwan,Keelung,58301
+China Taiwan,Kiirun,58301
+China Taiwan,Koolung,58301
+China Taiwan,Shilong,58301
+China Taiwan,Su Ao,58302
+China Taiwan,Suao,58302
+China Taiwan,Tai Chung,58303
+China Taiwan,Tai-Nan,58305
+China Taiwan,Taibei,58304
+China Taiwan,Taichung,58303
+China Taiwan,Tainan,58305
+China Taiwan,Taipei,58304
+China Taiwan,Tamsui,58311
+Colombia,All Colombia Amazon Region Ports,30198
+Colombia,All Other Colombia West Coast Region Ports,30199
+Colombia,All Other Colombian Caribbean Region Ports,30100
+Colombia,Barranquilla,30104
+Colombia,Buenaventura,30151
+Colombia,Cartagena,30107
+Colombia,Covenas,30110
+Colombia,Isla San Andres,30130
+Colombia,Leticia,30198
+Colombia,Mamonal,30125
+Colombia,Pozos Colorados,30100
+Colombia,Puerto Bolivar,30121
+Colombia,Puerto Colombia,30131
+Colombia,Puerto Drummond,30140
+Colombia,Puerto Zuniga,30100
+Colombia,San Andres,30130
+Colombia,Santa Marta,30140
+Colombia,Tarapaca,30198
+Colombia,Tumaco,30152
+Colombia,Turbo,30145
+Comoros,All Comoros Ports,78900
+Comoros,"Dzaoudzi, Mayotte Is",78900
+Comoros,Moroni,78900
+Comoros,Mutsamudu,78900
+Congo Brazzaville,All Other Congo(Brazzaville) Ports,76300
+Congo Brazzaville,Djeno Terminal,76345
+Congo Brazzaville,Pointe Noire,76350
+Congo Brazzaville,Yombo,76330
+Congo Kinshasha,All Other Congo(Kinshasha) Ports,76600
+Congo Kinshasha,Banana,76600
+Congo Kinshasha,Boma,76638
+Congo Kinshasha,Matadi,76637
+Congo Kinshasha,Moanda Terminal,76639
+Costa Rica,Aguadulce,22389
+Costa Rica,All Other Costa Rica Caribbean Region Ports,22300
+Costa Rica,All Other Costa Rica West Coast Region Ports,22399
+Costa Rica,Bahia de Moin,22315
+Costa Rica,Caldera,22361
+Costa Rica,Coco Islands,22399
+Costa Rica,Colorado Bar,22301
+Costa Rica,Golfito,22363
+Costa Rica,Golfo Dulce,22399
+Costa Rica,Islas de Coco,22399
+Costa Rica,Limon,22313
+Costa Rica,Moin,22315
+Costa Rica,Puerto Golfito,22363
+Costa Rica,Puerto Limon,22313
+Costa Rica,Puerto Vargas,22300
+Costa Rica,Punta Morales,22386
+Costa Rica,Punta Quepos,22381
+Costa Rica,Puntarenas,22387
+Costa Rica,Quepos,22381
+Croatia,All Other Croatia Ports,47998
+Croatia,Bakar,47923
+Croatia,Dubrovnik,47902
+Croatia,Dugi Rat,47906
+Croatia,Fiume,47923
+Croatia,Kardeljevo,47911
+Croatia,Kastel Sucurac,47931
+Croatia,Novigrad,47905
+Croatia,Obrovac,47912
+Croatia,Omisalj,47998
+Croatia,Ploce,47911
+Croatia,Pola,47920
+Croatia,Pula,47920
+Croatia,Ragusa,47902
+Croatia,Rijeka,47923
+Croatia,Shibenik,47925
+Croatia,Sibenik,47925
+Croatia,Sibvenico,47925
+Croatia,Solin,47931
+Croatia,Spalato,47931
+Croatia,Split,47931
+Croatia,Susak,47923
+Croatia,Susaka,47923
+Croatia,Vranjic,47998
+Croatia,Zadar,47933
+Cuba,All Other Cuba Ports,23900
+Cuba,Antilla,23900
+Cuba,Bahia Honda,23900
+Cuba,Bahia Sama,23900
+Cuba,Bahia de Nuevitas,23900
+Cuba,Banes,23900
+Cuba,Baracoa,23900
+Cuba,Boqueron,23941
+Cuba,Cabanas,23900
+Cuba,Cabo Cruz,23900
+Cuba,Caibarien,23900
+Cuba,Caimanera,23941
+Cuba,Cape Cruz,23900
+Cuba,Cardenas,23900
+Cuba,Casilda,23900
+Cuba,Cayo Santa Maria,23900
+Cuba,Ceiba Hueca,23900
+Cuba,Chaparra,23900
+Cuba,Cienfuegos,23900
+Cuba,Daiquiri Bay,23931
+Cuba,Deseo,23941
+Cuba,Ensenada Santa Maria,23900
+Cuba,Ensenda de Mora,23900
+Cuba,Gibara,23900
+Cuba,Guantanamo Bay,23941
+Cuba,Guayabal,23979
+Cuba,Havana,23944
+Cuba,Isabela del Sagua,23937
+Cuba,Isla de Pinos,23900
+Cuba,Isle of Pines,23900
+Cuba,Jucaro,23900
+Cuba,La Habana,23944
+Cuba,La Isabela de Sagua,23937
+Cuba,Lengua de Pajaro,23961
+Cuba,Manati,23900
+Cuba,Manopla,23979
+Cuba,Manzanillo,23900
+Cuba,Maravi,23900
+Cuba,Mariel,23900
+Cuba,Matahambre,23900
+Cuba,Matanzas,23900
+Cuba,Mayari,23900
+Cuba,Media Luna,23900
+Cuba,Minas de Matahambre,23900
+Cuba,Moa,23900
+Cuba,Nicaro,23961
+Cuba,Niguero,23900
+Cuba,Nuevitas,23900
+Cuba,Palo Alto,23900
+Cuba,Pilon Harbor,23900
+Cuba,Port Tarafa,23900
+Cuba,Pto. Cayo Grande de Moa,23900
+Cuba,Puerto General Peraza,23937
+Cuba,Puerto Padre,23900
+Cuba,Puerto Tarafa,23900
+Cuba,Puerto Vita,23900
+Cuba,Punta Gorda,23900
+Cuba,Regla,23944
+Cuba,Sagua de Tanamo,23979
+Cuba,Sagua la Grande,23937
+Cuba,San Ramon,23900
+Cuba,Santa Cruz del Sur,23983
+Cuba,Santa Lucia,23900
+Cuba,Santiago de Cuba,23900
+Cuba,Tanamo,23979
+Cuba,Tunas de Zaza,23900
+Cuba,Yumuri,23900
+Cyprus,All Other Cyprus Ports,49199
+Cyprus,Famagusta,49199
+Cyprus,Larnaca,49133
+Cyprus,Limassol,49135
+Cyprus,Vassiliko,49134
+Denmark,Aabenraa,40901
+Denmark,Aalborg,40903
+Denmark,Aarhus,40906
+Denmark,All Other Denmark Ports,40900
+Denmark,Asnaes,40940
+Denmark,Asnaesvaerkets Havn,40940
+Denmark,Assens,40900
+Denmark,Bandholm,40900
+Denmark,Bogense,40900
+Denmark,Bornholm,40900
+Denmark,Copenhagen,40948
+Denmark,Elsinore,40900
+Denmark,Enstead,40908
+Denmark,Ensteadvaerket,40908
+Denmark,Ensted,40908
+Denmark,Enstedvaerkets Havn,40908
+Denmark,Esbjerg,40919
+Denmark,Fredericia,40921
+Denmark,Frederikshavn,40909
+Denmark,Glostrup,40900
+Denmark,Grenaa,40900
+Denmark,Gulfhavn,40910
+Denmark,Haderslev,40911
+Denmark,Hansted,40900
+Denmark,Hanstholm,40900
+Denmark,Helsingor,40900
+Denmark,Hobro,40912
+Denmark,Holbaek,40913
+Denmark,Horsens,40914
+Denmark,Kalundborg,40940
+Denmark,Kastrup,40900
+Denmark,Kjoge,40915
+Denmark,Kobenhavn,40948
+Denmark,Koge,40915
+Denmark,Kolding,40916
+Denmark,Korsor,40917
+Denmark,Kyndby,40918
+Denmark,Kyndbyvaerkets Havn,40918
+Denmark,Lindo,40900
+Denmark,Logstor,40900
+Denmark,Nakskov,40922
+Denmark,Norresundby,40956
+Denmark,Nyborg,40923
+Denmark,Nykobing,40924
+Denmark,Odense,40961
+Denmark,Randers,40925
+Denmark,Ronne,40926
+Denmark,Sjaelland,40900
+Denmark,Sjaellands Odde,40900
+Denmark,Skagen,40900
+Denmark,Sonderborg,40900
+Denmark,Stege,40900
+Denmark,Stigsnaes,40971
+Denmark,Stigsnaesvaerkets Havn,40971
+Denmark,Struer,40927
+Denmark,Stubbekobing,40900
+Denmark,Svendborg,40928
+Denmark,Thisted,40900
+Denmark,Tuborg,40900
+Denmark,Tuborg Havn,40900
+Denmark,Veile,40929
+Denmark,Vejle,40929
+Djibouti,Djibouti,77701
+Dominica,Portsmouth,24852
+Dominica,Rouseau,24851
+Dominica,Woodbridge Bay,24853
+Dominican Republic,All Other Dominican Republic Ports,24700
+Dominican Republic,Andres,24700
+Dominican Republic,Azua,24700
+Dominican Republic,Bahia de Las Calderas,24731
+Dominican Republic,Barahona,24713
+Dominican Republic,Boca Chica,24721
+Dominican Republic,Cabo Rojo,24727
+Dominican Republic,Caldera Bay,24731
+Dominican Republic,Caucedo,24722
+Dominican Republic,Ciudad Trujillo,24737
+Dominican Republic,Haina,24741
+Dominican Republic,Jaina,24741
+Dominican Republic,La Romana,24743
+Dominican Republic,Las Calderas,24731
+Dominican Republic,Luperon,24774
+Dominican Republic,Manzanillo,24745
+Dominican Republic,Manzanillo Bay,24745
+Dominican Republic,Monte Cristi,24700
+Dominican Republic,Palenque,24700
+Dominican Republic,Pepillo Salcedo,24745
+Dominican Republic,Puerto Libertador,24745
+Dominican Republic,Puerto Palenque,24700
+Dominican Republic,Puerto Plata,24773
+Dominican Republic,Puerto Viejo de Azua,24700
+Dominican Republic,Punta Torrecilla,24738
+Dominican Republic,Rio Haina,24741
+Dominican Republic,Rio Jaina,24741
+Dominican Republic,Samana,24720
+Dominican Republic,San Pedro de Macoris,24791
+Dominican Republic,Santa Barbara de Samana,24720
+Dominican Republic,Santo Domingo,24737
+Dominican Republic,Torrecilla,24738
+Ecuador,All Other Ecuador Ports,33100
+Ecuador,Bahia de Caraquez,33101
+Ecuador,Balao,33109
+Ecuador,Balao Terminal,33109
+Ecuador,Duran,33131
+Ecuador,Esmeraldas,33121
+Ecuador,Galapagos Islands,33100
+Ecuador,Guayaquil,33131
+Ecuador,La Libertad,33136
+Ecuador,Manchala,33100
+Ecuador,Manglaralto,33100
+Ecuador,Manta,33151
+Ecuador,Puerto Bolivar,33159
+Ecuador,Puerto Nuevo,33132
+Ecuador,Puna,33100
+Ecuador,Salinas,33115
+Ecuador,San Lorenzo,33100
+Ecuador,Santa Elena,33100
+Ecuador,Tepre,33109
+Egypt,Abu Kir Bay,72905
+Egypt,Abu Qir,72905
+Egypt,Abu Zanimah,72999
+Egypt,Abu Zenima,72999
+Egypt,Abukir,72905
+Egypt,Adabiya,72949
+Egypt,Ain Sukhna,72932
+Egypt,Al Quasayr,72999
+Egypt,Alexandria,72901
+Egypt,All Other Egypt Mediterranean Region Ports,72900
+Egypt,All Other Egypt Red Sea Region Ports,72999
+Egypt,Bur Said,72913
+Egypt,Damietta,72912
+Egypt,East Zeit Terminal,72947
+Egypt,El Alamein,72906
+Egypt,El Dekheila,72901
+Egypt,El Hamra Oil Terminal,72906
+Egypt,El Ismailiya,72925
+Egypt,El Qoseir,72999
+Egypt,El Quseir,72999
+Egypt,Fanara,72999
+Egypt,Geisum Terminal,72999
+Egypt,Ismailia,72925
+Egypt,Kossier,72999
+Egypt,Mersa el Hamra,72906
+Egypt,Mina Dumyat,72912
+Egypt,Port Said,72913
+Egypt,Ras Budran,72999
+Egypt,Ras Gharib,72939
+Egypt,Ras Shukheir,72940
+Egypt,Ras Sudr,72945
+Egypt,Safaga,72948
+Egypt,Sidi Kerir,72914
+Egypt,Suez,72949
+Egypt,Wadi Feiran,72999
+Egypt,Zeit Bay Terminal,72947
+El Salvador,Acajutla,21101
+El Salvador,All Other El Salvador Ports,21199
+El Salvador,Cutuco,21137
+El Salvador,La Libertad,21199
+El Salvador,La Union,21137
+El Salvador,Puerto El Triunfo,21199
+Equatorial Gui,All Other Equatorial Guinea Ports,73800
+Equatorial Gui,Bata,73800
+Equatorial Gui,Cogo,73800
+Equatorial Gui,Malabo,73801
+Equatorial Gui,Rey Malabo,73801
+Equatorial Gui,Rio Benito,73800
+Equatorial Gui,Santa Isabel,73801
+Equatorial Gui,Zafira,73802
+Eritrea,All Other Eritrea Ports,77419
+Eritrea,Aseb,77405
+Eritrea,Assab,77405
+Eritrea,Massaua,77409
+Eritrea,Massawa,77409
+Eritrea,Mitsiwa,77409
+Estonia,All Other Estonia Ports,44700
+Estonia,Muuga,44702
+Estonia,Tallinn,44701
+Falk Is,All Falkland Islands Ports,37200
+Falk Is,"Port Stanley, E Falklnd",37200
+Falk Is,South Georgia,37200
+Falk Is,South Orkneys,37200
+Falk Is,South Sandwich Islands,37200
+Falk Is,South Shetlands,37200
+Faroe,All Faroe Islands Ports,40985
+Faroe,Fuglefjord,40985
+Faroe,Funglafjordur,40985
+Faroe,Klaksvik,40985
+Faroe,Thorshavn,40985
+Faroe,Torshavn,40985
+Faroe,Tvoroyri,40985
+Faroe,Vaag,40985
+Faroe,Vagur,40985
+Faroe,Vestmanhavn,40985
+Faroe,Vestmann,40985
+Fedrated States of Micron,Kosrae,68206
+Fedrated States of Micron,Kusei,68206
+Fiji,All Other Fiji Islands Ports,68630
+Fiji,Labasa,68630
+Fiji,Lambasa,68630
+Fiji,Lautoka,68630
+Fiji,Lautoka Harbor,68630
+Fiji,Levuka,68630
+Fiji,Nakama,68630
+Fiji,Ovalau Island,68630
+Fiji,Savu,68628
+Fiji,Suva,68628
+Fiji,Suva Harbor,68628
+Fiji,Vatia Point,68630
+Fiji,Vunda Point,68630
+Finland,Abo,40587
+Finland,All Other Finland Ports,40500
+Finland,Bjorneborg,40562
+Finland,Fredrikshamn,40520
+Finland,Gamlakarleby,40500
+Finland,Hamina,40520
+Finland,Hango,40523
+Finland,Hanko,40523
+Finland,Helsingfors,40525
+Finland,Helsinki,40525
+Finland,Himanko,40500
+Finland,Inga,40527
+Finland,Inkoo,40527
+Finland,Jakobstad,40500
+Finland,Kasko,40500
+Finland,Kemi,40543
+Finland,Kokkola,40500
+Finland,Kotka,40549
+Finland,Koverhar,40532
+Finland,LappajarviI,40504
+Finland,Lappohja,40504
+Finland,Loviisa,40533
+Finland,Lovisa,40533
+Finland,Mantyluoto,40551
+Finland,Mariehamn,40500
+Finland,Naantali,40552
+Finland,Nikolaistad,40500
+Finland,Nystad,40537
+Finland,Ouleborg,40531
+Finland,Oulu,40531
+Finland,Pateniemi,40500
+Finland,Pietarsaari,40500
+Finland,Pori,40562
+Finland,Porvoo,40534
+Finland,Raahe,40535
+Finland,Rauma,40571
+Finland,Saimaa Canal,40536
+Finland,Skoldvik,40534
+Finland,Tolkis,40500
+Finland,Tolkkinen,40500
+Finland,Toppila,40531
+Finland,Tornea,40500
+Finland,Tornio,40500
+Finland,Turku,40587
+Finland,Uleaborg,40531
+Finland,Uusikaupunki,40537
+Finland,Vaasa,40538
+Finland,Valko,40500
+Finland,Valkom,40500
+Finland,Vasa,40500
+Finland,Walkom,40500
+Finland,Ykspihlaja,40591
+Finland,Yxpila,40591
+France,Ajaccio,42796
+France,All Corsica Ports,42796
+France,All Other France Atlantic Region Ports,42700
+France,All Other France Mediterranean Region Ports,42799
+France,Ambes,42703
+France,Arcachon,42700
+France,Balaruc,42799
+France,Balaruc les Bains,42799
+France,Bassens,42701
+France,Bastia,42796
+France,Bayonne,42702
+France,Bec Dambes,42703
+France,Bec d' Ambes,42703
+France,Berre,42773
+France,Blaye,42705
+France,Bordeaux,42707
+France,Boucau,42735
+France,Boulogne,42708
+France,Brest,42709
+France,Caen,42711
+France,Calais,42713
+France,Cannes,42775
+France,Caronte,42784
+France,Cherbourg,42715
+France,Corsica,42796
+France,Deauville,42700
+France,Dieppe,42736
+France,Donges,42723
+France,Duclair,42700
+France,Dunkerque,42727
+France,Dunkirk,42727
+France,Etang de Berre,42773
+France,FOS Sur Mer,42776
+France,Fecamp,42700
+France,Fos,42776
+France,Honfleur,42700
+France,L'Avera,42780
+France,La Mailleraye,42700
+France,La Nouvelle,42799
+France,La Pallice,42733
+France,La Seyne,42799
+France,La Seyne sur Mer,42799
+France,Lavera,42780
+France,Le Boucau,42735
+France,Le Havre,42737
+France,Le Petit Quevilly,42700
+France,Le Trait (River Seine),42700
+France,Le Treport,42700
+France,Le Verdon,42742
+France,Lorient,42743
+France,Mailleraye,42700
+France,Marseille,42782
+France,Montoir,42745
+France,Morlaix,42700
+France,Nantes,42749
+France,Nice,42786
+France,Pauillac,42751
+France,Petit Couronne,42700
+France,Petit Quevilly,42700
+France,Port Jerome,42755
+France,Port La Nouvelle,42799
+France,Port Saint Louis,42785
+France,Port Vendres,42799
+France,Port de Bouc,42784
+France,Porto Vecchio,42796
+France,Radicatel,42754
+France,Rochefort,42757
+France,Rouen,42759
+France,Rouen Quevilly,42700
+France,Saint Malo,42700
+France,Saint Nazaire,42762
+France,Saint Raphael,42799
+France,Sete,42789
+France,St. Louis du Rhon,42785
+France,St. Malo,42700
+France,St. Nazaire,42762
+France,St. Raphael,42799
+France,Tonnay Charente,42700
+France,Toulon,42790
+France,Verdon,42742
+France,Villefranche,42799
+France,Villequier,42700
+French Guiana,All Other French Guiana Ports,31700
+French Guiana,Cayenne,31700
+French Guiana,Degrad des Cannes,31707
+French Guiana,Saint Laurent,31700
+French Guiana,St. Laurent,31700
+French Polyn,All Other Society Islands Ports,64178
+French Polyn,Bora Bora,64178
+French Polyn,Boro Boro,64178
+French Polyn,Clipperton Island,64195
+French Polyn,Hao,64178
+French Polyn,Makatea,64181
+French Polyn,Marquesas Islands,64191
+French Polyn,"Papeete, Tahiti",64151
+French Polyn,Raiatea Island,64178
+French Polyn,Tahaa,64178
+French So and Art,All French Southern and Antartic Lands,79060
+Gabon,All Other Gabon Ports,75500
+Gabon,Cap Lopez,75505
+Gabon,Cape Lopez,75505
+Gabon,Gamba,75503
+Gabon,Libreville,75501
+Gabon,Lucina Terminal,75515
+Gabon,Oguendjo Terminal,75517
+Gabon,Owendo,75521
+Gabon,Port Gentil,75525
+Gabon,Tchatamba,75503
+Gambia,All Other Gambia Ports,75099
+Gambia,Banjul,75041
+Gambia,Bathurst,75041
+Georgia,All Other Georgia Ports,46357
+Georgia,Batumi,46321
+Georgia,Batumiyskava Bukhta,46321
+Georgia,Poti,46337
+Georgia,Sukhumi,46350
+Germany,All Other Germany Atlantic Region Ports,42899
+Germany,All Other Germany Baltic Region Ports,42800
+Germany,Altona,42899
+Germany,Blexen,42899
+Germany,Blumenthal,42899
+Germany,Brake,42867
+Germany,Bremen,42869
+Germany,Bremerhaven,42870
+Germany,Brunsbuttel,42871
+Germany,Butzfleth,42880
+Germany,Cuxhaven,42873
+Germany,Einswarden,42874
+Germany,Elsfleth,42868
+Germany,Emden,42875
+Germany,Flensburg,42800
+Germany,Hamburg,42879
+Germany,Harburg,42881
+Germany,Herrenwyck,42800
+Germany,Holtenau,42825
+Germany,Kiel,42825
+Germany,Mainz,42899
+Germany,Military-Aschaffenburg,92017
+Germany,Military-Germersheim,92004
+Germany,Military-Mannheim,92003
+Germany,Nordenham,42883
+Germany,Ostermoor,42899
+Germany,Rendsburg,42899
+Germany,Rostock,42811
+Germany,Stade,42879
+Germany,Stadersand,42879
+Germany,Stralsund,42800
+Germany,Vegesach,42899
+Germany,Vegesack,42899
+Germany,Wilhelmshaven,42891
+Germany,Wismar,42835
+Ghana,Accra,74901
+Ghana,All Other Ghana Ports,74900
+Ghana,Axim,74900
+Ghana,Cape Coast,74900
+Ghana,Elmina,74900
+Ghana,Saltpond,74900
+Ghana,Takoradi,74985
+Ghana,Tema,74990
+Gibraltar,Gibraltar,47201
+Greece,Aigion,48400
+Greece,Aiyion,48400
+Greece,Alexandroupolis,48400
+Greece,Aliver,48449
+Greece,Aliveri,48449
+Greece,All Other Greece Ports,48400
+Greece,Argostolion,48400
+Greece,Aspropirgos,48453
+Greece,Aspropyrgos,48453
+Greece,Ayia Marina,48402
+Greece,Ayia Trias,48454
+Greece,Ayios Nikolaos,48405
+Greece,Calamata,48421
+Greece,Canea,48400
+Greece,Catacolon,48400
+Greece,Cavala,48427
+Greece,Chalkis,48400
+Greece,Chios,48455
+Greece,Corfu,48456
+Greece,Corinth,48410
+Greece,Dedeh Agatch,48400
+Greece,Elefsis,48445
+Greece,Eleusis,48445
+Greece,Elevsis,48445
+Greece,Heraklion,48411
+Greece,Iali,48475
+Greece,Iraklion,48411
+Greece,Itea,48457
+Greece,Kalamai,48421
+Greece,Kalamaki,48425
+Greece,Kalamata,48421
+Greece,Kali Limenes,48412
+Greece,Kalloni,48400
+Greece,Kaloi limniones,48412
+Greece,Karavos,48449
+Greece,Katakolon,48458
+Greece,Kavala,48427
+Greece,Kerkyra,48456
+Greece,Khalkis,48400
+Greece,Khania,48400
+Greece,Kolpos Kallonis,48400
+Greece,Korinthos,48410
+Greece,Kyllini,48400
+Greece,Kymassi,48459
+Greece,Lagos,48400
+Greece,Limin Sirou,48400
+Greece,Limon Zakinthou,48400
+Greece,Marathon,48400
+Greece,Megara,48454
+Greece,Mikonos,48460
+Greece,Milaki,48449
+Greece,Milos Island,48468
+Greece,Mitilini,48462
+Greece,Mitylene,48462
+Greece,Mykonos,48460
+Greece,Mylaki,48449
+Greece,Mytilini,48462
+Greece,Nauplia,48400
+Greece,Navplion,48400
+Greece,Naxos,48400
+Greece,Nea Palatia,48400
+Greece,Neo Kastro,48400
+Greece,Neokastron,48400
+Greece,Nikola,48405
+Greece,Ormos Ayiou Nikolaou,48405
+Greece,Ormos Limnis,48400
+Greece,Ormos Navarinou,48400
+Greece,Paros,48400
+Greece,Patrai,48451
+Greece,Patras,48451
+Greece,Pilos,48463
+Greece,Piraeus,48452
+Greece,Piraieus,48452
+Greece,Piraievs,48452
+Greece,Plomarion,48400
+Greece,Port Kaloni,48400
+Greece,Preveza,48400
+Greece,Psachna,48461
+Greece,Pylos,48463
+Greece,Rhodes,48400
+Greece,Rodhos,48400
+Greece,Saint George's Bay,48400
+Greece,Salamis,48400
+Greece,Salonika,48471
+Greece,Samos,48464
+Greece,Serifos,48465
+Greece,Seriphos,48465
+Greece,Seriphos Island,48465
+Greece,Skaramanga,48476
+Greece,Skaramanga Bay,48476
+Greece,Souda Bay,48406
+Greece,Soudha,48406
+Greece,St. George's Bay,48400
+Greece,Stratoni,48400
+Greece,Syra,48400
+Greece,Syros,48466
+Greece,Thessaloniki,48471
+Greece,Volos,48473
+Greece,Vostitza,48400
+Greece,Vostizza,48400
+Greece,Yali,48475
+Greece,Yali Island,48475
+Greece,Yerakini,48400
+Greece,Zakinthos,48467
+Greece,Zante,48467
+Greenland,All Other Greenland,10100
+Greenland,Faeringehavn,10100
+Greenland,Frederikshaab,10100
+Greenland,Godhavn,10100
+Greenland,Godthaab,10125
+Greenland,Godthab,10125
+Greenland,Holsteinsborg,10100
+Greenland,Ivigtut,10100
+Greenland,Jakobshavn,10100
+Greenland,Julianchaab,10100
+Greenland,Julianehaab,10100
+Greenland,Marmorilik,10100
+Greenland,Mesters Vig,10100
+Greenland,Mestersvig,10100
+Greenland,Narsarssuak,10100
+Greenland,Narssarssuaq,10100
+Greenland,Thule,10101
+Greenland,Tovkusoak,10100
+Greenland,Tovqussaq,10100
+Grenada,Grande Anse,24882
+Grenada,St. George,24881
+Grenada,St. George's,24881
+Guadeloupe,All Other Guadeloupe Ports,28300
+Guadeloupe,Basse Terre,28315
+Guadeloupe,Gustavia,28319
+Guadeloupe,"Marigot, St. Martin",28320
+Guadeloupe,Pointe a Pitre,28313
+Guadeloupe,Port Gustave,28319
+Guadeloupe,Saint Bartholomew,28319
+Guadeloupe,Saint Martin,28300
+Guadeloupe,St. Anne,28300
+Guadeloupe,St. Barth's,28319
+Guadeloupe,St. Barthelemy,28319
+Guadeloupe,St. Bartholomew,28319
+Guadeloupe,St. Martin,28300
+Guam,Guam Island,93501
+Guatemala,All Other Guatemala Caribbean Region Ports,20500
+Guatemala,All Other Guatemala West Coast Region Ports,20599
+Guatemala,Champerico,20599
+Guatemala,Istapa,20599
+Guatemala,Iztapa,20599
+Guatemala,Livingston,20500
+Guatemala,Puerto Barrios,20513
+Guatemala,Puerto Matias de Galves,20505
+Guatemala,Puerto Quetzal,20506
+Guatemala,Quatema,20513
+Guatemala,San Jose,20577
+Guatemala,Santo Tomas,20505
+Guatemala,Santo Tomas de Castilla,20505
+Guinea,All Other Guinea Ports,74699
+Guinea,Conakri,74619
+Guinea,Conakry,74619
+Guinea,Kamsar,74625
+Guinea,Konakri,74619
+Guinea Bissau,All Guinea-Bissau Ports,76489
+Guinea Bissau,Bissau,76489
+Guyana,All Other Guyana Ports,31200
+Guyana,Barama,31230
+Guyana,Baramanni,31230
+Guyana,Demerara,31201
+Guyana,Everton,31268
+Guyana,Georgetown,31201
+Guyana,Linden,31215
+Guyana,McKenzie,31235
+Guyana,New Amsterdam,31202
+Haiti,All Other Haiti Ports,24500
+Haiti,Anse du Clerc,24500
+Haiti,Anse-D'Hainault,24500
+Haiti,Aquin,24500
+Haiti,Aux Cayes,24509
+Haiti,Cap Haitien,24513
+Haiti,Dame Marie,24500
+Haiti,Fond la Grange,24500
+Haiti,Fort Liberte,24514
+Haiti,Gonaives,24588
+Haiti,Ile de la Gonave,24500
+Haiti,Jacmel,24537
+Haiti,Jeremie,24500
+Haiti,La Fitteau,24553
+Haiti,Labadee,24515
+Haiti,Lafiteau,24553
+Haiti,Le Mole St. Nicholas,24500
+Haiti,Leogane,24500
+Haiti,Miragoane,24559
+Haiti,Petit Goave,24571
+Haiti,Port au Prince,24579
+Haiti,Port de Paix,24585
+Haiti,Roche a Bateau,24500
+Haiti,Saint Louis du Sud,24500
+Haiti,Saint Marc,24591
+Haiti,Seringue,24500
+Haiti,St. Marc,24591
+Haiti,Tiburon,24500
+Honduras,All Other Honduras Caribbean Region Ports,21500
+Honduras,All Other Honduras West Coast Region Ports,21599
+Honduras,Amapala,21551
+Honduras,Guanaja,21535
+Honduras,Isla Roatan,21535
+Honduras,Isla Utila,21500
+Honduras,La Ceiba,21515
+Honduras,Limon,21519
+Honduras,Puerto Castilla,21527
+Honduras,Puerto Cortes,21531
+Honduras,Puerto Este,21500
+Honduras,Puerto Henecan,21552
+Honduras,Roatan Island,21535
+Honduras,San Lorenzo,21551
+Honduras,Tela,21543
+Honduras,Trujillo,21500
+Honduras,Utila Bay,21515
+Hong Kong,Hong Kong,58201
+Hong Kong,Kowloon,58270
+Iceland,Akranes,40038
+Iceland,Akureyri,40039
+Iceland,All Other Iceland Ports,40000
+Iceland,Djupivogur,40000
+Iceland,Eskifjordhur,40000
+Iceland,Eskifjordur,40000
+Iceland,Grundarfjordur,40002
+Iceland,Grundartangi,40002
+Iceland,Hafnarfjordhur,40001
+Iceland,Hafnarfjordur,40001
+Iceland,Isafjordhur,40000
+Iceland,Isafjordur,40000
+Iceland,Keflavik,40000
+Iceland,Neskaupstadur,40036
+Iceland,Njardvik,40010
+Iceland,Raufarhofn,40000
+Iceland,Reykjavik,40037
+Iceland,Seydhisfjordhur,40000
+Iceland,Seydisfjordur,40000
+Iceland,Siglufjordhur,40000
+Iceland,Siglufjordur,40000
+Iceland,Thorlakshofn,40000
+Iceland,Vestmannaeyjar,40040
+Iceland,Westman Isles,40040
+India,All Other India East Coast Ports,53398
+India,All other India West Coast Ports,53300
+India,Alleppey,53301
+India,Baj-Baj,53351
+India,Bedi,53305
+India,Beypore,53396
+India,Bhavnagar,53303
+India,Bheemunipatnam,53398
+India,Bombay,53312
+India,Budge-Budge,53351
+India,Calcutta,53353
+India,Calicut,53300
+India,Chennai,53357
+India,Cocanada,53398
+India,Cochin,53333
+India,Cuddalore,53398
+India,Goa,53340
+India,Haldia,53354
+India,Hazira,53309
+India,Jamnagar,53305
+India,Jawaharlal Nehru,53313
+India,Kakinada,53398
+India,Kakinada Bay,53398
+India,Kandla,53307
+India,Karikal,53398
+India,Kolachel,53300
+India,Kozhikode,53300
+India,Madras,53357
+India,Mahe,53300
+India,Mandvi,53300
+India,Mangalore,53343
+India,Marmagao Bay,53340
+India,Masulipatam,53398
+India,Mormugao,53340
+India,Mumbai,53312
+India,Mundra,53306
+India,Nagapattinam,53398
+India,Nava Sheva,53313
+India,Navlakhi,53300
+India,Negapatam,53398
+India,New Mangalore,53343
+India,New Tuticorin,53395
+India,Nhava Sheva,53313
+India,Paradip,53371
+India,Pipavav,53304
+India,Pondicherry,53398
+India,Porbandar,53300
+India,Port Kandla,53307
+India,Port Okha,53300
+India,Puduchcheri,53398
+India,Quilon,53300
+India,Sikka,53305
+India,Tellicherry,53300
+India,Tuticorin,53395
+India,Veraval,53347
+India,Visakhapatnam,53399
+India,Vishakhapatnam,53399
+Indonesia,All Moluccas Ports,56064
+Indonesia,All Other Indonesia Ports,56000
+Indonesia,All Other Java Ports,56058
+Indonesia,All Other Kalimantan Ports,56020
+Indonesia,All Other Sulawesi Ports,56030
+Indonesia,All Other Sumatra Ports,56099
+Indonesia,All Other West New Guinea Ports,56025
+Indonesia,Alluth Kalimantan,56019
+Indonesia,Ambon,56064
+Indonesia,Ampenan,56041
+Indonesia,Arjuna Terminal,56040
+Indonesia,Aru Bay,56064
+Indonesia,Attaka,56006
+Indonesia,Balikpapan,56007
+Indonesia,Balongan Terminal,56042
+Indonesia,Banjarmasin,56013
+Indonesia,Banjer Masin,56013
+Indonesia,Banjuwangi,56058
+Indonesia,Banyuwangi,56058
+Indonesia,Belawan,56073
+Indonesia,Beliling,56001
+Indonesia,Belinju,56099
+Indonesia,Belinyu,56099
+Indonesia,Bengkulu,56079
+Indonesia,Benoa,56002
+Indonesia,Bima,56074
+Indonesia,Bima Terminal,56074
+Indonesia,Bitung,56028
+Indonesia,Blang Lancang,56099
+Indonesia,Bontang,56077
+Indonesia,Bontang Bay,56077
+Indonesia,Borneo,56020
+Indonesia,Buleleng,56001
+Indonesia,Cheribon,56035
+Indonesia,Cigading,56056
+Indonesia,Cilacap,56036
+Indonesia,Cinta Terminal,56037
+Indonesia,Cirebon,56035
+Indonesia,Dabo,56099
+Indonesia,Djakarta,56033
+Indonesia,Djambi,56078
+Indonesia,Dumai,56075
+Indonesia,Gorontalo,56030
+Indonesia,Gresik,56034
+Indonesia,Jakarta,56033
+Indonesia,Jambi,56078
+Indonesia,Kali Pekalongan,56058
+Indonesia,Kalimantan,56020
+Indonesia,Kasim,56023
+Indonesia,Katawaringin,56019
+Indonesia,Kendiri,56022
+Indonesia,Kidjang,56066
+Indonesia,Kuala Tanjung,56076
+Indonesia,Lalang Terminal,56038
+Indonesia,Lawe Lawe Terminal,56010
+Indonesia,Lembar,56041
+Indonesia,Lhokseumawe,56099
+Indonesia,Macassar,56027
+Indonesia,Makassar,56027
+Indonesia,Malili,56000
+Indonesia,Manado,56030
+Indonesia,Merak,56039
+Indonesia,Morotai,56064
+Indonesia,Muntok,56003
+Indonesia,Padang,56081
+Indonesia,Palembang,56083
+Indonesia,Palu,56045
+Indonesia,Panarukan,56043
+Indonesia,Pandjang,56097
+Indonesia,Pangkal Balam,56004
+Indonesia,Pangkalan Brandan,56085
+Indonesia,Pangkalan Susu,56085
+Indonesia,Pangkalpinang,56004
+Indonesia,Pangkol,56004
+Indonesia,Pantoloan,56045
+Indonesia,Pasuruan,56058
+Indonesia,Pekalongan,56058
+Indonesia,Plaju,56087
+Indonesia,Pontianak,56011
+Indonesia,Probolinggo,56058
+Indonesia,Pulau Sambu,56065
+Indonesia,Sabang,56099
+Indonesia,Salawati,56000
+Indonesia,Samarinda,56012
+Indonesia,Sambas,56020
+Indonesia,Santan Terminal,56016
+Indonesia,Semarang,56051
+Indonesia,Senipah Terminal,56009
+Indonesia,Sibolga,56099
+Indonesia,Sibuco Bay,56017
+Indonesia,Singkawang,56020
+Indonesia,Singkep Island,56099
+Indonesia,Soengaigerong,56099
+Indonesia,Soerabaja,56053
+Indonesia,Soerabaya,56053
+Indonesia,Songei Gerong,56099
+Indonesia,Sorong,56023
+Indonesia,Stagen,56020
+Indonesia,Suerbaja,56053
+Indonesia,Sukarnapura,56021
+Indonesia,Sungai Kolak,56066
+Indonesia,Sungai Pakning,56099
+Indonesia,Sungaigerong,56099
+Indonesia,Sungaipakning,56099
+Indonesia,Sungei Pakning,56099
+Indonesia,Surabaia,56053
+Indonesia,Surabaja,56053
+Indonesia,Surabaya,56053
+Indonesia,Tanjong Pandan,56005
+Indonesia,Tanjung Priok,56033
+Indonesia,Tanjungpandan,56005
+Indonesia,Tanjunguban,56000
+Indonesia,Tarakan,56018
+Indonesia,Tarakan Island,56018
+Indonesia,Tegal,56055
+Indonesia,Teluk Bayur,56081
+Indonesia,Ternate,56064
+Indonesia,Timor,56067
+Indonesia,Tjilatjap,56036
+Indonesia,Tjirebon,56035
+Indonesia,Ujung Pandang,56027
+Iran,Abadan,50700
+Iran,Ahvaz,50725
+Iran,Ahwaz,50725
+Iran,All Other Iran Ports,50700
+Iran,Bandar Abbas,50730
+Iran,Bandar E Lengeh,50700
+Iran,Bandar E Mah Shahr,50739
+Iran,Bandar Khomeini,50770
+Iran,Bandar Mahshahr,50739
+Iran,Bandar Shadid Beheshti,50700
+Iran,Bandar Shahid Rejaie,50730
+Iran,Bandar-e-Mashur,50739
+Iran,Bandar-e-Shahpur,50700
+Iran,Bushehr,50700
+Iran,Bushire,50700
+Iran,Chah Bahar,50700
+Iran,Gazireh Ye Lavan,50769
+Iran,Hormuz Terminal,50700
+Iran,Jazireh ye Khark,50700
+Iran,Kharg Island,50771
+Iran,Khorramshahr,50700
+Iran,Khosrowabad,50700
+Iran,Lavan Island,50769
+Iran,Lingah,50700
+Iran,Lingeh,50700
+Iran,Ormuz,50700
+Iran,Sirri Island,50700
+Iran,Teheran,50700
+Iran,Tehran,50700
+Iran,Valfajor Two Terminal,50700
+Iraq,Al Bakir,50505
+Iraq,Al Basrah,50525
+Iraq,Al Faw,50500
+Iraq,All Other Iraq Ports,50500
+Iraq,Baghdad,50501
+Iraq,Basra,50525
+Iraq,Basrah,50525
+Iraq,Fao,50500
+Iraq,Khor al Zubair,50570
+Iraq,Khor-al-Amaya,50560
+Iraq,Military-Al Zubair,92013
+Iraq,Mina al Bakr,50505
+Iraq,Umm Qasr,50570
+Ireland,All Other Ireland Ports,41900
+Ireland,Arklow,41916
+Ireland,Aughinish,41906
+Ireland,Castletown,41900
+Ireland,Cobh,41905
+Ireland,Cork,41905
+Ireland,Dingle,41900
+Ireland,Drogheda,41919
+Ireland,Dublin,41911
+Ireland,Dundalk,41921
+Ireland,Fenit,41900
+Ireland,Foynes,41913
+Ireland,Galway,41900
+Ireland,Greenore,41922
+Ireland,Limerick,41904
+Ireland,Money Point,41915
+Ireland,Moneypoint,41915
+Ireland,Moville,41900
+Ireland,New Ross,41900
+Ireland,Queenstown,41900
+Ireland,Ringaskiddy,41905
+Ireland,Rosslare,41900
+Ireland,Sligo,41900
+Ireland,Tarbert,41920
+Ireland,Tarbert Island,41920
+Ireland,Tralee,41900
+Ireland,Valencia Harvor,41900
+Ireland,Waterford,41910
+Israel,All Other Israel Mediterranean Area Ports,50800
+Israel,Ascalon,50810
+Israel,Ashdod,50805
+Israel,Ashkelon,50810
+Israel,Eilat,50871
+Israel,Eilath,50871
+Israel,Elat,50871
+Israel,Hadera,50815
+Israel,Haifa,50801
+Israel,Tel Aviv Yafo,50845
+Italy,All Other Italy East Coast Ports,47598
+Italy,All Other Italy West Coast Ports,47500
+Italy,All Other Sardinia Ports,47569
+Italy,All Other Sicily Ports,47558
+Italy,Ancona,47571
+Italy,Anzio,47500
+Italy,Augusta,47542
+Italy,Bagnoli,47505
+Italy,Bari,47578
+Italy,Barletta,47579
+Italy,Brindisi,47583
+Italy,Cagliari,47563
+Italy,Canneto,47541
+Italy,Castellamare del Golfo,47558
+Italy,Castellammare di Stabia,47500
+Italy,Catania,47548
+Italy,Chioggia,47581
+Italy,Civitavecchia,47519
+Italy,Crotone,47582
+Italy,Drepanon,47558
+Italy,Fiumicino,47500
+Italy,Gaeta,47525
+Italy,Gela,47543
+Italy,Genoa,47527
+Italy,Genova,47527
+Italy,Gioia Tauro,47536
+Italy,Golfo de Palmas,47565
+Italy,Imperia,47500
+Italy,La Spezia,47531
+Italy,Leghorn,47537
+Italy,Licata,47558
+Italy,Lido,47595
+Italy,Lipari,47541
+Italy,Livorno,47537
+Italy,Manfredonia,47582
+Italy,Marina di Carrara,47528
+Italy,Marsala,47558
+Italy,Messina,47558
+Italy,Milazzo,47550
+Italy,Molfetta,47598
+Italy,Molo di Bari,47598
+Italy,Monfalcone,47588
+Italy,Monopoli,47598
+Italy,Naples,47507
+Italy,Napoli,47507
+Italy,Olbia,47569
+Italy,Oristano,47565
+Italy,Palermo,47551
+Italy,Piombino,47515
+Italy,Portici,47500
+Italy,Porto Corsini,47584
+Italy,Porto Empedocle,47554
+Italy,Porto Marghara,47595
+Italy,Porto Santo Stefano,47500
+Italy,Porto Torres,47561
+Italy,Porto Vesme,47568
+Italy,Portocuso,47568
+Italy,Portoferraio,47500
+Italy,Portovecchio de Piombino,47515
+Italy,Possuoli,47500
+Italy,Pozzuoli,47500
+Italy,Priolo,47555
+Italy,Rada di Vado,47540
+Italy,Ravenna,47584
+Italy,Reggio di Calabria,47500
+Italy,Salerno,47538
+Italy,Santa Panagia,47556
+Italy,Sarroch Oil Terminal,47567
+Italy,Savona,47517
+Italy,Siracusa,47558
+Italy,Sorrento,47500
+Italy,Syracuse,47558
+Italy,Taormina,47558
+Italy,Taranto,47585
+Italy,Terranova,47543
+Italy,Terranova Pausania,47569
+Italy,Terranova di Sicilia,47543
+Italy,Torre Annunziata,47500
+Italy,Trani,47598
+Italy,Trapani,47558
+Italy,Trieste,47587
+Italy,Vada,47539
+Italy,Vado Ligure,47540
+Italy,Venezia,47595
+Italy,Venice,47595
+Ivory Coast,Abidjan,74825
+Ivory Coast,All Other Ivory Coast Ports,74899
+Ivory Coast,Baobab Oil Field,74826
+Ivory Coast,Grand Bassam,74899
+Ivory Coast,Grand Lahou,74899
+Ivory Coast,Grand Lahu,74899
+Ivory Coast,Port Bouet,74899
+Ivory Coast,San Pedro,74827
+Ivory Coast,Sassandra,74899
+Jamaica,All Other Jamaica Ports,24100
+Jamaica,Alligator Pond,24165
+Jamaica,Annotto Bay,24100
+Jamaica,Black River,24100
+Jamaica,Bluefields,24100
+Jamaica,Esquivel,24163
+Jamaica,Falmouth,24100
+Jamaica,Green Island,24100
+Jamaica,Kingston,24128
+Jamaica,Little Pedro Bluff,24165
+Jamaica,Long Bay,24100
+Jamaica,Longs Wharf,24163
+Jamaica,Lucea,24100
+Jamaica,Manchioneal,24100
+Jamaica,Montego Bay,24145
+Jamaica,Morant Bay,24100
+Jamaica,Negril Harbor,24100
+Jamaica,Ocho Rios,24155
+Jamaica,Oracabessa,24100
+Jamaica,Port Antonio,24100
+Jamaica,Port Bustamante,24128
+Jamaica,Port Esquivel,24163
+Jamaica,Port Kaiser,24165
+Jamaica,Port Maria,24100
+Jamaica,Port Morant,24100
+Jamaica,Port Rhoades,24167
+Jamaica,Port Royal,24100
+Jamaica,Rio Bueno,24100
+Jamaica,Rocky Point,24175
+Jamaica,Savanna La Mar,24185
+Jamaica,St. Ann's Bay,24100
+Japan,Abashiri,58800
+Japan,Aia port,58860
+Japan,Aioi,58823
+Japan,Akita Ko,58832
+Japan,All Other Japan Ports,58800
+Japan,Amagasaki,58813
+Japan,Aomori,58844
+Japan,Atsumi,58800
+Japan,Bonin Islands,58800
+Japan,Buckner Bay,58860
+Japan,Chiba,58818
+Japan,Chibako,58818
+Japan,Ebisu,58800
+Japan,Fukuyama,58803
+Japan,Funabashi,58821
+Japan,Funagawa,58868
+Japan,Funakawa,58868
+Japan,Funakawa Ko,58868
+Japan,Fushiki,58824
+Japan,Fushiki Toyama,58824
+Japan,Gamagori,58883
+Japan,Hachinohe,58808
+Japan,Hakata,58825
+Japan,Hakodate,58826
+Japan,Handa,58800
+Japan,Haramaci,58800
+Japan,Hashihama,58800
+Japan,Higashi Harima,58828
+Japan,Higashi Iwase,58800
+Japan,Higashiharima Ko,58828
+Japan,Himeji,58871
+Japan,Himezi,58871
+Japan,Hiro,58845
+Japan,Hirohata,58830
+Japan,Hiroshima,58831
+Japan,Hitachi,58869
+Japan,Hitachi Ko,58869
+Japan,Hitaki Ko,58869
+Japan,Imari,58802
+Japan,Irago,58800
+Japan,Irago Zaki,58800
+Japan,Ishinomaki,58829
+Japan,Itozaki,58800
+Japan,Iwakuni,58833
+Japan,Iwakuni Ko,58833
+Japan,Iyo Mishima,58812
+Japan,Iyoshima,58812
+Japan,Kagoshima,58807
+Japan,Kakogawa,58828
+Japan,Kamaishi,58834
+Japan,Kanado,58809
+Japan,Kanda,58862
+Japan,Kanokawa,58836
+Japan,Karatsu,58870
+Japan,Kasaoka,58837
+Japan,Kashima,58839
+Japan,Kashima Ko,58839
+Japan,Kashiwazaki,58801
+Japan,Kawanoe,58842
+Japan,Kawasaki,58838
+Japan,Keihin,58804
+Japan,Kesennuma,58871
+Japan,Kesennuma Ko,58871
+Japan,Kiire,58815
+Japan,Kimitsu,58827
+Japan,Kinuura,58872
+Japan,Kisarazu,58827
+Japan,Kisarazu Ko,58827
+Japan,Kishiwada,58800
+Japan,Kita Kyushu,58817
+Japan,Kitakyushu,58817
+Japan,Kobe,58840
+Japan,Kochi,58873
+Japan,Kokura,58841
+Japan,Kokura Ko,58841
+Japan,Komatsujima,58882
+Japan,Komatsushima,58882
+Japan,Kudamatsu,58843
+Japan,Kure,58845
+Japan,Kuroishi,58844
+Japan,Kushiro,58846
+Japan,Maizuru,58848
+Japan,Maizuru Ko,58848
+Japan,Makiyama,58800
+Japan,Marugame,58800
+Japan,Matsue,58800
+Japan,Matsunaga,58847
+Japan,Matsushima,58806
+Japan,Matsuura,58800
+Japan,Matsuyama,58849
+Japan,Mihara,58800
+Japan,Miike,58851
+Japan,Military-Naha,92002
+Japan,Military-Yokohama,92001
+Japan,Minamata,58850
+Japan,Misaki,58866
+Japan,Mishima,58812
+Japan,Mishima-Kawanoe,58812
+Japan,Misumi,58852
+Japan,Mitajiri,58800
+Japan,Miya Ko,58853
+Japan,Miyako,58853
+Japan,Miyako Ko,58853
+Japan,Mizushima,58854
+Japan,Mizusima,58854
+Japan,Mogi,58835
+Japan,Moji,58835
+Japan,Muroran,58855
+Japan,Mutsui,58861
+Japan,Nagasaki,58856
+Japan,Nagoya,58857
+Japan,Nagoya Ko,58857
+Japan,Naha,58860
+Japan,Nakagusku Wan,58860
+Japan,Nanao,58800
+Japan,Naoetsu,58892
+Japan,Naoetu,58892
+Japan,Niigata,58859
+Japan,Niihama,58858
+Japan,Noshiro,58800
+Japan,Ofunato,58863
+Japan,Ogasawara-Gunto,58800
+Japan,Oh,58800
+Japan,Oita,58805
+Japan,Okinawa Island,58860
+Japan,Omakezaki,58800
+Japan,Ominato,58800
+Japan,Onagawa,58865
+Japan,Onahama,58864
+Japan,Onahama Ko,58864
+Japan,Onomichi,58800
+Japan,Osaka,58866
+Japan,Otaru,58867
+Japan,Rumoi,58820
+Japan,Saganoseki,58800
+Japan,Saiki,58819
+Japan,Saiki Ko,58819
+Japan,Saitosaki,58800
+Japan,Saitozaki,58800
+Japan,Sakai,58874
+Japan,Sakai Ko,58874
+Japan,Sakaide,58875
+Japan,Sakaide Ko,58875
+Japan,Sakata,58876
+Japan,Sasebo,58816
+Japan,Seibu,58898
+Japan,Sendai,58897
+Japan,Shibusi-Wan,58800
+Japan,Shikama,58800
+Japan,Shikamacho,58800
+Japan,Shimizu,58878
+Japan,Shimonoseki,58814
+Japan,Shimotsu,58879
+Japan,Shiogama,58877
+Japan,Simizu,58878
+Japan,Simotu,58879
+Japan,Sodegaura,58899
+Japan,Susaki,58822
+Japan,Tachibana,58800
+Japan,Tagonoura,58880
+Japan,Takamatsu,58800
+Japan,Taketoyo,58800
+Japan,Tama,58800
+Japan,Tanabe,58800
+Japan,Tobata,58881
+Japan,Tokuyama,58885
+Japan,Tokyo,58886
+Japan,Tomakomai,58811
+Japan,Toyama,58810
+Japan,Toyohashi,58883
+Japan,Toyohasi,58883
+Japan,Tsukumi,58889
+Japan,Tsuruga,58800
+Japan,Ube,58888
+Japan,Ujina,58800
+Japan,Umedo,58850
+Japan,Uno,58884
+Japan,Uno Ko,58884
+Japan,Wakamatsu,58890
+Japan,Wakamatsu Ko,58890
+Japan,Wakayama,58891
+Japan,Wakkanai,58800
+Japan,Yaene,58809
+Japan,Yatsushiro,58887
+Japan,Yatsusiro,58887
+Japan,Yawata,58893
+Japan,Yokkaichi,58894
+Japan,Yokkaiti,58894
+Japan,Yokohama,58895
+Japan,Yokosuka,58896
+Japan,Yuki,58800
+Japan,Yura,58800
+Jordan,Al Aqabah,51105
+Jordan,All Other Jordan Ports,51100
+Jordan,Aqaba,51105
+Kenya,All Other Kenya Ports,77999
+Kenya,Kilindini,77913
+Kenya,"Lamu, Lamu Is",77999
+Kenya,Mombasa,77913
+Kiribati,All Caroline Islands Ports,62227
+Kiribati,All Gilbert Islands Ports,62215
+Kiribati,Betio,62215
+Kiribati,Butaritari,62215
+Kiribati,Christmas Island,62225
+Kiribati,English Harbor,62223
+Kiribati,Washington Island,62220
+Kuwait,Al Fuhayhil,51323
+Kuwait,Al Kuwayt,51321
+Kuwait,All Other Kuwait Ports,51300
+Kuwait,Ash Shuaiba,51350
+Kuwait,Fahaheel,51323
+Kuwait,Khawr Al Ama,51300
+Kuwait,Khor al Ami,51300
+Kuwait,Kuwait,51321
+Kuwait,Mina Saud,51330
+Kuwait,Mina Suud,51330
+Kuwait,Mina al Ahmadi,51323
+Kuwait,Shuaiba,51350
+Latvia,All Other Latvia Ports,44900
+Latvia,Riga,44911
+Latvia,Ventspils,44951
+Latvia,Vindau,44951
+Latvia,Vindava,44951
+Lebanon,All Other Lebanon Ports,50400
+Lebanon,Bayrut,50401
+Lebanon,Beirut,50401
+Lebanon,Beyrouth,50401
+Lebanon,Saida,50400
+Lebanon,Sidon,50400
+Lebanon,Tripoli,50400
+Liberia,All Other Liberia Ports,76500
+Liberia,Buchanan,76505
+Liberia,Cape Palmas,76500
+Liberia,Greenville,76500
+Liberia,Harper,76500
+Liberia,Monrovia,76529
+Liberia,River Cess,76500
+Liberia,Robertsport,76500
+Liberia,Sinoe,76500
+Libya,All Other Libya Ports,72500
+Libya,As Sidr,72519
+Libya,Benghazi,72501
+Libya,Es Sider,72519
+Libya,Marsa al Brega,72515
+Libya,Marsa al Hariga,72516
+Libya,Marsa el Brega,72515
+Libya,Marsa el Hariga,72516
+Libya,Ras Lanuf,72520
+Libya,Sirtica Terminal,72520
+Libya,Tobruch,72500
+Libya,Tobruk,72500
+Libya,Tripoli,72525
+Libya,Zavia,72590
+Libya,Zawia Oil Terminal,72590
+Libya,Zuara,72591
+Libya,Zuetina,72595
+Libya,Zuwarah,72591
+Lithuania,All Other Lithuania Ports,45100
+Lithuania,Klaipeda,45101
+Lithuania,Memel,45101
+Macau,Macao,56649
+Macau,Macau,56649
+Macau,Makao,56649
+Madagascar,All Other Madagascar Ports,78800
+Madagascar,Antalaha,78800
+Madagascar,Antsirana,78800
+Madagascar,Antsiranana,78800
+Madagascar,Cap Diego,78800
+Madagascar,Diego Suarez,78800
+Madagascar,Farafangana,78800
+Madagascar,Fenerive,78800
+Madagascar,Mahajanga,78800
+Madagascar,Majunga,78800
+Madagascar,Manakara,78800
+Madagascar,Mananjari,78800
+Madagascar,Mananjary,78800
+Madagascar,Mananzhari,78800
+Madagascar,Morombe,78800
+Madagascar,Morondava,78800
+Madagascar,Nossi Be,78800
+Madagascar,Nosy Be,78800
+Madagascar,Sambava,78800
+Madagascar,Tamatave,78845
+Madagascar,Toamasina,78845
+Madagascar,Tolaguaro,78800
+Madagascar,Toliara,78800
+Madagascar,Toliary,78800
+Madagascar,Tulear,78800
+Malaysia,All Other Malaysia Ports,55700
+Malaysia,Bintulu,55732
+Malaysia,Butterworth,55705
+Malaysia,Johore,55707
+Malaysia,Johore Bahru,55707
+Malaysia,Kajang,55751
+Malaysia,Kelang,55751
+Malaysia,Kereth,55716
+Malaysia,Kota Kinabalu,55752
+Malaysia,Kuala Selangor,55742
+Malaysia,Kuala Terengganu,55711
+Malaysia,Kuantan,55715
+Malaysia,Kuching,55713
+Malaysia,Labuan,55717
+Malaysia,Lahad Datu,55725
+Malaysia,Lumut,55709
+Malaysia,Malacca,55700
+Malaysia,Melaka,55700
+Malaysia,Military-Kajang,92012
+Malaysia,Military-Port Kelang,92011
+Malaysia,Miri,55731
+Malaysia,Pasir Gudang,55707
+Malaysia,Penang,55735
+Malaysia,Pinang,55735
+Malaysia,Port Dickson,55753
+Malaysia,Port Kelang,55751
+Malaysia,Port Swettenham,55751
+Malaysia,Port Weld,55700
+Malaysia,Pulau Lumut,55709
+Malaysia,Sandakan,55706
+Malaysia,Sejingkat,55700
+Malaysia,Selangor,55742
+Malaysia,Sijingkat,55700
+Malaysia,Tanjong Mani,55700
+Malaysia,Tanjung Pelepas,55750
+Malaysia,Tawao,55700
+Malaysia,Tawau,55700
+Malaysia,Victoria,55717
+Maldives,"Male, Male Island",56805
+Malta,All Other Malta Ports,47300
+Malta,Comino Island,47300
+Malta,Gozo Island,47300
+Malta,Marsaxlokk,47306
+Malta,Valletta,47305
+Marshall Is,All Marshall Island Ports,68190
+Marshall Is,Ebeye,68190
+Marshall Is,Enewetak Atoll,68190
+Marshall Is,Enewotok,68190
+Marshall Is,Entwetak,68190
+Marshall Is,Kwajalein,68190
+Marshall Is,Majuro Atoll,68190
+Martinique,All Other Martinique Ports,28399
+Martinique,Baie du Galion,28399
+Martinique,Fort de France,28351
+Martinique,Galion,28399
+Martinique,Gallion Bay,28399
+Martinique,La Trinite,28399
+Martinique,Le Francois,28399
+Martinique,Le Lamentin,28399
+Martinique,Le Marin,28399
+Martinique,Le Robert,28399
+Martinique,Saint Pierre,28399
+Martinique,St. Pierre,28399
+Mauritania,All Other Mauritania Ports,74100
+Mauritania,Nouadhibou,74165
+Mauritania,Nouakchott,74100
+Mauritania,Point Central,74165
+Mauritania,Port Etienne,74165
+Mauritius,All Other Mauritius Ports,78500
+Mauritius,Port Louis,78501
+Mexico,Abryos,20100
+Mexico,Acapulco,20101
+Mexico,All Other Mexico East Coast Region Ports,20195
+Mexico,All Other Mexico West Coast Region Ports,20100
+Mexico,Altamira,20193
+Mexico,Altata,20100
+Mexico,Alvarado,20195
+Mexico,Alvaro Obregon,20153
+Mexico,Bahia Tortugas,20100
+Mexico,Bahia de Todos Santos,20100
+Mexico,Bahias Ballenas,20100
+Mexico,Ballenas Bay,20100
+Mexico,Cabo San Lucas,20144
+Mexico,Calica,20161
+Mexico,Campeche,20155
+Mexico,Cancun,20162
+Mexico,Carmen,20157
+Mexico,Cayo Arcas,20152
+Mexico,Cayo Arcos Terminal,20152
+Mexico,Cerralvo Island,20100
+Mexico,Cerros Island,20104
+Mexico,Champoton,20195
+Mexico,Chetumal,20174
+Mexico,Ciudad Camargo,20195
+Mexico,Ciudad Chetumal,20195
+Mexico,Ciudad de Carmen,20157
+Mexico,Clarion Island,20100
+Mexico,Coatzacoalcos,20171
+Mexico,Costa Maya,20100
+Mexico,Cozumel Island,20173
+Mexico,Culiacan,20100
+Mexico,Dos Bocas,20154
+Mexico,El Cuyo,20195
+Mexico,El Sauzal,20142
+Mexico,Ensenada,20108
+Mexico,Espiritu Santo,20100
+Mexico,Frontera,20153
+Mexico,Guadalupe Island,20100
+Mexico,Guaymas,20113
+Mexico,Gutierrez Zamorra,20195
+Mexico,Hermosillo,20100
+Mexico,Isla Cedros,20104
+Mexico,Isla Maria Cleofas,20100
+Mexico,Isla Maria Madre,20100
+Mexico,Isla Maria Magdalena,20100
+Mexico,Isla Mujeres,20179
+Mexico,Isla Socorro,20100
+Mexico,Isla de Lobos,20195
+Mexico,Islas Coronados,20128
+Mexico,La Paz,20105
+Mexico,Laguna San Ignacio,20100
+Mexico,Laguna de Terminos,20157
+Mexico,Lazaro Cardenas,20107
+Mexico,Mahahual,20174
+Mexico,Manzanillo,20120
+Mexico,Matamoros,20195
+Mexico,Mazatlan,20122
+Mexico,Minatitlan,20181
+Mexico,Morro Redondo,20104
+Mexico,Nautla,20195
+Mexico,Ostion,20171
+Mexico,Pajaritos,20184
+Mexico,Point Tosca,20100
+Mexico,Port Telzo,20100
+Mexico,Progreso,20185
+Mexico,Pto. Libre de Pto Mexico,20171
+Mexico,Pto. Venustiano Carranza,20104
+Mexico,Puerto Angel,20100
+Mexico,Puerto Juarez,20195
+Mexico,Puerto Lobos,20195
+Mexico,Puerto Madero,20193
+Mexico,Puerto Mexico,20171
+Mexico,Puerto Morales,20194
+Mexico,Puerto Morro Redondo,20104
+Mexico,Puerto San Quintin,20100
+Mexico,Puerto Vallarta,20143
+Mexico,Puerto de Morales,20194
+Mexico,Punta Escondida,20100
+Mexico,Punta Prieta,20100
+Mexico,Punta San Juanico,20100
+Mexico,Punta Santo Tomas,20100
+Mexico,Punta Venado,20173
+Mexico,Rosarito,20125
+Mexico,Salina Cruz,20129
+Mexico,San Blas,20100
+Mexico,San Geronimo,20100
+Mexico,San Ignacio,20100
+Mexico,San Jeronimo,20100
+Mexico,San Jose del Cabo,20100
+Mexico,San Lucas,20144
+Mexico,San Marcos Island,20135
+Mexico,San Roque Island,20100
+Mexico,Santa Catarina,20100
+Mexico,Santa Rosalia,20141
+Mexico,Santo Tomas Point,20100
+Mexico,Sauzal,20142
+Mexico,Socorro Island,20100
+Mexico,Tampico,20193
+Mexico,Tecolutla,20195
+Mexico,Tlacotalpan,20195
+Mexico,Topolobampo,20106
+Mexico,Tuxpan,20197
+Mexico,Veracruz,20199
+Mexico,Xcalac,20195
+Mexico,Yavaros,20100
+Micronesia,Chuuk,68205
+Micronesia,Pohnpei,68207
+Micronesia,Ponape,68207
+Micronesia,"Truk, Truk Islands",68205
+Micronesia,Yap,68209
+Monaco,Monte Carlo,42797
+Montserrat,Plymouth,24845
+Morocco,Agadir,71403
+Morocco,All Other Morocco Atlantic Region Ports,71400
+Morocco,All Other Morocco Mediterranean Ports,71499
+Morocco,Casablanca,71401
+Morocco,El Jadida,71400
+Morocco,El Jorf Lasfar,71415
+Morocco,Essaquira,71400
+Morocco,Jorf Lasfar,71415
+Morocco,Kenitra,71400
+Morocco,Larache,71400
+Morocco,Mazagan,71400
+Morocco,Mogador,71400
+Morocco,Mohammedia,71418
+Morocco,Nador,71417
+Morocco,Port Lyautey,71400
+Morocco,Rabat,71400
+Morocco,Saffi,71419
+Morocco,Safi,71419
+Morocco,Tanger,71425
+Morocco,Tangier,71425
+Mozambique,All Other Mozambique Ports,78700
+Mozambique,Beira,78701
+Mozambique,Chinde,78700
+Mozambique,Maputo,78717
+Mozambique,Mocimboa de Praia,78700
+Mozambique,Mozambique Island,78725
+Mozambique,Nacala,78735
+Mozambique,Pebane,78700
+Mozambique,Quelimane,78700
+Namibia,All Other Namibia Ports,79299
+Namibia,Luderitz,79299
+Namibia,Walvis Baai,79286
+Namibia,Walvis Bay,79286
+Nauru,Nauru,68651
+Neth Antilles,All Other Netherlands Antilles Ports,27700
+Neth Antilles,Bullen Baai,27725
+Neth Antilles,Bullen Bay,27725
+Neth Antilles,Caracas Baai,27725
+Neth Antilles,Caracas Bay,27725
+Neth Antilles,Fort Baii,27705
+Neth Antilles,Fort Bay,27705
+Neth Antilles,Galisbay,27727
+Neth Antilles,Goto oil terminal,27715
+Neth Antilles,Kralendijk,27715
+Neth Antilles,Philipsborough,27726
+Neth Antilles,Philipsburgh,27726
+Neth Antilles,Sint Eustatius,27730
+Neth Antilles,St. Eustatius,27730
+Neth Antilles,St. Maarten,27727
+Neth Antilles,St. Martin,27727
+Neth Antilles,St. Michiel's Bay,27725
+Neth Antilles,Willemstad,27725
+Netherlands,All Other Netherlands Ports,42100
+Netherlands,Alphen aan den Rijn,42103
+Netherlands,Amsterdam,42105
+Netherlands,Botlek,42115
+Netherlands,Capelle,42100
+Netherlands,Capelle aan den Ijssel,42100
+Netherlands,Delfzijl,42116
+Netherlands,Delfzyl,42116
+Netherlands,Den Helder,42100
+Netherlands,Dordrecht,42117
+Netherlands,Eemshaven,42132
+Netherlands,Europoort,42118
+Netherlands,Flushing,42185
+Netherlands,Gravenhage,42123
+Netherlands,Gravenhage,42123
+Netherlands,Groningen,42100
+Netherlands,Haarlem,42100
+Netherlands,Haren,42100
+Netherlands,Harlingen,42100
+Netherlands,Helder,42100
+Netherlands,Hook of Holland,42100
+Netherlands,Ijmuiden,42190
+Netherlands,Mardejk,42140
+Netherlands,Middelburg,42100
+Netherlands,Middleburg,42100
+Netherlands,Moerdjik,42119
+Netherlands,Pernis,42151
+Netherlands,Rotterdam,42157
+Netherlands,Sas Van Gent,42100
+Netherlands,Sasvanghent,42100
+Netherlands,Schiedam,42100
+Netherlands,Sluiskil,42165
+Netherlands,Sluiskill,42165
+Netherlands,Terneuzen,42171
+Netherlands,The Hague,42123
+Netherlands,Velsen,42190
+Netherlands,Vlaardingen,42181
+Netherlands,Vlissingen,42185
+Netherlands,Ymuiden,42190
+Netherlands,Zaandam,42100
+New Caledonia,All Other New Caledonia Ports,64100
+New Caledonia,Baie Ugue,64100
+New Caledonia,Baie de Kouaoua,64100
+New Caledonia,Baie de Poro,64100
+New Caledonia,Kouaoua,64100
+New Caledonia,Noumea,64109
+New Caledonia,Poro,64100
+New Caledonia,Thio,64100
+New Zealand,All Other New Zealand Ports,61400
+New Zealand,Auckland,61401
+New Zealand,Avatiu,61461
+New Zealand,Bluff Harbor,61403
+New Zealand,Christchurch,61405
+New Zealand,Dunedin,61407
+New Zealand,Gisborne,61408
+New Zealand,Greymouth,61400
+New Zealand,Hawkes Bay,61400
+New Zealand,Lyttelton,61415
+New Zealand,Mangonui,61416
+New Zealand,Mount Maunganui,61416
+New Zealand,Napier,61419
+New Zealand,Nelson,61406
+New Zealand,New Plymouth,61423
+New Zealand,Opua,61400
+New Zealand,Otago Harbor,61407
+New Zealand,Penrhyn,61460
+New Zealand,Penryn,61460
+New Zealand,Picton,61400
+New Zealand,Port Chalmers,61431
+New Zealand,Port Lyttelton,61415
+New Zealand,Rarotonga Island,61461
+New Zealand,Ravensbourne,61400
+New Zealand,Stewart Island,61400
+New Zealand,Taoranga,61443
+New Zealand,Tauranga,61443
+New Zealand,Timaru,61445
+New Zealand,Wanganui,61400
+New Zealand,Wellington,61447
+New Zealand,Westport,61400
+New Zealand,Whakatane,61400
+Nicaragua,All Other Nicaragua Caribbean Region Ports,21900
+Nicaragua,All Other Nicaragua West Coast Region Ports,21999
+Nicaragua,Arlen Siu,21902
+Nicaragua,Bluefields,21901
+Nicaragua,Cabo Gracias a Dios,21900
+Nicaragua,Corinto,21951
+Nicaragua,Corn Islands,21900
+Nicaragua,El Bluff,21901
+Nicaragua,Huaunta,21900
+Nicaragua,Islas de Maiz,21900
+Nicaragua,La Barra de Rio Grande,21900
+Nicaragua,Laguna de Perlas,21900
+Nicaragua,Pearl City,21900
+Nicaragua,Prinzapolca,21900
+Nicaragua,Pto. Cabo Gracias a Dios,21900
+Nicaragua,Puerto Cabezas,21925
+Nicaragua,Puerto Isabel,21900
+Nicaragua,Puerto Masachapa,21999
+Nicaragua,Puerto Sandino,21999
+Nicaragua,Punta Gorda,21900
+Nicaragua,Rama,21902
+Nicaragua,Rio Grande,21900
+Nicaragua,San Juan del Sur,21999
+Nicaragua,Somoza,21999
+Nigeria,Abonnema,75300
+Nigeria,Akassa,75300
+Nigeria,All Other Nigeria Ports,75300
+Nigeria,Antan Terminal,75315
+Nigeria,Apapa,75313
+Nigeria,Bonny,75322
+Nigeria,Brass,75320
+Nigeria,Brass Terminal,75320
+Nigeria,Burutu,75300
+Nigeria,Calabar,75330
+Nigeria,Degema,75300
+Nigeria,Escravos,75345
+Nigeria,Escravos Oil Terminal,75345
+Nigeria,Forcados,75349
+Nigeria,Forcados Terminal,75349
+Nigeria,Koko,75361
+Nigeria,Kwa Ibo Terminal,75389
+Nigeria,Lagos,75367
+Nigeria,Military-Bass River Terminal,92006
+Nigeria,Military-Escravos,92005
+Nigeria,Okrika,75385
+Nigeria,Onne,75385
+Nigeria,Opobo,75300
+Nigeria,Pennington,75380
+Nigeria,Pennington Terminal,75380
+Nigeria,Port Harcourt,75385
+Nigeria,Qua Iboe Terminal,75389
+Nigeria,Que Iboe,75389
+Nigeria,Sapele,75383
+Nigeria,Tin Can Island,75367
+Nigeria,Ukpokiti,75323
+Nigeria,Warri,75387
+Niue,Alofi,61481
+Niue,Niue Island,61481
+North Korea,All Other North Korea Ports,57900
+North Korea,Chinnanpo,57900
+North Korea,Hungnam,57900
+North Korea,Onsong,57910
+North Korea,Wonsan,57900
+Northern Marian,Saipan,96165
+Northern Marian,Tinian,96169
+Norway,Aagotnes,40311
+Norway,Aalesund,40301
+Norway,Aalvik,40300
+Norway,Aandalsnes,40300
+Norway,Aardal,40302
+Norway,Aardalstangen,40302
+Norway,All Other Norway Ports,40300
+Norway,Alvik,40300
+Norway,Andalsnes,40300
+Norway,Ardal,40302
+Norway,Arendal,40300
+Norway,Ballangen,40300
+Norway,Bergen,40311
+Norway,Bodo,40369
+Norway,Bogen,40337
+Norway,Bogen Bay,40337
+Norway,Borg Hbr.,40334
+Norway,Brevik,40313
+Norway,Drammen,40321
+Norway,Egersund,40325
+Norway,Eydehamn,40327
+Norway,Fagerstrand,40300
+Norway,Farsund,40329
+Norway,Floro,40340
+Norway,Frederikstad,40334
+Norway,Fredrikstad,40334
+Norway,Grimstad,40300
+Norway,Guldsmedvik,40300
+Norway,Haavik,40300
+Norway,Halden,40342
+Norway,Hammerfest,40336
+Norway,Harstad,40300
+Norway,Haugesund,40345
+Norway,Heroen,40348
+Norway,Holla,40320
+Norway,Holmestrand,40300
+Norway,Honningsvaag,40300
+Norway,Honningsvag,40300
+Norway,Horten,40300
+Norway,Jorpeland,40300
+Norway,Kaarsto,40300
+Norway,Kambo,40300
+Norway,Karsto,40300
+Norway,Kirkenes,40300
+Norway,Kopervik,40300
+Norway,Kragero,40300
+Norway,Kristiansand N,40363
+Norway,Kristiansand S,40364
+Norway,Langesund,40300
+Norway,Langstein,40300
+Norway,Larvik,40335
+Norway,Lyngen,40300
+Norway,Lysaker,40377
+Norway,Maaloy,40372
+Norway,Melo,40300
+Norway,Meloy,40300
+Norway,Mo i Rana,40370
+Norway,Moldtustranda,40300
+Norway,Mongstad,40373
+Norway,Moss,40371
+Norway,Namsos,40300
+Norway,Narvik,40337
+Norway,Odda,40300
+Norway,Odde,40300
+Norway,Oslo,40377
+Norway,Porsgrunn,40378
+Norway,Rekefjord,40379
+Norway,Risor,40300
+Norway,Salten,40380
+Norway,Sandefjord,40300
+Norway,Sandnes,40381
+Norway,Sarpsborg,40300
+Norway,Sauda,40383
+Norway,Skien,40385
+Norway,Son,40300
+Norway,Stavanger,40387
+Norway,Steilene,40300
+Norway,Steinkjer,40300
+Norway,Sture,40311
+Norway,Sunndalsora,40390
+Norway,Svelgen,40392
+Norway,Svolvaer,40300
+Norway,Tau,40300
+Norway,Tofte,40300
+Norway,Tonsberg,40300
+Norway,Tromso,40338
+Norway,Trondheim,40397
+Norway,Vaksdal,40300
+Oman,All Other Oman Ports,52300
+Oman,Masirah,52315
+Oman,Masirah Island,52315
+Oman,Matrah,52325
+Oman,Military-Mina Qaboos,92018
+Oman,Military-Muscat,92019
+Oman,Mina Abd Fahl,52320
+Oman,Mina Qaboos,52325
+Oman,Mina Qabus,52325
+Oman,Mina Raysut,52330
+Oman,Mina al Fahal,52320
+Oman,Muscat,52325
+Oman,Musqat,52325
+Oman,Port Sultan Qaboos,52325
+Oman,Qalhat,52312
+Oman,Salalah,52330
+Oman,Sohar,52335
+Oman,Sultan Qaboos,52325
+Oman,Sur,52310
+Pakistan,All Other Pakistan Ports,53599
+Pakistan,Karachi,53550
+Pakistan,Karachi Harbor,53550
+Pakistan,Port Muhammad Bin Qasim,53551
+Pakistan,Port Qasim,53551
+Palau,Koror,68394
+Panama,Aguadulce,22581
+Panama,All Other Panama Caribbean Region Ports,22500
+Panama,All Other Panama West Coast Region Ports,22599
+Panama,Almirante,22501
+Panama,Archipel. de Las Perlas,22599
+Panama,Armuelles,22587
+Panama,Bahia de Las Minas,22565
+Panama,Balboa,22575
+Panama,Bocas del Toro,22500
+Panama,Bruja Point,22599
+Panama,Charco Azul,22587
+Panama,Chiman,22599
+Panama,Chiriqui Grande Terminal,22520
+Panama,Coco Solo,22517
+Panama,Colon,22519
+Panama,Cristobal,22518
+Panama,Darien,22599
+Panama,David,22599
+Panama,El Real,22599
+Panama,Gamboa,22500
+Panama,Gatun,22500
+Panama,Golfo de Parita,22525
+Panama,Golfo de San Miguel,22599
+Panama,Isla Parida,22599
+Panama,La Palma,22577
+Panama,Laguna de Chiriqui,22520
+Panama,Las Minas Bay,22565
+Panama,Manzanillo,22556
+Panama,Mindi Dyke,22500
+Panama,Miraflores Locks,22599
+Panama,Nombre de Dios,22500
+Panama,Panama Canal - Caribbean,22519
+Panama,Panama Canal- Pacific,22579
+Panama,Panama City,22579
+Panama,Paraiso,22599
+Panama,Parida Island,22599
+Panama,Parita,22525
+Panama,Payardi,22565
+Panama,Pearl Islands,22599
+Panama,Pedregal,22582
+Panama,Point Bruja,22599
+Panama,Point Mala,22599
+Panama,Portobelo,22555
+Panama,Puerto Armuelles,22587
+Panama,Puerto Bello,22555
+Panama,Puerto Manzanillo,22556
+Panama,Punta Mala,22599
+Panama,Rio Hato,22599
+Panama,Rodman,22599
+Panama,San Miguel Gulf,22599
+Panama,Taboga Island,22599
+Panama,Tonosi,22599
+Panama,Vacamonte,22599
+Papua New Guinea,All Other Papua New Guinea Ports,60400
+Papua New Guinea,Alotau,60432
+Papua New Guinea,Amamapare,60433
+Papua New Guinea,Anewa Bay,60431
+Papua New Guinea,Finsch Harbor,60400
+Papua New Guinea,Kavieng,60400
+Papua New Guinea,Kavieng Harbor,60400
+Papua New Guinea,Kieta,60400
+Papua New Guinea,Kokopo,60400
+Papua New Guinea,Lae,60441
+Papua New Guinea,Madang,60400
+Papua New Guinea,Montagu,60440
+Papua New Guinea,Port Moresby,60447
+Papua New Guinea,Rabaul,60449
+Papua New Guinea,Salamaua,60400
+Papua New Guinea,Salamoa,60400
+Papua New Guinea,Samarai,60400
+Papua New Guinea,Uvol,60440
+Papua New Guinea,Wewak,60450
+Paraguay,All Other Paraguay Ports,35300
+Paraguay,Asuncion,35301
+Paraguay,Puerto Villeta,35300
+Paraguay,San Antonio,35300
+Paraguay,Villeta,35300
+Peru,All Other Peru Ports,33300
+Peru,Ancon,33301
+Peru,Atico,33300
+Peru,Bahia de Eten,33300
+Peru,Bayovar,33300
+Peru,Callao,33303
+Peru,Casma,33300
+Peru,Cerro Azul,33300
+Peru,Chala,33300
+Peru,Chancay,33300
+Peru,Chicama,33300
+Peru,Chiclayo,33300
+Peru,Chilca,33300
+Peru,Chimbote,33300
+Peru,Chincha Islands,33300
+Peru,Conchan,33305
+Peru,Eten,33300
+Peru,General San Martin,33373
+Peru,Huacho,33300
+Peru,Huarmey,33300
+Peru,Ilo,33335
+Peru,Iquitos,33337
+Peru,Islas Lobos de Afuera,33300
+Peru,Islas Lobos de Tierra,33300
+Peru,La Pampilla,33340
+Peru,Lobos de Afuera,33300
+Peru,Lobos de Tierra,33300
+Peru,Lomas,33300
+Peru,Mala,33300
+Peru,Matarani,33354
+Peru,Mollendo,33355
+Peru,Pacasmayo,33300
+Peru,Paita,33363
+Peru,Paracas Bay,33300
+Peru,Paramonga,33300
+Peru,Peruvian Whaling Grounds,33300
+Peru,Pimentel,33371
+Peru,Pisco,33373
+Peru,Puerto Bayovar,33300
+Peru,Puerto Eten,33300
+Peru,Punta Pescadores,33300
+Peru,Salaverry,33377
+Peru,San Nicolas,33380
+Peru,Supe,33385
+Peru,Talara,33389
+Peru,Trujillo,33300
+Philippines,All Other Philippines Ports,56500
+Philippines,Aras-Asan,56500
+Philippines,Bacalod,56500
+Philippines,Bais,56503
+Philippines,Bataan,56507
+Philippines,Batangas,56506
+Philippines,Bauan,56504
+Philippines,Bislig,56508
+Philippines,Bogo,56500
+Philippines,Buayan,56514
+Philippines,Bulan,56500
+Philippines,Butuan,56513
+Philippines,Cabadbaran,56500
+Philippines,Cadiz,56500
+Philippines,Cagayan de Oro,56514
+Philippines,Calapan,56500
+Philippines,Castanas,56500
+Philippines,Catabangan,56500
+Philippines,Catanuan,56500
+Philippines,Cebu,56520
+Philippines,Claveria,56500
+Philippines,Coron,56500
+Philippines,Cotabato,56500
+Philippines,Dadiangas,56522
+Philippines,Dahican,56500
+Philippines,Dahikan,56500
+Philippines,Dahikan Bay,56500
+Philippines,Davao,56523
+Philippines,Dipolog,56500
+Philippines,Donsol,56500
+Philippines,Dumaguete,56525
+Philippines,Gasan,56500
+Philippines,General MacArthur,56500
+Philippines,Gingoog,56500
+Philippines,Hinigaran,56500
+Philippines,Hondagua,56530
+Philippines,Iligan,56531
+Philippines,Iloilo,56532
+Philippines,Isabel,56590
+Philippines,Jagna,56500
+Philippines,Jimenez,56500
+Philippines,Jolo,56500
+Philippines,Jose Panganiban,56591
+Philippines,Kolambugan,56500
+Philippines,Lamon Anchorage,56500
+Philippines,Larap Bay,56500
+Philippines,Lebak,56500
+Philippines,Legaspi,56542
+Philippines,Leyte,56500
+Philippines,Lianga,56500
+Philippines,Limay,56592
+Philippines,Maco,56500
+Philippines,Magallanes,56500
+Philippines,Makar,56500
+Philippines,Malitbog,56500
+Philippines,Mambulao,56500
+Philippines,Mangarin,56500
+Philippines,Manila,56549
+Philippines,Margosatubig,56500
+Philippines,Mariveles,56545
+Philippines,Masao,56500
+Philippines,Masbate,56500
+Philippines,Maseru,56554
+Philippines,Masinloc,56552
+Philippines,Mauban,56500
+Philippines,Medina,56500
+Philippines,Mercedes,56500
+Philippines,Misamis,56556
+Philippines,Naga,56500
+Philippines,Nalunga Island,56500
+Philippines,Nasipit,56500
+Philippines,Nasugbu,56500
+Philippines,Nonoc Island,56500
+Philippines,Odiongan,56500
+Philippines,Olongapo,56585
+Philippines,Olutanga Island,56500
+Philippines,Oroquieta,56500
+Philippines,Pambujan Sur,56500
+Philippines,Panagan,56500
+Philippines,Pinamalayan,56500
+Philippines,Plaridel,56500
+Philippines,Polillo,56500
+Philippines,Pontevedra,56500
+Philippines,Poro,56578
+Philippines,Poro Island,56500
+Philippines,Port Holland,56500
+Philippines,Port Ozamis,56556
+Philippines,Puerto Real,56500
+Philippines,Pulupandan,56569
+Philippines,Romblon Island,56500
+Philippines,San Fernando,56578
+Philippines,San Jose de Buenavista,56500
+Philippines,Sangi,56520
+Philippines,Santa Cruz,56593
+Philippines,Santa Cruz (Davao Gulf),56500
+Philippines,Santa Maria,56500
+Philippines,Sarangani Bay,56500
+Philippines,Sarangani Island,56500
+Philippines,Sepaco,56500
+Philippines,Siain,56500
+Philippines,Siete Pecados,56500
+Philippines,Silay,56500
+Philippines,Sorsogon,56500
+Philippines,Subic Bay,56585
+Philippines,Surigao,56500
+Philippines,Tabaco,56588
+Philippines,Tacloban,56589
+Philippines,Tagbilaran,56500
+Philippines,Tagubanham Island,56500
+Philippines,Tagum,56500
+Philippines,Taisan,56500
+Philippines,Talomo,56500
+Philippines,Tandoc,56594
+Philippines,Victorias,56500
+Philippines,Virac,56500
+Philippines,Vito,56500
+Philippines,Zamboanga,56597
+Pitcairn,Pitcairn Islands,62211
+Poland,All Other Poland Ports,45500
+Poland,Danzig,45511
+Poland,Gdansk,45511
+Poland,Gdynia,45505
+Poland,Neufahrwasser,45500
+Poland,Nowy Port,45500
+Poland,Police,45513
+Poland,Stettin,45507
+Poland,Swinemunde,45512
+Poland,Swinoujscie,45512
+Poland,Szczecin,45507
+Portugal,Albufeira,47100
+Portugal,All Other Azores Ports,47150
+Portugal,All Other Portugal Ports,47100
+Portugal,Angra do Heroismo,47150
+Portugal,Aveiro,47130
+Portugal,Barreiro,47126
+Portugal,Faro,47100
+Portugal,Figueira da Foz,47135
+Portugal,Funchal,47101
+Portugal,Horta,47150
+Portugal,Lagos,47100
+Portugal,Leixoes,47123
+Portugal,Lisboa,47125
+Portugal,Lisbon,47125
+Portugal,Olhao,47100
+Portugal,Oporto,47133
+Portugal,Ponta Delgada,47151
+Portugal,Portimao,47100
+Portugal,Porto,47133
+Portugal,Porto de Leixoes,47123
+Portugal,Porto de Sines,47127
+Portugal,Praia,47152
+Portugal,Praia de Vitoria,47152
+Portugal,Setubal,47141
+Portugal,Sines,47127
+Portugal,Terceira Island,47155
+Portugal,Vila Real de San Antonio,47100
+Portugal,Vila do Porto,47150
+Qatar,All Other Qatar Ports,51800
+Qatar,Doha,51813
+Qatar,Halul Island,51800
+Qatar,Jazirath Halul,51800
+Qatar,Musayid,51825
+Qatar,Ras Laffan,51814
+Qatar,Umm Said,51825
+Reunion,Pointe des Galets,79051
+Reunion,Saint Denis,79052
+Reunion,St. Denis,79052
+Romania,All Other Romania Ports,48500
+Romania,Braila,48500
+Romania,Constanta,48511
+Romania,Constantza,48511
+Romania,Galati,48500
+Romania,Galatz,48500
+Romania,Sulina,48500
+Romania,Tulcea,48500
+Russia,Aleksandrovski,46239
+Russia,Alexandrovsk,46239
+Russia,All Other Russia Baltic Region Ports,46220
+Russia,All Other Russia Black Sea Region Ports,46250
+Russia,All Other Russia Eastern Region Ports,46239
+Russia,All Other Russia Siberia Region Ports,46200
+Russia,Ambarchik,46239
+Russia,Anadyr,46239
+Russia,Archangel,46200
+Russia,Arkhangelsk,46200
+Russia,Arkovo Bereg,46239
+Russia,Bukhta Severnaya,46250
+Russia,Kaliningrad,46213
+Russia,Kamchatka,46239
+Russia,Kolyma River,46239
+Russia,Konigsberg,46213
+Russia,Korsakov,46236
+Russia,Kovisto,46220
+Russia,Leningrad,46215
+Russia,Lorino,46222
+Russia,Magadan,46232
+Russia,Magadansky,46232
+Russia,Molotovsk,46200
+Russia,Murmansk,46209
+Russia,Nagayeva,46239
+Russia,Nakhodka,46230
+Russia,Nikolayevsk-Na-Amur,46239
+Russia,Nogayevo,46239
+Russia,North Cape,46239
+Russia,Novorossiysk,46241
+Russia,Okha,46239
+Russia,Petropavlovsk,46233
+Russia,Petropavlovsk-Kamchatskiy,46233
+Russia,Pevek,46239
+Russia,Primorsk,46220
+Russia,Provideniya,46237
+Russia,Severodvinsk,46200
+Russia,Sovetskaya Gavan,46239
+Russia,St. Petersburg,46215
+Russia,Taganrog,46242
+Russia,Tiksi,46239
+Russia,Tuapse,46245
+Russia,Vanino,46234
+Russia,Viborg,46220
+Russia,Viipuri,46220
+Russia,Vladivostok,46238
+Russia,Vostochnyy,46231
+Russia,Vyborg,46220
+Russia,Yandraknnot,46208
+Samoa,All Other Western Samoa Ports,61500
+Samoa,Apia,61501
+Sao Tome and Principe,All Other Sao Tome and Principe Ports,76495
+Sao Tome and Principe,Sao Tome (St. Thomas),76491
+Saudi Arabia,Ad Dammam,51715
+Saudi Arabia,Al Juaymah,51723
+Saudi Arabia,Al Jubail,51720
+Saudi Arabia,Al Khobar,51712
+Saudi Arabia,Al Khubar,51712
+Saudi Arabia,All Other Saudi Arabia Ports,51700
+Saudi Arabia,Damman,51715
+Saudi Arabia,Dhahran,51717
+Saudi Arabia,Dhuba,51730
+Saudi Arabia,Gizan,51719
+Saudi Arabia,Jeddeh,51721
+Saudi Arabia,Jidda,51721
+Saudi Arabia,Jiddah,51721
+Saudi Arabia,Juaymah Oil Terminal,51723
+Saudi Arabia,Jubail,51720
+Saudi Arabia,Judda,51721
+Saudi Arabia,King Abdul Aziz Port,51715
+Saudi Arabia,King Abdullah,51732
+Saudi Arabia,King Fahd Port,51730
+Saudi Arabia,Ras Al Khafji,51700
+Saudi Arabia,Ras Tanura,51727
+Saudi Arabia,Ras at Tannurah,51727
+Saudi Arabia,Yambo,51730
+Saudi Arabia,Yanbu,51730
+Saudi Arabia,Yenbo,51730
+Senegal,All Other Senegal Ports,74499
+Senegal,Dakar,74473
+Senegal,Kaolak,74499
+Senegal,Rufisque,74499
+Senegal,Ziguinchor,74499
+Serbia,Bar,47901
+Serbia,Zelenika,47900
+Seychelles,All Other Seychelles Ports,78000
+Seychelles,Port Victoria,78083
+Seychelles,Victoria,78083
+Sierra Leone,All Other Sierra Leone Ports,74799
+Sierra Leone,Bonthe,74799
+Sierra Leone,Freetown,74751
+Sierra Leone,Pepel,74799
+Sierra Leone,Sherbro,74799
+Singapore,All Other Singapore Ports,55900
+Singapore,Pulau Bukom,55950
+Singapore,Pulau Sebarok,55901
+Singapore,Pulum Bukum,55950
+Singapore,Sebarok,55901
+Singapore,Serangoon Harbor,55900
+Singapore,Singapore,55976
+Slovenia,All Other Slovenia Ports,47999
+Slovenia,Kopar,47909
+Slovenia,Koper,47909
+Slovenia,Piran,47910
+Slovenia,Pirano,47910
+Solomon Is,All Solomon Islands Ports,62200
+Solomon Is,Gizo,62200
+Solomon Is,Honiara,62200
+Solomon Is,Lofung,62200
+Solomon Is,Munda,62200
+Solomon Is,Tulaghi,62200
+Solomon Is,Tulagi,62200
+Solomon Is,Yandina,62200
+Somalia,All Other Somalia Eastern Region Ports,77099
+Somalia,All Other Somalia Northern Region Ports,77000
+Somalia,Berbera,77001
+Somalia,Chisimaio,77099
+Somalia,Kismaayo,77099
+Somalia,Kismayu,77099
+Somalia,Mogadiscio,77051
+Somalia,Mogadishu,77051
+Somalia,Muqdisho,77051
+South Africa,All Other Republic of South Africa Ports,79100
+South Africa,Cape Town,79101
+South Africa,Durban,79113
+South Africa,East London,79125
+South Africa,Mossel Baai,79100
+South Africa,Mossel Bay,79100
+South Africa,Port Elizabeth,79145
+South Africa,Port Natal,79113
+South Africa,Port Nollath,79100
+South Africa,Richard's Bay,79155
+South Africa,Saldanha Bay,79100
+South Africa,Simonstown,79100
+South Korea,All Other South Korea Ports,58000
+South Korea,Bukpyung,58014
+South Korea,Busan,58023
+South Korea,Changhang,58000
+South Korea,Cheju,58000
+South Korea,Chen Hai,58015
+South Korea,Chinhae,58015
+South Korea,Daesan,58030
+South Korea,Donghae,58014
+South Korea,Gunsan,58028
+South Korea,Inchon,58029
+South Korea,Jinhae,58015
+South Korea,Jinsen,58029
+South Korea,Kunsan,58028
+South Korea,Kunson,58028
+South Korea,Kwangyang,58031
+South Korea,Masan,58033
+South Korea,Mogpo,58035
+South Korea,Mokpo,58035
+South Korea,Okpo,58034
+South Korea,Onsan,58061
+South Korea,Pohang,58055
+South Korea,Pohang Hang,58055
+South Korea,Pusan,58023
+South Korea,Pyongtaek,58032
+South Korea,Pyungtaek,58032
+South Korea,Samil,58065
+South Korea,Tonghae,58014
+South Korea,Ulsan,58061
+South Korea,Yeosu,58065
+South Korea,Yosu,58065
+Spain,Agua Amarga,47099
+Spain,Aguilas,47099
+Spain,Alcanar,47051
+Spain,Alcudia,47099
+Spain,Algeciras,47031
+Spain,Alicante,47057
+Spain,All Other Canary Islands Ports,47070
+Spain,All Other Spain Atlantic Region Ports North of Por,47000
+Spain,All Other Spain Atlantic Region Ports Southeast of,47049
+Spain,All Other Spain Mediterranean Region Ports,47099
+Spain,All other Spanish Africa N.E.C. Ports,47095
+Spain,Almeria,47059
+Spain,Arguinequin,47070
+Spain,Arrecife,47070
+Spain,Aviles,47003
+Spain,Barcelona,47061
+Spain,Bilbao,47005
+Spain,Cadiz,47035
+Spain,Cape Finisterre,47000
+Spain,Carboneras,47062
+Spain,Cartagena,47063
+Spain,Castellon,47068
+Spain,Castellon de la Plana,47068
+Spain,Ceuta,47096
+Spain,Cillero,47000
+Spain,Corcubion,47000
+Spain,Corunna,47021
+Spain,Denia,47099
+Spain,El Ferrol,47022
+Spain,El Ferrol del Caudillo,47022
+Spain,El Grao,47099
+Spain,Escombreras,47063
+Spain,Ferrol,47022
+Spain,Gandia,47093
+Spain,Garrucha,47099
+Spain,Gijon,47017
+Spain,Hornillo,47099
+Spain,Huelva,47044
+Spain,Ibiza,47067
+Spain,La Coruna,47021
+Spain,La Salineta,47070
+Spain,Las Palmas,47071
+Spain,Majorca,47066
+Spain,Malaga,47076
+Spain,Marin,47000
+Spain,Melilla,47095
+Spain,Mosel,47017
+Spain,Motril,47077
+Spain,Palamos,47065
+Spain,Palma de Majorca,47066
+Spain,Pasages,47027
+Spain,Pasajes,47027
+Spain,Port Alfaques,47099
+Spain,Port Santa Maria,47049
+Spain,Puerto de Sagunto,47083
+Spain,Puerto de Santa Maria,47049
+Spain,Puerto de la Luz,47071
+Spain,Puerto de los Alfaques,47099
+Spain,Puerto del Rosario,47070
+Spain,Ribadesella,47000
+Spain,Rosas,47099
+Spain,Rota,47049
+Spain,Sagunto,47083
+Spain,San Ciprian,47036
+Spain,San Feliu de Guixols,47088
+Spain,San Juan de Nieva,47003
+Spain,San Sebastian,47000
+Spain,Santa Cruz de La Palma,47072
+Spain,Santa Cruz de Tenerife,47073
+Spain,Santander,47013
+Spain,Sevilla,47039
+Spain,Seville,47039
+Spain,Sta. Cruz de Tenerife,47073
+Spain,Tarifa,47032
+Spain,Tarragona,47092
+Spain,Tenerife,47073
+Spain,Torrevieja,47090
+Spain,Valencia,47094
+Spain,Vigo,47029
+Spain,Villagarcia,47000
+Spain,Villagarcia de Arosa,47000
+Spain,Vinaroz,47099
+Sri Lanka,All Other Sri Lanka Ports,54200
+Sri Lanka,Colombo,54201
+Sri Lanka,Colombo Harbor,54201
+Sri Lanka,Galle,54200
+Sri Lanka,Galle Harbor,54200
+Sri Lanka,Jaffna,54200
+Sri Lanka,Trincomalee,54205
+Sri Lanka,Trincomali,54205
+St. Helena,All St. Helena Ports,75899
+St. Helena,"Clarence Bay, Ascension Is",75898
+St. Helena,"Georgetown, Ascension Is",75898
+St. Helena,"Jamestown, St. Helena",75899
+St. Kitts Nevis,"Basseterre, St. Kitts",24835
+St. Kitts Nevis,"Charlestown, Nevis Is.",24837
+St. Lucia,Castries,24865
+St. Lucia,Cul de Sac,24866
+St. Lucia,Vieux Fort,24867
+St. Pierre/Miq,St. Pierre,16101
+St. Vincent,Admiralty Bay,24871
+St. Vincent,Kingstown,24871
+Sudan,Port Sudan,73201
+Suriname,All Other Suriname Ports,31500
+Suriname,Brokopondo,31500
+Suriname,Moengo,31501
+Suriname,Nieuw Nickerie,31500
+Suriname,Paramaribo,31523
+Suriname,Paranam,31524
+Suriname,Smalkalden,31523
+Suriname,Wageningen,31500
+Sv Jm Islands,Spitsbergen,40398
+Sv Jm Islands,"Svalbard, Jan Mayen Isl",40398
+Sweden,Ahus,40122
+Sweden,All Other Sweden Ports,40100
+Sweden,Arnoviken,40100
+Sweden,Bollsta,40100
+Sweden,Brofjorden,40100
+Sweden,Burea,40100
+Sweden,Carlskrona,40100
+Sweden,Domjou,40100
+Sweden,Domsjo,40100
+Sweden,Dynas,40100
+Sweden,Essvik,40100
+Sweden,Essviken,40100
+Sweden,Fagervik,40100
+Sweden,Falkenberg,40121
+Sweden,Frano,40100
+Sweden,Furogrund,40100
+Sweden,Furuogrund,40100
+Sweden,Gaddvik,40115
+Sweden,Gafle,40116
+Sweden,Gavle,40116
+Sweden,Gefle,40116
+Sweden,Gevle,40116
+Sweden,Goteborg,40117
+Sweden,Gothenburg,40117
+Sweden,Hallstavik,40118
+Sweden,Halmstad,40119
+Sweden,Halsingborg,40120
+Sweden,Harare,40100
+Sweden,Hargshamn,40100
+Sweden,Harnosand,40100
+Sweden,Helsingborg,40120
+Sweden,Hernosand,40100
+Sweden,Hoganas,40123
+Sweden,Holmsund,40127
+Sweden,Hornesfors,40100
+Sweden,Hudiksvall,40100
+Sweden,Iggesund,40129
+Sweden,Kalix,40100
+Sweden,Kalmar,40100
+Sweden,Karlsborg,40132
+Sweden,Karlshamn,40133
+Sweden,Karlskrona,40100
+Sweden,Karlstad,40100
+Sweden,Karskar,40100
+Sweden,Kopmanholmen,40100
+Sweden,Kramfors,40100
+Sweden,Kristinehamn,40100
+Sweden,Lanskrona,40150
+Sweden,Limhamn,40143
+Sweden,Ljusne,40100
+Sweden,Lulea,40142
+Sweden,Lysekil,40100
+Sweden,Malmo,40143
+Sweden,Mem,40100
+Sweden,Munksund,40100
+Sweden,Nederkalix,40100
+Sweden,Norrbyskar,40100
+Sweden,Norrkoping,40148
+Sweden,Norrsundet,40149
+Sweden,Nynashamn,40100
+Sweden,Obbola,40153
+Sweden,Ornskoldsvik,40155
+Sweden,Ortviken,40100
+Sweden,Orviken,40100
+Sweden,Oskarshamn,40157
+Sweden,Ostrand,40100
+Sweden,Otterbacken,40100
+Sweden,Oxelosund,40159
+Sweden,Pitea,40100
+Sweden,Ronneby,40100
+Sweden,Ronnsker,40161
+Sweden,Saljfviken,40100
+Sweden,Sandarne,40166
+Sweden,Sandhamn,40100
+Sweden,Sikea,40100
+Sweden,Skelleftea,40124
+Sweden,Skelleftehamn,40124
+Sweden,Skogholl,40100
+Sweden,Skonvik,40100
+Sweden,Skutskar,40100
+Sweden,Slite,40100
+Sweden,Soderhamn,40174
+Sweden,Soraker,40100
+Sweden,Stenungsund,40176
+Sweden,Stocka,40100
+Sweden,Stockholm,40179
+Sweden,Stockvik,40180
+Sweden,Sundsvall,40182
+Sweden,Svartvik,40100
+Sweden,Trelleborg,40185
+Sweden,Trollhattan,40100
+Sweden,Trollhatte Canal,40100
+Sweden,Uddevalla,40188
+Sweden,Ulfvik,40100
+Sweden,Ulvvik,40100
+Sweden,Umea,40125
+Sweden,Ursviken,40100
+Sweden,Utansjo,40191
+Sweden,Vaja,40100
+Sweden,Vallvik,40196
+Sweden,Varberg,40100
+Sweden,Vasteras,40192
+Sweden,Vastervik,40194
+Sweden,Vifstavarf,40100
+Sweden,Vinga,40100
+Sweden,Vivstava,40100
+Sweden,Wallhamn,40197
+Sweden,Ystad,40100
+Syria,Al Ladhiqiyah,50215
+Syria,All Other Syria Ports,50200
+Syria,Banias,50200
+Syria,Baniyas,50200
+Syria,Latakia,50215
+Syria,Lattakia,50215
+Syria,Tartous,50220
+Syria,Tartus,50220
+Tanzania,All Other Tanzania Ports,78399
+Tanzania,Dar es Salaam,78351
+Tanzania,Kilwa Kivinje,78399
+Tanzania,Lindi,78399
+Tanzania,Mikindani,78399
+Tanzania,Mtwara,78399
+Tanzania,Pangani,78399
+Tanzania,Pemba Island,78399
+Tanzania,Tanga,78379
+Tanzania,Zanzibar,78387
+Thailand,All Other Thailand Ports,54900
+Thailand,Ao Phuket,54902
+Thailand,Ban Tha Rua,54902
+Thailand,Bangkok,54901
+Thailand,Bhuket,54902
+Thailand,Chuk Samet,54900
+Thailand,Katang,54929
+Thailand,Ko Sichang,54920
+Thailand,Krabi,54900
+Thailand,Laem Chabang,54930
+Thailand,Mab Ta Pud,54903
+Thailand,Map Ta Phut,54903
+Thailand,Narathiwat,54900
+Thailand,Naratives,54900
+Thailand,Patani,54900
+Thailand,Pattani,54900
+Thailand,Phuket,54902
+Thailand,Rayong,54903
+Thailand,Satahib,54900
+Thailand,Satahip,54900
+Thailand,Sattahip,54900
+Thailand,Songkhla,54927
+Thailand,Songkhla Harbor,54927
+Thailand,Sri Racha,54905
+Thailand,Sriracha,54905
+Togo,All Other Togo Ports,75200
+Togo,Anecho,75200
+Togo,Kpeme,75200
+Togo,Little Popo,75200
+Togo,Lome,75291
+Tokelau,Tokelau,61471
+Tonga,All Tonga Islands Ports,68682
+Tonga,Haapai,68682
+Tonga,Neiafu,68682
+Tonga,Nukualofa,68682
+Tonga,Pangai,68682
+Trinidad,All Other Trinidad Ports,27400
+Trinidad,Brighton,27400
+Trinidad,Chaguaramas,27400
+Trinidad,Galeota Point,27410
+Trinidad,La Brea,27400
+Trinidad,Point Fortin,27420
+Trinidad,Point Galeota,27410
+Trinidad,Point Lisas,27425
+Trinidad,Pointe a Pierre,27415
+Trinidad,Port of Spain,27431
+Trinidad,San Fernando,27443
+Trinidad,Scarborough,27451
+Trinidad,Tembladora,27446
+Trinidad,Tobago,27400
+Tunisia,Al Mahdiyah,72300
+Tunisia,All Other Tunisia Ports,72300
+Tunisia,As Sukhayrah,72315
+Tunisia,Ashtart Terminal,72300
+Tunisia,Banzart,72301
+Tunisia,Bizerta,72301
+Tunisia,Bizerte,72301
+Tunisia,Gabes,72305
+Tunisia,La Goulette,72310
+Tunisia,La Skhira,72315
+Tunisia,La Skira,72315
+Tunisia,Mahedia,72300
+Tunisia,Menzel Bourguiba,72300
+Tunisia,Military-Sfax,92016
+Tunisia,Sfax,72337
+Tunisia,Sousee,72357
+Tunisia,Susa,72357
+Tunisia,Tabarca,72300
+Tunisia,Tabarqah,72300
+Tunisia,Tunis,72373
+Turkey,Adalia,48903
+Turkey,Adana,48938
+Turkey,Alexandretta,48931
+Turkey,Aliaga,48915
+Turkey,All Other Turkey Black Sea and Sea of Marmara Port,48999
+Turkey,All Other Turkey Mediterranean Region Ports,48900
+Turkey,Ambarli,48945
+Turkey,Antalya,48903
+Turkey,Atalia,48903
+Turkey,Attalea,48903
+Turkey,Bandirma,48963
+Turkey,Botas Terminal,48931
+Turkey,Canak,48999
+Turkey,Canakkale,48999
+Turkey,Ceyhan Terminal,48931
+Turkey,Chanak,48999
+Turkey,Chanaq,48999
+Turkey,Darcia,48941
+Turkey,Darica,48941
+Turkey,Derince,48942
+Turkey,Derince Burnu,48942
+Turkey,Derindje,48942
+Turkey,Dikili,48905
+Turkey,Eregli,48943
+Turkey,Eregli Anatolia,48943
+Turkey,Fethiye,48900
+Turkey,Finike,48900
+Turkey,Gallipoli,48999
+Turkey,Gebze,48944
+Turkey,Gelibolu,48999
+Turkey,Gemlik,48947
+Turkey,Ghemlik,48947
+Turkey,Giova,48931
+Turkey,Giresun,48946
+Turkey,Gocek,48925
+Turkey,Gokova,48931
+Turkey,Gokova Iskelesi,48931
+Turkey,Golcuk,48999
+Turkey,Golovasi Terminal,48931
+Turkey,Gueldjuk,48999
+Turkey,Hay Darpasa,48999
+Turkey,Haydarpasa,48999
+Turkey,Hopa,48900
+Turkey,Inebolu,48999
+Turkey,Isdemir,48928
+Turkey,Iskenderun,48931
+Turkey,Istanbul,48945
+Turkey,Izmir,48939
+Turkey,Izmit,48940
+Turkey,Kemlik,48947
+Turkey,Mersin,48938
+Turkey,Mudania,48951
+Turkey,Mudanya,48951
+Turkey,Nemrut Bay,48915
+Turkey,Panderma,48963
+Turkey,Pursan,48944
+Turkey,Rodosto,48999
+Turkey,Samsun,48967
+Turkey,Tas Oudjou,48900
+Turkey,Tash-Uju,48900
+Turkey,Tasucu,48900
+Turkey,Tekirdag,48999
+Turkey,Toros Gubre,48932
+Turkey,Trabzon,48999
+Turkey,Trebizond,48999
+Turkey,Tutunciftlik,48940
+Turkey,Uzunkum,48943
+Turkey,Yalova,48971
+Turkey,Yarimca,48999
+Turkey,Yumurtalik,48900
+Turkey,Zonguldak,48900
+Turks Is,All Other Caicos Islands,24300
+Turks Is,All Other Turks Islands Ports,24399
+Turks Is,Cockburn harbor,24310
+Turks Is,Grand Turks,24320
+Turks Is,Providenciales,24311
+Turks Is,Salt Cay,24399
+Tuvalu,Funafuti Atoll,62231
+US Outlying Is,All United States Outlying Islands,98000
+US Virgin Is,All Other St. Croix Virgin Islands,91149
+US Virgin Is,All Other Virgin Islands Ports,91195
+US Virgin Is,"Charlotte Amalie, St. Th",91155
+US Virgin Is,"Christiansted, St. Croix",91115
+US Virgin Is,"Cruz Bay, St. John I.",91160
+US Virgin Is,"Frederiksted, St. Croix",91145
+US Virgin Is,Hess Oil Term. St. Croix,91125
+US Virgin Is,"Hovic, St. Croix",91125
+US Virgin Is,"Port Hess, St. Croix",91125
+US Virgin Is,ST. Thomas,91155
+US Virgin Is,"Saint Thomas, St. Thomas",91155
+US Virgin Is,St. Croix,91149
+Ukraine,All Other Ukraine Ports,46279
+Ukraine,Belgrod-Dnestrovskiy,46277
+Ukraine,Berdyansk,46278
+Ukraine,Dnestrovskiy,46277
+Ukraine,Feodosia,46279
+Ukraine,Feodosiya,46279
+Ukraine,Ilichevsk,46271
+Ukraine,Ilyichevsk,46271
+Ukraine,Juzhny,46275
+Ukraine,Kerch,46274
+Ukraine,Kertch,46274
+Ukraine,Mariupol,46276
+Ukraine,Military-Mykolayiv,92015
+Ukraine,Military-Oktyabrsk,92014
+Ukraine,Nikolayev,46279
+Ukraine,Odessa,46275
+Ukraine,Reni,46279
+Ukraine,Sevastopol,46279
+Ukraine,Ust-Dunaisk,46272
+Ukraine,Ust-Dunaysk,46272
+Ukraine,Yalta,46279
+Ukraine,Yuzhnyy,46275
+Ukraine,Zhdanov,46276
+United Arab Em,Abu Dhabi,52001
+United Arab Em,Abu Zabi,52001
+United Arab Em,Abu al Bu Koosh,52000
+United Arab Em,Ajman,52000
+United Arab Em,All Other United Arab Emirates Ports,52000
+United Arab Em,Arzanah Island,52003
+United Arab Em,Ash Shariqah,52070
+United Arab Em,Das,52030
+United Arab Em,Das Island,52030
+United Arab Em,Dubai,52005
+United Arab Em,Dubayy,52005
+United Arab Em,Fateh Terminal,52040
+United Arab Em,Fujairah,52077
+United Arab Em,Fujaireh,52077
+United Arab Em,Hamriyah Terminal,52000
+United Arab Em,Jebel Ali,52051
+United Arab Em,Jebel Dhanna,52050
+United Arab Em,Khor Fakkan,52060
+United Arab Em,Mina Khalid,52070
+United Arab Em,Mina Saqr,52000
+United Arab Em,Mina Zayed,52001
+United Arab Em,Mubarek Terminal,52000
+United Arab Em,Mubarras Island,52000
+United Arab Em,Port Rashid,52005
+United Arab Em,Ras al Khaimah,52000
+United Arab Em,Ras al Khaymah,52000
+United Arab Em,Ruwais,52050
+United Arab Em,Sharjah,52070
+United Arab Em,Zirku Island,52000
+United Kingdom,Aberdeen,41650
+United Kingdom,Acton Grange,41253
+United Kingdom,All Other England South and East Coast Ports,41398
+United Kingdom,All Other England West Coast Ports,41299
+United Kingdom,All Other Northern Ireland Ports,41800
+United Kingdom,All Other Scotland East Coast Ports,41698
+United Kingdom,All Other Scotland West Coast Ports,41600
+United Kingdom,All Other Wales Ports,41400
+United Kingdom,Ardrossan,41600
+United Kingdom,Avonmouth,41201
+United Kingdom,Ayr,41600
+United Kingdom,Bangor,41802
+United Kingdom,Barri,41401
+United Kingdom,Barrow in Furness,41299
+United Kingdom,Barry,41401
+United Kingdom,Barton,41398
+United Kingdom,Bebington,41211
+United Kingdom,Belfast,41801
+United Kingdom,Bellport,41400
+United Kingdom,Berwick,41359
+United Kingdom,Berwick upon Tweed,41359
+United Kingdom,Bideford,41299
+United Kingdom,Birkenhead,41207
+United Kingdom,Blyth,41398
+United Kingdom,Boston,41398
+United Kingdom,Bowling,41600
+United Kingdom,Braefoot Bay,41684
+United Kingdom,Bristol,41211
+United Kingdom,Brixham,41398
+United Kingdom,Bromsborough,41214
+United Kingdom,Burntisland,41698
+United Kingdom,Canvey,41398
+United Kingdom,Canvey Island,41398
+United Kingdom,Cardiff,41487
+United Kingdom,Chatham,41398
+United Kingdom,Clyde,41615
+United Kingdom,Coryton,41352
+United Kingdom,Dagenham,41320
+United Kingdom,Dartmouth,41398
+United Kingdom,Devonport,41398
+United Kingdom,Dover,41337
+United Kingdom,Dumbarton,41600
+United Kingdom,Dundee,41659
+United Kingdom,Eastham,41216
+United Kingdom,Edinburg,41675
+United Kingdom,Edinburgh,41675
+United Kingdom,Ellesmere,41227
+United Kingdom,Erith,41231
+United Kingdom,Falmouth,41328
+United Kingdom,Faslane,41600
+United Kingdom,Fawley,41329
+United Kingdom,Felixstowe,41323
+United Kingdom,Finnart oil terminal,41698
+United Kingdom,Firth of Forth,41698
+United Kingdom,Fleetwood,41299
+United Kingdom,Flotta,41680
+United Kingdom,Fort William,41600
+United Kingdom,Fowey,41332
+United Kingdom,Fraserburgh,41698
+United Kingdom,Gare Lock,41600
+United Kingdom,Gareloch,41600
+United Kingdom,Garelochhead,41600
+United Kingdom,Garston,41299
+United Kingdom,Glasgow,41623
+United Kingdom,Gloucester,41299
+United Kingdom,Goole,41335
+United Kingdom,Gourock,41600
+United Kingdom,Grangemouth,41665
+United Kingdom,Granton,41698
+United Kingdom,Gravesend,41398
+United Kingdom,Great Yarmouth,41398
+United Kingdom,Greenhite,41336
+United Kingdom,Greenhithe,41336
+United Kingdom,Greenock,41625
+United Kingdom,Greenwich,41398
+United Kingdom,Grimsby,41398
+United Kingdom,Hamble,41374
+United Kingdom,Hartlepool,41338
+United Kingdom,Harwich,41398
+United Kingdom,Holyhead,41415
+United Kingdom,Hound Point,41668
+United Kingdom,Houndpoint,41668
+United Kingdom,Hull,41341
+United Kingdom,Hunterston,41627
+United Kingdom,Immingham,41342
+United Kingdom,Invergordon,41698
+United Kingdom,Inverkeithing,41698
+United Kingdom,Inverkip,41674
+United Kingdom,Inverness,41683
+United Kingdom,Ipswich,41398
+United Kingdom,Irvine,41630
+United Kingdom,Irvine Harbor,41630
+United Kingdom,Jarrow,41398
+United Kingdom,Killingholme,41345
+United Kingdom,King's Lynn,41398
+United Kingdom,Kings North,41343
+United Kingdom,Kingsnorth,41343
+United Kingdom,"Kirkwall, Orkney Is",41698
+United Kingdom,Land's End,41249
+United Kingdom,Larne,41800
+United Kingdom,Leith,41675
+United Kingdom,Littlehampton,41398
+United Kingdom,Liverpool,41251
+United Kingdom,Llanelli,41400
+United Kingdom,Llanelly,41400
+United Kingdom,London,41352
+United Kingdom,Londonderry,41815
+United Kingdom,Lowestoft,41398
+United Kingdom,"Lyness, Orkney Is",41698
+United Kingdom,Manchester,41253
+United Kingdom,Methil,41698
+United Kingdom,Middlesbrough,41355
+United Kingdom,Milford Haven,41446
+United Kingdom,Mistley,41398
+United Kingdom,Montrose,41681
+United Kingdom,Neath,41486
+United Kingdom,Newcastle on Tyne,41356
+United Kingdom,Newhaven,41357
+United Kingdom,Newport,41488
+United Kingdom,Newport,41258
+United Kingdom,Nigg Bay,41685
+United Kingdom,North & South Shields,41398
+United Kingdom,North Tees,41377
+United Kingdom,Oakham Ness,41358
+United Kingdom,Old Kilpatrick,41600
+United Kingdom,Pembroke,41465
+United Kingdom,Penarth,41400
+United Kingdom,Penzance,41398
+United Kingdom,Perth,41698
+United Kingdom,Peterhead,41640
+United Kingdom,Plymouth,41360
+United Kingdom,Poole,41398
+United Kingdom,Port Talbot,41477
+United Kingdom,Portbury,41262
+United Kingdom,Portland,41398
+United Kingdom,Portsmouth,41398
+United Kingdom,Preston,41264
+United Kingdom,Purfleet,41398
+United Kingdom,Redcar,41362
+United Kingdom,Ridham Dock,41370
+United Kingdom,Rochester,41398
+United Kingdom,Rosyth,41698
+United Kingdom,Runcorn,41299
+United Kingdom,Salford,41253
+United Kingdom,Salt End,41398
+United Kingdom,"Scalloway,Shetland Is",41698
+United Kingdom,Seaforth,41269
+United Kingdom,Seal Sands,41377
+United Kingdom,Sharpness,41299
+United Kingdom,Sheerness,41370
+United Kingdom,Shellhaven,41371
+United Kingdom,Shields,41398
+United Kingdom,Shields Harbor,41398
+United Kingdom,Silloth,41299
+United Kingdom,Southhampton,41374
+United Kingdom,Stanlow,41227
+United Kingdom,Stockton,41398
+United Kingdom,Sullom Voe,41682
+United Kingdom,Sunderland,41376
+United Kingdom,Sutton Harbor,41398
+United Kingdom,Swansea,41485
+United Kingdom,Tees,41377
+United Kingdom,Teesport,41377
+United Kingdom,Teignmouth,41398
+United Kingdom,Teignmouth Harbor,41398
+United Kingdom,Thames Haven,41378
+United Kingdom,Thamesport,41351
+United Kingdom,Tilbury,41380
+United Kingdom,Troon,41600
+United Kingdom,Truro,41398
+United Kingdom,Tynemouth,41398
+United Kingdom,Wallsend,41398
+United Kingdom,Warren Point,41805
+United Kingdom,Warrenpoint,41805
+United Kingdom,Weymouth,41398
+United Kingdom,Wisbech,41398
+United Kingdom,Workington,41299
+United Kingdom,Yarmouth,41398
+United Kingdom,Yarmouth Harbor,41398
+Unknown,All Other Leeward Islands,24800
+Unknown,"All Other Pacific Islands, N.E.C. Ports",68699
+Unknown,"All Other Southern Asia, N.E.C. Ports",56899
+Unknown,All Other Southern Pacific Islands,62299
+Unknown,All Other Windward Island Ports,24899
+Unknown,High Seas,99900
+Unknown,"High Seas,Gulf of Mexico",99930
+Unknown,"High Seas,North Atlantic",99910
+Unknown,"High Seas,North Pacific",99940
+Unknown,"High Seas,South Atlantic",99920
+Unknown,"High Seas,South Pacific",99950
+Uruguay,All Other Uruguay Ports,35500
+Uruguay,Colonia,35500
+Uruguay,Fray Bentos,35500
+Uruguay,Jose Ignacio Terminal,35500
+Uruguay,Montevideo,35525
+Uruguay,Nueva Palmira,35535
+Uruguay,Paysandu,35500
+Uruguay,Punta del Este,35537
+Vanuatu,Luganville,62201
+Vanuatu,Palikulo,62207
+Vanuatu,Port Vila,62209
+Vanuatu,Santo,62207
+Venezuela,Adicora,30700
+Venezuela,All Other Venezuela Ports,30700
+Venezuela,Altagracia,30700
+Venezuela,Amuay Bay,30704
+Venezuela,Bachaquero,30700
+Venezuela,Bahia Guanta,30741
+Venezuela,Bahia de Amuay,30704
+Venezuela,Bajo Grande,30708
+Venezuela,Bobures,30700
+Venezuela,Cabimas,30700
+Venezuela,Caracas,30745
+Venezuela,Caripito,30772
+Venezuela,Carupano,30721
+Venezuela,Chichiriviche,30700
+Venezuela,Ciudad Bolivar,30725
+Venezuela,Coloncha,30700
+Venezuela,Coro,30765
+Venezuela,Cumana,30769
+Venezuela,Cumarebo,30766
+Venezuela,El Chaure,30735
+Venezuela,El Guamache,30774
+Venezuela,El Palito,30737
+Venezuela,El Tablazo,30739
+Venezuela,Guanta,30741
+Venezuela,Guaranao,30742
+Venezuela,Guiria,30700
+Venezuela,Jose,30743
+Venezuela,La Ceiba,30700
+Venezuela,La Guaira,30745
+Venezuela,La Salina,30753
+Venezuela,Lagunillas,30700
+Venezuela,Las Piedras,30755
+Venezuela,Maracaibo,30759
+Venezuela,Matanzas,30760
+Venezuela,Moron,30758
+Venezuela,Palua,30761
+Venezuela,Pampatar,30700
+Venezuela,Pertigalete,30775
+Venezuela,Petrozuata,30743
+Venezuela,Porlamar,30700
+Venezuela,Puerto Cabello,30764
+Venezuela,Puerto Cumarebo,30700
+Venezuela,Puerto Espiritu,30700
+Venezuela,Puerto Gorda,30700
+Venezuela,Puerto Jose,30743
+Venezuela,Puerto La Cruz,30771
+Venezuela,Puerto Miranda,30763
+Venezuela,Puerto Ordaz,30768
+Venezuela,Puerto Sucre,30769
+Venezuela,Puerto de Hierro,30700
+Venezuela,Punta Camacho,30700
+Venezuela,Punta Cardon,30770
+Venezuela,Punta Chavez,30737
+Venezuela,Punta Cuchillo,30767
+Venezuela,Punta Gorda,30700
+Venezuela,Punta Palmas,30773
+Venezuela,Punta Piedras,30700
+Venezuela,Rio Chico,30700
+Venezuela,Rio Sico,30700
+Venezuela,San Felix,30780
+Venezuela,San Lorenzo,30700
+Venezuela,Tucacas,30700
+Venezuela,Turiamo,30700
+Vietnam,All Other Viet Nam Ports,55200
+Vietnam,Cam Pha,55205
+Vietnam,Cam Rahn Bay,55207
+Vietnam,Cam Ranh Bay,55207
+Vietnam,Da Nang,55204
+Vietnam,Hai Phong,55201
+Vietnam,Haiphong,55201
+Vietnam,Ho Chi Minh City,55224
+Vietnam,Hon Gai,55202
+Vietnam,Hon Gay,55202
+Vietnam,Nha Trang,55208
+Vietnam,Port Campha,55205
+Vietnam,Port Redon,55200
+Vietnam,Saigon,55224
+Vietnam,Tan Cang,55225
+Vietnam,Thanh Pho Ho Chi Minh,55224
+Vietnam,Tourane,55204
+Vietnam,Vung Tau,55206
+Wallis,All Wallis and Futuna Ports,64131
+Wallis,"Mata-Utu, Futuna",64131
+Wallis,"Singave, Futuna",64131
+Western Sahara,All Other Western Sahara Ports,73700
+Western Sahara,Dakhla,73700
+Western Sahara,Laayoune,73701
+Western Sahara,Villa Cisneros,73700
+Yemen,Aden,52101
+Yemen,Al Hudayah,52115
+Yemen,Al Mokha,52125
+Yemen,Al Mukalla,52100
+Yemen,All Other Yemen Ports,52100
+Yemen,Hodeida,52115
+Yemen,Hodeidah,52115
+Yemen,Mocha,52125
+Yemen,Mokha,52125
+Yemen,Mukalla,52100
+Yemen,Perim Island,52100
+Yemen,Saleef,52100

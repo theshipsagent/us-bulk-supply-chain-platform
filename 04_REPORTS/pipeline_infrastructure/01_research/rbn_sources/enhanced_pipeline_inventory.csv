@@ -1,0 +1,183 @@
+Project Name,Commodity,In Service Date,Operator,Owner,Project Type,Stage,State(s),Capacity,Diameter,Length (miles),Origin,Destination,Markets Served,FERC Docket,Significance
+Louisiana Energy Gateway (LEG),Natural Gas,Q4 2025,Williams Companies,Williams Companies,New Build,Operational,"Louisiana, Texas",1.8 Bcf/d,42 inches,135,Haynesville Shale (DeSoto Parish LA / Panola County TX),"Gillis Hub, Cameron Parish, Louisiana","Gulf Coast LNG export facilities (Cameron, Sabine Pass, future projects)",CP21-18,Major Haynesville takeaway; primary LNG feed infrastructure; $1B+ investment
+NG3 Pipeline,Natural Gas,Q4 2025,Momentum Midstream,Momentum Midstream,New Build,Operational,"Louisiana, Texas",2.2 Bcf/d,Large-diameter,TBD,Haynesville Shale production area,Gulf Coast LNG markets,LNG export facilities,,Critical Haynesville takeaway for LNG demand growth
+TransCameron,Natural Gas,Q4 2022,Venture Global LNG,Venture Global LNG,New Build,Operational,Louisiana,1.6 Bcf/d,,,"Haynesville area, interstate interconnections","Calcasieu Pass LNG, Cameron Parish, Louisiana",Calcasieu Pass LNG (1.6 Bcf/d export facility),,Dedicated feed for Venture Global's Calcasieu Pass LNG
+Gator Express,Natural Gas,2024-2025,Venture Global LNG,Venture Global LNG,New Build,Operational,Louisiana,2.9 Bcf/d,,,Haynesville area production,"Plaquemines LNG, Plaquemines Parish, Louisiana","Plaquemines LNG (2.9 Bcf/d export facility, 50-75 mi from AMAX site)",,Located in same parish as AMAX Port Nickel site; major local infrastructure
+CP Express / Delta Express,Natural Gas,TBD,Venture Global LNG,Venture Global LNG,New Build,Development,Louisiana,2.8 Bcf/d,,,Haynesville production area,"CP2 LNG, Cameron Parish, Louisiana",CP2 LNG (2.8 Bcf/d proposed facility),,Proposed; contingent on CP2 DOE approval (paused January 2024)
+Gulf Run,Natural Gas,Q4 2023,Energy Transfer (formerly Enable),Energy Transfer,New Build,Operational,Louisiana,TBD,,,Haynesville Shale production area,Gulf Coast markets,"Haynesville production takeaway, Gulf Coast industrial/LNG demand",,Haynesville takeaway capacity
+Gulf Coast Express,Natural Gas,Q4 2019,Kinder Morgan,Kinder Morgan,New Build,Operational,Texas,2.0 Bcf/d,42 inches,450,"Waha Hub, West Texas (Permian Basin)","Agua Dulce, South Texas","South Texas LNG export facilities, Mexican gas exports, Gulf Coast markets",,Major Permian gas takeaway to Gulf Coast LNG markets
+Permian Highway Pipeline,Natural Gas,Q4 2020,Kinder Morgan,Kinder Morgan,New Build,Operational,Texas,2.1 Bcf/d,42 inches,430,"Waha Hub, West Texas (Permian Basin)","Katy, Texas (Houston area)","Gulf Coast LNG export, Houston area demand, Mexico exports",CP17-459,Major Permian takeaway to Houston/Gulf Coast
+Whistler Pipeline,Natural Gas,Q4 2026,WhiteWater Midstream,"MPLX, WhiteWater, Stonepeak, WTG JV",New Build,Development,Texas,2.0 Bcf/d,,,"Permian Basin, West Texas",Agua Dulce / Gulf Coast,"LNG export facilities, Gulf Coast markets",,Future Permian takeaway capacity
+Matterhorn Express,Natural Gas,Q4 2024,WhiteWater Midstream,WhiteWater Midstream,New Build,Operational,Texas,2.5 Bcf/d,,,"Waha Hub, West Texas (Permian Basin)","Katy, Texas (Houston area)","Gulf Coast LNG, Houston demand",,Permian to Houston corridor
+Hugh Brinson,Natural Gas,Q4 2026,Energy Transfer,Energy Transfer,New Build,Development,Texas,1.5 Bcf/d est,,,Waha Hub (West Texas),Dallas-Fort Worth area,"Power generation, industrial demand",,Permian gas to DFW market
+Golden Pass (Feed Pipeline),Natural Gas,Operational,Golden Pass LNG (QE/XOM/COP),"QatarEnergy 70%, ExxonMobil 30%",Repurposed,Operational,Texas,2.5 Bcf/d,,,Interstate pipeline interconnections,"Golden Pass LNG, Sabine Pass, Texas",Golden Pass LNG (2.5 Bcf/d export facility under construction),,Repurposed from LNG import to export feed pipeline
+Port Arthur-Louisiana Connector,Natural Gas,Q2 2026,Sempra Infrastructure,Sempra Infrastructure,New Build,Development,"Louisiana, Texas",1.9 Bcf/d,,,Louisiana pipeline interconnections,"Port Arthur LNG, Port Arthur, Texas",Port Arthur LNG (1.9 Bcf/d facility under construction),,Feed for Port Arthur LNG under construction
+Rio Bravo,Natural Gas,Q4 2026,Enbridge,Enbridge,New Build,Development,Texas,3.6 Bcf/d,,,South Texas pipeline interconnections,"Rio Grande LNG, Brownsville, Texas",Rio Grande LNG (3.6 Bcf/d facility under construction),,Feed for Rio Grande LNG under construction
+Driftwood (Feed Pipeline),Natural Gas,Q4 2024,Tellurian,Tellurian,New Build,Development,Louisiana,3.6 Bcf/d,,,Haynesville area,"Driftwood LNG, Calcasieu Parish, Louisiana",Driftwood LNG (proposed 3.6 Bcf/d facility),,Project status uncertain due to Tellurian financial challenges
+Haynesville Global Access Pipeline (HGAP),Natural Gas,Q4 2024,Tellurian,Tellurian,New Build,On Hold,Louisiana,TBD,,,Haynesville production area,Driftwood LNG (Louisiana Gulf Coast),Driftwood LNG project,,On hold pending Driftwood project status
+Transco (System),Natural Gas,Operating (1950s-1980s),Williams Companies,Williams Companies,Interstate System,Operational,"TX, LA, MS, AL, GA, SC, NC, VA, MD, PA, NJ, NY",~15 Bcf/d,Up to 42 inches,,"Gulf Coast (Texas, Louisiana)",New York metro area,"LNG export (Cameron, Sabine Pass), Gulf Coast industrial, Southeast US, Mid-Atlantic, Northeast",,Largest US gas transmission system; primary LNG feed infrastructure
+Texas Eastern (TETCO),Natural Gas,Operating (historic),Enbridge,Enbridge,Interstate System,Operational,"TX, LA, AR, MS, TN, KY, WV, OH, PA, NJ",~10 Bcf/d,Up to 36 inches,,"Gulf Coast (TX, LA)",Northeast (PA/NJ),"Northeast markets, Gulf Coast supply, Appalachian takeaway",,Major interstate system with Louisiana operations
+Tennessee Gas Pipeline,Natural Gas,Operating (historic),Kinder Morgan,Kinder Morgan,Interstate System,Operational,"TX, LA, AR, MS, TN, KY, WV, OH, PA, NY, CT, MA, RI",~11 Bcf/d,Up to 36 inches,,Gulf Coast,Northeast/New England,Gulf Coast production to Northeast/New England markets,,Major interstate system; 500 Line through Louisiana
+Bayou Bridge,Crude Oil,Q1 2016,Energy Transfer,Energy Transfer,New Build,Operational,"Texas, Louisiana",480000 BPD,24 inches,162,"Nederland, Texas (Beaumont/Port Arthur area)","St. James, Louisiana",Louisiana Gulf Coast refineries (Baton Rouge area),,Connects to St. James terminals (Marathon, Shell, Phillips 66)
+Bayou Bridge Extension,Crude Oil,Q1 2019,Energy Transfer,Energy Transfer,Extension,Operational,Louisiana,480000 BPD,24 inches,,"Nederland, Texas",St. James Louisiana refineries,Louisiana refineries,,Extension of Bayou Bridge system
+Capline Reversal - Heavy Crude,Crude Oil,Q1 2022,Plains All American,Plains All American,Reversal,Operational,"IL, IN, KY, TN, MS, LA",~1.2M BPD,40 inches,630,"Patoka, Illinois (post-reversal source)","St. James, Louisiana",Louisiana Gulf Coast refineries (supplies domestic crude from Midwest/Cushing),,Historic pipeline (built 1960s) reversed 2021; originally moved LOOP imports north
+Capline Reversal - Light Crude,Crude Oil,Q3 2020,Plains All American,Plains All American,Reversal,Operational,"IL, IN, KY, TN, MS, LA",~1.2M BPD,40 inches,630,"Patoka, Illinois","St. James, Louisiana",Louisiana Gulf Coast refineries,,Reversed due to US shale boom reducing imports
+Wink to Webster,Crude Oil,Q4 2021,ExxonMobil,ExxonMobil,New Build,Operational,Texas,1.0M BPD,30 inches,650,"Wink, Texas (Permian Basin)","Webster, Texas (Houston area)","Houston area refineries, Gulf Coast export terminals",,ExxonMobil's major Permian takeaway investment
+EPIC Pipeline,Crude Oil,Q3 2019,EPIC Midstream,EPIC Midstream,New Build,Operational,Texas,900000 BPD,30 inches,730,"McCamey, Texas (Permian Basin)","Corpus Christi, Texas",Corpus Christi refineries and export terminals,,Permian to Corpus Christi corridor
+Gray Oak,Crude Oil,Q1 2020,Enbridge,"Enbridge, Phillips 66 JV",New Build,Operational,Texas,1.0M BPD,36 inches,385,"Wink, Texas (Permian Basin)","Corpus Christi and Sweeny, Texas (Gulf Coast)","Gulf Coast refineries, export terminals",,Enbridge/Phillips 66 joint venture
+Cactus II,Crude Oil,Q3 2019,Plains All American,Plains All American,New Build,Operational,Texas,670000 BPD,30 inches,550,"Permian Basin, West Texas","Corpus Christi and Ingleside, Texas","Gulf Coast refineries, export terminals",,Plains Permian takeaway system
+Daytona,NGLs,Q3 2024,Targa Resources,Targa Resources,New Build,Operational,Texas,400000+ BPD,,,"Permian Basin, West Texas","Mont Belvieu, Texas (NGL fractionation hub)","Petrochemical plants, export terminals",,Major Permian NGL takeaway
+Grand Prix,NGLs,Q2 2019,Targa Resources,Targa Resources,New Build,Operational,Texas,250000+ BPD,,,"Permian Basin, West Texas",Mont Belvieu Texas,"Petrochemicals, exports",,Targa NGL infrastructure
+EPIC NGL,NGLs,Q3 2020,EPIC Midstream,EPIC Midstream,New Build,Operational,Texas,250000 BPD,,,Permian Basin,"Corpus Christi, Texas",Petrochemicals,,Companion to EPIC crude pipeline
+Shin Oak NGL,NGLs,Q2 2019,Enterprise Products Partners,Enterprise Products Partners,New Build,Operational,Texas,200000 BPD,,,Permian Basin,Mont Belvieu Texas,Petrochemicals,,Enterprise NGL system
+Lone Star NGL Express,NGLs,Q2 2016,Energy Transfer,Energy Transfer,New Build,Operational,Texas,150000+ BPD,,,Permian Basin,Mont Belvieu Texas,Petrochemicals,,Energy Transfer NGL infrastructure
+Mariner East 2,NGLs,Q2 2018,Energy Transfer,Energy Transfer,Expansion,Operational,"OH, WV, PA",345000 BPD,20 inches,350,"Marcellus/Utica Shale (Southwest PA, Southeast OH)","Marcus Hook, PA (Delaware River export terminal)",European petrochemical markets (export-focused),,Appalachian NGL export infrastructure
+ACE Pipeline,Crude Oil,Q4 2020,Harvest Midstream,Harvest Midstream,New Build,Cancelled,,,,,,,,,
+Alberta Clipper Expansion Phase II,Crude Oil,Q3 2015,Enbridge,Enbridge,,Operational,,,,,,,,,
+BridgeTex Expansion,Crude Oil,Q1 2019,ONEOK,ONEOK,Expansion,Operational,,,,,,,,,
+Cactus,Crude Oil,Q2 2015,Plains All American,Plains All American,New Build,Operational,,,,,,,,,
+Cactus Expansion,Crude Oil,Q4 2017,Plains All American,Plains All American,Expansion,Operational,,,,,,,,,
+Caddo,Crude Oil,Q4 2016,Plains All American,Plains All American,New Build,Operational,,,,,,,,,
+Cushing MarketLink Houston Lateral,Crude Oil,Q2 2017,TC Energy,TC Energy,New Build,Operational,,,,,,,,,
+Dakota Access (DAPL),Crude Oil,Q2 2017,Energy Transfer,Energy Transfer,New Build,Operational,"ND, SD, IA, IL",570000 BPD,30 inches,1172,"Bakken Shale, North Dakota","Patoka, Illinois",Midwest refineries,,Major Bakken takeaway; controversial routing
+Delaware Basin Extension,Crude Oil,Q2 2016,Energy Transfer,Energy Transfer,New Build,Operational,,,,,,,,,
+Diamond,Crude Oil,Q4 2017,Plains All American,Plains All American,New Build,Operational,,,,,,,,,
+Diamond Expansion,Crude Oil,Q3 2020,Plains All American,Plains All American,Expansion,Cancelled,,,,,,,,,
+Enbridge- Line 3 Replacement,Crude Oil,Q4 2021,Enbridge,Enbridge,replacement,Operational,"MN, WI",760000 BPD,36 inches,337,Alberta Canada,Superior Wisconsin,Midwest refineries,,Line 3 replacement project (controversial)
+Energy East,Crude Oil,Q4 2020,TC Energy,TC Energy,Combination,Cancelled,"Alberta to New Brunswick, Canada",,,,,,,,Major Canadian project cancelled
+Energy Transfer Crude Oil Pipeline (ETCOP),Crude Oil,Q2 2017,Energy Transfer,Energy Transfer,Combination,Operational,,,,,,,,,
+Equality,Crude Oil,Q3 2020,Bridger Pipeline,Bridger Pipeline,New Build,Operational,,,,,,,,,
+Freedom,Crude Oil,Q4 2018,Kinder Morgan,Kinder Morgan,Conversion,Cancelled,,,,,,,,,
+Grand Mesa,Crude Oil,Q4 2016,NGL Energy Partners,NGL Energy Partners,New Build,Operational,,,,,,,,,
+Grand Rapids Northbound,Crude Oil,Q2 2017,TC Energy,TC Energy,New Build,Operational,,,,,,,,,
+Grand Rapids Southbound,Crude Oil,Q2 2017,TC Energy,TC Energy,New Build,Operational,,,,,,,,,
+HoustonLink,Crude Oil,Q4 2016,ONEOK,ONEOK,,Operational,,,,,,,,,
+Inland California Express,Crude Oil,Q4 2017,Questar,Questar,Reactivation,Cancelled,,,,,,,,,
+Jupiter Crude Pipeline,Crude Oil,Q4 2020,JupiterMLP,JupiterMLP,New Build,Cancelled,,,,,,,,,
+Keystone XL,Crude Oil,Q4 2023,TC Energy,TC Energy,New Build,Cancelled,"Alberta to NE, TX",830000 BPD,36 inches,1210,Alberta Canada,Steele City Nebraska / Gulf Coast,Midwest and Gulf Coast refineries,,Major controversial project; cancelled 2021
+Knight Warrior,Crude Oil,,Blueknight Energy Partners,Blueknight Energy,New Build,Cancelled,,,,,,,,,
+Liberty,Crude Oil,Q2 2021,Phillips 66,Phillips 66,,Cancelled,,,,,,,,,
+Midland to ECHO I,Crude Oil,Q3 2020,Enterprise Products Partners,Enterprise Products Partners,Expansion,Operational,,,,,,,,,
+Midland to ECHO II,Crude Oil,Q1 2019,Enterprise Products Partners,Enterprise Products Partners,,Operational,,,,,,,,,
+Midland to ECHO III,Crude Oil,Q3 2020,Enterprise Products Partners,Enterprise Products Partners,Expansion,Operational,,,,,,,,,
+Midland to ECHO IV,Crude Oil,Q2 2021,Enterprise Products Partners,Enterprise Products Partners,Expansion,Cancelled,,,,,,,,,
+Minnesota Pipeline Reliability Project,Crude Oil,,Koch Pipeline,Koch Pipeline,,Operational,,,,,,,,,
+Northern Gateway Eastbound,Crude Oil,Q4 2018,Enbridge,Enbridge,New Build,Cancelled,"Alberta to BC Coast, Canada",,,,,,,,Canadian project; cancelled due to environmental opposition
+Northern Gateway Westbound,Crude Oil,Q4 2018,Enbridge,Enbridge,New Build,Cancelled,"Alberta to BC Coast, Canada",,,,,,,,Canadian project; cancelled
+Permian Express II,Crude Oil,Q3 2015,Energy Transfer,Energy Transfer,New Build,Operational,,,,,,,,,
+Permian Express III,Crude Oil,Q3 2018,Energy Transfer,Energy Transfer,Expansion,Operational,,,,,,,,,
+Permian Express IV,Crude Oil,Q3 2019,Energy Transfer,Energy Transfer,Expansion,Operational,,,,,,,,,
+Permian Longview and Louisiana Extension (PELA),Crude Oil,Q2 2016,Energy Transfer,Energy Transfer,Expansion,Operational,,,,,,,,,
+Platte Twin (Guernsey to Patoka),Crude Oil,Q4 2017,Enbridge,Enbridge,New Build,Cancelled,,,,,,,,,
+Pony Express Northeast CO Lateral,Crude Oil,Q2 2015,Tallgrass Energy,Tallgrass Energy,New Build,Operational,,,,,,,,,
+Rancho II,Crude Oil,Q3 2015,Enterprise Products Partners,Enterprise Products Partners,New Build,Operational,,,,,,,,,
+Red Oak,Crude Oil,Q2 2021,Phillips 66,Phillips 66,New Build,Cancelled,,,,,,,,,
+Red River Expansion,Crude Oil,Q2 2020,Plains All American,Plains All American,,do_not_use,,,,,,,,,
+RIO,Crude Oil,Q2 2016,Rangeland,Rangeland,New Build,Operational,,,,,,,,,
+Saddlehorn,Crude Oil,Q2 2016,ONEOK,ONEOK,New Build,Operational,,,,,,,,,
+Sandpiper,Crude Oil,Q1 2019,Enbridge,Enbridge,New Build,Cancelled,,,,,,,,,Bakken to Superior; cancelled
+Seahorse Pipeline,Crude Oil,Q3 2021,Tallgrass Energy,Tallgrass Energy,New Build,Cancelled,,,,,,,,,
+South Bend Line,Crude Oil,Q2 2021,Bridger Pipeline,Bridger Pipeline,,Operational,,,,,,,,,
+South Texas Gateway,Crude Oil,Q2 2020,Buckeye Partners,Buckeye Partners,New Build,Cancelled,,,,,,,,,
+Southern Access Extension (SAX),Crude Oil,Q2 2016,Enbridge,Enbridge,New Build,Operational,,,,,,,,,
+Ted Collins Link,Crude Oil,Q4 2021,Energy Transfer,Energy Transfer,Combination,Operational,,,,,,,,,
+Trans Mountain Expansion,Crude Oil,Q4 2020,Canadian Government,Canadian Government,Expansion,Operational,"Alberta to BC, Canada",890000 BPD,,,Alberta,Burnaby BC,Asia-Pacific export markets,,Canadian government-owned after purchase from Kinder Morgan
+Westward Ho,Crude Oil,Q4 2017,Shell Midstream,Shell Midstream,New Build,Cancelled,,,,,,,,,
+White Cliffs Expansion,Crude Oil,Q4 2015,Energy Transfer,Energy Transfer,Expansion,do_not_use,,,,,,,,,
+Access Northeast,Natural Gas,Q4 2019,Algonquin,Algonquin,Expansion,On Hold,,,,,,,,,New England capacity; on hold
+Access South,Natural Gas,Q4 2017,Enbridge,Enbridge,Reversal,Operational,,,,,,,,,
+Adair Southwest,Natural Gas,Q4 2017,Enbridge,Enbridge,Reversal,Operational,,,,,,,,,
+ADCC,Natural Gas,,WhiteWater Midstream,WhiteWater Midstream,New Build,Operational,,,,,,,,,
+Agua Blanca,Natural Gas,Q2 2018,WhiteWater Midstream,WhiteWater Midstream,,Operational,,,,,,,,,
+Agua Blanca Expansion,Natural Gas,Q4 2020,WhiteWater Midstream,WhiteWater Midstream,Expansion,Operational,,,,,,,,,
+Algonquin Incremental Market (AIM),Natural Gas,Q4 2016,Algonquin,Algonquin,Expansion,Operational,,,,,,,,,
+APEX,Natural Gas,,Targa Resources,Targa Resources,New Build,Announced,,,,,,,,,
+Appalachian Connector,Natural Gas,Q4 2018,Transco,Transco (Williams),New Build,On Hold,,,,,,,,,
+Atlantic Bridge,Natural Gas,Q4 2020,Algonquin,Algonquin,Expansion,Under Construction,,,,,,,,,
+Atlantic Coast Pipeline,Natural Gas,Q1 2021,Atlantic Coast,Atlantic Coast (Dominion/Duke),New Build,Cancelled,"WV, VA, NC",1.5 Bcf/d,42 inches,600,West Virginia,North Carolina,Southeast markets,,Major Appalachian project; cancelled 2020
+Atlantic Sunrise,Natural Gas,Q4 2018,Transco,Transco (Williams),Reversal,Operational,,,,,,,,,
+Bay Runner,Natural Gas,Q4 2099,WhiteWater Midstream,WhiteWater Midstream,New Build,Announced,,,,,,,,,
+Blackfin,Natural Gas,,WhiteWater Midstream,WhiteWater Midstream,New Build,Development,,,,,,,,,
+Bluebonnet Market Express,Natural Gas,Q4 2020,Williams,Williams,New Build,Cancelled,,,,,,,,,
+Broad Run Expansion Project,Natural Gas,Q4 2017,Tennessee Gas,Tennessee Gas (Kinder Morgan),Expansion,Operational,,,,,,,,,
+Broad Run Flexibility,Natural Gas,Q4 2015,Tennessee Gas,Tennessee Gas (Kinder Morgan),Reversal,Operational,,,,,,,,,
+CJ Express,Natural Gas,Q1 2021,Midcoast Energy,Midcoast Energy,,Operational,,,,,,,,,
+Coastal GasLink,Natural Gas,Q1 2023,TC Energy,TC Energy,New Build,Under Construction,"BC, Canada",2.1 Bcf/d,36 inches,416,Northeast BC,Kitimat BC (LNG Canada),LNG Canada export facility,,Canadian LNG feed pipeline
+Comanche Trail,Natural Gas,Q1 2017,Energy Transfer,Energy Transfer,New Build,Operational,,,,,,,,,
+Constitution,Natural Gas,Q3 2017,Williams,Williams,New Build,Cancelled,"PA, NY",0.65 Bcf/d,30 inches,124,Susquehanna County PA,Schoharie County NY,Northeast markets,,Cancelled 2016 due to NY permit denial
+Continent to Coast (C2C) expansion,Natural Gas,Q4 2017,PNGTS,Portland Natural Gas Transmission,Expansion,Operational,,,,,,,,,
+Dalton expansion,Natural Gas,Q2 2017,Transco,Transco (Williams),Expansion,Operational,,,,,,,,,
+DeLa Express,Natural Gas,,Moss Bluff Partners,Moss Bluff Partners,,Announced,,,,,,,,,
+Double E,Natural Gas,Q4 2021,Summit Midstream,Summit Midstream,,Operational,,,,,,,,,
+East Side Expansion,Natural Gas,Q4 2015,Columbia Pipeline Group/TC Energy,TC Energy,Expansion,Operational,,,,,,,,,
+Empire North Expansion,Natural Gas,Q3 2020,Empire Pipeline Co,Empire Pipeline Co,Expansion,Operational,,,,,,,,,
+Florida Southeast Connection,Natural Gas,Q4 2017,Florida Southeat Connection,Florida Southeast Connection,,Operational,,,,,,,,,
+Gillis Lateral,Natural Gas,Q2 2021,Enterprise Products Partners,Enterprise Products Partners,,Operational,,,,,,,,,
+Glen Karn Phase I,Natural Gas,Q4 2014,ANR Pipeline Company,ANR (TC Energy),Expansion,Operational,,,,,,,,,
+Glen Karn Phase II,Natural Gas,Q4 2014,ANR Pipeline Company,ANR (TC Energy),Expansion,Operational,,,,,,,,,
+Gulf Markets Expansion Phase II,Natural Gas,Q3 2017,Enbridge,Enbridge,Expansion,Operational,,,,,,,,,
+Gulf Trace Expansion,Natural Gas,Q1 2017,Williams,Williams,,Operational,,,,,,,,,
+Gulf Xpress,Natural Gas,Q1 2019,Columbia Pipeline Group/TC Energy,TC Energy,Combination,Operational,,,,,,,,,
+Leach Xpress,Natural Gas,Q4 2017,Columbia Pipeline Group/TC Energy,TC Energy,Reversal,Operational,,,,,,,,,
+Lebanon Lateral 2014 Project,Natural Gas,Q1 2014,ANR Pipeline Company,ANR (TC Energy),Expansion,Operational,,,,,,,,,
+Lebanon West II,Natural Gas,Q4 2016,Dominion Transmission,Dominion Transmission,Expansion,Operational,,,,,,,,,
+Leidy Southeast,Natural Gas,Q4 2015,Transco,Transco (Williams),Expansion,Operational,,,,,,,,,
+Line N Westside expansion,Natural Gas,Q4 2015,National Fuel Gas,National Fuel Gas,Expansion,Operational,,,,,,,,,
+Mountain Valley,Natural Gas,Q4 2021,MVP,MVP (Equitrans),New Build,Operational,"WV, VA",2.0 Bcf/d,42 inches,303,West Virginia,Virginia,Southeast markets,,Major Appalachian project; completed after delays
+Nexus Pipeline,Natural Gas,Q3 2018,NEXUS Gas Transmission,NEXUS,New Build,Operational,,,,,,,,,
+NGPL- Gulf Coast Southbound Expansion Phase II,Natural Gas,Q2 2021,Kinder Morgan,Kinder Morgan,Expansion,Development,,,,,,,,,
+NGPL- Gulf Coast Southbound Expansion Project,Natural Gas,Q4 2018,Kinder Morgan,Kinder Morgan,Reversal,Operational,,,,,,,,,
+NGPL Texas Louisiana Expansion,Natural Gas,,Kinder Morgan,Kinder Morgan,,Operational,,,,,,,,,
+Northeast Energy Direct,Natural Gas,Q4 2018,Tennessee Gas,Tennessee Gas (Kinder Morgan),Combination,Cancelled,,,,,,,,,New England capacity; cancelled 2016
+Northern Supply Access (TGT expansion),Natural Gas,Q2 2017,Texas Gas Transmission,Texas Gas Transmission (Boardwalk),Reversal,Operational,,,,,,,,,
+Nueva Era,Natural Gas,Q4 2017,Nueva Era,Nueva Era,New Build,Operational,,,,,,,,,
+Ohio Valley Connector,Natural Gas,Q4 2016,EQT,EQT,New Build,Operational,,,,,,,,,
+Panhandle Reversal,Natural Gas,Q2 2017,Energy Transfer,Energy Transfer,Reversal,Operational,,,,,,,,,
+Pecos Trail,Natural Gas,Q2 2021,NAmerico,NAmerico,New Build,On Hold,,,,,,,,,
+Penn East,Natural Gas,Q1 2022,PennEast Pipeline,PennEast Pipeline,New Build,Cancelled,"PA, NJ",1.1 Bcf/d,36 inches,120,Luzerne County PA,Mercer County NJ,New Jersey markets,,Appalachian project; cancelled 2021
+Permian Global Access Pipeline (PGAP),Natural Gas,,Tellurian,Tellurian,,Cancelled,,,,,,,,,
+Prairie State,Natural Gas,Q4 2017,TallGrass Energy,TallGrass Energy,New Build,Cancelled,,,,,,,,,
+REX- Zone 3 Capacity Enhancement,Natural Gas,Q3 2015,Rockies Express,Rockies Express,Reversal,Operational,,,,,,,,,
+Roadrunner Phase II,Natural Gas,Q4 2016,ONEOK,ONEOK,Expansion,Operational,,,,,,,,,
+Roadrunner Phase III,Natural Gas,Q4 2019,ONEOK,ONEOK,Expansion,Operational,,,,,,,,,
+Rose Lake,Natural Gas,Q4 2014,Tennessee Gas,Tennessee Gas (Kinder Morgan),Expansion,Operational,,,,,,,,,
+Rover Pipeline Phase I,Natural Gas,Q4 2017,Energy Transfer,Energy Transfer,New Build,Operational,,,,,,,,,
+Rover Pipeline Phase II,Natural Gas,Q1 2018,Energy Transfer,Energy Transfer,New Build,Operational,,,,,,,,,
+Sabal Trail Transmission,Natural Gas,Q2 2017,Enbridge,Enbridge,New Build,Operational,"AL, GA, FL",1.0 Bcf/d,36 inches,515,Alabama,Central Florida,Florida power generation,,Southeast gas corridor to Florida
+Saguaro Connector,Natural Gas,Q4 2026,ONEOK,ONEOK,New Build,Development,,,,,,,,,
+Southeast Mainline Reversal,Natural Gas,Q4 2015,ANR Pipeline Company,ANR (TC Energy),Reversal,Operational,,,,,,,,,
+Southwest Louisiana Supply Project,Natural Gas,Q1 2018,Tennessee Gas,Tennessee Gas (Kinder Morgan),Reversal,Operational,,,,,,,,,
+Sunbury,Natural Gas,Q1 2017,UGI Energy Services,UGI Energy Services,New Build,Operational,,,,,,,,,
+TETCO Gulf Markets Expansion- Phase I,Natural Gas,Q4 2016,Enbridge,Enbridge,Reversal,Operational,,,,,,,,,
+TETCO OPEN Project,Natural Gas,Q4 2015,Enbridge,Enbridge,Reversal,Operational,,,,,,,,,
+TETCO Team 2014,Natural Gas,Q3 2014,Enbridge,Enbridge,Expansion,Operational,,,,,,,,,
+Transco Texas to LA Energy Pathway,Natural Gas,,Williams,Williams,,Operational,,,,,,,,,
+Trans-Pecos,Natural Gas,Q1 2017,Energy Transfer,Energy Transfer,New Build,Operational,,,,,,,,,
+Trunkline Reversal,Natural Gas,Q2 2017,Energy Transfer,Energy Transfer,Reversal,Operational,,,,,,,,,
+Utica Access,Natural Gas,Q4 2016,Columbia Pipeline Group/TC Energy,TC Energy,Expansion,Operational,,,,,,,,,
+Utica Backhaul Transportation,Natural Gas,Q2 2014,Kinder Morgan,Kinder Morgan,,Operational,,,,,,,,,
+Valley Crossing,Natural Gas,Q4 2018,Enbridge,Enbridge,New Build,Operational,,,,,,,,,
+Aegis Phase I,NGLs,Q3 2014,Enterprise Products Partners,Enterprise Products Partners,New Build,Operational,,,,,,,,,
+Aegis Phase II,NGLs,Q3 2015,Enterprise Products Partners,Enterprise Products Partners,Extension,Operational,,,,,,,,,
+Aegis Phase III,NGLs,Q4 2015,Enterprise Products Partners,Enterprise Products Partners,Extension,Operational,,,,,,,,,
+Arbuckle II,NGLs,Q1 2020,ONEOK,ONEOK,New Build,Operational,,,,,,,,,
+BANGL- Orla to Benedum,NGLs,Q4 2025,BANGL,BANGL,,Development,,,,,,,,,
+Bluestem,NGLs,Q1 2021,Williams/Targa JV,Williams/Targa JV,New Build,Operational,,,,,,,,,
+Cornerstone,NGLs,Q4 2016,MPLX,MPLX,New Build,Operational,,,,,,,,,
+Double H- Crude to NGL Conversion,NGLs,Q1 2026,Kinder Morgan,Kinder Morgan,Conversion,Development,,,,,,,,,
+Elk Creek NGL,NGLs,Q4 2019,ONEOK,ONEOK,New Build,Operational,,,,,,,,,
+Front Range Expansion,NGLs,Q1 2020,Enterprise Products Partners,Enterprise Products Partners,,Operational,,,,,,,,,
+Lone Star Express Expansion,NGLs,Q3 2020,Energy Transfer,Energy Transfer,Expansion,do_not_use,,,,,,,,,
+Lonestar Express Pipeline-Expansion 2026,NGLs,Q4 2026,Energy Transfer,Energy Transfer,Expansion,Development,,,,,,,,,
+Mariner East 2 Expansion,NGLs,,Energy Transfer,Energy Transfer,Combination,Operational,,,,,,,,,
+Mont Belvieu-to-Corpus Christi,NGLs,Q3 2015,Sunoco,Sunoco,Reactivation,idle,,,,,,,,,
+Sand Hills Expansion,NGLs,Q1 2018,Phillips 66 (DCP),Phillips 66,Expansion,do_not_use,,,,,,,,,
+Sterling III expansion,NGLs,Q4 2018,ONEOK,ONEOK,,do_not_use,,,,,,,,,
+Texas Express Expansion,NGLs,Q1 2020,Enterprise Products Partners,Enterprise Products Partners (Enbridge/WGP/DCP),,do_not_use,,,,,,,,,
+Thunder Creek NGL Pipeline,NGLs,Q1 2014,Western Midstream,Western Midstream,New Build,Operational,,,,,,,,,
+Tioga Lateral,NGLs,Q4 2020,ONEOK,ONEOK,New Build,Operational,,,,,,,,,
+Utica Marcellus Texas Pipeline,NGLs,Q4 2018,Kinder Morgan,Kinder Morgan,Combination,Cancelled,,,,,,,,,
+Utopia East,NGLs,Q1 2018,Kinder Morgan,Kinder Morgan,New Build,Operational,,,,,,,,,
+Utopia West,NGLs,Q4 2018,Kinder Morgan,Kinder Morgan,New Build,Cancelled,,,,,,,,,
+West Texas LPG Expansion,NGLs,Q1 2020,ONEOK,ONEOK,Expansion,do_not_use,,,,,,,,,
+West Texas NGL Expansion,NGLs,Q2 2025,ONEOK,ONEOK,Expansion,Development,,,,,,,,,

@@ -1,0 +1,40 @@
+icst type,Group,Commodity
+CHEMICAL TANKER,Liquid Bulk,Parcel
+CONTAINER,Dry Bulk,Container
+COVERED DRY CARGO BARGE,Dry Bulk,Barge
+CRUDE OIL TANKER,Liquid Bulk,Tanker
+CRUDE/PRODUCTS TANKER,Liquid Bulk,Tanker
+CRUISE,Other,Cruise
+DECK BARGE,Other,Offshore
+DREDGER,Other,Offshore
+DRILLING SHIP,Other,Offshore
+DRY CARGO BARGE,Dry Bulk,Barge
+FISH CATCHING,Other,Offshore
+FISH PROCESSING,Other,Offshore
+GENERAL CARGO-MULTI DECK NEI,,Bulk
+LIVESTOCK CARRIER,Dry Bulk,Livestock
+LNG CARRIER,Liquid Gas,Gas
+LPG CARRIER,Liquid Gas,Gas
+OIL PRODUCTS TANKER,Liquid Bulk,Tanker
+OTHER BULK CARRIER,Dry Bulk,Bulk
+OTHER BULK/OIL CARRIER,Liquid Bulk,Tanker
+OTHER DRY CARGO BARGE NEI,Dry Bulk,Barge
+OTHER GENERAL CARGO,Dry Bulk,Bulk
+OTHER LAKERS,Dry Bulk,Bulk
+OTHER LIQUIFIED GAS CARRIER,Liquid Gas,Gas
+OTHER NEI,Other,Offshore
+OTHER OFFSHORE PRODUCTION & SUPPORT,Other,Offshore
+OTHER PASSENGER,Other,Cruise
+OTHER RO-RO CARGO,Dry Bulk,Ro/Ro
+OTHER SPECIALIZED CARRIER NEI,Dry Bulk,Bulk
+OTHER TANK BARGE,Liquid Bulk,Tanker
+OTHER TANKER,Liquid Bulk,Tanker
+OTHER TANKER NEI,Liquid Bulk,Tanker
+PUSH BOAT,Other,Tug
+REEFER,Dry Bulk,Reefer
+RESEARCH/SURVEY,Other,Offshore
+RO-RO CONTAINER,Dry Bulk,Ro/Ro
+RO-RO PASSENGER,Dry Bulk,Ro/Ro
+TUG,Other,Tug
+TUG/SUPPLY OFFSHORE SUPPORT,Other,Offshore
+VEHICLE CARRIER,Dry Bulk,Ro/Ro

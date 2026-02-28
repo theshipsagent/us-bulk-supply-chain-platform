@@ -1,0 +1,13 @@
+# Python Requirements for USACE Entrance/Clearance Processing
+# Version: 1.0.0
+# Date: 2026-02-05
+
+# Core data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Excel file handling
+openpyxl>=3.1.0
+
+# Optional: For faster CSV processing
+# python-dateutil>=2.8.0

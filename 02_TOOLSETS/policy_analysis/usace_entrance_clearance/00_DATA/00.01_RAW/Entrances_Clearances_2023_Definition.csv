@@ -1,0 +1,24 @@
+FIELD NAME                          ,  DESCRIPTION   ,,Action,Retain in outpit
+Typedoc                                  , Type Document (0=Imports  1=Exports)       ,,"find 0 and replace Imports, find 1, replace exports",TRUE
+ECDate                             ,Entrance / Clearance Date (Format=mmydd)  ,,rename to Arrival Date,TRUE
+Port                    ,United States Customs & Border Protection District & Port Code                ,,"map to port dictionary, ensire to format text, to avid loss of trailing or leading zeros",TRUE
+PWW_Ind                          , Port or Waterway Indicator   ,,"find P and replace Imports, find W, replace Waterway",TRUE
+PORT_Name          ,United States Port or Waterway Description   ,,rename column US Port Entrance; map to port dictionary,TRUE
+Vessname                                            ,Vessel Name,,rename column to Vessel to math project data set dictionary,TRUE
+Rig              ,Type of Vessel ,,nil,FALSE
+Rig_Desc                             ,Type of Vessel Description,,nil,TRUE
+ICST          , International Classification of Ships by Type Code  ,,nil,FALSE
+ICST_DESC     , International Classification of Ships by Type Description  ,,nil,TRUE
+Flag                                 , Vessel's Flag of Registry,,nil,FALSE
+Flag_Ctry,Vessel Flag of Registry Description,,nil,TRUE
+Where_Ind     , Domestic or Foreign Port Indicator for last or previous Port of Call,,"find F and replace Foreign, find D, replace Coastwise",TRUE
+Where_Port           , Last or Previous Domestic Port of Call   ,,"map to port dictionary, sked d",TRUE
+Where_Schk              , Last or Previous Foreign Port of Call  ,,"map to port dictionary, sked k",TRUE
+Where_Name    , Domestic or Foreign Port Description  ,,nil,TRUE
+Where_Ctry    , Domestic or Foreign Country Description,,nil,TRUE
+NRT                                     ,Net Registered Tonnage ,,"format text for exact match, retain leading or training zeros",TRUE
+GRT                          ,Gross Registered Tonnage,,"format text for exact match, retain leading or training zeros",TRUE
+Draft_Ft       ,Vessel Draft Feet,,nil,TRUE
+Draft_In,Vessel Draft Inches above feet                               ,,nil,TRUE
+Container                               ,Container Indicator,,nil,TRUE
+IMO                          ,Unique Vessel Identifier,,"format text for exact match, retain leading or training zeros",TRUE
