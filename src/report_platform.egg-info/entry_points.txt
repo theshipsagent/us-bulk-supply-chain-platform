@@ -1,2 +1,0 @@
-[console_scripts]
-report-platform = report_platform.cli:main
