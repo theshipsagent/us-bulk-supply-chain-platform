@@ -1,0 +1,217 @@
+  81647 SWP Cross
+   9608 12 Mile Anch
+   9459 9 Mile Anch
+   7888 Belle Chasse Anch
+   7230 AMA Anch
+   7217 Lwr Kenner Bend Anch
+   5955 Nashville Ave B C
+   5551 Burnside Anch
+   5005 Dockside Anch
+   4687 Upr Kenner Bend Anch
+   3987 Bonnet Carre Anch
+   3861 Magnolia Anch
+   3083 Boothville Anch
+   3074 Davant Anch
+   3071 Pt Celeste Anch
+   2916 Grandview Upr Anch
+   2846 General Anch
+   2799 La Grange Anch
+   2657 Belmont Anch
+   2515 Laplace Anch
+   2509 ADM Destrehan
+   2461 ADM AMA
+   2448 Pilottown Anch
+   2416 Zen-Noh Grain
+   2044 Grandview Mid Anch
+   1889 Stolthaven 3
+   1878 Exxon Baton Rouge
+   1833 Chalmette Slip
+   1770 Cenex Harvest States
+   1669 Bunge Destrehan
+   1551 Nashville Ave A
+   1478 Convent Marine Terminal
+   1409 Erato St
+   1403 White Castle Anch
+   1397 Valero St Charles 4
+   1352 Zen-Noh Lower
+   1260 Emergency Anch
+   1250 Baton Rouge Gen Anch
+   1235 United Bulk
+   1230 ADM Reserve
+   1225 Crosstex Energy
+   1196 Cargill Reserve Lower
+   1122 Cargill Reserve Upper
+   1107 PBF Chalmette
+   1105 IMTT St Rose 4
+   1094 Plaquemine Pt Anch
+   1087 Dreyfuss
+   1074 Grandview Lwr Anch
+   1066 Quarantine Anch
+   1063 Cargill Westwego Lower
+   1020 IMTT Geismar
+    978 Meal Anch
+    940 179 Buoys
+    936 Cargill Westwego Upper
+    920 175 Buoys
+    904 Chalmette Buoys
+    883 Shell Geismar
+    877 IMTT St Rose 2
+    860 Genesis Baton Rouge
+    837 Meraux Buoys Upper
+    827 Meraux Buoys Lower
+    827 IMTT Gretna
+    787 Marathon 5
+    784 KMI Harvey 2
+    771 IMTT St Rose 8
+    735 Myrtle Grove Marine
+    715 ADM Destrehan Buoys Lower
+    708 Zen-Noh Upper
+    704 KMI Harvey 4
+    703 Burnside Terminal
+    689 Drax Biomass
+    689 Americas Styrenics
+    662 Noranda Alumina
+    656 Arabi Terminal
+    655 Valero Meraux
+    614 Blackwater Westwego
+    613 IMTT St Rose 14
+    602 7th Street
+    600 Dow Missouri
+    596 ADM Destrehan Buoys Upper
+    587 158 Buoys Middle
+    587 158 Buoys Lower
+    583 Valero St Charles 5
+    581 Dow Taft
+    569 PCS Nitrogen
+    536 Dockside Buoys Lower
+    522 158 Buoys Upper
+    518 Shell Norco 1
+    515 IMTT Avondale
+    513 Pt Michelle Anch
+    508 110 Buoys
+    504 Nucor Steel
+    500 IMT Coal
+    480 Shintech
+    478 Valero St Charles 2
+    477 Avondale
+    474 Plains St James
+    473 Julia St
+    468 Blackwater Harvey
+    466 Total Carville
+    450 Occidental Taft
+    445 Louisiana Ave
+    445 Cargill Molasses
+    420 Baton Rouge General Cargo
+    399 Reserve Anch
+    378 133 Buoys
+    377 Baker Hughes
+    374 Waggaman Buoys
+    370 MPLX Garyville 5
+    366 Phillips 66 Alliance 2
+    364 Marathon 2
+    359 Marathon 1
+    353 CFI Donaldsonville 106
+    353 ADM 110 Buoys
+    352 ADM 111 Buoys
+    343 1st Street
+    342 134 Buoys
+    341 Globalplex
+    308 Chevron Oak Point
+    305 137.5 Buoys
+    304 CFI Donaldsonville
+    302 LBC Sunshine
+    298 Valero St Charles 3
+    295 Dockside Buoys Upper
+    283 Shell Norco 2
+    283 Napoleon Ave
+    266 Phillips 66 Alliance 1
+    256 Alabo St
+    251 Apex Mt Airy
+    247 180 Buoys
+    232 Harmony St
+    221 KMI St Gabriel
+    219 Vulcan St Rose
+    219 NuStar St James 2
+    219 Calciner Industries
+    213 MPLX Garyville 2
+    204 Wills Pt Anch
+    204 SWP Anch
+    199 MPLX Garyville 1
+    194 Buck Kreihs
+    191 KMI Seven Oaks
+    189 Poland St
+    170 Axiall Plaquemine
+    166 Shell Convent 2
+    164 140 Buoys
+    162 United Bulk Terminal
+    162 IMC Faustina
+    159 Magellan Marrero 2
+    152 Mrytle Grove Marine Terminal
+    148 Chalmette Terminal
+    144 Perry Street
+    135 Napolean Ave
+    134 MPLX Mt Airy 2
+    132 Cornerstone
+    128 Violet Dock 2
+    128 Pin Oak Mt Airy
+    128 Burnside Buoys
+    125 Louisana Ave
+    121 Upr Venice Anch
+    117 Occidental Convent
+    115 Henry Clay Ave
+    112 KMI Harvey 1
+    102 Violet Dock 5
+     98 136.7 Buoys
+     96 Ergon St James
+     95 Shell Convent 1
+     91 Dow Plaquemine
+     89 ADM 110-2 Buoys
+     85 Chevron Empire
+     81 ADM 110-3 Buoys
+     80 Willow Glen
+     79 CFI Donaldsonville 101
+     74 IMT Coal Ship Dock
+     74 ADM 110-1 Buoys
+     73 Ostrica Anch
+     66 136 Buoys
+     65 KMI Harvey 3
+     63 Port Sulphur Anch
+     63 Domino Sugar
+     51 Violet Dock 1
+     46 MPLX Mt Airy 1
+     46 ADM 110-4 Buoys
+     43 Corner Stone
+     43 112 Buoys
+     39 Phoenix Anch
+     38 Lwr Venice Anch
+     36 Vulcan Westwego
+     35 Sugarland St James 1
+     33 Violet Dock 4
+     30 Zito HPL Buoys
+     30 NuStar St James 5
+     28 Sugarland St James 2
+     26 Yara Fertilizer
+     22 Buckeye Marrero 2
+     18 Mandeville St
+     16 Stolthaven 4
+     15 111 Buoys
+     14 Placid Oil
+     13 Shell Norco 4
+     10 Mosaic Uncle Sam
+      7 Violet Dock 3
+      6 Capline St James 2
+      5 Magellan Marrero 1
+      5 Esplanade Ave
+      5 140.5 Buoys
+      4 Gov Nicholls St
+      4 Andry St
+      4 172 Buoys
+      3 Domnio Sugar
+      2 Marlex
+      2 Louisiana Sugar Refining
+      2 CGB 111 Buoys
+      2 Capline St James 1
+      2 Baton Rouge Mid Anch
+      2 Apex Baton Rouge
+      2 171 Buoys
+      1 167 Buoys

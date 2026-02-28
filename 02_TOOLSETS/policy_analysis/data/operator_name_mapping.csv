@@ -1,0 +1,132 @@
+variant_name,canonical_name,notes
+AMERICAN COMMERCIAL BARGE LINE,ACBL,Official name
+AMERICAN COMMERCIAL BARGE LINE LLC,ACBL,Legal entity variant
+"AMERICAN COMMERCIAL BARGE LINE, LLC",ACBL,Legal entity with comma
+AMERICAN COMMERCIAL LINES,ACBL,Alternative name
+AMERICAN COMMERCIAL LINES LLC,ACBL,Legal entity variant
+"AMERICAN COMMERCIAL LINES, LLC",ACBL,Legal entity with comma
+AMERICAN COMMERCIAL BARGE LINES,ACBL,Plural variant
+ACBL,ACBL,Common abbreviation
+A.C.B.L.,ACBL,Abbreviation with periods
+INGRAM BARGE COMPANY,Ingram Barge Company,Official name
+INGRAM BARGE CO,Ingram Barge Company,Abbreviated
+INGRAM BARGE CO.,Ingram Barge Company,Abbreviated
+INGRAM MARINE GROUP,Ingram Barge Company,Parent company name
+INGRAM MARINE GROUP LLC,Ingram Barge Company,Parent company variant
+INGRAM CORP,Ingram Barge Company,Short form
+INGRAM CORPORATION,Ingram Barge Company,Full corporate name
+KIRBY CORPORATION,Kirby Corporation,Official name
+KIRBY CORP,Kirby Corporation,Abbreviated
+KIRBY INLAND MARINE,Kirby Corporation,Division name
+KIRBY INLAND MARINE LP,Kirby Corporation,Division legal entity
+KIRBY OFFSHORE MARINE,Kirby Corporation,Division name
+CAMPBELL TRANSPORTATION COMPANY,Campbell Transportation Company,Official name
+CAMPBELL TRANSPORTATION CO,Campbell Transportation Company,Abbreviated
+CAMPBELL TRANSPORTATION CO.,Campbell Transportation Company,Abbreviated
+CAMPBELL TRANSPORTATION,Campbell Transportation Company,Short form
+CAMPBELL TRANS CO,Campbell Transportation Company,Short abbreviation
+AMERICAN RIVER TRANSPORTATION COMPANY,ARTCO,Official name
+AMERICAN RIVER TRANSPORTATION CO,ARTCO,Abbreviated
+AMERICAN RIVER TRANSPORTATION CO.,ARTCO,Abbreviated with period
+AMERICAN RIVER TRANSPORTATION,ARTCO,Short form
+ARTCO,ARTCO,Common abbreviation
+A.R.T.C.O.,ARTCO,Abbreviation with periods
+ARCHER DANIELS MIDLAND COMPANY,ARTCO,Parent company
+ARCHER DANIELS MIDLAND CO,ARTCO,Abbreviated
+ARCHER-DANIELS-MIDLAND,ARTCO,Hyphenated variant
+ADM TRANSPORTATION,ARTCO,Division name
+ADM,ARTCO,Common abbreviation
+CARGILL INCORPORATED,Cargill Incorporated,Official name
+CARGILL INC,Cargill Incorporated,Abbreviated
+CARGILL INC.,Cargill Incorporated,Abbreviated
+CARGILL,Cargill Incorporated,Short form
+CARGILL MARINE AND TERMINAL,Cargill Incorporated,Division name
+CENAC MARINE SERVICES,Cenac Marine Services,Official name
+CENAC MARINE SERVICES LLC,Cenac Marine Services,Legal entity variant
+CENAC TOWING COMPANY,Cenac Marine Services,Division/former name
+CENAC TOWING,Cenac Marine Services,Division abbreviation
+AEP RIVER OPERATIONS LLC,AEP River Operations LLC,Official name
+AEP RIVER OPERATIONS,AEP River Operations LLC,Short form
+AMERICAN ELECTRIC POWER,AEP River Operations LLC,Parent company
+CROUNSE CORPORATION,Crounse Corporation,Official name
+CROUNSE CORP,Crounse Corporation,Abbreviated
+E.N. BISSO & SON,Crounse Corporation,Subsidiary/acquired company
+MARQUETTE TRANSPORTATION COMPANY,Marquette Transportation Company,Official name
+MARQUETTE TRANSPORTATION COMPANY LLC,Marquette Transportation Company,Legal entity
+MARQUETTE TRANSPORTATION COMPANY RIVER LLC,Marquette Transportation Company,River division
+MARQUETTE TRANSPORTATION CO,Marquette Transportation Company,Abbreviated
+MARQUETTE TRANSPORTATION,Marquette Transportation Company,Short form
+MARQUETTE TRANS CO,Marquette Transportation Company,Short abbreviation
+SCF MARINE INC,SCF Marine Inc,Official name
+SCF MARINE,SCF Marine Inc,Short form
+SOUTHERN COUNTIES FORWARDING,SCF Marine Inc,Full company name
+COOPERATIVE ELEVATOR COMPANY,Cooperative Elevator Company,Official name
+COOPERATIVE ELEVATOR CO,Cooperative Elevator Company,Abbreviated
+CO-OP ELEVATOR,Cooperative Elevator Company,Short form
+BOUCHARD TRANSPORTATION COMPANY,Bouchard Transportation Company,Official name
+BOUCHARD TRANSPORTATION CO,Bouchard Transportation Company,Abbreviated
+BOUCHARD TRANSPORTATION,Bouchard Transportation Company,Short form
+ECKSTEIN MARINE SERVICE,Eckstein Marine Service,Official name
+ECKSTEIN MARINE,Eckstein Marine Service,Short form
+ECKSTEIN MARINE LLC,Eckstein Marine Service,Legal entity variant
+FLORIDA MARINE TRANSPORTERS,Florida Marine Transporters,Official name
+FLORIDA MARINE TRANSPORTERS INC,Florida Marine Transporters,Legal entity variant
+FMT,Florida Marine Transporters,Common abbreviation
+JEFFBOAT LLC,Jeffboat LLC,Official name
+JEFFBOAT,Jeffboat LLC,Short form
+JEFFERSONVILLE BOAT,Jeffboat LLC,Full name variant
+MEMCO BARGE LINE,Memco Barge Line,Official name
+MEMCO BARGE LINE INC,Memco Barge Line,Legal entity variant
+MEMCO,Memco Barge Line,Common abbreviation
+NATIONAL MARINE SERVICE,National Marine Service,Official name
+NATIONAL MARINE SERVICE INC,National Marine Service,Legal entity variant
+NMS,National Marine Service,Common abbreviation
+INLAND MARINE SERVICE,Inland Marine Service,Official name
+INLAND MARINE SERVICE INC,Inland Marine Service,Legal entity variant
+IMS,Inland Marine Service,Common abbreviation
+TURN SERVICES LLC,Turn Services LLC,Official name
+TURN SERVICES,Turn Services LLC,Short form
+TURN MARINE,Turn Services LLC,Alternative name
+WATERFRONT SERVICES INC,Waterfront Services Inc,Official name
+WATERFRONT SERVICES,Waterfront Services Inc,Short form
+GOLDING BARGE LINE,Golding Barge Line,Official name
+GOLDING BARGE LINE INC,Golding Barge Line,Legal entity variant
+HOLLYWOOD MARINE INC,Hollywood Marine Inc,Official name
+HOLLYWOOD MARINE,Hollywood Marine Inc,Short form
+MAGNOLIA MARINE TRANSPORT COMPANY,Magnolia Marine Transport Company,Official name
+MAGNOLIA MARINE TRANSPORT,Magnolia Marine Transport Company,Short form
+MAGNOLIA MARINE,Magnolia Marine Transport Company,Very short form
+"CANAL BARGE COMPANY, INC.",Canal Barge Company,Official with comma
+CANAL BARGE COMPANY INC,Canal Barge Company,Official without comma
+CANAL BARGE COMPANY,Canal Barge Company,No suffix
+CANAL BARGE CO,Canal Barge Company,Abbreviated
+BROWNWATER SERVICES,Brownwater Services,Official name
+BROWNWATER SERVICES INC,Brownwater Services,Legal entity variant
+COOPER CONSOLIDATED,Cooper Consolidated,Official name
+COOPER CONSOLIDATED INC,Cooper Consolidated,Legal entity variant
+COOPER/T SMITH,Cooper Consolidated,Joint venture name
+GASTON MARINE INC,Gaston Marine Inc,Official name
+GASTON MARINE,Gaston Marine Inc,Short form
+JEFF HECKER MARINE,Jeff Hecker Marine,Official name
+JEFF HECKER MARINE INC,Jeff Hecker Marine,Legal entity variant
+MCDONOUGH MARINE SERVICE,McDonough Marine Service,Official name
+MCDONOUGH MARINE SERVICE (DIV. OF MARMAC CORPORATION),McDonough Marine Service,With division note
+MCDONOUGH MARINE,McDonough Marine Service,Short form
+SAVAGE SERVICES CORPORATION,Savage Services Corporation,Official name
+SAVAGE SERVICES CORP,Savage Services Corporation,Abbreviated
+SAVAGE SERVICES,Savage Services Corporation,Short form
+SAVAGE,Savage Services Corporation,Very short form
+ORGULF TRANSPORT COMPANY,Orgulf Transport Company,Official name
+ORGULF TRANSPORT CO,Orgulf Transport Company,Abbreviated
+ORGULF,Orgulf Transport Company,Short form
+PENN MARITIME INC,Penn Maritime Inc,Official name
+PENN MARITIME,Penn Maritime Inc,Short form
+"PARKER TOWING CO., INC.",Parker Towing Company,Official with comma
+PARKER TOWING COMPANY,Parker Towing Company,No punctuation
+PARKER TOWING CO,Parker Towing Company,Abbreviated
+PARKER TOWING,Parker Towing Company,Short form
+"FLOWERS, J. RUSSELL, INC.",Flowers J Russell Inc,With commas
+FLOWERS J RUSSELL INC,Flowers J Russell Inc,Without commas
+J RUSSELL FLOWERS,Flowers J Russell Inc,Name reordered
+CARGO CARRIERS,Cargo Carriers,Official name
+CARGO CARRIERS INC,Cargo Carriers,Legal entity

@@ -1,0 +1,5 @@
+{
+  "_comment": "Curated parent corporation entity rollup mappings",
+  "_format": "subsidiary_name_pattern -> parent_corp_name",
+  "mappings": {}
+}

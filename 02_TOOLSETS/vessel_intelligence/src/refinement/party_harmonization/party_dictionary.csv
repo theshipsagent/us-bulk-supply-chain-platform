@@ -1,0 +1,432 @@
+Entity_ID,Canonical_Name,Entity_Type,Parent_Company,Match_Keywords,Match_Strategy,Category,Active,Notes,Estimated_Tons,Master_Party_ID,ISO_Country,Latitude,Longitude,Facility_Type
+ADM-001,Archer Daniels Midland,Grain,ADM,ARCHER DANIELS MIDLAND,Contains,All,True,Major grain trader and processor,1088661,GRN-XX-ARCHERDANIELSMI-HQ,XX,,,Headquarters
+ABU-DHABI-001,Abu Dhabi National Oil Company,Oil & Gas,ADNOC,ABU DHABI NATIONAL;ABU DHABI NATIONAL OIL,Contains,All,True,UAE state oil company,2300000,PET-XX-ABUDHABINATIONA-HQ,XX,,,Headquarters
+AES-PR-001,AES Puerto Rico,Power Generation,AES Corporation,AES PUERTO RICO,Contains,All,True,AES power generation in Puerto Rico,2545800,PWR-PR-AESPUERTORICO-HQ,XX,,,Headquarters
+CMT-0194,Afyon Cimento Sanayi Turk A.S,Company,AFYON CIMENTO SANAYI TURK A.S,AFYON CIMENTO SANAYI TURK,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.039,,Tu,,,Cement
+CMT-0182,Assiut Cement Company,Company,ASSIUT CEMENT COMPANY,ASSIUT CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Eg,,,Cement
+CMT-0043,Adocim Cimento Beton San.Ve Tic.A.S,Company,Adocim,ADOCIM CIMENTO BETON SANVE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.714,,Tu,,,Cement
+SONATRACH-001,Sonatrach,Oil/Gas,Algerian Government,SONATRACH,Contains,All,True,Algerian state oil company,1316130,PET-XX-SONATRACH-HQ,XX,,,Headquarters
+CMT-0238,Allied Cement LLC,Company,Allied Cement LLC,ALLIED CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.019,,US,,,Cement
+CMT-0253,Allied Cemetn LLC,Company,Allied Cemetn LLC,ALLIED CEMETN LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.008,,US,,,Cement
+CMT-0078,American Cement Advisors,Company,American Cement Advisors,AMERICAN CEMENT ADVISORS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.268,,US,,,Cement
+CMT-0044,Amreyah Cement Company,Company,Amreyah Cement,AMREYAH CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.707,,Eg,,,Cement
+ARCELORMITTAL-001,ArcelorMittal,Steel,ArcelorMittal,ARCELORMITTAL,Contains,All,True,World's largest steel producer - multiple US entities,8000000,STL-XX-ARCELORMITTAL-HQ,XX,,,Headquarters
+CMT-0165,Asher Materials LLC,Company,Asher Materials LLC,ASHER MATERIALS LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.05,,US,,,Cement
+CMT-0081,Asia Cement Corporation,Company,Asia Cement Corporation,ASIA CEMENT CORPORATION,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.253,,Ta,,,Cement
+CMT-0196,Asia Cement Corporation 30 Th Floor,Company,Asia Cement Corporation,ASIA CEMENT CORPORATION 30,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.037,,Ta,,,Cement
+CMT-0097,Batisoke Soke Cimento Sanayii T.A.S,Company,BATISOKE,BATISOKE SOKE CIMENTO SANAYII,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.164,,Tu,,,Cement
+BP-001,BP,Oil & Gas,BP plc,BP PRODUCTS,Contains,All,True,British petroleum major,5000000,PET-XX-BP-HQ,XX,,,Headquarters
+BP-INTL-001,BP Oil International,Oil/Gas,BP plc,BP OIL INTERNATIONAL,Contains,All,True,BP international trading operations,1355240,PET-XX-BPOILINTERNATIO-HQ,XX,,,Headquarters
+CMT-0103,Buzzi Unicem Sp A,Company,BUZZI UNICEM,BUZZI UNICEM SP A,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.151,,It,,,Cement
+CMT-0193,Buzzi Unicem Srl,Company,BUZZI UNICEM,BUZZI UNICEM SRL,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.039,,It,,,Cement
+CMT-0115,Brunet Trading Limited,Company,Brunet Trading Limited,BRUNET TRADING LIMITED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.126,,US,,,Cement
+CMT-0144,Calucem D.O.O.,Company,CALUCEM,CALUCEM DOO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.078,,It,,,Cement
+CMT-0262,Cementos Tudela Veguin Sa,Company,CEMENTOS TUDELA VEGUIN SA,CEMENTOS TUDELA VEGUIN SA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.006,,Sp,,,Cement
+CMT-0228,Ciftay Insaat Taah. Ve Tic. A.S. Tebatisoke Soke Cimento Sanayii T.A.S,Company,CIFTAY INSAAT TAAH. VE TIC A.S.,CIFTAY INSAAT TAAH VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.024,,Tu,,,Cement
+CMT-0174,Ciftay Insaat Taah. Ve Tic A.S.,Company,CIFTAY INSAAT TAAH. VE TIC A.S.,CIFTAY INSAAT TAAH VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.047,,Tu,,,Cement
+CMT-0272,Ciments Du Maroc,Company,CIMENTS DU MAROC,CIMENTS DU MAROC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.002,,Mo,,,Cement
+CMT-0266,Consorcio Minero Dominicano,Company,CONSORCIO MINERO DOMINICANO,CONSORCIO MINERO DOMINICANO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.005,,Do,,,Cement
+CMT-0120,Crc Rota Sanayi Ve Dis Tic Limited Sti.,Company,CRC ROTA SANAYI VE DIS TIC LIMITED STI.,CRC ROTA SANAYI VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.115,,Tu,,,Cement
+CMT-0003,Glacier Northwest Incorporatedorporated,Company,CRH,GLACIER NORTHWEST INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,4.71,,US,,,Cement
+CMT-0153,Crh Us,Company,CRH,CRH US,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.063,,US,,,Cement
+CMT-0213,Glacier Northwest Incorporatedorporated 2025 E.,Company,CRH,GLACIER NORTHWEST INCORPORATEDORPORATED 2025,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.03,,US,,,Cement
+HOUSTON-CEMENT-001,Houston Cement,Cement/Aggregates,CRH,HOUSTON CEMENT,Contains_All,Consignee,True,Houston area cement operations,2300928,CMT-XX-HOUSTONCEMENT-HQ,XX,,,Headquarters
+CMT-0017,Houston Cement Companympany L.P.,Company,CRH,HOUSTON CEMENT COMPANYMPANY LP,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.896,,US,,,Cement
+ASH-GROVE-001,Ash Grove Cement,Cement/Aggregates,CRH,ASH GROVE;ASH GROVE CEMENT,Contains_All,Consignee,True,Major US cement producer - now CRH subsidiary,1561861,CMT-XX-ASHGROVECEMENT-HQ,XX,,,Headquarters
+CMT-0037,Ash Grove Cement Companympany,Company,CRH,ASH GROVE CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.833,,US,,,Cement
+CMT-0008,Houston Cement Companympany,Company,CRH,HOUSTON CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,3.188,,US,,,Cement
+CSI-001,California Steel Industries,Steel,CVRD/JFE JV,CALIFORNIA STEEL INDUSTRIES,Contains,Consignee,True,Steel producer - Fontana CA,1623869,STL-XX-CALIFORNIASTEEL-HQ,XX,,,Headquarters
+GLACIER-001,Glacier Northwest,Aggregates,CalPortland,GLACIER NORTHWEST,Contains,All,True,CalPortland subsidiary - aggregates,3200000,AGG-XX-GLACIERNORTHWES-HQ,XX,,,Headquarters
+CMT-0143,Calucem Incorporatedorporated,Company,Calucem,CALUCEM INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.078,,US,,,Cement
+CELANESE-001,Celanese,Chemicals,Celanese Corporation,CELANESE,Contains,All,True,Chemical manufacturer - Mexico and Europe entities,9000000,CHM-XX-CELANESE-HQ,XX,,,Headquarters
+CMT-0085,Cemeco Trading LLC,Company,Cemeco Trading LLC,CEMECO TRADING LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.237,,US,,,Cement
+CMT-0139,Cemco Trading LLC,Company,Cemeco Trading LLC,CEMCO TRADING LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.083,,US,,,Cement
+CMT-0141,Cement It Incorporatedorporated,Company,Cement It,CEMENT IT INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.082,,US,,,Cement
+CMT-0242,Cementco Usa LLC,Company,Cementco Usa LLC,CEMENTCO USA LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.016,,US,,,Cement
+CMT-0176,Cementos Progreso S.A.,Company,Cementos Progreso S.A.,CEMENTOS PROGRESO SA,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.047,,US,,,Cement
+CMT-0054,Cemex Puerto Rico Incorporatedorporated,Company,Cemex,CEMEX PUERTO RICO INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.546,,US,,,Cement
+CMT-0084,Cemex Companynstruction Materials Pacific LLC,Company,Cemex,CEMEX COMPANYNSTRUCTION MATERIALS PACIFIC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.244,,US,,,Cement
+CMT-0053,Cemex Incorporatedorporated,Company,Cemex,CEMEX INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.558,,US,,,Cement
+CMT-0049,Cemex Southeast LLC,Company,Cemex,CEMEX SOUTHEAST LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.619,,US,,,Cement
+CMT-0251,Cemex Companynstruction Materials South,Company,Cemex,CEMEX COMPANYNSTRUCTION MATERIALS SOUTH,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.01,,US,,,Cement
+CMT-0135,Cemex De Puerto Rico Incorporatedorporated,Company,Cemex,CEMEX DE PUERTO RICO,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.088,,US,,,Cement
+CMT-0028,Cemex International Sa De Cv,Company,Cemex,CEMEX INTERNATIONAL SA DE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,1.242,,Me,,,Cement
+CMT-0172,Cemex Companynstruction Materials Florid,Company,Cemex,CEMEX COMPANYNSTRUCTION MATERIALS FLORID,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.049,,US,,,Cement
+CMT-0072,Cemex Espana Operaciones,Company,Cemex,CEMEX ESPANA OPERACIONES,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.317,,Sp,,,Cement
+CMT-0007,Cemex Companynstruction Materials,Company,Cemex,CEMEX COMPANYNSTRUCTION MATERIALS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,3.672,,US,,,Cement
+CEMEX-001,Cemex,Cement/Aggregates,Cemex,CEMEX,Contains,All,True,Mexican cement/aggregates giant,3300000,CMT-XX-CEMEX-HQ,XX,,,Headquarters
+CMT-0187,Cemex España,Company,Cemex,CEMEX ESPAÑA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Sp,,,Cement
+CMT-0201,Cemex Mexico S.A. De C.V.,Company,Cemex,CEMEX MEXICO SA DE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.035,,Me,,,Cement
+CMT-0248,Cemex International Sa De Cv Av.,Company,Cemex,CEMEX INTERNATIONAL SA DE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.011,,Me,,,Cement
+CEPSA-001,Cepsa Trading,Oil/Gas,Cepsa,CEPSA TRADING,Contains,All,True,Spanish oil company trading arm,964227,PET-XX-CEPSATRADING-HQ,XX,,,Headquarters
+CHEVRON-001,Chevron,Oil & Gas,Chevron Corporation,CHEVRON,Contains,All,True,Multiple business units - combine all Chevron entities,40000000,PET-XX-CHEVRON-HQ,XX,,,Headquarters
+CMT-0249,Cleopatra Cement Obo Cyprotrade,Company,Cleopatra,CLEOPATRA CEMENT OBO CYPROTRADE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.011,,Eg,,,Cement
+CMT-0215,Cleopatra Industries For Bldg Mater,Company,Cleopatra,CLEOPATRA INDUSTRIES FOR BLDG,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.029,,Eg,,,Cement
+CMT-0096,Cleopatra Industries For Building,Company,Cleopatra,CLEOPATRA INDUSTRIES FOR BUILDING,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.169,,Eg,,,Cement
+CMT-0039,Coastal Cement Companyrporationoration,Company,Coastal Cement,COASTAL CEMENT COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.788,,US,,,Cement
+COMPASS-001,Compass Minerals,Salt/Minerals,Compass Minerals,COMPASS MINERALS,Contains,All,True,Salt and sulfate of potash producer,7000000,MIN-XX-COMPASSMINERALS-HQ,XX,,,Headquarters
+CMT-0159,Continental Cement Companymapny,Company,Continental Cement,CONTINENTAL CEMENT COMPANYMAPNY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.055,,US,,,Cement
+CMT-0079,Continental Cement Companympany LLC,Company,Continental Cement,CONTINENTAL CEMENT COMPANYMPANY LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.261,,US,,,Cement
+CMT-0254,D G Khan Cement Company Limited Nishat House 53 A Lawrence Road Lahore Pakistan,Company,D G KHAN CEMENT COMPANY,D G KHAN CEMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.008,,Pa,,,Cement
+CMT-0212,Dg Khan Cement Company Limited Nishat House 53 A Lawrence Road Lahore Pakistan,Company,DG KHAN CEMENT COMPANY,DG KHAN CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.03,,Pa,,,Cement
+CMT-0167,Domicem Sa,Company,DOMICEM SA,DOMICEM SA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.05,,Do,,,Cement
+MONROE-001,Monroe Energy,Oil Refining,Delta Air Lines,MONROE ENERGY,Contains,All,True,Delta subsidiary - Trainer refinery PA,6000000,PET-XX-MONROEENERGY-HQ,XX,,,Headquarters
+DOW-001,Dow Chemical,Chemicals,Dow Inc.,DOW CHEMICAL,Contains_All,All,True,Major chemical manufacturer,1118881,CHM-XX-DOWCHEMICAL-HQ,XX,,,Headquarters
+DOW-EUROPE-001,Dow Europe,Chemicals,Dow Inc.,DOW EUROPE,Contains_All,Consignee,True,Dow Chemical European operations - imports to US,925952,CHM-XX-DOWEUROPE-HQ,XX,,,Headquarters
+DRUMMOND-001,Drummond,Coal Mining,Drummond Company,DRUMMOND,Contains,All,True,Major US coal producer/exporter,2500000,OTH-XX-DRUMMOND-HQ,XX,,,Headquarters
+ECOPETROL-001,Ecopetrol,Oil & Gas,Ecopetrol,ECOPETROL,Contains,All,True,Colombian state oil company,22000000,PET-XX-ECOPETROL-HQ,XX,,,Headquarters
+EP-PETROECUADOR-001,EP Petroecuador,Oil & Gas,Ecuadorian Government,EP PETROECUADOR;PETROECUADOR,Contains,Shipper,True,Ecuadorian state oil company,2097807,PET-EC-EPPETROECUADOR-HQ,XX,,,Headquarters
+CMT-0210,El Arish Cement Company,Company,El Arish Cement,EL ARISH CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.031,,Eg,,,Cement
+CMT-0121,El Arish Cement Company Emtidad Ramsis St No.2 Abassia Cairo Egypt,Company,El Arish Cement,EL ARISH CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.11,,Eg,,,Cement
+CMT-0247,El Arish Cement Company Emitdad Ramsis Street No2 Abassia,Company,El Arish Cement,EL ARISH CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.012,,Eg,,,Cement
+CMT-0148,Ei Arish Cement Company,Company,El Arish Cement,EI ARISH CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.07,,Eg,,,Cement
+DUBAI-001,Dubai Aluminium,Aluminum,Emirates Global Aluminium,DUBAI ALUMINIUM,Contains,All,True,UAE aluminum producer - may be same as EGA,4000000,ALU-XX-DUBAIALUMINIUM-HQ,XX,,,Headquarters
+EMIRATES-001,Emirates Aluminium (EGA),Aluminum,Emirates Global Aluminium,EMIRATES ALUMINIUM;EGA;EMIRATES ALUMINIUM EGA,Contains,All,True,UAE aluminum producer,12000000,ALU-XX-EMIRATESALUMINI-HQ,XX,,,Headquarters
+SUNOCO-001,Sunoco,Oil/Gas,Energy Transfer,SUNOCO,Contains,All,True,Fuel distributor - Energy Transfer subsidiary,1145178,PET-XX-SUNOCO-HQ,XX,,,Headquarters
+ENI-TRADE-001,Eni Trade & Biofuels,Oil/Gas,Eni,ENI TRADE;ENI TRADE BIOFUELS,Contains_All,All,True,Italian oil major trading arm,1085397,PET-XX-ENITRADEBIOFUEL-HQ,XX,,,Headquarters
+EQUINOR-001,Equinor,Oil/Gas,Equinor ASA,EQUINOR,Contains,All,True,"Norwegian oil major - combines all Equinor entities (Marketing & Trading, ASA)",4407778,PET-XX-EQUINOR-HQ,XX,,,Headquarters
+EUCATEX-001,Eucatex,Pulp/Paper,Eucatex,EUCATEX,Contains,All,True,Brazilian pulp and paper producer,7200000,PPR-XX-EUCATEX-HQ,XX,,,Headquarters
+EUROCHEM-001,EuroChem North America,Corporate,EuroChem Group,EUROCHEM NORTH AMERICA,Contains,Consignee,True,Russian fertilizer producer - US operations,1537831,CRP-XX-EUROCHEMNORTHAM-HQ,XX,,,Headquarters
+EXXONMOBIL-001,ExxonMobil,Oil & Gas,Exxon Mobil Corporation,EXXONMOBIL;EXXON MOBIL,Contains,All,True,Chemicals and petroleum - many variants,20000000,PET-XX-EXXONMOBIL-HQ,XX,,,Headquarters
+CMT-0074,Fortress Cement Incorporatedorporated,Company,Fortress Cement,FORTRESS CEMENT INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.301,,US,,,Cement
+CMT-0087,Gcnc Port Operations I LLC,Company,GCNC,GCNC PORT OPERATIONS I,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.224,,US,,,Cement
+CMT-0048,Goltas Goller Bolgesi Cimento,Company,GOLTAS,GOLTAS GOLLER BOLGESI CIMENTO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.622,,Tu,,,Cement
+CMT-0114,Goltas Goller Bolgesi Cimento San,Company,GOLTAS,GOLTAS GOLLER BOLGESI CIMENTO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.129,,Tu,,,Cement
+GS-CALTEX-001,GS Caltex,Oil/Gas,GS Group/Chevron JV,GS CALTEX,Contains_All,Shipper,True,South Korean refiner - GS/Chevron JV,2021306,PET-XX-GSCALTEX-HQ,XX,,,Headquarters
+CMT-0222,Giant Cement Companympany 654 Judge St.,Company,Giant Cement,GIANT CEMENT COMPANYMPANY 654,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.027,,US,,,Cement
+CMT-0067,Giant Cement Companympany,Company,Giant Cement,GIANT CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.401,,US,,,Cement
+GLENCORE-ENERGY-001,Glencore Energy,Oil/Gas,Glencore,GLENCORE ENERGY,Contains,All,True,Glencore energy trading division,778074,PET-XX-GLENCOREENERGY-HQ,XX,,,Headquarters
+CMT-0226,Granit Cement LLC,Company,Granit Cement LLC,GRANIT CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.025,,US,,,Cement
+CMT-0014,Zona Franca Argos S.A.S.,Company,Grupo Argos,ZONA FRANCA ARGOS SAS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,2.36,,Co,,,Cement
+CMT-0250,Argos Usa LLC 3015 Windward Plaza,Company,Grupo Argos,ARGOS USA LLC 3015,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.01,,US,,,Cement
+CMT-0030,Argos Puerto Rico,Company,Grupo Argos,ARGOS PUERTO RICO,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.148,,US,,,Cement
+CMT-0268,Argos Puerto Rico Companyrporationoration Carretera,Company,Grupo Argos,ARGOS PUERTO RICO COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.004,,US,,,Cement
+CMT-0060,Argos Cement LLC,Company,Grupo Argos,ARGOS CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.459,,US,,,Cement
+CMT-0129,Argos Usa Tampa Cement Plant,Company,Grupo Argos,ARGOS USA TAMPA CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.092,,US,,,Cement
+CMT-0271,Argos Usvi Companyrporationoration,Company,Grupo Argos,ARGOS USVI COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.002,,US,,,Cement
+ZONA-FRANCA-ARGOS-001,Zona Franca Argos,Cement,Grupo Argos,ZONA FRANCA ARGOS,Contains,Shipper,True,Argos cement free trade zone operations,1211226,CMT-XX-ZONAFRANCAARGOS-HQ,XX,,,Headquarters
+CMT-0273,Cementos Argos Companympany Limited,Company,Grupo Argos,CEMENTOS ARGOS COMPANYMPANY LIMITED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.001,,US,,,Cement
+ARGOS-001,Argos USA,Cement/Aggregates,Grupo Argos,ARGOS USA;ARGOS CEMENT,Contains,Consignee,True,Colombian cement producer - US operations,2031040,CMT-US-ARGOSUSA-HQ,XX,,,Headquarters
+GUNVOR-001,Gunvor Group,Oil/Gas,Gunvor Group,GUNVOR;GUNVOR GROUP,Contains,All,True,Major commodity trader - combines Gunvor Group and Gunvor USA,3470292,PET-XX-GUNVORGROUP-HQ,XX,,,Headquarters
+CMT-0034,Hawaiian Cement Cement Division,Company,Hawaiian Cement Cement Division,HAWAIIAN CEMENT CEMENT DIVISION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.953,,US,,,Cement
+CMT-0134,Heidelberg Materials Suez Cement,Company,Heidelberg Materials,HEIDELBERG MATERIALS SUEZ CEMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.088,,Eg,,,Cement
+CMT-0040,Hm Northwest Cement Companympany,Company,Heidelberg Materials,HM NORTHWEST CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.766,,US,,,Cement
+CMT-0057,Lehigh White Cement Companympany LLC,Company,Heidelberg Materials,LEHIGH WHITE CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.531,,US,,,Cement
+HEIDELBERG-001,Heidelberg Materials,Cement/Aggregates,Heidelberg Materials,HEIDELBERG;HEIDELBERG MATERIALS,Contains,All,True,German cement/aggregates giant,912400,CMT-XX-HEIDELBERGMATER-HQ,XX,,,Headquarters
+CMT-0022,Hm Southeast Cement LLC,Company,Heidelberg Materials,HM SOUTHEAST CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.563,,US,,,Cement
+CMT-0070,Heidelberg Materials Us Cement LLC,Company,Heidelberg Materials,HEIDELBERG MATERIALS US CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.353,,US,,,Cement
+CMT-0151,Lehigh Handson Heidelberg Cement,Company,Heidelberg Materials,LEHIGH HANDSON HEIDELBERG CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.065,,US,,,Cement
+CMT-0150,Lehigh Southwest Cement Companympany,Company,Heidelberg Materials,LEHIGH SOUTHWEST CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.065,,US,,,Cement
+CMT-0093,Heidelberg Materials Canada Limited,Company,Heidelberg Materials,HEIDELBERG MATERIALS CANADA LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.179,,Ca,,,Cement
+CMT-0230,Heidelberg Materials Us,Company,Heidelberg Materials,HEIDELBERG MATERIALS US,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.024,,US,,,Cement
+CMT-0099,Lehigh Hanson Heidelberg,Company,Heidelberg Materials,LEHIGH HANSON HEIDELBERG,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.16,,US,,,Cement
+CMT-0209,Hiedelberg Materials Us Cement LLC,Company,Heidelberg Materials,HIEDELBERG MATERIALS US CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.032,,US,,,Cement
+CMT-0089,Lehigh Cement Companympany,Company,Heidelberg Materials,LEHIGH CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.214,,US,,,Cement
+CMT-0035,Heidelberg Marterials Us Cement LLC,Company,Heidelberg Materials,HEIDELBERG MARTERIALS US CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.927,,US,,,Cement
+HM-SOUTHEAST-001,Heidelberg Materials Southeast,Cement/Aggregates,Heidelberg Materials,HM SOUTHEAST CEMENT;HEIDELBERG MATERIALS SOUTHEAST,Contains,Consignee,True,Heidelberg Materials southeast US operations,1707718,CMT-XX-HEIDELBERGMATER-HQ,XX,,,Headquarters
+CMT-0208,Lehigh Northwest Cement Limited,Company,Heidelberg Materials,LEHIGH NORTHWEST CEMENT LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.032,,Ca,,,Cement
+CMT-0124,Lehigh Hanson Heidleberg Cement,Company,Heidelberg Materials,LEHIGH HANSON HEIDLEBERG CEMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.104,,Ca,,,Cement
+CMT-0261,Heldelbert Materials Canada Limited,Company,Heidelberg Materials,HELDELBERT MATERIALS CANADA LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.006,,Ca,,,Cement
+CMT-0116,Lehigh Cement Company Llc,Company,Heidelberg Materials,LEHIGH CEMENT COMPANY LLC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.121,,Ca,,,Cement
+CMT-0207,Lehigh Northwest Cement,Company,Heidelberg Materials,LEHIGH NORTHWEST CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.032,,US,,,Cement
+CMT-0138,Heidelberg Materials Suez Cement Sae K30 Maadi Ein Sokhna Road Cairo Egypt,Company,Heidelberg Materials,HEIDELBERG MATERIALS SUEZ CEMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.084,,Eg,,,Cement
+HERITAGE-001,Heritage Petroleum,Oil & Gas,Heritage Petroleum,HERITAGE PETROLEUM,Contains,All,True,Trinidad and Tobago state oil company,2400000,PET-XX-HERITAGEPETROLE-HQ,XX,,,Headquarters
+CMT-0123,Buffalo Lafarge Terminal,Company,Holcim,BUFFALO LAFARGE TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.107,,US,,,Cement
+CMT-0235,Lafarge Thessalon,Company,Holcim,LAFARGE THESSALON,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.02,,Ca,,,Cement
+CMT-0064,Lafarge Bath,Company,Holcim,LAFARGE BATH,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.422,,Ca,,,Cement
+CMT-0062,Lafarge Canada Incorporated,Company,Holcim,LAFARGE CANADA INCORPORATED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.44,,Ca,,,Cement
+CMT-0168,Hercules General Cement Company,Company,Holcim,HERCULES GENERAL CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.05,,Gr,,,Cement
+CMT-0237,Holcim Lorain Ohio,Company,Holcim,HOLCIM LORAIN OHIO,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.02,,US,,,Cement
+CMT-0041,Lafarge Ciment Msla Sp A B O,Company,Holcim,LAFARGE CIMENT MSLA SP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.739,,Co,,,Cement
+CMT-0128,Lafarge Oswego,Company,Holcim,LAFARGE OSWEGO,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.094,,US,,,Cement
+CMT-0063,Heracles General Cement Company,Company,Holcim,HERACLES GENERAL CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.432,,Gr,,,Cement
+CMT-0118,Lafarge Ciment Oggaz Sp A,Company,Holcim,LAFARGE CIMENT OGGAZ SP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.118,,Al,,,Cement
+CMT-0106,Lafarge Cleveland Terminal,Company,Holcim,LAFARGE CLEVELAND TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.147,,US,,,Cement
+CMT-0154,Amrize Cement Cleveland Terminal,Company,Holcim,AMRIZE CEMENT CLEVELAND TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.06,,US,,,Cement
+CMT-0080,Lafarge Bath Plant,Company,Holcim,LAFARGE BATH PLANT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.253,,Ca,,,Cement
+CMT-0152,Amrize Cement Incorporatedorporated Buffalo,Company,Holcim,AMRIZE CEMENT INCORPORATEDORPORATED BUFFALO,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.063,,US,,,Cement
+CMT-0112,Amrize Cement Pnw Incorporatedorporated,Company,Holcim,AMRIZE CEMENT PNW INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.131,,US,,,Cement
+CMT-0086,Lafarge Pnw Incorporatedorporated,Company,Holcim,LAFARGE PNW INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.225,,US,,,Cement
+CMT-0090,Amrize Canada Incorporated Bath Plant,Company,Holcim,AMRIZE CANADA INCORPORATED BATH,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.204,,Ca,,,Cement
+CMT-0111,Lafarge Seattle Plant,Company,Holcim,LAFARGE SEATTLE PLANT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.132,,US,,,Cement
+CMT-0110,Lafarge Cleveland,Company,Holcim,LAFARGE CLEVELAND,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.138,,US,,,Cement
+CMT-0109,Amrize Canada Incorporated,Company,Holcim,AMRIZE CANADA INCORPORATED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.14,,Ca,,,Cement
+CMT-0220,Amrize Cement Incorporatedorporated Detroit,Company,Holcim,AMRIZE CEMENT INCORPORATEDORPORATED DETROIT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.028,,US,,,Cement
+CMT-0105,Amrize Cement Incorporatedorporated,Company,Holcim,AMRIZE CEMENT INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.149,,US,,,Cement
+CMT-0161,Heracles General Cement Company D. Solomou 32 For Acct Holcim Trd.,Company,Holcim,HERACLES GENERAL CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.055,,Gr,,,Cement
+CMT-0071,2 Ho3 Lafarge Canada Incorporated Richmond P,Company,Holcim,2 HO3 LAFARGE CANADA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.341,,Ca,,,Cement
+CMT-0131,Lafarge Buffalo,Company,Holcim,LAFARGE BUFFALO,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.092,,US,,,Cement
+CMT-0188,Lafarge Ciment Oggaz Lco,Company,Holcim,LAFARGE CIMENT OGGAZ LCO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.043,,Al,,,Cement
+LAFARGE-001,Lafarge North America,Cement/Aggregates,Holcim,LAFARGE;LAFARGE NORTH AMERICA,Contains,All,True,Major cement/aggregates producer - now part of Holcim,2647299,CMT-XX-LAFARGENORTHAME-HQ,XX,,,Headquarters
+CMT-0015,Lafrage Emirates Cement Llc,Company,Holcim,LAFRAGE EMIRATES CEMENT LLC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,2.178,,Un,,,Cement
+CMT-0246,La Farge Canada Incorporated,Company,Holcim,LA FARGE CANADA INCORPORATED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.012,,Ca,,,Cement
+CMT-0245,Holcim (Us) Incorporatedorporated,Company,Holcim,HOLCIM (US) INCORPORATEDORPORATED;HOLCIM US INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.012,,US,,,Cement
+CMT-0244,Holcim Us Incorporatedorporated Providence,Company,Holcim,HOLCIM US INCORPORATEDORPORATED PROVIDENCE,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.013,,US,,,Cement
+LAFARGE-EMIRATES-001,Lafarge Emirates Cement,Cement,Holcim,LAFARGE EMIRATES;LAFRAGE EMIRATES;LAFARGE EMIRATES CEMENT,Contains,Shipper,True,Lafarge UAE operations - now Holcim,1263341,CMT-XX-LAFARGEEMIRATES-HQ,XX,,,Headquarters
+CMT-0255,Amrize Globalplex Terminal,Company,Holcim,AMRIZE GLOBALPLEX TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.008,,US,,,Cement
+CMT-0179,Lafarge Emirates Cement Llc,Company,Holcim,LAFARGE EMIRATES CEMENT LLC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.045,,Un,,,Cement
+CMT-0256,Lafarge Detroit Terminal,Company,Holcim,LAFARGE DETROIT TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.008,,US,,,Cement
+CMT-0257,Lafarge Canada Inv,Company,Holcim,LAFARGE CANADA INV,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.007,,Ca,,,Cement
+CMT-0241,Lafarge Companyrporationoration,Company,Holcim,LAFARGE COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.016,,US,,,Cement
+CMT-0259,La Farge Cleveland,Company,Holcim,LA FARGE CLEVELAND,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.007,,US,,,Cement
+CMT-0036,Lafarge Ciment Msila Sp A,Company,Holcim,LAFARGE CIMENT MSILA SP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.871,,Al,,,Cement
+CMT-0264,Lafarge Clevekand,Company,Holcim,LAFARGE CLEVEKAND,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.005,,US,,,Cement
+CMT-0200,Holcim Us Incorporatedorporated,Company,Holcim,HOLCIM US INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.035,,US,,,Cement
+CMT-0032,Holcim ( Us ) Incorporatedorporated,Company,Holcim,HOLCIM ( US );HOLCIM US INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.114,,US,,,Cement
+CMT-0263,Lafarge Oswego Terminal,Company,Holcim,LAFARGE OSWEGO TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.006,,US,,,Cement
+CMT-0270,Lafarge Buffalo Terminal,Company,Holcim,LAFARGE BUFFALO TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.002,,US,,,Cement
+CMT-0269,Amrize Cement Toledo Terminal,Company,Holcim,AMRIZE CEMENT TOLEDO TERMINAL,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.002,,US,,,Cement
+CMT-0006,Hollingshead Cement LLC,Company,Hollingshead Cement LLC,HOLLINGSHEAD CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,3.752,,US,,,Cement
+HUNT-CRUDE-001,Hunt Crude Oil Supply,Oil & Gas,Hunt Consolidated,HUNT CRUDE OIL SUPPLY,Contains,Consignee,True,Hunt family crude oil trading arm,1878318,PET-XX-HUNTCRUDEOILSUP-HQ,XX,,,Headquarters
+HYUNDAI-MOTOR-001,Hyundai Motor America,Automotive,Hyundai Motor Group,HYUNDAI MOTOR AMERICA,Contains,All,True,Korean automaker US operations - distinct from Kia,1915205,AUT-XX-HYUNDAIMOTORAME-HQ,XX,,,Headquarters
+KIA-001,Kia Motors America,Automotive,Hyundai Motor Group,KIA MOTORS;KIA MOTORS AMERICA,Contains_All,All,True,Korean automaker - use Contains_All to avoid matching KIA alone,763376,AUT-XX-KIAMOTORSAMERIC-HQ,XX,,,Headquarters
+HYUNDAI-STEEL-001,Hyundai Steel,Steel,Hyundai Motor Group,HYUNDAI STEEL,Contains_All,All,True,Korean steel producer - Hyundai affiliate,653333,STL-XX-HYUNDAISTEEL-HQ,XX,,,Headquarters
+HYUNDAI-MOBIS-001,Hyundai Mobis,Automotive,Hyundai Motor Group,HYUNDAI MOBIS,Contains_All,Shipper,True,Hyundai auto parts supplier,1155437,AUT-XX-HYUNDAIMOBIS-HQ,XX,,,Headquarters
+ING-001,ING Bank,Finance,ING Group,ING BANK,Contains_All,Consignee,True,Dutch bank - commodity financing,978278,FIN-XX-INGBANK-HQ,XX,,,Headquarters
+IDEMITSU-001,Idemitsu Apollo,Oil Refining,Idemitsu Kosan,IDEMITSU APOLLO,Contains,All,True,Japanese refiner US operations,3200000,PET-XX-IDEMITSUAPOLLO-HQ,XX,,,Headquarters
+CMT-0240,Imersys Norfolk Incorporatedorporated,Company,Imersys,IMERSYS NORFOLK INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.017,,US,,,Cement
+CMT-0232,Intercoast Materials LLC,Company,Intercoast Materials LLC,INTERCOAST MATERIALS LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.024,,US,,,Cement
+CMT-0175,To Orderi Nternational Materials,Company,International Materials,TO ORDERI NTERNATIONAL MATERIALS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.047,,US,,,Cement
+CMT-0122,Intl Materials. Incorporatedorporated,Company,International Materials,INTL MATERIALS INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.11,,US,,,Cement
+CMT-0173,Internationa Materials LLC,Company,International Materials,INTERNATIONA MATERIALS LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.049,,US,,,Cement
+CMT-0158,Intl Materials LLC,Company,International Materials,INTL MATERIALS LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.055,,US,,,Cement
+CMT-0149,Intl Mater,Company,International Materials,INTL MATER,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.065,,US,,,Cement
+INTERPIPE-001,Interpipe,Steel Pipes,Interpipe,INTERPIPE,Contains,All,True,Ukrainian steel pipe manufacturer,3300000,STL-XX-INTERPIPE-HQ,XX,,,Headquarters
+SOMO-001,State Oil Marketing Company (SOMO),Oil Marketing,Iraqi Government,SOMO;STATE OIL MARKETING;STATE OIL MARKETING COMPANY,Contains,All,True,Iraqi state oil marketer,13000000,OTH-XX-STATEOILMARKETI-HQ,XX,,,Headquarters
+IRVING-001,Irving Oil,Oil Refining,Irving Oil,IRVING OIL,Contains,All,True,Canadian refiner - Irving Oil Ltd/Refining/Terminals,40000000,PET-XX-IRVINGOIL-HQ,XX,,,Headquarters
+MORTON-BAHAMAS-001,Morton Bahamas,Salt,K+S Group,MORTON BAHAMAS,Contains_All,Shipper,True,Morton Salt Bahamas operations,1173631,MIN-BS-MORTONBAHAMAS-HQ,XX,,,Headquarters
+MORTON-001,Morton Salt,Salt,K+S Group,MORTON SALT,Contains,All,True,Major US salt producer,3000000,MIN-XX-MORTONSALT-HQ,XX,,,Headquarters
+CMT-0162,Kerneos Incorporatedorporated,Company,Kerneos,KERNEOS INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.054,,US,,,Cement
+CMT-0056,Lhp Vietnam Technology Investment,Company,LHP VIETNAM TECHNOLOGY INVESTMENT,LHP VIETNAM TECHNOLOGY INVESTMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.533,,Vi,,,Cement
+CMT-0155,Lhp Vietnam Technology Invesment,Company,LHP VIETNAM TECHNOLOGY INVESTMENT,LHP VIETNAM TECHNOLOGY INVESMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.059,,Vi,,,Cement
+NATIONAL-OIL-LIBYA-001,National Oil Corp,Oil & Gas,Libyan Government,NATIONAL OIL CORP,Contains,Shipper,True,Libyan state oil company,1045725,PET-XX-NATIONALOIL-HQ,XX,,,Headquarters
+CMT-0104,Lone Star Industries Incorporatedorporated,Company,Lone Star Industries,LONE STAR INDUSTRIES INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.15,,US,,,Cement
+CMT-0217,Long Son Companymplany Limited,Company,Long Son,LONG SON COMPANYMPLANY LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.028,,Vi,,,Cement
+CMT-0100,Long Son Company Limited Thanh Hoa Branch,Company,Long Son,LONG SON COMPANY LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.159,,Vi,,,Cement
+CMT-0177,Long Son Expert Company Limited,Company,Long Son,LONG SON EXPERT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.046,,Vi,,,Cement
+CMT-0166,Cty Tnhh Companyng Nghiep Long Son Dong Global Transit,Company,Long Son,CTY TNHH COMPANYNG NGHIEP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.05,,Vi,,,Cement
+CMT-0061,Long Son Industrials Company Limited,Company,Long Son,LONG SON INDUSTRIALS COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.453,,Vi,,,Cement
+CMT-0038,Long Son Exp. Company Limited,Company,Long Son,LONG SON EXP COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.81,,Vi,,,Cement
+CMT-0051,Long Son Company Limited,Company,Long Son,LONG SON COMPANY LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.577,,Vi,,,Cement
+CMT-0069,Cty Tnhh Companyng Nghiep Long Son,Company,Long Son,CTY TNHH COMPANYNG NGHIEP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.357,,Vi,,,Cement
+CMT-0117,Lucky Cement Limited Vdr,Company,Lucky Cement,LUCKY CEMENT LIMITED VDR,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.12,,Pa,,,Cement
+MARATHON-INTL-001,Marathon International Products,Oil/Gas,Marathon Petroleum,MARATHON INTERNATIONAL PRODUCT;MARATHON INTERNATIONAL PRODUCTS,Contains,All,True,Marathon trading arm - distinct from Marathon Petroleum refining,1323629,PET-XX-MARATHONINTERNA-HQ,XX,,,Headquarters
+MARATHON-001,Marathon Petroleum,Oil Refining,Marathon Petroleum Corporation,MARATHON PETROLEUM;MARATHON CARSON,Contains,All,True,US refiner - includes Carson refinery,19000000,PET-XX-MARATHONPETROLE-HQ,XX,,,Headquarters
+CMT-0204,Martin Marietta Stockton LLC,Company,Martin Marietta,MARTIN MARIETTA STOCKTON LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.034,,US,,,Cement
+MARTIN-001,Martin Marietta,Construction Materials,Martin Marietta,MARTIN MARIETTA,Contains_All,All,True,Requires BOTH tokens - not Martin Gas or Martin Wine,13000000,AGG-XX-MARTINMARIETTA-HQ,XX,,,Headquarters
+MAZDA-001,Mazda Motor,Automotive,Mazda Motor Corporation,MAZDA MOTOR,Contains,All,True,Japanese automaker,1153386,AUT-XX-MAZDAMOTOR-HQ,XX,,,Headquarters
+CMT-0012,Mcinnis Usa Incorporatedorporated,Company,McInnis Cement,MCINNIS USA INCORPORATEDORPORATED,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,2.58,,US,,,Cement
+CMT-0001,Medcem Global Pazarlama A.S.,Company,Medcem,MEDCEM GLOBAL PAZARLAMA AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,5.084,,Tu,,,Cement
+CMT-0186,Medical Global Pazarlama As,Company,Medcem,MEDICAL GLOBAL PAZARLAMA AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Tu,,,Cement
+CMT-0091,Medcem Global Pazarlama As,Company,Medcem,MEDCEM GLOBAL PAZARLAMA AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.182,,Tu,,,Cement
+CMT-0181,Modchem Global Pazarlama As,Company,Medcem,MODCHEM GLOBAL PAZARLAMA AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Tu,,,Cement
+CMT-0180,Medcem Global Pazarlama As Ataturk Tetradeland Companymodities Slu Calle,Company,Medcem,MEDCEM GLOBAL PAZARLAMA AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Tu,,,Cement
+CMT-0189,Medcem Global Pazarlama A S,Company,Medcem,MEDCEM GLOBAL PAZARLAMA A,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.042,,Tu,,,Cement
+MEDCEM-001,Medcem Global,Cement,Medcem,MEDCEM;MEDCEM GLOBAL,Contains,All,True,Turkish cement producer,3100000,CMT-XX-MEDCEMGLOBAL-HQ,XX,,,Headquarters
+MERCEDES-001,Mercedes-Benz USA,Automotive,Mercedes-Benz Group,MERCEDES BENZ;MERCEDES-BENZ;MERCEDESBENZ USA,Contains,All,True,German automaker US operations,951053,AUT-US-MERCEDESBENZUSA-HQ,XX,,,Headquarters
+CMT-0108,Mitsubishi Cement Companyrporationoration,Company,Mitsubishi Cement,MITSUBISHI CEMENT COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.145,,US,,,Cement
+MITSUI-USA-001,Mitsui & Co USA,Trading Company,Mitsui & Co,MITSUI & CO USA;MITSUI AND CO USA;MITSUI CO USA,Contains,All,True,Japanese trading house - US operations,2217247,TRD-US-MITSUIUSA-HQ,XX,,,Headquarters
+CMT-0130,Nam Phuong Imex Imp. & Exp. . J,Company,NAM PHUONG IMEX,NAM PHUONG IMEX IMP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.092,,Vi,,,Cement
+CMT-0234,The National Companypmany For Cement In Beni Suef,Company,NATIONAL COMPANY FOR CEMENT,THE NATIONAL COMPANYPMANY FOR,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.022,,Eg,,,Cement
+CMT-0239,National Company For Cement,Company,NATIONAL COMPANY FOR CEMENT,NATIONAL COMPANY FOR CEMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.019,,Eg,,,Cement
+NATURGY-001,Naturgy Aprovisionamientos,Utility,Naturgy Energy Group,NATURGY APROVISIONAMIENTOS,Contains_All,Consignee,True,Spanish energy company - supply operations,1789162,PWR-XX-NATURGYAPROVISI-HQ,XX,,,Headquarters
+NESTE-001,Neste,Oil Refining,Neste Oyj,NESTE OIL;NESTE US,Contains,All,True,Finnish refiner - renewable diesel focus,2264650,PET-XX-NESTE-HQ,XX,,,Headquarters
+CMT-0199,Nevada Cement,Company,Nevada Cement,NEVADA CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.035,,US,,,Cement
+CMT-0157,Nevada Cement Companymplany LLC,Company,Nevada Cement,NEVADA CEMENT COMPANYMPLANY LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.056,,US,,,Cement
+CMT-0047,Nevada Cement Companympany,Company,Nevada Cement,NEVADA CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.68,,US,,,Cement
+NIPPON-STEEL-TRADING-001,Nippon Steel Trading,Steel,Nippon Steel Corporation,NIPPON STEEL TRADING,Contains,Shipper,True,Nippon Steel trading arm,1550471,STL-XX-NIPPONSTEELTRAD-HQ,XX,,,Headquarters
+CMT-0137,Nouma Trading S.A.,Company,Nouma Trading S.A.,NOUMA TRADING SA,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.084,,US,,,Cement
+DAVID-JOSEPH-001,David J. Joseph Company,Steel,Nucor,DAVID J. JOSEPH;DAVID J JOSEPH;DAVID J JOSEPH COMPANY,Contains,Consignee,True,Scrap metal processor - Nucor subsidiary,1682715,STL-XX-DAVIDJJOSEPHCOM-HQ,XX,,,Headquarters
+NUCOR-001,Nucor Steel,Steel,Nucor Corporation,NUCOR STEEL,Contains,All,True,Largest US steel producer,2100000,STL-XX-NUCORSTEEL-HQ,XX,,,Headquarters
+CMT-0009,Nuh Cimento Sanayi A.S.,Company,Nuh Cimento,NUH CIMENTO SANAYI AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,3.155,,Tu,,,Cement
+NUH-CIMENTO-001,Nuh Cimento,Cement,Nuh Cimento,NUH CIMENTO,Contains_All,Shipper,True,Turkish cement producer,2561518,CMT-XX-NUHCIMENTO-HQ,XX,,,Headquarters
+CMT-0160,Nuh Cimento Sanayi A.S.Haci Akif,Company,Nuh Cimento,NUH CIMENTO SANAYI ASHACI,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.055,,Tu,,,Cement
+CMT-0031,Nuh Cimento Sanayi Anonim Sirketi,Company,Nuh Cimento,NUH CIMENTO SANAYI ANONIM,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,1.126,,Tu,,,Cement
+CMT-0119,Omanco Material Vietnam Company Limited,Company,OMANCO,OMANCO MATERIAL VIETNAM COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.116,,Vi,,,Cement
+CMT-0140,Omanco Material V.N.B O Holcim,Company,OMANCO,OMANCO MATERIAL VNB O,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.082,,Vi,,,Cement
+OQ-TRADING-001,OQ Trading,Oil/Gas,OQ (Oman Oil),OQ TRADING,Contains_All,All,True,Omani state oil company trading arm,645850,PET-XX-OQTRADING-HQ,XX,,,Headquarters
+CMT-0050,Oyak Cimento Fabrikalari Anonim Sir,Company,OYAK Group,OYAK CIMENTO FABRIKALARI ANONIM,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.589,,Tu,,,Cement
+CMT-0092,On Site Companyncrete Solutions,Company,On Site Company,ON SITE COMPANYNCRETE SOLUTIONS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.18,,US,,,Cement
+CMT-0163,Ozinga International LLC,Company,Ozinga International LLC,OZINGA INTERNATIONAL LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.052,,US,,,Cement
+CMT-0205,Hij Internationl Trading Companympany LLC,Company,Ozinga International LLC,HIJ INTERNATIONL TRADING COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.033,,US,,,Cement
+CMT-0132,Hlj International Trading Companympany L,Company,Ozinga International LLC,HLJ INTERNATIONAL TRADING COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.092,,US,,,Cement
+CMT-0026,Hlj International Trading Companympany,Company,Ozinga International LLC,HLJ INTERNATIONAL TRADING COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.353,,US,,,Cement
+DELAWARE-CITY-001,Delaware City Refining,Oil Refining,PBF Energy,DELAWARE CITY REFINING,Contains,All,True,PBF subsidiary - Delaware City refinery,1400000,PET-XX-DELAWARECITYREF-HQ,XX,,,Headquarters
+PBF-001,PBF Energy,Oil Refining,PBF Energy,PBF HOLDING;PBF ENERGY,Contains,All,True,US independent refiner,26000000,PET-XX-PBFENERGY-HQ,XX,,,Headquarters
+PAULSBORO-001,Paulsboro Refining,Oil Refining,PBF Energy,PAULSBORO REFINING,Contains,All,True,PBF subsidiary - Paulsboro NJ refinery,2400000,PET-XX-PAULSBOROREFINI-HQ,XX,,,Headquarters
+CITGO-001,Citgo,Oil Refining,PDVSA (Venezuelan state),CITGO,Contains,All,True,US refiner owned by Venezuela,5000000,PET-XX-CITGO-HQ,XX,,,Headquarters
+PETROPIAR-001,Petropiar,Oil & Gas,PDVSA/Chevron JV,PETROPIAR,Contains,All,True,Venezuela heavy oil JV - multiple address variants,6000000,PET-XX-PETROPIAR-HQ,XX,,,Headquarters
+POSCO-001,POSCO,Steel,POSCO Holdings,POSCO,Contains,All,True,Korean steel giant - includes POSCO Mexico,2209492,STL-XX-POSCO-HQ,XX,,,Headquarters
+PREPA-001,Puerto Rico Electric Power Authority,Utility,PR Government,PUERTO RICO ELECTRIC POWER AUTHORIT;PREPA,Contains,Consignee,True,Puerto Rico power utility,1349536,PWR-PR-PUERTORICOELECT-HQ,XX,,,Headquarters
+PAR-HAWAII-001,PAR Hawaii Refining,Oil Refining,Par Pacific,PAR HAWAII;PAR HAWAII REFINING,Contains,All,True,Hawaii refinery,3400000,PET-XX-PARHAWAIIREFINI-HQ,XX,,,Headquarters
+PETROCHINA-001,PetroChina International,Oil/Gas,PetroChina,PETROCHINA;PETROCHINA INTERNATIONAL,Contains,All,True,Chinese state oil company - combines all PetroChina entities,1969588,PET-CN-PETROCHINAINTER-HQ,XX,,,Headquarters
+PETROBRAS-001,Petrobras,Oil & Gas,Petroleo Brasileiro,PETROBRAS;PETROLEO BRASILEIRO,Contains,All,True,Brazilian state oil company,4000000,PET-XX-PETROBRAS-HQ,XX,,,Headquarters
+PMI-001,PMI Trading,Trading Company,Philip Morris International,PMI TRADING;PMI TRAD;PMI COME;PMI NORTEAMERICA,Contains,All,True,Tobacco products trading - multiple legal entities including PMI Norteamerica,47000000,TRD-XX-PMITRADING-HQ,XX,,,Headquarters
+CMT-0088,Quikrete Companynstruction Materials LLC,Company,Quikrete Companynstruction Materials LLC,QUIKRETE COMPANYNSTRUCTION MATERIALS LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.217,,US,,,Cement
+RIL-USA-001,RIL USA Inc,Corporate,Reliance Industries,RIL USA;RIL USA INC,Contains_All,Consignee,True,Reliance Industries Limited US subsidiary - chemicals/petrochemicals,1805557,CRP-US-RILUSA-HQ,XX,,,Headquarters
+RELIANCE-001,Reliance Industries,Chemicals/Refining,Reliance Industries,RELIANCE INDUSTRIES,Contains,All,True,Indian conglomerate - petrochemicals,3200000,OTH-XX-RELIANCEINDUSTR-HQ,XX,,,Headquarters
+REPSOL-001,Repsol Trading,Oil/Gas,Repsol,REPSOL TRADING,Contains,All,True,Spanish oil major trading arm,660248,PET-XX-REPSOLTRADING-HQ,XX,,,Headquarters
+IRON-ORE-001,Iron Ore Company of Canada,Mining,Rio Tinto,IRON ORE CO;IRON ORE COMPANY;IRON ORE COMPANY OF,Contains,All,True,Rio Tinto subsidiary - iron ore Quebec,2200000,MIN-CA-IRONORECOMPANYO-HQ,XX,,,Headquarters
+CMT-0027,Riverside Companynstruction Materials,Company,Riverside,RIVERSIDE COMPANYNSTRUCTION MATERIALS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.277,,US,,,Cement
+CMT-0077,Riverside Companynstructions,Company,Riverside,RIVERSIDE COMPANYNSTRUCTIONS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.294,,US,,,Cement
+CMT-0260,Royal Cement Company Obo Cyrotrade,Company,Royal El Minya Cement,ROYAL CEMENT COMPANY OBO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.006,,Eg,,,Cement
+CMT-0258,Royal Cement Company,Company,Royal El Minya Cement,ROYAL CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.007,,Eg,,,Cement
+CMT-0229,Misr Cement Minya,Company,Royal El Minya Cement,MISR CEMENT MINYA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.024,,Eg,,,Cement
+CMT-0095,Royal El Minya Cement Company,Company,Royal El Minya Cement,ROYAL EL MINYA CEMENT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.172,,Eg,,,Cement
+CMT-0102,Royal White Cement,Company,Royal White Cement,ROYAL WHITE CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.154,,US,,,Cement
+ATALCO-001,Atalco Gramercy,Aluminum,Rusal,ATALCO GRAMERCY,Contains,All,True,Rusal US aluminum operations,4000000,ALU-XX-ATALCOGRAMERCY-HQ,XX,,,Headquarters
+S-OIL-001,S-Oil,Oil Refining,S-Oil Corporation,S OIL CORP;SOIL,Contains,All,True,South Korean refiner,2500000,PET-XX-SOIL-HQ,XX,,,Headquarters
+SABIC-001,SABIC Americas,Chemicals,SABIC,SABIC;SABIC AMERICAS,Contains,All,True,Saudi petrochemicals giant,919123,CHM-XX-SABICAMERICAS-HQ,XX,,,Headquarters
+CMT-0252,Sanko Dis Ticaret A.S Burak Mahalle,Company,SANKO DIS TICARET A.S.,SANKO DIS TICARET AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.008,,Tu,,,Cement
+CMT-0184,Sanko Dis Ticaret A.S.,Company,SANKO DIS TICARET A.S.,SANKO DIS TICARET AS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Tu,,,Cement
+CMT-0146,Sarl Balz Works,Company,SARL BALZ WORKS,SARL BALZ WORKS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.073,,Al,,,Cement
+CMT-0190,Sarl Macore,Company,SARL MACORE,SARL MACORE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.041,,Al,,,Cement
+CMT-0202,Scg International Corporational,Company,SCG INTERNATIONAL CORPORATIONAL,SCG INTERNATIONAL CORPORATIONAL,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.035,,Th,,,Cement
+CMT-0065,Sct Company Limited,Company,SCT Thailand,SCT COMPANY LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.42,,Th,,,Cement
+CMT-0233,Sinai Cement Company,Company,SINAI CEMENT COMPANY,SINAI CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.023,,Eg,,,Cement
+SK-ENERGY-001,SK Energy,Oil/Gas,SK Group,SK ENERGY,Contains_All,All,True,South Korean refiner - use Contains_All to avoid matching SK alone,1229023,PET-XX-SKENERGY-HQ,XX,,,Headquarters
+CMT-0183,Societe Les Ciments D'Enfidha,Company,SOCIETE LES CIMENTS D'ENFIDHA,SOCIETE LES CIMENTS D'ENFIDHA;SOCIETE LES CIMENTS DENFIDHA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Tu,,,Cement
+CMT-0126,Sohico Limited,Company,SOHICO LIMITED,SOHICO LIMITED,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.097,,Eg,,,Cement
+CMT-0198,Soma Cimento Madencilik Beton,Company,SOMA CIMENTO MADENCILIK BETON,SOMA CIMENTO MADENCILIK BETON,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.037,,Tu,,,Cement
+CMT-0147,Spa Freres Rahmoune Dismac,Company,SPA FRERES RAHMOUNE DISMAC,SPA FRERES RAHMOUNE DISMAC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.073,,Al,,,Cement
+CMT-0267,Ste Tuniso Andalouse De Ciment,Company,STE TUNISO ANDALOUSE DE CIMENT,STE TUNISO ANDALOUSE DE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.004,,Tu,,,Cement
+CMT-0113,Ste Tuniso Andalouse De Cement,Company,STE TUNISO ANDALOUSE DE CIMENT,STE TUNISO ANDALOUSE DE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.13,,Tu,,,Cement
+CMT-0145,Surtas Isletmecilik Insaat Ve Tebatisoke Soke Cimento Sanayii T.A.S,Company,SURTAS,SURTAS ISLETMECILIK INSAAT VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.076,,Tu,,,Cement
+CMT-0136,Surtas Isletmecilik Insaat Sanayi,Company,SURTAS,SURTAS ISLETMECILIK INSAAT SANAYI,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.088,,Tu,,,Cement
+CMT-0024,Cimsa Cimento Sanayi Ve Ticaret A.S,Company,Sabanci Holding,CIMSA CIMENTO SANAYI VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,1.423,,Tu,,,Cement
+CMT-0013,Akcansa Cimento San. Tic. A.S.,Company,Sabanci Holding,AKCANSA CIMENTO SAN TIC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,2.489,,Tu,,,Cement
+CMT-0025,Cimsa Americas Cement,Company,Sabanci Holding,CIMSA AMERICAS CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.395,,US,,,Cement
+CMT-0055,Akcansa Cimento Sanayi T.A.S.,Company,Sabanci Holding,AKCANSA CIMENTO SANAYI TAS,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.541,,Tu,,,Cement
+CMT-0046,Akcansa Cimento San Tic. A.S. Tehc Trading Americas Llc,Company,Sabanci Holding,AKCANSA CIMENTO SAN TIC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.682,,Tu,,,Cement
+CMT-0171,Akcansa Cimento San. Tic. A.S. On,Company,Sabanci Holding,AKCANSA CIMENTO SAN TIC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.05,,Tu,,,Cement
+CMT-0170,Akcansa Cimento Sanayi Ve Ticaret.,Company,Sabanci Holding,AKCANSA CIMENTO SANAYI VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.05,,Tu,,,Cement
+CMT-0133,Cimsa Americas Cement Mfg.,Company,Sabanci Holding,CIMSA AMERICAS CEMENT MFG,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.091,,US,,,Cement
+AKCANSA-001,Akcansa Cimento,Cement,Sabanci Holding,AKCANSA CIMENTO,Contains_All,Shipper,True,Turkish cement producer,1130494,CMT-XX-AKCANSACIMENTO-HQ,XX,,,Headquarters
+CMT-0164,Ackansa Cimento San. Ve Tic. A.S.,Company,Sabanci Holding,ACKANSA CIMENTO SAN VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.051,,Tu,,,Cement
+CMT-0068,Akcansa Cimento San Tic As,Company,Sabanci Holding,AKCANSA CIMENTO SAN TIC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.36,,Tu,,,Cement
+CMT-0125,Akcansa Cimento San. Tic. A.S. Hc Trad. Malta Atasehir Is 34746,Company,Sabanci Holding,AKCANSA CIMENTO SAN TIC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.101,,Tu,,,Cement
+SAINT-GOBAIN-001,Saint Gobain,Construction Materials,Saint-Gobain,SAINT GOBAIN,Contains_All,Shipper,True,French building materials giant,1085841,AGG-XX-SAINTGOBAIN-HQ,XX,,,Headquarters
+ARAMCO-FUJAIRAH-001,Aramco Trading Fujairah,Oil/Gas,Saudi Aramco,ARAMCO TRADING FUJAIRAH,Contains,All,True,Saudi Aramco UAE trading operations,1408343,PET-XX-ARAMCOTRADINGFU-HQ,XX,,,Headquarters
+MOTIVA-001,Motiva Enterprises,Oil Refining,Saudi Aramco,MOTIVA ENTERPRISES,Contains,All,True,Saudi Aramco US refining subsidiary,14000000,PET-XX-MOTIVAENTERPRIS-HQ,XX,,,Headquarters
+ARAMCO-001,Aramco Americas,Oil & Gas,Saudi Aramco,ARAMCO AMERICAS,Contains,All,True,Saudi Aramco US marketing entity,6000000,PET-XX-ARAMCOAMERICAS-HQ,XX,,,Headquarters
+SAUDI-REFINING-001,Saudi Refining Inc,Oil Refining,Saudi Aramco/Shell JV,SAUDI REFINING;SAUDI REFINING INC,Contains,All,True,Port Arthur refinery JV,15000000,PET-XX-SAUDIREFINING-HQ,XX,,,Headquarters
+SAUDI-CEMENT-001,Saudi Cement,Cement,Saudi Cement Company,SAUDI CEMENT CO,Contains,Shipper,True,Saudi Arabian cement producer,1245848,CMT-XX-SAUDICEMENT-HQ,XX,,,Headquarters
+CMT-0018,Saudi Cement Company,Company,Saudi Cement Company,SAUDI CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,1.795,,Sa,,,Cement
+CMT-0236,Separation Technologies LLC,Company,Separation Technologies LLC,SEPARATION TECHNOLOGIES LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.02,,US,,,Cement
+CMT-0075,Sesacem Cement LLC,Company,Sesacem Cement LLC,SESACEM CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.3,,US,,,Cement
+CMT-0169,Sesacam Cement Companynrete Companynstruction,Company,Sesacem Cement LLC,SESACAM CEMENT COMPANYNRETE COMPANYNSTRUCTION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.05,,US,,,Cement
+SESCO-001,Sesco Cement,Cement/Aggregates,Sesco,SESCO CEMENT,Contains_All,Consignee,True,Cement operations,1930373,CMT-XX-SESCOCEMENT-HQ,XX,,,Headquarters
+CMT-0203,Sesco Cement Florida,Company,Sesco,SESCO CEMENT FLORIDA,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.035,,US,,,Cement
+CMT-0010,Sesco Cement Companyrporationoration,Company,Sesco,SESCO CEMENT COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,2.977,,US,,,Cement
+SHELL-INTL-001,Shell International Trading,Oil/Gas,Shell plc,SHELL INTERNATIONAL TRADING,Contains,All,True,Shell Middle East trading operations,702303,PET-XX-SHELLINTERNATIO-HQ,XX,,,Headquarters
+SHELL-BRASIL-001,Shell Brasil Petroleo,Oil & Gas,Shell plc,SHELL BRASIL PETROLEO,Contains,Shipper,True,Shell Brazil petroleum operations,1136629,PET-XX-SHELLBRASILPETR-HQ,XX,,,Headquarters
+SHELL-001,Shell,Oil & Gas,Shell plc,SHELL WESTERN;SHELL TRADING,Contains,All,True,Shell trading and supply entities,3500000,PET-XX-SHELL-HQ,XX,,,Headquarters
+CMT-0076,Sonmez Cemento Yapi Ve,Company,Sonmez,SONMEZ CEMENTO YAPI VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.296,,Tu,,,Cement
+CMT-0033,Sonmez Cimento Api Ve Madencilik,Company,Sonmez,SONMEZ CIMENTO API VE,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.969,,Tu,,,Cement
+CMT-0265,Space City Cement LLC,Company,Space City Cement,SPACE CITY CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.005,,US,,,Cement
+CMT-0197,Space City Cement,Company,Space City Cement,SPACE CITY CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.037,,US,,,Cement
+SUBARU-001,Subaru of America,Automotive,Subaru Corporation,SUBARU OF AMERICA;SUBARU OFAMERICA,Contains,All,True,Japanese automaker US operations,2016005,AUT-XX-SUBARUOFAMERICA-HQ,XX,,,Headquarters
+CMT-0066,Sultan Cement LLC,Company,Sultan Cement LLC,SULTAN CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.418,,US,,,Cement
+SUNCOR-001,Suncor Energy,Oil & Gas,Suncor Energy,SUNCOR ENERGY,Contains,All,True,Canadian oil sands producer,3000000,PET-XX-SUNCORENERGY-HQ,XX,,,Headquarters
+FIBRIA-001,Fibria Celulose,Pulp/Paper,Suzano,FIBRIA CELULOSE,Contains,All,True,Brazilian pulp producer (now Suzano),3500000,PPR-XX-FIBRIACELULOSE-HQ,XX,,,Headquarters
+CMT-0211,Taiheiyo Cement Corporation Bunkyo,Company,Taiheiyo Cement,TAIHEIYO CEMENT CORPORATION BUNKYO,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.031,,So,,,Cement
+TAIHEIYO-001,Taiheiyo Cement,Cement/Aggregates,Taiheiyo Cement,TAIHEIYO CEMENT,Contains,Shipper,True,Japanese cement producer,1889043,CMT-XX-TAIHEIYOCEMENT-HQ,XX,,,Headquarters
+CMT-0011,Taiheiyo Cement Corporation,Company,Taiheiyo Cement,TAIHEIYO CEMENT CORPORATION,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,2.701,,Vi,,,Cement
+CMT-0206,Taiheiyo Cement Companyieporation,Company,Taiheiyo Cement,TAIHEIYO CEMENT COMPANYIEPORATION,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.033,,Vi,,,Cement
+TERNIUM-001,Ternium,Steel,Ternium,TERNIUM,Contains,All,True,Steel producer - Brazil and Mexico entities,14000000,STL-XX-TERNIUM-HQ,XX,,,Headquarters
+CMT-0178,Texan Cement 221 E Van Bruen Ave,Company,Texan Cement,TEXAN CEMENT 221 E,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.045,,US,,,Cement
+CMT-0042,Texan Cement,Company,Texan Cement,TEXAN CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.721,,US,,,Cement
+MOSAIC-001,Mosaic,Fertilizer,The Mosaic Company,MOSAIC FERTILIZER,Contains,All,True,Phosphate fertilizer producer,5000000,FRT-XX-MOSAIC-HQ,XX,,,Headquarters
+CMT-0191,Titan Cement Company,Company,Titan Cement Group,TITAN CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.041,,Gr,,,Cement
+CMT-0019,The Essex Cement Companympany LLC,Company,Titan Cement Group,THE ESSEX CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.772,,US,,,Cement
+CMT-0005,Titan Cement Company S.A.,Company,Titan Cement Group,TITAN CEMENT COMPANY SA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,3.917,,Gr,,,Cement
+CMT-0023,Titan Florida LLC,Company,Titan Cement Group,TITAN FLORIDA LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.438,,US,,,Cement
+CMT-0101,Essex Cement Company LLC,Company,Titan Cement Group,ESSEX CEMENT COMPANY LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.158,,US,,,Cement
+CMT-0029,Roanoke Cement Companympany LLC,Company,Titan Cement Group,ROANOKE CEMENT COMPANYMPANY LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.156,,US,,,Cement
+CMT-0185,Titan Cement Company Sa,Company,Titan Cement Group,TITAN CEMENT COMPANY SA,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.044,,Gr,,,Cement
+CMT-0227,Roanoke,Company,Titan Cement Group,ROANOKE,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.025,,US,,,Cement
+TITAN-001,Titan Cement,Cement/Aggregates,Titan Cement Group,TITAN CEMENT,Contains_All,Shipper,True,Greek cement producer - use Contains_All to avoid Titan America matches,1877782,CMT-XX-TITANCEMENT-HQ,XX,,,Headquarters
+TOTAL-SPEC-001,Total Specialties USA,Chemicals,TotalEnergies,TOTAL SPECIALTIES USA,Contains,Consignee,True,TotalEnergies specialty chemicals US operations,1828447,CHM-US-TOTALSPECIALTIE-HQ,XX,,,Headquarters
+TOTALENERGIES-PETRO-001,TotalEnergies Petrochemicals,Chemicals,TotalEnergies,TOTALENERGIES PETRO CHEMICALS;TOTALENERGIES PETROCHEMICALS,Contains,Consignee,True,TotalEnergies petrochemicals division,911985,CHM-XX-TOTALENERGIESPE-HQ,XX,,,Headquarters
+TOTSA-001,TotalEnergies Trading,Oil/Gas,TotalEnergies,TOTSA TOTALENERGIES;TOTAL ENERGIES TRADING;TOTALENERGIES TRADING,Contains,All,True,TotalEnergies trading arm - major crude/products trader,2923777,PET-XX-TOTALENERGIESTR-HQ,XX,,,Headquarters
+TOYOTA-001,Toyota Motor,Automotive,Toyota Motor Corporation,TOYOTA MOTOR,Contains,All,True,Japanese automaker - includes Toyota Motor Corp and Toyota Motor Sales,4229868,AUT-XX-TOYOTAMOTOR-HQ,XX,,,Headquarters
+TRAFIGURA-001,Trafigura,Trading Company,Trafigura Group,TRAFIGURA,Contains,All,True,Major commodity trader,14000000,TRD-XX-TRAFIGURA-HQ,XX,,,Headquarters
+CMT-0218,Two Rivers,Company,Two Rivers Cement,TWO RIVERS,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.028,,US,,,Cement
+CMT-0020,Two Rivers Cement,Company,Two Rivers Cement,TWO RIVERS CEMENT,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.713,,US,,,Cement
+UBS-001,UBS Switzerland,Finance,UBS Group,UBS SWITZERLAND,Contains_All,Consignee,True,Swiss bank - commodity financing,1295481,FIN-XX-UBSSWITZERLAND-HQ,XX,,,Headquarters
+CMT-0214,Uniland Trading Bv Kingfordweg,Company,UNILAND TRADING BV,UNILAND TRADING BV KINGFORDWEG,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.029,,Sp,,,Cement
+CMT-0156,Uniland Trading Bv Kingsfordweg,Company,UNILAND TRADING BV,UNILAND TRADING BV KINGSFORDWEG,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.059,,Sp,,,Cement
+CMT-0219,Uniland Trading B V Kingsfordweg,Company,UNILAND TRADING BV,UNILAND TRADING B V,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.028,,Sp,,,Cement
+CMT-0073,Uniland International Bv,Company,UNILAND TRADING BV,UNILAND INTERNATIONAL BV,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.303,,Tu,,,Cement
+CMT-0127,Uniland Trading Bv Kingsfordweg 151 1043 Gr Amsterdam The Netherlands,Company,UNILAND TRADING BV,UNILAND TRADING BV KINGSFORDWEG,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.096,,Sp,,,Cement
+CMT-0094,Uniland Trading B.V.,Company,UNILAND TRADING BV,UNILAND TRADING BV,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.174,,Sp,,,Cement
+CMT-0142,Us Cement Enterprises LLC,Company,US Cement,US CEMENT ENTERPRISES LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.079,,US,,,Cement
+CMT-0192,Usgai Cement LLC,Company,USGAI Cement,USGAI CEMENT LLC,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.04,,US,,,Cement
+CMT-0243,Vezirhan Cimento Madencilik Sanayi,Company,VEZIRHAN CIMENTO MADENCILIK SANAYI,VEZIRHAN CIMENTO MADENCILIK SANAYI,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.016,,Tu,,,Cement
+VALE-001,Vale,Mining,Vale S.A.,VALE,Contains,All,True,Brazilian mining giant - iron ore,2200000,MIN-XX-VALE-HQ,XX,,,Headquarters
+SAMARCO-001,Samarco Mineracao,Mining,Vale/BHP JV,SAMARCO;SAMARCO MINERACAO,Contains,Shipper,True,Brazilian iron ore miner - Vale/BHP JV,2022059,MIN-XX-SAMARCOMINERACA-HQ,XX,,,Headquarters
+VALERO-001,Valero,Oil Refining,Valero Energy Corporation,VALERO,Contains,All,True,Major US refiner - clean up HTML entities &AMP;,60000000,PET-XX-VALERO-HQ,XX,,,Headquarters
+DIAMOND-GREEN-001,Diamond Green Diesel,Oil/Gas,Valero/Darling JV,DIAMOND GREEN DIESEL,Contains,All,True,Renewable diesel producer - Valero/Darling JV,1983237,PET-XX-DIAMONDGREENDIE-HQ,XX,,,Headquarters
+PDVSA-001,PDVSA,Oil & Gas,Venezuelan Government,PDVSA,Contains,All,True,Venezuelan state oil company,8000000,PET-XX-PDVSA-HQ,XX,,,Headquarters
+CMT-0195,Vissai Ninh Binh Jsc Teglobal Transit,Company,Vissai,VISSAI NINH BINH JSC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.038,,Vi,,,Cement
+VISSAI-001,Vissai Ninh Binh,Cement,Vissai,VISSAI NINH BINH,Contains,Shipper,True,Vietnamese cement producer,2607182,CMT-XX-VISSAININHBINH-HQ,XX,,,Headquarters
+CMT-0223,Vissai Ninh Binh Joint Stock Companym Tecrh Cementitious Trading Limited,Company,Vissai,VISSAI NINH BINH JOINT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.027,,Vi,,,Cement
+CMT-0216,Vissai Ninh Binh Jsc Plot C7 Gian Khau Industrial Zone Gia Vien Dist,Company,Vissai,VISSAI NINH BINH JSC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.028,,Vi,,,Cement
+CMT-0224,The Vissai Imex Company Limited Teglobal Transit,Company,Vissai,THE VISSAI IMEX COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.027,,Vi,,,Cement
+CMT-0221,The Vissai Imex Company Limited,Company,Vissai,THE VISSAI IMEX COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.027,,Vi,,,Cement
+CMT-0045,Vissai Ninh Binh Joint Stock,Company,Vissai,VISSAI NINH BINH JOINT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.704,,Vi,,,Cement
+CMT-0107,Vissai Ninh Binh Joint Stock Plot C7 Gian Khau Industries Zone Gia Vien District,Company,Vissai,VISSAI NINH BINH JOINT,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.147,,Vi,,,Cement
+CMT-0004,Vissai Ninh Binh Jsc,Company,Vissai,VISSAI NINH BINH JSC,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,4.488,,Vi,,,Cement
+VITOL-001,Vitol,Trading Company,Vitol Group,VITOL,Contains,All,True,World's largest independent oil trader,3300000,TRD-XX-VITOL-HQ,XX,,,Headquarters
+VW-001,Volkswagen Group of America,Automotive,Volkswagen AG,VOLKSWAGEN GROUP OF AMERICA;VOLKSWAGEN GRP OF AMERICA,Contains,Consignee,True,"German automaker US operations - includes VW, Audi, Porsche brands",1504035,AUT-XX-VOLKSWAGENGROUP-HQ,XX,,,Headquarters
+CMT-0058,St. Mary'S Cement Companyrporationoration,Company,Votorantim,ST MARY'S CEMENT COMPANYRPORATIONORATION;ST MARYS CEMENT COMPANYRPORATIONORATION,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,0.53,,US,,,Cement
+CMT-0225,Saint Marys Cement Ii,Company,Votorantim,SAINT MARYS CEMENT II,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.026,,Ca,,,Cement
+ST-MARYS-001,St. Marys Cement,Cement/Aggregates,Votorantim,ST. MARY;ST MARY;SAINT MARY;ST MARYS CEMENT,Contains,All,True,Canadian cement producer - Votorantim subsidiary,2091917,CMT-XX-STMARYSCEMENT-HQ,XX,,,Headquarters
+CMT-0231,St. Mary'S Cement Company,Company,Votorantim,ST MARY'S CEMENT COMPANY;ST MARYS CEMENT COMPANY,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.024,,Ca,,,Cement
+CMT-0021,St. Mary'S Cement Companympany,Company,Votorantim,ST MARY'S CEMENT COMPANYMPANY;ST MARYS CEMENT COMPANYMPANY,Contains,Consignee,TRUE,Added from cement party dictionary v1.0.0,1.578,,US,,,Cement
+CMT-0002,St. Mary'S Cement Corporation,Company,Votorantim,ST MARY'S CEMENT CORPORATION;ST MARYS CEMENT CORPORATION,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,4.753,,Ca,,,Cement
+VULCAN-001,Vulcan Materials,Construction Materials,Vulcan Materials Company,VULCAN;VULCAN MATERIALS,Contains,All,True,Largest US aggregates producer,3000000,AGG-XX-VULCANMATERIALS-HQ,XX,,,Headquarters
+WILMAR-001,Wilmar Oleo Quimico,Corporate,Wilmar International,WILMAR OLEO;WILMAR OLEO QUIMICO,Contains_All,All,True,Wilmar oleochemicals - Mexico operations,1770294,CRP-XX-WILMAROLEOQUIMI-HQ,XX,,,Headquarters
+CMT-0098,Xuan Thanh Cement Group Joint Stock,Company,XUAN THANH CEMENT,XUAN THANH CEMENT GROUP,Contains,Shipper,TRUE,Added from cement party dictionary v1.0.0,0.161,,Vi,,,Cement
+YARA-001,Yara North America,Fertilizer,Yara International,YARA;YARA NORTH AMERICA,Contains,Consignee,True,Norwegian fertilizer producer,1680780,FRT-XX-YARANORTHAMERIC-HQ,XX,,,Headquarters
+BAHAMA-ROCK-001,Bahama Rock,Aggregates,,BAHAMA ROCK,Contains,All,True,Bahamas aggregates producer,3600000,AGG-XX-BAHAMAROCK-HQ,XX,,,Headquarters
+BIEHL-001,Biehl & Co,Logistics,,BIEHL;BIEHL CO,Contains,All,True,Customs brokerage and freight forwarding,1600000,LOG-XX-BIEHL-HQ,XX,,,Headquarters
+BLUE-WATER-001,Blue Water Industries,Logistics,,BLUE WATER INDUSTRIES,Contains,All,True,Freight forwarding and logistics,1800000,LOG-XX-BLUEWATERINDUST-HQ,XX,,,Headquarters
+BOLANTER-001,Bolanter Corporation,Trading Company,,BOLANTER;BOLANTER CORPORATION,Contains,All,True,Saudi Aramco affiliate,15000000,TRD-XX-BOLANTERCORPORA-HQ,XX,,,Headquarters
+BR-ANDERSON-001,B.R. Anderson & Co,Logistics,,B.R. ANDERSON;BR ANDERSON;BR ANDERSON CO,Contains,All,True,Customs brokerage services,1400000,LOG-XX-BRANDERSON-HQ,XX,,,Headquarters
+CARIB-LPG-001,Carib LPG Trading,Oil/Gas,,CARIB LPG;CARIB LPG TRADING,Contains_All,All,True,LPG trading company - Caribbean operations,2600772,PET-XX-CARIBLPGTRADING-HQ,XX,,,Headquarters
+CARVER-001,Carver Sand & Gravel,Corporate,,CARVER SAND;CARVER MATERIALS;CARVER SAND GRAVEL,Contains,All,True,Aggregates producer - Canada/US operations,1602948,CRP-XX-CARVERSANDGRAVE-HQ,XX,,,Headquarters
+CEMTECH-001,Cemtech Global,Cement,,CEMTECH GLOBAL,Contains_All,Shipper,True,Turkish cement company,1419924,CMT-XX-CEMTECHGLOBAL-HQ,XX,,,Headquarters
+CENOVUS-001,Cenovus Energy,Oil & Gas,,CENOVUS ENERGY,Contains_All,Shipper,True,Canadian oil sands producer,1238624,PET-XX-CENOVUSENERGY-HQ,XX,,,Headquarters
+COMPANIA-MINERA-001,Compania Minera,Mining,,COMPANIA MINERA,Contains,Shipper,True,Mining companies - may need sub-entities,8000000,MIN-XX-COMPANIAMINERA-HQ,XX,,,Headquarters
+COPPERSMITH-001,Coppersmith Global Logistics,Logistics,,COPPERSMITH;COPPERSMITH GLOBAL LOGISTICS,Contains,All,True,Freight forwarding and logistics,4500000,LOG-XX-COPPERSMITHGLOB-HQ,XX,,,Headquarters
+CSC-SUGAR-001,CSC Sugar,Trader,,CSC SUGAR,Contains_All,Consignee,True,Sugar trading company,2329172,TRD-XX-CSCSUGAR-HQ,XX,,,Headquarters
+DISCOVERY-001,Discovery Bauxite,Mining,,DISCOVERY BAUXITE,Contains,All,True,Bauxite mining operations,4000000,MIN-XX-DISCOVERYBAUXIT-HQ,XX,,,Headquarters
+EASTERN-SALT-001,Eastern Salt,Salt,,EASTERN SALT,Contains_All,Consignee,True,Salt producer/distributor,2270905,MIN-XX-EASTERNSALT-HQ,XX,,,Headquarters
+EBROKERAGE-001,eBrokerage Service,Logistics,,EBROKERAGE;EBROKERAGE SERVICE,Contains,All,True,Customs brokerage services,2700000,LOG-XX-EBROKERAGESERVI-HQ,XX,,,Headquarters
+ECO-FERT-001,ECO Fertilizers,Fertilizer,,ECO FERTILIZERS;E.C.O. FERTILIZERS,Contains,Consignee,True,Fertilizer distributor,1514232,FRT-XX-ECOFERTILIZERS-HQ,XX,,,Headquarters
+FREEPOINT-001,Freepoint Commodities,Trader,,FREEPOINT COMMODITIES,Contains_All,All,True,Physical commodity trader,2718871,TRD-XX-FREEPOINTCOMMOD-HQ,XX,,,Headquarters
+GALAXY-OIL-001,Galaxy Oil,Oil & Gas,,GALAXY OIL FZ,Contains_All,Shipper,True,UAE oil trading company,1114642,PET-XX-GALAXYOIL-HQ,XX,,,Headquarters
+GEOGAS-001,Geogas Trading,Oil/Gas,,GEOGAS;GEOGAS TRADING,Contains,All,True,LNG/LPG trader,1078692,PET-XX-GEOGASTRADING-HQ,XX,,,Headquarters
+GM-001,General Motors,Automotive,,GENERAL MOTORS,Contains_All,All,True,US automaker,1175733,AUT-XX-GENERALMOTORS-HQ,XX,,,Headquarters
+GMB-KOREA-001,GMB Korea Industries,Mining,,GMB KOREA;GMB KOREA INDUSTRIES,Contains_All,All,True,Korean mineral products company,828838,MIN-XX-GMBKOREAINDUSTR-HQ,XX,,,Headquarters
+GREEN-WORLDWIDE-001,Green Worldwide Shipping,Logistics,,GREEN WORLDWIDE SHIPPING,Contains,All,True,Freight forwarding and customs brokerage,3300000,LOG-XX-GREENWORLDWIDES-HQ,XX,,,Headquarters
+GRUPO-MEDINA-001,Grupo Medina,Cement,,GRUPO MEDINA,Contains,All,True,Mexican cement producer,1800000,CMT-XX-GRUPOMEDINA-HQ,XX,,,Headquarters
+GRUPO-MINERO-001,Grupo Minero Del Mar De Cortes,Mining,,GRUPO MINERO DEL MAR,Contains,Shipper,True,Mexican mining company,2147600,MIN-XX-GRUPOMINERODELM-HQ,XX,,,Headquarters
+HOLLINGSHEAD-001,Hollingshead Cement,Cement/Aggregates,,HOLLINGSHEAD;HOLLINGSHEAD CEMENT,Contains,Consignee,True,Cement operations,2192906,CMT-XX-HOLLINGSHEADCEM-HQ,XX,,,Headquarters
+HOUSTON-REFINING-001,Houston Refining,Oil Refining,,HOUSTON REFINING,Contains,All,True,Houston area refining operations,6000000,PET-XX-HOUSTONREFINING-HQ,XX,,,Headquarters
+IIG-CAPITAL-001,IIG Capital,Finance,,IIG CAPITAL,Contains_All,Consignee,True,Financial services company,1338871,FIN-XX-IIGCAPITAL-HQ,XX,,,Headquarters
+MCINNIS-001,McInnis USA,Cement,,MCINNIS USA,Contains_All,Consignee,True,Canadian cement producer - US distribution,1797106,CMT-US-MCINNISUSA-HQ,XX,,,Headquarters
+NAF-CORP-001,North American Fuel,Oil & Gas,,NORTH AMERICAN FUEL CORP,Contains,Consignee,True,Fuel distributor,936636,PET-XX-NORTHAMERICANFU-HQ,XX,,,Headquarters
+NATURAL-OLEO-001,Natural Oleochemicals,Chemicals,,NATURAL OLEOCHEMICALS,Contains_All,Shipper,True,Malaysian oleochemicals producer,1760616,CHM-XX-NATURALOLEOCHEM-HQ,XX,,,Headquarters
+NFE-001,New Fortress Energy,Oil/Gas,,NEW FORTRESS ENERGY;NFE TRANSPORT,Contains,All,True,LNG infrastructure and trading,1797643,PET-XX-NEWFORTRESSENER-HQ,XX,,,Headquarters
+NORTH-AMERICAN-MARINE-001,North American Marine,Steel,,NORTH AMERICAN MARINE,Contains,All,True,Steel products marine transport,3300000,STL-XX-NORTHAMERICANMA-HQ,XX,,,Headquarters
+NOVUM-001,Novum Energy Trading,Oil/Gas,,NOVUM ENERGY;NOVUM ENERGY TRADING,Contains_All,All,True,Energy trading company,2453763,PET-XX-NOVUMENERGYTRAD-HQ,XX,,,Headquarters
+NU-IRON-001,Nu-Iron Unlimited,Steel,,NU IRON;NU-IRON;NUIRON UNLIMITED,Contains,Shipper,True,Steel products trader,1612511,STL-XX-NUIRONUNLIMITED-HQ,XX,,,Headquarters
+ONSITE-CONCRETE-001,On Site Concrete Solutions,Construction Materials,,ON SITE CONCRETE;ON-SITE CONCRETE;ON SITE CONCRETE SOLUTIONS,Contains,Consignee,True,Cement operations - Texas,1739832,AGG-XX-ONSITECONCRETES-HQ,XX,,,Headquarters
+ONTARIO-TRAP-001,Ontario Trap Rock,Aggregates,,ONTARIO TRAP ROCK,Contains,All,True,Aggregates producer,1453578,AGG-XX-ONTARIOTRAPROCK-HQ,XX,,,Headquarters
+ORCA-001,Orca Sand and Gravel,Aggregates,,ORCA SAND;ORCA SAND AND GRAVEL,Contains,All,True,Canadian aggregates producer,5600000,AGG-XX-ORCASANDANDGRAV-HQ,XX,,,Headquarters
+PERIN-001,Perin Trading,Trading Company,,PERIN TRADING,Contains,All,True,Commodity trading company,3000000,TRD-XX-PERINTRADING-HQ,XX,,,Headquarters
+PUERTO-RICO-001,Puerto Rico Energy,Oil & Gas,,PUERTO RICO ENERGY,Contains,All,True,Puerto Rico energy company,2900000,PET-PR-PUERTORICOENERG-HQ,XX,,,Headquarters
+SOCIEDAD-LOBOS-001,Sociedad Punta de Lobos,Mining,,PUNTA DE LOBOS;SOCIEDAD PUNTA DE LOBOS,Contains,All,True,Chilean mining company,2500000,MIN-XX-SOCIEDADPUNTADE-HQ,XX,,,Headquarters
+SUDATI-001,Sudati,Wood Products,,SUDATI,Contains,All,True,Wood products manufacturer,5200000,OTH-XX-SUDATI-HQ,XX,,,Headquarters

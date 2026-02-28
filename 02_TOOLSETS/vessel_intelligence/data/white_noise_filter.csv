@@ -1,0 +1,6 @@
+Keyword Pattern,Max Tonnage,Example Matches,Records Filtered,Reason
+ships spares / ship's spares,500 tons,"SHIPS SPARES, SHIP'S SPARES, SHIPS-SPARES",~2000,Vessel maintenance items not cargo
+ships equipment / ship's equipment,500 tons,"SHIPS EQUIPMENT, SHIP EQUIPMENT",~1500,Vessel equipment not cargo
+life rafts / liferafts,500 tons,"LIFE RAFTS, LIFERAFTS, LIFE-RAFTS",~500,Safety equipment not cargo
+empty,500 tons,"EMPTY CONTAINERS, EMPTY",~800,Empty containers not cargo
+landed,500 tons,LANDED,~1100,Administrative records not cargo

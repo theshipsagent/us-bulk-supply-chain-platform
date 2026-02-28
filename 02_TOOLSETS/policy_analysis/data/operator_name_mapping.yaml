@@ -1,0 +1,209 @@
+# ================================================================
+# USACE Operator Name Standardization Dictionary
+# ================================================================
+# Maps variant operator names to canonical standardized names
+#
+# Format:
+#   "VARIANT NAME": "CANONICAL STANDARDIZED NAME"
+#
+# Instructions:
+# 1. Review this mapping and customize as needed
+# 2. Add any missing operators you find
+# 3. The canonical name (right side) should be the preferred official name
+# 4. All variants (left side) will be mapped to the canonical name
+# ================================================================
+
+# American Commercial Barge Line (ACBL)
+"AMERICAN COMMERCIAL BARGE LINE": "American Commercial Barge Line"
+"AMERICAN COMMERCIAL BARGE LINE LLC": "American Commercial Barge Line"
+"AMERICAN COMMERCIAL BARGE LINE, LLC": "American Commercial Barge Line"
+"AMERICAN COMMERCIAL LINES": "American Commercial Barge Line"
+"AMERICAN COMMERCIAL LINES LLC": "American Commercial Barge Line"
+"ACBL": "American Commercial Barge Line"
+"A.C.B.L.": "American Commercial Barge Line"
+
+# Ingram Barge Company
+"INGRAM BARGE COMPANY": "Ingram Barge Company"
+"INGRAM BARGE CO": "Ingram Barge Company"
+"INGRAM BARGE CO.": "Ingram Barge Company"
+"INGRAM MARINE GROUP": "Ingram Barge Company"
+"INGRAM MARINE GROUP LLC": "Ingram Barge Company"
+"INGRAM CORP": "Ingram Barge Company"
+"INGRAM CORPORATION": "Ingram Barge Company"
+
+# Kirby Corporation
+"KIRBY CORPORATION": "Kirby Corporation"
+"KIRBY CORP": "Kirby Corporation"
+"KIRBY INLAND MARINE": "Kirby Corporation"
+"KIRBY INLAND MARINE LP": "Kirby Corporation"
+"KIRBY OFFSHORE MARINE": "Kirby Corporation"
+
+# Campbell Transportation Company
+"CAMPBELL TRANSPORTATION COMPANY": "Campbell Transportation Company"
+"CAMPBELL TRANSPORTATION CO": "Campbell Transportation Company"
+"CAMPBELL TRANSPORTATION CO.": "Campbell Transportation Company"
+"CAMPBELL TRANSPORTATION": "Campbell Transportation Company"
+"CAMPBELL TRANS CO": "Campbell Transportation Company"
+
+# American River Transportation Company (ARTCO)
+"AMERICAN RIVER TRANSPORTATION COMPANY": "American River Transportation Company"
+"AMERICAN RIVER TRANSPORTATION CO": "American River Transportation Company"
+"AMERICAN RIVER TRANSPORTATION": "American River Transportation Company"
+"ARTCO": "American River Transportation Company"
+"A.R.T.C.O.": "American River Transportation Company"
+
+# Archer Daniels Midland (ADM)
+"ARCHER DANIELS MIDLAND COMPANY": "Archer Daniels Midland Company"
+"ARCHER DANIELS MIDLAND CO": "Archer Daniels Midland Company"
+"ARCHER-DANIELS-MIDLAND": "Archer Daniels Midland Company"
+"ADM TRANSPORTATION": "Archer Daniels Midland Company"
+"ADM": "Archer Daniels Midland Company"
+
+# Cargill
+"CARGILL INCORPORATED": "Cargill Incorporated"
+"CARGILL INC": "Cargill Incorporated"
+"CARGILL INC.": "Cargill Incorporated"
+"CARGILL": "Cargill Incorporated"
+"CARGILL MARINE AND TERMINAL": "Cargill Incorporated"
+
+# Artco / Cenac
+"CENAC MARINE SERVICES": "Cenac Marine Services"
+"CENAC MARINE SERVICES LLC": "Cenac Marine Services"
+"CENAC TOWING COMPANY": "Cenac Marine Services"
+"CENAC TOWING": "Cenac Marine Services"
+
+# AEP River Operations
+"AEP RIVER OPERATIONS LLC": "AEP River Operations LLC"
+"AEP RIVER OPERATIONS": "AEP River Operations LLC"
+"AMERICAN ELECTRIC POWER": "AEP River Operations LLC"
+
+# Crounse Corporation
+"CROUNSE CORPORATION": "Crounse Corporation"
+"CROUNSE CORP": "Crounse Corporation"
+"E.N. BISSO & SON": "Crounse Corporation"
+
+# Marquette Transportation
+"MARQUETTE TRANSPORTATION COMPANY": "Marquette Transportation Company"
+"MARQUETTE TRANSPORTATION CO": "Marquette Transportation Company"
+"MARQUETTE TRANSPORTATION": "Marquette Transportation Company"
+"MARQUETTE TRANS CO": "Marquette Transportation Company"
+
+# SCF Marine
+"SCF MARINE INC": "SCF Marine Inc"
+"SCF MARINE": "SCF Marine Inc"
+"SOUTHERN COUNTIES FORWARDING": "SCF Marine Inc"
+
+# Cooperative Elevator Company
+"COOPERATIVE ELEVATOR COMPANY": "Cooperative Elevator Company"
+"COOPERATIVE ELEVATOR CO": "Cooperative Elevator Company"
+"CO-OP ELEVATOR": "Cooperative Elevator Company"
+
+# Bouchard Transportation
+"BOUCHARD TRANSPORTATION COMPANY": "Bouchard Transportation Company"
+"BOUCHARD TRANSPORTATION CO": "Bouchard Transportation Company"
+"BOUCHARD TRANSPORTATION": "Bouchard Transportation Company"
+
+# Eckstein Marine
+"ECKSTEIN MARINE SERVICE": "Eckstein Marine Service"
+"ECKSTEIN MARINE": "Eckstein Marine Service"
+"ECKSTEIN MARINE LLC": "Eckstein Marine Service"
+
+# Florida Marine Transporters
+"FLORIDA MARINE TRANSPORTERS": "Florida Marine Transporters"
+"FLORIDA MARINE TRANSPORTERS INC": "Florida Marine Transporters"
+"FMT": "Florida Marine Transporters"
+
+# Jeffboat
+"JEFFBOAT LLC": "Jeffboat LLC"
+"JEFFBOAT": "Jeffboat LLC"
+"JEFFERSONVILLE BOAT": "Jeffboat LLC"
+
+# Memco Barge Line
+"MEMCO BARGE LINE": "Memco Barge Line"
+"MEMCO BARGE LINE INC": "Memco Barge Line"
+"MEMCO": "Memco Barge Line"
+
+# National Marine Service
+"NATIONAL MARINE SERVICE": "National Marine Service"
+"NATIONAL MARINE SERVICE INC": "National Marine Service"
+"NMS": "National Marine Service"
+
+# Inland Marine Service
+"INLAND MARINE SERVICE": "Inland Marine Service"
+"INLAND MARINE SERVICE INC": "Inland Marine Service"
+"IMS": "Inland Marine Service"
+
+# Turn Services
+"TURN SERVICES LLC": "Turn Services LLC"
+"TURN SERVICES": "Turn Services LLC"
+"TURN MARINE": "Turn Services LLC"
+
+# Waterfront Services
+"WATERFRONT SERVICES INC": "Waterfront Services Inc"
+"WATERFRONT SERVICES": "Waterfront Services Inc"
+
+# Golding Barge Line
+"GOLDING BARGE LINE": "Golding Barge Line"
+"GOLDING BARGE LINE INC": "Golding Barge Line"
+
+# Hollywood Marine
+"HOLLYWOOD MARINE INC": "Hollywood Marine Inc"
+"HOLLYWOOD MARINE": "Hollywood Marine Inc"
+
+# Magnolia Marine Transport
+"MAGNOLIA MARINE TRANSPORT COMPANY": "Magnolia Marine Transport Company"
+"MAGNOLIA MARINE TRANSPORT": "Magnolia Marine Transport Company"
+"MAGNOLIA MARINE": "Magnolia Marine Transport Company"
+
+# Canal Barge Company
+"CANAL BARGE COMPANY": "Canal Barge Company"
+"CANAL BARGE CO": "Canal Barge Company"
+
+# Brownwater Services
+"BROWNWATER SERVICES": "Brownwater Services"
+"BROWNWATER SERVICES INC": "Brownwater Services"
+
+# Cooper Consolidated
+"COOPER CONSOLIDATED": "Cooper Consolidated"
+"COOPER CONSOLIDATED INC": "Cooper Consolidated"
+"COOPER/T SMITH": "Cooper Consolidated"
+
+# Gaston Marine
+"GASTON MARINE INC": "Gaston Marine Inc"
+"GASTON MARINE": "Gaston Marine Inc"
+
+# Jeff Hecker Marine
+"JEFF HECKER MARINE": "Jeff Hecker Marine"
+"JEFF HECKER MARINE INC": "Jeff Hecker Marine"
+
+# McDonough Marine Service
+"MCDONOUGH MARINE SERVICE": "McDonough Marine Service"
+"MCDONOUGH MARINE": "McDonough Marine Service"
+
+# Savage Services
+"SAVAGE SERVICES CORPORATION": "Savage Services Corporation"
+"SAVAGE SERVICES CORP": "Savage Services Corporation"
+"SAVAGE SERVICES": "Savage Services Corporation"
+"SAVAGE": "Savage Services Corporation"
+
+# Orgulf Transport
+"ORGULF TRANSPORT COMPANY": "Orgulf Transport Company"
+"ORGULF TRANSPORT CO": "Orgulf Transport Company"
+"ORGULF": "Orgulf Transport Company"
+
+# Penn Maritime
+"PENN MARITIME INC": "Penn Maritime Inc"
+"PENN MARITIME": "Penn Maritime Inc"
+
+# Common abbreviations and legal entity variations
+# Add specific operators as you identify them in your data
+
+# LLC/INC/CORP standardization patterns
+# These will be applied as cleanup rules after specific mappings
+
+# Notes for manual review:
+# - Check for typos and spacing variations
+# - Add state-specific subsidiaries if they should be rolled up
+# - Consider whether to separate operating divisions
+# - Review recent mergers and acquisitions
+# - Validate against DOT/MARAD official records

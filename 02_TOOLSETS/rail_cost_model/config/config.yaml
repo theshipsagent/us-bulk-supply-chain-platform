@@ -1,0 +1,30 @@
+data_sources:
+  ntad:
+    rail_lines: "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0"
+    rail_nodes: "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Nodes/FeatureServer/0"
+    rail_yards: "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_Rail_Yards/FeatureServer/0"
+    # Alternative: Direct shapefile download from BTS Geospatial Catalog
+    shapefile_base: "https://geodata.bts.gov/datasets/"
+
+  stb:
+    urcs_program: "https://www.stb.gov/reports-data/uniform-rail-costing-system/"
+    waybill_public: "https://www.stb.gov/reports-data/waybill/"
+    economic_data: "https://www.stb.gov/reports-data/economic-data/"
+    commodity_stratification: "https://www.stb.gov/wp-content/uploads/CRSR7-2023.xlsx"
+
+  faf:
+    faf5_database: "https://www.bts.gov/faf"
+    faf5_network: "https://data-usdot.opendata.arcgis.com/datasets/usdot::freight-analysis-framework-faf5-network-links"
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  outputs: "outputs"
+
+network:
+  crs: "EPSG:4326"  # WGS84 for lat/lon
+  crs_projected: "EPSG:5070"  # Albers Equal Area for distance calculations
+
+costing:
+  year: 2023
+  default_car_type: "C113"  # Covered hopper

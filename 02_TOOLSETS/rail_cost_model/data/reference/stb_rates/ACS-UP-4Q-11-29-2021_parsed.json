@@ -1,0 +1,3175 @@
+[
+  {
+    "contract_id": "STB-UPOTMQ 150381-F",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 22, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Wheat, Not Organically Grown Free Of Fertilizer And Or Pesticide Applications",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat Exc.Buckwheat See 01139",
+        "amendment_action": "ADDITION"
+      }
+    ],
+    "shippers": [
+      "AGREX INC"
+    ],
+    "origins": [
+      {
+        "location": "MILWAUKEE, WI",
+        "city": "MILWAUKEE",
+        "state": "WI",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ROBERTS, ID",
+        "city": "ROBERTS",
+        "state": "ID",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "STRATFORD, TX",
+        "city": "STRATFORD",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ASHTON, ID",
+        "city": "ASHTON",
+        "state": "ID",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "AMERICAN FALLS, ID",
+        "city": "AMERICAN FALLS",
+        "state": "ID",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "NOGALES, AZ",
+        "city": "NOGALES",
+        "state": "AZ",
+        "amendment_action": null,
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "September 18, 2013",
+    "duration_amendment_effective_date": "January 1, 2021",
+    "duration_expiration_date": "December 31, 2021",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Single Car Shipments",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {},
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPOTMQ 161123-M",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 22, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Sorghum Grains",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Corn Exc.Popcorn See 01152",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Soybeans (Soya Beans)",
+        "amendment_action": null
+      }
+    ],
+    "shippers": [
+      "LOUIS DREYFUS COMPANY HOLDING INC"
+    ],
+    "origins": [
+      {
+        "location": "CANTON, KS",
+        "city": "CANTON",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "STERLING, IL",
+        "city": "STERLING",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "HARVARD, IL",
+        "city": "HARVARD",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SUPERIOR, NE",
+        "city": "SUPERIOR",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHAPPELL, NE",
+        "city": "CHAPPELL",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CEDAR RAPIDS, IA",
+        "city": "CEDAR RAPIDS",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "WA - SEATTLE AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "ST LOUIS, MO",
+        "city": "ST LOUIS",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EDINBURG, TX",
+        "city": "EDINBURG",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "January 1, 2017",
+    "duration_amendment_effective_date": "January 1, 2021",
+    "duration_expiration_date": "December 31, 2021",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Minimum shipment of 107 carloads.; Multiple Car Shipments; Single Car Shipments DELETION",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {
+      "WA - SEATTLE AGS": [
+        "ABERDEEN, WA",
+        "ABERDEEN JCT, WA",
+        "ALDERTON, WA",
+        "ALLISON, WA",
+        "ANDOVER, WA",
+        "ARGO, WA",
+        "AUBURN, WA",
+        "BALLARD, WA",
+        "BALLARD JCT, WA",
+        "BANGOR, WA",
+        "BAY SHORE, WA",
+        "BELFAIR, WA",
+        "BELLINGHAM, WA",
+        "BELMORE, WA",
+        "BLACK RIVER, WA",
+        "BLAJCT, WA",
+        "BLAKESLEE JCT, WA",
+        "BREMERTON, WA",
+        "BRIARWOOD, WA",
+        "BUCODA, WA",
+        "BURLINGTON, WA",
+        "CAMP MURRAY, WA",
+        "CAPITOL, WA",
+        "CENPARK, WA",
+        "CENTRALIA, WA",
+        "CHEHALIS, WA",
+        "CLAY CITY, WA",
+        "CONCORA, WA",
+        "DIVIDE, WA",
+        "DUPONT, WA",
+        "EAST OLYMPIA, WA",
+        "EAST PUYALLUP, WA",
+        "EATONVILLE JCT, WA",
+        "EDMOND, WA",
+        "EDMONDS, WA",
+        "ELBE, WA",
+        "ELMA, WA",
+        "ESSEX, WA",
+        "EVERETT, WA",
+        "EVERETT, WA",
+        "FERNDALE, WA",
+        "FIFE, WA",
+        "FREDERICKSON, WA",
+        "FT LEWIS, WA",
+        "GATE, WA",
+        "GLOBAL GATEWAY NO, WA",
+        "GRAHAM, WA",
+        "GRAND MOUND, WA",
+        "GREENDALE, WA",
+        "HARBOR ISLAND, WA",
+        "HILLSDALE, WA",
+        "HOQUIAM, WA",
+        "INTERBAY, WA",
+        "JUNCTION CITY, WA",
+        "KAPOWSIN, WA",
+        "KENT, WA",
+        "KETRON, WA",
+        "KYRO, WA",
+        "LAKESIDE, WA",
+        "LAKEVIEW, WA",
+        "LOVELAND, WA",
+        "LYNCH CREEK, WA",
+        "LYNDEN, WA",
+        "MALTBY, WA",
+        "MARMAC, WA",
+        "MAYTOWN, WA",
+        "MCCLEARY, WA",
+        "MCKENNA, WA",
+        "MCMILLIN, WA",
+        "MEEKER, WA",
+        "MIDLAND, WA",
+        "MINERAL, WA",
+        "MONROE, WA",
+        "MONTESANO, WA",
+        "MORTON, WA",
+        "MOUNT VERNON, WA",
+        "MT VERNON, WA",
+        "NAD JCT, WA",
+        "NAPAVINE, WA",
+        "NEW RELIANCE, WA",
+        "NISQUALLY, WA",
+        "NORTH PUYALLUP, WA",
+        "OAKVILLE, WA",
+        "OFFLAKE, WA",
+        "OFFUTT LAKE, WA",
+        "OHOP, WA",
+        "OLYMPIA, WA",
+        "PARK JCT, WA",
+        "PIONEER, WA",
+        "PORT TOWNSEND, WA",
+        "PUYALLUP, WA",
+        "RAINIER, WA",
+        "RAISH, WA",
+        "RESERVATION, WA",
+        "ROCHESTER, WA",
+        "ROY, WA",
+        "SEATTLE, WA",
+        "SEATTLE PIER, WA",
+        "SHELTON, WA",
+        "SILVERDALE, WA",
+        "SKOOKUMCH, WA",
+        "SKOOKUMCHUCK, WA",
+        "SOUTH BELFAIR, WA",
+        "SOUTH TACOMA, WA",
+        "ST CLAIR, WA",
+        "STEILACOOM, WA",
+        "STIMSON, WA",
+        "SUMNER, WA",
+        "TACOMA, WA",
+        "TACOMA EXP, WA",
+        "TACOMA EXPORT, WA",
+        "TACOMA JCT, WA",
+        "TACOMA PCT, WA",
+        "TAYLOR WAY, WA",
+        "TENINO, WA",
+        "THRIFT, WA",
+        "TITLOW, WA",
+        "TUKWILA, WA",
+        "TUMWATER, WA",
+        "VADER, WA",
+        "WABASH, WA",
+        "WESCO, WA",
+        "WEST BLAIR, WA",
+        "WEST HILLSDALE, WA",
+        "WEST TACOMA, WA",
+        "WESTERN JCT, WA",
+        "WHITES, WA",
+        "WINLOCK, WA",
+        "WJCT, WA",
+        "WOODINVILLE, WA",
+        "YELM, WA"
+      ]
+    },
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPOTMQ 162549-M",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 22, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Sorghum Grains",
+        "amendment_action": null
+      },
+      {
+        "description": "Corn Exc.Popcorn See 01152",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Wheat Exc.Buckwheat See 01139",
+        "amendment_action": "ADDITION"
+      }
+    ],
+    "shippers": [
+      "CHS HEADQUARTERS"
+    ],
+    "origins": [
+      {
+        "location": "LUVERNE, MN",
+        "city": "LUVERNE",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "BRULE, NE",
+        "city": "BRULE",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WORTHINGTON, MN",
+        "city": "WORTHINGTON",
+        "state": "MN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SUPERIOR, WI",
+        "city": "SUPERIOR",
+        "state": "WI",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SHARON SPRINGS, KS",
+        "city": "SHARON SPRINGS",
+        "state": "KS",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "BINGHAM LAKE, MN",
+        "city": "BINGHAM LAKE",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "GOWRIE, IA",
+        "city": "GOWRIE",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EMMETSBURG, IA",
+        "city": "EMMETSBURG",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "DOWNS, KS",
+        "city": "DOWNS",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "OGDEN, UT",
+        "city": "OGDEN",
+        "state": "UT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "FAIRMONT, MN",
+        "city": "FAIRMONT",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "LOS ANGELES, CA",
+        "city": "LOS ANGELES",
+        "state": "CA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MANKATO, MN",
+        "city": "MANKATO",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "AMES, IA",
+        "city": "AMES",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "KALAMA, WA",
+        "city": "KALAMA",
+        "state": "WA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "OR - PORTLAND AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "SUPERIOR, WI",
+        "city": "SUPERIOR",
+        "state": "WI",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ERDA, UT",
+        "city": "ERDA",
+        "state": "UT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "November 16, 2017",
+    "duration_amendment_effective_date": "January 1, 2021",
+    "duration_expiration_date": "December 31, 2021",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Minimum shipment of 107 carloads.; Multiple Car Shipments; Single Car Shipments DELETION",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {
+      "OR - PORTLAND AGS": [
+        "ALBINA, OR",
+        "ASTORIA, OR",
+        "AUMSVILLE, OR",
+        "AURORA, OR",
+        "BARNES YARD, OR",
+        "BATTERSON, OR",
+        "BONNEVILLE, OR",
+        "BRIDAL VEIL, OR",
+        "BROOKS, OR",
+        "BUXTON, OR",
+        "CANBY, OR",
+        "CLACKAMAS, OR",
+        "COALCA, OR",
+        "COCHRAN, OR",
+        "DODSON, OR",
+        "EAST MILWAUKIE, OR",
+        "EAST PORTLAND, OR",
+        "FIR, OR",
+        "GARBALDI, OR",
+        "GARIBALDI, OR",
+        "GEER, OR",
+        "GERVAIS, OR",
+        "HEMLOCK, OR",
+        "HITO, OR",
+        "HUBBARD, OR",
+        "KENTON, OR",
+        "LAKE YARD, OR",
+        "LIBERAL, OR",
+        "MILWAUKIE, OR",
+        "MOHLER, OR",
+        "MT ANGEL, OR",
+        "NORTH PORTLAND, OR",
+        "OREGON CITY, OR",
+        "OSWEGO, OR",
+        "PORTLAND, OR",
+        "PRATUM, OR",
+        "PULP, OR",
+        "RENARD, OR",
+        "RIVER GATE, OR",
+        "ROCKWOOD, OR",
+        "SHAW, OR",
+        "SILVERTON, OR",
+        "ST JOHNS, OR",
+        "STAYTON, OR",
+        "TILLAMOOK, OR",
+        "TROUTDALE, OR",
+        "WARRENTON, OR",
+        "WEST LINN, OR",
+        "WHEELER, OR",
+        "WOODBURN, OR",
+        "AMPERE, WA",
+        "BARBERTON, WA",
+        "BATTLE GROUND, WA",
+        "BRUSH PRAIRIE, WA",
+        "CAMAS, WA",
+        "CASTLE ROCK, WA",
+        "CATHLAMET, WA",
+        "CHELATCHIE, WA",
+        "COLUMBIA JCT, WA",
+        "HEISON, WA",
+        "HOMAN, WA",
+        "KALAMA, WA",
+        "KELSO, WA",
+        "LONGVIEW, WA",
+        "OSTRANDER, WA",
+        "RIDGEFIELD, WA",
+        "ROCKY POINT, WA",
+        "RYE JCT, WA",
+        "VANCOUVER, WA",
+        "VANCOUVER JCT, WA",
+        "WASHOUGAL, WA",
+        "WOODLAND, WA",
+        "YACOLT, WA"
+      ]
+    },
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPOTMQ 163686-T",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 24, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Soybeans (Soya Beans)",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Wheat Bran, Middlings Or Shorts",
+        "amendment_action": "ADDITION"
+      }
+    ],
+    "shippers": [
+      "ARCHER DANIELS MIDLAND COMPANY"
+    ],
+    "origins": [
+      {
+        "location": "COLUMBUS, NE",
+        "city": "COLUMBUS",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "AMARILLO, TX",
+        "city": "AMARILLO",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ALBERT CITY, IA",
+        "city": "ALBERT CITY",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MEMPHIS, TN",
+        "city": "MEMPHIS",
+        "state": "TN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANSAS CITY, MO",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CEDAR RAPIDS, IA",
+        "city": "CEDAR RAPIDS",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ALFALFA, TX",
+        "city": "ALFALFA",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "YSLETA, TX",
+        "city": "YSLETA",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EVE, MO",
+        "city": "EVE",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "PRATT, KS",
+        "city": "PRATT",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "DALHART, TX",
+        "city": "DALHART",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CLINTON, IA",
+        "city": "CLINTON",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SILVER BOW, MT",
+        "city": "SILVER BOW",
+        "state": "MT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CLEARFIELD, UT",
+        "city": "CLEARFIELD",
+        "state": "UT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ARKANSAS CITY, KS",
+        "city": "ARKANSAS CITY",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "DENVER, CO",
+        "city": "DENVER",
+        "state": "CO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "LA - SOUTH AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "DES MOINES, IA",
+        "city": "DES MOINES",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BRANSON, MO",
+        "city": "BRANSON",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ARLINGTON, TX",
+        "city": "ARLINGTON",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "PASADENA, TX",
+        "city": "PASADENA",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MOCKINGBIRD, TX",
+        "city": "MOCKINGBIRD",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "PRATT, KS",
+        "city": "PRATT",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "LEVELLAND, TX",
+        "city": "LEVELLAND",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "LAREDO, TX",
+        "city": "LAREDO",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CAMANCHE, IA",
+        "city": "CAMANCHE",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "TAGUS, CA",
+        "city": "TAGUS",
+        "state": "CA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "January 1, 2018",
+    "duration_amendment_effective_date": "January 1, 2021",
+    "duration_expiration_date": "December 31, 2021",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Minimum shipment of 98 carloads. ADDITION; Multiple Car Shipments ADDITION",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {
+      "LA - SOUTH AGS": [
+        "ADDIS, LA",
+        "ALEXANDRIA, LA",
+        "ALLEMANIA, LA",
+        "AMA, LA",
+        "ANCHORAGE, LA",
+        "ARMANT, LA",
+        "AVONDALE, LA",
+        "AVOYELLES PAR COOP, LA",
+        "BARMEN, LA",
+        "BASILE, LA",
+        "BATCHELOR, LA",
+        "BATON ROUGE, LA",
+        "BERWICK, LA",
+        "BOEUF, LA",
+        "BOUDREAUX, LA",
+        "BOUTTE, LA",
+        "BRIMSTONE, LA",
+        "BRINGHURST, LA",
+        "BROOKLAWN, LA",
+        "BUHLER, LA",
+        "CADE, LA",
+        "CAMP BEAUREGARD, LA",
+        "CHAMBERS, LA",
+        "CHENEYVILLE, LA",
+        "CHOCTAW, LA",
+        "COLUMBI, LA",
+        "COTTON WAREHOUSE, LA",
+        "CULLEN, LA",
+        "DE QUINCY, LA",
+        "DONALDSONVILLE, LA",
+        "DUFRESNE, LA",
+        "EDGARD, LA",
+        "ELDER, LA",
+        "ELTON, LA",
+        "ERWINVILLE, LA",
+        "ESSEN, LA",
+        "FENTON, LA",
+        "FONTENOT, LA",
+        "FORDOCHE, LA",
+        "FRANKLIN, LA",
+        "FRELLSEN, LA",
+        "FULTON, LA",
+        "GLENMORA, LA",
+        "GLYNN, LA",
+        "GOOD HOPE, LA",
+        "GORDON, LA",
+        "GREEN ISLAND, LA",
+        "GROSSE TETE, LA",
+        "GUY, LA",
+        "HAHNVILLE, LA",
+        "HARBOR, LA",
+        "HAZELWOOD, LA",
+        "HELME, LA",
+        "IOWA, LA",
+        "IOWA JCT, LA",
+        "IRENE, LA",
+        "JENNINGS, LA",
+        "JOHNSON, LA",
+        "KELLER, LA",
+        "KILLONA, LA",
+        "KINDER, LA",
+        "KLEINPETER, LA",
+        "KROTZ SPRINGS, LA",
+        "LACASSINE, LA",
+        "LACOUR, LA",
+        "LAWTELL, LA",
+        "LE COMPTE, LA",
+        "LE MOYEN, LA",
+        "LEGONIER, LA",
+        "LETTSWORTH, LA",
+        "LIVONIA, LA",
+        "LOBDELL, LA",
+        "LOCKMOOR, LA",
+        "LULA, LA",
+        "LULING, LA",
+        "MALLARD JCT, LA",
+        "MARINGOUIN, LA",
+        "MARRERO, LA",
+        "MARYLAND, LA",
+        "MARYLAND, LA",
+        "MCCALL, LA",
+        "MCELROY, LA",
+        "MCKNEELEY, LA",
+        "MCNARY, LA",
+        "MEEKER, LA",
+        "MELVILLE, LA",
+        "MERMENTAU, LA",
+        "MFC SPUR, LA",
+        "MIDLAND, LA",
+        "MORGAN CITY, LA",
+        "MORGANZA, LA",
+        "MORRISON, LA",
+        "MORROW, LA",
+        "MOSSVILLE, LA",
+        "NEW ORLEANS, LA",
+        "NEW ROADS, LA",
+        "NORTH BATON ROUGE, LA",
+        "NORTH MARYLAND, LA",
+        "OAKDALE, LA",
+        "OBERLIN, LA",
+        "OLIVIER, LA",
+        "PALMETTO, LA",
+        "PARADIS, LA",
+        "PAWNEE, LA",
+        "PECAN SPUR, LA",
+        "PINEVILLE, LA",
+        "PLAQUEMINE, LA",
+        "PORT ALLEN, LA",
+        "PORT BARRE, LA",
+        "PORT HUDSON, LA",
+        "POWER HOUSE SPUR, LA",
+        "RAMOS, LA",
+        "REEVES, LA",
+        "RESERVE, LA",
+        "ROANOKE, LA",
+        "ROSA, LA",
+        "ROSE BLUFF, LA",
+        "SCOTLAND, LA",
+        "SELLERS, LA",
+        "SHREWSBURY, LA",
+        "SMITHFIELD, LA",
+        "SPRINGHILL, LA",
+        "ST JAMES, LA",
+        "STARKS, LA",
+        "SULPHUR, LA",
+        "TAFT, LA",
+        "THIBODAU JCT, LA",
+        "TIOGA, LA",
+        "UNATEX, LA",
+        "URSA, LA",
+        "VACHERIE, LA",
+        "VALLIER, LA",
+        "WATERFORD SPUR, LA",
+        "WEST LAKE, LA",
+        "WEST LAKE CHARLES, LA",
+        "WESTWEGO, LA",
+        "WHITE CASTLE, LA",
+        "WOODLAWN, LA",
+        "WOODWORTH, LA",
+        "ZACARTER, LA",
+        "ZEE, LA"
+      ]
+    },
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPOTMQ 163892-CU",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 23, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "KCSM",
+        "address": "",
+        "amendment_action": null
+      },
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Wheat Exc.Buckwheat See 01139",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Sorghum Grains",
+        "amendment_action": null
+      },
+      {
+        "description": "Corn Exc.Popcorn See 01152",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Soybeans (Soya Beans)",
+        "amendment_action": null
+      },
+      {
+        "description": "Soybeans, Dried, Not Organically Grown Free Of Fertiziler And Or Pesticide Applications",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Corn Meal Or Flour Exc.Animal Or Poultry Feed See 20421- 20423",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Wheat Bran, Middlings Or Shorts",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Oats",
+        "amendment_action": null
+      }
+    ],
+    "shippers": [
+      "CARGILL",
+      "CARGILL INC"
+    ],
+    "origins": [
+      {
+        "location": "STERLING, IL",
+        "city": "STERLING",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "HOUSTON, TX",
+        "city": "HOUSTON",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "TOPEKA, KS",
+        "city": "TOPEKA",
+        "state": "KS",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BLOOMINGTON, IL",
+        "city": "BLOOMINGTON",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "WARNER, UT",
+        "city": "WARNER",
+        "state": "UT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BYERS, CO",
+        "city": "BYERS",
+        "state": "CO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHEYENNE WELLS, CO",
+        "city": "CHEYENNE WELLS",
+        "state": "CO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WAKEENEY, KS",
+        "city": "WAKEENEY",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "HUTCHINSON, KS",
+        "city": "HUTCHINSON",
+        "state": "KS",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "BRIDGEPORT, IA",
+        "city": "BRIDGEPORT",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BUFFALO LAKE, MN",
+        "city": "BUFFALO LAKE",
+        "state": "MN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "OGALLAH, KS",
+        "city": "OGALLAH",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BLAIR, NE",
+        "city": "BLAIR",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ST LOUIS, MO",
+        "city": "ST LOUIS",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "PEORIA, IL",
+        "city": "PEORIA",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "HAVILAND, KS",
+        "city": "HAVILAND",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CEDAR RAPIDS, IA",
+        "city": "CEDAR RAPIDS",
+        "state": "IA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "TARA, IA",
+        "city": "TARA",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "FRANKFORT, KS",
+        "city": "FRANKFORT",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MOUNT PLEASANT, TX",
+        "city": "MOUNT PLEASANT",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "TEMPLE, TX",
+        "city": "TEMPLE",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SAVAGE, MN",
+        "city": "SAVAGE",
+        "state": "MN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BROWNTON, MN",
+        "city": "BROWNTON",
+        "state": "MN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ATCHISON, KS",
+        "city": "ATCHISON",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "GIBBON, NE",
+        "city": "GIBBON",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ALBION, NE",
+        "city": "ALBION",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ORD, NE",
+        "city": "ORD",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CARLETON, NE",
+        "city": "CARLETON",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SALINA, KS",
+        "city": "SALINA",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "SALINAS VICTORIA, NL",
+        "city": "SALINAS VICTORIA",
+        "state": "NL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "NOLTE, TX",
+        "city": "NOLTE",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MFC SPUR, LA",
+        "city": "MFC SPUR",
+        "state": "LA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "HOUSTON, TX",
+        "city": "HOUSTON",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ST PAUL, MN",
+        "city": "ST PAUL",
+        "state": "MN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WESTWEGO, LA",
+        "city": "WESTWEGO",
+        "state": "LA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "TIMPIE, UT",
+        "city": "TIMPIE",
+        "state": "UT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "KALAMA, WA",
+        "city": "KALAMA",
+        "state": "WA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EAST ST LOUIS, IL",
+        "city": "EAST ST LOUIS",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "TARA, IA",
+        "city": "TARA",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MONTERREY, NL",
+        "city": "MONTERREY",
+        "state": "NL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "DOULOM, NE",
+        "city": "DOULOM",
+        "state": "NE",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CAMANCHE, IA",
+        "city": "CAMANCHE",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "TACOMA, WA",
+        "city": "TACOMA",
+        "state": "WA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BRIDGEPORT, IA",
+        "city": "BRIDGEPORT",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MEMPHIS, TN",
+        "city": "MEMPHIS",
+        "state": "TN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CEDAR RAPIDS, IA",
+        "city": "CEDAR RAPIDS",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "HEARNE, TX",
+        "city": "HEARNE",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANSAS CITY, MO",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "FT WORTH, TX",
+        "city": "FT WORTH",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EDDYVILLE, IA",
+        "city": "EDDYVILLE",
+        "state": "IA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WARNER, UT",
+        "city": "WARNER",
+        "state": "UT",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EL TULE, AG",
+        "city": "EL TULE",
+        "state": "AG",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "January 1, 2019",
+    "duration_amendment_effective_date": "January 1, 2021",
+    "duration_expiration_date": "December 31, 2021",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Minimum shipment of 107 carloads. ADDITION; Multiple Car Shipments ADDITION; Single Car Shipments DELETION",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {},
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPOTMQ 165245-AL",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 23, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "AT & L RAILROAD CO INC",
+        "address": "P.O. Box 29; Watonga, OK 73772",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "name": "CANADIAN NATIONAL RAILWAYS",
+        "address": "935 De La Gauchetiere St. West; Montreal, PQ H3B 2M9",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "name": "FERROCARRIL MEXICANO S A DE C V",
+        "address": "Col. Bosques De Las Lomas; Mexico City, DF 11700",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "name": "KCSM",
+        "address": "Mexico City, DF 11700",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Wheat Exc.Buckwheat See 01139",
+        "amendment_action": "ADDITION"
+      },
+      {
+        "description": "Soybeans (Soya Beans)",
+        "amendment_action": "ADDITION"
+      }
+    ],
+    "shippers": [
+      "THE ANDERSONS INC"
+    ],
+    "origins": [
+      {
+        "location": "STRATTON, CO",
+        "city": "STRATTON",
+        "state": "CO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ID - IDAHO FALLS AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "ID - POCATELLO AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "AMERICAN FALLS, ID",
+        "city": "AMERICAN FALLS",
+        "state": "ID",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "IDAHO FALLS, ID",
+        "city": "IDAHO FALLS",
+        "state": "ID",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "COLLYER, KS",
+        "city": "COLLYER",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SMITH CENTER, KS",
+        "city": "SMITH CENTER",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WICHITA, KS",
+        "city": "WICHITA",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "CORPUS CHRISTI, TX",
+        "city": "CORPUS CHRISTI",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MILWAUKEE, WI",
+        "city": "MILWAUKEE",
+        "state": "WI",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ADRIAN, MO",
+        "city": "ADRIAN",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "BUHL, ID",
+        "city": "BUHL",
+        "state": "ID",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "OSBORNE, KS",
+        "city": "OSBORNE",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "TX - EL PASO AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "DOWNS, KS",
+        "city": "DOWNS",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANORADO, KS",
+        "city": "KANORADO",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WAKEENEY, KS",
+        "city": "WAKEENEY",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "GRINNELL, KS",
+        "city": "GRINNELL",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "GORHAM, KS",
+        "city": "GORHAM",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "GRAINFIELD, KS",
+        "city": "GRAINFIELD",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "HAVILAND, KS",
+        "city": "HAVILAND",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MINGO, KS",
+        "city": "MINGO",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "OAKLEY, KS",
+        "city": "OAKLEY",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "PRATT, KS",
+        "city": "PRATT",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "QUINTER, KS",
+        "city": "QUINTER",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SALINA, KS",
+        "city": "SALINA",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "VICTORIA, KS",
+        "city": "VICTORIA",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MEDFORD, OK",
+        "city": "MEDFORD",
+        "state": "OK",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "LEBANON, KS",
+        "city": "LEBANON",
+        "state": "KS",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WATONGA, OK",
+        "city": "WATONGA",
+        "state": "OK",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "WA - WALLULA AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "TX - HOUSTON AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "OR - PORTLAND AGS (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": true
+      },
+      {
+        "location": "BRAWLEY, CA",
+        "city": "BRAWLEY",
+        "state": "CA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANSAS CITY, MO",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "LAREDO, TX",
+        "city": "LAREDO",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "NEW BRAUNFELS, TX",
+        "city": "NEW BRAUNFELS",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SAN ANTONIO, TX",
+        "city": "SAN ANTONIO",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "SHERMAN, TX",
+        "city": "SHERMAN",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "EAGLE PASS, TX",
+        "city": "EAGLE PASS",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "NOGALES, AZ",
+        "city": "NOGALES",
+        "state": "AZ",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "GALENA PARK, TX",
+        "city": "GALENA PARK",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MIDLAND, TX",
+        "city": "MIDLAND",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "TOLLESON, AZ",
+        "city": "TOLLESON",
+        "state": "AZ",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "MORALES, NL",
+        "city": "MORALES",
+        "state": "NL",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "VILLAGRAN, GJ",
+        "city": "VILLAGRAN",
+        "state": "GJ",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "January 1, 2019",
+    "duration_amendment_effective_date": "January 1, 2021",
+    "duration_expiration_date": "December 31, 2021",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Minimum shipment of 107 carloads. ADDITION; Multiple Car Shipments ADDITION",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {
+      "ID - IDAHO FALLS AGS": [
+        "ABERDEEN, ID",
+        "ABERDEEN JCT, ID",
+        "AIKEN, ID",
+        "AMMON, ID",
+        "ASHTON, ID",
+        "BASSETT, ID",
+        "BLACKFOOT, ID",
+        "BONDED SIDING, ID",
+        "BYRNE, ID",
+        "BYRNE, ID",
+        "CAMAS, ID",
+        "CHESTER, ID",
+        "CLARKSON, ID",
+        "COLLINS, ID",
+        "COLTMAN, ID",
+        "COLTMAN, ID",
+        "COTTON, ID",
+        "DUBOIS, ID",
+        "EGIN, ID",
+        "EGIN, ID",
+        "FIBRE, ID",
+        "FIRTH, ID",
+        "FT HALL, ID",
+        "FULLMER, ID",
+        "GALE, ID",
+        "GARRY, ID",
+        "GARRY, ID",
+        "GIBSON, ID",
+        "GOLDEN VALLEY, ID",
+        "GRANT, ID",
+        "GRANT, ID",
+        "HAMER, ID",
+        "HART, ID",
+        "HART, ID",
+        "HUMPHREY, ID",
+        "IDAHO FALLS, ID",
+        "IONA, ID",
+        "JENSON, ID",
+        "JENSON, ID",
+        "JOLLEY, ID",
+        "JOLLEY, ID",
+        "KEN, ID",
+        "KEN, ID",
+        "LEWISVILLE, ID",
+        "LINCOLN, ID",
+        "LINCOLN, ID",
+        "LINCOLN JCT, ID",
+        "LINCOLN JCT, ID",
+        "LORENZO, ID",
+        "LORENZO, ID",
+        "MENAN, ID",
+        "MIDWAY, ID",
+        "MIDWAY, ID",
+        "MITCHELL, ID",
+        "MOODY, ID",
+        "MOODY, ID",
+        "MORELAND, ID",
+        "NEWDALE, ID",
+        "OLSEN, ID",
+        "ORVIN, ID",
+        "ORVIN, ID",
+        "OSGOOD, ID",
+        "PARKER, ID",
+        "PARKINSON, ID",
+        "PARKINSON, ID",
+        "PAYNE, ID",
+        "PINGREE, ID",
+        "REXBURG, ID",
+        "RIGBY, ID",
+        "RIRIE, ID",
+        "ROBERTS, ID",
+        "ROCKFORD, ID",
+        "ROUSE, ID",
+        "SCOVILLE, ID",
+        "SHELLEY, ID",
+        "SPENCER, ID",
+        "SPUD, ID",
+        "ST ANTHONY, ID",
+        "ST LEON, ID",
+        "ST LEON, ID",
+        "SUGAR CITY, ID",
+        "TABER, ID",
+        "THORNTON, ID",
+        "THORNTON, ID",
+        "UCON, ID",
+        "WACO, ID",
+        "WADA, ID",
+        "WALKER, ID",
+        "WALKER, ID",
+        "WAMAR, ID",
+        "WAMAR, ID",
+        "WAPELLO, ID"
+      ],
+      "ID - POCATELLO AGS": [
+        "ACEQUIA, ID",
+        "ADELAIDE, ID",
+        "ALEXANDER, ID",
+        "AMERICAN FALLS, ID",
+        "ARIMO, ID",
+        "BANCROFT, ID",
+        "BANNOCK, ID",
+        "BEETVILLE, ID",
+        "BEETVILLE, ID",
+        "BLASER, ID",
+        "BORAH, ID",
+        "BURLEY, ID",
+        "CHAUSSEE, ID",
+        "CHUBBUCK, ID",
+        "CONDA, ID",
+        "COULAM, ID",
+        "CRIPPEN, ID",
+        "CRIPPEN, ID",
+        "DAYTON, ID",
+        "DECLO, ID",
+        "DEWOFF, ID",
+        "DINGLE, ID",
+        "DON, ID",
+        "DOWNEY, ID",
+        "DRY VALLEY, ID",
+        "ELCOCK, ID",
+        "ELCOCK, ID",
+        "EPCO, ID",
+        "EVANS, ID",
+        "EVANS, ID",
+        "FRANKLIN, ID",
+        "GEORGETOWN, ID",
+        "HARER, ID",
+        "HATCH, ID",
+        "HATCH, ID",
+        "HAWLEY, ID",
+        "HEYBURN, ID",
+        "HOBSON, ID",
+        "HOBSON, ID",
+        "HYNES, ID",
+        "INKOM, ID",
+        "KENYON, ID",
+        "KENYON, ID",
+        "KIMAMA, ID",
+        "LAVA HOT SPRINGS, ID",
+        "LIBERTY, ID",
+        "MALAD, ID",
+        "MANSON, ID",
+        "MARTIN, ID",
+        "MARTIN, ID",
+        "MAX, ID",
+        "MCCAMMON, ID",
+        "MICHAUD, ID",
+        "MILNER, ID",
+        "MINIDOKA, ID",
+        "MONSANTO, ID",
+        "MONTANA JCT, ID",
+        "MONTPELIER, ID",
+        "MYERS, ID",
+        "MYERS, ID",
+        "NORTH KENYON, ID",
+        "NORTH KENYON, ID",
+        "OWINZA, ID",
+        "PAUL, ID",
+        "PEBBLE, ID",
+        "PEGRAM, ID",
+        "PELLA, ID",
+        "PELLA, ID",
+        "PESCADERO, ID",
+        "POCATELLO, ID",
+        "PRESTON, ID",
+        "QUIGLEY, ID",
+        "RUBY, ID",
+        "RUBY, ID",
+        "RUPERT, ID",
+        "SCHILLER, ID",
+        "SCHOW, ID",
+        "SCHOW, ID",
+        "SENTER, ID",
+        "SODA SPRINGS, ID",
+        "SPRINGDALE, ID",
+        "SPRINGDALE, ID",
+        "STARRHS FERRY, ID",
+        "STARRHS FERRY, ID",
+        "SWAN LAKE, ID",
+        "TALMAGE, ID",
+        "TRAVERS, ID",
+        "TRAVERS, ID",
+        "TYHEE, ID",
+        "UNITY, ID",
+        "UNITY, ID",
+        "VIRGINIA, ID",
+        "WAPI, ID",
+        "WASCO, ID",
+        "WESTON, ID",
+        "WHITNEY, ID",
+        "WOODRUFF, ID",
+        "WOOLEY VALLEY, ID"
+      ],
+      "TX - EL PASO AGS": [
+        "EL PASO, TX",
+        "EL PASO IM EX, TX"
+      ],
+      "WA - WALLULA AGS": [
+        "ARLINGTON, OR",
+        "BIGGS, OR",
+        "BLALOCK, OR",
+        "BOARDMAN, OR",
+        "CASCADE LOCKS, OR",
+        "CASTLE, OR",
+        "CLARKE, OR",
+        "COLD SPRINGS, OR",
+        "CRATES, OR",
+        "DEE, OR",
+        "GILLIAM, OR",
+        "HEPPNER JCT, OR",
+        "HOOD RIVER, OR",
+        "JUNIPER, OR",
+        "LOCKIT, OR",
+        "MENO, OR",
+        "MOSIER, OR",
+        "MUNLEY, OR",
+        "ODELL, OR",
+        "ORDNANCE, OR",
+        "OREGON TRUNK JCT, OR",
+        "PARKDALE, OR",
+        "PINE GROVE, OR",
+        "QUINTON, OR",
+        "ROWENA, OR",
+        "RUFUS, OR",
+        "SEUFERTS, OR",
+        "SHUTLER, OR",
+        "THE DALLES, OR",
+        "UMATILLA, OR",
+        "WYETH, OR",
+        "ALBION, WA",
+        "ALMOTA, WA",
+        "ANKENY, WA",
+        "ASH, WA",
+        "ASHUE, WA",
+        "ATTALIA, WA",
+        "AYER, WA",
+        "BERRYMAN, WA",
+        "BIGGAM, WA",
+        "BINGEN WHITE SALMON, WA",
+        "BOLLES, WA",
+        "BURBANK, WA",
+        "CENTRAL FERRY, WA",
+        "COLFAX, WA",
+        "COLLEGE PLACE, WA",
+        "CREST, WA",
+        "CROSKEY, WA",
+        "CRUM, WA",
+        "DAYTON, WA",
+        "DIAMOND, WA",
+        "DUMAS, WA",
+        "EASTWAY SPUR, WA",
+        "ENDICOTT, WA",
+        "ENNIS, WA",
+        "EPHRATA, WA",
+        "FARRON, WA",
+        "FRUITVALE, WA",
+        "GARRETT, WA",
+        "GIBBON, WA",
+        "GLEED, WA",
+        "GORDON, WA",
+        "GRANDVIEW, WA",
+        "GRANGER, WA",
+        "GRAVEL PIT, WA",
+        "HADLEY, WA",
+        "HANFORD WORKS, WA",
+        "HARRAH, WA",
+        "HEDGES, WA",
+        "HOOPER, WA",
+        "HOOPER JCT, WA",
+        "HUMORIST, WA",
+        "HUNTLEY, WA",
+        "HUNTSVILLE, WA",
+        "JOSO, WA",
+        "JUNO, WA",
+        "KENNEWICK, WA",
+        "LA CROSSE, WA",
+        "LANGDON, WA",
+        "LONG, WA",
+        "LOWDEN, WA",
+        "MARENGO, WA",
+        "MATTHEW, WA",
+        "MESA, WA",
+        "MIDVALE, WA",
+        "MOCKONEMA, WA",
+        "MOSES LAKE, WA",
+        "MOXEE CITY, WA",
+        "NACHES, WA",
+        "NASS, WA",
+        "NORTH PROSSER, WA",
+        "OTHELLO, WA",
+        "OUTLOOK, WA",
+        "PAGE, WA",
+        "PAMPA, WA",
+        "PARK, WA",
+        "PARVIN, WA",
+        "PASCO, WA",
+        "PENAWAWA, WA",
+        "PLYMOUTH, WA",
+        "PORT OF WILMA, WA",
+        "PRESCOTT, WA",
+        "PROSSER, WA",
+        "PULLMAN, WA",
+        "PULLMAN JCT, WA",
+        "QUINCY, WA",
+        "REESE, WA",
+        "RICHLAND, WA",
+        "RICHLAND IND PARK, WA",
+        "RICHLAND JCT, WA",
+        "RICHLAND JUNCTION, WA",
+        "RIPARIA, WA",
+        "RISBECK, WA",
+        "ROYAL CITY, WA",
+        "RUSSELL, WA",
+        "SHAWNEE, WA",
+        "ST JOHN, WA",
+        "SUN HARBOR, WA",
+        "SUNNY ROZA, WA",
+        "SUNNYSIDE, WA",
+        "SUNSET, WA",
+        "SUTTON, WA",
+        "TERRACE HGTS, WA",
+        "TESKE, WA",
+        "THERA, WA",
+        "THORNTON, WA",
+        "TOPPENISH, WA",
+        "TOPPENISH (WESLEY JCT), WA",
+        "TOUCHET, WA",
+        "UNION GAP, WA",
+        "VALLEY GROVE, WA",
+        "VENNER, WA",
+        "VILLARD JCT, WA",
+        "WAITSBURG, WA",
+        "WALKER, WA",
+        "WALLA WALLA, WA",
+        "WALLULA, WA",
+        "WALLULA HEIGHTS, WA",
+        "WARDEN, WA",
+        "WELLS, WA",
+        "WHITE SWAN, WA",
+        "WHITLOW, WA",
+        "WHITMAN, WA",
+        "WHITSTRAN, WA",
+        "WILLADA, WA",
+        "WILLSON, WA",
+        "WINONA, WA",
+        "WISHRAM, WA",
+        "YAKIMA, WA",
+        "ZANGAR JCT, WA",
+        "ZILLAH, WA"
+      ],
+      "TX - HOUSTON AGS": [
+        "AB CHANCE, TX",
+        "ALDINE, TX",
+        "ALGOA, TX",
+        "ALLENHURST, TX",
+        "ALMEDA, TX",
+        "ALVIN, TX",
+        "AMELBULK, TX",
+        "AMELIA, TX",
+        "AMES, TX",
+        "ANGLETON, TX",
+        "ARCOLA, TX",
+        "ARENAL, TX",
+        "ARMCO, TX",
+        "ATRECO, TX",
+        "AUDREY, TX",
+        "BANCROFT, TX",
+        "BARBOURS CUT, TX",
+        "BASIN YARD, TX",
+        "BAY CITY, TX",
+        "BAYPORT, TX",
+        "BAYTOWN, TX",
+        "BEAUMONT, TX",
+        "BENDER, TX",
+        "BESSMAY, TX",
+        "BILLPARK, TX",
+        "BLESSING, TX",
+        "BOBSHER, TX",
+        "BOOTH YARD, TX",
+        "BRAZORIA, TX",
+        "BROOKSHIRE, TX",
+        "BUCKEYE, TX",
+        "CAMP STRAKE, TX",
+        "CANDLERIDGE, TX",
+        "CARDIFF, TX",
+        "CAT SPRING, TX",
+        "CHAISON, TX",
+        "CHANNELVIEW, TX",
+        "CHINA, TX",
+        "CHOCOLATE BAYOU, TX",
+        "CLEVELAND, TX",
+        "CLUTE, TX",
+        "COADY, TX",
+        "CONNELL, TX",
+        "CONROE, TX",
+        "COTTON CREEK, TX",
+        "CROSBY, TX",
+        "CYPRESS, TX",
+        "DANBURY, TX",
+        "DAWES, TX",
+        "DAYTON, TX",
+        "DAYTON STORAGE, TX",
+        "DEER PARK, TX",
+        "DEVERS, TX",
+        "DICKINSON, TX",
+        "DIXICO, TX",
+        "DODGE, TX",
+        "DOWLING, TX",
+        "DYERSDALE, TX",
+        "E BAYTOWN STORAGE, TX",
+        "EAGLE LAKE, TX",
+        "EAST BAYTOWN, TX",
+        "EAST BERNARD, TX",
+        "ELDON, TX",
+        "ELDON JCT, TX",
+        "ELIZABETH, TX",
+        "ELMATON, TX",
+        "ENGLEWOOD, TX",
+        "FAIRBANKS, TX",
+        "FAUNA, TX",
+        "FELICIA, TX",
+        "FERN, TX",
+        "FONDREN, TX",
+        "FORMOSA, TX",
+        "FRANCIS, TX",
+        "FREEPORT, TX",
+        "FRESNO, TX",
+        "GALENA PARK, TX",
+        "GALVESTON, TX",
+        "GENOA, TX",
+        "GISH, TX",
+        "GOODRICH, TX",
+        "GRAYBURG, TX",
+        "GROVES, TX",
+        "GUFFEY, TX",
+        "HARDIN, TX",
+        "HARDY, TX",
+        "HASTINGS, TX",
+        "HEACKER, TX",
+        "HEMPSTEAD, TX",
+        "HIGHLANDS, TX",
+        "HOCKLEY, TX",
+        "HOSKINS JCT, TX",
+        "HOUSTON, TX",
+        "HUFFMAN, TX",
+        "HUFSMITH, TX",
+        "HULL, TX",
+        "HUMBLE, TX",
+        "IGLOO SPUR, TX",
+        "JETERO, TX",
+        "JOYCE, TX",
+        "KATY, TX",
+        "KENEFICK, TX",
+        "KILOWATT, TX",
+        "KORF, TX",
+        "LA MARQUE, TX",
+        "LA PORTE, TX",
+        "LA WARD, TX",
+        "LAPACIFIC, TX",
+        "LEAGUE CITY, TX",
+        "LIBERTY, TX",
+        "LISSIE, TX",
+        "LIVERPOOL, TX",
+        "LIVINGSTON, TX",
+        "LOCKWOOD, TX",
+        "LOIS, TX",
+        "MAGNOLIA, TX",
+        "MANTU, TX",
+        "MARKET ST YARD, TX",
+        "MARTHA, TX",
+        "MCDONOUGH, TX",
+        "MCHATTIE, TX",
+        "MEDIO, TX",
+        "MELENDY, TX",
+        "MIMS, TX",
+        "MISSOURI CITY, TX",
+        "MONT BELVIEU, TX",
+        "MYKAWA, TX",
+        "NADEAU, TX",
+        "NEDERLAND, TX",
+        "NEW WAVERLY, TX",
+        "NOME, TX",
+        "OLCOTT, TX",
+        "OLD OCEAN, TX",
+        "ORANGE, TX",
+        "PASADENA, TX",
+        "PEARLAND, TX",
+        "PEDECO, TX",
+        "PEVETO, TX",
+        "PHELPS, TX",
+        "PIERCE JCT, TX",
+        "PINEHURST, TX",
+        "PORT ACRES, TX",
+        "PORT ARTHUR, TX",
+        "PORT NECHES, TX",
+        "PRAIRIE VIEW, TX",
+        "RAMSEY, TX",
+        "RAYWOOD, TX",
+        "RESCAR, TX",
+        "RICHMOND, TX",
+        "ROSENBERG, TX",
+        "RULIFF, TX",
+        "SALT MINE SPUR, TX",
+        "SAN JACINTO, TX",
+        "SAN LEON, TX",
+        "SANDUNE, TX",
+        "SCHINDLER, TX",
+        "SEABROOK, TX",
+        "SEALY, TX",
+        "SHELDON, TX",
+        "SINCO, TX",
+        "SKULL CREEK, TX",
+        "SMITHERS LAKE, TX",
+        "SMITHS BLUFF, TX",
+        "SOUTH BAY CITY, TX",
+        "SPENCE, TX",
+        "SPINDLETOP, TX",
+        "SPLENDORA, TX",
+        "SPRING, TX",
+        "STAFFORD, TX",
+        "STALLINGS, TX",
+        "STEELTOWN, TX",
+        "STELLA, TX",
+        "STRANG, TX",
+        "SUGAR LAND, TX",
+        "SWEENY, TX",
+        "TAMINA, TX",
+        "TEXAS CITY, TX",
+        "TEXAS CITY JCT, TX",
+        "TOWNLEY, TX",
+        "VIDOR, TX",
+        "VIRGINIA POINT, TX",
+        "VITERBO, TX",
+        "WALLER, TX",
+        "WEBSTER, TX",
+        "WEST JUNCTION, TX",
+        "WEST PORT ARTHUR, TX",
+        "WESTFIELD, TX",
+        "WILLIAMS, TX",
+        "WILLIS, TX",
+        "ZUMMO, TX"
+      ],
+      "OR - PORTLAND AGS": [
+        "ALBINA, OR",
+        "ASTORIA, OR",
+        "AUMSVILLE, OR",
+        "AURORA, OR",
+        "BARNES YARD, OR",
+        "BATTERSON, OR",
+        "BONNEVILLE, OR",
+        "BRIDAL VEIL, OR",
+        "BROOKS, OR",
+        "BUXTON, OR",
+        "CANBY, OR",
+        "CLACKAMAS, OR",
+        "COALCA, OR",
+        "COCHRAN, OR",
+        "DODSON, OR",
+        "EAST MILWAUKIE, OR",
+        "EAST PORTLAND, OR",
+        "FIR, OR",
+        "GARBALDI, OR",
+        "GARIBALDI, OR",
+        "GEER, OR",
+        "GERVAIS, OR",
+        "HEMLOCK, OR",
+        "HITO, OR",
+        "HUBBARD, OR",
+        "KENTON, OR",
+        "LAKE YARD, OR",
+        "LIBERAL, OR",
+        "MILWAUKIE, OR",
+        "MOHLER, OR",
+        "MT ANGEL, OR",
+        "NORTH PORTLAND, OR",
+        "OREGON CITY, OR",
+        "OSWEGO, OR",
+        "PORTLAND, OR",
+        "PRATUM, OR",
+        "PULP, OR",
+        "RENARD, OR",
+        "RIVER GATE, OR",
+        "ROCKWOOD, OR",
+        "SHAW, OR",
+        "SILVERTON, OR",
+        "ST JOHNS, OR",
+        "STAYTON, OR",
+        "TILLAMOOK, OR",
+        "TROUTDALE, OR",
+        "WARRENTON, OR",
+        "WEST LINN, OR",
+        "WHEELER, OR",
+        "WOODBURN, OR",
+        "AMPERE, WA",
+        "BARBERTON, WA",
+        "BATTLE GROUND, WA",
+        "BRUSH PRAIRIE, WA",
+        "CAMAS, WA",
+        "CASTLE ROCK, WA",
+        "CATHLAMET, WA",
+        "CHELATCHIE, WA",
+        "COLUMBIA JCT, WA",
+        "HEISON, WA",
+        "HOMAN, WA",
+        "KALAMA, WA",
+        "KELSO, WA",
+        "LONGVIEW, WA",
+        "OSTRANDER, WA",
+        "RIDGEFIELD, WA",
+        "ROCKY POINT, WA",
+        "RYE JCT, WA",
+        "VANCOUVER, WA",
+        "VANCOUVER JCT, WA",
+        "WASHOUGAL, WA",
+        "WOODLAND, WA",
+        "YACOLT, WA"
+      ]
+    },
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPOTMQ 166753-W",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 23, 2021",
+    "effective_date": "January 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Nut Or Vegetable Oil Seed Cake Or Meal Or Other By-Products,Nec Exc.Corn See 20469,Cottonseed See 20914,Soybean See 20923 Or Fatty Acids See 28994",
+        "amendment_action": null
+      }
+    ],
+    "shippers": [
+      "ECO SHELL INC",
+      "SECURE ENERGY SERVICES INC"
+    ],
+    "origins": [
+      {
+        "location": "CORNING, CA",
+        "city": "CORNING",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "MIDLAND, TX",
+        "city": "MIDLAND",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SEAGRAVES, TX",
+        "city": "SEAGRAVES",
+        "state": "TX",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ALEXANDRIA, LA",
+        "city": "ALEXANDRIA",
+        "state": "LA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CYRIL, OK",
+        "city": "CYRIL",
+        "state": "OK",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "TEXARKANA, AR",
+        "city": "TEXARKANA",
+        "state": "AR",
+        "amendment_action": null,
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "October 1, 2017",
+    "duration_amendment_effective_date": "October 1, 2021",
+    "duration_expiration_date": "September 30, 2022",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "Not applicable",
+    "volume": "Single Car Shipments",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {},
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPUPCQ 100757-BW",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 23, 2021",
+    "effective_date": "June 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "Sacramento Valley Railroad, LLC, a California limited liability company. (SAV)",
+        "address": "",
+        "amendment_action": null
+      },
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Wheat Flour Clears, Not A Cereal Preparation, Not For Human Consumption",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat Flour Exc.Blended Or Prepared See 20451- 20452",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat Middlings Or Shorts,Non- Pelletized",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat Flour",
+        "amendment_action": null
+      }
+    ],
+    "shippers": [
+      "ARDENT MILLS HDQRS"
+    ],
+    "origins": [
+      {
+        "location": "EAST ST LOUIS, IL",
+        "city": "EAST ST LOUIS",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MEMPHIS, TN",
+        "city": "MEMPHIS",
+        "state": "TN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "BAIN, WI",
+        "city": "BAIN",
+        "state": "WI",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "OMAHA, NE",
+        "city": "OMAHA",
+        "state": "NE",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "COMMERCE CITY, CO",
+        "city": "COMMERCE CITY",
+        "state": "CO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "DENVER, CO",
+        "city": "DENVER",
+        "state": "CO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHESTER, IL",
+        "city": "CHESTER",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "WICHITA, KS",
+        "city": "WICHITA",
+        "state": "KS",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MANKATO, MN",
+        "city": "MANKATO",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ST PAUL, MN",
+        "city": "ST PAUL",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "OGDEN, UT",
+        "city": "OGDEN",
+        "state": "UT",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SAGINAW, TX",
+        "city": "SAGINAW",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "FT WORTH, TX",
+        "city": "FT WORTH",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "KENOSHA, WI",
+        "city": "KENOSHA",
+        "state": "WI",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "VERNON, CA",
+        "city": "VERNON",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "COUNCIL BLUFFS, IA",
+        "city": "COUNCIL BLUFFS",
+        "state": "IA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "BONNER SPRINGS, KS",
+        "city": "BONNER SPRINGS",
+        "state": "KS",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "LINCOLN, NE",
+        "city": "LINCOLN",
+        "state": "NE",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SHREVEPORT, LA",
+        "city": "SHREVEPORT",
+        "state": "LA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "KENOSHA, WI",
+        "city": "KENOSHA",
+        "state": "WI",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ALTON, IL",
+        "city": "ALTON",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "OGDEN, UT",
+        "city": "OGDEN",
+        "state": "UT",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "GRANVILLE, WI",
+        "city": "GRANVILLE",
+        "state": "WI",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MEMPHIS, TN",
+        "city": "MEMPHIS",
+        "state": "TN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "COLTON, CA",
+        "city": "COLTON",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANSAS CITY, MO",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "COUNCIL BLUFFS, IA",
+        "city": "COUNCIL BLUFFS",
+        "state": "IA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SPRINGVILLE, UT",
+        "city": "SPRINGVILLE",
+        "state": "UT",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "IRONTON, UT",
+        "city": "IRONTON",
+        "state": "UT",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MCCLELLAN PARK, CA",
+        "city": "MCCLELLAN PARK",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MINNEAPOLIS, MN",
+        "city": "MINNEAPOLIS",
+        "state": "MN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ST LOUIS, MO",
+        "city": "ST LOUIS",
+        "state": "MO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "VERNON, CA",
+        "city": "VERNON",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "COMMERCE CITY, CO",
+        "city": "COMMERCE CITY",
+        "state": "CO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "DANVILLE, IL",
+        "city": "DANVILLE",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ROANOKE, TX",
+        "city": "ROANOKE",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "BATESVILLE, AR",
+        "city": "BATESVILLE",
+        "state": "AR",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      },
+      {
+        "location": "ST LOUIS GROUP (See Exhibit Definition)",
+        "city": "",
+        "state": "",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "OMAHA, NE",
+        "city": "OMAHA",
+        "state": "NE",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "WATSEKA, IL",
+        "city": "WATSEKA",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CALEXICO, CA",
+        "city": "CALEXICO",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "VANCOUVER, WA",
+        "city": "VANCOUVER",
+        "state": "WA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "February 8, 2016",
+    "duration_amendment_effective_date": "June 1, 2021",
+    "duration_expiration_date": "May 31, 2022",
+    "rail_car_data": "Carrier Equipment not involved.",
+    "rates_and_charges": "As published in Tariff(s) 4052; Subject to increases.",
+    "volume": "Single Car Shipments",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {
+      "ST LOUIS GROUP": [
+        "ST LOUIS, MO",
+        "EAST ST LOUIS, IL"
+      ]
+    },
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPUPCQ 101592-22",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 23, 2021",
+    "effective_date": "June 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Grits, Nec",
+        "amendment_action": null
+      },
+      {
+        "description": "Corn Meal",
+        "amendment_action": null
+      },
+      {
+        "description": "Corn Flour",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat, Cracked Or Ground, Steamed And Dried (Bulgur Or Bulghur), For Human Consumption, Requiring Further Cooking",
+        "amendment_action": null
+      },
+      {
+        "description": "Corn Meal Or Flour Exc.Animal Or Poultry Feed See 20421- 20423",
+        "amendment_action": null
+      }
+    ],
+    "shippers": [
+      "BUNGE LIMITED",
+      "BUNGE NORTH AMERICA INC"
+    ],
+    "origins": [
+      {
+        "location": "ATCHISON, KS",
+        "city": "ATCHISON",
+        "state": "KS",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CRETE, NE",
+        "city": "CRETE",
+        "state": "NE",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "EAST ST LOUIS, IL",
+        "city": "EAST ST LOUIS",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SEMO PORT, MO",
+        "city": "SEMO PORT",
+        "state": "MO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "DANVILLE, IL",
+        "city": "DANVILLE",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SCOTT CITY, MO",
+        "city": "SCOTT CITY",
+        "state": "MO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANSAS CITY, MO",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MEMPHIS, TN",
+        "city": "MEMPHIS",
+        "state": "TN",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "HOUSTON, TX",
+        "city": "HOUSTON",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "LAREDO, TX",
+        "city": "LAREDO",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SAN ANTONIO, TX",
+        "city": "SAN ANTONIO",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "KANSAS CITY, MO",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "OMAHA, NE",
+        "city": "OMAHA",
+        "state": "NE",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MOUNT PLEASANT, TX",
+        "city": "MOUNT PLEASANT",
+        "state": "TX",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "EAST ST LOUIS, IL",
+        "city": "EAST ST LOUIS",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "ST LOUIS, MO",
+        "city": "ST LOUIS",
+        "state": "MO",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "PLASTER CITY, CA",
+        "city": "PLASTER CITY",
+        "state": "CA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "CEDAR RAPIDS, IA",
+        "city": "CEDAR RAPIDS",
+        "state": "IA",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "SPARKS, NV",
+        "city": "SPARKS",
+        "state": "NV",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "MODESTO, CA",
+        "city": "MODESTO",
+        "state": "CA",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "July 1, 2017",
+    "duration_amendment_effective_date": "June 1, 2021",
+    "duration_expiration_date": "May 31, 2022",
+    "rail_car_data": "No cars dedicated to service under this Contract. Cars are provided on a common carrier basis only.",
+    "rates_and_charges": "As published in Tariff(s) 4050",
+    "volume": "Single Car Shipments",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {},
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  },
+  {
+    "contract_id": "STB-UPUPCQ 101847-14",
+    "railroad": "UNION PACIFIC RAILROAD COMPANY",
+    "issued_date": "November 23, 2021",
+    "effective_date": "June 1, 2021",
+    "issuer_name": "Rosa M. La Puente-Flowers",
+    "issuer_title": "Lead Price Applications",
+    "issuer_address": "1400 Douglas Street; Mail Stop 1340; OMAHA, NEBRASKA 68179",
+    "participating_carriers": [
+      {
+        "name": "UNION PACIFIC RAILROAD COMPANY",
+        "address": "1400 Douglas St.; Omaha, NE 68179",
+        "amendment_action": null
+      }
+    ],
+    "commodities": [
+      {
+        "description": "Wheat Exc.Buckwheat See 01139",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat Flour Exc.Blended Or Prepared See 20451- 20452",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat Bran And 2 1/2 Per- Cent Other Ingredients, Other Than Pelletized",
+        "amendment_action": null
+      },
+      {
+        "description": "Wheat, Whole, Partially Prepared Requiring Further Processing",
+        "amendment_action": null
+      },
+      {
+        "description": "Flour Or Other Grain Mill Products,Nec",
+        "amendment_action": "ADDITION"
+      }
+    ],
+    "shippers": [
+      "RSI LOGISTICS INC"
+    ],
+    "origins": [
+      {
+        "location": "CHICAGO, IL",
+        "city": "CHICAGO",
+        "state": "IL",
+        "amendment_action": null,
+        "is_ags_reference": false
+      }
+    ],
+    "destinations": [
+      {
+        "location": "OMAHA, NE",
+        "city": "OMAHA",
+        "state": "NE",
+        "amendment_action": null,
+        "is_ags_reference": false
+      },
+      {
+        "location": "NORTHFIELD, MN",
+        "city": "NORTHFIELD",
+        "state": "MN",
+        "amendment_action": "ADDITION",
+        "is_ags_reference": false
+      }
+    ],
+    "ports": "Not Applicable",
+    "duration_effective_date": "January 20, 2018",
+    "duration_amendment_effective_date": "June 1, 2021",
+    "duration_expiration_date": "May 31, 2022",
+    "rail_car_data": "Carrier Equipment not involved.",
+    "rates_and_charges": "Subject to increases.",
+    "volume": "Single Car Shipments",
+    "special_features": "Special Switching Provision",
+    "special_notice": "Not applicable",
+    "exhibit_definitions": {},
+    "source_file": "ACS-UP-4Q-11-29-2021.pdf",
+    "filing_received_date": ""
+  }
+]

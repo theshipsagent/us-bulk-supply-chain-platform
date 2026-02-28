@@ -1,0 +1,148 @@
+[2026-02-03 21:56:31] [INFO] Starting forecast comparison analysis...
+[2026-02-03 21:56:31] [INFO] 
+======================================================================
+[2026-02-03 21:56:31] [INFO] STEP 1: LOAD FORECAST DATA
+[2026-02-03 21:56:31] [INFO] ======================================================================
+[2026-02-03 21:56:31] [INFO] Loaded VAR forecasts: 50 periods
+[2026-02-03 21:56:31] [INFO] Loaded SpVAR forecasts: 50 periods
+[2026-02-03 21:56:31] [INFO] Segments: 7
+[2026-02-03 21:56:31] [INFO] 
+======================================================================
+[2026-02-03 21:56:31] [INFO] STEP 2: CREATE NAIVE BASELINE
+[2026-02-03 21:56:31] [INFO] ======================================================================
+[2026-02-03 21:56:31] [INFO] Created naïve (random walk) baseline forecasts
+[2026-02-03 21:56:31] [INFO] 
+======================================================================
+[2026-02-03 21:56:31] [INFO] STEP 3: CALCULATE ACCURACY METRICS
+[2026-02-03 21:56:31] [INFO] ======================================================================
+[2026-02-03 21:57:19] [INFO] Starting forecast comparison analysis...
+[2026-02-03 21:57:19] [INFO] 
+======================================================================
+[2026-02-03 21:57:19] [INFO] STEP 1: LOAD FORECAST DATA
+[2026-02-03 21:57:19] [INFO] ======================================================================
+[2026-02-03 21:57:19] [INFO] Loaded VAR forecasts: 50 periods
+[2026-02-03 21:57:19] [INFO] Loaded SpVAR forecasts: 50 periods
+[2026-02-03 21:57:19] [INFO] Segments: 7
+[2026-02-03 21:57:19] [INFO] 
+======================================================================
+[2026-02-03 21:57:19] [INFO] STEP 2: CREATE NAIVE BASELINE
+[2026-02-03 21:57:19] [INFO] ======================================================================
+[2026-02-03 21:57:20] [INFO] Created naïve (random walk) baseline forecasts
+[2026-02-03 21:57:20] [INFO] 
+======================================================================
+[2026-02-03 21:57:20] [INFO] STEP 3: CALCULATE ACCURACY METRICS
+[2026-02-03 21:57:20] [INFO] ======================================================================
+[2026-02-03 21:57:20] [INFO] 
+Forecast Accuracy Summary:
+[2026-02-03 21:57:20] [INFO] 
+Naïve Baseline:
+[2026-02-03 21:57:20] [INFO]   Average MAPE: 20.4%
+[2026-02-03 21:57:20] [INFO]   Average MAE: $2.82/ton
+[2026-02-03 21:57:20] [INFO] 
+VAR Model:
+[2026-02-03 21:57:20] [INFO]   Average MAPE: 22.4%
+[2026-02-03 21:57:20] [INFO]   Average MAE: $2.85/ton
+[2026-02-03 21:57:20] [INFO]   Average R²: 0.673
+[2026-02-03 21:57:20] [INFO]   Improvement over naïve: -11.7%
+[2026-02-03 21:57:20] [INFO] 
+SpVAR Model:
+[2026-02-03 21:57:20] [INFO]   Average MAPE: 22.4%
+[2026-02-03 21:57:20] [INFO]   Average MAE: $2.85/ton
+[2026-02-03 21:57:20] [INFO]   Average R²: 0.673
+[2026-02-03 21:57:20] [INFO]   Improvement over naïve: -11.7%
+[2026-02-03 21:57:20] [INFO] 
+======================================================================
+[2026-02-03 21:57:20] [INFO] STEP 4: DIEBOLD-MARIANO STATISTICAL TESTS
+[2026-02-03 21:57:20] [INFO] ======================================================================
+[2026-02-03 21:57:20] [INFO] 
+segment_1_rate:
+[2026-02-03 21:57:20] [INFO]   VAR vs Naïve: DM=0.465, p=0.3211 
+[2026-02-03 21:57:20] [INFO]   SpVAR vs Naïve: DM=0.472, p=0.3186 
+[2026-02-03 21:57:20] [INFO]   SpVAR vs VAR: DM=1.980, p=0.0238 ✓ SIG
+[2026-02-03 21:57:20] [INFO] 
+segment_2_rate:
+[2026-02-03 21:57:20] [INFO]   VAR vs Naïve: DM=0.487, p=0.3131 
+[2026-02-03 21:57:20] [INFO]   SpVAR vs Naïve: DM=0.493, p=0.3110 
+[2026-02-03 21:57:20] [INFO]   SpVAR vs VAR: DM=1.527, p=0.0634 
+[2026-02-03 21:57:20] [INFO] 
+segment_3_rate:
+[2026-02-03 21:57:20] [INFO]   VAR vs Naïve: DM=1.146, p=0.1258 
+[2026-02-03 21:57:20] [INFO]   SpVAR vs Naïve: DM=1.149, p=0.1253 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs VAR: DM=0.927, p=0.1770 
+[2026-02-03 21:57:21] [INFO] 
+segment_4_rate:
+[2026-02-03 21:57:21] [INFO]   VAR vs Naïve: DM=-1.154, p=0.8758 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs Naïve: DM=-1.149, p=0.8747 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs VAR: DM=2.016, p=0.0219 ✓ SIG
+[2026-02-03 21:57:21] [INFO] 
+segment_5_rate:
+[2026-02-03 21:57:21] [INFO]   VAR vs Naïve: DM=-2.021, p=0.9783 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs Naïve: DM=-2.017, p=0.9782 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs VAR: DM=1.878, p=0.0302 ✓ SIG
+[2026-02-03 21:57:21] [INFO] 
+segment_6_rate:
+[2026-02-03 21:57:21] [INFO]   VAR vs Naïve: DM=0.246, p=0.4029 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs Naïve: DM=0.248, p=0.4019 
+[2026-02-03 21:57:21] [INFO]   SpVAR vs VAR: DM=0.889, p=0.1871 
+[2026-02-03 21:57:21] [INFO] 
+segment_7_rate:
+[2026-02-03 21:57:21] [INFO]   VAR vs Naïve: DM=1.825, p=0.0340 ✓ SIG
+[2026-02-03 21:57:21] [INFO]   SpVAR vs Naïve: DM=1.834, p=0.0334 ✓ SIG
+[2026-02-03 21:57:21] [INFO]   SpVAR vs VAR: DM=2.009, p=0.0223 ✓ SIG
+[2026-02-03 21:57:21] [INFO] 
+Statistical Significance Summary (α = 0.05):
+[2026-02-03 21:57:21] [INFO]   VAR significantly better than naïve: 1/7 segments
+[2026-02-03 21:57:21] [INFO]   SpVAR significantly better than naïve: 1/7 segments
+[2026-02-03 21:57:21] [INFO] 
+======================================================================
+[2026-02-03 21:57:21] [INFO] STEP 5: ECONOMIC IMPACT ANALYSIS
+[2026-02-03 21:57:21] [INFO] ======================================================================
+[2026-02-03 21:57:21] [INFO] 
+Average rate: $18.00/ton
+[2026-02-03 21:57:21] [INFO] MAE improvement (VAR vs naïve): $-0.03/ton
+[2026-02-03 21:57:21] [INFO] 
+Small Shipper (10,000 tons/year):
+[2026-02-03 21:57:21] [INFO]   Value per ton: $-0.01
+[2026-02-03 21:57:21] [INFO]   Annual savings: $-77
+[2026-02-03 21:57:22] [INFO]   2-year savings: $-153
+[2026-02-03 21:57:22] [INFO] 
+Mid-Size Shipper (50,000 tons/year):
+[2026-02-03 21:57:22] [INFO]   Value per ton: $-0.01
+[2026-02-03 21:57:22] [INFO]   Annual savings: $-384
+[2026-02-03 21:57:22] [INFO]   2-year savings: $-767
+[2026-02-03 21:57:22] [INFO] 
+Large Shipper (200,000 tons/year):
+[2026-02-03 21:57:22] [INFO]   Value per ton: $-0.01
+[2026-02-03 21:57:22] [INFO]   Annual savings: $-1,535
+[2026-02-03 21:57:22] [INFO]   2-year savings: $-3,069
+[2026-02-03 21:57:22] [INFO] 
+Major Grain Trader (1,000,000 tons/year):
+[2026-02-03 21:57:22] [INFO]   Value per ton: $-0.01
+[2026-02-03 21:57:22] [INFO]   Annual savings: $-7,674
+[2026-02-03 21:57:22] [INFO]   2-year savings: $-15,347
+[2026-02-03 21:57:22] [INFO] 
+======================================================================
+[2026-02-03 21:57:22] [INFO] STEP 6: CREATE VISUALIZATIONS
+[2026-02-03 21:57:22] [INFO] ======================================================================
+[2026-02-03 21:57:24] [INFO] ✓ Saved accuracy comparison: 08_forecast_accuracy_comparison.png
+[2026-02-03 21:57:26] [INFO] ✓ Saved improvement chart: 09_forecast_improvement.png
+[2026-02-03 21:57:27] [INFO] ✓ Saved economic impact chart: 10_economic_impact.png
+[2026-02-03 21:57:27] [INFO] 
+======================================================================
+[2026-02-03 21:57:27] [INFO] STEP 7: SAVE COMPARISON RESULTS
+[2026-02-03 21:57:28] [INFO] ======================================================================
+[2026-02-03 21:57:28] [INFO] ✓ Saved accuracy comparison: forecast_accuracy_comparison.csv
+[2026-02-03 21:57:28] [INFO] ✓ Saved DM test results: diebold_mariano_tests.csv
+[2026-02-03 21:57:28] [INFO] ✓ Saved economic analysis: economic_impact_analysis.csv
+[2026-02-03 21:57:28] [INFO] ✓ Saved comparison summary: forecast_comparison_summary.json
+[2026-02-03 21:57:28] [INFO] 
+======================================================================
+[2026-02-03 21:57:28] [INFO] FORECAST COMPARISON COMPLETE
+[2026-02-03 21:57:28] [INFO] ======================================================================
+[2026-02-03 21:57:28] [INFO] 
+Key Findings:
+[2026-02-03 21:57:28] [INFO]   1. VAR model improves MAPE by -11.7% over naïve
+[2026-02-03 21:57:28] [INFO]   2. VAR statistically significant in 1/7 segments
+[2026-02-03 21:57:28] [INFO]   3. Mid-size shipper savings: $-384/year
+[2026-02-03 21:57:28] [INFO] 
+Next step: Create final forecasting report and documentation

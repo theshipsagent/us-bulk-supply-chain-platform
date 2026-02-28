@@ -1,0 +1,244 @@
+cty_code,cty_name,cty_abbrev,iso_alpha2,region,sub_region
+1000,United States of America,,US,North America,United States
+1010,Greenland,GREENLD,GL,North America,Greenland
+1220,Canada,CANADA,CA,North America,Canada
+1610,Saint Pierre and Miquelon,SP MQEL,PM,North America,North America Other
+2010,Mexico,MEXICO,MX,Central America,Central America
+2050,Guatemala,GUATMAL,GT,Central America,Central America
+2080,Belize,BELIZE,BZ,Central America,Central America
+2110,El Salvador,SALVADR,SV,Central America,Central America
+2150,Honduras,HONDURA,HN,Central America,Central America
+2190,Nicaragua,NICARAG,NI,Central America,Central America
+2230,Costa Rica,C RICA,CR,Central America,Central America
+2250,Panama,PANAMA,PA,Central America,Central America
+2320,Bermuda,BERMUDA,BM,Caribbean,Caribbean
+2360,Bahamas,BAHAMAS,BS,Caribbean,Caribbean
+2390,Cuba,CUBA,CU,Caribbean,Caribbean
+2410,Jamaica,JAMAICA,JM,Caribbean,Caribbean
+2430,Turks and Caicos Islands,TURK IS,TC,Caribbean,Caribbean
+2440,Cayman Islands,CAYMAN,KY,Caribbean,Caribbean
+2450,Haiti,HAITI,HT,Caribbean,Caribbean
+2470,Dominican Republic,DOM REP,DO,Caribbean,Caribbean
+2481,Anguilla,ANGLLA,AI,Caribbean,Caribbean
+2482,British Virgin Islands,B VIRGN,VG,Caribbean,Caribbean
+2483,Saint Kitts and Nevis,ST K N,KN,Caribbean,Caribbean
+2484,Antigua and Barbuda,ANTIGUA,AG,Caribbean,Caribbean
+2485,Montserrat,MONSRAT,MS,Caribbean,Caribbean
+2486,Dominica,DOMINCA,DM,Caribbean,Caribbean
+2487,Saint Lucia,S LUCIA,LC,Caribbean,Caribbean
+2488,Saint Vincent and the Grenadines,S VN GR,VC,Caribbean,Caribbean
+2489,Grenada,GRENADA,GD,Caribbean,Caribbean
+2720,Barbados,BARBADO,BB,Caribbean,Caribbean
+2740,Trinidad and Tobago,TRINID,TT,Caribbean,Caribbean
+2774,Sint Maarten,S MAART,SX,Caribbean,Caribbean
+2777,Curacao,CURACO,CW,Caribbean,Caribbean
+2779,Aruba,ARUBA,AW,Caribbean,Caribbean
+2831,Guadeloupe,GUADLPE,GP,Caribbean,Caribbean
+2839,Martinique,MARTINQ,MQ,Caribbean,Caribbean
+3010,Colombia,COLOMB,CO,South America,Northern South America
+3070,Venezuela,VENEZ,VE,South America,Northern South America
+3120,Guyana,GUYANA,GY,South America,Guianas
+3150,Suriname,SURINAM,SR,South America,Guianas
+3170,French Guiana,F GUIAN,GF,South America,Guianas
+3310,Ecuador,ECUADOR,EC,South America,Andean
+3330,Peru,PERU,PE,South America,Andean
+3350,Bolivia,BOLIVIA,BO,South America,Andean
+3370,Chile,CHILE,CL,South America,South America Other
+3510,Brazil,BRAZIL,BR,South America,Brazil
+3530,Paraguay,PARAGUA,PY,South America,Southern Cone
+3550,Uruguay,URUGUAY,UY,South America,Southern Cone
+3570,Argentina,ARGENT,AR,South America,Southern Cone
+3720,Falkland Islands (Islas Malvinas),FALK IS,FK,South America,South America Other
+4000,Iceland,ICELAND,IS,Europe,Nordic
+4010,Sweden,SWEDEN,SE,Europe,Nordic
+4031,Svalbard and Jan Mayen,SV JM I,SJ,Europe,Nordic
+4039,Norway,NORWAY,NO,Europe,Nordic
+4050,Finland,FINLAND,FI,Europe,Nordic
+4091,Faroe Islands,FAROE,FO,Europe,Nordic
+4099,"Denmark, except Greenland",DENMARK,DK,Europe,Nordic
+4120,United Kingdom,U KING,GB,Europe,Western Europe
+4190,Ireland,IRELAND,IE,Europe,Western Europe
+4210,Netherlands,NETHLDS,NL,Europe,Western Europe
+4231,Belgium,BELGIUM,BE,Europe,Western Europe
+4239,Luxembourg,LUXMBRG,LU,Europe,Western Europe
+4271,Andorra,ANDORRA,AD,Europe,Western Europe
+4272,Monaco,MONACO,MC,Europe,Western Europe
+4279,France,FRANCE,FR,Europe,Western Europe
+4280,Germany (Federal Republic of Germany),GERMANY,DE,Europe,Western Europe
+4330,Austria,AUSTRIA,AT,Europe,Western Europe
+4351,Czech Republic,CZECH,CZ,Europe,Central Europe
+4359,Slovakia,SLOVAK,SK,Europe,Central Europe
+4370,Hungary,HUNGARY,HU,Europe,Central Europe
+4411,Liechtenstein,LICHTEN,LI,Europe,Western Europe
+4419,Switzerland,SWITZLD,CH,Europe,Western Europe
+4470,Estonia,ESTONIA,EE,Europe,Baltic
+4490,Latvia,LATVIA,LV,Europe,Baltic
+4510,Lithuania,LITHUAN,LT,Europe,Baltic
+4550,Poland,POLAND,PL,Europe,Central Europe
+4621,Russia,RUSSIA,RU,Europe,Eastern Europe & Central Asia
+4622,Belarus,BELAR,BY,Europe,Eastern Europe & Central Asia
+4623,Ukraine,UKRAINE,UA,Europe,Eastern Europe & Central Asia
+4631,Armenia,ARMENIA,AM,Europe,Eastern Europe & Central Asia
+4632,Azerbaijan,AZERBJN,AZ,Europe,Eastern Europe & Central Asia
+4633,Georgia,GEORGIA,GE,Europe,Eastern Europe & Central Asia
+4634,Kazakhstan,KAZAKHS,KZ,Europe,Eastern Europe & Central Asia
+4635,Kyrgyzstan,KYRGYZS,KG,Europe,Eastern Europe & Central Asia
+4641,Moldova (Republic of Moldova),MOLDOVA,MD,Europe,Eastern Europe & Central Asia
+4642,Tajikistan,TAJIKIS,TJ,Europe,Eastern Europe & Central Asia
+4643,Turkmenistan,TURKMEN,TM,Europe,Eastern Europe & Central Asia
+4644,Uzbekistan,UZBEKIS,UZ,Europe,Eastern Europe & Central Asia
+4700,Spain,SPAIN,ES,Europe,Southern Europe
+4710,Portugal,PORTUGL,PT,Europe,Southern Europe
+4720,Gibraltar,GIBRALT,GI,Europe,Southern Europe
+4730,Malta,MALTA,MT,Europe,Southern Europe
+4751,San Marino,SAN MAR,SM,Europe,Southern Europe
+4752,Holy See (Vatican City),VAT CTY,VA,Europe,Southern Europe
+4759,Italy,ITALY,IT,Europe,Southern Europe
+4791,Croatia,CROATIA,HR,Europe,Southern Europe
+4792,Slovenia,SLVENIA,SI,Europe,Southern Europe
+4793,Bosnia and Herzegovina,BOSNIA,BA,Europe,Balkans
+4794,North Macedonia,NMACEDO,MK,Europe,Balkans
+4801,Serbia,SERBIA,RS,Europe,Balkans
+4803,Kosovo,KOSOVO,KV,Europe,Balkans
+4804,Montenegro,MONTENE,ME,Europe,Balkans
+4810,Albania,ALBANIA,AL,Europe,Southern Europe
+4840,Greece,GREECE,GR,Europe,Southern Europe
+4850,Romania,ROMANIA,RO,Europe,Balkans
+4870,Bulgaria,BULGAR,BG,Europe,Balkans
+4890,Turkey,TURKEY,TR,Europe,Balkans
+4910,Cyprus,CYPRUS,CY,Europe,Southern Europe
+5020,Syria (Syrian Arab Republic),SYRIA,SY,Middle East,Middle East Other
+5040,Lebanon,LEBANON,LB,Middle East,Middle East Other
+5050,Iraq,IRAQ,IQ,Middle East,Middle East Other
+5070,Iran,IRAN,IR,Middle East,Middle East Other
+5081,Israel,ISRAEL,IL,Middle East,Israel & Territories
+5082,Gaza Strip administered by Israel,GAZA,GZ,Middle East,Israel & Territories
+5083,West Bank administered by Israel,WESTBNK,WE,Middle East,Israel & Territories
+5110,Jordan,JORDAN,JO,Middle East,Middle East Other
+5130,Kuwait,KUWAIT,KW,Middle East,Gulf States
+5170,Saudi Arabia,S ARAB,SA,Middle East,Gulf States
+5180,Qatar,QATAR,QA,Middle East,Gulf States
+5200,United Arab Emirates,ARAB EM,AE,Middle East,Gulf States
+5210,Yemen (Republic of Yemen),YEMEN,YE,Middle East,Middle East Other
+5230,Oman,OMAN,OM,Middle East,Gulf States
+5250,Bahrain,BAHRAIN,BH,Middle East,Gulf States
+5310,Afghanistan,AFGHAN,AF,Asia,South Asia
+5330,India,INDIA,IN,Asia,South Asia
+5350,Pakistan,PAKISTN,PK,Asia,South Asia
+5360,Nepal,NEPAL,NP,Asia,South Asia
+5380,Bangladesh,BNGLDSH,BD,Asia,South Asia
+5420,Sri Lanka,SRI LKA,LK,Asia,South Asia
+5460,Burma (Myanmar),BURMA,MM,Asia,Southeast Asia
+5490,Thailand,THAILND,TH,Asia,Southeast Asia
+5520,Vietnam,VIETNAM,VN,Asia,Southeast Asia
+5530,Laos (Lao People's Democratic Republic),LAOS,LA,Asia,Southeast Asia
+5550,Cambodia,CAMBOD,KH,Asia,Southeast Asia
+5570,Malaysia,MALAYSA,MY,Asia,Southeast Asia
+5590,Singapore,SINGAPR,SG,Asia,Southeast Asia
+5600,Indonesia,INDNSIA,ID,Asia,Southeast Asia
+5601,Timor-Leste,TIM-LES,TL,Asia,Southeast Asia
+5610,Brunei,BRUNEI,BN,Asia,Southeast Asia
+5650,Philippines,PHIL R,PH,Asia,Southeast Asia
+5660,Macao,MACAU,MO,Asia,East Asia
+5682,Bhutan,BHUTAN,BT,Asia,South Asia
+5683,Maldives,MALDIVE,MV,Asia,South Asia
+5700,China,CHINA,CN,Asia,East Asia
+5740,Mongolia,MONGOLA,MN,Asia,East Asia
+5790,North Korea (Democratic People's Republic of Korea),NO KOR,KP,Asia,East Asia
+5800,South Korea (Republic of Korea),KOR REP,KR,Asia,East Asia
+5820,Hong Kong,HG KONG,HK,Asia,East Asia
+5830,Taiwan,TAIWAN,TW,Asia,East Asia
+5880,Japan,JAPAN,JP,Asia,East Asia
+6021,Australia,AUSTRAL,AU,Oceania,Australia
+6022,Norfolk Island,NORFOLK,NF,Oceania,Australia
+6023,Cocos (Keeling) Islands,COCOS I,CC,Oceania,Australia
+6024,Christmas Island (in the Indian Ocean),CRIST I,CX,Oceania,Australia
+6029,Heard Island and McDonald Islands,HEARD I,HM,Oceania,Australia
+6040,Papua New Guinea,NEW GUI,PG,Oceania,Melanesia
+6141,New Zealand,N ZEAL,NZ,Oceania,New Zealand
+6142,Cook Islands,COOK IS,CK,Oceania,New Zealand
+6143,Tokelau,TOKELAU,TK,Oceania,New Zealand
+6144,Niue,NIUE,NU,Oceania,New Zealand
+6150,Samoa (Western Samoa),SAMOA,WS,Oceania,Pacific Islands
+6223,Solomon Islands,SOLMN I,SB,Oceania,Melanesia
+6224,Vanuatu,VANUATU,VU,Oceania,Melanesia
+6225,Pitcairn Islands,PITCARN,PN,Oceania,Pacific Islands
+6226,Kiribati,KIRIBAT,KI,Oceania,Pacific Islands
+6227,Tuvalu,TUVALU,TV,Oceania,Pacific Islands
+6412,New Caledonia,N CALDN,NC,Oceania,Melanesia
+6413,Wallis and Futuna,WALLIS,WF,Oceania,Pacific Islands
+6414,French Polynesia,FR POLY,PF,Oceania,Pacific Islands
+6810,Marshall Islands,MARSHAL,MH,Oceania,Pacific Islands
+6820,"Micronesia, Federated States of",MICRONS,FM,Oceania,Pacific Islands
+6830,Palau,PALAU,PW,Oceania,Pacific Islands
+6862,Nauru,NAURU,NR,Oceania,Pacific Islands
+6863,Fiji,FIJI,FJ,Oceania,Pacific Islands
+6864,Tonga,TONGA,TO,Oceania,Pacific Islands
+7140,Morocco,MOROC,MA,Africa,North Africa
+7210,Algeria,ALGERIA,DZ,Africa,North Africa
+7230,Tunisia,TUNISIA,TN,Africa,North Africa
+7250,Libya,LIBYA,LY,Africa,North Africa
+7290,Egypt,EGYPT,EG,Africa,North Africa
+7321,Sudan,SUDAN,SD,Africa,North Africa
+7323,South Sudan,S SUDAN,SS,Africa,North Africa
+7380,Equatorial Guinea,EQ GUIN,GQ,Africa,West Africa
+7410,Mauritania,MAURITN,MR,Africa,West Africa
+7420,Cameroon,CAMROON,CM,Africa,West Africa
+7440,Senegal,SENEGAL,SN,Africa,West Africa
+7450,Mali,MALI,ML,Africa,West Africa
+7460,Guinea,GUINEA,GN,Africa,West Africa
+7470,Sierra Leone,SIER LN,SL,Africa,West Africa
+7480,Cote d'Ivoire,IVY CST,CI,Africa,West Africa
+7490,Ghana,GHANA,GH,Africa,West Africa
+7500,Gambia,GAMBIA,GM,Africa,West Africa
+7510,Niger,NIGER,NE,Africa,West Africa
+7520,Togo,TOGO,TG,Africa,West Africa
+7530,Nigeria,NIGERIA,NG,Africa,West Africa
+7540,Central African Republic,C AF RP,CF,Africa,West Africa
+7550,Gabon,GABON,GA,Africa,West Africa
+7560,Chad,CHAD,TD,Africa,West Africa
+7580,Saint Helena,S HELN,SH,Africa,West Africa
+7600,Burkina Faso,BURKINA,BF,Africa,West Africa
+7610,Benin,BENIN,BJ,Africa,West Africa
+7620,Angola,ANGOLA,AO,Africa,Central Africa
+7630,"Congo, Republic of the Congo",CONGO B,CG,Africa,Central Africa
+7642,Guinea-Bissau,G BISAU,GW,Africa,West Africa
+7643,Cabo Verde,C VERDE,CV,Africa,West Africa
+7644,Sao Tome and Principe,SAO T P,ST,Africa,West Africa
+7650,Liberia,LIBERIA,LR,Africa,West Africa
+7660,"Congo, Democratic Republic of the Congo (formerly Zaire)",CONGO C,CD,Africa,Central Africa
+7670,Burundi,BURUNDI,BI,Africa,Central Africa
+7690,Rwanda,RWANDA,RW,Africa,Central Africa
+7700,Somalia,SOMALIA,SO,Africa,East Africa
+7741,Eritrea,ERITREA,ER,Africa,East Africa
+7749,Ethiopia,ETHIOP,ET,Africa,East Africa
+7770,Djibouti,DJIBUTI,DJ,Africa,East Africa
+7780,Uganda,UGANDA,UG,Africa,East Africa
+7790,Kenya,KENYA,KE,Africa,East Africa
+7800,Seychelles,SEYCHEL,SC,Africa,East Africa
+7810,British Indian Ocean Territory,B IND O,IO,Africa,East Africa
+7830,Tanzania (United Republic of Tanzania),TNZANIA,TZ,Africa,East Africa
+7850,Mauritius,MAURIT,MU,Africa,Southern Africa
+7870,Mozambique,MOZAMBQ,MZ,Africa,Southern Africa
+7880,Madagascar,MADAGAS,MG,Africa,Southern Africa
+7881,Mayotte,MAYOTTE,YT,Africa,East Africa
+7890,Comoros,COMOROS,KM,Africa,East Africa
+7904,Reunion,REUNION,RE,Africa,East Africa
+7905,French Southern and Antarctic Lands,F SO AN,TF,Africa,East Africa
+7910,South Africa,REP SAF,ZA,Africa,Southern Africa
+7920,Namibia,NAMIBIA,NA,Africa,Southern Africa
+7930,Botswana,BOTSWAN,BW,Africa,Southern Africa
+7940,Zambia,ZAMBIA,ZM,Africa,Southern Africa
+7950,Eswatini,ESWATIN,SZ,Africa,Southern Africa
+7960,Zimbabwe,ZMBABWE,ZW,Africa,Southern Africa
+7970,Malawi,MALAWI,MW,Africa,Southern Africa
+7990,Lesotho,LESOTHO,LS,Africa,Southern Africa
+8220,UNIDENTIFIED COUNTRIES,UNIDENT,,Special,Special
+8500,INTERNATIONAL ORGANIZATIONS,INT ORG,,Special,Special
+9000,PUERTO TO US,PR T US,,US Territories,US Territories
+9030,Puerto Rico,P RICO,PR,US Territories,US Territories
+9110,Virgin Islands of the United States,VIRG IS,VI,US Territories,US Territories
+9350,Guam,,GU,US Territories,US Territories
+9510,American Samoa,,AS,US Territories,US Territories
+9610,Northern Mariana Islands,,MP,US Territories,US Territories
+9800,United States Minor Outlying Islands,,UM,US Territories,US Territories

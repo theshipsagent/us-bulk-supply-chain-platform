@@ -1,0 +1,253 @@
+Phase,Priority,Port_Loading,Port_Discharge,HS4,Group,Commodity,Cargo,Cargo_Detail,Confidence_Pct,Tons,Records,Active
+0.5,1,"Beale Cove, Bc, Canada","Port of Seattle, Seattle, Washington",2008.0,Break Bulk,Perishables,Refrigerated,Refrigerated,55.2,48000.0,8,True
+0.5,2,"Turbo, Colombia","San Juan, San Juan, Puerto Rico",803.0,Break Bulk,Perishables,Refrigerated,Refrigerated,18.5,16113.6,16,True
+0.5,3,"Quebec, Que, Canada","Houston, Houston, Texas",2008.0,Break Bulk,Perishables,Refrigerated,Refrigerated,11.2,9790.02,1,True
+0.5,4,"Campana, Argentina","Freeport, Freeport, Texas",7604.0,Break Bulk,Metals,Aluminum,Aluminum,19.1,94233.56,23,True
+0.5,5,"Sept Iles, QUE, Canada","Toledo-Lucas Port Authority, Toledo, Ohio",7604.0,Break Bulk,Metals,Aluminum,Aluminum,11.8,58075.07,63,True
+0.5,6,"Sept Iles, QUE, Canada","Port of Oswego, Oswego, New York",7604.0,Break Bulk,Metals,Aluminum,Aluminum,9.0,44681.01,30,True
+0.5,7,"Kitimat, Bc, Canada","The Port of Los Angeles, Los Angeles, California",7601.0,Break Bulk,Metals,Aluminum,Aluminum,8.6,42632.35,2,True
+0.5,8,"All Other Chile Ports, Chile","Port Panama City, Panama City, Florida",7403.0,Break Bulk,Metals,Copper,Copper,7.2,35386.55,87,True
+0.5,9,"Quebec, Que, Canada","Baltimore, Maryland",7601.0,Break Bulk,Metals,Aluminum,Aluminum,6.1,29973.77,2,True
+0.5,10,"All Other Chile Ports, Chile","Port of New Orleans, New Orleans, Louisiana",7403.0,Break Bulk,Metals,Copper,Copper,5.1,25189.05,38,True
+0.5,11,"All Other United Arab Emirates Ports, United Arab Emirates","Port of Vancouver USA, Vancouver, Washington",7601.0,Break Bulk,Metals,Aluminum,Aluminum,3.8,18540.49,14,True
+0.5,12,"Quebec, Que, Canada","Port of New Orleans, New Orleans, Louisiana",7601.0,Break Bulk,Metals,Aluminum,Aluminum,3.0,14989.55,1,True
+0.5,13,"All Other United Arab Emirates Ports, United Arab Emirates","Port of Long Beach, Long Beach, California",7601.0,Break Bulk,Metals,Aluminum,Aluminum,2.3,11321.32,21,True
+0.5,14,"Stewart, Bc, Canada","Port Of Longview, Longview, Washington",2603.0,Break Bulk,Metals,Copper,Copper,2.1,10500.0,1,True
+0.5,15,"Sept Iles, QUE, Canada","Baltimore, Maryland",7601.0,Break Bulk,Metals,Aluminum,Aluminum,2.1,10496.0,2,True
+0.5,16,"Sept Iles, QUE, Canada","Port of New Orleans, New Orleans, Louisiana",7601.0,Break Bulk,Metals,Aluminum,Aluminum,2.1,10495.0,1,True
+0.5,17,"Stewart, Bc, Canada","Juneau, Juneau, Alaska",2613.0,Break Bulk,Metals,Copper,Copper,2.0,9970.0,1,True
+0.5,18,"Onsan, South Korea","Baltimore, Maryland",6810.0,Break Bulk,Metals,Zinc,Zinc,1.5,7637.32,1,True
+0.5,19,"Khalifa Bin Salman, Bahrain","Port of Vancouver USA, Vancouver, Washington",7601.0,Break Bulk,Metals,Aluminum,Aluminum,1.5,7436.2,4,True
+0.5,20,"Onsan, South Korea","Port of New Orleans, New Orleans, Louisiana",7801.0,Break Bulk,Metals,Lead,Lead,1.4,7108.3099999999995,2,True
+0.5,21,"Ilo, Peru","Houston, Houston, Texas",7403.0,Break Bulk,Metals,Copper,Copper,1.2,6020.04,7,True
+0.5,22,"Puerto Drummond, Colombia","Alabama State Port Authority, Mobile, Alabama",2701.0,Dry Bulk,Carbon Products,Coal,Coal,28.6,410167.0,4,True
+0.5,23,"Puerto Drummond, Colombia","Ponce, Ponce, Puerto Rico",2701.0,Dry Bulk,Carbon Products,Coal,Coal,21.8,313300.0,8,True
+0.5,24,"Tracy, Que, Canada","Houston, Houston, Texas",2710.0,Dry Bulk,Carbon Products,Coal,Coal,7.7,109902.7,2,True
+0.5,25,"Puerto Nuevo, Ecuador","Alabama State Port Authority, Mobile, Alabama",2701.0,Dry Bulk,Carbon Products,Coal,Coal,7.1,101558.0,1,True
+0.5,26,"Dagu/Tanggu, China","Port of Gramercy, Gramercy, Louisiana",3824.0,Dry Bulk,Carbon Products,Carbon Products,Misc Bulk,4.5,63937.030000000006,7,True
+0.5,27,"Sorel, Que, Canada","Houston, Houston, Texas",2710.0,Dry Bulk,Carbon Products,Coal,Coal,3.7,53339.0,1,True
+0.5,28,"Imbituba, Brazil","Port of New Orleans, New Orleans, Louisiana",3004.0,Dry Bulk,Carbon Products,Petcoke,Petcoke,3.1,44003.36,2,True
+0.5,29,"Danzig, Poland","Illinois International Port District, Chicago, Illinois",4402.0,Dry Bulk,Carbon Products,Coal,Coal,2.9,41293.57,4,True
+0.5,30,"Fort Williams, Ont, Canada","Detroit/Wayne County Port Authority, Detroit, Michigan",4402.0,Dry Bulk,Carbon Products,Coal,Coal,2.8,39851.0,2,True
+0.5,31,"Cartagena, Colombia","Port of New Orleans, New Orleans, Louisiana",3004.0,Dry Bulk,Carbon Products,Petcoke,Petcoke,2.3,33000.0,1,True
+0.5,32,"Salaverry, Peru","Alabama State Port Authority, Mobile, Alabama",7606.0,Dry Bulk,Carbon Products,Coal,Coal,2.3,32863.89,2,True
+0.5,33,"La Plata, Argentina","Port Arthur, Texas",2713.0,Dry Bulk,Carbon Products,Petcoke,Petcoke,1.4,20061.47,1,True
+0.5,34,"Bruce Mines, Ont, Canada","Detroit/Wayne County Port Authority, Detroit, Michigan",4402.0,Dry Bulk,Carbon Products,Coal,Coal,1.2,17000.0,1,True
+0.5,35,"All Other Brazil Ports South Of Recife, Brazil","Alabama State Port Authority, Mobile, Alabama",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,5.6,99250.0,14,True
+0.5,36,"All Other Brazil Ports South Of Recife, Brazil","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,5.2,93148.0,24,True
+0.5,37,"Rio Grande, Brazil","Port of Brunswick, Brunswick, Georgia",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,3.2,57140.33,4,True
+0.5,38,"Brake, Germany","Port Canaveral, Port Canaveral, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,3.0,52897.9,44,True
+0.5,39,"All Other Israel Mediterranean Area Ports, Israel","Port of New Orleans, New Orleans, Louisiana",3103.0,Break Bulk,Forestry,Pulp & Paper,Board,3.0,52795.54,13,True
+0.5,40,"All Other Brazil Ports South Of Recife, Brazil","Jacksonville, Florida",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,2.8,49898.0,14,True
+0.5,41,"Norrkoping, Sweden","Port Canaveral, Port Canaveral, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,2.5,43986.0,9,True
+0.5,42,"Richard's Bay, South Africa","The Port of Brownsville, Brownsville, Texas",7601.0,Break Bulk,Forestry,Pulp & Paper,Board,2.3,41011.57,37,True
+0.5,43,"Kemi, Finland","Baltimore, Maryland",4810.0,Break Bulk,Forestry,Pulp & Paper,Paper,2.2,38719.6,4,True
+0.5,44,"Itaqui, Brazil","Port of Beaumont, Beaumont, Texas",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,2.0,36362.0,4,True
+0.5,45,"Rauma, Finland","Baltimore, Maryland",4810.0,Break Bulk,Forestry,Pulp & Paper,Pulp,2.0,35149.32,517,True
+0.5,46,"Rauma, Finland","Jacksonville, Florida",4810.0,Break Bulk,Forestry,Pulp & Paper,Pulp,2.0,35149.08,605,True
+0.5,47,"Bremen, Germany","Port Canaveral, Port Canaveral, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.7,30129.23,22,True
+0.5,48,"Itaqui, Brazil","Alabama State Port Authority, Mobile, Alabama",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.6,28460.0,3,True
+0.5,49,"All Other Brazil Ports South Of Recife, Brazil","Port Arthur, Texas",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.4,25570.0,7,True
+0.5,50,"Nueva Palmira, Uruguay","Alabama State Port Authority, Mobile, Alabama",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.3,23520.14,6,True
+0.5,51,"Brake, Germany","Port of New Haven, New Haven, Connecticut",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.3,23033.49,37,True
+0.5,52,"All Other Sweden Ports, Sweden","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.2,21728.0,10,True
+0.5,53,"Karlshamn, Sweden","Port Of Entry-Morehead City - Beaufort, Beaufort‑Morehead City, North Carolina",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.2,21224.0,1,True
+0.5,54,"Bremen, Germany","Port of New Haven, New Haven, Connecticut",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.2,20904.370000000003,21,True
+0.5,55,"Wismar, Germany","Baltimore, Maryland",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.2,20644.1,13,True
+0.5,56,"All Other Brazil Ports South Of Recife, Brazil","Port of Beaumont, Beaumont, Texas",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.1,20300.0,5,True
+0.5,57,"Karlshamn, Sweden","Port Canaveral, Port Canaveral, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.1,20209.0,7,True
+0.5,58,"Madryn, Argentina","Alabama State Port Authority, Mobile, Alabama",7601.0,Break Bulk,Forestry,Pulp & Paper,Board,1.1,19405.37,22,True
+0.5,59,"Riga, Latvia","Port Panama City, Panama City, Florida",4410.0,Break Bulk,Forestry,Pulp & Paper,Paper,1.1,19202.0,2,True
+0.5,60,"All Other Brazil Ports South Of Recife, Brazil","Baltimore, Maryland",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.1,19000.0,4,True
+0.5,61,"Itaqui, Brazil","Port of Beaumont, Beaumont, Texas",4818.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.1,18900.0,2,True
+0.5,62,"Barao De Teffe, Brazil","Jacksonville, Florida",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.0,18000.0,3,True
+0.5,63,"Itaqui, Brazil","Port Manatee, Florida",4818.0,Break Bulk,Forestry,Pulp & Paper,Lumber,1.0,17300.0,2,True
+0.5,64,"Itajai, Brazil","Port Arthur, Texas",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,1.0,17290.0,4,True
+0.5,65,"Nueva Palmira, Uruguay","Port Arthur, Texas",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.9,16494.309999999998,2,True
+0.5,66,"Bremen, Germany","Baltimore, Maryland",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.9,16283.2,15,True
+0.5,67,"Sao Francisco Do Sul, Brazil","Port Manatee, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.9,15777.7,21,True
+0.5,68,"Bremen, Germany","Houston, Houston, Texas",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.8,14737.04,19,True
+0.5,69,"All Other Sweden Ports, Sweden","Baltimore, Maryland",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.8,14677.83,4,True
+0.5,70,"Brake, Germany","Tampa, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.8,14444.27,10,True
+0.5,71,"Itaqui, Brazil","Alabama State Port Authority, Mobile, Alabama",4818.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.8,14000.0,2,True
+0.5,72,"Rauma, Finland","Baltimore, Maryland",4806.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.8,13801.1,108,True
+0.5,73,"Sao Paulo, Brazil","Baltimore, Maryland",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.7,13098.0,3,True
+0.5,74,"All Other Sweden Ports, Sweden","Port of Lake Charles, Lake Charles, Louisiana",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.7,13097.73,14,True
+0.5,75,"Brake, Germany","Port Arthur, Texas",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.7,12973.54,9,True
+0.5,76,"All Other Sweden Ports, Sweden","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.7,12666.0,2,True
+0.5,77,"Madryn, Argentina","Port Manatee, Florida",7601.0,Break Bulk,Forestry,Pulp & Paper,Board,0.7,12290.16,57,True
+0.5,78,"Uddevalla, Sweden","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4804.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.7,12073.0,13,True
+0.5,79,"Rauma, Finland","Jacksonville, Florida",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.7,11667.359999999999,13,True
+0.5,80,"All Other Sweden Ports, Sweden","Baltimore, Maryland",4804.0,Break Bulk,Forestry,Pulp & Paper,Board,0.6,11539.0,3,True
+0.5,81,"Sao Paulo, Brazil","Port Arthur, Texas",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.6,11400.0,3,True
+0.5,82,"Riga, Latvia","Baltimore, Maryland",4410.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.6,11194.0,1,True
+0.5,83,"Sundsvall, Sweden","Port Of Entry-Fernandina Beach, Fernandina Beach, Florida",8433.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.6,10676.0,2,True
+0.5,84,"Wismar, Germany","Port of Wilmington, Wilmington, Delaware",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.6,10480.15,7,True
+0.5,85,"Brake, Germany","Baltimore, Maryland",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.6,10081.6,12,True
+0.5,86,"All Other Sweden Ports, Sweden","Port Of Entry-Fernandina Beach, Fernandina Beach, Florida",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.6,10000.0,1,True
+0.5,87,"Brake, Germany","Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.6,9939.89,6,True
+0.5,88,"Brake, Germany","Houston, Houston, Texas",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,9778.41,30,True
+0.5,89,"Rauma, Finland","Baltimore, Maryland",4810.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.5,9723.67,42,True
+0.5,90,"Sundsvall, Sweden","Port Arthur, Texas",8433.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.5,9681.99,2,True
+0.5,91,"Sao Francisco Do Sul, Brazil","Port Arthur, Texas",4411.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,9634.78,27,True
+0.5,92,"Rio Grande, Brazil","Wilmington, Wilmington, North Carolina",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.5,9566.64,1,True
+0.5,93,"Wismar, Germany","Illinois International Port District, Chicago, Illinois",4407.0,Break Bulk,Forestry,Pulp & Paper,Timber,0.5,9522.0,4,True
+0.5,94,"Bremen, Germany","Port of Lake Charles, Lake Charles, Louisiana",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,9470.550000000001,12,True
+0.5,95,"Rio Grande, Brazil","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.5,9347.86,2,True
+0.5,96,"Brake, Germany","Wilmington, Wilmington, North Carolina",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,9346.5,12,True
+0.5,97,"Riga, Latvia","Houston, Houston, Texas",4410.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.5,9021.0,1,True
+0.5,98,"Brake, Germany","Alabama State Port Authority, Mobile, Alabama",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,8826.73,9,True
+0.5,99,"Brake, Germany","Port of Lake Charles, Lake Charles, Louisiana",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,8331.52,8,True
+0.5,100,"Wismar, Germany","Illinois International Port District, Chicago, Illinois",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.5,8184.61,2,True
+0.5,101,"Stettin, Poland","Houston, Houston, Texas",4410.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.5,8166.0,1,True
+0.5,102,"Brake, Germany","Port Panama City, Panama City, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.4,7657.68,6,True
+0.5,103,"Rauma, Finland","Jacksonville, Florida",4806.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.4,7433.65,73,True
+0.5,104,"Riga, Latvia","Port Canaveral, Port Canaveral, Florida",4410.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.4,7277.0,1,True
+0.5,105,"Point Lisas, Trinidad and Tobago","Georgia Ports Authority, Savannah, Georgia",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.4,7250.0,1,True
+0.5,106,"All Other United Arab Emirates Ports, United Arab Emirates","Houston, Houston, Texas",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.4,7202.14,5,True
+0.5,107,"Itaqui, Brazil","Port Manatee, Florida",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.4,7000.0,1,True
+0.5,108,"Itajai, Brazil","Port Manatee, Florida",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.4,6998.0,1,True
+0.5,109,"Brake, Germany","Port of New Orleans, New Orleans, Louisiana",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.4,6821.61,4,True
+0.5,110,"Rauma, Finland","Jacksonville, Florida",4802.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.4,6433.21,49,True
+0.5,111,"Antwerp, Belgium","Port of New Haven, New Haven, Connecticut",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,6170.75,1,True
+0.5,112,"Rauma, Finland","Baltimore, Maryland",4802.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,6074.97,115,True
+0.5,113,"Sao Paulo, Brazil","Corpus Christi, Corpus Christi, Texas",4411.0,Break Bulk,Forestry,Pulp & Paper,Fiberboard,0.3,6069.2,2,True
+0.5,114,"Bremen, Germany","Georgia Ports Authority, Savannah, Georgia",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,6006.9400000000005,6,True
+0.5,115,"Sao Paulo, Brazil","Alabama State Port Authority, Mobile, Alabama",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,6000.0,1,True
+0.5,116,"Goteborg, Sweden","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4810.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,5888.23,14,True
+0.5,117,"Sao Francisco Do Sul, Brazil","Port Arthur, Texas",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,5743.82,14,True
+0.5,118,"All Other United Arab Emirates Ports, United Arab Emirates","Port of New Haven, New Haven, Connecticut",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,5534.1900000000005,2,True
+0.5,119,"Bremen, Germany","Port Arthur, Texas",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,5268.86,5,True
+0.5,120,"Waterford, Ireland","Baltimore, Maryland",4412.0,Break Bulk,Forestry,Pulp & Paper,Paper,0.3,5240.01,1,True
+0.5,121,"Rauma, Finland","Baltimore, Maryland",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,5126.11,8,True
+0.5,122,"Brake, Germany","Port of Virginia, Norfolk, Virginia",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,5111.05,7,True
+0.5,123,"Bremerhaven, Germany","Port of Galveston, Galveston, Texas",8426.0,Break Bulk,Forestry,Pulp & Paper,Board,0.3,4853.02,16,True
+0.5,124,"All Other Sweden Ports, Sweden","Port Canaveral, Port Canaveral, Florida",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,4820.0,1,True
+0.5,125,"Sundsvall, Sweden","Searsport, Maine",8433.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,4754.0,2,True
+0.5,126,"Greenock, United Kingdom","Baltimore, Maryland",4810.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,4688.33,37,True
+0.5,127,"Bremen, Germany","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",4407.0,Break Bulk,Forestry,Pulp & Paper,Lumber,0.3,4552.31,6,True
+0.5,128,"Vallvik, Sweden","Albany, New York",4703.0,Break Bulk,Forestry,Pulp & Paper,Pulp,0.3,4538.58,2,True
+0.5,129,"Quebec, Que, Canada","Corpus Christi, Corpus Christi, Texas",3901.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,7.5,210258.0,2,True
+0.5,130,"Praia Mole, Brazil","Port of Gramercy, Gramercy, Louisiana",8431.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,5.5,155561.0,2,True
+0.5,131,"All Other Brazil Ports South Of Recife, Brazil","Port of Gramercy, Gramercy, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,5.5,153902.0,4,True
+0.5,132,"Point Lisas, Trinidad and Tobago","The Port of Charleston, Charleston, South Carolina",7205.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,5.3,148520.33000000002,4,True
+0.5,133,"Port Cartier, Que, Canada","Corpus Christi, Corpus Christi, Texas",2601.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,3.8,108262.0,1,True
+0.5,134,"Sept Iles, QUE, Canada","Corpus Christi, Corpus Christi, Texas",4401.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,3.7,105451.0,1,True
+0.5,135,"Port Cartier, Que, Canada","Corpus Christi, Corpus Christi, Texas",2304.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,3.7,105386.0,1,True
+0.5,136,"Rio De Janeiro, Brazil","Alabama State Port Authority, Mobile, Alabama",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,3.6,102538.0,11,True
+0.5,137,"Rio De Janeiro, Brazil","Port of Gramercy, Gramercy, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,3.5,98038.0,21,True
+0.5,138,"Bayside, Nb, Canada","The Port of Charleston, Charleston, South Carolina",7205.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,3.0,83434.77,2,True
+0.5,139,"Praia Mole, Brazil","Port of Gramercy, Gramercy, Louisiana",7616.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.8,79255.0,1,True
+0.5,140,"Bogen, Norway","Port of Gramercy, Gramercy, Louisiana",5205.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.8,78620.0,1,True
+0.5,141,"Point Ubu, Brazil","Port of Gramercy, Gramercy, Louisiana",8431.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.8,78032.0,1,True
+0.5,142,"Quebec, Que, Canada","Port of Gramercy, Gramercy, Louisiana",2601.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.8,77711.0,1,True
+0.5,143,"Point Ubu, Brazil","Port of Gramercy, Gramercy, Louisiana",7616.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.7,75859.0,1,True
+0.5,144,"Amsterdam, Netherlands","The Port of Charleston, Charleston, South Carolina",7204.0,Dry Bulk,Ferrous Raw Materials,Scrap,Scrap,2.6,73153.76,2,True
+0.5,145,"Port Cartier, Que, Canada","Corpus Christi, Corpus Christi, Texas",2610.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.3,64910.0,1,True
+0.5,146,"Victoria, Brazil","Port of New Orleans, New Orleans, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,2.2,63091.1,11,True
+0.5,147,"Huasco, Chile","Port of Gramercy, Gramercy, Louisiana",2601.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,2.2,60500.0,1,True
+0.5,148,"Rio De Janeiro, Brazil","Baton Rouge (BTR) Airport, Baton Rouge, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,2.0,56211.0,1,True
+0.5,149,"Rio De Janeiro, Brazil","The Port of Charleston, Charleston, South Carolina",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,2.0,54993.01,23,True
+0.5,150,"Victoria, Brazil","Alabama State Port Authority, Mobile, Alabama",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.8,49400.0,1,True
+0.5,151,"Victoria, Brazil","Baton Rouge (BTR) Airport, Baton Rouge, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.6,45917.0,7,True
+0.5,152,"Vancouver, BC, Canada","Port of Tacoma, Tacoma, Washington",7204.0,Dry Bulk,Ferrous Raw Materials,Scrap,Scrap,1.6,44400.0,8,True
+0.5,153,"All Other Saudi Arabia Ports, Saudi Arabia","Port of Gramercy, Gramercy, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.3,37312.72,1,True
+0.5,154,"All Other Costa Rica Caribbean Region Ports, Costa Rica","Jacksonville, Florida",7205.0,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,1.3,37193.0,1,True
+0.5,155,"Praia Mole, Brazil","Corpus Christi, Corpus Christi, Texas",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.3,35550.0,1,True
+0.5,156,"Itaqui, Brazil","Baton Rouge (BTR) Airport, Baton Rouge, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.2,34700.0,2,True
+0.5,157,"Rio De Janeiro, Brazil","Port Of Entry-Morehead City - Beaufort, Beaufort‑Morehead City, North Carolina",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.2,34030.0,13,True
+0.5,158,"Stettin, Poland","The Port of Charleston, Charleston, South Carolina",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.2,33878.74,1,True
+0.5,159,"Rio De Janeiro, Brazil","Port of New Orleans, New Orleans, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.2,33174.0,14,True
+0.5,160,"Danzig, Poland","Alabama State Port Authority, Mobile, Alabama",7204.0,Dry Bulk,Ferrous Raw Materials,Scrap,Scrap,1.1,30766.33,1,True
+0.5,161,"Vancouver, BC, Canada","Port of Seattle, Seattle, Washington",7204.0,Dry Bulk,Ferrous Raw Materials,Scrap,Scrap,1.1,30500.0,6,True
+0.5,162,"All Other Poland Ports, Poland","Port of Gramercy, Gramercy, Louisiana",7201.0,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,1.1,30433.32,3,True
+0.5,163,"Dagu/Tanggu, China","Port of Gramercy, Gramercy, Louisiana",8111.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,27.6,778662.22,16,True
+0.5,164,"Port Rhoades, Jamaica","Port of Gramercy, Gramercy, Louisiana",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,14.4,407918.0,7,True
+0.5,165,"Dagu/Tanggu, China","Port of Gramercy, Gramercy, Louisiana",2929.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,12.6,355710.0,7,True
+0.5,166,"Owendo, Gabon","Port of New Orleans, New Orleans, Louisiana",2602.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,2.4,68825.0,9,True
+0.5,167,"Linden, Guyana","Albany, New York",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,2.3,63616.62,1,True
+0.5,168,"Barcarena, Brazil","The Port of Charleston, Charleston, South Carolina",2818.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,2.1,59370.71,2,True
+0.5,169,"All Other Mozambique Ports, Mozambique","Mississippi State Port Authority, Gulfport, Mississippi",2614.0,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,1.8,52050.0,2,True
+0.5,170,"Weipa, Australia","Port of San Diego, San Diego, California",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,1.8,49501.0,1,True
+0.5,171,"Owendo, Gabon","Baltimore, Maryland",4001.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,1.7,48130.0,9,True
+0.5,172,"Weipa, Australia","Alabama State Port Authority, Mobile, Alabama",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,1.4,40500.0,1,True
+0.5,173,"Barcarena, Brazil","Port of Gramercy, Gramercy, Louisiana",7204.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.3,35510.53,2,True
+0.5,174,"All Other Brazil Ports North Of Recife, Brazil","Port of Gramercy, Gramercy, Louisiana",7204.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.2,33600.0,2,True
+0.5,175,"All Other Brazil Ports North Of Recife, Brazil","Baltimore, Maryland",7204.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.2,33350.0,1,True
+0.5,176,"Antwerp, Belgium","Port of New Orleans, New Orleans, Louisiana",2833.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,1.2,33000.0,1,True
+0.5,177,"Owendo, Gabon","Port of New Orleans, New Orleans, Louisiana",4001.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,1.1,31530.0,5,True
+0.5,178,"All Other Brazil Ports South Of Recife, Brazil","Houston, Houston, Texas",7202.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.1,31504.0,1,True
+0.5,179,"Alexandretta, Turkey","Albany, New York",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,1.1,30264.0,1,True
+0.5,180,"Quebec, Que, Canada","Illinois International Port District, Chicago, Illinois",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,1.1,30000.0,1,True
+0.5,181,"Itaqui, Brazil","Baltimore, Maryland",7204.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.1,29700.0,2,True
+0.5,182,"All Other Malaysia Ports, Malaysia","Port of New Orleans, New Orleans, Louisiana",7202.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,1.0,27700.39,5,True
+0.5,183,"Barcarena, Brazil","Port of Lake Charles, Lake Charles, Louisiana",2941.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.0,27600.99,1,True
+0.5,184,"Barcarena, Brazil","Port of Lake Charles, Lake Charles, Louisiana",8464.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,1.0,27600.99,1,True
+0.5,185,"All Other French Guiana Ports, French Guiana","Georgia Ports Authority, Savannah, Georgia",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,0.8,23551.82,4,True
+0.5,186,"Quebec, Que, Canada","Sault Ste. Marie, Sault Ste Marie, Michigan",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,0.8,23500.0,1,True
+0.5,187,"Bell Bay, Australia","Port of New Orleans, New Orleans, Louisiana",7202.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,0.8,23430.0,4,True
+0.5,188,"Alexandretta, Turkey","New York, New York",2606.0,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,0.8,23000.0,1,True
+0.5,189,"Maputo, Mozambique","Port of New Orleans, New Orleans, Louisiana",7202.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,0.7,19500.0,3,True
+0.5,190,"Barcarena, Brazil","Port of Gramercy, Gramercy, Louisiana",2818.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,0.7,18503.44,3,True
+0.5,191,"Batumi, Georgia","Port of New Orleans, New Orleans, Louisiana",7202.0,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,0.6,17500.0,2,True
+0.5,192,"All Other Mozambique Ports, Mozambique","Port of New Orleans, New Orleans, Louisiana",2614.0,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,0.6,16050.82,1,True
+0.5,193,"Bunbury, Australia","Ashtabula/Conneaut, Ohio",3206.0,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,0.6,16001.8,1,True
+0.5,194,"Barcarena, Brazil","Baltimore, Maryland",2941.0,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,0.6,15750.95,1,True
+0.5,195,"All Other Madagascar Ports, Madagascar","Port of New Orleans, New Orleans, Louisiana",2505.0,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,0.5,15001.7,1,True
+0.5,196,"All Other Madagascar Ports, Madagascar","Mississippi State Port Authority, Gulfport, Mississippi",2505.0,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,0.5,15000.0,1,True
+0.5,197,"All Other Seychelles Ports, Seychelles","Port of Gramercy, Gramercy, Louisiana",2505.0,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,0.5,13522.0,1,True
+0.5,198,"Saint John, Nb, Canada","Port Of Boston, Boston, Massachusetts",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,4.7,210064.0,44,True
+0.5,199,"Damietta, Egypt","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,4.7,208193.0,4,True
+0.5,200,"All Other Peru Ports, Peru","Port Manatee, Florida",9503.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,4.5,199929.8,4,True
+0.5,201,"All Other Saudi Arabia Ports, Saudi Arabia","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,4.4,194000.81,4,True
+0.5,202,"All Other Peru Ports, Peru","Port of Gramercy, Gramercy, Louisiana",2510.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,3.8,170459.2,3,True
+0.5,203,"Leningrad, Russia","Port of New Orleans, New Orleans, Louisiana",3104.0,Dry Bulk,Fertilizer,Potassium Fertilizers,Potash,3.7,164050.83000000002,6,True
+0.5,204,"All Other Russia Baltic Region Ports, Russia","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,3.5,155259.26,8,True
+0.5,205,"Saint John, Nb, Canada","Port of Portland, Portland, Maine",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,2.9,128892.0,40,True
+0.5,206,"Leningrad, Russia","Corpus Christi, Corpus Christi, Texas",3105.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,2.6,113721.0,3,True
+0.5,207,"All Other Peru Ports, Peru","Port of Gramercy, Gramercy, Louisiana",2835.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,2.5,111816.34,2,True
+0.5,208,"All Other Peru Ports, Peru","Port of Gramercy, Gramercy, Louisiana",9503.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,2.4,108239.2,2,True
+0.5,209,"Lazaro Cardenas, Mexico","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,2.4,105949.66,4,True
+0.5,210,"All Other Peru Ports, Peru","Port Manatee, Florida",2510.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,2.3,103303.0,2,True
+0.5,211,"Townsville, Australia","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,2.2,96000.0,4,True
+0.5,212,"High Seas,South Pacific","The Port of Los Angeles, Los Angeles, California",2709.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.9,83841.54999999999,2,True
+0.5,213,"All Other Qatar Ports, Qatar","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.9,82600.0,2,True
+0.5,214,"All Other Saudi Arabia Ports, Saudi Arabia","Port of New Orleans, New Orleans, Louisiana",3004.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,1.9,82498.0,2,True
+0.5,215,"Al Jubail, Saudi Arabia","Port of Portland, Portland, Oregon",2918.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.8,81685.0,2,True
+0.5,216,"Saint John, Nb, Canada","Port Of NewHampshire, Portsmouth, New Hampshire",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.7,77086.0,15,True
+0.5,217,"El Jorf Lasfar, Morocco","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,1.7,75977.0,3,True
+0.5,218,"All Other Russia Baltic Region Ports, Russia","Port of Gramercy, Gramercy, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.6,69850.0,1,True
+0.5,219,"All Other Oman Ports, Oman","Houston, Houston, Texas",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.6,69085.13,1,True
+0.5,220,"All Other Peru Ports, Peru","Port of New Orleans, New Orleans, Louisiana",9503.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,1.4,60500.0,1,True
+0.5,221,"All Other Saudi Arabia Ports, Saudi Arabia","Port of New Orleans, New Orleans, Louisiana",8708.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,1.4,60496.0,2,True
+0.5,222,"Novorossiysk, Russia","Baltimore, Maryland",3105.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.3,58000.0,2,True
+0.5,223,"Al Aqabah, Jordan","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,1.2,55000.0,1,True
+0.5,224,"Al Jubail, Saudi Arabia","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.2,53070.0,2,True
+0.5,225,"Saint John, Nb, Canada","Searsport, Maine",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.2,51996.0,11,True
+0.5,226,"Quebec, Que, Canada","Port Of Boston, Boston, Massachusetts",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.1,50305.0,2,True
+0.5,227,"Arzew, Algeria","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.1,49500.01,1,True
+0.5,228,"All Other Qatar Ports, Qatar","Wilmington, Wilmington, North Carolina",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.1,49500.0,1,True
+0.5,229,"Musayid, Qatar","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.1,49500.0,1,True
+0.5,230,"Arzew, Algeria","Wilmington, Wilmington, North Carolina",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,1.0,45550.0,1,True
+0.5,231,"High Seas,Gulf Of Mexico","Port Arthur, Texas",2709.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.0,45530.82,1,True
+0.5,232,"All Other Oman Ports, Oman","Port of New Orleans, New Orleans, Louisiana",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,1.0,44774.0,1,True
+0.5,233,"Point Lisas, Trinidad and Tobago","Port of Stockton, Stockton, California",3105.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.9,41866.58,2,True
+0.5,234,"All Other Russia Baltic Region Ports, Russia","Port of New Orleans, New Orleans, Louisiana",3104.0,Dry Bulk,Fertilizer,Potassium Fertilizers,Potash,0.9,41518.869999999995,2,True
+0.5,235,"Fort Williams, Ont, Canada","Port Of Entry-Morehead City - Beaufort, Beaufort‑Morehead City, North Carolina",3104.0,Dry Bulk,Fertilizer,Potassium Fertilizers,Potash,0.9,41256.0,5,True
+0.5,236,"Novorossiysk, Russia","Wilmington, Wilmington, North Carolina",3105.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.9,41000.0,2,True
+0.5,237,"Damietta, Egypt","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,0.9,40000.0,1,True
+0.5,238,"Vancouver, BC, Canada","Anchorage, Alaska",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,0.9,37753.45,1,True
+0.5,239,"All Other Qatar Ports, Qatar","Port of Galveston, Galveston, Texas",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.8,37400.0,2,True
+0.5,240,"All Other Saudi Arabia Ports, Saudi Arabia","Port of Gramercy, Gramercy, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,0.7,32999.68,1,True
+0.5,241,"Kotka, Finland","Port of New Orleans, New Orleans, Louisiana",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.7,32394.0,5,True
+0.5,242,"Leningrad, Russia","Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.7,31000.0,2,True
+0.5,243,"All Other Morocco Atlantic Region Ports, Morocco","Port of New Orleans, New Orleans, Louisiana",3105.0,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,0.7,30000.0,1,True
+0.5,244,"High Seas,Gulf Of Mexico","Port of New Orleans, New Orleans, Louisiana",2709.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,0.7,28916.09,1,True
+0.5,245,"All Other Qatar Ports, Qatar","Houston, Houston, Texas",3102.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.6,28500.0,1,True
+0.5,246,"Saint John, Nb, Canada","Port of New Haven, New Haven, Connecticut",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,0.6,27500.0,4,True
+0.5,247,"All Other Viet Nam Ports, Vietnam","Port of Stockton, Stockton, California",2523.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.6,26150.0,1,True
+0.5,248,"Heroen, Norway","Port of Stockton, Stockton, California",3105.0,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,0.6,25417.870000000003,4,True
+0.5,249,"High Seas,Gulf Of Mexico","Houston, Houston, Texas",2709.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,0.6,25073.32,1,True
+0.5,250,"Mamonal, Colombia","Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",2710.0,Dry Bulk,Fertilizer,Sulphur,Sulphur,0.5,23035.0,2,True
+0.5,251,"Vancouver, BC, Canada","Port of Portland, Portland, Oregon",3104.0,Dry Bulk,Fertilizer,Potassium Fertilizers,Potash,0.5,22537.0,1,True
+0.5,252,"All Other Israel Mediterranean Area Ports, Israel","Port of New Orleans, New Orleans, Louisiana",3104.0,Dry Bulk,Fertilizer,Potassium Fertilizers,Potash,0.4,17830.75,5,True

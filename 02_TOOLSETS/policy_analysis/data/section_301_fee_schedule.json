@@ -1,0 +1,64 @@
+{
+  "title": "Section 301 Maritime Shipping Fees",
+  "authority": "USTR Final Rule under Section 301 of the Trade Act of 1974",
+  "effective_date": "2025-10-01",
+  "phases": [
+    {
+      "phase": 1,
+      "effective_year": 2025,
+      "categories": {
+        "chinese_built": {
+          "container": {"fee_type": "per_net_ton", "amount": 50, "cap": 1500000},
+          "bulk": {"fee_type": "per_voyage", "amount": 500000},
+          "tanker": {"fee_type": "per_voyage", "amount": 500000},
+          "roro": {"fee_type": "per_voyage", "amount": 350000},
+          "car_carrier": {"fee_type": "per_net_ton", "amount": 45, "cap": 1000000}
+        },
+        "chinese_operated": {
+          "container": {"fee_type": "per_net_ton", "amount": 35, "cap": 1000000},
+          "bulk": {"fee_type": "per_voyage", "amount": 350000},
+          "tanker": {"fee_type": "per_voyage", "amount": 350000}
+        }
+      }
+    },
+    {
+      "phase": 2,
+      "effective_year": 2026,
+      "categories": {
+        "chinese_built": {
+          "container": {"fee_type": "per_net_ton", "amount": 75, "cap": 2000000},
+          "bulk": {"fee_type": "per_voyage", "amount": 750000},
+          "tanker": {"fee_type": "per_voyage", "amount": 750000},
+          "roro": {"fee_type": "per_voyage", "amount": 500000},
+          "car_carrier": {"fee_type": "per_net_ton", "amount": 60, "cap": 1500000}
+        },
+        "chinese_operated": {
+          "container": {"fee_type": "per_net_ton", "amount": 50, "cap": 1500000},
+          "bulk": {"fee_type": "per_voyage", "amount": 500000}
+        }
+      }
+    },
+    {
+      "phase": 3,
+      "effective_year": 2027,
+      "categories": {
+        "chinese_built": {
+          "container": {"fee_type": "per_net_ton", "amount": 100, "cap": 3000000},
+          "bulk": {"fee_type": "per_voyage", "amount": 1000000},
+          "tanker": {"fee_type": "per_voyage", "amount": 1000000},
+          "roro": {"fee_type": "per_voyage", "amount": 750000},
+          "car_carrier": {"fee_type": "per_net_ton", "amount": 80, "cap": 2000000}
+        },
+        "chinese_operated": {
+          "container": {"fee_type": "per_net_ton", "amount": 70, "cap": 2000000},
+          "bulk": {"fee_type": "per_voyage", "amount": 750000}
+        }
+      }
+    }
+  ],
+  "exemptions": [
+    "Vessels with less than 50% Chinese content by value (case-by-case)",
+    "US government cargo (military, FEMA)",
+    "Vessels ordered before rule announcement with delivery within 36 months"
+  ]
+}

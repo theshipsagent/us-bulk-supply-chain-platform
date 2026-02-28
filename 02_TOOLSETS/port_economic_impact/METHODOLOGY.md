@@ -804,4 +804,4 @@ The model performs automated consistency checks on each run:
 
 ---
 
-*US Bulk Supply Chain Reporting Platform v1.0.0 | OceanDatum.ai*
+*US Bulk Supply Chain Reporting Platform v1.0.0 | William S. Davis III*

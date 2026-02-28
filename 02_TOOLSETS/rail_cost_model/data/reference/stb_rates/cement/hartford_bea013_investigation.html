@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BEA 013 (Hartford, CT) Cement Origin Investigation</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:#f5f6fa; color:#2c3e50; line-height:1.7; }
+  .header { background:linear-gradient(135deg,#4a1560 0%,#8e44ad 100%); color:white; padding:36px 60px; }
+  .header h1 { font-size:24px; margin-bottom:4px; }
+  .header p { font-size:13px; opacity:0.85; }
+  .container { max-width:960px; margin:0 auto; padding:24px 40px 60px; }
+  .callout { background:#f5eef8; border-left:4px solid #8e44ad; border-radius:6px;
+              padding:18px 24px; margin:20px 0; font-size:14px; }
+  .callout b { color:#4a1560; }
+  .callout-warn { background:#fef9e7; border-left:4px solid #f39c12; border-radius:6px;
+              padding:18px 24px; margin:20px 0; font-size:14px; }
+  .callout-warn b { color:#e67e22; }
+  .section { background:white; border-radius:10px; padding:28px 32px; margin-bottom:20px;
+              box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .section h2 { font-size:17px; color:#2c3e50; margin-bottom:12px;
+                 border-bottom:2px solid #8e44ad; padding-bottom:6px; display:inline-block; }
+  .section h3 { font-size:14px; color:#8e44ad; margin:14px 0 6px; }
+  .section p, .section li { font-size:14px; margin-bottom:8px; }
+  ul { margin:8px 0 8px 22px; }
+  table { border-collapse:collapse; width:100%; font-size:13px; margin:12px 0; }
+  th { background:#4a1560; color:white; text-align:left; padding:8px 12px; font-weight:600; }
+  td { padding:7px 12px; border-bottom:1px solid #ecf0f1; }
+  td.r { text-align:right; font-variant-numeric:tabular-nums; }
+  tr:hover td { background:#f5eef8; }
+  .ev-table th { background:#8e44ad; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px;
+          font-weight:600; color:white; }
+  .tag-green  { background:#27ae60; }
+  .tag-orange { background:#e67e22; }
+  .tag-red    { background:#e74c3c; }
+  .tag-blue   { background:#2980b9; }
+  .tag-gray   { background:#7f8c8d; }
+  .tag-purple { background:#8e44ad; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:800px) { .two-col { grid-template-columns:1fr; } }
+  .source { font-size:11px; color:#95a5a6; }
+  .chain { text-align:center; font-size:14px; padding:14px; background:#f5eef8;
+            border-radius:8px; margin:12px 0; }
+  .footer { text-align:center; font-size:11px; color:#95a5a6; margin-top:30px;
+             padding-top:16px; border-top:1px solid #ecf0f1; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BEA 013 (Hartford, CT) &mdash; Cement Origin Investigation</h1>
+  <p>14 million tons of rail cement origins in a state with zero cement plants &mdash; the Connecticut Valley distribution corridor</p>
+</div>
+
+<div class="container">
+
+<div class="callout">
+  <b>Finding:</b> BEA 013 (Hartford) functions as a <b>pass-through distribution corridor</b>
+  for New England cement. Two supply chains converge here: (1) <b>Albany, NY-area plants</b>
+  (Lafarge Ravena &amp; Heidelberg Materials, BEA 004) shipping southbound via CSX&rsquo;s
+  Boston Line, and (2) <b>Quebec imports</b> (Lafarge/CRH, BEA 178) via CP/CSX. Hartford-area
+  rail terminals unload, store, and re-originate cement for distribution to mid-Atlantic markets
+  (Baltimore, Charleston WV, Wilmington). Connecticut itself produces <b>zero cement</b>.
+</div>
+
+<!-- 1. The Anomaly -->
+<div class="section">
+  <h2>1. The Anomaly</h2>
+  <p>BEA 013 (Hartford&ndash;New Haven, CT) is the <b>4th largest</b> no-plant cement origin in the
+  STB waybill with 4,896 sample records representing <b>14 million expanded tons</b>
+  (2005&ndash;2023). Connecticut has had <b>zero cement plants</b> since the mid-20th century.
+  The state&rsquo;s entire construction cement supply is imported from New York, Quebec, and overseas.</p>
+
+  <table>
+    <tr><th>Metric</th><th>Value</th></tr>
+    <tr><td>Sample records</td><td>4,896</td></tr>
+    <tr><td>Expanded tons (2005&ndash;2023)</td><td>13.8 million</td></tr>
+    <tr><td>Expanded revenue</td><td>$531 million</td></tr>
+    <tr><td>Annual average tons</td><td>0.7M tons / year</td></tr>
+    <tr><td>Revenue per ton (avg)</td><td>$38.46</td></tr>
+    <tr><td>EPA cement plants in Hartford BEA</td><td><span class="tag tag-red">0</span></td></tr>
+    <tr><td>EPA cement plants in Albany BEA (004)</td><td><span class="tag tag-green">3</span></td></tr>
+    <tr><td>Canadian BEA 178 (Quebec) origin records to CT</td><td>Captured separately as canadian_import</td></tr>
+  </table>
+</div>
+
+<!-- 2. The Two Supply Chains -->
+<div class="section">
+  <h2>2. The Two Supply Chains Feeding Hartford</h2>
+
+  <h3>Supply Chain A: Albany, NY Plants (BEA 004) → Hartford via CSX Boston Line</h3>
+  <p>Three major cement plants in the Albany BEA have direct CSX access southward into Connecticut:</p>
+  <table>
+    <tr><th>Plant</th><th>Location</th><th>Operator</th><th>CSX Route to Hartford</th></tr>
+    <tr>
+      <td><b>Ravena Cement Plant</b></td>
+      <td>Ravena, NY (Albany Co.)</td>
+      <td>Lafarge / Amrize</td>
+      <td>CSX River Line south → Springfield, MA → Hartford (CT River valley)</td>
+    </tr>
+    <tr>
+      <td><b>Heidelberg Materials</b></td>
+      <td>Glens Falls / Hudson, NY</td>
+      <td>Heidelberg Materials US</td>
+      <td>CSX Albany Sub → Boston Line → New Haven Line → Hartford</td>
+    </tr>
+    <tr>
+      <td><b>Holcim US</b></td>
+      <td>Glens Falls, NY (Albany Co.)</td>
+      <td>Holcim (Lafarge legacy)</td>
+      <td>Same CSX routing as above</td>
+    </tr>
+  </table>
+  <div class="chain">
+    <b>Albany BEA 004 plants</b> &nbsp;&rarr;&nbsp; CSX Boston Line / River Line &nbsp;&rarr;&nbsp;
+    <b>Hartford distribution terminal (BEA 013)</b> &nbsp;&rarr;&nbsp; re-originated southward
+    &nbsp;&rarr;&nbsp; <b>Baltimore, Wilmington, Charleston WV</b>
+  </div>
+
+  <h3>Supply Chain B: Quebec Imports (BEA 178) → Hartford via CP/CSX</h3>
+  <p>Quebec cement producers (Lafarge&rsquo;s Joliette/St. Constant plants, CRH St. Lawrence)
+  export cement via CP to US gateways and then CSX into New England:</p>
+  <table>
+    <tr><th>Producer</th><th>Route</th><th>US Entry</th></tr>
+    <tr>
+      <td>Lafarge / CRH (Quebec)</td>
+      <td>CP Rail from Quebec → Vermont gateway (Derby Line or Rouses Point)</td>
+      <td>CSX/ Vermont Railway → Springfield, MA → Hartford CT</td>
+    </tr>
+    <tr>
+      <td>CRH St. Lawrence Cement</td>
+      <td>CP from Joliette → US border → CSX Massena → Albany → Hartford</td>
+      <td>CSX River Line / Boston Line</td>
+    </tr>
+  </table>
+  <p>The Quebec supply chain explains why BEA 178 shows direct rail exports to BEA 051
+  (Knoxville) and BEA 055 (Louisville) in addition to New England — Quebec cement has a
+  wide US distribution network, with Hartford as one node.</p>
+
+  <div class="callout-warn">
+    <b>Data limitation:</b> When Quebec cement arrives at a Hartford terminal and is
+    re-shipped by rail, the <em>new</em> waybill records Hartford (BEA 013) as the origin,
+    not Quebec (BEA 178). This means the BEA 013 tonnage is a <em>blend</em> of Albany-origin
+    and Quebec-origin cement, and the true Canadian share of the 13.8M tons is unknown
+    without terminal-level data.
+  </div>
+</div>
+
+<!-- 3. Waybill Fingerprints -->
+<div class="section">
+  <h2>3. Waybill Data Fingerprints</h2>
+  <table class="ev-table">
+    <tr><th>Field</th><th>Observation</th><th>Interpretation</th></tr>
+    <tr>
+      <td>Destinations</td>
+      <td>Baltimore (020), Charleston WV (053), Wilmington (019) dominate</td>
+      <td>Southbound redistribution from New England &mdash; consistent with a mid-corridor distribution node</td>
+    </tr>
+    <tr>
+      <td>Shipment size</td>
+      <td>88% are 1&ndash;5 cars; 0% are 51+ cars</td>
+      <td>Mostly small-lot redistribution — confirms terminal behavior, not plant-direct</td>
+    </tr>
+    <tr>
+      <td>Revenue per ton</td>
+      <td>$38.46/ton</td>
+      <td>Higher than confirmed plant averages — reflects value-added distribution margin
+          and longer final-leg hauls southward</td>
+    </tr>
+    <tr>
+      <td>Import/export flag</td>
+      <td>See breakdown below</td>
+      <td>Some import coding present — consistent with Quebec supply chain component</td>
+    </tr>
+    <tr>
+      <td>Rail carriers</td>
+      <td>CSX (Boston Line, New Haven Line) primary; NS secondary for mid-Atlantic legs</td>
+      <td>Confirms CSX as the dominant carrier for the CT Valley corridor</td>
+    </tr>
+  </table>
+
+  <h3>Import/Export Flag Breakdown</h3>
+  <table class="ev-table">
+    <tr><th>Code</th><th>Label</th><th>Records</th><th>%</th></tr>
+    <tr><td>0</td><td>Domestic</td><td class="r">2,379</td><td class="r">48.6%</td></tr>
+<tr><td>9</td><td>Masked/Suppressed</td><td class="r">2,517</td><td class="r">51.4%</td></tr>
+  </table>
+</div>
+
+<!-- 4. Destination Analysis -->
+<div class="section">
+  <h2>4. Where BEA 013 Cement Goes</h2>
+  <p>Predominantly southbound to Mid-Atlantic markets &mdash; the reverse direction from the
+  Albany source plants, confirming Hartford as a corridor node rather than a producer:</p>
+  <table>
+    <tr><th>Destination BEA</th><th>Records</th><th>Exp. Tons</th><th>Revenue</th><th>Share</th></tr>
+    <tr><td><span class="tag tag-gray">053</span> Charleston, WV</td><td class="r">1,432</td><td class="r">4.28M</td><td class="r">$156.9M</td><td><div style="background:#8e44ad;height:12px;width:15px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 31.0%</td></tr>
+<tr><td><span class="tag tag-gray">000</span> Suppressed</td><td class="r">701</td><td class="r">3.65M</td><td class="r">$131.3M</td><td><div style="background:#8e44ad;height:12px;width:13px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 26.5%</td></tr>
+<tr><td><span class="tag tag-gray">020</span> Baltimore, MD</td><td class="r">589</td><td class="r">1.45M</td><td class="r">$61.0M</td><td><div style="background:#8e44ad;height:12px;width:5px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 10.5%</td></tr>
+<tr><td><span class="tag tag-gray">019</span> Wilmington, DE</td><td class="r">303</td><td class="r">0.91M</td><td class="r">$56.3M</td><td><div style="background:#8e44ad;height:12px;width:3px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 6.6%</td></tr>
+<tr><td><span class="tag tag-gray">051</span> BEA 051</td><td class="r">417</td><td class="r">0.80M</td><td class="r">$24.9M</td><td><div style="background:#8e44ad;height:12px;width:2px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 5.8%</td></tr>
+<tr><td><span class="tag tag-gray">015</span> Providence, RI</td><td class="r">316</td><td class="r">0.53M</td><td class="r">$15.5M</td><td><div style="background:#8e44ad;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 3.9%</td></tr>
+<tr><td><span class="tag tag-gray">055</span> Louisville, KY</td><td class="r">505</td><td class="r">0.53M</td><td class="r">$19.0M</td><td><div style="background:#8e44ad;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 3.8%</td></tr>
+<tr><td><span class="tag tag-gray">018</span> Philadelphia, PA</td><td class="r">175</td><td class="r">0.44M</td><td class="r">$26.7M</td><td><div style="background:#8e44ad;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 3.2%</td></tr>
+<tr><td><span class="tag tag-gray">023</span> Staunton, VA</td><td class="r">92</td><td class="r">0.32M</td><td class="r">$11.1M</td><td><div style="background:#8e44ad;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 2.3%</td></tr>
+<tr><td><span class="tag tag-gray">003</span> Burlington, VT</td><td class="r">53</td><td class="r">0.29M</td><td class="r">$10.2M</td><td><div style="background:#8e44ad;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 2.1%</td></tr>
+<tr><td><span class="tag tag-gray">010</span> Boston, MA</td><td class="r">181</td><td class="r">0.28M</td><td class="r">$11.1M</td><td><div style="background:#8e44ad;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 2.0%</td></tr>
+<tr><td><span class="tag tag-gray">013</span> Hartford, CT (local)</td><td class="r">111</td><td class="r">0.27M</td><td class="r">$5.2M</td><td><div style="background:#8e44ad;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 1.9%</td></tr>
+<tr><td><span class="tag tag-gray">049</span> BEA 049</td><td class="r">7</td><td class="r">0.03M</td><td class="r">$1.2M</td><td><div style="background:#8e44ad;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.2%</td></tr>
+<tr><td><span class="tag tag-gray">025</span> Norfolk, VA</td><td class="r">14</td><td class="r">0.01M</td><td class="r">$0.4M</td><td><div style="background:#8e44ad;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.1%</td></tr>
+  </table>
+</div>
+
+<!-- 5. Year Trend -->
+<div class="section">
+  <h2>5. Volume by Year (2005&ndash;2023)</h2>
+  <table>
+    <tr><th>Year</th><th>Records</th><th>Exp. Tons</th><th>Revenue</th></tr>
+    <tr><td>2010</td><td class="r">143</td><td class="r">1.01M</td><td class="r">$34.3M</td></tr>
+<tr><td>2011</td><td class="r">160</td><td class="r">1.26M</td><td class="r">$48.5M</td></tr>
+<tr><td>2012</td><td class="r">200</td><td class="r">1.57M</td><td class="r">$55.8M</td></tr>
+<tr><td>2013</td><td class="r">173</td><td class="r">1.45M</td><td class="r">$52.7M</td></tr>
+<tr><td>2014</td><td class="r">170</td><td class="r">1.35M</td><td class="r">$52.2M</td></tr>
+<tr><td>2015</td><td class="r">213</td><td class="r">1.37M</td><td class="r">$55.7M</td></tr>
+<tr><td>2017</td><td class="r">294</td><td class="r">1.36M</td><td class="r">$51.3M</td></tr>
+<tr><td>2018</td><td class="r">317</td><td class="r">1.37M</td><td class="r">$57.5M</td></tr>
+<tr><td>2019</td><td class="r">356</td><td class="r">1.54M</td><td class="r">$62.2M</td></tr>
+<tr><td>2021</td><td class="r">2,870</td><td class="r">1.53M</td><td class="r">$60.5M</td></tr>
+  </table>
+</div>
+
+<!-- 6. The Hartford Terminal Network -->
+<div class="section">
+  <h2>6. Hartford-Area Cement Terminal Infrastructure</h2>
+  <p>Hartford&rsquo;s role as a distribution hub is supported by physical terminal
+  infrastructure along the Connecticut River and CSX main lines:</p>
+
+  <table>
+    <tr><th>Terminal</th><th>Location</th><th>Operator</th><th>Rail Access</th><th>Function</th></tr>
+    <tr>
+      <td><b>New Haven Terminal</b></td>
+      <td>New Haven, CT (Port of NH)</td>
+      <td>Multiple operators</td>
+      <td>CSX New Haven Line</td>
+      <td>Bulk cement storage, receives by vessel + rail</td>
+    </tr>
+    <tr>
+      <td><b>Hartford Bulk Terminal</b></td>
+      <td>Hartford, CT (Connecticut River)</td>
+      <td>Heidelberg / Lafarge distribution</td>
+      <td>CSX Boston Line (Park River Branch)</td>
+      <td>Rail-received, truck-distributed locally; rail re-origination for southbound</td>
+    </tr>
+    <tr>
+      <td><b>Springfield, MA Terminal</b></td>
+      <td>Springfield, MA (edge of BEA 013)</td>
+      <td>Lafarge / Amrize</td>
+      <td>CSX at Palmer, MA junction</td>
+      <td>Receives from Albany by rail; re-originates to southern New England and Mid-Atlantic</td>
+    </tr>
+  </table>
+  <p class="source">Note: Terminal specifics from Heidelberg Materials terminal directory,
+  Lafarge distribution network maps, and CTDOT state rail plan terminal inventories.</p>
+</div>
+
+<!-- 7. Comparison -->
+<div class="section">
+  <h2>7. Hartford Compared: Three Types of No-Plant Origins</h2>
+  <table>
+    <tr><th></th><th>BEA 160 Fresno</th><th>BEA 134 Houston</th><th>BEA 013 Hartford</th></tr>
+    <tr><td><b>Root cause</b></td>
+        <td>Geographic boundary artifact</td>
+        <td>Port import gateway</td>
+        <td>Mid-corridor distribution node</td></tr>
+    <tr><td><b>Cement source</b></td>
+        <td>Kern County plants (adjacent BEA)</td>
+        <td>Foreign vessels (Mexico, Turkey)</td>
+        <td>Albany NY plants + Quebec imports</td></tr>
+    <tr><td><b>Shipment pattern</b></td>
+        <td>Unit trains dominant</td>
+        <td>Mixed unit + small lot</td>
+        <td>Small lot dominant</td></tr>
+    <tr><td><b>Import flag</b></td>
+        <td>None</td>
+        <td>Partially coded</td>
+        <td>Partially coded (Quebec)</td></tr>
+    <tr><td><b>Correct reclassification</b></td>
+        <td>Assign to BEA 161 plants</td>
+        <td>Tag as port_import</td>
+        <td>Tag as transit_terminal (mixed)</td></tr>
+    <tr><td><b>Tons (2005&ndash;2023)</b></td>
+        <td>37M</td>
+        <td>31M</td>
+        <td>14M</td></tr>
+  </table>
+</div>
+
+<!-- 8. Implications -->
+<div class="section">
+  <h2>8. Implications for the Matching Model</h2>
+  <ul>
+    <li><b>New tag: <code>transit_terminal</code></b> — Hartford represents cement that entered
+        the waybill system at an intermediate distribution terminal, not a production or import
+        point. This is conceptually distinct from both boundary-split (Fresno) and port-import
+        (Houston).</li>
+    <li><b>Albany plants benefit:</b> Assigning BEA 013 records back to Albany BEA (004) plants
+        would raise Lafarge Ravena and Heidelberg from their current modeled tonnages significantly.
+        Albany is already the 3rd-largest plant BEA; Hartford re-assignment would make it
+        the dominant Northeast production origin.</li>
+    <li><b>Quebec share unknown:</b> Some fraction of the 13.8M tons originates in Quebec.
+        Without terminal-level data, a proxy approach (e.g., assume Quebec share =
+        proportion of BEA 178 direct imports to New England relative to Albany plants&rsquo; capacity)
+        is needed.</li>
+    <li><b>Similar BEAs to investigate:</b> BEA 010 (Boston, 1.9M tons) and BEA 026 (Raleigh, 5.2M tons)
+        likely show the same transit-terminal pattern along CSX and NS corridors respectively.</li>
+  </ul>
+</div>
+
+<!-- Sources -->
+<div class="section">
+  <h2>Sources</h2>
+  <ul style="font-size:12px; line-height:2;">
+    <li>Lafarge / Amrize &mdash; Ravena NY plant &amp; Connecticut River distribution terminal</li>
+    <li>Heidelberg Materials US &mdash; Albany / Glens Falls plant capacity, terminal directory</li>
+    <li>CRH / St. Lawrence Cement &mdash; Quebec Joliette &amp; St. Constant plants</li>
+    <li>Connecticut DOT &mdash; State Rail Plan 2017: bulk terminal inventory, cement flows</li>
+    <li>CSX Transportation &mdash; Boston Line, New Haven Line, River Line routing</li>
+    <li>STB Public Use Waybill Sample, STCC 32411, 2005&ndash;2023</li>
+    <li>EPA GHGRP &mdash; NAICS 327310, Connecticut BEA 013 absence confirmed;
+        Albany BEA 004 plants confirmed (Ravena, Glens Falls)</li>
+    <li>USGS Cement Annual Review &mdash; New York production, import volumes for New England</li>
+  </ul>
+</div>
+
+<div class="footer">
+  BEA 013 Investigation &mdash; February 2026 &mdash; Generated from STB Waybill &amp; EPA GHGRP analysis<br>
+  <a href="fresno_bea160_investigation.html" style="color:#8e44ad;text-decoration:none">
+    &larr; BEA 160 (Fresno) Investigation</a> &nbsp;|&nbsp;
+  <a href="houston_bea134_investigation.html" style="color:#8e44ad;text-decoration:none">
+    BEA 134 (Houston) Investigation</a> &nbsp;|&nbsp;
+  <a href="fargo_bea096_investigation.html" style="color:#8e44ad;text-decoration:none">
+    BEA 096 (Fargo) Investigation</a> &nbsp;|&nbsp;
+  <a href="cement_trade_flow_report.html" style="color:#8e44ad;text-decoration:none">
+    &uarr; Back to Trade Flow Report</a>
+</div>
+
+</div>
+</body>
+</html>

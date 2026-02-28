@@ -1,0 +1,96 @@
+
+
+so here ism the challenge, have done this for years manually
+
+the folumns are the same 
+
+IMO	Name	Action	Time	Zone	Agent	Type	Draft	Mile
+
+the first need, is example. for anchorage stop of one vessel, they arrive the anchor then they depart thats the first time cal]
+
+same as the terminals, they arrive the terminal and they derpart
+
+the truck is ther cross in and cross out
+
+cross in means the ship entered the miss river
+
+and cross out means the ship existed the miss river
+
+so we need to make a port call analysis, the port call being the  "voyage" and different terminals or anchorges can consider an "event"
+
+so IF M/v Claude, arrives south west ass and crosse in 01/01/2026 at 1800 
+
+this begins the voyage
+
+its next sequential date time event is when she arrives at an anchor (or alternayterly a terminal ) 
+
+then she departs the anchor, 
+
+eventually after one or several teminals and anchor events and exits south wes pass, cross out....
+
+so we habve to build the data sdet, to merge and calcvulate all of these in best pratice table designs
+
+
+exmple
+
+M/v Claude
+
+01/01/2026 - 1800 : enters / cross in swp
+
+cal time 1800-2300 as transiting 
+
+01/01/2026 - 2300 : arrives belle chasse anchor
+
+cal time 2300-0200 call time at ancuhor 
+
+01/03/2026 - 0200 : departre belle chasse anchor
+
+cal time 0200-1200 cal time transiting 
+
+01/03/2026 - 1200 : arrives zen noh
+
+cal time 1200-2300 / call time at terminal 
+
+01/05/2026 - 2300 : departree zen noh
+
+cal time 2300- 0300 calm time transit 
+
+01/06/2026 - 0300 - arrives 9 mile anchor
+
+call time 0300-2300 time at anchor 
+
+01/06/2026  - 2300 departure 9 mile ancchor
+
+csal time 2300 - 0400 / transting outbound
+
+01/07/2026 - 0400 - exits cross out swp 
+
+
+so the KPI metrics looking to achiive
+
+total time in port swpo cross in - cross out
+
+total time transiting between berths and anchorages
+
+total time at anchor
+
+total time at terminal 
+
+
+
+note, some ships make several calls monthly or weekly , but can identify the record groupsingh esasdiuly as phyiscally a ship cannot make two calls between the tiome it eneted and exited, it can on ly
+be one call, so if any miossing, just itgnore and leagve the blank, wer can adjudt later, as the next sequent time event for that ship will be aft6er its last cross out and before its next cross in ? got me 
+
+
+there will need to be a second pahze opf the script, where we analzized and split the voyage, meaning it arrivesd, anchors, and docks are terminal to discharge, tyhn is lighht draft, whoch meands inbound voyage is complte, and next outbnound lolad voyage begins ocne depart the discharge terminal, and capture that5 transit to next anch or terminal until exists, suggestg best, but maybge we do as nexct phasde ?
+
+
+
+
+
+
+
+
+
+
+

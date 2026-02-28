@@ -1,0 +1,43 @@
+# USACE Database Configuration
+#
+# IMPORTANT: Store sensitive credentials in .env file, not here!
+# Create a .env file in project root with:
+#   DB_HOST=localhost
+#   DB_PORT=5432
+#   DB_NAME=usace_vessels
+#   DB_USER=postgres
+#   DB_PASSWORD=your_password_here
+
+database:
+  host: "${DB_HOST}"
+  port: "${DB_PORT}"
+  name: "${DB_NAME}"
+  user: "${DB_USER}"
+  password: "${DB_PASSWORD}"
+  pool_size: 5
+  echo_sql: false  # Set to true for SQL debugging
+
+raw_data:
+  directory: "data/raw/usace"
+  files:
+    operators: "2023 TS OP TS23OP.xlsx"
+    vessels_master: "2023 TS VS TS23VS.xlsx"
+    self_propelled: "2023 Self Propelled Vessels selfpr23.xlsx"
+    deck_barges: "2023 Deck Barges deck23.xlsx"
+    dry_covered_barges: "2023 Dry Covered Barge drycv23.xlsx"
+    dry_open_barges: "2023 Dry Open Barge dryop23.xlsx"
+    tank_barges: "2023 Tank Barges tankb23.xlsx"
+    tow_boats: "2023 Toe Boats towb23.xlsx"
+    other_barges: "2023 Other Dry Barges otdbrg23.xlsx"
+    data_dictionary: "Data Dictionary.pdf"
+
+etl:
+  batch_size: 5000  # Bulk insert batch size
+  skip_duplicates: true
+  validate_foreign_keys: true
+  handle_missing_codes: "warn"  # warn, skip, or fail
+
+logging:
+  level: "INFO"
+  file: "logs/usace_etl.log"
+  console: true

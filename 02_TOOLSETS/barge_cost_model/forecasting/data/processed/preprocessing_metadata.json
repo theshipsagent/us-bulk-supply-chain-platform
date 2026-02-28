@@ -1,0 +1,28 @@
+{
+  "processing_date": "2026-02-03 21:43:36",
+  "source_file": "sample_barge_rates_20260203.csv",
+  "total_observations": 1205,
+  "training_observations": 940,
+  "test_observations": 265,
+  "rate_columns": [
+    "segment_1_rate",
+    "segment_2_rate",
+    "segment_3_rate",
+    "segment_4_rate",
+    "segment_5_rate",
+    "segment_6_rate",
+    "segment_7_rate"
+  ],
+  "stationarity_results": {
+    "segment_1_rate": "True",
+    "segment_2_rate": "True",
+    "segment_3_rate": "True",
+    "segment_4_rate": "True",
+    "segment_5_rate": "True",
+    "segment_6_rate": "True",
+    "segment_7_rate": "True"
+  },
+  "average_correlation": 0.9196902551283535,
+  "train_end_date": "2020-12-31",
+  "test_start_date": "2021-01-01"
+}

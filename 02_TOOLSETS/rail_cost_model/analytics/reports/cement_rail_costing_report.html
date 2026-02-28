@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cement Rail Costing Analysis - Gulf Coast Markets</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+               margin: 0; padding: 20px; background: #f0f4f8; line-height: 1.7; color: #2d3748; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 40px;
+                     border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #1a365d; border-bottom: 4px solid #2c5282; padding-bottom: 15px; margin-bottom: 10px; }
+        h2 { color: #2c5282; margin-top: 50px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        h3 { color: #4a5568; margin-top: 30px; }
+        p { margin-bottom: 16px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 0.95em; }
+        th, td { border: 1px solid #e2e8f0; padding: 12px; text-align: left; }
+        th { background: #2c5282; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f7fafc; }
+        tr:hover { background: #edf2f7; }
+        .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 25px 0; }
+        .metric-card { background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%); padding: 20px;
+                       border-radius: 12px; color: white; text-align: center; }
+        .metric-card.green { background: linear-gradient(135deg, #38a169 0%, #276749 100%); }
+        .metric-card.purple { background: linear-gradient(135deg, #805ad5 0%, #553c9a 100%); }
+        .metric-card.orange { background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%); }
+        .metric-value { font-size: 1.8em; font-weight: bold; }
+        .metric-label { font-size: 0.8em; opacity: 0.9; margin-top: 5px; }
+        .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0; }
+        .chart-box { background: #fafafa; padding: 20px; border-radius: 10px; border: 1px solid #e2e8f0; }
+        .highlight { background: #fefcbf; padding: 2px 8px; border-radius: 4px; font-weight: bold; }
+        .callout { padding: 20px; border-radius: 8px; margin: 25px 0; }
+        .callout.blue { background: #ebf8ff; border-left: 5px solid #3182ce; }
+        .callout.green { background: #f0fff4; border-left: 5px solid #38a169; }
+        .callout.yellow { background: #fffff0; border-left: 5px solid #d69e2e; }
+        .callout.red { background: #fff5f5; border-left: 5px solid #c53030; }
+        .formula { background: #edf2f7; padding: 20px; border-radius: 8px; font-family: 'Consolas', monospace;
+                   margin: 20px 0; font-size: 0.95em; line-height: 2; overflow-x: auto; }
+        .section-intro { font-size: 1.05em; color: #4a5568; margin-bottom: 20px; padding: 15px;
+                         background: #f7fafc; border-radius: 8px; }
+        .toc { background: #edf2f7; padding: 25px 35px; border-radius: 8px; margin: 30px 0; }
+        .toc h3 { margin: 0 0 15px 0; color: #2c5282; }
+        .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 30px; }
+        .toc a { color: #2c5282; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        .market-section { border: 2px solid #e2e8f0; border-radius: 12px; padding: 30px; margin: 30px 0; }
+        .market-section.houston { border-color: #2c5282; }
+        .market-section.tampa { border-color: #38a169; }
+        .market-section.nola { border-color: #805ad5; }
+        .market-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .market-icon { width: 50px; height: 50px; border-radius: 50%; display: flex;
+                       align-items: center; justify-content: center; color: white; font-weight: bold; }
+        .market-icon.houston { background: #2c5282; }
+        .market-icon.tampa { background: #38a169; }
+        .market-icon.nola { background: #805ad5; }
+        footer { margin-top: 60px; padding-top: 25px; border-top: 2px solid #e2e8f0;
+                 color: #718096; font-size: 0.9em; text-align: center; }
+        @media (max-width: 900px) {
+            .chart-row { grid-template-columns: 1fr; }
+            .toc-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<h1>Cement Rail Transportation Cost Analysis</h1>
+<p style="font-size: 1.2em; color: #2c5282; font-weight: 500; margin-top: 0;">
+    Gulf Coast Markets: Houston, Tampa & New Orleans
+</p>
+<p><strong>Report Date:</strong> February 2026 &nbsp;|&nbsp;
+   <strong>Data Period:</strong> 2018-2023 &nbsp;|&nbsp;
+   <strong>Source:</strong> STB Public Use Waybill Sample</p>
+
+<div class="toc">
+    <h3>Table of Contents</h3>
+    <div class="toc-grid">
+        <div><a href="#executive">1. Executive Summary</a></div>
+        <div><a href="#about">2. About the Data</a></div>
+        <div><a href="#houston">3. Houston Origin Market</a></div>
+        <div><a href="#pricing">4. Pricing & Distance Analysis</a></div>
+        <div><a href="#tampa">5. Tampa Destination Market</a></div>
+        <div><a href="#nola">6. New Orleans Destination Market</a></div>
+        <div><a href="#urcs">7. URCS & R/VC Analysis</a></div>
+        <div><a href="#projections">8. 2024 Cost Projections</a></div>
+        <div><a href="#conclusions">9. Conclusions</a></div>
+        <div><a href="#annex">10. Annex: Sources & Methodology</a></div>
+    </div>
+</div>
+
+<h2 id="executive">1. Executive Summary</h2>
+
+<div class="section-intro">
+    This report analyzes cement rail transportation costs across three key Gulf Coast markets.
+    <strong>Houston</strong> serves as the region's primary cement rail origin, while <strong>Tampa</strong>
+    and <strong>New Orleans</strong> function primarily as destination markets receiving cement from
+    various origins across the country.
+</div>
+
+<h3>Houston, TX — Primary Origin Market</h3>
+<p>Houston is the largest cement rail origin in the Gulf Coast region, accounting for over 10 million tons
+shipped by rail during 2018-2023. The market primarily serves Texas destinations (Dallas, Lubbock,
+San Antonio) and extends to California and the Mountain West.</p>
+
+<div class="metric-grid">
+    <div class="metric-card"><div class="metric-value">124,597</div><div class="metric-label">Total Carloads (6 yr)</div></div>
+    <div class="metric-card"><div class="metric-value">10.3M</div><div class="metric-label">Total Tons (6 yr)</div></div>
+    <div class="metric-card"><div class="metric-value">$382M</div><div class="metric-label">Total Revenue (6 yr)</div></div>
+    <div class="metric-card"><div class="metric-value">$36.97</div><div class="metric-label">Avg Rate/Ton</div></div>
+    <div class="metric-card"><div class="metric-value">790 mi</div><div class="metric-label">Avg Distance</div></div>
+</div>
+
+<h3>Annualized Averages (2018-2023)</h3>
+<div class="metric-grid">
+    <div class="metric-card green"><div class="metric-value">1.72M</div><div class="metric-label">Avg Annual Tons</div></div>
+    <div class="metric-card green"><div class="metric-value">$63.7M</div><div class="metric-label">Avg Annual Revenue</div></div>
+</div>
+
+<h3>Tampa & New Orleans — Destination Markets</h3>
+<p>Unlike Houston, Tampa and New Orleans function primarily as <strong>cement destinations</strong> rather
+than origins. These markets receive cement via rail from various production sources across the Southeast
+and Midwest.</p>
+
+<div class="metric-grid">
+    <div class="metric-card purple"><div class="metric-value">59K</div><div class="metric-label">Tampa Inbound Tons</div></div>
+    <div class="metric-card purple"><div class="metric-value">34K</div><div class="metric-label">New Orleans Inbound Tons</div></div>
+</div>
+
+<div class="callout blue">
+    <strong>Key Finding:</strong> Short-haul Texas lanes from Houston show R/VC ratios of 170-270%,
+    indicating significant railroad pricing power on captive routes. Long-haul California lanes
+    operate near the 180% regulatory threshold, reflecting competitive pressure from alternative
+    cement sources.
+</div>
+
+<h2 id="about">2. About the Data</h2>
+
+<div class="section-intro">
+    Understanding how to interpret this data is essential for accurate analysis. The figures in this
+    report come from the STB's Public Use Waybill Sample—a statistical survey, not a complete census.
+</div>
+
+<h3>What is the Waybill Sample?</h3>
+<p>The Surface Transportation Board (STB) requires Class I railroads to submit a stratified random sample
+of their carload waybills each year. This sample represents approximately <strong>2-3% of all rail carload
+movements</strong> in the United States. Each sampled waybill includes an "expansion factor" that estimates
+how many actual shipments that sample record represents.</p>
+
+<h3>What "Expanded" Figures Mean</h3>
+<p>When this report shows "175,000 carloads," that is the <strong>statistically expanded estimate</strong>
+of total industry carloads based on the sample. The actual number of sampled waybill records is much smaller.
+This methodology is similar to political polling—a carefully designed sample is weighted to represent the
+entire population.</p>
+
+<h3>Commodity Classification</h3>
+<p>Cement is classified under <strong>STCC 32</strong> (Stone, Clay, Glass & Concrete Products). This analysis
+includes Portland cement (32411), hydraulic cement (32419), and related products. These bulk commodities
+typically move in covered hopper cars with payloads of 100-110 tons per car.</p>
+
+<h3>Geographic Coverage</h3>
+<p>Origin and destination locations are coded using Bureau of Economic Analysis (BEA) Economic Areas—173
+geographic zones that aggregate counties into economically meaningful regions. This report focuses on:</p>
+<ul>
+    <li><strong>Houston (BEA 134):</strong> Primary cement production region in Texas</li>
+    <li><strong>Tampa (BEA 042):</strong> Major Florida construction market</li>
+    <li><strong>New Orleans (BEA 087):</strong> Gulf Coast industrial and construction hub</li>
+</ul>
+
+<h2 id="houston">3. Houston Origin Market</h2>
+
+<div class="market-section houston">
+<div class="market-header">
+    <div class="market-icon houston">HOU</div>
+    <div>
+        <h3 style="margin: 0;">Houston, Texas</h3>
+        <p style="margin: 5px 0 0 0; color: #718096;">BEA Zone 134 — Primary Cement Origin</p>
+    </div>
+</div>
+
+<p>Houston's cement industry is concentrated around the Ship Channel area, with multiple production
+facilities serving regional and national markets. The city's strategic location provides rail access
+via Union Pacific (UP) and BNSF Railway to destinations across Texas, the Southwest, and California.</p>
+
+<div class="chart-row">
+    <div class="chart-box"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="c1466c89-39d0-4f5a-b99d-55121f45222e" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c1466c89-39d0-4f5a-b99d-55121f45222e")) {                    Plotly.newPlot(                        "c1466c89-39d0-4f5a-b99d-55121f45222e",                        [{"marker":{"color":"#2c5282"},"name":"Tons (M)","x":{"dtype":"i4","bdata":"4gcAAOMHAADkBwAA5QcAAOYHAADnBwAA"},"y":{"dtype":"f8","bdata":"jZduEoPA+D8j2\u002fl+arz8P0oMAiuHFvk\u002fSOF6FK5H+z9oke18PzUAQHWTGARWDvs\u002f"},"type":"bar","xaxis":"x","yaxis":"y"},{"line":{"color":"#e53e3e","width":3},"mode":"lines+markers","name":"$\u002fTon","x":{"dtype":"i4","bdata":"4gcAAOMHAADkBwAA5QcAAOYHAADnBwAA"},"y":{"dtype":"f8","bdata":"exSuR+F6Q0AfhetRuJ5DQK5H4XoUrkNA9ihcj8JVQUCPwvUoXI9CQFK4HoXrUUBA"},"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Million Tons"}},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"$\u002fTon"}},"legend":{"orientation":"h","y":-0.15},"margin":{"t":50,"b":60},"title":{"text":"Houston Cement: Volume & Rate Trend"},"height":380},                        {"responsive": true}                    )                };            </script>        </div></div>
+    <div class="chart-box"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="94f67dee-7131-4382-a8d4-e605a321f929" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("94f67dee-7131-4382-a8d4-e605a321f929")) {                    Plotly.newPlot(                        "94f67dee-7131-4382-a8d4-e605a321f929",                        [{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"destination=%{label}\u003cbr\u003etons_M=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["Dallas, TX","Lubbock, TX","Masked\u002fSuppressed","Fresno, CA","Houston, TX","Los Angeles, CA","San Francisco, CA","Salt Lake City, UT"],"legendgroup":"","name":"","showlegend":true,"values":{"dtype":"f8","bdata":"LbKd76fGF0Cyne+nxksFQPLSTWIQWOU\u002fGy\u002fdJAaB3T9xPQrXo3C9P4lBYOXQIrs\u002farx0kxgEtj97FK5H4Xq0Pw=="},"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"legend":{"tracegroupgap":0},"title":{"text":"Houston Cement Destinations (2018-2023)"},"piecolorway":["rgb(102,194,165)","rgb(252,141,98)","rgb(141,160,203)","rgb(231,138,195)","rgb(166,216,84)","rgb(255,217,47)","rgb(229,196,148)","rgb(179,179,179)"],"margin":{"t":50,"b":30},"height":380},                        {"responsive": true}                    )                };            </script>        </div></div>
+</div>
+
+<h3>Annual Volume & Rate Trends</h3>
+<p>Houston cement rail volumes have remained relatively stable over the 2018-2023 period, averaging
+approximately <strong>1.7 million tons annually</strong>. The rate per ton has shown modest volatility,
+ranging from $32.64 (2023) to $39.36 (2020), reflecting fuel surcharge fluctuations and contract
+renewal cycles.</p>
+
+<h3>Top Destination Markets</h3>
+<p>The table below shows Houston's largest cement destinations by volume. The R/VC (Revenue-to-Variable-Cost)
+ratio indicates the relationship between freight rates and the railroad's estimated variable cost of service.</p>
+
+<table>
+<tr><th>Destination</th><th>Carloads</th><th>Tons</th><th>Miles</th><th>$/Ton</th><th>R/VC</th></tr>
+<tr>
+            <td>Dallas, TX</td>
+            <td>68,580</td>
+            <td>5.94M</td>
+            <td>296</td>
+            <td>$26.55</td>
+            <td>173%</td>
+        </tr><tr>
+            <td>Lubbock, TX</td>
+            <td>35,892</td>
+            <td>2.66M</td>
+            <td>308</td>
+            <td>$42.92</td>
+            <td class="highlight">272%</td>
+        </tr><tr>
+            <td>Masked/Suppressed</td>
+            <td>8,716</td>
+            <td>0.67M</td>
+            <td>841</td>
+            <td>$53.97</td>
+            <td>157%</td>
+        </tr><tr>
+            <td>Fresno, CA</td>
+            <td>5,980</td>
+            <td>0.46M</td>
+            <td>1,488</td>
+            <td>$79.37</td>
+            <td>139%</td>
+        </tr><tr>
+            <td>Houston, TX</td>
+            <td>1,020</td>
+            <td>0.12M</td>
+            <td>190</td>
+            <td>$13.25</td>
+            <td>114%</td>
+        </tr><tr>
+            <td>Los Angeles, CA</td>
+            <td>930</td>
+            <td>0.11M</td>
+            <td>1,895</td>
+            <td>$92.77</td>
+            <td>130%</td>
+        </tr><tr>
+            <td>San Francisco, CA</td>
+            <td>755</td>
+            <td>0.09M</td>
+            <td>2,029</td>
+            <td>$63.16</td>
+            <td>83%</td>
+        </tr><tr>
+            <td>Salt Lake City, UT</td>
+            <td>735</td>
+            <td>0.08M</td>
+            <td>1,333</td>
+            <td>$67.08</td>
+            <td>130%</td>
+        </tr><tr>
+            <td>Sacramento, CA</td>
+            <td>365</td>
+            <td>0.04M</td>
+            <td>1,823</td>
+            <td>$93.73</td>
+            <td>136%</td>
+        </tr><tr>
+            <td>San Antonio, TX</td>
+            <td>364</td>
+            <td>0.04M</td>
+            <td>470</td>
+            <td>$46.01</td>
+            <td class="highlight">215%</td>
+        </tr>
+</table>
+
+<div class="callout yellow">
+    <strong>Note:</strong> Lanes with R/VC ratios above 180% (highlighted) may be subject to STB rate
+    jurisdiction under 49 U.S.C. § 10707. This threshold determines whether shippers can petition the
+    STB for rate reasonableness review.
+</div>
+
+</div>
+
+<h2 id="pricing">4. Pricing & Distance Analysis</h2>
+
+<div class="section-intro">
+    Rail freight rates exhibit a characteristic "taper"—the rate per ton-mile decreases as distance
+    increases. This reflects the high fixed costs of terminal operations being amortized over longer hauls.
+</div>
+
+<div class="chart-row">
+    <div class="chart-box"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="4c79beb1-11ee-4a6b-b9fb-b70bc1c3a11f" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("4c79beb1-11ee-4a6b-b9fb-b70bc1c3a11f")) {                    Plotly.newPlot(                        "4c79beb1-11ee-4a6b-b9fb-b70bc1c3a11f",                        [{"marker":{"color":"#3182ce"},"text":["$30.53","$46.35","$54.83","$85.75"],"textposition":"outside","x":["1. Short (\u003c300mi)","2. Medium (300-600mi)","3. Long (600-1000mi)","4. Very Long (1000+mi)"],"y":{"dtype":"f8","bdata":"SOF6FK6HPkDNzMzMzCxHQArXo3A9aktAAAAAAABwVUA="},"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"t":50,"b":80},"title":{"text":"Rate per Ton by Distance Band"},"height":380,"yaxis":{"title":{"text":"$\u002fTon"}}},                        {"responsive": true}                    )                };            </script>        </div></div>
+    <div class="chart-box"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="c487f7b9-87d4-46c9-aa52-478f5c9d3f09" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c487f7b9-87d4-46c9-aa52-478f5c9d3f09")) {                    Plotly.newPlot(                        "c487f7b9-87d4-46c9-aa52-478f5c9d3f09",                        [{"marker":{"color":["#38a169","#c53030","#38a169","#38a169","#38a169","#38a169","#38a169","#38a169"]},"text":["173%","272%","157%","139%","114%","130%","83%","130%"],"textposition":"outside","x":["Dallas, TX","Lubbock, TX","Masked\u002fSuppressed","Fresno, CA","Houston, TX","Los Angeles, CA","San Francisco, CA","Salt Lake City, UT"],"y":{"dtype":"f8","bdata":"AAAAAACgZUAAAAAAAABxQAAAAAAAoGNAAAAAAABgYUAAAAAAAIBcQAAAAAAAQGBAAAAAAADAVEAAAAAAAEBgQA=="},"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"shapes":[{"line":{"color":"red","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":180,"y1":180,"yref":"y"}],"annotations":[{"showarrow":false,"text":"180% STB Threshold","x":1,"xanchor":"right","xref":"x domain","y":180,"yanchor":"bottom","yref":"y"}],"xaxis":{"tickangle":-30},"margin":{"t":50,"b":100},"title":{"text":"R\u002fVC Ratio by Lane"},"height":400,"yaxis":{"title":{"text":"R\u002fVC %"}}},                        {"responsive": true}                    )                };            </script>        </div></div>
+</div>
+
+<h3>Rate Taper Effect</h3>
+<p>The rate per ton-mile varies significantly by distance:</p>
+<ul>
+    <li><strong>Short haul (&lt;300 miles):</strong> $0.10-0.15 per ton-mile — Terminal costs dominate</li>
+    <li><strong>Medium haul (300-600 miles):</strong> $0.07-0.10 per ton-mile — Balanced cost structure</li>
+    <li><strong>Long haul (600-1000 miles):</strong> $0.05-0.07 per ton-mile — Line-haul efficiency gains</li>
+    <li><strong>Very long haul (&gt;1000 miles):</strong> $0.04-0.06 per ton-mile — Maximum taper benefit</li>
+</ul>
+
+<h3>Rate Structure by Distance Band</h3>
+<table>
+<tr><th>Distance Band</th><th>Avg Miles</th><th>Carloads</th><th>Tons</th><th>$/Ton</th><th>$/Ton-Mile</th></tr>
+<tr>
+            <td>1. Short (<300mi)</td>
+            <td>202</td>
+            <td>101,780</td>
+            <td>8.44M</td>
+            <td>$30.53</td>
+            <td>$0.1512</td>
+        </tr><tr>
+            <td>2. Medium (300-600mi)</td>
+            <td>366</td>
+            <td>9,727</td>
+            <td>0.91M</td>
+            <td>$46.35</td>
+            <td>$0.1267</td>
+        </tr><tr>
+            <td>3. Long (600-1000mi)</td>
+            <td>794</td>
+            <td>635</td>
+            <td>0.07M</td>
+            <td>$54.83</td>
+            <td>$0.0690</td>
+        </tr><tr>
+            <td>4. Very Long (1000+mi)</td>
+            <td>1,649</td>
+            <td>12,415</td>
+            <td>0.91M</td>
+            <td>$85.75</td>
+            <td>$0.0520</td>
+        </tr>
+</table>
+
+<h2 id="tampa">5. Tampa Destination Market</h2>
+
+<div class="market-section tampa">
+<div class="market-header">
+    <div class="market-icon tampa">TPA</div>
+    <div>
+        <h3 style="margin: 0;">Tampa, Florida</h3>
+        <p style="margin: 5px 0 0 0; color: #718096;">BEA Zone 042 — Cement Destination Market</p>
+    </div>
+</div>
+
+<p>Tampa is a significant <strong>cement destination</strong> rather than an origin. The region's
+robust construction industry—driven by population growth and commercial development—requires cement
+imports from production facilities across the Southeast. CSX Transportation provides the primary
+rail service to Tampa.</p>
+
+<div class="callout blue">
+    <strong>Market Context:</strong> Tampa's cement demand is largely met by regional producers in
+    Alabama and Georgia, supplemented by Florida-based facilities. Rail competes with truck and
+    waterborne cement imports for market share.
+</div>
+
+<h3>Inbound Cement Sources</h3>
+<table>
+<tr><th>Origin</th><th>Carloads</th><th>Tons</th><th>Miles</th><th>$/Ton</th></tr>
+<tr>
+            <td>Raleigh, NC</td>
+            <td>560</td>
+            <td>57,495</td>
+            <td>240</td>
+            <td>$53.84</td>
+        </tr><tr>
+            <td>Masked/Suppressed</td>
+            <td>10</td>
+            <td>1,115</td>
+            <td>560</td>
+            <td>$59.95</td>
+        </tr>
+</table>
+
+<p><strong>Total Inbound Volume (2018-2023):</strong> 58,610 tons</p>
+
+<div class="chart-box" style="margin-top: 20px;"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="dba3cfaa-6867-4cdf-9939-d4782bc8cd06" class="plotly-graph-div" style="height:350px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("dba3cfaa-6867-4cdf-9939-d4782bc8cd06")) {                    Plotly.newPlot(                        "dba3cfaa-6867-4cdf-9939-d4782bc8cd06",                        [{"hovertemplate":"origin=%{x}\u003cbr\u003etons=%{y}\u003cbr\u003erev_per_ton=%{marker.color}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":{"dtype":"f8","bdata":"7FG4HoXrSkCamZmZmflNQA=="},"coloraxis":"coloraxis","pattern":{"shape":""}},"name":"","orientation":"v","showlegend":false,"textposition":"auto","x":["Raleigh, NC","Masked\u002fSuppressed"],"xaxis":"x","y":{"dtype":"f8","bdata":"AAAAAOAS7EAAAAAAAGyRQA=="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"origin"},"tickangle":-30},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"tons"}},"coloraxis":{"colorbar":{"title":{"text":"rev_per_ton"}},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]]},"legend":{"tracegroupgap":0},"title":{"text":"Tampa: Cement Origins (Inbound)"},"barmode":"relative","margin":{"t":50,"b":80},"height":350},                        {"responsive": true}                    )                };            </script>        </div></div>
+
+</div>
+
+<h2 id="nola">6. New Orleans Destination Market</h2>
+
+<div class="market-section nola">
+<div class="market-header">
+    <div class="market-icon nola">MSY</div>
+    <div>
+        <h3 style="margin: 0;">New Orleans, Louisiana</h3>
+        <p style="margin: 5px 0 0 0; color: #718096;">BEA Zone 087 — Cement Destination Market</p>
+    </div>
+</div>
+
+<p>New Orleans serves as a strategic <strong>cement destination</strong> at the mouth of the
+Mississippi River. The region's industrial base and ongoing infrastructure projects drive cement
+demand. Multiple Class I carriers (UP, CSX, NS, CN) serve the New Orleans gateway, providing
+competitive rail access from production sources across the country.</p>
+
+<div class="callout blue">
+    <strong>Market Context:</strong> New Orleans benefits from multi-carrier access at the Mississippi
+    River gateway. This competitive environment may provide shippers with rate leverage compared to
+    single-carrier captive markets.
+</div>
+
+<h3>Inbound Cement Sources</h3>
+<table>
+<tr><th>Origin</th><th>Carloads</th><th>Tons</th><th>Miles</th><th>$/Ton</th></tr>
+<tr>
+            <td>Houston, TX</td>
+            <td>295</td>
+            <td>31,135</td>
+            <td>320</td>
+            <td>$33.94</td>
+        </tr><tr>
+            <td>San Angelo, TX</td>
+            <td>30</td>
+            <td>3,005</td>
+            <td>290</td>
+            <td>$35.85</td>
+        </tr>
+</table>
+
+<p><strong>Total Inbound Volume (2018-2023):</strong> 34,140 tons</p>
+
+<div class="chart-box" style="margin-top: 20px;"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="8b08e91d-1dca-4efd-a423-b31a0e0b7ff3" class="plotly-graph-div" style="height:350px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8b08e91d-1dca-4efd-a423-b31a0e0b7ff3")) {                    Plotly.newPlot(                        "8b08e91d-1dca-4efd-a423-b31a0e0b7ff3",                        [{"hovertemplate":"origin=%{x}\u003cbr\u003etons=%{y}\u003cbr\u003erev_per_ton=%{marker.color}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":{"dtype":"f8","bdata":"uB6F61H4QEDNzMzMzOxBQA=="},"coloraxis":"coloraxis","pattern":{"shape":""}},"name":"","orientation":"v","showlegend":false,"textposition":"auto","x":["Houston, TX","San Angelo, TX"],"xaxis":"x","y":{"dtype":"f8","bdata":"AAAAAMBn3kAAAAAAAHqnQA=="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"origin"},"tickangle":-30},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"tons"}},"coloraxis":{"colorbar":{"title":{"text":"rev_per_ton"}},"colorscale":[[0.0,"rgb(252,251,253)"],[0.125,"rgb(239,237,245)"],[0.25,"rgb(218,218,235)"],[0.375,"rgb(188,189,220)"],[0.5,"rgb(158,154,200)"],[0.625,"rgb(128,125,186)"],[0.75,"rgb(106,81,163)"],[0.875,"rgb(84,39,143)"],[1.0,"rgb(63,0,125)"]]},"legend":{"tracegroupgap":0},"title":{"text":"New Orleans: Cement Origins (Inbound)"},"barmode":"relative","margin":{"t":50,"b":80},"height":350},                        {"responsive": true}                    )                };            </script>        </div></div>
+
+</div>
+
+<h2 id="urcs">7. URCS & R/VC Analysis</h2>
+
+<div class="section-intro">
+    The Uniform Rail Costing System (URCS) is the STB's methodology for estimating railroad variable
+    costs. Understanding URCS is essential for evaluating whether freight rates may be subject to
+    regulatory review.
+</div>
+
+<h3>What is URCS?</h3>
+<p>URCS calculates the <strong>incremental variable cost</strong> a railroad incurs to move a specific
+shipment. This includes:</p>
+<ul>
+    <li><strong>Line-haul costs:</strong> Fuel, crew, and locomotive costs that vary with distance</li>
+    <li><strong>Car costs:</strong> Depreciation and maintenance on freight cars</li>
+    <li><strong>Terminal costs:</strong> Switching, loading/unloading, and yard operations</li>
+    <li><strong>Interchange costs:</strong> Costs incurred when transferring cars between carriers</li>
+</ul>
+<p>URCS excludes fixed infrastructure costs (track, bridges, signals) and return on investment—it
+measures only the variable, avoidable cost of handling traffic.</p>
+
+<h3>What is R/VC Ratio?</h3>
+<p>The Revenue-to-Variable-Cost (R/VC) ratio compares freight revenue to URCS variable cost:</p>
+
+<div class="formula">
+<strong>R/VC Ratio</strong> = (Freight Revenue / URCS Variable Cost) × 100%<br><br>
+<strong>Interpretation:</strong><br>
+• R/VC = 100% → Revenue exactly covers variable cost (no contribution to fixed costs)<br>
+• R/VC = 180% → Revenue is 1.8× variable cost (STB jurisdictional threshold)<br>
+• R/VC &gt; 180% → Shipper may petition STB for rate reasonableness review
+</div>
+
+<h3>Simplified URCS Formula</h3>
+<p>For bulk commodities like cement, variable cost can be approximated as:</p>
+
+<div class="formula">
+<strong>Variable Cost per Ton</strong> ≈ (Distance × $0.035/ton-mile) + $5.00 terminal costs<br><br>
+<strong>Example (500 miles):</strong><br>
+VC = (500 × $0.035) + $5.00 = $17.50 + $5.00 = <strong>$22.50/ton</strong><br><br>
+If Rate = $40/ton: R/VC = ($40 ÷ $22.50) × 100 = <strong>178%</strong> (just below threshold)
+</div>
+
+<div class="callout red">
+    <strong>Regulatory Implication:</strong> Under 49 U.S.C. § 10707, the STB can review the
+    reasonableness of rail rates that exceed 180% of variable cost, provided the shipper has no
+    effective transportation alternatives. Short-haul captive lanes often exceed this threshold.
+</div>
+
+<h3>National Cement Origins Comparison</h3>
+<p>Houston is one of many cement rail origins across the United States. The chart below compares
+major cement shipping origins by volume, providing context for Houston's market position.</p>
+
+<div class="chart-box"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="c4b7c6a0-966b-43c9-9cdb-3ff0a779b8cf" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c4b7c6a0-966b-43c9-9cdb-3ff0a779b8cf")) {                    Plotly.newPlot(                        "c4b7c6a0-966b-43c9-9cdb-3ff0a779b8cf",                        [{"hovertemplate":"origin=%{x}\u003cbr\u003etons_M=%{text}\u003cbr\u003erev_per_ton=%{marker.color}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":{"dtype":"f8","bdata":"XI\u002fC9Sg8REDhehSuRwFIQJqZmZmZWUFAXI\u002fC9Sh8QkDhehSuR0FVQK5H4XoULkpAUrgeheshVECkcD0K11NRQHsUrkfhOj1AZmZmZmamQUA="},"coloraxis":"coloraxis","pattern":{"shape":""}},"name":"","orientation":"v","showlegend":false,"text":{"dtype":"f8","bdata":"UrgehetROkBI4XoUrocwQAAAAAAAACtAKVyPwvWoJECuR+F6FC4iQLgehetROCBAhetRuB6FH0BI4XoUrkceQI\u002fC9ShcjxtAw\u002fUoXI\u002fCGUA="},"textposition":"outside","x":["Fargo, ND","Fayetteville, AR","Fresno, CA","Houston, TX","Dothan, AL","Columbus, OH","Boise, ID","Missoula, MT","Lubbock, TX","Pueblo, CO"],"xaxis":"x","y":{"dtype":"f8","bdata":"UrgehetROkBI4XoUrocwQAAAAAAAACtAKVyPwvWoJECuR+F6FC4iQLgehetROCBAhetRuB6FH0BI4XoUrkceQI\u002fC9ShcjxtAw\u002fUoXI\u002fCGUA="},"yaxis":"y","type":"bar","texttemplate":"%{text:.1f}M"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"origin"},"tickangle":-30},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"tons_M"}},"coloraxis":{"colorbar":{"title":{"text":"rev_per_ton"}},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"legend":{"tracegroupgap":0},"title":{"text":"Top U.S. Cement Rail Origins (2018-2023)"},"barmode":"relative","margin":{"t":50,"b":100},"height":400},                        {"responsive": true}                    )                };            </script>        </div></div>
+
+<h2 id="projections">8. 2024 Cost Projections</h2>
+
+<div class="section-intro">
+    This section projects 2024 costs using 2023 as the base year, adjusted for expected volume
+    growth and inflation. These projections are estimates and actual costs may vary based on
+    contract terms and market conditions.
+</div>
+
+<h3>Projection Methodology</h3>
+<div class="formula">
+<strong>Volume Projection:</strong><br>
+Tons<sub>2024</sub> = Tons<sub>2023</sub> × (1 + Growth Rate)<br>
+Tons<sub>2024</sub> = 1.72M × 1.02 = <strong>1.76M tons</strong><br><br>
+
+<strong>Rate Projection (Inflation-Adjusted):</strong><br>
+Rate<sub>2024</sub> = Rate<sub>2023</sub> × (CPI<sub>2024</sub> / CPI<sub>avg</sub>)<br>
+Rate<sub>2024</sub> = $36.97 × 1.132 = <strong>$41.84/ton</strong><br><br>
+
+<strong>URCS Variable Cost (2024 dollars):</strong><br>
+VC<sub>2024</sub> = VC<sub>base</sub> × Inflation Factor<br>
+VC<sub>2024</sub> = $32.65 × 1.132 = <strong>$36.95/ton</strong><br><br>
+
+<strong>Projected R/VC Ratio:</strong><br>
+R/VC = ($41.84 / $36.95) × 100 = <strong>113%</strong>
+</div>
+
+<h3>2024 Projected Metrics</h3>
+<div class="metric-grid">
+    <div class="metric-card orange"><div class="metric-value">1.76M</div><div class="metric-label">Projected Tons</div></div>
+    <div class="metric-card orange"><div class="metric-value">$41.84</div><div class="metric-label">Projected $/Ton</div></div>
+    <div class="metric-card orange"><div class="metric-value">$73M</div><div class="metric-label">Projected Revenue</div></div>
+    <div class="metric-card orange"><div class="metric-value">113%</div><div class="metric-label">Projected R/VC</div></div>
+</div>
+
+<h2 id="conclusions">9. Conclusions & Recommendations</h2>
+
+<div class="callout green">
+<h3 style="margin-top: 0;">For Cement Shippers</h3>
+<ul>
+    <li><strong>Benchmark your rates</strong> against the distance-band averages in this report</li>
+    <li><strong>Evaluate R/VC exposure</strong> on short-haul captive lanes where ratios exceed 200%</li>
+    <li><strong>Consider truck competition</strong> on sub-300 mile lanes (break-even: ~280-320 miles)</li>
+    <li><strong>Negotiate fuel surcharges separately</strong> from base rates for transparency</li>
+    <li><strong>Multi-year contracts</strong> can lock in rates during low-inflation periods</li>
+    <li><strong>Tampa/New Orleans</strong> multi-carrier access may provide leverage for rate negotiations</li>
+</ul>
+</div>
+
+<div class="callout blue">
+<h3 style="margin-top: 0;">For Railroads</h3>
+<ul>
+    <li><strong>Short-haul cement</strong> provides strong margin contribution (R/VC often &gt;200%)</li>
+    <li><strong>Long-haul California routes</strong> face margin pressure from alternative sources</li>
+    <li><strong>Service reliability</strong> is critical to justify premium pricing versus truck</li>
+    <li><strong>Unit train opportunities</strong> exist on high-volume Houston-California lanes</li>
+</ul>
+</div>
+
+<h2 id="annex">10. Annex: Sources & Methodology</h2>
+
+<h3>A.1 Data Sources</h3>
+<table>
+<tr><th>Source</th><th>Description</th><th>Coverage</th></tr>
+<tr><td>STB Public Use Waybill Sample</td><td>Stratified sample of Class I rail carload waybills</td><td>2018-2023</td></tr>
+<tr><td>URCS Phase III</td><td>STB uniform rail costing methodology</td><td>2023 coefficients</td></tr>
+<tr><td>BLS CPI-U</td><td>Consumer Price Index (inflation adjustment)</td><td>2018-2024</td></tr>
+<tr><td>BEA Economic Areas</td><td>Geographic classification (173 zones)</td><td>Current</td></tr>
+</table>
+
+<h3>A.2 Methodology Notes</h3>
+<p><strong>Sample Expansion:</strong> All volume and revenue figures use STB expansion factors
+(exp_carloads, exp_tons, exp_freight_rev) which estimate actual industry totals from the sample.</p>
+
+<p><strong>URCS Approximation:</strong> Variable costs are approximated as $0.035/ton-mile plus
+$5.00/ton terminal costs. This simplified formula produces results consistent with published URCS
+outputs for bulk commodities over typical distances.</p>
+
+<p><strong>Inflation Adjustment:</strong> 2024 projections use CPI-U: 2018=251.1, 2023=304.7,
+2024 (est.)=314.5. Inflation factor = 314.5 / ((251.1+304.7)/2) = 1.132.</p>
+
+<h3>A.3 Limitations</h3>
+<ul>
+    <li><strong>Sample variability:</strong> Low-volume lanes may have higher estimation error</li>
+    <li><strong>Confidentiality masking:</strong> Some origin-destination pairs are suppressed</li>
+    <li><strong>Contract vs. tariff:</strong> Waybill does not distinguish rate types</li>
+    <li><strong>URCS limitations:</strong> Calculates average, not marginal, variable cost</li>
+</ul>
+
+<h3>A.4 Glossary</h3>
+<table>
+<tr><th>Term</th><th>Definition</th></tr>
+<tr><td>BEA Zone</td><td>Bureau of Economic Analysis geographic classification</td></tr>
+<tr><td>Carload</td><td>Single railcar shipment (typically 100-110 tons for cement)</td></tr>
+<tr><td>R/VC Ratio</td><td>Revenue-to-Variable-Cost ratio; &gt;180% triggers STB jurisdiction</td></tr>
+<tr><td>STCC</td><td>Standard Transportation Commodity Code</td></tr>
+<tr><td>STB</td><td>Surface Transportation Board (federal railroad regulator)</td></tr>
+<tr><td>URCS</td><td>Uniform Rail Costing System</td></tr>
+</table>
+
+<footer>
+<p><strong>Rail Analytics Platform</strong></p>
+<p>Data: STB Public Use Waybill Sample 2018-2023 | Methodology: URCS Phase III</p>
+<p>Report Generated: February 10, 2026 at 20:52</p>
+<p><em>This report is for informational purposes only and does not constitute legal or financial advice.</em></p>
+</footer>
+
+</div>
+</body>
+</html>

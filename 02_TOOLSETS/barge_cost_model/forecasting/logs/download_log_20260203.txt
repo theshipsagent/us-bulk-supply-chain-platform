@@ -1,0 +1,44 @@
+[2026-02-03 17:46:52] [INFO] Starting USDA barge rate data download...
+[2026-02-03 17:46:53] [INFO] Attempting CSV download method...
+[2026-02-03 17:46:54] [WARNING] HTTP 404 for https://agtransport.usda.gov/download/barge-rates-historical.csv
+[2026-02-03 17:46:55] [WARNING] HTTP 404 for https://agtransport.usda.gov/download/barge-rates-historical.csv
+[2026-02-03 17:46:56] [WARNING] HTTP 404 for https://agtransport.usda.gov/download/barge-rates-historical.csv
+[2026-02-03 17:47:11] [INFO] Starting USDA barge rate data download...
+[2026-02-03 17:47:11] [INFO] Attempting CSV download method...
+[2026-02-03 17:47:12] [WARNING] HTTP 404 for https://agtransport.usda.gov/download/barge-rates-historical.csv
+[2026-02-03 17:47:13] [WARNING] HTTP 404 for https://agtransport.usda.gov/download/barge-rates-historical.csv
+[2026-02-03 17:47:14] [WARNING] HTTP 404 for https://agtransport.usda.gov/download/barge-rates-historical.csv
+[2026-02-03 17:47:14] [WARNING] ✗ CSV download method unavailable
+[2026-02-03 17:47:14] [INFO] Attempting API download method...
+[2026-02-03 17:47:15] [WARNING] HTTP 404 for https://agtransport.usda.gov/api/barge-rates?start_date=2003-01-01&end_date=2026-02-03&segments=all&format=json
+[2026-02-03 17:47:16] [WARNING] HTTP 404 for https://agtransport.usda.gov/api/barge-rates?start_date=2003-01-01&end_date=2026-02-03&segments=all&format=json
+[2026-02-03 17:47:16] [WARNING] HTTP 404 for https://agtransport.usda.gov/api/barge-rates?start_date=2003-01-01&end_date=2026-02-03&segments=all&format=json
+[2026-02-03 17:47:16] [WARNING] ✗ API method unavailable
+[2026-02-03 17:47:16] [WARNING] Real USDA data unavailable - generating sample data
+[2026-02-03 17:47:16] [WARNING] TO DO: Implement web scraping or manual CSV import
+[2026-02-03 17:47:16] [INFO] Creating synthetic sample data for testing...
+[2026-02-03 17:47:16] [WARNING] ⚠ WARNING: This is SAMPLE data, not real USDA data!
+[2026-02-03 17:47:16] [INFO] Generating 1205 weekly observations...
+[2026-02-03 17:47:17] [INFO] ✓ Saved sample data to: G:\My Drive\LLM\project_barge\forecasting\data\raw\sample_barge_rates_20260203.csv
+[2026-02-03 17:47:17] [INFO]   Total observations: 1205
+[2026-02-03 17:47:17] [INFO]   Date range: 2003-01-02 00:00:00 to 2026-01-29 00:00:00
+[2026-02-03 17:47:17] [INFO]   Segments: 7
+[2026-02-03 17:47:17] [INFO] 
+======================================================================
+[2026-02-03 17:47:17] [INFO] DOWNLOAD SUMMARY
+[2026-02-03 17:47:17] [INFO] ======================================================================
+[2026-02-03 17:47:17] [INFO] Total Records: 1205
+[2026-02-03 17:47:17] [INFO] Columns: ['date', 'week_of_year', 'segment_1_rate', 'segment_2_rate', 'segment_3_rate', 'segment_4_rate', 'segment_5_rate', 'segment_6_rate', 'segment_7_rate', 'segment_1_name', 'segment_2_name', 'segment_3_name', 'segment_4_name', 'segment_5_name', 'segment_6_name', 'segment_7_name']
+[2026-02-03 17:47:17] [INFO] Date Range: 2003-01-02 00:00:00 to 2026-01-29 00:00:00
+[2026-02-03 17:47:17] [INFO] 
+Rate Statistics (all segments):
+[2026-02-03 17:47:17] [INFO]   segment_1_rate: $18.43 ± $10.58 (range: $5.00 - $134.54)
+[2026-02-03 17:47:17] [INFO]   segment_2_rate: $17.87 ± $9.95 (range: $5.00 - $108.89)
+[2026-02-03 17:47:17] [INFO]   segment_3_rate: $17.42 ± $9.88 (range: $5.00 - $108.30)
+[2026-02-03 17:47:17] [INFO]   segment_4_rate: $16.88 ± $9.57 (range: $5.00 - $94.04)
+[2026-02-03 17:47:17] [INFO]   segment_5_rate: $16.35 ± $9.57 (range: $5.00 - $120.51)
+[2026-02-03 17:47:17] [INFO]   segment_6_rate: $15.78 ± $9.61 (range: $5.00 - $102.36)
+[2026-02-03 17:47:17] [INFO]   segment_7_rate: $15.22 ± $9.47 (range: $5.00 - $124.02)
+[2026-02-03 17:47:17] [INFO] 
+✓ Data download completed successfully!
+[2026-02-03 17:47:17] [INFO] Next step: Run 02_data_preprocessing.py

@@ -1,0 +1,161 @@
+Port of Discharge (D),Port_Code,Port_Consolidated,Port_Coast,Port_Region
+"Freeport, Freeport, Texas",5311,Houston,Gulf,North Texas
+"New York, New York",1001,New York,East,North Atlantic
+"Houston, Houston, Texas",5301,Houston,Gulf,North Texas
+"Corpus Christi, Corpus Christi, Texas",5312,Corpus Christi,Gulf,South Texas
+"Georgia Ports Authority, Savannah, Georgia",1701,Georgia Ports,East,South Atlantic
+"Port Of Anacortes, Anacortes, Washington",3010,Seattle-Tacoma,West,Pacific Northwest
+"Port of Portland, Portland, Oregon",2904,Columbia River,West,Pacific Northwest
+"The Port of Los Angeles, Los Angeles, California",2704,LA-Long Beach,West,California
+"Philadelphia Regional Port Authority, Philadelphia, Pennsylvania",1101,Delaware River,East,Mid-Atlantic
+"Port of Morgan City, Morgan City, Louisiana",2001,Morgan City,Gulf,Gulf East
+"Port of Brunswick, Brunswick, Georgia",1701,Georgia Ports,East,South Atlantic
+"Port of New Orleans, New Orleans, Louisiana",2002,Mississippi River,Gulf,Gulf East
+"Alabama State Port Authority, Mobile, Alabama",1901,Mobile,Gulf,Gulf East
+"Port of Wilmington, Wilmington, Delaware",1103,Delaware River,East,Mid-Atlantic
+"Port of Beaumont, Beaumont, Texas",2104,Sabine River,Gulf,North Texas
+"Port of Virginia, Norfolk, Virginia",1401,Hampton Roads,East,South Atlantic
+"Port of Vancouver USA, Vancouver, Washington",2908,Columbia River,West,Pacific Northwest
+"New York/Newark Area, Newark, New Jersey",1003,New York,East,North Atlantic
+"Port of Seattle, Seattle, Washington",3001,Seattle-Tacoma,West,Pacific Northwest
+"Jacksonville, Florida",1803,Jacksonville,East,South Atlantic
+"Port Of Boston, Boston, Massachusetts",0401,Boston,East,North Atlantic
+"Baton Rouge (BTR) Airport, Baton Rouge, Louisiana",2004,Mississippi River,Gulf,Gulf East
+"Detroit/Wayne County Port Authority, Detroit, Michigan",3801,Detroit,Great Lakes,Great Lakes
+"ProvPort, Providence, Rhode Island",0502,Providence,East,North Atlantic
+"Port of San Diego, San Diego, California",2501,San Diego Border,Land Ports,California
+"San Juan, San Juan, Puerto Rico",4909,San Juan,Islands,Caribbean
+"Port Of Entry-Port Everglades/Fort Lauderdale, Port Everglades, Florida",5203,South Florida,East,South Atlantic
+"Port Arthur, Texas",2101,Sabine River,Gulf,North Texas
+"Tampa, Florida",1801,Tampa,Gulf,Gulf East
+"Port of Galveston, Galveston, Texas",5310,Houston,Gulf,North Texas
+"Port Canaveral, Port Canaveral, Florida",1816,Port Canaveral,East,South Atlantic
+"Port Of Entry-Miami Seaport, Miami, Florida",5201,South Florida,East,South Atlantic
+"Wilmington, Wilmington, North Carolina",1501,North Carolina Ports,East,South Atlantic
+"Port of Tacoma, Tacoma, Washington",3002,Seattle-Tacoma,West,Pacific Northwest
+"Baltimore, Maryland",1303,Baltimore,East,Mid-Atlantic
+"Port of Long Beach, Long Beach, California",2709,LA-Long Beach,West,California
+"The Port of Charleston, Charleston, South Carolina",1601,Charleston,East,South Atlantic
+"Mississippi State Port Authority, Gulfport, Mississippi",1902,Gulfport,Gulf,Gulf East
+"Port of Texas City, Texas City, Texas",5306,Houston,Gulf,North Texas
+"Port of Gramercy, Gramercy, Louisiana",2010,Mississippi River,Gulf,Gulf East
+"Illinois International Port District, Chicago, Illinois",3901,Chicago,Great Lakes,Great Lakes
+"Port of New Haven, New Haven, Connecticut",0412,Connecticut,East,North Atlantic
+"Service Port-San Francisco, San Francisco, California",2801,San Francisco Bay,West,California
+"Port of Stockton, Stockton, California",2810,San Francisco Bay,West,California
+"Port Of Entry-Kahului, Kahului, Hawaii",3203,Honolulu,West,Pacific
+"Port of Lake Charles, Lake Charles, Louisiana",2017,Lake Charles,Gulf,Gulf East
+"Port of Richmond, Richmond, California",2812,San Francisco Bay,West,California
+"The Port of Brownsville, Brownsville, Texas",2301,South Texas Border,Land Ports,South Texas
+"Port Of Entry-Fajardo, Fajardo, Puerto Rico",4904,San Juan,Islands,Caribbean
+"Port Of Entry-Perth Amboy, Perth Amboy, New Jersey",1004,New York,East,North Atlantic
+"Port of Pascagoula, Pascagoula, Mississippi",1903,Pascagoula,Gulf,Gulf East
+"Port of Redwood City, Redwood City, California",2821,San Francisco Bay,West,California
+"Carquinez Strait, California",2830,San Francisco Bay,West,California
+"Port Of Entry-West Palm Beach, West Palm Beach, Florida",5204,South Florida,East,South Atlantic
+"Sabine, Texas",2102,Sabine River,Gulf,North Texas
+"Crockett, California",2815,San Francisco Bay,West,California
+"Port of Portland, Portland, Maine",0101,Portland ME,East,North Atlantic
+"Toledo-Lucas Port Authority, Toledo, Ohio",4105,Cleveland-Toledo,Great Lakes,Great Lakes
+"Port Hueneme, California",2713,LA-Long Beach,West,California
+"Sault Ste. Marie, Sault Ste Marie, Michigan",3803,Sault Ste. Marie,Great Lakes,Great Lakes
+"Port Of Cleveland, Cleveland, Ohio",4101,"Cleveland, Ohio",Great Lakes,Great Lakes
+"Port Of NewHampshire, Portsmouth, New Hampshire",0131,Portland ME,East,North Atlantic
+"Port of Oakland, Oakland, California",2811,San Francisco Bay,West,California
+"Cyril E King Airport, Charlotte Amalie, Virgin Islands",5101,Virgin Islands,Islands,Caribbean
+"Port Of Entry-Fernandina Beach, Fernandina Beach, Florida",1805,Fernandina Beach,East,South Atlantic
+"Port of Chester, Chester, Pennsylvania",1102,Delaware River,East,Mid-Atlantic
+"Albany, New York",1002,New York,East,North Atlantic
+"Port of Everett, Everett, Washington",3006,Seattle-Tacoma,West,Pacific Northwest
+"Port of Green Bay, Green Bay, Wisconsin",3703,Milwaukee,Great Lakes,Great Lakes
+"Ponce, Ponce, Puerto Rico",4908,Ponce,Islands,Caribbean
+"Service Port-Honolulu, Honolulu, Hawaii",3201,Honolulu,West,Pacific
+"Port of Christiansted, Christiansted, Virgin Islands",5104,Virgin Islands,Islands,Caribbean
+"Port of New Bedford Business Alliance, New Bedford, Massachusetts",0405,Boston,East,North Atlantic
+"Muskegon, Michigan",3815,Detroit,Great Lakes,Great Lakes
+"Port Of Entry-Hilo, Hilo, Hawaii",3202,Honolulu,West,Pacific
+"Port Of Entry-Morehead City - Beaufort, Beaufort‑Morehead City, North Carolina",1511,North Carolina Ports,East,South Atlantic
+"Martinez, California",2820,San Francisco Bay,West,California
+"Anchorage, Alaska",3126,Alaska,Alaska/US Islands,Alaska/US Islands
+"Port Manatee, Florida",1821,Tampa,Gulf,Gulf East
+"Port of Oswego, Oswego, New York",0904,Buffalo-Niagara,Great Lakes,Great Lakes
+"Port Angeles, Washington",3007,Seattle-Tacoma,West,Pacific Northwest
+"Bangor, Maine",0102,Portland ME,East,North Atlantic
+"Plymouth, Massachusetts",0406,Boston,East,North Atlantic
+"Searsport, Maine",0152,Portland ME,East,North Atlantic
+"Buffalo‑Niagara Falls, New York",0901,Buffalo-Niagara,Great Lakes,Great Lakes
+"Port Lavaca, Port Lavaca, Texas",5313,Corpus Christi,Gulf,North Texas
+"THE PORT OF MILWAUKEE, Milwaukee, Wisconsin",3701,Milwaukee,Great Lakes,Great Lakes
+"San Joaquin River, California",2828,San Francisco Bay,West,California
+"Port Of Longview, Longview, Washington",2905,Columbia River,West,Pacific Northwest
+"The Port of Pensacola, Pensacola, Florida",1819,Pensacola,Gulf,Gulf East
+"Port Panama City, Panama City, Florida",1818,Panama City,Gulf,Gulf East
+"Oregon International Port of Coos Bay, Coos Bay, Oregon",2903,Columbia River,West,Pacific Northwest
+"Port Of Entry-Ketchikan, Ketchikan, Alaska",3102,Alaska,Alaska/US Islands,Alaska/US Islands
+"Aberdeen, Washington",3003,Seattle-Tacoma,West,Pacific Northwest
+"Duluth Seaway Port Authority, Duluth, Wisconsin",3510,Duluth-Superior,Great Lakes,Great Lakes
+"Ashtabula/Conneaut, Ohio",4122,Cleveland-Toledo,Great Lakes,Great Lakes
+"Erie-Western Pennsylvania Port Authority, Erie, Pennsylvania",4106,Cleveland-Toledo,Great Lakes,Great Lakes
+"Port Of Entry-New London, New London, Connecticut",0413,Connecticut,East,North Atlantic
+"Port of Fall River, Fall River, Massachusetts",0407,Boston,East,North Atlantic
+"Port of Kalama, Kalama, Washington",2909,Columbia River,West,Pacific Northwest
+"Port of Olympia, Olympia, Washington",3026,Seattle-Tacoma,West,Pacific Northwest
+"Port Of Entry-Nawiliwili-Port Allen, Nawiliwili‑Port Allen, Hawaii",3204,Honolulu,West,Pacific
+"Port of Friday Harbor, Friday Harbor, Washington",3014,Seattle-Tacoma,West,Pacific Northwest
+"Newport, Rhode Island",0501,Providence,East,North Atlantic
+"Juneau, Juneau, Alaska",3101,Alaska,Alaska/US Islands,Alaska/US Islands
+"Grand Haven, Michigan",3816,Detroit,Great Lakes,Great Lakes
+"Saginaw-Bay City-Flint, Saginaw/Bay City, Michigan",3804,Detroit,Great Lakes,Great Lakes
+"Port Huron, Port Huron, Michigan",3802,Port Huron,Great Lakes,Great Lakes
+"Port Of Entry-Skagway, Skagway, Alaska",3103,Alaska,Alaska/US Islands,Alaska/US Islands
+"Grand Rapids, Grand Rapids, Michigan",3806,"Grand Rapids, Michigan",Great Lakes,Great Lakes
+"Rochester, New York",0903,Buffalo-Niagara,Great Lakes,Great Lakes
+"Battle Creek, Battle Creek, Michigan",3805,"Battle Creek, Michigan",Great Lakes,Great Lakes
+"Port of Richmond, Richmond‑Petersburg, Virginia",1404,"Richmond-Petersburg, Virginia",East,South Atlantic
+"Marquette, Michigan",3809,Detroit,Great Lakes,Great Lakes
+"Port of Bellingham, Bellingham, Washington",3005,Seattle-Tacoma,West,Pacific Northwest
+"Rogers City Harbor, Rogers City, Michigan",3818,Detroit,Great Lakes,Great Lakes
+"Mayaguez, Mayaguez, Puerto Rico",4907,San Juan,Islands,Caribbean
+"Port of Gary, Gary, Indiana",3905,Chicago,Great Lakes,Great Lakes
+"Port of Astoria, Astoria, Oregon",2901,Columbia River,West,Pacific Northwest
+"Port Of Entry-Sitka, Sitka, Alaska",3115,Alaska,Alaska/US Islands,Alaska/US Islands
+"Paulsboro, Pennsylvania",1102,Delaware River,East,Mid-Atlantic
+"South Jersey Port Corporation, Camden, New Jersey",1113,Delaware River,East,Mid-Atlantic
+"Minneapolis St.Paul International Airport, Minneapolis‑St. Paul, Minnesota",3501,"Minneapolis-St. Paul, Minnesota",Inland,Great Lakes
+"Service Port-Atlanta, Atlanta, Georgia",1704,"Atlanta, Georgia",Inland,South Atlantic
+"Port of Newport, Newport, Oregon",2902,Columbia River,West,Pacific Northwest
+"Bridgeport, Connecticut",0410,Connecticut,East,North Atlantic
+"Port Of Entry-Ogdensburg, Ogdensburg, New York",0701,Northern Border-NY,Great Lakes,Great Lakes
+"UPS, Newark, New Jersey",1069,New York,East,North Atlantic
+"Alpena, Michigan",3843,Detroit,Great Lakes,Great Lakes
+"Delta County Airport, Escanaba, Michigan",3808,Detroit,Great Lakes,Great Lakes
+"Service Port-Blaine, Blaine, Washington",3004,Seattle-Tacoma,West,Pacific Northwest
+"Marinette, Wisconsin",3702,Milwaukee,Great Lakes,Great Lakes
+"Detroit Metropolitan Airport, Detroit Metropolitan Airport, Michigan",3807,Detroit,Great Lakes,Great Lakes
+"Salem, Massachusetts",0408,Boston,East,North Atlantic
+"Port Of Entry-Dalton Cache, Dalton Cache, Alaska",3106,Alaska,Alaska/US Islands,Alaska/US Islands
+"Port Of Entry-Fairbanks, Fairbanks, Alaska",3111,Alaska,Alaska/US Islands,Alaska/US Islands
+"Massena International Airport, Massena, New York",0704,Northern Border-NY,Land Ports,Land Ports
+"San Pablo Bay, California",2829,San Francisco Bay,West,California
+"Houston Intercontinental Airport, Houston, Texas",5309,Houston,Gulf,North Texas
+"Annapolis, Maryland",1301,Baltimore,East,Mid-Atlantic
+"Port Of Entry-Louisville, Louisville, Kentucky",4115,"Louisville, Kentucky",Inland,Great Lakes
+"Gloucester, Massachusetts",0404,Boston,East,North Atlantic
+"Port of Charleston, Charleston, West Virginia",1409,"Charleston, West Virginia",Inland,South Atlantic
+"Fort Lauderdale International Airport, Fort Lauderdale, Florida",5210,Port Everglades,East,South Atlantic
+"Baltimore-Washington International Airport, Baltimore, Maryland",1305,Baltimore,East,Mid-Atlantic
+"The Port of St. Petersburg, St. Petersburg, Florida",1814,"St. Petersburg, Florida",Gulf,Gulf East
+"Eastport Port Authority, Eastport, Maine",0103,Portland ME,East,North Atlantic
+"Selby, California",2827,San Francisco Bay,West,California
+"Manitowoc, Wisconsin",3706,Milwaukee,Great Lakes,Great Lakes
+"Port Of Entry-Grand Portage, Grand Portage, Minnesota",3613,Duluth-Superior,Great Lakes,Great Lakes
+"St. Joseph, Missouri",4502,"St. Joseph, Missouri",Inland,Mississippi River
+"TNT Express Worldwide, Los Angeles, California",2704,LA-Long Beach,West,California
+"Greater Orlando Aviation Authority, Orlando, Florida",1808,"Orlando, Florida",Inland,South Atlantic
+"The International Port of Memphis, Memphis, Tennessee",2006,"Memphis, Tennessee",Inland,Mississippi River
+"Service Port-Phoenix, Phoenix, Arizona",2605,"Phoenix, Arizona",Inland,Land Ports
+"San Francisco International Airport, San Francisco, California",2801,San Francisco Bay,West,California
+"Miami International Airport, Miami, Florida",5206,Miami,East,South Atlantic
+"Cruz Bay, Virgin Islands",5102,Virgin Islands,Islands,Caribbean
+"Fort Pierce, Florida",5205,South Florida,East,South Atlantic
+"Port Of Entry-Wrangell, Wrangell, Alaska",3105,Alaska,Alaska/US Islands,Alaska/US Islands

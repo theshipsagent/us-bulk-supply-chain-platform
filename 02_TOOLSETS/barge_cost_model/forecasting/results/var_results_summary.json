@@ -1,0 +1,286 @@
+{
+  "model_type": "VAR",
+  "lag_order": "3",
+  "training_observations": 940,
+  "test_observations": 265,
+  "segments": [
+    "segment_1_rate",
+    "segment_2_rate",
+    "segment_3_rate",
+    "segment_4_rate",
+    "segment_5_rate",
+    "segment_6_rate",
+    "segment_7_rate"
+  ],
+  "forecast_horizons": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "multi_step_forecasts": {
+    "1_week": {
+      "segment_1_rate": {
+        "actual": 25.39,
+        "forecast": 22.632675953963986,
+        "error": 2.7573240460360147,
+        "abs_error": 2.7573240460360147,
+        "pct_error": 10.859882024560909
+      },
+      "segment_2_rate": {
+        "actual": 22.04,
+        "forecast": 22.348492968750747,
+        "error": -0.3084929687507483,
+        "abs_error": 0.3084929687507483,
+        "pct_error": 1.3996958654752645
+      },
+      "segment_3_rate": {
+        "actual": 24.09,
+        "forecast": 22.082075517991615,
+        "error": 2.0079244820083844,
+        "abs_error": 2.0079244820083844,
+        "pct_error": 8.335095400615957
+      },
+      "segment_4_rate": {
+        "actual": 25.56,
+        "forecast": 21.309661796853582,
+        "error": 4.250338203146416,
+        "abs_error": 4.250338203146416,
+        "pct_error": 16.628866209493022
+      },
+      "segment_5_rate": {
+        "actual": 22.52,
+        "forecast": 20.603064726648242,
+        "error": 1.9169352733517577,
+        "abs_error": 1.9169352733517577,
+        "pct_error": 8.512145974030897
+      },
+      "segment_6_rate": {
+        "actual": 20.61,
+        "forecast": 20.760579881649228,
+        "error": -0.15057988164922875,
+        "abs_error": 0.15057988164922875,
+        "pct_error": 0.7306156314858261
+      },
+      "segment_7_rate": {
+        "actual": 22.62,
+        "forecast": 19.018726776961703,
+        "error": 3.601273223038298,
+        "abs_error": 3.601273223038298,
+        "pct_error": 15.920748112459318
+      }
+    },
+    "2_week": {
+      "segment_1_rate": {
+        "actual": 23.42,
+        "forecast": 20.785593841883415,
+        "error": 2.6344061581165867,
+        "abs_error": 2.6344061581165867,
+        "pct_error": 11.248531845075092
+      },
+      "segment_2_rate": {
+        "actual": 22.02,
+        "forecast": 20.000311133702258,
+        "error": 2.0196888662977415,
+        "abs_error": 2.0196888662977415,
+        "pct_error": 9.17206569617503
+      },
+      "segment_3_rate": {
+        "actual": 19.83,
+        "forecast": 19.690483097256774,
+        "error": 0.1395169027432246,
+        "abs_error": 0.1395169027432246,
+        "pct_error": 0.7035648146405679
+      },
+      "segment_4_rate": {
+        "actual": 22.22,
+        "forecast": 19.242335605127067,
+        "error": 2.9776643948729316,
+        "abs_error": 2.9776643948729316,
+        "pct_error": 13.400829859914184
+      },
+      "segment_5_rate": {
+        "actual": 23.2,
+        "forecast": 18.246313636151406,
+        "error": 4.953686363848593,
+        "abs_error": 4.953686363848593,
+        "pct_error": 21.35209639589911
+      },
+      "segment_6_rate": {
+        "actual": 22.43,
+        "forecast": 18.210428334506823,
+        "error": 4.219571665493177,
+        "abs_error": 4.219571665493177,
+        "pct_error": 18.812178624579477
+      },
+      "segment_7_rate": {
+        "actual": 20.42,
+        "forecast": 17.367003272204766,
+        "error": 3.052996727795236,
+        "abs_error": 3.052996727795236,
+        "pct_error": 14.951012379016825
+      }
+    },
+    "3_week": {
+      "segment_1_rate": {
+        "actual": 29.88,
+        "forecast": 21.45566571899989,
+        "error": 8.42433428100011,
+        "abs_error": 8.42433428100011,
+        "pct_error": 28.193889829317637
+      },
+      "segment_2_rate": {
+        "actual": 25.05,
+        "forecast": 20.63439213679679,
+        "error": 4.41560786320321,
+        "abs_error": 4.41560786320321,
+        "pct_error": 17.627177098615608
+      },
+      "segment_3_rate": {
+        "actual": 23.73,
+        "forecast": 20.253982391504724,
+        "error": 3.476017608495276,
+        "abs_error": 3.476017608495276,
+        "pct_error": 14.648198940140228
+      },
+      "segment_4_rate": {
+        "actual": 18.48,
+        "forecast": 20.007895608766344,
+        "error": -1.5278956087663431,
+        "abs_error": 1.5278956087663431,
+        "pct_error": 8.267833380770256
+      },
+      "segment_5_rate": {
+        "actual": 20.75,
+        "forecast": 18.92601913289723,
+        "error": 1.8239808671027689,
+        "abs_error": 1.8239808671027689,
+        "pct_error": 8.79026923904949
+      },
+      "segment_6_rate": {
+        "actual": 16.19,
+        "forecast": 18.99761392091865,
+        "error": -2.807613920918648,
+        "abs_error": 2.807613920918648,
+        "pct_error": 17.341654854346185
+      },
+      "segment_7_rate": {
+        "actual": 20.88,
+        "forecast": 17.643687562872586,
+        "error": 3.2363124371274132,
+        "abs_error": 3.2363124371274132,
+        "pct_error": 15.499580637583396
+      }
+    },
+    "4_week": {
+      "segment_1_rate": {
+        "actual": 27.2,
+        "forecast": 20.515213776382875,
+        "error": 6.684786223617124,
+        "abs_error": 6.684786223617124,
+        "pct_error": 24.576419939768837
+      },
+      "segment_2_rate": {
+        "actual": 24.2,
+        "forecast": 19.936038684467793,
+        "error": 4.263961315532207,
+        "abs_error": 4.263961315532207,
+        "pct_error": 17.619674857571102
+      },
+      "segment_3_rate": {
+        "actual": 24.44,
+        "forecast": 19.443359877804518,
+        "error": 4.996640122195483,
+        "abs_error": 4.996640122195483,
+        "pct_error": 20.444517684924236
+      },
+      "segment_4_rate": {
+        "actual": 21.29,
+        "forecast": 18.909687540120093,
+        "error": 2.3803124598799066,
+        "abs_error": 2.3803124598799066,
+        "pct_error": 11.180424893752496
+      },
+      "segment_5_rate": {
+        "actual": 21.12,
+        "forecast": 18.304055350761164,
+        "error": 2.815944649238837,
+        "abs_error": 2.815944649238837,
+        "pct_error": 13.333071255865706
+      },
+      "segment_6_rate": {
+        "actual": 17.79,
+        "forecast": 17.842016425127262,
+        "error": -0.05201642512726323,
+        "abs_error": 0.05201642512726323,
+        "pct_error": 0.2923913722724184
+      },
+      "segment_7_rate": {
+        "actual": 18.39,
+        "forecast": 17.22036133588652,
+        "error": 1.1696386641134815,
+        "abs_error": 1.1696386641134815,
+        "pct_error": 6.360188494363683
+      }
+    },
+    "5_week": {
+      "segment_1_rate": {
+        "actual": 20.81,
+        "forecast": 19.82647366504973,
+        "error": 0.9835263349502696,
+        "abs_error": 0.9835263349502696,
+        "pct_error": 4.726219773908072
+      },
+      "segment_2_rate": {
+        "actual": 23.72,
+        "forecast": 19.286942266702365,
+        "error": 4.433057733297634,
+        "abs_error": 4.433057733297634,
+        "pct_error": 18.68911354678598
+      },
+      "segment_3_rate": {
+        "actual": 24.97,
+        "forecast": 18.889119407725843,
+        "error": 6.080880592274156,
+        "abs_error": 6.080880592274156,
+        "pct_error": 24.352745663893298
+      },
+      "segment_4_rate": {
+        "actual": 24.25,
+        "forecast": 18.26485539935777,
+        "error": 5.985144600642229,
+        "abs_error": 5.985144600642229,
+        "pct_error": 24.68100866244218
+      },
+      "segment_5_rate": {
+        "actual": 16.78,
+        "forecast": 17.73242649229961,
+        "error": -0.9524264922996082,
+        "abs_error": 0.9524264922996082,
+        "pct_error": 5.675962409413636
+      },
+      "segment_6_rate": {
+        "actual": 20.19,
+        "forecast": 17.273088590731035,
+        "error": 2.916911409268966,
+        "abs_error": 2.916911409268966,
+        "pct_error": 14.447307623917613
+      },
+      "segment_7_rate": {
+        "actual": 17.49,
+        "forecast": 16.59468818238687,
+        "error": 0.895311817613127,
+        "abs_error": 0.895311817613127,
+        "pct_error": 5.118992667885232
+      }
+    }
+  },
+  "model_criteria": {
+    "aic": 18.746649462211504,
+    "bic": 19.542565391202665,
+    "hqic": 19.050106691463665,
+    "fpe": 138545574.1717433
+  },
+  "estimation_date": "2026-02-03 21:45:57"
+}

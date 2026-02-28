@@ -245,8 +245,8 @@ Migration date: 2026-02-23
 
 ## License
 
-Internal use for OceanDatum.ai and SESCO Cement Corporation.
+Internal use for William S. Davis III and SESCO Cement Corporation.
 
 ## Contact
 
-William Davis - OceanDatum.ai Maritime Consultancy
+William Davis - William S. Davis III Maritime Consultancy

@@ -1,0 +1,41 @@
+# EPA FRS Analytics Tool Configuration
+
+# Database settings
+database:
+  path: "data/frs.duckdb"
+
+# Data directories
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+
+# EPA FRS Data Sources
+data_sources:
+  # National Combined CSV Download (primary source)
+  national:
+    url: "https://www.epa.gov/frs/epa-state-combined-csv-download-files"
+    # Note: Actual download link needs to be scraped or manually updated
+    # Example format: https://ofmpub.epa.gov/frs_public2/NATIONAL_COMBINED.zip
+    direct_url: "https://ofmpub.epa.gov/frs_public2/NATIONAL_COMBINED.zip"
+
+  # ECHO FRS Download (ZIP file containing multiple CSVs)
+  echo:
+    url: "https://echo.epa.gov/files/echodownloads/frs_downloads.zip"
+    # ZIP contains: FRS_FACILITIES.CSV, FRS_PROGRAM_LINKS.CSV,
+    # FRS_NAICS_CODES.CSV, FRS_SIC_CODES.CSV
+
+  # FRS REST API
+  api:
+    base_url: "https://ofmpub.epa.gov/frs_public2/frs_rest_services.get_facilities"
+    max_radius_miles: 25
+
+# Download settings
+download:
+  chunk_size: 8192
+  timeout: 300
+  verify_ssl: true
+
+# Processing settings
+processing:
+  chunk_size: 10000
+  use_parquet: true

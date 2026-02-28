@@ -1,0 +1,69 @@
+================================================================================
+FILES TO DELETE - DUPLICATES IDENTIFIED
+================================================================================
+
+Based on the analysis, the following 5 files should be DELETED:
+
+1. Zone Report 01-01-21 - 12-31-21 (2).csv
+   Reason: EXACT DUPLICATE of (1).csv - same TERMINAL zone data
+   Status: SAFE TO DELETE
+
+2. Zone Report 01-01-22 - 12-31-22 (3).csv
+   Reason: EXACT DUPLICATE of (2).csv - same CROSS OUT zone data
+   Status: SAFE TO DELETE
+
+3. Zone Report 01-01-23 - 12-31-23 (1).csv
+   Reason: File (3) has MORE records (15269 vs 15194) for ANCHORAGE zone
+   Status: DELETE - Keep (3) instead
+
+4. Zone Report 01-01-24 - 12-31-24 (4).csv
+   Reason: EXACT DUPLICATE of (2).csv - same CROSS OUT zone data
+   Status: SAFE TO DELETE
+
+5. Zone Report 01-01-25 - 12-31-25 (2).csv
+   Reason: File (4) has MORE records (5518 vs 5516) for CROSS IN zone
+   Status: DELETE - Keep (4) instead
+
+================================================================================
+WINDOWS COMMANDS TO DELETE THESE FILES
+================================================================================
+
+Copy and paste these commands in Command Prompt or PowerShell:
+
+del "G:\My Drive\LLM\project_mrtis\00_source_files\Zone Report 01-01-21 - 12-31-21 (2).csv"
+del "G:\My Drive\LLM\project_mrtis\00_source_files\Zone Report 01-01-22 - 12-31-22 (3).csv"
+del "G:\My Drive\LLM\project_mrtis\00_source_files\Zone Report 01-01-23 - 12-31-23 (1).csv"
+del "G:\My Drive\LLM\project_mrtis\00_source_files\Zone Report 01-01-24 - 12-31-24 (4).csv"
+del "G:\My Drive\LLM\project_mrtis\00_source_files\Zone Report 01-01-25 - 12-31-25 (2).csv"
+
+================================================================================
+AFTER DELETION - EXPECTED STATE
+================================================================================
+
+Year 2019: ✓ COMPLETE (4 files)
+Year 2020: ✓ COMPLETE (4 files)
+Year 2021: 2 files (missing ANCHORAGE, CROSS IN)
+Year 2022: 3 files (missing TERMINAL)
+Year 2023: 3 files (missing TERMINAL)
+Year 2024: ✓ COMPLETE (4 files)
+Year 2025: ✓ COMPLETE (4 files)
+Year 2026: ✓ COMPLETE (4 files)
+
+================================================================================
+MISSING FILES TO OBTAIN
+================================================================================
+
+Year 2018:
+  - ANCHORAGE report
+  - CROSS IN report
+  - CROSS OUT report
+
+Year 2021:
+  - ANCHORAGE report
+  - CROSS IN report
+
+Year 2022:
+  - TERMINAL report
+
+Year 2023:
+  - TERMINAL report

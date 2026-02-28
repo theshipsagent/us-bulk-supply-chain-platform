@@ -1,0 +1,79 @@
+Vessel Name,IMO Number,Flag,Vessel Type,Gross Tonnage,Deadweight,Length,Beam,Build Year,Operator,Status,Home Port,Current Location
+MAERSK ALABAMA,8913866,USA,Container Ship,19200,25644,154.8,25.2,1998,Maersk Line Limited,Operational,Norfolk,At Sea
+MAERSK CAROLINA,9321482,USA,Container Ship,51400,59954,277.8,32.2,2007,Maersk Line Limited,Operational,Charleston,Charleston
+MAERSK IDAHO,9321494,USA,Container Ship,51400,59954,277.8,32.2,2007,Maersk Line Limited,Operational,Oakland,Oakland
+MAERSK ILLINOIS,9321500,USA,Container Ship,51400,59954,277.8,32.2,2007,Maersk Line Limited,Operational,Long Beach,Long Beach
+ALOHA EXPRESS,9224280,USA,Container Ship,50794,60240,289.6,32.3,2003,Matson Navigation,Operational,Los Angeles,Honolulu
+KAUAI EXPRESS,9226882,USA,Container Ship,50794,60240,289.6,32.3,2003,Matson Navigation,Operational,Honolulu,At Sea
+MAHIMAHI,9224292,USA,Container Ship,50794,60240,289.6,32.3,2003,Matson Navigation,Operational,Oakland,At Sea
+MANOA,9226894,USA,Container Ship,50794,60240,289.6,32.3,2003,Matson Navigation,Operational,Los Angeles,Los Angeles
+POLAR ALASKA,9175144,USA,Container Ship,24817,33528,182.9,30.2,1999,Crowley Maritime,Operational,Seattle,Anchorage
+POLAR CALIFORNIA,9175156,USA,Container Ship,24817,33528,182.9,30.2,2000,Crowley Maritime,Operational,Tacoma,Seattle
+OVERSEAS BOSTON,9337820,USA,Product Tanker,46627,80474,228.6,32.2,2008,OSG Ship Management,Operational,New York,New York
+OVERSEAS CHICAGO,9337832,USA,Product Tanker,46627,80474,228.6,32.2,2008,OSG Ship Management,Operational,Houston,At Sea
+OVERSEAS LONG BEACH,9337844,USA,Product Tanker,46627,80474,228.6,32.2,2009,OSG Ship Management,Operational,Long Beach,Long Beach
+OVERSEAS NEW YORK,9337856,USA,Product Tanker,46627,80474,228.6,32.2,2009,OSG Ship Management,Operational,New York,At Sea
+LIBERTY GRACE,9362483,USA,Product Tanker,29987,50015,183.0,32.2,2008,Liberty Maritime,Operational,Tampa,Gulf of Mexico
+LIBERTY PRIDE,9362495,USA,Product Tanker,29987,50015,183.0,32.2,2008,Liberty Maritime,Operational,Houston,Houston
+OCEAN FREEDOM,9404829,USA,Crude Oil Tanker,82193,149615,274.2,48.0,2010,American Shipping,Operational,Long Beach,At Sea
+OCEAN LIBERTY,9404831,USA,Crude Oil Tanker,82193,149615,274.2,48.0,2010,American Shipping,Operational,San Francisco,At Sea
+OVERSEAS MYKONOS,9387654,USA,Product Tanker,46627,80474,228.6,32.2,2009,OSG Ship Management,Operational,Philadelphia,Philadelphia
+AMERICAN PHOENIX,9428756,USA,Crude Oil Tanker,80645,149033,274.2,48.0,2011,American Shipping,Operational,Houston,At Sea
+CHESAPEAKE TRADER,8214123,USA,Dry Bulk Carrier,26800,43500,190.0,23.1,1984,Keystone Shipping,Operational,Baltimore,Baltimore
+COLUMBIA TRADER,8214135,USA,Dry Bulk Carrier,26800,43500,190.0,23.1,1985,Keystone Shipping,Operational,Norfolk,At Sea
+GREAT LAKES TRADER,8214147,USA,Dry Bulk Carrier,26800,43500,190.0,23.1,1985,Keystone Shipping,Operational,Duluth,Great Lakes
+OCEAN CHAMPION,9156234,USA,Bulk Carrier,32346,56784,190.0,32.2,1998,Great Lakes Shipping,Operational,Cleveland,Great Lakes
+PAUL R TREGURTHA,7729057,USA,Lake Freighter,18000,68000,308.5,32.2,1981,Interlake Steamship,Operational,Duluth,Great Lakes
+EDWIN H GOTT,7390721,USA,Lake Freighter,14300,74100,304.8,32.2,1979,Great Lakes Fleet,Operational,Superior,Great Lakes
+AMERICAN VICTORY,9505621,USA,RoRo Cargo,27500,12000,199.9,32.3,2014,TOTE Maritime,Operational,Jacksonville,San Juan
+PERLA DEL CARIBE,9505633,USA,RoRo Cargo,27500,12000,199.9,32.3,2014,TOTE Maritime,Operational,Jacksonville,At Sea
+MIDNIGHT SUN,9407842,USA,RoRo Cargo,19528,9800,189.0,28.4,2009,TOTE Maritime,Operational,Tacoma,Anchorage
+NORTH STAR,9407854,USA,RoRo Cargo,19528,9800,189.0,28.4,2009,TOTE Maritime,Operational,Tacoma,At Sea
+DANIEL K INOUYE,9729845,USA,Container Ship,51762,63700,265.5,37.3,2018,Matson Navigation,Operational,Long Beach,Honolulu
+LURLINE,9729857,USA,Container Ship,51762,63700,265.5,37.3,2019,Matson Navigation,Operational,Oakland,At Sea
+MATSONIA,9729869,USA,Container Ship,51762,63700,265.5,37.3,2020,Matson Navigation,Operational,Los Angeles,Honolulu
+GREEN RIDGE,9349821,USA,Geared Bulker,34545,63500,199.9,32.2,2008,Pasha Hawaii,Operational,San Diego,At Sea
+MARJORIE C,9349833,USA,Geared Bulker,34545,63500,199.9,32.2,2008,Pasha Hawaii,Operational,Honolulu,Honolulu
+USNS COMFORT,8807436,USA,Hospital Ship,69360,11135,272.5,32.2,1976,Military Sealift Command,Operational,Norfolk,Norfolk
+USNS MERCY,8807448,USA,Hospital Ship,69360,11135,272.5,32.2,1976,Military Sealift Command,Operational,San Diego,San Diego
+USNS JOHN GLENN,9707806,USA,Expeditionary Mobile Base,78470,0,239.9,50.0,2014,Crowley Maritime Corporation,Operational,Norfolk,Norfolk
+USNS LEWIS B PULLER,9707818,USA,Expeditionary Mobile Base,78470,0,239.9,50.0,2015,Crowley Maritime Corporation,Operational,Bahrain,Deployed
+USNS HERSHEL WOODY WILLIAMS,9707820,USA,Expeditionary Sea Base,78470,0,239.9,50.0,2017,Crowley Maritime Corporation,Operational,Souda Bay,Mediterranean
+USNS MIGUEL KEITH,9707832,USA,Expeditionary Sea Base,90000,0,239.9,50.0,2020,Crowley Maritime Corporation,Operational,Norfolk,Norfolk
+USNS BOB HOPE,9141251,USA,Large Medium-Speed RoRo,62069,26664,289.5,32.3,1998,American Steamship Company,Ready Reserve,Norfolk,Norfolk
+USNS FISHER,9141263,USA,Large Medium-Speed RoRo,62069,26664,289.5,32.3,1999,American Steamship Company,Operational,Norfolk,At Sea
+USNS SEAY,9141275,USA,Large Medium-Speed RoRo,62069,26664,289.5,32.3,2000,Maersk Line Limited,Ready,Norfolk,Norfolk
+USNS GILLILAND,9141287,USA,Large Medium-Speed RoRo,62069,26664,289.5,32.3,2000,Maersk Line Limited,Operational,Norfolk,Norfolk
+USNS HENRY J KAISER,7390884,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1986,Maersk Line Limited,Operational,Norfolk,Norfolk
+USNS JOSHUA HUMPHREYS,7390896,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1987,Maersk Line Limited,Operational,San Diego,San Diego
+USNS JOHN LENTHALL,7390902,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1989,Maersk Line Limited,Operational,Norfolk,At Sea
+USNS PECOS,7390914,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1990,Maersk Line Limited,Ready,Norfolk,Norfolk
+USNS BIG HORN,7390926,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1992,Intrepid Ship Management,Operational,Norfolk,Norfolk
+USNS TIPPECANOE,7390938,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1993,Intrepid Ship Management,Operational,San Diego,San Diego
+USNS SUPPLY,8106683,USA,Fast Combat Support Ship,48800,7500,230.0,32.6,1994,Maersk Line Limited,Operational,Norfolk,Norfolk
+USNS ARCTIC,8106695,USA,Fast Combat Support Ship,48800,7500,230.0,32.6,1995,Maersk Line Limited,Operational,San Diego,At Sea
+USNS SPEARHEAD,9486655,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2012,Austal USA,Operational,Norfolk,At Sea
+USNS CHOCTAW COUNTY,9486667,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2012,Austal USA,Operational,Norfolk,Norfolk
+EL FARO,8030371,USA,RoRo Cargo,19200,14200,195.0,30.5,1975,TOTE Maritime,Lost,Jacksonville,N/A
+HORIZON SPIRIT,9442151,USA,Chemical Tanker,25000,40000,183.0,32.2,2010,Horizon Lines,Operational,Tacoma,At Sea
+INDEPENDENCE,9642039,USA,Container Ship,50000,58500,264.0,32.3,2014,APL Maritime,Operational,Los Angeles,At Sea
+PRESIDENT EISENHOWER,9642041,USA,Container Ship,50000,58500,264.0,32.3,2015,APL Maritime,Operational,Oakland,Oakland
+PRESIDENT KENNEDY,9642053,USA,Container Ship,50000,58500,264.0,32.3,2015,APL Maritime,Operational,Seattle,At Sea
+ENDURANCE,9751234,USA,Chemical Tanker,15000,25000,144.0,23.0,2016,Crowley Maritime,Operational,Houston,Gulf of Mexico
+CAPE WASHINGTON,8214556,USA,RoRo Ready Reserve,35751,11956,199.6,32.2,1984,Civilian Contractor,Ready Reserve,Norfolk,Norfolk
+CAPE JACOB,8214568,USA,RoRo Ready Reserve,35751,11956,199.6,32.2,1984,Civilian Contractor,Ready Reserve,Baltimore,Baltimore
+CAPE VINCENT,8214570,USA,RoRo Ready Reserve,35751,11956,199.6,32.2,1985,Civilian Contractor,Ready Reserve,Norfolk,Norfolk
+RESOLUTE,9123456,USA,Offshore Supply,8500,4000,85.0,19.0,2005,Hornbeck Offshore,Operational,New Orleans,Gulf of Mexico
+OCEAN PIONEER,9234567,USA,Offshore Supply,8500,4000,85.0,19.0,2006,Hornbeck Offshore,Operational,Houston,Gulf of Mexico
+AMERICAN EAGLE,9345678,USA,Barge Carrier,42000,28000,210.0,32.2,2012,Pasha Hawaii,Operational,Honolulu,At Sea
+LIBERTY STAR,8456789,USA,Tug/Supply,12000,0,75.0,18.0,1982,Liberty Maritime,Operational,Cape Canaveral,At Sea
+PAUL BUCK,9567890,USA,Lake Freighter,13500,72000,300.0,32.2,1985,Grand River Navigation,Operational,Duluth,Great Lakes
+ALGOMA NIAGARA,9678901,USA,Lake Freighter,12000,65000,295.0,32.2,2013,Algoma Central,Operational,Chicago,Great Lakes
+CHARLESTON EXPRESS,9789012,USA,Container Ship,40000,48000,250.0,32.2,2011,SeaLand Maritime,Operational,Charleston,At Sea
+FLORIDA VOYAGER,9890123,USA,Container Ship,35000,42000,235.0,32.2,2010,SeaLand Maritime,Operational,Miami,At Sea
+OVERSEAS MARTINEZ,9901234,USA,Product Tanker,46627,80474,228.6,32.2,2010,OSG Ship Management,Operational,San Francisco,At Sea
+AMERICAN COURAGE,9012345,USA,Crude Oil Tanker,80645,149033,274.2,48.0,2012,American Shipping,Operational,Los Angeles,At Sea
+OCEAN PRIDE,9123890,USA,Container Ship,45000,55000,260.0,32.3,2013,Ocean Network Express,Operational,Savannah,Savannah
+GULF TRADER,9234901,USA,Chemical Tanker,20000,35000,170.0,28.0,2009,Gulf Maritime,Operational,Houston,At Sea
+PACIFIC QUEST,9345012,USA,Container Ship,38000,46000,245.0,32.2,2008,Horizon Pacific,Operational,Long Beach,At Sea
+ATLANTIC STAR,9456123,USA,Product Tanker,28000,48000,180.0,32.0,2007,Atlantic Shipping,Operational,New York,At Sea

@@ -1,0 +1,42 @@
+{
+  "analysis_date": "2026-02-03 21:57:28",
+  "models_compared": [
+    "Na\u00efve (Random Walk)",
+    "VAR(3)",
+    "SpVAR(3)"
+  ],
+  "test_periods": 50,
+  "segments": 7,
+  "naive_baseline": {
+    "avg_mape": 20.42722430001598,
+    "avg_mae": 2.8180857142857145
+  },
+  "var_model": {
+    "avg_mape": 22.366534592684356,
+    "avg_mae": 2.8521905158819862,
+    "avg_rmse": 3.489751717198821,
+    "avg_r2": 0.6726895089658166,
+    "improvement_over_naive_pct": -11.658074313827735,
+    "significant_segments": 1
+  },
+  "spvar_model": {
+    "avg_mape": 22.371103286395968,
+    "avg_mae": 2.850728054203241,
+    "avg_rmse": 3.487607061613158,
+    "avg_r2": 0.6730867801573369,
+    "improvement_over_naive_pct": -11.68035432194375,
+    "significant_segments": 1
+  },
+  "economic_impact_midsize_shipper": {
+    "annual_volume_tons": 50000,
+    "annual_savings": -383.6790179580568,
+    "two_year_savings": -767.3580359161136
+  },
+  "literature_benchmark": {
+    "target_improvement_range": [
+      17,
+      29
+    ],
+    "var_exceeds_target": false
+  }
+}

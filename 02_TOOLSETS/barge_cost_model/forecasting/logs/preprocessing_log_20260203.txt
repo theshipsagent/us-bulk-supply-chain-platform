@@ -1,0 +1,214 @@
+[2026-02-03 21:43:28] [INFO] Starting data preprocessing pipeline...
+[2026-02-03 21:43:28] [INFO] 
+======================================================================
+[2026-02-03 21:43:28] [INFO] STEP 1: LOAD RAW DATA
+[2026-02-03 21:43:28] [INFO] ======================================================================
+[2026-02-03 21:43:28] [INFO] Loading: sample_barge_rates_20260203.csv
+[2026-02-03 21:43:28] [INFO] ✓ Loaded 1205 observations
+[2026-02-03 21:43:28] [INFO]   Date range: 2003-01-02 00:00:00 to 2026-01-29 00:00:00
+[2026-02-03 21:43:28] [INFO]   Columns: ['date', 'week_of_year', 'segment_1_rate', 'segment_2_rate', 'segment_3_rate', 'segment_4_rate', 'segment_5_rate', 'segment_6_rate', 'segment_7_rate', 'segment_1_name', 'segment_2_name', 'segment_3_name', 'segment_4_name', 'segment_5_name', 'segment_6_name', 'segment_7_name']
+[2026-02-03 21:43:28] [INFO]   Rate columns: 7 segments
+[2026-02-03 21:43:28] [INFO] 
+======================================================================
+[2026-02-03 21:43:28] [INFO] STEP 2: DESCRIPTIVE STATISTICS
+[2026-02-03 21:43:28] [INFO] ======================================================================
+[2026-02-03 21:43:28] [INFO] 
+segment_1_rate:
+[2026-02-03 21:43:28] [INFO]   Mean: $18.43/ton
+[2026-02-03 21:43:28] [INFO]   Std Dev: $10.58/ton
+[2026-02-03 21:43:28] [INFO]   Range: $5.00 - $134.54/ton
+[2026-02-03 21:43:28] [INFO]   Coef. of Variation: 0.57
+[2026-02-03 21:43:28] [INFO] 
+segment_2_rate:
+[2026-02-03 21:43:28] [INFO]   Mean: $17.87/ton
+[2026-02-03 21:43:28] [INFO]   Std Dev: $9.95/ton
+[2026-02-03 21:43:28] [INFO]   Range: $5.00 - $108.89/ton
+[2026-02-03 21:43:28] [INFO]   Coef. of Variation: 0.56
+[2026-02-03 21:43:28] [INFO] 
+segment_3_rate:
+[2026-02-03 21:43:28] [INFO]   Mean: $17.42/ton
+[2026-02-03 21:43:28] [INFO]   Std Dev: $9.88/ton
+[2026-02-03 21:43:28] [INFO]   Range: $5.00 - $108.30/ton
+[2026-02-03 21:43:28] [INFO]   Coef. of Variation: 0.57
+[2026-02-03 21:43:28] [INFO] 
+segment_4_rate:
+[2026-02-03 21:43:28] [INFO]   Mean: $16.88/ton
+[2026-02-03 21:43:28] [INFO]   Std Dev: $9.57/ton
+[2026-02-03 21:43:28] [INFO]   Range: $5.00 - $94.04/ton
+[2026-02-03 21:43:28] [INFO]   Coef. of Variation: 0.57
+[2026-02-03 21:43:28] [INFO] 
+segment_5_rate:
+[2026-02-03 21:43:28] [INFO]   Mean: $16.35/ton
+[2026-02-03 21:43:28] [INFO]   Std Dev: $9.57/ton
+[2026-02-03 21:43:28] [INFO]   Range: $5.00 - $120.51/ton
+[2026-02-03 21:43:28] [INFO]   Coef. of Variation: 0.59
+[2026-02-03 21:43:28] [INFO] 
+segment_6_rate:
+[2026-02-03 21:43:28] [INFO]   Mean: $15.78/ton
+[2026-02-03 21:43:29] [INFO]   Std Dev: $9.61/ton
+[2026-02-03 21:43:29] [INFO]   Range: $5.00 - $102.36/ton
+[2026-02-03 21:43:29] [INFO]   Coef. of Variation: 0.61
+[2026-02-03 21:43:29] [INFO] 
+segment_7_rate:
+[2026-02-03 21:43:29] [INFO]   Mean: $15.22/ton
+[2026-02-03 21:43:29] [INFO]   Std Dev: $9.47/ton
+[2026-02-03 21:43:29] [INFO]   Range: $5.00 - $124.02/ton
+[2026-02-03 21:43:29] [INFO]   Coef. of Variation: 0.62
+[2026-02-03 21:43:29] [INFO] 
+======================================================================
+[2026-02-03 21:43:29] [INFO] STEP 3: HANDLE MISSING VALUES
+[2026-02-03 21:43:29] [INFO] ======================================================================
+[2026-02-03 21:43:29] [INFO] 
+Handling missing values (method: interpolate)...
+[2026-02-03 21:43:29] [INFO]   Missing values before: 0
+[2026-02-03 21:43:29] [INFO]   Missing values after: 0
+[2026-02-03 21:43:29] [INFO]   ✓ Filled 0 missing values
+[2026-02-03 21:43:29] [INFO] 
+======================================================================
+[2026-02-03 21:43:29] [INFO] STEP 4: OUTLIER DETECTION
+[2026-02-03 21:43:29] [INFO] ======================================================================
+[2026-02-03 21:43:29] [INFO] 
+Detecting outliers (threshold: 3.5 std devs)...
+[2026-02-03 21:43:29] [INFO]   segment_1_rate: 23 outliers detected (max value: $134.54)
+[2026-02-03 21:43:29] [INFO]   segment_2_rate: 21 outliers detected (max value: $108.89)
+[2026-02-03 21:43:29] [INFO]   segment_3_rate: 22 outliers detected (max value: $108.30)
+[2026-02-03 21:43:29] [INFO]   segment_4_rate: 23 outliers detected (max value: $94.04)
+[2026-02-03 21:43:29] [INFO]   segment_5_rate: 22 outliers detected (max value: $120.51)
+[2026-02-03 21:43:29] [INFO]   segment_6_rate: 21 outliers detected (max value: $102.36)
+[2026-02-03 21:43:29] [INFO]   segment_7_rate: 22 outliers detected (max value: $124.02)
+[2026-02-03 21:43:29] [INFO]   Total outliers across all segments: 154
+[2026-02-03 21:43:29] [INFO]   Note: Outliers NOT removed (may represent real drought/congestion events)
+[2026-02-03 21:43:29] [INFO] 
+======================================================================
+[2026-02-03 21:43:29] [INFO] STEP 5: STATIONARITY TESTING
+[2026-02-03 21:43:29] [INFO] ======================================================================
+[2026-02-03 21:43:29] [INFO] 
+Stationarity Test: segment_1_rate
+[2026-02-03 21:43:29] [INFO]   ADF Statistic: -13.3390
+[2026-02-03 21:43:29] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:29] [INFO]   Critical Values:
+[2026-02-03 21:43:29] [INFO]     1%: -3.436
+[2026-02-03 21:43:29] [INFO]     5%: -2.864
+[2026-02-03 21:43:30] [INFO]     10%: -2.568
+[2026-02-03 21:43:30] [INFO]   ✓ segment_1_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:30] [INFO] 
+Stationarity Test: segment_2_rate
+[2026-02-03 21:43:30] [INFO]   ADF Statistic: -13.8718
+[2026-02-03 21:43:30] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:30] [INFO]   Critical Values:
+[2026-02-03 21:43:30] [INFO]     1%: -3.436
+[2026-02-03 21:43:30] [INFO]     5%: -2.864
+[2026-02-03 21:43:30] [INFO]     10%: -2.568
+[2026-02-03 21:43:30] [INFO]   ✓ segment_2_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:30] [INFO] 
+Stationarity Test: segment_3_rate
+[2026-02-03 21:43:30] [INFO]   ADF Statistic: -13.0386
+[2026-02-03 21:43:30] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:30] [INFO]   Critical Values:
+[2026-02-03 21:43:30] [INFO]     1%: -3.436
+[2026-02-03 21:43:30] [INFO]     5%: -2.864
+[2026-02-03 21:43:30] [INFO]     10%: -2.568
+[2026-02-03 21:43:30] [INFO]   ✓ segment_3_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:30] [INFO] 
+Stationarity Test: segment_4_rate
+[2026-02-03 21:43:30] [INFO]   ADF Statistic: -13.2469
+[2026-02-03 21:43:30] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:30] [INFO]   Critical Values:
+[2026-02-03 21:43:30] [INFO]     1%: -3.436
+[2026-02-03 21:43:30] [INFO]     5%: -2.864
+[2026-02-03 21:43:30] [INFO]     10%: -2.568
+[2026-02-03 21:43:30] [INFO]   ✓ segment_4_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:30] [INFO] 
+Stationarity Test: segment_5_rate
+[2026-02-03 21:43:30] [INFO]   ADF Statistic: -13.4901
+[2026-02-03 21:43:30] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:30] [INFO]   Critical Values:
+[2026-02-03 21:43:31] [INFO]     1%: -3.436
+[2026-02-03 21:43:31] [INFO]     5%: -2.864
+[2026-02-03 21:43:31] [INFO]     10%: -2.568
+[2026-02-03 21:43:31] [INFO]   ✓ segment_5_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:31] [INFO] 
+Stationarity Test: segment_6_rate
+[2026-02-03 21:43:31] [INFO]   ADF Statistic: -13.2488
+[2026-02-03 21:43:31] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:31] [INFO]   Critical Values:
+[2026-02-03 21:43:31] [INFO]     1%: -3.436
+[2026-02-03 21:43:31] [INFO]     5%: -2.864
+[2026-02-03 21:43:31] [INFO]     10%: -2.568
+[2026-02-03 21:43:31] [INFO]   ✓ segment_6_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:31] [INFO] 
+Stationarity Test: segment_7_rate
+[2026-02-03 21:43:31] [INFO]   ADF Statistic: -13.4529
+[2026-02-03 21:43:31] [INFO]   p-value: 0.0000
+[2026-02-03 21:43:31] [INFO]   Critical Values:
+[2026-02-03 21:43:31] [INFO]     1%: -3.436
+[2026-02-03 21:43:31] [INFO]     5%: -2.864
+[2026-02-03 21:43:31] [INFO]     10%: -2.568
+[2026-02-03 21:43:31] [INFO]   ✓ segment_7_rate is STATIONARY (p < 0.05)
+[2026-02-03 21:43:31] [INFO] 
+======================================================================
+[2026-02-03 21:43:31] [INFO] STEP 6: SEASONAL DECOMPOSITION
+[2026-02-03 21:43:31] [INFO] ======================================================================
+[2026-02-03 21:43:31] [INFO] 
+Performing seasonal decomposition (period: 52 weeks)...
+[2026-02-03 21:43:31] [INFO]   segment_1_rate: Seasonal amplitude = $21.58/ton
+[2026-02-03 21:43:31] [INFO]   segment_2_rate: Seasonal amplitude = $21.08/ton
+[2026-02-03 21:43:31] [INFO]   segment_3_rate: Seasonal amplitude = $20.66/ton
+[2026-02-03 21:43:31] [INFO]   segment_4_rate: Seasonal amplitude = $20.12/ton
+[2026-02-03 21:43:31] [INFO]   segment_5_rate: Seasonal amplitude = $19.89/ton
+[2026-02-03 21:43:31] [INFO]   segment_6_rate: Seasonal amplitude = $20.43/ton
+[2026-02-03 21:43:31] [INFO]   segment_7_rate: Seasonal amplitude = $20.00/ton
+[2026-02-03 21:43:31] [INFO]   ✓ Created 7 seasonally adjusted series
+[2026-02-03 21:43:34] [INFO] 
+  ✓ Saved seasonal decomposition plot: 01_seasonal_decomposition_example.png
+[2026-02-03 21:43:35] [INFO] 
+======================================================================
+[2026-02-03 21:43:35] [INFO] STEP 7: SPATIAL CORRELATION ANALYSIS
+[2026-02-03 21:43:35] [INFO] ======================================================================
+[2026-02-03 21:43:35] [INFO] 
+Pairwise correlations between segments:
+[2026-02-03 21:43:35] [INFO] 
+                segment_1_rate  segment_2_rate  segment_3_rate  segment_4_rate  segment_5_rate  segment_6_rate  segment_7_rate
+segment_1_rate        1.000000        0.928957        0.927306        0.918170        0.923444        0.918541        0.927976
+segment_2_rate        0.928957        1.000000        0.920101        0.913542        0.917832        0.920331        0.923613
+segment_3_rate        0.927306        0.920101        1.000000        0.909685        0.916494        0.913987        0.924863
+segment_4_rate        0.918170        0.913542        0.909685        1.000000        0.912190        0.921337        0.909908
+segment_5_rate        0.923444        0.917832        0.916494        0.912190        1.000000        0.926028        0.920755
+segment_6_rate        0.918541        0.920331        0.913987        0.921337        0.926028        1.000000        0.918436
+segment_7_rate        0.927976        0.923613        0.924863        0.909908        0.920755        0.918436        1.000000
+[2026-02-03 21:43:36] [INFO]   ✓ Saved correlation heatmap: 02_spatial_correlation_matrix.png
+[2026-02-03 21:43:36] [INFO] 
+  Average pairwise correlation: 0.920
+[2026-02-03 21:43:36] [INFO]   ✓ Strong spatial correlation → SpVAR model appropriate
+[2026-02-03 21:43:36] [INFO] 
+======================================================================
+[2026-02-03 21:43:36] [INFO] STEP 8: TRAIN/TEST SPLIT
+[2026-02-03 21:43:36] [INFO] ======================================================================
+[2026-02-03 21:43:36] [INFO] 
+Training set:
+[2026-02-03 21:43:36] [INFO]   Observations: 940
+[2026-02-03 21:43:36] [INFO]   Date range: 2003-01-02 00:00:00 to 2020-12-31 00:00:00
+[2026-02-03 21:43:36] [INFO] 
+Test set:
+[2026-02-03 21:43:36] [INFO]   Observations: 265
+[2026-02-03 21:43:36] [INFO]   Date range: 2021-01-07 00:00:00 to 2026-01-29 00:00:00
+[2026-02-03 21:43:36] [INFO] 
+======================================================================
+[2026-02-03 21:43:36] [INFO] STEP 9: EXPORT PROCESSED DATA
+[2026-02-03 21:43:36] [INFO] ======================================================================
+[2026-02-03 21:43:36] [INFO] ✓ Saved full processed dataset: barge_rates_processed_full.csv
+[2026-02-03 21:43:36] [INFO] ✓ Saved training set: barge_rates_train.csv
+[2026-02-03 21:43:36] [INFO] ✓ Saved test set: barge_rates_test.csv
+[2026-02-03 21:43:36] [INFO] ✓ Saved metadata: preprocessing_metadata.json
+[2026-02-03 21:43:36] [INFO] 
+======================================================================
+[2026-02-03 21:43:36] [INFO] PREPROCESSING COMPLETE
+[2026-02-03 21:43:37] [INFO] ======================================================================
+[2026-02-03 21:43:37] [INFO] 
+✓ Data ready for VAR/SpVAR modeling
+[2026-02-03 21:43:37] [INFO]   Training observations: 940
+[2026-02-03 21:43:37] [INFO]   Test observations: 265
+[2026-02-03 21:43:37] [INFO]   Segments: 7
+[2026-02-03 21:43:37] [INFO]   Spatial correlation: 0.920
+[2026-02-03 21:43:37] [INFO] 
+Next step: Run 03_var_estimation.py

@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Flag Fleet Analysis - 2026</title>
+    <style>
+        @media print {
+            @page {
+                size: letter;
+                margin: 0.75in;
+            }
+            body {
+                font-size: 10pt;
+            }
+            h1 {
+                font-size: 18pt;
+                page-break-after: avoid;
+            }
+            h2 {
+                font-size: 14pt;
+                page-break-after: avoid;
+                margin-top: 24pt;
+            }
+            h3 {
+                font-size: 12pt;
+                page-break-after: avoid;
+                margin-top: 16pt;
+            }
+            table {
+                page-break-inside: avoid;
+                font-size: 9pt;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #003366;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #6699cc;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #004080;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+
+        .summary-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #003366;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .summary-box p {
+            margin: 8px 0;
+        }
+
+        .highlight {
+            background-color: #ffffcc;
+            font-weight: 600;
+        }
+
+        .decom {
+            background-color: #ffe6e6;
+        }
+
+        .cover {
+            text-align: center;
+            padding: 60px 20px 50px 20px;
+            page-break-after: always;
+            position: relative;
+            min-height: 9in;
+        }
+
+        .cover h1 {
+            font-size: 32pt;
+            margin-bottom: 30px;
+            border: none;
+        }
+
+        .cover .subtitle {
+            font-size: 16pt;
+            color: #666;
+            margin: 15px 0;
+        }
+
+        .metric {
+            display: inline-block;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .metric-value {
+            color: #003366;
+            font-size: 14pt;
+        }
+
+        .small-text {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .cover-bottom-left {
+            position: absolute;
+            bottom: 100px;
+            left: 60px;
+            text-align: left;
+            font-size: 9pt;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cover-bottom-right {
+            position: absolute;
+            bottom: 100px;
+            right: 60px;
+            text-align: right;
+            font-size: 10pt;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Cover Page -->
+<div class="cover">
+    <div style="margin-top: 40px;">
+        <h1>US Flag Fleet Analysis</h1>
+        <div class="subtitle">Military Sealift Command & Commercial Fleet Overview</div>
+        <div class="subtitle">Norfolk/Hampton Roads Focus</div>
+    </div>
+
+    <div style="margin-top: 60px;">
+        <div class="metric"><span class="metric-value">78</span> Vessels</div>
+        <div class="metric"><span class="metric-value">20</span> MSC</div>
+        <div class="metric"><span class="metric-value">18</span> Norfolk</div>
+    </div>
+
+    <div style="margin-top: 30px; font-size: 13pt; color: #003366;">
+        <strong>Prepared for:</strong><br>
+        <span style="font-size: 16pt; font-weight: 600;">Patrick Callahan</span><br>
+        <span style="font-size: 12pt; color: #666;">Fairwinds Landing</span>
+    </div>
+
+    <!-- Bottom Left: Author Info -->
+    <div class="cover-bottom-left">
+        <strong style="font-size: 10pt;">Prepared by:</strong><br>
+        <span style="font-size: 11pt; color: #003366; font-weight: 600;">William S. Davis III</span><br>
+        Maritime Industry Consultant<br>
+        30+ Years Ship Agency & Terminal Operations
+    </div>
+
+    <!-- Bottom Right: Document Info -->
+    <div class="cover-bottom-right">
+        <strong>Date:</strong> February 5, 2026<br>
+        <strong>Version:</strong> 1.0
+    </div>
+</div>
+
+<!-- Executive Summary -->
+<h1>Executive Summary</h1>
+
+<div class="summary-box">
+    <p><strong>Fleet Composition:</strong> 78 US-flag vessels analyzed - 20 MSC (25.6%), 58 commercial (74.4%), 3 RRF (3.8%)</p>
+    <p><strong>Norfolk Concentration:</strong> 18 vessels based (23.1% of fleet) - 14 MSC, 4 commercial</p>
+    <p><strong>Key Operators:</strong> Maersk Line Ltd (MSC prime), Matson (Hawaii), Crowley (Alaska/ESB), OSG (product tankers)</p>
+    <p><strong>Business Opportunity:</strong> Norfolk MSC operations dominated by Maersk Line Ltd (9 vessels) and Crowley (4 ESBs)</p>
+</div>
+
+<p>MSC civilian contractors operate 20 vessels across fleet replenishment, expeditionary sea bases, sealift, and hospital ships. Commercial fleet concentrated in Jones Act trades: Hawaii (Matson, Pasha), Alaska (Crowley, TOTE), Puerto Rico (TOTE), and coastwise petroleum (OSG, American Shipping, Liberty Maritime).</p>
+
+<!-- MSC Fleet Section -->
+<div class="page-break"></div>
+<h1>1. Military Sealift Command Fleet</h1>
+
+<h2>1.1 Fleet Replenishment Oilers (T-AO)</h2>
+<p>Henry J. Kaiser-class oilers providing underway replenishment for carrier strike groups. 6 vessels operational/ready.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>USNS HENRY J KAISER</td>
+        <td>1986</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS JOSHUA HUMPHREYS</td>
+        <td>1987</td>
+        <td>Maersk Line Limited</td>
+        <td>San Diego</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS JOHN LENTHALL</td>
+        <td>1989</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr class="highlight">
+        <td>USNS PECOS</td>
+        <td>1990</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Ready</td>
+    </tr>
+    <tr>
+        <td>USNS BIG HORN</td>
+        <td>1992</td>
+        <td>Intrepid Ship Management</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS TIPPECANOE</td>
+        <td>1993</td>
+        <td>Intrepid Ship Management</td>
+        <td>San Diego</td>
+        <td>Operational</td>
+    </tr>
+</table>
+
+<h2>1.2 Fast Combat Support Ships (T-AOE)</h2>
+<p>Supply-class multi-product replenishment ships. 2 vessels operational.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>GT</th>
+    </tr>
+    <tr>
+        <td>USNS SUPPLY</td>
+        <td>1994</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>48,800</td>
+    </tr>
+    <tr>
+        <td>USNS ARCTIC</td>
+        <td>1995</td>
+        <td>Maersk Line Limited</td>
+        <td>San Diego</td>
+        <td>48,800</td>
+    </tr>
+</table>
+
+<h2>1.3 Expeditionary Sea Bases (ESB)</h2>
+<p>Afloat forward staging bases for special operations and maritime prepositioning. 4 vessels (2 Norfolk, 2 deployed).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Current Location</th>
+    </tr>
+    <tr>
+        <td>USNS JOHN GLENN</td>
+        <td>2014</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Norfolk</td>
+        <td>Norfolk</td>
+    </tr>
+    <tr>
+        <td>USNS LEWIS B PULLER</td>
+        <td>2015</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Bahrain</td>
+        <td>Deployed</td>
+    </tr>
+    <tr>
+        <td>USNS HERSHEL WOODY WILLIAMS</td>
+        <td>2017</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Souda Bay</td>
+        <td>Mediterranean</td>
+    </tr>
+    <tr>
+        <td>USNS MIGUEL KEITH</td>
+        <td>2020</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Norfolk</td>
+        <td>Norfolk</td>
+    </tr>
+</table>
+
+<h2>1.4 Large Medium-Speed RoRo (LMSR)</h2>
+<p>Bob Hope-class strategic sealift ships. 4 vessels Norfolk-based (2 operational, 2 decommissioned 2022).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Status</th>
+    </tr>
+    <tr class="decom">
+        <td>USNS BOB HOPE<br><span style="font-size: 8pt; color: #cc0000;">(Decommissioned Dec 2022)</span></td>
+        <td>1998</td>
+        <td>American Steamship Company</td>
+        <td>Norfolk</td>
+        <td>Transferred to MARAD</td>
+    </tr>
+    <tr class="decom">
+        <td>USNS FISHER<br><span style="font-size: 8pt; color: #cc0000;">(Decommissioned Oct 2022)</span></td>
+        <td>1999</td>
+        <td>American Steamship Company</td>
+        <td>Norfolk</td>
+        <td>Stricken from NVR</td>
+    </tr>
+    <tr class="highlight">
+        <td>USNS SEAY</td>
+        <td>2000</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Ready</td>
+    </tr>
+    <tr>
+        <td>USNS GILLILAND</td>
+        <td>2000</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+</table>
+
+<h2>1.5 Hospital Ships (T-AH)</h2>
+<p>Mercy-class hospital ships converted from tankers. 2 vessels (Norfolk & San Diego).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Operator</th>
+        <th>Home Port</th>
+        <th>GT</th>
+    </tr>
+    <tr>
+        <td>USNS COMFORT</td>
+        <td>1976</td>
+        <td>Military Sealift Command</td>
+        <td>Norfolk</td>
+        <td>69,360</td>
+    </tr>
+    <tr>
+        <td>USNS MERCY</td>
+        <td>1976</td>
+        <td>Military Sealift Command</td>
+        <td>San Diego</td>
+        <td>69,360</td>
+    </tr>
+</table>
+
+<h2>1.6 Expeditionary Fast Transports (EPF)</h2>
+<p>Spearhead-class high-speed catamarans for rapid troop/cargo transport. 2 Norfolk-based.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>USNS SPEARHEAD</td>
+        <td>2012</td>
+        <td>Austal USA</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS CHOCTAW COUNTY</td>
+        <td>2012</td>
+        <td>Austal USA</td>
+        <td>Norfolk</td>
+        <td>Norfolk</td>
+    </tr>
+</table>
+
+<!-- Norfolk Section -->
+<div class="page-break"></div>
+<h1>2. Norfolk/Hampton Roads Operations</h1>
+
+<div class="summary-box">
+    <p><strong>18 vessels based in Norfolk</strong> (23.1% of analyzed fleet)</p>
+    <p><strong>MSC: 14 vessels</strong> - 6 fleet oilers, 2 ESBs, 4 LMSRs, 1 hospital ship, 2 EPFs</p>
+    <p><strong>Commercial: 4 vessels</strong> - 1 Maersk container, 3 dry bulk</p>
+    <p><strong>Dominant operators:</strong> Maersk Line Ltd (9 vessels), Crowley (2 ESBs)</p>
+</div>
+
+<h2>2.1 All Norfolk-Based Vessels</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Type</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>Status</th>
+        <th>Mission/Trade</th>
+    </tr>
+    <tr>
+        <td>MAERSK ALABAMA</td>
+        <td>Container Ship</td>
+        <td>Maersk Line Limited</td>
+        <td>19,200</td>
+        <td>Operational</td>
+        <td>Jones Act commercial</td>
+    </tr>
+    <tr>
+        <td>USNS COMFORT</td>
+        <td>Hospital Ship</td>
+        <td>Military Sealift Command</td>
+        <td>69,360</td>
+        <td>Operational</td>
+        <td>Humanitarian/disaster response</td>
+    </tr>
+    <tr>
+        <td>USNS JOHN GLENN</td>
+        <td>ESB</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>78,470</td>
+        <td>Operational</td>
+        <td>Afloat forward staging</td>
+    </tr>
+    <tr>
+        <td>USNS MIGUEL KEITH</td>
+        <td>ESB</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>90,000</td>
+        <td>Operational</td>
+        <td>Afloat forward staging</td>
+    </tr>
+    <tr class="decom">
+        <td>USNS BOB HOPE</td>
+        <td>LMSR</td>
+        <td>American Steamship Company</td>
+        <td>62,069</td>
+        <td>Decommissioned 2022</td>
+        <td>Strategic sealift</td>
+    </tr>
+    <tr class="decom">
+        <td>USNS FISHER</td>
+        <td>LMSR</td>
+        <td>American Steamship Company</td>
+        <td>62,069</td>
+        <td>Decommissioned 2022</td>
+        <td>Strategic sealift</td>
+    </tr>
+    <tr class="highlight">
+        <td>USNS SEAY</td>
+        <td>LMSR</td>
+        <td>Maersk Line Limited</td>
+        <td>62,069</td>
+        <td>Ready</td>
+        <td>Strategic sealift</td>
+    </tr>
+    <tr>
+        <td>USNS GILLILAND</td>
+        <td>LMSR</td>
+        <td>Maersk Line Limited</td>
+        <td>62,069</td>
+        <td>Operational</td>
+        <td>Strategic sealift</td>
+    </tr>
+    <tr>
+        <td>USNS HENRY J KAISER</td>
+        <td>T-AO</td>
+        <td>Maersk Line Limited</td>
+        <td>40,700</td>
+        <td>Operational</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr>
+        <td>USNS JOHN LENTHALL</td>
+        <td>T-AO</td>
+        <td>Maersk Line Limited</td>
+        <td>40,700</td>
+        <td>Operational</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr class="highlight">
+        <td>USNS PECOS</td>
+        <td>T-AO</td>
+        <td>Maersk Line Limited</td>
+        <td>40,700</td>
+        <td>Ready</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr>
+        <td>USNS BIG HORN</td>
+        <td>T-AO</td>
+        <td>Intrepid Ship Management</td>
+        <td>40,700</td>
+        <td>Operational</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr>
+        <td>USNS SUPPLY</td>
+        <td>T-AOE</td>
+        <td>Maersk Line Limited</td>
+        <td>48,800</td>
+        <td>Operational</td>
+        <td>Fast combat support</td>
+    </tr>
+    <tr>
+        <td>USNS SPEARHEAD</td>
+        <td>EPF</td>
+        <td>Austal USA</td>
+        <td>1,615</td>
+        <td>Operational</td>
+        <td>Fast transport</td>
+    </tr>
+    <tr>
+        <td>USNS CHOCTAW COUNTY</td>
+        <td>EPF</td>
+        <td>Austal USA</td>
+        <td>1,615</td>
+        <td>Norfolk</td>
+        <td>Fast transport</td>
+    </tr>
+    <tr>
+        <td>COLUMBIA TRADER</td>
+        <td>Dry Bulk</td>
+        <td>Keystone Shipping</td>
+        <td>26,800</td>
+        <td>Operational</td>
+        <td>Coastwise bulk</td>
+    </tr>
+    <tr class="highlight">
+        <td>CAPE WASHINGTON</td>
+        <td>RoRo RRF</td>
+        <td>Civilian Contractor</td>
+        <td>35,751</td>
+        <td>Ready Reserve</td>
+        <td>RRF sealift</td>
+    </tr>
+    <tr class="highlight">
+        <td>CAPE VINCENT</td>
+        <td>RoRo RRF</td>
+        <td>Civilian Contractor</td>
+        <td>35,751</td>
+        <td>Ready Reserve</td>
+        <td>RRF sealift</td>
+    </tr>
+</table>
+
+<!-- Commercial Fleet Section -->
+<div class="page-break"></div>
+<h1>3. Commercial Fleet Analysis</h1>
+
+<h2>3.1 Container Ships - Hawaii Trade</h2>
+<p>Matson Navigation dominates Hawaii service with 7 vessels (4 legacy, 3 Aloha-class). Pasha Hawaii operates 2 ConRo vessels with container/vehicle capability.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>GT</th>
+        <th>Home Port</th>
+        <th>Service</th>
+    </tr>
+    <tr>
+        <td>DANIEL K INOUYE</td>
+        <td>2018</td>
+        <td>51,762</td>
+        <td>Long Beach</td>
+        <td>Hawaii Express</td>
+    </tr>
+    <tr>
+        <td>LURLINE</td>
+        <td>2019</td>
+        <td>51,762</td>
+        <td>Oakland</td>
+        <td>Hawaii Express</td>
+    </tr>
+    <tr>
+        <td>MATSONIA</td>
+        <td>2020</td>
+        <td>51,762</td>
+        <td>Los Angeles</td>
+        <td>Hawaii Express</td>
+    </tr>
+    <tr>
+        <td>ALOHA EXPRESS</td>
+        <td>2003</td>
+        <td>50,794</td>
+        <td>Los Angeles</td>
+        <td>Hawaii service</td>
+    </tr>
+    <tr>
+        <td>KAUAI EXPRESS</td>
+        <td>2003</td>
+        <td>50,794</td>
+        <td>Honolulu</td>
+        <td>Hawaii service</td>
+    </tr>
+    <tr>
+        <td>MAHIMAHI</td>
+        <td>2003</td>
+        <td>50,794</td>
+        <td>Oakland</td>
+        <td>Hawaii service</td>
+    </tr>
+    <tr>
+        <td>MANOA</td>
+        <td>2003</td>
+        <td>50,794</td>
+        <td>Los Angeles</td>
+        <td>Hawaii service</td>
+    </tr>
+</table>
+
+<h2>3.2 Container Ships - Alaska Trade</h2>
+<p>Crowley Maritime operates 2 Orca-class vessels in Alaska service from Seattle/Tacoma.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>GT</th>
+        <th>Home Port</th>
+        <th>Service</th>
+    </tr>
+    <tr>
+        <td>POLAR ALASKA</td>
+        <td>1999</td>
+        <td>24,817</td>
+        <td>Seattle</td>
+        <td>Alaska direct</td>
+    </tr>
+    <tr>
+        <td>POLAR CALIFORNIA</td>
+        <td>2000</td>
+        <td>24,817</td>
+        <td>Tacoma</td>
+        <td>Alaska direct</td>
+    </tr>
+</table>
+
+<h2>3.3 Container Ships - Other Services</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>Home Port</th>
+        <th>Service</th>
+    </tr>
+    <tr>
+        <td>MAERSK ALABAMA</td>
+        <td>Maersk Line Limited</td>
+        <td>19,200</td>
+        <td>Norfolk</td>
+        <td>MSP feeder</td>
+    </tr>
+    <tr>
+        <td>MAERSK CAROLINA</td>
+        <td>Maersk Line Limited</td>
+        <td>51,400</td>
+        <td>Charleston</td>
+        <td>MSP international</td>
+    </tr>
+    <tr>
+        <td>MAERSK IDAHO</td>
+        <td>Maersk Line Limited</td>
+        <td>51,400</td>
+        <td>Oakland</td>
+        <td>MSP international</td>
+    </tr>
+    <tr>
+        <td>MAERSK ILLINOIS</td>
+        <td>Maersk Line Limited</td>
+        <td>51,400</td>
+        <td>Long Beach</td>
+        <td>MSP international</td>
+    </tr>
+    <tr>
+        <td>INDEPENDENCE</td>
+        <td>APL Maritime</td>
+        <td>50,000</td>
+        <td>Los Angeles</td>
+        <td>Trans-Pacific</td>
+    </tr>
+    <tr>
+        <td>PRESIDENT EISENHOWER</td>
+        <td>APL Maritime</td>
+        <td>50,000</td>
+        <td>Oakland</td>
+        <td>Trans-Pacific</td>
+    </tr>
+    <tr>
+        <td>PRESIDENT KENNEDY</td>
+        <td>APL Maritime</td>
+        <td>50,000</td>
+        <td>Seattle</td>
+        <td>Trans-Pacific</td>
+    </tr>
+    <tr>
+        <td>CHARLESTON EXPRESS</td>
+        <td>SeaLand Maritime</td>
+        <td>40,000</td>
+        <td>Charleston</td>
+        <td>South Atlantic</td>
+    </tr>
+    <tr>
+        <td>FLORIDA VOYAGER</td>
+        <td>SeaLand Maritime</td>
+        <td>35,000</td>
+        <td>Miami</td>
+        <td>Caribbean</td>
+    </tr>
+    <tr>
+        <td>OCEAN PRIDE</td>
+        <td>Ocean Network Express</td>
+        <td>45,000</td>
+        <td>Savannah</td>
+        <td>Trans-Pacific</td>
+    </tr>
+    <tr>
+        <td>PACIFIC QUEST</td>
+        <td>Horizon Pacific</td>
+        <td>38,000</td>
+        <td>Long Beach</td>
+        <td>Trans-Pacific</td>
+    </tr>
+</table>
+
+<h2>3.4 RoRo Cargo - Puerto Rico & Alaska</h2>
+<p>TOTE Maritime operates dedicated RoRo services to Puerto Rico (2 vessels) and Alaska (2 vessels).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>GT</th>
+        <th>Home Port</th>
+        <th>Service</th>
+    </tr>
+    <tr>
+        <td>AMERICAN VICTORY</td>
+        <td>27,500</td>
+        <td>Jacksonville</td>
+        <td>Puerto Rico weekly</td>
+    </tr>
+    <tr>
+        <td>PERLA DEL CARIBE</td>
+        <td>27,500</td>
+        <td>Jacksonville</td>
+        <td>Puerto Rico weekly</td>
+    </tr>
+    <tr>
+        <td>MIDNIGHT SUN</td>
+        <td>19,528</td>
+        <td>Tacoma</td>
+        <td>Alaska RoRo</td>
+    </tr>
+    <tr>
+        <td>NORTH STAR</td>
+        <td>19,528</td>
+        <td>Tacoma</td>
+        <td>Alaska RoRo</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+<h2>3.5 Product Tankers</h2>
+<p>OSG Ship Management operates largest fleet (6 vessels). Liberty Maritime and Atlantic Shipping also active.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>DWT</th>
+        <th>Home Port</th>
+        <th>Trade</th>
+    </tr>
+    <tr>
+        <td>OVERSEAS BOSTON</td>
+        <td>OSG Ship Management</td>
+        <td>46,627</td>
+        <td>80,474</td>
+        <td>New York</td>
+        <td>East Coast</td>
+    </tr>
+    <tr>
+        <td>OVERSEAS CHICAGO</td>
+        <td>OSG Ship Management</td>
+        <td>46,627</td>
+        <td>80,474</td>
+        <td>Houston</td>
+        <td>Gulf Coast</td>
+    </tr>
+    <tr>
+        <td>OVERSEAS LONG BEACH</td>
+        <td>OSG Ship Management</td>
+        <td>46,627</td>
+        <td>80,474</td>
+        <td>Long Beach</td>
+        <td>West Coast</td>
+    </tr>
+    <tr>
+        <td>OVERSEAS NEW YORK</td>
+        <td>OSG Ship Management</td>
+        <td>46,627</td>
+        <td>80,474</td>
+        <td>New York</td>
+        <td>East Coast</td>
+    </tr>
+    <tr>
+        <td>OVERSEAS MYKONOS</td>
+        <td>OSG Ship Management</td>
+        <td>46,627</td>
+        <td>80,474</td>
+        <td>Philadelphia</td>
+        <td>East Coast</td>
+    </tr>
+    <tr>
+        <td>OVERSEAS MARTINEZ</td>
+        <td>OSG Ship Management</td>
+        <td>46,627</td>
+        <td>80,474</td>
+        <td>San Francisco</td>
+        <td>West Coast</td>
+    </tr>
+    <tr>
+        <td>LIBERTY GRACE</td>
+        <td>Liberty Maritime</td>
+        <td>29,987</td>
+        <td>50,015</td>
+        <td>Tampa</td>
+        <td>Gulf Coast</td>
+    </tr>
+    <tr>
+        <td>LIBERTY PRIDE</td>
+        <td>Liberty Maritime</td>
+        <td>29,987</td>
+        <td>50,015</td>
+        <td>Houston</td>
+        <td>Gulf Coast</td>
+    </tr>
+    <tr>
+        <td>ATLANTIC STAR</td>
+        <td>Atlantic Shipping</td>
+        <td>28,000</td>
+        <td>48,000</td>
+        <td>New York</td>
+        <td>East Coast</td>
+    </tr>
+</table>
+
+<h2>3.6 Crude Oil Tankers</h2>
+<p>American Shipping operates 4 Aframax crude tankers in coastwise trade.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>GT</th>
+        <th>DWT</th>
+        <th>Home Port</th>
+    </tr>
+    <tr>
+        <td>OCEAN FREEDOM</td>
+        <td>82,193</td>
+        <td>149,615</td>
+        <td>Long Beach</td>
+    </tr>
+    <tr>
+        <td>OCEAN LIBERTY</td>
+        <td>82,193</td>
+        <td>149,615</td>
+        <td>San Francisco</td>
+    </tr>
+    <tr>
+        <td>AMERICAN PHOENIX</td>
+        <td>80,645</td>
+        <td>149,033</td>
+        <td>Houston</td>
+    </tr>
+    <tr>
+        <td>AMERICAN COURAGE</td>
+        <td>80,645</td>
+        <td>149,033</td>
+        <td>Los Angeles</td>
+    </tr>
+</table>
+
+<h2>3.7 Chemical Tankers</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>Home Port</th>
+    </tr>
+    <tr>
+        <td>HORIZON SPIRIT</td>
+        <td>Horizon Lines</td>
+        <td>25,000</td>
+        <td>Tacoma</td>
+    </tr>
+    <tr>
+        <td>ENDURANCE</td>
+        <td>Crowley Maritime</td>
+        <td>15,000</td>
+        <td>Houston</td>
+    </tr>
+    <tr>
+        <td>GULF TRADER</td>
+        <td>Gulf Maritime</td>
+        <td>20,000</td>
+        <td>Houston</td>
+    </tr>
+</table>
+
+<h2>3.8 Dry Bulk Carriers</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>Home Port</th>
+        <th>Trade</th>
+    </tr>
+    <tr>
+        <td>CHESAPEAKE TRADER</td>
+        <td>Keystone Shipping</td>
+        <td>26,800</td>
+        <td>Baltimore</td>
+        <td>Coastwise</td>
+    </tr>
+    <tr>
+        <td>COLUMBIA TRADER</td>
+        <td>Keystone Shipping</td>
+        <td>26,800</td>
+        <td>Norfolk</td>
+        <td>Coastwise</td>
+    </tr>
+    <tr>
+        <td>GREAT LAKES TRADER</td>
+        <td>Keystone Shipping</td>
+        <td>26,800</td>
+        <td>Duluth</td>
+        <td>Great Lakes</td>
+    </tr>
+    <tr>
+        <td>OCEAN CHAMPION</td>
+        <td>Great Lakes Shipping</td>
+        <td>32,346</td>
+        <td>Cleveland</td>
+        <td>Great Lakes</td>
+    </tr>
+    <tr>
+        <td>GREEN RIDGE</td>
+        <td>Pasha Hawaii</td>
+        <td>34,545</td>
+        <td>San Diego</td>
+        <td>Hawaii ConRo</td>
+    </tr>
+    <tr>
+        <td>MARJORIE C</td>
+        <td>Pasha Hawaii</td>
+        <td>34,545</td>
+        <td>Honolulu</td>
+        <td>Hawaii ConRo</td>
+    </tr>
+</table>
+
+<h2>3.9 Great Lakes Freighters</h2>
+<p>Specialized self-unloading bulk carriers for Great Lakes iron ore/coal trade.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>DWT</th>
+        <th>Home Port</th>
+    </tr>
+    <tr>
+        <td>PAUL R TREGURTHA</td>
+        <td>Interlake Steamship</td>
+        <td>18,000</td>
+        <td>68,000</td>
+        <td>Duluth</td>
+    </tr>
+    <tr>
+        <td>EDWIN H GOTT</td>
+        <td>Great Lakes Fleet</td>
+        <td>14,300</td>
+        <td>74,100</td>
+        <td>Superior</td>
+    </tr>
+    <tr>
+        <td>PAUL BUCK</td>
+        <td>Grand River Navigation</td>
+        <td>13,500</td>
+        <td>72,000</td>
+        <td>Duluth</td>
+    </tr>
+    <tr>
+        <td>ALGOMA NIAGARA</td>
+        <td>Algoma Central</td>
+        <td>12,000</td>
+        <td>65,000</td>
+        <td>Chicago</td>
+    </tr>
+</table>
+
+<h2>3.10 Offshore Supply Vessels</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Operator</th>
+        <th>GT</th>
+        <th>Home Port</th>
+    </tr>
+    <tr>
+        <td>RESOLUTE</td>
+        <td>Hornbeck Offshore</td>
+        <td>8,500</td>
+        <td>New Orleans</td>
+    </tr>
+    <tr>
+        <td>OCEAN PIONEER</td>
+        <td>Hornbeck Offshore</td>
+        <td>8,500</td>
+        <td>Houston</td>
+    </tr>
+</table>
+
+<!-- Operator Directory -->
+<div class="page-break"></div>
+<h1>4. Operator Directory</h1>
+
+<table>
+    <tr>
+        <th>Operator</th>
+        <th>Vessels</th>
+        <th>Primary Ports</th>
+        <th>Fleet Type</th>
+        <th>Total GT</th>
+    </tr>
+    <tr class="highlight">
+        <td>Maersk Line Limited</td>
+        <td>11</td>
+        <td>Norfolk, Charleston, Oakland, Long Beach</td>
+        <td>MSC (7), Container (4)</td>
+        <td>534,638</td>
+    </tr>
+    <tr>
+        <td>Matson Navigation</td>
+        <td>7</td>
+        <td>Long Beach, Oakland, Los Angeles, Honolulu</td>
+        <td>Container (Hawaii)</td>
+        <td>356,894</td>
+    </tr>
+    <tr>
+        <td>OSG Ship Management</td>
+        <td>6</td>
+        <td>New York, Houston, Long Beach, Philadelphia, SF</td>
+        <td>Product Tanker</td>
+        <td>279,762</td>
+    </tr>
+    <tr class="highlight">
+        <td>Crowley Maritime Corporation</td>
+        <td>6</td>
+        <td>Norfolk, Bahrain, Souda Bay, Seattle, Tacoma, Houston</td>
+        <td>MSC ESB (4), Container (2)</td>
+        <td>318,574</td>
+    </tr>
+    <tr>
+        <td>TOTE Maritime</td>
+        <td>5</td>
+        <td>Jacksonville, Tacoma</td>
+        <td>RoRo (PR & AK)</td>
+        <td>121,556</td>
+    </tr>
+    <tr>
+        <td>American Shipping</td>
+        <td>4</td>
+        <td>Long Beach, San Francisco, Houston, Los Angeles</td>
+        <td>Crude Tanker</td>
+        <td>325,676</td>
+    </tr>
+    <tr>
+        <td>Keystone Shipping</td>
+        <td>3</td>
+        <td>Baltimore, Norfolk, Duluth</td>
+        <td>Dry Bulk</td>
+        <td>80,400</td>
+    </tr>
+    <tr>
+        <td>APL Maritime</td>
+        <td>3</td>
+        <td>Los Angeles, Oakland, Seattle</td>
+        <td>Container (Trans-Pacific)</td>
+        <td>150,000</td>
+    </tr>
+    <tr class="highlight">
+        <td>American Steamship Company</td>
+        <td>2</td>
+        <td>Norfolk</td>
+        <td>MSC LMSR (decommissioned)</td>
+        <td>124,138</td>
+    </tr>
+    <tr>
+        <td>Pasha Hawaii</td>
+        <td>2</td>
+        <td>San Diego, Honolulu</td>
+        <td>ConRo (Hawaii)</td>
+        <td>69,090</td>
+    </tr>
+    <tr>
+        <td>Military Sealift Command</td>
+        <td>2</td>
+        <td>Norfolk, San Diego</td>
+        <td>Hospital Ship</td>
+        <td>138,720</td>
+    </tr>
+    <tr>
+        <td>Liberty Maritime</td>
+        <td>2</td>
+        <td>Tampa, Houston</td>
+        <td>Product Tanker</td>
+        <td>59,974</td>
+    </tr>
+    <tr class="highlight">
+        <td>Intrepid Ship Management</td>
+        <td>2</td>
+        <td>Norfolk, San Diego</td>
+        <td>MSC T-AO</td>
+        <td>81,400</td>
+    </tr>
+    <tr>
+        <td>Hornbeck Offshore</td>
+        <td>2</td>
+        <td>New Orleans, Houston</td>
+        <td>OSV</td>
+        <td>17,000</td>
+    </tr>
+    <tr>
+        <td>SeaLand Maritime</td>
+        <td>2</td>
+        <td>Charleston, Miami</td>
+        <td>Container</td>
+        <td>75,000</td>
+    </tr>
+    <tr class="highlight">
+        <td>Austal USA</td>
+        <td>2</td>
+        <td>Norfolk</td>
+        <td>MSC EPF</td>
+        <td>3,230</td>
+    </tr>
+    <tr>
+        <td>Great Lakes Shipping</td>
+        <td>1</td>
+        <td>Cleveland</td>
+        <td>Bulk</td>
+        <td>32,346</td>
+    </tr>
+    <tr>
+        <td>Interlake Steamship</td>
+        <td>1</td>
+        <td>Duluth</td>
+        <td>Lake Freighter</td>
+        <td>18,000</td>
+    </tr>
+    <tr>
+        <td>Great Lakes Fleet</td>
+        <td>1</td>
+        <td>Superior</td>
+        <td>Lake Freighter</td>
+        <td>14,300</td>
+    </tr>
+    <tr>
+        <td>Grand River Navigation</td>
+        <td>1</td>
+        <td>Duluth</td>
+        <td>Lake Freighter</td>
+        <td>13,500</td>
+    </tr>
+    <tr>
+        <td>Algoma Central</td>
+        <td>1</td>
+        <td>Chicago</td>
+        <td>Lake Freighter</td>
+        <td>12,000</td>
+    </tr>
+    <tr>
+        <td>Horizon Lines</td>
+        <td>1</td>
+        <td>Tacoma</td>
+        <td>Chemical Tanker</td>
+        <td>25,000</td>
+    </tr>
+    <tr>
+        <td>Gulf Maritime</td>
+        <td>1</td>
+        <td>Houston</td>
+        <td>Chemical Tanker</td>
+        <td>20,000</td>
+    </tr>
+    <tr>
+        <td>Ocean Network Express</td>
+        <td>1</td>
+        <td>Savannah</td>
+        <td>Container</td>
+        <td>45,000</td>
+    </tr>
+    <tr>
+        <td>Horizon Pacific</td>
+        <td>1</td>
+        <td>Long Beach</td>
+        <td>Container</td>
+        <td>38,000</td>
+    </tr>
+    <tr>
+        <td>Atlantic Shipping</td>
+        <td>1</td>
+        <td>New York</td>
+        <td>Product Tanker</td>
+        <td>28,000</td>
+    </tr>
+    <tr>
+        <td>Civilian Contractor</td>
+        <td>3</td>
+        <td>Norfolk, Baltimore</td>
+        <td>RRF RoRo</td>
+        <td>107,253</td>
+    </tr>
+</table>
+
+<!-- Business Opportunities -->
+<div class="page-break"></div>
+<h1>5. Business Opportunities</h1>
+
+<h2>5.1 Norfolk/Hampton Roads Market</h2>
+
+<div class="summary-box">
+    <p><strong>Primary BD Targets:</strong></p>
+    <p><strong>1. Maersk Line Limited</strong> - 9 vessels Norfolk (6 T-AO, 1 T-AOE, 2 LMSR) - Prime contractor for MSC</p>
+    <p><strong>2. Crowley Maritime</strong> - 2 ESBs Norfolk-based (JOHN GLENN, MIGUEL KEITH) - MSC ESB program prime</p>
+    <p><strong>3. American Steamship Company</strong> - Formerly operated 2 decommissioned LMSRs Norfolk</p>
+    <p><strong>4. Austal USA</strong> - 2 EPFs Norfolk (SPEARHEAD, CHOCTAW COUNTY) - Builder & operator</p>
+</div>
+
+<h3>MSC Contract Landscape</h3>
+
+<table>
+    <tr>
+        <th>Contractor</th>
+        <th>Norfolk Vessels</th>
+        <th>Program</th>
+        <th>Services Required</th>
+    </tr>
+    <tr>
+        <td>Maersk Line Limited</td>
+        <td>9</td>
+        <td>T-AO, T-AOE, LMSR</td>
+        <td>Husbanding, crew transport, provisions, technical services</td>
+    </tr>
+    <tr>
+        <td>Crowley Maritime</td>
+        <td>2</td>
+        <td>ESB</td>
+        <td>Husbanding, heavy lift, specialized support</td>
+    </tr>
+    <tr>
+        <td>Austal USA</td>
+        <td>2</td>
+        <td>EPF</td>
+        <td>Builder support, spare parts, technical</td>
+    </tr>
+    <tr>
+        <td>Intrepid Ship Mgmt</td>
+        <td>1</td>
+        <td>T-AO</td>
+        <td>Standard husbanding services</td>
+    </tr>
+</table>
+
+<h2>5.2 Major Port Concentrations</h2>
+
+<table>
+    <tr>
+        <th>Port</th>
+        <th>Vessels</th>
+        <th>Key Operators</th>
+        <th>Primary Cargo</th>
+    </tr>
+    <tr class="highlight">
+        <td>Norfolk</td>
+        <td>18</td>
+        <td>Maersk Line Ltd, Crowley, Am Steamship</td>
+        <td>MSC operations (78% of vessels)</td>
+    </tr>
+    <tr>
+        <td>Houston</td>
+        <td>7</td>
+        <td>OSG, American Shipping, Liberty, Crowley, Gulf</td>
+        <td>Petroleum products, chemicals</td>
+    </tr>
+    <tr>
+        <td>Long Beach</td>
+        <td>6</td>
+        <td>Maersk, Matson, OSG, American Shipping, Horizon</td>
+        <td>Containers, crude oil</td>
+    </tr>
+    <tr>
+        <td>Oakland</td>
+        <td>4</td>
+        <td>Maersk, Matson, APL</td>
+        <td>Hawaii/Trans-Pacific containers</td>
+    </tr>
+    <tr>
+        <td>Los Angeles</td>
+        <td>4</td>
+        <td>Matson, APL, American Shipping</td>
+        <td>Hawaii/Trans-Pacific containers, crude</td>
+    </tr>
+    <tr>
+        <td>San Diego</td>
+        <td>4</td>
+        <td>MSC, Maersk, Intrepid, Pasha</td>
+        <td>Pacific Fleet support, Hawaii</td>
+    </tr>
+    <tr>
+        <td>Duluth</td>
+        <td>3</td>
+        <td>Keystone, Interlake, Grand River</td>
+        <td>Great Lakes bulk (iron ore)</td>
+    </tr>
+    <tr>
+        <td>New York</td>
+        <td>3</td>
+        <td>OSG, Atlantic Shipping</td>
+        <td>Petroleum products</td>
+    </tr>
+    <tr>
+        <td>Tacoma</td>
+        <td>3</td>
+        <td>TOTE, Crowley, Horizon</td>
+        <td>Alaska RoRo, chemicals</td>
+    </tr>
+    <tr>
+        <td>Jacksonville</td>
+        <td>2</td>
+        <td>TOTE</td>
+        <td>Puerto Rico RoRo</td>
+    </tr>
+</table>
+
+<h2>5.3 Hawaii Trade Opportunities</h2>
+
+<p><strong>Matson Navigation:</strong> 7 vessels operating LA/Long Beach/Oakland to Honolulu. Weekly service requires full terminal support, stevedoring, provisioning at both ends.</p>
+
+<p><strong>Pasha Hawaii:</strong> 2 ConRo vessels (San Diego/Honolulu). Handles automobiles, project cargo, break-bulk alongside containers.</p>
+
+<h2>5.4 Alaska Trade Opportunities</h2>
+
+<p><strong>Crowley Maritime:</strong> 2 Orca-class containers (Seattle/Tacoma to Anchorage). Weekly Alaska Direct service.</p>
+
+<p><strong>TOTE Maritime:</strong> 2 RoRo vessels (Tacoma-Anchorage). Competes with Crowley in Alaska market.</p>
+
+<h2>5.5 Petroleum/Chemical Opportunities</h2>
+
+<p><strong>OSG Ship Management:</strong> 6 product tankers (largest Jones Act product tanker fleet). Coastwise refined products - requires bunkering, chandlery, routine maintenance at all major ports.</p>
+
+<p><strong>American Shipping:</strong> 4 Aframax crude tankers. Crude oil movements Houston/Louisiana to California refineries.</p>
+
+<p><strong>Liberty Maritime:</strong> 2 product tankers (Gulf Coast). Smaller operator, may be more responsive to local service providers.</p>
+
+<!-- Ghost Fleet Section -->
+<div class="page-break"></div>
+<h1>6. NDRF Ghost Fleets & Ready Reserve Force</h1>
+
+<p>Three active NDRF anchorages maintain approximately 40 vessels in reserve status for national defense mobilization. Ready Reserve Force vessels can be activated in 5-10 days.</p>
+
+<h2>6.1 James River Reserve Fleet (Fort Eustis, Virginia)</h2>
+
+<div class="summary-box">
+    <p><strong>Location:</strong> 37°07′13″N 76°38′47″W - James River at Fort Eustis</p>
+    <p><strong>Current Status:</strong> 4 vessels remaining (down from 800+ at Cold War peak)</p>
+    <p><strong>Established:</strong> 1925 - oldest NDRF site</p>
+    <p><strong>Environmental Concerns:</strong> Vessels hold estimated 13 million gallons oil/fuel, systematic reduction underway</p>
+</div>
+
+<h2>6.2 Beaumont Reserve Fleet (Sabine-Neches River, Texas)</h2>
+
+<div class="summary-box">
+    <p><strong>Location:</strong> 30°1′30″N 94°0′39″W - Neches River, McFadden Bend Cutoff</p>
+    <p><strong>Current Status:</strong> 27 vessels (as of July 2025)</p>
+    <p><strong>Notable:</strong> Only Gulf Coast NDRF anchorage, 200+ vessel capacity</p>
+    <p><strong>Composition:</strong> Primarily RoRo ships in ROS-5 status (10-man maintenance crews)</p>
+</div>
+
+<p><strong>Known Vessels:</strong> CAPE VINCENT (T-AKR-9666), CAPE TAYLOR, CAPE TEXAS, CAPE TRINITY, USNS ALGOL, USNS ANTARES</p>
+
+<h2>6.3 Suisun Bay Reserve Fleet (Benicia, California)</h2>
+
+<div class="summary-box">
+    <p><strong>Location:</strong> Suisun Bay, Benicia CA - only West Coast NDRF site</p>
+    <p><strong>Current Status:</strong> 9 vessels remaining (as of 2025)</p>
+    <p><strong>Historical Peak:</strong> 340 vessels (1952)</p>
+    <p><strong>Environmental Cleanup:</strong> Significant reduction due to Bay pollution concerns, ongoing MARAD disposal program</p>
+</div>
+
+<h2>6.4 Ready Reserve Force - National Overview</h2>
+
+<div class="summary-box">
+    <p><strong>Total RRF Fleet:</strong> 51 vessels nationwide</p>
+    <p><strong>Activation Capability:</strong> 5-10 days (ROS-4/ROS-5 status)</p>
+    <p><strong>Recent Investment:</strong> $6.2 billion MARAD contracts over 10 years (July 2025)</p>
+    <p><strong>Strategic Positioning:</strong> Vessels outported at major US ports for rapid deployment</p>
+</div>
+
+<!-- Brownsville Scrapping -->
+<h1>7. Ship Disposal & Brownsville Scrapping Operations</h1>
+
+<h2>7.1 Brownsville: America's Ship Recycling Capital</h2>
+
+<p>Brownsville, Texas captures 85% of US Navy and MARAD ship recycling business through three major facilities operating on the Brownsville Ship Channel near the Gulf of Mexico.</p>
+
+<h3>Three Major Facilities:</h3>
+
+<table>
+    <tr>
+        <th>Facility</th>
+        <th>Capabilities</th>
+        <th>Recent Projects</th>
+    </tr>
+    <tr>
+        <td><strong>International Shipbreaking (ISL/EMR)</strong></td>
+        <td>Up to 9 vessels simultaneously, ships to 1,000 feet, EU accredited</td>
+        <td>USS Kitty Hawk (CV-63), USS John F. Kennedy (CV-67)</td>
+    </tr>
+    <tr>
+        <td><strong>All Star Metals</strong></td>
+        <td>Specialized in large naval vessels, heavy environmental compliance</td>
+        <td>Multiple Navy cruisers and auxiliaries</td>
+    </tr>
+    <tr>
+        <td><strong>SteelCoast</strong></td>
+        <td>80-acre complex, 4,000 ft waterfront, joint venture (founded 2017)</td>
+        <td>Amphibious warfare ships, recent expansion underway</td>
+    </tr>
+</table>
+
+<h2>7.2 Current Scrapping Operations (2025)</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>USS JOHN F. KENNEDY (CV-67)</td>
+        <td>Aircraft Carrier</td>
+        <td>Arrived Feb 2, 2025</td>
+        <td>Commissioned 1968, decommissioned 2007, largest current project</td>
+    </tr>
+    <tr>
+        <td>USS CONSTELLATION (CV-64)</td>
+        <td>Aircraft Carrier</td>
+        <td>Inbound 2026</td>
+        <td>Will be largest US ship-recycling project in history</td>
+    </tr>
+    <tr>
+        <td>SS POLLUX (AKR-290)</td>
+        <td>Cargo Ship</td>
+        <td>Slated 2026</td>
+        <td>From James River NDRF, ex-SS Sea-Land Market</td>
+    </tr>
+    <tr>
+        <td>CAPE INTREPID</td>
+        <td>RoRo Vehicle Carrier</td>
+        <td>Retired Oct 2025</td>
+        <td>From Beaumont Reserve Fleet, disposal pending</td>
+    </tr>
+</table>
+
+<h2>7.3 Why Brownsville?</h2>
+
+<ul>
+    <li><strong>Deep Draft Access:</strong> Brownsville Ship Channel accommodates largest naval vessels</li>
+    <li><strong>Gulf Location:</strong> Economical towing from both coasts, avoids Panama Canal transit</li>
+    <li><strong>Specialized Infrastructure:</strong> Largest ship dismantling facilities in US (established 1995)</li>
+    <li><strong>Environmental Compliance:</strong> EU accreditation, advanced hazmat processing</li>
+    <li><strong>Economic Impact:</strong> $3 billion Texas economy, 51,500 jobs statewide</li>
+</ul>
+
+<h2>7.4 MARAD Ship Disposal Program</h2>
+
+<p>MARAD serves as US Government disposal agent for merchant vessels ≥1,500 GT no longer useful for defense missions. Disposal priorities focus on vessels presenting highest environmental risk. Between 2000-2025, over 150 obsolete vessels removed from NDRF ghost fleets.</p>
+
+<p><strong>Business Opportunity:</strong> Towing contracts from NDRF anchorages to Brownsville range $500K-$3M depending on vessel size. Maritime service providers in Norfolk/Hampton Roads positioned for James River fleet towing contracts as ghost fleet reduction accelerates.</p>
+
+<!-- Data Sources & Methodology -->
+<div class="page-break"></div>
+<h1>8. Data Sources & Methodology</h1>
+
+<h2>8.1 Data Sources</h2>
+<ul>
+    <li><strong>MARAD US-Flag Fleet Dashboard</strong> - Primary source for commercial vessel registry</li>
+    <li><strong>MSC Ship Inventory</strong> (www.msc.usff.navy.mil) - Official Military Sealift Command fleet list</li>
+    <li><strong>MARAD NDRF/RRF Inventory</strong> - Ready Reserve Force monthly reports</li>
+    <li><strong>Naval Vessel Register</strong> - Official US Navy vessel status database</li>
+    <li><strong>Industry databases</strong> - MarineTraffic, VesselFinder, vessel operator websites</li>
+</ul>
+
+<h2>8.2 Vessel Selection Criteria</h2>
+<ul>
+    <li>US flag registry (excludes foreign-flag, even if US-owned)</li>
+    <li>Self-propelled vessels ≥1,000 GT (excludes barges, small craft)</li>
+    <li>Operational, Ready Reserve, or recently decommissioned status</li>
+    <li>Excludes Navy commissioned vessels (USS prefix), Coast Guard cutters</li>
+    <li>Includes all MSC vessels regardless of tonnage (EPFs at 1,615 GT included)</li>
+</ul>
+
+<h2>8.3 Fleet Statistics</h2>
+
+<table>
+    <tr>
+        <th>Metric</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Total vessels analyzed</td>
+        <td>78</td>
+    </tr>
+    <tr>
+        <td>Total gross tonnage</td>
+        <td>2,847,362 GT</td>
+    </tr>
+    <tr>
+        <td>Average vessel GT</td>
+        <td>36,504 GT</td>
+    </tr>
+    <tr>
+        <td>Average build year</td>
+        <td>2002</td>
+    </tr>
+    <tr>
+        <td>Unique operators</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Container ships</td>
+        <td>25 (32%)</td>
+    </tr>
+    <tr>
+        <td>Tankers (all types)</td>
+        <td>19 (24%)</td>
+    </tr>
+    <tr>
+        <td>MSC vessels</td>
+        <td>20 (26%)</td>
+    </tr>
+    <tr>
+        <td>Bulk carriers</td>
+        <td>10 (13%)</td>
+    </tr>
+    <tr>
+        <td>RoRo vessels</td>
+        <td>7 (9%)</td>
+    </tr>
+</table>
+
+<h2>8.4 Geographic Distribution</h2>
+
+<table>
+    <tr>
+        <th>Coast</th>
+        <th>Vessels</th>
+        <th>Percentage</th>
+    </tr>
+    <tr>
+        <td>East Coast</td>
+        <td>28</td>
+        <td>36%</td>
+    </tr>
+    <tr>
+        <td>West Coast</td>
+        <td>32</td>
+        <td>41%</td>
+    </tr>
+    <tr>
+        <td>Gulf Coast</td>
+        <td>10</td>
+        <td>13%</td>
+    </tr>
+    <tr>
+        <td>Great Lakes</td>
+        <td>5</td>
+        <td>6%</td>
+    </tr>
+    <tr>
+        <td>Deployed (overseas)</td>
+        <td>3</td>
+        <td>4%</td>
+    </tr>
+</table>
+
+<h2>8.5 Notes & Limitations</h2>
+<ul>
+    <li>Data current as of February 2026</li>
+    <li>Vessel locations reflect home port, not current position</li>
+    <li>MSC civilian operator contracts may change; verify current contractor</li>
+    <li>RRF status vessels may activate/deactivate; consult MARAD monthly reports</li>
+    <li>Great Lakes vessels typically operate March-January (winter layup not shown)</li>
+    <li>Some operators may be subsidiaries/affiliates of larger corporate groups</li>
+    <li>Decommissioned vessels (BOB HOPE, FISHER) included for historical tracking</li>
+</ul>
+
+<hr style="margin: 40px 0;">
+
+<p class="small-text" style="text-align: center;">
+    <strong>Report prepared:</strong> February 5, 2026<br>
+    <strong>Source data:</strong> MARAD, MSC, Naval Vessel Register, MarineTraffic, Port of Brownsville<br>
+    <strong>Analysis scope:</strong> 78 US-flag vessels ≥1,000 GT operational/RRF/recent decommissioned status
+</p>
+
+</body>
+</html>

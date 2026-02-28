@@ -1,0 +1,57 @@
+{
+  "admin": {
+    "username": "admin",
+    "email": "admin@bargeforecasting.com",
+    "password_hash": "944e152402935c87f68a8055b39c6cdd$7ea5c3224416eff6a1ecc682fd9d7370f98d070ccbda71638c4991fb1929b74e",
+    "role": "admin",
+    "created_at": "2026-02-03T23:35:12.710333",
+    "last_login": "2026-02-03T23:35:12.767718",
+    "is_active": true,
+    "permissions": [
+      "view_forecasts",
+      "view_dashboard",
+      "view_reports",
+      "run_models",
+      "export_data",
+      "create_scenarios",
+      "manage_users",
+      "update_data",
+      "configure_system",
+      "view_logs"
+    ]
+  },
+  "analyst1": {
+    "username": "analyst1",
+    "email": "analyst@bargeforecasting.com",
+    "password_hash": "357a03aa7a56dd4461636ab2f92658b9$fe29ecd6e6d2363c98016f78058a787cc4245c09b3a1f11047637bb05f94e771",
+    "role": "analyst",
+    "created_at": "2026-02-03T23:35:12.739738",
+    "last_login": null,
+    "is_active": true,
+    "permissions": [
+      "view_forecasts",
+      "view_dashboard",
+      "view_reports",
+      "run_models",
+      "export_data",
+      "create_scenarios"
+    ]
+  },
+  "demo_analyst": {
+    "username": "demo_analyst",
+    "email": "analyst@demo.com",
+    "password_hash": "f45cbe36e7a7e3115906a95497c2811d$c472cff6a435c90145962f4fa0a147e397df85d21b8fad1a3974a2a9b69a70b5",
+    "role": "analyst",
+    "created_at": "2026-02-03T23:37:37.625967",
+    "last_login": "2026-02-03T23:37:37.663113",
+    "is_active": true,
+    "permissions": [
+      "view_forecasts",
+      "view_dashboard",
+      "view_reports",
+      "run_models",
+      "export_data",
+      "create_scenarios"
+    ]
+  }
+}

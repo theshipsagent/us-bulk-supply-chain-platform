@@ -1,0 +1,204 @@
+====================================================================================================
+ZONE REPORT FILE ANALYSIS
+====================================================================================================
+
+
+====================================================================================================
+YEAR: 2018
+====================================================================================================
+Total files: 1
+
+Zone distribution:
+  TERMINAL            : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-18 - 12-31-18.csv                TERMINAL                 778.1K
+
+====================================================================================================
+YEAR: 2019
+====================================================================================================
+Total files: 4
+
+Zone distribution:
+  ANCHORAGE           : 1 file(s) [OK]
+  CROSS IN            : 1 file(s) [OK]
+  CROSS OUT           : 1 file(s) [OK]
+  TERMINAL            : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-19 - 12-31-19.csv                ANCHORAGE               1503.0K
+Zone Report 01-01-19 - 12-31-19 (1).csv            CROSS IN                 401.3K
+Zone Report 01-01-19 - 12-31-19 (2).csv            CROSS OUT                401.3K
+Zone Report 01-01-19 - 12-31-19 (3).csv            TERMINAL                1275.4K
+
+====================================================================================================
+YEAR: 2020
+====================================================================================================
+Total files: 4
+
+Zone distribution:
+  ANCHORAGE           : 1 file(s) [OK]
+  CROSS IN            : 1 file(s) [OK]
+  CROSS OUT           : 1 file(s) [OK]
+  TERMINAL            : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-20 - 12-31-20 (3).csv            ANCHORAGE               1255.3K
+Zone Report 01-01-20 - 12-31-20 (2).csv            CROSS IN                 384.2K
+Zone Report 01-01-20 - 12-31-20 (1).csv            CROSS OUT                399.5K
+Zone Report 01-01-20 - 12-31-20.csv                TERMINAL                1122.6K
+
+====================================================================================================
+YEAR: 2021
+====================================================================================================
+Total files: 3
+
+Zone distribution:
+  CROSS OUT           : 1 file(s) [OK]
+  TERMINAL            : 2 file(s) [WARNING] DUPLICATE (2 files)
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-21 - 12-31-21.csv                CROSS OUT                385.7K
+Zone Report 01-01-21 - 12-31-21 (1).csv            TERMINAL                1112.9K
+Zone Report 01-01-21 - 12-31-21 (2).csv            TERMINAL                1112.9K
+
+[WARNING] EXACT DUPLICATE FILES DETECTED (same content):
+  Hash: 7140ed142688...
+    - Zone Report 01-01-21 - 12-31-21 (1).csv
+    - Zone Report 01-01-21 - 12-31-21 (2).csv
+
+====================================================================================================
+YEAR: 2022
+====================================================================================================
+Total files: 4
+
+Zone distribution:
+  ANCHORAGE           : 1 file(s) [OK]
+  CROSS IN            : 1 file(s) [OK]
+  CROSS OUT           : 2 file(s) [WARNING] DUPLICATE (2 files)
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-22 - 12-31-22.csv                ANCHORAGE               1219.2K
+Zone Report 01-01-22 - 12-31-22 (1).csv            CROSS IN                 385.4K
+Zone Report 01-01-22 - 12-31-22 (2).csv            CROSS OUT                402.4K
+Zone Report 01-01-22 - 12-31-22 (3).csv            CROSS OUT                402.4K
+
+[WARNING] EXACT DUPLICATE FILES DETECTED (same content):
+  Hash: f850030a4552...
+    - Zone Report 01-01-22 - 12-31-22 (2).csv
+    - Zone Report 01-01-22 - 12-31-22 (3).csv
+
+====================================================================================================
+YEAR: 2023
+====================================================================================================
+Total files: 4
+
+Zone distribution:
+  ANCHORAGE           : 2 file(s) [WARNING] DUPLICATE (2 files)
+  CROSS IN            : 1 file(s) [OK]
+  CROSS OUT           : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-23 - 12-31-23 (1).csv            ANCHORAGE               1181.7K
+Zone Report 01-01-23 - 12-31-23 (3).csv            ANCHORAGE               1187.2K
+Zone Report 01-01-23 - 12-31-23 (2).csv            CROSS IN                 379.7K
+Zone Report 01-01-23 - 12-31-23.csv                CROSS OUT                392.2K
+
+====================================================================================================
+YEAR: 2024
+====================================================================================================
+Total files: 5
+
+Zone distribution:
+  ANCHORAGE           : 1 file(s) [OK]
+  CROSS IN            : 1 file(s) [OK]
+  CROSS OUT           : 2 file(s) [WARNING] DUPLICATE (2 files)
+  TERMINAL            : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-24 - 12-31-24 (1).csv            ANCHORAGE               1245.1K
+Zone Report 01-01-24 - 12-31-24.csv                CROSS IN                 391.5K
+Zone Report 01-01-24 - 12-31-24 (2).csv            CROSS OUT                407.4K
+Zone Report 01-01-24 - 12-31-24 (4).csv            CROSS OUT                407.4K
+Zone Report 01-01-24 - 12-31-24 (3).csv            TERMINAL                1246.6K
+
+[WARNING] EXACT DUPLICATE FILES DETECTED (same content):
+  Hash: d343e0316830...
+    - Zone Report 01-01-24 - 12-31-24 (2).csv
+    - Zone Report 01-01-24 - 12-31-24 (4).csv
+
+====================================================================================================
+YEAR: 2025
+====================================================================================================
+Total files: 5
+
+Zone distribution:
+  ANCHORAGE           : 1 file(s) [OK]
+  CROSS IN            : 2 file(s) [WARNING] DUPLICATE (2 files)
+  CROSS OUT           : 1 file(s) [OK]
+  TERMINAL            : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-25 - 12-31-25 (3).csv            ANCHORAGE               1181.5K
+Zone Report 01-01-25 - 12-31-25 (2).csv            CROSS IN                 401.8K
+Zone Report 01-01-25 - 12-31-25 (4).csv            CROSS IN                 402.0K
+Zone Report 01-01-25 - 12-31-25 (1).csv            CROSS OUT                417.7K
+Zone Report 01-01-25 - 12-31-25.csv                TERMINAL                1175.7K
+
+====================================================================================================
+YEAR: 2026
+====================================================================================================
+Total files: 4
+
+Zone distribution:
+  ANCHORAGE           : 1 file(s) [OK]
+  CROSS IN            : 1 file(s) [OK]
+  CROSS OUT           : 1 file(s) [OK]
+  TERMINAL            : 1 file(s) [OK]
+
+File details:
+Filename                                           Zone                       Size
+----------------------------------------------------------------------------------------------------
+Zone Report 01-01-26 - 01-28-26 (3).csv            ANCHORAGE                 89.6K
+Zone Report 01-01-26 - 01-28-26 (2).csv            CROSS IN                  31.2K
+Zone Report 01-01-26 - 01-28-26 (1).csv            CROSS OUT                 32.4K
+Zone Report 01-01-26 - 01-28-26.csv                TERMINAL                 106.8K
+
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+
+[WARNING] ISSUES FOUND:
+  2018: Has 1 files (expected 4)
+  2018: Missing zones: {'CROSS IN', 'ANCHORAGE', 'CROSS OUT'}
+  2021: Has 3 files (expected 4)
+  2021: Missing zones: {'CROSS IN', 'ANCHORAGE'}
+  2021: Duplicate TERMINAL (2 files)
+  2022: Missing zones: {'TERMINAL'}
+  2022: Duplicate CROSS OUT (2 files)
+  2023: Missing zones: {'TERMINAL'}
+  2023: Duplicate ANCHORAGE (2 files)
+  2024: Has 5 files (expected 4)
+  2024: Duplicate CROSS OUT (2 files)
+  2025: Has 5 files (expected 4)
+  2025: Duplicate CROSS IN (2 files)
+
+====================================================================================================
+

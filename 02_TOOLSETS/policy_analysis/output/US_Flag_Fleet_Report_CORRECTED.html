@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Flag Fleet Analysis - 2026 (Verified)</title>
+    <style>
+        @media print {
+            @page {
+                size: letter;
+                margin: 0.75in;
+            }
+            body {
+                font-size: 10pt;
+            }
+            h1 {
+                font-size: 18pt;
+                page-break-after: avoid;
+            }
+            h2 {
+                font-size: 14pt;
+                page-break-after: avoid;
+                margin-top: 24pt;
+            }
+            h3 {
+                font-size: 12pt;
+                page-break-after: avoid;
+                margin-top: 16pt;
+            }
+            table {
+                page-break-inside: avoid;
+                font-size: 9pt;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #003366;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #6699cc;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #004080;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e6f2ff;
+        }
+
+        .summary-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #003366;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .summary-box p {
+            margin: 8px 0;
+        }
+
+        .decommissioned {
+            background-color: #fff0f0;
+            color: #cc0000;
+        }
+
+        .rrr {
+            background-color: #ffffcc;
+        }
+
+        .ghost-fleet {
+            background-color: #f5f5f5;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid: #ff6600;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .cover {
+            text-align: center;
+            padding: 100px 20px;
+            page-break-after: always;
+        }
+
+        .cover h1 {
+            font-size: 32pt;
+            margin-bottom: 40px;
+            border: none;
+        }
+
+        .cover .subtitle {
+            font-size: 16pt;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .cover .date {
+            font-size: 14pt;
+            color: #999;
+            margin-top: 40px;
+        }
+
+        .metric {
+            display: inline-block;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        .metric-value {
+            color: #003366;
+            font-size: 14pt;
+        }
+
+        .small-text {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .decom-note {
+            font-size: 8pt;
+            color: #cc0000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Cover Page -->
+<div class="cover" style="position: relative;">
+    <h1 style="margin-top: 80px;">US Flag Fleet Analysis</h1>
+    <div class="subtitle">Military Sealift Command & Commercial Fleet Overview</div>
+    <div class="subtitle">Norfolk/Hampton Roads Focus • Ghost Fleet Status • Vessel Disposition</div>
+
+    <div style="margin-top: 80px;">
+        <div class="metric"><span class="metric-value">78</span> Vessels Analyzed</div>
+        <div class="metric"><span class="metric-value">20</span> MSC</div>
+        <div class="metric"><span class="metric-value">18</span> Norfolk</div>
+    </div>
+
+    <div style="margin-top: 40px; font-size: 11pt; color: #666;">
+        Includes IMO-verified vessel types, decommissioned vessel status,<br>
+        NDRF ghost fleet locations, and RRF layberth assignments
+    </div>
+
+    <div style="margin-top: 60px; font-size: 13pt; color: #003366; font-weight: 600;">
+        Prepared for:<br>
+        <span style="font-size: 15pt;">Patrick Callahan</span><br>
+        <span style="font-size: 11pt; color: #666;">Fairwinds Landing</span>
+    </div>
+
+    <!-- Bottom Left: Author and Version Info -->
+    <div style="position: absolute; bottom: 40px; left: 40px; text-align: left; font-size: 9pt; color: #666;">
+        <div style="margin-bottom: 8px;"><strong>Prepared by:</strong></div>
+        <div style="font-size: 11pt; color: #003366; font-weight: 600; margin-bottom: 5px;">William S. Davis III</div>
+        <div>Maritime Industry Consultant</div>
+        <div>30+ Years Ship Agency & Terminal Operations</div>
+        <div style="margin-top: 10px;"><strong>Version:</strong> 1.0 Corrected</div>
+        <div><strong>Date:</strong> February 5, 2026</div>
+    </div>
+</div>
+
+<!-- Data Quality Notice -->
+<div class="warning-box">
+    <h3 style="margin-top: 0;">⚠️ Data Quality Note</h3>
+    <p><strong>This report includes verified corrections to original dataset:</strong></p>
+    <ul style="margin: 10px 0;">
+        <li><strong>USNS BOB HOPE & USNS FISHER:</strong> Decommissioned Dec 2022, retained in report for historical tracking</li>
+        <li><strong>CAPE VINCENT:</strong> Located at Beaumont Reserve Fleet, TX (not Norfolk)</li>
+        <li><strong>GREEN RIDGE/MARJORIE C:</strong> Vessel types verified via IMO lookup (RoRo, not geared bulker)</li>
+        <li><strong>IMO numbers:</strong> Several discrepancies identified and noted in appendix</li>
+    </ul>
+</div>
+
+<!-- Executive Summary -->
+<h1>Executive Summary</h1>
+
+<div class="summary-box">
+    <p><strong>Fleet Composition:</strong> 78 US-flag vessels analyzed - 20 MSC (25.6%), 58 commercial (74.4%), 3 RRF (3.8%)</p>
+    <p><strong>Norfolk Concentration:</strong> 18 vessels based (23.1% of fleet) - 14 MSC, 4 commercial</p>
+    <p><strong>Key Operators:</strong> Maersk Line Ltd (MSC prime), Matson (Hawaii), Crowley (Alaska/ESB), OSG (product tankers)</p>
+    <p><strong>Ghost Fleets:</strong> James River (4 vessels), Beaumont (27 vessels) - NDRF anchorages</p>
+    <p><strong>Recent Changes:</strong> 2 Bob Hope-class LMSR decommissioned 2022, transferred to MARAD</p>
+</div>
+
+<p>MSC civilian contractors operate 18 active vessels across fleet replenishment, expeditionary sea bases, and sealift. Commercial fleet concentrated in Jones Act trades: Hawaii (Matson, Pasha), Alaska (Crowley, TOTE), Puerto Rico (TOTE), and coastwise petroleum (OSG, American Shipping). Ready Reserve Force maintains 51 vessels nationwide with 5-10 day activation capability.</p>
+
+<!-- MSC Fleet Section -->
+<div class="page-break"></div>
+<h1>1. Military Sealift Command Fleet</h1>
+
+<h2>1.1 Fleet Replenishment Oilers (T-AO)</h2>
+<p>Henry J. Kaiser-class oilers providing underway replenishment for carrier strike groups. 6 vessels operational/ready.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>USNS HENRY J KAISER</td>
+        <td>1986</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS JOSHUA HUMPHREYS</td>
+        <td>1987</td>
+        <td>Maersk Line Limited</td>
+        <td>San Diego</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS JOHN LENTHALL</td>
+        <td>1989</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr class="rrr">
+        <td>USNS PECOS</td>
+        <td>1990</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Ready</td>
+    </tr>
+    <tr>
+        <td>USNS BIG HORN</td>
+        <td>1992</td>
+        <td>Intrepid Ship Management</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS TIPPECANOE</td>
+        <td>1993</td>
+        <td>Intrepid Ship Management</td>
+        <td>San Diego</td>
+        <td>Operational</td>
+    </tr>
+</table>
+
+<h2>1.2 Fast Combat Support Ships (T-AOE)</h2>
+<p>Supply-class multi-product replenishment ships. 2 vessels operational.</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>GT</th>
+    </tr>
+    <tr>
+        <td>USNS SUPPLY</td>
+        <td>1994</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>48,800</td>
+    </tr>
+    <tr>
+        <td>USNS ARCTIC</td>
+        <td>1995</td>
+        <td>Maersk Line Limited</td>
+        <td>San Diego</td>
+        <td>48,800</td>
+    </tr>
+</table>
+
+<h2>1.3 Expeditionary Sea Bases (ESB)</h2>
+<p>Afloat forward staging bases for special operations and maritime prepositioning. 4 vessels (2 Norfolk, 2 deployed overseas).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Current Location</th>
+        <th>GT</th>
+    </tr>
+    <tr>
+        <td>USNS JOHN GLENN</td>
+        <td>2014</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Norfolk</td>
+        <td>Norfolk</td>
+        <td>78,470</td>
+    </tr>
+    <tr>
+        <td>USNS LEWIS B PULLER</td>
+        <td>2015</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Bahrain</td>
+        <td>Deployed</td>
+        <td>78,470</td>
+    </tr>
+    <tr>
+        <td>USNS HERSHEL WOODY WILLIAMS</td>
+        <td>2017</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Souda Bay</td>
+        <td>Mediterranean</td>
+        <td>78,470</td>
+    </tr>
+    <tr>
+        <td>USNS MIGUEL KEITH</td>
+        <td>2020</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Norfolk</td>
+        <td>Norfolk</td>
+        <td>90,000</td>
+    </tr>
+</table>
+
+<h2>1.4 Large Medium-Speed RoRo (LMSR)</h2>
+<p>Bob Hope-class strategic sealift ships. 4 vessels Norfolk-based (includes 2 decommissioned vessels shown for tracking).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Operator</th>
+        <th>Last Known Port</th>
+        <th>Status</th>
+    </tr>
+    <tr class="decommissioned">
+        <td>USNS BOB HOPE <br><span class="decom-note">⚠️ DECOMMISSIONED DEC 19, 2022</span></td>
+        <td>1998</td>
+        <td>American Steamship Company</td>
+        <td>Violet, LA</td>
+        <td>Transferred to MARAD RRF</td>
+    </tr>
+    <tr class="decommissioned">
+        <td>USNS FISHER <br><span class="decom-note">⚠️ DECOMMISSIONED OCT 31, 2022</span></td>
+        <td>1999</td>
+        <td>American Steamship Company</td>
+        <td>Portland, OR</td>
+        <td>Stricken from NVR</td>
+    </tr>
+    <tr class="rrr">
+        <td>USNS SEAY</td>
+        <td>2000</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational (reduced status)</td>
+    </tr>
+    <tr>
+        <td>USNS GILLILAND</td>
+        <td>2000</td>
+        <td>Maersk Line Limited</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+</table>
+
+<p class="small-text"><strong>Note:</strong> USNS BOB HOPE and USNS FISHER retained in this report for historical tracking and fleet composition analysis. Both were transferred out of active MSC service in late 2022.</p>
+
+<h2>1.5 Hospital Ships (T-AH)</h2>
+<p>Mercy-class hospital ships converted from tankers. 2 vessels (Norfolk & San Diego).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Operator</th>
+        <th>Home Port</th>
+        <th>GT</th>
+        <th>Mission</th>
+    </tr>
+    <tr>
+        <td>USNS COMFORT</td>
+        <td>1976</td>
+        <td>Military Sealift Command</td>
+        <td>Norfolk</td>
+        <td>69,360</td>
+        <td>Humanitarian/disaster response</td>
+    </tr>
+    <tr>
+        <td>USNS MERCY</td>
+        <td>1976</td>
+        <td>Military Sealift Command</td>
+        <td>San Diego</td>
+        <td>69,360</td>
+        <td>Humanitarian/disaster response</td>
+    </tr>
+</table>
+
+<h2>1.6 Expeditionary Fast Transports (EPF)</h2>
+<p>Spearhead-class high-speed catamarans. 2 Norfolk-based shown (MSC operates 14 total).</p>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Build Year</th>
+        <th>Civilian Operator</th>
+        <th>Home Port</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>USNS SPEARHEAD</td>
+        <td>2012</td>
+        <td>Austal USA</td>
+        <td>Norfolk</td>
+        <td>Operational</td>
+    </tr>
+    <tr>
+        <td>USNS CHOCTAW COUNTY</td>
+        <td>2012</td>
+        <td>Austal USA</td>
+        <td>Norfolk</td>
+        <td>Norfolk</td>
+    </tr>
+</table>
+
+<!-- Ghost Fleet Section -->
+<div class="page-break"></div>
+<h1>2. NDRF Ghost Fleets & Ready Reserve Force</h1>
+
+<h2>2.1 James River Reserve Fleet (Fort Eustis, Virginia)</h2>
+
+<div class="summary-box ghost-fleet">
+    <p><strong>Location:</strong> 37°07′13″N 76°38′47″W (James River at Fort Eustis)</p>
+    <p><strong>Current Status:</strong> 4 vessels remaining (down from 800+ at Cold War peak)</p>
+    <p><strong>Composition:</strong> 2 retention vessels, 2 designated for disposal</p>
+    <p><strong>Historical:</strong> Oldest NDRF site (established 1925), largely dismantled due to environmental concerns</p>
+</div>
+
+<p>The James River Reserve Fleet, commonly known as the "Ghost Fleet," anchors in the James River off Mulberry Island near Fort Eustis. Once holding over 700 vessels after WWII, the fleet has been systematically reduced through scrapping programs. Vessels hold an estimated 13 million gallons of oil/fuel, requiring environmental monitoring.</p>
+
+<h2>2.2 Beaumont Reserve Fleet (Sabine-Neches River, Texas)</h2>
+
+<div class="summary-box ghost-fleet">
+    <p><strong>Location:</strong> 30°1′30″N 94°0′39″W (Neches River, McFadden Bend Cutoff)</p>
+    <p><strong>Current Status:</strong> 27 vessels (as of July 2025)</p>
+    <p><strong>Composition:</strong> Primarily RoRo ships in Ready Reserve Force (ROS-5 status)</p>
+    <p><strong>Notable:</strong> Only Gulf Coast NDRF anchorage, 200+ vessel capacity</p>
+</div>
+
+<p><strong>Known Vessels at Beaumont:</strong> CAPE VINCENT (T-AKR-9666), CAPE TAYLOR, CAPE TEXAS, CAPE TRINITY, USNS ALGOL, USNS ANTARES. Recent activity includes Cape Intrepid retirement (Oct 2025) and ongoing disposal of obsolete vessels through Brownsville scrapping operations.</p>
+
+<h2>2.3 York River Anchorages (Yorktown, Virginia)</h2>
+
+<p>York River serves as active Navy anchorage rather than NDRF storage site. Vessels viewable from Yorktown waterfront are typically rotational Navy units under operational control of Captain of the Port, Norfolk. Not part of ghost fleet inventory.</p>
+
+<h2>2.4 Ready Reserve Force (RRF) - National Overview</h2>
+
+<div class="summary-box">
+    <p><strong>Total RRF Fleet:</strong> 51 vessels nationwide</p>
+    <p><strong>Activation Capability:</strong> 5-10 days (ROS-4/ROS-5 status)</p>
+    <p><strong>Recent Investment:</strong> $6.2 billion MARAD contracts over 10 years (July 2025)</p>
+    <p><strong>Strategic Positioning:</strong> Vessels outported at major US ports for rapid deployment</p>
+</div>
+
+<h3>RRF Vessels from Current Dataset - Verified Locations</h3>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Verified Location</th>
+        <th>Status</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>CAPE WASHINGTON (T-AKR-9961)</td>
+        <td>Baltimore, MD</td>
+        <td>ROS-5 Ready Reserve</td>
+        <td>IMO 7826178 (not 8214556)</td>
+    </tr>
+    <tr>
+        <td>CAPE JACOB</td>
+        <td>Baltimore, MD</td>
+        <td>ROS-5 Ready Reserve</td>
+        <td>Requires IMO verification</td>
+    </tr>
+    <tr class="ghost-fleet">
+        <td>CAPE VINCENT (T-AKR-9666)</td>
+        <td>Beaumont Reserve Fleet, TX</td>
+        <td>ROS-5 (10-man crew)</td>
+        <td><strong>NOT Norfolk as shown in dataset</strong></td>
+    </tr>
+    <tr class="decommissioned">
+        <td>USNS BOB HOPE (T-AKR-300)</td>
+        <td>Violet, LA (last known)</td>
+        <td>Decommissioned Dec 2022</td>
+        <td>Transferred to MARAD for disposal</td>
+    </tr>
+    <tr class="decommissioned">
+        <td>USNS FISHER (T-AKR-301)</td>
+        <td>Portland, OR (April 2024)</td>
+        <td>Decommissioned Oct 2022</td>
+        <td>Stricken from Naval Vessel Register</td>
+    </tr>
+</table>
+
+<!-- Norfolk Section -->
+<div class="page-break"></div>
+<h1>3. Norfolk/Hampton Roads Operations</h1>
+
+<div class="summary-box">
+    <p><strong>16 active vessels based in Norfolk</strong> (excluding 2 decommissioned LMSR)</p>
+    <p><strong>MSC: 12 operational</strong> - 5 fleet oilers, 2 ESBs, 2 LMSRs, 1 hospital ship, 2 EPFs</p>
+    <p><strong>Commercial: 2 vessels</strong> - 1 Maersk container, 1 dry bulk</p>
+    <p><strong>RRF: 2 vehicles</strong> - CAPE WASHINGTON, CAPE VINCENT at other locations</p>
+    <p><strong>Dominant operators:</strong> Maersk Line Ltd (7 active vessels), Crowley (2 ESBs)</p>
+</div>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Type</th>
+        <th>Operator</th>
+        <th>Status</th>
+        <th>Mission/Trade</th>
+    </tr>
+    <tr>
+        <td>MAERSK ALABAMA</td>
+        <td>Container Ship</td>
+        <td>Maersk Line Limited</td>
+        <td>Operational</td>
+        <td>Jones Act commercial</td>
+    </tr>
+    <tr>
+        <td>USNS COMFORT</td>
+        <td>Hospital Ship</td>
+        <td>Military Sealift Command</td>
+        <td>Operational</td>
+        <td>Humanitarian/disaster</td>
+    </tr>
+    <tr>
+        <td>USNS JOHN GLENN</td>
+        <td>ESB</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Operational</td>
+        <td>Afloat forward staging</td>
+    </tr>
+    <tr>
+        <td>USNS MIGUEL KEITH</td>
+        <td>ESB</td>
+        <td>Crowley Maritime Corporation</td>
+        <td>Operational</td>
+        <td>Afloat forward staging</td>
+    </tr>
+    <tr>
+        <td>USNS SEAY</td>
+        <td>LMSR</td>
+        <td>Maersk Line Limited</td>
+        <td>Operational</td>
+        <td>Strategic sealift</td>
+    </tr>
+    <tr>
+        <td>USNS GILLILAND</td>
+        <td>LMSR</td>
+        <td>Maersk Line Limited</td>
+        <td>Operational</td>
+        <td>Strategic sealift</td>
+    </tr>
+    <tr>
+        <td>USNS HENRY J KAISER</td>
+        <td>T-AO</td>
+        <td>Maersk Line Limited</td>
+        <td>Operational</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr>
+        <td>USNS JOHN LENTHALL</td>
+        <td>T-AO</td>
+        <td>Maersk Line Limited</td>
+        <td>Operational</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr class="rrr">
+        <td>USNS PECOS</td>
+        <td>T-AO</td>
+        <td>Maersk Line Limited</td>
+        <td>Ready</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr>
+        <td>USNS BIG HORN</td>
+        <td>T-AO</td>
+        <td>Intrepid Ship Management</td>
+        <td>Operational</td>
+        <td>Fleet replenishment</td>
+    </tr>
+    <tr>
+        <td>USNS SUPPLY</td>
+        <td>T-AOE</td>
+        <td>Maersk Line Limited</td>
+        <td>Operational</td>
+        <td>Fast combat support</td>
+    </tr>
+    <tr>
+        <td>USNS SPEARHEAD</td>
+        <td>EPF</td>
+        <td>Austal USA</td>
+        <td>Operational</td>
+        <td>Fast transport</td>
+    </tr>
+    <tr>
+        <td>USNS CHOCTAW COUNTY</td>
+        <td>EPF</td>
+        <td>Austal USA</td>
+        <td>Norfolk</td>
+        <td>Fast transport</td>
+    </tr>
+    <tr>
+        <td>COLUMBIA TRADER</td>
+        <td>Dry Bulk</td>
+        <td>Keystone Shipping</td>
+        <td>Operational</td>
+        <td>Coastwise bulk</td>
+    </tr>
+</table>
+
+<p class="small-text"><strong>Note:</strong> CAPE WASHINGTON and CAPE VINCENT previously listed as Norfolk-based are actually at Baltimore and Beaumont respectively. USNS BOB HOPE and USNS FISHER decommissioned and no longer Norfolk-based.</p>
+
+<!-- Brownsville Scrapping Section -->
+<div class="page-break"></div>
+<h1>7. Ship Disposal & Brownsville Scrapping Operations</h1>
+
+<h2>7.1 Why Brownsville?</h2>
+
+<div class="summary-box">
+    <p><strong>Brownsville, Texas captures 85% of US Navy and MARAD ship recycling business</strong></p>
+    <p><strong>Three major facilities:</strong> International Shipbreaking (ISL/EMR), All Star Metals, SteelCoast</p>
+    <p><strong>Capacity:</strong> Up to 9 vessels simultaneously, ships to 1,000 feet length</p>
+    <p><strong>Strategic advantages:</strong> Deep draft access, Gulf location, specialized equipment, environmental compliance</p>
+</div>
+
+<p>Brownsville's dominance in ship recycling stems from infrastructure investments made in the 1990s. International Shipbreaking Limited (now EMR) established "the largest and most specialized facility for ship dismantling in the United States" in 1995. The Port of Brownsville's location on the Gulf Coast provides economical towing routes from both coasts and eliminates Panama Canal transit required for West Coast shipbreakers.</p>
+
+<h2>7.2 Recent Ghost Fleet Disposals</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Type</th>
+        <th>From Fleet</th>
+        <th>Status</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>SS POLLUX (AKR-290)</td>
+        <td>Cargo Ship</td>
+        <td>James River NDRF</td>
+        <td>Slated for 2026 scrap</td>
+        <td>Ex-SS Sea-Land Market, downgraded to non-retention</td>
+    </tr>
+    <tr>
+        <td>CAPE INTREPID</td>
+        <td>RoRo Vehicle Carrier</td>
+        <td>Beaumont Reserve Fleet</td>
+        <td>Retired Oct 2025</td>
+        <td>Obsolete vehicle carrier, disposal pending</td>
+    </tr>
+    <tr>
+        <td>USS KITTY HAWK (CV-63)</td>
+        <td>Aircraft Carrier</td>
+        <td>Bremerton, WA</td>
+        <td>Scrapping complete 2024</td>
+        <td>Largest commercial ship-recycling project in US</td>
+    </tr>
+    <tr>
+        <td>USS CONSTELLATION (CV-64)</td>
+        <td>Aircraft Carrier</td>
+        <td>Puget Sound</td>
+        <td>Inbound Brownsville</td>
+        <td>Will surpass Kitty Hawk as largest US scrapping job</td>
+    </tr>
+    <tr>
+        <td>STURGIS</td>
+        <td>Nuclear Power Barge</td>
+        <td>James River NDRF</td>
+        <td>Scrapped 2018</td>
+        <td>Army's first floating nuclear power plant</td>
+    </tr>
+</table>
+
+<h2>7.3 MARAD Ship Disposal Program</h2>
+
+<p>MARAD serves as the US Government's disposal agent for merchant vessels ≥1,500 GT no longer useful for defense missions. The Ship Disposal Program prioritizes vessels presenting highest environmental risk. Between 2000-2025, over 150 obsolete vessels were removed from NDRF ghost fleets through competitive bidding to qualified recyclers.</p>
+
+<p><strong>Current disposal priorities:</strong></p>
+<ul>
+    <li>James River fleet reduction (target: complete disposal by 2030)</li>
+    <li>Suisun Bay environmental remediation (9 vessels remaining)</li>
+    <li>Beaumont fleet modernization (obsolete RoRos being replaced)</li>
+    <li>Decommissioned Navy vessels (carriers, cruisers, amphibs)</li>
+</ul>
+
+<h2>7.4 Business Opportunity - Ghost Fleet Towing & Preparation</h2>
+
+<p>Towing contracts from NDRF anchorages to Brownsville typically range $500K-$3M depending on vessel size and origin. Pre-scrapping services include fuel/oil removal, hazmat surveys, and stability certification. Maritime service providers in Norfolk/Hampton Roads positioned for James River fleet towing contracts as disposal accelerates.</p>
+
+<!-- Data Appendix -->
+<div class="page-break"></div>
+<h1>Appendix A: Data Quality & Corrections</h1>
+
+<h2>IMO Number Discrepancies Identified</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Dataset IMO</th>
+        <th>Verified IMO</th>
+        <th>Source</th>
+    </tr>
+    <tr>
+        <td>CAPE WASHINGTON</td>
+        <td>8214556</td>
+        <td>7826178</td>
+        <td>VesselFinder, MarineTraffic</td>
+    </tr>
+    <tr>
+        <td>GREEN RIDGE</td>
+        <td>9349821</td>
+        <td>9177428</td>
+        <td>MarineTraffic, Pasha Hawaii</td>
+    </tr>
+    <tr>
+        <td>AMERICAN EAGLE</td>
+        <td>9345678</td>
+        <td>Not Found</td>
+        <td>IMO does not exist in databases</td>
+    </tr>
+    <tr>
+        <td>USNS BOB HOPE</td>
+        <td>9141251</td>
+        <td>9085297</td>
+        <td>Naval Vessel Register</td>
+    </tr>
+</table>
+
+<h2>Vessel Type Corrections</h2>
+
+<table>
+    <tr>
+        <th>Vessel Name</th>
+        <th>Dataset Type</th>
+        <th>Verified Type</th>
+        <th>Source</th>
+    </tr>
+    <tr>
+        <td>GREEN RIDGE</td>
+        <td>Geared Bulker</td>
+        <td>Vehicles Carrier (RoRo)</td>
+        <td>MarineTraffic IMO 9177428</td>
+    </tr>
+    <tr>
+        <td>MARJORIE C</td>
+        <td>Geared Bulker</td>
+        <td>Verification pending</td>
+        <td>Pasha Hawaii fleet list</td>
+    </tr>
+</table>
+
+<h2>Status Updates</h2>
+
+<ul>
+    <li><strong>USNS BOB HOPE:</strong> Decommissioned December 19, 2022; transferred to MARAD; last location Violet, LA</li>
+    <li><strong>USNS FISHER:</strong> Decommissioned October 31, 2022; stricken from Naval Vessel Register; last location Portland, OR (April 2024)</li>
+    <li><strong>CAPE VINCENT:</strong> Located at Beaumont Reserve Fleet, Texas (NOT Norfolk as shown in dataset)</li>
+</ul>
+
+<hr style="margin: 40px 0;">
+
+<p class="small-text" style="text-align: center;">
+    <strong>Report prepared:</strong> February 2026<br>
+    <strong>Source data:</strong> MARAD, MSC, Naval Vessel Register, MarineTraffic, VesselFinder<br>
+    <strong>Analysis scope:</strong> 78 US-flag vessels (includes 2 decommissioned for tracking purposes)<br>
+    <strong>IMO verification:</strong> Conducted via web search February 2026
+</p>
+
+<p style="text-align: center; margin-top: 30px;">
+    <strong>Sources:</strong><br>
+    <a href="https://www.maritime.dot.gov">MARAD</a> •
+    <a href="https://www.msc.usff.navy.mil">Military Sealift Command</a> •
+    <a href="https://www.nvr.navy.mil">Naval Vessel Register</a> •
+    <a href="https://www.marinetraffic.com">MarineTraffic</a> •
+    <a href="https://www.vesselfinder.com">VesselFinder</a> •
+    <a href="https://www.portofbrownsville.com">Port of Brownsville</a>
+</p>
+
+</body>
+</html>

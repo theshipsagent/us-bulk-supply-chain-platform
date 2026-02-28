@@ -312,4 +312,4 @@ This serves as a backup and reference for data files that will be migrated separ
 **Migration Completed By:** Claude Sonnet 4.5
 **Date:** 2026-02-23
 **Platform Version:** US Bulk Supply Chain Reporting Platform v1.0.0
-**Organization:** OceanDatum.ai Maritime Consultancy
+**Organization:** William S. Davis III Maritime Consultancy

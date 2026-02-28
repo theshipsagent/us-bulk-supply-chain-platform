@@ -1,0 +1,550 @@
+port_code,sked_d_name,cbp_appendix_e_name,district_code,district_name,state,port_consolidated,port_coast,port_region,port_type
+0101,"PORTLAND, ME","Portland, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0102,"BANGOR, ME","Bangor, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0103,"EASTPORT, ME","Eastport, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0104,"JACKMAN, ME","Jackman, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0105,"VANCEBORO, ME","Vanceboro, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0106,"HOULTON, ME","Houlton, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0107,"FORT FAIRFIELD, ME","Fort Fairfield, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,airport
+0108,"VAN BUREN, ME","Van Buren, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0109,"MADAWASKA, ME","Madawaska, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0110,"FORT KENT, ME","Fort Kent, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0111,"BATH, ME","Bath, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0112,"BAR HARBOR, ME","Bar Harbor, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0115,"CALAIS, ME","Calais, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0118,"LIMESTONE, ME","Limestone, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0121,"ROCKLAND, ME","Rockland, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0122,"JONESPORT, ME","Jonesport, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0127,"BRIDGEWATER, ME","Bridgewater, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0131,"PORTSMOUTH, NH","Portsmouth, New Hampshire",01,"PORTLAND, ME",NH,Portland ME,East,North Atlantic,seaport
+0152,"SEARSPORT, ME","Searsport, Maine",01,"PORTLAND, ME",ME,Portland ME,East,North Atlantic,seaport
+0182,"MANCHESTER USER FEE AIRPORT, NH","Manchester User Fee Airport, New Hampshire",01,"PORTLAND, ME",NH,Portland ME,East,North Atlantic,airport
+0201,"ST. ALBANS, VT","St. Albans, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0203,"RICHFORD, VT","Richford, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0206,"BEECHER FALLS, VT","Beecher Falls, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0207,"BURLINGTON, VT","Burlington, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0209,"DERBY LINE, VT","Derby Line, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0211,"NORTON, VT","Norton, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0212,"HIGHGATE SPRINGS/ALBURG, VT","Highgate Springs/Alburg, Vermont",02,"ST. ALBANS, VT",VT,Northern Border-VT,Land Ports,Land Ports,land_border
+0221,,"Northeast Region, Boston, Massachusetts",02,,MA,Northern Border-VT,Land Ports,Land Ports,
+0401,"BOSTON, MA","Boston, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0402,"SPRINGFIELD, MA","Springfield, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,airport
+0403,"WORCESTER, MA","Worcester, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0404,"GLOUCESTER, MA","Gloucester, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0405,"NEW BEDFORD, MA","New Bedford, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0406,"PLYMOUTH, MA","Plymouth, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0407,"FALL RIVER, MA","Fall River, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0408,"SALEM, MA","Beverly, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0410,"BRIDGEPORT,CT","Bridgeport, Connecticut",04,"BOSTON, MA",CT,Connecticut,East,North Atlantic,seaport
+0411,HARTFORD. CT,"Hartford, Connecticut",04,"BOSTON, MA",CT,Connecticut,East,North Atlantic,seaport
+0412,"NEW HAVEN,CT","New Haven, Connecticut",04,"BOSTON, MA",CT,Connecticut,East,North Atlantic,seaport
+0413,"NEW LONDON, CT","New London, Connecticut",04,"BOSTON, MA",CT,Connecticut,East,North Atlantic,seaport
+0416,"LAWRENCE, MA","Lawrence, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,seaport
+0417,"LOGAN AIRPORT, MA","Logan Airport, East Boston, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,airport
+0481,"L.G. HANSCOM FIELD, MA","Hanscom Field User Fee Airport, Bedford, Massachusetts",04,"BOSTON, MA",MA,Boston,East,North Atlantic,airport
+0501,"NEWPORT, RI","Newport, Rhode Island",05,"PROVIDENCE, RI",RI,Providence,East,North Atlantic,seaport
+0502,"PROVIDENCE, RI","Providence, Rhode Island",05,"PROVIDENCE, RI",RI,Providence,East,North Atlantic,seaport
+0503,"MELLVILLE, RI","Mellville, Rhode Island",05,"PROVIDENCE, RI",RI,Providence,East,North Atlantic,seaport
+0701,"OGDENSBURG, NY","Ogdensburg, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Great Lakes,Great Lakes,seaport
+0704,"MASSENA, NY","Massena, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Land Ports,Land Ports,land_border
+0706,"CAPE VINCENT, NY","Cape Vincent, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Great Lakes,Great Lakes,seaport
+0708,"ALEXANDRIA BAY, NY","Alexandria Bay, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Land Ports,Land Ports,land_border
+0712,"CHAMPLAIN-ROUSES POINT, NY","Champlain-Rouses Point, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Land Ports,Land Ports,land_border
+0714,"CLAYTON, NY","Clayton, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Land Ports,Land Ports,land_border
+0715,"TROUT RIVER, NY","Trout River, New York",07,"OGDENSBURG, NY",NY,Northern Border-NY,Land Ports,Land Ports,land_border
+0781,,"Plattsburgh International Airport, Plattsburgh, New York",07,,NY,Northern Border-NY,Land Ports,Land Ports,
+0901,"BUFFALO-NIAGARA FALLS, NY","Buffalo-Niagara Falls, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,land_border
+0903,"ROCHESTER, NY","Rochester, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,seaport
+0904,"OSWEGO, NY","Oswego, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,seaport
+0905,"SODUS POINT, NY","Sodus Point, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,seaport
+0906,"SYRACUSE, NY","Syracuse, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,seaport
+0921,,"Northeast Region, Boston Massachusetts",09,,MA,Buffalo-Niagara,Great Lakes,Great Lakes,
+0981,"BINGHAMTON REGIONAL AIRPORT, NY","Binghamton Regional Airport, Binghamton, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,airport
+0982,,"Griffiss International User Fee Airport, Rome, New York",09,,NY,Buffalo-Niagara,Great Lakes,Great Lakes,
+0983,"ITHACA TOMPKINS INTL AIR, ITHACA, NY","Ithaca Tompkins Intl Air, Ithaca, New York",09,"BUFFALO, NY",NY,Buffalo-Niagara,Great Lakes,Great Lakes,airport
+1001,"NEW YORK, NY","New York, New York",10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,seaport
+1002,"ALBANY, NY","Albany, New York",10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,seaport
+1003,"NEWARK, NJ",,10,"NEW YORK CITY, NY",NJ,New York,East,North Atlantic,seaport
+1004,"PERTH AMBOY, NJ",,10,"NEW YORK CITY, NY",NJ,New York,East,North Atlantic,seaport
+1012,"JFK INTERNATIONAL AIRPORT, NY",,10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,airport
+1068,"NEWARK FEDEX ECCF, NJ",,10,"NEW YORK CITY, NY",NJ,New York,East,North Atlantic,courier
+1069,"UPS, NEWARK, NJ",,10,"NEW YORK CITY, NY",NJ,New York,East,North Atlantic,courier
+1071,"NYACC, JAMAICA, NY",,10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,courier
+1072,"DHL, JAMAICA, NY",,10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,courier
+1073,EMERY WORLDWIDE,,10,"NEW YORK CITY, NY",,New York,East,North Atlantic,courier
+1074,"AIR FRANCE (MACH PLUS), JAMAICA, NY",,10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,courier
+1078,"TNT SKYPAK, JAMAICA, NY",,10,"NEW YORK CITY, NY",NY,New York,East,North Atlantic,courier
+1081,"MORRISTOWN AIRPORT, NJ",,10,"NEW YORK CITY, NY",NJ,New York,East,North Atlantic,airport
+1101,"PHILADELPHIA, PA","Philadelphia, Pennsylvania",11,"PHILADELPHIA, PA",PA,Delaware River,East,Mid-Atlantic,seaport
+1102,"CHESTER, PA","Chester, Pennsylvania",11,"PHILADELPHIA, PA",PA,Delaware River,East,Mid-Atlantic,seaport
+1103,"WILMINGTON, DE","Wilmington, Delaware",11,"PHILADELPHIA, PA",DE,Delaware River,East,Mid-Atlantic,seaport
+1104,"PITTSBURGH, PA","Pittsburgh, Pennsylvania",11,"PHILADELPHIA, PA",PA,"Pittsburgh, Pennsylvania",Inland,Great Lakes,inland
+1105,"MARCUS HOOK, PA",,11,"PHILADELPHIA, PA",PA,Delaware River,East,Mid-Atlantic,seaport
+1106,"WILKES-BARRE/SCRANTON, PA","Wilkes-Barre/Scranton, Pennsylvania",11,"PHILADELPHIA, PA",PA,"Wilkes-Barre/Scranton, Pennsylvania",East,Mid-Atlantic,inland
+1107,"CAMDEN, NJ",,11,"PHILADELPHIA, PA",NJ,Delaware River,East,Mid-Atlantic,seaport
+1108,"PHILA. INTL. AIRPORT, PA","Philadelphia International Airport, Philadelphia, Pennsylvania",11,"PHILADELPHIA, PA",PA,Delaware River,East,Mid-Atlantic,airport
+1109,"HARRISBURG, PA","Harrisburg, Pennsylvania",11,"PHILADELPHIA, PA",PA,"Harrisburg, Pennsylvania",Inland,Mid-Atlantic,inland
+1113,"GLOUCESTER CITY, NJ",,11,"PHILADELPHIA, PA",NJ,Delaware River,East,Mid-Atlantic,seaport
+1119,"ALLENTOWN, PA (LEHIGH VALLEY INTL AIRPT)","Allentown, Pennsylvania",11,"PHILADELPHIA, PA",PA,Delaware River,Inland,Mid-Atlantic,airport
+1182,"ATLANTIC CITY REGIONAL AIRPORT, NJ","Atlantic City User Fee Airport, New Jersey",11,"PHILADELPHIA, PA",NJ,Delaware River,East,Mid-Atlantic,airport
+1183,"TRENTON/MERCER COUNTY AIRPORT, NJ","Trenton/Mercer County User Fee Airport, New Jersey",11,"PHILADELPHIA, PA",NJ,Delaware River,East,Mid-Atlantic,airport
+1195,"UPS, PHILADELPHIA, PA","UPS Philadelphia Hub, Philadelphia, Pennsylvania",11,"PHILADELPHIA, PA",PA,Delaware River,East,Mid-Atlantic,courier
+1297,"RICHMOND, VA",,12,UNKNOWN,VA,Hampton Roads,East,South Atlantic,seaport
+1301,"ANNAPOLIS, MD","Annapolis, Maryland",13,"BALTIMORE, MD",MD,Baltimore,East,Mid-Atlantic,seaport
+1302,"CAMBRIDGE, MD","Cambridge, Maryland",13,"BALTIMORE, MD",MD,Baltimore,East,Mid-Atlantic,seaport
+1303,"BALTIMORE, MD","Baltimore, Maryland",13,"BALTIMORE, MD",MD,Baltimore,East,Mid-Atlantic,seaport
+1304,"CRISFIELD, MD","Crisfield, Maryland",13,"BALTIMORE, MD",MD,Baltimore,East,Mid-Atlantic,airport
+1305,"BALTIMORE-WASHINGTON INTERNATIONAL AIRPORT, MD","Baltimore-Washington International Airport, Baltimore, Maryland",13,"BALTIMORE, MD",MD,Baltimore,East,Mid-Atlantic,airport
+1401,"NORFOLK-NEWPORT NEWS, VA","Norfolk, Virginia",14,"NORFOLK, VA",VA,Hampton Roads,East,South Atlantic,seaport
+1404,"RICHMOND-PETERSBURG, VA","Richmond-Petersburg, Virginia",14,"NORFOLK, VA",VA,"Richmond-Petersburg, Virginia",East,South Atlantic,inland
+1409,"CHARLESTON, WV","Charleston, West Virginia",14,"NORFOLK, VA",WV,"Charleston, West Virginia",Inland,South Atlantic,inland
+1410,"FRONT ROYAL, VA","Front Royal, Virginia",14,"NORFOLK, VA",VA,"Front Royal, Virginia",Inland,South Atlantic,inland
+1412,"NEW RIVER VALLEY AIRPORT, VA",,14,"NORFOLK, VA",VA,Hampton Roads,East,South Atlantic,airport
+1501,"WILMINGTON, NC","Wilmington, North Carolina",15,"WILMINGTON, NC",NC,North Carolina Ports,East,South Atlantic,seaport
+1502,"WINSTON-SALEM, NC","Winston-Salem, North Carolina",15,"WILMINGTON, NC",NC,North Carolina Ports,Inland,South Atlantic,land_border
+1503,"DURHAM, NC","Durham, North Carolina",15,"WILMINGTON, NC",NC,"Durham, North Carolina",Inland,South Atlantic,inland
+1511,"BEAUFORT-MOREHEAD CITY,NC","Beaufort-Morehead City, North Carolina",15,"WILMINGTON, NC",NC,North Carolina Ports,East,South Atlantic,seaport
+1512,"CHARLOTTE, NC","Charlotte, North Carolina",15,"WILMINGTON, NC",NC,"Charlotte, North Carolina",Inland,South Atlantic,inland
+1581,,"Charlotte-Monroe User Fee Airport, Monroe, North Carolina",15,,NC,North Carolina Ports,East,South Atlantic,
+1601,"CHARLESTON, SC","Charleston, South Carolina",16,"CHARLESTON, SC",SC,Charleston,East,South Atlantic,seaport
+1602,"GEORGETOWN, SC","Georgetown, South Carolina",16,"CHARLESTON, SC",SC,Charleston,East,South Atlantic,seaport
+1603,"GREENVILLE-SPARTANBRG, SC","Greenville-Spartanburg, South Carolina",16,"CHARLESTON, SC",SC,South Carolina Ports,Inland,South Atlantic,land_border
+1604,"COLUMBIA, SC","Columbia, South Carolina",16,"CHARLESTON, SC",SC,"Columbia, South Carolina",Inland,South Atlantic,inland
+1681,"MYRTLE BEACH INTL AIRPORT, SC","Myrtle Beach International Airport, Myrtle Beach, South Carolina",16,"CHARLESTON, SC",SC,South Carolina Ports,East,South Atlantic,airport
+1701,"BRUNSWICK, GA","Brunswick, Georgia",17,"SAVANNAH, GA",GA,Georgia Ports,East,South Atlantic,seaport
+1703,"SAVANNAH, GA","Savannah, Georgia",17,"SAVANNAH, GA",GA,Georgia Ports,East,South Atlantic,seaport
+1704,"ATLANTA, GA","Atlanta, Georgia",17,"SAVANNAH, GA",GA,"Atlanta, Georgia",Inland,South Atlantic,inland
+1755,,"Port for Tracking, Savannah, Georgia",17,,GA,Georgia Ports,East,South Atlantic,
+1758,,"Olympics Security, Atlanta, Georgia",17,,GA,Georgia Ports,East,South Atlantic,
+1759,,"Atlanta-Olympics, Atlanta, Georgia",17,,GA,Georgia Ports,East,South Atlantic,
+1781,,"Cobb County International Airport, Kenshaw, Georgia",17,,GA,Georgia Ports,East,South Atlantic,
+1791,"ATLANTA HARTSFIELD AIRPORT, GA",,17,"SAVANNAH, GA",GA,Atlanta,Inland,South Atlantic,airport
+1801,"TAMPA, FL","Tampa, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,seaport
+1803,"JACKSONVILLE, FL","Jacksonville, Florida",18,"TAMPA, FL",FL,Jacksonville,East,South Atlantic,seaport
+1805,"FERNANDINA BEACH, FL","Fernandina Beach, Florida",18,"TAMPA, FL",FL,Fernandina Beach,East,South Atlantic,seaport
+1807,"BOCA GRANDE, FL","Boca Grande, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,seaport
+1808,"ORLANDO, FL","Orlando, Florida",18,"TAMPA, FL",FL,"Orlando, Florida",Inland,South Atlantic,inland
+1809,"ORLANDO-SANFORD AIRPORT, FL","Orlando-Sanford Airport, Sanford, Florida",18,"TAMPA, FL",FL,Orlando,Inland,South Atlantic,airport
+1814,"ST. PETERSBURG, FL","St. Petersburg, Florida",18,"TAMPA, FL",FL,"St. Petersburg, Florida",Gulf,Gulf East,inland
+1816,"PORT CANAVERAL, FL","Port Canaveral, Florida",18,"TAMPA, FL",FL,Port Canaveral,East,South Atlantic,seaport
+1818,"PANAMA CITY, FL","Panama City, Florida",18,"TAMPA, FL",FL,Panama City,Gulf,Gulf East,seaport
+1819,"PENSACOLA, FL","Pensacola, Florida",18,"TAMPA, FL",FL,Pensacola,Gulf,Gulf East,seaport
+1820,,"Port St. Joe, Florida",18,,FL,Tampa,Gulf,Gulf East,
+1821,"PORT MANATEE, FL","Port Manatee, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,seaport
+1822,"FORT MYERS AIRPORT, FL","Fort Myers, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1880,"NAPLES MUNICIPAL USER FEE AIRP, FL","Naples Municipal Airport, Naples, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1881,,"Lakeland Linder Airport, Lakeland, Florida",18,,FL,Tampa,Gulf,Gulf East,
+1883,"SARASOTA BRADENTON ARPT, FL","Sarasota-Bradenton Airport, Sarasota, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1884,"DAYTONA BEACH INT'L ARPT, FL","Daytona Beach International Airport, Daytona Beach, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1885,"MELBOURNE REGIONAL AIRPORT, FL","Melbourne Regional Airport, Melbourne, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1887,"LEESBURG REGIONAL AIRP, LEESBURG, FL","Leesburg Regional Airport, Leesburg, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1888,"ORLANDO EXECUTIVE AIRPORT, FL","Orlando Executive Airport, Orlando, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1889,"ST. AUGUSTINE AIRPORT, FL","St. Augustine Airport (User Fee Airport), St Augustine, Florida",18,"TAMPA, FL",FL,Tampa,Gulf,Gulf East,airport
+1901,"MOBILE, AL","Mobile, Alabama",19,"MOBILE, AL",AL,Mobile,Gulf,Gulf East,seaport
+1902,"GULFPORT, MS","Gulfport, Mississippi",19,"MOBILE, AL",MS,Gulfport,Gulf,Gulf East,seaport
+1903,"PASCAGOULA, MS","Pascagoula, Mississippi",19,"MOBILE, AL",MS,Pascagoula,Gulf,Gulf East,seaport
+1904,"BIRMINGHAM, AL","Birmingham, Alabama",19,"MOBILE, AL",AL,"Birmingham, Alabama",Gulf,Gulf East,inland
+1905,,"Apalachicola, Florida",19,,FL,Mobile,Gulf,Gulf East,
+1906,,"Carrabelle, Florida",19,,FL,Mobile,Gulf,Gulf East,
+1910,"HUNTSVILLE, AL","Huntsville, Alabama",19,"MOBILE, AL",AL,"Huntsville, Alabama",Gulf,Gulf East,inland
+2001,"MORGAN CITY, LA","Morgan City, Louisiana",20,"NEW ORLEANS, LA",LA,Morgan City,Gulf,Gulf East,seaport
+2002,"NEW ORLEANS, LA","New Orleans, Louisiana",20,"NEW ORLEANS, LA",LA,Lower Miss River,Gulf,Gulf East,seaport
+2003,"LITTLE ROCK, AR","Little Rock, Arkansas",20,"NEW ORLEANS, LA",AR,"Little Rock, Arkansas",Inland,Mississippi River,inland
+2004,"BATON ROUGE, LA","Baton Rouge, Louisiana",20,"NEW ORLEANS, LA",LA,Lower Miss River,Gulf,Gulf East,seaport
+2006,"MEMPHIS, TN","Memphis, Tennessee",20,"NEW ORLEANS, LA",TN,"Memphis, Tennessee",Inland,Mississippi River,inland
+2007,"NASHVILLE, TN","Nashville, Tennessee",20,"NEW ORLEANS, LA",TN,"Nashville, Tennessee",Inland,Mississippi River,inland
+2008,"CHATTANOOGA, TN","Chattanooga, Tennessee",20,"NEW ORLEANS, LA",TN,"Chattanooga, Tennessee",Inland,Mississippi River,inland
+2010,"GRAMERCY, LA","Gramercy, Louisiana",20,"NEW ORLEANS, LA",LA,Lower Miss River,Gulf,Gulf East,seaport
+2011,"GREENVILLE, MS","Greenville, Mississippi",20,"NEW ORLEANS, LA",MS,"Greenville, Mississippi",Gulf,Gulf East,inland
+2015,"VICKSBURG, MS","Vicksburg, Mississippi (Include Jackson Municipal Airport)",20,"NEW ORLEANS, LA",MS,"Vicksburg, Mississippi (Include Jackson Municipal Airport)",Inland,Mississippi River,inland
+2016,"KNOXVILLE, TN","Knoxville, Tennessee",20,"NEW ORLEANS, LA",TN,"Knoxville, Tennessee",Inland,Mississippi River,inland
+2017,"LAKE CHARLES, LA","Lake Charles, Louisiana",20,"NEW ORLEANS, LA",LA,Lake Charles,Gulf,Gulf East,seaport
+2018,"SHREVEPORT/BOSSIER CITY, LA","Shreveport-Bossier City, Louisiana",20,"NEW ORLEANS, LA",LA,"Shreveport-Bossier City, Louisiana",Gulf,Gulf East,inland
+2027,"TRI-CITIES AIRPORT, TN","Tri-Cities Airport, Blountville, Tennessee",20,"NEW ORLEANS, LA",TN,New Orleans,Gulf,Gulf East,airport
+2081,,"Jackson Airport, Jackson, Mississippi",20,,MS,New Orleans,Gulf,Gulf East,
+2084,,"Rogers Municipal Airport, Rogers, Arkansas",20,,AR,New Orleans,Gulf,Gulf East,
+2095,"FEDEX, MEMPHIS, TN","Fedex Corp Memphis Hub, Memphis, Tennessee",20,"NEW ORLEANS, LA",TN,New Orleans,Gulf,Gulf East,courier
+2101,"PORT ARTHUR, TX","Port Arthur, Texas",21,"PORT ARTHUR, TX",TX,Sabine River,Gulf,North Texas,seaport
+2102,"SABINE, TX","Sabine, Texas",21,"PORT ARTHUR, TX",TX,Sabine River,Gulf,North Texas,seaport
+2103,"ORANGE, TX","Orange, Texas",21,"PORT ARTHUR, TX",TX,Sabine River,Gulf,North Texas,seaport
+2104,"BEAUMONT, TX","Beaumont, Texas",21,"PORT ARTHUR, TX",TX,Sabine River,Gulf,North Texas,seaport
+2301,"BROWNSVILLE, TX","Brownsville, Texas",23,"LAREDO, TX",TX,South Texas Border,Land Ports,South Texas,land_border
+2302,"DEL RIO, TX","Del Rio, Texas",23,"LAREDO, TX",TX,Del Rio,Land Ports,South Texas,land_border
+2303,"EAGLE PASS, TX","Eagle Pass, Texas",23,"LAREDO, TX",TX,Eagle Pass,Land Ports,South Texas,land_border
+2304,"LAREDO, TX","Laredo, Texas",23,"LAREDO, TX",TX,Laredo,Land Ports,South Texas,land_border
+2305,"HIDALGO, PHARR, TX","Hidalgo, Texas",23,"LAREDO, TX",TX,Hidalgo/Pharr,Land Ports,South Texas,land_border
+2307,"RIO GRANDE CITY, TX","Rio Grande City, Texas",23,"LAREDO, TX",TX,South Texas Border,Land Ports,South Texas,land_border
+2309,"PROGRESO, TX","Progreso, Texas",23,"LAREDO, TX",TX,South Texas Border,Land Ports,South Texas,land_border
+2310,"ROMA, TX","Roma, Texas",23,"LAREDO, TX",TX,South Texas Border,Land Ports,South Texas,land_border
+2377,,"Harlingen # Valley International, Harlingen, Texas",23,,TX,South Texas Border,Land Ports,South Texas,
+2383,"VALLEY INTL AIRPORT, HARLINGEN, TX","Valley International User Fee Airport, Harlingen, Texas",23,"LAREDO, TX",TX,South Texas Border,Land Ports,South Texas,airport
+2393,,"Brownsville-Cartage Control, Brownsville, Texas",23,,TX,South Texas Border,Land Ports,South Texas,
+2397,,"Roma-Cartage Control, Roma, Texas",23,,TX,South Texas Border,Land Ports,South Texas,
+2398,,"Hidalgo Cartage Control, Pharr, Texas",23,,TX,South Texas Border,Land Ports,South Texas,
+2401,"YSLETA, TX","Area Port of Ysleta, Texas",24,"EL PASO, TX",TX,El Paso,Land Ports,Land Ports,land_border
+2402,"EL PASO, TX","El Paso, Texas",24,"EL PASO, TX",TX,El Paso,Land Ports,Land Ports,land_border
+2403,"PRESIDIO, TX","Presidio, Texas",24,"EL PASO, TX",TX,El Paso Border,Land Ports,Land Ports,land_border
+2404,"FABENS, TX","Tornillo, Texas Marcelino Serna POE",24,"EL PASO, TX",TX,El Paso Border,Land Ports,Land Ports,land_border
+2406,"COLUMBUS, NM","Columbus, New Mexico",24,"EL PASO, TX",NM,El Paso Border,Land Ports,Land Ports,land_border
+2407,"ALBUQUERQUE, NM","Albuquerque, New Mexico",24,"EL PASO, TX",NM,El Paso Border,Land Ports,Land Ports,land_border
+2408,"SANTA TERESA, NM","Santa Teresa, New Mexico",24,"EL PASO, TX",NM,Santa Teresa,Land Ports,Land Ports,land_border
+2409,,"Fort Hancock, Texas",24,,TX,El Paso Border,Land Ports,Land Ports,
+2410,,"Boquillas, Texas",24,,TX,El Paso Border,Land Ports,Land Ports,
+2481,"SANTA TERESA AIRPORT, NM","Santa Teresa Airport, Santa Teresa, New Mexico",24,"EL PASO, TX",NM,El Paso Border,Land Ports,Land Ports,airport
+2482,,"Roswell Industrial Airport, Roswell, New Mexico",24,,NM,El Paso Border,Land Ports,Land Ports,
+2501,"SAN DIEGO, CA","San Diego, California",25,"SAN DIEGO, CA",CA,San Diego Border,Land Ports,California,land_border
+2502,"ANDRADE, CA","Andrade, California",25,"SAN DIEGO, CA",CA,San Diego Border,Land Ports,California,land_border
+2503,"CALEXICO, CA","Calexico, California",25,"SAN DIEGO, CA",CA,San Diego Border,Land Ports,California,land_border
+2504,SAN YSIDRO,"San Ysidro, California",25,"SAN DIEGO, CA",CA,San Diego Border,Land Ports,California,land_border
+2505,"TECATE, CA","Tecate, California",25,"SAN DIEGO, CA",CA,San Diego Border,Land Ports,California,land_border
+2506,OTAY MESA,"Otay Mesa, California",25,"SAN DIEGO, CA",CA,Otay Mesa,Land Ports,California,land_border
+2507,CALEXICO-EAST,"Calexico-East, California",25,"SAN DIEGO, CA",CA,Calexico,Land Ports,California,land_border
+2601,"DOUGLAS, AZ","Douglas, Arizona",26,"NOGALES, AZ",AZ,Arizona Border,Land Ports,Land Ports,land_border
+2602,"LUKEVILLE, AZ","Lukeville, Arizona",26,"NOGALES, AZ",AZ,Arizona Border,Land Ports,Land Ports,land_border
+2603,"NACO, AZ","Naco, Arizona",26,"NOGALES, AZ",AZ,Arizona Border,Land Ports,Land Ports,land_border
+2604,"NOGALES, AZ","Nogales, Arizona",26,"NOGALES, AZ",AZ,Nogales,Land Ports,Land Ports,land_border
+2605,"PHOENIX, AZ","Phoenix, Arizona",26,"NOGALES, AZ",AZ,"Phoenix, Arizona",Inland,Land Ports,inland
+2606,"SASABE, AZ","Sasabe, Arizona",26,"NOGALES, AZ",AZ,Arizona Border,Land Ports,Land Ports,land_border
+2608,"SAN LUIS, AZ","San Luis, Arizona",26,"NOGALES, AZ",AZ,Arizona Border,Land Ports,Land Ports,land_border
+2609,"TUCSON, AZ","Tucson, Arizona",26,"NOGALES, AZ",AZ,"Tucson, Arizona",Inland,Land Ports,inland
+2681,,"Scottsdale User Fee Airport, Scottsdale, Arizona",26,,AZ,Arizona Border,Land Ports,Land Ports,
+2682,,"Phoenix-Mesa Gateway Airport, Mesa, Arizona",26,,AZ,Arizona Border,Land Ports,Land Ports,
+2704,"LOS ANGELES, CA","Los Angeles, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2707,"PORT 2707, CA","Port San Luis Harbor, Avila Beach, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2709,"LONG BEACH, CA","Long Beach, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2712,"VENTURA, CA","Ventura, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2713,"PORT HUENEME, CA","Port Hueneme, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2715,"CAPITAN, CA","Capitan, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2719,"MORRO BAY, CA","Morro Bay, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,seaport
+2720,"LOS ANGELES INTERNATIONAL AIRPORT, CA","Los Angeles International Airport, Los Angeles, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,airport
+2721,"ONTARIO INTL AIRPORT, CA","Ontario International Airport, Ontario, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,airport
+2722,"LAS VEGAS, NV","Las Vegas, NV",27,"LOS ANGELES, CA",NV,"Las Vegas, NV",Inland,California,inland
+2755,,"Los Angeles Alternate, Los Angeles, California",27,,CA,LA-Long Beach,West,California,
+2775,"TNT EXPRESS, LAX, CA","ECCF FedEx Corp Los Angeles, Los Angeles, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,courier
+2776,IBC PACIFIC,"ECCF International Bonded Couriers (IBC) Los Angeles, Los Angeles, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,courier
+2777,,"ECCF Micom Inglewood, Ingelwood, California",27,,CA,LA-Long Beach,West,California,
+2781,,"Palm Springs User Fee, Palm Springs, California",27,,CA,LA-Long Beach,West,California,
+2782,,"San Bernardino International Airport, San Bernardino, California",27,,CA,LA-Long Beach,West,California,
+2783,,"Southern California Logistics Airport UFA, Victorville, California",27,,CA,LA-Long Beach,West,California,
+2786,"MEADOWS FIELD AIRPORT, CA","Meadows Field Airport, Bakersfield, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,airport
+2787,,"John Wayne User Fee Airport, Santa Ana, California",27,,CA,LA-Long Beach,West,California,
+2788,,"Van Nuys User Fee Airport, Van Nuys, California",27,,CA,LA-Long Beach,West,California,
+2791,"DHL-HUB, LOS ANGELES, CA","DHL Los Angeles Hub, Los Angeles, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,courier
+2795,"UPS-ONTARIO, CA","UPS Ontario CA Hub, Ontario, California",27,"LOS ANGELES, CA",CA,LA-Long Beach,West,California,courier
+2801,"SAN FRANCISCO INTL ARPT, CA","San Francisco International Airport, San Francisco, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,airport
+2802,"EUREKA, CA","Eureka, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2803,"FRESNO, CA","Fresno, California",28,"SAN FRANCISCO, CA",CA,"Fresno, California",Inland,California,inland
+2805,"MONTEREY, CA","Monterey, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2809,"SAN FRANCISCO, CA","San Francisco, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2810,"STOCKTON, CA","Stockton, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2811,"OAKLAND, CA","Oakland, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2812,"RICHMOND,CA","Richmond, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2815,"CROCKETT,CA","Crockett, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2820,"MARTINEZ,CA","Martinez, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2821,"REDWOOD CITY,CA","Redwood City, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2827,"SELBY,CA","Selby, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2828,"SAN JUAQUIN RIVER,CA","San Joaquin River, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2829,"SAN PABLO BAY,CA","San Pablo Bay, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2830,"CARQUINEZ STRAIT,CA","Carquinez Strait, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,seaport
+2831,,"Suisin Bay, California",28,,CA,San Francisco Bay,West,California,
+2833,"RENO, NV","Reno, Nevada",28,"SAN FRANCISCO, CA",NV,"Reno, Nevada",Inland,California,inland
+2834,"SAN JOSE INTL AIRPORT, CA","San Jose International Airport, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,airport
+2835,"SACRAMENTO INT'L AIRPORT, CA","Sacramento International Airport, Sacramento, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,Inland,California,airport
+2871,AIRCARGO HANDLING SERVIC,,28,"SAN FRANCISCO, CA",,San Francisco Bay,West,California,courier
+2895,"FEDEX, OAKLAND, CA","FedEx Corp Oakland Hub, Oakland, California",28,"SAN FRANCISCO, CA",CA,San Francisco Bay,West,California,courier
+2901,"ASTORIA, OR","Astoria, Oregon",29,"COLUMBIA-SNAKE, OR",OR,Columbia River,West,Pacific Northwest,seaport
+2902,"NEWPORT, OR","Newport, Oregon",29,"COLUMBIA-SNAKE, OR",OR,Columbia River,West,Pacific Northwest,seaport
+2903,"COOS BAY, OR","Coos Bay, Oregon",29,"COLUMBIA-SNAKE, OR",OR,Columbia River,West,Pacific Northwest,seaport
+2904,"PORTLAND, OR","Portland, Oregon",29,"COLUMBIA-SNAKE, OR",OR,Columbia River,West,Pacific Northwest,seaport
+2905,"LONGVIEW, WA","Longview, Washington",29,"COLUMBIA-SNAKE, OR",WA,Columbia River,West,Pacific Northwest,seaport
+2907,"BOISE, ID","Boise, Idaho",29,"COLUMBIA-SNAKE, OR",ID,Columbia River,Inland,Pacific Northwest,seaport
+2908,"VANCOUVER, WA","Vancouver, Washington",29,"COLUMBIA-SNAKE, OR",WA,Columbia River,West,Pacific Northwest,seaport
+2909,"KALAMA, WA","Kalama, Washington",29,"COLUMBIA-SNAKE, OR",WA,Columbia River,West,Pacific Northwest,seaport
+2910,"PORTLAND INTL AIRPORT, OR","Portland International Airport, Portland, Washington",29,"COLUMBIA-SNAKE, OR",OR,Columbia River,West,Pacific Northwest,airport
+2983,,"Hillsboro Airport, Hillsboro, Oregon",29,,OR,Columbia River,West,Pacific Northwest,
+3001,"SEATTLE, WA","Seattle, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3002,"TACOMA, WA","Tacoma, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3003,"ABERDEEN-HOQUIAM, WA","Aberdeen, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3004,"BLAINE, WA","Blaine, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3005,"BELLINGHAM, WA","Bellingham, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3006,"EVERETT, WA","Everett, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3007,"PORT ANGELES, WA","Port Angeles, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3008,"PORT TOWNSEND, WA","Port Townsend, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3009,"SUMAS, WA","Sumas, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3010,"ANACORTES, WA","Anacortes, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3011,"NIGHTHAWK, WA","Nighthawk, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3012,"DANVILLE, WA","Danville, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3013,"FERRY, WA","Ferry, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3014,"FRIDAY HARBOR, WA","Friday Harbor, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3015,"BOUNDARY, WA","Boundary, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3016,"LAURIER, WA","Laurier, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3017,"POINT ROBERTS, WA","Point Roberts, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3018,"KENMORE AIR HARBOR, WA","Kenmore Air Harbor, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,airport
+3019,"OROVILLE, WA","Oroville, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3020,"FRONTIER, WA","Frontier, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3022,"SPOKANE, WA","Spokane, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,Inland,Pacific Northwest,seaport
+3023,"LYNDEN, WA","Lynden, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,land_border
+3025,METALINE FALLS,"Metaline Falls, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3026,"OLYMPIA, WA","Olympia, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,seaport
+3029,SEATTLE-TACOMA INTL ARPT,"Seattle-Tacoma International Airport, Seattle, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,airport
+3071,"UPS, SEATTLE, WA","ECCF UPS Seattle, Seattle, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,courier
+3072,"AVION BROKERS, SEATTLE, WA","ECCF Avion Brokers Seatac, Seatac, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,courier
+3073,"DHL, SEATTLE, WA","ECCF DHL Worldwide Seatac, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,courier
+3074,"AIRBORNE EXPRESS, SEATTLE, WA","ECCF Airborne Express Seatac, Seatac, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,courier
+3082,GRANT COUNTY AIRPORT,"Grant County Airport, Moses Lake, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,airport
+3095,"UPS, SEATTLE, WA","UPS Seatac Hub, Seatac, Washington",30,"SEATTLE, WA",WA,Seattle-Tacoma,West,Pacific Northwest,courier
+3099,,"Port of Puget Sound, Seattle, Washington",30,,WA,Seattle-Tacoma,West,Pacific Northwest,
+3101,"JUNEAU, AK","Juneau, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3102,"KETCHIKAN, AK","Ketchikan, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3103,"SKAGWAY, AK","Skagway, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3104,"ALCAN, AK","Alcan, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,land_border
+3105,"WRANGELL, AK","Wrangell, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3106,"DALTON CACHE, AK","Dalton Cache, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,land_border
+3111,"FAIRBANKS, AK","Fairbanks, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3115,"SITKA, AK","Sitka, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3124,,"Pelican, Alaska",31,,AK,Alaska,Alaska/US Islands,Alaska/US Islands,
+3126,"ANCHORAGE, AK","Anchorage, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,seaport
+3181,,"Saint Paul Airport, Anchorage, Alaska",31,,AK,Alaska,Alaska/US Islands,Alaska/US Islands,
+3195,"FEDEX, ANCHORAGE, AK","FedEx Corp Anchorage Hub, Anchorage, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,courier
+3196,"UPS, ANCHORAGE, AK","UPS Anchorage Hub, Anchorage, Alaska",31,"ANCHORAGE, AK",AK,Alaska,Alaska/US Islands,Alaska/US Islands,courier
+3201,"HONOLULU, HI","Honolulu, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,seaport
+3202,"HILO, HI","Hilo, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,seaport
+3203,"KAHULUI, HI","Kahului, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,seaport
+3204,"NAWILIWILI-PORT ALLEN,HI","Nawiliwili-Port Allen, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,seaport
+3205,"HONOLULU INTL AIRPRT, HI","Honolulu International Airport, Honolulu, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,airport
+3206,"KONA, HI","Kona, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,seaport
+3207,,"Guam Preclearance, Tamuning, Guam",32,,GU,Honolulu,West,Pacific,
+3211,,"Saipan, Tamuning, Guam",32,,GU,Honolulu,West,Pacific,
+3212,,"Tinian, Tamuning, Guam",32,,GU,Honolulu,West,Pacific,
+3213,,"Rota, Tamuning, Guam",32,,GU,Honolulu,West,Pacific,
+3279,"HONOLULU FTZ, HI","ECCF FedEx Corp Honolulu, Honolulu, Hawaii",32,"HONOLULU, HI",HI,Honolulu,West,Pacific,ftz
+3301,"RAYMOND, MT","Raymond, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3302,"EASTPORT, ID","Eastport, Idaho",33,"GREAT FALLS, MT",ID,Northern Border-ID,Land Ports,Land Ports,land_border
+3303,"SALT LAKE CITY, UT","Salt Lake City, Utah",33,"GREAT FALLS, MT",UT,"Salt Lake City, Utah",Inland,Land Ports,inland
+3304,"GREAT FALLS, MT","Great Falls, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3305,"BUTTE, MT","Butte, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3306,"TURNER, MT","Turner, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3307,"DENVER, CO","Denver, Colorado",33,"GREAT FALLS, MT",CO,"Denver, Colorado",Land Ports,Land Ports,inland
+3308,"PORTHILL, ID","Porthill, Idaho",33,"GREAT FALLS, MT",ID,Northern Border-MT,Land Ports,Land Ports,land_border
+3309,"SCOBY, MT","Scobey, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3310,"SWEETGRASS, MT","Sweetgrass, Montana",33,"GREAT FALLS, MT",MT,Sweetgrass-MT,Land Ports,Land Ports,land_border
+3316,"PIEGAN, MT","Piegan, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3317,"OPHEIM, MT","Opheim, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3318,"ROOSVILLE, MT","Roosville, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3319,"MORGAN, MT","Morgan, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3321,"WHITLASH, MT","Whitlash, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3322,"DEL BONITA, MT","Del Bonita, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3323,"WILDHORSE, MT","Wildhorse, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,land_border
+3324,KALISPELL AIRPORT,"Kalispell Airport, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,airport
+3325,"GLACIER PARK INTL AIRPORT, MT","Willow Creek, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,airport
+3327,,"Vancouver, BC, Canada",33,,,Northern Border-MT,Land Ports,Land Ports,
+3328,,"Calgary, Alberta, Canada",33,,,Northern Border-MT,Land Ports,Land Ports,
+3329,,"Edmonton, Alberta, Canada",33,,,Northern Border-MT,Land Ports,Land Ports,
+3381,,"Missoula User Fee Airport, Missoula, Montana",33,,MT,Northern Border-MT,Land Ports,Land Ports,
+3383,,"Jeffco User Fee Airport, Broofield, Colorado",33,,CO,Northern Border-MT,Land Ports,Land Ports,
+3384,"ARAPAHOE COUNTY PUBLIC AIRPORT, CO","Centennial Airport, Englewood, Colorado",33,"GREAT FALLS, MT",CO,Northern Border-MT,Land Ports,Land Ports,airport
+3385,EAGLE COUNTY REGIONAL AIRPORT,"Eagle County Regional Airport, Gypsum, Colorado",33,"GREAT FALLS, MT",CO,Northern Border-MT,Land Ports,Land Ports,airport
+3386,"BOZEMAN YELLOWSTONE USER FEE AIRPORT, BELGRADE, MT","Bozeman Yellowstone User Fee Airport, Belgrade, Montana",33,"GREAT FALLS, MT",MT,Northern Border-MT,Land Ports,Land Ports,airport
+3401,"PEMBINA, ND","Pembina, North Dakota",34,"PEMBINA, ND",ND,Pembina-ND,Land Ports,Land Ports,land_border
+3403,"PORTAL, ND","Portal, North Dakota",34,"PEMBINA, ND",ND,Portal-ND,Land Ports,Land Ports,land_border
+3404,"NECHE, ND","Neche, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3405,"ST JOHN, ND","St. John, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3406,"NORTHGATE, ND","Northgate, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3407,"WALHALLA, ND","Walhalla, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3408,"HANNAH, ND","Hannah, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3409,"SARLES, ND","Sarles, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3410,"AMBROSE, ND","Ambrose, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3411,"FARGO,ND","Fargo International Airport, North Dakota",34,"PEMBINA, ND",ND,"Fargo International Airport, North Dakota",Land Ports,Land Ports,inland
+3413,"ANTLER, ND","Antler, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3414,"SHERWOOD, ND","Sherwood, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3415,"HANSBORO, ND","Hansboro, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3416,"MAIDA, ND","Maida, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3417,"FORTUNA, ND","Fortuna, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3419,"WESTHOPE, ND","Westhope, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3420,"NOONAN, ND","Noonan, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3421,"CARBURY, ND","Carbury, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3422,"DUNSEITH, ND","Dunseith, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3423,"WARROAD, MN","Warroad, Minnesota",34,"PEMBINA, ND",MN,Northern Border-ND,Land Ports,Land Ports,land_border
+3424,"BAUDETTE, MN","Baudette, Minnesota",34,"PEMBINA, ND",MN,Northern Border-ND,Land Ports,Land Ports,land_border
+3425,"PINECREEK, MN","Pinecreek, Minnesota",34,"PEMBINA, ND",MN,Northern Border-ND,Land Ports,Land Ports,land_border
+3426,"ROSEAU, MN","Roseau, Minnesota",34,"PEMBINA, ND",MN,Northern Border-ND,Land Ports,Land Ports,land_border
+3427,"GRAND FORKS, ND","Grand Forks Airport, Grand Forks, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,land_border
+3428,,"Winnipeg International Airport, Winnipeg, Canada",34,,,Northern Border-ND,Land Ports,Land Ports,
+3429,,"Crane Lake, Minnesota",34,,MN,Northern Border-ND,Land Ports,Land Ports,
+3430,"LANCASTER, MN","Lancaster, Minnesota",34,"PEMBINA, ND",MN,Northern Border-ND,Land Ports,Land Ports,land_border
+3433,"WILLISTON AIRPORT, ND","Williston Airport, Williston, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,airport
+3434,"MINOT AIRPORT, ND","Minot Airport, Minot, North Dakota",34,"PEMBINA, ND",ND,Northern Border-ND,Land Ports,Land Ports,airport
+3501,"MINNEAPOLIS-ST. PAUL, MN","Minneapolis-St. Paul, Minnesota",35,"MINNEAPOLIS, MN",MN,"Minneapolis-St. Paul, Minnesota",Inland,Great Lakes,inland
+3502,"SIOUX FALLS, S.D.","Sioux Falls, South Dakota",35,"MINNEAPOLIS, MN",SD,"Sioux Falls, South Dakota",Inland,Great Lakes,inland
+3510,"DULUTH, MN-SUPERIOR, WI","Duluth, Wisconsin",35,"MINNEAPOLIS, MN",WI,Duluth-Superior,Great Lakes,Great Lakes,seaport
+3511,"ASHLAND, WI","Ashland, Wisconsin",35,"MINNEAPOLIS, MN",WI,Minneapolis-St. Paul,Inland,Great Lakes,seaport
+3512,"OMAHA, NE","Omaha, Nebraska",35,"MINNEAPOLIS, MN",NE,"Omaha, Nebraska",Inland,Great Lakes,inland
+3513,"DES MOINES, IA","Des Moines, Iowa",35,"MINNEAPOLIS, MN",IA,"Des Moines, Iowa",Inland,Great Lakes,inland
+3581,"ROCHESTER USER FEE AIRPORT, MN","Rochester, Minnesota User Fee Airport",35,"MINNEAPOLIS, MN",MN,Minneapolis-St. Paul,Inland,Great Lakes,airport
+3604,"INTERNATIONAL FALLS-RANIER, MN","International Falls, Minnesota",36,"DULUTH, MN",MN,International Falls,Great Lakes,Great Lakes,land_border
+3613,"GRAND PORTAGE, MN","Grand Portage, Minnesota",36,"DULUTH, MN",MN,Duluth-Superior,Great Lakes,Great Lakes,land_border
+3701,"MILWAUKEE, WI","Milwaukee, Wisconsin",37,"MILWAUKEE, WI",WI,Milwaukee,Great Lakes,Great Lakes,seaport
+3702,"MARINETTE, WI","Marinette, Wisconsin",37,"MILWAUKEE, WI",WI,Milwaukee,Great Lakes,Great Lakes,seaport
+3703,"GREEN BAY, WI","Green Bay, Wisconsin",37,"MILWAUKEE, WI",WI,Milwaukee,Great Lakes,Great Lakes,seaport
+3706,"MANITOWOC, WI","Manitowoc, Wisconsin",37,"MILWAUKEE, WI",WI,Milwaukee,Great Lakes,Great Lakes,seaport
+3707,,"Sheboygan, Wisconsin",37,,WI,Milwaukee,Great Lakes,Great Lakes,
+3708,"RACINE, WI","Racine, Wisconsin",37,"MILWAUKEE, WI",WI,Milwaukee,Great Lakes,Great Lakes,seaport
+3781,,"Appleton International Airport, Appleton, Wisconsin",37,,WI,Milwaukee,Great Lakes,Great Lakes,
+3801,"DETROIT, MI","Detroit, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3802,"PORT HURON, MI","Port Huron, Michigan",38,"DETROIT, MI",MI,Port Huron,Great Lakes,Great Lakes,land_border
+3803,"SAULT STE. MARIE, MI","Sault Ste Marie, Michigan",38,"DETROIT, MI",MI,Sault Ste. Marie,Great Lakes,Great Lakes,land_border
+3804,"SAGINAW/BAY CITY, MI","Saginaw/Bay City, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3805,"BATTLE CREEK, MI","Battle Creek, Michigan",38,"DETROIT, MI",MI,"Battle Creek, Michigan",Great Lakes,Great Lakes,inland
+3806,"GRAND RAPIDS, MI","Grand Rapids, Michigan",38,"DETROIT, MI",MI,"Grand Rapids, Michigan",Great Lakes,Great Lakes,inland
+3807,"DETROIT METRO AIRPORT, DETROIT, MI","Detroit Metropolitan Airport, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,airport
+3808,"ESCANABA, MI","Escanaba, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3809,"MARQUETTE, MI","Marquette, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3814,"ALGONAC, MI","Algonac, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,land_border
+3815,"MUSKEGON, MI","Muskegon, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3816,"GRAND HAVEN, MI","Grand Haven, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3818,"ROGERS CITY, MI","Rogers City, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3819,"DETOUR, MI","Detour City, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,land_border
+3822,,"South Haven, Michigan",38,,MI,Detroit,Great Lakes,Great Lakes,
+3842,"PRESQUE ISLE, MI","Presque Island, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3843,"ALPENA, MI","Alpena, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,seaport
+3881,OAKLAND/PONTIAC AIRPORT,"Oakland County International Airport, Pontiac, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,airport
+3882,"WILLOW RUN AIRPORT, YPSILANTI, MI","Willow Run Airport, Ypsilanti, Michigan",38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,airport
+3883,"CAPITAL REGION INTL AIRPORT, LANSING, MI",,38,"DETROIT, MI",MI,Detroit,Great Lakes,Great Lakes,airport
+3901,"CHICAGO, IL","Chicago, Illinois, including O’Hare International Airport",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,seaport
+3902,"PEORIA, IL","Peoria, Illinois",39,"CHICAGO, IL",IL,"Peoria, Illinois",Great Lakes,Great Lakes,inland
+3905,"GARY, IN","Gary Chicago Intl Arprt, Indiana",39,"CHICAGO, IL",IN,Chicago,Great Lakes,Great Lakes,seaport
+3908,"DAVENPORT, IA-ROCK ISLAND, IL","Davenport, Iowa - Rock Island, Milan, Illinois",39,"CHICAGO, IL",IL,"Davenport, Iowa - Rock Island, Milan, Illinois",Great Lakes,Great Lakes,inland
+3909,"ROCKFORD AIRPORT, IL","Rockford Airport, Rockford, Illinois",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,airport
+3910,"CHICAGO MIDWAY INT'L AIRPORT, IL","Midway International Airport, Chicago, Illinois",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,airport
+3971,"TNT EXPRESS CONSIGNMENT, CHICAGO, IL","ECCF FedEx Chicago, Rosemont, Illinois",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,courier
+3972,,"ECCF IBC Chicago, Chicago, Illinois",39,,IL,Chicago,Great Lakes,Great Lakes,
+3983,"CHICAGO EXECUTIVE AIRPORT, IL","Pal-Waukee Mncpl Airport, Wheeling, IL",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,airport
+3984,"DUPAGE AIRPORT, IL","Dupage Airport Authority, West Chicago, Illinois",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,airport
+3987,"UFA UI WILLARD AIRPORT, SAVOY, IL","UFA UI Willard Airport, Savoy, Illinois",39,"CHICAGO, IL",IL,Chicago,Great Lakes,Great Lakes,airport
+3991,,"DHL Chicago Hub, Chicago, Illinois",39,,IL,Chicago,Great Lakes,Great Lakes,
+4101,"CLEVELAND, OH","Cleveland, Ohio",41,"CLEVELAND, OH",OH,"Cleveland, Ohio",Great Lakes,Great Lakes,inland
+4102,"CINCINNATI, OH","Cincinnati, Ohio",41,"CLEVELAND, OH",OH,"Cincinnati, Ohio",Great Lakes,Great Lakes,inland
+4103,"COLUMBUS, OH","Columbus, Ohio",41,"CLEVELAND, OH",OH,"Columbus, Ohio",Great Lakes,Great Lakes,inland
+4104,"DAYTON, OH","Dayton, Ohio",41,"CLEVELAND, OH",OH,"Dayton, Ohio",Great Lakes,Great Lakes,inland
+4105,"TOLEDO-SANDUSKY, OH","Toledo, Ohio",41,"CLEVELAND, OH",OH,Cleveland-Toledo,Great Lakes,Great Lakes,seaport
+4106,"ERIE, PA","Erie, Pennsylvania",41,"CLEVELAND, OH",PA,Cleveland-Toledo,Great Lakes,Great Lakes,seaport
+4110,"INDIANAPOLIS, IN","Indianapolis, Indiana",41,"CLEVELAND, OH",IN,"Indianapolis, Indiana",Inland,Great Lakes,inland
+4115,"LOUISVILLE, KY","Louisville, Kentucky",41,"CLEVELAND, OH",KY,"Louisville, Kentucky",Inland,Great Lakes,inland
+4116,"OWENSBORO-EVANSVILLE, KY","Owensboro-Evansville, Indiana",41,"CLEVELAND, OH",KY,"Owensboro-Evansville, Indiana",Great Lakes,Great Lakes,inland
+4121,"LORAIN, OH",,41,"CLEVELAND, OH",OH,Cleveland-Toledo,Great Lakes,Great Lakes,seaport
+4122,"ASHTABULA/CONNEAUT, OH","Ashtabula/Conneaut, Ohio",41,"CLEVELAND, OH",OH,Cleveland-Toledo,Great Lakes,Great Lakes,seaport
+4183,FORT WAYNE AIRPORT,"Fort Wayne Airport UFA, Fort Wayne, Indiana",41,"CLEVELAND, OH",IN,Cleveland-Toledo,Great Lakes,Great Lakes,airport
+4184,BLUE GRASS AIRPORT,"Blue Grass Airport UFA, Lexington, Kentucky",41,"CLEVELAND, OH",KY,Cleveland-Toledo,Great Lakes,Great Lakes,airport
+4196,UPS COURIER,"UPS Louisville Hub, Louisville, Kentucky",41,"CLEVELAND, OH",KY,Cleveland-Toledo,Great Lakes,Great Lakes,courier
+4197,"DHL CINCINNATI, OH","DHL Cincinnati Hub, Cincinnati, Ohio",41,"CLEVELAND, OH",OH,Cleveland-Toledo,Great Lakes,Great Lakes,courier
+4198,"FEDEX, INDIANAPOLIS, IN","Fedex Corp Indianapolis Hub, Indianapolis, Indiana",41,"CLEVELAND, OH",IN,Cleveland-Toledo,Great Lakes,Great Lakes,courier
+4501,"KANSAS CITY, MO","Kansas City, Missouri",45,"ST. LOUIS, MO",MO,"Kansas City, Missouri",Inland,Mississippi River,inland
+4502,"ST JOSEPH, MO","St. Joseph, Missouri",45,"ST. LOUIS, MO",MO,"St. Joseph, Missouri",Inland,Mississippi River,inland
+4503,"ST LOUIS, MO","St. Louis, Missouri",45,"ST. LOUIS, MO",MO,"St. Louis, Missouri",Inland,Mississippi River,inland
+4504,"WICHITA, KS","Wichita, Kansas",45,"ST. LOUIS, MO",KS,"Wichita, Kansas",Inland,Mississippi River,inland
+4505,"SPRINGFIELD, MO","Springfield, Missouri",45,"ST. LOUIS, MO",MO,St. Louis,Inland,Mississippi River,airport
+4507,,"Kansas City Smart Port, Kansas City, Kansas",45,,KS,St. Louis,Inland,Mississippi River,
+4581,"MIDAMERICAN AIRPORT, IL","MidAmerica Airport, Mascoutah, Illinois",45,"ST. LOUIS, MO",IL,St. Louis,Inland,Mississippi River,airport
+4601,,"New York/Newark Area, Newark, New Jersey",46,,NJ,New York,East,North Atlantic,
+4602,,"Perth Amboy, New Jersey",46,,NJ,New York,East,North Atlantic,
+4670,,"ECCF UPS Newark, Newark, New Jersey",46,,NJ,New York,East,North Atlantic,
+4671,"FEDEX ECCF, NEWARK, NJ","ECCF FedEx Corp Newark, Newark, New Jersey",46,UNKNOWN,NJ,New York,East,North Atlantic,courier
+4681,,"Morristown Airport, Morristown, New Jersey",46,,NJ,New York,East,North Atlantic,
+4682,,"Stewart International Airport UFF, New Windsor, New York",46,,NY,New York,East,North Atlantic,
+4701,,"John F. Kennedy Airport, Jamaica, New York",47,,NY,New York,East,North Atlantic,
+4771,,"ECCF NYACC JFK Airport, Jamaica, New York",47,,NY,New York,East,North Atlantic,
+4772,,"ECCF DHL Airways JFK Airport, Jamaica, New York",47,,NY,New York,East,North Atlantic,
+4773,,"ECCF Micom JFK, Jamaica, New York",47,,NY,New York,East,North Atlantic,
+4774,,"ECCF IBC JFK, Jamaica, New York",47,,NY,New York,East,North Atlantic,
+4778,,"ECCF FedEx Corp JFK Airport, Jamaica, New York",47,,NY,New York,East,North Atlantic,
+4901,"AGUADILLA, PR","Aguadilla, Puerto Rico",49,"SAN JUAN, PR",PR,San Juan,Islands,Caribbean,seaport
+4904,"FAJARDO, PR","Fajardo, Puerto Rico",49,"SAN JUAN, PR",PR,San Juan,Islands,Caribbean,seaport
+4907,"MAYAGUEZ, PR","Mayaguez, Puerto Rico",49,"SAN JUAN, PR",PR,San Juan,Islands,Caribbean,seaport
+4908,"PONCE, PR","Ponce, Puerto Rico",49,"SAN JUAN, PR",PR,Ponce,Islands,Caribbean,seaport
+4909,"SAN JUAN, PR","San Juan, Puerto Rico",49,"SAN JUAN, PR",PR,San Juan,Islands,Caribbean,seaport
+4913,"SAN JUAN INTL AIRPORT, PR","San Juan International Airport, Old San Juan, Puerto Rico",49,"SAN JUAN, PR",PR,San Juan,Islands,Caribbean,airport
+4952,ST. THOMAS VI BORDER PATROL,,49,"SAN JUAN, PR",,San Juan,Islands,Caribbean,seaport
+5101,"CHARLOTTE AMALIE, VI","Charlotte Amalie, St. Thomas, Virgin Islands",51,U.S. VIRGIN ISLANDS,VI,Virgin Islands,Islands,Caribbean,seaport
+5102,"CRUZ BAY, VI","Cruz Bay, St. John, Virgin Islands",51,U.S. VIRGIN ISLANDS,VI,Virgin Islands,Islands,Caribbean,seaport
+5104,"CHRISTIANSTED, VI","Christiansted, St. Croix, Virgin Islands",51,U.S. VIRGIN ISLANDS,VI,Virgin Islands,Islands,Caribbean,seaport
+5105,"FREDERIKSTED, VI","Frederiksted, St. Croix, Virgin Islands",51,U.S. VIRGIN ISLANDS,VI,Virgin Islands,Islands,Caribbean,seaport
+5201,"MIAMI, FL","Miami, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,seaport
+5202,"KEY WEST, FL","Key West, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,seaport
+5203,"PORT EVERGLADES, FL","Port Everglades, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,seaport
+5204,"WEST PALM BEACH, FL","West Palm Beach, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,seaport
+5205,"FORT PIERCE, FL","Fort Pierce, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,seaport
+5206,MIAMI INTL AIRPORT,"Miami International Airport, Miami, Florida",52,"MIAMI, FL",FL,Miami,East,South Atlantic,airport
+5210,"FT. LAUDERDALE INTERNATIONAL AIRPORT, FL","Fort Lauderdale International Airport, Fort Lauderdale, Florida",52,"MIAMI, FL",FL,Port Everglades,East,South Atlantic,airport
+5255,,"Miami Alternate, Miami, Florida",52,,FL,South Florida,East,South Atlantic,
+5274,,"Fedex Corp Miami ECCF, Miami, Florida (Port 5297 is used)",52,,FL,South Florida,East,South Atlantic,
+5281,,"Marathon International Airport, Marathon, Florida",52,,FL,South Florida,East,South Atlantic,
+5282,,"Boca Raton Airport, Boca Raton, Florida",52,,FL,South Florida,East,South Atlantic,
+5283,,"Witham Field GAF, Stuart, Florida",52,,FL,South Florida,East,South Atlantic,
+5295,"UPS, MIAMI, FL","UPS Miami Hub, Miami, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,courier
+5296,"DHL, MIAMI, FL","DHL Miami Hub, Miami, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,courier
+5297,"FEDEX, MIAMI, FL","FedEx Corp Miami Hub, Miami, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,courier
+5298,"IBC COURIER HUB, FL","IBC Miami Hub, Miami, Florida",52,"MIAMI, FL",FL,South Florida,East,South Atlantic,courier
+5301,"HOUSTON, TX","Houston, Texas",53,"HOUSTON-GALVESTON, TX",TX,Houston,Gulf,North Texas,seaport
+5306,"TEXAS CITY, TX","Texas City, Texas",53,"HOUSTON-GALVESTON, TX",TX,Houston,Gulf,North Texas,seaport
+5309,"HOUSTON INTERCONTL AIRP, TX","Houston George Bush Intercontinental Airport, Houston, Texas",53,"HOUSTON-GALVESTON, TX",TX,Houston,Gulf,North Texas,airport
+5310,"GALVESTON, TX","Galveston, Texas",53,"HOUSTON-GALVESTON, TX",TX,Houston,Gulf,North Texas,seaport
+5311,"FREEPORT, TX","Freeport, Texas",53,"HOUSTON-GALVESTON, TX",TX,Houston,Gulf,North Texas,seaport
+5312,"CORPUS CHRISTI, TX","Corpus Christi, Texas",53,"HOUSTON-GALVESTON, TX",TX,Corpus Christi,Gulf,South Texas,seaport
+5313,"PORT LAVACA, TX","Port Lavaca, Texas",53,"HOUSTON-GALVESTON, TX",TX,Corpus Christi,Gulf,North Texas,seaport
+5314,,"Hobby International Airport, Houston, Texas",53,,TX,Houston,Gulf,North Texas,
+5315,,"Ellington Field, Houston, Texas",53,,TX,Houston,Gulf,North Texas,
+5381,"SUGAR LAND REG AIRP, SUGAR LAND, TX","Sugar Land Regional UFA, Sugar Land, Texas",53,"HOUSTON-GALVESTON, TX",TX,Houston,Gulf,North Texas,airport
+5382,,"Conroe-North, Conroe, Texas",53,,TX,Houston,Gulf,North Texas,
+5401,"WASHINGTON, DC","Washington, District of Columbia",54,"WASHINGTON, DC",DC,"Washington, District of Columbia",East,Mid-Atlantic,inland
+5402,"ALEXANDRIA, VA","Reagan National (DCA), Arlington, Virginia",54,"WASHINGTON, DC",VA,"Reagan National (DCA), Arlington, Virginia",East,Mid-Atlantic,inland
+5501,"DALLAS/FT. WORTH, TX","Dallas/Ft. Worth Airport, Texas",55,"DALLAS-FORT WORTH, TX",TX,"Dallas/Ft. Worth Airport, Texas",Inland,North Texas,inland
+5502,"AMARILLO, TX","Amarillo, Texas",55,"DALLAS-FORT WORTH, TX",TX,"Amarillo, Texas",Inland,North Texas,inland
+5503,"LUBBOCK, TX","Lubbock, Texas",55,"DALLAS-FORT WORTH, TX",TX,"Lubbock, Texas",Inland,North Texas,inland
+5504,"OKLAHOMA CITY, OK","Oklahoma City, Oklahoma",55,"DALLAS-FORT WORTH, TX",OK,"Oklahoma City, Oklahoma",Inland,North Texas,inland
+5505,"TULSA, OK","Tulsa, Oklahoma",55,"DALLAS-FORT WORTH, TX",OK,"Tulsa, Oklahoma",Inland,North Texas,inland
+5506,"AUSTIN, TX","Austin, Texas",55,"DALLAS-FORT WORTH, TX",TX,"Austin, Texas",Inland,North Texas,inland
+5507,"SAN ANTONIO, TX","San Antonio, Texas",55,"DALLAS-FORT WORTH, TX",TX,"San Antonio, Texas",Inland,South Texas,inland
+5582,"MIDLAND INTL AIRPORT, MIDLAND, TX","Midland International UFA, Midland, Texas",55,"DALLAS-FORT WORTH, TX",TX,Dallas-Fort Worth,Inland,North Texas,airport
+5583,"FORTH WORTH ALLIANCE  AIRP, TX","Fort Worth Alliance UFA, Fort Worth, Texas",55,"DALLAS-FORT WORTH, TX",TX,Dallas-Fort Worth,Inland,North Texas,airport
+5584,"ADDISON AIRPORT, ADDISON, TX","Addison Airport UFA, Addison, Texas",55,"DALLAS-FORT WORTH, TX",TX,Dallas-Fort Worth,Inland,North Texas,airport
+5585,,"Collin County Regional UFA, McKinney, Texas",55,,TX,Dallas-Fort Worth,Inland,North Texas,
+5586,,"Ardmore Municipal Airport, Ardmore, Oklahoma",55,,OK,Dallas-Fort Worth,Inland,North Texas,
+5587,,"Kelly Field Annex, San Antonio, Texas",55,,TX,Dallas-Fort Worth,Inland,North Texas,
+5588,"DALLAS LOVE FIELD USER FEE AIRP, DALLAS, TX","Dallas Love Field UFA, Dallas, Texas",55,"DALLAS-FORT WORTH, TX",TX,Dallas-Fort Worth,Inland,North Texas,airport
+5589,,"Meacham International Airport, Fort Worth, Texas",55,,TX,Dallas-Fort Worth,Inland,North Texas,
+5901,NORFOLK/MOBILE/CHARLESTON,,59,NORFOLK/MOBILE/CHARLESTON,,Norfolk/Mobile/Charleston,East,South Atlantic,land_border
+6000,VESSELS UNDER OWN POWER,,60,VESSELS UNDER OWN POWER,,Vessels Under Own Power,N/A,N/A,administrative
+7000,LOW-VALUE,,70,LOW VALUE,,Low Value/Estimated,N/A,N/A,administrative
+7010,CANADIAN LATE RECEIPTS ESTIMATE,,70,LOW VALUE,,Low Value/Estimated,N/A,N/A,administrative
+7070,LOW VALUE ESTIMATED,,70,LOW VALUE,,Low Value/Estimated,N/A,N/A,administrative
+7100,,"Northeast Region, Boston, Massachusetts",71,,,Low Value/Estimated,N/A,N/A,
+7121,,"Montreal Quebec Canada, Montreal, Canada",71,,,Low Value/Estimated,N/A,N/A,
+7122,,"Toronto Ontario Canada, Toronto, Canada",71,,,Low Value/Estimated,N/A,N/A,
+7400,,"Southeast Region, Miami, Florida",74,,,Preclearance,N/A,N/A,
+7401,,"CBP St. Thomas Preclearance, St. Thomas, US Virgin Islands",74,,,Preclearance,N/A,N/A,
+7404,,"CBP St. Croix Preclearance, St. Croix, US Virgin Islands",74,,,Preclearance,N/A,N/A,
+7421,,"CBP Bermuda Preclearance, Washington, DC",74,,,Preclearance,N/A,N/A,
+7422,,"CBP Freeport Preclearance, Washington, DC",74,,,Preclearance,N/A,N/A,
+7423,,"CBP, Nassau Preclearance, Washington, DC",74,,,Preclearance,N/A,N/A,
+7424,,"CBP, Aruba Preclearance, Washington, DC",74,,,Preclearance,N/A,N/A,
+7425,,"CBP, Punta Cana International Preclearance, Washington, DC",74,,,Preclearance,N/A,N/A,
+7500,,"South Central Region, New Orleans, Louisiana",75,,,Preclearance,N/A,N/A,
+7541,,"Dublin, IE Preclearance, Washington, DC",75,,,Preclearance,N/A,N/A,
+7542,,"Shannon IE Preclearance, Washington, DC",75,,,Preclearance,N/A,N/A,
+7543,,"CBP Abu Dhabi Preclearance, Washington, DC",75,,,Preclearance,N/A,N/A,
+7600,,"Southwest Region, Houston, Texas",76,,,Preclearance,N/A,N/A,
+7700,,"Pacific Region, Long Beach, California",77,,,Preclearance,N/A,N/A,
+7728,,"Pacific Region, San Francisco, California",77,,,Preclearance,N/A,N/A,
+7729,,"Pacific Region, San Francisco, California",77,,,Preclearance,N/A,N/A,
+7900,,"CBP North Central Region, Chicago, Illinois",79,,,Preclearance,N/A,N/A,
+7922,,"CBP Vancouver Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7923,,"CBP Calgary Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7924,,"CBP Edmonton Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7925,,"CBP Montreal Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7926,,"CBP Toronto Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7928,,"CBP Winnipeg Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7929,,"CBP Ottawa Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7930,,"CBP Victoria Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+7931,,"CBP Halifax Nova Scotia Preclearance, Washington, DC",79,,,Preclearance,N/A,N/A,
+8000,MAIL SHIPMENTS,,80,MAIL SHIPMENTS,,Mail Shipments,N/A,N/A,administrative
+9232,,"Calgary, Alberta",92,,,Preclearance,N/A,N/A,

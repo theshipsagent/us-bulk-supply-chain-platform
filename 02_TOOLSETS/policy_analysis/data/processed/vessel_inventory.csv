@@ -1,0 +1,52 @@
+vessel_name,imo_number,flag,gross_tonnage,deadweight,length,beam,build_year,operator,status,home_port,current_location,source_file,is_us_flag,imo_valid,operator_standardized,operator_from_name,primary_operator,is_civilian_operated
+USNS COMFORT,8807436,USA,69360,11135,272.5,32.2,1976,Military Sealift Command,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,MILITARY SEALIFT COMMAND,COMFORT,MILITARY SEALIFT COMMAND,False
+USNS MERCY,8807448,USA,69360,11135,272.5,32.2,1976,Military Sealift Command,Operational,San Diego,San Diego,sample_vessel_data.csv,True,False,MILITARY SEALIFT COMMAND,MERCY,MILITARY SEALIFT COMMAND,False
+USNS JOHN GLENN,9707806,USA,78470,0,239.9,50.0,2014,Crowley Maritime Corporation,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Crowley Maritime Corporation,JOHN GLENN,Crowley Maritime Corporation,True
+USNS LEWIS B PULLER,9707818,USA,78470,0,239.9,50.0,2015,Crowley Maritime Corporation,Operational,Bahrain,Deployed,sample_vessel_data.csv,True,False,Crowley Maritime Corporation,LEWIS B PULLER,Crowley Maritime Corporation,True
+USNS HERSHEL WOODY WILLIAMS,9707820,USA,78470,0,239.9,50.0,2017,Crowley Maritime Corporation,Operational,Souda Bay,Mediterranean,sample_vessel_data.csv,True,False,Crowley Maritime Corporation,HERSHEL WOODY WILLIAMS,Crowley Maritime Corporation,True
+USNS MIGUEL KEITH,9707832,USA,90000,0,239.9,50.0,2020,Crowley Maritime Corporation,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Crowley Maritime Corporation,MIGUEL KEITH,Crowley Maritime Corporation,True
+USNS BOB HOPE,9141251,USA,62069,26664,289.5,32.3,1998,American Steamship Company,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,AMERICAN STEAMSHIP,BOB HOPE,AMERICAN STEAMSHIP,True
+USNS FISHER,9141263,USA,62069,26664,289.5,32.3,1999,American Steamship Company,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,AMERICAN STEAMSHIP,FISHER,AMERICAN STEAMSHIP,True
+USNS SEAY,9141275,USA,62069,26664,289.5,32.3,2000,Maersk Line Limited,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",SEAY,"Maersk Line, Limited",True
+USNS GILLILAND,9141287,USA,62069,26664,289.5,32.3,2000,Maersk Line Limited,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",GILLILAND,"Maersk Line, Limited",True
+USNS BRITTIN,9141299,USA,62069,26664,289.5,32.3,2000,Maersk Line Limited,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,"Maersk Line, Limited",BRITTIN,"Maersk Line, Limited",True
+USNS BENAVIDEZ,9141303,USA,62069,26664,289.5,32.3,2003,Maersk Line Limited,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",BENAVIDEZ,"Maersk Line, Limited",True
+USNS PILILAAU,9141315,USA,62069,26664,289.5,32.3,2004,Maersk Line Limited,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,"Maersk Line, Limited",PILILAAU,"Maersk Line, Limited",True
+USNS WATKINS,9141327,USA,62069,26664,289.5,32.3,2006,OSG Ship Management,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Overseas Shipholding Group,WATKINS,Overseas Shipholding Group,False
+USNS HENRY J KAISER,7390884,USA,40700,32400,206.5,29.7,1986,Maersk Line Limited,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",HENRY J KAISER,"Maersk Line, Limited",True
+USNS JOSHUA HUMPHREYS,7390896,USA,40700,32400,206.5,29.7,1987,Maersk Line Limited,Operational,San Diego,San Diego,sample_vessel_data.csv,True,False,"Maersk Line, Limited",JOSHUA HUMPHREYS,"Maersk Line, Limited",True
+USNS JOHN LENTHALL,7390902,USA,40700,32400,206.5,29.7,1989,Maersk Line Limited,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,"Maersk Line, Limited",JOHN LENTHALL,"Maersk Line, Limited",True
+USNS PECOS,7390914,USA,40700,32400,206.5,29.7,1990,Maersk Line Limited,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",PECOS,"Maersk Line, Limited",True
+USNS BIG HORN,7390926,USA,40700,32400,206.5,29.7,1992,Intrepid Ship Management,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Intrepid Ship Management,BIG HORN,Intrepid Ship Management,True
+USNS TIPPECANOE,7390938,USA,40700,32400,206.5,29.7,1993,Intrepid Ship Management,Operational,San Diego,San Diego,sample_vessel_data.csv,True,False,Intrepid Ship Management,TIPPECANOE,Intrepid Ship Management,True
+USNS GUADALUPE,7390940,USA,40700,32400,206.5,29.7,1995,Intrepid Ship Management,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,Intrepid Ship Management,GUADALUPE,Intrepid Ship Management,True
+USNS PATUXENT,7390952,USA,40700,32400,206.5,29.7,1995,Intrepid Ship Management,Maintenance,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Intrepid Ship Management,PATUXENT,Intrepid Ship Management,True
+USNS LARAMIE,7390964,USA,40700,32400,206.5,29.7,1996,Intrepid Ship Management,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Intrepid Ship Management,LARAMIE,Intrepid Ship Management,True
+USNS KANAWHA,7390976,USA,40700,32400,206.5,29.7,1998,Keystone Shipping,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Keystone Shipping Company,KANAWHA,Keystone Shipping Company,True
+USNS SUPPLY,8106683,USA,48800,7500,230.0,32.6,1994,Maersk Line Limited,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",SUPPLY,"Maersk Line, Limited",True
+USNS ARCTIC,8106695,USA,48800,7500,230.0,32.6,1995,Maersk Line Limited,Operational,San Diego,At Sea,sample_vessel_data.csv,True,False,"Maersk Line, Limited",ARCTIC,"Maersk Line, Limited",True
+USNS BRIDGE,8106701,USA,48800,7500,230.0,32.6,1998,Maersk Line Limited,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,"Maersk Line, Limited",BRIDGE,"Maersk Line, Limited",True
+USNS RAINIER,8106713,USA,48800,7500,230.0,32.6,1998,Maersk Line Limited,Maintenance,Norfolk,Norfolk,sample_vessel_data.csv,True,False,"Maersk Line, Limited",RAINIER,"Maersk Line, Limited",True
+USNS WASHINGTON CHAMBERS,9399459,USA,41000,14500,210.0,32.2,2011,Ocean Shipholding,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,OCEAN SHIPHOLDING,WASHINGTON CHAMBERS,OCEAN SHIPHOLDING,False
+USNS WILLIAM MCLEAN,9399461,USA,41000,14500,210.0,32.2,2012,Ocean Shipholding,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,OCEAN SHIPHOLDING,WILLIAM MCLEAN,OCEAN SHIPHOLDING,False
+USNS MEDGAR EVERS,9399473,USA,41000,14500,210.0,32.2,2012,Ocean Shipholding,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,False,OCEAN SHIPHOLDING,MEDGAR EVERS,OCEAN SHIPHOLDING,False
+USNS MONTFORD POINT,9593568,USA,78000,0,233.6,50.0,2013,TOTE Maritime,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,TOTE Maritime,MONTFORD POINT,TOTE Maritime,True
+USNS ROBERT E PEARY,7359932,USA,41353,25161,206.5,29.7,1981,Keystone Shipping,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Keystone Shipping Company,ROBERT E PEARY,Keystone Shipping Company,True
+USNS LEROY GRUMMAN,7394484,USA,40700,32400,206.5,29.7,1989,Keystone Shipping,ROS,Norfolk,Norfolk,sample_vessel_data.csv,True,False,Keystone Shipping Company,LEROY GRUMMAN,Keystone Shipping Company,True
+USNS ALAN SHEPARD,9250839,USA,62638,0,289.0,32.3,2007,American President Lines,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,False,AMERICAN PRESIDENT LINES,ALAN SHEPARD,AMERICAN PRESIDENT LINES,True
+USNS RICHARD E BYRD,9250841,USA,62638,0,289.0,32.3,2007,American President Lines,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,AMERICAN PRESIDENT LINES,RICHARD E BYRD,AMERICAN PRESIDENT LINES,True
+USNS SODERMAN,9250853,USA,62638,0,289.0,32.3,2008,American President Lines,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,AMERICAN PRESIDENT LINES,SODERMAN,AMERICAN PRESIDENT LINES,True
+USNS RED CLOUD,9250865,USA,62638,0,289.0,32.3,2008,American President Lines,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,AMERICAN PRESIDENT LINES,RED CLOUD,AMERICAN PRESIDENT LINES,True
+USNS DAHL,9250889,USA,62638,0,289.0,32.3,2009,Matson Navigation,Operational,Portsmouth,Portsmouth,sample_vessel_data.csv,True,False,Matson Navigation Company,DAHL,Matson Navigation Company,True
+USNS CHARLTON,9250891,USA,62638,0,289.0,32.3,2010,Matson Navigation,ROS,Hampton Roads,Hampton Roads,sample_vessel_data.csv,True,False,Matson Navigation Company,CHARLTON,Matson Navigation Company,True
+USNS WESTPHAL,9250907,USA,62638,0,289.0,32.3,2010,Matson Navigation,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,True,Matson Navigation Company,WESTPHAL,Matson Navigation Company,True
+SS CAPE ISLAND,8214568,USA,35751,11956,199.6,32.2,1984,Civilian Contractor,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,CIVILIAN CONTRACTOR,CAPE ISLAND,CIVILIAN CONTRACTOR,False
+SS CAPE INTREPID,8214570,USA,35751,11956,199.6,32.2,1984,Civilian Contractor,Ready Reserve,Norfolk,Norfolk,sample_vessel_data.csv,True,False,CIVILIAN CONTRACTOR,Intrepid Ship Management,CIVILIAN CONTRACTOR,False
+SS CAPE INSCRIPTION,8214582,USA,35751,11956,199.6,32.2,1985,Civilian Contractor,ROS,Norfolk,Norfolk,sample_vessel_data.csv,True,False,CIVILIAN CONTRACTOR,CAPE INSCRIPTION,CIVILIAN CONTRACTOR,False
+SS CAPE ISABEL,8214594,USA,35751,11956,199.6,32.2,1985,Civilian Contractor,Ready Reserve,Portsmouth,Portsmouth,sample_vessel_data.csv,True,False,CIVILIAN CONTRACTOR,CAPE ISABEL,CIVILIAN CONTRACTOR,False
+SS CAPE HUDSON,8214600,USA,35751,11956,199.6,32.2,1986,Civilian Contractor,ROS,Newport News,Newport News,sample_vessel_data.csv,True,False,CIVILIAN CONTRACTOR,CAPE HUDSON,CIVILIAN CONTRACTOR,False
+USNS SPEARHEAD,9486655,USA,1615,0,103.0,28.5,2012,Austal USA,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,AUSTAL USA,SPEARHEAD,AUSTAL USA,False
+USNS CHOCTAW COUNTY,9486667,USA,1615,0,103.0,28.5,2012,Austal USA,Operational,Norfolk,Norfolk,sample_vessel_data.csv,True,False,AUSTAL USA,CHOCTAW COUNTY,AUSTAL USA,False
+USNS MILLINOCKET,9486679,USA,1615,0,103.0,28.5,2013,Austal USA,Ready,Norfolk,Norfolk,sample_vessel_data.csv,True,False,AUSTAL USA,MILLINOCKET,AUSTAL USA,False
+USNS FALL RIVER,9486681,USA,1615,0,103.0,28.5,2013,Austal USA,Operational,Norfolk,At Sea,sample_vessel_data.csv,True,False,AUSTAL USA,FALL RIVER,AUSTAL USA,False
+USNS TRENTON,9486693,USA,1615,0,103.0,28.5,2014,Austal USA,Operational,San Diego,San Diego,sample_vessel_data.csv,True,False,AUSTAL USA,TRENTON,AUSTAL USA,False

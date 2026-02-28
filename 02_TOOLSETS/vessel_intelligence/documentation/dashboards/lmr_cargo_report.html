@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lower Mississippi River — Cargo Demographics Report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --navy: #0f172a; --blue: #2563EB; --green: #16A34A; --amber: #D97706;
+    --red: #DC2626; --text: #1e293b; --muted: #64748b; --bg: #f8fafc;
+    --card: #ffffff; --border: #e2e8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; }
+  header { background: var(--navy); color: #fff; padding: 2rem 2.5rem 1.5rem; }
+  header h1 { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.3px; }
+  header p { color: #94a3b8; margin-top: .3rem; font-size: .88rem; }
+  .badge { display: inline-block; background: rgba(255,255,255,.12); border-radius: 4px;
+            padding: 2px 8px; font-size: .78rem; margin-top: .5rem; margin-right: .4rem; }
+  main { max-width: 1380px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin: 2.2rem 0 1rem;
+        border-left: 4px solid var(--blue); padding-left: .7rem; }
+  h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; }
+  .section-note { font-size: .82rem; color: var(--muted); margin: -.5rem 0 1rem; padding-left: 1.1rem; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+  .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+           padding: 1rem 1.2rem; position: relative; overflow: hidden; }
+  .kpi::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--kpi-color, var(--blue)); }
+  .kpi .val { font-size: 1.65rem; font-weight: 700; color: var(--navy); }
+  .kpi .label { font-size: .75rem; color: var(--muted); margin-top: .2rem; }
+  .kpi .sub { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+  .chart-grid { display: grid; gap: 1.2rem; }
+  .chart-grid-2 { grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); }
+  .chart-grid-3 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+  .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; }
+  .chart-card canvas { max-height: 320px; }
+  .chart-card.tall canvas { max-height: 420px; }
+  .chart-card.xlarge canvas { max-height: 500px; }
+  .note-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px;
+               padding: .9rem 1.1rem; font-size: .82rem; color: #92400e; margin: 1rem 0; }
+  .note-box b { color: #78350f; }
+  .divider { border: none; border-top: 2px solid var(--border); margin: 2.5rem 0 1.5rem; }
+  footer { text-align: center; font-size: .78rem; color: var(--muted); padding: 1rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Lower Mississippi River — Cargo Demographics Report</h1>
+  <p>Port Complex: New Orleans LA · Baton Rouge LA · Gramercy LA &nbsp;|&nbsp; Generated February 19, 2026</p>
+  <span class="badge">IMPORTS 2023–2025 (complete)</span>
+  <span class="badge">EXPORTS 2023 (latest complete year)</span>
+  <span class="badge">Source: Panjiva U.S. Customs Data</span>
+</header>
+
+<main>
+
+<!-- ═══════ TOP KPIs ═══════ -->
+<h2>Executive Summary</h2>
+<div class="kpi-grid">
+  <div class="kpi" style="--kpi-color:#2563EB">
+    <div class="val">162.89M</div>
+    <div class="label">Total Import Tons (2023–2025)</div>
+    <div class="sub">44,679 classified shipment records</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#DC2626">
+    <div class="val">46%</div>
+    <div class="label">Dry Bulk Share of Imports</div>
+    <div class="sub">75.46M tons</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#0891B2">
+    <div class="val">39%</div>
+    <div class="label">Liquid Bulk Share of Imports</div>
+    <div class="sub">63.12M tons</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#7C3AED">
+    <div class="val">0%</div>
+    <div class="label">Liquid Gas Share of Imports</div>
+    <div class="sub">669.0K tons if any</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#D97706">
+    <div class="val">14%</div>
+    <div class="label">Break Bulk Share of Imports</div>
+    <div class="sub">22.29M tons</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#16A34A">
+    <div class="val">55.43M</div>
+    <div class="label">Total Export Tons (2023)</div>
+    <div class="sub">4,661 shipment records (2023 only)</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#059669">
+    <div class="val">52%</div>
+    <div class="label">Grain Share of Exports</div>
+    <div class="sub">29.00M tons</div>
+  </div>
+</div>
+
+<!-- ═══════ IMPORTS SECTION ═══════ -->
+<h2>Imports — Cargo Demographics (2023–2025)</h2>
+<p class="section-note">Classified records arriving at New Orleans, Baton Rouge, and Gramercy — excludes white noise and carrier-excluded shipments.</p>
+
+<div class="chart-grid chart-grid-2">
+
+  <div class="chart-card">
+    <h3>Import Cargo Group Share (all years, by tonnage)</h3>
+    <canvas id="impPie"></canvas>
+  </div>
+
+  <div class="chart-card tall">
+    <h3>Monthly Import Tonnage by Group (2023–2025)</h3>
+    <canvas id="impMonthly"></canvas>
+  </div>
+
+</div>
+
+<div class="chart-grid chart-grid-2" style="margin-top:1.2rem">
+  <div class="chart-card">
+    <h3>Year-over-Year Comparison — Import Tons by Group</h3>
+    <canvas id="impYOY"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>Imports by Year — Total Tonnage</h3>
+    <canvas id="impYearBar"></canvas>
+  </div>
+</div>
+
+<!-- ═══════ DRY BULK ═══════ -->
+<hr class="divider">
+<h2>Dry Bulk — Detailed Breakdown</h2>
+<p class="section-note">Dry Bulk covers Ferrous Raw Materials, Fertilizers, Agricultural commodities, Minerals & Ores, Construction Materials, Carbon Products, and Non-Ferrous Raw Materials.</p>
+
+<div class="kpi-grid">
+  <div class="kpi" style="--kpi-color:#DC2626">
+    <div class="val">75.46M</div>
+    <div class="label">Total Dry Bulk Tons</div>
+    <div class="sub">2023–2025</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#DC2626">
+    <div class="val">7,961</div>
+    <div class="label">Shipment Records</div>
+    <div class="sub">Dry Bulk classified</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#DC2626">
+    <div class="val">7</div>
+    <div class="label">Distinct Commodities</div>
+    <div class="sub">Within Dry Bulk group</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#DC2626">
+    <div class="val">46.3%</div>
+    <div class="label">Share of All Imports</div>
+    <div class="sub">By tonnage</div>
+  </div>
+</div>
+
+<div class="chart-grid chart-grid-2">
+  <div class="chart-card tall">
+    <h3>Dry Bulk — Tonnage by Commodity</h3>
+    <canvas id="dbCommodity"></canvas>
+  </div>
+  <div class="chart-card tall">
+    <h3>Dry Bulk — Top Cargo Categories (Commodity / Cargo)</h3>
+    <canvas id="dbCargo"></canvas>
+  </div>
+</div>
+
+<div class="chart-grid chart-grid-2" style="margin-top:1.2rem">
+  <div class="chart-card tall">
+    <h3>Dry Bulk — Top Origins (Country of Origin)</h3>
+    <canvas id="dbOrigin"></canvas>
+  </div>
+  <div class="chart-card tall">
+    <h3>Dry Bulk — Top Consignees by Tonnage</h3>
+    <canvas id="dbConsignees"></canvas>
+  </div>
+</div>
+
+<!-- ═══════ LIQUID BULK ═══════ -->
+<hr class="divider">
+<h2>Liquid Bulk — Summary</h2>
+<p class="section-note">Includes Petroleum (crude, refined products, fuel oil), Chemicals, Agricultural (vegetable oils), and Fertilizer liquids.</p>
+
+<div class="kpi-grid">
+  <div class="kpi" style="--kpi-color:#0891B2">
+    <div class="val">63.12M</div>
+    <div class="label">Total Liquid Bulk Tons</div>
+    <div class="sub">2023–2025</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#0891B2">
+    <div class="val">38.8%</div>
+    <div class="label">Share of All Imports</div>
+    <div class="sub">By tonnage</div>
+  </div>
+</div>
+
+<div class="chart-grid chart-grid-2">
+  <div class="chart-card">
+    <h3>Liquid Bulk — Tonnage by Commodity</h3>
+    <canvas id="lbCommodity"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>Liquid Gas — Tonnage by Commodity</h3>
+    <canvas id="lgCommodity"></canvas>
+  </div>
+</div>
+
+<!-- ═══════ FACILITY SECTION ═══════ -->
+<hr class="divider">
+<h2>Terminal Facility Analysis — Import Cargo (MRTIS Vessel Tracking)</h2>
+<p class="section-note">Vessel movements from MRTIS matched to Panjiva import manifests using IMO number (primary) and vessel name (fallback) within a ±3 day date window. Cargo type assigned from the matched manifest record.</p>
+
+<div class="note-box">
+  <b>Methodology:</b> MRTIS records vessel crossings of the Southwest Pass Bar and terminal visits on the Lower Mississippi River.
+  Inbound laden vessels (high arrival draft) are matched to import BOLs arriving ±3 days of the terminal arrival date.
+  Matched 238 facility-commodity pairs via MRTIS vessel tracking (multi-year 2018–2025). 2023 terminal data available Jan only; 2024–2025 complete.
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi" style="--kpi-color:#2563EB">
+    <div class="val">20</div>
+    <div class="label">Facilities Identified</div>
+    <div class="sub">With matched import cargo</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#2563EB">
+    <div class="val">59.51M</div>
+    <div class="label">Total Import Tons (MRTIS)</div>
+    <div class="sub">Multi-year 2018–2025</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#16A34A">
+    <div class="val">13</div>
+    <div class="label">Commodity Types</div>
+    <div class="sub">Across all facilities</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#D97706">
+    <div class="val">Valero St Charles</div>
+    <div class="label">#1 Facility by Tonnage</div>
+    <div class="sub">12.58M import tons</div>
+  </div>
+</div>
+
+<div class="chart-grid chart-grid-2">
+  <div class="chart-card xlarge">
+    <h3>Top 20 Facilities — Import Tonnage</h3>
+    <canvas id="facilityBar"></canvas>
+  </div>
+  <div class="chart-card xlarge">
+    <h3>Top 10 Facilities — Commodity Mix (Imports)</h3>
+    <canvas id="facilityStacked"></canvas>
+  </div>
+</div>
+
+<!-- ═══════ EXPORTS SECTION ═══════ -->
+<hr class="divider">
+<h2>Exports — Cargo Demographics (2023)</h2>
+
+<div class="note-box">
+  <b>Data Completeness Note:</b> Export manifests have an 18–24 month reporting lag compared to imports.
+  The 12 Panjiva export files available are all 2023 vintage — <b>2023 is the most recent complete export year.</b>
+  2024 and 2025 export data is not yet available in this dataset.
+  Import data runs through 2025 and is updated monthly.
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi" style="--kpi-color:#16A34A">
+    <div class="val">55.43M</div>
+    <div class="label">Total Export Tons (2023)</div>
+    <div class="sub">4,661 shipment records</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#16A34A">
+    <div class="val">52%</div>
+    <div class="label">Grain Exports</div>
+    <div class="sub">29.00M tons</div>
+  </div>
+  <div class="kpi" style="--kpi-color:#16A34A">
+    <div class="val">10</div>
+    <div class="label">Top Exporters Tracked</div>
+    <div class="sub">By tonnage</div>
+  </div>
+</div>
+
+<div class="chart-grid chart-grid-2">
+  <div class="chart-card">
+    <h3>Export Cargo Group Share (2023, by tonnage)</h3>
+    <canvas id="expPie"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>Monthly Export Tonnage (2023)</h3>
+    <canvas id="expMonthly"></canvas>
+  </div>
+</div>
+
+<div class="chart-grid chart-grid-2" style="margin-top:1.2rem">
+  <div class="chart-card tall">
+    <h3>Exports — Destination Regions</h3>
+    <canvas id="expDest"></canvas>
+  </div>
+  <div class="chart-card tall">
+    <h3>Exports — Top Destination Countries</h3>
+    <canvas id="expCountry"></canvas>
+  </div>
+</div>
+
+<div class="chart-grid" style="margin-top:1.2rem">
+  <div class="chart-card tall">
+    <h3>Exports — Top Shippers by Tonnage (2023)</h3>
+    <canvas id="expShippers"></canvas>
+  </div>
+</div>
+
+</main>
+<footer>Lower Mississippi River Cargo Report &nbsp;|&nbsp; Generated February 19, 2026 &nbsp;|&nbsp; Source: Panjiva U.S. Customs Manifests</footer>
+
+<script>
+const P = ["#2563EB", "#16A34A", "#DC2626", "#D97706", "#7C3AED", "#0891B2", "#DB2777", "#059669", "#EA580C", "#6366F1", "#84CC16", "#F59E0B", "#06B6D4", "#8B5CF6", "#EC4899"];
+const P12 = [...P, ...P.slice(0,3)];
+
+// ─── helpers ──────────────────────────────────────────────
+function barH(id, labels, data, label, color) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: { labels, datasets: [{ label, data, backgroundColor: color || P[0], borderRadius: 3 }] },
+    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: true,
+      scales: { x: { ticks: { callback: v => v>=1e6 ? (v/1e6).toFixed(1)+'M' : v>=1e3 ? (v/1e3).toFixed(0)+'K' : v } } },
+      plugins: { legend: { display: false },
+        tooltip: { callbacks: { label: c => (c.raw/1e3).toFixed(1)+' K tons' } } } } });
+}
+function barV(id, labels, data, label, color) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: { labels, datasets: [{ label, data, backgroundColor: color || P[0], borderRadius: 3 }] },
+    options: { responsive: true, maintainAspectRatio: true,
+      scales: { y: { ticks: { callback: v => v>=1e6 ? (v/1e6).toFixed(1)+'M' : v>=1e3 ? (v/1e3).toFixed(0)+'K' : v } } },
+      plugins: { legend: { display: false },
+        tooltip: { callbacks: { label: c => (c.raw/1e3).toFixed(1)+' K tons' } } } } });
+}
+function pie(id, labels, data) {
+  new Chart(document.getElementById(id), {
+    type: 'doughnut',
+    data: { labels, datasets: [{ data, backgroundColor: P12 }] },
+    options: { responsive: true, maintainAspectRatio: true,
+      plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: {size:11} } },
+        tooltip: { callbacks: { label: c => c.label + ': ' + (c.raw/1e6).toFixed(2)+'M tons (' +
+          (c.raw/c.dataset.data.reduce((a,b)=>a+b,0)*100).toFixed(1)+'%)' } } } } });
+}
+function lineMulti(id, labels, datasets) {
+  new Chart(document.getElementById(id), {
+    type: 'line',
+    data: { labels, datasets },
+    options: { responsive: true, maintainAspectRatio: true,
+      scales: { y: { ticks: { callback: v => v>=1e6 ? (v/1e6).toFixed(1)+'M' : v>=1e3 ? (v/1e3).toFixed(0)+'K' : v } } },
+      plugins: { legend: { position: 'top', labels: { boxWidth: 12, font: {size:11} } },
+        tooltip: { callbacks: { label: c => c.dataset.label + ': ' + (c.raw/1e3).toFixed(1)+' K tons' } } } } });
+}
+function barGrouped(id, labels, datasets) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: { labels, datasets },
+    options: { responsive: true, maintainAspectRatio: true,
+      scales: { y: { ticks: { callback: v => v>=1e6 ? (v/1e6).toFixed(1)+'M' : v>=1e3 ? (v/1e3).toFixed(0)+'K' : v } } },
+      plugins: { legend: { position: 'top', labels: { boxWidth: 12, font: {size:11} } },
+        tooltip: { callbacks: { label: c => c.dataset.label + ': ' + (c.raw/1e3).toFixed(1)+' K tons' } } } } });
+}
+
+// ─── IMPORT PIE ──────────────────────────────────────────
+pie('impPie', ["Dry Bulk", "Liquid Bulk", "Break Bulk", "EXCLUDED", "Liquid Gas"], [75459830.0, 63122991.7, 22290298.3, 1346190.0, 668952.2]);
+
+// ─── IMPORT MONTHLY TIME SERIES ──────────────────────────
+const impTsGroups = ["Break Bulk", "Dry Bulk", "EXCLUDED", "Liquid Bulk", "Liquid Gas"];
+const impTsColors = ["#2563EB", "#16A34A", "#DC2626", "#D97706", "#7C3AED"];
+const impTsDatasets = impTsGroups.map((g, i) => ({
+  label: g,
+  data: [[1504995.9, 1074350.6, 489817.5, 489302.2, 477841.4, 361581.7, 351444.4, 381727.4, 411505.1, 513005.6, 320594.0, 2026609.3, 840890.0, 677909.5, 609851.2, 532644.3, 533461.3, 531729.1, 906621.6, 522956.2, 704403.6, 528801.4, 541986.5, 541788.7, 387149.2, 541599.8, 635917.9, 1229851.9, 684123.7, 560054.0, 340258.7, 543239.0, 305790.4, 475184.9, 223111.6, 488198.7], [2361195.2, 2375623.6, 2693408.3, 1761857.3, 2684965.3, 2891564.2, 1730790.5, 1756217.7, 4097713.7, 1943960.0, 1389042.5, 1755277.7, 2332903.6, 2647579.4, 2300056.4, 2362671.6, 1828178.6, 1772901.1, 2156938.6, 1902679.0, 2060418.5, 2007447.0, 1670287.3, 1394835.4, 2636963.1, 1911356.8, 2848007.6, 2378677.0, 2296218.3, 1577020.4, 852810.5, 2273600.7, 2024413.6, 1452824.2, 1541473.5, 1787951.8], [62797.0, 21565.4, 33061.0, 31476.4, 46441.7, 113798.2, 63344.8, 67462.2, 2409.3, 57098.2, 3964.7, 3594.7, 157372.7, 5878.5, 67362.7, 54875.4, 2465.6, 1809.8, 75307.1, 2570.6, 64051.0, 93260.1, 3635.7, 15999.8, 1979.3, 50027.3, 7770.9, 3530.4, 62995.2, 3143.0, 63654.0, 12691.0, 37060.4, 1559.1, 23927.4, 26249.6], [2113874.9, 1372209.4, 2170197.5, 2709330.7, 2583756.6, 2245392.1, 1915599.4, 2189278.6, 2953028.5, 1977902.0, 1460128.3, 2177253.1, 3010130.0, 1158621.7, 1816983.8, 1648886.1, 1708518.7, 1987675.0, 2142254.1, 2150332.3, 1357284.1, 1412457.4, 1209801.7, 1120794.0, 1150117.2, 1233311.0, 1559743.8, 1389228.1, 1521987.7, 1374084.9, 1238026.1, 1387816.9, 1405936.9, 1420459.7, 1532710.0, 1317879.4], [240.3, 0, 2622.5, 0, 3051.4, 452.0, 317.0, 2524.2, 0, 3709.0, 715.0, 2180.8, 510.4, 19.0, 0, 0, 21.2, 368.0, 43.1, 319408.3, 171.0, 5492.0, 1132.0, 423.0, 0, 859.0, 2659.0, 316420.0, 210.0, 826.3, 0, 1315.6, 280.0, 690.0, 2012.0, 280.0]][i],
+  borderColor: impTsColors[i],
+  backgroundColor: impTsColors[i] + '22',
+  fill: false, tension: 0.3, borderWidth: 2, pointRadius: 2
+}));
+lineMulti('impMonthly', ["2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12"], impTsDatasets);
+
+// ─── YEAR COMPARISON ─────────────────────────────────────
+const yoyYears = [2023, 2024, 2025].map(String);
+const yoyGroups = ["Break Bulk", "Dry Bulk", "EXCLUDED", "Liquid Bulk", "Liquid Gas"];
+const yoyColors = ["#2563EB", "#16A34A", "#DC2626", "#D97706", "#7C3AED"];
+const yoyDatasets = yoyGroups.map((g, i) => ({
+  label: g,
+  data: [[8402775.1, 7473043.2, 6414480.0], [27441616.0, 24436896.5, 23581317.6], [507013.8, 544588.8, 294587.5], [25867951.2, 20723738.8, 16531301.7], [15812.2, 327588.1, 325551.9]][i],
+  backgroundColor: yoyColors[i], borderRadius: 3
+}));
+barGrouped('impYOY', yoyYears, yoyDatasets);
+
+// ─── YEAR TOTAL BAR ──────────────────────────────────────
+const yearTotals = [62235168.0, 53505855.0, 47147239.0];
+barV('impYearBar', ["2023", "2024", "2025"], yearTotals, 'Tons', P[0]);
+
+// ─── DRY BULK ────────────────────────────────────────────
+barH('dbCommodity', ["Fertilizer", "Ferrous Raw Materials", "Non-Ferrous Raw Materials", "Minerals & Ores", "Construction Materials", "Carbon Products", "Agricultural"], [26526656.9, 18582422.6, 13822285.1, 7838299.9, 5959565.9, 1580918.4, 1149681.2], 'Tons', P[2]);
+barH('dbCargo', ["Fertilizer / Phosphorus Fertilizers", "Fertilizer / Nitrogen Fertilizers", "Ferrous Raw Materials / Iron Ore", "Ferrous Raw Materials / Pig Iron", "Non-Ferrous Raw Materials / Bauxite", "Non-Ferrous Raw Materials / Manganese", "Fertilizer / Potassium Fertilizers", "Construction Materials / Cement", "Minerals & Ores / Barite", "Non-Ferrous Raw Materials / Alumina", "Construction Materials / Aggregates", "Minerals & Ores / Salt", "Non-Ferrous Raw Materials / TiO2", "Fertilizer / Sulphur", "Carbon Products / Petcoke", "Minerals & Ores / Minerals", "Minerals & Ores / SCM", "Agricultural / Grain", "Minerals & Ores / Fluorspar", "Ferrous Raw Materials / Ferro Alloys"], [11171319.8, 10475810.3, 9391094.7, 7998253.2, 6374322.4, 3829251.1, 3743112.6, 3692865.2, 2309807.0, 2145043.7, 2115799.9, 1717629.6, 1473667.8, 1136414.3, 1030096.8, 894716.4, 795001.9, 783164.0, 773084.0, 744068.2], 'Tons', '#B45309');
+barH('dbOrigin', ["Brazil", "Russia", "Jamaica", "Peru", "China", "Saudi Arabia", "Qatar", "Canada", "Vietnam", "Turkey", "Mexico", "Morocco", "Ukraine", "Algeria", "India"], [13303436.3, 6630028.9, 6450563.2, 5395662.9, 4159452.7, 3316890.4, 2274646.9, 2129967.6, 2068702.4, 1916092.8, 1845926.1, 1651110.6, 1632378.3, 1534734.1, 1500962.8], 'Tons', P[3]);
+barH('dbConsignees', ["Atalco Gramercy LLC", "Mosaic Fertilizer LLC", "Nucor Steel Louisiana LLC", "Eco Fertilizers Incorporated", "Eurochem North America Corporationo", "Sabic Americas", "Host Agency", "Ukt Chicago Incorporated", "Archer Daniels Midland Company", "Chs Incorporated"], [5918242.0, 5760705.7, 3142028.0, 1862220.7, 1717139.6, 1623683.8, 1561203.0, 1348667.8, 1225897.8, 1114910.7], 'Tons', P[4]);
+
+// ─── LIQUID BULK ─────────────────────────────────────────
+barH('lbCommodity', ["Petroleum", "Chemicals", "Agricultural", "Fertilizer"], [47925443.0, 8583480.6, 6569725.8, 44342.3], 'Tons', P[1]);
+
+// ─── LIQUID GAS ──────────────────────────────────────────
+barH('lgCommodity', ["Petroleum"], [668952.2], 'Tons', P[5]);
+
+
+
+// ─── FACILITY ─────────────────────────────────────────
+(function() {
+  const ctx = document.getElementById('facilityBar');
+  if (!ctx) return;
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Valero St Charles", "AST St James Buoys", "Nucor Steel", "ADM Destrehan Buoys", "IMTT", "AST Meraux Buoys", "Laplace Buoys", "110 Buoys", "Nashville Ave", "PBF Chalmette", "Copper Dockside Buoys", "Copper Darrow Buoys", "AST Chalmette Buoys", "Genesis Baton Rouge", "KMI Harvey", "AGG", "ARTCO 110-111 Buoys", "MPLX Garyville", "PCS Nitrogen", "AST Chalmette Slip"],
+      datasets: [
+        {label:'Import Tons', data:[12579588.0, 6447548.0, 5136278.0, 4425597.0, 3461271.0, 3431265.0, 2689670.0, 2495872.0, 2312434.0, 2299016.0, 1819594.0, 1651248.0, 1646679.0, 1589512.0, 1519704.0, 1439519.0, 1298990.0, 1167363.0, 1064225.0, 1033471.0], backgroundColor:'rgba(37,99,235,0.85)', borderRadius:3},
+        {label:'Export Tons', data:[0.0, 0.0, 0.0, 0.0, 93060.0, 0.0, 0.0, 0.0, 234.0, 0.0, 0.0, 8132.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], backgroundColor:'rgba(22,163,74,0.85)', borderRadius:3}
+      ]
+    },
+    options: {
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{position:'top'},tooltip:{callbacks:{label:c=>c.dataset.label+': '+fmtN(c.raw)}}},
+      scales:{x:{ticks:{callback:v=>fmtN(v)}},y:{ticks:{font:{size:11}}}}
+    }
+  });
+})();
+
+(function() {
+  const ctx2 = document.getElementById('facilityStacked');
+  if (!ctx2) return;
+  const facComms = ["Petroleum", "Fertilizer", "Ferrous Raw Materials", "General Cargo", "Minerals & Ores", "Agricultural", "Non-Ferrous Raw Materials", "Steel"];
+  const facFacs  = ["Valero St Charles", "AST St James Buoys", "Nucor Steel", "ADM Destrehan Buoys", "IMTT", "AST Meraux Buoys", "Laplace Buoys", "110 Buoys", "Nashville Ave", "PBF Chalmette"];
+  const facVals  = [[12273349.0, 0.0, 0.0, 0.0, 1381213.0, 0.0, 0.0, 0.0, 0.0, 2299016.0], [234299.0, 3219764.0, 0.0, 3455063.0, 36103.0, 502553.0, 88204.0, 1736292.0, 0.0, 0.0], [0.0, 400436.0, 5136278.0, 0.0, 0.0, 521368.0, 1209856.0, 0.0, 4339.0, 0.0], [71940.0, 205972.0, 0.0, 681228.0, 345039.0, 250297.0, 649911.0, 340549.0, 41501.0, 0.0], [0.0, 514852.0, 0.0, 51080.0, 4051.0, 1209700.0, 217280.0, 76011.0, 520.0, 0.0], [0.0, 0.0, 0.0, 0.0, 1532513.0, 0.0, 40937.0, 18611.0, 402868.0, 0.0], [0.0, 619241.0, 0.0, 0.0, 0.0, 766199.0, 312564.0, 129108.0, 113142.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1745358.0, 0.0]];
+  const ds = facComms.map((c,i)=>({
+    label:c, data:facVals[i], backgroundColor:P[i%P.length], borderRadius:2
+  }));
+  new Chart(ctx2, {
+    type:'bar',
+    data:{labels:facFacs, datasets:ds},
+    options:{
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:10}}},
+               tooltip:{callbacks:{label:c=>c.dataset.label+': '+fmtN(c.raw)}}},
+      scales:{x:{stacked:true,ticks:{callback:v=>fmtN(v)}},y:{stacked:true,ticks:{font:{size:11}}}}
+    }
+  });
+})();
+
+
+// ─── EXPORTS ─────────────────────────────────────────────
+pie('expPie', ["Dry Bulk \u2013 Grain", "Liquid Bulk \u2013 Petroleum", "Dry Bulk \u2013 Coal", "Dry Bulk \u2013 Animal Feed", "Liquid Bulk \u2013 Chemicals", "Other", "Dry Bulk \u2013 Minerals & Ores", "Dry Bulk \u2013 Fertilizer", "Break Bulk \u2013 Machinery", "Liquid Bulk \u2013 Vegetable Oils", "Break Bulk \u2013 Steel", "Dry Bulk \u2013 Agricultural", "Break Bulk \u2013 Metals", "Liquid Bulk \u2013 Plastics", "Liquid Gas \u2013 LPG/LNG", "Break Bulk \u2013 Vehicles", "Break Bulk \u2013 Pulp & Paper"], [29003890.1, 12503121.8, 6372119.5, 2650356.5, 1900283.0, 1059696.1, 1048599.0, 351812.0, 159446.6, 149004.5, 130466.3, 32303.0, 28115.5, 26408.2, 4465.0, 3973.4, 1027.0]);
+barV('expMonthly', ["2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12"], [4164534.6, 5543247.4, 4866134.2, 5275486.2, 4945190.9, 4376854.2, 4593986.7, 4123009.8, 5592354.9, 1937508.8, 3895370.0, 6111409.9], 'Tons', P[4]);
+barH('expDest', ["Eastern Asia", "South America", "Western Europe", "North America", "Central America", "Southern Asia", "Northern Africa", "Northern Europe", "Caribbean", "South-Eastern Asia"], [16913724.5, 7823964.6, 7279303.2, 5710625.8, 3088233.2, 3032474.3, 2995166.4, 2390223.9, 1752549.7, 1313990.1], 'Tons', P[1]);
+barH('expCountry', ["China", "Japan", "Mexico", "Netherlands", "Colombia", "India", "Egypt", "United Kingdom", "Brazil", "Belgium", "Panama", "South Korea", "Honduras", "Ecuador", "Morocco"], [9980294.0, 5725964.9, 5420188.2, 5276855.4, 3776152.9, 2956742.7, 1980806.0, 1770089.1, 1186730.0, 1134237.9, 1114008.0, 1000130.5, 807918.4, 800546.3, 693338.8], 'Tons', P[3]);
+barH('expShippers', ["Zen Noh Grain", "Archer Daniels Midland", "Javelin Global Commodities", "Chs", "Cargill", "Javelin Global Commofiyird", "Cofco Grans Us", "Marathon Petroleum", "Bunge North America", "Valero Marketing And Supply"], [7915766.1, 5114903.7, 3530006.1, 2764177.8, 2688888.6, 2671701.1, 2196647.1, 1916178.0, 1419351.4, 1185111.8], 'Tons', P[2]);
+</script>
+</body>
+</html>

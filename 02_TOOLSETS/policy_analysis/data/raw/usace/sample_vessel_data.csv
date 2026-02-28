@@ -1,0 +1,54 @@
+Vessel Name,IMO Number,Flag,Vessel Type,Gross Tonnage,Deadweight,Length,Beam,Build Year,Operator,Status,Home Port,Current Location
+USNS COMFORT,8807436,USA,Hospital Ship,69360,11135,272.5,32.2,1976,Military Sealift Command,Operational,Norfolk,Norfolk
+USNS MERCY,8807448,USA,Hospital Ship,69360,11135,272.5,32.2,1976,Military Sealift Command,Operational,San Diego,San Diego
+USNS JOHN GLENN,9707806,USA,Expeditionary Mobile Base,78470,0,239.9,50.0,2014,Crowley Maritime Corporation,Operational,Norfolk,Norfolk
+USNS LEWIS B PULLER,9707818,USA,Expeditionary Mobile Base,78470,0,239.9,50.0,2015,Crowley Maritime Corporation,Operational,Bahrain,Deployed
+USNS HERSHEL WOODY WILLIAMS,9707820,USA,Expeditionary Sea Base,78470,0,239.9,50.0,2017,Crowley Maritime Corporation,Operational,Souda Bay,Mediterranean
+USNS MIGUEL KEITH,9707832,USA,Expeditionary Sea Base,90000,0,239.9,50.0,2020,Crowley Maritime Corporation,Operational,Norfolk,Norfolk
+USNS BOB HOPE,9141251,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,1998,American Steamship Company,Ready Reserve,Norfolk,Norfolk
+USNS FISHER,9141263,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,1999,American Steamship Company,Operational,Norfolk,At Sea
+USNS SEAY,9141275,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,2000,Maersk Line Limited,Ready,Norfolk,Norfolk
+USNS GILLILAND,9141287,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,2000,Maersk Line Limited,Operational,Norfolk,Norfolk
+USNS BRITTIN,9141299,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,2000,Maersk Line Limited,Operational,Norfolk,At Sea
+USNS BENAVIDEZ,9141303,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,2003,Maersk Line Limited,Ready Reserve,Norfolk,Norfolk
+USNS PILILAAU,9141315,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,2004,Maersk Line Limited,Operational,Norfolk,At Sea
+USNS WATKINS,9141327,USA,Large Medium-Speed Roll-on/Roll-off,62069,26664,289.5,32.3,2006,OSG Ship Management,Ready,Norfolk,Norfolk
+USNS HENRY J KAISER,7390884,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1986,Maersk Line Limited,Operational,Norfolk,Norfolk
+USNS JOSHUA HUMPHREYS,7390896,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1987,Maersk Line Limited,Operational,San Diego,San Diego
+USNS JOHN LENTHALL,7390902,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1989,Maersk Line Limited,Operational,Norfolk,At Sea
+USNS PECOS,7390914,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1990,Maersk Line Limited,Ready,Norfolk,Norfolk
+USNS BIG HORN,7390926,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1992,Intrepid Ship Management,Operational,Norfolk,Norfolk
+USNS TIPPECANOE,7390938,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1993,Intrepid Ship Management,Operational,San Diego,San Diego
+USNS GUADALUPE,7390940,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1995,Intrepid Ship Management,Operational,Norfolk,At Sea
+USNS PATUXENT,7390952,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1995,Intrepid Ship Management,Maintenance,Norfolk,Norfolk
+USNS LARAMIE,7390964,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1996,Intrepid Ship Management,Ready Reserve,Norfolk,Norfolk
+USNS KANAWHA,7390976,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1998,Keystone Shipping,Operational,Norfolk,Norfolk
+USNS SUPPLY,8106683,USA,Fast Combat Support Ship,48800,7500,230.0,32.6,1994,Maersk Line Limited,Operational,Norfolk,Norfolk
+USNS ARCTIC,8106695,USA,Fast Combat Support Ship,48800,7500,230.0,32.6,1995,Maersk Line Limited,Operational,San Diego,At Sea
+USNS BRIDGE,8106701,USA,Fast Combat Support Ship,48800,7500,230.0,32.6,1998,Maersk Line Limited,Operational,Norfolk,At Sea
+USNS RAINIER,8106713,USA,Fast Combat Support Ship,48800,7500,230.0,32.6,1998,Maersk Line Limited,Maintenance,Norfolk,Norfolk
+USNS WASHINGTON CHAMBERS,9399459,USA,Dry Cargo Ship,41000,14500,210.0,32.2,2011,Ocean Shipholding,Operational,Norfolk,Norfolk
+USNS WILLIAM MCLEAN,9399461,USA,Dry Cargo Ship,41000,14500,210.0,32.2,2012,Ocean Shipholding,Operational,Norfolk,At Sea
+USNS MEDGAR EVERS,9399473,USA,Dry Cargo Ship,41000,14500,210.0,32.2,2012,Ocean Shipholding,Ready,Norfolk,Norfolk
+USNS MONTFORD POINT,9593568,USA,Expeditionary Transfer Dock,78000,0,233.6,50.0,2013,TOTE Maritime,Operational,Norfolk,Norfolk
+USNS JOHN GLENN,9593570,USA,Expeditionary Transfer Dock,78000,0,233.6,50.0,2014,TOTE Maritime,Operational,San Diego,San Diego
+USNS ROBERT E PEARY,7359932,USA,Fleet Replenishment Oiler,41353,25161,206.5,29.7,1981,Keystone Shipping,Ready Reserve,Norfolk,Norfolk
+USNS LEROY GRUMMAN,7394484,USA,Fleet Replenishment Oiler,40700,32400,206.5,29.7,1989,Keystone Shipping,ROS,Norfolk,Norfolk
+USNS ALAN SHEPARD,9250839,USA,Strategic Sealift,62638,0,289.0,32.3,2007,American President Lines,Ready,Norfolk,Norfolk
+USNS RICHARD E BYRD,9250841,USA,Strategic Sealift,62638,0,289.0,32.3,2007,American President Lines,Operational,Norfolk,At Sea
+USNS SODERMAN,9250853,USA,Strategic Sealift,62638,0,289.0,32.3,2008,American President Lines,Ready Reserve,Norfolk,Norfolk
+USNS RED CLOUD,9250865,USA,Strategic Sealift,62638,0,289.0,32.3,2008,American President Lines,Operational,Norfolk,At Sea
+USNS BRITTIN,9250877,USA,Strategic Sealift,62638,0,289.0,32.3,2009,Matson Navigation,Ready,Newport News,Newport News
+USNS DAHL,9250889,USA,Strategic Sealift,62638,0,289.0,32.3,2009,Matson Navigation,Operational,Portsmouth,Portsmouth
+USNS CHARLTON,9250891,USA,Strategic Sealift,62638,0,289.0,32.3,2010,Matson Navigation,ROS,Hampton Roads,Hampton Roads
+USNS WESTPHAL,9250907,USA,Strategic Sealift,62638,0,289.0,32.3,2010,Matson Navigation,Ready,Norfolk,Norfolk
+SS CAPE ISLAND,8214568,USA,Ready Reserve Force Roll-on/Roll-off,35751,11956,199.6,32.2,1984,Civilian Contractor,Ready Reserve,Norfolk,Norfolk
+SS CAPE INTREPID,8214570,USA,Ready Reserve Force Roll-on/Roll-off,35751,11956,199.6,32.2,1984,Civilian Contractor,Ready Reserve,Norfolk,Norfolk
+SS CAPE INSCRIPTION,8214582,USA,Ready Reserve Force Roll-on/Roll-off,35751,11956,199.6,32.2,1985,Civilian Contractor,ROS,Norfolk,Norfolk
+SS CAPE ISABEL,8214594,USA,Ready Reserve Force Roll-on/Roll-off,35751,11956,199.6,32.2,1985,Civilian Contractor,Ready Reserve,Portsmouth,Portsmouth
+SS CAPE HUDSON,8214600,USA,Ready Reserve Force Roll-on/Roll-off,35751,11956,199.6,32.2,1986,Civilian Contractor,ROS,Newport News,Newport News
+USNS SPEARHEAD,9486655,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2012,Austal USA,Operational,Norfolk,At Sea
+USNS CHOCTAW COUNTY,9486667,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2012,Austal USA,Operational,Norfolk,Norfolk
+USNS MILLINOCKET,9486679,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2013,Austal USA,Ready,Norfolk,Norfolk
+USNS FALL RIVER,9486681,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2013,Austal USA,Operational,Norfolk,At Sea
+USNS TRENTON,9486693,USA,Expeditionary Fast Transport,1615,0,103.0,28.5,2014,Austal USA,Operational,San Diego,San Diego

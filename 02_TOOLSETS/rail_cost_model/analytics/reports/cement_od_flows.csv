@@ -1,0 +1,40 @@
+origin,destination,tons_M,miles,rate
+"Houston, TX","Dallas, TX",5.882,297.0,26.48
+"Fayetteville, AR","Jacksonville, FL",4.786,192.0,29.93
+"Fresno, CA","Los Angeles, CA",4.042,411.0,33.53
+"Houston, TX","Lubbock, TX",2.658,308.0,42.94
+"Fargo, ND","La Crosse, WI",2.592,417.0,34.61
+"Fresno, CA","San Francisco, CA",2.447,484.0,31.54
+"Lubbock, TX","Lubbock, TX",1.841,235.0,33.43
+"Salt Lake City, UT","Salt Lake City, UT",1.661,179.0,29.09
+"Fresno, CA","San Diego, CA",1.63,441.0,25.85
+"Fargo, ND","Lubbock, TX",1.475,726.0,32.91
+"Pueblo, CO","Lubbock, TX",1.405,342.0,36.06
+"Hartford, CT","Charleston, WV",1.398,249.0,38.72
+"Fresno, CA","Fresno, CA",1.193,110.0,19.77
+,"Burlington, VT",0.971,522.0,31.36
+"Fayetteville, AR","Staunton, VA",0.86,473.0,57.19
+"Lubbock, TX","Dallas, TX",0.768,240.0,23.58
+,"Knoxville, TN",0.631,446.0,44.66
+"Boston, MA","Louisville, KY",0.598,416.0,47.1
+"Raleigh, NC","Wilmington, DE",0.544,297.0,47.62
+,"Louisville, KY",0.511,493.0,40.09
+"Hartford, CT","Baltimore, MD",0.494,379.0,42.62
+"Raleigh, NC","Staunton, VA",0.481,203.0,36.55
+"Baltimore, MD","Norfolk, VA",0.47,320.0,40.87
+"Hartford, CT","Knoxville, TN",0.437,514.0,34.13
+"Allentown, PA","Philadelphia, PA",0.434,133.0,31.6
+"Hartford, CT","Binghamton, NY",0.434,288.0,30.32
+"Fayetteville, AR","Wilmington, DE",0.426,645.0,58.2
+"Hartford, CT","Louisville, KY",0.425,420.0,36.43
+"Houston, TX","Fresno, CA",0.419,1490.0,76.78
+"Casper, WY","Salt Lake City, UT",0.413,359.0,14.51
+"Augusta, GA","Jacksonville, FL",0.36,405.0,66.78
+"Hartford, CT","Wilmington, DE",0.327,346.0,67.54
+"Lubbock, TX","Biloxi, MS",0.317,177.0,27.11
+"Allentown, PA","Wilmington, DE",0.316,205.0,38.8
+"Fargo, ND","Denver, CO",0.313,590.0,39.49
+"Fargo, ND","Davenport, IA",0.303,660.0,34.07
+"Pueblo, CO","La Crosse, WI",0.295,197.0,25.76
+"Hartford, CT","Boston, MA",0.234,617.0,36.14
+"Wheeling, WV","Columbus, OH",0.207,251.0,19.79

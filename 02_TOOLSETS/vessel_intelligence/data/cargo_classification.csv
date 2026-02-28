@@ -1,0 +1,134 @@
+Order,Group,Commodity,Cargo,Cargo_Detail,Min_Tons,Max_Tons,Keywords,Exceptions,Note
+1,Dry Bulk,Minerals & Ores,Zircon,Zircon,10,NONE,\bZIRCON\b,,Zircon sand
+2,Break Bulk,Metals,Zinc,Zinc,2,NONE,ZINC\s*INGOTS?|ZINC\s*CONCENTRATE,,Zinc products - ingots/concentrate
+3,Liquid Bulk,Chemicals,Chemicals,Xylene,10,NONE,\bXYLENE\b|\bOXYLENE\b,,Xylene/oxylene
+4,Dry Bulk,Agricultural,Biomass,Wood Pellets,10,NONE,WOOD\s*PELLETS?|WOODPELLETS?,,Wood pellets for biomass fuel
+5,Dry Bulk,Agricultural,Biomass,Wood Chips,10,NONE,WOOD\s*CHIPS?|WOODCHIPS?,,Wood chips for biomass fuel
+6,Break Bulk,General Cargo,Project,Wind,2,NONE,\bWIND\b|NACELLES?|TOWER\s*SECTIONS?|BLADES?|\bwindmill\b,,Wind turbine components - nacelles/tower sections/blades
+7,Dry Bulk,Agricultural,Grain,Wheat,10,NONE,\bWHEAT\b,,Wheat
+8,Liquid Bulk,Agricultural,Vegetable Oils,Vegetable Oils,10,NONE,VEGETABLE\s*OILS?|CORN\s*OIL|SOY\s*OIL|SOYBEAN\s*OIL|\bCOCONUT\b|\bOLIVE\b|\bLINSEED\b|FATTY\s*ACIDS?|STEARIC\s*ACID|\bSTEARATE\b|PALMITIC\s*ACID|\bPALMITATE\b|OLEIC\s*ACID|\bOLEATE\b|LAURIC\s*ACID|\bLAURATE\b|\bPALM\b|\bRBD\b|\bSTEARIN\b|\bOLEIN\b|\bCPO\b|\bsunflower\s+oil\b,,Vegetable oils + fatty acids from palm/vegetable oil processing
+9,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Urea,10,NONE,\bUREA\b|\bkali\b|\bnitrates\b|\bnitrate\b,SOLUTION,Urea - exclude solutions (see liquid fertilizers)
+10,Break Bulk,Steel,Finished Steel,Tubular Goods,2,NONE,\bPIPES?\b|\bTUBES?\b|\bTUBING\b|\bSEAMLESS\b|\bERW\b|\bLSAW\b|\bOCTG\b|\bCASING\b|\bCOUPLING\b|PUP\s*JOINTS?|\bLINEPIPE\b|\bmpg\s+mother\b,,Tubular steel products - pipe/tube/casing
+11,Liquid Bulk,Chemicals,Chemicals,Toluene,10,NONE,\bTOLUENE\b,,Toluene aromatic hydrocarbon
+12,Dry Bulk,Non-Ferrous Raw Materials,TiO2,TiO2,10,NONE,\bTIO2\b|TITANIUM\s*SLAG|TITANIUM\s*CHLORIDE|\bRUTILE\b|\bILMENITE\b,,Titanium ores and products
+13,Break Bulk,Forestry,Pulp & Paper,Timber,2,NONE,\bTIMBER\b|PLANED\s*TIMBER,,Timber products
+14,Dry Bulk,Minerals & Ores,Talc,Talc,10,NONE,\bTALC\b,,Talc mineral
+15,Liquid Bulk,Chemicals,Sulphuric Acid,Sulphuric Acid,10,NONE,\bSULPHURIC\b|\bSULFURIC\b|SULPH?URIC\s*ACID,,Sulphuric/Sulfuric acid
+16,Dry Bulk,Fertilizer,Sulphur,Sulphur,10,NONE,\bSULF?UR\b|PRILLED\s*SULF?UR,,Elemental sulphur/sulfur - prilled variants
+17,Liquid Bulk,Agricultural,Sugars,Sugars,10,NONE,\bMOLASSES\b|ORANGE\s*JUICE,,Molasses and juice products
+18,Dry Bulk,Agricultural,Sugar,Sugar,10,NONE,\bSUGAR\b|\bAZUCAR\b,,Sugar - English and Spanish
+19,Dry Bulk,Agricultural,Grain,Soybeans,10,NONE,\bSOYBEANS?\b|SOY\s*BEANS?|\bSBM\b|SOYBEAN\s*MEAL|SOY\s*MEAL,,Soybeans and soybean meal
+20,Dry Bulk,Agricultural,Grain,Sorghum,10,NONE,\bSORGHUM\b,,Sorghum
+21,Break Bulk,General Cargo,Project,Solar,2,NONE,\bSOLAR\b|TRACKER\s*BEAMS?|TRACKER\s*POSTS?,,Solar equipment - tracker beams/posts
+22,Dry Bulk,Minerals & Ores,Minerals,sodium silicate,10,NONE,\bSODIUM\s*SILICATE\b,,
+23,Dry Bulk,Minerals & Ores,SCM,Slag,10,NONE,\bSLAG\b|BLAST\s*FURNACE\s*SLAG|GRANULATED\s*SLAG|BF\s*SLAG|\bGBFS\b|\biron\s+silicate\b,,Blast furnace slag and granulated slag
+24,Break Bulk,Steel,Slabs & Billets,Slabs,2,NONE,STEEL\s*SLABS?|CONTINU[OI]US\s*CASTING\s*SLABS?,,Unfinished steel slabs
+25,Dry Bulk,Minerals & Ores,Minerals,silicon carbide,10,NONE,\bSILICON\s*CARBIDE\b,,
+26,Dry Bulk,Ferrous Raw Materials,Scrap,Scrap,10,NONE,STEEL\s*SCRAP|\bBUSHELING\b|HEAVY\s*MELTING|STAINLESS\s*SCRAP|SCRAP\s*STEEL|SCRAP\s*METAL,,Steel and metal scrap
+27,Dry Bulk,Minerals & Ores,Salt,Salt,10,NONE,\bSALT\b,,Salt
+28,Break Bulk,Agricultural,Rubber,Rubber,2,NONE,\bRUBBER\b|RUBBER\s*PRODUCTS|NATURAL\s*RUBBER,,Rubber products
+29,Liquid Bulk,Chemicals,Chemicals,rmk,10,NONE,\bRMK\b,,
+30,Dry Bulk,Agricultural,Grain,Rice,10,NONE,\bRICE\b,,Rice
+31,Liquid Bulk,Chemicals,Chemicals,rhodimet,10,NONE,\bRHODIMET\b,,
+32,Break Bulk,Forestry,Pulp & Paper,Pulp,2,NONE,\bPULP\b|WOOD\s*PULP|\bSUZANO\b|\bSCA\b|\bUPM\b|\bECF\b|\bckb\b|\bcrownboard\b,,Pulp products
+33,Liquid Bulk,Chemicals,Chemicals,Propylene Glycol,10,NONE,PROPYLENE\s*GLYCOL,,Propylene glycol
+34,Liquid Bulk,Chemicals,Chemicals,prayfos,10,NONE,\bPRAYFOS\b,,
+35,Dry Bulk,Construction Materials,Pozzolan,Pozzolan,10,NONE,\bPOZZOLAN\b,,Pozzolan
+36,Dry Bulk,Fertilizer,Potassium Fertilizers,Potash,10,NONE,\bPOTASH\b,,Potash
+37,Liquid Bulk,Chemicals,Chemicals,Polypropylene,10,NONE,\bPOLYPROPYLENE\b,,Polypropylene resins
+38,Liquid Bulk,Chemicals,Chemicals,Polyethylene,10,NONE,\bPOLYETHYLENE\b,,Polyethylene resins
+39,Dry Bulk,Ferrous Raw Materials,Pig Iron,Pig Iron,10,NONE,PIG\s*IRON|PIGIRON,,Raw iron for steelmaking
+40,Dry Bulk,Fertilizer,Phosphorus Fertilizers,PhosRock,10,NONE,PHOS\s*ROCK|PHOSROCK|PHOSPHATE\s*ROCK,,Phosphate rock
+41,Dry Bulk,Fertilizer,Phosphorus Fertilizers,Phosphates,10,NONE,\bGTSB\b|\bMAP\b|\bDAP\b|DIAMMONIUM\s*PHOSPHATE|DI\s*-?\s*AMMONIUM\s*PHOSPHATE|MONOAMMONIUM\s*PHOSPHATE|MONO\s*-?\s*AMMONIUM\s*PHOSPHATE,,Phosphate fertilizers - MAP/DAP/diammonium/monoammonium
+42,Dry Bulk,Carbon Products,Petcoke,Petcoke,10,NONE,GREEN\s*DELAYED|PETROLEUM\s*COKE|PETR\s*COKE|CALCINED\s*PETCOKE|CALCINED\s*PETROLEUM\s*COKE|\bCOKE\b,,Petroleum coke products
+43,Dry Bulk,Minerals & Ores,Industrial Minerals,Perlite,10,NONE,\bPERLITE\b|EXPANDED\s*PERLITE,,Perlite mineral aggregate
+44,Liquid Bulk,Chemicals,Chemicals,parrafin,10,NONE,\bPARRAFIN\b|\bPARAFFIN\b,,
+45,Liquid Bulk,Chemicals,Paraxylene,Paraxylene,10,NONE,\bPARAXYLENE\b|\bPX\b|PARA\s*XYLENE,,Paraxylene - petroleum chemical
+46,Break Bulk,Forestry,Pulp & Paper,Paper,2,NONE,\bPAPER\b|PAPER\s*REELS?|\bNEWSPRINT\b|\bKLB\b|\bOSB\b|\bPAPERBOARD\b|PAPER\s*BOARD|\bKRAFT\b|LINER\s*BOARD|\bperforma\b|\bcupforma\b|\benscoat\b|\bmurata\b,,Paper products
+47,Liquid Bulk,Chemicals,Chemicals,Organic Acids,10,NONE,ISONONANOIC\s*ACID|2-ETHYLHEXANOIC\s*ACID|ETHYLHEXANOIC,,"Specific organic acids (isononanoic, 2-ethylhexanoic)"
+48,Dry Bulk,Agricultural,Grain,Oats,10,NONE,\bOATS\b,,Oats
+49,Dry Bulk,Carbon Products,Carbon Products,Misc Bulk,10,NONE,\bCarbon\s+Additive\b|\bGraphite\b|\bSintermag\b,,
+50,Liquid Bulk,Chemicals,Chemicals,MIBK,10,NONE,\bMIBK\b|METHYL\s*ISOBUTYL\s*KETONE,,Methyl isobutyl ketone
+51,Liquid Bulk,Chemicals,Chemicals,MIBC,10,NONE,METHYL\s*ISOBUTYL\s*CARBINOL|\bMIBC\b,,Methyl isobutyl carbinol (froth flotation reagent)
+52,Liquid Bulk,Chemicals,Methylcyclohexane,Methylcyclohexane,10,NONE,\bMETHYLCYCLOHEXANE\b|METHYL\s*CYCLOHEXANE|\bSOLANE\b,,Methylcyclohexane - petroleum chemical
+53,Liquid Bulk,Chemicals,Chemicals,Methanol,10,NONE,\bMETHANOL\b,,Methanol
+54,Liquid Bulk,Chemicals,Chemicals,MEK,10,NONE,\bMEK\b|METHYL\s*ETHYL\s*KETONE,,Methyl ethyl ketone
+55,Dry Bulk,Non-Ferrous Raw Materials,Manganese,Manganese Products,10,NONE,\bMANGANESE\b|SILICOMANGANESE,,Manganese products
+56,Dry Bulk,Minerals & Ores,Minerals,magnesium oxide,10,NONE,\bMAGNESIUM\s*OXIDE\b,,
+57,Dry Bulk,Minerals & Ores,Minerals,magnesite,10,NONE,\bMAGNESITE\b,,
+58,Break Bulk,Forestry,Pulp & Paper,Lumber,2,NONE,\bLUMBER\b|\bSPRUCE\b|\bBIRCH\b|\bWHITEWOOD\b|WHITE\s*WOOD|\bPLYWOOD\b|PLY\s*WOOD|\bVENEER\b|MEDIUM\s*DENSITY\s*FI[BU]RE\s*BOARD|\bMDF\b|FI[BU]RE\s*BOARD|\beucalyptus\b|\bprimary\s+wood\b|\bredwood\b,,Lumber and wood products
+59,Liquid Bulk,Petroleum,Refined Products,Lubricating Oils,10,NONE,BASE\s*OIL|\bYUBASE\b|\bDEASAN\b|LUBRICAT(E|ING)\s*OIL|\bLUBE\b|BRIGHT\s*STOCK|SLACK\s*WAX|\bSN\s*\d+\b|SLACKWAX|\bbapbase\b|\bsaraline\b,,"Lubricating oils including base oils, YUBASE, DEASAN"
+60,Liquid Gas,Petroleum,LPG,LPG,10,NONE,\bPROPANE\b|\bLPG\b|\bbutane\b|\bbutadine\b,,Liquified petroleum gas - Propane
+61,Break Bulk,Steel,Finished Steel,Long Products,2,NONE,WIRE\s*RODS?|WIRE\s*ROD\s*COILS?|\bWRC\b|\bREBAR\b|\bDEFORMED\b|RE[II]NFORCED|STEEL\s*BARS?|STEEL\s*RODS?|H[\s-]*BEAMS?|WF[\s-]*BEAMS?|WIDE\s*FLANGE\s*BEAMS?|\bANGLES\b|\bCHANNELS\b|\bsections\b|\bsteel\s+structuresm\b|\bhot\s+forged\b|\bround\s+bar\b|\bsteel\s+round\b|\bbeam\s+ril\b|\brails\s+reinfircing\s+steel\s+profile\b|\bchannel\b,,Long steel products - beams/bars/rebar
+62,Dry Bulk,Agricultural,Biomass,Logs,10,NONE,\bLOGS?\b|DOUGLAS\s*FIR,,Logs and timber - Douglas Fir
+63,Liquid Gas,Petroleum,Natural Gas,LNG,10,NONE,\bLNG\b|LIQU[EI]FIED\s*NATURAL\s*GAS|NATURAL\s*GAS|\b;\b,,Liquified natural gas
+64,Liquid Bulk,Fertilizer,Liquid Fertilizer,Liquid Fertilizer,10,NONE,\bUAN\b|\bCAN\b|\bCN9\b|CALCIUM\s*NITRATE\s*SOLUTION|UREA\s*AMMONIUM\s*NITRATE\s*SOLUTION,,Liquid fertilizers - UAN/CAN/CN9/calcium nitrate solutions
+65,Break Bulk,Metals,Lead,Lead,2,NONE,LEAD\s*INGOTS?|LEAD\s*CONCENTRATE,,Lead products - ingots/concentrate
+66,Dry Bulk,Minerals & Ores,Minerals,kaolin,10,NONE,\bKAOLIN\b,,
+67,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore,10,NONE,IRON\s*ORE|IRON\s*ORE\s*PELLETS?|\bTALCONITE\b|\bDRI\b|DIRECT\s*REDUCED\s*IRON|\bLKAB\b|IRON\s*CONCENTRATE|DIRECT\s*REDUCTION\s*PELLETS?|REDUCTION\s*PELLETS?|\bTUBARAO\b|DR\s*PELLETS?,,Iron ore and pellets
+68,Liquid Bulk,Chemicals,Chemicals,Heptane,10,NONE,\bHEPTANE\b,,Heptane solvent
+69,Dry Bulk,Construction Materials,Gypsum,Gypsum,10,NONE,\bGYPSUM\b,,Gypsum
+70,Dry Bulk,Minerals & Ores,Garnet,Garnet,10,NONE,\bGARNET\b,,Garnet abrasive
+71,Dry Bulk,Minerals & Ores,Fluorspar,Fluorspar,10,NONE,\bFLUORSPAR\b,,Fluorspar ore
+72,Break Bulk,Steel,Finished Steel,Flat Rolled,2,NONE,STEEL\s*COILS?|STEEL\s*PLATES?|STEEL\s*SHEETS?|TIN\s*PLATES?|TINPLATES?|BLACK\s*PLATES?|BLACKPLATES?|AL\s*/\s*ZN|STEEL\s*PRODUCTS|HOT[\s-]*ROLLED|COLD[\s-]*ROLLED|ALLOY\s*STEEL\s*PLATES?|ALLOY\s*STEEL\s*COILS?|ALLOY\s*STEEL|\bhot\s+dip\b|\bcold\s+formed\b|\bgalvalume\b|\bSTEEL\s*COILS?|\bCOIL\b.*\bSTEEL\b|\bSTEEL\b.*\bCOIL\b|GALVANI[ZS]ED\s*COILS?|GALVANNEALED\b|\bSTEEL\s*PLATES?|\bPLATE\b.*\bSTEEL\b|\bSTEEL\b.*\bPLATE\b|ALLOY\s*STEEL\s*PLATES?\s+STEEL\s*SHEETS?|\bSHEET\b.*\bSTEEL\b\s+hot\s+forged\b|\bcold\s+formed\b|\bhot\s+formed\b,,Flat rolled steel - coils/plates/sheets
+73,Break Bulk,Forestry,Pulp & Paper,Fiberboard,2,NONE,\bHARDBOARD\b|\bFI[BU]REBOARD\b|FI[BU]RE\s*BOARD,,"Hardboard, fiberboard products"
+74,Dry Bulk,Minerals & Ores,Minerals,ferrous sulphate,10,NONE,\bFERROUS\s*SULPHATE\b|\bFERROUS\s*SULFATE\b,,
+75,Dry Bulk,Ferrous Raw Materials,Ferro Alloys,ferromangan,10,NONE,\bFERROMANGAN\b,,
+76,Dry Bulk,Ferrous Raw Materials,Ferro Alloys,ferro silicon,10,NONE,\bFERRO\s*SILICON\b|\bFERROSILICON\b,,
+77,Dry Bulk,Ferrous Raw Materials,Ferro Alloys,Ferro Alloys,10,NONE,\bfescir\b|\bferro\s+chrome\b|\bferro\s+silicon\b|\bfesicr\b|\blcfecr\b|\bferrochrome\b|\bhcfecr\b,,
+78,Dry Bulk,Minerals & Ores,Feldspar,Ferro Alloys,10,NONE,\bFELDSPAR\b,,Feldspar mineral
+79,Break Bulk,Steel,Finished Steel,Fabricated Steel,2,NONE,\bsupport\s+pillars\b|\btacker\b|\bibus\b,,
+80,Liquid Bulk,Chemicals,Chemicals,Fabricated Steel,10,NONE,ETHYLENE\s*GLYCOL|\bEG\s+BULK\b|\bEG\s+IN\s+BULK\b,,Ethylene glycol
+81,Liquid Bulk,Chemicals,ETBE,Ethyl Tertiary Butyl Ether,10,NONE,\bETBE\b|ETHYL\s*TERTIARY\s*BUTYL\s*ETHER,,ETBE - fuel additive
+82,Liquid Bulk,Chemicals,Chemicals,Ethanol,10,NONE,\bETHANOL\b|ETHYL\s*ALCOHOL,,Ethanol
+83,Liquid Bulk,Chemicals,,etac,10,NONE,\betac\b,,
+84,Liquid Bulk,Petroleum,Refined Products,Dirty Products,10,NONE,FUEL\s*OIL|\bVGO\b|VACC?UUM\s*GAS|\bLSFO\b|\bHSFO\b|\bVLSFO\b|VERY\s*LOW\s*SULF?UR\s*FUEL\s*OIL|\bULSHO\b|ULTRA\s*LOW\s*SULF?UR\s*HEATING\s*OIL|HEATING\s*OIL|\bASPHALT\b|\bBITUMEN\b|\bFLUX\b|\bcutter\s+stock\b|\bcutterstock\b|\bhsvgo\b|\bvaccum\b|\blsvgo\b|\bgas\s+oil\b|\bcat\s+gas\b|\bhvfo\s+gasoil\b|\bsrfo\b|\blsvgo\b|\bsrfo\s+vacuum\b,,Heavy fuel oils - VLSFO/LSFO/HSFO/VGO/heating oils/asphalt/bitumen
+85,Liquid Bulk,Chemicals,Chemicals,Diethylene Glycol,10,NONE,\bDEG\b|DIETHYLENE\s*GLYCOL,,Diethylene glycol (DEG)
+86,Liquid Bulk,Petroleum,Crude Oil,Crude Oil,10,NONE,CRUDE\s*OIL|\bSYNCRUDE\b|\bDCO\b|DILLUTED\s*CRUDE|DILUTED\s*CRUDE|\bMAYA\b|\bISTHMUS\b|ARAB\s*LIGHT|\bBASRAH\b|\bMEDANITO\b|\bORIENTE\b|\bCASTILLA\b|\bBOSCAN\b|\bHIBERNIA\b|\bVASCONIA\b|UNITY\s*GOLD|\bOKWUIBOME\b|CPC\s*BLEND|\bHAMACA\b|\bNAPO\b|\bTUPI\b|\bFORCADOS\b|\bHEBRON\b|\bDURI\b|\bSAHARAN\b|\bFORTIES\b|\bAMENAM\b|\bSIRTICA\b|\bMEREY\b|\bMURBAN\b|COLD\s*LAKE|\bIRACEMA\b|\bPEREGRINO\b|\bEKOFISK\b|\bLIZA\b|JOHAN\s*SVERDRUP|\bWTI\b|\bcondensate\b|\bzapoteco\b|\barabian\b|\biraq\b|\biraqi\b|\baltamira\b|\bboscan\b|\barab\b,,Crude oil + 32 specific grades + syncrude/DCO variants
+87,Dry Bulk,Agricultural,Grain,Corn,10,NONE,\bCORN\b,,Corn
+88,Break Bulk,Metals,Copper,Copper,2,NONE,\bCATHODES?\b|COPPER\s*SCRAP|COPPER\s*WIRES?|COPPER\s*BARS?|COPPER\s*PRODUCTS|COPPER\s*CONCENTRATE,,Copper products - cathodes/scrap/wire/bar/concentrate
+89,Break Bulk,Agricultural,Coffee,Coffee,2,NONE,\bCOFFEE\b|\bfolgers\b,,Coffee
+90,Break Bulk,Agricultural,Cocoa,Cocoa,2,NONE,\bCOCOA\b|COCOA\s*BEANS?,,Cocoa and cocoa beans
+91,Dry Bulk,Carbon Products,Coal,Coal,10,NONE,\bCOAL\b|\bANTHRACITE\b|\bNUTCOKE\b|\bMETCOKE\b|\bnanticoke\b,,Coal and coke products
+92,Liquid Bulk,Petroleum,Refined Products,Clean Products,10,NONE,\bGASOLINE\b|\bRBOB\b|\bCBOB\b|\bUNLEADED\b|\bJET\b|\bKEROSENE\b|\bDIESEL\b|\bULSD\b|ULTRA\s*LOW\s*SULF?UR\s*DIESEL|LOW\s*SULF?UR\s*DIESEL|\bNAPHTHA\b|VIRGIN\s*NAPHTHA|HEAVY\s*NAPHTHA|\bREFORMATE\b|\bHVN\b|\bALKYLATE\b|\bnaptha\b|\bmogas\b,,Light refined products - gasoline/diesel/jet/kerosene/naphtha/reformate/alkylate
+93,Dry Bulk,Construction Materials,Cement,Cement,10,NONE,\bCEMENT\b|\bCLINKER\b|\bPORTLAND\b|LOW\s*ALKALI,,Cement and clinker
+94,Liquid Bulk,Chemicals,Chemicals,Caustic Soda,10,NONE,CAUSTIC\s*SODA|\bCAUSTIC\b,,Caustic soda/caustic
+95,Break Bulk,General Cargo,Project,Boats,2,NONE,\bYACHTS?\b|SAIL\s*BOATS?|SAILBOATS?|CRADLES?,,Boats - yachts/sailboats/cradles
+96,Break Bulk,Forestry,Pulp & Paper,Board,2,NONE,\bBOARD\b|\bLINER\b|\bMETSA\b|KRAFTLINER,,Board and liner products
+97,Liquid Bulk,Chemicals,Chemicals,Biodiesel,10,NONE,\bBIODIESEL\b|\bFAME\b|FATTY\s*ACID\s*METHYL,,Biodiesel/FAME
+98,Break Bulk,Steel,Slabs & Billets,Billets,2,NONE,STEEL\s*BILLETS?|\bBILLET\b.*\bSTEEL\b,,Steel billets
+99,Liquid Bulk,Chemicals,Chemicals,Benzene,10,NONE,\bBENZENE\b,,Benzene solvent
+100,Dry Bulk,Non-Ferrous Raw Materials,Bauxite,Bauxite,10,NONE,\bBAUXITE\b,,Bauxite ore for aluminum
+101,Dry Bulk,Agricultural,Grain,Barley,10,NONE,\bBARLEY\b,,Barley
+102,Dry Bulk,Minerals & Ores,Barite,Barite,10,NONE,\bBARYTE\b|\bBARITE\b,,Barite/Baryte ore
+103,Dry Bulk,Construction Materials,SCM,Ash,10,NONE,\bfly\s+ash\b|\bash\b,,
+104,Liquid Bulk,Agricultural,Animal Fats,Ash,10,NONE,\bTALLOW\b|YELLOW\s*GREASE|USED\s*COOKING|COOKING\s*OIL|FISH\s*OIL,,Animal fats and used oils
+105,Liquid Bulk,Chemicals,Chemicals,Anhydrous Ammonia,10,NONE,ANHYDROUS\s*AMMONIA|\bAMMONIA\b,AMMONIUM,Anhydrous ammonia (exclude ammonium compounds)
+106,Dry Bulk,Fertilizer,Sulphur,Ammonium Sulphate,10,NONE,AMMONIUM\s*SULF?ATE|AM\s*-?\s*SULF?ATE,,Ammonium sulphate/sulfate - US/UK spellings
+107,Dry Bulk,Fertilizer,Fertilizers,Ammonium Polyphosphate,10,NONE,AMMONIUM\s*POLYPHOSPHATE|\bAPP\b.*FERTILI,,Liquid/solid ammonium polyphosphate fertilizer
+108,Dry Bulk,Fertilizer,Nitrogen Fertilizers,Ammonium Nitrate,10,NONE,AMMONIUM\s*NITRATE,,Ammonium nitrate
+109,Liquid Bulk,Chemicals,Chemicals,Amines,10,NONE,METHYLDIETHANOLAMINE|\bMDEA\b|DIETHANOLAMINE,,"Amines (MDEA, diethanolamine for gas treatment)"
+110,Break Bulk,Metals,Aluminum,Aluminum,2,NONE,ALUMIN[IU]M\s*INGOTS?|ALUMIN[IU]M\s*BARS?|\bSOWS?\b|T[\s-]*BARS?|UNWROUGHT\s*ALUMIN[IU]M|ALUMIN[IU]M\s*SCRAP|\bALUMINI?UM\b|\bALUMINI?UM\s*INGOTS?\b,,Aluminum products - ingots/bars/scrap
+111,Dry Bulk,Non-Ferrous Raw Materials,Alumina,Alumina,10,NONE,\bALUMINA\b,,Processed bauxite
+112,Liquid Bulk,Chemicals,Alkylbenzene,Alkylbenzene,10,NONE,\bALKYLBENZENE\b|ALKYL\s*BENZENE|\bCAROMAX\b,,Alkylbenzene - petroleum chemical
+113,Dry Bulk,Construction Materials,Aggregates,Aggregates,10,NONE,LIME\s*STONE|\bSTONES?\b|\bGRAVEL\b|CONSTRUCTION\s*SAND|\bAGGREGATES?\b|\bLADOTD\b|\bFDOT\b|\bTXDOT\b|\bCOBBLES?\b|\bsand\b,,Construction aggregates - state DOT specs
+114,Liquid Bulk,Chemicals,Chemicals,Acrylonitrile,10,NONE,\bACRYLONITRILE\b,,Acrylonitrile
+115,Liquid Bulk,Chemicals,Chemicals,Acetic Acid,10,NONE,ACETIC\s*ACID|\bACETATE\b,,Acetic acid and acetates
+116,Break Bulk,General Cargo,General Cargo,General Cargo Catchall,2,NONE,\bBREAK[\s-]*BULK\b|\bBREAKBULK\b|\bPROJECT\b|\bTRUCKS?\b|\bAUTOMOBILES?\b|\bAUTOS?\b|\bCARS?\b|\bVEHICLES?\b|\bMACHINES?\b|\bENGINES?\b|\bTURBINES?\b|\bTRANSFORMERS?\b|\bEXCAVATORS?\b|\bMACHINERY\b|CONVEYOR\s*BELTS?|\bUNIT\b|\bPALLETS?\b|\bBOXES\b|\bCRATES?\b|\bCONTAINERS?\b|ISO[\s-]*TANKS?|\bISOTANKS?\b|\bPARTS\b|\bBELTS?\b|OIL\s*&\s*GAS|OIL\s*AND\s*GAS|\bOILFIELD\b|OIL\s*FIELD|\bCRANES?\b|\bEQUIPMENT\b|\bGENERATORS?\b|\bUSED\b|\bMILITARY\b|\bGARBAGE\b,,General cargo catchall - break-bulk/project/machinery/vehicles/equipment/oilfield/etc
+117,Liquid Bulk,Petroleum,Crude Oil,Crude Oil,10,NONE,\bZAPOTECO\b|\bYOHO\b|\bPENNINGTON\b|\bQUA\s*IBOE\b|\bMIZTON\b|\bMOLO\b|\bBARAH\b,,Additional crude oil variants - ZAPOTECO/YOHO/PENNINGTON/QUA IBOE/MIZTON/MOLO/BARAH
+118,Liquid Bulk,Petroleum,Crude Oil,Crude Oil,10,NONE,\bBBLS\b|\bGSV\b|\bAPI\b,,Generic petroleum catchall - BBLS/GSV/API indicators (HS2 27 only via HS filter)
+119,Liquid Bulk,Petroleum,Refined Products,Fuel Oil,10,NONE,VERY\s*LOW\s*SULPH?UR\s*FUEL\s*OIL,,Very Low Sulphur Fuel Oil explicit match
+120,Liquid Bulk,Chemicals,Chemicals,Chemicals,10,NONE,DI[\s-]*ISOBUTYLENE|\bDIB\b,,Di-isobutylene chemical (some records have incorrect HS codes)
+121,Liquid Bulk,Chemicals,Chemicals,Chemicals,2,NONE,,,Generic HS2 29 chemicals catchall (will need HS2=29 filter in application)
+122,Liquid Bulk,Chemicals,Chemicals,Plastics,2,NONE,,,Generic HS2 39 plastics/polymers catchall (will need HS2=39 filter in application)
+123,Break Bulk,Metals,Zinc,Zinc Ingot,2,NONE,ZINC\s*INGOTS?,,Zinc ingot specific
+124,Break Bulk,Steel,Finished Steel,Alloy Steel,2,NONE,ALLOY\s*STEEL,,Alloy steel products
+125,Break Bulk,Steel,Finished Steel,Stainless Steel,2,NONE,STAINLESS\s*STEEL,,Stainless steel products
+126,Break Bulk,Steel,Finished Steel,Steel,2,NONE,\bSTEEL\b,,Generic steel catchall for HS2 72/73
+127,Dry Bulk,Ferrous Raw Materials,Iron Ore,Iron Ore Pellets,10,NONE,DIRECT\s*REDUCTION\s*IRON|DRI\s*PELLETS?|IRON\s*ORE\s*PELLETS?,,Direct reduction iron / iron ore pellets
+128,Break Bulk,Steel,Finished Steel,Railway Components,2,NONE,\bPISTES\b|\bRAILWAY\s*TRACK,,Railway track components (pistes/rails)
+129,Dry Bulk,Minerals & Ores,Minerals,Sand,10,NONE,\bSAND\b,,Sand - generic mineral
+130,Dry Bulk,Minerals & Ores,Minerals,Lime,10,NONE,HYDRATED\s*LIME|\bLIME\b,,Hydrated lime and lime products
+131,Dry Bulk,Minerals & Ores,Minerals,Minerals,2,NONE,,,Generic HS2 68 stone/ceramic/mineral catchall (will need HS2=68 filter in application)
+132,Liquid Bulk,Agricultural,Vegetable Oils,Vegetable Oils,10,NONE,,,Generic HS2 15 vegetable oils catchall (will need HS2=15 filter in application)
+133,Break Bulk,General Cargo,General Cargo,General Cargo,0,NONE,,,FINAL CATCHALL - everything else classified as General Cargo for 100% coverage

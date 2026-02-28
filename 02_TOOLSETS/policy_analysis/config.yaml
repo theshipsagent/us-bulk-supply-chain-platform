@@ -1,0 +1,107 @@
+# US Flag Vessel Analysis Configuration
+
+# Data Sources
+data_sources:
+  usace:
+    base_url: "https://www.iwr.usace.army.mil"
+    vessel_characteristics_url: "https://www.iwr.usace.army.mil/About/Technical-Centers/WCSC-Waterborne-Commerce-Statistics-Center/WCSC-Vessel-Characteristics/"
+    description: "USACE Waterborne Commerce Statistics Center"
+
+  marad:
+    base_url: "https://www.marad.dot.gov"
+    fleet_statistics_url: "https://www.marad.dot.gov/data-and-statistics/data-statistics/"
+    description: "Maritime Administration"
+
+  msc:
+    base_url: "https://www.msc.usff.navy.mil"
+    fleet_url: "https://www.msc.usff.navy.mil/Ships/"
+    description: "Military Sealift Command"
+
+  navy:
+    base_url: "https://www.navy.mil"
+    description: "US Navy official site"
+
+# Geographic parameters
+locations:
+  norfolk:
+    name: "Norfolk, VA"
+    latitude: 36.85
+    longitude: -76.29
+    radius_km: 50
+    ports:
+      - "Norfolk"
+      - "Portsmouth"
+      - "Newport News"
+      - "Hampton Roads"
+
+# Vessel categories
+vessel_types:
+  focus:
+    - "Self-propelled"
+    - "Cargo"
+    - "Tanker"
+    - "Container"
+    - "Roll-on/Roll-off"
+    - "Auxiliary"
+  exclude:
+    - "Barge"
+    - "Tug"
+    - "Recreational"
+
+# MSC Status Categories
+msc_status:
+  operational: "Currently deployed or in active service"
+  ready: "Available for immediate activation"
+  ready_reserve: "Available within 4-20 days"
+  ros: "Reduced Operating Status - limited crew, quick activation"
+  activation: "Currently being mobilized"
+  maintenance: "In maintenance or repair"
+
+# Scraping settings
+scraping:
+  rate_limit_seconds: 2
+  max_retries: 3
+  timeout_seconds: 30
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  respect_robots_txt: true
+  cache_enabled: true
+  cache_days: 7
+
+# Data processing
+processing:
+  date_formats:
+    - "%Y-%m-%d"
+    - "%m/%d/%Y"
+    - "%d-%b-%Y"
+  required_fields:
+    - "vessel_name"
+    - "flag"
+    - "vessel_type"
+  imo_validation: true
+  deduplicate: true
+
+# Report settings
+report:
+  title: "United States Flag Vessel Fleet Analysis"
+  subtitle: "Comprehensive Fleet Assessment with Military Sealift Command & Hampton Roads Focus"
+  author: "William S. Davis III"
+  date: "February 2026"
+  format: "letter"  # letter or A4
+  include_charts: true
+  include_maps: false  # Set to true if coordinate data available
+  logo_path: null  # Path to organization logo if desired
+
+# Output directories
+directories:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  reports: "data/reports"
+  logs: "logs"
+  cache: "data/cache"
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/vessel_analysis.log"
+  console: true

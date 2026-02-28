@@ -663,7 +663,7 @@ Every classified record traces back to:
 **Methodology Version:** 1.0
 **Last Updated:** February 23, 2026
 **Status:** Production-ready, actively maintained
-**Contact:** William Davis, OceanDatum.ai
+**Contact:** William Davis, William S. Davis III
 
 ---
 

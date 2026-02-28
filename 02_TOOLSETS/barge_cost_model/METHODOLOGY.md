@@ -219,4 +219,4 @@ Lock processing and delay estimates are validated against:
 
 ---
 
-*US Bulk Supply Chain Reporting Platform v1.0.0 | OceanDatum.ai*
+*US Bulk Supply Chain Reporting Platform v1.0.0 | William S. Davis III*

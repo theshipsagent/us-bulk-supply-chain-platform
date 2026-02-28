@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesee & Wyoming Short Line Railroad Portfolio - Summary Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .meta-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin: 10px 0;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1e3a8a;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+        }
+        th:hover {
+            background-color: #2563eb;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f8fafc;
+        }
+        .class-i-connections {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .class-i-badge {
+            background: #1e3a8a;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .commodity-tag {
+            background: #e0f2fe;
+            color: #0c4a6e;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin: 3px;
+        }
+        .region-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            border-radius: 4px;
+        }
+        .region-header {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+        @media (max-width: 768px) {
+            ul {
+                columns: 1;
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .highlight-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Genesee & Wyoming Short Line Railroad Portfolio</h1>
+        <div class="subtitle">Comprehensive Network Analysis - North American Operations</div>
+        <div style="margin-top: 10px; font-size: 0.9em;">Generated: February 23, 2026</div>
+    </header>
+
+    <div class="meta-info">
+        <strong>About Genesee & Wyoming Inc.:</strong> G&W is the largest short line railroad holding company in North America, providing critical "first and last mile" connections between Class I railroads and local industries. The company operates 113 short line and regional freight railroads in 42 U.S. states and 4 Canadian provinces, plus additional operations in the UK and Europe.
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-label">Total Railroads</div>
+            <div class="stat-number">113</div>
+            <div style="color: #666; margin-top: 5px;">North America</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Route Miles</div>
+            <div class="stat-number">13,000+</div>
+            <div style="color: #666; margin-top: 5px;">Total Track Miles</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Profiled Here</div>
+            <div class="stat-number">33</div>
+            <div style="color: #666; margin-top: 5px;">Detailed Profiles</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">States Served</div>
+            <div class="stat-number">42+</div>
+            <div style="color: #666; margin-top: 5px;">US & Canadian Provinces</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Employees</div>
+            <div class="stat-number">7,300</div>
+            <div style="color: #666; margin-top: 5px;">Workforce</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Customers</div>
+            <div class="stat-number">3,000</div>
+            <div style="color: #666; margin-top: 5px;">Served Globally</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Geographic Distribution by Region</h2>
+
+        <div class="region-section">
+            <div class="region-header">Northeast Region (8 railroads profiled)</div>
+            <ul>
+                <li>Buffalo & Pittsburgh Railroad (BPRR) - NY/PA - 659 miles</li>
+                <li>Connecticut Southern Railroad (CSO) - CT/MA - 90 miles</li>
+                <li>New England Central Railroad (NECR) - VT/NH/MA/CT - 345 miles</li>
+                <li>Providence & Worcester Railroad (PW) - RI/MA/CT/NY - 612 miles (Class II)</li>
+                <li>Rochester & Southern Railroad (RSR) - NY - 101 miles</li>
+                <li>St. Lawrence & Atlantic Railroad (SLR) - ME/NH/VT/QC - 230+ miles</li>
+                <li>Youngstown Belt Railroad (YB) - OH - ~20 miles</li>
+                <li>Youngstown & Austintown Railroad (YARR) - OH - Very short</li>
+            </ul>
+        </div>
+
+        <div class="region-section">
+            <div class="region-header">Southeast Region (9 railroads profiled)</div>
+            <ul>
+                <li>Alabama & Gulf Coast Railway (AGR) - AL/FL - 292 miles (Class II)</li>
+                <li>Bay Line Railroad (BAYL) - FL/AL</li>
+                <li>Chattahoochee Industrial Railroad (CIRR) - GA/AL - 28.2 miles</li>
+                <li>First Coast Railroad (FCRD) - FL</li>
+                <li>Georgia Central Railway (GC) - GA - 211 miles</li>
+                <li>Georgia Southwestern Railroad (GSWR) - GA/AL - 234 miles</li>
+                <li>Heart of Georgia Railroad (HOG) - GA - 219 miles</li>
+                <li>Meridian & Bigbee Railroad (MNBR) - MS/AL</li>
+                <li>Savannah Port Terminal Railroad (SAPT) - GA</li>
+            </ul>
+        </div>
+
+        <div class="region-section">
+            <div class="region-header">Midwest Region (6 railroads profiled)</div>
+            <ul>
+                <li>Huron & Eastern Railway (HESR) - MI - 394 miles</li>
+                <li>Illinois & Midland Railroad (IMRR) - IL - 154 miles</li>
+                <li>Indiana & Ohio Railway (IORY) - OH/IN/MI - 511 miles</li>
+                <li>Tazewell & Peoria Railroad (TZPR) - IL - 142 miles</li>
+            </ul>
+        </div>
+
+        <div class="region-section">
+            <div class="region-header">West Region (7 railroads profiled)</div>
+            <ul>
+                <li>Arizona & California Railroad (ARZC) - AZ/CA - 205 miles</li>
+                <li>Arkansas Louisiana & Mississippi Railroad (ALM) - AR/LA - 117 miles</li>
+                <li>Dallas Garland & Northeastern Railroad (DGNO) - TX - 300+ miles</li>
+                <li>Kiamichi Railroad (KRR) - OK/TX</li>
+                <li>Kyle Railroad (KYLE) - KS/CO - 550 miles</li>
+                <li>Portland & Western Railroad (PNWR) - OR/WA - 478 miles (Class II)</li>
+                <li>Puget Sound & Pacific Railroad (PSAP) - WA - 131 miles</li>
+                <li>Prescott and Northwestern Railroad (PNW) - AZ</li>
+                <li>Texas Northeastern Railroad (TNER) - TX</li>
+            </ul>
+        </div>
+
+        <div class="region-section">
+            <div class="region-header">Canada Region (3 railroads profiled)</div>
+            <ul>
+                <li>Huron Central Railway (HCRY) - ON - 173 miles</li>
+                <li>Quebec Gatineau Railway (QGRY) - QC - 358 miles</li>
+                <li>St. Lawrence & Atlantic Railroad (SLR) - Cross-border US/Canada</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Class I Railroad Connectivity Analysis</h2>
+        <p>G&W railroads provide critical connections to all six Class I railroads in North America:</p>
+
+        <div class="class-i-connections">
+            <div class="class-i-badge">BNSF Railway: 9 railroads</div>
+            <div class="class-i-badge">Union Pacific: 8 railroads</div>
+            <div class="class-i-badge">CSX Transportation: 15 railroads</div>
+            <div class="class-i-badge">Norfolk Southern: 14 railroads</div>
+            <div class="class-i-badge">Canadian National: 9 railroads</div>
+            <div class="class-i-badge">CPKC: 8 railroads</div>
+        </div>
+
+        <div class="highlight-box">
+            <strong>Strategic Advantage:</strong> Many G&W railroads connect to multiple Class I carriers, providing shippers with routing flexibility and competitive options. For example, Providence & Worcester connects to all four major eastern Class I carriers (CN, CPKC, CSX, NS).
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Top Commodities Handled Across G&W Network</h2>
+        <p>G&W railroads handle a diverse range of commodities. Most common across the network:</p>
+
+        <div style="margin-top: 15px;">
+            <span class="commodity-tag">Chemicals (21 railroads)</span>
+            <span class="commodity-tag">Lumber & Forest Products (19 railroads)</span>
+            <span class="commodity-tag">Agricultural Products (17 railroads)</span>
+            <span class="commodity-tag">Metals & Steel (16 railroads)</span>
+            <span class="commodity-tag">Paper & Pulp (13 railroads)</span>
+            <span class="commodity-tag">Coal (8 railroads)</span>
+            <span class="commodity-tag">Grain (10 railroads)</span>
+            <span class="commodity-tag">Plastics (9 railroads)</span>
+            <span class="commodity-tag">Petroleum Products (7 railroads)</span>
+            <span class="commodity-tag">Minerals & Stone (9 railroads)</span>
+            <span class="commodity-tag">Food Products (10 railroads)</span>
+            <span class="commodity-tag">Scrap Metal (7 railroads)</span>
+            <span class="commodity-tag">Intermodal Containers (5 railroads)</span>
+            <span class="commodity-tag">Automobiles (4 railroads)</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Special Capabilities Across Network</h2>
+
+        <h3 style="color: #1e3a8a; margin-top: 20px;">Port Operations</h3>
+        <p>G&W provides rail service at 30+ major ports across North America, including:</p>
+        <ul>
+            <li>Savannah, GA (Georgia Central Railway)</li>
+            <li>Panama City, FL / Mobile, AL (Alabama & Gulf Coast Railway, Bay Line)</li>
+            <li>Portland, ME (St. Lawrence & Atlantic Railroad)</li>
+            <li>Trois-Rivières and Quebec City, QC (Quebec Gatineau Railway - 26% of traffic)</li>
+            <li>Pacific Northwest ports (Puget Sound & Pacific Railroad)</li>
+        </ul>
+
+        <h3 style="color: #1e3a8a; margin-top: 20px;">Unit Train Operations</h3>
+        <p>Multiple G&W railroads handle unit trains for bulk commodities:</p>
+        <ul>
+            <li>Kyle Railroad (KYLE) - Unit grain trains</li>
+            <li>Puget Sound & Pacific (PSAP) - Unit grain, auto, military, garbage trains</li>
+            <li>Huron Central (HCRY) - Unit steel and forest products</li>
+            <li>Portland & Western (PNWR) - Unit log trains</li>
+        </ul>
+
+        <h3 style="color: #1e3a8a; margin-top: 20px;">Specialized Services</h3>
+        <ul>
+            <li><strong>Industrial Switching:</strong> Rail Link, Inc. subsidiary provides contracted switching at 30+ locations</li>
+            <li><strong>Transload Facilities:</strong> Available at numerous G&W locations</li>
+            <li><strong>Cross-Border Operations:</strong> St. Lawrence & Atlantic (US-Canada)</li>
+            <li><strong>Military Rail Service:</strong> DGNO, PSAP certified for military equipment</li>
+            <li><strong>Automotive Distribution:</strong> Providence & Worcester, Puget Sound & Pacific</li>
+            <li><strong>Steel Corridor Development:</strong> Indiana & Ohio Railway (4 expanding steel customers since 2015)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Notable G&W Achievements and Recognition</h2>
+        <ul>
+            <li><strong>Arizona & California Railroad (ARZC):</strong> Named BNSF "Short Line of the Year" in 2019</li>
+            <li><strong>Indiana & Ohio Railway (IORY):</strong> Near Class II regional status with 511 miles and diversified traffic</li>
+            <li><strong>Providence & Worcester Railroad:</strong> Major 2016 acquisition ($126M) enhancing Northeast network</li>
+            <li><strong>Huron Central Railway (HCRY):</strong> Received C$31.5M infrastructure investment from Canadian and Ontario governments (2023)</li>
+            <li><strong>Dallas Garland & Northeastern (DGNO):</strong> Awarded $16.75M for infrastructure improvements (2024)</li>
+            <li><strong>Portland & Western Railroad:</strong> 30+ years of successful operations, Class II regional status</li>
+            <li><strong>Tazewell & Peoria Railroad:</strong> Switches nearly 100,000 cars annually, serves Caterpillar facilities</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Recent Developments and Infrastructure Investments</h2>
+        <ul>
+            <li><strong>2024:</strong> Dallas Garland & Northeastern receives $16.75M for McKinney infrastructure improvements</li>
+            <li><strong>2024:</strong> Red Deer Railway launched in Alberta - G&W's first western Canada railroad</li>
+            <li><strong>2023:</strong> Huron Central Railway infrastructure rehabilitation project (C$31.5M total investment)</li>
+            <li><strong>2019:</strong> Georgia Southwestern Railroad opens Choice Terminal bulk transfer facility</li>
+            <li><strong>2019:</strong> Tazewell & Peoria Railroad combined with Illinois & Midland creates 400-mile contiguous network</li>
+            <li><strong>2017:</strong> Heart of Georgia Railroad acquisition expands Georgia network</li>
+            <li><strong>2016:</strong> Providence & Worcester Railroad acquisition strengthens Northeast presence</li>
+            <li><strong>2012:</strong> RailAmerica acquisition adds 45 railroads including ARZC, PNWR, PSAP, NECR, CSO, HESR, IORY</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Master Railroad Data Table</h2>
+        <p>Complete sortable table of all profiled G&W railroads. Click column headers to sort.</p>
+
+        <div style="overflow-x: auto;">
+            <table id="railroadTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Railroad Name</th>
+                        <th onclick="sortTable(1)">Marks</th>
+                        <th onclick="sortTable(2)">State(s)</th>
+                        <th onclick="sortTable(3)">Miles</th>
+                        <th onclick="sortTable(4)">Class I Connections</th>
+                        <th onclick="sortTable(5)">Primary Commodities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><a href="railroads/Alabama_Gulf_Coast_Railway.md" target="_blank">Alabama & Gulf Coast Railway</a></td><td>AGR</td><td>AL/FL</td><td>292</td><td>BNSF</td><td>Aggregates, cement, chemicals, coal, forest products, steel</td></tr>
+                    <tr><td>AN Railway</td><td>AN</td><td>Multiple</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td><a href="railroads/Arizona_California_Railroad.md" target="_blank">Arizona & California Railroad</a></td><td>ARZC</td><td>AZ/CA</td><td>205</td><td>BNSF, UP</td><td>Petroleum gas, steel, lumber</td></tr>
+                    <tr><td><a href="railroads/Arkansas_Louisiana_Mississippi_Railroad.md" target="_blank">Arkansas Louisiana & Mississippi Railroad</a></td><td>ALM</td><td>AR/LA</td><td>117</td><td>CPKC, UP</td><td>Agricultural products</td></tr>
+                    <tr><td>Atlantic and Western Railway</td><td>ATW</td><td>Multiple</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td>Bay Line Railroad</td><td>BAYL</td><td>FL/AL</td><td>Unknown</td><td>Unknown</td><td>Aggregates, cement, chemicals, forest products</td></tr>
+                    <tr><td><a href="railroads/Buffalo_Pittsburgh_Railroad.md" target="_blank">Buffalo & Pittsburgh Railroad</a></td><td>BPRR</td><td>NY/PA</td><td>659</td><td>CN, CPKC, NS</td><td>Paper, petroleum, chemicals, coal, steel, sand</td></tr>
+                    <tr><td>Chattahoochee Industrial Railroad</td><td>CIRR</td><td>GA/AL</td><td>28.2</td><td>CSX, NS</td><td>Chemicals, forest products, food</td></tr>
+                    <tr><td><a href="railroads/Connecticut_Southern_Railroad.md" target="_blank">Connecticut Southern Railroad</a></td><td>CSO</td><td>CT/MA</td><td>90</td><td>CSX, NS, CN</td><td>Lumber, steel, chemicals</td></tr>
+                    <tr><td><a href="railroads/Dallas_Garland_Northeastern_Railroad.md" target="_blank">Dallas Garland & Northeastern Railroad</a></td><td>DGNO</td><td>TX</td><td>300+</td><td>BNSF, UP, CPKC</td><td>Lumber, paper, food, auto parts, chemicals</td></tr>
+                    <tr><td>First Coast Railroad</td><td>FCRD</td><td>FL</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td><a href="railroads/Georgia_Central_Railway.md" target="_blank">Georgia Central Railway</a></td><td>GC</td><td>GA</td><td>211</td><td>CSX, NS</td><td>Agricultural, lumber, minerals, pulp, chemicals</td></tr>
+                    <tr><td><a href="railroads/Georgia_Southwestern_Railroad.md" target="_blank">Georgia Southwestern Railroad</a></td><td>GSWR</td><td>GA/AL</td><td>234</td><td>CSX, NS</td><td>Grain, peanuts, chemicals, clay, plastics, stone</td></tr>
+                    <tr><td><a href="railroads/Heart_of_Georgia_Railroad.md" target="_blank">Heart of Georgia Railroad</a></td><td>HOG</td><td>GA</td><td>219</td><td>CSX, NS</td><td>Agricultural products, feed, fertilizer, lumber</td></tr>
+                    <tr><td><a href="railroads/Huron_Eastern_Railway.md" target="_blank">Huron & Eastern Railway</a></td><td>HESR</td><td>MI</td><td>394</td><td>CSX, CN, NS</td><td>Grain, agricultural products, manufactured goods</td></tr>
+                    <tr><td><a href="railroads/Huron_Central_Railway.md" target="_blank">Huron Central Railway</a></td><td>HCRY</td><td>ON Canada</td><td>173</td><td>CN, CPKC</td><td>Coil steel, paper, lumber, forest products</td></tr>
+                    <tr><td><a href="railroads/Illinois_Midland_Railroad.md" target="_blank">Illinois & Midland Railroad</a></td><td>IMRR</td><td>IL</td><td>154</td><td>UP, BNSF, NS, CN</td><td>Coal, agricultural products, building materials</td></tr>
+                    <tr><td><a href="railroads/Indiana_Ohio_Railway.md" target="_blank">Indiana & Ohio Railway</a></td><td>IORY</td><td>OH/IN/MI</td><td>511</td><td>CSX, NS, CN</td><td>Chemicals, metals, grain, ethanol, lumber, plastics</td></tr>
+                    <tr><td>Kiamichi Railroad</td><td>KRR</td><td>OK/TX</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td><a href="railroads/Kyle_Railroad.md" target="_blank">Kyle Railroad</a></td><td>KYLE</td><td>KS/CO</td><td>550</td><td>BNSF, UP</td><td>Wheat, soybeans, milo, alcohols</td></tr>
+                    <tr><td>Little Rock & Western Railway</td><td>LRWN</td><td>AR</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td>Meridian & Bigbee Railroad</td><td>MNBR</td><td>MS/AL</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td><a href="railroads/New_England_Central_Railroad.md" target="_blank">New England Central Railroad</a></td><td>NECR</td><td>VT/NH/MA/CT</td><td>345</td><td>CN, CSX</td><td>Lumber, paper, chemicals, fuels, metals, TOFC, vehicles</td></tr>
+                    <tr><td><a href="railroads/Portland_Western_Railroad.md" target="_blank">Portland & Western Railroad</a></td><td>PNWR</td><td>OR/WA</td><td>478</td><td>BNSF, UP</td><td>Logs, lumber, forest products, paper, chemicals</td></tr>
+                    <tr><td>Prescott and Northwestern Railroad</td><td>PNW</td><td>AZ</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td><a href="railroads/Providence_Worcester_Railroad.md" target="_blank">Providence & Worcester Railroad</a></td><td>PW</td><td>RI/MA/CT/NY</td><td>612</td><td>CN, CPKC, CSX, NS</td><td>Lumber, paper, chemicals, steel, construction materials</td></tr>
+                    <tr><td><a href="railroads/Puget_Sound_Pacific_Railroad.md" target="_blank">Puget Sound & Pacific Railroad</a></td><td>PSAP</td><td>WA</td><td>131</td><td>UP, BNSF</td><td>Timber, garbage, chemicals, grain, autos, military</td></tr>
+                    <tr><td><a href="railroads/Quebec_Gatineau_Railway.md" target="_blank">Quebec Gatineau Railway</a></td><td>QGRY</td><td>QC Canada</td><td>358</td><td>CN, CPKC</td><td>Forest products, intermodal, port freight</td></tr>
+                    <tr><td><a href="railroads/Rochester_Southern_Railroad.md" target="_blank">Rochester & Southern Railroad</a></td><td>RSR</td><td>NY</td><td>101</td><td>CPKC, CSX, NS</td><td>Salt, coal, petroleum, metals, lumber</td></tr>
+                    <tr><td>Savannah Port Terminal Railroad</td><td>SAPT</td><td>GA</td><td>Unknown</td><td>Unknown</td><td>Port freight, containers</td></tr>
+                    <tr><td><a href="railroads/St_Lawrence_Atlantic_Railroad.md" target="_blank">St Lawrence & Atlantic Railroad</a></td><td>SLR</td><td>ME/NH/VT/QC</td><td>230+</td><td>CN, CSX, CPKC</td><td>Forest products, intermodal, paper</td></tr>
+                    <tr><td><a href="railroads/Tazewell_Peoria_Railroad.md" target="_blank">Tazewell & Peoria Railroad</a></td><td>TZPR</td><td>IL</td><td>142</td><td>UP, NS, CN, BNSF</td><td>Chemicals, coal, machinery, food, forest, steel</td></tr>
+                    <tr><td>Texas Northeastern Railroad</td><td>TNER</td><td>TX</td><td>Unknown</td><td>Unknown</td><td>General freight</td></tr>
+                    <tr><td><a href="railroads/Youngstown_Austintown_Railroad.md" target="_blank">Youngstown & Austintown Railroad</a></td><td>YARR</td><td>OH</td><td>Very short</td><td>CSX, NS</td><td>Steel products, steel-related materials</td></tr>
+                    <tr><td><a href="railroads/Youngstown_Belt_Railroad.md" target="_blank">Youngstown Belt Railroad</a></td><td>YB</td><td>OH</td><td>~20</td><td>CSX, NS</td><td>Steel products, steel-related materials</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Data Sources</h2>
+        <p>This comprehensive report was compiled from the following authoritative sources:</p>
+        <ul>
+            <li>Official Genesee & Wyoming website (gwrr.com) and individual railroad pages</li>
+            <li>Company press releases and investor relations materials</li>
+            <li>Surface Transportation Board (STB) filings and regulatory documents</li>
+            <li>Wikipedia entries for railroads owned by Genesee & Wyoming</li>
+            <li>Railroad industry publications: Railway Age, Progressive Railroading, Trains Magazine</li>
+            <li>Industry resources: American-Rails.com, HawkinsRails.net, RailroadfanWiki</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p><strong>Genesee & Wyoming Short Line Railroad Knowledge Bank</strong></p>
+        <p>Comprehensive network analysis and railroad profiles</p>
+        <p>Generated: February 23, 2026 | Data current as of February 2026</p>
+        <p>Part of project_rail transportation data processing project</p>
+        <p style="margin-top: 15px; font-size: 0.85em;">
+            For official G&W information, visit <a href="https://www.gwrr.com" target="_blank">www.gwrr.com</a>
+        </p>
+    </div>
+
+    <script>
+        function sortTable(columnIndex) {
+            const table = document.getElementById("railroadTable");
+            const tbody = table.getElementsByTagName("tbody")[0];
+            const rows = Array.from(tbody.getElementsByTagName("tr"));
+
+            // Toggle sort direction
+            const isAscending = table.dataset.sortDirection !== 'asc';
+            table.dataset.sortDirection = isAscending ? 'asc' : 'desc';
+
+            rows.sort((a, b) => {
+                const aValue = a.getElementsByTagName("td")[columnIndex].textContent.trim();
+                const bValue = b.getElementsByTagName("td")[columnIndex].textContent.trim();
+
+                // Handle numeric sorting for miles column
+                if (columnIndex === 3) {
+                    const aNum = parseInt(aValue) || 0;
+                    const bNum = parseInt(bValue) || 0;
+                    return isAscending ? aNum - bNum : bNum - aNum;
+                }
+
+                // String sorting
+                return isAscending ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+            });
+
+            // Re-append sorted rows
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>

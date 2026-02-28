@@ -1,0 +1,61 @@
+================================================================================
+KEEP THESE 36 FILES - Final Clean Set
+================================================================================
+
+2018 (4 files):
+  ✓ Zone Report 01-01-18 - 12-31-18 (1).csv → CROSS IN
+  ✓ Zone Report 01-01-18 - 12-31-18 (2).csv → CROSS OUT
+  ✓ Zone Report 01-01-18 - 12-31-18 (3).csv → TERMINAL
+  ✓ Zone Report 01-01-18 - 12-31-18 (4).csv → ANCHORAGE
+
+2019 (4 files):
+  ✓ Zone Report 01-01-19 - 12-31-19 (1).csv → CROSS IN
+  ✓ Zone Report 01-01-19 - 12-31-19 (2).csv → CROSS OUT
+  ✓ Zone Report 01-01-19 - 12-31-19 (3).csv → TERMINAL
+  ✓ Zone Report 01-01-19 - 12-31-19.csv → ANCHORAGE
+
+2020 (4 files):
+  ✓ Zone Report 01-01-20 - 12-31-20 (1).csv → CROSS OUT
+  ✓ Zone Report 01-01-20 - 12-31-20 (2).csv → CROSS IN
+  ✓ Zone Report 01-01-20 - 12-31-20 (3).csv → ANCHORAGE
+  ✓ Zone Report 01-01-20 - 12-31-20.csv → TERMINAL
+
+2021 (4 files):
+  ✓ Zone Report 01-01-21 - 12-31-21 (1).csv → TERMINAL
+  ✓ Zone Report 01-01-21 - 12-31-21 (3).csv → CROSS IN
+  ✓ Zone Report 01-01-21 - 12-31-21 (4).csv → ANCHORAGE
+  ✓ Zone Report 01-01-21 - 12-31-21.csv → CROSS OUT
+
+2022 (4 files):
+  ✓ Zone Report 01-01-22 - 12-31-22 (1).csv → CROSS IN
+  ✓ Zone Report 01-01-22 - 12-31-22 (2).csv → CROSS OUT
+  ✓ Zone Report 01-01-22 - 12-31-22 (4).csv → TERMINAL
+  ✓ Zone Report 01-01-22 - 12-31-22.csv → ANCHORAGE
+
+2023 (4 files):
+  ✓ Zone Report 01-01-22 - 01-31-23 (1).csv → TERMINAL (note: weird date in filename)
+  ✓ Zone Report 01-01-23 - 12-31-23 (2).csv → CROSS IN
+  ✓ Zone Report 01-01-23 - 12-31-23 (3).csv → ANCHORAGE
+  ✓ Zone Report 01-01-23 - 12-31-23.csv → CROSS OUT
+
+2024 (4 files):
+  ✓ Zone Report 01-01-24 - 12-31-24 (1).csv → ANCHORAGE
+  ✓ Zone Report 01-01-24 - 12-31-24 (2).csv → CROSS OUT
+  ✓ Zone Report 01-01-24 - 12-31-24 (3).csv → TERMINAL
+  ✓ Zone Report 01-01-24 - 12-31-24.csv → CROSS IN
+
+2025 (4 files):
+  ✓ Zone Report 01-01-25 - 12-31-25 (1).csv → CROSS OUT
+  ✓ Zone Report 01-01-25 - 12-31-25 (3).csv → ANCHORAGE
+  ✓ Zone Report 01-01-25 - 12-31-25 (4).csv → CROSS IN
+  ✓ Zone Report 01-01-25 - 12-31-25.csv → TERMINAL
+
+2026 (4 files):
+  ✓ Zone Report 01-01-26 - 01-28-26 (1).csv → CROSS OUT
+  ✓ Zone Report 01-01-26 - 01-28-26 (2).csv → CROSS IN
+  ✓ Zone Report 01-01-26 - 01-28-26 (3).csv → ANCHORAGE
+  ✓ Zone Report 01-01-26 - 01-28-26.csv → TERMINAL
+
+================================================================================
+TOTAL: 36 files (9 years × 4 zones)
+================================================================================

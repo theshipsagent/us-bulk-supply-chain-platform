@@ -1,0 +1,40 @@
+vessel_name,status_standardized,primary_operator,gross_tonnage,build_year
+USNS COMFORT,operational,MILITARY SEALIFT COMMAND,69360,1976
+USNS JOHN GLENN,operational,Crowley Maritime Corporation,78470,2014
+USNS MIGUEL KEITH,operational,Crowley Maritime Corporation,90000,2020
+USNS BOB HOPE,ready,AMERICAN STEAMSHIP,62069,1998
+USNS FISHER,operational,AMERICAN STEAMSHIP,62069,1999
+USNS SEAY,ready,"Maersk Line, Limited",62069,2000
+USNS GILLILAND,operational,"Maersk Line, Limited",62069,2000
+USNS BRITTIN,operational,"Maersk Line, Limited",62069,2000
+USNS BENAVIDEZ,ready,"Maersk Line, Limited",62069,2003
+USNS PILILAAU,operational,"Maersk Line, Limited",62069,2004
+USNS WATKINS,ready,Overseas Shipholding Group,62069,2006
+USNS HENRY J KAISER,operational,"Maersk Line, Limited",40700,1986
+USNS JOHN LENTHALL,operational,"Maersk Line, Limited",40700,1989
+USNS PECOS,ready,"Maersk Line, Limited",40700,1990
+USNS BIG HORN,operational,Intrepid Ship Management,40700,1992
+USNS GUADALUPE,operational,Intrepid Ship Management,40700,1995
+USNS PATUXENT,maintenance,Intrepid Ship Management,40700,1995
+USNS LARAMIE,ready,Intrepid Ship Management,40700,1996
+USNS KANAWHA,operational,Keystone Shipping Company,40700,1998
+USNS SUPPLY,operational,"Maersk Line, Limited",48800,1994
+USNS BRIDGE,operational,"Maersk Line, Limited",48800,1998
+USNS RAINIER,maintenance,"Maersk Line, Limited",48800,1998
+USNS WASHINGTON CHAMBERS,operational,OCEAN SHIPHOLDING,41000,2011
+USNS WILLIAM MCLEAN,operational,OCEAN SHIPHOLDING,41000,2012
+USNS MEDGAR EVERS,ready,OCEAN SHIPHOLDING,41000,2012
+USNS MONTFORD POINT,operational,TOTE Maritime,78000,2013
+USNS ROBERT E PEARY,ready,Keystone Shipping Company,41353,1981
+USNS LEROY GRUMMAN,ros,Keystone Shipping Company,40700,1989
+USNS ALAN SHEPARD,ready,AMERICAN PRESIDENT LINES,62638,2007
+USNS RICHARD E BYRD,operational,AMERICAN PRESIDENT LINES,62638,2007
+USNS SODERMAN,ready,AMERICAN PRESIDENT LINES,62638,2008
+USNS RED CLOUD,operational,AMERICAN PRESIDENT LINES,62638,2008
+USNS DAHL,operational,Matson Navigation Company,62638,2009
+USNS CHARLTON,ros,Matson Navigation Company,62638,2010
+USNS WESTPHAL,ready,Matson Navigation Company,62638,2010
+USNS SPEARHEAD,operational,AUSTAL USA,1615,2012
+USNS CHOCTAW COUNTY,operational,AUSTAL USA,1615,2012
+USNS MILLINOCKET,ready,AUSTAL USA,1615,2013
+USNS FALL RIVER,operational,AUSTAL USA,1615,2013

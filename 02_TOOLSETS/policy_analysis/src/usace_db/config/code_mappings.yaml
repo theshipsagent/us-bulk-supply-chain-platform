@@ -1,0 +1,744 @@
+# USACE Vessel Characteristics Code Mappings
+# Extracted from Data Dictionary PDF - WCSC Waterborne Commerce Statistics Center
+# Source: https://www.iwr.usace.army.mil/About/Technical-Centers/WCSC-Waterborne-Commerce-Statistics-Center/
+
+# ============================================================
+# VTCC - Vessel Type, Construction and Characteristics
+# Format: [Construction][Type][Characteristic]
+# Construction: A-F, Type: 1-6, Characteristic: 01-99
+# ============================================================
+vtcc_codes:
+  # Type 1: Self-Propelled, Dry Cargo
+  "1A02":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Crewboat / Supply / Utility Vessel"
+    is_self_propelled: true
+    is_barge: false
+  "1A03":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "General Cargo Freighter"
+    is_self_propelled: true
+    is_barge: false
+  "1A04":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Break Bulk / RO-RO Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "1A05":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "RO-RO Vessel"
+    is_self_propelled: true
+    is_barge: false
+  "1A06":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Bulk Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "1A07":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Containership"
+    is_self_propelled: true
+    is_barge: false
+  "1A08":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Partial Containership"
+    is_self_propelled: true
+    is_barge: false
+  "1A09":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Container / Vehicle / Trailer (RO-RO) Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "1A10":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Vehicle Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "1A11":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Passenger Vessel"
+    is_self_propelled: true
+    is_barge: false
+  "1A12":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Combination Passenger and Cargo"
+    is_self_propelled: true
+    is_barge: false
+  "1A13":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Ferry"
+    is_self_propelled: true
+    is_barge: false
+  "1A14":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Railroad Car Ferry"
+    is_self_propelled: true
+    is_barge: false
+  "1A15":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Lash Vessel"
+    is_self_propelled: true
+    is_barge: false
+  "1A16":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Dry Cargo"
+    characteristic_desc: "Excursion / Sightseeing Vessels"
+    is_self_propelled: true
+    is_barge: false
+
+  # Type 2: Self-Propelled, Tanker
+  "2A20":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Tanker"
+    characteristic_desc: "Petroleum / Chemical Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "2A21":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Tanker"
+    characteristic_desc: "Chemical Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "2A22":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Tanker"
+    characteristic_desc: "Liquid Bulk Tanker"
+    is_self_propelled: true
+    is_barge: false
+  "2A23":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Tanker"
+    characteristic_desc: "Liquid Gas Carrier"
+    is_self_propelled: true
+    is_barge: false
+  "2A24":
+    construction_type: "Steel"
+    vessel_type: "Self-Propelled, Tanker"
+    characteristic_desc: "Other Tanker"
+    is_self_propelled: true
+    is_barge: false
+
+  # Type 3: Towboat
+  "3A35":
+    construction_type: "Steel"
+    vessel_type: "Towboat"
+    characteristic_desc: "Pushboat"
+    is_self_propelled: true
+    is_barge: false
+  "3A36":
+    construction_type: "Steel"
+    vessel_type: "Towboat"
+    characteristic_desc: "Tugboat"
+    is_self_propelled: true
+    is_barge: false
+  "3B35":
+    construction_type: "Wood"
+    vessel_type: "Towboat"
+    characteristic_desc: "Pushboat"
+    is_self_propelled: true
+    is_barge: false
+  "3B36":
+    construction_type: "Wood"
+    vessel_type: "Towboat"
+    characteristic_desc: "Tugboat"
+    is_self_propelled: true
+    is_barge: false
+  "3D35":
+    construction_type: "Fiberglass"
+    vessel_type: "Towboat"
+    characteristic_desc: "Pushboat"
+    is_self_propelled: true
+    is_barge: false
+  "3D36":
+    construction_type: "Fiberglass"
+    vessel_type: "Towboat"
+    characteristic_desc: "Tugboat"
+    is_self_propelled: true
+    is_barge: false
+
+  # Type 4: Non-Self-Propelled, Dry Cargo
+  "4A40":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Open Hopper Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A41":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Covered Hopper Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A42":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Carfloat (Railroad Car Barge)"
+    is_self_propelled: false
+    is_barge: true
+  "4A43":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Flat / Deck Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A44":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Pontoon Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A47":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Open Dry Cargo Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A48":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Covered Dry Cargo Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A49":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "RO-RO Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A50":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Container Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A52":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Lash / Seabee Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A90":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Convertible Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4A99":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Other Dry Cargo Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4B43":
+    construction_type: "Wood"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Flat / Deck Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4C43":
+    construction_type: "Aluminum"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Flat / Deck Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4D43":
+    construction_type: "Fiberglass"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Flat / Deck Barge"
+    is_self_propelled: false
+    is_barge: true
+  "4F43":
+    construction_type: "Unknown"
+    vessel_type: "Non-Self-Propelled, Dry Cargo"
+    characteristic_desc: "Flat / Deck Barge"
+    is_self_propelled: false
+    is_barge: true
+
+  # Type 5: Non-Self-Propelled, Tanker
+  "5A70":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Tanker"
+    characteristic_desc: "Liquid Cargo Barge (Single Hull)"
+    is_self_propelled: false
+    is_barge: true
+  "5A71":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Tanker"
+    characteristic_desc: "Liquid Cargo Barge (Double Hull)"
+    is_self_propelled: false
+    is_barge: true
+  "5A72":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Tanker"
+    characteristic_desc: "Liquid Cargo Barge (Double Sided Only)"
+    is_self_propelled: false
+    is_barge: true
+  "5A73":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Tanker"
+    characteristic_desc: "Liquid Cargo Barge (Double Bottom Only)"
+    is_self_propelled: false
+    is_barge: true
+  "5A74":
+    construction_type: "Steel"
+    vessel_type: "Non-Self-Propelled, Tanker"
+    characteristic_desc: "Other Liquid Cargo Barge, Not Elsewhere Included"
+    is_self_propelled: false
+    is_barge: true
+
+  # Type 6: Other
+  "6A01":
+    construction_type: "Steel"
+    vessel_type: "Other"
+    characteristic_desc: "Undefined"
+    is_self_propelled: false
+    is_barge: false
+
+# ============================================================
+# ICST - International Classification of Ships by Type
+# ============================================================
+icst_codes:
+  "114":
+    description: "Liquid Oil Tanker (Oil / Chemical)"
+    category: "Tanker"
+  "120":
+    description: "Liquid Chemical Tanker"
+    category: "Tanker"
+  "139":
+    description: "Liquid Gas Carrier (Other)"
+    category: "Tanker"
+  "141":
+    description: "Liquid Tank Barge (Single Hull)"
+    category: "Barge"
+  "142":
+    description: "Liquid Tank Barge (Double Hull)"
+    category: "Barge"
+  "143":
+    description: "Liquid Tank Barge (Double Sided Only)"
+    category: "Barge"
+  "144":
+    description: "Liquid Tank Barge (Double Bottom Only)"
+    category: "Barge"
+  "149":
+    description: "Liquid Tank Barge (Other)"
+    category: "Barge"
+  "199":
+    description: "Liquid Other Tanker"
+    category: "Tanker"
+  "229":
+    description: "Dry Bulk (Other) Carrier"
+    category: "Dry Cargo"
+  "310":
+    description: "Containership (Specialized)"
+    category: "Container"
+  "321":
+    description: "Barge Carrier (Specialized)"
+    category: "Specialized"
+  "325":
+    description: "Vehicle Carrier (Specialized)"
+    category: "Specialized"
+  "329":
+    description: "Other Carriers (Specialized)"
+    category: "Specialized"
+  "333":
+    description: "General Cargo RO-RO / Container"
+    category: "General Cargo"
+  "334":
+    description: "Other RO-RO Cargo (General Cargo)"
+    category: "General Cargo"
+  "335":
+    description: "General Cargo / Passenger"
+    category: "General Cargo"
+  "336":
+    description: "General Cargo / Container"
+    category: "General Cargo"
+  "341":
+    description: "Dry Cargo Deck Barge"
+    category: "Barge"
+  "343":
+    description: "Dry Cargo Lash/Seabee Barge"
+    category: "Barge"
+  "344":
+    description: "Open Dry Cargo Barge"
+    category: "Barge"
+  "345":
+    description: "Dry Cargo Covered Barge"
+    category: "Barge"
+  "349":
+    description: "Dry Cargo Other Barge"
+    category: "Barge"
+  "351":
+    description: "Passenger (Cruise)"
+    category: "Passenger"
+  "359":
+    description: "Passenger (Other)"
+    category: "Passenger"
+  "422":
+    description: "Offshore Support Vessel"
+    category: "Offshore"
+  "431":
+    description: "Tugboat"
+    category: "Towing"
+  "432":
+    description: "Pushboat"
+    category: "Towing"
+
+# ============================================================
+# Corps of Engineers Districts
+# ============================================================
+districts:
+  1:
+    district_name: "New England District"
+    district_abbr: "NAE"
+    region: "North Atlantic Division"
+    state: "MA"
+    city: "Concord"
+  3:
+    district_name: "New York District"
+    district_abbr: "NAN"
+    region: "North Atlantic Division"
+    state: "NY"
+    city: "New York"
+  5:
+    district_name: "Jacksonville District"
+    district_abbr: "SAJ"
+    region: "South Atlantic Division"
+    state: "FL"
+    city: "Jacksonville"
+  7:
+    district_name: "Philadelphia District"
+    district_abbr: "NAP"
+    region: "North Atlantic Division"
+    state: "PA"
+    city: "Philadelphia"
+  8:
+    district_name: "San Juan District"
+    district_abbr: "SAJ"
+    region: "South Atlantic Division"
+    state: "PR"
+    city: "San Juan"
+  9:
+    district_name: "Baltimore District"
+    district_abbr: "NAB"
+    region: "North Atlantic Division"
+    state: "MD"
+    city: "Baltimore"
+  11:
+    district_name: "Norfolk District"
+    district_abbr: "NAO"
+    region: "South Atlantic Division"
+    state: "VA"
+    city: "Norfolk"
+  12:
+    district_name: "Wilmington District"
+    district_abbr: "SAW"
+    region: "South Atlantic Division"
+    state: "NC"
+    city: "Wilmington"
+  13:
+    district_name: "Charleston District"
+    district_abbr: "SAC"
+    region: "South Atlantic Division"
+    state: "SC"
+    city: "Charleston"
+  14:
+    district_name: "Savannah District"
+    district_abbr: "SAS"
+    region: "South Atlantic Division"
+    state: "GA"
+    city: "Savannah"
+  15:
+    district_name: "Jacksonville District"
+    district_abbr: "SAJ"
+    region: "Mississippi Valley Gulf Coast"
+    state: "FL"
+    city: "Jacksonville"
+  16:
+    district_name: "Mobile District"
+    district_abbr: "SAM"
+    region: "South Atlantic Division"
+    state: "AL"
+    city: "Mobile"
+  17:
+    district_name: "Nashville District"
+    district_abbr: "LRN"
+    region: "Mississippi Valley Division"
+    state: "TN"
+    city: "Nashville"
+  18:
+    district_name: "Louisville District"
+    district_abbr: "LRL"
+    region: "Mississippi Valley Division"
+    state: "KY"
+    city: "Louisville"
+  20:
+    district_name: "Huntington District"
+    district_abbr: "LRH"
+    region: "Mississippi Valley Division"
+    state: "WV"
+    city: "Huntington"
+  21:
+    district_name: "Pittsburgh District"
+    district_abbr: "LRP"
+    region: "Mississippi Valley Division"
+    state: "PA"
+    city: "Pittsburgh"
+  22:
+    district_name: "Buffalo District"
+    district_abbr: "LRB"
+    region: "Great Lakes and Ohio River Division"
+    state: "NY"
+    city: "Buffalo"
+  23:
+    district_name: "Detroit District"
+    district_abbr: "LRE"
+    region: "Great Lakes and Ohio River Division"
+    state: "MI"
+    city: "Detroit"
+  24:
+    district_name: "Duluth District"
+    district_abbr: "LRD"
+    region: "Great Lakes and Ohio River Division"
+    state: "MN"
+    city: "Duluth"
+  26:
+    district_name: "Chicago District"
+    district_abbr: "LRC"
+    region: "Great Lakes and Ohio River Division"
+    state: "IL"
+    city: "Chicago"
+  27:
+    district_name: "St. Paul District"
+    district_abbr: "MVP"
+    region: "Mississippi Valley Division"
+    state: "MN"
+    city: "St. Paul"
+  28:
+    district_name: "Rock Island District"
+    district_abbr: "MVR"
+    region: "Mississippi Valley Division"
+    state: "IL"
+    city: "Rock Island"
+  29:
+    district_name: "St. Louis District"
+    district_abbr: "MVS"
+    region: "Mississippi Valley Division"
+    state: "MO"
+    city: "St. Louis"
+  30:
+    district_name: "Memphis District"
+    district_abbr: "MVM"
+    region: "Mississippi Valley Division"
+    state: "TN"
+    city: "Memphis"
+  31:
+    district_name: "Vicksburg District"
+    district_abbr: "MVK"
+    region: "Mississippi Valley Division"
+    state: "MS"
+    city: "Vicksburg"
+  32:
+    district_name: "New Orleans District"
+    district_abbr: "MVN"
+    region: "Mississippi Valley Division"
+    state: "LA"
+    city: "New Orleans"
+  33:
+    district_name: "Galveston District"
+    district_abbr: "SWG"
+    region: "Southwestern Division"
+    state: "TX"
+    city: "Galveston"
+  34:
+    district_name: "Little Rock District"
+    district_abbr: "SWL"
+    region: "Southwestern Division"
+    state: "AR"
+    city: "Little Rock"
+  35:
+    district_name: "Kansas City District"
+    district_abbr: "NWK"
+    region: "Northwestern Division"
+    state: "MO"
+    city: "Kansas City"
+  36:
+    district_name: "Seattle District"
+    district_abbr: "NWS"
+    region: "Northwestern Division"
+    state: "WA"
+    city: "Seattle"
+  37:
+    district_name: "Portland District"
+    district_abbr: "NWP"
+    region: "Northwestern Division"
+    state: "OR"
+    city: "Portland"
+  38:
+    district_name: "Alaska District"
+    district_abbr: "POA"
+    region: "Pacific Ocean Division"
+    state: "AK"
+    city: "Anchorage"
+  39:
+    district_name: "San Francisco District"
+    district_abbr: "SPN"
+    region: "South Pacific Division"
+    state: "CA"
+    city: "San Francisco"
+  40:
+    district_name: "Sacramento District"
+    district_abbr: "SPK"
+    region: "South Pacific Division"
+    state: "CA"
+    city: "Sacramento"
+  41:
+    district_name: "Los Angeles District"
+    district_abbr: "SPL"
+    region: "South Pacific Division"
+    state: "CA"
+    city: "Los Angeles"
+  42:
+    district_name: "Honolulu District"
+    district_abbr: "POH"
+    region: "Pacific Ocean Division"
+    state: "HI"
+    city: "Honolulu"
+  43:
+    district_name: "Omaha District"
+    district_abbr: "NWO"
+    region: "Northwestern Division"
+    state: "NE"
+    city: "Omaha"
+  44:
+    district_name: "Walla Walla District"
+    district_abbr: "NWW"
+    region: "Northwestern Division"
+    state: "WA"
+    city: "Walla Walla"
+  45:
+    district_name: "Tulsa District"
+    district_abbr: "SWT"
+    region: "Southwestern Division"
+    state: "OK"
+    city: "Tulsa"
+  60:
+    district_name: "Other Foreign Vessels"
+    district_abbr: "FOR"
+    region: "Foreign"
+    state: "XX"
+    city: "Foreign"
+  95:
+    district_name: "New York Tug Logs"
+    district_abbr: "NYT"
+    region: "North Atlantic Division"
+    state: "NY"
+    city: "New York"
+  99:
+    district_name: "Atlantic Customs"
+    district_abbr: "CUS"
+    region: "Customs"
+    state: "XX"
+    city: "Atlantic"
+
+# ============================================================
+# Series - Geographic Operating Region
+# ============================================================
+series:
+  3:
+    series_name: "Great Lakes System"
+    description: "Transportation Lines on the Great Lakes System"
+    waterways: ["Lake Superior", "Lake Michigan", "Lake Huron", "Lake Erie", "Lake Ontario"]
+  4:
+    series_name: "Mississippi River System and Gulf Intracoastal Waterway"
+    description: "Mississippi River System and the Gulf Intracoastal Waterway"
+    waterways: ["Mississippi River", "Ohio River", "Missouri River", "Arkansas River", "Gulf Intracoastal Waterway"]
+  5:
+    series_name: "Atlantic, Gulf and Pacific Coasts"
+    description: "Transportation Lines on the Atlantic, Gulf and Pacific Coasts"
+    waterways: ["Atlantic Coast", "Gulf Coast", "Pacific Coast", "Inland coastal waterways"]
+
+# ============================================================
+# Service Type - Operator Service Classification
+# ============================================================
+service_types:
+  1:
+    service_name: "ICC-Regulated Common Carrier"
+    description: "Carriage performed for compensation that is regulated by the Interstate Commerce Commission (ICC)"
+    is_for_hire: true
+    regulatory_status: "Regulated"
+  2:
+    service_name: "ICC-Exempt For-Hire Carrier"
+    description: "Carriage performed for compensation, but exempt from regulation by the ICC"
+    is_for_hire: true
+    regulatory_status: "Exempt"
+  3:
+    service_name: "Private Carrier"
+    description: "Carriage performed by a private entity where the vessel and the goods being transported are owned by the same entity"
+    is_for_hire: false
+    regulatory_status: "Private"
+
+# ============================================================
+# Capacity Reference - Cargo Type Indicators
+# ============================================================
+capacity_ref:
+  "":
+    description: "General bulk cargo"
+    cargo_type: "Bulk"
+  "+":
+    description: "Railroad cars"
+    cargo_type: "RailCar"
+  "#":
+    description: "Automobiles, vehicles, trailers"
+    cargo_type: "Vehicles"
+  "%":
+    description: "Cargo capacity railroad cars"
+    cargo_type: "RailCapacity"
+  "@":
+    description: "Vans"
+    cargo_type: "Vans"
+  "&":
+    description: "Containers"
+    cargo_type: "Containers"
+
+# ============================================================
+# Equipment Types (Common cargo handling equipment)
+# ============================================================
+equipment_types:
+  "CRANE":
+    equipment_name: "Crane"
+    category: "Lifting"
+    description: "Cargo crane for lifting operations"
+  "DERRICK":
+    equipment_name: "Derrick"
+    category: "Lifting"
+    description: "Derrick for heavy lifting"
+  "WINCH":
+    equipment_name: "Winch"
+    category: "Hauling"
+    description: "Winch system for pulling/hauling"
+  "PUMP":
+    equipment_name: "Pump"
+    category: "Fluid Transfer"
+    description: "Pumping system for liquid cargo"
+  "CONVEYOR":
+    equipment_name: "Conveyor"
+    category: "Material Handling"
+    description: "Conveyor belt system"
+  "HOIST":
+    equipment_name: "Hoist"
+    category: "Lifting"
+    description: "Hoisting mechanism"

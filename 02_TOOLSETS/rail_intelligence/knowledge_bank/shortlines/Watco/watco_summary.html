@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watco Companies Short Line Railroad Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #653a8b 100%);
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tr:nth-child(even):hover {
+            background-color: #f8f9ff;
+        }
+
+        .commodity-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .commodity-item {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+
+        .commodity-name {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .commodity-count {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .class-i-matrix {
+            overflow-x: auto;
+        }
+
+        .matrix-table {
+            min-width: 600px;
+        }
+
+        .connection-yes {
+            background-color: #4CAF50;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .connection-no {
+            background-color: #f0f0f0;
+            color: #999;
+            padding: 3px 8px;
+            border-radius: 3px;
+        }
+
+        .filter-box {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9ff;
+            border-radius: 5px;
+        }
+
+        .filter-box input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .filter-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .region-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .region-card {
+            background: #ffffff;
+            border: 2px solid #667eea;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .region-name {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .region-count {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #764ba2;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #fffacd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Watco Companies Short Line Railroad Portfolio</h1>
+            <div class="subtitle">Comprehensive Analysis of North America's Leading Short Line Operator</div>
+            <div class="date">Data Compiled: February 23, 2026</div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">38</div>
+                <div class="stat-label">Total Railroads Profiled</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4,500+</div>
+                <div class="stat-label">Approximate Route Miles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">22</div>
+                <div class="stat-label">States/Provinces Served</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Class I Connections</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Geographic Distribution</h2>
+            <div class="region-breakdown">
+                <div class="region-card">
+                    <div class="region-name">Alabama</div>
+                    <div class="region-count">3</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Louisiana</div>
+                    <div class="region-count">5</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Oklahoma</div>
+                    <div class="region-count">4</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Kansas</div>
+                    <div class="region-count">3</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Idaho</div>
+                    <div class="region-count">4</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Michigan</div>
+                    <div class="region-count">3</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Illinois</div>
+                    <div class="region-count">3</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Wisconsin</div>
+                    <div class="region-count">1</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Montana</div>
+                    <div class="region-count">2</div>
+                </div>
+                <div class="region-card">
+                    <div class="region-name">Other States</div>
+                    <div class="region-count">10+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Primary Commodities Breakdown</h2>
+            <div class="commodity-list">
+                <div class="commodity-item">
+                    <div class="commodity-name">Agricultural Products</div>
+                    <div class="commodity-count">18 railroads handle grain, wheat, soybeans, potatoes</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Chemicals</div>
+                    <div class="commodity-count">12 railroads with chemical industry focus</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Forest Products</div>
+                    <div class="commodity-count">10 railroads handling lumber, paper, pulp</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Energy Products</div>
+                    <div class="commodity-count">8 railroads moving coal, oil, gas, petroleum</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Metals & Steel</div>
+                    <div class="commodity-count">6 railroads serving steel and metal industries</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Plastics</div>
+                    <div class="commodity-count">7 railroads with plastics manufacturing support</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Aggregates</div>
+                    <div class="commodity-count">5 railroads moving sand, gravel, limestone</div>
+                </div>
+                <div class="commodity-item">
+                    <div class="commodity-name">Automotive</div>
+                    <div class="commodity-count">2 railroads handling vehicles and auto parts</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Class I Railroad Connection Matrix</h2>
+            <div class="class-i-matrix">
+                <table class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th>Class I Railroad</th>
+                            <th>Number of Connections</th>
+                            <th>Key Interchange Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>BNSF Railway</strong></td>
+                            <td><span class="connection-yes">15+</span></td>
+                            <td>Chicago, Tulsa, Oklahoma City, Montana, Washington</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Union Pacific</strong></td>
+                            <td><span class="connection-yes">18+</span></td>
+                            <td>Idaho, Kansas, Oklahoma, Texas, Chicago, Wisconsin</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Norfolk Southern</strong></td>
+                            <td><span class="connection-yes">12+</span></td>
+                            <td>Birmingham, Toledo, Savannah, Charleston, Pennsylvania</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CSX Transportation</strong></td>
+                            <td><span class="connection-yes">8+</span></td>
+                            <td>Jacksonville, Birmingham, Grand Rapids, Chicago, Savannah</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Canadian National</strong></td>
+                            <td><span class="connection-yes">7+</span></td>
+                            <td>Louisiana, Michigan, Wisconsin, Ontario</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Canadian Pacific Kansas City</strong></td>
+                            <td><span class="connection-yes">5+</span></td>
+                            <td>Wisconsin, Michigan, Chicago area, Louisiana</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Complete Railroad Directory</h2>
+            <div class="filter-box">
+                <input type="text" id="searchInput" placeholder="Search by railroad name, state, or commodity..." onkeyup="filterTable()">
+            </div>
+            <div style="overflow-x: auto;">
+                <table id="railroadTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Railroad Name ▼</th>
+                            <th onclick="sortTable(1)">Marks</th>
+                            <th onclick="sortTable(2)">State(s)</th>
+                            <th onclick="sortTable(3)">Miles</th>
+                            <th onclick="sortTable(4)">Primary Commodities</th>
+                            <th onclick="sortTable(5)">Key Class I</th>
+                            <th>Website</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alabama Southern Railroad</td>
+                            <td>ABS</td>
+                            <td>AL, MS</td>
+                            <td>85</td>
+                            <td>Energy, Steel, Paper, Grain</td>
+                            <td>KCS, NS</td>
+                            <td><a href="https://www.watco.com/service/rail/alabama-southern-railroad-abs/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Alabama Warrior Railway</td>
+                            <td>ABWR</td>
+                            <td>AL</td>
+                            <td>15</td>
+                            <td>Coal, Aggregates, Steel</td>
+                            <td>NS, CSX</td>
+                            <td><a href="https://www.watco.com/service/rail/alabama-warrior-railway-abwr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Agawa Canyon Railroad</td>
+                            <td>ACR</td>
+                            <td>ON</td>
+                            <td>244.5</td>
+                            <td>Forest Products, Tourism</td>
+                            <td>CN</td>
+                            <td><a href="https://www.watco.com/service/agawa-canyon-railroad-acr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ann Arbor Railroad</td>
+                            <td>AA</td>
+                            <td>MI, OH</td>
+                            <td>83</td>
+                            <td>Automotive, Chemicals, Plastics</td>
+                            <td>NS, CSX, CN</td>
+                            <td><a href="https://www.watco.com/service/rail/ann-arbor-railroad-aa/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Arkansas Southern Railroad</td>
+                            <td>ARS</td>
+                            <td>AR</td>
+                            <td>N/A</td>
+                            <td>Forest Products, Agricultural</td>
+                            <td>UP, BNSF</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Austin Western Railroad</td>
+                            <td>AWRR</td>
+                            <td>TX</td>
+                            <td>190</td>
+                            <td>Aggregates, Limestone, Beer</td>
+                            <td>UP</td>
+                            <td><a href="https://www.watco.com/service/rail/austin-western-railroad-awrr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Autauga Northern Railroad</td>
+                            <td>AUT</td>
+                            <td>AL</td>
+                            <td>43.62</td>
+                            <td>Paper, Forest Products</td>
+                            <td>NS</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Baton Rouge Southern Railroad</td>
+                            <td>BRS</td>
+                            <td>LA</td>
+                            <td>1.5</td>
+                            <td>Chemicals</td>
+                            <td>CN, KCS</td>
+                            <td><a href="https://www.watco.com/service/rail/baton-rouge-southern-railroad-brs/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Birmingham Terminal Railway</td>
+                            <td>BHRR</td>
+                            <td>AL</td>
+                            <td>76.1</td>
+                            <td>Steel, Coal</td>
+                            <td>NS, CSX, BNSF</td>
+                            <td><a href="https://www.watco.com/service/rail/birmingham-terminal-railway-bhrr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Blue Ridge Southern Railroad</td>
+                            <td>BLU</td>
+                            <td>NC</td>
+                            <td>N/A</td>
+                            <td>Wood Chips, Paper, Cement</td>
+                            <td>NS, CSX</td>
+                            <td><a href="https://www.watco.com/service/rail/blue-ridge-southern-railroad-blu/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Boise Valley Railroad</td>
+                            <td>BVRR</td>
+                            <td>ID</td>
+                            <td>70.76</td>
+                            <td>Potatoes, Lumber, Fertilizer</td>
+                            <td>UP</td>
+                            <td><a href="https://www.watco.com/service/rail/boise-valley-railroad-bvrr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Cicero Central Railroad</td>
+                            <td>CERR</td>
+                            <td>IL</td>
+                            <td>N/A</td>
+                            <td>Chemicals, Plastics</td>
+                            <td>BNSF, UP</td>
+                            <td><a href="https://www.watco.com/service/rail/cicero-central-railroad-cerr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Decatur & Eastern Illinois Railroad</td>
+                            <td>DREI</td>
+                            <td>IL</td>
+                            <td>N/A</td>
+                            <td>Grain, Ethanol</td>
+                            <td>NS, CN, UP</td>
+                            <td><a href="https://www.watco.com/service/rail/decatur_and_eastern_illinois/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dutchtown Southern Railroad</td>
+                            <td>DUSR</td>
+                            <td>LA</td>
+                            <td>1.76</td>
+                            <td>Chemicals, Plastics</td>
+                            <td>CN</td>
+                            <td><a href="https://www.watco.com/service/rail/dutchtown-southern-railroad/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Eastern Idaho Railroad</td>
+                            <td>EIRR</td>
+                            <td>ID</td>
+                            <td>365.17</td>
+                            <td>Potatoes, Grain</td>
+                            <td>UP</td>
+                            <td><a href="https://www.watco.com/service/rail/eastern-idaho-railroad-eirr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Elwood Joliet & Southern Railroad</td>
+                            <td>EJSR</td>
+                            <td>IL</td>
+                            <td>1.2</td>
+                            <td>Plastics, Chemicals, Grain</td>
+                            <td>UP, BNSF</td>
+                            <td><a href="https://www.watco.com/service/rail/elwood-joliet-and-southern-railroad-ejsr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Geaux Geaux Railroad</td>
+                            <td>GOGR</td>
+                            <td>LA</td>
+                            <td>26</td>
+                            <td>Chemicals, Agricultural</td>
+                            <td>KCS, CN</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Grand Elk Railroad</td>
+                            <td>GDLK</td>
+                            <td>IN, MI</td>
+                            <td>123</td>
+                            <td>Frac Sand, Plastics, Metals</td>
+                            <td>NS, CSX, CN</td>
+                            <td><a href="https://www.watco.com/service/rail/grand-elk-railroad-gdlk/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Great Lakes Central Railroad</td>
+                            <td>GLC</td>
+                            <td>MI</td>
+                            <td>900</td>
+                            <td>Agricultural, Plastics, Oil/Gas</td>
+                            <td>CN, CPKC, NS, CSX</td>
+                            <td><a href="https://www.watco.com/service/rail/great-lakes-railroad-glc/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Great Northwest Railroad</td>
+                            <td>GRNW</td>
+                            <td>WA, ID</td>
+                            <td>87.1</td>
+                            <td>Forest Products, Agricultural</td>
+                            <td>UP, BNSF</td>
+                            <td><a href="https://www.watco.com/service/rail/great-northwest-railroad-grnw/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jacksonville Port Terminal Railroad</td>
+                            <td>JXPT</td>
+                            <td>FL</td>
+                            <td>10</td>
+                            <td>Automobiles, Intermodal</td>
+                            <td>CSX, NS</td>
+                            <td><a href="https://www.watco.com/service/rail/jacksonville-port-terminal-railroad-jxpt/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kanawha River Railroad</td>
+                            <td>KNWA</td>
+                            <td>WV, OH</td>
+                            <td>359.12</td>
+                            <td>Coal, Chemicals, Cement</td>
+                            <td>NS</td>
+                            <td><a href="https://www.watco.com/service/rail/knwa/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kansas & Oklahoma Railroad</td>
+                            <td>KO</td>
+                            <td>KS, OK</td>
+                            <td>N/A</td>
+                            <td>Grain, Chemicals, LPG</td>
+                            <td>BNSF, UP</td>
+                            <td><a href="https://www.watco.com/service/rail/kansas-and-oklahoma-railroad-ko/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kaw River Railroad</td>
+                            <td>KAW</td>
+                            <td>KS</td>
+                            <td>N/A</td>
+                            <td>Grain, Agricultural</td>
+                            <td>UP, BNSF</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Louisiana Southern Railroad</td>
+                            <td>LAS</td>
+                            <td>LA</td>
+                            <td>157</td>
+                            <td>Forest Products, Paper</td>
+                            <td>KCS</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mission Mountain Railroad</td>
+                            <td>MMT</td>
+                            <td>MT</td>
+                            <td>26</td>
+                            <td>Forest Products, Grain</td>
+                            <td>BNSF</td>
+                            <td><a href="https://www.watco.com/service/rail/mission-mountain-railroad-mmt/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mississippi Southern Railroad</td>
+                            <td>MSR</td>
+                            <td>MS</td>
+                            <td>N/A</td>
+                            <td>Forest Products, Paper</td>
+                            <td>KCS, NS, CN</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Palouse River & Coulee City Railroad</td>
+                            <td>PCC</td>
+                            <td>WA</td>
+                            <td>300</td>
+                            <td>Wheat, Lentils, Barley</td>
+                            <td>UP, BNSF</td>
+                            <td><a href="https://www.watco.com/service/rail/palouse-river-coulee-city-railroad-pcc/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Pennsylvania Southwestern Railroad</td>
+                            <td>PSWR</td>
+                            <td>PA</td>
+                            <td>10.5</td>
+                            <td>Steel Scrap, Steel Products</td>
+                            <td>NS</td>
+                            <td><a href="https://www.watco.com/service/rail/pennsylvania-southwestern-railroad-pswr/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Savannah & Old Fort Railroad</td>
+                            <td>SVHO</td>
+                            <td>GA</td>
+                            <td>6.5</td>
+                            <td>Sulfuric Acid, Gypsum</td>
+                            <td>NS, CSX</td>
+                            <td><a href="https://www.watco.com/service/rail/savannah-old-fort-svho/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Smoky Ridge Railroad</td>
+                            <td>SMO</td>
+                            <td>TN</td>
+                            <td>13.7</td>
+                            <td>Nuclear Materials, Government</td>
+                            <td>NS</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>South Kansas & Oklahoma Railroad</td>
+                            <td>SKOL</td>
+                            <td>KS, OK</td>
+                            <td>N/A</td>
+                            <td>Grain, Agricultural, Oil/Gas</td>
+                            <td>BNSF, UP</td>
+                            <td><a href="https://www.watco.com/service/rail/skol/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Stillwater Central Railroad</td>
+                            <td>SLWC</td>
+                            <td>OK</td>
+                            <td>275</td>
+                            <td>Fuels, Minerals, Industrial</td>
+                            <td>BNSF, UP</td>
+                            <td><a href="https://www.watco.com/service/rail/stillwater-central-railroad-slwc/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Timber Rock Railroad</td>
+                            <td>TIBR</td>
+                            <td>TX, LA</td>
+                            <td>160</td>
+                            <td>Forest Products, Paper</td>
+                            <td>UP, KCS</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Verdigris Southern Railroad</td>
+                            <td>VESO</td>
+                            <td>OK</td>
+                            <td>3</td>
+                            <td>Raw Pulp, Paper</td>
+                            <td>UP</td>
+                            <td><a href="https://www.watco.com/service/rail/verdigris-southern-railroad-veso/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vicksburg Southern Railroad</td>
+                            <td>VSOR</td>
+                            <td>MS</td>
+                            <td>36.58</td>
+                            <td>Energy, Paper, Coal</td>
+                            <td>KCS</td>
+                            <td><a href="https://www.watco.com/service/rail/vicksburg-southern-railroad-vsor/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Wisconsin & Southern Railroad</td>
+                            <td>WSOR</td>
+                            <td>WI, IL</td>
+                            <td>837</td>
+                            <td>Agricultural, Manufacturing</td>
+                            <td>All 6 Class I</td>
+                            <td><a href="https://www.watco.com/service/rail/wsor/" target="_blank">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Yellowstone Valley Railroad</td>
+                            <td>YSVR</td>
+                            <td>MT, ND</td>
+                            <td>170</td>
+                            <td>Natural Gas, Crude Oil, Frac Sand</td>
+                            <td>BNSF</td>
+                            <td><a href="https://www.watco.com/service/watco-railroads/" target="_blank">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Insights</h2>
+            <div style="line-height: 1.8; color: #555;">
+                <p><strong>Largest Operation:</strong> Wisconsin & Southern Railroad (WSOR) with 837 route miles and connections to all six Class I railroads.</p>
+                <p><strong>Most Recent Addition:</strong> Smoky Ridge Railroad (SMO) in Tennessee, acquired February 2, 2026 (48th railroad).</p>
+                <p><strong>International Presence:</strong> Agawa Canyon Railroad in Ontario, Canada (acquired 2022) and Watco Australia operations.</p>
+                <p><strong>Smallest Operations:</strong> Several railroads under 10 miles including Elwood Joliet & Southern (1.2 mi), Baton Rouge Southern (1.5 mi), and Dutchtown Southern (1.76 mi).</p>
+                <p><strong>Strategic Focus Areas:</strong> Strong concentration in agricultural states (Kansas, Oklahoma, Idaho), Louisiana chemical corridor (5 railroads), and Alabama industrial operations (3 railroads).</p>
+                <p><strong>Unique Operations:</strong> Agawa Canyon Railroad operates passenger excursion trains; Smoky Ridge serves DOE nuclear facilities; Jacksonville Port Terminal handles international cargo.</p>
+                <p><strong>Major Investment:</strong> $3.7 million planned for Great Lakes Central Railroad network improvements following 2025 acquisition.</p>
+            </div>
+        </div>
+
+        <footer style="margin-top: 50px; padding-top: 20px; border-top: 2px solid #f0f0f0; text-align: center; color: #999;">
+            <p>Data compiled from official Watco sources, STB filings, and industry publications</p>
+            <p>Watco Companies headquarters: Pittsburg, Kansas</p>
+            <p>Knowledge Bank compiled by: project_rail • February 23, 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        function sortTable(columnIndex) {
+            var table = document.getElementById("railroadTable");
+            var rows = Array.from(table.rows).slice(1);
+            var ascending = table.rows[0].cells[columnIndex].textContent.includes('▼');
+
+            rows.sort(function(a, b) {
+                var aValue = a.cells[columnIndex].textContent;
+                var bValue = b.cells[columnIndex].textContent;
+
+                if (columnIndex === 3) {
+                    aValue = parseFloat(aValue) || 0;
+                    bValue = parseFloat(bValue) || 0;
+                }
+
+                if (aValue < bValue) return ascending ? -1 : 1;
+                if (aValue > bValue) return ascending ? 1 : -1;
+                return 0;
+            });
+
+            rows.forEach(function(row) {
+                table.tBodies[0].appendChild(row);
+            });
+
+            for (var i = 0; i < table.rows[0].cells.length; i++) {
+                var header = table.rows[0].cells[i];
+                header.textContent = header.textContent.replace(/[▼▲]/g, '');
+                if (i === columnIndex) {
+                    header.textContent += ascending ? ' ▲' : ' ▼';
+                }
+            }
+        }
+
+        function filterTable() {
+            var input = document.getElementById("searchInput");
+            var filter = input.value.toUpperCase();
+            var table = document.getElementById("railroadTable");
+            var rows = table.getElementsByTagName("tr");
+
+            for (var i = 1; i < rows.length; i++) {
+                var row = rows[i];
+                var cells = row.getElementsByTagName("td");
+                var found = false;
+
+                for (var j = 0; j < cells.length; j++) {
+                    var cell = cells[j];
+                    if (cell) {
+                        var textValue = cell.textContent || cell.innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (found) {
+                    row.style.display = "";
+                    if (filter !== "") {
+                        for (var j = 0; j < cells.length; j++) {
+                            cells[j].innerHTML = cells[j].textContent.replace(
+                                new RegExp(filter, 'gi'),
+                                function(match) {
+                                    return '<span class="highlight">' + match + '</span>';
+                                }
+                            );
+                        }
+                    }
+                } else {
+                    row.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

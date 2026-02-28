@@ -1,0 +1,253 @@
+========================================================================
+WAYBILL-TO-CEMENT-PLANT MATCHING SUMMARY
+========================================================================
+
+INPUT FILES
+  Cement plants loaded:        100
+  Waybill records loaded:   156,223
+  Output matched rows:      186,540
+
+PLANT BEA ASSIGNMENTS
+  Distinct BEA areas with plants: 60
+  BEA areas with >1 plant:        25
+  Max plants in single BEA:       5
+
+  Plants per BEA area:
+    BEA 001 (Bangor, ME): 1 plant(s)
+      - DRAGON CEMENT
+    BEA 004 (Albany, NY): 3 plant(s)
+      - Heidelberg Materials US Cement LLC
+      - Holcim US Inc
+      - Lafarge Ravena Cement Plant
+    BEA 009 (Harrisburg, PA): 2 plant(s)
+      - Holcim (US), Inc.
+      - LEHIGH WHITE CEMENT CO LLC
+    BEA 017 (Allentown, PA): 5 plant(s)
+      - HEIDELBERG MATERIALS US CEMENT LLC/ NAZARETH
+      - HERCULES CEMENT STOCKERTOWN PLT QUARRY
+      - Heidelberg Materials/EVANSVILLE CEMENT PLT & QUARRY
+      - KEYSTONE CEMENT COMPANY
+      - LAFARGE NA WHITEHALL PLANT
+    BEA 020 (Baltimore, MD): 1 plant(s)
+      - Heidelberg Materials US Cement LLC
+    BEA 022 (Washington, DC): 1 plant(s)
+      - ARGOS USA -Martinsburg
+    BEA 023 (Staunton, VA): 1 plant(s)
+      - ROANOKE CEMENT CO - CLOVERDALE
+    BEA 032 (Charleston, SC): 3 plant(s)
+      - Argos Cement LLC - Harleyville Plant
+      - GIANT CEMENT COMPANY
+      - HOLCIM (US) INC.
+    BEA 036 (Macon, GA): 1 plant(s)
+      - CEMEX SOUTHEAST LLC
+    BEA 040 (Jacksonville, FL): 2 plant(s)
+      - Argos Cement LLC
+      - SUWANNEE AMERICAN CEMENT
+    BEA 041 (Orlando, FL): 1 plant(s)
+      - SUWANNEE AMERICAN CEMENT COMPANY, LLC
+    BEA 042 (Tampa, FL): 2 plant(s)
+      - Brooksville North Cement Plant
+      - Brooksville South Cement Plant
+    BEA 044 (Miami, FL): 4 plant(s)
+      - Argos Puerto Rico, Corp.
+      - CEMEX MIAMI
+      - CEMEX de Puerto Rico, Inc.
+      - TARMAC PENNSUCO COMPLEX
+    BEA 045 (Chattanooga, TN): 1 plant(s)
+      - SIGNAL MOUNTAIN CEMENT CO
+    BEA 048 (Birmingham, AL): 3 plant(s)
+      - ARGOS CEMENT LLC. - ROBERTA PLANT
+      - HM Cement Southeast LLC
+      - NATIONAL CEMENT COMPANY INC.
+    BEA 051 (Knoxville, TN): 1 plant(s)
+      - CEMEX CONSTRUCTION MATERIALS ATLANTIC LLC
+    BEA 055 (Louisville, KY): 3 plant(s)
+      - Heidelberg Materials US Cement LLC
+      - Heidelberg Materials US Cement LLC
+      - KOSMOS CEMENT CO
+    BEA 057 (Fort Wayne, IN): 1 plant(s)
+      - Holcim US - Paulding Plant (INCLUDING SYSTECH ENV CORP)
+    BEA 059 (Traverse City, MI): 2 plant(s)
+      - HOLCIM (US) INC. D/B/A LAFARGE ALPENA
+      - St Marys Cement INC
+    BEA 065 (Youngstown, OH): 1 plant(s)
+      - CEMEX Construction Materials Atlantic LLC
+    BEA 066 (Pittsburgh, PA): 1 plant(s)
+      - ARMSTRONG CEMENT & SUPPLY
+    BEA 069 (Dayton, OH): 1 plant(s)
+      - Fairborn Cement Company LLC
+    BEA 070 (Indianapolis, IN): 1 plant(s)
+      - Heidelberg Materials
+    BEA 071 (Terre Haute, IN): 1 plant(s)
+      - LONE STAR INDUSTRIES INC
+    BEA 072 (Springfield, IL): 1 plant(s)
+      - CONTINENTAL CEMENT COMPANY LLC
+    BEA 073 (St. Louis, MO): 2 plant(s)
+      - HOLCIM (US) INC STE GENEVIEVE PLANT
+      - RIVER CEMENT COMPANY DBA BUZZI UNICEM USA
+    BEA 074 (Paducah, KY): 2 plant(s)
+      - Holcim (US) INC JOPPA PLANT
+      - LONE STAR INDUSTRIES
+    BEA 076 (Joplin, MO): 4 plant(s)
+      - ASH GROVE CEMENT CO-CHANUTE PLANT
+      - Central Plains Cement Company LLC
+      - Lafarge North America, Inc.
+      - MONARCH CEMENT COMPANY (THE)
+    BEA 077 (Fort Smith, AR): 1 plant(s)
+      - HOLCIM INCORPORATED
+    BEA 078 (Fayetteville, AR): 2 plant(s)
+      - Central Plains Cement Company
+      - LONE STAR IND INC DBA BUZZI UNICEM USA PRYOR CEMENT PLANT
+    BEA 082 (Shreveport, LA): 1 plant(s)
+      - ASH GROVE CEMENT-FOREMAN
+    BEA 088 (Mobile, AL): 1 plant(s)
+      - Holcim (US) Inc
+    BEA 092 (Meridian, MS): 1 plant(s)
+      - CEMEX SOUTHEAST LLC, DEMOPOLIS PLANT
+    BEA 099 (La Crosse, WI): 1 plant(s)
+      - LEHIGH CEMENT CO LLC
+    BEA 106 (Rockford, IL): 2 plant(s)
+      - ILLINOIS CEMENT CO
+      - ST MARYS CEMENT INC-DIXON PLANT
+    BEA 107 (Davenport, IA): 1 plant(s)
+      - Davenport Plant
+    BEA 112 (Rapid City, SD): 1 plant(s)
+      - GCC DACOTAH
+    BEA 115 (Great Falls, MT): 2 plant(s)
+      - ASH GROVE CEMENT COMPANY-MONTANA CITY
+      - Trident
+    BEA 118 (Omaha, NE): 1 plant(s)
+      - ASH GROVE CEMENT COMPANY-Louisville
+    BEA 122 (Denver, CO): 1 plant(s)
+      - CEMEX CONSTRUCTION MATERIALS SOUTH LLC
+    BEA 124 (Pueblo, CO): 2 plant(s)
+      - GCC RIO GRANDE INC
+      - Holcim (US) Inc. - Portland Plant
+    BEA 125 (Albuquerque, NM): 1 plant(s)
+      - GCC RIO GRANDE, INC. TIJERAS PLANT
+    BEA 128 (Odessa, TX): 1 plant(s)
+      - GCC Permian, LLC
+    BEA 129 (Abilene, TX): 1 plant(s)
+      - Lone Star Industries, Inc. /dba/ BUZZI UNICEM USA
+    BEA 131 (Dallas, TX): 3 plant(s)
+      - ASH GROVE CEMENT COMPANY
+      - HOLCIM (US) Inc
+      - MARTIN MARIETTA NORTH TEXAS CEMENT, LLC
+    BEA 132 (Waco, TX): 1 plant(s)
+      - LEHIGH CEMENT CO LLC / WACO PLANT
+    BEA 133 (Austin, TX): 2 plant(s)
+      - Martin Marietta South Texas Cement, LLC
+      - TEXAS LEHIGH CEMENT COMPANY LP
+    BEA 135 (San Antonio, TX): 2 plant(s)
+      - CAPITOL CEMENT PLANT
+      - CEMEX Construction Materials South, LLC
+    BEA 139 (Scottsbluff, NE): 1 plant(s)
+      - MOUNTAIN CEMENT CO
+    BEA 141 (Salt Lake City, UT): 2 plant(s)
+      - Ash Grove Cement Company-LEAMINGTON
+      - HOLCIM (US) INC. DEVIL\S SLIDE PLANT
+    BEA 142 (Idaho Falls, ID): 1 plant(s)
+      - ASH GROVE CEMENT - INKOM
+    BEA 143 (Boise, ID): 1 plant(s)
+      - ASH GROVE CEMENT COMPANY-DURKEE
+    BEA 151 (Redding, CA): 1 plant(s)
+      - CalPortland Redding Cement Plant
+    BEA 153 (Reno, NV): 1 plant(s)
+      - NEVADA CEMENT COMPANY
+    BEA 155 (Flagstaff, AZ): 2 plant(s)
+      - Drake Cement
+      - PHOENIX CEMENT COMPANY\S CLARKDALE FACILITY
+    BEA 157 (Tucson, AZ): 1 plant(s)
+      - CalPortland Company Rillito Plant
+    BEA 159 (San Jose, CA): 1 plant(s)
+      - HANSON PERMANENTE CEMENT
+    BEA 161 (Bakersfield, CA): 3 plant(s)
+      - CalPortland Company Mojave Plant
+      - NATIONAL CEMENT CO OF CALIFORNIA INC
+      - Tehachapi Cement Plant
+    BEA 163 (Los Angeles, CA): 4 plant(s)
+      - CEMEX Construction Materials Pacific LLC
+      - CalPortland Company Colton Plant
+      - CalPortland Company Oro Grande Plant
+      - Mitsubishi Cement Corp Cushenbury Cement Plant
+    BEA 165 (Seattle, WA): 2 plant(s)
+      - ASH GROVE CEMENT COMPANY-SEATTLE
+      - LAFARGE NORTH AMERICA INC SEATTLE
+
+MATCH STATUS BREAKDOWN (waybill records)
+  unique_match             :    2,538 rows (  1.4%)  extons=   2,328,318  exrev=$   83,691,440
+  proportional_split       :   53,710 rows ( 28.8%)  extons=  47,401,260  exrev=$1,297,375,472
+  no_plant_in_bea          :   27,743 rows ( 14.9%)  extons= 116,571,431  exrev=$3,141,253,047
+  suppressed               :   81,653 rows ( 43.8%)  extons= 225,780,409  exrev=$6,292,024,850
+  canadian_import          :    5,835 rows (  3.1%)  extons=  10,424,058  exrev=$  319,642,493
+  canadian_reorigination   :   15,061 rows (  8.1%)  extons=  27,176,401  exrev=$  846,755,789
+  foreign_other            :        0 rows (  0.0%)  extons=           0  exrev=$            0
+
+  Waybill-level suppression rate: 52.3% (81,653 of 156,223)
+
+MATCHED PLANT SUMMARY (unique_match + proportional_split)
+  Plants with matched shipments: 23
+  Total allocated extons:      49,729,578
+  Total allocated exrev:   $1,381,066,912
+
+  Top 20 plants by allocated tons:
+    LONE STAR IND INC DBA BUZZI UNICEM USA PRYOR  OK  tons=  11,188,532  rev=$310,219,214  rows=11,315
+    Central Plains Cement Company                 OK  tons=  11,188,532  rev=$310,219,214  rows=11,315
+    Holcim (US) Inc. - Portland Plant             CO  tons=  10,124,864  rev=$272,725,888  rows=6,147
+    GCC RIO GRANDE INC                            CO  tons=  10,124,864  rev=$272,725,888  rows=6,147
+    HOLCIM (US) INC. DEVIL\S SLIDE PLANT          UT  tons=   1,012,255  rev=$ 30,072,860  rows=3,527
+    Ash Grove Cement Company-LEAMINGTON           UT  tons=   1,012,255  rev=$ 30,072,860  rows=3,527
+    Heidelberg Materials US Cement LLC            MD  tons=     853,266  rev=$ 40,418,360  rows=1,489
+    LEHIGH CEMENT CO LLC                          IA  tons=     634,480  rev=$ 18,853,260  rows=  289
+    CEMEX Construction Materials Pacific LLC      CA  tons=     407,222  rev=$  7,757,462  rows=  231
+    CalPortland Company Colton Plant              CA  tons=     407,222  rev=$  7,757,462  rows=  231
+    Mitsubishi Cement Corp Cushenbury Cement Plan CA  tons=     407,222  rev=$  7,757,462  rows=  231
+    CalPortland Company Oro Grande Plant          CA  tons=     407,222  rev=$  7,757,462  rows=  231
+    Holcim US - Paulding Plant (INCLUDING SYSTECH OH  tons=     375,920  rev=$  9,239,480  rows=   93
+    HOLCIM INCORPORATED                           OK  tons=     339,615  rev=$ 10,920,575  rows=  636
+    KEYSTONE CEMENT COMPANY                       PA  tons=     218,408  rev=$  7,928,410  rows=2,154
+    Heidelberg Materials/EVANSVILLE CEMENT PLT &  PA  tons=     218,408  rev=$  7,928,410  rows=2,154
+    HEIDELBERG MATERIALS US CEMENT LLC/ NAZARETH  PA  tons=     218,408  rev=$  7,928,410  rows=2,154
+    HERCULES CEMENT STOCKERTOWN PLT QUARRY        PA  tons=     218,408  rev=$  7,928,410  rows=2,154
+    LAFARGE NA WHITEHALL PLANT                    PA  tons=     218,408  rev=$  7,928,410  rows=2,154
+    ASH GROVE CEMENT COMPANY-Louisville           NE  tons=     103,997  rev=$  3,876,093  rows=   26
+
+YEAR BREAKDOWN (all waybill records)
+  2005:  4,501 records  extons=  25,021,077  exrev=$  432,637,808
+  2006:  4,725 records  extons=  25,290,041  exrev=$  495,637,979
+  2007:  4,619 records  extons=  25,166,056  exrev=$  518,577,320
+  2008:  3,929 records  extons=  21,969,985  exrev=$  499,308,268
+  2009:  2,993 records  extons=  18,025,892  exrev=$  395,517,124
+  2010:  2,968 records  extons=  17,968,580  exrev=$  428,756,668
+  2011:  2,864 records  extons=  17,945,992  exrev=$  451,424,656
+  2012:  3,162 records  extons=  20,052,115  exrev=$  518,851,972
+  2013:  3,251 records  extons=  20,648,961  exrev=$  569,844,361
+  2014:  3,582 records  extons=  22,439,891  exrev=$  629,362,080
+  2015:  3,578 records  extons=  21,912,243  exrev=$  607,618,122
+  2016:  3,671 records  extons=  22,678,376  exrev=$  623,358,626
+  2017:  3,587 records  extons=  21,446,508  exrev=$  641,689,508
+  2018:  3,992 records  extons=  22,897,723  exrev=$  733,373,775
+  2019:  4,197 records  extons=  24,102,421  exrev=$  774,988,181
+  2020:  4,280 records  extons=  23,495,635  exrev=$  771,775,301
+  2021: 32,480 records  extons=  26,584,196  exrev=$  885,348,383
+  2022: 32,004 records  extons=  25,710,220  exrev=$  975,707,788
+  2023: 31,840 records  extons=  26,325,965  exrev=$1,026,965,171
+
+NO-PLANT BEA AREAS (domestic origins with no assigned plant)
+  BEA 160 (Fresno, CA): 4,644 records  extons=37,065,809
+  BEA 134 (Houston, TX): 4,458 records  extons=30,880,455
+  BEA 127 (Lubbock, TX): 4,171 records  extons=18,917,370
+  BEA 013 (Hartford, CT): 4,896 records  extons=13,801,441
+  BEA 026 (Raleigh, NC): 1,926 records  extons= 5,151,204
+  BEA 167 (Olympia, WA): 1,498 records  extons= 2,014,932
+  BEA 034 (Augusta, GA):   666 records  extons= 1,915,700
+  BEA 010 (Boston, MA): 1,809 records  extons= 1,892,552
+  BEA 064 (Columbus, OH): 1,082 records  extons= 1,372,009
+  BEA 170 (Juneau, AK):   473 records  extons= 1,269,695
+  BEA 140 (Casper, WY):   124 records  extons=   806,171
+  BEA 067 (Wheeling, WV): 1,602 records  extons=   759,390
+  BEA 152 (Sacramento, CA):   226 records  extons=   390,045
+  BEA 028 (Charlotte, NC):   139 records  extons=   224,700
+  BEA 164 (San Diego, CA):    29 records  extons=   109,958
+
+========================================================================

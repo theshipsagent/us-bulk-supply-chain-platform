@@ -231,4 +231,4 @@ Additional ports can be added by extending the tariff data files.
 
 ---
 
-*US Bulk Supply Chain Reporting Platform v1.0.0 | OceanDatum.ai*
+*US Bulk Supply Chain Reporting Platform v1.0.0 | William S. Davis III*

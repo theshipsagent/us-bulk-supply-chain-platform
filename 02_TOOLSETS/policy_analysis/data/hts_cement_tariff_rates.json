@@ -1,0 +1,82 @@
+{
+  "title": "HTS Tariff Rates — Cement and Cementitious Materials",
+  "source": "US International Trade Commission Harmonized Tariff Schedule",
+  "last_updated": "2025-01-01",
+  "chapter": "25 — Salt; sulfur; earths and stone; plastering materials, lime and cement",
+  "codes": {
+    "2523.10.00": {
+      "description": "Cement clinkers",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons",
+      "notes": "Unground portland cement clinker"
+    },
+    "2523.21.00": {
+      "description": "White portland cement, whether or not artificially colored",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons"
+    },
+    "2523.29.00": {
+      "description": "Other portland cement (gray)",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons",
+      "notes": "Primary import category for bulk portland cement"
+    },
+    "2523.30.00": {
+      "description": "Aluminous cement (calcium aluminate cement)",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons"
+    },
+    "2523.90.00": {
+      "description": "Other hydraulic cements (e.g., pozzolanic cement, slag cement)",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons",
+      "notes": "Includes blended cements, masonry cement"
+    },
+    "2618.00.00": {
+      "description": "Granulated slag (slag sand) from the manufacture of iron or steel",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons",
+      "notes": "Ground granulated blast-furnace slag (GGBFS) for cement replacement"
+    },
+    "2621.00.00": {
+      "description": "Other slag and ash, including seaweed ash (kelp)",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons",
+      "notes": "Includes fly ash (coal combustion residuals) for SCM use"
+    },
+    "2530.90.80": {
+      "description": "Natural pozzolans (volcanic ash, trass, etc.) NESOI",
+      "general_duty": "Free",
+      "special": "Free",
+      "column_2": "Free",
+      "unit": "metric tons",
+      "notes": "Natural pozzolanic materials for cement blending"
+    }
+  },
+  "add_cvd_orders": {
+    "cement": {
+      "active_orders": "None as of 2025",
+      "monitoring": [
+        {"country": "Turkey", "status": "No petition filed", "market_share_pct": 25},
+        {"country": "Egypt", "status": "No petition filed", "market_share_pct": 15},
+        {"country": "Vietnam", "status": "No petition filed", "market_share_pct": 12},
+        {"country": "Greece", "status": "No petition filed", "market_share_pct": 10},
+        {"country": "China", "status": "Minimal imports", "market_share_pct": 3}
+      ]
+    }
+  }
+}

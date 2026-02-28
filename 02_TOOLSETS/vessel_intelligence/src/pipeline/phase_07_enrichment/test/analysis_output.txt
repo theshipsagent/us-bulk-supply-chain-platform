@@ -1,0 +1,746 @@
+Total records: 69,777
+Total tons: 113,345,850
+
+Columns: ['Bill of Lading Number', 'Arrival Date', 'Consignee', 'Consignee (Original Format)', 'Consignee SIC Codes', 'Shipper', 'Shipper (Original Format)', 'Shipper SIC Codes', 'Notify Party', 'Carrier', 'Origin (F)', 'Destination (D)', 'Port of Discharge (D)', 'Port of Loading (F)', 'Country of Origin (F)', 'Place of Receipt (F)', 'Vessel', 'Voyage', 'IMO', 'Is Containerized', 'Measurement', 'Kilos', 'Tons', 'Weight (Original Format)', 'Value', 'HS Code Desc.', 'Goods Shipped', 'REC_ID', 'Qty', 'Pckg', 'HS2', 'HS4', 'HS6', 'Vessel_Type_Simple', 'Carrier Name', 'Package_Type', 'Count', 'Group', 'Commodity', 'Cargo', 'Cargo_Detail', 'Classified_By_Rule', 'Group_Locked', 'Commodity_Locked', 'Cargo_Locked', 'Cargo_Detail_Locked', 'Classified_Phase', 'Last_Rule_ID', 'Report_One', 'Report_Two', 'Report_Three', 'Report_Four', 'Filter', 'Note', 'Type', 'DWT', 'LOA', 'Beam', 'Depth(m)', 'GT', 'NRT', 'Grain', 'TPC', 'Dwt_Draft(m)', 'Port_Code', 'Port_Consolidated', 'Port_Coast', 'Port_Region']
+
+Classified records: 45,063 (64.6%)
+Classified tons: 112,620,853
+
+====================================================================================================
+
+ANALYZING: Perishables
+====================================================================================================
+
+Total Records: 32
+Total Tons: 87,023
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 100.0% of tons):
+                                                                   Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                 
+Beale Cove, Bc, Canada TO Port of Seattle, Seattle, Washington  48000.0        8      55.2            55.2
+Turbo, Colombia TO San Juan, San Juan, Puerto Rico              16114.0       16      18.5            73.7
+Quebec, Que, Canada TO Houston, Houston, Texas                   9790.0        1      11.2            84.9
+Levis, Que, Canada TO Houston, Houston, Texas                    6372.0        1       7.3            92.2
+Victoria, Bc, Canada TO Port of Seattle, Seattle, Washington     6000.0        1       6.9            99.1
+Bahia De Moin, Costa Rica TO San Juan, San Juan, Puerto Rico      745.0        4       0.9           100.0
+Hai Phong, Vietnam TO Port of San Diego, San Diego, California      2.0        1       0.0           100.0
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 100.0% of tons):
+           Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                               
+2008.0  70164.0       12      80.6            80.6
+803.0   16858.0       20      19.4           100.0
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 100.0% of tons):
+                                        Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                      
+Glacier Northwest Incorporated       54000.0        9      62.1            62.1
+Dole Europe Gmb H                    16828.0       19      19.3            81.4
+Valero Marketing And Supply Company  16162.0        2      18.6           100.0
+Eosta                                   30.0        1       0.0           100.0
+Powin Corporation                        2.0        1       0.0           100.0
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                     Port_Pair    HS4   Commodity     Tons  Records  Tons_Pct  Cumulative_Pct
+Beale Cove, Bc, Canada TO Port of Seattle, Seattle, Washington 2008.0 Perishables 48000.00        8      55.2            55.2
+            Turbo, Colombia TO San Juan, San Juan, Puerto Rico  803.0 Perishables 16113.60       16      18.5            73.7
+                Quebec, Que, Canada TO Houston, Houston, Texas 2008.0 Perishables  9790.02        1      11.2            84.9
+                 Levis, Que, Canada TO Houston, Houston, Texas 2008.0 Perishables  6372.07        1       7.3            92.2
+  Victoria, Bc, Canada TO Port of Seattle, Seattle, Washington 2008.0 Perishables  6000.00        1       6.9            99.1
+  Bahia De Moin, Costa Rica TO San Juan, San Juan, Puerto Rico  803.0 Perishables   744.64        4       0.9           100.0
+Hai Phong, Vietnam TO Port of San Diego, San Diego, California 2008.0 Perishables     2.30        1       0.0           100.0
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 73,904 (84.9% of Perishables)
+Number of rules needed: 3
+
+Rule formats:
+  IF Port_Pair='Beale Cove, Bc, Canada TO Port of Seattle, Seattle, Washington' AND HS4=2008.0 THEN Commodity='Perishables' (confidence: 55.2%)
+  IF Port_Pair='Turbo, Colombia TO San Juan, San Juan, Puerto Rico' AND HS4=803.0 THEN Commodity='Perishables' (confidence: 18.5%)
+  IF Port_Pair='Quebec, Que, Canada TO Houston, Houston, Texas' AND HS4=2008.0 THEN Commodity='Perishables' (confidence: 11.2%)
+====================================================================================================
+
+ANALYZING: Refrigerated
+====================================================================================================
+No records found for Refrigerated
+====================================================================================================
+
+ANALYZING: Metals
+====================================================================================================
+
+Total Records: 379
+Total Tons: 494,016
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 77.5% of tons):
+                                                                                                               Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                                                             
+Campana, Argentina TO Freeport, Freeport, Texas                                                             94234.0       23      19.1            19.1
+Sept Iles, QUE, Canada TO Toledo-Lucas Port Authority, Toledo, Ohio                                         58075.0       63      11.8            30.9
+Sept Iles, QUE, Canada TO Port of Oswego, Oswego, New York                                                  44681.0       30       9.0            39.9
+Kitimat, Bc, Canada TO The Port of Los Angeles, Los Angeles, California                                     42632.0        2       8.6            48.5
+All Other Chile Ports, Chile TO Port Panama City, Panama City, Florida                                      37406.0       89       7.6            56.1
+Quebec, Que, Canada TO Baltimore, Maryland                                                                  29974.0        2       6.1            62.2
+All Other Chile Ports, Chile TO Port of New Orleans, New Orleans, Louisiana                                 26698.0       39       5.4            67.6
+All Other United Arab Emirates Ports, United Arab Emirates TO Port of Vancouver USA, Vancouver, Washington  18540.0       14       3.8            71.4
+Onsan, South Korea TO Baltimore, Maryland                                                                   15553.0        4       3.1            74.5
+Quebec, Que, Canada TO Port of New Orleans, New Orleans, Louisiana                                          14990.0        1       3.0            77.5
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 99.6% of tons):
+            Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                                
+7604.0  202991.0      119      41.1            41.1
+7601.0  156615.0       67      31.7            72.8
+7403.0   83147.0      147      16.8            89.6
+7801.0   12204.0        3       2.5            92.1
+2603.0   10500.0        1       2.1            94.2
+2613.0    9970.0        1       2.0            96.2
+6810.0    7637.0        1       1.5            97.7
+2620.0    6054.0        5       1.2            98.9
+7901.0    2820.0        2       0.6            99.5
+7210.0     638.0       12       0.1            99.6
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 60.1% of tons):
+                                              Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                            
+Tenaris Global Services Usa                66629.0       14      13.5            13.5
+Charter Brokerage Cw Logistics             60932.0       25      12.3            25.8
+C.Steinweg (Handelsveem Bv)                42632.0        2       8.6            34.4
+Ega America Incorporated                   31442.0       51       6.4            40.8
+Tenaris Bay City                           27605.0        9       5.6            46.4
+Ixm Sa                                     15994.0        3       3.2            49.6
+Ixm S.A.                                   14987.0        1       3.0            52.6
+Macquarie Bank Limited                     13602.0       15       2.8            55.4
+Gt Commodities LLC                         12023.0       20       2.4            57.8
+Prime Wheel Corporation Mex S De Rl De Cv  11583.0        3       2.3            60.1
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                                                                 Port_Pair    HS4 Commodity     Tons  Records  Tons_Pct  Cumulative_Pct
+                                                           Campana, Argentina TO Freeport, Freeport, Texas 7604.0    Metals 94233.56       23      19.1            19.1
+                                       Sept Iles, QUE, Canada TO Toledo-Lucas Port Authority, Toledo, Ohio 7604.0    Metals 58075.07       63      11.8            30.9
+                                                Sept Iles, QUE, Canada TO Port of Oswego, Oswego, New York 7604.0    Metals 44681.01       30       9.0            39.9
+                                   Kitimat, Bc, Canada TO The Port of Los Angeles, Los Angeles, California 7601.0    Metals 42632.35        2       8.6            48.5
+                                    All Other Chile Ports, Chile TO Port Panama City, Panama City, Florida 7403.0    Metals 35386.55       87       7.2            55.7
+                                                                Quebec, Que, Canada TO Baltimore, Maryland 7601.0    Metals 29973.77        2       6.1            61.8
+                               All Other Chile Ports, Chile TO Port of New Orleans, New Orleans, Louisiana 7403.0    Metals 25189.05       38       5.1            66.9
+All Other United Arab Emirates Ports, United Arab Emirates TO Port of Vancouver USA, Vancouver, Washington 7601.0    Metals 18540.49       14       3.8            70.7
+                                        Quebec, Que, Canada TO Port of New Orleans, New Orleans, Louisiana 7601.0    Metals 14989.55        1       3.0            73.7
+  All Other United Arab Emirates Ports, United Arab Emirates TO Port of Long Beach, Long Beach, California 7601.0    Metals 11321.32       21       2.3            76.0
+                                             Stewart, Bc, Canada TO Port Of Longview, Longview, Washington 2603.0    Metals 10500.00        1       2.1            78.1
+                                                             Sept Iles, QUE, Canada TO Baltimore, Maryland 7601.0    Metals 10496.00        2       2.1            80.2
+                                     Sept Iles, QUE, Canada TO Port of New Orleans, New Orleans, Louisiana 7601.0    Metals 10495.00        1       2.1            82.3
+                                                             Stewart, Bc, Canada TO Juneau, Juneau, Alaska 2613.0    Metals  9970.00        1       2.0            84.3
+                                                                 Onsan, South Korea TO Baltimore, Maryland 6810.0    Metals  7637.32        1       1.5            85.8
+                               Khalifa Bin Salman, Bahrain TO Port of Vancouver USA, Vancouver, Washington 7601.0    Metals  7436.20        4       1.5            87.3
+                                         Onsan, South Korea TO Port of New Orleans, New Orleans, Louisiana 7801.0    Metals  7108.31        2       1.4            88.7
+                                                                      Ilo, Peru TO Houston, Houston, Texas 7403.0    Metals  6020.04        7       1.2            89.9
+                                                  Ilo, Peru TO Port of New Orleans, New Orleans, Louisiana 7403.0    Metals  6016.07        6       1.2            91.1
+                          Sept Iles, QUE, Canada TO Detroit/Wayne County Port Authority, Detroit, Michigan 7604.0    Metals  5997.67        2       1.2            92.3
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 444,686 (90.0% of Metals)
+Number of rules needed: 18
+
+Rule formats:
+  IF Port_Pair='Campana, Argentina TO Freeport, Freeport, Texas' AND HS4=7604.0 THEN Commodity='Metals' (confidence: 19.1%)
+  IF Port_Pair='Sept Iles, QUE, Canada TO Toledo-Lucas Port Authority, Toledo, Ohio' AND HS4=7604.0 THEN Commodity='Metals' (confidence: 11.8%)
+  IF Port_Pair='Sept Iles, QUE, Canada TO Port of Oswego, Oswego, New York' AND HS4=7604.0 THEN Commodity='Metals' (confidence: 9.0%)
+  IF Port_Pair='Kitimat, Bc, Canada TO The Port of Los Angeles, Los Angeles, California' AND HS4=7601.0 THEN Commodity='Metals' (confidence: 8.6%)
+  IF Port_Pair='All Other Chile Ports, Chile TO Port Panama City, Panama City, Florida' AND HS4=7403.0 THEN Commodity='Metals' (confidence: 7.2%)
+  IF Port_Pair='Quebec, Que, Canada TO Baltimore, Maryland' AND HS4=7601.0 THEN Commodity='Metals' (confidence: 6.1%)
+  IF Port_Pair='All Other Chile Ports, Chile TO Port of New Orleans, New Orleans, Louisiana' AND HS4=7403.0 THEN Commodity='Metals' (confidence: 5.1%)
+  IF Port_Pair='All Other United Arab Emirates Ports, United Arab Emirates TO Port of Vancouver USA, Vancouver, Washington' AND HS4=7601.0 THEN Commodity='Metals' (confidence: 3.8%)
+  IF Port_Pair='Quebec, Que, Canada TO Port of New Orleans, New Orleans, Louisiana' AND HS4=7601.0 THEN Commodity='Metals' (confidence: 3.0%)
+  IF Port_Pair='All Other United Arab Emirates Ports, United Arab Emirates TO Port of Long Beach, Long Beach, California' AND HS4=7601.0 THEN Commodity='Metals' (confidence: 2.3%)
+====================================================================================================
+
+ANALYZING: Carbon Products
+====================================================================================================
+
+Total Records: 95
+Total Tons: 1,434,857
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 84.8% of tons):
+                                                                                          Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                                        
+Puerto Drummond, Colombia TO Alabama State Port Authority, Mobile, Alabama            410167.0        4      28.6            28.6
+Puerto Drummond, Colombia TO Ponce, Ponce, Puerto Rico                                313300.0        8      21.8            50.4
+Tracy, Que, Canada TO Houston, Houston, Texas                                         109903.0        2       7.7            58.1
+Puerto Nuevo, Ecuador TO Alabama State Port Authority, Mobile, Alabama                101558.0        1       7.1            65.2
+Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana                            68291.0       18       4.8            70.0
+Sorel, Que, Canada TO Houston, Houston, Texas                                          53339.0        1       3.7            73.7
+Imbituba, Brazil TO Port of New Orleans, New Orleans, Louisiana                        44003.0        2       3.1            76.8
+Danzig, Poland TO Illinois International Port District, Chicago, Illinois              41294.0        4       2.9            79.7
+Fort Williams, Ont, Canada TO Detroit/Wayne County Port Authority, Detroit, Michigan   39851.0        2       2.8            82.5
+Cartagena, Colombia TO Port of New Orleans, New Orleans, Louisiana                     33000.0        1       2.3            84.8
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 98.2% of tons):
+            Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                                
+2701.0  825058.0       14      57.5            57.5
+2710.0  163242.0        3      11.4            68.9
+4402.0   98145.0        7       6.8            75.7
+3004.0   97697.0        6       6.8            82.5
+2713.0   74632.0       12       5.2            87.7
+3824.0   69681.0       13       4.9            92.6
+7606.0   32864.0        2       2.3            94.9
+2704.0   26500.0        5       1.8            96.7
+2708.0   11032.0        3       0.8            97.5
+2707.0   10402.0        1       0.7            98.2
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 78.7% of tons):
+                                         Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                       
+Drummond Coal Sales Incorporated     511725.0        5      35.7            35.7
+Aes Puerto Rico Lp                   313300.0        8      21.8            57.5
+Oxbow Calcining International LLC    134658.0        8       9.4            66.9
+Primetrade Incorporated               41294.0        4       2.9            69.8
+Mid Continent Coal And Coke Company   32897.0        3       2.3            72.1
+Koppers Incorporated                  22959.0        3       1.6            73.7
+Ees Coke Battery L.L.C.               22851.0        1       1.6            75.3
+Levy Docks Brennan Ave                17000.0        1       1.2            76.5
+Ees Coke Ecourse LLC                  17000.0        1       1.2            77.7
+Alcoa Carbon Products                 15001.0        1       1.0            78.7
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                                                         Port_Pair    HS4       Commodity      Tons  Records  Tons_Pct  Cumulative_Pct
+                        Puerto Drummond, Colombia TO Alabama State Port Authority, Mobile, Alabama 2701.0 Carbon Products 410167.00        4      28.6            28.6
+                                            Puerto Drummond, Colombia TO Ponce, Ponce, Puerto Rico 2701.0 Carbon Products 313300.00        8      21.8            50.4
+                                                     Tracy, Que, Canada TO Houston, Houston, Texas 2710.0 Carbon Products 109902.70        2       7.7            58.1
+                            Puerto Nuevo, Ecuador TO Alabama State Port Authority, Mobile, Alabama 2701.0 Carbon Products 101558.00        1       7.1            65.2
+                                       Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana 3824.0 Carbon Products  63937.03        7       4.5            69.7
+                                                     Sorel, Que, Canada TO Houston, Houston, Texas 2710.0 Carbon Products  53339.00        1       3.7            73.4
+                                   Imbituba, Brazil TO Port of New Orleans, New Orleans, Louisiana 3004.0 Carbon Products  44003.36        2       3.1            76.5
+                         Danzig, Poland TO Illinois International Port District, Chicago, Illinois 4402.0 Carbon Products  41293.57        4       2.9            79.4
+              Fort Williams, Ont, Canada TO Detroit/Wayne County Port Authority, Detroit, Michigan 4402.0 Carbon Products  39851.00        2       2.8            82.2
+                                Cartagena, Colombia TO Port of New Orleans, New Orleans, Louisiana 3004.0 Carbon Products  33000.00        1       2.3            84.5
+                                  Salaverry, Peru TO Alabama State Port Authority, Mobile, Alabama 7606.0 Carbon Products  32863.89        2       2.3            86.8
+                                                         La Plata, Argentina TO Port Arthur, Texas 2713.0 Carbon Products  20061.47        1       1.4            88.2
+                Bruce Mines, Ont, Canada TO Detroit/Wayne County Port Authority, Detroit, Michigan 4402.0 Carbon Products  17000.00        1       1.2            89.4
+                                La Plata, Argentina TO Port of New Orleans, New Orleans, Louisiana 2713.0 Carbon Products  16899.41        1       1.2            90.6
+                                Joao Pessoa, Brazil TO Port of New Orleans, New Orleans, Louisiana 3004.0 Carbon Products  15045.57        2       1.0            91.6
+                           Rotterdam, Netherlands TO Port of Lake Charles, Lake Charles, Louisiana 2713.0 Carbon Products  15000.86        1       1.0            92.6
+                                                 Hamilton, Ont, Canada TO Ashtabula/Conneaut, Ohio 2704.0 Carbon Products  14000.00        1       1.0            93.6
+                              All Other Oman Ports, Oman TO Port Of Longview, Longview, Washington 2713.0 Carbon Products  14000.00        1       1.0            94.6
+                                    Nyborg, Denmark TO Port of New Orleans, New Orleans, Louisiana 2707.0 Carbon Products  10402.28        1       0.7            95.3
+All Other Turkey Mediterranean Region Ports, Turkey TO Port of New Orleans, New Orleans, Louisiana 2706.0 Carbon Products   9022.00        1       0.6            95.9
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 1,280,277 (89.2% of Carbon Products)
+Number of rules needed: 13
+
+Rule formats:
+  IF Port_Pair='Puerto Drummond, Colombia TO Alabama State Port Authority, Mobile, Alabama' AND HS4=2701.0 THEN Commodity='Carbon Products' (confidence: 28.6%)
+  IF Port_Pair='Puerto Drummond, Colombia TO Ponce, Ponce, Puerto Rico' AND HS4=2701.0 THEN Commodity='Carbon Products' (confidence: 21.8%)
+  IF Port_Pair='Tracy, Que, Canada TO Houston, Houston, Texas' AND HS4=2710.0 THEN Commodity='Carbon Products' (confidence: 7.7%)
+  IF Port_Pair='Puerto Nuevo, Ecuador TO Alabama State Port Authority, Mobile, Alabama' AND HS4=2701.0 THEN Commodity='Carbon Products' (confidence: 7.1%)
+  IF Port_Pair='Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana' AND HS4=3824.0 THEN Commodity='Carbon Products' (confidence: 4.5%)
+  IF Port_Pair='Sorel, Que, Canada TO Houston, Houston, Texas' AND HS4=2710.0 THEN Commodity='Carbon Products' (confidence: 3.7%)
+  IF Port_Pair='Imbituba, Brazil TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3004.0 THEN Commodity='Carbon Products' (confidence: 3.1%)
+  IF Port_Pair='Danzig, Poland TO Illinois International Port District, Chicago, Illinois' AND HS4=4402.0 THEN Commodity='Carbon Products' (confidence: 2.9%)
+  IF Port_Pair='Fort Williams, Ont, Canada TO Detroit/Wayne County Port Authority, Detroit, Michigan' AND HS4=4402.0 THEN Commodity='Carbon Products' (confidence: 2.8%)
+  IF Port_Pair='Cartagena, Colombia TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3004.0 THEN Commodity='Carbon Products' (confidence: 2.3%)
+====================================================================================================
+
+ANALYZING: Forestry
+====================================================================================================
+
+Total Records: 3,127
+Total Tons: 1,787,354
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 36.8% of tons):
+                                                                                                                       Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                                                                     
+All Other Brazil Ports South Of Recife, Brazil TO Alabama State Port Authority, Mobile, Alabama                     99250.0       14       5.6             5.6
+All Other Brazil Ports South Of Recife, Brazil TO Philadelphia Regional Port Authority, Philadelphia, Pennsylvania  93148.0       24       5.2            10.8
+Rauma, Finland TO Baltimore, Maryland                                                                               82430.0      945       4.6            15.4
+Rauma, Finland TO Jacksonville, Florida                                                                             68544.0      820       3.8            19.2
+Rio Grande, Brazil TO Port of Brunswick, Brunswick, Georgia                                                         57140.0        4       3.2            22.4
+Itaqui, Brazil TO Port of Beaumont, Beaumont, Texas                                                                 55262.0        6       3.1            25.5
+Brake, Germany TO Port Canaveral, Port Canaveral, Florida                                                           52898.0       44       3.0            28.5
+All Other Israel Mediterranean Area Ports, Israel TO Port of New Orleans, New Orleans, Louisiana                    52796.0       13       3.0            31.5
+All Other Brazil Ports South Of Recife, Brazil TO Jacksonville, Florida                                             49898.0       14       2.8            34.3
+Norrkoping, Sweden TO Port Canaveral, Port Canaveral, Florida                                                       43986.0        9       2.5            36.8
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 92.4% of tons):
+            Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                                
+4703.0  637574.0      170      35.7            35.7
+4407.0  554574.0      440      31.0            66.7
+4810.0  143931.0     1333       8.1            74.8
+7601.0   76026.0      174       4.3            79.1
+3103.0   57565.0       16       3.2            82.3
+4410.0   54860.0        6       3.1            85.4
+4818.0   50204.0        7       2.8            88.2
+8433.0   26639.0        7       1.5            89.7
+4804.0   25401.0       36       1.4            91.1
+4411.0   23103.0       48       1.3            92.4
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 54.5% of tons):
+                                              Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                            
+Fibria Celulose Usa Incorporated          409168.0       77      22.9            22.9
+Upm Naperville                            111836.0     1623       6.3            29.2
+Cmpc Usa                                   76055.0        7       4.3            33.5
+Binderholz Timber Incorporated             68418.0       51       3.8            37.3
+Kp Wood Limited                            64397.0       24       3.6            40.9
+Metsae Board Americas Corporationoration   61568.0       53       3.4            44.3
+Kronospan LLC                              54860.0        6       3.1            47.4
+Eldorado Usa Incorporated                  46067.0       12       2.6            50.0
+Boscus Canada Incorporated                 42352.0       28       2.4            52.4
+Qp Timber Us LLC                           37792.0       13       2.1            54.5
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                                                                         Port_Pair    HS4 Commodity     Tons  Records  Tons_Pct  Cumulative_Pct
+                   All Other Brazil Ports South Of Recife, Brazil TO Alabama State Port Authority, Mobile, Alabama 4703.0  Forestry 99250.00       14       5.6             5.6
+All Other Brazil Ports South Of Recife, Brazil TO Philadelphia Regional Port Authority, Philadelphia, Pennsylvania 4703.0  Forestry 93148.00       24       5.2            10.8
+                                                       Rio Grande, Brazil TO Port of Brunswick, Brunswick, Georgia 4703.0  Forestry 57140.33        4       3.2            14.0
+                                                         Brake, Germany TO Port Canaveral, Port Canaveral, Florida 4407.0  Forestry 52897.90       44       3.0            17.0
+                  All Other Israel Mediterranean Area Ports, Israel TO Port of New Orleans, New Orleans, Louisiana 3103.0  Forestry 52795.54       13       3.0            20.0
+                                           All Other Brazil Ports South Of Recife, Brazil TO Jacksonville, Florida 4703.0  Forestry 49898.00       14       2.8            22.8
+                                                                             Rauma, Finland TO Baltimore, Maryland 4810.0  Forestry 44872.99      559       2.5            25.3
+                                                     Norrkoping, Sweden TO Port Canaveral, Port Canaveral, Florida 4407.0  Forestry 43986.00        9       2.5            27.8
+                                        Richard's Bay, South Africa TO The Port of Brownsville, Brownsville, Texas 7601.0  Forestry 41011.57       37       2.3            30.1
+                                                                           Rauma, Finland TO Jacksonville, Florida 4810.0  Forestry 38834.95      647       2.2            32.3
+                                                                              Kemi, Finland TO Baltimore, Maryland 4810.0  Forestry 38719.60        4       2.2            34.5
+                                                               Itaqui, Brazil TO Port of Beaumont, Beaumont, Texas 4703.0  Forestry 36362.00        4       2.0            36.5
+                                                        Bremen, Germany TO Port Canaveral, Port Canaveral, Florida 4407.0  Forestry 33227.86       25       1.9            38.4
+                                                   Itaqui, Brazil TO Alabama State Port Authority, Mobile, Alabama 4703.0  Forestry 28460.00        3       1.6            40.0
+                                              All Other Brazil Ports South Of Recife, Brazil TO Port Arthur, Texas 4703.0  Forestry 25570.00        7       1.4            41.4
+                                           Nueva Palmira, Uruguay TO Alabama State Port Authority, Mobile, Alabama 4703.0  Forestry 23520.14        6       1.3            42.7
+                                                       Brake, Germany TO Port of New Haven, New Haven, Connecticut 4407.0  Forestry 23033.49       37       1.3            44.0
+                All Other Sweden Ports, Sweden TO Philadelphia Regional Port Authority, Philadelphia, Pennsylvania 4703.0  Forestry 21728.00       10       1.2            45.2
+               Karlshamn, Sweden TO Port Of Entry-Morehead City - Beaufort, Beaufort‑Morehead City, North Carolina 4407.0  Forestry 21224.00        1       1.2            46.4
+                                                      Bremen, Germany TO Port of New Haven, New Haven, Connecticut 4407.0  Forestry 20904.37       21       1.2            47.6
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 1,604,836 (89.8% of Forestry)
+Number of rules needed: 87
+
+Rule formats:
+  IF Port_Pair='All Other Brazil Ports South Of Recife, Brazil TO Alabama State Port Authority, Mobile, Alabama' AND HS4=4703.0 THEN Commodity='Forestry' (confidence: 5.6%)
+  IF Port_Pair='All Other Brazil Ports South Of Recife, Brazil TO Philadelphia Regional Port Authority, Philadelphia, Pennsylvania' AND HS4=4703.0 THEN Commodity='Forestry' (confidence: 5.2%)
+  IF Port_Pair='Rio Grande, Brazil TO Port of Brunswick, Brunswick, Georgia' AND HS4=4703.0 THEN Commodity='Forestry' (confidence: 3.2%)
+  IF Port_Pair='Brake, Germany TO Port Canaveral, Port Canaveral, Florida' AND HS4=4407.0 THEN Commodity='Forestry' (confidence: 3.0%)
+  IF Port_Pair='All Other Israel Mediterranean Area Ports, Israel TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3103.0 THEN Commodity='Forestry' (confidence: 3.0%)
+  IF Port_Pair='All Other Brazil Ports South Of Recife, Brazil TO Jacksonville, Florida' AND HS4=4703.0 THEN Commodity='Forestry' (confidence: 2.8%)
+  IF Port_Pair='Rauma, Finland TO Baltimore, Maryland' AND HS4=4810.0 THEN Commodity='Forestry' (confidence: 2.5%)
+  IF Port_Pair='Norrkoping, Sweden TO Port Canaveral, Port Canaveral, Florida' AND HS4=4407.0 THEN Commodity='Forestry' (confidence: 2.5%)
+  IF Port_Pair='Richard's Bay, South Africa TO The Port of Brownsville, Brownsville, Texas' AND HS4=7601.0 THEN Commodity='Forestry' (confidence: 2.3%)
+  IF Port_Pair='Rauma, Finland TO Jacksonville, Florida' AND HS4=4810.0 THEN Commodity='Forestry' (confidence: 2.2%)
+====================================================================================================
+
+ANALYZING: Ferrous Raw Materials
+====================================================================================================
+
+Total Records: 232
+Total Tons: 2,812,089
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 55.9% of tons):
+                                                                                             Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                                           
+Port Cartier, Que, Canada TO Corpus Christi, Corpus Christi, Texas                       278558.0        3       9.9             9.9
+Praia Mole, Brazil TO Port of Gramercy, Gramercy, Louisiana                              234816.0        3       8.4            18.3
+Quebec, Que, Canada TO Corpus Christi, Corpus Christi, Texas                             210258.0        2       7.5            25.8
+All Other Brazil Ports South Of Recife, Brazil TO Port of Gramercy, Gramercy, Louisiana  153902.0        4       5.5            31.3
+Point Ubu, Brazil TO Port of Gramercy, Gramercy, Louisiana                               153891.0        2       5.5            36.8
+Point Lisas, Trinidad and Tobago TO The Port of Charleston, Charleston, South Carolina   148520.0        4       5.3            42.1
+Sept Iles, QUE, Canada TO Corpus Christi, Corpus Christi, Texas                          105451.0        1       3.7            45.8
+Rio De Janeiro, Brazil TO Alabama State Port Authority, Mobile, Alabama                  102538.0       11       3.6            49.4
+Rio De Janeiro, Brazil TO Port of Gramercy, Gramercy, Louisiana                           98038.0       21       3.5            52.9
+Bayside, Nb, Canada TO The Port of Charleston, Charleston, South Carolina                 83435.0        2       3.0            55.9
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 94.0% of tons):
+            Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                                
+7201.0  956045.0      131      34.0            34.0
+7205.0  293691.0        8      10.4            44.4
+7204.0  250113.0       31       8.9            53.3
+2601.0  246473.0        3       8.8            62.1
+8431.0  233593.0        3       8.3            70.4
+3901.0  210258.0        2       7.5            77.9
+7616.0  155114.0        2       5.5            83.4
+4401.0  105451.0        1       3.7            87.1
+2304.0  105386.0        1       3.7            90.8
+7202.0   89086.0       30       3.2            94.0
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 68.6% of tons):
+                                   Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                 
+Arcelormittal Texas Hbi LLC    594267.0        6      21.1            21.1
+Nucor Steel Louisiana LLC      545038.0        7      19.4            40.5
+The David J. Joseph Company    175359.0       24       6.2            46.7
+Host Agency                    148415.0       17       5.3            52.0
+Biehl & Company                126478.0       12       4.5            56.5
+Schnitzer Steel Industries In   93900.0       17       3.3            59.8
+Carver Sand & Gravel Se LLC     83435.0        2       3.0            62.8
+Cape Shipping Agencies          58573.0       14       2.1            64.9
+Ubs Switzerland Ag              52456.0       10       1.9            66.8
+Societe General Paris           50082.0        1       1.8            68.6
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                                              Port_Pair    HS4             Commodity      Tons  Records  Tons_Pct  Cumulative_Pct
+                           Quebec, Que, Canada TO Corpus Christi, Corpus Christi, Texas 3901.0 Ferrous Raw Materials 210258.00        2       7.5             7.5
+                            Praia Mole, Brazil TO Port of Gramercy, Gramercy, Louisiana 8431.0 Ferrous Raw Materials 155561.00        2       5.5            13.0
+All Other Brazil Ports South Of Recife, Brazil TO Port of Gramercy, Gramercy, Louisiana 7201.0 Ferrous Raw Materials 153902.00        4       5.5            18.5
+ Point Lisas, Trinidad and Tobago TO The Port of Charleston, Charleston, South Carolina 7205.0 Ferrous Raw Materials 148520.33        4       5.3            23.8
+                     Port Cartier, Que, Canada TO Corpus Christi, Corpus Christi, Texas 2601.0 Ferrous Raw Materials 108262.00        1       3.8            27.6
+                        Sept Iles, QUE, Canada TO Corpus Christi, Corpus Christi, Texas 4401.0 Ferrous Raw Materials 105451.00        1       3.7            31.3
+                     Port Cartier, Que, Canada TO Corpus Christi, Corpus Christi, Texas 2304.0 Ferrous Raw Materials 105386.00        1       3.7            35.0
+                Rio De Janeiro, Brazil TO Alabama State Port Authority, Mobile, Alabama 7201.0 Ferrous Raw Materials 102538.00       11       3.6            38.6
+                        Rio De Janeiro, Brazil TO Port of Gramercy, Gramercy, Louisiana 7201.0 Ferrous Raw Materials  98038.00       21       3.5            42.1
+              Bayside, Nb, Canada TO The Port of Charleston, Charleston, South Carolina 7205.0 Ferrous Raw Materials  83434.77        2       3.0            45.1
+                            Praia Mole, Brazil TO Port of Gramercy, Gramercy, Louisiana 7616.0 Ferrous Raw Materials  79255.00        1       2.8            47.9
+                                 Bogen, Norway TO Port of Gramercy, Gramercy, Louisiana 5205.0 Ferrous Raw Materials  78620.00        1       2.8            50.7
+                             Point Ubu, Brazil TO Port of Gramercy, Gramercy, Louisiana 8431.0 Ferrous Raw Materials  78032.00        1       2.8            53.5
+                           Quebec, Que, Canada TO Port of Gramercy, Gramercy, Louisiana 2601.0 Ferrous Raw Materials  77711.00        1       2.8            56.3
+                             Point Ubu, Brazil TO Port of Gramercy, Gramercy, Louisiana 7616.0 Ferrous Raw Materials  75859.00        1       2.7            59.0
+           Amsterdam, Netherlands TO The Port of Charleston, Charleston, South Carolina 7204.0 Ferrous Raw Materials  73153.76        2       2.6            61.6
+                     Port Cartier, Que, Canada TO Corpus Christi, Corpus Christi, Texas 2610.0 Ferrous Raw Materials  64910.00        1       2.3            63.9
+                        Victoria, Brazil TO Port of New Orleans, New Orleans, Louisiana 7201.0 Ferrous Raw Materials  63091.10       11       2.2            66.1
+                                 Huasco, Chile TO Port of Gramercy, Gramercy, Louisiana 2601.0 Ferrous Raw Materials  60500.00        1       2.2            68.3
+            Rio De Janeiro, Brazil TO Baton Rouge (BTR) Airport, Baton Rouge, Louisiana 7201.0 Ferrous Raw Materials  56211.00        1       2.0            70.3
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 2,510,942 (89.3% of Ferrous Raw Materials)
+Number of rules needed: 34
+
+Rule formats:
+  IF Port_Pair='Quebec, Que, Canada TO Corpus Christi, Corpus Christi, Texas' AND HS4=3901.0 THEN Commodity='Ferrous Raw Materials' (confidence: 7.5%)
+  IF Port_Pair='Praia Mole, Brazil TO Port of Gramercy, Gramercy, Louisiana' AND HS4=8431.0 THEN Commodity='Ferrous Raw Materials' (confidence: 5.5%)
+  IF Port_Pair='All Other Brazil Ports South Of Recife, Brazil TO Port of Gramercy, Gramercy, Louisiana' AND HS4=7201.0 THEN Commodity='Ferrous Raw Materials' (confidence: 5.5%)
+  IF Port_Pair='Point Lisas, Trinidad and Tobago TO The Port of Charleston, Charleston, South Carolina' AND HS4=7205.0 THEN Commodity='Ferrous Raw Materials' (confidence: 5.3%)
+  IF Port_Pair='Port Cartier, Que, Canada TO Corpus Christi, Corpus Christi, Texas' AND HS4=2601.0 THEN Commodity='Ferrous Raw Materials' (confidence: 3.8%)
+  IF Port_Pair='Sept Iles, QUE, Canada TO Corpus Christi, Corpus Christi, Texas' AND HS4=4401.0 THEN Commodity='Ferrous Raw Materials' (confidence: 3.7%)
+  IF Port_Pair='Port Cartier, Que, Canada TO Corpus Christi, Corpus Christi, Texas' AND HS4=2304.0 THEN Commodity='Ferrous Raw Materials' (confidence: 3.7%)
+  IF Port_Pair='Rio De Janeiro, Brazil TO Alabama State Port Authority, Mobile, Alabama' AND HS4=7201.0 THEN Commodity='Ferrous Raw Materials' (confidence: 3.6%)
+  IF Port_Pair='Rio De Janeiro, Brazil TO Port of Gramercy, Gramercy, Louisiana' AND HS4=7201.0 THEN Commodity='Ferrous Raw Materials' (confidence: 3.5%)
+  IF Port_Pair='Bayside, Nb, Canada TO The Port of Charleston, Charleston, South Carolina' AND HS4=7205.0 THEN Commodity='Ferrous Raw Materials' (confidence: 3.0%)
+====================================================================================================
+
+ANALYZING: Non-Ferrous Raw Materials
+====================================================================================================
+
+Total Records: 251
+Total Tons: 2,826,254
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 74.4% of tons):
+                                                                                                        Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                                                      
+Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana                                        1158765.0       65      41.0            41.0
+Port Rhoades, Jamaica TO Port of Gramercy, Gramercy, Louisiana                                      407918.0        7      14.4            55.4
+Owendo, Gabon TO Port of New Orleans, New Orleans, Louisiana                                        112455.0       15       4.0            59.4
+Barcarena, Brazil TO Port of Gramercy, Gramercy, Louisiana                                           85033.0       10       3.0            62.4
+Linden, Guyana TO Albany, New York                                                                   63617.0        1       2.3            64.7
+Barcarena, Brazil TO The Port of Charleston, Charleston, South Carolina                              59371.0        2       2.1            66.8
+All Other Brazil Ports North Of Recife, Brazil TO Port of Gramercy, Gramercy, Louisiana              55745.0        5       2.0            68.8
+Barcarena, Brazil TO Port of Lake Charles, Lake Charles, Louisiana                                   55202.0        2       2.0            70.8
+All Other Mozambique Ports, Mozambique TO Mississippi State Port Authority, Gulfport, Mississippi    52050.0        2       1.8            72.6
+Weipa, Australia TO Port of San Diego, San Diego, California                                         49501.0        1       1.8            74.4
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 92.1% of tons):
+            Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                                
+8111.0  778662.0       16      27.6            27.6
+2606.0  730777.0       45      25.9            53.5
+2929.0  355710.0        7      12.6            66.1
+7202.0  179965.0       66       6.4            72.5
+7204.0  132161.0        7       4.7            77.2
+2818.0  117003.0       35       4.1            81.3
+2941.0   89880.0        9       3.2            84.5
+4001.0   79660.0       14       2.8            87.3
+2602.0   68825.0        9       2.4            89.7
+2614.0   68803.0        4       2.4            92.1
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 35.9% of tons):
+                                  Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                
+Atalco Gramercy LLC           407918.0        7      14.4            14.4
+Bdp Imp. Chemours             111625.0        6       3.9            18.3
+Ups Supply Chain Solutions     90875.0        3       3.2            21.5
+Eramet Marietta Incorporated   88951.0       25       3.1            24.6
+Holland Company Incorporated   63617.0        1       2.3            26.9
+Southern Ionics                62560.0        3       2.2            29.1
+Alcoa Usa Corporationoration   61050.0        2       2.2            31.3
+Holcim ( Us ) Incorporated     53264.0        2       1.9            33.2
+Holcim Berth Usa               40500.0        1       1.4            34.6
+Warrick Newco LLC              36960.0        3       1.3            35.9
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                                                        Port_Pair    HS4                 Commodity      Tons  Records  Tons_Pct  Cumulative_Pct
+                                      Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana 8111.0 Non-Ferrous Raw Materials 778662.22       16      27.6            27.6
+                                   Port Rhoades, Jamaica TO Port of Gramercy, Gramercy, Louisiana 2606.0 Non-Ferrous Raw Materials 407918.00        7      14.4            42.0
+                                      Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana 2929.0 Non-Ferrous Raw Materials 355710.00        7      12.6            54.6
+                                     Owendo, Gabon TO Port of New Orleans, New Orleans, Louisiana 2602.0 Non-Ferrous Raw Materials  68825.00        9       2.4            57.0
+                                                               Linden, Guyana TO Albany, New York 2606.0 Non-Ferrous Raw Materials  63616.62        1       2.3            59.3
+                          Barcarena, Brazil TO The Port of Charleston, Charleston, South Carolina 2818.0 Non-Ferrous Raw Materials  59370.71        2       2.1            61.4
+All Other Mozambique Ports, Mozambique TO Mississippi State Port Authority, Gulfport, Mississippi 2614.0 Non-Ferrous Raw Materials  52050.00        2       1.8            63.2
+                                     Weipa, Australia TO Port of San Diego, San Diego, California 2606.0 Non-Ferrous Raw Materials  49501.00        1       1.8            65.0
+                                                             Owendo, Gabon TO Baltimore, Maryland 4001.0 Non-Ferrous Raw Materials  48130.00        9       1.7            66.7
+                                Weipa, Australia TO Alabama State Port Authority, Mobile, Alabama 2606.0 Non-Ferrous Raw Materials  40500.00        1       1.4            68.1
+                                       Barcarena, Brazil TO Port of Gramercy, Gramercy, Louisiana 7204.0 Non-Ferrous Raw Materials  35510.53        2       1.3            69.4
+          All Other Brazil Ports North Of Recife, Brazil TO Port of Gramercy, Gramercy, Louisiana 7204.0 Non-Ferrous Raw Materials  33600.00        2       1.2            70.6
+                            All Other Brazil Ports North Of Recife, Brazil TO Baltimore, Maryland 7204.0 Non-Ferrous Raw Materials  33350.00        1       1.2            71.8
+                                  Antwerp, Belgium TO Port of New Orleans, New Orleans, Louisiana 2833.0 Non-Ferrous Raw Materials  33000.00        1       1.2            73.0
+                                     Owendo, Gabon TO Port of New Orleans, New Orleans, Louisiana 4001.0 Non-Ferrous Raw Materials  31530.00        5       1.1            74.1
+                        All Other Brazil Ports South Of Recife, Brazil TO Houston, Houston, Texas 7202.0 Non-Ferrous Raw Materials  31504.00        1       1.1            75.2
+                                                         Alexandretta, Turkey TO Albany, New York 2606.0 Non-Ferrous Raw Materials  30264.00        1       1.1            76.3
+                   Quebec, Que, Canada TO Illinois International Port District, Chicago, Illinois 2606.0 Non-Ferrous Raw Materials  30000.00        1       1.1            77.4
+                                                            Itaqui, Brazil TO Baltimore, Maryland 7204.0 Non-Ferrous Raw Materials  29700.00        2       1.1            78.5
+                All Other Malaysia Ports, Malaysia TO Port of New Orleans, New Orleans, Louisiana 7202.0 Non-Ferrous Raw Materials  27700.39        5       1.0            79.5
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 2,535,957 (89.7% of Non-Ferrous Raw Materials)
+Number of rules needed: 35
+
+Rule formats:
+  IF Port_Pair='Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana' AND HS4=8111.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 27.6%)
+  IF Port_Pair='Port Rhoades, Jamaica TO Port of Gramercy, Gramercy, Louisiana' AND HS4=2606.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 14.4%)
+  IF Port_Pair='Dagu/Tanggu, China TO Port of Gramercy, Gramercy, Louisiana' AND HS4=2929.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 12.6%)
+  IF Port_Pair='Owendo, Gabon TO Port of New Orleans, New Orleans, Louisiana' AND HS4=2602.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 2.4%)
+  IF Port_Pair='Linden, Guyana TO Albany, New York' AND HS4=2606.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 2.3%)
+  IF Port_Pair='Barcarena, Brazil TO The Port of Charleston, Charleston, South Carolina' AND HS4=2818.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 2.1%)
+  IF Port_Pair='All Other Mozambique Ports, Mozambique TO Mississippi State Port Authority, Gulfport, Mississippi' AND HS4=2614.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 1.8%)
+  IF Port_Pair='Weipa, Australia TO Port of San Diego, San Diego, California' AND HS4=2606.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 1.8%)
+  IF Port_Pair='Owendo, Gabon TO Baltimore, Maryland' AND HS4=4001.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 1.7%)
+  IF Port_Pair='Weipa, Australia TO Alabama State Port Authority, Mobile, Alabama' AND HS4=2606.0 THEN Commodity='Non-Ferrous Raw Materials' (confidence: 1.4%)
+====================================================================================================
+
+ANALYZING: Fertilizer
+====================================================================================================
+
+Total Records: 337
+Total Tons: 4,436,800
+
+----------------------------------------------------------------------------------------------------
+PORT PAIR CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Port Pairs (covering 49.8% of tons):
+                                                                                                 Tons  Records  Tons_Pct  Cumulative_Pct
+Port_Pair                                                                                                                               
+All Other Peru Ports, Peru TO Port of Gramercy, Gramercy, Louisiana                          390515.0        7       8.8             8.8
+All Other Saudi Arabia Ports, Saudi Arabia TO Port of New Orleans, New Orleans, Louisiana    336995.0        8       7.6            16.4
+All Other Peru Ports, Peru TO Port Manatee, Florida                                          303233.0        6       6.8            23.2
+Damietta, Egypt TO Port of New Orleans, New Orleans, Louisiana                               248193.0        5       5.6            28.8
+Saint John, Nb, Canada TO Port Of Boston, Boston, Massachusetts                              210064.0       44       4.7            33.5
+All Other Russia Baltic Region Ports, Russia TO Port of New Orleans, New Orleans, Louisiana  196778.0       10       4.4            37.9
+Leningrad, Russia TO Port of New Orleans, New Orleans, Louisiana                             179506.0        8       4.0            41.9
+Saint John, Nb, Canada TO Port of Portland, Portland, Maine                                  128892.0       40       2.9            44.8
+Leningrad, Russia TO Corpus Christi, Corpus Christi, Texas                                   113721.0        3       2.6            47.4
+Lazaro Cardenas, Mexico TO Port of New Orleans, New Orleans, Louisiana                       105950.0        4       2.4            49.8
+
+----------------------------------------------------------------------------------------------------
+HS CODE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 HS4 Codes (covering 97.0% of tons):
+             Tons  Records  Tons_Pct  Cumulative_Pct
+HS4                                                 
+3105.0  1072864.0       60      24.2            24.2
+3102.0   972979.0       60      21.9            46.1
+2710.0   775434.0      130      17.5            63.6
+9503.0   368669.0        7       8.3            71.9
+3104.0   352238.0       33       7.9            79.8
+2510.0   273762.0        5       6.2            86.0
+2709.0   183623.0        7       4.1            90.1
+2835.0   130681.0        4       2.9            93.0
+2918.0    91685.0        3       2.1            95.1
+3004.0    82498.0        2       1.9            97.0
+
+----------------------------------------------------------------------------------------------------
+CONSIGNEE CONCENTRATION
+----------------------------------------------------------------------------------------------------
+
+Top 10 Consignees (covering 73.1% of tons):
+                                               Tons  Records  Tons_Pct  Cumulative_Pct
+Consignee                                                                             
+Mosaic Fertilizer LLC                      875246.0       16      19.7            19.7
+Irving Oil Terminals Incorporated          511824.0      118      11.5            31.2
+Ameropa North America                      307003.0        6       6.9            38.1
+Eurochem North America Corporationoration  304936.0       23       6.9            45.0
+Valero Marketing And Supply Company        259382.0       11       5.8            50.8
+Eco Fertilizers Incorporated               235088.0        7       5.3            56.1
+Yara North America                         230010.0       56       5.2            61.3
+Sabic Americas                             196064.0        6       4.4            65.7
+Ukt Chicago Incorporated                   188206.0        9       4.2            69.9
+Chs Incorporated                           140071.0        6       3.2            73.1
+
+----------------------------------------------------------------------------------------------------
+LOCKABLE RULES: Port_Pair + HS4 Combinations
+----------------------------------------------------------------------------------------------------
+
+Top 20 Rules (Port_Pair + HS4):
+                                                                                  Port_Pair    HS4  Commodity      Tons  Records  Tons_Pct  Cumulative_Pct
+                            Saint John, Nb, Canada TO Port Of Boston, Boston, Massachusetts 2710.0 Fertilizer 210064.00       44       4.7             4.7
+                             Damietta, Egypt TO Port of New Orleans, New Orleans, Louisiana 3102.0 Fertilizer 208193.00        4       4.7             9.4
+                                        All Other Peru Ports, Peru TO Port Manatee, Florida 9503.0 Fertilizer 199929.80        4       4.5            13.9
+  All Other Saudi Arabia Ports, Saudi Arabia TO Port of New Orleans, New Orleans, Louisiana 3105.0 Fertilizer 194000.81        4       4.4            18.3
+                        All Other Peru Ports, Peru TO Port of Gramercy, Gramercy, Louisiana 2510.0 Fertilizer 170459.20        3       3.8            22.1
+                           Leningrad, Russia TO Port of New Orleans, New Orleans, Louisiana 3104.0 Fertilizer 164050.83        6       3.7            25.8
+All Other Russia Baltic Region Ports, Russia TO Port of New Orleans, New Orleans, Louisiana 3102.0 Fertilizer 155259.26        8       3.5            29.3
+                                Saint John, Nb, Canada TO Port of Portland, Portland, Maine 2710.0 Fertilizer 128892.00       40       2.9            32.2
+                                 Leningrad, Russia TO Corpus Christi, Corpus Christi, Texas 3105.0 Fertilizer 113721.00        3       2.6            34.8
+                        All Other Peru Ports, Peru TO Port of Gramercy, Gramercy, Louisiana 2835.0 Fertilizer 111816.34        2       2.5            37.3
+                        All Other Peru Ports, Peru TO Port of Gramercy, Gramercy, Louisiana 9503.0 Fertilizer 108239.20        2       2.4            39.7
+                     Lazaro Cardenas, Mexico TO Port of New Orleans, New Orleans, Louisiana 3105.0 Fertilizer 105949.66        4       2.4            42.1
+                                        All Other Peru Ports, Peru TO Port Manatee, Florida 2510.0 Fertilizer 103303.00        2       2.3            44.4
+                       Townsville, Australia TO Port of New Orleans, New Orleans, Louisiana 3105.0 Fertilizer  96000.00        4       2.2            46.6
+                High Seas,South Pacific TO The Port of Los Angeles, Los Angeles, California 2709.0 Fertilizer  83841.55        2       1.9            48.5
+                All Other Qatar Ports, Qatar TO Port of New Orleans, New Orleans, Louisiana 3102.0 Fertilizer  82600.00        2       1.9            50.4
+  All Other Saudi Arabia Ports, Saudi Arabia TO Port of New Orleans, New Orleans, Louisiana 3004.0 Fertilizer  82498.00        2       1.9            52.3
+                              Al Jubail, Saudi Arabia TO Port of Portland, Portland, Oregon 2918.0 Fertilizer  81685.00        2       1.8            54.1
+                  Saint John, Nb, Canada TO Port Of NewHampshire, Portsmouth, New Hampshire 2710.0 Fertilizer  77086.00       15       1.7            55.8
+                     El Jorf Lasfar, Morocco TO Port of New Orleans, New Orleans, Louisiana 3105.0 Fertilizer  75977.00        3       1.7            57.5
+
+----------------------------------------------------------------------------------------------------
+HIGH-CONFIDENCE RULES (90%+ of commodity tons)
+----------------------------------------------------------------------------------------------------
+
+LOCKABLE TONS: 3,998,371 (90.1% of Fertilizer)
+Number of rules needed: 55
+
+Rule formats:
+  IF Port_Pair='Saint John, Nb, Canada TO Port Of Boston, Boston, Massachusetts' AND HS4=2710.0 THEN Commodity='Fertilizer' (confidence: 4.7%)
+  IF Port_Pair='Damietta, Egypt TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3102.0 THEN Commodity='Fertilizer' (confidence: 4.7%)
+  IF Port_Pair='All Other Peru Ports, Peru TO Port Manatee, Florida' AND HS4=9503.0 THEN Commodity='Fertilizer' (confidence: 4.5%)
+  IF Port_Pair='All Other Saudi Arabia Ports, Saudi Arabia TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3105.0 THEN Commodity='Fertilizer' (confidence: 4.4%)
+  IF Port_Pair='All Other Peru Ports, Peru TO Port of Gramercy, Gramercy, Louisiana' AND HS4=2510.0 THEN Commodity='Fertilizer' (confidence: 3.8%)
+  IF Port_Pair='Leningrad, Russia TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3104.0 THEN Commodity='Fertilizer' (confidence: 3.7%)
+  IF Port_Pair='All Other Russia Baltic Region Ports, Russia TO Port of New Orleans, New Orleans, Louisiana' AND HS4=3102.0 THEN Commodity='Fertilizer' (confidence: 3.5%)
+  IF Port_Pair='Saint John, Nb, Canada TO Port of Portland, Portland, Maine' AND HS4=2710.0 THEN Commodity='Fertilizer' (confidence: 2.9%)
+  IF Port_Pair='Leningrad, Russia TO Corpus Christi, Corpus Christi, Texas' AND HS4=3105.0 THEN Commodity='Fertilizer' (confidence: 2.6%)
+  IF Port_Pair='All Other Peru Ports, Peru TO Port of Gramercy, Gramercy, Louisiana' AND HS4=2835.0 THEN Commodity='Fertilizer' (confidence: 2.5%)
+
+====================================================================================================
+SUMMARY: HIGH-CONFIDENCE LOCKABLE RULES (90%+ threshold)
+====================================================================================================
+
+Commodities ranked by % lockable with deterministic rules:
+
+Fertilizer                     |   90.1% lockable |   55 rules needed |    3,998,371 tons
+Metals                         |   90.0% lockable |   18 rules needed |      444,686 tons
+Forestry                       |   89.8% lockable |   87 rules needed |    1,604,836 tons
+Non-Ferrous Raw Materials      |   89.7% lockable |   35 rules needed |    2,535,957 tons
+Ferrous Raw Materials          |   89.3% lockable |   34 rules needed |    2,510,942 tons
+Carbon Products                |   89.2% lockable |   13 rules needed |    1,280,277 tons
+Perishables                    |   84.9% lockable |    3 rules needed |       73,904 tons
+
+✓ Detailed results saved to: G:\My Drive\LLM\project_manifest\PIPELINE\phase_07_enrichment\test\high_concentration_analysis.csv
+
+====================================================================================================
+ANALYSIS COMPLETE
+====================================================================================================

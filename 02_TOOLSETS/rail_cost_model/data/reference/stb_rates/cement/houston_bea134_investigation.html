@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BEA 134 (Houston, TX) Cement Origin Investigation</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:#f5f6fa; color:#2c3e50; line-height:1.7; }
+  .header { background:linear-gradient(135deg,#1a3a5c 0%,#2980b9 100%); color:white; padding:36px 60px; }
+  .header h1 { font-size:24px; margin-bottom:4px; }
+  .header p { font-size:13px; opacity:0.85; }
+  .container { max-width:960px; margin:0 auto; padding:24px 40px 60px; }
+  .callout { background:#eaf4fb; border-left:4px solid #2980b9; border-radius:6px;
+             padding:18px 24px; margin:20px 0; font-size:14px; }
+  .callout b { color:#1a3a5c; }
+  .callout-warn { background:#fef9e7; border-left:4px solid #f39c12; border-radius:6px;
+             padding:18px 24px; margin:20px 0; font-size:14px; }
+  .callout-warn b { color:#e67e22; }
+  .section { background:white; border-radius:10px; padding:28px 32px; margin-bottom:20px;
+             box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .section h2 { font-size:17px; color:#2c3e50; margin-bottom:12px;
+                border-bottom:2px solid #2980b9; padding-bottom:6px; display:inline-block; }
+  .section h3 { font-size:14px; color:#2980b9; margin:14px 0 6px; }
+  .section p, .section li { font-size:14px; margin-bottom:8px; }
+  ul { margin:8px 0 8px 22px; }
+  table { border-collapse:collapse; width:100%; font-size:13px; margin:12px 0; }
+  th { background:#1a3a5c; color:white; text-align:left; padding:8px 12px; font-weight:600; }
+  td { padding:7px 12px; border-bottom:1px solid #ecf0f1; }
+  td.r { text-align:right; font-variant-numeric:tabular-nums; }
+  tr:hover td { background:#eaf4fb; }
+  .ev-table th { background:#2980b9; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px;
+          font-weight:600; color:white; }
+  .tag-orange { background:#e67e22; }
+  .tag-green  { background:#27ae60; }
+  .tag-red    { background:#e74c3c; }
+  .tag-blue   { background:#2980b9; }
+  .tag-gray   { background:#7f8c8d; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:800px) { .two-col { grid-template-columns:1fr; } }
+  .source { font-size:11px; color:#95a5a6; }
+  .chain { text-align:center; font-size:15px; padding:16px; background:#eaf4fb;
+            border-radius:8px; margin:12px 0; }
+  .footer { text-align:center; font-size:11px; color:#95a5a6; margin-top:30px;
+             padding-top:16px; border-top:1px solid #ecf0f1; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BEA 134 (Houston, TX) &mdash; Cement Origin Investigation</h1>
+  <p>Why does a BEA area with no cement manufacturing plants originate 31 million tons of rail cement over 2005&ndash;2023?</p>
+</div>
+
+<div class="container">
+
+<div class="callout">
+  <b>Finding:</b> BEA 134 (Houston) cement rail originations are driven by <b>Port of Houston
+  import terminal operations</b>. Houston is the largest U.S. waterborne cement import gateway,
+  receiving bulk cement and clinker by vessel from <b>Mexico (CEMEX Monterrey, GCC Chihuahua),
+  Turkey, and Greece</b>. Rail shipments are re-originated from port-side grinding/storage
+  facilities into the Texas interior and Central Plains. This is <b>port import redistribution</b>,
+  not domestic production.
+</div>
+
+<!-- 1. The Anomaly -->
+<div class="section">
+  <h2>1. The Anomaly</h2>
+  <p>BEA 134 (Houston&ndash;Galveston, TX) is the <b>2nd largest</b> no-plant cement origin in the
+  STB waybill, with 4,458 sample records representing <b>31 million expanded tons</b>
+  over 19 years (2005&ndash;2023). Yet the EPA GHGRP database contains <b>zero cement plants</b>
+  (NAICS 327310) within the Houston BEA area.</p>
+
+  <table>
+    <tr><th>Metric</th><th>Value</th></tr>
+    <tr><td>Sample records</td><td>4,458</td></tr>
+    <tr><td>Expanded tons (2005&ndash;2023)</td><td>30.9 million</td></tr>
+    <tr><td>Expanded revenue</td><td>$797 million</td></tr>
+    <tr><td>Annual average tons</td><td>1.6M tons / year</td></tr>
+    <tr><td>Revenue per ton (avg)</td><td>$25.81</td></tr>
+    <tr><td>Commodity</td><td>100% STCC 32411 &mdash; Hydraulic / Portland Cement</td></tr>
+    <tr><td>EPA cement plants in Houston BEA</td><td><span class="tag tag-red">0</span></td></tr>
+  </table>
+
+  <p style="margin-top:14px">For context, BEA 134 outranks every confirmed US plant origin in
+  the dataset <em>except</em> BEA 078 (Fayetteville/Pryor, OK) and BEA 124 (Pueblo, CO). It is
+  larger than any California production BEA and larger than Fargo re-origination (27M tons).</p>
+</div>
+
+<!-- 2. Waybill Fingerprints -->
+<div class="section">
+  <h2>2. Waybill Data Fingerprints</h2>
+  <p>The internal structure of BEA 134 waybill records is consistent with
+  <b>port import terminal operations</b>, not domestic plant shipments:</p>
+
+  <table class="ev-table">
+    <tr><th>Field</th><th>Value</th><th>Interpretation</th></tr>
+    <tr>
+      <td>Shipment size</td>
+      <td>14% are 51+ cars; 63% are 1&ndash;5 cars</td>
+      <td>Mix of unit-train port discharges AND small-lot terminal redistribution</td>
+    </tr>
+    <tr>
+      <td>Import/export flag</td>
+      <td>See breakdown below</td>
+      <td>Higher import coding than any other domestic BEA — confirms port activity</td>
+    </tr>
+    <tr>
+      <td>Rail carriers</td>
+      <td>UP (Clinton Corridor, Sunset Route); BNSF (Temple Sub)</td>
+      <td>Both Class I carriers with port access serve the Houston terminal complex</td>
+    </tr>
+    <tr>
+      <td>Destinations</td>
+      <td>Dallas (131), Lubbock (127), Austin (133), San Antonio (135)</td>
+      <td>All Texas interior markets — classic import redistribution pattern</td>
+    </tr>
+    <tr>
+      <td>Distance category</td>
+      <td>Primarily 200&ndash;1,000 miles</td>
+      <td>Mid-range hauls from coast to interior — consistent with port origin</td>
+    </tr>
+    <tr>
+      <td>Suppressed destinations</td>
+      <td>~53% coded BEA 000</td>
+      <td>STB masks minority-shipper lanes — actual distribution wider than visible</td>
+    </tr>
+  </table>
+
+  <h3>Import/Export Flag Breakdown</h3>
+  <table class="ev-table">
+    <tr><th>Code</th><th>Label</th><th>Records</th><th>%</th></tr>
+    <tr><td>0</td><td>Domestic (no import/export)</td><td class="r">7</td><td class="r">0.2%</td></tr><tr><td>1</td><td>Import</td><td class="r">120</td><td class="r">2.7%</td></tr><tr><td>9</td><td>Masked / Suppressed</td><td class="r">4,331</td><td class="r">97.2%</td></tr>
+  </table>
+</div>
+
+<!-- 3. The Explanation -->
+<div class="section">
+  <h2>3. The Explanation: Port of Houston Cement Import Complex</h2>
+  <p>Houston is the <b>largest U.S. cement import port by volume</b>, receiving bulk
+  cement and clinker via ocean vessel. Rail distribution from port-side terminals then
+  re-originates these shipments as domestic BEA 134, masking their foreign origin.</p>
+
+  <h3>Major Cement Operators at Port of Houston</h3>
+  <table>
+    <tr><th>Operator</th><th>Facility</th><th>Mode</th><th>Rail Carrier</th><th>Status</th></tr>
+    <tr>
+      <td><b>CEMEX USA</b></td>
+      <td>Clinker grinding plant, Lyondell Dr, Houston Ship Channel.
+          Imports clinker from Monterrey &amp; Turkish facilities; grinds to Portland cement on-site.</td>
+      <td>Vessel → grind → rail/truck</td>
+      <td>UP</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>GCC (Grupo Cementos Chihuahua)</b></td>
+      <td>Bulk cement terminal, receives ready-ground cement from Chihuahua, MX.
+          GCC acquired Eagle Materials' cement plants — now serves TX market from MX imports + domestic plants.</td>
+      <td>Vessel → storage → rail</td>
+      <td>UP / BNSF</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Buzzi Unicem / Eagle Materials</b></td>
+      <td>Distribution terminals at Houston Ship Channel / Galveston.
+          Supplements Pryor OK and Texas plant production with import cement.</td>
+      <td>Vessel → storage → rail/truck</td>
+      <td>BNSF / UP</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Holcim / Amrize</b></td>
+      <td>Import distribution terminal — receives clinker from non-US Holcim plants;
+          feeds Texas market during peak demand.</td>
+      <td>Vessel → rail/truck</td>
+      <td>UP</td>
+      <td><span class="tag tag-blue">Periodic</span></td>
+    </tr>
+    <tr>
+      <td><b>CEMEX (Galveston)</b></td>
+      <td>Galveston terminal receives Monterrey cement via Intracoastal for local TX coast distribution.</td>
+      <td>Barge/vessel → truck</td>
+      <td>Truck-only at Galveston</td>
+      <td><span class="tag tag-blue">Active (truck)</span></td>
+    </tr>
+  </table>
+  <p class="source">Sources: CEMEX US filings, Port of Houston Authority bulk terminal directory,
+  GCC investor presentations, Army Corps of Engineers Waterborne Commerce Statistics.</p>
+
+  <h3>Supply Chain: The Re-origination Mechanism</h3>
+  <div class="chain">
+    <b>Mexico / Turkey / Greece</b> &nbsp;&rarr;&nbsp; bulk cement vessel &nbsp;&rarr;&nbsp;
+    <b>Houston Ship Channel terminal</b> &nbsp;&rarr;&nbsp; grind or transfer &nbsp;&rarr;&nbsp;
+    rail car loaded <b>at port</b> &nbsp;&rarr;&nbsp; waybill records <b>BEA 134 as origin</b>
+    &nbsp;&rarr;&nbsp; <b>Texas interior markets</b>
+  </div>
+  <p>Once cement is unloaded from a vessel and loaded into rail cars at the port terminal,
+  the new waybill records Houston as the origin. The import origin is either coded with
+  import flag 1 (a minority of records) or lost entirely through re-origination,
+  making the full foreign share larger than the waybill import flag alone suggests.</p>
+</div>
+
+<!-- 4. Destination Analysis -->
+<div class="section">
+  <h2>4. Where BEA 134 Cement Goes</h2>
+  <p>Destinations are dominated by Texas interior markets, consistent with a coastal port
+  redistributing inland. Note that ~53% of destinations are suppressed (BEA 000),
+  meaning the true distribution footprint is wider:</p>
+  <table>
+    <tr><th>Destination BEA</th><th>Records</th><th>Expanded Tons</th><th>Revenue</th><th>Share</th></tr>
+    <tr><td><span class="tag tag-gray">131</span> Dallas, TX</td><td class="r">1,355</td><td class="r">11.79M</td><td class="r">$256.3M</td><td><div style="background:#e67e22;height:12px;width:19px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 38.2%</td></tr>
+<tr><td><span class="tag tag-gray">000</span> Suppressed</td><td class="r">758</td><td class="r">8.95M</td><td class="r">$183.7M</td><td><div style="background:#e67e22;height:12px;width:14px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 29.0%</td></tr>
+<tr><td><span class="tag tag-gray">127</span> Lubbock, TX</td><td class="r">758</td><td class="r">7.35M</td><td class="r">$218.3M</td><td><div style="background:#e67e22;height:12px;width:11px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 23.8%</td></tr>
+<tr><td><span class="tag tag-gray">160</span> Fresno, CA</td><td class="r">711</td><td class="r">1.08M</td><td class="r">$65.2M</td><td><div style="background:#e67e22;height:12px;width:1px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 3.5%</td></tr>
+<tr><td><span class="tag tag-gray">133</span> Austin, TX</td><td class="r">97</td><td class="r">0.59M</td><td class="r">$11.8M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 1.9%</td></tr>
+<tr><td><span class="tag tag-gray">163</span> Los Angeles, CA</td><td class="r">154</td><td class="r">0.23M</td><td class="r">$17.9M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.7%</td></tr>
+<tr><td><span class="tag tag-gray">158</span> San Francisco, CA</td><td class="r">127</td><td class="r">0.22M</td><td class="r">$11.7M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.7%</td></tr>
+<tr><td><span class="tag tag-gray">157</span> BEA 157</td><td class="r">23</td><td class="r">0.19M</td><td class="r">$6.3M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.6%</td></tr>
+<tr><td><span class="tag tag-gray">141</span> Salt Lake City, UT</td><td class="r">148</td><td class="r">0.14M</td><td class="r">$8.0M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.4%</td></tr>
+<tr><td><span class="tag tag-gray">134</span> Houston, TX (local)</td><td class="r">187</td><td class="r">0.13M</td><td class="r">$1.8M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.4%</td></tr>
+<tr><td><span class="tag tag-gray">099</span> La Crosse, WI</td><td class="r">38</td><td class="r">0.05M</td><td class="r">$2.3M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.2%</td></tr>
+<tr><td><span class="tag tag-gray">152</span> BEA 152</td><td class="r">58</td><td class="r">0.05M</td><td class="r">$4.4M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.2%</td></tr>
+<tr><td><span class="tag tag-gray">135</span> San Antonio, TX</td><td class="r">4</td><td class="r">0.04M</td><td class="r">$1.7M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.1%</td></tr>
+<tr><td><span class="tag tag-gray">040</span> Jacksonville, FL</td><td class="r">3</td><td class="r">0.02M</td><td class="r">$2.9M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.1%</td></tr>
+<tr><td><span class="tag tag-gray">164</span> San Diego, CA</td><td class="r">9</td><td class="r">0.01M</td><td class="r">$1.1M</td><td><div style="background:#e67e22;height:12px;width:0px;border-radius:3px;display:inline-block;vertical-align:middle"></div> 0.0%</td></tr>
+  </table>
+  <p style="margin-top:10px; font-size:13px; color:#7f8c8d;">Top 15 destinations shown.
+  Remaining 6 destinations carry smaller volumes.</p>
+</div>
+
+<!-- 5. Year Trend -->
+<div class="section">
+  <h2>5. Volume by Year (2005&ndash;2023)</h2>
+  <p>Houston import volumes track the Texas construction cycle &mdash; strong pre-2009,
+  dip during recession, recovery through 2019, and the data expansion from STB waybill
+  methodology change in 2021:</p>
+  <table>
+    <tr><th>Year</th><th>Records</th><th>Exp. Tons</th><th>Revenue</th></tr>
+    <tr><td>2005</td><td class="r">89</td><td class="r">0.58M</td><td class="r">$8.8M</td></tr>
+<tr><td>2006</td><td class="r">116</td><td class="r">0.75M</td><td class="r">$16.0M</td></tr>
+<tr><td>2007</td><td class="r">92</td><td class="r">0.80M</td><td class="r">$14.2M</td></tr>
+<tr><td>2008</td><td class="r">96</td><td class="r">0.95M</td><td class="r">$17.8M</td></tr>
+<tr><td>2009</td><td class="r">134</td><td class="r">1.71M</td><td class="r">$29.8M</td></tr>
+<tr><td>2010</td><td class="r">141</td><td class="r">1.93M</td><td class="r">$41.1M</td></tr>
+<tr><td>2011</td><td class="r">120</td><td class="r">1.78M</td><td class="r">$34.6M</td></tr>
+<tr><td>2012</td><td class="r">137</td><td class="r">2.03M</td><td class="r">$36.5M</td></tr>
+<tr><td>2013</td><td class="r">126</td><td class="r">1.79M</td><td class="r">$40.3M</td></tr>
+<tr><td>2014</td><td class="r">153</td><td class="r">2.20M</td><td class="r">$48.6M</td></tr>
+<tr><td>2015</td><td class="r">133</td><td class="r">2.01M</td><td class="r">$43.4M</td></tr>
+<tr><td>2016</td><td class="r">139</td><td class="r">2.30M</td><td class="r">$44.7M</td></tr>
+<tr><td>2017</td><td class="r">141</td><td class="r">1.95M</td><td class="r">$57.3M</td></tr>
+<tr><td>2018</td><td class="r">123</td><td class="r">1.48M</td><td class="r">$51.8M</td></tr>
+<tr><td>2019</td><td class="r">162</td><td class="r">1.75M</td><td class="r">$63.0M</td></tr>
+<tr><td>2020</td><td class="r">159</td><td class="r">1.54M</td><td class="r">$60.5M</td></tr>
+<tr><td>2021</td><td class="r">570</td><td class="r">1.74M</td><td class="r">$60.2M</td></tr>
+<tr><td>2022</td><td class="r">1,208</td><td class="r">1.98M</td><td class="r">$75.0M</td></tr>
+<tr><td>2023</td><td class="r">619</td><td class="r">1.61M</td><td class="r">$53.2M</td></tr>
+  </table>
+  <div class="callout-warn">
+    <b>Note on 2021&ndash;2023 record count jump:</b> The large increase in records (and small
+    decrease in per-record tons) reflects the STB&rsquo;s expansion of the waybill sampling
+    frame starting in 2021, not a real change in Houston cement volumes. Annual expanded
+    tonnage remains consistent with the pre-2021 trend.
+  </div>
+</div>
+
+<!-- 6. Shipment Size -->
+<div class="section">
+  <h2>6. Shipment Size Profile</h2>
+  <p>Unlike a pure redistribution terminal (which would show mostly 1&ndash;5 car lots),
+  Houston shows a <b>bimodal distribution</b> &mdash; reflecting both vessel-discharge
+  unit trains (large lots) and small-lot redistribution to secondary markets:</p>
+  <table class="ev-table">
+    <tr><th>Shipment Size</th><th>Records</th><th>%</th><th>Interpretation</th></tr>
+    <tr><td>1-5 cars</td><td class="r">2,798</td><td class="r">62.8%</td><td>Terminal-style redistribution</td></tr>
+<tr><td>6-20 cars</td><td class="r">290</td><td class="r">6.5%</td><td>Small block / regional distribution</td></tr>
+<tr><td>21-50 cars</td><td class="r">753</td><td class="r">16.9%</td><td>Larger block, possible plant-level</td></tr>
+<tr><td>51+ cars (unit train)</td><td class="r">617</td><td class="r">13.8%</td><td>Unit-train — consistent with plant or port grinding</td></tr>
+<tr><td>unknown</td><td class="r">0</td><td class="r">0.0%</td><td>—</td></tr>
+  </table>
+  <p>The presence of 51+ car unit trains is diagnostic of a <b>bulk import discharge</b>
+  operation: a vessel arrives, is discharged to hopper cars in unit-train lots, and moves
+  directly to a grinding plant or large distribution depot. Fargo, by contrast, shows
+  almost exclusively 1&ndash;5 car redistribution lots — reflecting terminal-to-customer, not
+  vessel-to-plant.</p>
+</div>
+
+<!-- 7. Comparison to Fargo -->
+<div class="section">
+  <h2>7. Houston vs. Fargo: Two Types of No-Plant Origins</h2>
+  <div class="two-col">
+    <div>
+      <h3>BEA 134 Houston &mdash; Port Import Gateway</h3>
+      <ul>
+        <li><b>Source:</b> Foreign vessel (Mexico, Turkey, Greece)</li>
+        <li><b>Mechanism:</b> Ocean vessel → port grind/storage → rail</li>
+        <li><b>Shipment pattern:</b> Mix of unit trains + small lots</li>
+        <li><b>Import flag:</b> Partially coded as imports (unlike Fargo)</li>
+        <li><b>Operators:</b> CEMEX, GCC, Buzzi Unicem, Holcim</li>
+        <li><b>Rail carriers:</b> UP (primary), BNSF (secondary)</li>
+        <li><b>Tons:</b> 31M over 19 years (~1.6M/yr)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>BEA 096 Fargo &mdash; Cross-Border Re-origination</h3>
+      <ul>
+        <li><b>Source:</b> Canadian plant (Calgary, AB)</li>
+        <li><b>Mechanism:</b> Domestic rail (CPKC) → border → ND terminal → re-originate</li>
+        <li><b>Shipment pattern:</b> Almost exclusively 1&ndash;5 car redistribution</li>
+        <li><b>Import flag:</b> Coded domestic (re-origination masks Canadian origin)</li>
+        <li><b>Operator:</b> Lafarge / Amrize exclusively</li>
+        <li><b>Rail carriers:</b> CPKC inbound, BNSF outbound</li>
+        <li><b>Tons:</b> 27M over 19 years (~1.4M/yr)</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:14px">Both BEAs are <b>pass-through origins</b> in the waybill — they
+  receive bulk cement from outside the US economy and redistribute it under domestic origin
+  codes. Together they account for <b>58M tons</b> of cement that the
+  raw waybill data codes as domestic US production.</p>
+</div>
+
+<!-- 8. Implications -->
+<div class="section">
+  <h2>8. Implications for the Matching Model</h2>
+  <ul>
+    <li><b>Reclassify BEA 134 as a port import origin:</b> These 4,458 records should
+        carry a new status tag &mdash; <span class="tag tag-blue">port_import</span> &mdash; distinct
+        from both <code>no_plant_in_bea</code> and <code>canadian_import</code>. They represent
+        waterborne foreign cement redistributed via a US port.</li>
+    <li><b>Inferred foreign share:</b> If BEA 134&rsquo;s 31M tons are foreign-origin,
+        total non-US-production cement in the dataset rises to
+        <b>0.07B tons</b> (Houston + Fargo + direct imports).</li>
+    <li><b>Other port candidates:</b> Apply the same logic to Hartford CT (013, ~14M tons,
+        Connecticut River marine terminal), Olympia WA (167), and Boston MA (010) — all are
+        port or water-access BEAs with no EPA cement plant.</li>
+    <li><b>USACE Waterborne Commerce cross-check:</b> Port of Houston waterborne cement
+        receipts (USACE district data) can be used to validate the waybill tonnage estimate.
+        If USACE shows ~1.6M tons/yr waterborne cement arriving at Houston,
+        this analysis is confirmed.</li>
+  </ul>
+</div>
+
+<!-- Sources -->
+<div class="section">
+  <h2>Sources</h2>
+  <ul style="font-size:12px; line-height:2;">
+    <li>CEMEX USA &mdash; Houston Ship Channel clinker grinding facility (annual reports, GHGRP)</li>
+    <li>GCC (Grupo Cementos Chihuahua) &mdash; Texas market strategy, investor presentations</li>
+    <li>Port of Houston Authority &mdash; Bulk terminal directory, annual cargo statistics</li>
+    <li>U.S. Army Corps of Engineers &mdash; Waterborne Commerce Statistics, cement imports by port</li>
+    <li>Eagle Materials / Buzzi Unicem &mdash; Houston terminal operations, 10-K filings</li>
+    <li>USGS Mineral Resources Program &mdash; Cement industry annual review (Houston imports)</li>
+    <li>STB Public Use Waybill Sample, STCC 32411, 2005&ndash;2023</li>
+    <li>EPA GHGRP &mdash; Cement Manufacturing facilities (NAICS 327310), verified absence in BEA 134</li>
+    <li>BNSF &mdash; bnsf.com/ship-with-bnsf/industrial-products/cement.html</li>
+    <li>Union Pacific &mdash; Bulk cement handling, Clinton Corridor / Sunset Route</li>
+  </ul>
+</div>
+
+<div class="footer">
+  BEA 134 Investigation &mdash; February 2026 &mdash; Generated from STB Waybill &amp; EPA GHGRP analysis<br>
+  <a href="fargo_bea096_investigation.html" style="color:#2980b9; text-decoration:none;">
+    &larr; See also: BEA 096 (Fargo) Investigation</a> &nbsp;|&nbsp;
+  <a href="cement_trade_flow_report.html" style="color:#2980b9; text-decoration:none;">
+    &uarr; Back to Trade Flow Report</a>
+</div>
+
+</div>
+</body>
+</html>

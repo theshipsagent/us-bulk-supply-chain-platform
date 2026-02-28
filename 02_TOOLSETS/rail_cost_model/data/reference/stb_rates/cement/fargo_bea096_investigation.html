@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BEA 096 (Fargo, ND) Cement Origin Investigation</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:#f5f6fa; color:#2c3e50; line-height:1.7; }
+  .header { background:linear-gradient(135deg,#2c3e50 0%,#e67e22 100%); color:white; padding:36px 60px; }
+  .header h1 { font-size:24px; margin-bottom:4px; }
+  .header p { font-size:13px; opacity:0.85; }
+  .container { max-width:960px; margin:0 auto; padding:24px 40px 60px; }
+  .callout { background:#fef9e7; border-left:4px solid #f39c12; border-radius:6px;
+             padding:18px 24px; margin:20px 0; font-size:14px; }
+  .callout b { color:#e67e22; }
+  .section { background:white; border-radius:10px; padding:28px 32px; margin-bottom:20px;
+             box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .section h2 { font-size:17px; color:#2c3e50; margin-bottom:12px;
+                border-bottom:2px solid #e67e22; padding-bottom:6px; display:inline-block; }
+  .section h3 { font-size:14px; color:#e67e22; margin:14px 0 6px; }
+  .section p, .section li { font-size:14px; margin-bottom:8px; }
+  ul { margin:8px 0 8px 22px; }
+  table { border-collapse:collapse; width:100%; font-size:13px; margin:12px 0; }
+  th { background:#2c3e50; color:white; text-align:left; padding:8px 12px; font-weight:600; }
+  td { padding:7px 12px; border-bottom:1px solid #ecf0f1; }
+  tr:hover td { background:#fdf2e9; }
+  .ev-table th { background:#e67e22; }
+  .tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px;
+         font-weight:600; color:white; }
+  .tag-orange { background:#e67e22; }
+  .tag-green { background:#27ae60; }
+  .tag-red { background:#e74c3c; }
+  .tag-blue { background:#3498db; }
+  .tag-gray { background:#95a5a6; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:800px) { .two-col { grid-template-columns:1fr; } }
+  .source { font-size:11px; color:#95a5a6; }
+  .footer { text-align:center; font-size:11px; color:#95a5a6; margin-top:30px; padding-top:16px;
+            border-top:1px solid #ecf0f1; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>BEA 096 (Fargo, ND) &mdash; Cement Origin Investigation</h1>
+  <p>Why does a BEA area with zero cement plants show 27 million tons of rail cement originations over 2005&ndash;2023?</p>
+</div>
+
+<div class="container">
+
+<!-- Finding -->
+<div class="callout">
+  <b>Finding:</b> BEA 096 cement originates from <b>Lafarge/Amrize distribution terminals</b> across North Dakota
+  that receive cement <b>by rail from Calgary, Alberta</b>. The waybill codes these re-originated shipments
+  as domestic BEA 096, masking their Canadian import origin. This is <b>not</b> Great Lakes laker traffic.
+</div>
+
+<!-- 1. The Anomaly -->
+<div class="section">
+  <h2>1. The Anomaly</h2>
+  <p>BEA 096 (Fargo, ND&ndash;MN) ranks as the <b>3rd largest</b> "no-plant" cement origin in the STB waybill,
+  with 15,061 sample records representing ~27 million expanded tons over 19 years. Yet the entire
+  EPA GHGRP database contains <b>zero cement plants</b> (NAICS 327310) in North Dakota or Minnesota.</p>
+
+  <table>
+    <tr><th>Metric</th><th>Value</th></tr>
+    <tr><td>Sample records</td><td>15,061</td></tr>
+    <tr><td>Expanded tons (2005&ndash;2023)</td><td>27.2 million</td></tr>
+    <tr><td>Expanded revenue</td><td>$806 million</td></tr>
+    <tr><td>Annual average</td><td>~1.6M tons / year</td></tr>
+    <tr><td>Commodity</td><td>100% STCC 32411 &mdash; Portland cement</td></tr>
+    <tr><td>EPA cement plants in ND + MN</td><td><span class="tag tag-red">0</span></td></tr>
+  </table>
+</div>
+
+<!-- 2. Waybill Fingerprints -->
+<div class="section">
+  <h2>2. Waybill Data Fingerprints</h2>
+  <p>Several fields in the BEA 096 records point away from a production origin and toward a
+  <b>distribution terminal re-origination</b> pattern:</p>
+
+  <table class="ev-table">
+    <tr><th>Field</th><th>Value</th><th>Interpretation</th></tr>
+    <tr>
+      <td>Shipment size</td>
+      <td>98.5% are 1&ndash;5 carloads</td>
+      <td>Single-car redistribution, not unit-train plant shipments</td>
+    </tr>
+    <tr>
+      <td>Short line miles</td>
+      <td>97.7% show 200+ miles</td>
+      <td>Originating carrier classified as non-Class-I (CPKC cross-border routing)</td>
+    </tr>
+    <tr>
+      <td>Interchanges</td>
+      <td>84% have zero</td>
+      <td>Single-carrier from terminal to destination</td>
+    </tr>
+    <tr>
+      <td>Import/export flag</td>
+      <td><b>0 imports</b>; 41% masked (code 9); 59% "domestic"</td>
+      <td>Canadian origin obscured &mdash; re-origination recodes as domestic</td>
+    </tr>
+    <tr>
+      <td>Via-water flag</td>
+      <td>95.4% masked (code 9)</td>
+      <td>No evidence of Great Lakes/waterway involvement</td>
+    </tr>
+    <tr>
+      <td>Volume trend</td>
+      <td>Steady ~1.5&ndash;2.5M tons/yr, every year 2006&ndash;2023</td>
+      <td>Consistent supply contract, not sporadic terminal activity</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 3. The Explanation -->
+<div class="section">
+  <h2>3. The Explanation: Lafarge Dakota Rail Terminals</h2>
+  <p><b>Lafarge Dakota Inc.</b> (now Amrize, formerly Holcim/Lafarge) operates a network of
+  rail-served cement distribution terminals across North Dakota. Cement is shipped
+  <b>by rail from Lafarge's plant in Exshaw/Calgary, Alberta</b> via CPKC, stored at these terminals,
+  and re-distributed to regional customers by rail and truck.</p>
+
+  <h3>Confirmed Terminal Locations (all within BEA 096 or adjacent ND BEAs)</h3>
+  <table>
+    <tr><th>Terminal</th><th>Details</th><th>Status</th></tr>
+    <tr>
+      <td><b>Fargo, ND</b></td>
+      <td>45th Street North &mdash; $4M+ facility, three 130-ft concrete towers, 10 employees.
+          Serves Fargo-Moorhead, Detroit Lakes, Fergus Falls.</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Grand Forks, ND</b></td>
+      <td>2,500 MT capacity, 200 ton/hr rail unloading for cement and fly ash. Opened Sept 2009.</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Bismarck, ND</b></td>
+      <td>Rail-served distribution terminal</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Minot, ND</b></td>
+      <td>Rail-served distribution terminal</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Valley City, ND</b></td>
+      <td>Rail-served distribution terminal</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Wahpeton, ND</b></td>
+      <td>Rail-served distribution terminal</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+    <tr>
+      <td><b>Williston, ND</b></td>
+      <td>30,000 MT capacity, built on new rail spur (Bakken oil boom era)</td>
+      <td><span class="tag tag-green">Active</span></td>
+    </tr>
+  </table>
+  <p class="source">Sources: InForum ("Cement terminal rises over Fargo"), ICS Grand Forks project listing,
+  AGC of North Dakota member directory (Amrize Cement Inc &mdash; Fargo)</p>
+
+  <h3>Supply Chain Flow</h3>
+  <p style="text-align:center; font-size:15px; padding:16px; background:#fdf2e9; border-radius:8px; margin:12px 0;">
+    <b>Exshaw/Calgary, AB</b> &nbsp;&xrarr;&nbsp; CPKC rail &nbsp;&xrarr;&nbsp;
+    US border (Portal, ND) &nbsp;&xrarr;&nbsp; <b>Fargo terminal</b> &nbsp;&xrarr;&nbsp;
+    re-originated as BEA 096 &nbsp;&xrarr;&nbsp; <b>US destinations</b>
+  </p>
+  <p>When cement is unloaded at the Fargo terminal and reloaded into cars for onward rail shipment,
+  the new waybill records <b>Fargo as the origin</b> (BEA 096). The Canadian provenance is lost &mdash;
+  the import/export flag is either masked or coded as domestic.</p>
+</div>
+
+<!-- 4. Laker Theory -->
+<div class="section">
+  <h2>4. Ruling Out the Great Lakes Laker Theory</h2>
+  <p>The initial hypothesis was that Canadian cement might arrive at Fargo via Great Lakes vessel
+  (laker) and transload to rail. This was investigated and ruled out:</p>
+
+  <div class="two-col">
+    <div>
+      <h3>Against the Laker Theory</h3>
+      <ul>
+        <li><b>Geography:</b> Fargo is ~250 miles west of Duluth, the nearest Great Lakes port.
+            No navigable waterway connects them.</li>
+        <li><b>BEA 098 (Duluth):</b> Zero cement origin records in the entire waybill dataset,
+            despite Duluth having active cement terminals.</li>
+        <li><b>Via-water flag:</b> 95% of BEA 096 records have the flag masked, but zero show
+            code "1" (Great Lakes). The 689 unmasked records all say "no water."</li>
+        <li><b>Laker range:</b> St. Marys and Holcim laker fleets serve Wisconsin, Michigan,
+            Illinois, Ohio, New York &mdash; none reach the Northern Plains.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Where Lakers DO Operate</h3>
+      <ul>
+        <li><b>St. Marys Cement:</b> 4 barges &mdash; Charlevoix MI &amp; Bowmanville ON →
+            Green Bay, Milwaukee, Chicago, Manitowoc, Cleveland, Buffalo, Toledo</li>
+        <li><b>Amrize/Holcim:</b> 2 tug-barges from Alpena MI →
+            Duluth/Superior, Green Bay, Milwaukee, Detroit, Buffalo (~2M tons/yr)</li>
+        <li><b>CRH/Ash Grove:</b> Duluth terminal (1100 Port Terminal Dr) receives laker cement,
+            connected to BNSF/CN/CPKC/UP &mdash; but no evidence of rail redistribution west</li>
+        <li><b>Key pattern:</b> Laker cement is distributed locally by <b>truck</b> from lakeside
+            terminals, not re-originated onto rail</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Destination Analysis -->
+<div class="section">
+  <h2>5. Where BEA 096 Cement Goes</h2>
+  <p>The destination pattern further supports the Alberta-rail-via-Fargo theory &mdash; shipments
+  fan out across the Midwest, Plains, and even into the South:</p>
+  <table>
+    <tr><th>Destination BEA</th><th>Records</th><th>Expanded Tons</th><th>Note</th></tr>
+    <tr><td><span class="tag tag-gray">000</span> Suppressed</td><td>8,035</td><td>15.2M</td><td>53% of destinations also masked</td></tr>
+    <tr><td>099 La Crosse, WI</td><td>3,331</td><td>6.2M</td><td>Southbound BNSF corridor</td></tr>
+    <tr><td>127 Lubbock, TX</td><td>1,830</td><td>2.5M</td><td>Deep into southern Plains</td></tr>
+    <tr><td>096 Fargo, ND (local)</td><td>229</td><td>0.6M</td><td>Local delivery</td></tr>
+    <tr><td>122 Denver, CO</td><td>334</td><td>0.5M</td><td>Mountain West</td></tr>
+    <tr><td>107 Davenport, IA</td><td>195</td><td>0.5M</td><td>Upper Midwest</td></tr>
+    <tr><td>118 Omaha, NE</td><td>85</td><td>0.4M</td><td>Plains corridor</td></tr>
+    <tr><td>119 Lincoln, NE</td><td>142</td><td>0.3M</td><td>Plains corridor</td></tr>
+    <tr><td>010 Boston, MA</td><td>118</td><td>0.2M</td><td>Long-haul to Northeast</td></tr>
+  </table>
+</div>
+
+<!-- 6. Implications -->
+<div class="section">
+  <h2>6. Implications for the Matching Model</h2>
+  <ul>
+    <li><b>Reclassify BEA 096:</b> These 15,061 records (27M tons) should be tagged as
+        <span class="tag tag-orange">canadian_reorigination</span> rather than "no plant in BEA."
+        They represent Canadian production distributed through US terminals.</li>
+    <li><b>True Canadian share:</b> Adding BEA 096 to the explicit Canadian imports (BEA 173&ndash;183)
+        raises the Canadian-origin share from 2.4% to <b>8.7%</b> of total cement tonnage.</li>
+    <li><b>Other no-plant BEAs:</b> Similar re-origination patterns may explain Houston TX (134),
+        Hartford CT (013), and Boston MA (010), where cement terminals receive bulk shipments
+        and redistribute by rail.</li>
+    <li><b>Suppression interaction:</b> The 52% suppression rate in cement waybills likely hides
+        additional Canadian-origin volumes, meaning the true import share could be higher still.</li>
+  </ul>
+</div>
+
+<!-- Sources -->
+<div class="section">
+  <h2>Sources</h2>
+  <ul style="font-size:12px; line-height:2;">
+    <li>InForum &mdash; "Cement terminal rises over Fargo" (Lafarge Dakota terminal construction)</li>
+    <li>InForum &mdash; "Lafarge to build cement storage facility/terminal in Williston"</li>
+    <li>ICS Grand Forks &mdash; LaFarge North America Grand Forks project listing</li>
+    <li>AGC of North Dakota &mdash; Amrize Cement Inc, Fargo member listing</li>
+    <li>St. Marys Cement &mdash; stmaryscement.com/locations (terminal network)</li>
+    <li>St. Marys Cement &mdash; "Riding the Rails" (175 leased rail cars, 275-300K MT/yr)</li>
+    <li>Holcim US &mdash; Green Bay terminal $13.2M modernization (Feb 2024)</li>
+    <li>Ash Grove North &mdash; ashgrovenorth.com (Duluth terminal, production network)</li>
+    <li>Duluth Harbor Cam &mdash; cement vessel arrivals at Duluth (2025)</li>
+    <li>BNSF &mdash; bnsf.com/ship-with-bnsf/industrial-products/cement.html</li>
+    <li>STB Public Use Waybill Sample, 2005&ndash;2023</li>
+    <li>EPA GHGRP &mdash; Cement Manufacturing facilities (NAICS 327310)</li>
+  </ul>
+</div>
+
+<div class="footer">
+  BEA 096 Investigation &mdash; February 2026 &mdash; Generated from STB Waybill &amp; EPA GHGRP analysis
+</div>
+
+</div>
+</body>
+</html>

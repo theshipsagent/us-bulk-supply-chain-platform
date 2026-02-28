@@ -1,0 +1,92 @@
+======================================================================
+Combined Import + Export Cargo ↔ MRTIS Vessel Matching Report
+Generated: 2026-02-19 13:38:47
+Match window: ±3 days  |  Draft threshold: 2.0 ft
+======================================================================
+
+SEGMENT OVERVIEW
+----------------------------------------
+  Total segments:           41,156
+  Not in cargo zone:         8,136
+  Cargo zone visits:        33,020
+
+OPERATION TYPE CLASSIFICATION (draft-based)
+----------------------------------------
+  DISCHARGE            14,693 BOL rows
+  UNKNOWN               1,458 BOL rows
+  LOADING                  30 BOL rows
+
+IMPORT MATCHING (discharge events)
+----------------------------------------
+  Matched:                   2,003
+    by IMO:                  1,050
+    by vessel name:            953
+  Matched tonnage:           69.58M tons
+
+EXPORT MATCHING (loading events)
+----------------------------------------
+  Matched:                      15
+    by IMO:                      0
+    by vessel name:             15
+  Matched tonnage:            0.33M tons
+
+TOP FACILITIES — IMPORTS (by tonnage)
+----------------------------------------
+  Valero St Charles                                 12,580K tons
+  AST St James Buoys                                 6,448K tons
+  Nucor Steel                                        5,136K tons
+  ADM Destrehan Buoys                                4,426K tons
+  IMTT                                               3,461K tons
+  AST Meraux Buoys                                   3,431K tons
+  Laplace Buoys                                      2,690K tons
+  110 Buoys                                          2,496K tons
+  Nashville Ave                                      2,312K tons
+  PBF Chalmette                                      2,299K tons
+  Copper Dockside Buoys                              1,820K tons
+  Copper Darrow Buoys                                1,651K tons
+  AST Chalmette Buoys                                1,647K tons
+  Genesis Baton Rouge                                1,590K tons
+  KMI Harvey                                         1,520K tons
+  AGG                                                1,440K tons
+  ARTCO 110-111 Buoys                                1,299K tons
+  MPLX Garyville                                     1,167K tons
+  PCS Nitrogen                                       1,064K tons
+  AST Chalmette Slip                                 1,033K tons
+
+TOP FACILITIES — EXPORTS (by tonnage)
+----------------------------------------
+  IMTT                                                  93K tons
+  ADM Reserve                                           68K tons
+  Cargill Westwego                                      68K tons
+  IMT Coal                                              50K tons
+  Shell Norco                                           35K tons
+  RAIN Chalmette                                        10K tons
+  Copper Darrow Buoys                                    8K tons
+  Nashville Ave                                          0K tons
+
+IMPORT COMMODITIES (across all facilities)
+----------------------------------------
+  Liquid Bulk / Petroleum                           21,739K tons
+  Dry Bulk / Fertilizer                             12,497K tons
+  Dry Bulk / Ferrous Raw Materials                  10,529K tons
+  Break Bulk / General Cargo                         4,429K tons
+  Dry Bulk / Non-Ferrous Raw Materials               3,801K tons
+  Dry Bulk / Minerals & Ores                         3,421K tons
+  Liquid Bulk / Agricultural                         3,175K tons
+  Break Bulk / Steel                                 2,913K tons
+  Dry Bulk / Construction Materials                  2,364K tons
+  Liquid Bulk / Chemicals                            1,532K tons
+  Break Bulk / Metals                                  985K tons
+  Break Bulk / Forestry                                695K tons
+  Dry Bulk / Carbon Products                           554K tons
+  Dry Bulk / Agricultural                              523K tons
+  Break Bulk / Agricultural                            419K tons
+
+EXPORT COMMODITIES (across all facilities)
+----------------------------------------
+  Dry Bulk / Agricultural                              136K tons
+  Liquid Bulk / Chemicals                               88K tons
+  Dry Bulk / Carbon Products                            68K tons
+  Liquid Bulk / Petroleum                               35K tons
+  Break Bulk / General Cargo                             5K tons
+  Dry Bulk / Non-Ferrous Raw Materials                   0K tons

@@ -1,0 +1,31 @@
+# Core
+pandas>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0
+
+# Geospatial
+geopandas>=0.14.0
+shapely>=2.0.0
+pyproj>=3.6.0
+fiona>=1.9.0
+
+# Network analysis
+networkx>=3.0
+
+# Visualization
+folium>=0.15.0
+matplotlib>=3.7.0
+plotly>=5.18.0
+
+# Data loading
+openpyxl>=3.1.0
+requests>=2.31.0
+pyarrow>=14.0.0  # For parquet support
+
+# Jupyter
+jupyterlab>=4.0.0
+ipywidgets>=8.1.0
+
+# Optional: Database
+# sqlalchemy>=2.0.0
+# geoalchemy2>=0.14.0

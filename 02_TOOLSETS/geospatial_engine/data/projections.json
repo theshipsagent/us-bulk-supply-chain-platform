@@ -1,0 +1,44 @@
+{
+  "wgs84": {
+    "epsg": 4326,
+    "name": "WGS 84",
+    "type": "geographic",
+    "use": "Default for all lat/lon data, GPS coordinates, web mapping"
+  },
+  "web_mercator": {
+    "epsg": 3857,
+    "name": "WGS 84 / Pseudo-Mercator",
+    "type": "projected",
+    "use": "Web mapping tiles (Google, OSM, Mapbox), buffering in meters"
+  },
+  "nad83_conus_albers": {
+    "epsg": 5070,
+    "name": "NAD83 / Conus Albers",
+    "type": "projected",
+    "use": "Equal-area calculations for CONUS (area, density)"
+  },
+  "utm_15n": {
+    "epsg": 32615,
+    "name": "WGS 84 / UTM zone 15N",
+    "type": "projected",
+    "use": "Lower Mississippi River region (Louisiana, Mississippi)"
+  },
+  "utm_16n": {
+    "epsg": 32616,
+    "name": "WGS 84 / UTM zone 16N",
+    "type": "projected",
+    "use": "Alabama, western Florida, eastern Mississippi"
+  },
+  "state_plane_la_south": {
+    "epsg": 32199,
+    "name": "NAD83 / Louisiana South",
+    "type": "projected",
+    "use": "High-precision Louisiana coastal/port work"
+  },
+  "state_plane_tx_south_central": {
+    "epsg": 32140,
+    "name": "NAD83 / Texas South Central",
+    "type": "projected",
+    "use": "Houston Ship Channel and Texas Gulf Coast"
+  }
+}
