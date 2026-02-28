@@ -26,6 +26,30 @@ The following table presents representative cost benchmarks for the three primar
 - **Truck is rarely competitive** for bulk movements beyond 100--150 miles but serves as the essential first/last mile connector in nearly all bulk supply chains.
 - **Intermodal combinations** (barge-to-truck, rail-to-truck) are standard in bulk logistics, and the total cost must account for transload charges at each transfer point, typically $3--8/ton per handling.
 
+{% if facility_total_count %}
+### Platform Data: Production Facility Footprint
+
+The EPA Facility Registry Service (FRS) identifies **{{ facility_total_count | commas }}** bulk commodity production and distribution facilities across **{{ facility_state_count }}** states. Key segments:
+
+{% if facility_counts %}
+| Facility Type | Count |
+|--------------|-------|
+{% for key, info in facility_counts.items() %}| {{ info.label }} | {{ info.count | commas }} |
+{% endfor %}
+{% endif %}
+
+{% if cement_facilities_by_state %}
+**Top states by cement industry facility count:**
+
+| State | Cement Manufacturing | Ready-Mix | Total |
+|-------|---------------------|-----------|-------|
+{% for row in cement_facilities_by_state[:10] %}| {{ row.state }} | {{ row.cement_manufacturing | commas }} | {{ row.ready_mix | commas }} | {{ row.total_facilities | commas }} |
+{% endfor %}
+
+> **Source:** EPA FRS analysis outputs, last updated {{ facility_results_updated }}.
+{% endif %}
+{% endif %}
+
 ---
 
 ## 9.2 Barge Cost Model
@@ -45,6 +69,20 @@ Key GTR-referenced corridors and representative rates (per ton, southbound to Ne
 | Pittsburgh, PA | 1,950 (via Ohio) | $24--38 | $0.012--0.019 |
 
 Rates are highly seasonal, with harvest-season peaks (September--November) producing rate spikes of 50--200% above off-season levels for grain corridors.
+
+{% if barge_forecast_accuracy %}
+### Platform Forecast Model Performance
+
+The reporting platform's barge rate forecasting engine compares VAR(3) and SpVAR(3) models against a naive random-walk baseline across seven GTR corridor segments. Model accuracy metrics from the most recent backtesting run:
+
+| Segment | Naive MAPE (%) | VAR MAPE (%) | SpVAR MAPE (%) | VAR R-squared | Improvement (%) |
+|---------|---------------|-------------|---------------|--------------|----------------|
+{% for row in barge_forecast_accuracy %}| {{ row.segment }} | {{ row.naive_mape }} | {{ row.var_mape }} | {{ row.spvar_mape }} | {{ row.var_r2 }} | {{ row.var_improvement_pct }} |
+{% endfor %}
+{% if barge_forecast_summary %}
+> **Model Summary:** {{ barge_forecast_summary.segments }} corridor segments tested over {{ barge_forecast_summary.test_periods }} periods. Naive baseline average MAPE: {{ barge_forecast_summary.naive_avg_mape }}%. VAR model average MAPE: {{ barge_forecast_summary.var_avg_mape }}%. Average R-squared: {{ barge_forecast_summary.var_avg_r2 }}.
+{% endif %}
+{% endif %}
 
 ### Lock Delay Modeling
 
@@ -116,6 +154,30 @@ R/VC ratios provide a measure of railroad pricing power relative to variable cos
 | Metallic ores | 160--250% | Generally captive to single railroad |
 
 The 180% R/VC threshold is the statutory standard for STB jurisdiction: below 180%, the railroad is presumed not to have market dominance, and rate challenges are generally not entertained.
+
+{% if rail_cement_origins %}
+### Platform Data: Cement Rail Origin Markets
+
+STB Waybill Sample analysis identifies the following top cement shipping origin BEAs by tonnage (STCC 3241, millions of tons):
+
+| Origin Market | States | Tons (M) | Revenue ($M) | Rev/Ton | Avg Miles | Destinations |
+|--------------|--------|---------|-------------|---------|----------|-------------|
+{% for row in rail_cement_origins %}| {{ row.origin }} | {{ row.states }} | {{ row.tons_M }} | {{ row.rev_M }} | ${{ row.rev_per_ton }} | {{ row.avg_miles }} | {{ row.num_dests }} |
+{% endfor %}
+
+> **Source:** STB Public Use Waybill Sample, extracted by platform rail analytics engine. {{ rail_total_origins }} origin BEAs, {{ rail_total_od_flows }} O-D pairs analyzed. Data as of {{ rail_results_updated }}.
+{% endif %}
+
+{% if rail_cement_od_flows %}
+### Platform Data: Top Cement O-D Flows
+
+The highest-volume cement rail movements by origin-destination pair:
+
+| Origin | Destination | Tons (M) | Miles | Rate ($/ton) |
+|--------|------------|---------|-------|-------------|
+{% for row in rail_cement_od_flows %}| {{ row.origin }} | {{ row.destination }} | {{ row.tons_M }} | {{ row.miles }} | ${{ row.rate }} |
+{% endfor %}
+{% endif %}
 
 ### Commodity-Specific Cost Factors
 

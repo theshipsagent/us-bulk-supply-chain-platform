@@ -76,7 +76,10 @@ class ReportEngine:
 
         # 5. Render to target format
         renderer = get_renderer(fmt)
-        result_path = renderer.render(markdown, output_path, title=manifest.title)
+        render_kwargs = {"title": manifest.title}
+        if fmt == "html":
+            render_kwargs["metadata"] = manifest.metadata
+        result_path = renderer.render(markdown, output_path, **render_kwargs)
 
         logger.info("Report generated: %s", result_path)
         return result_path

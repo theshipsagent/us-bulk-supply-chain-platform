@@ -34,6 +34,19 @@ The US Class I railroad network divides broadly into **Western** and **Eastern**
 
 The NTAD and NARN datasets, maintained by the Bureau of Transportation Statistics (BTS) and the Federal Railroad Administration (FRA), provide authoritative GIS shapefiles for the entire US rail network, including line ownership, track class, and operational status. These data sources underpin the spatial analyses referenced throughout this report.
 
+{% if rail_cement_destinations %}
+### Platform Data: Cement Rail Destination Markets
+
+The platform's STB Waybill analysis identifies major cement-receiving markets by rail tonnage:
+
+| Destination Market | States | Tons (M) | Revenue ($M) | Origins Served |
+|-------------------|--------|---------|-------------|---------------|
+{% for row in rail_cement_destinations[:10] %}| {{ row.destination }} | {{ row.states }} | {{ row.tons_M }} | {{ row.rev_M }} | {{ row.num_origins }} |
+{% endfor %}
+
+> **Source:** Platform rail analytics engine (STB Waybill Sample, STCC 3241). {{ rail_total_destinations }} destination BEAs identified. Data as of {{ rail_results_updated }}.
+{% endif %}
+
 ---
 
 ## 4.2 Network Infrastructure and Capacity

@@ -47,6 +47,14 @@ The Columbia-Snake River System in the Pacific Northwest provides approximately 
 
 *Sources: USACE WCSC, WCUS Parts 2 and 5, 2022; USACE NDC, LPMS, 2023.*
 
+{% if vessel_voyage_count %}
+### Platform Data: Vessel Traffic Analysis
+
+The platform's vessel voyage analysis engine has processed **{{ vessel_voyage_count | commas }}** Lower Mississippi River voyages across **{{ vessel_unique_count | commas }}** unique vessels. Of these, **{{ vessel_complete_voyages | commas }}** are complete round-trip voyages with full arrival-to-departure tracking. Average vessel port time: **{{ vessel_avg_port_time_hours }}** hours ({{ "%.1f" | format(vessel_avg_port_time_hours / 24) }} days). Event log contains **{{ vessel_event_count | commas }}** AIS-derived movement events across **{{ vessel_segment_count | commas }}** voyage segments.
+
+> **Source:** Platform vessel voyage analysis (Phase 2 full run), data through {{ vessel_results_updated }}.
+{% endif %}
+
 ---
 
 ## 2.2 Lock Infrastructure: Condition, Capacity, and Age Profile

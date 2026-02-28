@@ -19,11 +19,11 @@ def _get_jinja_env():
     if _jinja_env is not None:
         return _jinja_env
 
-    from jinja2 import Environment, BaseLoader, StrictUndefined
+    from jinja2 import Environment, BaseLoader, Undefined
 
     env = Environment(
         loader=BaseLoader(),
-        undefined=StrictUndefined,
+        undefined=Undefined,
         keep_trailing_newline=True,
         # Use safe delimiters that won't conflict with Markdown
         variable_start_string="{{",

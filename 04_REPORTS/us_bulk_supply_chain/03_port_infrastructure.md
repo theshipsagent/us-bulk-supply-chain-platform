@@ -61,6 +61,19 @@ Atlantic Coast ports serve primarily as import gateways for bulk commodities des
 
 *Sources: USACE WCSC, WCUS Parts 1–5, 2022; individual port authority annual reports, 2023. Tonnage figures include both domestic and foreign waterborne commerce.*
 
+{% if vessel_efficiency_metrics %}
+### Platform Data: Vessel Terminal Utilization
+
+The platform's Lower Mississippi River vessel analysis tracks terminal-level utilization patterns. Top vessels by voyage frequency:
+
+| Vessel | Voyages | Avg Port Time (hrs) | Utilization (%) | Primary Terminal |
+|--------|---------|--------------------|-----------------:|-----------------|
+{% for row in vessel_efficiency_metrics[:10] %}| {{ row.vessel }} | {{ row.total_voyages }} | {{ row.avg_port_hours }} | {{ row.utilization_pct }} | {{ row.frequent_terminal }} |
+{% endfor %}
+
+> **Source:** Platform vessel voyage analysis, {{ vessel_unique_count | commas }} unique vessels tracked through {{ vessel_results_updated }}.
+{% endif %}
+
 ---
 
 ## 3.2 Port Cost Components

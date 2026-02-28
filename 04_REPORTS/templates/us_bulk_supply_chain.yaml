@@ -23,16 +23,19 @@ chapters:
     number: "02"
     title: "Inland Waterway System"
     extractors: [barge]
+    template: true
 
   - file: "03_port_infrastructure.md"
     number: "03"
     title: "Port Infrastructure"
     extractors: [port, facility]
+    template: true
 
   - file: "04_railroad_network.md"
     number: "04"
     title: "Railroad Network"
     extractors: [rail]
+    template: true
 
   - file: "05_intermodal_connectivity.md"
     number: "05"
@@ -58,6 +61,7 @@ chapters:
     number: "09"
     title: "Cost Benchmarking"
     extractors: [barge, rail, port, policy]
+    template: true
 
   - file: "10_infrastructure_outlook.md"
     number: "10"
