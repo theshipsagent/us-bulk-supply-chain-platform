@@ -1,0 +1,55 @@
+# Consolidated requirements for all three projects
+# (project_barge, project_rail, project_port_nickle)
+# Generated: 2026-02-12
+
+# Core Scientific Computing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Econometrics and Statistics
+statsmodels>=0.14.0
+
+# Graph/Network Analysis
+networkx>=3.0
+
+# Geospatial
+geopandas>=0.14.0
+shapely>=2.0.0
+pyproj>=3.6.0
+fiona>=1.9.0
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.18.0
+seaborn>=0.12.0
+folium>=0.15.0
+
+# Web Frameworks
+streamlit>=1.28.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Database
+duckdb>=0.9.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Data Validation and Configuration
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# Data Ingestion and Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# File Format Support
+openpyxl>=3.1.0
+pyarrow>=14.0.0
+
+# Development and Notebooks
+jupyterlab>=4.0.0
+ipywidgets>=8.1.0
