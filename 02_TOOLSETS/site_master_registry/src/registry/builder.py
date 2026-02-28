@@ -1,6 +1,7 @@
 """Registry builder — orchestrates the full build pipeline.
 
 Phase 1: Seed commodity CSVs → master_sites → match to FRS → source_links
+Phase 2: FRS Industrial Expansion — add unlinked FRS facilities by NAICS anchor codes
 """
 
 from __future__ import annotations
@@ -174,7 +175,7 @@ class RegistryBuilder:
             "confidence_distribution": confidence_dist,
         }
 
-        self._print_summary(summary)
+        self._print_phase1_summary(summary)
         return summary
 
     def _load_commodity_seeds(self) -> list[SourceRecord]:
@@ -297,8 +298,207 @@ class RegistryBuilder:
             params.append(uid)
             conn.execute(sql, params)
 
+    # ----- Phase 2: FRS Industrial Expansion -----
+
+    def build_phase_2(self, max_tier: int = 1) -> dict:
+        """Expand registry with unlinked FRS facilities by NAICS anchor codes.
+
+        Queries FRS nationally for industrial NAICS codes, skips any
+        registry_ids already linked in Phase 1, creates new master_sites,
+        then deduplicates within 200m + same parent.
+
+        Parameters
+        ----------
+        max_tier : int
+            Include NAICS codes up to this tier (1 = strategic only,
+            2 = includes foundries, ready-mix, aggregates).
+        """
+        from .deduplicator import deduplicate_sites
+
+        conn = self._init_db()
+        run_id = self._start_run("phase_2_frs_expansion")
+
+        # 1. Load anchor NAICS codes filtered by tier
+        anchor_config = self._load_naics_anchors()
+        naics_prefixes = []
+        sector_map: dict[str, str] = {}  # naics_prefix -> sector
+        for code, info in anchor_config.items():
+            if info.get("tier", 1) <= max_tier:
+                naics_prefixes.append(code)
+                sector_map[code] = info["sector"]
+
+        logger.info(f"Phase 2: Using {len(naics_prefixes)} NAICS anchor codes (tier ≤ {max_tier})")
+
+        # 2. Bulk-load FRS nationally
+        frs_db = self.frs_db_override or str(self.root / self.config["sources"]["epa_frs"]["db_path"])
+        frs_connector = EpaFrsConnector(frs_db)
+        frs_connector.preload_all_by_naics(naics_prefixes)
+        all_frs = frs_connector.get_all_cached()
+        frs_connector.close()
+
+        logger.info(f"Phase 2: {len(all_frs)} FRS records loaded nationally")
+
+        # 3. Get already-linked FRS registry_ids
+        linked_ids = set()
+        rows = conn.execute("""
+            SELECT source_record_id FROM source_links
+            WHERE source_system = 'epa_frs'
+        """).fetchall()
+        for r in rows:
+            linked_ids.add(r[0])
+        logger.info(f"Phase 2: {len(linked_ids)} FRS records already linked from Phase 1")
+
+        # 4. Filter to unlinked FRS records
+        unlinked = [r for r in all_frs if r.source_record_id not in linked_ids]
+        logger.info(f"Phase 2: {len(unlinked)} unlinked FRS records to process")
+
+        # 5. Create master sites from unlinked FRS records
+        sites_created = 0
+        links_created = 0
+        sector_counts: dict[str, int] = {}
+
+        for frs_rec in unlinked:
+            # Determine commodity sector from NAICS codes
+            sector = self._resolve_sector(frs_rec.naics_codes, sector_map, naics_prefixes)
+
+            uid = generate_facility_uid(frs_rec.name, frs_rec.state, frs_rec.city)
+
+            # Check if UID already exists (possible if name+state+city collide)
+            existing = conn.execute(
+                "SELECT facility_uid FROM master_sites WHERE facility_uid = ?", [uid]
+            ).fetchone()
+
+            if existing:
+                # Just add the source link
+                self._insert_source_link(
+                    conn, uid, frs_rec,
+                    match_method="frs_expansion",
+                    match_confidence=1.0,
+                    distance_m=None,
+                    name_sim=1.0,
+                )
+                links_created += 1
+                continue
+
+            # Create new master site from FRS
+            frs_rec.commodity_sector = sector
+            conn.execute("""
+                INSERT INTO master_sites (
+                    facility_uid, canonical_name, city, state, county,
+                    latitude, longitude,
+                    naics_codes, sic_codes, commodity_sectors,
+                    confidence_score, status
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, [
+                uid, frs_rec.name, frs_rec.city, frs_rec.state, frs_rec.county,
+                frs_rec.latitude, frs_rec.longitude,
+                frs_rec.naics_codes, frs_rec.sic_codes, sector,
+                0.8,  # FRS-sourced = 0.8 confidence (not curated like Phase 1)
+                "active",
+            ])
+            sites_created += 1
+            sector_counts[sector] = sector_counts.get(sector, 0) + 1
+
+            # Source link
+            self._insert_source_link(
+                conn, uid, frs_rec,
+                match_method="frs_expansion",
+                match_confidence=1.0,
+                distance_m=None,
+                name_sim=1.0,
+            )
+            links_created += 1
+
+        # 6. Update source_count
+        conn.execute("""
+            UPDATE master_sites
+            SET source_count = (
+                SELECT COUNT(*) FROM source_links sl
+                WHERE sl.facility_uid = master_sites.facility_uid
+            ),
+            updated_at = CURRENT_TIMESTAMP
+        """)
+
+        # 7. Deduplicate
+        logger.info("Phase 2: Running deduplication...")
+        dedup_result = deduplicate_sites(conn)
+
+        # 8. Final counts
+        total_sites = conn.execute("SELECT COUNT(*) FROM master_sites").fetchone()[0]
+
+        self._finish_run(
+            run_id, sites_created, 0, links_created, 0,
+            f"FRS expansion: {len(unlinked)} unlinked → {sites_created} new sites, "
+            f"{dedup_result['merges']} dedup merges, {total_sites} total",
+        )
+
+        summary = {
+            "phase": "phase_2_frs_expansion",
+            "run_id": run_id,
+            "frs_loaded": len(all_frs),
+            "already_linked": len(linked_ids),
+            "unlinked_processed": len(unlinked),
+            "sites_created": sites_created,
+            "uid_collisions": len(unlinked) - sites_created - (links_created - sites_created) if links_created > sites_created else 0,
+            "links_created": links_created,
+            "dedup_merges": dedup_result["merges"],
+            "total_sites": total_sites,
+            "sector_distribution": sector_counts,
+        }
+
+        self._print_phase2_summary(summary)
+        return summary
+
+    def _load_naics_anchors(self) -> dict:
+        """Load NAICS anchor codes from config."""
+        config_path = (
+            self.root / "02_TOOLSETS" / "site_master_registry" / "config" / "naics_anchor_codes.yaml"
+        )
+        with open(config_path) as f:
+            data = yaml.safe_load(f)
+        return data.get("anchor_codes", {})
+
     @staticmethod
-    def _print_summary(summary: dict):
+    def _resolve_sector(
+        naics_codes: str,
+        sector_map: dict[str, str],
+        naics_prefixes: list[str],
+    ) -> str:
+        """Determine the best commodity sector from a facility's NAICS codes."""
+        if not naics_codes:
+            return "industrial"
+
+        codes = [c.strip() for c in naics_codes.split(",") if c.strip()]
+
+        # Find the most specific anchor match
+        for prefix in sorted(naics_prefixes, key=len, reverse=True):
+            for code in codes:
+                if code.startswith(prefix):
+                    return sector_map.get(prefix, "industrial")
+
+        return "industrial"
+
+    @staticmethod
+    def _print_phase2_summary(summary: dict):
+        print("\n" + "=" * 70)
+        print("  SITE MASTER REGISTRY — Phase 2 Build Summary")
+        print("=" * 70)
+        print(f"  FRS records loaded:      {summary['frs_loaded']:,}")
+        print(f"  Already linked (Ph1):    {summary['already_linked']}")
+        print(f"  Unlinked processed:      {summary['unlinked_processed']:,}")
+        print(f"  New sites created:       {summary['sites_created']:,}")
+        print(f"  Dedup merges:            {summary['dedup_merges']}")
+        print(f"  TOTAL master sites:      {summary['total_sites']:,}")
+        print("-" * 70)
+        print("  Sites by sector:")
+        for sector, count in sorted(
+            summary["sector_distribution"].items(), key=lambda x: -x[1]
+        ):
+            print(f"    {sector:25s}: {count:,}")
+        print("=" * 70 + "\n")
+
+    @staticmethod
+    def _print_phase1_summary(summary: dict):
         dist = summary["confidence_distribution"]
         total = summary["seeds_loaded"]
         high = dist.get("HIGH", 0)

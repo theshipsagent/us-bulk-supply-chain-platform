@@ -25,6 +25,8 @@ from src.registry.builder import RegistryBuilder
 def main():
     parser = argparse.ArgumentParser(description="Site Master Registry Builder")
     parser.add_argument("--phase", type=int, default=1, help="Build phase (1-4)")
+    parser.add_argument("--max-tier", type=int, default=1,
+                        help="NAICS tier filter for Phase 2 (1=strategic, 2=all)")
     parser.add_argument("--frs-local", type=str, default=None,
                         help="Path to local FRS DuckDB copy (avoids Google Drive I/O)")
     parser.add_argument("--project-root", type=str, default=".",
@@ -40,6 +42,8 @@ def main():
 
     if args.phase == 1:
         builder.build_phase_1()
+    elif args.phase == 2:
+        builder.build_phase_2(max_tier=args.max_tier)
     else:
         print(f"Phase {args.phase} not yet implemented")
         sys.exit(1)

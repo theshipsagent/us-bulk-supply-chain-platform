@@ -1,55 +1,70 @@
 # NAICS codes that define major industrial sites for FRS expansion (Phase 2)
-# Each entry: prefix -> sector label + description
+# tier 1 = strategic industrial (Phase 2 default)
+# tier 2 = high-volume small sites (future expansion)
 
 anchor_codes:
   # Metals
   "3311":
     sector: "steel"
+    tier: 1
     description: "Iron and Steel Mills and Ferroalloy Manufacturing"
   "3312":
     sector: "steel"
+    tier: 1
     description: "Steel Product Manufacturing from Purchased Steel"
   "3313":
     sector: "aluminum"
+    tier: 1
     description: "Alumina and Aluminum Production and Processing"
   "3314":
     sector: "nonferrous_metals"
+    tier: 1
     description: "Nonferrous Metal (except Aluminum) Production and Processing"
   "3315":
     sector: "steel"
+    tier: 2
     description: "Foundries"
 
   # Cement & Concrete
   "327310":
     sector: "cement"
+    tier: 1
     description: "Cement Manufacturing"
   "327320":
     sector: "concrete"
+    tier: 2
     description: "Ready-Mix Concrete Manufacturing"
   "327390":
     sector: "concrete"
+    tier: 1
     description: "Other Concrete Product Manufacturing"
 
   # Petroleum & Chemicals
   "32411":
     sector: "petroleum"
+    tier: 1
     description: "Petroleum Refineries"
   "32511":
     sector: "chemicals"
+    tier: 1
     description: "Petrochemical Manufacturing"
   "32518":
     sector: "chemicals"
+    tier: 1
     description: "Other Basic Inorganic Chemical Manufacturing"
 
   # Grain & Agriculture
   "311211":
     sector: "grain"
+    tier: 1
     description: "Flour Milling"
   "311221":
     sector: "grain"
+    tier: 1
     description: "Wet Corn Milling"
 
   # Aggregates & Mining
   "21232":
     sector: "aggregates"
+    tier: 2
     description: "Sand, Gravel, Clay, and Ceramic and Refractory Minerals Mining"

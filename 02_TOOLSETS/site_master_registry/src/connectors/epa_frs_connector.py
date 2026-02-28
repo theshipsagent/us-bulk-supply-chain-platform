@@ -131,6 +131,80 @@ class EpaFrsConnector(BaseConnector):
                 self._cache[st] = []
             logger.info(f"  {st}: {len(self._cache[st])} FRS records cached")
 
+    def preload_all_by_naics(self, naics_prefixes: list[str]):
+        """Bulk-load FRS facilities matching NAICS codes across ALL states.
+
+        Used by Phase 2 to pull all industrial facilities nationally.
+        """
+        conn = self._get_conn()
+
+        if not naics_prefixes:
+            logger.warning("[epa_frs] No NAICS prefixes provided, skipping")
+            return
+
+        like_parts = " OR ".join(f"n.naics_code LIKE '{p}%'" for p in naics_prefixes)
+
+        query = f"""
+            SELECT
+                f.registry_id,
+                f.fac_name,
+                f.fac_city,
+                f.fac_state,
+                f.fac_county,
+                f.latitude,
+                f.longitude,
+                (
+                    SELECT STRING_AGG(DISTINCT n2.naics_code, ',')
+                    FROM naics_codes n2
+                    WHERE n2.registry_id = f.registry_id
+                ) as naics_codes,
+                (
+                    SELECT STRING_AGG(DISTINCT s.sic_code, ',')
+                    FROM sic_codes s
+                    WHERE s.registry_id = f.registry_id
+                ) as sic_codes
+            FROM facilities f
+            WHERE f.latitude IS NOT NULL
+              AND f.longitude IS NOT NULL
+              AND f.registry_id IN (
+                  SELECT DISTINCT registry_id FROM naics_codes n
+                  WHERE {like_parts}
+              )
+            ORDER BY f.fac_state, f.fac_name
+        """
+
+        logger.info(f"[epa_frs] Bulk loading ALL states for {len(naics_prefixes)} NAICS prefixes...")
+        rows = conn.execute(query).fetchall()
+        logger.info(f"[epa_frs] Loaded {len(rows)} FRS records nationally")
+
+        # Index by state
+        from collections import defaultdict as _dd
+        by_state: dict[str, list[SourceRecord]] = _dd(list)
+        for row in rows:
+            rec = SourceRecord(
+                source_system="epa_frs",
+                source_record_id=str(row[0]),
+                name=row[1] or "",
+                city=row[2] or "",
+                state=row[3] or "",
+                county=row[4] or "",
+                latitude=row[5],
+                longitude=row[6],
+                naics_codes=row[7] or "",
+                sic_codes=row[8] or "",
+            )
+            by_state[rec.state].append(rec)
+
+        self._cache.update(by_state)
+        logger.info(f"[epa_frs] Cached across {len(by_state)} states")
+
+    def get_all_cached(self) -> list[SourceRecord]:
+        """Return all cached records across all states."""
+        result = []
+        for recs in self._cache.values():
+            result.extend(recs)
+        return result
+
     def get_candidates_for_site(
         self,
         state: str,
