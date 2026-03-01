@@ -1,9 +1,9 @@
 {
   "_metadata": {
-    "created": "2026-03-01 12:29:30",
-    "total_ports": 579,
+    "created": "2026-03-01 13:30:24",
+    "total_ports": 549,
     "seaports": 176,
-    "ports_with_coordinates": 120,
+    "ports_with_coordinates": 104,
     "usace_crosswalk_entries": 123,
     "panjiva_crosswalk_entries": 160,
     "sources": {
@@ -424,9 +424,7 @@
       "port_type": "airport",
       "port_consolidated": "Boston",
       "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 41.6362,
-      "longitude": -70.9342
+      "port_region": "North Atlantic"
     },
     "0403": {
       "port_code": "0403",
@@ -451,8 +449,6 @@
       "port_consolidated": "Boston",
       "port_coast": "East",
       "port_region": "North Atlantic",
-      "latitude": 41.5201,
-      "longitude": -70.6693,
       "usace_codes": [
         "91"
       ],
@@ -471,6 +467,8 @@
       "port_consolidated": "Boston",
       "port_coast": "East",
       "port_region": "North Atlantic",
+      "latitude": 41.6362,
+      "longitude": -70.9342,
       "usace_codes": [
         "98"
       ],
@@ -507,6 +505,8 @@
       "port_consolidated": "Boston",
       "port_coast": "East",
       "port_region": "North Atlantic",
+      "latitude": 41.706,
+      "longitude": -71.1554,
       "usace_codes": [
         "189",
         "232"
@@ -541,6 +541,8 @@
       "port_consolidated": "Connecticut",
       "port_coast": "East",
       "port_region": "North Atlantic",
+      "latitude": 41.1743,
+      "longitude": -73.2013,
       "usace_codes": [
         "272"
       ],
@@ -571,6 +573,8 @@
       "port_consolidated": "Connecticut",
       "port_coast": "East",
       "port_region": "North Atlantic",
+      "latitude": 41.3083,
+      "longitude": -72.9279,
       "usace_codes": [
         "1506"
       ],
@@ -589,6 +593,8 @@
       "port_consolidated": "Connecticut",
       "port_coast": "East",
       "port_region": "North Atlantic",
+      "latitude": 41.3523,
+      "longitude": -72.099,
       "usace_codes": [
         "273",
         "304"
@@ -644,8 +650,8 @@
       "port_consolidated": "Providence",
       "port_coast": "East",
       "port_region": "North Atlantic",
-      "latitude": 41.8236,
-      "longitude": -71.4222,
+      "latitude": 41.4901,
+      "longitude": -71.3128,
       "usace_codes": [
         "544"
       ],
@@ -664,8 +670,8 @@
       "port_consolidated": "Providence",
       "port_coast": "East",
       "port_region": "North Atlantic",
-      "latitude": 41.4901,
-      "longitude": -71.3128,
+      "latitude": 41.8236,
+      "longitude": -71.4222,
       "usace_codes": [
         "191",
         "203"
@@ -802,6 +808,8 @@
       "port_consolidated": "Buffalo-Niagara",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 42.8864,
+      "longitude": -78.8784,
       "usace_codes": [
         "3226",
         "3230"
@@ -821,6 +829,8 @@
       "port_consolidated": "Buffalo-Niagara",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 43.261,
+      "longitude": -77.6109,
       "usace_codes": [
         "3105"
       ],
@@ -967,8 +977,6 @@
       "port_consolidated": "New York",
       "port_coast": "East",
       "port_region": "North Atlantic",
-      "latitude": 40.9176,
-      "longitude": -72.6351,
       "panjiva_names": [
         "New York/Newark Area, Newark, New Jersey"
       ]
@@ -998,9 +1006,7 @@
       "port_type": "airport",
       "port_consolidated": "New York",
       "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 42.8864,
-      "longitude": -78.8784
+      "port_region": "North Atlantic"
     },
     "1068": {
       "port_code": "1068",
@@ -1148,6 +1154,8 @@
       "port_consolidated": "Delaware River",
       "port_coast": "East",
       "port_region": "Mid-Atlantic",
+      "latitude": 39.7391,
+      "longitude": -75.5398,
       "usace_codes": [
         "555"
       ],
@@ -1300,7 +1308,9 @@
       "port_type": "seaport",
       "port_consolidated": "Hampton Roads",
       "port_coast": "East",
-      "port_region": "South Atlantic"
+      "port_region": "South Atlantic",
+      "latitude": 37.5407,
+      "longitude": -77.436
     },
     "1301": {
       "port_code": "1301",
@@ -1313,8 +1323,6 @@
       "port_consolidated": "Baltimore",
       "port_coast": "East",
       "port_region": "Mid-Atlantic",
-      "latitude": 39.2904,
-      "longitude": -76.6122,
       "usace_codes": [
         "727"
       ],
@@ -1345,8 +1353,8 @@
       "port_consolidated": "Baltimore",
       "port_coast": "East",
       "port_region": "Mid-Atlantic",
-      "latitude": 39.7391,
-      "longitude": -75.5398,
+      "latitude": 39.2904,
+      "longitude": -76.6122,
       "usace_codes": [
         "700"
       ],
@@ -1430,8 +1438,6 @@
       "port_consolidated": "Charleston, West Virginia",
       "port_coast": "Inland",
       "port_region": "South Atlantic",
-      "latitude": 36.9769,
-      "longitude": -76.4281,
       "panjiva_names": [
         "Port of Charleston, Charleston, West Virginia"
       ]
@@ -1491,9 +1497,7 @@
       "port_type": "land_border",
       "port_consolidated": "North Carolina Ports",
       "port_coast": "Inland",
-      "port_region": "South Atlantic",
-      "latitude": 34.7178,
-      "longitude": -76.6585
+      "port_region": "South Atlantic"
     },
     "1503": {
       "port_code": "1503",
@@ -1518,6 +1522,8 @@
       "port_consolidated": "North Carolina Ports",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 34.7178,
+      "longitude": -76.6585,
       "panjiva_names": [
         "Port Of Entry-Morehead City - Beaufort, Beaufort‑Morehead City, North Carolina"
       ]
@@ -1600,9 +1606,7 @@
       "port_type": "inland",
       "port_consolidated": "Columbia, South Carolina",
       "port_coast": "Inland",
-      "port_region": "South Atlantic",
-      "latitude": 32.2163,
-      "longitude": -80.7526
+      "port_region": "South Atlantic"
     },
     "1681": {
       "port_code": "1681",
@@ -1627,6 +1631,8 @@
       "port_consolidated": "Georgia Ports",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 31.1499,
+      "longitude": -81.4915,
       "usace_codes": [
         "783"
       ],
@@ -1663,8 +1669,6 @@
       "port_consolidated": "Atlanta, Georgia",
       "port_coast": "Inland",
       "port_region": "South Atlantic",
-      "latitude": 31.1499,
-      "longitude": -81.4915,
       "panjiva_names": [
         "Service Port-Atlanta, Atlanta, Georgia"
       ]
@@ -1740,8 +1744,8 @@
       "port_consolidated": "Tampa",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 30.3322,
-      "longitude": -81.6557,
+      "latitude": 27.9506,
+      "longitude": -82.4572,
       "usace_codes": [
         "2021"
       ],
@@ -1760,8 +1764,8 @@
       "port_consolidated": "Jacksonville",
       "port_coast": "East",
       "port_region": "South Atlantic",
-      "latitude": 28.4001,
-      "longitude": -80.6228,
+      "latitude": 30.3322,
+      "longitude": -81.6557,
       "usace_codes": [
         "2017"
       ],
@@ -1780,8 +1784,6 @@
       "port_consolidated": "Fernandina Beach",
       "port_coast": "East",
       "port_region": "South Atlantic",
-      "latitude": 25.7617,
-      "longitude": -80.1918,
       "panjiva_names": [
         "Port Of Entry-Fernandina Beach, Fernandina Beach, Florida"
       ]
@@ -1809,8 +1811,6 @@
       "port_consolidated": "Orlando, Florida",
       "port_coast": "Inland",
       "port_region": "South Atlantic",
-      "latitude": 27.9506,
-      "longitude": -82.4572,
       "panjiva_names": [
         "Greater Orlando Aviation Authority, Orlando, Florida"
       ]
@@ -1857,6 +1857,8 @@
       "port_consolidated": "Port Canaveral",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 28.4001,
+      "longitude": -80.6228,
       "usace_codes": [
         "2160"
       ],
@@ -1875,8 +1877,8 @@
       "port_consolidated": "Panama City",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 26.6323,
-      "longitude": -81.9429,
+      "latitude": 30.1588,
+      "longitude": -85.6602,
       "usace_codes": [
         "2441"
       ],
@@ -1895,8 +1897,8 @@
       "port_consolidated": "Pensacola",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 26.1003,
-      "longitude": -80.1096,
+      "latitude": 30.4383,
+      "longitude": -87.211,
       "usace_codes": [
         "1991"
       ],
@@ -1914,9 +1916,7 @@
       "port_type": "",
       "port_consolidated": "Tampa",
       "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 26.7153,
-      "longitude": -80.0534
+      "port_region": "Gulf East"
     },
     "1821": {
       "port_code": "1821",
@@ -1929,6 +1929,8 @@
       "port_consolidated": "Tampa",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
+      "latitude": 27.6364,
+      "longitude": -82.5621,
       "panjiva_names": [
         "Port Manatee, Florida"
       ]
@@ -2072,6 +2074,8 @@
       "port_consolidated": "Gulfport",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
+      "latitude": 30.3674,
+      "longitude": -89.0928,
       "usace_codes": [
         "2440"
       ],
@@ -2090,8 +2094,8 @@
       "port_consolidated": "Pascagoula",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 30.396,
-      "longitude": -89.0928,
+      "latitude": 30.3585,
+      "longitude": -88.5561,
       "usace_codes": [
         "1995"
       ],
@@ -2109,9 +2113,7 @@
       "port_type": "inland",
       "port_consolidated": "Birmingham, Alabama",
       "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 30.3469,
-      "longitude": -89.3293
+      "port_region": "Gulf East"
     },
     "1905": {
       "port_code": "1905",
@@ -2160,8 +2162,8 @@
       "port_consolidated": "Morgan City",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 29.9511,
-      "longitude": -90.0715,
+      "latitude": 29.6994,
+      "longitude": -91.2068,
       "usace_codes": [
         "2087"
       ],
@@ -2180,8 +2182,8 @@
       "port_consolidated": "Lower Miss River",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 30.2266,
-      "longitude": -93.2174,
+      "latitude": 29.9511,
+      "longitude": -90.0715,
       "usace_codes": [
         "2251"
       ],
@@ -2212,8 +2214,8 @@
       "port_consolidated": "Lower Miss River",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
-      "latitude": 29.3105,
-      "longitude": -89.3596,
+      "latitude": 30.4508,
+      "longitude": -91.1874,
       "usace_codes": [
         "2252"
       ],
@@ -2232,8 +2234,6 @@
       "port_consolidated": "Memphis, Tennessee",
       "port_coast": "Inland",
       "port_region": "Mississippi River",
-      "latitude": 29.7633,
-      "longitude": -90.76,
       "panjiva_names": [
         "The International Port of Memphis, Memphis, Tennessee"
       ]
@@ -2273,6 +2273,8 @@
       "port_consolidated": "Lower Miss River",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
+      "latitude": 30.0511,
+      "longitude": -90.6898,
       "panjiva_names": [
         "Port of Gramercy, Gramercy, Louisiana"
       ]
@@ -2287,9 +2289,7 @@
       "port_type": "inland",
       "port_consolidated": "Greenville, Mississippi",
       "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 30.4508,
-      "longitude": -91.1874
+      "port_region": "Gulf East"
     },
     "2015": {
       "port_code": "2015",
@@ -2326,6 +2326,8 @@
       "port_consolidated": "Lake Charles",
       "port_coast": "Gulf",
       "port_region": "Gulf East",
+      "latitude": 30.2266,
+      "longitude": -93.2174,
       "usace_codes": [
         "2248"
       ],
@@ -2404,8 +2406,8 @@
       "port_consolidated": "Sabine River",
       "port_coast": "Gulf",
       "port_region": "North Texas",
-      "latitude": 27.8006,
-      "longitude": -97.3964,
+      "latitude": 29.8611,
+      "longitude": -93.9388,
       "usace_codes": [
         "2408",
         "2416",
@@ -2426,8 +2428,8 @@
       "port_consolidated": "Sabine River",
       "port_coast": "Gulf",
       "port_region": "North Texas",
-      "latitude": 29.3013,
-      "longitude": -94.7977,
+      "latitude": 29.7244,
+      "longitude": -93.87,
       "usace_codes": [
         "2391",
         "2397"
@@ -2447,8 +2449,8 @@
       "port_consolidated": "Sabine River",
       "port_coast": "Gulf",
       "port_region": "North Texas",
-      "latitude": 26.071,
-      "longitude": -97.4981,
+      "latitude": 30.093,
+      "longitude": -93.7366,
       "usace_codes": [
         "2398"
       ]
@@ -2464,8 +2466,8 @@
       "port_consolidated": "Sabine River",
       "port_coast": "Gulf",
       "port_region": "North Texas",
-      "latitude": 29.8611,
-      "longitude": -93.9388,
+      "latitude": 30.0802,
+      "longitude": -94.1266,
       "usace_codes": [
         "2393"
       ],
@@ -2484,6 +2486,8 @@
       "port_consolidated": "South Texas Border",
       "port_coast": "Land Ports",
       "port_region": "South Texas",
+      "latitude": 26.071,
+      "longitude": -97.4981,
       "usace_codes": [
         "2420"
       ],
@@ -2778,6 +2782,8 @@
       "port_consolidated": "San Diego Border",
       "port_coast": "Land Ports",
       "port_region": "California",
+      "latitude": 32.7157,
+      "longitude": -117.1611,
       "usace_codes": [
         "4102",
         "4260",
@@ -2993,8 +2999,8 @@
       "port_consolidated": "LA-Long Beach",
       "port_coast": "West",
       "port_region": "California",
-      "latitude": 32.7157,
-      "longitude": -117.1611,
+      "latitude": 33.74,
+      "longitude": -118.27,
       "usace_codes": [
         "4120"
       ],
@@ -3026,8 +3032,8 @@
       "port_consolidated": "LA-Long Beach",
       "port_coast": "West",
       "port_region": "California",
-      "latitude": 33.7175,
-      "longitude": -118.262,
+      "latitude": 33.749,
+      "longitude": -118.2162,
       "usace_codes": [
         "4110"
       ],
@@ -3045,9 +3051,7 @@
       "port_type": "seaport",
       "port_consolidated": "LA-Long Beach",
       "port_coast": "West",
-      "port_region": "California",
-      "latitude": 37.7749,
-      "longitude": -122.4194
+      "port_region": "California"
     },
     "2713": {
       "port_code": "2713",
@@ -3060,8 +3064,6 @@
       "port_consolidated": "LA-Long Beach",
       "port_coast": "West",
       "port_region": "California",
-      "latitude": 38.5816,
-      "longitude": -121.4944,
       "usace_codes": [
         "4150"
       ],
@@ -3091,9 +3093,7 @@
       "port_type": "seaport",
       "port_consolidated": "LA-Long Beach",
       "port_coast": "West",
-      "port_region": "California",
-      "latitude": 36.6002,
-      "longitude": -121.8947
+      "port_region": "California"
     },
     "2720": {
       "port_code": "2720",
@@ -3105,9 +3105,7 @@
       "port_type": "airport",
       "port_consolidated": "LA-Long Beach",
       "port_coast": "West",
-      "port_region": "California",
-      "latitude": 34.4074,
-      "longitude": -119.6921
+      "port_region": "California"
     },
     "2721": {
       "port_code": "2721",
@@ -3131,9 +3129,7 @@
       "port_type": "inland",
       "port_consolidated": "Las Vegas, NV",
       "port_coast": "Inland",
-      "port_region": "California",
-      "latitude": 40.8021,
-      "longitude": -124.1637
+      "port_region": "California"
     },
     "2755": {
       "port_code": "2755",
@@ -3290,8 +3286,6 @@
       "port_consolidated": "San Francisco Bay",
       "port_coast": "West",
       "port_region": "California",
-      "latitude": 45.5051,
-      "longitude": -122.675,
       "panjiva_names": [
         "San Francisco International Airport, San Francisco, California",
         "Service Port-San Francisco, San Francisco, California"
@@ -3307,7 +3301,9 @@
       "port_type": "seaport",
       "port_consolidated": "San Francisco Bay",
       "port_coast": "West",
-      "port_region": "California"
+      "port_region": "California",
+      "latitude": 40.8021,
+      "longitude": -124.1637
     },
     "2803": {
       "port_code": "2803",
@@ -3331,7 +3327,9 @@
       "port_type": "seaport",
       "port_consolidated": "San Francisco Bay",
       "port_coast": "West",
-      "port_region": "California"
+      "port_region": "California",
+      "latitude": 36.6002,
+      "longitude": -121.8947
     },
     "2809": {
       "port_code": "2809",
@@ -3344,8 +3342,8 @@
       "port_consolidated": "San Francisco Bay",
       "port_coast": "West",
       "port_region": "California",
-      "latitude": 43.3665,
-      "longitude": -124.2179,
+      "latitude": 37.7749,
+      "longitude": -122.4194,
       "usace_codes": [
         "4335"
       ]
@@ -3361,6 +3359,8 @@
       "port_consolidated": "San Francisco Bay",
       "port_coast": "West",
       "port_region": "California",
+      "latitude": 37.9577,
+      "longitude": -121.2908,
       "usace_codes": [
         "4270"
       ],
@@ -3379,8 +3379,8 @@
       "port_consolidated": "San Francisco Bay",
       "port_coast": "West",
       "port_region": "California",
-      "latitude": 46.1879,
-      "longitude": -123.8313,
+      "latitude": 37.7957,
+      "longitude": -122.2788,
       "usace_codes": [
         "4344",
         "4345"
@@ -3601,6 +3601,8 @@
       "port_consolidated": "Columbia River",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 46.1879,
+      "longitude": -123.8313,
       "panjiva_names": [
         "Port of Astoria, Astoria, Oregon"
       ]
@@ -3631,6 +3633,8 @@
       "port_consolidated": "Columbia River",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 43.3665,
+      "longitude": -124.2179,
       "panjiva_names": [
         "Oregon International Port of Coos Bay, Coos Bay, Oregon"
       ]
@@ -3646,6 +3650,8 @@
       "port_consolidated": "Columbia River",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 45.5051,
+      "longitude": -122.675,
       "usace_codes": [
         "4646"
       ],
@@ -3664,6 +3670,8 @@
       "port_consolidated": "Columbia River",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 46.1479,
+      "longitude": -122.9135,
       "usace_codes": [
         "4622"
       ],
@@ -3694,6 +3702,8 @@
       "port_consolidated": "Columbia River",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 45.6326,
+      "longitude": -122.6717,
       "usace_codes": [
         "4636"
       ],
@@ -3712,6 +3722,8 @@
       "port_consolidated": "Columbia River",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 46.0326,
+      "longitude": -122.8417,
       "usace_codes": [
         "4626"
       ],
@@ -3794,6 +3806,8 @@
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
+      "latitude": 46.9765,
+      "longitude": -123.8471,
       "panjiva_names": [
         "Aberdeen, Washington"
       ]
@@ -3824,8 +3838,6 @@
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
-      "latitude": 48.7519,
-      "longitude": -122.4787,
       "usace_codes": [
         "4736"
       ],
@@ -3844,8 +3856,8 @@
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
-      "latitude": 46.9765,
-      "longitude": -123.8471,
+      "latitude": 47.979,
+      "longitude": -122.2021,
       "usace_codes": [
         "4727"
       ],
@@ -3864,8 +3876,8 @@
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
-      "latitude": 46.1479,
-      "longitude": -122.9135,
+      "latitude": 48.1106,
+      "longitude": -123.4307,
       "panjiva_names": [
         "Port Angeles, Washington"
       ]
@@ -3892,9 +3904,7 @@
       "port_type": "land_border",
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
-      "port_region": "Pacific Northwest",
-      "latitude": 48.1106,
-      "longitude": -123.4307
+      "port_region": "Pacific Northwest"
     },
     "3010": {
       "port_code": "3010",
@@ -3907,8 +3917,8 @@
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
       "port_region": "Pacific Northwest",
-      "latitude": 46.0326,
-      "longitude": -122.8417,
+      "latitude": 48.5126,
+      "longitude": -122.6127,
       "usace_codes": [
         "4730"
       ],
@@ -3938,9 +3948,7 @@
       "port_type": "land_border",
       "port_consolidated": "Seattle-Tacoma",
       "port_coast": "West",
-      "port_region": "Pacific Northwest",
-      "latitude": 45.6326,
-      "longitude": -122.6717
+      "port_region": "Pacific Northwest"
     },
     "3013": {
       "port_code": "3013",
@@ -4202,8 +4210,8 @@
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
       "port_region": "Alaska/US Islands",
-      "latitude": 61.2181,
-      "longitude": -149.9003,
+      "latitude": 58.3005,
+      "longitude": -134.4197,
       "usace_codes": [
         "4823"
       ],
@@ -4222,6 +4230,8 @@
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
       "port_region": "Alaska/US Islands",
+      "latitude": 55.3422,
+      "longitude": -131.6461,
       "usace_codes": [
         "4827"
       ],
@@ -4240,8 +4250,6 @@
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
       "port_region": "Alaska/US Islands",
-      "latitude": 58.3005,
-      "longitude": -134.4197,
       "usace_codes": [
         "4857"
       ],
@@ -4259,9 +4267,7 @@
       "port_type": "land_border",
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
-      "port_region": "Alaska/US Islands",
-      "latitude": 55.3422,
-      "longitude": -131.6461
+      "port_region": "Alaska/US Islands"
     },
     "3105": {
       "port_code": "3105",
@@ -4274,8 +4280,6 @@
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
       "port_region": "Alaska/US Islands",
-      "latitude": 57.79,
-      "longitude": -152.4072,
       "usace_codes": [
         "4795"
       ],
@@ -4324,8 +4328,6 @@
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
       "port_region": "Alaska/US Islands",
-      "latitude": 59.6426,
-      "longitude": -151.5483,
       "usace_codes": [
         "4796",
         "4808"
@@ -4357,8 +4359,8 @@
       "port_consolidated": "Alaska",
       "port_coast": "Alaska/US Islands",
       "port_region": "Alaska/US Islands",
-      "latitude": 61.1307,
-      "longitude": -146.3483,
+      "latitude": 61.2181,
+      "longitude": -149.9003,
       "panjiva_names": [
         "Anchorage, Alaska"
       ]
@@ -4430,8 +4432,8 @@
       "port_consolidated": "Honolulu",
       "port_coast": "West",
       "port_region": "Pacific",
-      "latitude": 20.8893,
-      "longitude": -156.4729,
+      "latitude": 19.7297,
+      "longitude": -155.09,
       "panjiva_names": [
         "Port Of Entry-Hilo, Hilo, Hawaii"
       ]
@@ -4447,8 +4449,8 @@
       "port_consolidated": "Honolulu",
       "port_coast": "West",
       "port_region": "Pacific",
-      "latitude": 21.9544,
-      "longitude": -159.3674,
+      "latitude": 20.8893,
+      "longitude": -156.4729,
       "panjiva_names": [
         "Port Of Entry-Kahului, Kahului, Hawaii"
       ]
@@ -4464,8 +4466,8 @@
       "port_consolidated": "Honolulu",
       "port_coast": "West",
       "port_region": "Pacific",
-      "latitude": 19.7297,
-      "longitude": -155.09,
+      "latitude": 21.9544,
+      "longitude": -159.3674,
       "panjiva_names": [
         "Port Of Entry-Nawiliwili-Port Allen, Nawiliwili‑Port Allen, Hawaii"
       ]
@@ -5237,6 +5239,8 @@
       "port_consolidated": "Minneapolis-St. Paul, Minnesota",
       "port_coast": "Inland",
       "port_region": "Great Lakes",
+      "latitude": 44.9778,
+      "longitude": -93.265,
       "panjiva_names": [
         "Minneapolis St.Paul International Airport, Minneapolis‑St. Paul, Minnesota"
       ]
@@ -5264,6 +5268,8 @@
       "port_consolidated": "Duluth-Superior",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 46.7867,
+      "longitude": -92.1005,
       "usace_codes": [
         "3924"
       ],
@@ -5357,6 +5363,8 @@
       "port_consolidated": "Milwaukee",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 43.0389,
+      "longitude": -87.9065,
       "panjiva_names": [
         "THE PORT OF MILWAUKEE, Milwaukee, Wisconsin"
       ]
@@ -5387,6 +5395,8 @@
       "port_consolidated": "Milwaukee",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 44.5133,
+      "longitude": -87.9806,
       "usace_codes": [
         "3778"
       ],
@@ -5456,8 +5466,8 @@
       "port_consolidated": "Detroit",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 41.4993,
-      "longitude": -81.6944,
+      "latitude": 42.3314,
+      "longitude": -83.0458,
       "panjiva_names": [
         "Detroit/Wayne County Port Authority, Detroit, Michigan"
       ]
@@ -5473,8 +5483,6 @@
       "port_consolidated": "Port Huron",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 41.6528,
-      "longitude": -83.5379,
       "usace_codes": [
         "3516"
       ],
@@ -5493,8 +5501,6 @@
       "port_consolidated": "Sault Ste. Marie",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 41.894,
-      "longitude": -80.7682,
       "usace_codes": [
         "3817"
       ],
@@ -5513,8 +5519,8 @@
       "port_consolidated": "Detroit",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 41.4498,
-      "longitude": -82.7068,
+      "latitude": 43.5945,
+      "longitude": -83.8889,
       "usace_codes": [
         "3603"
       ],
@@ -5563,8 +5569,6 @@
       "port_consolidated": "Detroit",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 41.4525,
-      "longitude": -82.1824,
       "panjiva_names": [
         "Detroit Metropolitan Airport, Detroit Metropolitan Airport, Michigan"
       ]
@@ -5598,6 +5602,8 @@
       "port_consolidated": "Detroit",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 46.5436,
+      "longitude": -87.3954,
       "usace_codes": [
         "3841"
       ],
@@ -5776,8 +5782,8 @@
       "port_consolidated": "Chicago",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 42.3314,
-      "longitude": -83.0458,
+      "latitude": 41.6528,
+      "longitude": -87.5389,
       "usace_codes": [
         "3749"
       ],
@@ -5934,8 +5940,8 @@
       "port_consolidated": "Cleveland, Ohio",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 42.8864,
-      "longitude": -87.821,
+      "latitude": 41.4993,
+      "longitude": -81.6944,
       "usace_codes": [
         "3217"
       ],
@@ -5977,9 +5983,7 @@
       "port_type": "inland",
       "port_consolidated": "Dayton, Ohio",
       "port_coast": "Great Lakes",
-      "port_region": "Great Lakes",
-      "latitude": 44.5133,
-      "longitude": -87.9806
+      "port_region": "Great Lakes"
     },
     "4105": {
       "port_code": "4105",
@@ -5992,6 +5996,8 @@
       "port_consolidated": "Cleveland-Toledo",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 41.6528,
+      "longitude": -83.5379,
       "usace_codes": [
         "3204"
       ],
@@ -6010,8 +6016,8 @@
       "port_consolidated": "Cleveland-Toledo",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
-      "latitude": 46.5965,
-      "longitude": -90.8846,
+      "latitude": 42.1292,
+      "longitude": -80.0851,
       "usace_codes": [
         "3221"
       ],
@@ -6068,7 +6074,9 @@
       "port_type": "seaport",
       "port_consolidated": "Cleveland-Toledo",
       "port_coast": "Great Lakes",
-      "port_region": "Great Lakes"
+      "port_region": "Great Lakes",
+      "latitude": 41.4525,
+      "longitude": -82.1824
     },
     "4122": {
       "port_code": "4122",
@@ -6081,6 +6089,8 @@
       "port_consolidated": "Cleveland-Toledo",
       "port_coast": "Great Lakes",
       "port_region": "Great Lakes",
+      "latitude": 41.894,
+      "longitude": -80.7682,
       "usace_codes": [
         "3219"
       ],
@@ -6245,9 +6255,7 @@
       "port_type": "",
       "port_consolidated": "New York",
       "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 41.6528,
-      "longitude": -87.5389
+      "port_region": "North Atlantic"
     },
     "4602": {
       "port_code": "4602",
@@ -6391,9 +6399,7 @@
       "port_type": "seaport",
       "port_consolidated": "San Juan",
       "port_coast": "Islands",
-      "port_region": "Caribbean",
-      "latitude": 42.1292,
-      "longitude": -80.0851
+      "port_region": "Caribbean"
     },
     "4904": {
       "port_code": "4904",
@@ -6424,8 +6430,8 @@
       "port_consolidated": "San Juan",
       "port_coast": "Islands",
       "port_region": "Caribbean",
-      "latitude": 18.4655,
-      "longitude": -66.1057,
+      "latitude": 18.2208,
+      "longitude": -67.1539,
       "panjiva_names": [
         "Mayaguez, Mayaguez, Puerto Rico"
       ]
@@ -6461,8 +6467,8 @@
       "port_consolidated": "San Juan",
       "port_coast": "Islands",
       "port_region": "Caribbean",
-      "latitude": 18.2208,
-      "longitude": -67.1539,
+      "latitude": 18.4655,
+      "longitude": -66.1057,
       "usace_codes": [
         "1913"
       ],
@@ -6525,8 +6531,6 @@
       "port_consolidated": "Virgin Islands",
       "port_coast": "Islands",
       "port_region": "Caribbean",
-      "latitude": 17.7466,
-      "longitude": -64.7024,
       "panjiva_names": [
         "Cruz Bay, Virgin Islands"
       ]
@@ -6542,6 +6546,8 @@
       "port_consolidated": "Virgin Islands",
       "port_coast": "Islands",
       "port_region": "Caribbean",
+      "latitude": 17.7466,
+      "longitude": -64.7024,
       "usace_codes": [
         "2443"
       ],
@@ -6572,6 +6578,8 @@
       "port_consolidated": "South Florida",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 25.7617,
+      "longitude": -80.1918,
       "usace_codes": [
         "1992"
       ],
@@ -6590,6 +6598,8 @@
       "port_consolidated": "South Florida",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 24.5551,
+      "longitude": -81.78,
       "usace_codes": [
         "1988",
         "2111"
@@ -6606,6 +6616,8 @@
       "port_consolidated": "South Florida",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 26.1003,
+      "longitude": -80.1096,
       "usace_codes": [
         "1911"
       ],
@@ -6624,6 +6636,8 @@
       "port_consolidated": "South Florida",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 26.7153,
+      "longitude": -80.0534,
       "usace_codes": [
         "1983"
       ],
@@ -6642,6 +6656,8 @@
       "port_consolidated": "South Florida",
       "port_coast": "East",
       "port_region": "South Atlantic",
+      "latitude": 27.6506,
+      "longitude": -80.4128,
       "usace_codes": [
         "1986"
       ],
@@ -6798,6 +6814,8 @@
       "port_consolidated": "Houston",
       "port_coast": "Gulf",
       "port_region": "North Texas",
+      "latitude": 29.7604,
+      "longitude": -95.3698,
       "usace_codes": [
         "2012",
         "2031"
@@ -6817,6 +6835,8 @@
       "port_consolidated": "Houston",
       "port_coast": "Gulf",
       "port_region": "North Texas",
+      "latitude": 29.3849,
+      "longitude": -94.9049,
       "usace_codes": [
         "2428"
       ],
@@ -6850,6 +6870,8 @@
       "port_consolidated": "Houston",
       "port_coast": "Gulf",
       "port_region": "North Texas",
+      "latitude": 29.3013,
+      "longitude": -94.7977,
       "usace_codes": [
         "2417"
       ],
@@ -6868,6 +6890,8 @@
       "port_consolidated": "Houston",
       "port_coast": "Gulf",
       "port_region": "North Texas",
+      "latitude": 28.953,
+      "longitude": -95.3597,
       "panjiva_names": [
         "Freeport, Freeport, Texas"
       ]
@@ -6883,6 +6907,8 @@
       "port_consolidated": "Corpus Christi",
       "port_coast": "Gulf",
       "port_region": "South Texas",
+      "latitude": 27.8006,
+      "longitude": -97.3964,
       "usace_codes": [
         "2436"
       ],
@@ -6901,6 +6927,8 @@
       "port_consolidated": "Corpus Christi",
       "port_coast": "Gulf",
       "port_region": "North Texas",
+      "latitude": 28.6475,
+      "longitude": -96.6053,
       "panjiva_names": [
         "Port Lavaca, Port Lavaca, Texas"
       ]
@@ -7588,456 +7616,6 @@
       "port_consolidated": "Preclearance",
       "port_coast": "N/A",
       "port_region": "N/A"
-    },
-    "0409": {
-      "port_code": "0409",
-      "sked_d_name": "SPRINGFIELD, MA",
-      "cbp_name": "Springfield, Massachusetts",
-      "state": "MA",
-      "district_code": "04",
-      "district_name": "BOSTON, MA",
-      "port_type": "airport",
-      "port_consolidated": "Boston",
-      "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 41.706,
-      "longitude": -71.1554,
-      "census_alias_of": "0402"
-    },
-    "0601": {
-      "port_code": "0601",
-      "sked_d_name": "NEWARK, NJ",
-      "cbp_name": "",
-      "state": "NJ",
-      "district_code": "10",
-      "district_name": "NEW YORK CITY, NY",
-      "port_type": "seaport",
-      "port_consolidated": "New York",
-      "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 41.3083,
-      "longitude": -72.9279,
-      "census_alias_of": "1003"
-    },
-    "0603": {
-      "port_code": "0603",
-      "sked_d_name": "NEWARK, NJ",
-      "cbp_name": "",
-      "state": "NJ",
-      "district_code": "10",
-      "district_name": "NEW YORK CITY, NY",
-      "port_type": "seaport",
-      "port_consolidated": "New York",
-      "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 41.1743,
-      "longitude": -73.2013,
-      "census_alias_of": "1003"
-    },
-    "0605": {
-      "port_code": "0605",
-      "sked_d_name": "NEWARK, NJ",
-      "cbp_name": "",
-      "state": "NJ",
-      "district_code": "10",
-      "district_name": "NEW YORK CITY, NY",
-      "port_type": "seaport",
-      "port_consolidated": "New York",
-      "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 41.3523,
-      "longitude": -72.099,
-      "census_alias_of": "1003"
-    },
-    "1013": {
-      "port_code": "1013",
-      "sked_d_name": "JFK INTERNATIONAL AIRPORT, NY",
-      "cbp_name": "",
-      "state": "NY",
-      "district_code": "10",
-      "district_name": "NEW YORK CITY, NY",
-      "port_type": "airport",
-      "port_consolidated": "New York",
-      "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 43.261,
-      "longitude": -77.6109,
-      "census_alias_of": "1012"
-    },
-    "1014": {
-      "port_code": "1014",
-      "sked_d_name": "PORTLAND, ME",
-      "cbp_name": "Portland, Maine",
-      "state": "ME",
-      "district_code": "01",
-      "district_name": "PORTLAND, ME",
-      "port_type": "seaport",
-      "port_consolidated": "Portland ME",
-      "port_coast": "East",
-      "port_region": "North Atlantic",
-      "latitude": 44.6953,
-      "longitude": -73.4557,
-      "census_alias_of": "0101"
-    },
-    "1402": {
-      "port_code": "1402",
-      "sked_d_name": "CHARLESTON, WV",
-      "cbp_name": "Charleston, West Virginia",
-      "state": "WV",
-      "district_code": "14",
-      "district_name": "NORFOLK, VA",
-      "port_type": "inland",
-      "port_consolidated": "Charleston, West Virginia",
-      "port_coast": "Inland",
-      "port_region": "South Atlantic",
-      "latitude": 37.5407,
-      "longitude": -77.436,
-      "census_alias_of": "1409"
-    },
-    "1806": {
-      "port_code": "1806",
-      "sked_d_name": "FERNANDINA BEACH, FL",
-      "cbp_name": "Fernandina Beach, Florida",
-      "state": "FL",
-      "district_code": "18",
-      "district_name": "TAMPA, FL",
-      "port_type": "seaport",
-      "port_consolidated": "Fernandina Beach",
-      "port_coast": "East",
-      "port_region": "South Atlantic",
-      "latitude": 24.5551,
-      "longitude": -81.78,
-      "census_alias_of": "1805"
-    },
-    "1811": {
-      "port_code": "1811",
-      "sked_d_name": "MOBILE, AL",
-      "cbp_name": "Mobile, Alabama",
-      "state": "AL",
-      "district_code": "19",
-      "district_name": "MOBILE, AL",
-      "port_type": "seaport",
-      "port_consolidated": "Mobile",
-      "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 30.4383,
-      "longitude": -87.211,
-      "census_alias_of": "1901"
-    },
-    "1815": {
-      "port_code": "1815",
-      "sked_d_name": "JACKSONVILLE, FL",
-      "cbp_name": "Jacksonville, Florida",
-      "state": "FL",
-      "district_code": "18",
-      "district_name": "TAMPA, FL",
-      "port_type": "seaport",
-      "port_consolidated": "Jacksonville",
-      "port_coast": "East",
-      "port_region": "South Atlantic",
-      "latitude": 27.6506,
-      "longitude": -80.4128,
-      "census_alias_of": "1803"
-    },
-    "1825": {
-      "port_code": "1825",
-      "sked_d_name": "MOBILE, AL",
-      "cbp_name": "Mobile, Alabama",
-      "state": "AL",
-      "district_code": "19",
-      "district_name": "MOBILE, AL",
-      "port_type": "seaport",
-      "port_consolidated": "Mobile",
-      "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 30.4061,
-      "longitude": -86.6186,
-      "census_alias_of": "1901"
-    },
-    "1828": {
-      "port_code": "1828",
-      "sked_d_name": "ORLANDO, FL",
-      "cbp_name": "Orlando, Florida",
-      "state": "FL",
-      "district_code": "18",
-      "district_name": "TAMPA, FL",
-      "port_type": "inland",
-      "port_consolidated": "Orlando, Florida",
-      "port_coast": "Inland",
-      "port_region": "South Atlantic",
-      "latitude": 27.7613,
-      "longitude": -82.6272,
-      "census_alias_of": "1808"
-    },
-    "1831": {
-      "port_code": "1831",
-      "sked_d_name": "JACKSONVILLE, FL",
-      "cbp_name": "Jacksonville, Florida",
-      "state": "FL",
-      "district_code": "18",
-      "district_name": "TAMPA, FL",
-      "port_type": "seaport",
-      "port_consolidated": "Jacksonville",
-      "port_coast": "East",
-      "port_region": "South Atlantic",
-      "latitude": 28.0836,
-      "longitude": -80.6081,
-      "census_alias_of": "1803"
-    },
-    "2009": {
-      "port_code": "2009",
-      "sked_d_name": "MORGAN CITY, LA",
-      "cbp_name": "Morgan City, Louisiana",
-      "state": "LA",
-      "district_code": "20",
-      "district_name": "NEW ORLEANS, LA",
-      "port_type": "seaport",
-      "port_consolidated": "Morgan City",
-      "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 30.0459,
-      "longitude": -90.4612,
-      "census_alias_of": "2001"
-    },
-    "2013": {
-      "port_code": "2013",
-      "sked_d_name": "MORGAN CITY, LA",
-      "cbp_name": "Morgan City, Louisiana",
-      "state": "LA",
-      "district_code": "20",
-      "district_name": "NEW ORLEANS, LA",
-      "port_type": "seaport",
-      "port_consolidated": "Morgan City",
-      "port_coast": "Gulf",
-      "port_region": "Gulf East",
-      "latitude": 29.8783,
-      "longitude": -89.8992,
-      "census_alias_of": "2001"
-    },
-    "2014": {
-      "port_code": "2014",
-      "sked_d_name": "MEMPHIS, TN",
-      "cbp_name": "Memphis, Tennessee",
-      "state": "TN",
-      "district_code": "20",
-      "district_name": "NEW ORLEANS, LA",
-      "port_type": "inland",
-      "port_consolidated": "Memphis, Tennessee",
-      "port_coast": "Inland",
-      "port_region": "Mississippi River",
-      "latitude": 30.0511,
-      "longitude": -90.6898,
-      "census_alias_of": "2006"
-    },
-    "2105": {
-      "port_code": "2105",
-      "sked_d_name": "SABINE, TX",
-      "cbp_name": "Sabine, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 29.7604,
-      "longitude": -95.3698,
-      "census_alias_of": "2102"
-    },
-    "2106": {
-      "port_code": "2106",
-      "sked_d_name": "PORT ARTHUR, TX",
-      "cbp_name": "Port Arthur, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 28.6475,
-      "longitude": -96.6053,
-      "census_alias_of": "2101"
-    },
-    "2107": {
-      "port_code": "2107",
-      "sked_d_name": "PORT ARTHUR, TX",
-      "cbp_name": "Port Arthur, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 27.5836,
-      "longitude": -97.3879,
-      "census_alias_of": "2101"
-    },
-    "2108": {
-      "port_code": "2108",
-      "sked_d_name": "BEAUMONT, TX",
-      "cbp_name": "Beaumont, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 29.8848,
-      "longitude": -93.9207,
-      "census_alias_of": "2104"
-    },
-    "2109": {
-      "port_code": "2109",
-      "sked_d_name": "SABINE, TX",
-      "cbp_name": "Sabine, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 29.3849,
-      "longitude": -94.9049,
-      "census_alias_of": "2102"
-    },
-    "2110": {
-      "port_code": "2110",
-      "sked_d_name": "SABINE, TX",
-      "cbp_name": "Sabine, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 28.953,
-      "longitude": -95.3597,
-      "census_alias_of": "2102"
-    },
-    "2112": {
-      "port_code": "2112",
-      "sked_d_name": "BEAUMONT, TX",
-      "cbp_name": "Beaumont, Texas",
-      "state": "TX",
-      "district_code": "21",
-      "district_name": "PORT ARTHUR, TX",
-      "port_type": "seaport",
-      "port_consolidated": "Sabine River",
-      "port_coast": "Gulf",
-      "port_region": "North Texas",
-      "latitude": 30.093,
-      "longitude": -93.7366,
-      "census_alias_of": "2104"
-    },
-    "3903": {
-      "port_code": "3903",
-      "sked_d_name": "CHICAGO, IL",
-      "cbp_name": "Chicago, Illinois, including O’Hare International Airport",
-      "state": "IL",
-      "district_code": "39",
-      "district_name": "CHICAGO, IL",
-      "port_type": "seaport",
-      "port_consolidated": "Chicago",
-      "port_coast": "Great Lakes",
-      "port_region": "Great Lakes",
-      "latitude": 43.5945,
-      "longitude": -83.8889,
-      "census_alias_of": "3901"
-    },
-    "3904": {
-      "port_code": "3904",
-      "sked_d_name": "DAYTON, OH",
-      "cbp_name": "Dayton, Ohio",
-      "state": "OH",
-      "district_code": "41",
-      "district_name": "CLEVELAND, OH",
-      "port_type": "inland",
-      "port_consolidated": "Dayton, Ohio",
-      "port_coast": "Great Lakes",
-      "port_region": "Great Lakes",
-      "latitude": 46.4953,
-      "longitude": -84.3453,
-      "census_alias_of": "4104"
-    },
-    "3906": {
-      "port_code": "3906",
-      "sked_d_name": "DAYTON, OH",
-      "cbp_name": "Dayton, Ohio",
-      "state": "OH",
-      "district_code": "41",
-      "district_name": "CLEVELAND, OH",
-      "port_type": "inland",
-      "port_consolidated": "Dayton, Ohio",
-      "port_coast": "Great Lakes",
-      "port_region": "Great Lakes",
-      "latitude": 46.5436,
-      "longitude": -87.3954,
-      "census_alias_of": "4104"
-    },
-    "4301": {
-      "port_code": "4301",
-      "sked_d_name": "ERIE, PA",
-      "cbp_name": "Erie, Pennsylvania",
-      "state": "PA",
-      "district_code": "41",
-      "district_name": "CLEVELAND, OH",
-      "port_type": "seaport",
-      "port_consolidated": "Cleveland-Toledo",
-      "port_coast": "Great Lakes",
-      "port_region": "Great Lakes",
-      "latitude": 44.9778,
-      "longitude": -93.265,
-      "census_alias_of": "4106"
-    },
-    "4302": {
-      "port_code": "4302",
-      "sked_d_name": "ERIE, PA",
-      "cbp_name": "Erie, Pennsylvania",
-      "state": "PA",
-      "district_code": "41",
-      "district_name": "CLEVELAND, OH",
-      "port_type": "seaport",
-      "port_consolidated": "Cleveland-Toledo",
-      "port_coast": "Great Lakes",
-      "port_region": "Great Lakes",
-      "latitude": 46.7867,
-      "longitude": -92.1005,
-      "census_alias_of": "4106"
-    },
-    "3107": {
-      "port_code": "3107",
-      "sked_d_name": "SITKA, AK",
-      "cbp_name": "Sitka, Alaska",
-      "state": "AK",
-      "district_code": "31",
-      "district_name": "ANCHORAGE, AK",
-      "port_type": "seaport",
-      "port_consolidated": "Alaska",
-      "port_coast": "Alaska/US Islands",
-      "port_region": "Alaska/US Islands",
-      "latitude": 60.5544,
-      "longitude": -151.2583,
-      "census_alias_of": "3115"
-    },
-    "3128": {
-      "port_code": "3128",
-      "sked_d_name": "JUNEAU, AK",
-      "cbp_name": "Juneau, Alaska",
-      "state": "AK",
-      "district_code": "31",
-      "district_name": "ANCHORAGE, AK",
-      "port_type": "seaport",
-      "port_consolidated": "Alaska",
-      "port_coast": "Alaska/US Islands",
-      "port_region": "Alaska/US Islands",
-      "latitude": 60.105,
-      "longitude": -149.4383,
-      "census_alias_of": "3101"
     }
   },
   "crosswalks": {
@@ -8336,12 +7914,10 @@
         "3104",
         "3105",
         "3106",
-        "3107",
         "3111",
         "3115",
         "3124",
         "3126",
-        "3128",
         "3181",
         "3195",
         "3196"
@@ -8389,7 +7965,6 @@
         "0406",
         "0407",
         "0408",
-        "0409",
         "0416",
         "0417",
         "0481"
@@ -8413,7 +7988,6 @@
         "1602"
       ],
       "Charleston, West Virginia": [
-        "1402",
         "1409"
       ],
       "Charlotte, North Carolina": [
@@ -8424,7 +7998,6 @@
       ],
       "Chicago": [
         "3901",
-        "3903",
         "3905",
         "3909",
         "3910",
@@ -8450,9 +8023,7 @@
         "4184",
         "4196",
         "4197",
-        "4198",
-        "4301",
-        "4302"
+        "4198"
       ],
       "Columbia River": [
         "2901",
@@ -8499,8 +8070,6 @@
         "3908"
       ],
       "Dayton, Ohio": [
-        "3904",
-        "3906",
         "4104"
       ],
       "Del Rio": [
@@ -8571,8 +8140,7 @@
         "3411"
       ],
       "Fernandina Beach": [
-        "1805",
-        "1806"
+        "1805"
       ],
       "Fresno, California": [
         "2803"
@@ -8642,9 +8210,7 @@
         "3604"
       ],
       "Jacksonville": [
-        "1803",
-        "1815",
-        "1831"
+        "1803"
       ],
       "Kansas City, Missouri": [
         "4501"
@@ -8710,8 +8276,7 @@
         "8000"
       ],
       "Memphis, Tennessee": [
-        "2006",
-        "2014"
+        "2006"
       ],
       "Miami": [
         "5206"
@@ -8733,16 +8298,12 @@
         "3501"
       ],
       "Mobile": [
-        "1811",
-        "1825",
         "1901",
         "1905",
         "1906"
       ],
       "Morgan City": [
-        "2001",
-        "2009",
-        "2013"
+        "2001"
       ],
       "Nashville, Tennessee": [
         "2007"
@@ -8754,15 +8315,11 @@
         "2095"
       ],
       "New York": [
-        "0601",
-        "0603",
-        "0605",
         "1001",
         "1002",
         "1003",
         "1004",
         "1012",
-        "1013",
         "1068",
         "1069",
         "1071",
@@ -8882,8 +8439,7 @@
         "1809"
       ],
       "Orlando, Florida": [
-        "1808",
-        "1828"
+        "1808"
       ],
       "Otay Mesa": [
         "2506"
@@ -8947,8 +8503,7 @@
         "0127",
         "0131",
         "0152",
-        "0182",
-        "1014"
+        "0182"
       ],
       "Preclearance": [
         "7400",
@@ -8997,14 +8552,7 @@
         "2101",
         "2102",
         "2103",
-        "2104",
-        "2105",
-        "2106",
-        "2107",
-        "2108",
-        "2109",
-        "2110",
-        "2112"
+        "2104"
       ],
       "Salt Lake City, Utah": [
         "3303"

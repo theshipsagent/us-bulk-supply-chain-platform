@@ -284,151 +284,153 @@ def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 # ---------------------------------------------------------------------------
 
 def build_seaport_coordinates() -> dict[str, tuple[float, float]]:
-    """port_code -> (lat, lon) for major US seaports.
+    """port_code -> (lat, lon) for major US ports.
+
+    Keys are Census Schedule D 4-digit codes (the same codes used in
+    port_reference.csv and port_geo_dictionary.json).
 
     Coordinates are representative centroids of each port area.
-    Coverage: ~120 Census Schedule D seaports across all US coasts.
+    Coverage: ~115 ports across all US coasts, Great Lakes, and rivers.
     """
     return {
-        # ----- Maine / New Hampshire -----
+        # ----- Maine -----
         "0101": (43.6591, -70.2568),   # Portland, ME
         "0102": (44.8012, -68.7681),   # Bangor, ME
         "0103": (44.9062, -66.9856),   # Eastport, ME
         "0111": (43.9108, -69.8208),   # Bath, ME
         "0112": (44.3876, -68.2039),   # Bar Harbor, ME
         "0121": (44.1037, -69.1089),   # Rockland, ME
-        "0131": (43.0718, -70.7626),   # Portsmouth, NH
         "0152": (44.4609, -68.9226),   # Searsport, ME
+        # ----- New Hampshire -----
+        "0131": (43.0718, -70.7626),   # Portsmouth, NH
         # ----- Massachusetts -----
         "0401": (42.3601, -71.0589),   # Boston, MA
-        "0402": (41.6362, -70.9342),   # New Bedford, MA
-        "0404": (41.5201, -70.6693),   # Woods Hole, MA
-        "0409": (41.7060, -71.1554),   # Fall River, MA
-        # ----- Rhode Island / Connecticut -----
-        "0501": (41.8236, -71.4222),   # Providence, RI
-        "0502": (41.4901, -71.3128),   # Newport, RI
-        "0601": (41.3083, -72.9279),   # New Haven, CT
-        "0603": (41.1743, -73.2013),   # Bridgeport, CT
-        "0605": (41.3523, -72.0990),   # New London, CT
-        # ----- New York / New Jersey -----
+        "0405": (41.6362, -70.9342),   # New Bedford, MA
+        "0407": (41.7060, -71.1554),   # Fall River, MA
+        # ----- Rhode Island -----
+        "0501": (41.4901, -71.3128),   # Newport, RI
+        "0502": (41.8236, -71.4222),   # Providence, RI
+        # ----- Connecticut -----
+        "0410": (41.1743, -73.2013),   # Bridgeport, CT
+        "0412": (41.3083, -72.9279),   # New Haven, CT
+        "0413": (41.3523, -72.0990),   # New London, CT
+        # ----- New York -----
+        "0901": (42.8864, -78.8784),   # Buffalo-Niagara Falls, NY
+        "0903": (43.2610, -77.6109),   # Rochester, NY
         "1001": (40.6892, -74.0445),   # New York, NY (Port of NY/NJ)
-        "1003": (40.9176, -72.6351),   # Sag Harbor, NY
-        "1012": (42.8864, -78.8784),   # Buffalo, NY
-        "1013": (43.2610, -77.6109),   # Rochester, NY
-        "1014": (44.6953, -73.4557),   # Champlain, NY
-        "1101": (39.9526, -75.1652),   # Philadelphia, PA/NJ
-        # ----- Delaware / Maryland -----
-        "1301": (39.2904, -76.6122),   # Baltimore, MD
-        "1303": (39.7391, -75.5398),   # Wilmington, DE
-        # ----- Virginia -----
-        "1401": (36.8468, -76.2852),   # Norfolk, VA
-        "1402": (37.5407, -77.4360),   # Richmond, VA
-        "1409": (36.9769, -76.4281),   # Newport News, VA
+        # ----- Delaware River -----
+        "1101": (39.9526, -75.1652),   # Philadelphia, PA
+        "1103": (39.7391, -75.5398),   # Wilmington, DE
+        # ----- Maryland -----
+        "1303": (39.2904, -76.6122),   # Baltimore, MD
+        # ----- Virginia (Hampton Roads) -----
+        "1297": (37.5407, -77.4360),   # Richmond, VA
+        "1401": (36.8468, -76.2852),   # Norfolk-Newport News, VA
         # ----- North Carolina -----
         "1501": (34.2257, -77.9447),   # Wilmington, NC
-        "1502": (34.7178, -76.6585),   # Morehead City, NC
+        "1511": (34.7178, -76.6585),   # Beaufort-Morehead City, NC
         # ----- South Carolina -----
         "1601": (32.7765, -79.9311),   # Charleston, SC
-        "1604": (32.2163, -80.7526),   # Port Royal, SC
         # ----- Georgia -----
+        "1701": (31.1499, -81.4915),   # Brunswick, GA
         "1703": (32.0809, -81.0912),   # Savannah, GA
-        "1704": (31.1499, -81.4915),   # Brunswick, GA
-        # ----- Florida -----
-        "1801": (30.3322, -81.6557),   # Jacksonville, FL
-        "1803": (28.4001, -80.6228),   # Cape Canaveral, FL
-        "1805": (25.7617, -80.1918),   # Miami, FL
-        "1806": (24.5551, -81.7800),   # Key West, FL
-        "1808": (27.9506, -82.4572),   # Tampa, FL
-        "1811": (30.4383, -87.2110),   # Pensacola, FL
-        "1815": (27.6506, -80.4128),   # Fort Pierce, FL
-        "1818": (26.6323, -81.9429),   # Fort Myers, FL
-        "1819": (26.1003, -80.1096),   # Port Everglades, FL
-        "1820": (26.7153, -80.0534),   # West Palm Beach, FL
-        "1825": (30.4061, -86.6186),   # Panama City, FL
-        "1828": (27.7613, -82.6272),   # St. Petersburg, FL
-        "1831": (28.0836, -80.6081),   # Melbourne, FL
+        # ----- Florida (Gulf / North Atlantic) -----
+        "1801": (27.9506, -82.4572),   # Tampa, FL
+        "1803": (30.3322, -81.6557),   # Jacksonville, FL
+        "1816": (28.4001, -80.6228),   # Port Canaveral, FL
+        "1818": (30.1588, -85.6602),   # Panama City, FL
+        "1819": (30.4383, -87.2110),   # Pensacola, FL
+        "1821": (27.6364, -82.5621),   # Port Manatee, FL
+        # ----- Florida (South — district 52) -----
+        "5201": (25.7617, -80.1918),   # Miami, FL
+        "5202": (24.5551, -81.7800),   # Key West, FL
+        "5203": (26.1003, -80.1096),   # Port Everglades, FL
+        "5204": (26.7153, -80.0534),   # West Palm Beach, FL
+        "5205": (27.6506, -80.4128),   # Fort Pierce, FL
         # ----- Alabama -----
         "1901": (30.6954, -88.0399),   # Mobile, AL
         # ----- Mississippi -----
-        "1903": (30.3960, -89.0928),   # Gulfport, MS
-        "1904": (30.3469, -89.3293),   # Pascagoula, MS
-        # ----- Louisiana -----
-        "2001": (29.9511, -90.0715),   # New Orleans, LA
-        "2002": (30.2266, -93.2174),   # Lake Charles, LA
-        "2004": (29.3105, -89.3596),   # Port Sulphur, LA
-        "2006": (29.7633, -90.7600),   # Morgan City, LA
-        "2009": (30.0459, -90.4612),   # Port of South Louisiana
-        "2011": (30.4508, -91.1874),   # Baton Rouge, LA
-        "2013": (29.8783, -89.8992),   # Port of Plaquemines
-        "2014": (30.0511, -90.6898),   # Gramercy, LA
-        # ----- Texas -----
-        "2101": (27.8006, -97.3964),   # Corpus Christi, TX
-        "2102": (29.3013, -94.7977),   # Galveston, TX
-        "2103": (26.0710, -97.4981),   # Brownsville, TX
-        "2104": (29.8611, -93.9388),   # Port Arthur, TX
-        "2105": (29.7604, -95.3698),   # Houston, TX
-        "2106": (28.6475, -96.6053),   # Port Lavaca, TX
-        "2107": (27.5836, -97.3879),   # Ingleside, TX
-        "2108": (29.8848, -93.9207),   # Beaumont, TX
-        "2109": (29.3849, -94.9049),   # Texas City, TX
-        "2110": (28.9530, -95.3597),   # Freeport, TX
-        "2112": (30.0930, -93.7366),   # Orange, TX
-        # ----- Great Lakes -----
-        "3801": (41.4993, -81.6944),   # Cleveland, OH
-        "3802": (41.6528, -83.5379),   # Toledo, OH
-        "3803": (41.8940, -80.7682),   # Ashtabula, OH
-        "3804": (41.4498, -82.7068),   # Sandusky, OH
-        "3807": (41.4525, -82.1824),   # Lorain/Huron, OH
-        "3901": (42.3314, -83.0458),   # Detroit, MI
-        "3903": (43.5945, -83.8889),   # Saginaw/Bay City, MI
-        "3904": (46.4953, -84.3453),   # Sault Ste. Marie, MI
-        "3906": (46.5436, -87.3954),   # Marquette, MI
-        "4101": (42.8864, -87.8210),   # Milwaukee, WI
-        "4104": (44.5133, -87.9806),   # Green Bay, WI
-        "4106": (46.5965, -90.8846),   # Superior, WI
-        "4301": (44.9778, -93.2650),   # Minneapolis, MN
-        "4302": (46.7867, -92.1005),   # Duluth, MN
-        "4601": (41.6528, -87.5389),   # Chicago, IL
-        "4901": (42.1292, -80.0851),   # Erie, PA
-        # ----- West Coast -----
-        "2704": (32.7157, -117.1611),  # San Diego, CA
-        "2709": (33.7175, -118.2620),  # Los Angeles/Long Beach, CA
-        "2712": (37.7749, -122.4194),  # San Francisco, CA
-        "2713": (38.5816, -121.4944),  # Sacramento, CA
-        "2719": (36.6002, -121.8947),  # Monterey, CA
-        "2720": (34.4074, -119.6921),  # Santa Barbara, CA
-        "2722": (40.8021, -124.1637),  # Eureka, CA
-        "2801": (45.5051, -122.6750),  # Portland, OR
-        "2809": (43.3665, -124.2179),  # Coos Bay, OR
-        "2811": (46.1879, -123.8313),  # Astoria, OR
+        "1902": (30.3674, -89.0928),   # Gulfport, MS
+        "1903": (30.3585, -88.5561),   # Pascagoula, MS
+        # ----- Louisiana (Lower Mississippi River) -----
+        "2001": (29.6994, -91.2068),   # Morgan City, LA
+        "2002": (29.9511, -90.0715),   # New Orleans, LA
+        "2004": (30.4508, -91.1874),   # Baton Rouge, LA
+        "2010": (30.0511, -90.6898),   # Gramercy, LA
+        "2017": (30.2266, -93.2174),   # Lake Charles, LA
+        # ----- Texas (Sabine River) -----
+        "2101": (29.8611, -93.9388),   # Port Arthur, TX
+        "2102": (29.7244, -93.8700),   # Sabine, TX
+        "2103": (30.0930, -93.7366),   # Orange, TX
+        "2104": (30.0802, -94.1266),   # Beaumont, TX
+        # ----- Texas (Brownsville) -----
+        "2301": (26.0710, -97.4981),   # Brownsville, TX
+        # ----- Texas (Houston / Gulf — district 53) -----
+        "5301": (29.7604, -95.3698),   # Houston, TX
+        "5306": (29.3849, -94.9049),   # Texas City, TX
+        "5310": (29.3013, -94.7977),   # Galveston, TX
+        "5311": (28.9530, -95.3597),   # Freeport, TX
+        "5312": (27.8006, -97.3964),   # Corpus Christi, TX
+        "5313": (28.6475, -96.6053),   # Port Lavaca, TX
+        # ----- California (San Diego — district 25) -----
+        "2501": (32.7157, -117.1611),  # San Diego, CA
+        # ----- California (LA / Long Beach — district 27) -----
+        "2704": (33.7400, -118.2700),  # Los Angeles, CA
+        "2709": (33.7490, -118.2162),  # Long Beach, CA
+        # ----- California (San Francisco Bay — district 28) -----
+        "2802": (40.8021, -124.1637),  # Eureka, CA
+        "2805": (36.6002, -121.8947),  # Monterey, CA
+        "2809": (37.7749, -122.4194),  # San Francisco, CA
+        "2810": (37.9577, -121.2908),  # Stockton, CA
+        "2811": (37.7957, -122.2788),  # Oakland, CA
+        # ----- Oregon (Columbia River — district 29) -----
+        "2901": (46.1879, -123.8313),  # Astoria, OR
+        "2903": (43.3665, -124.2179),  # Coos Bay, OR
+        "2904": (45.5051, -122.6750),  # Portland, OR
+        # ----- Washington (Columbia River — district 29) -----
+        "2905": (46.1479, -122.9135),  # Longview, WA
+        "2908": (45.6326, -122.6717),  # Vancouver, WA
+        "2909": (46.0326, -122.8417),  # Kalama, WA
+        # ----- Washington (Puget Sound — district 30) -----
         "3001": (47.6062, -122.3321),  # Seattle, WA
         "3002": (47.2529, -122.4443),  # Tacoma, WA
-        "3005": (48.7519, -122.4787),  # Bellingham, WA
-        "3006": (46.9765, -123.8471),  # Grays Harbor, WA
-        "3007": (46.1479, -122.9135),  # Longview, WA
-        "3009": (48.1106, -123.4307),  # Port Angeles, WA
-        "3010": (46.0326, -122.8417),  # Kalama, WA
-        "3012": (45.6326, -122.6717),  # Vancouver, WA
-        # ----- Alaska -----
-        "3101": (61.2181, -149.9003),  # Anchorage, AK
-        "3103": (58.3005, -134.4197),  # Juneau, AK
-        "3104": (55.3422, -131.6461),  # Ketchikan, AK
-        "3105": (57.7900, -152.4072),  # Kodiak, AK
-        "3107": (60.5544, -151.2583),  # Kenai, AK
-        "3115": (59.6426, -151.5483),  # Homer, AK
-        "3126": (61.1307, -146.3483),  # Valdez, AK
-        "3128": (60.1050, -149.4383),  # Seward, AK
-        # ----- Hawaii -----
+        "3003": (46.9765, -123.8471),  # Aberdeen-Hoquiam, WA (Grays Harbor)
+        "3006": (47.9790, -122.2021),  # Everett, WA
+        "3007": (48.1106, -123.4307),  # Port Angeles, WA
+        "3010": (48.5126, -122.6127),  # Anacortes, WA
+        # ----- Alaska (district 31) -----
+        "3101": (58.3005, -134.4197),  # Juneau, AK
+        "3102": (55.3422, -131.6461),  # Ketchikan, AK
+        "3126": (61.2181, -149.9003),  # Anchorage, AK
+        # ----- Hawaii (district 32) -----
         "3201": (21.3069, -157.8583),  # Honolulu, HI
-        "3202": (20.8893, -156.4729),  # Kahului, HI
-        "3203": (21.9544, -159.3674),  # Nawiliwili, HI
-        "3204": (19.7297, -155.0900),  # Hilo, HI
-        # ----- Puerto Rico / Virgin Islands -----
-        "4907": (18.4655, -66.1057),   # San Juan, PR
+        "3202": (19.7297, -155.0900),  # Hilo, HI
+        "3203": (20.8893, -156.4729),  # Kahului, HI
+        "3204": (21.9544, -159.3674),  # Nawiliwili, HI
+        # ----- Great Lakes: Minnesota / Wisconsin -----
+        "3501": (44.9778, -93.2650),   # Minneapolis-St. Paul, MN
+        "3510": (46.7867, -92.1005),   # Duluth, MN - Superior, WI
+        "3701": (43.0389, -87.9065),   # Milwaukee, WI
+        "3703": (44.5133, -87.9806),   # Green Bay, WI
+        # ----- Great Lakes: Michigan -----
+        "3801": (42.3314, -83.0458),   # Detroit, MI
+        "3804": (43.5945, -83.8889),   # Saginaw/Bay City, MI
+        "3809": (46.5436, -87.3954),   # Marquette, MI
+        # ----- Great Lakes: Illinois / Indiana -----
+        "3901": (41.6528, -87.5389),   # Chicago, IL
+        # ----- Great Lakes: Ohio / Pennsylvania -----
+        "4101": (41.4993, -81.6944),   # Cleveland, OH
+        "4105": (41.6528, -83.5379),   # Toledo-Sandusky, OH
+        "4106": (42.1292, -80.0851),   # Erie, PA
+        "4121": (41.4525, -82.1824),   # Lorain, OH
+        "4122": (41.8940, -80.7682),   # Ashtabula/Conneaut, OH
+        # ----- Puerto Rico -----
+        "4907": (18.2208, -67.1539),   # Mayaguez, PR
         "4908": (18.0008, -66.6141),   # Ponce, PR
-        "4909": (18.2208, -67.1539),   # Mayaguez, PR
-        "5101": (18.3358, -64.9307),   # St. Thomas, VI
-        "5102": (17.7466, -64.7024),   # St. Croix, VI
+        "4909": (18.4655, -66.1057),   # San Juan, PR
+        # ----- Virgin Islands -----
+        "5101": (18.3358, -64.9307),   # Charlotte Amalie (St. Thomas), VI
+        "5104": (17.7466, -64.7024),   # Christiansted (St. Croix), VI
     }
 
 
