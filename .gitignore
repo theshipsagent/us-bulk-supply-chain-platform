@@ -145,6 +145,10 @@ task_usace_entrance_clearance/
 02_TOOLSETS/census_trade/data/extracted/
 02_TOOLSETS/census_trade/data/zips/
 
+# --- Site master registry: TIGER/Census shapefiles (80MB+) ---
+02_TOOLSETS/site_master_registry/data/reference/cb_2020_us_county/
+02_TOOLSETS/site_master_registry/data/reference/tl_2024_us_cd119/
+
 # --- PDFs in reports (keep generated HTML, exclude large PDFs) ---
 04_REPORTS/*.pdf
 03_COMMODITY_MODULES/cement/reports/published/*.pdf
