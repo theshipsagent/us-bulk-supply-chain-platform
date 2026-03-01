@@ -1,0 +1,41 @@
+## Oil & Gas Commodity Module Configuration
+## US Bulk Supply Chain Reporting Platform v1.0.0
+
+module:
+  name: "Oil & Gas (Petroleum)"
+  version: "1.0.0"
+  status: "active"
+
+naics_codes:
+  primary:
+    - "324110"   # Petroleum Refineries
+    - "324121"   # Asphalt Paving Mixture Manufacturing
+    - "324191"   # Petroleum Lubricating Oil and Grease Manufacturing
+  secondary:
+    - "424710"   # Petroleum Bulk Stations and Terminals
+    - "486110"   # Pipeline Transportation of Crude Oil
+    - "486910"   # Pipeline Transportation of Refined Products
+
+hts_codes:
+  crude_oil: {"2709.00": "Petroleum oils, crude"}
+  refined: {"2710.12": "Light oils (gasoline, naphtha)", "2710.19": "Other (diesel, jet fuel, fuel oil)"}
+  lpg: {"2711.12": "Propane", "2711.13": "Butanes"}
+  asphalt: {"2713.20": "Petroleum bitumen (asphalt)"}
+
+market:
+  us_refining_capacity_bpcd: 18423493
+  num_operable_refineries: 126
+  states_with_refineries: 30
+  capacity_utilization_pct: 90
+  crude_production_bpd: 13300000
+  crude_imports_bpd: 6500000
+
+toolsets:
+  barge_cost_model: {use: "petroleum barge/tanker routing"}
+  rail_cost_model: {use: "crude oil unit train costing", config: {stcc: "1311", car_type: "tank_car_dot117"}}
+  facility_registry: {use: "EPA FRS refinery/terminal locations", config: {naics_filter: ["324110", "424710"]}}
+  vessel_intelligence: {use: "Panjiva crude/product import tracking", config: {hts_filter: ["2709", "2710"]}}
+
+data_sources:
+  eia: {name: "EIA Refinery Capacity Report", records: 126}
+  epa_frs: {records_in_registry: 1048}

@@ -1,0 +1,57 @@
+## Steel Commodity Module Configuration
+## US Bulk Supply Chain Reporting Platform v1.0.0
+
+module:
+  name: "Steel (Flat-Rolled & Plate)"
+  version: "1.0.0"
+  status: "active"
+
+naics_codes:
+  primary:
+    - "331110"   # Iron and Steel Mills and Ferroalloy Manufacturing
+    - "331221"   # Rolled Steel Shape Manufacturing
+  secondary:
+    - "331210"   # Iron and Steel Pipe and Tube Manufacturing
+    - "331222"   # Steel Wire Drawing
+    - "423510"   # Metal Service Centers
+
+hts_codes:
+  hot_rolled: {"7208.25": "HRC pickled >= 4.75mm", "7208.26": "HRC pickled 3-4.75mm", "7208.27": "HRC pickled < 3mm"}
+  cold_rolled: {"7209.16": "CRC 1-3mm", "7209.17": "CRC 0.5-1mm"}
+  coated: {"7210.41": "Corrugated galvanized", "7210.49": "Other galvanized", "7210.61": "Galvalume"}
+  plate: {"7208.51": "Plate > 10mm", "7208.52": "Plate 4.75-10mm"}
+  raw_materials: {"2601.12": "Iron ore pellets", "7204.49": "Ferrous scrap"}
+
+stcc_codes:
+  iron_ore: "1011"
+  steel_mill_products: "3312"
+  steel_sheet_strip: "3316"
+  ferrous_scrap: "4011"
+
+market:
+  us_flat_rolled_capacity_mtpa: 87
+  us_steel_consumption_mtpa: 100
+  eaf_share_pct: 70
+  section_232_tariff_pct: 25
+  num_integrated_mills: 7
+  num_mini_mills: 12
+
+producers:
+  integrated:
+    - {name: "United States Steel", hsm_capacity_kt: 21600}
+    - {name: "Cleveland-Cliffs", hsm_capacity_kt: 19400}
+    - {name: "AM/NS Calvert", hsm_capacity_kt: 5400}
+  mini_mills:
+    - {name: "Nucor Corporation", hsm_capacity_kt: 13300}
+    - {name: "Steel Dynamics Inc.", hsm_capacity_kt: 8800}
+
+toolsets:
+  barge_cost_model: {use: "steel coil/plate barge routing — Great Lakes, Mississippi, Ohio rivers"}
+  rail_cost_model: {use: "steel coil/plate rail distribution", config: {stcc: "3312", car_type: "coil_car"}}
+  facility_registry: {use: "EPA FRS steel mill locations", config: {naics_filter: ["331110", "331221"]}}
+  vessel_intelligence: {use: "Panjiva steel import tracking", config: {hts_filter: ["7208", "7209", "7210"]}}
+  policy_analysis: {use: "Section 232 tariff impacts", config: {tariff_rate: 25}}
+
+data_sources:
+  aist: {file: "market_intelligence/supply_landscape/aist_steel_plants.csv", records: 68}
+  epa_frs: {records_in_registry: 2350}

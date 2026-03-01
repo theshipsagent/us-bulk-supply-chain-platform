@@ -1,0 +1,31 @@
+{
+  "module": "steel",
+  "sources": [
+    {
+      "name": "AIST Directory of Iron and Steel Plants (2021)",
+      "file": "market_intelligence/supply_landscape/aist_steel_plants.csv",
+      "records": 68,
+      "coverage": "All US flat-rolled steel production facilities"
+    },
+    {
+      "name": "EPA FRS",
+      "registry_records": 2350,
+      "naics_filter": [
+        "331110",
+        "331221"
+      ]
+    },
+    {
+      "name": "USGS Iron and Steel",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center"
+    },
+    {
+      "name": "STB Waybill",
+      "stcc_codes": [
+        "3312",
+        "3316",
+        "4011"
+      ]
+    }
+  ]
+}

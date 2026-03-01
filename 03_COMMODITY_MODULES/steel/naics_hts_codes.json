@@ -1,0 +1,54 @@
+{
+  "module": "steel",
+  "naics_codes": {
+    "331110": {
+      "title": "Iron and Steel Mills and Ferroalloy Manufacturing",
+      "primary": true,
+      "registry_count": 2350
+    },
+    "331221": {
+      "title": "Rolled Steel Shape Manufacturing",
+      "primary": true
+    },
+    "331210": {
+      "title": "Iron and Steel Pipe and Tube Manufacturing",
+      "primary": false
+    },
+    "423510": {
+      "title": "Metal Service Centers",
+      "primary": false
+    }
+  },
+  "hts_codes": {
+    "7208.25.00": {
+      "title": "Hot-rolled coil, pickled, >= 4.75mm",
+      "product": "HRC"
+    },
+    "7208.51.00": {
+      "title": "Plate, > 10mm",
+      "product": "Plate"
+    },
+    "7209.16.00": {
+      "title": "Cold-rolled coil, 1-3mm",
+      "product": "CRC"
+    },
+    "7210.49.00": {
+      "title": "Other galvanized",
+      "product": "Galvanized"
+    },
+    "7204.49.00": {
+      "title": "Ferrous scrap",
+      "product": "Scrap"
+    },
+    "2601.12.00": {
+      "title": "Iron ore pellets",
+      "product": "Iron Ore"
+    }
+  },
+  "stcc_codes": {
+    "1011": "Iron ore",
+    "3312": "Steel mill products",
+    "3316": "Cold-rolled steel",
+    "4011": "Ferrous scrap"
+  }
+}

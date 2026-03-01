@@ -669,6 +669,43 @@ def site_registry_map(sector, min_sources, output, open_browser):
         webbrowser.open(f"file://{path.resolve()}")
 
 
+@site_registry.command("dashboard")
+@click.option("--sector", default=None, help="Filter to sector (comma-separated for multiple).")
+@click.option("--min-sources", default=0, type=int, help="Minimum source count.")
+@click.option("--output", default=None, help="Output HTML file path.")
+@click.option("--open", "open_browser", is_flag=True, help="Open in browser after creating.")
+def site_registry_dashboard(sector, min_sources, output, open_browser):
+    """Generate interactive dashboard with search, filter, map, and CSV export."""
+    db_path = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+               / "data" / "site_master.duckdb")
+    if not db_path.exists():
+        click.echo("Error: site_master.duckdb not found.")
+        return
+
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    from src.query import SiteRegistryQuery
+    from src.map_builder import build_registry_dashboard
+
+    sectors = [s.strip() for s in sector.split(",")] if sector else None
+    default_out = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+                   / "data" / "site_master_dashboard.html")
+    out = output or str(default_out)
+
+    query = SiteRegistryQuery(str(db_path))
+    path = build_registry_dashboard(
+        query, out, sectors=sectors, min_sources=min_sources,
+    )
+    query.close()
+
+    click.echo(f"Dashboard saved to {path}")
+    if open_browser:
+        import webbrowser
+        webbrowser.open(f"file://{path.resolve()}")
+
+
 # ---------------------------------------------------------------------------
 # POLICY commands (wired to policy_analysis toolset)
 # ---------------------------------------------------------------------------

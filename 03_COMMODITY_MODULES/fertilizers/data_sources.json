@@ -1,0 +1,33 @@
+{
+  "module": "fertilizers",
+  "sources": [
+    {
+      "name": "Panjiva Fertilizer Trade Manifests",
+      "file": "market_intelligence/trade_flows/panjiva_fertilizer_manifest_2024_2025.xlsx",
+      "records": 150645,
+      "coverage": "US fertilizer imports July 2024 - June 2025"
+    },
+    {
+      "name": "EPA FRS",
+      "registry_records": 186,
+      "naics_filter": [
+        "325311",
+        "325312",
+        "325314"
+      ]
+    },
+    {
+      "name": "Egypt Fertilizer Infrastructure",
+      "file": "market_intelligence/supply_landscape/egypt_fertilizer_infrastructure.geojson",
+      "features": 25
+    },
+    {
+      "name": "USGS Mineral Commodity Summaries",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center"
+    },
+    {
+      "name": "USDA Fertilizer Use and Price",
+      "url": "https://www.ers.usda.gov/data-products/fertilizer-use-and-price/"
+    }
+  ]
+}

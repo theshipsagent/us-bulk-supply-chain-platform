@@ -1,0 +1,78 @@
+## Fertilizers Commodity Module Configuration
+## US Bulk Supply Chain Reporting Platform v1.0.0
+
+module:
+  name: "Fertilizers (Nitrogen, Phosphate, Potash)"
+  version: "1.0.0"
+  status: "active"
+
+naics_codes:
+  primary:
+    - "325311"   # Nitrogenous Fertilizer Manufacturing
+    - "325312"   # Phosphatic Fertilizer Manufacturing
+    - "325314"   # Fertilizer (Mixing Only) Manufacturing
+  secondary:
+    - "212391"   # Potash Mining
+    - "212392"   # Phosphate Rock Mining
+    - "325320"   # Pesticide and Other Agricultural Chemical Manufacturing
+    - "424910"   # Farm Supplies Merchant Wholesalers
+
+hts_codes:
+  nitrogenous:
+    "3102.10": "Urea"
+    "3102.30": "Ammonium nitrate"
+    "3102.80": "UAN solutions"
+    "2814.10": "Anhydrous ammonia"
+  phosphatic:
+    "3103.11": "Superphosphates (>= 35% P2O5)"
+    "3103.90": "Other phosphatic fertilizers"
+  potassic:
+    "3104.20": "Potassium chloride (MOP)"
+    "3104.30": "Potassium sulphate (SOP)"
+  compound:
+    "3105.20": "NPK fertilizers"
+    "3105.30": "Diammonium phosphate (DAP)"
+    "3105.40": "Monoammonium phosphate (MAP)"
+
+stcc_codes:
+  phosphatic: "2874"
+  mixed_fertilizers: "2875"
+  agricultural_chemicals: "2879"
+
+market:
+  us_consumption_mtpa: {nitrogen: 13.5, phosphate: 4.5, potash: 5.0, total: 23.0}
+  us_production_mtpa: {nitrogen: 10.0, phosphate: 3.8, potash: 0.5, total: 14.3}
+  import_dependence_pct: {nitrogen: 25, phosphate: 15, potash: 90}
+
+producers:
+  nitrogen:
+    - {name: "CF Industries", capacity_mtpa: 5.0, plants: ["Donaldsonville LA", "Port Neal IA"]}
+    - {name: "Nutrien", capacity_mtpa: 3.5, plants: ["Kennewick WA", "Lima OH", "Geismar LA"]}
+    - {name: "Koch Fertilizer", capacity_mtpa: 2.0, plants: ["Enid OK", "Dodge City KS"]}
+  phosphate:
+    - {name: "The Mosaic Company", capacity_mtpa: 3.0, plants: ["New Wales FL", "Bartow FL", "Uncle Sam LA"]}
+    - {name: "Nutrien", capacity_mtpa: 0.5, plants: ["Aurora NC", "White Springs FL"]}
+  potash:
+    - {name: "Nutrien", notes: "Primary US supplier via Saskatchewan mines"}
+    - {name: "Intrepid Potash", plants: ["Carlsbad NM", "Moab UT"]}
+
+import_origins:
+  nitrogen: [{country: "Trinidad & Tobago", share_pct: 30}, {country: "Canada", share_pct: 20}, {country: "Russia", share_pct: 12}]
+  phosphate: [{country: "Morocco", share_pct: 45}, {country: "Russia", share_pct: 15}]
+  potash: [{country: "Canada", share_pct: 85}]
+
+import_ports:
+  - {port: "Tampa FL", commodities: ["phosphate (export)", "potash (import)", "ammonia"]}
+  - {port: "New Orleans LA", commodities: ["urea", "DAP", "UAN", "ammonia"]}
+  - {port: "Houston TX", commodities: ["ammonia", "urea", "UAN"]}
+  - {port: "Savannah GA", commodities: ["urea", "potash"]}
+
+toolsets:
+  barge_cost_model: {use: "fertilizer barge routing — Mississippi River system"}
+  rail_cost_model: {use: "fertilizer rail distribution", config: {stcc: "2874", car_type: "covered_hopper"}}
+  facility_registry: {use: "EPA FRS fertilizer plant locations", config: {naics_filter: ["325311", "325312"]}}
+  vessel_intelligence: {use: "Panjiva fertilizer import tracking", config: {hts_filter: ["3102", "3103", "3104", "3105"]}}
+
+data_sources:
+  panjiva: {file: "market_intelligence/trade_flows/panjiva_fertilizer_manifest_2024_2025.xlsx", records: 150645}
+  epa_frs: {records_in_registry: 186}

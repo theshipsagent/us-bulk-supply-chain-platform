@@ -1,0 +1,71 @@
+{
+  "module": "fertilizers",
+  "naics_codes": {
+    "325311": {
+      "title": "Nitrogenous Fertilizer Manufacturing",
+      "primary": true,
+      "registry_count": 84
+    },
+    "325312": {
+      "title": "Phosphatic Fertilizer Manufacturing",
+      "primary": true,
+      "registry_count": 111
+    },
+    "325314": {
+      "title": "Fertilizer (Mixing Only) Manufacturing",
+      "primary": true
+    },
+    "212391": {
+      "title": "Potash Mining",
+      "primary": false
+    },
+    "212392": {
+      "title": "Phosphate Rock Mining",
+      "primary": false
+    },
+    "325320": {
+      "title": "Pesticide and Other Agricultural Chemical Manufacturing",
+      "primary": false,
+      "registry_count": 89
+    }
+  },
+  "hts_codes": {
+    "3102.10.00": {
+      "title": "Urea",
+      "nutrient": "N"
+    },
+    "3102.30.00": {
+      "title": "Ammonium nitrate",
+      "nutrient": "N"
+    },
+    "3102.80.00": {
+      "title": "UAN solutions",
+      "nutrient": "N"
+    },
+    "2814.10.00": {
+      "title": "Anhydrous ammonia",
+      "nutrient": "N"
+    },
+    "3103.11.00": {
+      "title": "Superphosphates (>= 35% P2O5)",
+      "nutrient": "P"
+    },
+    "3104.20.00": {
+      "title": "Potassium chloride (MOP)",
+      "nutrient": "K"
+    },
+    "3105.30.00": {
+      "title": "Diammonium phosphate (DAP)",
+      "nutrient": "NP"
+    },
+    "3105.40.00": {
+      "title": "Monoammonium phosphate (MAP)",
+      "nutrient": "NP"
+    }
+  },
+  "stcc_codes": {
+    "2874": "Phosphatic fertilizers",
+    "2875": "Mixed fertilizers",
+    "2879": "Agricultural chemicals NEC"
+  }
+}

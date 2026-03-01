@@ -1,0 +1,28 @@
+{
+  "module": "oil_gas",
+  "sources": [
+    {
+      "name": "EIA Refinery Capacity Report 2025",
+      "records": 126,
+      "coverage": "All US operable refineries"
+    },
+    {
+      "name": "EPA FRS",
+      "registry_records": 1048,
+      "naics_filter": [
+        "324110",
+        "324121",
+        "324191",
+        "424710"
+      ]
+    },
+    {
+      "name": "BNSF Petroleum Knowledge Bank",
+      "path": "02_TOOLSETS/rail_intelligence/knowledge_bank/BNSF/commodities/petroleum.md"
+    },
+    {
+      "name": "CN Petroleum Knowledge Bank",
+      "path": "02_TOOLSETS/rail_intelligence/knowledge_bank/CN/commodities/petroleum_chemicals.md"
+    }
+  ]
+}

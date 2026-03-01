@@ -209,3 +209,59 @@ class SiteRegistryQuery:
                 "latitude", "longitude", "commodity_sectors",
                 "rail_served", "water_access", "source_count", "parent_company"]
         return [dict(zip(cols, row)) for row in rows]
+
+    def all_sites_for_dashboard(
+        self,
+        sectors: Optional[list[str]] = None,
+        min_sources: int = 0,
+    ) -> list[dict[str, Any]]:
+        """Get all sites with extended fields for the interactive dashboard."""
+        conditions = ["latitude IS NOT NULL", "longitude IS NOT NULL"]
+        params: list = []
+
+        if sectors:
+            placeholders = ",".join(["?"] * len(sectors))
+            conditions.append(f"commodity_sectors IN ({placeholders})")
+            params.extend(sectors)
+        if min_sources > 0:
+            conditions.append("source_count >= ?")
+            params.append(min_sources)
+
+        where = " AND ".join(conditions)
+        rows = self._get_conn().execute(f"""
+            SELECT facility_uid, canonical_name, city, state, county,
+                   latitude, longitude, parent_company, facility_types,
+                   naics_codes, commodity_sectors,
+                   rail_served, barge_access, water_access, port_adjacent,
+                   capacity_kt_year, source_count, confidence_score,
+                   confidence_tier
+            FROM master_sites
+            WHERE {where}
+            ORDER BY commodity_sectors, state, canonical_name
+        """, params).fetchall()
+
+        cols = [
+            "facility_uid", "canonical_name", "city", "state", "county",
+            "latitude", "longitude", "parent_company", "facility_types",
+            "naics_codes", "commodity_sectors",
+            "rail_served", "barge_access", "water_access", "port_adjacent",
+            "capacity_kt_year", "source_count", "confidence_score",
+            "confidence_tier",
+        ]
+        return [dict(zip(cols, row)) for row in rows]
+
+    def distinct_values(self, column: str) -> list[str]:
+        """Return sorted unique non-null values for a column (for dropdown filters)."""
+        safe_cols = {
+            "state", "commodity_sectors", "county", "parent_company",
+            "facility_types", "naics_codes",
+        }
+        if column not in safe_cols:
+            raise ValueError(f"Column '{column}' not allowed; pick from {safe_cols}")
+        rows = self._get_conn().execute(f"""
+            SELECT DISTINCT {column}
+            FROM master_sites
+            WHERE {column} IS NOT NULL AND {column} != ''
+            ORDER BY {column}
+        """).fetchall()
+        return [r[0] for r in rows]

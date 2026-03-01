@@ -1,0 +1,375 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abu Qir Fertilizer Complex",
+        "type": "fertilizer_plant",
+        "company": "Abu Qir Fertilizers and Chemical Industries",
+        "products": "Ammonia (785k t/yr), Urea (1,004k t/yr), Ammonium Nitrate (876k t/yr)",
+        "ownership": "Private/Public (80.9% private, 19.1% EGPC)",
+        "plants": "Abu Qir I, II, III",
+        "export_port": "Alexandria Port",
+        "status": "Operating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.0833, 31.3167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EBIC (Egypt Basic Industries Corp)",
+        "type": "fertilizer_plant",
+        "company": "Fertiglobe (75% ownership)",
+        "products": "Anhydrous Ammonia (748k t/yr)",
+        "technology": "KBR Advanced Ammonia Process (KAAP)",
+        "export_port": "Ain Al-Sokhna Port (dedicated 8km pipeline)",
+        "commissioned": "2009",
+        "status": "Operating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.3500, 29.6000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EFC (Egyptian Fertilizers Company)",
+        "type": "fertilizer_plant",
+        "company": "Fertiglobe (100% ownership)",
+        "products": "Granular Urea (1.55M t/yr), UAN (325k t/yr)",
+        "technology": "Uhde process technology",
+        "export_port": "Ain Al-Sokhna Port",
+        "commissioned": "2000, 2006",
+        "status": "Operating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.3520, 29.6020]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MOPCO (Misr Fertilizers Production Co.)",
+        "type": "fertilizer_plant",
+        "company": "MOPCO",
+        "products": "Urea (2M t/yr), Ammonia (876k t/yr)",
+        "investment": "USD 2B expansion completed",
+        "export_port": "Damietta Port",
+        "location": "Damietta Free Zone",
+        "status": "Operating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.8167, 31.4167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KIMA (Egyptian Chemical Industries)",
+        "type": "fertilizer_plant",
+        "company": "Chemical Industries Holding Co.",
+        "products": "Ammonia (330k t/yr), Ammonium Nitrate (800k t/yr)",
+        "ownership": "State-owned",
+        "export_port": "Aswan area (limited export)",
+        "location": "Aswan",
+        "status": "Operating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.8833, 24.0833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abu Tartur Phosphate Mine & Future Complex",
+        "type": "phosphate_facility",
+        "company": "Abu Tartour for Phosphoric Acid (AT-PHOS)",
+        "current_product": "Phosphate Rock (5M t/yr capacity)",
+        "future_project": "Phosphoric Acid (500k t/yr planned)",
+        "investment": "USD 1.2B phosphoric acid complex",
+        "reserves": "1B tons phosphate ore (up to 31% P2O5)",
+        "status": "Operating mine, phosphoric acid under development",
+        "timeline": "Construction 2026, Production 2028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.0000, 25.3000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El-Sebaiya Phosphate Mines",
+        "type": "phosphate_facility",
+        "company": "El Nasr Mining Co.",
+        "products": "Phosphate Rock",
+        "reserves": "500M tons (28-30% P2O5)",
+        "mines": "East El-Sebaiya, West El-Sebaiya",
+        "export_port": "Red Sea ports (Safaga, El-Quseir)",
+        "status": "Operating"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.9000, 25.7000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alexandria Port",
+        "type": "export_port",
+        "serves": "Abu Qir Fertilizer Complex",
+        "products": "Ammonia, Urea, Ammonium Nitrate",
+        "port_type": "Mediterranean Sea",
+        "markets": "Europe, Mediterranean, North Africa",
+        "infrastructure": "General cargo facilities"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.8869, 31.2001]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ain Al-Sokhna Port",
+        "type": "export_port",
+        "serves": "EBIC, EFC (Fertiglobe facilities)",
+        "products": "Anhydrous Ammonia, Granular Urea, UAN",
+        "port_type": "Red Sea (Egypt's deepest port)",
+        "markets": "Global (Europe, Asia, Americas, Africa)",
+        "infrastructure": "Dedicated 8km ammonia pipeline, specialized terminals",
+        "advantage": "55km south of Suez Canal, no canal transit needed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.3167, 29.5833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Damietta Port",
+        "type": "export_port",
+        "serves": "MOPCO",
+        "products": "Urea, Ammonia",
+        "port_type": "Mediterranean Sea",
+        "markets": "Europe, Mediterranean, global",
+        "infrastructure": "Free zone facilities, dedicated fertilizer handling"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.8167, 31.4333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Safaga Port",
+        "type": "export_port",
+        "serves": "Phosphate mining operations",
+        "products": "Phosphate Rock",
+        "port_type": "Red Sea",
+        "markets": "Asia, Europe, global",
+        "infrastructure": "Bulk cargo facilities, rail connections",
+        "historical": "First phosphate export port (1911)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.9333, 26.7333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El-Quseir Port",
+        "type": "export_port",
+        "serves": "Red Sea phosphate mining",
+        "products": "Phosphate Rock",
+        "port_type": "Red Sea",
+        "markets": "Asia, Europe",
+        "infrastructure": "Bulk cargo, mining support"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.2833, 26.1000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suez Canal",
+        "type": "waterway",
+        "importance": "Major global shipping route",
+        "fertilizer_relevance": "Transit route for global fertilizer trade",
+        "egyptian_advantage": "Ain Al-Sokhna located south, avoiding transit costs"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [32.3500, 31.2500],
+          [32.3000, 30.5000],
+          [32.5500, 29.9667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abu Qir to Alexandria Port Railway",
+        "type": "transport_route",
+        "mode": "Rail/Road",
+        "serves": "Abu Qir fertilizer transport to Alexandria Port",
+        "distance": "~20 km",
+        "products": "Ammonia, Urea, Ammonium Nitrate"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.0833, 31.3167],
+          [29.8869, 31.2001]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EBIC Dedicated Ammonia Pipeline",
+        "type": "transport_route",
+        "mode": "Pipeline",
+        "serves": "Direct ammonia transport to export terminal",
+        "distance": "8 km",
+        "products": "Anhydrous Ammonia",
+        "infrastructure": "Refrigerated bulk liquid terminal"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [32.3500, 29.6000],
+          [32.3167, 29.5833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EFC to Ain Al-Sokhna Port",
+        "type": "transport_route",
+        "mode": "Direct access",
+        "serves": "Urea and UAN transport to port",
+        "distance": "<1 km",
+        "products": "Granular Urea, UAN",
+        "advantage": "Port-adjacent location"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [32.3520, 29.6020],
+          [32.3167, 29.5833]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EBIC-EFC Integration Pipeline",
+        "type": "transport_route",
+        "mode": "Pipeline",
+        "serves": "CO2 and ammonia integration between plants",
+        "distance": "<1 km",
+        "products": "CO2, Ammonia",
+        "purpose": "Production synergy and efficiency"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [32.3500, 29.6000],
+          [32.3520, 29.6020]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abu Tartur to Red Sea Ports Route",
+        "type": "transport_route",
+        "mode": "Road/Rail (under development)",
+        "serves": "Future phosphoric acid and current phosphate rock transport",
+        "distance": "~300 km",
+        "products": "Phosphate Rock, Future Phosphoric Acid",
+        "development": "1,800 miles of new roads planned for New Valley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [30.0000, 25.3000],
+          [32.0000, 26.0000],
+          [33.9333, 26.7333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El-Sebaiya to Red Sea Ports",
+        "type": "transport_route",
+        "mode": "Road/Rail",
+        "serves": "Phosphate rock transport",
+        "distance": "~150 km",
+        "products": "Phosphate Rock",
+        "ports": "Safaga, El-Quseir, Hamrawein"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [32.9000, 25.7000],
+          [33.5000, 26.2000],
+          [33.9333, 26.7333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MOPCO Direct Port Access",
+        "type": "transport_route",
+        "mode": "Direct/Road",
+        "serves": "Urea and ammonia to Damietta Port",
+        "distance": "<5 km",
+        "products": "Urea, Ammonia",
+        "advantage": "Free zone location with port access"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [31.8167, 31.4167],
+          [31.8167, 31.4333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Major Export Markets",
+        "type": "reference",
+        "europe": "3rd largest supplier, EUR 85M (July 2024)",
+        "usa": "Growing market, 200k tons via Ameropa (2023)",
+        "brazil": "Major destination for phosphate fertilizers",
+        "africa": "Regional hub for sub-Saharan markets",
+        "total_exports": "USD 2.6B (2023), targeting USD 10B (2025)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.0000, 27.0000]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "module": "oil_gas",
+  "naics_codes": {
+    "324110": {
+      "title": "Petroleum Refineries",
+      "primary": true,
+      "registry_count": 287
+    },
+    "324121": {
+      "title": "Asphalt Paving Mixture Manufacturing",
+      "primary": true,
+      "registry_count": 31
+    },
+    "324191": {
+      "title": "Petroleum Lubricating Oil and Grease Manufacturing",
+      "primary": true,
+      "registry_count": 59
+    },
+    "424710": {
+      "title": "Petroleum Bulk Stations and Terminals",
+      "primary": false,
+      "registry_count": 33
+    },
+    "486110": {
+      "title": "Pipeline Transportation of Crude Oil",
+      "primary": false,
+      "registry_count": 21
+    }
+  },
+  "hts_codes": {
+    "2709.00.10": {
+      "title": "Crude petroleum, < 25 API"
+    },
+    "2709.00.20": {
+      "title": "Crude petroleum, >= 25 API"
+    },
+    "2710.12.10": {
+      "title": "Motor fuel and blending stocks"
+    },
+    "2710.19.06": {
+      "title": "Distillate fuel oil (diesel)"
+    },
+    "2710.19.11": {
+      "title": "Jet fuel, kerosene-type"
+    }
+  },
+  "stcc_codes": {
+    "1311": "Crude petroleum",
+    "2911": "Petroleum refining products"
+  }
+}
