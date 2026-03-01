@@ -669,6 +669,62 @@ def site_registry_map(sector, min_sources, output, open_browser):
         webbrowser.open(f"file://{path.resolve()}")
 
 
+@site_registry.command("enrich-geo")
+@click.option("--reference-dir", default=None,
+              help="Path to reference data directory (default: data/reference/).")
+def site_registry_enrich_geo(reference_dir):
+    """Run geographic identity enrichment on all master sites.
+
+    Adds 15 geographic columns: DMS coordinates, FIPS codes, Census/BEA/EPA
+    regions, congressional district, market region, nearest port code,
+    port name, consolidated group, coast, and region.
+    """
+    db_path = (get_project_root() / "02_TOOLSETS" / "site_master_registry"
+               / "data" / "site_master.duckdb")
+    if not db_path.exists():
+        click.echo("Error: site_master.duckdb not found. Run the build pipeline first.")
+        return
+
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    ref_dir = reference_dir or str(
+        get_project_root() / "02_TOOLSETS" / "site_master_registry"
+        / "data" / "reference"
+    )
+
+    click.echo("\nRunning geographic identity enrichment...")
+    from src.geo_enrichment import enrich_master_sites
+    enrich_master_sites(
+        db_path=str(db_path),
+        reference_dir=ref_dir,
+        project_root=str(get_project_root()),
+    )
+
+
+@site_registry.command("build-port-dict")
+def site_registry_build_port_dict():
+    """Build the unified port geo-dictionary from all port reference sources.
+
+    Merges Census port_reference.csv, USACE dictionaries, and Panjiva
+    ports_master.csv into a single JSON at data/reference/port_geo_dictionary.json.
+    """
+    _site_toolset = str(get_project_root() / "02_TOOLSETS" / "site_master_registry")
+    if _site_toolset not in sys.path:
+        sys.path.insert(0, _site_toolset)
+
+    click.echo("\nBuilding port geo-dictionary...")
+    from src.build_port_geo_dictionary import build_port_geo_dictionary
+    try:
+        out_path = build_port_geo_dictionary(str(get_project_root()))
+        click.echo(f"Done. Output: {out_path}")
+    except FileNotFoundError as e:
+        click.echo(f"Error: {e}")
+    except Exception as e:
+        click.echo(f"Error building port dictionary: {e}")
+
+
 @site_registry.command("dashboard")
 @click.option("--sector", default=None, help="Filter to sector (comma-separated for multiple).")
 @click.option("--min-sources", default=0, type=int, help="Minimum source count.")

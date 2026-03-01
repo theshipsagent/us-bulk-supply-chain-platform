@@ -196,10 +196,13 @@ class SiteRegistryQuery:
             params.append(min_sources)
 
         where = " AND ".join(conditions)
+        geo_cols = self._geo_columns()
+        geo_select = (", " + ", ".join(geo_cols)) if geo_cols else ""
         rows = self._get_conn().execute(f"""
             SELECT facility_uid, canonical_name, city, state,
                    latitude, longitude, commodity_sectors,
-                   rail_served, water_access, source_count, parent_company
+                   rail_served, water_access, source_count,
+                   parent_company{geo_select}
             FROM master_sites
             WHERE {where}
             ORDER BY commodity_sectors, state, canonical_name
@@ -207,7 +210,8 @@ class SiteRegistryQuery:
 
         cols = ["facility_uid", "canonical_name", "city", "state",
                 "latitude", "longitude", "commodity_sectors",
-                "rail_served", "water_access", "source_count", "parent_company"]
+                "rail_served", "water_access", "source_count",
+                "parent_company"] + geo_cols
         return [dict(zip(cols, row)) for row in rows]
 
     def all_sites_for_dashboard(
@@ -228,13 +232,14 @@ class SiteRegistryQuery:
             params.append(min_sources)
 
         where = " AND ".join(conditions)
+        geo_cols = self._geo_columns()
+        geo_select = (", " + ", ".join(geo_cols)) if geo_cols else ""
         rows = self._get_conn().execute(f"""
             SELECT facility_uid, canonical_name, city, state, county,
                    latitude, longitude, parent_company, facility_types,
                    naics_codes, commodity_sectors,
                    rail_served, barge_access, water_access, port_adjacent,
-                   capacity_kt_year, source_count, confidence_score,
-                   confidence_tier
+                   capacity_kt_year, source_count, confidence_score{geo_select}
             FROM master_sites
             WHERE {where}
             ORDER BY commodity_sectors, state, canonical_name
@@ -246,9 +251,27 @@ class SiteRegistryQuery:
             "naics_codes", "commodity_sectors",
             "rail_served", "barge_access", "water_access", "port_adjacent",
             "capacity_kt_year", "source_count", "confidence_score",
-            "confidence_tier",
-        ]
+        ] + geo_cols
         return [dict(zip(cols, row)) for row in rows]
+
+    def _geo_columns(self) -> list[str]:
+        """Return list of geographic identity columns present in the table."""
+        all_geo = [
+            "latitude_dms", "longitude_dms", "fips_state_code",
+            "fips_county_code", "census_region", "census_division",
+            "bea_region", "epa_region", "congressional_district",
+            "market_region", "nearest_port_code",
+            "nearest_port_name", "nearest_port_consolidated",
+            "nearest_port_coast", "nearest_port_region",
+        ]
+        existing = {
+            row[0]
+            for row in self._get_conn().execute(
+                "SELECT column_name FROM information_schema.columns "
+                "WHERE table_name = 'master_sites'"
+            ).fetchall()
+        }
+        return [c for c in all_geo if c in existing]
 
     def distinct_values(self, column: str) -> list[str]:
         """Return sorted unique non-null values for a column (for dropdown filters)."""
