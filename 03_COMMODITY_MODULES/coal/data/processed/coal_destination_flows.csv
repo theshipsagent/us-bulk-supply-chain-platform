@@ -1,0 +1,541 @@
+report_date,destination_region,coal_type,metric_tons,mom_pct,source_file
+2021-08-01,Mediterranean,MET,170355.0,-37.38,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Mediterranean,THERMAL,592508.0,-3.61,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Northern Europe,MET,797330.0,16.94,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Northern Europe,THERMAL,507425.0,16.24,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Africa,THERMAL,99897.0,52.29,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Americas,MET,346135.0,-30.0,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Americas,THERMAL,283352.0,25.77,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Far East,MET,1633185.0,-17.3,USEC-and-USG-Combined-August-2021.pdf
+2021-08-01,Far East,THERMAL,564894.0,64.0,USEC-and-USG-Combined-August-2021.pdf
+2021-09-01,Mediterranean,MET,423108.0,148.37,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Mediterranean,THERMAL,484457.0,-18.24,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Northern Europe,MET,612728.0,-23.15,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Northern Europe,THERMAL,210969.0,-58.42,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Africa,MET,59874.0,0.0,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Africa,THERMAL,0.0,-100.0,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Americas,MET,650116.0,87.82,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Americas,THERMAL,245339.0,-13.42,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Far East,MET,1534239.0,-6.06,USEC-and-USG-Combined-September-2021.pdf
+2021-09-01,Far East,THERMAL,601745.0,6.52,USEC-and-USG-Combined-September-2021.pdf
+2021-10-01,Mediterranean,MET,122118.0,-72.47,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Mediterranean,THERMAL,304535.0,-37.14,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Northern Europe,MET,1325720.0,116.36,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Northern Europe,THERMAL,775589.0,267.63,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Africa,MET,0.0,,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Africa,THERMAL,0.0,,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Americas,MET,646304.0,-0.59,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Americas,THERMAL,180254.0,-26.53,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Far East,MET,1599649.0,4.26,USEC-and-USG-Combined-October-2021.pdf
+2021-10-01,Far East,THERMAL,897313.0,49.12,USEC-and-USG-Combined-October-2021.pdf
+2021-11-01,Mediterranean,MET,239599.0,96.2,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Mediterranean,THERMAL,474231.0,34.89,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Northern Europe,MET,806790.0,-35.31,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Northern Europe,THERMAL,481186.0,-38.13,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Africa,MET,76728.0,0.0,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Americas,MET,307320.0,-51.7,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Americas,THERMAL,262079.0,42.15,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Far East,MET,1637040.0,-5.49,USEC-and-USG-Combined-November-2021.pdf
+2021-11-01,Far East,THERMAL,737018.0,-17.74,USEC-and-USG-Combined-November-2021.pdf
+2021-12-01,Mediterranean,MET,2784284.0,-46.31,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Mediterranean,THERMAL,4777343.0,148.01,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Northern Europe,MET,11931992.0,-3.13,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Northern Europe,THERMAL,5280855.0,135.73,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Africa,MET,460952.0,86.47,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Africa,THERMAL,426444.0,238.16,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Americas,MET,6388786.0,-22.11,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Americas,THERMAL,3721321.0,19.65,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Far East,MET,18576826.0,65.87,USEC-and-USG-Combined-December-2021.pdf
+2021-12-01,Far East,THERMAL,12096607.0,53.99,USEC-and-USG-Combined-December-2021.pdf
+2022-01-01,Mediterranean,MET,375485.0,107.14,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Mediterranean,THERMAL,373295.0,30.46,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Northern Europe,MET,994059.0,-15.97,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Northern Europe,THERMAL,424358.0,-39.18,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Africa,MET,34197.0,0.0,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Americas,MET,408235.0,-28.91,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Americas,THERMAL,215798.0,-48.54,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Far East,MET,1036892.0,-24.2,USEC-and-USG-Combined-January-2022.pdf
+2022-01-01,Far East,THERMAL,601993.0,-9.41,USEC-and-USG-Combined-January-2022.pdf
+2022-02-01,Mediterranean,MET,655224.0,74.5,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Mediterranean,THERMAL,501608.0,34.37,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Northern Europe,MET,1112181.0,11.88,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Northern Europe,THERMAL,633520.0,49.29,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Africa,MET,0.0,-100.0,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Americas,MET,573142.0,40.4,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Americas,THERMAL,155781.0,-27.81,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Far East,MET,1084116.0,4.55,USEC-and-USG-Combined-February-2022.pdf
+2022-02-01,Far East,THERMAL,748301.0,24.3,USEC-and-USG-Combined-February-2022.pdf
+2022-03-01,Mediterranean,MET,386531.0,-41.34,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Mediterranean,THERMAL,551964.0,10.04,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Northern Europe,MET,2057237.0,97.21,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Northern Europe,THERMAL,679360.0,13.62,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Africa,MET,45155.0,0.0,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Americas,MET,300715.0,-47.15,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Americas,THERMAL,198294.0,-20.99,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Far East,MET,1131292.0,-1.83,USEC-and-USG-Combined-March-2022.pdf
+2022-03-01,Far East,THERMAL,904061.0,20.82,USEC-and-USG-Combined-March-2022.pdf
+2022-04-01,Mediterranean,MET,634625.0,56.67,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Mediterranean,THERMAL,440186.0,-20.25,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Northern Europe,MET,1271300.0,-35.96,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Northern Europe,THERMAL,974742.0,29.21,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Africa,MET,,,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Africa,THERMAL,,,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Americas,MET,642708.0,113.65,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Americas,THERMAL,114355.0,-42.33,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Far East,MET,1250236.0,2.75,USEC-and-USG-Combined-April-2022.pdf
+2022-04-01,Far East,THERMAL,795464.0,-2.51,USEC-and-USG-Combined-April-2022.pdf
+2022-05-01,Mediterranean,MET,298678.0,-52.94,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Mediterranean,THERMAL,649768.0,47.61,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Northern Europe,MET,1076230.0,-15.34,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Northern Europe,THERMAL,997180.0,2.3,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Africa,MET,59897.0,0.0,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Americas,MET,895726.0,39.37,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Americas,THERMAL,283115.0,147.58,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Far East,MET,1606734.0,28.51,USEC-and-USG-Combined-May-2022.pdf
+2022-05-01,Far East,THERMAL,311624.0,-60.82,USEC-and-USG-Combined-May-2022.pdf
+2022-06-01,Mediterranean,MET,326846.0,9.43,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Mediterranean,THERMAL,565421.0,-12.98,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Northern Europe,MET,1251394.0,16.28,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Northern Europe,THERMAL,576850.0,-42.15,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Africa,MET,0.0,-100.0,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Africa,THERMAL,43106.0,0.0,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Americas,MET,501111.0,-44.06,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Americas,THERMAL,404043.0,42.71,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Far East,MET,1677673.0,4.42,USEC-and-USG-Combined-June-2022.pdf
+2022-06-01,Far East,THERMAL,826423.0,165.2,USEC-and-USG-Combined-June-2022.pdf
+2022-07-01,Mediterranean,MET,374518.0,14.59,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Mediterranean,THERMAL,523530.0,-7.41,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Northern Europe,MET,1163200.0,-7.05,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Northern Europe,THERMAL,413819.0,-28.26,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Americas,MET,667229.0,33.15,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Americas,THERMAL,407225.0,0.79,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Far East,MET,1412032.0,-15.83,USEC-and-USG-Combined-July-2022.pdf
+2022-07-01,Far East,THERMAL,365399.0,-55.79,USEC-and-USG-Combined-July-2022.pdf
+2022-08-01,Mediterranean,MET,424824.0,13.43,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Mediterranean,THERMAL,483300.0,-7.68,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Northern Europe,MET,1000516.0,-13.99,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Northern Europe,THERMAL,1328751.0,221.09,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Africa,MET,55345.0,0.0,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Americas,MET,512150.0,-23.24,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Americas,THERMAL,184551.0,-54.68,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Far East,MET,1130850.0,-19.91,USEC-and-USG-Combined-August-2022.pdf
+2022-08-01,Far East,THERMAL,527207.0,44.28,USEC-and-USG-Combined-August-2022.pdf
+2022-09-01,Mediterranean,MET,482553.0,13.59,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Mediterranean,THERMAL,222498.0,-53.96,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Northern Europe,MET,1553127.0,55.23,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Northern Europe,THERMAL,887837.0,-33.18,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Americas,MET,708268.0,38.29,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Americas,THERMAL,226814.0,22.9,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Far East,MET,1247103.0,10.28,USEC-and-USG-Combined-September-2022.pdf
+2022-09-01,Far East,THERMAL,593736.0,12.62,USEC-and-USG-Combined-September-2022.pdf
+2022-10-01,Mediterranean,MET,254911.0,-47.17,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Mediterranean,THERMAL,285950.0,28.52,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Northern Europe,MET,1644063.0,5.86,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Northern Europe,THERMAL,1159554.0,30.6,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Americas,MET,441040.0,-37.73,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Americas,THERMAL,199713.0,-11.95,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Far East,MET,1281174.0,2.73,USEC-and-USG-Combined-October-2022.pdf
+2022-10-01,Far East,THERMAL,463234.0,-21.98,USEC-and-USG-Combined-October-2022.pdf
+2022-11-01,Mediterranean,MET,348146.0,36.58,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Mediterranean,THERMAL,172318.0,-39.74,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Northern Europe,MET,1508278.0,-8.26,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Northern Europe,THERMAL,1043674.0,-9.99,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Americas,MET,466644.0,5.81,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Americas,THERMAL,218471.0,9.39,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Far East,MET,1084428.0,-15.36,USEC-and-USG-Combined-November-2022.pdf
+2022-11-01,Far East,THERMAL,797497.0,72.16,USEC-and-USG-Combined-November-2022.pdf
+2022-12-01,Mediterranean,MET,96099.0,68.43,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Mediterranean,THERMAL,168293.0,2.91,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Northern Europe,MET,1343440.0,30.67,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Northern Europe,THERMAL,1044426.0,94.29,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Africa,MET,0.0,-57.78,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Africa,THERMAL,0.0,-89.89,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Americas,MET,481056.0,3.64,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Americas,THERMAL,220260.0,-22.53,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Far East,MET,1213011.0,-17.41,USEC-and-USG-Combined-December-2022.pdf
+2022-12-01,Far East,THERMAL,856369.0,-36.32,USEC-and-USG-Combined-December-2022.pdf
+2023-01-01,Mediterranean,MET,656404.0,583.05,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Mediterranean,THERMAL,299683.0,78.07,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Northern Europe,MET,1331004.0,-0.93,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Northern Europe,THERMAL,1389860.0,33.07,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Africa,MET,37831.0,0.0,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Americas,MET,619602.0,28.8,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Americas,THERMAL,229924.0,4.39,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Far East,MET,1283884.0,5.84,USEC-and-USG-Combined-January-2023.pdf
+2023-01-01,Far East,THERMAL,714638.0,-16.55,USEC-and-USG-Combined-January-2023.pdf
+2023-02-01,Mediterranean,MET,413010.0,-37.08,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Mediterranean,THERMAL,508409.0,69.65,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Northern Europe,MET,1176081.0,-11.64,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Northern Europe,THERMAL,726737.0,-47.71,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Africa,MET,,,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Africa,THERMAL,,,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Americas,MET,924107.0,49.15,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Americas,THERMAL,125560.0,-45.39,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Far East,MET,1548960.0,20.65,USEC-and-USG-Combined-February-2023.pdf
+2023-02-01,Far East,THERMAL,1333045.0,86.53,USEC-and-USG-Combined-February-2023.pdf
+2023-03-01,Mediterranean,MET,491164.0,18.92,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Mediterranean,THERMAL,737971.0,45.15,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Northern Europe,MET,1075419.0,-8.56,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Northern Europe,THERMAL,824044.0,13.39,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Africa,MET,,,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Africa,THERMAL,47350.0,,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Americas,MET,804253.0,-12.97,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Americas,THERMAL,179972.0,43.34,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Far East,MET,1132030.0,-26.92,USEC-and-USG-Combined-March-2023.pdf
+2023-03-01,Far East,THERMAL,2176041.0,63.24,USEC-and-USG-Combined-March-2023.pdf
+2023-04-01,Mediterranean,MET,410023.0,-16.52,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Mediterranean,THERMAL,604495.0,-18.09,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Northern Europe,MET,1019203.0,-5.23,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Northern Europe,THERMAL,410124.0,-50.23,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Africa,THERMAL,0.0,-100.0,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Americas,MET,1038958.0,29.18,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Americas,THERMAL,265823.0,47.7,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Far East,MET,1469859.0,29.84,USEC-and-USG-Combined-April-2023.pdf
+2023-04-01,Far East,THERMAL,1195619.0,-45.06,USEC-and-USG-Combined-April-2023.pdf
+2023-05-01,Mediterranean,MET,451030.0,10.0,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Mediterranean,THERMAL,434445.0,-28.13,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Northern Europe,MET,962891.0,-5.53,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Northern Europe,THERMAL,623500.0,-5.69,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Americas,MET,558581.0,-46.24,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Americas,THERMAL,147458.0,-44.53,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Far East,MET,1849516.0,25.83,USEC-and-USG-Combined-May-2023.pdf
+2023-05-01,Far East,THERMAL,1700376.0,42.22,USEC-and-USG-Combined-May-2023.pdf
+2023-06-01,Mediterranean,MET,430684.0,12.59,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Mediterranean,THERMAL,668709.0,32.69,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Northern Europe,MET,1394189.0,36.84,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Northern Europe,THERMAL,593817.0,-13.32,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Africa,MET,68747.0,0.0,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Africa,THERMAL,0.0,0.0,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Americas,MET,684968.0,20.55,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Americas,THERMAL,218427.0,48.13,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Far East,MET,1398754.0,-25.05,USEC-and-USG-Combined-June-2023.pdf
+2023-06-01,Far East,THERMAL,1693946.0,-0.44,USEC-and-USG-Combined-June-2023.pdf
+2023-07-01,Mediterranean,MET,477853.0,10.95,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Mediterranean,THERMAL,578037.0,-13.56,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Northern Europe,MET,1082722.0,-22.34,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Northern Europe,THERMAL,220416.0,-62.88,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Africa,MET,,,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Africa,THERMAL,,,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Americas,MET,584246.0,-14.7,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Americas,THERMAL,79077.0,-63.8,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Far East,MET,1306834.0,-6.57,USEC-and-USG-Combined-July-2023.pdf
+2023-07-01,Far East,THERMAL,940490.0,-44.48,USEC-and-USG-Combined-July-2023.pdf
+2023-08-01,Mediterranean,MET,217969.0,-54.39,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Mediterranean,THERMAL,487428.0,-15.68,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Northern Europe,MET,1225829.0,13.22,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Northern Europe,THERMAL,282500.0,28.17,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Africa,MET,,,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Africa,THERMAL,,,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Americas,MET,676893.0,15.86,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Americas,THERMAL,150417.0,90.22,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Far East,MET,2272481.0,73.89,USEC-and-USG-Combined-August-2023.pdf
+2023-08-01,Far East,THERMAL,1592207.0,69.3,USEC-and-USG-Combined-August-2023.pdf
+2023-09-01,Mediterranean,MET,430737.0,97.61,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Mediterranean,THERMAL,580384.0,19.07,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Northern Europe,MET,1165629.0,-4.91,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Northern Europe,THERMAL,658332.0,133.04,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Africa,MET,55400.0,,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Africa,THERMAL,,,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Americas,MET,583719.0,-13.76,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Americas,THERMAL,105615.0,-29.79,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Far East,MET,1795404.0,-20.99,USEC-and-USG-Combined-September-2023.pdf
+2023-09-01,Far East,THERMAL,1815766.0,14.04,USEC-and-USG-Combined-September-2023.pdf
+2023-10-01,Mediterranean,MET,375194.0,-12.89,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Mediterranean,THERMAL,698500.0,20.35,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Northern Europe,MET,1264456.0,8.48,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Northern Europe,THERMAL,384263.0,-41.63,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Africa,MET,,,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Africa,THERMAL,,,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Americas,MET,491149.0,-15.86,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Americas,THERMAL,178460.0,68.97,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Far East,MET,1629668.0,-9.23,USEC-and-USG-Combined-October-2023.pdf
+2023-10-01,Far East,THERMAL,2249754.0,23.9,USEC-and-USG-Combined-October-2023.pdf
+2023-11-01,Mediterranean,MET,557583.0,48.61,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Mediterranean,THERMAL,745205.0,6.69,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Northern Europe,MET,1084217.0,-14.25,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Northern Europe,THERMAL,496464.0,29.2,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Africa,MET,0.0,,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Africa,THERMAL,0.0,,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Americas,MET,641122.0,30.53,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Americas,THERMAL,150583.0,-15.62,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Far East,MET,1763091.0,8.19,USEC-and-USG-Combined-November-2023.pdf
+2023-11-01,Far East,THERMAL,1406729.0,-37.47,USEC-and-USG-Combined-November-2023.pdf
+2023-12-01,Mediterranean,MET,5037202.0,7.19,Combined-Report-December-2023.pdf
+2023-12-01,Mediterranean,THERMAL,7083340.0,44.08,Combined-Report-December-2023.pdf
+2023-12-01,Northern Europe,MET,13445827.0,-14.28,Combined-Report-December-2023.pdf
+2023-12-01,Northern Europe,THERMAL,7372003.0,-28.15,Combined-Report-December-2023.pdf
+2023-12-01,Africa,MET,221978.0,14.07,Combined-Report-December-2023.pdf
+2023-12-01,Africa,THERMAL,158078.0,266.72,Combined-Report-December-2023.pdf
+2023-12-01,Americas,MET,7922799.0,19.63,Combined-Report-December-2023.pdf
+2023-12-01,Americas,THERMAL,1893965.0,-35.22,Combined-Report-December-2023.pdf
+2023-12-01,Far East,MET,19992339.0,30.29,Combined-Report-December-2023.pdf
+2023-12-01,Far East,THERMAL,18369140.0,138.46,Combined-Report-December-2023.pdf
+2024-01-01,Mediterranean,MET,327794.0,-11.65,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Mediterranean,THERMAL,896589.0,30.7,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Northern Europe,MET,917736.0,-4.23,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Northern Europe,THERMAL,647133.0,98.33,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Africa,MET,0.0,,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Africa,THERMAL,0.0,,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Americas,MET,688057.0,25.88,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Americas,THERMAL,342486.0,184.01,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Far East,MET,1922420.0,-4.31,USEC-and-USG-Combined-January-2024.pdf
+2024-01-01,Far East,THERMAL,1072532.0,-36.34,USEC-and-USG-Combined-January-2024.pdf
+2024-02-01,Mediterranean,MET,248018.0,-24.34,Combined-Report-February-2024.pdf
+2024-02-01,Mediterranean,THERMAL,307906.0,36.3,Combined-Report-February-2024.pdf
+2024-02-01,Northern Europe,MET,1402883.0,52.86,Combined-Report-February-2024.pdf
+2024-02-01,Northern Europe,THERMAL,250331.0,-61.32,Combined-Report-February-2024.pdf
+2024-02-01,Africa,MET,60000.0,0.0,Combined-Report-February-2024.pdf
+2024-02-01,Africa,THERMAL,369175.0,-44.96,Combined-Report-February-2024.pdf
+2024-02-01,Americas,MET,739199.0,7.43,Combined-Report-February-2024.pdf
+2024-02-01,Americas,THERMAL,194393.0,-43.24,Combined-Report-February-2024.pdf
+2024-02-01,Far East,MET,2106867.0,9.59,Combined-Report-February-2024.pdf
+2024-02-01,Far East,THERMAL,1733381.0,61.62,Combined-Report-February-2024.pdf
+2024-03-01,Mediterranean,MET,855637.0,244.99,Combined-Report-March-2024.pdf
+2024-03-01,Mediterranean,THERMAL,177887.0,-42.23,Combined-Report-March-2024.pdf
+2024-03-01,Northern Europe,MET,1027889.0,-26.73,Combined-Report-March-2024.pdf
+2024-03-01,Northern Europe,THERMAL,188288.0,-24.78,Combined-Report-March-2024.pdf
+2024-03-01,Africa,MET,63000.0,5.0,Combined-Report-March-2024.pdf
+2024-03-01,Africa,THERMAL,351458.0,-4.8,Combined-Report-March-2024.pdf
+2024-03-01,Americas,MET,906734.0,22.66,Combined-Report-March-2024.pdf
+2024-03-01,Americas,THERMAL,170400.0,-12.34,Combined-Report-March-2024.pdf
+2024-03-01,Far East,MET,2123479.0,0.79,Combined-Report-March-2024.pdf
+2024-03-01,Far East,THERMAL,1906144.0,9.97,Combined-Report-March-2024.pdf
+2024-04-01,Mediterranean,MET,438656.0,-48.73,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Mediterranean,THERMAL,494904.0,178.21,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Northern Europe,MET,1139613.0,10.87,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Northern Europe,THERMAL,120670.0,-35.91,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Africa,MET,0.0,-100.0,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Africa,THERMAL,467347.0,32.97,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Americas,MET,612141.0,-32.49,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Americas,THERMAL,173968.0,2.09,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Far East,MET,1270880.0,-40.15,USEC-and-USG-Combined-April-2024.pdf
+2024-04-01,Far East,THERMAL,805797.0,-57.73,USEC-and-USG-Combined-April-2024.pdf
+2024-05-01,Mediterranean,MET,479823.0,9.38,Combined-Report-May-2024.pdf
+2024-05-01,Mediterranean,THERMAL,504310.0,1.9,Combined-Report-May-2024.pdf
+2024-05-01,Northern Europe,MET,1060132.0,-6.97,Combined-Report-May-2024.pdf
+2024-05-01,Northern Europe,THERMAL,178086.0,47.58,Combined-Report-May-2024.pdf
+2024-05-01,Africa,MET,0.0,,Combined-Report-May-2024.pdf
+2024-05-01,Africa,THERMAL,490207.0,4.89,Combined-Report-May-2024.pdf
+2024-05-01,Americas,MET,968254.0,58.17,Combined-Report-May-2024.pdf
+2024-05-01,Americas,THERMAL,95070.0,-45.35,Combined-Report-May-2024.pdf
+2024-05-01,Far East,MET,2082349.0,63.85,Combined-Report-May-2024.pdf
+2024-05-01,Far East,THERMAL,1860896.0,130.94,Combined-Report-May-2024.pdf
+2024-06-01,Mediterranean,MET,479823.0,-39.63,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Mediterranean,THERMAL,504310.0,-22.51,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Northern Europe,MET,1060132.0,33.54,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Northern Europe,THERMAL,178086.0,19.45,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Africa,THERMAL,490207.0,-64.37,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Americas,MET,968254.0,-8.12,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Americas,THERMAL,95070.0,163.71,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Far East,MET,2082349.0,37.35,USEC-and-USG-Combined-June-2024.pdf
+2024-06-01,Far East,THERMAL,1860896.0,-5.03,USEC-and-USG-Combined-June-2024.pdf
+2024-07-01,Mediterranean,MET,384591.0,32.78,Combined-Report-July-2024.pdf
+2024-07-01,Mediterranean,THERMAL,400008.0,2.36,Combined-Report-July-2024.pdf
+2024-07-01,Northern Europe,MET,917631.0,-35.18,Combined-Report-July-2024.pdf
+2024-07-01,Northern Europe,THERMAL,52500.0,-75.32,Combined-Report-July-2024.pdf
+2024-07-01,Africa,MET,0.0,0.0,Combined-Report-July-2024.pdf
+2024-07-01,Africa,THERMAL,537221.0,207.54,Combined-Report-July-2024.pdf
+2024-07-01,Americas,MET,654422.0,-26.44,Combined-Report-July-2024.pdf
+2024-07-01,Americas,THERMAL,289415.0,15.44,Combined-Report-July-2024.pdf
+2024-07-01,Far East,MET,2337447.0,-18.27,Combined-Report-July-2024.pdf
+2024-07-01,Far East,THERMAL,1771696.0,0.25,Combined-Report-July-2024.pdf
+2024-08-01,Mediterranean,MET,681676.0,77.25,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Mediterranean,THERMAL,342255.0,-14.44,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Northern Europe,MET,1218891.0,32.83,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Northern Europe,THERMAL,266977.0,408.53,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Africa,MET,56099.0,0.0,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Africa,THERMAL,453713.0,-15.54,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Americas,MET,727203.0,11.12,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Americas,THERMAL,298644.0,3.19,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Far East,MET,2447061.0,4.69,USEC-and-USG-Combined-August-2024.pdf
+2024-08-01,Far East,THERMAL,951331.0,-46.3,USEC-and-USG-Combined-August-2024.pdf
+2024-09-01,Mediterranean,MET,387056.0,-43.22,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Mediterranean,THERMAL,342460.0,0.06,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Northern Europe,MET,1101966.0,-9.59,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Northern Europe,THERMAL,330254.0,23.7,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Africa,MET,0.0,-100.0,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Africa,THERMAL,364344.0,-19.7,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Americas,MET,459011.0,-36.88,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Americas,THERMAL,202419.0,-32.22,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Far East,MET,2660472.0,8.72,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-09-01,Far East,THERMAL,1242493.0,30.61,USEC-and-USG-Combined-Report-September-2024.pdf
+2024-10-01,Mediterranean,MET,574256.0,48.37,Combined-Report-October-2024.pdf
+2024-10-01,Mediterranean,THERMAL,466444.0,36.2,Combined-Report-October-2024.pdf
+2024-10-01,Northern Europe,MET,1276815.0,15.87,Combined-Report-October-2024.pdf
+2024-10-01,Northern Europe,THERMAL,293240.0,-11.21,Combined-Report-October-2024.pdf
+2024-10-01,Africa,MET,0.0,0.0,Combined-Report-October-2024.pdf
+2024-10-01,Africa,THERMAL,627626.0,72.26,Combined-Report-October-2024.pdf
+2024-10-01,Americas,MET,621484.0,35.4,Combined-Report-October-2024.pdf
+2024-10-01,Americas,THERMAL,173905.0,-14.09,Combined-Report-October-2024.pdf
+2024-10-01,Far East,MET,2333124.0,-12.3,Combined-Report-October-2024.pdf
+2024-10-01,Far East,THERMAL,1220549.0,-1.77,Combined-Report-October-2024.pdf
+2024-11-01,Mediterranean,MET,540595.0,-5.86,Combined-Report-November-2024.pdf
+2024-11-01,Mediterranean,THERMAL,340095.0,-27.09,Combined-Report-November-2024.pdf
+2024-11-01,Northern Europe,MET,920872.0,-27.88,Combined-Report-November-2024.pdf
+2024-11-01,Northern Europe,THERMAL,252783.0,-13.8,Combined-Report-November-2024.pdf
+2024-11-01,Africa,MET,44000.0,0.0,Combined-Report-November-2024.pdf
+2024-11-01,Africa,THERMAL,533718.0,-14.96,Combined-Report-November-2024.pdf
+2024-11-01,Americas,MET,434784.0,-30.04,Combined-Report-November-2024.pdf
+2024-11-01,Americas,THERMAL,271837.0,56.31,Combined-Report-November-2024.pdf
+2024-11-01,Far East,MET,2677718.0,14.77,Combined-Report-November-2024.pdf
+2024-11-01,Far East,THERMAL,1248976.0,2.33,Combined-Report-November-2024.pdf
+2024-12-01,Mediterranean,MET,256817.0,-52.49,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Mediterranean,THERMAL,286291.0,-15.82,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Northern Europe,MET,1117834.0,21.39,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Northern Europe,THERMAL,474280.0,87.62,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Africa,MET,0.0,,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Africa,THERMAL,331667.0,-37.86,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Americas,MET,1055549.0,142.78,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Americas,THERMAL,407956.0,50.07,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Far East,MET,2401175.0,-10.33,USEC-and-USG-Combined-Report-December-2024.pdf
+2024-12-01,Far East,THERMAL,1162912.0,-6.89,USEC-and-USG-Combined-Report-December-2024.pdf
+2025-01-01,Mediterranean,MET,182203.0,-29.05,Combined-Report-1.25.pdf
+2025-01-01,Mediterranean,THERMAL,228094.0,-20.33,Combined-Report-1.25.pdf
+2025-01-01,Northern Europe,MET,443596.0,-60.32,Combined-Report-1.25.pdf
+2025-01-01,Northern Europe,THERMAL,411893.0,-13.15,Combined-Report-1.25.pdf
+2025-01-01,Africa,MET,0.0,0.0,Combined-Report-1.25.pdf
+2025-01-01,Africa,THERMAL,763110.0,130.08,Combined-Report-1.25.pdf
+2025-01-01,Americas,MET,371694.0,-64.79,Combined-Report-1.25.pdf
+2025-01-01,Americas,THERMAL,204839.0,-49.79,Combined-Report-1.25.pdf
+2025-01-01,Far East,MET,2504052.0,4.28,Combined-Report-1.25.pdf
+2025-01-01,Far East,THERMAL,551656.0,-52.56,Combined-Report-1.25.pdf
+2025-02-01,Mediterranean,MET,368532.0,102.26,Combined-Report-2.25-copy.pdf
+2025-02-01,Mediterranean,THERMAL,316164.0,38.61,Combined-Report-2.25-copy.pdf
+2025-02-01,Northern Europe,MET,1285730.0,189.84,Combined-Report-2.25-copy.pdf
+2025-02-01,Northern Europe,THERMAL,463914.0,12.63,Combined-Report-2.25-copy.pdf
+2025-02-01,Africa,MET,0.0,0.0,Combined-Report-2.25-copy.pdf
+2025-02-01,Africa,THERMAL,774363.0,1.47,Combined-Report-2.25-copy.pdf
+2025-02-01,Americas,MET,592881.0,59.51,Combined-Report-2.25-copy.pdf
+2025-02-01,Americas,THERMAL,106492.0,-48.01,Combined-Report-2.25-copy.pdf
+2025-02-01,Far East,MET,1623764.0,-35.15,Combined-Report-2.25-copy.pdf
+2025-02-01,Far East,THERMAL,1229002.0,122.78,Combined-Report-2.25-copy.pdf
+2025-03-01,Mediterranean,MET,548869.0,48.93,Combined-Report-March-2025.pdf
+2025-03-01,Mediterranean,THERMAL,407677.0,28.94,Combined-Report-March-2025.pdf
+2025-03-01,Northern Europe,MET,1503196.0,16.91,Combined-Report-March-2025.pdf
+2025-03-01,Northern Europe,THERMAL,463976.0,0.01,Combined-Report-March-2025.pdf
+2025-03-01,Africa,MET,0.0,0.0,Combined-Report-March-2025.pdf
+2025-03-01,Africa,THERMAL,519363.0,-32.93,Combined-Report-March-2025.pdf
+2025-03-01,Americas,MET,870692.0,46.86,Combined-Report-March-2025.pdf
+2025-03-01,Americas,THERMAL,167414.0,57.21,Combined-Report-March-2025.pdf
+2025-03-01,Far East,MET,2178485.0,34.16,Combined-Report-March-2025.pdf
+2025-03-01,Far East,THERMAL,2256991.0,83.64,Combined-Report-March-2025.pdf
+2025-04-01,Mediterranean,MET,477822.0,-12.94,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Mediterranean,THERMAL,362607.0,-11.06,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Northern Europe,MET,1105251.0,-26.47,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Northern Europe,THERMAL,0.0,0.0,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Africa,MET,0.0,0.0,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Africa,THERMAL,431891.0,-16.84,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Americas,MET,864230.0,-0.74,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Americas,THERMAL,166474.0,-0.56,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Far East,MET,1332772.0,-38.82,USEC-and-USG-Combined-Report-4.25.pdf
+2025-04-01,Far East,THERMAL,1616479.0,-28.38,USEC-and-USG-Combined-Report-4.25.pdf
+2025-05-01,Mediterranean,MET,469646.0,-1.71,Combined-Report-May-2025.pdf
+2025-05-01,Mediterranean,THERMAL,383944.0,5.88,Combined-Report-May-2025.pdf
+2025-05-01,Northern Europe,MET,1279804.0,15.79,Combined-Report-May-2025.pdf
+2025-05-01,Northern Europe,THERMAL,178296.0,0.0,Combined-Report-May-2025.pdf
+2025-05-01,Africa,MET,0.0,0.0,Combined-Report-May-2025.pdf
+2025-05-01,Africa,THERMAL,614661.0,42.32,Combined-Report-May-2025.pdf
+2025-05-01,Americas,MET,553201.0,-35.99,Combined-Report-May-2025.pdf
+2025-05-01,Americas,THERMAL,171406.0,2.96,Combined-Report-May-2025.pdf
+2025-05-01,Far East,MET,1434978.0,7.67,Combined-Report-May-2025.pdf
+2025-05-01,Far East,THERMAL,1198934.0,-25.83,Combined-Report-May-2025.pdf
+2025-06-01,Mediterranean,MET,279532.0,-40.48,Combined-Report-June-2025.pdf
+2025-06-01,Mediterranean,THERMAL,291366.0,-24.11,Combined-Report-June-2025.pdf
+2025-06-01,Northern Europe,MET,1258785.0,-1.64,Combined-Report-June-2025.pdf
+2025-06-01,Northern Europe,THERMAL,0.0,-100.0,Combined-Report-June-2025.pdf
+2025-06-01,Africa,MET,0.0,0.0,Combined-Report-June-2025.pdf
+2025-06-01,Africa,THERMAL,532802.0,-13.32,Combined-Report-June-2025.pdf
+2025-06-01,Americas,MET,632539.0,14.34,Combined-Report-June-2025.pdf
+2025-06-01,Americas,THERMAL,254702.0,48.6,Combined-Report-June-2025.pdf
+2025-06-01,Far East,MET,1668230.0,16.25,Combined-Report-June-2025.pdf
+2025-06-01,Far East,THERMAL,1269889.0,5.92,Combined-Report-June-2025.pdf
+2025-07-01,Mediterranean,MET,321840.0,-31.47,Combined-Report-July-2025.pdf
+2025-07-01,Mediterranean,THERMAL,439776.0,14.54,Combined-Report-July-2025.pdf
+2025-07-01,Northern Europe,MET,879732.0,-31.26,Combined-Report-July-2025.pdf
+2025-07-01,Northern Europe,THERMAL,233205.0,30.8,Combined-Report-July-2025.pdf
+2025-07-01,Africa,MET,0.0,0.0,Combined-Report-July-2025.pdf
+2025-07-01,Africa,THERMAL,485751.0,-20.97,Combined-Report-July-2025.pdf
+2025-07-01,Americas,MET,725571.0,31.16,Combined-Report-July-2025.pdf
+2025-07-01,Americas,THERMAL,117887.0,-31.22,Combined-Report-July-2025.pdf
+2025-07-01,Far East,MET,1617460.0,12.72,Combined-Report-July-2025.pdf
+2025-07-01,Far East,THERMAL,702236.0,-41.43,Combined-Report-July-2025.pdf
+2025-08-01,Mediterranean,MET,694953.0,115.93,Combined-Report-August-2025.pdf
+2025-08-01,Mediterranean,THERMAL,288046.0,-34.5,Combined-Report-August-2025.pdf
+2025-08-01,Northern Europe,MET,1555639.0,76.83,Combined-Report-August-2025.pdf
+2025-08-01,Northern Europe,THERMAL,56000.0,-75.99,Combined-Report-August-2025.pdf
+2025-08-01,Africa,MET,0.0,0.0,Combined-Report-August-2025.pdf
+2025-08-01,Africa,THERMAL,546514.0,12.51,Combined-Report-August-2025.pdf
+2025-08-01,Americas,MET,693761.0,-4.38,Combined-Report-August-2025.pdf
+2025-08-01,Americas,THERMAL,467422.0,296.5,Combined-Report-August-2025.pdf
+2025-08-01,Far East,MET,1509462.0,-6.68,Combined-Report-August-2025.pdf
+2025-08-01,Far East,THERMAL,834138.0,18.78,Combined-Report-August-2025.pdf
+2025-09-01,Mediterranean,MET,488613.0,-29.69,Coal-Report-September-2025.pdf
+2025-09-01,Mediterranean,THERMAL,471669.0,63.75,Coal-Report-September-2025.pdf
+2025-09-01,Northern Europe,MET,1180251.0,-24.13,Coal-Report-September-2025.pdf
+2025-09-01,Northern Europe,THERMAL,299919.0,435.57,Coal-Report-September-2025.pdf
+2025-09-01,Africa,MET,0.0,0.0,Coal-Report-September-2025.pdf
+2025-09-01,Africa,THERMAL,583422.0,6.75,Coal-Report-September-2025.pdf
+2025-09-01,Americas,MET,744749.0,7.35,Coal-Report-September-2025.pdf
+2025-09-01,Americas,THERMAL,125000.0,-73.26,Coal-Report-September-2025.pdf
+2025-09-01,Far East,MET,1455908.0,-3.55,Coal-Report-September-2025.pdf
+2025-09-01,Far East,THERMAL,949753.0,13.86,Coal-Report-September-2025.pdf
+2025-10-01,Mediterranean,MET,647745.0,32.57,Coal-Report-October-2025.pdf
+2025-10-01,Mediterranean,THERMAL,293571.0,-37.76,Coal-Report-October-2025.pdf
+2025-10-01,Northern Europe,MET,1038597.0,-12.0,Coal-Report-October-2025.pdf
+2025-10-01,Northern Europe,THERMAL,333703.0,11.26,Coal-Report-October-2025.pdf
+2025-10-01,Africa,MET,0.0,0.0,Coal-Report-October-2025.pdf
+2025-10-01,Africa,THERMAL,434841.0,-25.47,Coal-Report-October-2025.pdf
+2025-10-01,Americas,MET,618291.0,-16.98,Coal-Report-October-2025.pdf
+2025-10-01,Americas,THERMAL,365766.0,192.61,Coal-Report-October-2025.pdf
+2025-10-01,Far East,MET,1748742.0,20.11,Coal-Report-October-2025.pdf
+2025-10-01,Far East,THERMAL,1167820.0,22.96,Coal-Report-October-2025.pdf
+2025-11-01,Mediterranean,MET,620984.0,27.09,Coal-Report-November-2025.pdf
+2025-11-01,Mediterranean,THERMAL,180733.0,-61.68,Coal-Report-November-2025.pdf
+2025-11-01,Northern Europe,MET,1053889.0,-10.71,Coal-Report-November-2025.pdf
+2025-11-01,Northern Europe,THERMAL,329732.0,9.94,Coal-Report-November-2025.pdf
+2025-11-01,Africa,MET,0.0,0.0,Coal-Report-November-2025.pdf
+2025-11-01,Africa,THERMAL,260422.0,-55.36,Coal-Report-November-2025.pdf
+2025-11-01,Americas,MET,762754.0,2.42,Coal-Report-November-2025.pdf
+2025-11-01,Americas,THERMAL,153953.0,23.16,Coal-Report-November-2025.pdf
+2025-11-01,Far East,MET,1946130.0,33.67,Coal-Report-November-2025.pdf
+2025-11-01,Far East,THERMAL,1004074.0,5.72,Coal-Report-November-2025.pdf
+2025-12-01,Mediterranean,MET,437268.0,-1.71,Coal-Report-December-2025.pdf
+2025-12-01,Mediterranean,THERMAL,58601.0,-87.72,Coal-Report-December-2025.pdf
+2025-12-01,Northern Europe,MET,1132756.0,3.82,Coal-Report-December-2025.pdf
+2025-12-01,Northern Europe,THERMAL,414601.0,9.99,Coal-Report-December-2025.pdf
+2025-12-01,Africa,MET,77000.0,0.0,Coal-Report-December-2025.pdf
+2025-12-01,Africa,THERMAL,425087.0,-32.08,Coal-Report-December-2025.pdf
+2025-12-01,Americas,MET,561559.0,-28.44,Coal-Report-December-2025.pdf
+2025-12-01,Americas,THERMAL,157628.0,35.54,Coal-Report-December-2025.pdf
+2025-12-01,Far East,MET,2063494.0,37.72,Coal-Report-December-2025.pdf
+2025-12-01,Far East,THERMAL,1294473.0,28.28,Coal-Report-December-2025.pdf
+2026-01-01,Mediterranean,MET,407658.0,-6.77,Coal-Report-January-2026.pdf
+2026-01-01,Mediterranean,THERMAL,295434.0,404.14,Coal-Report-January-2026.pdf
+2026-01-01,Northern Europe,MET,1323828.0,16.87,Coal-Report-January-2026.pdf
+2026-01-01,Northern Europe,THERMAL,341275.0,-17.69,Coal-Report-January-2026.pdf
+2026-01-01,Africa,MET,0.0,-100.0,Coal-Report-January-2026.pdf
+2026-01-01,Africa,THERMAL,409164.0,-3.75,Coal-Report-January-2026.pdf
+2026-01-01,Americas,MET,639448.0,13.87,Coal-Report-January-2026.pdf
+2026-01-01,Americas,THERMAL,60700.0,-61.49,Coal-Report-January-2026.pdf
+2026-01-01,Far East,MET,1647201.0,-20.17,Coal-Report-January-2026.pdf
+2026-01-01,Far East,THERMAL,1260977.0,-2.59,Coal-Report-January-2026.pdf

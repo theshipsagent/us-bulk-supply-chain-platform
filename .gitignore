@@ -152,3 +152,7 @@ task_usace_entrance_clearance/
 # --- PDFs in reports (keep generated HTML, exclude large PDFs) ---
 04_REPORTS/*.pdf
 03_COMMODITY_MODULES/cement/reports/published/*.pdf
+
+# --- Coal module: raw export report PDFs (~65MB) and analytics DB ---
+03_COMMODITY_MODULES/coal/data/raw/export_reports/
+03_COMMODITY_MODULES/coal/data/coal_analytics.duckdb
