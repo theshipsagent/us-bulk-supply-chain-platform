@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "US Port Stevedoring Rate Benchmarks",
+    "compiled_date": "2026-03-02",
+    "migrated_from": "02_TOOLSETS/port_cost_model/src/stevedoring_model.py",
+    "version": "0.2.0-draft",
+    "rate_basis": "USD per short ton — labour + equipment combined unless noted",
+    "confidence": "medium",
+    "notes": [
+      "Rates are Gulf Coast benchmarks. East/West Coast typically 10-20% higher.",
+      "Equipment costs calculated separately as rate_per_hour × estimated_hours.",
+      "Overtime applies at overtime_pct above base rate for night/weekend work.",
+      "Throughput rate (TPH) used to estimate berth time for dockage calculation."
+    ],
+    "commodity_notes": {
+      "grain": "US grain elevators typically include all stevedoring in elevator tariff — verify separately",
+      "coal": "Lamberts Point and DTA (Hampton Roads) have their own published tariff schedules",
+      "cement": "Pneumatic unloader is owned by either terminal or receiver — verify who supplies",
+      "phosphate": "Mosaic and CF Industries publish own tariffs for their terminals",
+      "steel": "Rate varies significantly by product form — coils vs. plate vs. rebar vs. wire rod",
+      "liquid_bulk": "Pumping charges usually separate from stevedoring — terminal-specific"
+    },
+    "verification_sources": {
+      "grain_elevators": "Bunge, ADM, LDC, Cargill, CHS individual elevator rate sheets",
+      "coal_terminals": "Lamberts Point (NS), DTA, Alabama McDuffie — published terminal tariffs",
+      "phosphate": "Mosaic terminal tariffs at Port Manatee and elsewhere",
+      "cement": "Individual terminal agreements — not typically published publicly",
+      "general": "AAPA Seaport Statistics for benchmark validation"
+    }
+  },
+
+  "rates": {
+    "grain_elevator": {
+      "cargo_type": "grain",
+      "commodities": ["wheat", "corn", "soybeans", "sorghum", "barley", "oats"],
+      "handling_method": "elevator",
+      "rate_per_st_usd": 2.50,
+      "equipment_per_hour_usd": 200.00,
+      "throughput_tph": 1500,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 1.80, "mid": 2.50, "high": 3.50},
+      "notes": "Grain elevator loading rate — high throughput. Elevator may include separate elevation charges.",
+      "confidence": "medium"
+    },
+
+    "coal_grab": {
+      "cargo_type": "coal",
+      "commodities": ["metallurgical coal", "thermal coal", "petcoke"],
+      "handling_method": "grab_crane",
+      "rate_per_st_usd": 3.00,
+      "equipment_per_hour_usd": 450.00,
+      "throughput_tph": 800,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 2.50, "mid": 3.00, "high": 4.00},
+      "notes": "Grab crane discharge. Lamberts Point (NS): check published tariff. DTA: similar rates.",
+      "confidence": "medium"
+    },
+
+    "cement_pneumatic": {
+      "cargo_type": "cement",
+      "commodities": ["portland cement", "fly ash", "slag cement"],
+      "handling_method": "pneumatic",
+      "rate_per_st_usd": 3.50,
+      "equipment_per_hour_usd": 350.00,
+      "throughput_tph": 400,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 2.50, "mid": 3.50, "high": 5.00},
+      "notes": "Pneumatic unloader discharge to silo. Equipment is often receiver-owned — verify who charges.",
+      "confidence": "medium"
+    },
+
+    "cement_grab": {
+      "cargo_type": "cement",
+      "commodities": ["clinker", "bulk cement via grab"],
+      "handling_method": "grab_crane",
+      "rate_per_st_usd": 4.25,
+      "equipment_per_hour_usd": 500.00,
+      "throughput_tph": 300,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 3.50, "mid": 4.25, "high": 5.50},
+      "notes": "Grab crane to hopper, then conveyor to silo. Slower than pneumatic.",
+      "confidence": "medium"
+    },
+
+    "fertilizer_grab": {
+      "cargo_type": "fertilizer",
+      "commodities": ["urea", "DAP", "MAP", "potash", "ammonium sulfate", "AN"],
+      "handling_method": "grab_crane",
+      "rate_per_st_usd": 4.50,
+      "equipment_per_hour_usd": 500.00,
+      "throughput_tph": 500,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 3.50, "mid": 4.50, "high": 6.00},
+      "notes": "Fertilizer — hygroscopic cargo, rate includes sheeting/covering during ops.",
+      "confidence": "medium"
+    },
+
+    "phosphate_grab": {
+      "cargo_type": "phosphate",
+      "commodities": ["phosphate rock", "DAP", "phosphoric acid (liquid)"],
+      "handling_method": "grab_crane",
+      "rate_per_st_usd": 3.00,
+      "equipment_per_hour_usd": 450.00,
+      "throughput_tph": 700,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 2.50, "mid": 3.00, "high": 4.00},
+      "notes": "Mosaic Port Manatee and CF Industries publish own terminal tariffs — check directly.",
+      "confidence": "medium"
+    },
+
+    "bulk_dry_general": {
+      "cargo_type": "bulk_dry",
+      "commodities": ["sand", "gravel", "rock", "salt", "sulphur", "other dry bulk"],
+      "handling_method": "grab_crane",
+      "rate_per_st_usd": 4.00,
+      "equipment_per_hour_usd": 500.00,
+      "throughput_tph": 400,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 3.00, "mid": 4.00, "high": 5.50},
+      "notes": "General dry bulk fallback rate when commodity-specific rate not available.",
+      "confidence": "low"
+    },
+
+    "steel_coils": {
+      "cargo_type": "steel",
+      "commodities": ["hot-rolled coils", "cold-rolled coils", "galvanized coils"],
+      "handling_method": "shore_crane",
+      "rate_per_st_usd": 8.50,
+      "equipment_per_hour_usd": 650.00,
+      "throughput_tph": 150,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 7.00, "mid": 8.50, "high": 11.00},
+      "notes": "Coil cradles, shore crane. Coil weight typically 20-25 MT each. Rate per ST.",
+      "confidence": "medium"
+    },
+
+    "steel_plate": {
+      "cargo_type": "steel",
+      "commodities": ["steel plate", "structural steel", "beams", "pipe"],
+      "handling_method": "shore_crane",
+      "rate_per_st_usd": 7.50,
+      "equipment_per_hour_usd": 600.00,
+      "throughput_tph": 180,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 6.00, "mid": 7.50, "high": 10.00},
+      "notes": "Shore crane with spreader beams. Plate typically faster throughput than coils.",
+      "confidence": "medium"
+    },
+
+    "steel_rebar": {
+      "cargo_type": "steel",
+      "commodities": ["rebar", "wire rod", "merchant bar"],
+      "handling_method": "shore_crane",
+      "rate_per_st_usd": 7.00,
+      "equipment_per_hour_usd": 550.00,
+      "throughput_tph": 200,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 5.50, "mid": 7.00, "high": 9.00},
+      "notes": "Bundle discharge with shore crane. Faster than plate due to bundle standardization.",
+      "confidence": "medium"
+    },
+
+    "breakbulk_general": {
+      "cargo_type": "breakbulk",
+      "commodities": ["bagged cargo", "crated cargo", "general breakbulk"],
+      "handling_method": "ship_gear",
+      "rate_per_st_usd": 9.00,
+      "equipment_per_hour_usd": 400.00,
+      "throughput_tph": 120,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 7.00, "mid": 9.00, "high": 12.00},
+      "notes": "Ship's gear or mobile crane. Labor-intensive. Rate varies significantly by package type.",
+      "confidence": "medium"
+    },
+
+    "project_cargo": {
+      "cargo_type": "project",
+      "commodities": ["heavy lift", "OOG (out-of-gauge)", "industrial equipment", "transformers"],
+      "handling_method": "heavy_lift",
+      "rate_per_st_usd": 15.00,
+      "equipment_per_hour_usd": 1200.00,
+      "throughput_tph": 50,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 10.00, "mid": 15.00, "high": 25.00},
+      "notes": "Engineered rigging plans required. Rate highly variable — quote-specific.",
+      "confidence": "low"
+    },
+
+    "liquid_bulk": {
+      "cargo_type": "liquid",
+      "commodities": ["petroleum products", "chemicals", "vegetable oils", "molasses"],
+      "handling_method": "pipeline",
+      "rate_per_st_usd": 1.80,
+      "equipment_per_hour_usd": 0.00,
+      "throughput_tph": 1000,
+      "overtime_pct": 25.0,
+      "rate_range": {"low": 1.20, "mid": 1.80, "high": 2.50},
+      "notes": "Shore manifold connection. Pumping charges and heating charges separate. Vapour recovery fee may apply.",
+      "confidence": "medium"
+    },
+
+    "containers": {
+      "cargo_type": "containers",
+      "commodities": ["TEU", "FEU", "reefer"],
+      "handling_method": "gantry_crane",
+      "rate_per_st_usd": 12.00,
+      "equipment_per_hour_usd": 800.00,
+      "throughput_tph": 200,
+      "overtime_pct": 50.0,
+      "rate_range": {"low": 150.00, "mid": 200.00, "high": 280.00},
+      "rate_basis_note": "Container rates typically quoted per TEU (~$200/TEU) not per ton",
+      "notes": "Rate-per-ton is approximation assuming ~16 tons/TEU. Use per-TEU rate for accuracy.",
+      "confidence": "medium"
+    }
+  },
+
+  "regional_adjustments": {
+    "gulf_coast": {"multiplier": 1.00, "note": "Base rates above are Gulf Coast benchmarks"},
+    "east_coast_south": {"multiplier": 1.05, "note": "Savannah, Charleston, Jacksonville — slight premium"},
+    "east_coast_mid": {"multiplier": 1.12, "note": "Baltimore, Norfolk, Delaware — higher labor costs"},
+    "northeast": {"multiplier": 1.25, "note": "NY/NJ, Boston — significantly higher ILA labor rates"},
+    "pacific_coast": {"multiplier": 1.20, "note": "ILWU labor — higher rates than Gulf ILA"},
+    "great_lakes": {"multiplier": 1.15, "note": "Shorter season, specialized equipment"}
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "title": "US Port Authority Terminal Tariffs",
+    "compiled_date": "2026-03-02",
+    "migrated_from": "02_TOOLSETS/port_cost_model/src/port_tariff_engine.py",
+    "version": "0.2.0-draft",
+    "rate_basis_notes": {
+      "dockage": "USD per foot of vessel LOA per 24-hour period at berth",
+      "wharfage": "USD per short ton of cargo crossing the wharf",
+      "harbour_dues": "USD per Gross Ton (GT) of vessel — port entry/exit fee",
+      "line_handling": "USD per operation (arrival = 1 op, departure = 1 op)",
+      "fresh_water": "USD per metric ton of water delivered",
+      "security": "USD flat fee per port call (ISPS/facility security)"
+    },
+    "confidence": "medium",
+    "verification_status": "DRAFT — migrated from legacy model, verify against current port authority tariff schedules",
+    "priority_verification_urls": {
+      "new_orleans": "https://portno.com/tariffs",
+      "baton_rouge": "https://brla.gov/port",
+      "houston": "https://porthouston.com/tariff",
+      "mobile": "https://asdd.com/tariffs",
+      "tampa": "https://tampaport.com/tariffs",
+      "norfolk": "https://portofvirginia.com/tariffs",
+      "baltimore": "https://marylandports.com/tariffs",
+      "savannah": "https://gaports.com/tariffs",
+      "columbia_river": "https://portofportland.com/tariffs"
+    },
+    "ship_agent_sources_to_check": {
+      "bluewater": "https://www.bluewater.com — port cost estimates page",
+      "norton_lilly": "https://www.nortonlilly.com — port disbursement guides",
+      "gac": "https://www.gac.com/en/ports-services/port-information",
+      "inchcape": "https://www.iss-shipping.com/port-services",
+      "wilhelmsen": "https://www.wilhelmsen.com/ship-management/port-services"
+    }
+  },
+
+  "ports": {
+    "new_orleans": {
+      "display_name": "New Orleans",
+      "unlocode": "USMSY",
+      "aliases": ["new orleans", "nola", "new orleans la", "avondale", "westwego", "gretna", "harvey", "chalmette", "arabi", "violet", "convent"],
+      "state": "LA",
+      "coast": "Gulf",
+      "authority": "Port of New Orleans (Port NOLA)",
+      "dockage_rate_per_loa_ft_per_day": 9.50,
+      "dockage_min_usd": 1200.00,
+      "wharfage_rates_per_st": {
+        "grain": 0.95,
+        "coal": 0.85,
+        "bulk_dry": 1.25,
+        "bulk_liquid": 1.10,
+        "cement": 1.25,
+        "fertilizer": 1.25,
+        "phosphate": 1.10,
+        "steel": 2.10,
+        "breakbulk": 2.00,
+        "containers": 1.95,
+        "general": 1.85
+      },
+      "wharfage_default_per_st": 1.85,
+      "harbour_dues_per_gt": 0.065,
+      "harbour_dues_min_usd": 500.00,
+      "line_handling_per_op_usd": 2500.00,
+      "fresh_water_per_mt_usd": 18.00,
+      "security_fee_usd": 750.00,
+      "key_terminals": [
+        {"name": "Bunge New Orleans", "commodity": "grain", "operator": "Bunge"},
+        {"name": "ADM New Orleans", "commodity": "grain", "operator": "ADM"},
+        {"name": "Louis Dreyfus New Orleans", "commodity": "grain", "operator": "LDC"},
+        {"name": "Cargill New Orleans", "commodity": "grain", "operator": "Cargill"},
+        {"name": "Kinder Morgan New Orleans", "commodity": "bulk_liquid", "operator": "Kinder Morgan"},
+        {"name": "Napoleon Avenue Container Terminal", "commodity": "containers", "operator": "CMA CGM"}
+      ],
+      "confidence": "medium"
+    },
+
+    "baton_rouge": {
+      "display_name": "Baton Rouge",
+      "unlocode": "USBTR",
+      "aliases": ["baton rouge", "baton rouge la", "port allen", "plaquemine", "geismar", "burnside", "donaldsonville", "gramercy", "reserve", "norco", "destrehan", "lutcher", "convent"],
+      "state": "LA",
+      "coast": "Gulf",
+      "authority": "Greater Baton Rouge Port Commission",
+      "dockage_rate_per_loa_ft_per_day": 8.00,
+      "dockage_min_usd": 1000.00,
+      "wharfage_rates_per_st": {
+        "grain": 0.85,
+        "bulk_dry": 1.10,
+        "bulk_liquid": 0.95,
+        "cement": 1.10,
+        "fertilizer": 1.10,
+        "general": 1.65
+      },
+      "wharfage_default_per_st": 1.65,
+      "harbour_dues_per_gt": 0.055,
+      "harbour_dues_min_usd": 400.00,
+      "line_handling_per_op_usd": 2200.00,
+      "fresh_water_per_mt_usd": 16.00,
+      "security_fee_usd": 600.00,
+      "key_terminals": [
+        {"name": "Bunge Destrehan", "commodity": "grain", "operator": "Bunge"},
+        {"name": "ADM Baton Rouge", "commodity": "grain", "operator": "ADM"},
+        {"name": "CF Industries Donaldsonville", "commodity": "fertilizer", "operator": "CF Industries"},
+        {"name": "BASF Geismar", "commodity": "bulk_liquid", "operator": "BASF"},
+        {"name": "Mosaic Uncle Sam", "commodity": "fertilizer", "operator": "Mosaic"}
+      ],
+      "confidence": "medium"
+    },
+
+    "houston": {
+      "display_name": "Houston",
+      "unlocode": "USHOU",
+      "aliases": ["houston", "houston ship channel", "houston tx", "freeport", "texas city", "galveston"],
+      "state": "TX",
+      "coast": "Gulf",
+      "authority": "Port Houston Authority",
+      "dockage_rate_per_loa_ft_per_day": 11.00,
+      "dockage_min_usd": 1500.00,
+      "wharfage_rates_per_st": {
+        "grain": 1.05,
+        "bulk_dry": 1.40,
+        "bulk_liquid": 1.25,
+        "cement": 1.40,
+        "fertilizer": 1.40,
+        "steel": 2.35,
+        "breakbulk": 2.15,
+        "containers": 2.20,
+        "general": 2.10
+      },
+      "wharfage_default_per_st": 2.10,
+      "harbour_dues_per_gt": 0.075,
+      "harbour_dues_min_usd": 600.00,
+      "line_handling_per_op_usd": 3000.00,
+      "fresh_water_per_mt_usd": 20.00,
+      "security_fee_usd": 850.00,
+      "key_terminals": [
+        {"name": "Houston Grain Terminal (Bunge)", "commodity": "grain", "operator": "Bunge"},
+        {"name": "Cemex Houston", "commodity": "cement", "operator": "Cemex"},
+        {"name": "Kinder Morgan Galena Park", "commodity": "bulk_liquid", "operator": "Kinder Morgan"},
+        {"name": "Trafigura Houston", "commodity": "bulk_dry", "operator": "Trafigura"}
+      ],
+      "confidence": "medium"
+    },
+
+    "mobile": {
+      "display_name": "Mobile",
+      "unlocode": "USMOB",
+      "aliases": ["mobile", "mobile al", "alabama state docks", "theodore", "chickasaw", "mcduffie island"],
+      "state": "AL",
+      "coast": "Gulf",
+      "authority": "Alabama State Port Authority (ASPA)",
+      "dockage_rate_per_loa_ft_per_day": 7.50,
+      "dockage_min_usd": 900.00,
+      "wharfage_rates_per_st": {
+        "coal": 0.75,
+        "bulk_dry": 1.00,
+        "bulk_liquid": 0.90,
+        "cement": 1.00,
+        "steel": 1.80,
+        "general": 1.55
+      },
+      "wharfage_default_per_st": 1.55,
+      "harbour_dues_per_gt": 0.050,
+      "harbour_dues_min_usd": 350.00,
+      "line_handling_per_op_usd": 2000.00,
+      "fresh_water_per_mt_usd": 15.00,
+      "security_fee_usd": 500.00,
+      "key_terminals": [
+        {"name": "McDuffie Coal Terminal", "commodity": "coal", "operator": "Alabama State Port Authority"},
+        {"name": "Warrior Tombigbee Waterway Grain", "commodity": "grain", "operator": "Various"},
+        {"name": "Alabama Bulk Terminal", "commodity": "bulk_dry", "operator": "ASPA"}
+      ],
+      "confidence": "medium"
+    },
+
+    "tampa": {
+      "display_name": "Tampa",
+      "unlocode": "USTPA",
+      "aliases": ["tampa", "port tampa bay", "port manatee", "piney point", "bartow", "riverview"],
+      "state": "FL",
+      "coast": "Gulf",
+      "authority": "Port Tampa Bay",
+      "dockage_rate_per_loa_ft_per_day": 7.00,
+      "dockage_min_usd": 850.00,
+      "wharfage_rates_per_st": {
+        "phosphate": 0.80,
+        "fertilizer": 0.95,
+        "bulk_dry": 0.95,
+        "bulk_liquid": 0.85,
+        "cement": 0.95,
+        "general": 1.50
+      },
+      "wharfage_default_per_st": 1.50,
+      "harbour_dues_per_gt": 0.048,
+      "harbour_dues_min_usd": 325.00,
+      "line_handling_per_op_usd": 1800.00,
+      "fresh_water_per_mt_usd": 14.00,
+      "security_fee_usd": 450.00,
+      "key_terminals": [
+        {"name": "Mosaic Port Manatee", "commodity": "phosphate", "operator": "Mosaic"},
+        {"name": "CF Industries Tampa", "commodity": "fertilizer", "operator": "CF Industries"},
+        {"name": "Cemex Tampa", "commodity": "cement", "operator": "Cemex"},
+        {"name": "Port Tampa Bay Bulk Terminal", "commodity": "bulk_dry", "operator": "Port Tampa Bay"}
+      ],
+      "confidence": "medium"
+    },
+
+    "savannah": {
+      "display_name": "Savannah",
+      "unlocode": "USSAV",
+      "aliases": ["savannah", "garden city terminal", "ocean terminal", "savannah ga", "brunswick ga"],
+      "state": "GA",
+      "coast": "Southeast",
+      "authority": "Georgia Ports Authority (GPA)",
+      "dockage_rate_per_loa_ft_per_day": 8.75,
+      "dockage_min_usd": 1050.00,
+      "wharfage_rates_per_st": {
+        "grain": 1.00,
+        "bulk_dry": 1.20,
+        "bulk_liquid": 1.05,
+        "cement": 1.20,
+        "steel": 2.00,
+        "breakbulk": 1.90,
+        "containers": 2.00,
+        "general": 1.75
+      },
+      "wharfage_default_per_st": 1.75,
+      "harbour_dues_per_gt": 0.062,
+      "harbour_dues_min_usd": 480.00,
+      "line_handling_per_op_usd": 2300.00,
+      "fresh_water_per_mt_usd": 17.00,
+      "security_fee_usd": 700.00,
+      "key_terminals": [
+        {"name": "Garden City Terminal", "commodity": "containers", "operator": "GPA"},
+        {"name": "Ocean Terminal", "commodity": "breakbulk", "operator": "GPA"},
+        {"name": "Savannah Bulk Terminal", "commodity": "bulk_dry", "operator": "Various"}
+      ],
+      "confidence": "medium"
+    },
+
+    "norfolk": {
+      "display_name": "Norfolk / Hampton Roads",
+      "unlocode": "USORF",
+      "aliases": ["norfolk", "hampton roads", "newport news", "portsmouth va", "chesapeake va", "richmond va"],
+      "state": "VA",
+      "coast": "Mid-Atlantic",
+      "authority": "Virginia Port Authority (VPA)",
+      "dockage_rate_per_loa_ft_per_day": 8.50,
+      "dockage_min_usd": 1100.00,
+      "wharfage_rates_per_st": {
+        "coal": 0.80,
+        "grain": 1.00,
+        "bulk_dry": 1.15,
+        "bulk_liquid": 1.00,
+        "containers": 1.90,
+        "general": 1.70
+      },
+      "wharfage_default_per_st": 1.70,
+      "harbour_dues_per_gt": 0.060,
+      "harbour_dues_min_usd": 450.00,
+      "line_handling_per_op_usd": 2400.00,
+      "fresh_water_per_mt_usd": 17.00,
+      "security_fee_usd": 650.00,
+      "key_terminals": [
+        {"name": "Lamberts Point Coal Terminal (NS)", "commodity": "coal", "operator": "Norfolk Southern"},
+        {"name": "DTA (Dominion Terminal Associates)", "commodity": "coal", "operator": "DTA JV"},
+        {"name": "Newport News Marine Terminal", "commodity": "bulk_dry", "operator": "VPA"},
+        {"name": "Norfolk International Terminals", "commodity": "containers", "operator": "VPA"}
+      ],
+      "confidence": "medium"
+    },
+
+    "baltimore": {
+      "display_name": "Baltimore",
+      "unlocode": "USBAL",
+      "aliases": ["baltimore", "sparrows point", "dundalk marine terminal", "baltimore md", "curtis bay", "fairfield"],
+      "state": "MD",
+      "coast": "Mid-Atlantic",
+      "authority": "Maryland Port Administration (MPA)",
+      "dockage_rate_per_loa_ft_per_day": 8.25,
+      "dockage_min_usd": 1050.00,
+      "wharfage_rates_per_st": {
+        "grain": 0.95,
+        "coal": 0.82,
+        "bulk_dry": 1.15,
+        "bulk_liquid": 1.00,
+        "steel": 2.10,
+        "breakbulk": 2.00,
+        "containers": 1.90,
+        "general": 1.68
+      },
+      "wharfage_default_per_st": 1.68,
+      "harbour_dues_per_gt": 0.058,
+      "harbour_dues_min_usd": 430.00,
+      "line_handling_per_op_usd": 2350.00,
+      "fresh_water_per_mt_usd": 16.50,
+      "security_fee_usd": 625.00,
+      "key_terminals": [
+        {"name": "Curtis Bay Bulk Terminal (US Steel)", "commodity": "coal/steel", "operator": "US Steel / Lehigh"},
+        {"name": "Dundalk Marine Terminal", "commodity": "ro-ro/breakbulk", "operator": "MPA"},
+        {"name": "Maryland Grain Terminal", "commodity": "grain", "operator": "Various"}
+      ],
+      "confidence": "medium"
+    },
+
+    "lake_charles": {
+      "display_name": "Lake Charles",
+      "unlocode": "USLCH",
+      "aliases": ["lake charles", "calcasieu", "port of lake charles"],
+      "state": "LA",
+      "coast": "Gulf",
+      "authority": "Lake Charles Harbor & Terminal District",
+      "dockage_rate_per_loa_ft_per_day": 7.00,
+      "dockage_min_usd": 850.00,
+      "wharfage_rates_per_st": {
+        "bulk_dry": 0.90,
+        "bulk_liquid": 0.80,
+        "cement": 0.90,
+        "general": 1.45
+      },
+      "wharfage_default_per_st": 1.45,
+      "harbour_dues_per_gt": 0.045,
+      "harbour_dues_min_usd": 300.00,
+      "line_handling_per_op_usd": 1800.00,
+      "fresh_water_per_mt_usd": 14.00,
+      "security_fee_usd": 450.00,
+      "key_terminals": [
+        {"name": "Lake Charles LNG Terminal", "commodity": "bulk_liquid", "operator": "Sempra"},
+        {"name": "Lake Charles Bulk Terminal", "commodity": "bulk_dry", "operator": "LCHD"}
+      ],
+      "confidence": "medium"
+    },
+
+    "columbia_river": {
+      "display_name": "Columbia River (Portland OR / Longview / Kalama)",
+      "unlocode": "USPDX",
+      "aliases": ["portland or", "portland oregon", "longview", "kalama", "vancouver wa", "clatskanie", "rainier or"],
+      "state": "OR/WA",
+      "coast": "Pacific",
+      "authority": "Port of Portland / Port of Longview",
+      "dockage_rate_per_loa_ft_per_day": 9.00,
+      "dockage_min_usd": 1100.00,
+      "wharfage_rates_per_st": {
+        "grain": 1.10,
+        "bulk_dry": 1.30,
+        "bulk_liquid": 1.15,
+        "cement": 1.30,
+        "general": 1.80
+      },
+      "wharfage_default_per_st": 1.80,
+      "harbour_dues_per_gt": 0.065,
+      "harbour_dues_min_usd": 500.00,
+      "line_handling_per_op_usd": 2500.00,
+      "fresh_water_per_mt_usd": 16.00,
+      "security_fee_usd": 650.00,
+      "key_terminals": [
+        {"name": "TEMCO Tacoma/Longview", "commodity": "grain", "operator": "TEMCO (Cargill/CHS JV)"},
+        {"name": "Bunge Longview", "commodity": "grain", "operator": "Bunge"},
+        {"name": "Louis Dreyfus Longview", "commodity": "grain", "operator": "LDC"},
+        {"name": "Columbia Grain Longview", "commodity": "grain", "operator": "Columbia Grain"}
+      ],
+      "confidence": "medium"
+    },
+
+    "new_york": {
+      "display_name": "New York / New Jersey",
+      "unlocode": "USNYC",
+      "aliases": ["new york", "new jersey", "port newark", "port jersey", "bayonne", "howland hook", "red hook", "brooklyn"],
+      "state": "NY/NJ",
+      "coast": "Northeast",
+      "authority": "Port Authority of New York & New Jersey (PANYNJ)",
+      "dockage_rate_per_loa_ft_per_day": 13.50,
+      "dockage_min_usd": 2000.00,
+      "wharfage_rates_per_st": {
+        "bulk_dry": 1.60,
+        "bulk_liquid": 1.45,
+        "steel": 2.80,
+        "breakbulk": 2.50,
+        "containers": 2.50,
+        "general": 2.20
+      },
+      "wharfage_default_per_st": 2.20,
+      "harbour_dues_per_gt": 0.085,
+      "harbour_dues_min_usd": 800.00,
+      "line_handling_per_op_usd": 3500.00,
+      "fresh_water_per_mt_usd": 22.00,
+      "security_fee_usd": 1000.00,
+      "key_terminals": [
+        {"name": "Port Newark Container Terminal", "commodity": "containers", "operator": "PNCT"},
+        {"name": "Red Hook Container Terminal", "commodity": "containers", "operator": "Red Hook"},
+        {"name": "Howland Hook Marine Terminal", "commodity": "containers/breakbulk", "operator": "PANYNJ"}
+      ],
+      "confidence": "medium"
+    }
+  }
+}

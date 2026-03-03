@@ -1,0 +1,500 @@
+{
+  "metadata": {
+    "title": "US Port Towage Rate Catalog",
+    "compiled_date": "2026-03-02",
+    "compiler": "William S. Davis III / project_master_reporting",
+    "purpose": "Towage cost calculator — Port PDA sub-module",
+    "version": "0.1.0-draft",
+    "rate_basis": "LOA (Length Over All, metres) → tug count; rate per tug per move + call-out fee",
+    "confidence_notes": {
+      "high": "Confirmed from published port authority or operator tariff",
+      "medium": "Industry benchmark — reasonable approximation, verify against current operator rates",
+      "low": "Port known, rates not yet sourced — needs verification"
+    },
+    "verification_status": "DRAFT — all rates require validation against current published tariffs",
+    "sources_to_check": [
+      "Moran Towing Corporation (Gulf, East Coast)",
+      "Bouchard Transportation (Gulf Coast)",
+      "Seabulk Towing (Gulf, Southeast)",
+      "McAllister Towing (East Coast, Gulf)",
+      "Port authority tug tariff schedules",
+      "BIMCO standard tug contracts as reference"
+    ]
+  },
+
+  "global_tug_count_defaults": {
+    "description": "LOA-based tug count when no port-specific override exists",
+    "source": "config.yaml — industry standard approximation",
+    "tiers": [
+      { "loa_max_m": 149, "tugs": 1 },
+      { "loa_max_m": 199, "tugs": 2 },
+      { "loa_max_m": 229, "tugs": 3 },
+      { "loa_max_m": 999, "tugs": 4 }
+    ]
+  },
+
+  "surcharge_logic": {
+    "night_window": { "start_hour": 18, "end_hour": 6, "description": "1800-0600 local time" },
+    "weekend_days": [5, 6],
+    "holiday_applies": true,
+    "note": "Night and weekend surcharges are additive at some ports, max-of at others. Per-port override takes precedence."
+  },
+
+  "ports": {
+
+    "new_orleans": {
+      "display_name": "New Orleans",
+      "aliases": ["new orleans", "nola", "new orleans la", "avondale", "westwego", "gretna", "harvey", "chalmette"],
+      "state": "LA",
+      "coast": "Gulf",
+      "operators": ["Moran Gulf Shipping", "Seabulk Towing", "Canal Barge Co"],
+      "notes": "Mississippi River — complex maneuvers, strong current. Minimum 2 tugs for vessels LOA > 150m. Night operations common due to 24hr terminal ops.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 149,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 4800.00,
+          "call_out_fee_per_tug_usd": 1200.00,
+          "notes": "Small vessels — 1 tug typical"
+        },
+        {
+          "loa_min_m": 150, "loa_max_m": 199,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 4800.00,
+          "call_out_fee_per_tug_usd": 1200.00,
+          "notes": "Handymax range"
+        },
+        {
+          "loa_min_m": 200, "loa_max_m": 229,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 4800.00,
+          "call_out_fee_per_tug_usd": 1200.00,
+          "notes": "Panamax range — 3 tugs typical river assist"
+        },
+        {
+          "loa_min_m": 230, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 4800.00,
+          "call_out_fee_per_tug_usd": 1200.00,
+          "notes": "Post-Panamax / Capesize — 4 tugs; verify with port"
+        }
+      ],
+      "surcharges": {
+        "night_pct": 30.0,
+        "weekend_pct": 30.0,
+        "holiday_pct": 50.0
+      },
+      "port_specific_rules": [
+        "Minimum 2 tugs for LOA > 150m on Mississippi River (current)",
+        "4th tug often required above Baton Rouge — verify with operator"
+      ],
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "baton_rouge": {
+      "display_name": "Baton Rouge",
+      "aliases": ["baton rouge", "baton rouge la", "port allen", "plaquemine", "geismar", "burnside", "gramercy", "reserve", "norco", "donaldsonville"],
+      "state": "LA",
+      "coast": "Gulf",
+      "operators": ["Moran Gulf Shipping", "Seabulk Towing"],
+      "notes": "Upper Mississippi River. Stronger current than NOLA, narrower berths. Often requires 1 additional tug vs. NOLA for same LOA. Shifting between berths common.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 149,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 5200.00,
+          "call_out_fee_per_tug_usd": 1300.00,
+          "notes": "Minimum 2 tugs — river current mandates it"
+        },
+        {
+          "loa_min_m": 150, "loa_max_m": 199,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 5200.00,
+          "call_out_fee_per_tug_usd": 1300.00,
+          "notes": "Handymax — 3 tugs standard on upper river"
+        },
+        {
+          "loa_min_m": 200, "loa_max_m": 229,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 5200.00,
+          "call_out_fee_per_tug_usd": 1300.00,
+          "notes": "Panamax — 4 tugs required for safety margin"
+        },
+        {
+          "loa_min_m": 230, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 5200.00,
+          "call_out_fee_per_tug_usd": 1500.00,
+          "notes": "Large vessel — verify tug count with terminal"
+        }
+      ],
+      "surcharges": {
+        "night_pct": 30.0,
+        "weekend_pct": 30.0,
+        "holiday_pct": 50.0
+      },
+      "port_specific_rules": [
+        "Minimum 2 tugs always — even for small vessels due to current",
+        "High-water season (spring flood) may require additional tug"
+      ],
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "houston": {
+      "display_name": "Houston",
+      "aliases": ["houston", "houston ship channel", "houston tx", "freeport", "texas city"],
+      "state": "TX",
+      "coast": "Gulf",
+      "operators": ["Moran Gulf Shipping", "Bouchard Transportation", "Crowley Maritime"],
+      "notes": "50-mile ship channel. Busy port, well-organized tug services. Rates among highest in Gulf due to long channel transit and volume.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 149,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 4500.00,
+          "call_out_fee_per_tug_usd": 1100.00
+        },
+        {
+          "loa_min_m": 150, "loa_max_m": 199,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 4500.00,
+          "call_out_fee_per_tug_usd": 1100.00
+        },
+        {
+          "loa_min_m": 200, "loa_max_m": 229,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 4500.00,
+          "call_out_fee_per_tug_usd": 1100.00
+        },
+        {
+          "loa_min_m": 230, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 4500.00,
+          "call_out_fee_per_tug_usd": 1100.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 50.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "mobile": {
+      "display_name": "Mobile",
+      "aliases": ["mobile", "mobile al", "alabama state docks", "theodore", "chickasaw"],
+      "state": "AL",
+      "coast": "Gulf",
+      "operators": ["Moran Gulf Shipping", "Bay Towing"],
+      "notes": "Mobile Bay. Important bulk port — coal, grain, forest products. Competitive tug rates vs. other Gulf ports.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 179,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        },
+        {
+          "loa_min_m": 180, "loa_max_m": 219,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        },
+        {
+          "loa_min_m": 220, "loa_max_m": 999,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "tampa": {
+      "display_name": "Tampa",
+      "aliases": ["tampa", "port tampa bay", "port manatee", "piney point"],
+      "state": "FL",
+      "coast": "Gulf",
+      "operators": ["Seabulk Towing", "Bay Towing Inc"],
+      "notes": "Tampa Bay — long approach channel. Phosphate and bulk port. Port Manatee is phosphate-specific.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 149,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 3500.00,
+          "call_out_fee_per_tug_usd": 900.00
+        },
+        {
+          "loa_min_m": 150, "loa_max_m": 199,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 3500.00,
+          "call_out_fee_per_tug_usd": 900.00
+        },
+        {
+          "loa_min_m": 200, "loa_max_m": 999,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 3500.00,
+          "call_out_fee_per_tug_usd": 900.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "savannah": {
+      "display_name": "Savannah",
+      "aliases": ["savannah", "garden city terminal", "ocean terminal", "savannah ga"],
+      "state": "GA",
+      "coast": "East",
+      "operators": ["Moran Towing", "McAllister Towing"],
+      "notes": "21-mile Savannah River transit. Third largest US port. Strong tide and current — tug assist important for berth safety.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 179,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        },
+        {
+          "loa_min_m": 180, "loa_max_m": 219,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        },
+        {
+          "loa_min_m": 220, "loa_max_m": 269,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        },
+        {
+          "loa_min_m": 270, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 3800.00,
+          "call_out_fee_per_tug_usd": 950.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "norfolk": {
+      "display_name": "Norfolk / Hampton Roads",
+      "aliases": ["norfolk", "hampton roads", "newport news", "portsmouth va", "chesapeake va"],
+      "state": "VA",
+      "coast": "East",
+      "operators": ["Moran Towing", "McAllister Towing"],
+      "notes": "Hampton Roads — large natural harbor, coal and grain. Norfolk International Terminals (NIT) and Newport News Marine Terminal.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 179,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        },
+        {
+          "loa_min_m": 180, "loa_max_m": 219,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        },
+        {
+          "loa_min_m": 220, "loa_max_m": 269,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        },
+        {
+          "loa_min_m": 270, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "baltimore": {
+      "display_name": "Baltimore",
+      "aliases": ["baltimore", "sparrows point", "dundalk marine terminal", "baltimore md", "curtis bay"],
+      "state": "MD",
+      "coast": "East",
+      "operators": ["Moran Towing", "McAllister Towing"],
+      "notes": "Patapsco River / Chesapeake Bay. Important bulk and Ro-Ro port. Long approach increases tug time.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 149,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00
+        },
+        {
+          "loa_min_m": 150, "loa_max_m": 199,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00
+        },
+        {
+          "loa_min_m": 200, "loa_max_m": 249,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00
+        },
+        {
+          "loa_min_m": 250, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "new_york": {
+      "display_name": "New York / New Jersey",
+      "aliases": ["new york", "new jersey", "port newark", "port jersey", "bayonne", "howland hook", "staten island", "brooklyn", "red hook"],
+      "state": "NY/NJ",
+      "coast": "East",
+      "operators": ["Moran Towing", "McAllister Towing", "Vane Brothers"],
+      "notes": "Largest US port complex. High tug rates. Complex harbor navigation — strong currents at The Narrows and Hell Gate.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 149,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 5500.00,
+          "call_out_fee_per_tug_usd": 1400.00
+        },
+        {
+          "loa_min_m": 150, "loa_max_m": 199,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 5500.00,
+          "call_out_fee_per_tug_usd": 1400.00
+        },
+        {
+          "loa_min_m": 200, "loa_max_m": 249,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 5500.00,
+          "call_out_fee_per_tug_usd": 1400.00
+        },
+        {
+          "loa_min_m": 250, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 5500.00,
+          "call_out_fee_per_tug_usd": 1400.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 30.0,
+        "weekend_pct": 30.0,
+        "holiday_pct": 50.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "portland_or": {
+      "display_name": "Portland OR / Columbia River",
+      "aliases": ["portland or", "portland oregon", "longview", "kalama", "vancouver wa", "clatskanie"],
+      "state": "OR/WA",
+      "coast": "Pacific",
+      "operators": ["Dunlap Towing", "Foss Maritime", "Crowley Maritime"],
+      "notes": "Columbia River. Major grain export. River current significant — tugs work harder. Longview and Kalama rates similar.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 179,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00,
+          "notes": "Minimum 2 tugs — river current"
+        },
+        {
+          "loa_min_m": 180, "loa_max_m": 219,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00
+        },
+        {
+          "loa_min_m": 220, "loa_max_m": 999,
+          "tugs": 4,
+          "rate_per_tug_per_move_usd": 4200.00,
+          "call_out_fee_per_tug_usd": 1050.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    },
+
+    "puget_sound": {
+      "display_name": "Puget Sound (Seattle/Tacoma)",
+      "aliases": ["seattle", "tacoma", "olympia", "everett", "anacortes", "bellingham", "port angeles"],
+      "state": "WA",
+      "coast": "Pacific",
+      "operators": ["Foss Maritime", "Crowley Maritime", "Dunlap Towing"],
+      "notes": "Puget Sound. Strong tidal currents. Seattle and Tacoma are the two major terminals — similar rates.",
+      "loa_tiers": [
+        {
+          "loa_min_m": 0,   "loa_max_m": 179,
+          "tugs": 1,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        },
+        {
+          "loa_min_m": 180, "loa_max_m": 219,
+          "tugs": 2,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        },
+        {
+          "loa_min_m": 220, "loa_max_m": 999,
+          "tugs": 3,
+          "rate_per_tug_per_move_usd": 4000.00,
+          "call_out_fee_per_tug_usd": 1000.00
+        }
+      ],
+      "surcharges": {
+        "night_pct": 25.0,
+        "weekend_pct": 25.0,
+        "holiday_pct": 40.0
+      },
+      "confidence": "medium",
+      "verification_url": null
+    }
+  }
+}

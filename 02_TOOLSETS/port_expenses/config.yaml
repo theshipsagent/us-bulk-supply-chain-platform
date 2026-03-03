@@ -1,0 +1,90 @@
+# Port Expenses Toolset — Configuration
+# 02_TOOLSETS/port_expenses/config.yaml
+# Owner: William S. Davis III | Created: 2026-03-02
+
+toolset:
+  name: port_expenses
+  version: "1.0.0"
+  currency: USD
+  tonnage_unit: short_tons   # ST unless specified metric
+  coordinates: WGS84
+
+# Vessel size tiers used across multiple sub-modules
+vessel_size_tiers:
+  handysize:   { loa_max: 180, grt_max: 25000, dwt_max: 40000 }
+  handymax:    { loa_max: 200, grt_max: 35000, dwt_max: 58000 }
+  supramax:    { loa_max: 210, grt_max: 42000, dwt_max: 63000 }
+  panamax:     { loa_max: 229, grt_max: 65000, dwt_max: 80000 }
+  post_panamax: { loa_max: 300, grt_max: 100000, dwt_max: 120000 }
+  capesize:    { loa_max: 400, grt_max: 180000, dwt_max: 250000 }
+
+# Tug count defaults by LOA (meters) — overridden by port-specific rules
+tug_count_defaults:
+  - { loa_max: 149, tugs: 1 }
+  - { loa_max: 199, tugs: 2 }
+  - { loa_max: 229, tugs: 3 }
+  - { loa_max: 999, tugs: 4 }
+
+# Key US bulk ports covered
+ports:
+  new_orleans:
+    unlocode: USMSY
+    pilot_association: NOBRA
+    state: LA
+    region: gulf_coast
+  baton_rouge:
+    unlocode: USBTR
+    pilot_association: NOBRA
+    state: LA
+    region: gulf_coast
+  houston:
+    unlocode: USHOU
+    pilot_association: houston_pilots
+    state: TX
+    region: gulf_coast
+  savannah:
+    unlocode: USSAV
+    pilot_association: savannah_bar_pilots
+    state: GA
+    region: atlantic
+  baltimore:
+    unlocode: USBAL
+    pilot_association: maryland_pilots
+    state: MD
+    region: atlantic
+  norfolk:
+    unlocode: USORF
+    pilot_association: virginia_pilots
+    state: VA
+    region: atlantic
+  tampa:
+    unlocode: USTPA
+    pilot_association: tampa_bay_pilots
+    state: FL
+    region: gulf_coast
+  mobile:
+    unlocode: USMOB
+    pilot_association: mobile_bar_pilots
+    state: AL
+    region: gulf_coast
+
+# Sub-module paths
+sub_modules:
+  towage:          01_towage
+  pilotage:        02_pilotage
+  terminals:       03_terminals
+  officials:       04_officials
+  surveyors:       05_surveyors
+  launches:        06_launches
+  agents:          07_agents
+  disbursements:   08_disbursements
+  user_notes:      09_user_notes
+  proforma:        10_proforma_calculator
+  hold_cleaning:   11_hold_cleaning
+
+# Output settings
+output:
+  default_format: excel
+  excel_template: templates/pda_template.xlsx
+  include_confidence_flags: true
+  include_source_citations: true

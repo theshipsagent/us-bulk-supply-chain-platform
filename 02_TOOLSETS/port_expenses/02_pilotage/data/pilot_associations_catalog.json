@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "title": "US Port Pilot Associations — Tariff Catalog",
+    "compiled_date": "2026-03-02",
+    "compiler": "William S. Davis III / project_master_reporting",
+    "purpose": "Foundation data for pilotage cost calculator — Port PDA sub-module",
+    "version": "0.1.0-draft",
+    "confidence_notes": {
+      "high": "Confirmed from published regulatory tariff or CFR — verify current year rate",
+      "medium": "Structure confirmed, rates approximated from historical filings or industry benchmark",
+      "low": "Association confirmed to exist, rate data not yet collected — needs web verification",
+      "needs_verification": "All rates should be verified against current published tariffs before use in production"
+    },
+    "verification_status": "DRAFT — rate figures require validation against current published tariffs",
+    "next_action": "Pull current tariff PDFs from each association website listed below"
+  },
+
+  "associations": [
+
+    {
+      "id": "nobra",
+      "name": "New Orleans Bar Pilots (NOBRA)",
+      "full_name": "Associated Branch Pilots of New Orleans",
+      "ports": ["New Orleans", "Baton Rouge", "Head of Passes", "Harvey", "Gretna", "Westwego"],
+      "state": "LA",
+      "coast": "Gulf",
+      "river": "Mississippi River — Lower and Upper",
+      "website": "https://www.nobra.com",
+      "tariff_url": "https://www.nobra.com/tariff",
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Louisiana Board of River Pilot Commissioners",
+      "notes": "Bills by river segment. Separate rates for Lower River (Head of Passes to New Orleans) and Upper River (New Orleans to Baton Rouge). Compulsory for all vessels over 1,600 GRT.",
+      "grt_tiers": [
+        {"grt_min": 1600, "grt_max": 5000, "rate_usd": 1450.00, "notes": "Minimum compulsory threshold"},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2900.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 4350.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 5800.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 7250.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 8700.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 10150.00},
+        {"grt_min": 40001, "grt_max": 50000, "rate_usd": 11600.00},
+        {"grt_min": 50001, "grt_max": 999999, "rate_usd": 13050.00}
+      ],
+      "river_segments": {
+        "lower_river": {
+          "from": "Head of Passes (Pilotage Station)",
+          "to": "New Orleans (Crescent City Connection)",
+          "miles": 95,
+          "billing_note": "Included in base rate for New Orleans calls",
+          "additional_rate_per_100grt_per_mile": null
+        },
+        "upper_river": {
+          "from": "New Orleans",
+          "to": "Baton Rouge",
+          "miles": 135,
+          "billing_note": "Additional segment charge for Baton Rouge calls",
+          "additional_rate_per_100grt": 0.52,
+          "notes": "Rate per 100 GRT for river miles above New Orleans — verify current rate"
+        }
+      },
+      "surcharges": [
+        {"type": "Night/Weekend", "amount_usd": 250.00, "notes": "Arrival/departure outside business hours"},
+        {"type": "Shifting", "amount_usd": 850.00, "notes": "Per move within port"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.nobra.com/tariff",
+      "last_verified": null,
+      "todo": "Download current tariff PDF from nobra.com and update GRT rates"
+    },
+
+    {
+      "id": "houston",
+      "name": "Houston Pilots",
+      "full_name": "Pilots for the Bay and Harbor of Galveston",
+      "ports": ["Houston", "Galveston", "Texas City", "Freeport"],
+      "state": "TX",
+      "coast": "Gulf",
+      "website": "https://www.houstonpilots.com",
+      "tariff_url": "https://www.houstonpilots.com/tariff-schedule",
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Texas Board of Pilot Commissioners",
+      "notes": "Covers Houston Ship Channel (50-mile dredged channel). Pilots board at Galveston outer bar. Also covers Texas City turning basin and Galveston island wharves.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1050.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2100.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 3150.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 4200.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 5250.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 6300.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 7350.00},
+        {"grt_min": 40001, "grt_max": 50000, "rate_usd": 8400.00},
+        {"grt_min": 50001, "grt_max": 999999, "rate_usd": 9450.00}
+      ],
+      "surcharges": [
+        {"type": "Deep Draft Surcharge", "amount_usd": 500.00, "notes": "Vessels drawing over 40 feet"},
+        {"type": "Night Pilotage", "amount_usd": 300.00, "notes": "Between 2200-0600 local time"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.houstonpilots.com",
+      "last_verified": null,
+      "todo": "Verify current rates from houstonpilots.com"
+    },
+
+    {
+      "id": "sabine",
+      "name": "Sabine Pilots",
+      "full_name": "Sabine Pilots — Port Arthur/Beaumont/Orange",
+      "ports": ["Port Arthur", "Beaumont", "Orange", "Sabine Pass"],
+      "state": "TX",
+      "coast": "Gulf",
+      "website": "https://www.sabinepilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Texas Board of Pilot Commissioners",
+      "notes": "Sabine-Neches Waterway. Important for petroleum and chemical tankers. Beaumont is a major grain/agri port.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": "https://www.sabinepilots.com",
+      "last_verified": null,
+      "todo": "Find tariff schedule — check Texas Board of Pilot Commissioners website"
+    },
+
+    {
+      "id": "corpus_christi",
+      "name": "Corpus Christi Pilots",
+      "full_name": "Board of Pilot Commissioners for Corpus Christi",
+      "ports": ["Corpus Christi", "Portland TX", "Ingleside"],
+      "state": "TX",
+      "coast": "Gulf",
+      "website": "https://www.corpuspilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Texas Board of Pilot Commissioners",
+      "notes": "Major petroleum export port. Growing in grain/agri exports.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find tariff — check Texas pilot commission or port authority website"
+    },
+
+    {
+      "id": "lake_charles",
+      "name": "Lake Charles Pilots",
+      "full_name": "Board of Louisiana River Pilot Commissioners — Lake Charles",
+      "ports": ["Lake Charles", "Port of Lake Charles"],
+      "state": "LA",
+      "coast": "Gulf",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Louisiana Board of River Pilot Commissioners",
+      "notes": "Calcasieu River shipping channel. Important for LNG and petrochemicals. Also grain.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find Louisiana pilot tariff for Lake Charles — check LA Board of River Pilot Commissioners"
+    },
+
+    {
+      "id": "mobile",
+      "name": "Mobile Bar Pilots",
+      "full_name": "Mobile Bar Pilots",
+      "ports": ["Mobile", "Alabama State Docks", "Theodore", "Chickasaw"],
+      "state": "AL",
+      "coast": "Gulf",
+      "website": "https://www.mobilebarpilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Alabama Pilotage Commission",
+      "notes": "Mobile Bay. Important coal, grain, and forest products port.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 950.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 1900.00},
+        {"grt_min": 10001, "grt_max": 20000, "rate_usd": 2850.00},
+        {"grt_min": 20001, "grt_max": 30000, "rate_usd": 3800.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 4750.00},
+        {"grt_min": 40001, "grt_max": 999999, "rate_usd": 5700.00}
+      ],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.mobilebarpilots.com",
+      "last_verified": null,
+      "todo": "Verify current rates from mobilebarpilots.com or Alabama Pilotage Commission"
+    },
+
+    {
+      "id": "panama_city",
+      "name": "Panama City Bar Pilots",
+      "ports": ["Panama City FL", "Port Panama City"],
+      "state": "FL",
+      "coast": "Gulf",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Florida Board of Pilot Commissioners",
+      "notes": "Florida Panhandle port. Forest products, sand, phosphate.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Check Florida Board of Pilot Commissioners for tariff"
+    },
+
+    {
+      "id": "tampa_bay",
+      "name": "Tampa Bay Pilots",
+      "full_name": "Tampa Bay Pilots Association",
+      "ports": ["Tampa", "Port Tampa Bay", "Piney Point", "Port Manatee"],
+      "state": "FL",
+      "coast": "Gulf/East (Florida west coast)",
+      "website": "https://www.tampabaypilotsassociation.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Florida Board of Pilot Commissioners",
+      "notes": "Major phosphate and bulk port. Tampa Bay is long pilot run (~30 miles from anchorage to berth). Pilot boards at Egmont Key sea buoy.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 3000, "rate_usd": 800.00},
+        {"grt_min": 3001, "grt_max": 6000, "rate_usd": 1600.00},
+        {"grt_min": 6001, "grt_max": 10000, "rate_usd": 2400.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 3200.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 4000.00},
+        {"grt_min": 20001, "grt_max": 30000, "rate_usd": 4800.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 5600.00},
+        {"grt_min": 40001, "grt_max": 999999, "rate_usd": 6400.00}
+      ],
+      "surcharges": [
+        {"type": "Deep Draft (over 36 ft)", "amount_usd": 400.00, "notes": "Vessels drawing over 36 ft"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.tampabaypilotsassociation.com",
+      "last_verified": null,
+      "todo": "Verify current rates — Florida Board of Pilot Commissioners publishes tariffs"
+    },
+
+    {
+      "id": "port_everglades",
+      "name": "Port Everglades Pilots",
+      "full_name": "Port Everglades Pilots Association",
+      "ports": ["Port Everglades", "Fort Lauderdale"],
+      "state": "FL",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Florida Board of Pilot Commissioners",
+      "notes": "Major petroleum and container port. Less bulk commodity relevance but included for coverage.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Check Florida Board of Pilot Commissioners"
+    },
+
+    {
+      "id": "jacksonville",
+      "name": "Jacksonville Pilots",
+      "full_name": "St. Johns Bar Pilot Commissioners",
+      "ports": ["Jacksonville", "JAXPORT", "Blount Island", "Talleyrand"],
+      "state": "FL",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Florida Board of Pilot Commissioners",
+      "notes": "St. Johns River port. Auto, bulk, and container. Important for forest products.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find tariff from Florida Pilot Commissioners or JAXPORT"
+    },
+
+    {
+      "id": "savannah",
+      "name": "Savannah Bar Pilots",
+      "full_name": "Savannah Bar Pilots",
+      "ports": ["Savannah", "Garden City Terminal", "Ocean Terminal"],
+      "state": "GA",
+      "coast": "East",
+      "website": "https://www.savannahpilots.com",
+      "tariff_url": "https://www.savannahpilots.com/tariff",
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Georgia Ports Authority / Georgia Pilots Association",
+      "notes": "3rd largest US port by TEU. 21-mile pilot run from sea buoy to berth on Savannah River. Important for bulk commodities — forest products, grain.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1100.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2200.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 3300.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 4400.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 5500.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 6600.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 7700.00},
+        {"grt_min": 40001, "grt_max": 999999, "rate_usd": 8800.00}
+      ],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.savannahpilots.com",
+      "last_verified": null,
+      "todo": "Verify current rates from savannahpilots.com tariff page"
+    },
+
+    {
+      "id": "charleston",
+      "name": "Charleston Pilots",
+      "full_name": "Commissioners of Pilotage for the Port of Charleston",
+      "ports": ["Charleston", "North Charleston", "Columbus Street Terminal"],
+      "state": "SC",
+      "coast": "East",
+      "website": "https://www.scpilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "South Carolina State Pilotage Commission",
+      "notes": "Major container and bulk port. Cooper River transit.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1000.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2000.00},
+        {"grt_min": 10001, "grt_max": 20000, "rate_usd": 3000.00},
+        {"grt_min": 20001, "grt_max": 30000, "rate_usd": 4000.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 5000.00}
+      ],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.scpilots.com",
+      "last_verified": null,
+      "todo": "Verify rates from SC Pilotage Commission website"
+    },
+
+    {
+      "id": "wilmington_nc",
+      "name": "North Carolina Pilots",
+      "full_name": "NC Pilots Association — Wilmington",
+      "ports": ["Wilmington NC", "Cape Fear River"],
+      "state": "NC",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "North Carolina Ports Authority / NC Pilotage Board",
+      "notes": "Cape Fear River port. Grain, fertilizers, coal. 26-mile river transit.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find NC Pilotage Board website and tariff schedule"
+    },
+
+    {
+      "id": "morehead_city",
+      "name": "Morehead City / Cape Fear Pilots",
+      "ports": ["Morehead City NC"],
+      "state": "NC",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "North Carolina Pilotage Board",
+      "notes": "Phosphate and bulk port.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Confirm separate association or same as Wilmington NC pilots"
+    },
+
+    {
+      "id": "virginia",
+      "name": "Virginia Pilots",
+      "full_name": "Virginia Pilot Association",
+      "ports": ["Norfolk", "Newport News", "Hampton Roads", "Portsmouth", "Richmond", "Hopewell"],
+      "state": "VA",
+      "coast": "East",
+      "website": "https://www.virginiapilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Virginia Board of Pilots",
+      "notes": "Hampton Roads is one of the largest US bulk ports — coal, grain, and break-bulk. Pilots also serve James River terminals (Richmond, Hopewell) for additional segment fees.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1200.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2400.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 3600.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 4800.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 6000.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 7200.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 8400.00},
+        {"grt_min": 40001, "grt_max": 999999, "rate_usd": 9600.00}
+      ],
+      "surcharges": [
+        {"type": "Chesapeake Bay Transit", "amount_usd": 1200.00, "notes": "Vessels transiting Chesapeake Bay outbound to ocean — additional fee"},
+        {"type": "James River Segment", "amount_usd": 850.00, "notes": "Terminal above Hampton Roads — per segment"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.virginiapilots.com",
+      "last_verified": null,
+      "todo": "Verify rates from Virginia Board of Pilots — they publish tariffs annually"
+    },
+
+    {
+      "id": "maryland",
+      "name": "Maryland Pilots",
+      "full_name": "Maryland Pilots / State Pilotage",
+      "ports": ["Baltimore", "Sparrows Point", "Dundalk Marine Terminal"],
+      "state": "MD",
+      "coast": "East",
+      "website": "https://www.marylandpilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Maryland Board of Pilots",
+      "notes": "Long Chesapeake Bay transit (190 miles from ocean). Pilots board at mouth of Chesapeake Bay (same as Virginia Pilots then handoff to Maryland at state line). Important coal, grain, and bulk port.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 2200.00, "notes": "Higher due to long bay transit"},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 4400.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 6600.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 8800.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 11000.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 13200.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 15400.00}
+      ],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.marylandpilots.com",
+      "last_verified": null,
+      "todo": "Verify — Maryland has a long bay transit that significantly inflates pilotage vs. other ports"
+    },
+
+    {
+      "id": "delaware_bay",
+      "name": "Delaware Bay & River Pilots",
+      "full_name": "Association of Delaware River Pilots",
+      "ports": ["Philadelphia", "Wilmington DE", "Marcus Hook", "Chester PA", "Salem NJ"],
+      "state": "DE/PA/NJ",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Philadelphia Board of Pilots",
+      "notes": "Delaware Bay transit (~90 miles from sea buoy to Philadelphia). Also bills for river transit above Philadelphia to Trenton. Important petroleum, chemical, and grain port.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1800.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 3600.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 5400.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 7200.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 9000.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 10800.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 12600.00}
+      ],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find Delaware/Philadelphia pilotage commission tariff"
+    },
+
+    {
+      "id": "ny_nj",
+      "name": "New York & New Jersey Pilots",
+      "full_name": "United New York/New Jersey Sandy Hook Pilots Association",
+      "ports": ["New York", "Newark", "Elizabeth", "Bayonne", "Howland Hook", "Port Newark", "Port Jersey"],
+      "state": "NY/NJ",
+      "coast": "East",
+      "website": "https://www.sandyhookpilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "NY/NJ Pilotage Commission (joint)",
+      "notes": "Busiest US port by volume. Sandy Hook pilots board at Ambrose anchorage. Very high pilotage rates due to complex harbor and dense traffic.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 2000.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 4000.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 6000.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 8000.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 10000.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 12000.00},
+        {"grt_min": 30001, "grt_max": 40000, "rate_usd": 14000.00},
+        {"grt_min": 40001, "grt_max": 50000, "rate_usd": 16000.00},
+        {"grt_min": 50001, "grt_max": 999999, "rate_usd": 18000.00}
+      ],
+      "surcharges": [
+        {"type": "Maneuvering Fee", "amount_usd": 500.00, "notes": "Complex terminal berths"},
+        {"type": "Weekend/Night", "amount_usd": 400.00, "notes": "Outside normal hours"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.sandyhookpilots.com",
+      "last_verified": null,
+      "todo": "Verify from NY/NJ Pilotage Commission — rates regulated jointly by both states"
+    },
+
+    {
+      "id": "boston",
+      "name": "Boston Pilots",
+      "full_name": "Boston Pilots Association / Massachusetts Pilots",
+      "ports": ["Boston", "Mystic", "Fore River", "Lynn", "Salem"],
+      "state": "MA",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Massachusetts Board of Pilot Commissioners",
+      "notes": "Boston Harbor. Petroleum, bulk, and salt imports.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find Massachusetts pilotage board tariff"
+    },
+
+    {
+      "id": "portland_me",
+      "name": "Portland ME Pilots",
+      "full_name": "Portland Pilots — State of Maine",
+      "ports": ["Portland ME", "South Portland", "Searsport"],
+      "state": "ME",
+      "coast": "East",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Maine Board of Licensure for Pilots",
+      "notes": "Important petroleum import port. Forest products. Searsport is bulk/break-bulk.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Find Maine pilotage board tariff"
+    },
+
+    {
+      "id": "puget_sound",
+      "name": "Puget Sound Pilots",
+      "full_name": "Puget Sound Pilot Association",
+      "ports": ["Seattle", "Tacoma", "Olympia", "Everett", "Anacortes", "Port Angeles", "Bellingham"],
+      "state": "WA",
+      "coast": "Pacific",
+      "website": "https://www.pspilots.org",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Washington State Board of Pilotage Commissioners",
+      "notes": "Covers all of Puget Sound. Long transit from Strait of Juan de Fuca to inner Sound ports. Rates vary by destination — Seattle rates differ from Tacoma which differ from Olympia.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1100.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2200.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 3300.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 4400.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 5500.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 6600.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 7700.00}
+      ],
+      "surcharges": [
+        {"type": "Destination Distance Surcharge", "amount_usd": null, "notes": "Rates vary materially by destination — Olympia higher than Seattle; verify per destination"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.pspilots.org",
+      "last_verified": null,
+      "todo": "Verify rates by destination — WA Board of Pilotage publishes detailed tariff"
+    },
+
+    {
+      "id": "columbia_river",
+      "name": "Columbia River Pilots",
+      "full_name": "Columbia River Pilots",
+      "ports": ["Portland OR", "Longview WA", "Kalama WA", "Vancouver WA", "Clatskanie OR"],
+      "state": "OR/WA",
+      "coast": "Pacific",
+      "website": "https://www.columbiariverpilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Oregon Board of Maritime Pilots",
+      "notes": "Columbia River Bar is one of the most hazardous bar crossings in the world. Specialized bar pilot service. River pilots take over for upriver transit to Portland/Longview. Major grain export corridor (PNW wheat/soy).",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1300.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2600.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 3900.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 5200.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 6500.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 7800.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 9100.00}
+      ],
+      "surcharges": [
+        {"type": "Bar Crossing Surcharge", "amount_usd": 800.00, "notes": "Columbia River Bar — weather/swell dependent"},
+        {"type": "Upriver Segment", "amount_usd": null, "notes": "Portland vs Longview vs Kalama — different rates per segment; verify"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.columbiariverpilots.com",
+      "last_verified": null,
+      "todo": "Verify rates and segment structure from Oregon Board of Maritime Pilots"
+    },
+
+    {
+      "id": "sf_bar",
+      "name": "San Francisco Bar Pilots",
+      "full_name": "San Francisco Bar Pilots / California Pilotage",
+      "ports": ["San Francisco", "Oakland", "Richmond CA", "Redwood City", "Stockton", "Sacramento"],
+      "state": "CA",
+      "coast": "Pacific",
+      "website": "https://www.sfbarpilots.com",
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "California Board of Pilot Commissioners",
+      "notes": "Covers San Francisco Bay, San Pablo Bay, and inland delta routes to Stockton and Sacramento. Important for bulk grain and agricultural products going inland. Bar crossing surcharge applies.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1400.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2800.00},
+        {"grt_min": 10001, "grt_max": 15000, "rate_usd": 4200.00},
+        {"grt_min": 15001, "grt_max": 20000, "rate_usd": 5600.00},
+        {"grt_min": 20001, "grt_max": 25000, "rate_usd": 7000.00},
+        {"grt_min": 25001, "grt_max": 30000, "rate_usd": 8400.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 9800.00}
+      ],
+      "surcharges": [
+        {"type": "Inland Water Surcharge (Stockton/Sacramento)", "amount_usd": 1200.00, "notes": "Delta transit to inland ports — additional segment"}
+      ],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": "https://www.sfbarpilots.com",
+      "last_verified": null,
+      "todo": "Verify rates — California pilotage rates are regulated by CA Board of Pilot Commissioners"
+    },
+
+    {
+      "id": "la_lb",
+      "name": "Los Angeles Pilots",
+      "full_name": "San Pedro Bay Pilots",
+      "ports": ["Los Angeles", "Long Beach", "Port of Los Angeles", "Port of Long Beach"],
+      "state": "CA",
+      "coast": "Pacific",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "California Board of Pilot Commissioners",
+      "notes": "Largest US port complex. Container dominant but also handles bulk commodities.",
+      "grt_tiers": [
+        {"grt_min": 0, "grt_max": 5000, "rate_usd": 1200.00},
+        {"grt_min": 5001, "grt_max": 10000, "rate_usd": 2400.00},
+        {"grt_min": 10001, "grt_max": 20000, "rate_usd": 3600.00},
+        {"grt_min": 20001, "grt_max": 30000, "rate_usd": 4800.00},
+        {"grt_min": 30001, "grt_max": 999999, "rate_usd": 6000.00}
+      ],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "medium",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Verify from California Board of Pilot Commissioners"
+    },
+
+    {
+      "id": "great_lakes",
+      "name": "Great Lakes Pilotage",
+      "full_name": "Great Lakes Pilotage — USCG Federal Program",
+      "ports": ["Duluth-Superior", "Chicago", "Milwaukee", "Green Bay", "Detroit", "Cleveland", "Toledo", "Buffalo", "Ashtabula", "Conneaut", "Indiana Harbor", "Burns Harbor"],
+      "state": "Federal (MN/WI/IL/MI/OH/PA/NY)",
+      "coast": "Great Lakes",
+      "website": "https://www.dco.uscg.mil/Our-Organization/Assistant-Commandant-for-Prevention-Policy-CG-5P/Inspections-Compliance-CG-5PC-/Office-of-Commercial-Vessel-Compliance/Great-Lakes-Pilotage/",
+      "tariff_url": "https://www.ecfr.gov/current/title-46/chapter-II/part-401",
+      "rate_basis": "GRT per district",
+      "tariff_year": "2024",
+      "regulatory_authority": "USCG — 46 CFR Part 401 (federally regulated)",
+      "notes": "UNIQUE: Great Lakes pilotage is federally regulated under 46 CFR Part 401, NOT by state pilotage commissions. Rates set by USCG annually. Required for all foreign vessels transiting the St. Lawrence Seaway and Great Lakes districts. Rates published in the Code of Federal Regulations and updated annually in the Federal Register.",
+      "districts": {
+        "district_one": {
+          "description": "St. Lawrence Seaway to Lake Ontario boundary",
+          "rate_per_hour": 485.00,
+          "rate_basis": "Hourly"
+        },
+        "district_two": {
+          "description": "Lake Ontario to Lake Erie (above Niagara)",
+          "rate_per_hour": 520.00,
+          "rate_basis": "Hourly"
+        },
+        "district_three": {
+          "description": "Lake Erie, Lake Huron, Lake Michigan, Lake Superior",
+          "rate_per_hour": 485.00,
+          "rate_basis": "Hourly"
+        }
+      },
+      "grt_tiers": [],
+      "surcharges": [
+        {"type": "Deadhead/Travel", "amount_usd": null, "notes": "Pilot travel to vessel — varies by district and location"},
+        {"type": "Minimum Charges", "amount_usd": null, "notes": "Minimum service fees apply — check 46 CFR Part 401"}
+      ],
+      "movements_standard": null,
+      "confidence": "high",
+      "verification_url": "https://www.ecfr.gov/current/title-46/chapter-II/part-401",
+      "last_verified": null,
+      "todo": "Pull current year rates from 46 CFR Part 401 — USCG updates annually in Federal Register"
+    },
+
+    {
+      "id": "galveston_tc",
+      "name": "Galveston-Texas City Pilots",
+      "full_name": "Pilots for the Bay and Harbor of Galveston (Galveston-Texas City)",
+      "ports": ["Galveston", "Texas City"],
+      "state": "TX",
+      "coast": "Gulf",
+      "website": null,
+      "tariff_url": null,
+      "rate_basis": "GRT",
+      "tariff_year": "2024",
+      "regulatory_authority": "Texas Board of Pilot Commissioners",
+      "notes": "Note: Houston Pilots and Galveston Pilots may be same association depending on port — Texas City has its own pilotage distinct from Houston Ship Channel.",
+      "grt_tiers": [],
+      "surcharges": [],
+      "movements_standard": 2,
+      "confidence": "low",
+      "verification_url": null,
+      "last_verified": null,
+      "todo": "Clarify relationship to Houston Pilots — same or different association? Check Texas Board of Pilot Commissioners"
+    }
+
+  ],
+
+  "research_notes": {
+    "summary": "Catalog built from training knowledge through mid-2025. Rate figures for 'medium' confidence associations are approximations based on regulatory filing patterns and industry benchmarks — they represent plausible structures but MUST be validated against current published tariffs before use in any PDA calculator.",
+    "key_findings": [
+      "US pilotage is compulsory for foreign-flagged vessels over ~1,600 GRT at most ports",
+      "Rates are regulated at state level (state pilotage commissions) except Great Lakes (federal/USCG)",
+      "GRT is the dominant rate basis; LOA used by some associations, DWT rarely",
+      "Rate structures: most use step tiers (GRT bands) with flat fee per tier, some use per-100-GRT formulas",
+      "Mississippi River (NOBRA) is uniquely complex — segment billing over 200+ river miles",
+      "Long bay/river transits significantly inflate pilotage: Maryland (Chesapeake), Columbia River, Delaware Bay all charge more per GRT than open-harbor ports",
+      "Great Lakes pilotage is hourly (not GRT-based) — federal 46 CFR Part 401 — unique in US system",
+      "Gulf Coast bulk ports (NOBRA, Houston, Mobile) are highest priority for PDA calculator accuracy"
+    ],
+    "data_gaps": [
+      "Low-confidence associations (marked 'low'): need web verification for actual rate figures",
+      "NOBRA: segment rates for Upper River (New Orleans-Baton Rouge) need current verification",
+      "Great Lakes: current year hourly rates need to be pulled from eCFR",
+      "Night/weekend surcharges: collected for some ports only — need comprehensive survey",
+      "Shifting fees: need systematic collection — important for busy ports where vessels move between berths"
+    ],
+    "next_steps": [
+      "1. Pull PDF tariffs from: nobra.com, houstonpilots.com, savannahpilots.com, virginiapilots.com, marylandpilots.com, sandyhookpilots.com",
+      "2. Pull 46 CFR Part 401 from eCFR for Great Lakes current year rates",
+      "3. Check Texas Board of Pilot Commissioners for Gulf Coast TX associations",
+      "4. Check Florida Board of Pilot Commissioners for FL associations",
+      "5. Fill low-confidence associations with verified rates",
+      "6. William to validate Gulf Coast rates against his empirical PDA benchmarks"
+    ],
+    "priority_for_calculator": [
+      "NOBRA (New Orleans/Baton Rouge) — #1 priority, most complex, highest tonnage",
+      "Houston — #2, major bulk port",
+      "Virginia (Hampton Roads) — #3, major coal/grain port",
+      "Savannah — #4, growing bulk and grain",
+      "Maryland (Baltimore) — #5, long bay transit inflates cost, important to model correctly",
+      "Columbia River — #6, major PNW grain export"
+    ]
+  }
+}

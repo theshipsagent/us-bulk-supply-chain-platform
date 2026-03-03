@@ -1,0 +1,927 @@
+{
+  "metadata": {
+    "title": "Hold Cleaning Intelligence Knowledge Base",
+    "description": "Comprehensive knowledge base on cargo hold cleaning, preparation, and regulatory compliance for ocean-going dry bulk carriers",
+    "version": "1.1.0",
+    "created": "2026-03-02",
+    "updated": "2026-03-02",
+    "author": "William S. Davis III",
+    "context": "Ocean-going dry bulk carriers (Handysize through Capesize)",
+    "sources_count": 50,
+    "zotero_sources_cross_referenced": [
+      "IMSBC Code (MSC.268(85) as amended by MSC.318(89) and MSC.354(92))",
+      "Bulk Carrier Practice — Capt. J. Isbester FNI MRIN, Nautical Institute 1993",
+      "Carrying Solid Bulk Cargoes Safely — Lloyd's Register/UK P&I/Intercargo, 2nd ed. 2016",
+      "MARPOL Consolidated Edition 2022 — IMO ISBN 978-92-801-1743-1",
+      "Marine Cargo Operations: A Guide to Stowage 3rd ed. — Meurn & Sauerbier, Cornell Maritime Press 2004"
+    ]
+  },
+
+  "cleanliness_standards": {
+    "hierarchy": [
+      {
+        "rank": 1,
+        "name": "Hospital Clean",
+        "aliases": ["stringent clean", "white glove"],
+        "description": "Most stringent standard. 100% intact paint coatings on all surfaces including tank top, all ladder rungs, and undersides of hatch covers. No loose rust, no paint flakes, no previous cargo residues anywhere.",
+        "required_cargoes": [
+          "Soda ash (sodium carbonate)",
+          "Kaolin / china clay",
+          "Mineral sands (zircon, rutile, ilmenite)",
+          "Barytes",
+          "Fluorspar",
+          "Chrome ore",
+          "Rice in bulk",
+          "High-grade wood pulp"
+        ],
+        "paint_requirement": "100% intact coating on ALL surfaces",
+        "rust_tolerance": "ZERO - no rust of any kind",
+        "scale_tolerance": "ZERO",
+        "practical_note": "Rarely achievable in tramp trades. Generally requires vessels exclusively trading clean cargoes.",
+        "reference": "UK P&I FAQ; Bulkcarrierguide.com; Brookes Bell; West of England P&I Loss Prevention Bulletin"
+      },
+      {
+        "rank": 2,
+        "name": "Grain Clean",
+        "aliases": ["grain-clean", "food grade clean"],
+        "description": "Most commonly required standard. Clean, swept, washed down with fresh water and free from insects, odour, residue of previous cargo, loose rust scale, and paint flakes. Dried, well-ventilated and ready to receive cargo.",
+        "required_cargoes": [
+          "All grains (wheat, corn, barley, oats, rye, rice as commodity)",
+          "Soya meal and soya products",
+          "Alumina",
+          "Sulphur",
+          "Bulk cement",
+          "Bauxite (some grades)",
+          "Concentrates",
+          "Bulk fertilisers",
+          "Bulk break-bulk if specified"
+        ],
+        "usda_definition": "Stowage area must be clean, dry, free of infestation, rodents, toxic substances and foreign odour. Not more than 25 sq ft of loose rust scale in any single area or 100 sq ft in aggregate.",
+        "ncb_definition": "Compartments must be clean, dry, devoid of odors, and gas-free. All loose scale eliminated.",
+        "rust_tolerance": "Oxidation rust (non-flaking) may be acceptable. Loose scale (breaks when struck with fist) NOT acceptable.",
+        "scale_tolerance": "No loose scale. Oxidation rust typically acceptable.",
+        "jurisdiction_variations": {
+          "USA": "Particularly strict; multiple inspections; NCB certificate required for grain exports; zero tolerance in many ports",
+          "Australia": "Zero tolerance criteria - considered among world's strictest",
+          "Canada": "Strict parameters exceeding IGC in some cases",
+          "General": "Varies by surveyor and port - 'band or range' rather than fixed specification"
+        },
+        "white_glove_test": "No visible residues transferred onto white cloth when rubbed against hold surface",
+        "reference": "USDA FGIS Section 7; NCB Grain Certificate of Readiness; UK P&I FAQ 2021; NVIC 5-94"
+      },
+      {
+        "rank": 3,
+        "name": "Normal Clean",
+        "aliases": ["standard clean"],
+        "description": "When no specific instructions in charterparty. Residues removed, holds double swept, salt water washed, fresh water rinsed, dried.",
+        "required_cargoes": ["General bulk cargoes where no specific CP language"],
+        "reference": "Swedish Club Hold Cleaning Guide 2023; Safety4Sea"
+      },
+      {
+        "rank": 4,
+        "name": "Shovel Clean",
+        "aliases": ["grab clean"],
+        "description": "Holds mechanically cleaned to minimum standard. Typically for dirty cargo trades.",
+        "required_cargoes": ["Coal (some grades)", "Iron ore", "Ores generally"],
+        "reference": "UK P&I Carefully to Carry 2023 Ch.17"
+      },
+      {
+        "rank": 5,
+        "name": "Load on Top",
+        "aliases": ["LOT"],
+        "description": "Cargo loaded directly on top of existing residues from previous identical cargo. Used in continuous commodity trades (e.g. coal COA).",
+        "required_cargoes": ["Same commodity COA trades", "Coal continuations"],
+        "reference": "Bulkcarrierguide.com; HandyBulk"
+      }
+    ]
+  },
+
+  "cleaning_procedure": {
+    "phase_1_immediate_post_discharge": {
+      "name": "Immediate Action (During/After Discharge)",
+      "timing": "Begin before vessel finishes discharge where possible",
+      "steps": [
+        "Insist stevedores discharge as thoroughly as possible - document residues with photos",
+        "Letter of protest if discharge incomplete",
+        "Remove dunnage, lashing materials, timber, securing gear",
+        "Initial dry sweep - remove bulk residues before any water",
+        "Open all accessible bilge covers and clean bilge wells of previous cargo",
+        "Check and document hold condition photographically"
+      ]
+    },
+    "phase_2_dry_cleaning": {
+      "name": "Dry Cleaning Phase",
+      "steps": [
+        "Thorough mechanical sweeping of all surfaces - tank top, frames, hoppers",
+        "Air blowing if local regulations permit (very effective for dust cargoes)",
+        "Scraping of frame knees, tripping brackets, behind ladders, pipe guards",
+        "High areas: underdeck frames and coaming frames (often only accessible by scaffold tower or cherry picker)",
+        "Hatch cover undersides - sweep all residues from cover beams",
+        "Collect all residues into containers for disposal per MARPOL Annex V",
+        "Bilge strainers/filters must remain in place throughout"
+      ],
+      "critical_areas": [
+        "Upper underdeck frames (inaccessible without scaffold on large vessels)",
+        "Frame knees and tripping brackets",
+        "Behind hold access ladders",
+        "Pipe guards and pipe fittings",
+        "Hatch coaming lower surfaces",
+        "Bilge well covers and bilge wells",
+        "Tank top corners and hopper sloped surfaces"
+      ]
+    },
+    "phase_3_chemical_washing": {
+      "name": "Chemical Wash (if required)",
+      "when_required": ["Post-coal for grain", "Post-petcoke", "Post-fishmeal (odor)", "Cement clinker to grain transition", "Any black-to-white cargo change"],
+      "chemistry_by_previous_cargo": {
+        "coal_petcoke": {
+          "challenge": "Black dust + oily smear films; staining on ledges",
+          "recommended": "Heavy-duty alkaline cleaner (hydroxide base + non-ionic surfactants). Wilhelmsen Unitor CargoClean HD or Navadan equivalent.",
+          "application": "Apply 10% concentration with Panamax kit foam applicator. Leave 10-15 min wet. High-pressure washdown from bottom up.",
+          "marpol_status": "CargoClean HD: NOT HME - may be discharged to sea per MARPOL Annex V"
+        },
+        "cement_clinker": {
+          "challenge": "Hydration with water creates concrete; clogs bilge systems",
+          "warning": "DO NOT use bilge pump during cement cleaning - cement hardens in pipelines",
+          "recommended": "Portable salvage pump for wash water removal. Thorough dry sweep before any water contact.",
+          "special": "Fresh water wash only after thorough sweeping"
+        },
+        "sulphur": {
+          "challenge": "Wet dust + sulphurous acid (highly corrosive to personnel and steel)",
+          "recommended": "Personnel: full PPE, goggles, facemasks throughout. Thorough drying after washing.",
+          "imsbc_note": "IMSBC Code: holds must be clean and dry and thoroughly washed with fresh water"
+        },
+        "fishmeal_organic_odorous": {
+          "challenge": "Odors and organic films",
+          "recommended": "Enzymatic cleaner (protease/amylase + surfactant). Dwell time critical. Warm water improves performance. Maximum ventilation.",
+          "note": "Oxidizer only if justified and fully rinsed"
+        },
+        "ore_concentrates": {
+          "challenge": "Hardened mineral deposits and scale",
+          "recommended": "Acid descaler (phosphoric/citric blend + corrosion inhibitors). Neutralizer carbonate rinse after acid stage. Mechanical break-up first.",
+          "sequence": "Mechanical → controlled acid treatment → neutralize → full rinse → dry"
+        },
+        "copper_concentrate": {
+          "challenge": "CRITICAL WARNING: Copper concentrate MUST NOT BE WASHED with water. If washed, it forms a 'concrete'-like layer bonded to the hold sides which can only be removed with abrasive discs on disc sander/grinders.",
+          "correct_method": "Thoroughly blow out with compressed air and sweep clean. NO water contact.",
+          "source": "Isbester, Bulk Carrier Practice Ch.5 p.71 — verified by Nautical Institute/multiple P&I clubs",
+          "marpol_note": "Dry residues collected and disposed per MARPOL Annex V — not permitted to discharge at sea."
+        },
+        "petcoke_stubborn_patches": {
+          "challenge": "After main wash, greasy or discoloured patches remain on hold surfaces",
+          "procedure": "Hand scrub discoloured patches with household detergent using stiff brush, THEN wash with portable high-pressure washing machine (350-500 bar), THEN rewash entire hold.",
+          "note": "Petcoke staining requires extended washing time vs coal. Shore gang may be required for thorough chemical treatment.",
+          "source": "Isbester, Bulk Carrier Practice Ch.5 p.71"
+        }
+      },
+      "application_equipment": {
+        "Unitor_Panamax_Kit": "Standard foam application for typical Panamax/post-Panamax holds",
+        "Navadan_Ultimate_Kit": "Best performance with CargoClean HD for heaviest contamination",
+        "Navadan_Essential_Kit": "For smaller areas or spot cleaning",
+        "Tornado_3": "Air-powered water cannon; reaches 30m height; foam or plain water nozzle",
+        "Combi_Gun": "High pressure air/water gun for upper reaches; standard on well-equipped bulkers",
+        "HPCE_Dynamis_500plus": "Wilhelmsen 500-bar high-pressure cold/electric unit",
+        "Chemical_Applicator_150": "150L pressure tank for chemical application with long-reach lance"
+      }
+    },
+    "washing_methods": {
+      "source": "Isbester, Bulk Carrier Practice Ch.5 pp.70-72",
+      "method_1_handheld_hose": {
+        "name": "Handheld Hose",
+        "description": "Water drawn from sea via eductors or bilge pumps, discharged overboard. Team of 2-3 seamen: one controls deck valve, others drag hose and direct jet around hold.",
+        "best_for": "Small ships and holds that are not particularly dirty. Quickest and best method for small vessels.",
+        "limitation": "Less satisfactory in larger ships — difficult to achieve good cleaning in remote hold areas; labor-intensive; requires large crew.",
+        "crew_min": 2
+      },
+      "method_2_water_cannon": {
+        "name": "Water Cannon (Combi-Gun / High-Pressure)",
+        "description": "Hose led to high-pressure sea-water cannon (e.g. Combi-gun) on tripod placed in hold. Uses compressed air from ship's deck line to inject greater pressure into fire main water.",
+        "best_for": "Larger bulk carriers; provides more powerful jet; results in better cleaning of high extremities.",
+        "limitation": "Takes longer to move than handheld hose; requires same labor.",
+        "note": "Standard on well-equipped bulk carriers."
+      },
+      "method_3_permanent_installation": {
+        "name": "Permanent Washing Installation",
+        "description": "Water guns installed under deckhead in hold. Full washing programme selected, gun automatically moves through hatch cover → deckhead → bulkheads → tanktop. Alternative bottom-wash programme for tanktop only.",
+        "best_for": "Mini-bulkers and smaller vessels; designed to wash with hatches closed; can be used at sea.",
+        "note": "No labor required during wash cycle. Designed to wash toward aft end of hold where bilge suctions are located."
+      },
+      "washing_sequence": {
+        "description": "Top-to-bottom sequence (Isbester Ch.5 p.70)",
+        "order": [
+          "1. Hatch covers — top, bottom, and sides",
+          "2. Compression bars and rubbers (scrub if cargo adhering)",
+          "3. Hatch coamings — all faces",
+          "4. Hold deckheads (upper underdeck structure)",
+          "5. Hold sides — working down, paying particular attention to hopper angles, pipe guards, brackets, and other non-vertical surfaces",
+          "6. Scrub locally / rewash stubborn areas",
+          "7. Hold deck / tanktop",
+          "8. Scrape up loose rust scale",
+          "9. Flush bilges — ensure suctions clear throughout"
+        ],
+        "salt_water_caveat": "Salt traces remain after seawater wash. Unacceptable to grain surveyors; also contaminates steel products and woodpulp and encourages corrosion. Fresh water rinse mandatory after seawater wash for salt-sensitive cargoes.",
+        "port_restrictions_warning": "INCREASING NUMBER OF PORTS prohibit hold washing within port limits. Obtain written permission from port authority via agent BEFORE washing. A verbal assurance from a stevedore is NO guarantee. Written permission required."
+      }
+    },
+
+    "phase_4_seawater_wash": {
+      "name": "Salt Water Wash",
+      "steps": [
+        "High-pressure seawater washdown of all surfaces",
+        "Direct from lowest point upward (bottom to top)",
+        "Ensure bilge well strainers in place - never remove during washing",
+        "Check bilge pump frequently - clear strainers as needed to prevent blockage",
+        "Pump bilge water overboard ONLY if compliant with MARPOL Annex V position and cargo classification"
+      ]
+    },
+    "phase_5_freshwater_rinse": {
+      "name": "Fresh Water Final Rinse",
+      "critical_importance": "CRITICAL - removes chlorides that cause: (a) salt contamination of sensitive cargo, (b) coating breakdown, (c) corrosion, (d) receivers alleging sea water ingress based on silver nitrate chloride tests",
+      "timing": "Before hold dries after seawater wash - salt easier to remove when surfaces still wet",
+      "quantity_guide": "Typical 110,000 DWT bulk carrier: ~30 tonnes fresh water per hatch. Store in aft peak tank, pump to fire main via GS pump. A handy-size vessel (Regina Oldendorff type) with 200 t/hr fire pump uses ~50 t total for entire ship in 2-3 min per hold (Isbester).",
+      "portable_hpwm_alternative": "If insufficient ship water supply: portable high-pressure washing machine — uses less fresh water but takes much longer.",
+      "procedure": "Flush fire main with fresh water first to remove salt from piping. Close all deck hydrants and anchor washers.",
+      "charterparty_clause": "When fresh water wash is required by cargo type (grain, steel, woodpulp), receipt for fresh water should be claused 'Hold Washing — For Charterer's Account'. This is accepted practice in some trades. (Isbester Ch.5 p.71)",
+      "note": "Even a 2-3 minute rinse removes most salt deposits. Fresh water washing recommended for all grain-bound holds but cost often underestimated — factor into PDA.",
+      "source": "Isbester, Bulk Carrier Practice Ch.5 pp.70-72; Skuld Loss Prevention 2014"
+    },
+    "phase_6_drying_ventilation": {
+      "name": "Drying and Ventilation",
+      "steps": [
+        "Maximum forced ventilation to dry completely",
+        "Check daily - holds must be absolutely dry before loading grain or soda ash",
+        "Remove all moisture from bilge covers, hatch coaming areas, and low points",
+        "Check hatch cover drainage channels and rubbers"
+      ]
+    },
+    "phase_7_protective_barrier_optional": {
+      "name": "Protective Barrier Application (Pre-Loading for Difficult Cargoes)",
+      "purpose": "Applied before loading dirty cargoes to make next cleaning easier",
+      "products": {
+        "Unitor_Slip_Coat": "Water-soluble film. Use for DRY cargoes. Coal, coke, petcoke, ore, minerals. NOT for cargoes with water content (sulphur). Covers 15-20 m2/ltr. Dry 1-2 hours before loading.",
+        "Navadan_BarrierHold": "Water-resistant film. Use for WET, corrosive, or humid-condition cargoes. Coal, coke, petcoke. Ideal when condensation expected. Drying time 1-2 hours."
+      },
+      "not_for": ["Grain (must be hospital or grain clean)", "Soda ash (hospital clean - no chemicals; fresh water only)"]
+    }
+  },
+
+  "cargo_specific_guidance": {
+    "grain": {
+      "code": "ISGC",
+      "cleanliness_required": "Grain Clean (minimum); some ports/surveyors require higher",
+      "regulatory_framework": [
+        "International Grain Code (SOLAS Ch.VI mandatory since Jan 1, 1994)",
+        "IMO publication 240-E / 260-E",
+        "USCG NVIC 5-94",
+        "46 CFR Part 93.20 (US vessels)",
+        "USDA FGIS Directive Section 7"
+      ],
+      "pre_loading_requirements": [
+        "Document of Authorization (DOA) for grain stability - required on all grain ships",
+        "Grain Loading Manual / Stability Booklet (NCB-stamped for US exports)",
+        "NCB Grain Certificate of Readiness (mandatory for US export grain)",
+        "USDA cleanliness certificate (US ports)",
+        "Details of at least previous THREE cargoes required by surveyor",
+        "Independent surveyor hold inspection",
+        "Fumigation certificate if required"
+      ],
+      "hold_specific_requirements": [
+        "Completely clean, dry, odour-free, gas-free",
+        "All loose scale removed",
+        "Bilges clean, dry, operational",
+        "Bilge covers grain-tight (NOT watertight - must drain)",
+        "Two layers clean hessian cloth on bilge strainer plate",
+        "Duct tape over gap between bilge strainer and tank top",
+        "Hold hydrant area cleaned, dried, steel cover refitted",
+        "All infestation treated/fumigated before survey"
+      ],
+      "ncb_survey_checks": [
+        "Cleanliness inspection",
+        "Bilge readiness (dry suck test)",
+        "Structural integrity",
+        "Protection against heat and electrical hazards",
+        "Moveable bulkheads installation",
+        "Grain stability calculation review",
+        "Documents of Authorization verification"
+      ],
+      "loading_considerations": [
+        "All holds must be completely filled - trim to all corners",
+        "Allow grain to settle, refill voids",
+        "Grain cargo must remain dry throughout - rain/moisture = major claim",
+        "Dust clouds during loading: PPE required (goggles, masks)",
+        "Dyeing agent may be required for animal consumption grain (mixed in water, sprayed)",
+        "Steam heating of adjacent oil tanks must be minimized during voyage",
+        "Angle of repose and trimming stability must be calculated"
+      ],
+      "fumigation": {
+        "trigger": "Any signs of insect infestation, larvae, eggs",
+        "treatment": "Approved fumigant; holds sealed; typically 12-hour build-up period",
+        "crew": "Disembarked for fumigation in port",
+        "certification": "Certified qualified fumigator required",
+        "departure": "Vessel must NOT depart before minimum fumigation period expires"
+      },
+      "fresh_water_requirement": "~30 tonnes per hatch for 110,000 DWT vessel"
+    },
+
+    "soda_ash": {
+      "iupac_name": "Sodium carbonate (Na2CO3)",
+      "common_name": "Soda ash",
+      "primary_use": "Glass manufacture (primary), chemicals, cleaning products",
+      "cleanliness_required": "Hospital Clean - EXCEEDS grain clean standard",
+      "imsbc_classification": "Group C (non-hazardous) - but extreme purity requirement",
+      "hold_requirements": [
+        "Hospital clean: watertight, dried, clean in ALL respects",
+        "Free of scale, loose rust, ALL foreign materials",
+        "Free of residue of previous cargo on: tank tops, bulkheads, hatch coamings, underside of hatch covers",
+        "NO bubble rust, NO loose rust, NO painted rust that can be chipped/scraped",
+        "Ventilation ports/fan spaces checked for loose rust or paint chips",
+        "ALL surfaces must be free of contamination - paintwork in GOOD condition"
+      ],
+      "critical_restrictions": [
+        "DO NOT chemically wash holds before soda ash - contamination risk from cleaning agents",
+        "Fresh water (high pressure) ONLY for hold cleaning",
+        "No chemical cleaning agents of any kind",
+        "Surveyor inspection exceeds grain clean stringency"
+      ],
+      "surveyor_focus": [
+        "Cleanliness (hospital standard)",
+        "Paint and rust blistering",
+        "Cargo residues",
+        "Potentially loose paint edges",
+        "Physical contamination (primary concern)"
+      ],
+      "cargo_properties": [
+        "Dry, powdery white, very dusty",
+        "Highly hygroscopic (absorbs moisture readily) - must remain ABSOLUTELY DRY",
+        "Dust hazard: protect machinery, equipment, accommodation from dust",
+        "PPE required: goggles and dust filter masks on deck throughout operations"
+      ],
+      "loading_operations": [
+        "Weather routing critical - avoid rain during loading",
+        "Hatch covers to be closed promptly if rain threatens",
+        "Monitor moisture constantly"
+      ]
+    },
+
+    "coal": {
+      "cleanliness_required": "Shovel clean / Normal clean (generally)",
+      "considerations": [
+        "Self-heating varieties require temperature monitoring",
+        "Some grades give off methane - O2 depletion risk, enclosed space hazard",
+        "Check IMSBC Code group (A, B, or C) - Group A/B require special precautions",
+        "Petcoke: very high alkalinity; use heavy-duty alkaline cleaners afterwards"
+      ],
+      "post_coal_cleaning_note": "Coal and petcoke staining difficult; requires CargoClean HD or equivalent alkaline degreaser. Black-to-white cargo change is most demanding cleaning scenario."
+    },
+
+    "cement_clinker": {
+      "cleanliness_required": "Normal clean",
+      "critical_warnings": [
+        "NEVER use bilge pump during cement cleaning - hardens in pipes",
+        "Use portable salvage pump for wash water",
+        "Dry sweep thoroughly before any water contact",
+        "Any residue + water = concrete in bilge lines"
+      ]
+    },
+
+    "fertilizers": {
+      "cleanliness_required": "Grain clean",
+      "considerations": [
+        "Some fertilizers HME under MARPOL - check classification before discharging wash water",
+        "Ammonium nitrate: oxidizing; strict IMSBC requirements",
+        "MOP/SOP (potash products): not HME typically but verify"
+      ]
+    }
+  },
+
+  "regulatory_framework": {
+    "marpol_annex_v": {
+      "title": "MARPOL 73/78 Annex V - Prevention of Pollution by Garbage from Ships",
+      "effective_amendment": "January 1, 2013 (major revision)",
+      "key_principle": "Default prohibition on all garbage discharge at sea, with narrow exceptions",
+      "cargo_residue_definition": "Remnants of any cargo remaining on deck or in holds after loading/unloading, including excess, spillage, in wet or dry condition or entrained in wash water. EXCLUDES dust on external surfaces.",
+      "hme_classification": {
+        "title": "Harmful to Marine Environment (HME)",
+        "determination": "Based on GESAMP Hazard Profiles, country UN GHS databases, IMSBC Code",
+        "consequence_hme": "PROHIBITED from discharge at sea in ANY form - must go to port reception facility",
+        "consequence_non_hme": "May be discharged under specific conditions (see below)"
+      },
+      "discharge_rules_non_hme": {
+        "outside_special_areas": {
+          "condition_1": "Ship must be EN ROUTE (underway, not at anchor)",
+          "condition_2": "Minimum 12 nautical miles from nearest land or ice shelf",
+          "condition_3": "As far as practicable from nearest land",
+          "condition_4": "Residues must be non-recoverable using commonly available unloading methods",
+          "condition_5": "Cargo residues + cleaning agents must BOTH be non-HME",
+          "wash_water_note": "Cargo residues entrained in wash water treated as cargo residues"
+        },
+        "inside_special_areas": {
+          "areas": ["Mediterranean Sea", "Baltic Sea", "Black Sea", "Red Sea", "Gulfs Area (Persian Gulf/Gulf of Oman)", "North Sea", "Antarctic Area", "Wider Caribbean Region (incl. Gulf of Mexico)"],
+          "rule": "Generally PROHIBITED",
+          "narrow_exception": "Only if: (1) departure AND destination ports both within same Special Area, (2) no transit outside Special Area, (3) no adequate reception facilities at either port",
+          "if_exception_applies": "Discharge non-HME residues as far to sea as practicable, min 12nm from nearest land"
+        }
+      },
+      "cleaning_agents_discharge": {
+        "rule": "May be discharged if NOT classified as HME",
+        "documentation_required": "Supplier signed/dated statement that product is not HME (part of MSDS or standalone). Ship maintains records.",
+        "example_compliant": "Wilhelmsen Unitor CargoClean HD - confirmed NOT HME per MARPOL Annex V",
+        "example_non_compliant": "Products containing sodium hypochlorite (bleach) - may be HME"
+      },
+      "record_keeping": {
+        "garbage_record_book": "Part I (all ships) + Part II (ships carrying solid bulk cargo)",
+        "cargo_residue_category": "Garbage Category 4",
+        "required_entries": "Date/time, position (lat/long) or port, category, estimated amount, officer signature, start/stop positions for discharge",
+        "retention": "2 years minimum",
+        "note": "Can be maintained electronically with proper approval"
+      },
+      "enforcement_risk": {
+        "us_enforcement": "Criminal liability for individual officers, not just company. Whistleblower programs with rewards exceeding $1M.",
+        "surveillance": "Advanced satellite technology now detects illegal dumping",
+        "port_authority": "Some ports require lab analysis of hold wash water before permitting any discharge"
+      },
+      "bimco_hme_clause": "BIMCO HME Cargo Residues Disposal Clause for Voyage Charter - shifts HME disposal responsibility/cost to charterer. Strongly recommended for HME or potential HME cargoes."
+    },
+
+    "international_grain_code": {
+      "title": "International Code for the Safe Carriage of Grain in Bulk",
+      "mandated_by": "SOLAS Chapter VI Part C Regulation 9 (Resolution MSC.23[59])",
+      "effective": "January 1, 1994",
+      "applies_to": "All vessels loading grain in bulk in US waters (with some inland waterway exceptions)",
+      "requirements": [
+        "Document of Authorization (DOA) - must be onboard",
+        "Grain Loading Manual / Stability Booklet",
+        "Compliance with specific stability criteria for loaded, voyage, and discharge stages",
+        "Consideration of: angle of repose, trimming, surface heeling moments"
+      ],
+      "us_specific": {
+        "ncb_role": "NCB (National Cargo Bureau) empowered by USCG to approve grain loading calculations. Cannot approve until cleanliness certificate issued.",
+        "usda_role": "Issues certificate of cleanliness",
+        "nvic_5_94": "USCG Navigation and Vessel Inspection Circular 5-94: Requirements for US Vessels obtaining Documents of Authorization",
+        "nvic_3_97": "USCG NVIC 3-97: ABS authorized to review stability booklets for grain ships"
+      }
+    },
+
+    "imsbc_code": {
+      "title": "International Maritime Solid Bulk Cargoes Code",
+      "resolution": "MSC.268(85)",
+      "amendments": ["MSC.318(89)", "MSC.354(92)"],
+      "mandated_by": "SOLAS Chapter VI Regulation 1-1, mandatory from 1 January 2011",
+      "grain_exception": "IMPORTANT: The transport of grain is covered by the INTERNATIONAL GRAIN CODE, not the IMSBC Code. Grain ships must comply with the Grain Code separately.",
+      "relevance": "Specifies hold cleanliness requirements by cargo. Determines HME status. Many cargoes listed as 'clean and dry as relevant to hazards' or 'no special requirements'. Each cargo schedule in Appendix 1 includes a HOLD CLEANLINESS field.",
+      "cargo_groups": {
+        "Group_A": "Cargoes that may liquefy if shipped at moisture content exceeding their Transportable Moisture Limit (TML). Examples: nickel ore, mineral concentrates, iron ore fines.",
+        "Group_B": "Cargoes that possess a chemical hazard (toxic gas emission, self-heating, flammability). Examples: coal (primary classification), sulphur.",
+        "Group_C": "Cargoes that are neither liable to liquefy (A) nor possess chemical hazards (B). Examples: iron ore (coarse), grain (covered by Grain Code separately).",
+        "dual_classification_note": "Coal is most commonly Group B, but can be BOTH Group A and Group B if 75% or more of the cargo by mass consists of particles less than 5mm in size (fine coal). This affects handling and moisture testing requirements."
+      },
+      "hold_cleanliness_requirement": "IMSBC Code Section 2.2.1: Cargo spaces shall be inspected and prepared for the particular cargo which is to be loaded. Section 2.2.2: Due consideration shall be paid to bilge wells and strainer plates. Section 2.2.3: Bilge lines, sounding pipes and other service lines shall be in good order.",
+      "shipper_obligations": "Shippers must provide cargo declarations including HME classification per IMSBC Section 4. Misdeclared cargoes pose catastrophic risks (liquefaction, self-heating casualties)."
+    },
+
+    "charterparty_law": {
+      "nype_form": {
+        "form": "New York Produce Exchange (NYPE) - standard time charter form",
+        "key_clause_13": "Vessel on delivery shall be ready to receive cargo with clean-swept holds",
+        "crew_obligation": "Customary assistance includes standard hold cleaning (sweeping, washing residues)",
+        "off_hire_trigger": "Vessel may be placed off hire if holds fail inspection",
+        "case_law_banga_saga_lima": "Charterers lost right to claim cleaning costs by not insisting on grain clean at first load port even though first cargo (iron ore) didn't require it"
+      },
+      "voyage_charter": {
+        "owners_account": "Removal and disposal of cargo residues normally for owners' account under standard voyage charter",
+        "exception": "With BIMCO HME clause - shifts to charterer for HME cargoes"
+      },
+      "off_hire_risk": {
+        "scenarios": [
+          "Failed hold inspection before grain loading",
+          "Delay in remediating deficiencies after failed inspection",
+          "Extra cleaning costs if crew cannot clean further (some ports prohibit crew cleaning)",
+          "Shore cleaning gang required at premium cost"
+        ]
+      }
+    }
+  },
+
+  "authoritative_sources": {
+    "pi_clubs": [
+      {
+        "name": "UK P&I Club",
+        "key_publications": [
+          {
+            "title": "FAQ - Hold Preparation and Cleaning",
+            "url": "https://www.ukpandi.com/news-and-resources/articles/2021/faq-hold-preparation-and-cleaning/",
+            "type": "Article / FAQ",
+            "year": 2021
+          },
+          {
+            "title": "Carefully to Carry 2023 - Chapter 17: Hold Preparation and Cleaning",
+            "url": "https://www.ukpandi.com/fileadmin/uploads/ukpandi/Documents/uk-p-i-club/carefully-to-carry/2023/UKPI_Carefully_to_Carry_2023_17.pdf",
+            "type": "PDF Publication",
+            "year": 2023
+          },
+          {
+            "title": "Carefully to Carry 2023 - Chapter 1: Preparation, Survey and Load",
+            "url": "https://www.ukpandi.com/fileadmin/uploads/ukpandi/Documents/uk-p-i-club/carefully-to-carry/2023/UKPI_Carefully_to_Carry_2023_1.pdf",
+            "type": "PDF Publication",
+            "year": 2023
+          },
+          {
+            "title": "Bulk Matters - UK P&I Grain Loading Guide",
+            "url": "https://maritimesafetyinnovationlab.org/wp-content/uploads/2021/03/Bulk-Matters-UK-PampI.pdf",
+            "type": "PDF Bulletin",
+            "year": 2021
+          }
+        ]
+      },
+      {
+        "name": "Skuld P&I",
+        "key_publications": [
+          {
+            "title": "Guidance on Preparing Cargo Holds and Loading of Solid Bulk Cargoes",
+            "url": "https://www.skuld.com/contentassets/e2d486e683a84d7582fa1b867d18f8ac/preparing-cargo-holds_-loading-solid-bulk-cargoes.pdf",
+            "type": "PDF Loss Prevention Article",
+            "year": 2014
+          },
+          {
+            "title": "Guidance on Disposal of Cargo Residues in line with MARPOL Annex V",
+            "url": "https://www.skuld.com/contentassets/ec787ec7bd6c49d99a5878b1d0769cfd/guidance_on_disposal_of_cargo_residues_in_line_with_marpol_annex_v-version2-2017october.pdf",
+            "type": "PDF Loss Prevention Guide",
+            "year": 2017
+          }
+        ]
+      },
+      {
+        "name": "West of England P&I",
+        "key_publications": [
+          {
+            "title": "Cargo Hold Cleaning - Loss Prevention Bulletin",
+            "url": "https://www.westpandi.com/news-and-resources/loss-prevention-bulletins/cargo-hold-cleaning/",
+            "type": "Web Article / PDF",
+            "year": 2022
+          },
+          {
+            "title": "MARPOL Amendments to Annex V",
+            "url": "https://www.westpandi.com/news-and-resources/news/marpol-amendments-to-annex-v/",
+            "type": "Web Article",
+            "year": 2022
+          }
+        ]
+      },
+      {
+        "name": "Standard Club",
+        "key_publications": [
+          {
+            "title": "Bulk Cargoes - Hold Preparation and Cleaning",
+            "url": "https://www.standard-club.com/fileadmin/uploads/standardclub/Documents/Import/publications/standard-cargo/23964-15056CargoJan2011Bulletinv06.pdf",
+            "type": "PDF Cargo Bulletin",
+            "year": 2011
+          }
+        ]
+      },
+      {
+        "name": "Swedish Club",
+        "key_publications": [
+          {
+            "title": "Practical Guide: Hold Cleaning of Bulk Vessels (with CWA International)",
+            "url": "https://www.swedishclub.com/uploads/2023/12/Cargo-Advice-Hold-cleaning-guide.pdf",
+            "type": "PDF Practical Guide",
+            "year": 2023
+          }
+        ]
+      },
+      {
+        "name": "Japan P&I Club",
+        "key_publications": [
+          {
+            "title": "Discharge of Cargo Residues into the Sea under MARPOL Annex V",
+            "url": "https://www.piclub.or.jp/en/news/11587",
+            "type": "Web Article / Circular",
+            "year": 2018
+          }
+        ]
+      }
+    ],
+
+    "regulatory_bodies": [
+      {
+        "name": "IMO (International Maritime Organization)",
+        "key_references": [
+          {
+            "title": "MARPOL Annex V - Prevention of Pollution by Garbage from Ships",
+            "url": "https://www.imo.org/en/ourwork/environment/pages/garbage-default.aspx",
+            "type": "Regulation"
+          },
+          {
+            "title": "International Grain Code (IMO Pub. 240-E)",
+            "type": "Code",
+            "note": "Purchase from IMO"
+          },
+          {
+            "title": "IMSBC Code",
+            "type": "Code",
+            "note": "Purchase from IMO"
+          },
+          {
+            "title": "MEPC.295(71) - MARPOL Annex V Amendment",
+            "url": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/MEPCDocuments/MEPC.295(71)",
+            "type": "Resolution"
+          }
+        ]
+      },
+      {
+        "name": "USCG (US Coast Guard)",
+        "key_references": [
+          {
+            "title": "NVIC 5-94 - Requirements for US Vessels Obtaining Documents of Authorization (Grain Code)",
+            "url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/5p/5ps/NVIC/1994/n5-94.pdf",
+            "type": "Navigation and Vessel Inspection Circular"
+          },
+          {
+            "title": "NVIC 3-97 - ABS Authorization for Grain Stability Review",
+            "url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/5p/5ps/NVIC/1997/n3-97.pdf",
+            "type": "Navigation and Vessel Inspection Circular"
+          },
+          {
+            "title": "Foreign Freight Vessel Examiner (FFVE) Manual",
+            "url": "https://www.dco.uscg.mil/Portals/9/DCO%20Documents/5p/CG-5PC/CG-CVC/Guidance/CGTTP_3.72%208_Foreign_Freight_Vessel_Exam_FCD.pdf",
+            "type": "Training Manual"
+          }
+        ]
+      },
+      {
+        "name": "USDA / FGIS",
+        "key_references": [
+          {
+            "title": "Federal Grain Inspection Service - Stowage Examination Services Directive Section 7",
+            "type": "Directive",
+            "note": "Defines grain clean standard for US ports"
+          }
+        ]
+      },
+      {
+        "name": "National Cargo Bureau (NCB)",
+        "website": "https://natcargo.org",
+        "role": "USCG-authorized surveyor for grain loading compliance",
+        "key_services": [
+          {
+            "title": "Grain Certificate of Readiness",
+            "url": "https://natcargo.org/service/cgvs-grain-certificate-of-readiness/",
+            "description": "Required for all US grain exports. NCB surveyor inspects: cleanliness, bilges, structure, stability, moveable bulkheads."
+          },
+          {
+            "title": "Grain Loading Self-Study Course",
+            "url": "https://natcargo.org/train/ucgac-grain-loading/"
+          }
+        ]
+      }
+    ],
+
+    "primary_textbooks": [
+      {
+        "title": "Bulk Carrier Practice: A Practical Guide",
+        "author": "Captain J. Isbester FNI MRIN (Extra Master)",
+        "publisher": "The Nautical Institute",
+        "foreword_by": "Dr Frank Chao, Chairman, Intercargo",
+        "year": 1993,
+        "zotero_key": "535PDW5V",
+        "relevance": "THE authoritative operational reference for bulk carrier hold cleaning and preparation. Chapter 5 (pp.69-77): Preparation of Holds covers every aspect of the cleaning process in detail. Chapter 6 covers ship systems that must be operational. Used by masters, chief mates, surveyors, and consultants worldwide.",
+        "key_chapters": {
+          "Ch5": "Preparation of Holds — sweeping, washing methods, drying, bilge prep, hold inspections, time estimates, limewashing, ballast holds",
+          "Ch12": "The Loading Period — preloading surveys, duties of ship's officers",
+          "Ch14": "Cargo Documents — hold inspection certificates, fitness certificates, fumigation, empty hold certificates",
+          "Ch19": "Carriage of Common Bulk Cargoes — grain, coal, iron ore, steel, forest products"
+        }
+      },
+      {
+        "title": "Marine Cargo Operations: A Guide to Stowage, Third Edition",
+        "authors": ["Robert J. Meurn (Master Mariner)", "Charles L. Sauerbier (Master Mariner)"],
+        "publisher": "Cornell Maritime Press, Centreville, Maryland",
+        "year": 2004,
+        "isbn": "0-87033-550-2",
+        "zotero_key": "3GXH2H4K",
+        "relevance": "Chapter 4: Planning the Stowage and Preparing the Cargo Spaces (p.4-20: Preparation of Cargo Spaces; p.4-28: Checking the Condition of the Cargo Hold). Appendix 3: Stowage of Bulk Grain (contributed by Captain James J. McNamara, President of National Cargo Bureau — key NCB reference).",
+        "note": "First edition 1956. Third edition 2004. Standard US maritime academy textbook."
+      }
+    ],
+
+    "imo_publications": [
+      {
+        "title": "MARPOL Consolidated Edition 2022",
+        "publisher": "International Maritime Organization",
+        "year": 2022,
+        "isbn": "978-92-801-1743-1",
+        "edition": "Seventh edition",
+        "zotero_key": "F9GKB7RG",
+        "sales_number": "IF520E",
+        "in_force": "1 November 2022",
+        "relevance": "Annex V (pp.255-272): Prevention of Pollution by Garbage from Ships — governs all hold wash water discharge. Contains HME classification rules, Special Area regulations, Garbage Record Book Part II requirements.",
+        "annex_v_location": "Page 255"
+      },
+      {
+        "title": "IMSBC Code — International Maritime Solid Bulk Cargoes Code",
+        "resolution": "MSC.268(85)",
+        "amendments": ["MSC.318(89)", "MSC.354(92)"],
+        "publisher": "International Maritime Organization",
+        "mandatory_from": "1 January 2011",
+        "zotero_key": "VCTAPNWN",
+        "relevance": "Sections 1-2 cover general provisions, hold cleanliness requirements, and cargo space preparation. Section 4 covers cargo information (shipper declarations). Appendix 1 contains individual cargo schedules each with HOLD CLEANLINESS field.",
+        "grain_note": "Grain carriage is NOT covered by IMSBC — see International Grain Code separately."
+      },
+      {
+        "title": "Carrying Solid Bulk Cargoes Safely — Guidance for Crews on the IMSBC Code",
+        "publisher": "Lloyd's Register, UK P&I Club, Intercargo",
+        "edition": "Second edition",
+        "year": 2016,
+        "zotero_key": "2SZAN83H",
+        "relevance": "Chapter 1: Hold inspection and preparation requirements. Chapter 2: Three cargo groups with detailed examples. Chapter 4: Cargo residues harmful to marine environment. Checklist and flowchart for accepting and loading solid bulk cargoes."
+      }
+    ],
+
+    "technical_service_providers": [
+      {
+        "name": "Wilhelmsen Ships Service",
+        "specialty": "Hold cleaning chemicals and equipment (Unitor / Navadan brands)",
+        "key_products": [
+          "Unitor CargoClean HD - heavy duty alkaline cleaner (coal/petcoke)",
+          "Navadan BarrierHold - water-resistant protective barrier",
+          "Unitor Slip-Coat - water-soluble protective film",
+          "Navadan CleanHold, ShineCargo, FreshHold series",
+          "Navadan Panamax Kit, Ultimate Kit, Essential Kit, Tornado Kit",
+          "Unitor HPCE Dynamis 500+ high-pressure cleaner"
+        ],
+        "quick_guide_url": "https://manuals.plus/m/914c623c1ea411ec320e3d13ee6e489e489075a75381cb7beaa0e6a8e299f520",
+        "main_url": "https://www.wilhelmsen.com/ships-service/tank-hold-cleaning/"
+      },
+      {
+        "name": "CWA International",
+        "specialty": "Marine surveying, cargo advice, joint publication with Swedish Club",
+        "publications_url": "https://www.cwa.international/publications.html"
+      },
+      {
+        "name": "Brookes Bell",
+        "specialty": "Marine surveyors, hold cleanliness consultancy, expert witnesses",
+        "url": "https://www.brookesbell.com/marine-services/master-mariner-services/hold-cleanliness-cleaning-and-maintenance/"
+      },
+      {
+        "name": "CARGOWARD Maritime Limited",
+        "specialty": "Hold cleaning SOP development, QA gate framework",
+        "url": "https://www.cargoward.com/newsroom/cargo-hold-cleaning-procedure-for-bulk-carriers"
+      },
+      {
+        "name": "HandyBulk",
+        "specialty": "Bulk carrier operational guidance portal",
+        "url": "https://www.handybulk.com/"
+      },
+      {
+        "name": "BulkcarrierGuide",
+        "specialty": "Comprehensive bulk carrier reference",
+        "url": "https://bulkcarrierguide.com/"
+      },
+      {
+        "name": "BulkersGuide",
+        "specialty": "Bulk carrier operations reference",
+        "url": "https://bulkersguide.com/"
+      }
+    ],
+
+    "youtube_resources": [
+      {
+        "title": "Bulk Carrier Hold Cleaning Prior to Grain Loading",
+        "url": "https://www.youtube.com/watch?v=q30JIvskxe8",
+        "source": "Referenced in ShipsNostalgia.com forum - community verified",
+        "note": "Original link from forum post - verify availability"
+      },
+      {
+        "search_query": "bulk carrier hold cleaning grain survey",
+        "youtube_search_url": "https://www.youtube.com/results?search_query=bulk+carrier+hold+cleaning+grain+survey",
+        "suggested_searches": [
+          "bulk carrier hold cleaning grain survey",
+          "cargo hold inspection survey bulk carrier",
+          "hold cleaning after coal grain preparation",
+          "Wilhelmsen Unitor cargo hold cleaning procedure",
+          "soda ash bulk carrier hold preparation",
+          "grain certificate of readiness NCB inspection",
+          "MARPOL Annex V cargo residues bulk carrier"
+        ]
+      }
+    ]
+  },
+
+  "common_failure_reasons": {
+    "survey_failures": [
+      "Excessive loose rust scale (fails USDA 25 sq ft / single area rule)",
+      "Previous cargo residues in frames, pipe guards, behind ladders",
+      "Salt residues from seawater wash without fresh water rinse",
+      "Odour or taint from previous cargo or paint chemicals",
+      "Insect infestation (even eggs or larvae)",
+      "Wet or damp holds (must be completely dry)",
+      "Damaged bilge covers or non-operational bilge suction",
+      "Loose paint flakes anywhere in hold",
+      "Contamination in hatch cover drain channels",
+      "High areas not cleaned (underdeck frames, top of hoppers)"
+    ],
+    "cargo_claims": [
+      "Water ingress (most common - hatch cover seal failures, ballast tank leaks)",
+      "Contamination from previous cargo residues",
+      "Contamination from loose rust/paint scale falling during voyage",
+      "Moisture damage during loading (wet holds or wet cargo)",
+      "Infestation discovered at discharge port",
+      "Shortage claims",
+      "Cargo heating from adjacent steam-heated oil tanks"
+    ]
+  },
+
+  "equipment_onboard_essentials": [
+    "Combi Gun or equivalent (air/water) - ESSENTIAL for upper reaches on all bulk carriers",
+    "High-pressure cold water cleaner (350-500 bar minimum)",
+    "Scaffolding tower or cherry picker access equipment",
+    "Portable salvage pump (for cement and similar cargoes)",
+    "Chemical applicator kit appropriate to vessel size",
+    "Quality brushes, brooms, scrapers, man-helps",
+    "Heavy-duty hoses and nozzles",
+    "Waste collection receptacles for residue removal",
+    "PPE: coveralls, boots, gloves, goggles, dust masks, safety harnesses",
+    "Silver nitrate test solution (chloride detection)",
+    "Insect/infestation spray + fumigant (approved)"
+  ],
+
+  "timing_and_planning": {
+    "planning_start": "Well before vessel arrives at discharge port - review voyage instructions, CP, next cargo requirements",
+    "isbester_time_benchmarks": {
+      "source": "Isbester, Bulk Carrier Practice Ch.5 p.74 — verified by Nautical Institute; these are the industry reference benchmarks",
+      "handy_panamax_normal_clean": {
+        "vessel": "Handy-sized or Panamax bulk carrier",
+        "standard": "Normal cargo-ready standard",
+        "crew": "3-4 men",
+        "time_per_hold": "1 day (from first entering the hold)",
+        "note": "Includes sweeping, washing, bilge prep. Cleaning to grain standard takes longer."
+      },
+      "mini_bulker_grain_standard": {
+        "vessel": "Mini-bulker",
+        "standard": "Grain-ready standard",
+        "crew": "2-3 men",
+        "time_per_hold": "4-5 hours",
+        "note": "Routine hold wash + bilge well rinse for mini-bulker: 1-2 hours"
+      },
+      "parallel_work": "Normally only possible to wash one hold at a time, though other tasks in adjacent hold can be completed whilst washing is in progress, if sufficient labour is available.",
+      "pda_application": "Use these benchmarks as floor for days_lost estimates. Higher-risk previous cargoes (coal, petcoke, fishmeal) should use upper multipliers. Shore gangs work faster but cost more."
+    },
+    "black_to_white_estimate": {
+      "scenario": "Post-Panamax bulk carrier, coal to grain, 7 holds, 2-3 days ballast voyage",
+      "description": "Extremely challenging. Some holds may be started during discharge. Requires all hands, all equipment, optimal chemical and equipment inventory.",
+      "hold_dimensions_reference": "Post-Panamax hold: 22m tank top to hatch cover, 38m wide, 26m long = ~16,000-17,000 m3 each"
+    },
+    "shore_cleaning_triggers": [
+      "Particularly difficult residues (hardened coal/petcoke)",
+      "Post-fishmeal odor elimination",
+      "Time constraints - not enough ballast voyage time",
+      "Some ports: crew NOT permitted to continue cleaning if failed inspection",
+      "Vessel type requires extensive scaffold access"
+    ],
+    "crew_hours_of_rest": "MLC and STCW rest hour requirements must be respected - factor into cleaning timeline"
+  },
+
+  "isbester_hold_preparation_checklist": {
+    "source": "Isbester, Bulk Carrier Practice Ch.5 p.77 — Items for attention when preparing holds for cargo (Nautical Institute)",
+    "note": "This is the industry-standard master checklist. Used directly to populate HoldIntel CLI checklist command.",
+    "items": [
+      "Encourage stevedores to discharge cargo sweepings as far as possible",
+      "Have crew or stevedores sweep down deckheads and bulkheads as discharge proceeds (e.g. for grain cargoes)",
+      "If cargo has filled a bilge, have crew clean it before completion of discharge so contents can be discharged",
+      "Sweep holds before washing to remove bulky cargo residues, if required",
+      "Determine whether holds will NOT be washed: (same cargo again + charterers want no cleaning; clean cargo like steel coils has been carried; freezing conditions prohibit washing; vessel will remain in areas where discharge of washings is not allowed)",
+      "Decide if full wash or bottom wash required; if washing to be done by automated installation, handheld hose, or water cannon",
+      "Decide if washing is to be done at berth, within port limits, or outside limits — taking into account restrictions on discharge of cargo residues and anticipated weather/sea state",
+      "Obtain written permission from port authority to discharge hold washings if intending to wash in port",
+      "Wash holds: hatch covers (top, bottom, sides); scrub compression bars & rubbers; wash hatch coamings; wash hold deckheads; wash hold sides (hopper angles, pipe guards, brackets, non-vertical surfaces); scrub and rewash stubborn dirt; wash deck; scrape loose rust scale; flush bilges; rinse with fresh water when possible",
+      "Dry holds by ventilating, opening holds and/or mopping up puddles as necessary",
+      "Sweep holds instead of washing when washing is not necessary",
+      "Scrape and sweep holds and lift residues from hold when washing is not possible",
+      "Clean and disinfect bilge wells",
+      "Flush sounding pipes and thermometer pipes",
+      "Test bilge suctions if not already used for washing",
+      "Test bilge non-return valves, when fitted",
+      "Test bilge high level alarms, when fitted",
+      "Inspect holds for cleanliness, insect infestation, leakage and damage — remedy defects where necessary",
+      "Wrap bilge cover plates with burlap and seal with tape or cement",
+      "Reseal any manhole covers which have been opened or disturbed",
+      "Isolate hold lighting and lighting in compartments connected to the holds when this precaution is required for intended cargo",
+      "Limewash bulkheads and tanktop if required for next cargo (salt cargo, sulphur)",
+      "If holds are painted or touched up before foodstuffs cargo, ensure paint compliance certificate can be produced for the paint used",
+      "In ballast holds: close and secure cover plates for ballast suctions; open bilge suctions and CO2 injection lines"
+    ]
+  },
+
+  "limewash_application": {
+    "source": "Isbester, Bulk Carrier Practice Ch.5 p.75",
+    "when_required": [
+      "Before loading salt (sodium chloride) — prevents rusty surfaces from discolouring the salt",
+      "Before loading sulphur — prevents rust staining and chemical interaction with hold surfaces"
+    ],
+    "recipe": "1 part slaked lime (hydrated calcium hydroxide — Ca(OH)₂) to 3 parts fresh water",
+    "mixing": "Mix in 200-litre drum in the hold",
+    "application": "Apply to bulkheads and tanktop with portable sump pump hose. Cover all surfaces to the height cargo is expected to reach.",
+    "drying_time": "Limewash dries within a few hours",
+    "note": "Do NOT limewash to deckhead level unless cargo will reach that high — unnecessary work. The aim is bulkheads and tanktop with a good, thick, even coat."
+  }
+}
