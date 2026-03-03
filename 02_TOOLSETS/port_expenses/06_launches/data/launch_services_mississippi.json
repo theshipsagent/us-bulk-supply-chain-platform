@@ -1,0 +1,388 @@
+{
+  "_meta": {
+    "description": "Mississippi River launch/crew-boat service companies — station locations, contacts, fleet details, and tariff status",
+    "coverage": "Lower Mississippi River (Mile 55 Myrtle Grove to Mile 225 Baton Rouge)",
+    "compiled": "2026-03-03",
+    "sources": [
+      {
+        "company": "Crescent Ship Service",
+        "url": "https://crescentship.com/services/",
+        "contact_url": "https://crescentship.com/contact-us/",
+        "tariff_url": "https://crescentship.com/tariff/",
+        "tariff_pdf": "https://crescentship.com/wp-content/uploads/2020/07/8-15-20.pdf",
+        "tariff_pdf_note": "PDF dated 2020-08-15. Rates published in binary/image PDF — must be downloaded and read manually. Request current tariff direct from company.",
+        "scraped": "2026-03-03"
+      },
+      {
+        "company": "Port Ship Service",
+        "url": "https://www.portshipservice.com/",
+        "locations_url": "https://www.portshipservice.com/locations/",
+        "tariff_note": "No public tariff schedule found. Company states 'special contract terms available on request'.",
+        "scraped": "2026-03-03"
+      }
+    ]
+  },
+
+  "companies": [
+    {
+      "id": "crescent_ship_service",
+      "name": "Crescent Ship Service, Inc.",
+      "founded": 1975,
+      "founded_note": "Est. July 1975 by Fred Willhoft and son Gordon Willhoft following 30 years prior launch service experience",
+      "family_owned": true,
+      "website": "https://crescentship.com",
+      "hq": {
+        "address": "332 Aycock St",
+        "city": "Arabi",
+        "state": "LA",
+        "zip": "70032",
+        "phone": "504-272-2113",
+        "fax": "281-971-9913",
+        "email": "fred@crescentship.com"
+      },
+      "contacts": [
+        {"name": "Fred Willhoft", "role": "Principal", "email": "fred@crescentship.com"},
+        {"name": "Gordon Willhoft", "role": "Principal", "email": "gordon@crescentship.com"}
+      ],
+      "hours": "24/7 — 365 days",
+      "service_area": {
+        "waterway": "Lower Mississippi River",
+        "from_mile": 115,
+        "to_mile": 165,
+        "description": "New Orleans to Baton Rouge corridor (approx. AHP Mile 91–228). Four stations span Ama (Mile 115) through Burnside (Mile 165). Company states full river coverage."
+      },
+      "fleet": {
+        "crewboats": {
+          "passenger_capacity": 26,
+          "certification": "US Coast Guard licensed"
+        },
+        "cranes": {
+          "type": "Hydraulic",
+          "capacity_tons": 30,
+          "note": "One crane at each station location — all-weather operation"
+        }
+      },
+      "tariff": {
+        "status": "PDF published — binary/image format, not machine-readable",
+        "tariff_url": "https://crescentship.com/tariff/",
+        "tariff_pdf_url": "https://crescentship.com/wp-content/uploads/2020/07/8-15-20.pdf",
+        "tariff_date": "2020-08-15",
+        "rates_extracted": false,
+        "action_required": "Download PDF from tariff_pdf_url, enter rates manually into launch_tariffs.json. Request current PDF direct from fred@crescentship.com or gordon@crescentship.com.",
+        "known_rate_basis": null,
+        "known_rates": {}
+      },
+      "stations": [
+        {
+          "id": "crescent_ama",
+          "name": "Ama Landing",
+          "river_mile_ahp": 115,
+          "established": 1975,
+          "established_note": "Original station — company founding location",
+          "address": "Ama / Destrehan area, LA",
+          "phone": "504-469-0684",
+          "fax": "504-467-7325",
+          "lat_approx": 29.946,
+          "lon_approx": -90.303,
+          "lat_lon_note": "Approximate — Ama, St. Charles Parish. Verify from tariff PDF or Google Maps."
+        },
+        {
+          "id": "crescent_grandview",
+          "name": "Grandview Anchorage",
+          "river_mile_ahp": 146,
+          "established": 1980,
+          "established_note": "Expanded after experience with floating grain elevators",
+          "address": "Near Paulina, LA",
+          "phone": "504-469-7944",
+          "fax": "225-869-4970",
+          "lat_approx": 30.014,
+          "lon_approx": -90.739,
+          "lat_lon_note": "Approximate — Paulina/Convent area, St. James Parish."
+        },
+        {
+          "id": "crescent_reserve",
+          "name": "Reserve",
+          "river_mile_ahp": 137,
+          "established": 1994,
+          "address": "Reserve, LA",
+          "phone": "504-464-1560",
+          "fax": "504-536-4780",
+          "lat_approx": 30.065,
+          "lon_approx": -90.553,
+          "lat_lon_note": "Approximate — Reserve, St. John the Baptist Parish."
+        },
+        {
+          "id": "crescent_burnside",
+          "name": "Burnside Anchorage",
+          "river_mile_ahp": 165,
+          "established": 1985,
+          "address": "Burnside area, LA",
+          "phone": "504-525-1706",
+          "fax": "225-562-3074",
+          "lat_approx": 30.108,
+          "lon_approx": -90.891,
+          "lat_lon_note": "Approximate — Burnside/Convent area, Ascension Parish."
+        }
+      ]
+    },
+
+    {
+      "id": "port_ship_service",
+      "name": "Port Ship Service, Inc.",
+      "founded": 1945,
+      "founded_note": "Est. 1945 by Freddy 'Fatty' Willhoft using six converted wooden shrimp boats. Now operated by third generation: Raymond Jr., Rod, and Terry Willhoft Waldo.",
+      "family_owned": true,
+      "website": "https://www.portshipservice.com",
+      "hq": {
+        "address": "7121 N. Peter Street",
+        "mailing": "P.O. Box 369, Arabi, Louisiana 70032-0369",
+        "city": "Arabi",
+        "state": "LA",
+        "zip": "70032",
+        "phone_1": "504-279-0486",
+        "phone_2": "504-271-6391",
+        "fax": "504-271-9337",
+        "email": "portship@portshipservice.com"
+      },
+      "contacts": {
+        "louisiana": [
+          {"name": "Ray Willhoft",     "mobile": "504-813-2954"},
+          {"name": "Rod Willhoft",     "mobile": "504-813-2974"},
+          {"name": "Dennis Barkmeyer", "mobile": "504-813-2990"},
+          {"name": "Joey Difatta",     "mobile": "504-813-2924"},
+          {"name": "Ryan Willhoft",    "mobile": "504-908-5481"},
+          {"name": "Seth Floyd",       "mobile": "985-856-2641"},
+          {"name": "Chris Frigola",    "mobile": "504-919-0200"},
+          {"name": "Bob Nunez",        "mobile": "504-715-8207"}
+        ],
+        "piraeus_representative": {
+          "name": "Thomas Psarras",
+          "phone_1": "210-4110594",
+          "phone_2": "210-4130488",
+          "fax": "210-4220111",
+          "email": "psarrast@otenet.gr",
+          "note": "Greek shipping representative for vessel owners calling from Piraeus"
+        }
+      },
+      "hours": "24/7 — 365 days",
+      "service_area": {
+        "waterway": "Lower and Upper Mississippi River",
+        "from_mile": 55,
+        "to_mile": 225,
+        "description": "Davant/Myrtle Grove (Mile 55) near Venice to Baton Rouge (Mile 225). 6 main stations + 5 sub-stations provide continuous coverage."
+      },
+      "fleet": {
+        "crewboats": {
+          "count": 22,
+          "material": "Aluminum",
+          "certification": "US Coast Guard Certified"
+        },
+        "supply_vessels": {
+          "count": 6,
+          "note": "One large supply vessel per main station",
+          "capacity_tons": 30,
+          "speed_knots": 20
+        },
+        "vehicles": 9,
+        "employees_total": 100,
+        "cranes": "Heavy lift cranes and forklifts at all stations"
+      },
+      "tariff": {
+        "status": "No public tariff found",
+        "tariff_url": null,
+        "rates_extracted": false,
+        "action_required": "Request current rate sheet direct from portship@portshipservice.com or call (504) 279-0486. Company mentions 'special contract terms available on request'.",
+        "known_rate_basis": null,
+        "known_rates": {}
+      },
+      "stations": {
+        "main": [
+          {
+            "id": "pss_davant",
+            "name": "Davant (Myrtle Grove)",
+            "river_mile_ahp": 55,
+            "address": "20917 Hwy. 23",
+            "city": "Myrtle Grove",
+            "state": "LA",
+            "zip": "70083",
+            "phone_1": "504-656-2170",
+            "phone_2": "504-656-2242",
+            "fax": "504-656-7752",
+            "email": "portshipdavant@portshipservice.com",
+            "passenger_docks": ["Pointe A La Hache (Magnolia)", "Port Sulphur (Point Michel)"],
+            "lat_approx": 29.542,
+            "lon_approx": -89.869,
+            "lat_lon_note": "Approximate — Myrtle Grove, Plaquemines Parish"
+          },
+          {
+            "id": "pss_belle_chasse",
+            "name": "Belle Chasse",
+            "river_mile_ahp": 74,
+            "address": "9999 Hwy. 23",
+            "city": "Belle Chasse",
+            "state": "LA",
+            "zip": "70037",
+            "phone_1": "504-392-8396",
+            "phone_2": "504-392-8397",
+            "fax": "504-398-0982",
+            "email": "portshipbellechasse@portshipservice.com",
+            "passenger_docks": ["LaGrange"],
+            "lat_approx": 29.852,
+            "lon_approx": -89.985,
+            "lat_lon_note": "Approximate — Belle Chasse, Plaquemines Parish"
+          },
+          {
+            "id": "pss_poydras",
+            "name": "Poydras",
+            "river_mile_ahp": 84,
+            "address": "7722 E. St. Bernard Hwy.",
+            "city": "Poydras",
+            "state": "LA",
+            "zip": "70092",
+            "phone_1": "504-272-0415",
+            "phone_2": "504-272-0416",
+            "fax": "504-272-0391",
+            "email": "portshippoydras@portshipservice.com",
+            "passenger_docks": ["Lower Algiers (Pipeline)"],
+            "lat_approx": 29.900,
+            "lon_approx": -89.993,
+            "lat_lon_note": "Approximate — Poydras, St. Bernard Parish"
+          },
+          {
+            "id": "pss_arabi",
+            "name": "Arabi (Main Office)",
+            "river_mile_ahp": 91,
+            "address": "7121 N. Peters St.",
+            "city": "Arabi",
+            "state": "LA",
+            "zip": "70032",
+            "phone_1": "504-271-6391",
+            "phone_2": "504-279-6471",
+            "fax": "504-279-6483",
+            "email": "portshiparabi@portshipservice.com",
+            "passenger_docks": ["Algiers (West Bank)"],
+            "lat_approx": 29.950,
+            "lon_approx": -89.996,
+            "lat_lon_note": "Approximate — Arabi, St. Bernard Parish (same block as HQ)"
+          },
+          {
+            "id": "pss_st_rose_ama",
+            "name": "St. Rose (AMA)",
+            "river_mile_ahp": 116,
+            "address": "10017 River Road",
+            "city": "St. Rose",
+            "state": "LA",
+            "zip": "70087",
+            "phone_1": "504-468-1369",
+            "phone_2": "504-468-1505",
+            "fax": "504-464-8931",
+            "email": "portshipama@portshipservice.com",
+            "lat_approx": 29.953,
+            "lon_approx": -90.312,
+            "lat_lon_note": "Approximate — St. Rose, St. Charles Parish"
+          },
+          {
+            "id": "pss_grandview_lutcher",
+            "name": "Grandview (Lutcher)",
+            "river_mile_ahp": 147,
+            "address": "2095 Jefferson Hwy.",
+            "city": "Lutcher",
+            "state": "LA",
+            "zip": "70071",
+            "phone_1": "225-869-1057",
+            "phone_2": "225-869-1058",
+            "fax": "225-869-1053",
+            "email": "portshipgrandview@portshipservice.com",
+            "lat_approx": 30.017,
+            "lon_approx": -90.728,
+            "lat_lon_note": "Approximate — Lutcher, St. James Parish"
+          }
+        ],
+        "sub_stations": [
+          {
+            "id": "pss_reserve",
+            "name": "Reserve",
+            "river_mile_ahp": 136,
+            "address": "1201 Hwy. 44",
+            "city": "Reserve",
+            "state": "LA",
+            "zip": "70084",
+            "phone": "985-536-2246",
+            "lat_approx": 30.065,
+            "lon_approx": -90.563
+          },
+          {
+            "id": "pss_burnside",
+            "name": "Burnside",
+            "river_mile_ahp": 166,
+            "address": "10148 Hwy. 44",
+            "city": "Convent",
+            "state": "LA",
+            "zip": "70723",
+            "phone": "225-562-3547",
+            "lat_approx": 30.021,
+            "lon_approx": -90.865
+          },
+          {
+            "id": "pss_darrow",
+            "name": "Darrow",
+            "river_mile_ahp": 175,
+            "address": "37152 Hwy. 22",
+            "city": "Darrow",
+            "state": "LA",
+            "zip": "70725",
+            "phone": "225-473-1651",
+            "lat_approx": 30.097,
+            "lon_approx": -90.929
+          },
+          {
+            "id": "pss_white_castle",
+            "name": "White Castle",
+            "river_mile_ahp": 199,
+            "address": "5500 Point Clair Rd.",
+            "city": "Carville",
+            "state": "LA",
+            "zip": "70721",
+            "phone": "225-445-3238",
+            "lat_approx": 30.183,
+            "lon_approx": -91.107
+          },
+          {
+            "id": "pss_baton_rouge",
+            "name": "Baton Rouge",
+            "river_mile_ahp": 225,
+            "address": "900 S. River Rd.",
+            "city": "Baton Rouge",
+            "state": "LA",
+            "zip": "70802",
+            "phone": "225-445-3238",
+            "lat_approx": 30.446,
+            "lon_approx": -91.188
+          }
+        ]
+      }
+    }
+  ],
+
+  "coverage_gaps": [
+    {
+      "area": "Head of Passes to Davant (Mile 0–55)",
+      "note": "Below Myrtle Grove — served by NOBRA and bar pilot association launches. No independent launch operator confirmed in this range."
+    },
+    {
+      "area": "Above Baton Rouge (Mile 225+)",
+      "note": "Neither operator lists stations above BR. Plantation anchorages (Geismar, Plaquemine, St. Francisville) may have local operators — research needed."
+    }
+  ],
+
+  "pending_rates": {
+    "crescent_ship_service": {
+      "action": "Download PDF from https://crescentship.com/wp-content/uploads/2020/07/8-15-20.pdf and manually enter rates into launch_tariffs.json. Also check website for newer PDF — current file dated 2020-08-15.",
+      "typical_rate_structure": "Mississippi River launches typically charge per-trip (boarding/discharging), daily hire, and/or hourly rates. Crane services billed separately per lift or hourly."
+    },
+    "port_ship_service": {
+      "action": "Call (504) 279-0486 or email portship@portshipservice.com to request current rate card. No public tariff published.",
+      "typical_rate_structure": "Per-trip rates for pilot/agent boarding. Supply vessel rates per day or per ton. Contract terms available."
+    }
+  }
+}
