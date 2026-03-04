@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INTERNAL -- Lower Miss. Grain Elevator Guide 2025 v3 -- Methodology &amp; Sources</title>
+<style>
+body{font-family:"Segoe UI",system-ui,sans-serif;max-width:1000px;margin:40px auto;
+  padding:0 30px;background:#F8F9FA;color:#212529}
+h1{font-size:22px;color:#0D1B2A}
+h2{font-size:17px;color:#1B3A5C;border-bottom:2px solid #1B3A5C;padding-bottom:4px}
+h3{font-size:14px;color:#333}
+.source-card{background:#fff;border:1px solid #dee2e6;border-radius:8px;padding:16px;margin-bottom:12px}
+.source-name{font-weight:700;color:#1B3A5C;font-size:13px}
+.badge{background:#0D1B2A;color:#fff;font-size:10px;border-radius:4px;padding:2px 8px;margin-left:6px}
+.warn{background:#FFF3CD;border:1px solid #FFC107;border-radius:6px;padding:12px;margin:10px 0;font-size:12px}
+.note{background:#E3F2FD;border:1px solid #90CAF9;border-radius:6px;padding:12px;margin:10px 0;font-size:12px}
+.fix{background:#E8F5E9;border:1px solid #A5D6A7;border-radius:6px;padding:12px;margin:10px 0;font-size:12px}
+code{background:#f1f3f5;border-radius:4px;padding:2px 5px;font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:16px}
+th{background:#0D1B2A;color:#fff;padding:7px 10px;text-align:left}
+td{padding:6px 10px;border-bottom:1px solid #dee2e6}
+</style>
+</head>
+<body>
+<h1>INTERNAL -- Methodology &amp; Data Sources (v3)</h1>
+<p style="color:#666;font-size:13px">
+  Lower Mississippi River Grain Export Elevator Intelligence Report -- 2025 v3<br>
+  Build date: March 03, 2026 &nbsp;|&nbsp; CONFIDENTIAL -- FOR INTERNAL USE ONLY
+</p>
+
+<div class="fix">
+  <b>v3 Key Fixes vs v2:</b>
+  <ol style="margin:6px 0 0">
+    <li>All Folium maps replaced with static matplotlib PNG maps (Bloomberg/WSJ/Economist style)</li>
+    <li>Grade-level grain quality with stow factor: SF (ft³/LT) = 2788.08 / test_weight</li>
+    <li>Corrected MRTIS anchorages: real zone names from live query (no "Natchez Anch" -- that zone name was fabricated in v2 fallback and does not exist in MRTIS data)</li>
+    <li>MRTIS filter corrected to: ZoneType='ANCHORAGE' OR Zone LIKE '%Anch%'</li>
+    <li>Corrected anchorage lat/lon positions match real zone names</li>
+  </ol>
+</div>
+
+<h2>1. Data Sources</h2>
+
+<div class="source-card">
+  <div class="source-name">Southport Agencies -- Vessel Lineup Reports</div>
+  <span class="badge">PRIMARY</span>
+  <p style="font-size:12px;color:#555;margin-top:8px">
+    Daily vessel lineup sheets covering Miss. River, Texas, and PNW terminal systems.
+    Source: <code>/Users/wsd/Projects/southport-agencies/exposed-files/excel/</code>
+    (945 Excel files, 2.1 GB). Table: <code>grain_southport_lineup</code> in
+    <code>data/analytics.duckdb</code>. 15,569 rows for MISS_RIVER 2025;
+    255 report days; 12 terminals. Schema: vessel_name, terminal_name, status_type
+    (ETA/FILING/LOADING/SAILED), report_date, mt_numeric, commodity_code,
+    destination, delay_days_min, delay_days_max.
+  </p>
+  <div class="warn">~40--70% NULL mt_numeric for LOADING records is a structural artifact --
+    many vessels file "RVT" (quantity to be determined) until loading commences.
+    FGIS certified tonnage is the authoritative volume measure.</div>
+</div>
+
+<div class="source-card">
+  <div class="source-name">USDA FGIS -- Federal Grain Inspection Service Export Certificates</div>
+  <span class="badge">PRIMARY</span>
+  <p style="font-size:12px;color:#555;margin-top:8px">
+    Official grain inspection certificates for all US grain exports.
+    Table: <code>grain_fgis_certs</code> -- 2,207 certificates for
+    port='MISSISSIPPI R.' in 2025 (Jan--Sep 2025). Total certified volume: 64.5M MT.
+    Schema: serial_no, cert_date, vessel, grain, grade, pounds, metric_ton, destination, port,
+    test_weight, moisture_avg, fm_pct, protein_avg.
+    Data coverage: Jan 1 -- Sep 25, 2025.
+  </p>
+</div>
+
+<div class="source-card">
+  <div class="source-name">USACE MRTIS -- Mississippi River Traffic Information Service</div>
+  <span class="badge">VESSEL MOVEMENT</span>
+  <p style="font-size:12px;color:#555;margin-top:8px">
+    Processed vessel movement data derived from USACE MRTIS tracking records.
+    Source files: <code>01_DATA_SOURCES/federal_waterway/mrtis/results_clean/</code><br>
+    -- <code>voyage_summary.csv</code>: 5518 voyage records in 2025 with port time components<br>
+    -- <code>event_log.csv</code>: zone-level events with anchorage names, zone types, dwell durations.<br>
+    <b>2025 filter:</b> CrossInTime &gt;= '2025-01-01'. Status: Live queries.
+  </p>
+  <div class="note">MRTIS data and source attribution are INTERNAL ONLY and must NOT appear
+    in the main (demo/client) report. The main report presents these findings as
+    "anchorage and transit intelligence" without naming the USACE MRTIS data feed.</div>
+  <div class="fix">
+    <b>v3 Correction:</b> v2 fallback data included "Natchez Anch" with 45 visits, avg 89.4h.
+    This zone name does NOT exist in the MRTIS event_log data. It was fabricated in the v2
+    fallback dict. Verified 2025 top anchorages from live MRTIS query are:<br>
+    9 Mile Anch (722), 12 Mile Anch (645), Lwr Kenner Bend Anch (515), Belle Chasse Anch (480),
+    AMA Anch (476), Burnside Anch (380), Upr Kenner Bend Anch (346), Dockside Anch (269),
+    Bonnet Carre Anch (260), Pt Celeste Anch (210), Davant Anch (185), Baton Rouge Gen Anch (89).
+  </div>
+</div>
+
+<div class="source-card">
+  <div class="source-name">Blue Water Shipping (BWS) -- Port Maps / Terminal Registry</div>
+  <span class="badge">GEOSPATIAL</span>
+  <p style="font-size:12px;color:#555;margin-top:8px">
+    Terminal positions and operational details from BWS port map publications.
+    Source: <code>07_KNOWLEDGE_BANK/master_facility_register/data/national_supply_chain/
+    facilities_grain_export_elevator.geojson</code> (29 terminals, IENC-calibrated
+    AHP coordinates for Miss. River facilities).
+  </p>
+</div>
+
+<div class="source-card">
+  <div class="source-name">v3 Static Maps: matplotlib + contextily + GeoPandas</div>
+  <span class="badge">VISUALIZATION</span>
+  <p style="font-size:12px;color:#555;margin-top:8px">
+    All Folium interactive maps replaced with static PNG maps embedded as base64 data URIs.
+    Three maps: (1) River terminal map with CartoDB Positron basemap; (2) World trade flow
+    map (Economist dark style, great-circle arcs); (3) US barge corridor map (WSJ style).
+    Tools: matplotlib, contextily (CartoDB basemap tiles), geopandas (Natural Earth polygons),
+    pyproj (EPSG:4326 to EPSG:3857 transform).
+  </p>
+</div>
+
+<h2>2. Stow Factor Methodology (v3 New)</h2>
+<p style="font-size:12px;line-height:1.8">
+  Stow factors computed from USDA FGIS certified test weights per grain grade:
+</p>
+<table>
+  <tr><th>Formula</th><th>Description</th></tr>
+  <tr><td><code>SF (ft³/LT) = 2788.08 / TW</code></td>
+      <td>2788.08 = 2240 lb/LT &times; 1.2445 ft³/bu (standard bushel volume)</td></tr>
+  <tr><td><code>SF (m³/MT) = (2788.08 / TW) &times; 0.028317 / 1.01605</code></td>
+      <td>Convert ft³/LT to m³/MT (1 ft³ = 0.028317 m³, 1 LT = 1.01605 MT)</td></tr>
+  <tr><td><code>SF Untrimmed = SF (ft³/LT) &times; 1.06</code></td>
+      <td>6% allowance for grain surface not leveled (standard bulk carrier practice)</td></tr>
+</table>
+<p style="font-size:12px;color:#555">
+  Reference: Isbester, <i>Bulk Carrier Practice</i> Ch.5; Meurn &amp; Sauerbier, <i>Stowage</i>.
+  Grain stowage factors CSV: <code>02_TOOLSETS/vessel_voyage_analysis/grain_stowage_factors.csv</code>
+</p>
+<p style="font-size:12px;color:#555">
+  <b>Color coding in report:</b> Orange highlight = light grain &gt;52 ft³/LT (typically wheat, sorghum);
+  Blue highlight = heavy corn &lt;47 ft³/LT. No highlight = typical 47--52 ft³/LT range.
+</p>
+
+<h2>3. Metric Methodology</h2>
+
+<h3>Queue Wait Time</h3>
+<p style="font-size:12px">
+  ETA first appearance date per vessel--terminal pair to first LOADING date,
+  filtered to &lt;= 30 days. Metric: MEDIAN. SQL: <code>DATEDIFF('day', first_eta, first_loading) &lt;= 30</code>.
+</p>
+
+<h3>Loading Duration</h3>
+<p style="font-size:12px">
+  Count of distinct LOADING report dates per vessel--terminal pair per year.
+  Represents the number of daily lineup reports showing that vessel as LOADING.
+  Metric: MEDIAN loading days per vessel visit.
+</p>
+
+<h3>Anchorage Wait Time (v3 corrected)</h3>
+<p style="font-size:12px">
+  From MRTIS event_log: DurationToNextEventHours for events where
+  <code>ZoneType='ANCHORAGE' OR Zone LIKE '%Anch%'</code>, filtered to &lt; 500h.
+  Aggregated by Zone. Monthly trend from voyage_summary.AnchorTimeHours.
+  <b>v2 error corrected:</b> v2 used <code>Zone LIKE '%anch%'</code> (lowercase only) which
+  missed zones written with capital A (the actual MRTIS naming convention).
+</p>
+
+<h3>Cargo Size (MT)</h3>
+<p style="font-size:12px">
+  Southport lineup mt_numeric field. Structural ~40--70% NULL rate expected.
+  Non-null LOADING records used for size distribution. P25/Median/P75 via DuckDB PERCENTILE_CONT.
+</p>
+
+<h2>4. Data Caveats &amp; Limitations</h2>
+<ul style="font-size:12px;line-height:1.8">
+  <li>FGIS data covers Jan 1 -- Sep 25, 2025 only (Q4 extraction pending)</li>
+  <li>Southport lineup data: 255 of 365 possible 2025 report days captured</li>
+  <li>mile_ahp artifacts: COOPER DARROW, ZEN-NOH, LDC all show 164.0 -- true positions used from TERMINAL_META dict</li>
+  <li>Barge origin corridor percentages are structural USDA GTR estimates, not 2025 observed flow data</li>
+  <li>River stage values are historical climatological averages, not 2025 actual readings</li>
+  <li>Fog day count (34/year) is NOAA NWS New Orleans climatological average</li>
+  <li>ADM WOOD BUOYS and BUNGE DESTREHAN not in BWS GeoJSON -- approximate coordinates used</li>
+  <li>Stow factors computed from FGIS certified test weights (USDA official scale); not from vessel manifest or bill of lading</li>
+  <li>"Natchez Anch" in v2 fallback was fabricated -- removed in v3</li>
+</ul>
+
+<h2>5. Reproducibility</h2>
+<p style="font-size:12px">
+  Run from: <code>03_COMMODITY_MODULES/grain/</code><br>
+  Command: <code>python3 src/build_lower_miss_report_v3.py</code><br>
+  Requires: <code>duckdb</code>, <code>pandas</code>, <code>matplotlib</code>,
+  <code>geopandas</code>, <code>shapely</code>, <code>pyproj</code>,
+  <code>contextily</code> (optional, for basemap tiles).<br>
+  Output: <code>04_REPORTS/presentations/lower_miss_grain_elevator_guide_2025_v3.html</code>
+  and <code>_v3_INTERNAL.html</code>
+</p>
+
+<h2>6. v3 Map Implementation Notes</h2>
+<p style="font-size:12px">
+  Natural Earth shapefile path tested at:
+  <code>/opt/homebrew/lib/python3.14/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.shp</code><br>
+  Falls back to <code>geopandas.datasets.get_path('naturalearth_lowres')</code> if not found.<br>
+  Contextily basemap tiles require internet connection; falls back to solid background color if unavailable.<br>
+  All maps saved at 150 DPI, embedded as base64 PNG data URIs. No external dependencies at view time.
+</p>
+
+</body>
+</html>

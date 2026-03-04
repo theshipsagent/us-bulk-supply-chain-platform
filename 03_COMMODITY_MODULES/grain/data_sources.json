@@ -1,0 +1,439 @@
+{
+  "_metadata": {
+    "module": "grain",
+    "version": "1.0.0",
+    "last_updated": "2026-03-02",
+    "total_sources": 26,
+    "description": "Complete data source catalog for grain commodity module",
+    "owner": "William S. Davis III"
+  },
+
+  "tier_1_live_apis": {
+    "description": "Machine-readable federal APIs — automated ingestion",
+    "sources": {
+      "fas_esr": {
+        "id": 1,
+        "name": "USDA FAS — Export Sales Report (ESR) API",
+        "agency": "USDA Foreign Agricultural Service",
+        "coverage": "Weekly U.S. agricultural export sales by commodity and destination country",
+        "frequency": "Weekly (released Thursdays 8:30 AM ET)",
+        "auth_required": false,
+        "base_url": "https://apps.fas.usda.gov/OpenData/api/",
+        "swagger_ui": "https://apps.fas.usda.gov/opendata/swagger/ui/index",
+        "key_endpoints": {
+          "exports_all_countries": "esr/exports/commodityCode/{code}/allCountries/marketYear/{year}",
+          "exports_by_country": "esr/exports/commodityCode/{code}/countryCode/{cc}/marketYear/{year}",
+          "commodities_list": "esr/commodities",
+          "countries_list": "esr/countries"
+        },
+        "grain_codes": {
+          "101": "Wheat", "102": "Barley", "103": "Oats", "104": "Corn",
+          "105": "DDGS", "106": "Sorghum", "501": "Rice",
+          "801": "Soybeans", "802": "Soybean Oil", "803": "Soybean Meal"
+        },
+        "data_fields": ["week_ending_date", "commodity_code", "country_code",
+                        "weekly_exports_mt", "accumulated_exports_mt",
+                        "outstanding_sales_mt", "gross_new_sales_mt"],
+        "script": "src/fetch_fas_esr.py",
+        "output": "data/processed/trade/esr_{commodity}_{year}.parquet",
+        "notes": "40% of total ag exports covered; mandatory reporter program"
+      },
+
+      "fas_psd": {
+        "id": 2,
+        "name": "USDA FAS — Production, Supply & Distribution (PSD) API",
+        "agency": "USDA Foreign Agricultural Service",
+        "coverage": "Official USDA supply/demand forecasts for all major grains/oilseeds globally. Historical 1960+",
+        "frequency": "Monthly (updated with WASDE release)",
+        "auth_required": false,
+        "base_url": "https://apps.fas.usda.gov/OpenData/api/",
+        "key_endpoints": {
+          "psd_all_countries": "psd/commodity/{code}/country/all/year/{year}",
+          "commodities_list": "psd/commodities",
+          "countries_list": "psd/countries"
+        },
+        "grain_psd_codes": {
+          "0440000": "Corn", "0410000": "Wheat", "0422110": "Rice",
+          "0450000": "Sorghum", "0430000": "Barley", "0460000": "Oats",
+          "2222000": "Soybeans", "2223000": "Soybean Meal", "4243000": "Soybean Oil"
+        },
+        "data_fields": ["country_code", "year", "production_mt", "imports_mt",
+                        "domestic_consumption_mt", "exports_mt", "ending_stocks_mt"],
+        "script": "src/fetch_fas_psd.py",
+        "output": "data/processed/supply/psd_{commodity}_{year}.parquet",
+        "bulk_download": "https://apps.fas.usda.gov/psdonline/app/index.html#/app/downloadData"
+      },
+
+      "nass_quickstats": {
+        "id": 3,
+        "name": "USDA NASS — QuickStats API",
+        "agency": "USDA National Agricultural Statistics Service",
+        "coverage": "U.S. crop production, acreage, yield, stocks, and prices — national/state/county",
+        "frequency": "Weekly (crop progress), Monthly (production), Quarterly (stocks), Annual (acreage)",
+        "auth_required": true,
+        "key_env_var": "USDA_API_KEY",
+        "key_signup": "https://api.data.gov/signup/",
+        "base_url": "https://quickstats.nass.usda.gov/api/",
+        "key_endpoints": {
+          "query": "api_GET/",
+          "count": "get_counts/"
+        },
+        "key_reports": {
+          "Crop Production": "monthly",
+          "Grain Stocks": "quarterly (Mar/Jun/Sep/Dec)",
+          "Prospective Plantings": "annual (March)",
+          "Acreage": "annual (June)",
+          "Small Grains Summary": "annual (September)",
+          "Crop Progress": "weekly (April-November)"
+        },
+        "record_limit": 50000,
+        "script": "src/fetch_nass.py",
+        "output": "data/processed/supply/nass_{stat_category}_{commodity}.parquet",
+        "bulk_ftp": "https://www.nass.usda.gov/datasets/"
+      },
+
+      "census_trade": {
+        "id": 4,
+        "name": "U.S. Census Bureau — International Trade API",
+        "agency": "U.S. Census Bureau",
+        "coverage": "Monthly U.S. merchandise exports and imports by HS-10, country, port, state",
+        "frequency": "Monthly (released ~5 weeks after month-end)",
+        "auth_required": true,
+        "key_env_var": "CENSUS_API_KEY",
+        "key_signup": "https://api.census.gov/data/key_signup.html",
+        "base_url": "https://api.census.gov/data/timeseries/intltrade/",
+        "key_endpoints": {
+          "exports_by_country": "exports/hs",
+          "exports_by_port": "exports/porths",
+          "exports_by_state": "exports/statehs",
+          "imports_by_country": "imports/hs"
+        },
+        "key_hs10_export_codes": {
+          "1005900020": "Corn", "1001990010": "HRW Wheat",
+          "1001990030": "HRS Wheat", "1001990040": "White Wheat",
+          "1201900005": "Soybeans", "1007900010": "Sorghum",
+          "2303100040": "DDGS", "2304001000": "Soybean Meal",
+          "1507100000": "Crude Soybean Oil"
+        },
+        "script": "src/fetch_census_trade.py",
+        "output": "data/processed/trade/census_exports_{hs_code}_{year}.parquet",
+        "web_portal": "https://usatrade.census.gov/"
+      },
+
+      "ers_fatus": {
+        "id": 5,
+        "name": "USDA ERS — Foreign Agricultural Trade of the U.S. (FATUS)",
+        "agency": "USDA Economic Research Service",
+        "coverage": "Annual and monthly U.S. ag trade by commodity and country. ERS-curated Census aggregations.",
+        "frequency": "Monthly (updated ~2 months after month-end)",
+        "auth_required": false,
+        "portal": "https://www.ers.usda.gov/data-products/foreign-agricultural-trade-of-the-united-states-fatus/",
+        "download_urls": {
+          "monthly_value_by_commodity": "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab1.xlsx",
+          "annual_by_country": "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab2.xlsx",
+          "monthly_by_country": "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab3.xlsx",
+          "bulk_commodities": "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab4.xlsx"
+        },
+        "format": "Excel",
+        "script": "src/fetch_ers_fatus.py",
+        "notes": "ERS APIs offline since early 2025 redesign — use direct Excel downloads"
+      }
+    }
+  },
+
+  "tier_2_supplemental_downloads": {
+    "description": "Bulk downloads, scheduled reports — weekly/monthly/annual",
+    "sources": {
+      "ams_gtr": {
+        "id": 6,
+        "name": "USDA AMS — Grain Transportation Report (GTR) Datasets",
+        "agency": "USDA Agricultural Marketing Service",
+        "coverage": "Weekly grain transport cost indicators: barge rates, rail car auctions, ocean freight, truck/diesel, export elevator bids, barge movement volumes by lock",
+        "frequency": "Weekly",
+        "auth_required": false,
+        "portal": "https://www.ams.usda.gov/services/transportation-analysis/gtr-datasets",
+        "agtransport_platform": "https://agtransport.usda.gov/",
+        "key_datasets": {
+          "Table01": "Transport cost indicators (all modes)",
+          "Table02": "Price spreads — origin to export position",
+          "Table05": "Railcar bids — secondary market",
+          "Figure09": "Railroad fuel surcharges",
+          "Table09": "Barge freight rates — southbound Illinois River",
+          "Table10": "Barge grain movements by lock/dam",
+          "Table11": "Barge freight — Columbia/Snake River",
+          "Table12": "Barge grain movements — Columbia/Snake",
+          "Table14": "U.S. export balances cumulative",
+          "Figure20": "Ocean vessel rates — U.S. Gulf to Japan",
+          "GrainBids": "Grain bids — 30-day delivery at export ports"
+        },
+        "script": "src/fetch_ams_gtr.py",
+        "output": "data/processed/freight/gtr_{dataset}_{date}.parquet"
+      },
+
+      "fgis": {
+        "id": 7,
+        "name": "USDA FGIS — Export Grain Inspection & Weighing Data",
+        "agency": "USDA Federal Grain Inspection Service",
+        "coverage": "Official USDA inspection/weighing data for exported grain. Grain type, grade, quantity, moisture, test weight by carrier type (vessel, railcar, barge, truck) and port.",
+        "frequency": "Daily updates; weekly/annual aggregate reports",
+        "auth_required": "USDA eAuthentication (for carrier-level); aggregate public reports open",
+        "portal": "https://fgisonline.ams.usda.gov/",
+        "idw_portal": "https://www.ams.usda.gov/services/fgisonline/idw-cert",
+        "public_report": "https://fgisonline.ams.usda.gov/exportgrainreport/",
+        "data_landing": "https://www.ams.usda.gov/resources/fgis-data-and-statistics",
+        "script": "src/fetch_fgis.py",
+        "notes": "Private carrier records require organization number registration. Public aggregate reports by port/commodity are open."
+      },
+
+      "wasde": {
+        "id": 8,
+        "name": "WASDE Report — World Agricultural Supply & Demand Estimates",
+        "agency": "USDA Office of the Chief Economist",
+        "coverage": "Monthly global supply/demand forecasts for all major grains and oilseeds. Most market-moving ag publication globally.",
+        "frequency": "Monthly (schedule at https://www.usda.gov/oce/commodity/wasde)",
+        "portal": "https://www.usda.gov/oce/commodity/wasde",
+        "text_archive": "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1194",
+        "api_equivalent": "USDA FAS PSD API (Source #2) provides machine-readable equivalent",
+        "script": "See fetch_fas_psd.py — PSD API is programmatic WASDE"
+      },
+
+      "gain_reports": {
+        "id": 9,
+        "name": "USDA GAIN Reports — Global Agricultural Information Network",
+        "agency": "USDA Foreign Agricultural Service",
+        "coverage": "Intelligence reports from U.S. ag attachés at embassies worldwide. Crop conditions, policy, market access, supply/demand for key importing countries.",
+        "frequency": "Continuous (hundreds of reports per month)",
+        "auth_required": false,
+        "api_base": "https://apps.fas.usda.gov/newgainapi/api/",
+        "key_endpoints": {
+          "by_product": "Report/ReportsByProductCodes?productCodes={code}&countryCode={cc}&numberOfResults=10",
+          "by_search": "Report/ReportsBySearchCriteria?searchQuery={query}"
+        },
+        "key_products": ["CORN", "SOYBEANS", "WHEAT", "RICE", "SORGHUM"],
+        "script": "src/fetch_gain_reports.py"
+      },
+
+      "ers_baseline": {
+        "id": 10,
+        "name": "USDA ERS — Agricultural Baseline Database (10-Year Projections)",
+        "agency": "USDA Economic Research Service",
+        "coverage": "Long-term projections for U.S. and global supply/demand/trade for corn, wheat, soybeans, sorghum, barley, oats, rice",
+        "frequency": "Annual (February, released at USDA Ag Outlook Forum)",
+        "portal": "https://www.ers.usda.gov/data-products/agricultural-baseline-database/"
+      },
+
+      "cornell_esmis": {
+        "id": 11,
+        "name": "Cornell ESMIS / USDA Mann Library Archive",
+        "agency": "Cornell University / USDA",
+        "coverage": "Complete archive of all USDA statistical publications — NASS, ERS, FAS, WASDE, Crop Progress, Grain Stocks. Decades of historical data.",
+        "portal": "https://usda.mannlib.cornell.edu/",
+        "key_series": {
+          "grain_stocks": "documentID=1079",
+          "crop_production": "documentID=1046",
+          "wasde": "documentID=1194",
+          "crop_progress": "documentID=1048",
+          "prospective_plantings": "documentID=1136",
+          "acreage": "documentID=1000",
+          "small_grains": "documentID=1148",
+          "wheat_outlook": "documentID=1393",
+          "feed_outlook": "documentID=1245",
+          "oil_crops_outlook": "documentID=1288",
+          "grain_world_markets": "documentID=1460"
+        }
+      }
+    }
+  },
+
+  "tier_3_trade_organizations": {
+    "description": "Industry trade associations — reports, portals, policy analysis (no APIs)",
+    "sources": {
+      "naega": {
+        "id": 12,
+        "name": "North American Export Grain Association (NAEGA)",
+        "coverage": "GOMAI (Grain & Oilseed Market Access Indexes) — annual trade barrier quantification for corn, soy, wheat in 30+ countries. Position papers, trade policy.",
+        "portal": "https://www.naega.org/",
+        "gomai_reports": "https://www.naega.org/gomai",
+        "trade_policy": "https://www.naega.org/issues",
+        "access": "PDF downloads; no public API"
+      },
+
+      "ussec": {
+        "id": 13,
+        "name": "U.S. Soybean Export Council (USSEC)",
+        "coverage": "U.S. soy export intelligence; marketing year export totals by country; SSAP sustainability certificates; specialty soy database",
+        "portal": "https://ussec.org/",
+        "key_resources": {
+          "news_exports": "https://ussec.org/news/",
+          "conversion_table": "https://ussec.org/resources/conversion-table/",
+          "specialty_soy_db": "https://ussec.org/resources/specialty-soy-database/",
+          "ssap_certs": "https://ussec.org/resources/ssap/",
+          "value_calculator": "https://ussec.org/resources/soybean-value-calculator/"
+        },
+        "notes": "Uses USDA FAS data as underlying source; cross-reference FAS ESR/PSD"
+      },
+
+      "usgc": {
+        "id": 14,
+        "name": "U.S. Grains Council (USGC)",
+        "coverage": "Corn, sorghum, barley, DDGS, ethanol export intelligence. GIAF (Grains in All Forms) portal — multi-year export data in corn equivalents.",
+        "portal": "https://grains.org/",
+        "giaf_portal": "https://grains.org/markets-tools-data/tools/feed-grains-in-all-forms-portal/",
+        "market_reports": "https://grains.org/markets-tools-data/reports/",
+        "weekly_update": "https://grains.org/markets-tools-data/reports/weekly-market-update/",
+        "notes": "GIAF data source is USDA GATS; pull from FAS API for machine-readable equivalent"
+      },
+
+      "usw": {
+        "id": 15,
+        "name": "U.S. Wheat Associates (USW)",
+        "coverage": "U.S. wheat export promotion. Weekly market data, port basis, vessel loading inspection overviews, class-by-class trade data.",
+        "portal": "https://uswheat.org/",
+        "market_data": "https://uswheat.org/market-data/",
+        "wheat_letter": "https://uswheat.org/category/wheatletter/",
+        "crop_quality": "https://uswheat.org/u-s-wheat-crop-quality-reports/"
+      },
+
+      "gafta": {
+        "id": 16,
+        "name": "Grain and Feed Trade Association (GAFTA)",
+        "coverage": "International contract standards, arbitration rules. Reference for standard grain export contract terms (GAFTA 100, 64, etc.)",
+        "portal": "https://www.gafta.com/",
+        "contracts": "https://www.gafta.com/contracts"
+      },
+
+      "ngfa": {
+        "id": 17,
+        "name": "National Grain and Feed Association (NGFA)",
+        "coverage": "Domestic grain trade association. Trade rules, railroad performance data, policy positions. Country elevators, feed mills, grain merchants.",
+        "portal": "https://www.ngfa.org/"
+      }
+    }
+  },
+
+  "tier_4_market_prices": {
+    "description": "Futures, spot prices, and forward basis",
+    "sources": {
+      "cme_futures": {
+        "id": 18,
+        "name": "CME Group — CBOT Grain Futures",
+        "coverage": "Live and historical futures: corn (ZC), SRW wheat (ZW), HRW wheat (KE), HRS wheat (MWE), soybeans (ZS), soy meal (ZM), soy oil (ZL), oats (ZO), rough rice (ZR)",
+        "access": "CME DataMine (paid) | Quandl/Nasdaq Data Link (paid) | yfinance (free, front-month only)",
+        "yfinance_tickers": {
+          "CORN": "ZC=F", "WHEAT": "ZW=F", "SOYBEANS": "ZS=F",
+          "SOY_MEAL": "ZM=F", "SOY_OIL": "ZL=F", "OATS": "ZO=F"
+        },
+        "script": "src/fetch_cme_futures.py"
+      },
+
+      "ams_grain_prices": {
+        "id": 19,
+        "name": "USDA AMS — Daily/Weekly Grain Prices & Bids",
+        "coverage": "Daily grain prices at major markets, terminal elevators, export elevators. Basis levels. Bid/offer data.",
+        "portal": "https://www.ams.usda.gov/market-news/grain-and-field-crops",
+        "mmn_api": "https://mymarketnews.ams.usda.gov/api/public/v1/",
+        "direct_urls": {
+          "national_daily": "https://www.ams.usda.gov/mnreports/gx_gr110.txt",
+          "gulf_export_elevator": "https://www.ams.usda.gov/mnreports/gx_gr214.txt",
+          "pnw_export_elevator": "https://www.ams.usda.gov/mnreports/gx_gr215.txt",
+          "daily_summary": "https://www.ams.usda.gov/mnreports/gx_gr112.txt"
+        },
+        "script": "src/fetch_ams_prices.py",
+        "output": "data/processed/prices/export_elevator_bids_daily.parquet"
+      }
+    }
+  },
+
+  "tier_5_geospatial_infrastructure": {
+    "description": "Spatial data and transport infrastructure",
+    "sources": {
+      "cropland_data_layer": {
+        "id": 20,
+        "name": "USDA CDL — Cropland Data Layer",
+        "coverage": "30-meter resolution U.S. crop type raster data. Annual from 2008 nationally (some states 1997+). Critical for production geography.",
+        "portal": "https://nassgeodata.gmu.edu/CropScape/",
+        "rest_api": "https://nassgeodata.gmu.edu/axis2/services/CDLService/",
+        "direct_download": "https://www.nass.usda.gov/Research_and_Science/Cropland/Release/",
+        "crop_sequence_boundaries": "https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/",
+        "format": "GeoTIFF (state-level)"
+      },
+
+      "usace_waterborne": {
+        "id": 21,
+        "name": "U.S. Army Corps of Engineers — Waterborne Commerce Statistics",
+        "coverage": "Tonnage by commodity through every U.S. inland waterway lock and port. Primary source for barge grain movement.",
+        "portal": "https://www.iwr.usace.army.mil/About/Technical-Centers/WCSC-Waterborne-Commerce-Statistics-Center/",
+        "cwis_query": "https://cwis.usace.army.mil/",
+        "grain_codes": {"14": "Soybeans", "15": "Corn", "17": "Wheat", "16": "Other grains"},
+        "data_lag_years": 2,
+        "supplement_with": "AMS GTR weekly barge movement data (Source #6)"
+      },
+
+      "stb_rail_waybill": {
+        "id": 22,
+        "name": "Surface Transportation Board (STB) — Rail Waybill Data",
+        "coverage": "Carload waybill sample: rail shipments by commodity, O-D pair, car type, tons, freight rates. 1% public sample; full dataset requires confidentiality agreement.",
+        "portal": "https://www.stb.gov/stb/industry/econ_data.html",
+        "grain_stcc_codes": {
+          "01112": "Corn", "01131": "Wheat", "01141": "Soybeans", "01155": "Sorghum", "01130": "Barley"
+        },
+        "access": "Public use sample free; full confidential waybill requires agreement",
+        "notes": "Primary source used by USDA AMS for modal share analysis (Prater & Sparger 2013)"
+      },
+
+      "eia_ethanol": {
+        "id": 23,
+        "name": "EIA — Energy Information Administration (Ethanol/Biofuels)",
+        "coverage": "U.S. ethanol production, exports, capacity. ~40% of U.S. corn goes to ethanol — critical corn demand driver.",
+        "api_base": "https://api.eia.gov/v2/",
+        "key_env_var": "EIA_API_KEY",
+        "key_signup": "https://www.eia.gov/opendata/",
+        "key_series": {
+          "ethanol_production": "petroleum/sum/sndsum/weekly",
+          "corn_for_ethanol": "Use ERS Feed Grains Database (Source #5)"
+        }
+      },
+
+      "data_gov_catalog": {
+        "id": 24,
+        "name": "data.gov — Grain Supply Chain Dataset Catalog",
+        "coverage": "Federal open data catalog aggregating USDA, Census, and agency datasets",
+        "portal": "https://catalog.data.gov/",
+        "usda_catalog": "https://catalog.data.gov/organization/usda-gov",
+        "key_dataset_ids": {
+          "feed_grains_db": "https://catalog.data.gov/dataset/feed-grains-database",
+          "gtr_rail_port": "https://catalog.data.gov/dataset/grain-transportation-report-rail-deliveries-to-port",
+          "gtr_price_spreads": "https://catalog.data.gov/dataset/grain-transportation-report-u-s-origins-to-export-position-price-spreads-bushel",
+          "nass_quickstats": "https://catalog.data.gov/dataset/quick-stats-agricultural-database"
+        }
+      },
+
+      "nass_crop_progress": {
+        "id": 25,
+        "name": "USDA NASS — Crop Progress Report",
+        "coverage": "Weekly crop condition ratings (Very Poor to Excellent), planting/harvest progress by state. Corn, soybeans, winter wheat, spring wheat, sorghum, barley, oats, rice.",
+        "frequency": "Weekly (Monday afternoons, April through November)",
+        "api_access": "NASS QuickStats API (Source #3) with freq_desc=WEEKLY and statisticcat_desc=CONDITION",
+        "archive": "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1048"
+      },
+
+      "ams_agtransport": {
+        "id": 26,
+        "name": "AMS AgTransport Platform",
+        "coverage": "Integrated visualization and download platform for AMS grain transportation data including GTR, FGIS, and freight benchmark series.",
+        "platform": "https://agtransport.usda.gov/",
+        "notes": "Interactive web portal; underlying data available through GTR Excel downloads (Source #6)"
+      }
+    }
+  },
+
+  "known_data_gaps": {
+    "gats_api": "USDA GATS has no REST API — export via web portal or use FAS ESR/PSD as equivalent",
+    "fgis_private": "FGIS carrier-level records require USDA eAuthentication registration",
+    "cme_full_history": "CME historical data requires paid subscription (DataMine or Quandl)",
+    "stb_full_waybill": "Full STB waybill requires confidentiality agreement; public 1% sample available",
+    "usace_lag": "USACE waterborne commerce data has 1-2 year publication lag; supplement with AMS GTR weekly",
+    "ers_apis": "ERS REST APIs offline since early 2025 site redesign — use direct Excel downloads",
+    "trade_org_data": "USSEC, USGC, NAEGA have no APIs; data in press releases/PDFs; use FAS APIs as primary"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "_metadata": {
+    "module": "grain",
+    "version": "1.0.0",
+    "last_updated": "2026-03-02",
+    "description": "Complete NAICS and HTS/Schedule B code registry for grain and oilseed supply chain",
+    "owner": "William S. Davis III",
+    "sources": [
+      "U.S. Census Bureau Schedule B (exports)",
+      "USITC Harmonized Tariff Schedule (imports)",
+      "USDA NASS commodity descriptions",
+      "USDA FAS ESR/PSD commodity codes",
+      "STB Standard Transportation Commodity Code (STCC)",
+      "USACE Waterborne Commerce commodity codes"
+    ]
+  },
+
+  "naics_codes": {
+    "crop_production": {
+      "111110": "Soybean Farming",
+      "111120": "Oilseed (except Soybean) Farming",
+      "111140": "Wheat Farming",
+      "111150": "Corn Farming",
+      "111160": "Rice Farming",
+      "111191": "Oilseed and Grain Combination Farming",
+      "111199": "All Other Grain Farming (sorghum, barley, oats)"
+    },
+    "postharvest_elevator_services": {
+      "115114": "Postharvest Crop Activities (country elevators — primary grain handling NAICS)"
+    },
+    "grain_storage_wholesale": {
+      "493130": "Farm Product Warehousing and Storage (terminal/export elevators)",
+      "424510": "Grain and Field Bean Merchant Wholesalers",
+      "424590": "Other Farm Product Raw Material Merchant Wholesalers"
+    },
+    "grain_processing": {
+      "311211": "Flour Milling (wheat flour; primary wheat domestic use)",
+      "311212": "Rice Milling",
+      "311213": "Malt Manufacturing (barley)",
+      "311221": "Wet Corn Milling and Starch Manufacturing (ethanol, HFCS)",
+      "311224": "Soybean and Other Oilseed Processing (soy crush — meal + oil)",
+      "311225": "Fats and Oils Refining and Blending (refined soy oil)",
+      "311230": "Breakfast Cereal Manufacturing (oats, corn, wheat)",
+      "311111": "Dog and Cat Food Manufacturing (grain inputs)",
+      "311119": "Other Animal Food Manufacturing (feed mills — grain inputs)"
+    },
+    "transportation": {
+      "483211": "Inland Water Freight Transportation (barge operators)",
+      "482111": "Line-Haul Railroads (Class I — BNSF, UP, CN, CP, CSX, NS)",
+      "482112": "Short Line Railroads (grain collection — first leg)",
+      "484220": "Specialized Freight Trucking, Local (farm-to-elevator)",
+      "484230": "Specialized Freight Trucking, Long-Distance"
+    },
+    "port_services": {
+      "488310": "Port and Harbor Operations",
+      "488320": "Marine Cargo Handling (export elevator stevedoring)",
+      "488330": "Navigational Services to Shipping",
+      "488390": "Other Support Activities for Water Transportation"
+    }
+  },
+
+  "hts_import_codes": {
+    "corn": {
+      "1005100000": "Corn — seed",
+      "1005900020": "Yellow corn for grain (primary US export/import code)",
+      "1005900040": "Other corn"
+    },
+    "wheat": {
+      "1001110000": "Durum wheat — seed",
+      "1001190020": "Durum wheat — other than seed",
+      "1001990010": "Hard Red Winter (HRW) wheat — other than seed",
+      "1001990020": "Soft Red Winter (SRW) wheat — other than seed",
+      "1001990030": "Hard Red Spring (HRS) wheat — other than seed",
+      "1001990040": "White wheat — other than seed",
+      "1001990080": "Other wheat"
+    },
+    "soybeans": {
+      "1201100000": "Soybeans — seed",
+      "1201900005": "Soybeans — other than seed (primary trade code)"
+    },
+    "rice": {
+      "1006100020": "Rough rice (paddy) — long-grain",
+      "1006100040": "Rough rice (paddy) — medium/short-grain",
+      "1006200020": "Husked (brown) rice — long-grain",
+      "1006200040": "Husked (brown) rice — medium/short-grain",
+      "1006300010": "Semi-milled or wholly-milled rice — long-grain",
+      "1006300020": "Semi-milled or wholly-milled rice — medium/short-grain",
+      "1006400000": "Broken rice"
+    },
+    "sorghum": {
+      "1007100000": "Grain sorghum — seed",
+      "1007900010": "Grain sorghum — other than seed"
+    },
+    "barley": {
+      "1003100000": "Barley — seed",
+      "1003900010": "Barley — other than seed"
+    },
+    "oats": {
+      "1004100000": "Oats — seed",
+      "1004900000": "Oats — other than seed"
+    },
+    "processed_grain_byproducts": {
+      "2302100000": "Bran and residues of corn",
+      "2302300000": "Bran and residues of wheat",
+      "2302400000": "Bran and residues of other cereals",
+      "2303100040": "DDGS — distillers dried grains with solubles (primary)",
+      "2303100080": "Other residues from starch manufacture",
+      "2304001000": "Soybean meal (oilcake from soybean solvent extraction)",
+      "2306500000": "Oilcake — soybean (non-solvent extraction residue)"
+    },
+    "oilseed_oils": {
+      "1507100000": "Crude soybean oil",
+      "1507900000": "Other soybean oil (refined, fractionated)",
+      "1512110000": "Crude sunflower seed or safflower oil",
+      "1514110000": "Crude rapeseed (canola) oil — low erucic acid",
+      "1514910000": "Other rapeseed oil — crude"
+    }
+  },
+
+  "schedule_b_export_codes": {
+    "note": "Schedule B codes are the U.S. export classification system (aligned with HS)",
+    "corn": {
+      "1005900020": "Yellow dent corn for grain — primary U.S. bulk export code"
+    },
+    "wheat": {
+      "1001990010": "Hard Red Winter (HRW) wheat — Southern/Central Plains export",
+      "1001990020": "Soft Red Winter (SRW) wheat — Midwest/Gulf/Atlantic export",
+      "1001990030": "Hard Red Spring (HRS) wheat — Northern Plains/PNW export",
+      "1001990040": "White wheat — Pacific Northwest export to Asia"
+    },
+    "soybeans": {
+      "1201900005": "Soybeans for crushing and other use — primary bulk export",
+      "1201100000": "Soybean seed"
+    },
+    "sorghum": {
+      "1007900010": "Grain sorghum — Texas Gulf exports (predominantly to China)"
+    },
+    "barley": {
+      "1003900010": "Barley — other than seed"
+    },
+    "oats": {
+      "1004900000": "Oats"
+    },
+    "rice": {
+      "1006300010": "Long-grain milled rice — primary export",
+      "1006200020": "Long-grain brown rice",
+      "1006100020": "Rough (paddy) rice",
+      "1006400000": "Broken rice"
+    },
+    "ddgs": {
+      "2303100040": "DDGS — primary corn ethanol byproduct export"
+    },
+    "soy_meal": {
+      "2304001000": "Soybean meal from solvent extraction (pellets/flour)"
+    },
+    "soy_oil": {
+      "1507100000": "Crude soybean oil",
+      "1507900000": "Refined soybean oil"
+    }
+  },
+
+  "fas_commodity_codes": {
+    "esr_weekly_export_sales": {
+      "note": "Used in FAS OpenData ESR API",
+      "101": "Wheat (all classes combined)",
+      "102": "Barley",
+      "103": "Oats",
+      "104": "Corn",
+      "105": "DDGS (distillers dried grains with solubles)",
+      "106": "Grain Sorghum",
+      "501": "Rice (milled)",
+      "801": "Soybeans",
+      "802": "Soybean Oil",
+      "803": "Soybean Meal"
+    },
+    "psd_supply_demand": {
+      "note": "Used in FAS OpenData PSD API",
+      "0440000": "Corn",
+      "0410000": "Wheat (all classes)",
+      "0422110": "Rice, Milled",
+      "0450000": "Sorghum",
+      "0430000": "Barley",
+      "0460000": "Oats",
+      "2222000": "Oilseed, Soybean",
+      "2223000": "Meal, Soybean",
+      "4243000": "Oil, Soybean"
+    }
+  },
+
+  "stcc_rail_codes": {
+    "note": "Standard Transportation Commodity Code (STB/AAR) for rail waybill data",
+    "01112": "Corn (yellow dent)",
+    "01130": "Barley",
+    "01131": "Wheat (all classes)",
+    "01141": "Soybeans",
+    "01155": "Grain Sorghum (milo)",
+    "01119": "Other grains (oats, rye, buckwheat)",
+    "01142": "Sunflower seed",
+    "20910": "Soybean oil",
+    "20911": "Soybean meal / oilcake",
+    "28212": "Ethanol (from grain)",
+    "29110": "DDGS / dried distillers grains"
+  },
+
+  "usace_waterborne_commerce_codes": {
+    "note": "USACE commodity classification for waterborne tonnage data",
+    "14": "Soybeans",
+    "15": "Corn",
+    "17": "Wheat",
+    "16": "Other grains (sorghum, oats, barley, rye)",
+    "91": "Soybean oil",
+    "92": "Soybean meal",
+    "18": "Rice",
+    "90": "Other vegetable oils"
+  },
+
+  "nass_commodity_descriptions": {
+    "note": "Exact strings for USDA NASS QuickStats API commodity_desc parameter",
+    "CORN": "Corn",
+    "SOYBEANS": "Soybeans",
+    "WHEAT": "Wheat",
+    "SORGHUM": "Sorghum",
+    "BARLEY": "Barley",
+    "OATS": "Oats",
+    "RICE": "Rice",
+    "SUNFLOWER": "Sunflower"
+  },
+
+  "cme_futures_tickers": {
+    "note": "CME Group continuous front-month contract tickers",
+    "CORN": {"symbol": "ZC", "yfinance": "ZC=F", "unit": "cents/bushel"},
+    "WHEAT_SRW": {"symbol": "ZW", "yfinance": "ZW=F", "unit": "cents/bushel"},
+    "WHEAT_HRW": {"symbol": "KE", "yfinance": "KE=F", "unit": "cents/bushel"},
+    "WHEAT_HRS": {"symbol": "MWE", "yfinance": "MWE=F", "unit": "cents/bushel"},
+    "SOYBEANS": {"symbol": "ZS", "yfinance": "ZS=F", "unit": "cents/bushel"},
+    "SOY_MEAL": {"symbol": "ZM", "yfinance": "ZM=F", "unit": "$/short ton"},
+    "SOY_OIL": {"symbol": "ZL", "yfinance": "ZL=F", "unit": "cents/pound"},
+    "OATS": {"symbol": "ZO", "yfinance": "ZO=F", "unit": "cents/bushel"},
+    "RICE": {"symbol": "ZR", "yfinance": "ZR=F", "unit": "cents/cwt"}
+  }
+}

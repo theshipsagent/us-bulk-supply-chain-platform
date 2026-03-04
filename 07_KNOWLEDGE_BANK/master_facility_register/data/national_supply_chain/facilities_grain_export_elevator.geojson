@@ -1,0 +1,604 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.19674,
+          30.439
+        ]
+      },
+      "properties": {
+        "name": "Louis Dreyfus Corp - Port Allen",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 229.2,
+        "coord_source": "IENC_MM_229.2",
+        "is_grain": true,
+        "details": "Mississippi River; Mile Point 229.2 Above Head of Passes - Right Descending Bank; 5 Loading Spouts - 7,000,000 Bushel Capacity; Cargoes Handled: Grains",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.31328,
+          29.94334
+        ]
+      },
+      "properties": {
+        "name": "ADM Grain Co. - Ama",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 117.6,
+        "coord_source": "IENC_MM_117.6",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 117.6 AHP - Right Descending Bank; Grain & By-products; 4 Loading Spouts 5,500,000 Bushel Capacity",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.35854,
+          29.93802
+        ]
+      },
+      "properties": {
+        "name": "ADM Grain Co., - Destrehan",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 120.6,
+        "coord_source": "IENC_MM_120.6",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 120.6 AHP - Left Descending Bank; Grain & By-products; 7 Loading Spouts 5,500,000 Bushel Capacity",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.73644999999999,
+          30.012900000000002
+        ]
+      },
+      "properties": {
+        "name": "ADM Grain Co. - St. Elmo - Paulina, Louisiana",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 150.5,
+        "coord_source": "IENC_MM_150.5",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 150.5 AHP - Left Descending Bank; 2 Spouts 2,000,000 Bushel Capacity; Dockage $3.10 Per Grt Flat Rate",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.57622,
+          30.05125
+        ]
+      },
+      "properties": {
+        "name": "ADM Grain Co., - Reserve",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 139.1,
+        "coord_source": "IENC_MM_139.1",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 139.1 AHP - Left Descending Bank; Grain & By-products; 3 Spouts 3,500,000 Bushel",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9272,
+          29.634619999999998
+        ]
+      },
+      "properties": {
+        "name": "Associated Terminals Midstream Buoys, MGMT Rig and Globalplex in Reserve",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 57.8,
+        "coord_source": "IENC_MM_57.8",
+        "is_grain": true,
+        "details": "Mississippi River; Various Bulk and Breakbulk cargoes at midstream locations and Grain & Grain By-products at the MGMT Rig at MM57.8 in Myrtle Grove.; 1 floating elevator in Myrtle Grove MM57.8 \"MGMT Rig\" & grab rigs other locations.; Locations MM56.8 & 57.3, Associated Terminals of St. Bernard (includes Meraux Buoys at MM 86.5), Triangle Buoys at MM136 & 137, Globalplex General Cargo Dock in Reserve and St. John Buoys at MM140.5 and 141 ahp",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.58432,
+          30.05
+        ]
+      },
+      "properties": {
+        "name": "Cargill, Inc. - Terre Haute - Reserve, Louisiana",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 139.6,
+        "coord_source": "IENC_MM_139.6",
+        "is_grain": true,
+        "details": "Mississippi River / Reserve, La.; Milepoint 139.6 Above Head of Passes - Left Descending Bank; Cargoes Handled: Grains; 2 Load Spouts in Lower Berth Section & 2 Load Spouts in Upper Berth Section",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1391,
+          29.9373
+        ]
+      },
+      "properties": {
+        "name": "Cargill, Inc. - Westwego, Louisiana",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 103.0,
+        "coord_source": "IENC_MM_103.0",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 103 Above Head of Passes - Right Descending Bank; Cargoes Handled: Grain & Grain Byproducts; 4 Loading Spouts in Lower Berth Section & 2 Load Spouts in Upper Berth Section",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.96115,
+          29.6729
+        ]
+      },
+      "properties": {
+        "name": "CHS, Inc. - Myrtle Grove Terminal",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 61.5,
+        "coord_source": "IENC_MM_61.5",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 61.5 Above Head of Passes - Right Descending Bank; Cargoes Handled: Grain & Grain Byproducts; 4 Spouts 6,464,000 Bushel Capacity",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.4798,
+          30.0465
+        ]
+      },
+      "properties": {
+        "name": "Cooper/Consolidated Midstream Buoy",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 133.0,
+        "coord_source": "IENC_MM_133.0",
+        "is_grain": true,
+        "details": "Mississippi River; Various Bulk and Breakbulk cargoes; 1 floating elevator in Darrow \"America\" & grab rigs at other locations; Laplace MM133, 134 & 135 AHP",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.87698,
+          30.06304
+        ]
+      },
+      "properties": {
+        "name": "Zen-Noh Grain Corp. - Convent, Louisiana",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mississippi River",
+        "mile_ahp": 163.8,
+        "coord_source": "IENC_MM_163.8",
+        "is_grain": true,
+        "details": "Mississippi River; Milepoint 163.8 AHP LDB; Grain & Grain Byproduct; 4 Spouts 4, 200,000 Bushel Capacity",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.737,
+          45.61
+        ]
+      },
+      "properties": {
+        "name": "LDC Washington LLC",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM103",
+        "is_grain": true,
+        "details": "103 Miles from Sea; $3.50 per GRT for first 72 hours alongside (as of 03/01/15); $0.85 per GRT per each 24 hour period thereafter (as of 03/01/15)",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.402,
+          47.291
+        ]
+      },
+      "properties": {
+        "name": "Tacoma Export Marketing Company LLC - Tacoma, Washintgon",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Puget Sound / Seattle-Tacoma",
+        "mile_ahp": null,
+        "coord_source": "known_tacoma",
+        "is_grain": true,
+        "details": "136 Mile from sea; Grain Products; Dockage $3.50 per GRT for first 2 days. $1.00 per GRT for each 24 period thereafter; Dockage $3.75 per GRT with lifting gear for first 2 days. $1.00 per GRT for each 24 period thereafter",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.84,
+          46.975
+        ]
+      },
+      "properties": {
+        "name": "AGP International - Port of Grays Harbor",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Grays Harbor",
+        "mile_ahp": null,
+        "coord_source": "known_grays_harbor",
+        "is_grain": true,
+        "details": "Grain By Products; 1 Loading Spout; Internationally Accepted Vessel Loading Scale; Internationally Accepted Automatic Sampler",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.737,
+          45.613
+        ]
+      },
+      "properties": {
+        "name": "Columbia Grain Terminal Five - Portland, Oregon",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM102.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 102; Grain Products; Columbia Grain Elevator Tariff No. 2 (25th Revision)  - Effective February 1, 2014; Dockage Charges for the 1st 72-hrs (3 days) as flws: (as of 02/01/2014)",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.682,
+          45.64
+        ]
+      },
+      "properties": {
+        "name": "United Grain Corporation - Vancouver, Washington",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM104.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 104; Grain Products; Vessels loading less than 25,000 mt: $1.00 per GRT per 24 hour period; Vessels loading over 25,000 mt: $3.30 per GRT for the first 72 hours. $1.00 per GRT for each additional 24 hour period",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.855,
+          46.007
+        ]
+      },
+      "properties": {
+        "name": "Kalama Export Co., LLC - Kalama, Washington",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM74.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 74; Grain Products; 4 Spouts; Air Draft 118.7ft with spout boomed",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.848,
+          46.004
+        ]
+      },
+      "properties": {
+        "name": "TEMCO, LLC Kalama Terminal - Kalama, Washington",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM77.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 77; Grain Products; Dockage $3.50 per GRT for the first 48 hours; For each 24 hour period therafter: $1.00 per GRT (as of 08/01/15)",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.74,
+          45.596
+        ]
+      },
+      "properties": {
+        "name": "TEMCO LLC Portland Terminal, Portland, Oregon",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM108.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 108; Grain Products; Draft Restriction - 12.19m FW; No Bunkering A/S",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.745,
+          45.59
+        ]
+      },
+      "properties": {
+        "name": "LD Commodities N.W. Facility, LLC - Portland, Oregon",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM109.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 109; Grain Products; Draft Restriction - 12.19m FW; No Bunkering A/S",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.954,
+          46.143
+        ]
+      },
+      "properties": {
+        "name": "EGT (Export Grain Terminal)",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Columbia River / Pacific Northwest",
+        "mile_ahp": null,
+        "coord_source": "columbia_river_RM66.0",
+        "is_grain": true,
+        "details": "Columbia River - River Mile 66; Grain Products / By-Products; Commodities: corn, soybeans & wheat; Location: Berth 9 in the Port of Longview (Columbia River) mile 66",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.396,
+          27.821
+        ]
+      },
+      "properties": {
+        "name": "ADM Corpus Christi Grain Elevator",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Corpus Christi",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "3.0 hours from Corpus Christi Pilot Station; Grain Export Elevator; Wheat, Sorghum, Barley, Oats, Corn, Soybeans, Meals; 5 Gravity Spouts - 5,600,000 Bushel Capacity",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.857,
+          29.296
+        ]
+      },
+      "properties": {
+        "name": "ADM Galveston Grain Elevator",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Galveston",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "1.5 hours from Galveston Pilot Station; Grain Export Elevator; Wheat, Sorghum, Barley, Oats, Corn, Soybeans, Meals; 3 Buhler - 2,600,000 Bushel Capacity",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.097,
+          29.726
+        ]
+      },
+      "properties": {
+        "name": "Cargill Grain Elevator, Houston, Texas",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Houston Ship Channel",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "4.5 Hours From Houston Pilot Station; Grain Products Export Elevator; 2 Berths - 6 Gravity Spouts per Berth",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.414,
+          27.818
+        ]
+      },
+      "properties": {
+        "name": "Interstate Grain Elevator, Corpus Christi",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Corpus Christi",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "4 hours from Aransas Pass Pilot Station; Grain Export Elevator; Wheat, Sorghum, Corn, Soybeans",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.058,
+          29.748
+        ]
+      },
+      "properties": {
+        "name": "Louis Dreyfus Grain Elevator, Houston, Texas",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Houston Ship Channel",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "6 transit hours from Houston Pilot Station; Grain Export Elevator; Wheat, Sorghum, Corn, Soybeans; 3 Buhler Automated Gantry Style Telescopic Spouts",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.104,
+          30.082
+        ]
+      },
+      "properties": {
+        "name": "Louis Dreyfus Beaumont Grain Elevator",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Beaumont",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "6.5 transit hours from Sabine Pilot Station (42 miles from Sea); Grain Export Elevator; Wheat, Sorghum, Corn, Soybeans; 3 Buhler Automated Gantry Style Telescopic Spouts",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.366,
+          36.928
+        ]
+      },
+      "properties": {
+        "name": "Perdue Elevator / Chesapeake Virginia",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Norfolk / Hampton Roads",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "Port of Hampton Roads, Virginia; Grain & Grain By-products; 2 Rail Mounted Traveling Gantry Style Peco Loading Spouts; 150,000 MT Capacity Storage for Grains",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.044,
+          30.695
+        ]
+      },
+      "properties": {
+        "name": "Agrex, Inc. Grain Elevator",
+        "terminal_type": "Export Grain Elevator",
+        "port_region": "Mobile",
+        "mile_ahp": null,
+        "coord_source": "published_facility_location",
+        "is_grain": true,
+        "details": "Grain & Grain Byproducts; 2 Loading Spouts 1,000,000; Bushel Capacity in Cement Silos plus 2,790,000 bushels in tank storage; Dockage $2.75 per GRT Flat Rate for Self Trimming Bulk Carriers",
+        "source": "Blue Water Shipping portmaps.php"
+      }
+    }
+  ],
+  "metadata": {
+    "total_features": 57,
+    "grain_features": 29,
+    "source": "https://www.bluewatershipping.com/portmaps.php",
+    "maps_scraped": [
+      "maps_ms.php",
+      "maps_pacific.php",
+      "maps_texas.php",
+      "maps_usec.php",
+      "maps_mobile.php"
+    ],
+    "coordinate_method": {
+      "mississippi_river": "IENC river mile marker data (MM AHP from tooltip) \u2014 authoritative",
+      "pacific_pnw": "Columbia River mile data from tooltip",
+      "texas": "Published terminal coordinates",
+      "norfolk_usec": "Published terminal coordinates",
+      "mobile": "Published terminal coordinates"
+    }
+  }
+}

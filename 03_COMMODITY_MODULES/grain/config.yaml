@@ -1,0 +1,479 @@
+# Grain Commodity Module Configuration
+# Module: grain | Version: 1.0.0 | Last Updated: 2026-03-02
+# Owner: William S. Davis III
+
+module:
+  name: grain
+  version: "1.0.0"
+  status: active
+  description: "U.S. bulk grain and oilseed export supply chain intelligence"
+  owner: "William S. Davis III"
+
+# ============================================================
+# COMMODITIES IN SCOPE
+# ============================================================
+commodities:
+  CORN:
+    name: "Corn"
+    hs_chapter: "1005"
+    hs_10digit_export: "1005900020"
+    fas_esr_code: "104"
+    fas_psd_code: "0440000"
+    nass_desc: "CORN"
+    stcc_rail: "01112"
+    usace_code: "15"
+    marketing_year_start: "SEP"
+    unit_bushel_lb: 56
+    unit_mt_per_bushel: 0.025401
+    unit_bu_per_short_ton: 35.714
+    notes: "~40% domestic use goes to ethanol; primary Gulf/PNW export"
+
+  SOYBEANS:
+    name: "Soybeans"
+    hs_chapter: "1201"
+    hs_10digit_export: "1201900005"
+    fas_esr_code: "801"
+    fas_psd_code: "2222000"
+    nass_desc: "SOYBEANS"
+    stcc_rail: "01141"
+    usace_code: "14"
+    marketing_year_start: "SEP"
+    unit_bushel_lb: 60
+    unit_mt_per_bushel: 0.027216
+    unit_bu_per_short_ton: 33.333
+    notes: "China ~60% of US soy exports; crush for meal+oil"
+
+  WHEAT:
+    name: "Wheat"
+    hs_chapter: "1001"
+    hs_subcodes:
+      HRW: "1001990010"
+      SRW: "1001990020"
+      HRS: "1001990030"
+      WHITE: "1001990040"
+    fas_esr_code: "101"
+    fas_psd_code: "0410000"
+    nass_desc: "WHEAT"
+    stcc_rail: "01131"
+    usace_code: "17"
+    marketing_year_start: "JUN"
+    unit_bushel_lb: 60
+    unit_mt_per_bushel: 0.027216
+    unit_bu_per_short_ton: 33.333
+    notes: "Primarily rail export; PNW 50% of US wheat/flour exports"
+
+  SORGHUM:
+    name: "Grain Sorghum"
+    hs_chapter: "1007"
+    hs_10digit_export: "1007900010"
+    fas_esr_code: "106"
+    fas_psd_code: "0450000"
+    nass_desc: "SORGHUM"
+    stcc_rail: "01155"
+    marketing_year_start: "SEP"
+    unit_bushel_lb: 56
+    notes: "Texas Gulf primary export point; China dominant buyer"
+
+  BARLEY:
+    name: "Barley"
+    hs_chapter: "1003"
+    hs_10digit_export: "1003900010"
+    fas_esr_code: "102"
+    fas_psd_code: "0430000"
+    nass_desc: "BARLEY"
+    stcc_rail: "01130"
+    marketing_year_start: "JUN"
+    unit_bushel_lb: 48
+
+  OATS:
+    name: "Oats"
+    hs_chapter: "1004"
+    hs_10digit_export: "1004900000"
+    fas_esr_code: "103"
+    fas_psd_code: "0460000"
+    nass_desc: "OATS"
+    marketing_year_start: "JUN"
+    unit_bushel_lb: 32
+
+  RICE:
+    name: "Rice"
+    hs_chapter: "1006"
+    hs_10digit_export: "1006300010"
+    fas_esr_code: "501"
+    fas_psd_code: "0422110"
+    nass_desc: "RICE"
+    marketing_year_start: "AUG"
+    unit_cwt_lb: 100
+    notes: "Gulf/Atlantic export; domestic milled rice market significant"
+
+  DDGS:
+    name: "Distillers Dried Grains with Solubles"
+    hs_chapter: "2303"
+    hs_10digit_export: "2303100040"
+    fas_esr_code: "105"
+    notes: "Ethanol byproduct; growing export to Asia and Mexico"
+
+  SOY_MEAL:
+    name: "Soybean Meal"
+    hs_chapter: "2304"
+    hs_10digit_export: "2304001000"
+    fas_esr_code: "803"
+    fas_psd_code: "2223000"
+    notes: "Animal feed; Southeast Asia primary market"
+
+  SOY_OIL:
+    name: "Crude/Refined Soybean Oil"
+    hs_chapter: "1507"
+    hs_10digit_export: "1507100000"
+    fas_esr_code: "802"
+    fas_psd_code: "4243000"
+    notes: "Food/industrial use; biofuel demand growing"
+
+# ============================================================
+# API CONFIGURATION
+# ============================================================
+apis:
+  fas_opendata:
+    base_url: "https://apps.fas.usda.gov/OpenData/api/"
+    auth_required: false
+    rate_limit: null
+    swagger_ui: "https://apps.fas.usda.gov/opendata/swagger/ui/index"
+    endpoints:
+      esr_exports_all: "esr/exports/commodityCode/{code}/allCountries/marketYear/{year}"
+      esr_exports_country: "esr/exports/commodityCode/{code}/countryCode/{cc}/marketYear/{year}"
+      esr_commodities: "esr/commodities"
+      esr_countries: "esr/countries"
+      psd_all_countries: "psd/commodity/{code}/country/all/year/{year}"
+      psd_commodities: "psd/commodities"
+      psd_countries: "psd/countries"
+
+  nass_quickstats:
+    base_url: "https://quickstats.nass.usda.gov/api/"
+    auth_required: true
+    key_env_var: "USDA_API_KEY"
+    key_signup: "https://api.data.gov/signup/"
+    record_limit: 50000
+    endpoints:
+      query: "api_GET/"
+      counts: "get_counts/"
+    key_stat_categories:
+      - "PRODUCTION"
+      - "YIELD"
+      - "AREA PLANTED"
+      - "AREA HARVESTED"
+      - "STOCKS"
+      - "PRICE RECEIVED"
+
+  census_trade:
+    base_url: "https://api.census.gov/data/timeseries/intltrade/"
+    auth_required: true
+    key_env_var: "CENSUS_API_KEY"
+    key_signup: "https://api.census.gov/data/key_signup.html"
+    endpoints:
+      exports_hs: "exports/hs"
+      exports_porths: "exports/porths"
+      exports_statehs: "exports/statehs"
+      imports_hs: "imports/hs"
+    notes: "Use time=YYYY-MM format; E_COMMODITY param for HS code"
+
+  gain_api:
+    base_url: "https://apps.fas.usda.gov/newgainapi/api/"
+    auth_required: false
+    endpoints:
+      by_product_codes: "Report/ReportsByProductCodes"
+      by_search: "Report/ReportsBySearchCriteria"
+    product_codes: ["CORN", "SOYBEANS", "WHEAT", "RICE", "SORGHUM"]
+
+  ams_market_news:
+    base_url: "https://mymarketnews.ams.usda.gov/api/public/v1/"
+    auth_required: false
+
+  eia_api:
+    base_url: "https://api.eia.gov/v2/"
+    auth_required: true
+    key_env_var: "EIA_API_KEY"
+    key_signup: "https://www.eia.gov/opendata/"
+    relevant_series:
+      ethanol_production: "petroleum/sum/sndsum/weekly"
+      corn_for_ethanol: "use ERS Feed Grains Database"
+
+# ============================================================
+# BULK DOWNLOAD URLS
+# ============================================================
+download_urls:
+  gtr:
+    base: "https://www.ams.usda.gov/sites/default/files/media/"
+    portal: "https://www.ams.usda.gov/services/transportation-analysis/gtr-datasets"
+    files:
+      transport_cost_indicators: "Table01GTRDataset.xlsx"
+      price_spreads_export: "Table02GTRDataset.xlsx"
+      railcar_bids_secondary: "Table05GTRDataset.xlsx"
+      railroad_fuel_surcharges: "Figure09GTRDataset.xlsx"
+      barge_freight_southbound: "Table09GTRDataset.xlsx"
+      barge_grain_movements_locks: "Table10GTRDataset.xlsx"
+      barge_freight_columbia_snake: "Table11GTRDataset.xlsx"
+      barge_grain_columbia_snake: "Table12GTRDataset.xlsx"
+      us_export_balances: "Table14GTRDataset.xlsx"
+      ocean_rates_japan: "Figure20GTRDataset.xlsx"
+      grain_bids_30day: "GrainBidDataset.xlsx"
+
+  ams_daily_prices:
+    national_daily_grain: "https://www.ams.usda.gov/mnreports/gx_gr110.txt"
+    gulf_export_elevator: "https://www.ams.usda.gov/mnreports/gx_gr214.txt"
+    pnw_export_elevator: "https://www.ams.usda.gov/mnreports/gx_gr215.txt"
+    daily_grain_summary: "https://www.ams.usda.gov/mnreports/gx_gr112.txt"
+
+  ers_excel:
+    portal: "https://www.ers.usda.gov/data-products/"
+    feed_grains_db: "https://www.ers.usda.gov/webdocs/DataFiles/50048/FeedGrains.xlsx"
+    feed_grains_landing: "https://www.ers.usda.gov/data-products/feed-grains-database/"
+    fatus_monthly_value: "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab1.xlsx"
+    fatus_annual_country: "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab2.xlsx"
+    fatus_monthly_country: "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab3.xlsx"
+    fatus_bulk: "https://www.ers.usda.gov/webdocs/DataFiles/50048/sumtab4.xlsx"
+    wheat_landing: "https://www.ers.usda.gov/data-products/wheat-data/"
+    oil_crops_landing: "https://www.ers.usda.gov/topics/crops/soybeans-and-oil-crops/related-data-statistics/"
+    baseline_10yr: "https://www.ers.usda.gov/data-products/agricultural-baseline-database/"
+
+  fgis:
+    portal: "https://fgisonline.ams.usda.gov/"
+    export_grain_report: "https://fgisonline.ams.usda.gov/exportgrainreport/"
+    data_landing: "https://www.ams.usda.gov/resources/fgis-data-and-statistics"
+    idw_portal: "https://www.ams.usda.gov/services/fgisonline/idw-cert"
+    auth_required: "USDA eAuthentication (for carrier-level data)"
+
+  psd_bulk:
+    download_page: "https://apps.fas.usda.gov/psdonline/app/index.html#/app/downloadData"
+    note: "Large CSV files; use API for targeted pulls"
+
+  nass_ftp:
+    bulk_datasets: "https://www.nass.usda.gov/datasets/"
+    cropland_data_layer: "https://www.nass.usda.gov/Research_and_Science/Cropland/Release/"
+    cropscape_api: "https://nassgeodata.gmu.edu/axis2/services/CDLService/"
+
+  cornell_esmis:
+    portal: "https://usda.mannlib.cornell.edu/"
+    grain_stocks: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1079"
+    crop_production: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1046"
+    wasde: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1194"
+    crop_progress: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1048"
+    prospective_plantings: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1136"
+    acreage: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1000"
+    small_grains: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1148"
+    wheat_outlook: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1393"
+    feed_outlook: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1245"
+    oil_crops_outlook: "https://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1288"
+
+# ============================================================
+# CME FUTURES CONTRACTS
+# ============================================================
+cme_grain_contracts:
+  CORN: "ZC"
+  WHEAT_SRW: "ZW"
+  WHEAT_HRW: "KE"
+  WHEAT_HRS: "MWE"
+  SOYBEANS: "ZS"
+  SOY_MEAL: "ZM"
+  SOY_OIL: "ZL"
+  OATS: "ZO"
+  RICE: "ZR"
+  access_note: "CME DataMine (paid) or yfinance (ZC=F for corn front-month)"
+
+# ============================================================
+# KEY EXPORT PORT REGISTRY
+# ============================================================
+export_ports:
+  gulf_new_orleans_south_louisiana:
+    name: "New Orleans / South Louisiana"
+    census_district_code: "52"
+    waterway: "Lower Mississippi River"
+    commodities: [CORN, SOYBEANS, WHEAT, SORGHUM, DDGS, SOY_MEAL, SOY_OIL]
+    note: "Largest U.S. grain export complex; ~60% of all corn/soy exports"
+
+  gulf_texas:
+    name: "Texas Gulf (Houston/Beaumont/Corpus Christi/Port Arthur)"
+    census_district_code: "53"
+    commodities: [WHEAT, SORGHUM, CORN]
+    note: "Primary sorghum export point; HRW wheat from Plains"
+
+  pnw_portland:
+    name: "Portland, OR"
+    census_district_code: "36"
+    waterway: "Columbia River"
+    commodities: [WHEAT, CORN, SOYBEANS, BARLEY]
+
+  pnw_vancouver:
+    name: "Vancouver, WA"
+    census_district_code: "36"
+    waterway: "Columbia River"
+    commodities: [WHEAT, CORN, SOYBEANS]
+
+  pnw_kalama:
+    name: "Kalama, WA"
+    census_district_code: "36"
+    commodities: [CORN, SOYBEANS, WHEAT]
+    note: "Major corn/soy export elevator on Columbia River"
+
+  pnw_longview:
+    name: "Longview, WA"
+    census_district_code: "36"
+    commodities: [WHEAT, CORN]
+
+  great_lakes_duluth:
+    name: "Duluth-Superior, MN/WI"
+    census_district_code: "42"
+    commodities: [WHEAT, CORN, SOYBEANS, BARLEY]
+    note: "Seaway access; primary Great Plains wheat export point"
+
+  great_lakes_toledo:
+    name: "Toledo, OH"
+    census_district_code: "41"
+    commodities: [CORN, SOYBEANS, WHEAT]
+
+  atlantic_baltimore:
+    name: "Baltimore, MD"
+    census_district_code: "13"
+    commodities: [CORN, SOYBEANS, WHEAT]
+
+  atlantic_norfolk:
+    name: "Norfolk/Newport News, VA"
+    census_district_code: "14"
+    commodities: [CORN, SOYBEANS]
+
+# ============================================================
+# WATERWAY INFRASTRUCTURE
+# ============================================================
+waterways:
+  umr_iww:
+    name: "Upper Mississippi River - Illinois Waterway"
+    abbreviation: "UMR-IWW"
+    importance: "Primary corn/soy export corridor to Gulf"
+    grain_share_of_total_tonnage: 0.50
+    key_locks:
+      - "Lock 25, Winfield MO (600-ft chamber)"
+      - "Lock 26, Alton IL (1200-ft modern)"
+      - "LaGrange Lock, IL (600-ft, bottleneck)"
+    standard_lock_chamber_ft: 600
+    target_extension_ft: 1200
+    typical_tow_length_ft: 1100
+    standard_barge_capacity_bu: 52500
+    standard_tow_barges: 15
+    bottleneck_note: "600-ft chambers require tow breakup — doubles transit time to ~90 min"
+
+  lower_mississippi:
+    name: "Lower Mississippi River (Cairo IL to Gulf)"
+    importance: "Final leg to Gulf export elevator complex"
+    corn_barge_share_gulf_bound: 0.90
+
+  columbia_snake_river:
+    name: "Columbia-Snake River System"
+    abbreviation: "CSR"
+    importance: "Primary wheat and corn/soy PNW export corridor"
+    pnw_wheat_via_snake_pct: 0.13
+    key_locks:
+      - "Ice Harbor Dam, WA"
+      - "Lower Monumental Dam, WA"
+      - "Little Goose Dam, WA"
+      - "Lower Granite Dam, WA"
+      - "McNary Dam, WA/OR"
+      - "John Day Dam, WA/OR"
+      - "The Dalles Dam, WA/OR"
+      - "Bonneville Dam, WA/OR"
+    pnw_ocean_ports: ["Kalama WA", "Portland OR", "Vancouver WA", "Longview WA"]
+
+  ohio_river:
+    name: "Ohio River System"
+    importance: "Secondary soy/corn corridor to Lower Mississippi"
+
+# ============================================================
+# MODAL BENCHMARKS (USDA published)
+# ============================================================
+modal_benchmarks:
+  source: "USDA AMS, Transportation of U.S. Grains: A Modal Share Analysis 1978-2014, Oct 2017"
+  domestic_market_share_2014:
+    truck: 0.53
+    rail: 0.28
+    barge: 0.19
+  export_market_share_2014:
+    truck: 0.07
+    rail: 0.38
+    barge: 0.55
+  truck_rail_crossover_miles: 250
+  rail_barge_crossover_miles: 700
+  corn_gulf_barge_share: 0.90
+
+  rail_shuttle_benchmarks:
+    source: "Prater & Sparger, USDA AMS, Dec 2013"
+    shuttle_threshold_cars: 75
+    unit_train_cars: 52
+    shuttle_train_cars: 110
+    covered_hopper_weight_lbs: 286000
+    jumbo_hopper_weight_lbs: 315000
+    grain_rail_revenue_share_2009: 0.084
+    grain_rail_tonnage_share_2009: 0.079
+    grain_rail_share_all_us_grain_2007: 0.33
+
+# ============================================================
+# OUTPUT CONFIGURATION
+# ============================================================
+output:
+  base_dir: "data/processed"
+  subdirs:
+    supply: "data/processed/supply"
+    trade: "data/processed/trade"
+    freight: "data/processed/freight"
+    prices: "data/processed/prices"
+    reference: "data/processed/reference"
+  format: "parquet"
+  raw_dir: "data/raw"
+
+# ============================================================
+# TOOLSET INTEGRATION
+# ============================================================
+toolset_integration:
+  barge_cost_model:
+    path: "../../02_TOOLSETS/barge_cost_model"
+    grain_naics_for_routing: ["115114", "424510", "493130"]
+    usace_grain_codes: ["14", "15", "17"]
+    primary_corridor: "Illinois River → Lower Mississippi → New Orleans"
+
+  rail_cost_model:
+    path: "../../02_TOOLSETS/rail_cost_model"
+    grain_stcc_codes: ["01112", "01130", "01131", "01141", "01155"]
+    shuttle_threshold_cars: 75
+    key_railroads: ["BNSF", "UP", "CN", "CP", "CSX", "NS"]
+
+  vessel_voyage_analysis:
+    path: "../../02_TOOLSETS/vessel_voyage_analysis"
+    fgis_integration: true
+    bulk_vessel_types: ["Panamax", "Supramax", "Handymax", "Handysize"]
+
+  vessel_intelligence:
+    path: "../../02_TOOLSETS/vessel_intelligence"
+    grain_hs_chapters: ["1001", "1003", "1004", "1005", "1006", "1007",
+                        "1201", "1507", "2302", "2303", "2304"]
+
+  facility_registry:
+    path: "../../02_TOOLSETS/facility_registry"
+    grain_naics_codes:
+      - "115114"   # Postharvest crop activities (country elevators)
+      - "493130"   # Farm product warehousing (terminal elevators)
+      - "424510"   # Grain merchant wholesalers
+      - "311211"   # Flour milling
+      - "311212"   # Rice milling
+      - "311221"   # Wet corn milling (ethanol plants)
+      - "311224"   # Soybean/oilseed processing
+      - "311225"   # Fats/oils refining
+
+  census_trade:
+    path: "../../02_TOOLSETS/census_trade"
+    grain_hs_chapters: ["1001", "1003", "1004", "1005", "1006", "1007",
+                        "1201", "1507", "2302", "2303", "2304"]
+
+  port_cost_model:
+    path: "../../02_TOOLSETS/port_cost_model"
+    grain_terminal_ports:
+      - "New Orleans/South Louisiana"
+      - "Portland OR"
+      - "Kalama WA"
+      - "Duluth-Superior MN/WI"

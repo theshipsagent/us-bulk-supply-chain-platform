@@ -1,0 +1,2299 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.2568,
+          43.6591
+        ]
+      },
+      "properties": {
+        "port_code": "0101",
+        "name": "PORTLAND, ME",
+        "cbp_name": "Portland, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.7681,
+          44.8012
+        ]
+      },
+      "properties": {
+        "port_code": "0102",
+        "name": "BANGOR, ME",
+        "cbp_name": "Bangor, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.9856,
+          44.9062
+        ]
+      },
+      "properties": {
+        "port_code": "0103",
+        "name": "EASTPORT, ME",
+        "cbp_name": "Eastport, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.8208,
+          43.9108
+        ]
+      },
+      "properties": {
+        "port_code": "0111",
+        "name": "BATH, ME",
+        "cbp_name": "Bath, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.2039,
+          44.3876
+        ]
+      },
+      "properties": {
+        "port_code": "0112",
+        "name": "BAR HARBOR, ME",
+        "cbp_name": "Bar Harbor, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.1089,
+          44.1037
+        ]
+      },
+      "properties": {
+        "port_code": "0121",
+        "name": "ROCKLAND, ME",
+        "cbp_name": "Rockland, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7626,
+          43.0718
+        ]
+      },
+      "properties": {
+        "port_code": "0131",
+        "name": "PORTSMOUTH, NH",
+        "cbp_name": "Portsmouth, New Hampshire",
+        "state": "NH",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.9226,
+          44.4609
+        ]
+      },
+      "properties": {
+        "port_code": "0152",
+        "name": "SEARSPORT, ME",
+        "cbp_name": "Searsport, Maine",
+        "state": "ME",
+        "port_type": "seaport",
+        "port_consolidated": "Portland ME",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "01",
+        "district_name": "PORTLAND, ME"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ]
+      },
+      "properties": {
+        "port_code": "0401",
+        "name": "BOSTON, MA",
+        "cbp_name": "Boston, Massachusetts",
+        "state": "MA",
+        "port_type": "seaport",
+        "port_consolidated": "Boston",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "04",
+        "district_name": "BOSTON, MA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9342,
+          41.6362
+        ]
+      },
+      "properties": {
+        "port_code": "0405",
+        "name": "NEW BEDFORD, MA",
+        "cbp_name": "New Bedford, Massachusetts",
+        "state": "MA",
+        "port_type": "seaport",
+        "port_consolidated": "Boston",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "04",
+        "district_name": "BOSTON, MA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1554,
+          41.706
+        ]
+      },
+      "properties": {
+        "port_code": "0407",
+        "name": "FALL RIVER, MA",
+        "cbp_name": "Fall River, Massachusetts",
+        "state": "MA",
+        "port_type": "seaport",
+        "port_consolidated": "Boston",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "04",
+        "district_name": "BOSTON, MA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2013,
+          41.1743
+        ]
+      },
+      "properties": {
+        "port_code": "0410",
+        "name": "BRIDGEPORT,CT",
+        "cbp_name": "Bridgeport, Connecticut",
+        "state": "CT",
+        "port_type": "seaport",
+        "port_consolidated": "Connecticut",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "04",
+        "district_name": "BOSTON, MA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9279,
+          41.3083
+        ]
+      },
+      "properties": {
+        "port_code": "0412",
+        "name": "NEW HAVEN,CT",
+        "cbp_name": "New Haven, Connecticut",
+        "state": "CT",
+        "port_type": "seaport",
+        "port_consolidated": "Connecticut",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "04",
+        "district_name": "BOSTON, MA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.099,
+          41.3523
+        ]
+      },
+      "properties": {
+        "port_code": "0413",
+        "name": "NEW LONDON, CT",
+        "cbp_name": "New London, Connecticut",
+        "state": "CT",
+        "port_type": "seaport",
+        "port_consolidated": "Connecticut",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "04",
+        "district_name": "BOSTON, MA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3128,
+          41.4901
+        ]
+      },
+      "properties": {
+        "port_code": "0501",
+        "name": "NEWPORT, RI",
+        "cbp_name": "Newport, Rhode Island",
+        "state": "RI",
+        "port_type": "seaport",
+        "port_consolidated": "Providence",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "05",
+        "district_name": "PROVIDENCE, RI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4222,
+          41.8236
+        ]
+      },
+      "properties": {
+        "port_code": "0502",
+        "name": "PROVIDENCE, RI",
+        "cbp_name": "Providence, Rhode Island",
+        "state": "RI",
+        "port_type": "seaport",
+        "port_consolidated": "Providence",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "05",
+        "district_name": "PROVIDENCE, RI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8784,
+          42.8864
+        ]
+      },
+      "properties": {
+        "port_code": "0901",
+        "name": "BUFFALO-NIAGARA FALLS, NY",
+        "cbp_name": "Buffalo-Niagara Falls, New York",
+        "state": "NY",
+        "port_type": "land_border",
+        "port_consolidated": "Buffalo-Niagara",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "09",
+        "district_name": "BUFFALO, NY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6109,
+          43.261
+        ]
+      },
+      "properties": {
+        "port_code": "0903",
+        "name": "ROCHESTER, NY",
+        "cbp_name": "Rochester, New York",
+        "state": "NY",
+        "port_type": "seaport",
+        "port_consolidated": "Buffalo-Niagara",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "09",
+        "district_name": "BUFFALO, NY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0445,
+          40.6892
+        ]
+      },
+      "properties": {
+        "port_code": "1001",
+        "name": "NEW YORK, NY",
+        "cbp_name": "New York, New York",
+        "state": "NY",
+        "port_type": "seaport",
+        "port_consolidated": "New York",
+        "port_coast": "East",
+        "port_region": "North Atlantic",
+        "district_code": "10",
+        "district_name": "NEW YORK CITY, NY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "port_code": "1101",
+        "name": "PHILADELPHIA, PA",
+        "cbp_name": "Philadelphia, Pennsylvania",
+        "state": "PA",
+        "port_type": "seaport",
+        "port_consolidated": "Delaware River",
+        "port_coast": "East",
+        "port_region": "Mid-Atlantic",
+        "district_code": "11",
+        "district_name": "PHILADELPHIA, PA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5398,
+          39.7391
+        ]
+      },
+      "properties": {
+        "port_code": "1103",
+        "name": "WILMINGTON, DE",
+        "cbp_name": "Wilmington, Delaware",
+        "state": "DE",
+        "port_type": "seaport",
+        "port_consolidated": "Delaware River",
+        "port_coast": "East",
+        "port_region": "Mid-Atlantic",
+        "district_code": "11",
+        "district_name": "PHILADELPHIA, PA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.436,
+          37.5407
+        ]
+      },
+      "properties": {
+        "port_code": "1297",
+        "name": "RICHMOND, VA",
+        "cbp_name": "",
+        "state": "VA",
+        "port_type": "seaport",
+        "port_consolidated": "Hampton Roads",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "12",
+        "district_name": "UNKNOWN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6122,
+          39.2904
+        ]
+      },
+      "properties": {
+        "port_code": "1303",
+        "name": "BALTIMORE, MD",
+        "cbp_name": "Baltimore, Maryland",
+        "state": "MD",
+        "port_type": "seaport",
+        "port_consolidated": "Baltimore",
+        "port_coast": "East",
+        "port_region": "Mid-Atlantic",
+        "district_code": "13",
+        "district_name": "BALTIMORE, MD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.2852,
+          36.8468
+        ]
+      },
+      "properties": {
+        "port_code": "1401",
+        "name": "NORFOLK-NEWPORT NEWS, VA",
+        "cbp_name": "Norfolk, Virginia",
+        "state": "VA",
+        "port_type": "seaport",
+        "port_consolidated": "Hampton Roads",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "14",
+        "district_name": "NORFOLK, VA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.9447,
+          34.2257
+        ]
+      },
+      "properties": {
+        "port_code": "1501",
+        "name": "WILMINGTON, NC",
+        "cbp_name": "Wilmington, North Carolina",
+        "state": "NC",
+        "port_type": "seaport",
+        "port_consolidated": "North Carolina Ports",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "15",
+        "district_name": "WILMINGTON, NC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6585,
+          34.7178
+        ]
+      },
+      "properties": {
+        "port_code": "1511",
+        "name": "BEAUFORT-MOREHEAD CITY,NC",
+        "cbp_name": "Beaufort-Morehead City, North Carolina",
+        "state": "NC",
+        "port_type": "seaport",
+        "port_consolidated": "North Carolina Ports",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "15",
+        "district_name": "WILMINGTON, NC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9311,
+          32.7765
+        ]
+      },
+      "properties": {
+        "port_code": "1601",
+        "name": "CHARLESTON, SC",
+        "cbp_name": "Charleston, South Carolina",
+        "state": "SC",
+        "port_type": "seaport",
+        "port_consolidated": "Charleston",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "16",
+        "district_name": "CHARLESTON, SC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4915,
+          31.1499
+        ]
+      },
+      "properties": {
+        "port_code": "1701",
+        "name": "BRUNSWICK, GA",
+        "cbp_name": "Brunswick, Georgia",
+        "state": "GA",
+        "port_type": "seaport",
+        "port_consolidated": "Georgia Ports",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "17",
+        "district_name": "SAVANNAH, GA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0912,
+          32.0809
+        ]
+      },
+      "properties": {
+        "port_code": "1703",
+        "name": "SAVANNAH, GA",
+        "cbp_name": "Savannah, Georgia",
+        "state": "GA",
+        "port_type": "seaport",
+        "port_consolidated": "Georgia Ports",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "17",
+        "district_name": "SAVANNAH, GA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.4572,
+          27.9506
+        ]
+      },
+      "properties": {
+        "port_code": "1801",
+        "name": "TAMPA, FL",
+        "cbp_name": "Tampa, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "Tampa",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "18",
+        "district_name": "TAMPA, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6557,
+          30.3322
+        ]
+      },
+      "properties": {
+        "port_code": "1803",
+        "name": "JACKSONVILLE, FL",
+        "cbp_name": "Jacksonville, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "Jacksonville",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "18",
+        "district_name": "TAMPA, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.6228,
+          28.4001
+        ]
+      },
+      "properties": {
+        "port_code": "1816",
+        "name": "PORT CANAVERAL, FL",
+        "cbp_name": "Port Canaveral, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "Port Canaveral",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "18",
+        "district_name": "TAMPA, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6602,
+          30.1588
+        ]
+      },
+      "properties": {
+        "port_code": "1818",
+        "name": "PANAMA CITY, FL",
+        "cbp_name": "Panama City, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "Panama City",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "18",
+        "district_name": "TAMPA, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.211,
+          30.4383
+        ]
+      },
+      "properties": {
+        "port_code": "1819",
+        "name": "PENSACOLA, FL",
+        "cbp_name": "Pensacola, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "Pensacola",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "18",
+        "district_name": "TAMPA, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5621,
+          27.6364
+        ]
+      },
+      "properties": {
+        "port_code": "1821",
+        "name": "PORT MANATEE, FL",
+        "cbp_name": "Port Manatee, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "Tampa",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "18",
+        "district_name": "TAMPA, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.0399,
+          30.6954
+        ]
+      },
+      "properties": {
+        "port_code": "1901",
+        "name": "MOBILE, AL",
+        "cbp_name": "Mobile, Alabama",
+        "state": "AL",
+        "port_type": "seaport",
+        "port_consolidated": "Mobile",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "19",
+        "district_name": "MOBILE, AL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.0928,
+          30.3674
+        ]
+      },
+      "properties": {
+        "port_code": "1902",
+        "name": "GULFPORT, MS",
+        "cbp_name": "Gulfport, Mississippi",
+        "state": "MS",
+        "port_type": "seaport",
+        "port_consolidated": "Gulfport",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "19",
+        "district_name": "MOBILE, AL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.5561,
+          30.3585
+        ]
+      },
+      "properties": {
+        "port_code": "1903",
+        "name": "PASCAGOULA, MS",
+        "cbp_name": "Pascagoula, Mississippi",
+        "state": "MS",
+        "port_type": "seaport",
+        "port_consolidated": "Pascagoula",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "19",
+        "district_name": "MOBILE, AL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.2068,
+          29.6994
+        ]
+      },
+      "properties": {
+        "port_code": "2001",
+        "name": "MORGAN CITY, LA",
+        "cbp_name": "Morgan City, Louisiana",
+        "state": "LA",
+        "port_type": "seaport",
+        "port_consolidated": "Morgan City",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "20",
+        "district_name": "NEW ORLEANS, LA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      "properties": {
+        "port_code": "2002",
+        "name": "NEW ORLEANS, LA",
+        "cbp_name": "New Orleans, Louisiana",
+        "state": "LA",
+        "port_type": "seaport",
+        "port_consolidated": "Lower Miss River",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "20",
+        "district_name": "NEW ORLEANS, LA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1874,
+          30.4508
+        ]
+      },
+      "properties": {
+        "port_code": "2004",
+        "name": "BATON ROUGE, LA",
+        "cbp_name": "Baton Rouge, Louisiana",
+        "state": "LA",
+        "port_type": "seaport",
+        "port_consolidated": "Lower Miss River",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "20",
+        "district_name": "NEW ORLEANS, LA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6898,
+          30.0511
+        ]
+      },
+      "properties": {
+        "port_code": "2010",
+        "name": "GRAMERCY, LA",
+        "cbp_name": "Gramercy, Louisiana",
+        "state": "LA",
+        "port_type": "seaport",
+        "port_consolidated": "Lower Miss River",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "20",
+        "district_name": "NEW ORLEANS, LA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2174,
+          30.2266
+        ]
+      },
+      "properties": {
+        "port_code": "2017",
+        "name": "LAKE CHARLES, LA",
+        "cbp_name": "Lake Charles, Louisiana",
+        "state": "LA",
+        "port_type": "seaport",
+        "port_consolidated": "Lake Charles",
+        "port_coast": "Gulf",
+        "port_region": "Gulf East",
+        "district_code": "20",
+        "district_name": "NEW ORLEANS, LA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.9388,
+          29.8611
+        ]
+      },
+      "properties": {
+        "port_code": "2101",
+        "name": "PORT ARTHUR, TX",
+        "cbp_name": "Port Arthur, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Sabine River",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "21",
+        "district_name": "PORT ARTHUR, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.87,
+          29.7244
+        ]
+      },
+      "properties": {
+        "port_code": "2102",
+        "name": "SABINE, TX",
+        "cbp_name": "Sabine, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Sabine River",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "21",
+        "district_name": "PORT ARTHUR, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.7366,
+          30.093
+        ]
+      },
+      "properties": {
+        "port_code": "2103",
+        "name": "ORANGE, TX",
+        "cbp_name": "Orange, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Sabine River",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "21",
+        "district_name": "PORT ARTHUR, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.1266,
+          30.0802
+        ]
+      },
+      "properties": {
+        "port_code": "2104",
+        "name": "BEAUMONT, TX",
+        "cbp_name": "Beaumont, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Sabine River",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "21",
+        "district_name": "PORT ARTHUR, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.4981,
+          26.071
+        ]
+      },
+      "properties": {
+        "port_code": "2301",
+        "name": "BROWNSVILLE, TX",
+        "cbp_name": "Brownsville, Texas",
+        "state": "TX",
+        "port_type": "land_border",
+        "port_consolidated": "South Texas Border",
+        "port_coast": "Land Ports",
+        "port_region": "South Texas",
+        "district_code": "23",
+        "district_name": "LAREDO, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1611,
+          32.7157
+        ]
+      },
+      "properties": {
+        "port_code": "2501",
+        "name": "SAN DIEGO, CA",
+        "cbp_name": "San Diego, California",
+        "state": "CA",
+        "port_type": "land_border",
+        "port_consolidated": "San Diego Border",
+        "port_coast": "Land Ports",
+        "port_region": "California",
+        "district_code": "25",
+        "district_name": "SAN DIEGO, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27,
+          33.74
+        ]
+      },
+      "properties": {
+        "port_code": "2704",
+        "name": "LOS ANGELES, CA",
+        "cbp_name": "Los Angeles, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "LA-Long Beach",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "27",
+        "district_name": "LOS ANGELES, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2162,
+          33.749
+        ]
+      },
+      "properties": {
+        "port_code": "2709",
+        "name": "LONG BEACH, CA",
+        "cbp_name": "Long Beach, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "LA-Long Beach",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "27",
+        "district_name": "LOS ANGELES, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.1637,
+          40.8021
+        ]
+      },
+      "properties": {
+        "port_code": "2802",
+        "name": "EUREKA, CA",
+        "cbp_name": "Eureka, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "San Francisco Bay",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "28",
+        "district_name": "SAN FRANCISCO, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8947,
+          36.6002
+        ]
+      },
+      "properties": {
+        "port_code": "2805",
+        "name": "MONTEREY, CA",
+        "cbp_name": "Monterey, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "San Francisco Bay",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "28",
+        "district_name": "SAN FRANCISCO, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      },
+      "properties": {
+        "port_code": "2809",
+        "name": "SAN FRANCISCO, CA",
+        "cbp_name": "San Francisco, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "San Francisco Bay",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "28",
+        "district_name": "SAN FRANCISCO, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.2908,
+          37.9577
+        ]
+      },
+      "properties": {
+        "port_code": "2810",
+        "name": "STOCKTON, CA",
+        "cbp_name": "Stockton, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "San Francisco Bay",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "28",
+        "district_name": "SAN FRANCISCO, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2788,
+          37.7957
+        ]
+      },
+      "properties": {
+        "port_code": "2811",
+        "name": "OAKLAND, CA",
+        "cbp_name": "Oakland, California",
+        "state": "CA",
+        "port_type": "seaport",
+        "port_consolidated": "San Francisco Bay",
+        "port_coast": "West",
+        "port_region": "California",
+        "district_code": "28",
+        "district_name": "SAN FRANCISCO, CA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.8313,
+          46.1879
+        ]
+      },
+      "properties": {
+        "port_code": "2901",
+        "name": "ASTORIA, OR",
+        "cbp_name": "Astoria, Oregon",
+        "state": "OR",
+        "port_type": "seaport",
+        "port_consolidated": "Columbia River",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "29",
+        "district_name": "COLUMBIA-SNAKE, OR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.2179,
+          43.3665
+        ]
+      },
+      "properties": {
+        "port_code": "2903",
+        "name": "COOS BAY, OR",
+        "cbp_name": "Coos Bay, Oregon",
+        "state": "OR",
+        "port_type": "seaport",
+        "port_consolidated": "Columbia River",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "29",
+        "district_name": "COLUMBIA-SNAKE, OR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.675,
+          45.5051
+        ]
+      },
+      "properties": {
+        "port_code": "2904",
+        "name": "PORTLAND, OR",
+        "cbp_name": "Portland, Oregon",
+        "state": "OR",
+        "port_type": "seaport",
+        "port_consolidated": "Columbia River",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "29",
+        "district_name": "COLUMBIA-SNAKE, OR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.9135,
+          46.1479
+        ]
+      },
+      "properties": {
+        "port_code": "2905",
+        "name": "LONGVIEW, WA",
+        "cbp_name": "Longview, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Columbia River",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "29",
+        "district_name": "COLUMBIA-SNAKE, OR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6717,
+          45.6326
+        ]
+      },
+      "properties": {
+        "port_code": "2908",
+        "name": "VANCOUVER, WA",
+        "cbp_name": "Vancouver, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Columbia River",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "29",
+        "district_name": "COLUMBIA-SNAKE, OR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8417,
+          46.0326
+        ]
+      },
+      "properties": {
+        "port_code": "2909",
+        "name": "KALAMA, WA",
+        "cbp_name": "Kalama, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Columbia River",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "29",
+        "district_name": "COLUMBIA-SNAKE, OR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3321,
+          47.6062
+        ]
+      },
+      "properties": {
+        "port_code": "3001",
+        "name": "SEATTLE, WA",
+        "cbp_name": "Seattle, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Seattle-Tacoma",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "30",
+        "district_name": "SEATTLE, WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4443,
+          47.2529
+        ]
+      },
+      "properties": {
+        "port_code": "3002",
+        "name": "TACOMA, WA",
+        "cbp_name": "Tacoma, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Seattle-Tacoma",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "30",
+        "district_name": "SEATTLE, WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.8471,
+          46.9765
+        ]
+      },
+      "properties": {
+        "port_code": "3003",
+        "name": "ABERDEEN-HOQUIAM, WA",
+        "cbp_name": "Aberdeen, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Seattle-Tacoma",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "30",
+        "district_name": "SEATTLE, WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2021,
+          47.979
+        ]
+      },
+      "properties": {
+        "port_code": "3006",
+        "name": "EVERETT, WA",
+        "cbp_name": "Everett, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Seattle-Tacoma",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "30",
+        "district_name": "SEATTLE, WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.4307,
+          48.1106
+        ]
+      },
+      "properties": {
+        "port_code": "3007",
+        "name": "PORT ANGELES, WA",
+        "cbp_name": "Port Angeles, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Seattle-Tacoma",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "30",
+        "district_name": "SEATTLE, WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6127,
+          48.5126
+        ]
+      },
+      "properties": {
+        "port_code": "3010",
+        "name": "ANACORTES, WA",
+        "cbp_name": "Anacortes, Washington",
+        "state": "WA",
+        "port_type": "seaport",
+        "port_consolidated": "Seattle-Tacoma",
+        "port_coast": "West",
+        "port_region": "Pacific Northwest",
+        "district_code": "30",
+        "district_name": "SEATTLE, WA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.4197,
+          58.3005
+        ]
+      },
+      "properties": {
+        "port_code": "3101",
+        "name": "JUNEAU, AK",
+        "cbp_name": "Juneau, Alaska",
+        "state": "AK",
+        "port_type": "seaport",
+        "port_consolidated": "Alaska",
+        "port_coast": "Alaska/US Islands",
+        "port_region": "Alaska/US Islands",
+        "district_code": "31",
+        "district_name": "ANCHORAGE, AK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -131.6461,
+          55.3422
+        ]
+      },
+      "properties": {
+        "port_code": "3102",
+        "name": "KETCHIKAN, AK",
+        "cbp_name": "Ketchikan, Alaska",
+        "state": "AK",
+        "port_type": "seaport",
+        "port_consolidated": "Alaska",
+        "port_coast": "Alaska/US Islands",
+        "port_region": "Alaska/US Islands",
+        "district_code": "31",
+        "district_name": "ANCHORAGE, AK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.9003,
+          61.2181
+        ]
+      },
+      "properties": {
+        "port_code": "3126",
+        "name": "ANCHORAGE, AK",
+        "cbp_name": "Anchorage, Alaska",
+        "state": "AK",
+        "port_type": "seaport",
+        "port_consolidated": "Alaska",
+        "port_coast": "Alaska/US Islands",
+        "port_region": "Alaska/US Islands",
+        "district_code": "31",
+        "district_name": "ANCHORAGE, AK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.8583,
+          21.3069
+        ]
+      },
+      "properties": {
+        "port_code": "3201",
+        "name": "HONOLULU, HI",
+        "cbp_name": "Honolulu, Hawaii",
+        "state": "HI",
+        "port_type": "seaport",
+        "port_consolidated": "Honolulu",
+        "port_coast": "West",
+        "port_region": "Pacific",
+        "district_code": "32",
+        "district_name": "HONOLULU, HI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -155.09,
+          19.7297
+        ]
+      },
+      "properties": {
+        "port_code": "3202",
+        "name": "HILO, HI",
+        "cbp_name": "Hilo, Hawaii",
+        "state": "HI",
+        "port_type": "seaport",
+        "port_consolidated": "Honolulu",
+        "port_coast": "West",
+        "port_region": "Pacific",
+        "district_code": "32",
+        "district_name": "HONOLULU, HI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -156.4729,
+          20.8893
+        ]
+      },
+      "properties": {
+        "port_code": "3203",
+        "name": "KAHULUI, HI",
+        "cbp_name": "Kahului, Hawaii",
+        "state": "HI",
+        "port_type": "seaport",
+        "port_consolidated": "Honolulu",
+        "port_coast": "West",
+        "port_region": "Pacific",
+        "district_code": "32",
+        "district_name": "HONOLULU, HI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -159.3674,
+          21.9544
+        ]
+      },
+      "properties": {
+        "port_code": "3204",
+        "name": "NAWILIWILI-PORT ALLEN,HI",
+        "cbp_name": "Nawiliwili-Port Allen, Hawaii",
+        "state": "HI",
+        "port_type": "seaport",
+        "port_consolidated": "Honolulu",
+        "port_coast": "West",
+        "port_region": "Pacific",
+        "district_code": "32",
+        "district_name": "HONOLULU, HI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.265,
+          44.9778
+        ]
+      },
+      "properties": {
+        "port_code": "3501",
+        "name": "MINNEAPOLIS-ST. PAUL, MN",
+        "cbp_name": "Minneapolis-St. Paul, Minnesota",
+        "state": "MN",
+        "port_type": "inland",
+        "port_consolidated": "Minneapolis-St. Paul, Minnesota",
+        "port_coast": "Inland",
+        "port_region": "Great Lakes",
+        "district_code": "35",
+        "district_name": "MINNEAPOLIS, MN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.1005,
+          46.7867
+        ]
+      },
+      "properties": {
+        "port_code": "3510",
+        "name": "DULUTH, MN-SUPERIOR, WI",
+        "cbp_name": "Duluth, Wisconsin",
+        "state": "WI",
+        "port_type": "seaport",
+        "port_consolidated": "Duluth-Superior",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "35",
+        "district_name": "MINNEAPOLIS, MN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9065,
+          43.0389
+        ]
+      },
+      "properties": {
+        "port_code": "3701",
+        "name": "MILWAUKEE, WI",
+        "cbp_name": "Milwaukee, Wisconsin",
+        "state": "WI",
+        "port_type": "seaport",
+        "port_consolidated": "Milwaukee",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "37",
+        "district_name": "MILWAUKEE, WI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9806,
+          44.5133
+        ]
+      },
+      "properties": {
+        "port_code": "3703",
+        "name": "GREEN BAY, WI",
+        "cbp_name": "Green Bay, Wisconsin",
+        "state": "WI",
+        "port_type": "seaport",
+        "port_consolidated": "Milwaukee",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "37",
+        "district_name": "MILWAUKEE, WI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      "properties": {
+        "port_code": "3801",
+        "name": "DETROIT, MI",
+        "cbp_name": "Detroit, Michigan",
+        "state": "MI",
+        "port_type": "seaport",
+        "port_consolidated": "Detroit",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "38",
+        "district_name": "DETROIT, MI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.8889,
+          43.5945
+        ]
+      },
+      "properties": {
+        "port_code": "3804",
+        "name": "SAGINAW/BAY CITY, MI",
+        "cbp_name": "Saginaw/Bay City, Michigan",
+        "state": "MI",
+        "port_type": "seaport",
+        "port_consolidated": "Detroit",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "38",
+        "district_name": "DETROIT, MI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3954,
+          46.5436
+        ]
+      },
+      "properties": {
+        "port_code": "3809",
+        "name": "MARQUETTE, MI",
+        "cbp_name": "Marquette, Michigan",
+        "state": "MI",
+        "port_type": "seaport",
+        "port_consolidated": "Detroit",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "38",
+        "district_name": "DETROIT, MI"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.5389,
+          41.6528
+        ]
+      },
+      "properties": {
+        "port_code": "3901",
+        "name": "CHICAGO, IL",
+        "cbp_name": "Chicago, Illinois, including O\u2019Hare International Airport",
+        "state": "IL",
+        "port_type": "seaport",
+        "port_consolidated": "Chicago",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "39",
+        "district_name": "CHICAGO, IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6944,
+          41.4993
+        ]
+      },
+      "properties": {
+        "port_code": "4101",
+        "name": "CLEVELAND, OH",
+        "cbp_name": "Cleveland, Ohio",
+        "state": "OH",
+        "port_type": "inland",
+        "port_consolidated": "Cleveland, Ohio",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "41",
+        "district_name": "CLEVELAND, OH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.5379,
+          41.6528
+        ]
+      },
+      "properties": {
+        "port_code": "4105",
+        "name": "TOLEDO-SANDUSKY, OH",
+        "cbp_name": "Toledo, Ohio",
+        "state": "OH",
+        "port_type": "seaport",
+        "port_consolidated": "Cleveland-Toledo",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "41",
+        "district_name": "CLEVELAND, OH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0851,
+          42.1292
+        ]
+      },
+      "properties": {
+        "port_code": "4106",
+        "name": "ERIE, PA",
+        "cbp_name": "Erie, Pennsylvania",
+        "state": "PA",
+        "port_type": "seaport",
+        "port_consolidated": "Cleveland-Toledo",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "41",
+        "district_name": "CLEVELAND, OH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.1824,
+          41.4525
+        ]
+      },
+      "properties": {
+        "port_code": "4121",
+        "name": "LORAIN, OH",
+        "cbp_name": "",
+        "state": "OH",
+        "port_type": "seaport",
+        "port_consolidated": "Cleveland-Toledo",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "41",
+        "district_name": "CLEVELAND, OH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.7682,
+          41.894
+        ]
+      },
+      "properties": {
+        "port_code": "4122",
+        "name": "ASHTABULA/CONNEAUT, OH",
+        "cbp_name": "Ashtabula/Conneaut, Ohio",
+        "state": "OH",
+        "port_type": "seaport",
+        "port_consolidated": "Cleveland-Toledo",
+        "port_coast": "Great Lakes",
+        "port_region": "Great Lakes",
+        "district_code": "41",
+        "district_name": "CLEVELAND, OH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.1539,
+          18.2208
+        ]
+      },
+      "properties": {
+        "port_code": "4907",
+        "name": "MAYAGUEZ, PR",
+        "cbp_name": "Mayaguez, Puerto Rico",
+        "state": "PR",
+        "port_type": "seaport",
+        "port_consolidated": "San Juan",
+        "port_coast": "Islands",
+        "port_region": "Caribbean",
+        "district_code": "49",
+        "district_name": "SAN JUAN, PR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.6141,
+          18.0008
+        ]
+      },
+      "properties": {
+        "port_code": "4908",
+        "name": "PONCE, PR",
+        "cbp_name": "Ponce, Puerto Rico",
+        "state": "PR",
+        "port_type": "seaport",
+        "port_consolidated": "Ponce",
+        "port_coast": "Islands",
+        "port_region": "Caribbean",
+        "district_code": "49",
+        "district_name": "SAN JUAN, PR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1057,
+          18.4655
+        ]
+      },
+      "properties": {
+        "port_code": "4909",
+        "name": "SAN JUAN, PR",
+        "cbp_name": "San Juan, Puerto Rico",
+        "state": "PR",
+        "port_type": "seaport",
+        "port_consolidated": "San Juan",
+        "port_coast": "Islands",
+        "port_region": "Caribbean",
+        "district_code": "49",
+        "district_name": "SAN JUAN, PR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.9307,
+          18.3358
+        ]
+      },
+      "properties": {
+        "port_code": "5101",
+        "name": "CHARLOTTE AMALIE, VI",
+        "cbp_name": "Charlotte Amalie, St. Thomas, Virgin Islands",
+        "state": "VI",
+        "port_type": "seaport",
+        "port_consolidated": "Virgin Islands",
+        "port_coast": "Islands",
+        "port_region": "Caribbean",
+        "district_code": "51",
+        "district_name": "U.S. VIRGIN ISLANDS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.7024,
+          17.7466
+        ]
+      },
+      "properties": {
+        "port_code": "5104",
+        "name": "CHRISTIANSTED, VI",
+        "cbp_name": "Christiansted, St. Croix, Virgin Islands",
+        "state": "VI",
+        "port_type": "seaport",
+        "port_consolidated": "Virgin Islands",
+        "port_coast": "Islands",
+        "port_region": "Caribbean",
+        "district_code": "51",
+        "district_name": "U.S. VIRGIN ISLANDS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1918,
+          25.7617
+        ]
+      },
+      "properties": {
+        "port_code": "5201",
+        "name": "MIAMI, FL",
+        "cbp_name": "Miami, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "South Florida",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "52",
+        "district_name": "MIAMI, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.78,
+          24.5551
+        ]
+      },
+      "properties": {
+        "port_code": "5202",
+        "name": "KEY WEST, FL",
+        "cbp_name": "Key West, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "South Florida",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "52",
+        "district_name": "MIAMI, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1096,
+          26.1003
+        ]
+      },
+      "properties": {
+        "port_code": "5203",
+        "name": "PORT EVERGLADES, FL",
+        "cbp_name": "Port Everglades, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "South Florida",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "52",
+        "district_name": "MIAMI, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.0534,
+          26.7153
+        ]
+      },
+      "properties": {
+        "port_code": "5204",
+        "name": "WEST PALM BEACH, FL",
+        "cbp_name": "West Palm Beach, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "South Florida",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "52",
+        "district_name": "MIAMI, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.4128,
+          27.6506
+        ]
+      },
+      "properties": {
+        "port_code": "5205",
+        "name": "FORT PIERCE, FL",
+        "cbp_name": "Fort Pierce, Florida",
+        "state": "FL",
+        "port_type": "seaport",
+        "port_consolidated": "South Florida",
+        "port_coast": "East",
+        "port_region": "South Atlantic",
+        "district_code": "52",
+        "district_name": "MIAMI, FL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      "properties": {
+        "port_code": "5301",
+        "name": "HOUSTON, TX",
+        "cbp_name": "Houston, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Houston",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "53",
+        "district_name": "HOUSTON-GALVESTON, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9049,
+          29.3849
+        ]
+      },
+      "properties": {
+        "port_code": "5306",
+        "name": "TEXAS CITY, TX",
+        "cbp_name": "Texas City, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Houston",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "53",
+        "district_name": "HOUSTON-GALVESTON, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7977,
+          29.3013
+        ]
+      },
+      "properties": {
+        "port_code": "5310",
+        "name": "GALVESTON, TX",
+        "cbp_name": "Galveston, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Houston",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "53",
+        "district_name": "HOUSTON-GALVESTON, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3597,
+          28.953
+        ]
+      },
+      "properties": {
+        "port_code": "5311",
+        "name": "FREEPORT, TX",
+        "cbp_name": "Freeport, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Houston",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "53",
+        "district_name": "HOUSTON-GALVESTON, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3964,
+          27.8006
+        ]
+      },
+      "properties": {
+        "port_code": "5312",
+        "name": "CORPUS CHRISTI, TX",
+        "cbp_name": "Corpus Christi, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Corpus Christi",
+        "port_coast": "Gulf",
+        "port_region": "South Texas",
+        "district_code": "53",
+        "district_name": "HOUSTON-GALVESTON, TX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.6053,
+          28.6475
+        ]
+      },
+      "properties": {
+        "port_code": "5313",
+        "name": "PORT LAVACA, TX",
+        "cbp_name": "Port Lavaca, Texas",
+        "state": "TX",
+        "port_type": "seaport",
+        "port_consolidated": "Corpus Christi",
+        "port_coast": "Gulf",
+        "port_region": "North Texas",
+        "district_code": "53",
+        "district_name": "HOUSTON-GALVESTON, TX"
+      }
+    }
+  ],
+  "_metadata": {
+    "source": "Census Schedule D / port_geo_dictionary.json",
+    "total_features": 104,
+    "skipped_no_coords": 445,
+    "crs": "EPSG:4326"
+  }
+}
